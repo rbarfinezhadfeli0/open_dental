@@ -1,0 +1,62 @@
+# File: ./www.opendental.com/site/apireports.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API Reports</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apireports','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API Reports</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<h2>Reports GET Aging</h2>
+<p>Version Added: 21.4</p>
+<p><span style="color:red">Rarely used.</span> See <a href="apisetup.html">API Setup</a> for additional information.</p>
+<p>Gets the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportaging.html">Aging Report</a> for all patients. This endpoint calculates aging, but does not update accounts.</p>
+<p><b>DateAsOf:</b> Optional. Defaults to today's date. Gets the aging as of the passed in date. Must be in yyyy-MM-dd format.<br><b>ClinicNum:</b> (Added in version 22.2) Optional. Gets aging for account entries on a specific clinic. Not specifying ClinicNum will get aging for all clinics, if enabled.<br></p>
+<p>Returned fields are detailed below:</p>
+<p><b>PatNum:</b> The PatNum of the guarantor.<br><b>patName:</b> The guarantor's first and last name.<br><b>Bal_0_30:</b> The balance that is up to 30 days past due.<br><b>Bal_31_60:</b> The balance that is 31-60 days past due.<br><b>Bal_61_90:</b> The balance that is 61-90 days past due.<br><b>BalOver90:</b> The balance that is greater than 90 days past due.<br><b>BalTotal:</b> The total amount owed by the family before insurance.<br><b>InsWoEst:</b> The insurance write-off estimate amount based on procedures attached to the claim.<br><b>InsPayEst:</b> The total estimated insurance payment amount.<br><b>PatientPortion:</b> BalTotal - InsPayEst - InsWoEst. <br></p>
+<p><b>Example Requests:</b><br> GET /reports/Aging<br> GET /reports/Aging?DateAsOf=2020-07-30&amp;ClinicNum=5<br> GET /reports/Aging?Offset=200<br></p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br> {<br> "PatNum": 11,<br> "patName": "Allowed, Allen ",<br> "Bal_0_30": 0,<br> "Bal_31_60": 0,<br> "Bal_61_90": 0,<br> "BalOver90": 370,<br> "BalTotal": 370,<br> "InsWoEst": 0,<br> "InsPayEst": 265,<br> "PatientPortion": 105<br> },<br> {<br> "PatNum": 13,<br> "patName": "Copay, Candi ",<br> "Bal_0_30": 0,<br> "Bal_31_60": 0,<br> "Bal_61_90": 0,<br> "BalOver90": 140,<br> "BalTotal": 140,<br> "InsWoEst": 30,<br> "InsPayEst": 35,<br> "PatientPortion": 75<br> },<br> etc...<br> ]<br></span></p>
+<h2>Reports GET FinanceCharges</h2>
+<p>Version Added: 22.2.32</p>
+<p>Gets the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportfinancecharge.html">Finance Charge Report</a> for passed in parameters. </p>
+<p><b>DateFrom:</b> Optional. Defaults to today's date. Must be in yyyy-MM-dd format.<br><b>DateTo:</b> Optional. Defaults to today's date. Must be in yyyy-MM-dd format.<br><b>ProvNums:</b> Optional. Array of ProvNums. Default all providers.<br><b>BillingTypes:</b> Optional. Array of DefNums for definitions where definition.Category=4. Default all billing types.<br></p>
+<p>Returned fields are detailed below:</p>
+<p><b>PatNum:</b> The PatNum of the patient.<br><b>PatName:</b> The patient's first and last name.<br><b>Preferred:</b> The patient's preferred name.<br><b>AdjAmt:</b> The amount of the adjustment.<br></p>
+<p><b>Example Requests:</b><br> GET /reports/FinanceCharges<br> GET /reports/FinanceCharges?DateFrom=2022-08-22&amp;DateTo=2022-09-02&amp;ProvNums=[2,3]&amp;BillingTypes=[40]<br> GET /reports/FinanceCharges?ProvNums=2,3,4<br></p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br> {<br> "PatNum": 11,<br> "PatName": "Allowed, Allen ",<br> "Preferred": "",<br> "AdjAmt": 3.08<br> },<br> {<br> "PatNum": 13,<br> "PatName": "Copay, Candice ",<br> "Preferred": "Candi",<br> "AdjAmt": 1.17<br> },<br> {<br> "PatNum": 25,<br> "PatName": "Jones, Mary Sue ",<br> "Preferred": "",<br> "AdjAmt": 16.05<br> },<br> etc...<br> ]<br></span></p>
+		</div>
+	</div>
+</body>
+</html>```

@@ -1,0 +1,140 @@
+# File: ./www.opendental.com/manual/superfamily.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Super Family</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('superfamily','family','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/superfamily.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/superfamily.html" >v24.2</option><option value="https://www.opendental.com/manual241/superfamily.html" >v24.1</option><option value="https://www.opendental.com/manual233/superfamily.html" >v23.3</option><option value="https://www.opendental.com/manual232/superfamily.html" >v23.2</option><option value="https://www.opendental.com/manual231/superfamily.html" >v23.1</option><option value="https://www.opendental.com/manual224/superfamily.html" >v22.4</option><option value="https://www.opendental.com/manual223/superfamily.html" >v22.3</option><option value="https://www.opendental.com/manual222/superfamily.html" >v22.2</option><option value="https://www.opendental.com/manual221/superfamily.html" >v22.1</option><option value="https://www.opendental.com/manual214/superfamily.html" >v21.4</option><option value="https://www.opendental.com/manual213/superfamily.html" >v21.3</option><option value="https://www.opendental.com/manual212/superfamily.html" >v21.2</option><option value="https://www.opendental.com/manual211/superfamily.html" >v21.1</option><option value="https://www.opendental.com/manual205/superfamily.html" >v20.5</option><option value="https://www.opendental.com/manual204/superfamily.html" >v20.4</option><option value="https://www.opendental.com/manual203/superfamily.html" >v20.3</option><option value="https://www.opendental.com/manual202/superfamily.html" >v20.2</option><option value="https://www.opendental.com/manual201/superfamily.html" >v20.1</option><option value="https://www.opendental.com/manual194/superfamily.html" >v19.4</option><option value="https://www.opendental.com/manual193/superfamily.html" >v19.3</option><option value="https://www.opendental.com/manual192/superfamily.html" >v19.2</option><option value="https://www.opendental.com/manual191/superfamily.html" >v19.1</option><option value="https://www.opendental.com/manual184/superfamily.html" >v18.4</option><option value="https://www.opendental.com/manual183/superfamily.html" >v18.3</option><option value="https://www.opendental.com/manual182/superfamily.html" >v18.2</option><option value="https://www.opendental.com/manual181/superfamily.html" >v18.1</option><option value="https://www.opendental.com/manual174/superfamily.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Super Family</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="family.html">Family Module</a>, super families can be used to group patients that are related in some way. </p>
+<img src="images/superfamily.png" width="915" height="258"/><p class="MarginBottomZero">Super Families can be useful for various reasons, for example:  </p>
+<ul class="MarginBottomGap">
+<li>Patients in a particular care facility (e.g., nursing home or retirement community). </li>
+<li>A split family due to divorce. </li>
+<li>Members of an athletic team getting mouthguards.</li>
+</ul>
+<p>The guarantor of the first family added to a Super Family is considered the super head. This family is listed first in the Family Module, Super Family grid in bold red.</p>
+<p class="MarginBottomZero">Tips: </p>
+<ul class="MarginBottomGap">
+<li>To quickly switch between families or patients, click on a name.</li>
+<li>The sort order of families is determined by the <i>Super family sorting strategy</i> preference. Inactive patients automatically sort to the bottom.</li>
+<li>If a family's guarantor is included in super family billing, an X shows in the Stmt column.</li>
+<li>To add the name of the super head to the Patient Information area, add <i>Super Head</i> to Fields Showing in <a href="displayfields.html">Display Fields</a>, PatientInformation.</li>
+<li>To add additional fields to the Super Family grid, see Display Fields, SuperFamily Grid Columns.</li>
+</ul>
+<h2>Turn on Super Families</h2>
+<p>To use this feature, enable Super Families in <a href="showfeatures.html">Show Features</a>.</p>
+<p class="MarginBottomZero">Once enabled, the following is available: </p>
+<ul class="MarginBottomGap">
+<li>Family Module toolbar, Super Family buttons (Add, Remove, Disband).</li>
+<li><a href="patientedit.html">Edit Patient Information</a>, Included in Super Family Billing checkbox.</li>
+<li><a href="statementwindow.html">Statement Window</a>, Send to Super Family checkbox.</li>
+<li><a href="billing.html">Billing</a>, Group by Super Family checkbox.</li>
+</ul>
+<p class="MarginBottomZero">Review and set default options in <a href="preferences.html">Preferences</a>: </p>
+<ul class="MarginBottomGap">
+<li><i>Super family sorting strategy</i>.</li>
+<li><i>Allow syncing patient information to all super family members</i>.</li>
+<li><i>Copy the super guarantor's primary insurance to all new super family members</i>.</li>
+<li><i>New patient clones use super family instead of regular family</i>.</li>
+</ul>
+<h2>Create a Super Family</h2>
+<p>To create a super family, first add the super head, then add other families.</p>
+<p class="MarginBottomZero">Create the Super Family: </p>
+<ol class="MarginBottomGap">
+<li>Select the patient (guarantor) who is the super head.</li>
+<li>In the Family Module toolbar, click <b>Super Family: Add</b>.  <ul>
+<li>When first clicked, all family members of the super head list in a new Super Family section (in bold red).</li>
+</ul>
+</li>
+</ol>
+<p class="MarginBottomZero">Add family members to the Super Family: </p>
+<ol class="MarginBottomGap">
+<li>Click <b>Super Family: Add</b>. The Select Patient window opens. </li>
+<li>Select the patient. </li>
+<li>If the <i>Copy the super guarantor's primary insurance to all new super family members</i> preference is enabled, a message shows.  <ul>
+<li>Click Yes to copy the super head's primary insurance plan to the each patient in the new family. For each copied plan the following occurs: <ul>
+<li>The patient's Medicaid ID is used as the Subscriber ID. If there is no Medicaid ID entered, a prompt to enter the subscriber ID on the <a href="insplan.html">Insurance Plan</a> displays.</li>
+<li>The default Relationship to Subscriber is set to <i>Self</i>.</li>
+<li>If the patient has no other insurance, the plan is added as the primary insurance (order = 1). If other plans are entered, the plan is given then next available order number (order = 2, 3, etc).</li>
+</ul>
+</li>
+<li>Click No to add the family without copying insurance plans.</li>
+</ul>
+</li>
+<li>The patient is added to the super family.</li>
+</ol>
+<h2>Super Families in the Account Module</h2>
+<p>To see transactions for all families in a Super Family, in the Account Module, check <b>Show SuperFamily</b> below the Patients. </p>
+<img src="images/superFamilyAccount.png" width="178" height="169"/><p>The Patients area is relabeled <i>SuperFamily</i> and all members of the Super Family are listed. The Super Family Head is at the top of the list in red. Other families are listed in black. All individual members within a family are listed below the family guarantor. The Patient Account grid displays all transactions for the selected family.</p>
+<h2>Super Family Statements / Invoices</h2>
+<p>Statements and invoices can be sent to each family guarantor, or create super statements or invoices that are addressed to the super head, include account activity for all patients in the super family, and are grouped by the family guarantor.</p>
+<p><div class="Note">Note:  To be included in a super statement or invoice, each guarantor of a family must have <i>Included in Super Family Billing</i> checked on the Edit Patient Information window. </div>
+</p>
+<p class="MarginBottomZero">Create a single super statement: </p>
+<ol class="MarginBottomGap">
+<li>Select any patient in the Super Family.</li>
+<li>From the <a href="account.html">Account Module</a>, click the Statement dropdown, <b>More Options</b>. See <a href="statementwindow.html">Statement Window</a>.</li>
+<li>Check <b>Send to Super Family</b>.</li>
+<li>Select other options as needed.</li>
+<li>Click <b>Print</b>, <b>Email</b> or <b>Save</b> to generate.</li>
+</ol>
+<p class="MarginBottomZero">Create a super statement using the billing list: </p>
+<ol class="MarginBottomGap">
+<li>In the <a href="manage.html">Manage Module</a>, click <b>Billing</b>. See <a href="billing.html">Billing</a>.</li>
+<li>Check the <b>Group by Super Family</b> box.</li>
+<li>Click <b>Create List</b>. Only the super head have a statement generated.</li>
+<li>Click <b>Print</b>, <b>Email</b> or <b>Save</b> to generate.</li>
+</ol>
+<p class="MarginBottomZero">Create a super invoice: </p>
+<ol class="MarginBottomGap">
+<li>Select any patient in the Super Family.</li>
+<li>From the Account Module, click the Statement dropdown, <b>Invoice</b>. See <a href="invoice.html">Invoice</a>.</li>
+<li>Select the procedures, payment plan charges due, and adjustments.</li>
+<li>Keep <b>Send to Super Family</b> checked. It is checked by default.</li>
+<li>Select other options as needed.</li>
+<li>Click <b>Print</b>, <b>Email</b> or <b>Save</b> to generate.</li>
+</ol>
+<p>All patients included in a super statement or invoice have a statement entry added in their patient account grid.</p>
+<h2>Remove a Patient/Family</h2>
+<p>To remove a patient/family from a Super Family, click on their name, then click <b>Remove</b>. The screen switches to the removed guarantor's record. Any super statements generated for patients in the removed super family no longer shows in their patient account ledger.</p>
+<h2>Disband a Super Family</h2>
+<p>Disbanding a Super Family removes the relationship between all members of the Super Family. A confirmation message shows to verify the removal. Any super statements generated for disbanded family members no longer shows in their patient account ledger.</p>
+<h2>Turn off Super Families</h2>
+<p>If Super Families are turned off in Show Features, but patients are left in a super family, there is no way to disband them. Only turn off Super Families when all Super Families have been disbanded.</p>
+</div>
+</div>
+</body>
+</html>```

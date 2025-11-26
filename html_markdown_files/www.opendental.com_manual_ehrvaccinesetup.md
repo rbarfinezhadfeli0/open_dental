@@ -1,0 +1,55 @@
+# File: ./www.opendental.com/manual/ehrvaccinesetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - EHR Vaccine Setup</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('ehrvaccinesetup','ehrsetupwindow','+chart','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/ehrvaccinesetup.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/ehrvaccinesetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/ehrvaccinesetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/ehrvaccinesetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/ehrvaccinesetup.html" >v23.2</option><option value="https://www.opendental.com/manual231/ehrvaccinesetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/ehrvaccinesetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/ehrvaccinesetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/ehrvaccinesetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/ehrvaccinesetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/ehrvaccinesetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/ehrvaccinesetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/ehrvaccinesetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/ehrvaccinesetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/ehrvaccinesetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/ehrvaccinesetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/ehrvaccinesetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/ehrvaccinesetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/ehrvaccinesetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/ehrvaccinesetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/ehrvaccinesetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/ehrvaccinesetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/ehrvaccinesetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/ehrvaccinesetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/ehrvaccinesetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/ehrvaccinesetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/ehrvaccinesetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/ehrvaccinesetup.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>EHR Vaccine Setup</p></div>
+<div class="GeneralPageContent">
+<p>In <a href="ehrsetupwindow.html">EHR</a>, click Vaccine Def.</p>
+<img src="images/vaccinedef.gif" width="335" height="241"/><p><a href="ehrvaccine.html">EHR Vaccine Data</a> must be defined before vaccines can be entered for patients.</p>
+<div class="Note">Note: Before vaccines can be defined, you must import CVX codes (see <a href="codesystemimport.html">Importing Code Systems</a>) and set up <a href="ehrvaccinedrugman.html">EHR Vaccine Drug Manufacturers</a>.</div>
+<br/><br/><p>Click Add, or double click an existing vaccine to edit.</p>
+<img src="images/vaccinedefEdit.gif" width="386" height="224"/><p class="MarginBottomZero">Enter the vaccine information.  </p>
+<ol class="MarginBottomGap">
+<li>Click <b>[...]</b> to select a CVX code.</li>
+<li>Enter the <b>Vaccine Name</b>.</li>
+<li>Click the drop down arrow to select the <a href="ehrvaccinedrugman.html">EHR Vaccine Drug Manufacturers</a>.</li>
+<li>Click OK to save.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>```

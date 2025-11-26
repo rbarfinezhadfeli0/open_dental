@@ -1,0 +1,57 @@
+# File: ./www.opendental.com/site/0_statement.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Statements</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('0_statement','0_account','0_modules','quickmanual','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Statements</p></div>
+		<div class="GeneralPageContent">
+<p>Statements for an individual patient or family can be generated from the <a href="0_account.html">Account Module</a>. Batch statements can be generated from the <a href="0_manage.html">Manage Module</a>, <a href="0_billing.html">Billing</a> tool.</p>
+<p>In the Account Module, click Statement.</p>
+<img src="images/statementPP.png" width="763" height="896"/><p>Statements use a customizable <a href="0_sheets.html">Sheets</a> layout. Statements can be printed, emailed, or sent electronically.</p>
+<h2>Generating Statements from the Account</h2><p>In the Account Module toolbar, click Statement, More Options.</p>
+<img src="images/statementOptions.png" width="722" height="588"/><p>Different statement types can be quickly generated from a patient's account. This can be for a specific patient or the entire family.</p>
+<p class="MarginBottomZero">You can choose from preset options or choose to customize a statement before generating. Preset options include: </p>
+<ul class="MarginBottomGap">
+<li><b>Statement</b>: Generate a statement using the default <a href="0_billing.html">Billing</a> options.</li>
+<li><b>Walkout</b>: Generate a statement that includes procedures, payments, etc. for the current day only. Useful to give patients after an appointment. </li>
+<li><b>Email</b>: Generate a PDF statement attached to an email. Statements can be sent securely when using the <a href="secureemail.html">Secure Email</a> eService.</li>
+<li><b>Invoice</b>: Generate a statement with a unique invoice number for selected production (e.g., procedures, adjustments, etc.) or the current day's procedures. Helpful to show total charges billed without payment information.</li>
+<li><b>Limited</b>: Generate a statement for specific transactions or procedures.</li>
+</ul>
+		</div>
+	</div>
+</body>
+</html>```

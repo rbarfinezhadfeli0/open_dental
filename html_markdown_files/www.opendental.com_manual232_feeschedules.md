@@ -1,0 +1,95 @@
+# File: ./www.opendental.com/manual232/feeschedules.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Fee Schedules</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('feeschedules','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/feeschedules.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/feeschedules.html" >v24.2</option><option value="https://www.opendental.com/manual241/feeschedules.html" >v24.1</option><option value="https://www.opendental.com/manual233/feeschedules.html" >v23.3</option><option value="https://www.opendental.com/manual232/feeschedules.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/feeschedules.html" >v23.1</option><option value="https://www.opendental.com/manual224/feeschedules.html" >v22.4</option><option value="https://www.opendental.com/manual223/feeschedules.html" >v22.3</option><option value="https://www.opendental.com/manual222/feeschedules.html" >v22.2</option><option value="https://www.opendental.com/manual221/feeschedules.html" >v22.1</option><option value="https://www.opendental.com/manual214/feeschedules.html" >v21.4</option><option value="https://www.opendental.com/manual213/feeschedules.html" >v21.3</option><option value="https://www.opendental.com/manual212/feeschedules.html" >v21.2</option><option value="https://www.opendental.com/manual211/feeschedules.html" >v21.1</option><option value="https://www.opendental.com/manual205/feeschedules.html" >v20.5</option><option value="https://www.opendental.com/manual204/feeschedules.html" >v20.4</option><option value="https://www.opendental.com/manual203/feeschedules.html" >v20.3</option><option value="https://www.opendental.com/manual202/feeschedules.html" >v20.2</option><option value="https://www.opendental.com/manual201/feeschedules.html" >v20.1</option><option value="https://www.opendental.com/manual194/feeschedules.html" >v19.4</option><option value="https://www.opendental.com/manual193/feeschedules.html" >v19.3</option><option value="https://www.opendental.com/manual192/feeschedules.html" >v19.2</option><option value="https://www.opendental.com/manual191/feeschedules.html" >v19.1</option><option value="https://www.opendental.com/manual184/feeschedules.html" >v18.4</option><option value="https://www.opendental.com/manual183/feeschedules.html" >v18.3</option><option value="https://www.opendental.com/manual182/feeschedules.html" >v18.2</option><option value="https://www.opendental.com/manual181/feeschedules.html" >v18.1</option><option value="https://www.opendental.com/manual174/feeschedules.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Fee Schedules</p></div>
+<div class="GeneralPageContent">
+<p>Create different Fee Schedules in order to enter different rates for UCR fees, insurance, and more.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <b>Fee Schedules</b>.</p>
+<img src="images/feeSchedules.png" width="517" height="671"/><p class="MarginBottomZero">Alternatively: </p>
+<ul class="MarginBottomGap">
+<li>In the <a href="chart.html">Chart Module</a>, in the <a href="entertreatment.html">Enter Treatment</a> tab, click <b>Procedure List</b>. Click <b>Fee Scheds</b>.</li>
+<li>In Lists, <a href="procedurecodes.html">Procedure Codes</a>, at the bottom right, click <b>Fee Scheds</b>.</li>
+</ul>
+<p>Typically, the office creates a Fee Schedule for Usual, Customary, and Reasonable (UCR) fees and for each insurance company they are contracted with. A Fee Schedule can allow a single (global) fee per procedure, or allow provider and/or clinic-specific fees. Users must have the <i>Edit Fee Schedule </i><a href="permissions.html">Permission</a> to access the Fee Schedule window.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>See <a href="feeschedulelogic.html">Fee Schedule Logic</a> for an explanation of how a patient's Fee Schedule is determined</li>
+<li>See <a href="procedurecodes.html">Procedure Codes</a> for information on entering fees and editing procedure codes.</li>
+<li>See <a href="feescheduletools.html">Fee Tools</a> for information on copying Fee Schedules and editing fees.</li>
+<li>See <a href="reportprocedurecodes.html">Procedure Codes - Fee Schedules Report</a> to print a Fee Schedule.</li>
+<li>See <a href="providerseditwindow.html">Provider</a> to assign the default Fee Schedule to the provider. Each provider can have their own default Fee Schedule if needed.</li>
+</ul>
+<p class="MarginBottomZero">Filter or edit the Fee Schedule list: </p>
+<ul class="MarginBottomGap">
+<li><b>Type</b>: Filter the list by fee schedule type.</li>
+<li><b>Show Hidden</b>: Check to show Fee Schedules marked as hidden.</li>
+<li><b>Up/Down</b>: Reorder the Fee Schedules. Select a Fee Schedule, then click Up or Down to move it.</li>
+<li><b>Set Order</b>: Quickly move a Fee Schedule. Highlight a Fee Schedule, click Set Order, then select the spot in the list to move the Fee Schedule.</li>
+<li><b>Sort</b>: Quickly sort the Fee Schedule list alphabetically by type. All Fee Schedule types must be selected to use.</li>
+<li><b>Add</b>: Create a new Fee Schedule. Opens the Edit Fee Schedule window below.</li>
+<li><b>Clean Up Allowed</b>: This button is only visible to users with the <a href="permissionssecurityadmin.html">"Security Admin" Permission</a>. Use it to delete out-of-network Fee Schedules that are not being used or are attached to hidden insurance plans.</li>
+<li><b>Hide Unused</b>: This button is only visible to users with the <i>Security Admin</i> Permission. Hide Fee Schedules are that not in use. See below for details. </li>
+<li><b>Go </b>(Check Ins Plan Fee Schedules): This tool allows a user to check that insurance plans have the correct Fee Schedules attached or reassign Fee Schedules for multiple insurance plans at once. See <a href="feeschedulecheckfees.html">Check Ins Plan Fees</a>.</li>
+</ul>
+<h2>Fee Schedule Edit</h2>
+<p>Click <b>Add</b> to create a new Fee Schedule or double-click an existing Fee Schedule to edit.</p>
+<img src="images/feeScheduleEdit.png" width="503" height="241"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Description</b>: Enter the name of the Fee Schedule.</li>
+<li><b>Type</b>: Select the Fee Schedule type. See <a href="insplantypes.html">Insurance Plan Types</a> for more examples of when to use each type. <ul>
+<li><b>Normal</b>: In network Fee Schedules. These types of fees schedules are options in the Fee Schedule dropdown on the <a href="insplan.html">Insurance Plan</a>.</li>
+<li><b>CoPay</b>: A set Fee Schedule the patient is responsible for per procedure. Copay Fee Schedules can work in conjunction with percentage-based plans. To determine how blank entries in a copay Fee Schedule are treated, see <i>Copay fee schedules treat blank entries as zero</i> in <a href="preferences.html">Preferences</a>.</li>
+<li><b>Out of Network</b>: A Fee Schedule for fees allowed by insurance, even if the office is not contractually obliged to follow them. These types of Fee Schedules are options for <i>Carrier Allowed Amounts</i> on the Edit Insurance Plan window. When computing estimates, all percentages are based on this out-of-network amount instead of on the procedure fee. Blank amounts are ignored and do not change the estimates. But out of network amounts of zero result in an estimate of zero. Out-of-network Fee Schedule entry can be automated using the Blue Book feature.</li>
+<li><b>FixedBenefit</b>: A Fee Schedule from insurance where they pay a fixed amount for each procedure code. This Fee Schedule is an option for <a href="planppofixed.html">PPO Fixed Benefit Insurance Plan</a> only. To determine how blank entries in a fixed benefit Fee Schedule are treated, see <i>Fixed benefit fee schedules treat blank entries as zero</i> in Preferences.</li>
+<li><b>ManualBlueBook</b>: Use when Blue Book is enabled. These are the known allowed amounts for an out-of-network insurance plan. See <a href="bluebooksetup.html">Insurance Blue Book Setup</a>.</li>
+</ul>
+</li>
+<li><b>Hidden</b>: Hide the Fee Schedule. Users are prompted if attempting to hide a Fee Schedule that is in use. Insurance plans that have a hidden Fee Schedule attached act as though no Fee Schedule is attached instead. </li>
+<li><b>Use Global Fees</b>: Set whether the Fee Schedule only allows a single (global) fee per procedure, or allow <a href="procedurefeeoverrides.html">Fee Override for Provider or Clinic</a>. <ul>
+<li>Checked: Only allow a single fee per procedure.</li>
+<li>Unchecked: Allow provider and/or clinic specific fees per procedure. This box can only be changed when the logged-on user has the <i>Provider Fee Edit</i> permission and, if Clinics is turned on, Headquarters is selected in the main menu.</li>
+</ul>
+</li>
+</ul>
+<h2>Hide Unused</h2>
+<p>This tool allows users to mark any unused Fee Schedules as hidden. </p>
+<p>Before running the tool, the user is alerted that a backup of the database will be made. This may take a while.<br/><img src="images/feeScheduleHideUnused.png" width="420" height="166" class="ImageInParagraph"/><br/> Click <b>OK</b>. Any Fee Schedules not used by insurance plans, patients, providers, or discount plans are hidden. </p>
+</div>
+</div>
+</body>
+</html>```

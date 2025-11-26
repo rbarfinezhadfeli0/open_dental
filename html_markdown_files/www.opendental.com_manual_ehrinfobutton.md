@@ -1,0 +1,69 @@
+# File: ./www.opendental.com/manual/ehrinfobutton.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - EHR InfoButton</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('ehrinfobutton','ehrdashboard1','+chartToolbar','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/ehrinfobutton.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/ehrinfobutton.html" >v24.2</option><option value="https://www.opendental.com/manual241/ehrinfobutton.html" >v24.1</option><option value="https://www.opendental.com/manual233/ehrinfobutton.html" >v23.3</option><option value="https://www.opendental.com/manual232/ehrinfobutton.html" >v23.2</option><option value="https://www.opendental.com/manual231/ehrinfobutton.html" >v23.1</option><option value="https://www.opendental.com/manual224/ehrinfobutton.html" >v22.4</option><option value="https://www.opendental.com/manual223/ehrinfobutton.html" >v22.3</option><option value="https://www.opendental.com/manual222/ehrinfobutton.html" >v22.2</option><option value="https://www.opendental.com/manual221/ehrinfobutton.html" >v22.1</option><option value="https://www.opendental.com/manual214/ehrinfobutton.html" >v21.4</option><option value="https://www.opendental.com/manual213/ehrinfobutton.html" >v21.3</option><option value="https://www.opendental.com/manual212/ehrinfobutton.html" >v21.2</option><option value="https://www.opendental.com/manual211/ehrinfobutton.html" >v21.1</option><option value="https://www.opendental.com/manual205/ehrinfobutton.html" >v20.5</option><option value="https://www.opendental.com/manual204/ehrinfobutton.html" >v20.4</option><option value="https://www.opendental.com/manual203/ehrinfobutton.html" >v20.3</option><option value="https://www.opendental.com/manual202/ehrinfobutton.html" >v20.2</option><option value="https://www.opendental.com/manual201/ehrinfobutton.html" >v20.1</option><option value="https://www.opendental.com/manual194/ehrinfobutton.html" >v19.4</option><option value="https://www.opendental.com/manual193/ehrinfobutton.html" >v19.3</option><option value="https://www.opendental.com/manual192/ehrinfobutton.html" >v19.2</option><option value="https://www.opendental.com/manual191/ehrinfobutton.html" >v19.1</option><option value="https://www.opendental.com/manual184/ehrinfobutton.html" >v18.4</option><option value="https://www.opendental.com/manual183/ehrinfobutton.html" >v18.3</option><option value="https://www.opendental.com/manual182/ehrinfobutton.html" >v18.2</option><option value="https://www.opendental.com/manual181/ehrinfobutton.html" >v18.1</option><option value="https://www.opendental.com/manual174/ehrinfobutton.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>EHR InfoButton</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="ehrdashboard1.html">EHR Dashboard</a>.</p>
+<p>The Info Button  <img src="images/infobutton.gif" width="15" height="15" style="margin-bottom: 0px"/> gives a direct link to MedLine Plus where you can find additional clinical information. The Info Button only shows for users with the <i>Show i</i><a href="ehrcdspermissions.html">CDS permission</a>. </p>
+<p>Click the Info Button.</p>
+<img src="images/ehrinfoPortal.gif" width="604" height="622"/><p>This information is used to construct the message sent to MedLine Plus. Some information fields are for validation only; others are not currently used.</p>
+<p><b>Patient</b>: The patient (validation).</p>
+<p><b>Provider</b>: The patient's provider (validation).</p>
+<p><b>Administrative Gender</b>: The patient's gender (validation).</p>
+<p><b>Encounter</b>: Not currently used.</p>
+<p><b>Requestor/Recipient</b>: May affect the complexity of the information returned by MedLine Plus (for provider or patient).</p>
+<p><b>Task Code</b>: Not currently used.</p>
+<p><b>Knowledge Request Form</b>: The items entered will be sent to MedLine Plus to filter results. Only coded items will be recognized. To add an item, click Problem, RxNorm, Allergy, SNOMED CT, ICD9, ICD10, or LOINC. </p>
+<p><b>Preview Request</b>: View the message sent to MedLine Plus.</p>
+<p><b>Send</b>: Send the message and view results in MedLine Plus.</p>
+<p><b>Cancel</b>: Close the window without sending the message to MedLine Plus.</p>
+<h2>Related links</h2>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><a href="problemmaster.html">Problem List</a></li>
+<li><a href="rxnorms.html">RxNorms</a></li>
+<li><a href="allergiesmaster.html">Allergy List</a></li>
+<li><a href="snomedct.html">SNOMED CT Codes</a></li>
+<li><a href="icdcodes.html">ICD9</a></li>
+<li><a href="icdcodes.html">ICD-10 Codes</a></li>
+<li><a href="loinc.html">LOINC Codes</a></li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

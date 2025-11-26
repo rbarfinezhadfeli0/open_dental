@@ -1,0 +1,108 @@
+# File: ./www.opendental.com/manual243/kiosk.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Kiosk Manager</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('kiosk','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/kiosk.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/kiosk.html" >v24.2</option><option value="https://www.opendental.com/manual241/kiosk.html" >v24.1</option><option value="https://www.opendental.com/manual233/kiosk.html" >v23.3</option><option value="https://www.opendental.com/manual232/kiosk.html" >v23.2</option><option value="https://www.opendental.com/manual231/kiosk.html" >v23.1</option><option value="https://www.opendental.com/manual224/kiosk.html" >v22.4</option><option value="https://www.opendental.com/manual223/kiosk.html" >v22.3</option><option value="https://www.opendental.com/manual222/kiosk.html" >v22.2</option><option value="https://www.opendental.com/manual221/kiosk.html" >v22.1</option><option value="https://www.opendental.com/manual214/kiosk.html" >v21.4</option><option value="https://www.opendental.com/manual213/kiosk.html" >v21.3</option><option value="https://www.opendental.com/manual212/kiosk.html" >v21.2</option><option value="https://www.opendental.com/manual211/kiosk.html" >v21.1</option><option value="https://www.opendental.com/manual205/kiosk.html" >v20.5</option><option value="https://www.opendental.com/manual204/kiosk.html" >v20.4</option><option value="https://www.opendental.com/manual203/kiosk.html" >v20.3</option><option value="https://www.opendental.com/manual202/kiosk.html" >v20.2</option><option value="https://www.opendental.com/manual201/kiosk.html" >v20.1</option><option value="https://www.opendental.com/manual194/kiosk.html" >v19.4</option><option value="https://www.opendental.com/manual193/kiosk.html" >v19.3</option><option value="https://www.opendental.com/manual192/kiosk.html" >v19.2</option><option value="https://www.opendental.com/manual191/kiosk.html" >v19.1</option><option value="https://www.opendental.com/manual184/kiosk.html" >v18.4</option><option value="https://www.opendental.com/manual183/kiosk.html" >v18.3</option><option value="https://www.opendental.com/manual182/kiosk.html" >v18.2</option><option value="https://www.opendental.com/manual181/kiosk.html" >v18.1</option><option value="https://www.opendental.com/manual174/kiosk.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Kiosk Manager</p></div>
+<div class="GeneralPageContent">
+<p>The Kiosk Manager is used to load patient forms for the kiosk and eClipboard.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Tools, <b>Kiosk Manager</b>.</p>
+<img src="images/kioskManager.png" width="915" height="520"/><p>The <a href="kioskpatient.html">Kiosk</a> Manager displays active kiosks for the office. Kiosks can be a computer or Windows tablet, or a device running the <a href="../site/eclipboard.html">eClipboard Feature</a>. </p>
+<p class="MarginBottomZero">Use the Kiosk for patients to fill out forms electronically. </p>
+<ul class="MarginBottomGap">
+<li>Kiosk users will install Open Dental as normal on a Windows device, then open the Kiosk. </li>
+<li>eClipboard users will install eClipboard to an Android or iOS device. </li>
+</ul>
+<p><b>Clinic</b>: Select the clinic to view devices active for that location.</p>
+<p class="MarginBottomZero"><b>Active Kiosk</b>: Displays active kiosks and eClipboard devices. </p>
+<ul class="MarginBottomGap">
+<li>Device Name: The name of the connected device.</li>
+<li>Session Name: The type of session. Either eClipboard or the device name for Kiosk.</li>
+<li>Device State: Displays the current page loaded on the device.</li>
+<li>Patient: The patient currently using the kiosk, if any.</li>
+<li>Clinic: The associated clinic.</li>
+<li>Action: Click <b>Clear</b> to clear the patient from the device. Click <b>Load</b> to load forms to that device.</li>
+<li>Delete: Remove the device from the list. </li>
+</ul>
+<p class="MarginBottomZero"><b>Patient on Device</b>: Displays the patient for the selected device. </p>
+<ul class="MarginBottomGap">
+<li><b>Forms on Device</b>: Displays forms currently loaded to the Kiosk or eClipboard device.  <ul>
+<li><b>Add or Remove Forms</b>: Opens <a href="patientform.html">Patient Forms</a> for the patient.</li>
+</ul>
+</li>
+<li><b>Treatment Plans on Device</b>: Displays treatment plans currently loaded to the eClipboard device. <ul>
+<li><b>Remove Treatment Plan</b>: Remove the treatment plan from the device.</li>
+</ul>
+</li>
+</ul>
+<p><b>Send eClipboard BYOD Text</b>: Send a text message to the patient with a link to BYOD. See <a href="eclipboardsetup.html">eClipboard Setup</a> and <a href="byodsees.html">BYOD: What Patient Sees</a>.</p>
+<p class="MarginBottomZero"><b>Password</b>: When using Kiosk on a Windows device, create a password needed to close the Kiosk window. To close the Kiosk, there is a hidden Close button in the lower right of the window. Click in the area to close or prompt for the password.<br/><img src="images/kioskPassword.gif" width="465" height="152" class="ImageInParagraph"/></p>
+<ul class="MarginBottomGap">
+<li>If the Kiosk was launched from the Main Menu, it will also cause Open Dental to close. </li>
+<li>If the Kiosk was launched from Patient Forms, it will not close Open Dental. </li>
+</ul>
+<h2>Workflow</h2>
+<p>When using Kiosk, there are two options for launching forms (such as Consent Forms, Health History, etc.)</p>
+<p><div class="Note">Note: Consent forms must be enabled from <a href="patientform.html">Patient Forms</a> Setup Options to show in the list.</div>
+</p>
+<p class="MarginBottomZero">Option 1: Load forms to a different device. </p>
+<ol class="MarginBottomGap">
+<li>Select the patient to load forms for.</li>
+<li>Open the Kiosk Manager. </li>
+<li>Highlight the device the patient will use. </li>
+<li>Click <b>Add or Remove</b> forms.</li>
+<li>In the Patient Forms For window, click <b>Add</b> then highlight the needed forms. </li>
+<li>Click <b>To Kiosk</b>, then close. The forms will list in the Kiosk Manager.</li>
+<li>Click <b>Load</b> for the device. Forms will automatically list on the device. </li>
+</ol>
+<p class="MarginBottomZero">Option 2: Load forms to the current device. </p>
+<ol class="MarginBottomGap">
+<li>Select the patient, then click <b>Forms</b>.</li>
+<li>Click Add then highlight the needed forms. </li>
+<li>Click <b>To Kiosk</b>.</li>
+<li>In the Patient Forms For window, click <b>Kiosk</b>. The kiosk will launch with the selected forms.</li>
+</ol>
+<h2>Software and Hardware</h2>
+<p class="MarginBottomZero">Requirements vary on the type of kiosk: </p>
+<ul class="MarginBottomGap">
+<li>To have patients fill out forms online, see <a href="../site/webforms.html">Web Forms Feature</a>.</li>
+<li>For devices running Windows, see <a href="../site/computerrequirements.html">Computer Requirements</a>. </li>
+<li>For devices running eClipboard, see <a href="../site/tablet.html">Tablet</a>.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

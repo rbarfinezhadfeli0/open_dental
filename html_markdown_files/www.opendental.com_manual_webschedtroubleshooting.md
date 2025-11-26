@@ -1,0 +1,58 @@
+# File: ./www.opendental.com/manual/webschedtroubleshooting.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Web Sched Troubleshooting</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('webschedtroubleshooting','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/webschedtroubleshooting.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/webschedtroubleshooting.html" >v24.2</option><option value="https://www.opendental.com/manual241/webschedtroubleshooting.html" >v24.1</option><option value="https://www.opendental.com/manual233/webschedtroubleshooting.html" >v23.3</option><option value="https://www.opendental.com/manual232/webschedtroubleshooting.html" >v23.2</option><option value="https://www.opendental.com/manual231/webschedtroubleshooting.html" >v23.1</option><option value="https://www.opendental.com/manual224/webschedtroubleshooting.html" >v22.4</option><option value="https://www.opendental.com/manual223/webschedtroubleshooting.html" >v22.3</option><option value="https://www.opendental.com/manual222/webschedtroubleshooting.html" >v22.2</option><option value="https://www.opendental.com/manual221/webschedtroubleshooting.html" >v22.1</option><option value="https://www.opendental.com/manual214/webschedtroubleshooting.html" >v21.4</option><option value="https://www.opendental.com/manual213/webschedtroubleshooting.html" >v21.3</option><option value="https://www.opendental.com/manual212/webschedtroubleshooting.html" >v21.2</option><option value="https://www.opendental.com/manual211/webschedtroubleshooting.html" >v21.1</option><option value="https://www.opendental.com/manual205/webschedtroubleshooting.html" >v20.5</option><option value="https://www.opendental.com/manual204/webschedtroubleshooting.html" >v20.4</option><option value="https://www.opendental.com/manual203/webschedtroubleshooting.html" >v20.3</option><option value="https://www.opendental.com/manual202/webschedtroubleshooting.html" >v20.2</option><option value="https://www.opendental.com/manual201/webschedtroubleshooting.html" >v20.1</option><option value="https://www.opendental.com/manual194/webschedtroubleshooting.html" >v19.4</option><option value="https://www.opendental.com/manual193/webschedtroubleshooting.html" >v19.3</option><option value="https://www.opendental.com/manual192/webschedtroubleshooting.html" >v19.2</option><option value="https://www.opendental.com/manual191/webschedtroubleshooting.html" >v19.1</option><option value="https://www.opendental.com/manual184/webschedtroubleshooting.html" >v18.4</option><option value="https://www.opendental.com/manual183/webschedtroubleshooting.html" >v18.3</option><option value="https://www.opendental.com/manual182/webschedtroubleshooting.html" >v18.2</option><option value="https://www.opendental.com/manual181/webschedtroubleshooting.html" >v18.1</option><option value="https://www.opendental.com/manual174/webschedtroubleshooting.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Web Sched Troubleshooting</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="eservicessetup.html">eServices Setup</a>.</p>
+<p>Below are some troubleshooting steps if you experience issues with Web Sched Recall, Web Sched New Patient, or Web Sched ASAP.</p>
+<p><b>Problem: There are no available time slots for patients to choose from.</b></p>
+<p class="MarginBottomZero">Check all setup options to make sure information is complete and accurate. </p>
+<ul class="MarginBottomGap">
+<li>Does the provider's schedule extend far enough into the future? <a href="schedule.html">Schedule Setup</a></li>
+<li>Are operatories correctly marked for Web Sched? <a href="operatories.html">Operatories</a></li>
+<li>In the Provider Setup, for each provider make sure <i>Not a Person</i> is unchecked. <a href="providerseditwindow.html">Provider</a></li>
+</ul>
+<p><b>Problem: Why do I see 'Error Retrieving URLs' in the Hosted URL title bar?</b></p>
+<p>This message shows when you haven't yet enabled Web Sched New Patient, or when there are connection issues with the <a href="econnector.html">eConnector</a>.</p>
+<p><p><b>Problem: When attempting to schedule an appointment via Web Sched, the patient recieves the error 'We are missing an email address or wireless number for your account.'</b></p>
+</p>
+<p>Two-factor authentication is enabled and an email address is not on file for the patient. Alternatively, email may not be set up in Open Dental for the practice (or clinic if using clinics).</p>
+</div>
+</div>
+</body>
+</html>```

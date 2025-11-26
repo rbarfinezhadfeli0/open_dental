@@ -1,0 +1,55 @@
+# File: ./www.opendental.com/manual232/recurringchargeshistory.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Recurring Charge History</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('recurringchargeshistory','recurringcharges','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/recurringchargeshistory.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/recurringchargeshistory.html" >v24.2</option><option value="https://www.opendental.com/manual241/recurringchargeshistory.html" >v24.1</option><option value="https://www.opendental.com/manual233/recurringchargeshistory.html" >v23.3</option><option value="https://www.opendental.com/manual232/recurringchargeshistory.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/recurringchargeshistory.html" >v23.1</option><option value="https://www.opendental.com/manual224/recurringchargeshistory.html" >v22.4</option><option value="https://www.opendental.com/manual223/recurringchargeshistory.html" >v22.3</option><option value="https://www.opendental.com/manual222/recurringchargeshistory.html" >v22.2</option><option value="https://www.opendental.com/manual221/recurringchargeshistory.html" >v22.1</option><option value="https://www.opendental.com/manual214/recurringchargeshistory.html" >v21.4</option><option value="https://www.opendental.com/manual213/recurringchargeshistory.html" >v21.3</option><option value="https://www.opendental.com/manual212/recurringchargeshistory.html" >v21.2</option><option value="https://www.opendental.com/manual211/recurringchargeshistory.html" >v21.1</option><option value="https://www.opendental.com/manual205/recurringchargeshistory.html" >v20.5</option><option value="https://www.opendental.com/manual204/recurringchargeshistory.html" >v20.4</option><option value="https://www.opendental.com/manual203/recurringchargeshistory.html" >v20.3</option><option value="https://www.opendental.com/manual202/recurringchargeshistory.html" >v20.2</option><option value="https://www.opendental.com/manual201/recurringchargeshistory.html" >v20.1</option><option value="https://www.opendental.com/manual194/recurringchargeshistory.html" >v19.4</option><option value="https://www.opendental.com/manual193/recurringchargeshistory.html" >v19.3</option><option value="https://www.opendental.com/manual192/recurringchargeshistory.html" >v19.2</option><option value="https://www.opendental.com/manual191/recurringchargeshistory.html" >v19.1</option><option value="https://www.opendental.com/manual184/recurringchargeshistory.html" >v18.4</option><option value="https://www.opendental.com/manual183/recurringchargeshistory.html" >v18.3</option><option value="https://www.opendental.com/manual182/recurringchargeshistory.html" >v18.2</option><option value="https://www.opendental.com/manual181/recurringchargeshistory.html" >v18.1</option><option value="https://www.opendental.com/manual174/recurringchargeshistory.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Recurring Charge History</p></div>
+<div class="GeneralPageContent">
+<p>Use the recurring charge history window to view recurring charge transactions in a date range.</p>
+<p>In <a href="recurringcharges.html">CC Recurring Charges</a>, click <b>History</b>.</p>
+<img src="images/recurringChargeHistory.gif" width="915" height="325"/><p class="MarginBottomZero"> Change the <b>View</b> filter to determine which transactions display in the Recurring Charges grid.<br/><b>From/To</b>: The date range of transactions. Use the dropdown arrows to select dates or type in the From and To dates.<br/><b>Status</b>: The transaction status. Click the dropdown to change the selection. Ctrl + click to select multiple statuses at once. </p>
+<ul>
+<li>Pending: Transactions currently in process by the service or another user.</li>
+<li>Successful: Completed transactions.</li>
+<li>Failed: Declined transactions.</li>
+</ul>
+<p class="MarginBottomGap"><b>Clinic</b>: Filter the list by clinic assigned to the patient or clinic assigned to the payment plan (if the payment plan is set up for recurring charges). Use the dropdown to change the clinic. Ctrl + click to select multiple clinics at once.<br/><b>Automated</b>: Filter the list by transactions completed through the service (Automated) and/or recurring charges tool (Manual). Click the dropdown to change.<br/><b>Refresh</b>: Click to update the Recurring Charges list to reflect the view criteria. </p>
+<p>The <b>Recurring Charges</b> grid lists patients with recurring charges based on the View criteria. Right-click a row to go to that patient's account or to remove a pending charge and put back into the Credit Cards Recurring Charge list. Only remove a pending charge if you know it is not being processed by the automated service or another user. This window can be left open to make it easy to view each patient's account.<br/><b>PatNum</b>: Patient account number.<br/><b>Name</b>: Patient's last name, first name.<br/><b>Clinic</b>: Clinic assigned to patient or payment plan.<br/><b>DateCharge</b>: Date and time the recurring charge was processed.<br/><b>ChargeStatus</b>: Status of the recurring charge, pending, successful, declined, or failed.<br/><b>User</b>: The user processing or processed the recurring charges through the recurring charge tool. Column is blank when recurring charges are processed through the automated service.<br/><b>Family Bal</b>: The total remaining balance for the family after subtracting pending insurance amounts at the time the payment was processed.<br/><b>PayPlan Due</b>: Outstanding payment plan charges due (only shows if the payment plan is attached to a recurring charge).<br/><b>Total Due</b>: Total family balance and payment plan charges due at the time the recurring charge was processed.<br/><b>Repeat Amt</b>: Authorized recurring charge amount.<br/><b>Charge Amt</b>: Amount charged or the amount expected to be charged for pending transactions.</p>
+<p><b>Close</b>: Click to exit the Recurring Charge History window. </p>
+</div>
+</div>
+</body>
+</html>```

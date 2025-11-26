@@ -1,0 +1,313 @@
+# File: ./www.opendental.com/manual243/paymentplandynamic.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Payment Plan</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('paymentplandynamic','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/paymentplandynamic.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/paymentplandynamic.html" >v24.2</option><option value="https://www.opendental.com/manual241/paymentplandynamic.html" >v24.1</option><option value="https://www.opendental.com/manual233/paymentplandynamic.html" >v23.3</option><option value="https://www.opendental.com/manual232/paymentplandynamic.html" >v23.2</option><option value="https://www.opendental.com/manual231/paymentplandynamic.html" >v23.1</option><option value="https://www.opendental.com/manual224/paymentplandynamic.html" >v22.4</option><option value="https://www.opendental.com/manual223/paymentplandynamic.html" >v22.3</option><option value="https://www.opendental.com/manual222/paymentplandynamic.html" >v22.2</option><option value="https://www.opendental.com/manual221/paymentplandynamic.html" >v22.1</option><option value="https://www.opendental.com/manual214/paymentplandynamic.html" >v21.4</option><option value="https://www.opendental.com/manual213/paymentplandynamic.html" >v21.3</option><option value="https://www.opendental.com/manual212/paymentplandynamic.html" >v21.2</option><option value="https://www.opendental.com/manual211/paymentplandynamic.html" >v21.1</option><option value="https://www.opendental.com/manual205/paymentplandynamic.html" >v20.5</option><option value="https://www.opendental.com/manual204/paymentplandynamic.html" >v20.4</option><option value="https://www.opendental.com/manual203/paymentplandynamic.html" >v20.3</option><option value="https://www.opendental.com/manual202/paymentplandynamic.html" >v20.2</option><option value="https://www.opendental.com/manual201/paymentplandynamic.html" >v20.1</option><option value="https://www.opendental.com/manual194/paymentplandynamic.html" >v19.4</option><option value="https://www.opendental.com/manual193/paymentplandynamic.html" >v19.3</option><option value="https://www.opendental.com/manual192/paymentplandynamic.html" >v19.2</option><option value="https://www.opendental.com/manual191/paymentplandynamic.html" >v19.1</option><option value="https://www.opendental.com/manual184/paymentplandynamic.html" >v18.4</option><option value="https://www.opendental.com/manual183/paymentplandynamic.html" >v18.3</option><option value="https://www.opendental.com/manual182/paymentplandynamic.html" >v18.2</option><option value="https://www.opendental.com/manual181/paymentplandynamic.html" >v18.1</option><option value="https://www.opendental.com/manual174/paymentplandynamic.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Payment Plan</p></div>
+<div class="GeneralPageContent">
+<p>Payment Plans, formerly called Dynamic Payment Plans, are patient repayment agreements.</p>
+<p>In the <a href="account.html">Account Module</a> Payment Plans grid, they show with the Type <i>DPP</i>.</p>
+<img src="images/paymentPlanDynamicGrid.png" width="749" height="64"/><p><div class="Note">Note: <ul>
+<li>The grid can also include <a href="paymentplanpatient.html">Old Payment Plan</a>, <a href="installmentplan.html">Installment Plan</a> and <a href="paymentplanins.html">Insurance Payment Plans</a>.</li>
+<li>If production on a Payment Plan has been overcharged, the plan turns yellow. Run the <a href="reportdynamicpayplanovercharged.html">Payment Plans Overcharged Report</a> to find any overcharged production.</li>
+<li>Payment Plans are only functional with an Insurance Payment Plan for the same procedures if set up correctly. See <i>Setting up a Payment Plan in Conjunction with an Insurance Payment Plan</i> at the bottom of this page.</li>
+<li>The <a href="opendentalservice.html">Open Dental Service</a> is required to use Payment Plans. This service updates plans as needed daily. To set a time for Payment Plans to update, see <a href="preferences.html">Preferences</a>, <i>Pay Plan run time</i>.</li>
+<li>Automatic changes to Payment Plans caused by insurance estimate changes, procedure adjustments, etc. are not tracked in the <a href="audittrail.html">Audit Trail</a>. We suggest saving a copy (e.g., a printout or PDF) of the original Payment Plan for reference. If a <a href="definitionsimagecat.html">Definitions: Image Categories</a> is assigned for Payment Plans usage, signed payment plans are automatically saved to the Imaging Module.</li>
+</ul>
+</div>
+</p>
+<p>To create a new Payment Plan, in the Account Module, click Payment Plan, Payment Plan.</p>
+<img src="images/paymentPlanDynamic.png" width="915" height="633"/><p>Alternatively, double-click an existing Payment Plan to edit. </p>
+<p class="MarginBottomZero">Related Links: </p>
+<ul class="MarginBottomGap">
+<li><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> See our <a href="https://youtu.be/z5-eTSZkMP4">Payment Plans Webinar</a> or <a href="https://youtu.be/pyZv9SFC43Q">QuickTip: Payment Plans</a>. </li>
+<li><a href="paymentplanpayment.html">Payment to a Payment Plan</a></li>
+<li><a href="reportpaymentplan.html">Payment Plans Report</a></li>
+<li><a href="paymentplanpatientfaq.html">Payment Plan Q and A</a></li>
+</ul>
+<p>Payment Plans can be open-ended or fully locked once created. See General Setup at the bottom of this page for instructions.</p>
+<h2>Category / Patient / Guarantor </h2>
+<img src="images/paymentPlanDynamicPatientInfo.png" width="346" height="74"/><p><b>Category</b>: Assign a category to the Payment Plan (e.g., Ortho, Implant). Useful to distinguish one Payment Plan from another when families have many plans. Customize the category options in <a href="definitionspaymentplancategories.html">Definitions: Payment Plan Categories</a>.</p>
+<p><b>Patient</b>: The person who was treated. Click <b>Go To</b> to switch to their account. Patients can have multiple Payment Plans, and each plan can have a different guarantor.</p>
+<p class="MarginBottomZero"><b>Guarantor</b>: The person who makes the payments. Click <b>Go To</b> to switch to the guarantor's account. Click <b>Change</b> to choose a different guarantor for the Payment Plan. </p>
+<ul class="MarginBottomGap">
+<li>When creating a new Payment Plan, the guarantor defaults to the family guarantor. </li>
+<li>The guarantor can differ from the family guarantor and does not have to be in the patient's family.</li>
+<li>If the Payment Plan guarantor is not in the same family as the patient, PayPlan Charge Due line items are posted to the guarantor's account instead of the patient's. </li>
+</ul>
+<h2>Lock Options</h2>
+<img src="images/paymentPlanDynamicLock.png" width="173" height="30"/><p class="MarginBottomZero"><b>Permanent Lock</b>: Check to permanently lock the current terms of the plan. </p>
+<ul class="MarginBottomGap">
+<li> Prevents further changes to Pay Plan Production (e.g., adding procedures and adjustments or changing the production Amount Override) or Terms. </li>
+<li>Plans that are locked cannot be edited. A new plan must be created instead.</li>
+<li>If the preference, <i>Require full lock to save a Payment Plan if there is an APR entered</i>, is enabled, Permanent Lock must be checked when the plan has APR. </li>
+</ul>
+<p><b>Unlock</b>: Option is available when opening an existing plan and Permanent Lock is unchecked. Click to unlock the <i>Terms</i> section in order to make edits.</p>
+<h2>Terms</h2>
+<img src="images/paymentPlanDynamicTerms.png" width="368" height="332"/><p><b>Date of Agreement</b>: Defaults to today's date. Can be changed to a past date. If the <i>Allow future dated transactions</i> preference is enabled, can also be changed to a future date. </p>
+<p><b>Total Principal Amount</b>: The total amount of the Payment Plan, excluding interest. Calculated based on the attached production.</p>
+<p class="MarginBottomZero"><b>Date of First Payment</b>: Set the date of the patient's first payment is due. Used to determine the Amortization Schedule. </p>
+<ul class="MarginBottomGap">
+<li>Defaults to one month from today's date. Can be changed to any date.</li>
+<li>Used for the first periodic charge in the Amortization Schedule if there is no Down Payment amount or if the current date or a future date is entered.</li>
+</ul>
+<p class="MarginBottomZero"><b>Down Payment</b>: The amount the patient is paying upfront, before periodic charges. </p>
+<ul class="MarginBottomGap">
+<li>When the <i>Date of First Payment</i> is a past date, the Down Payment is due on the <i>Date of First Payment</i>. </li>
+<li>If the <i>Date of First Payment</i> is the current date or a future date, the Down Payment is due immediately (today). </li>
+<li>The full Down Payment amount is due, regardless of the <i>Handle Treatment Planned</i> setting.</li>
+</ul>
+<p class="MarginBottomZero"><b>APR</b>: The percentage of interest to charge on the principal balance of completed procedures. If entered, additional options are available to delay interest charges. Enter only one. If both fields are left blank, interest is applied to all Charges Due.  </p>
+<ul class="MarginBottomGap">
+<li><b>No interest for the first [ ] payments</b>: The number of payments before interest is applied.</li>
+<li><b>Interest start date</b>: The date of the first interest charge.</li>
+</ul>
+<p class="MarginBottomZero">Interest is automatically calculated using the following method: </p>
+<ol class="MarginBottomGap">
+<li>Subtracts the Down Payment from the Payment Plan balance.</li>
+<li>Calculates the number of payments, or the payment amount, based on the new balance (balance minus Down Payment).</li>
+</ol>
+<p class="MarginBottomZero">The Amortization Schedule can be based on a total number of payments or a specific payment amount. Enter only one. </p>
+<ul class="MarginBottomGap">
+<li><b>Payment Amount</b>: Enter the payment amount. Number of payments are calculated automatically.</li>
+<li><b>Number of Payments</b>: Enter the number of payments. Payment amount calculates automatically.</li>
+</ul>
+<p class="MarginBottomZero"><b>Charge Frequency</b>: Select the frequency of which periodic charges are applied to the Payment Plan. The options below are calculated based off the Date of First Payment. </p>
+<ul class="MarginBottomGap">
+<li><b>Weekly</b>: Charges are scheduled for the same day of the week as the Date of First Payment and occur every week (e.g., if the Date of First Payment falls on a Tuesday, subsequent charges are scheduled for each Tuesday).</li>
+<li><b>Every other week</b>: Charges are scheduled for the same day of the week as the Date of First Payment and occur other every week (e.g., if the Date of First Payment falls on a Tuesday, subsequent charges are scheduled for every other Tuesday).</li>
+<li><b>Specific day of the month</b>: Charges are scheduled to occur on the same week day and week number as the Date of First Payment (e.g., if the Date of First Payment falls on the second Tuesday of the month, subsequent charges are also scheduled for the second Tuesday of each month).  <ul>
+<li>If the charge would fall on the fifth or sixth week of the month, it is instead scheduled for the same week day on the fourth week of a month (e.g., if the Date of First Payment was set for the fifth Tuesday in July, charges are actually scheduled for the fourth Tuesday of each month).</li>
+</ul>
+</li>
+<li><b>Monthly</b>: Charge dates are scheduled to occur on the same date as the Date of First Payment each month. <ul>
+<li> If the day of the month from the Date of First Payment doesn't exist in a month, then the charge is scheduled for the closest available day in the month (e.g., if the Date of First Payment is January 31, for the month of April the charge is scheduled for the 30th).</li>
+</ul>
+</li>
+<li><b>Quarterly</b>: Charges are scheduled to occur on the same date as the Date of First Payment every three months.  <ul>
+<li>If the date of the month from the Date of First Payment doesn't exist in a month a quarterly payment is due, then the charge is scheduled for the closest available date in the month (e.g., if the Date of First Payment is January 31, for the month of April the charge is scheduled for the 30th).</li>
+</ul>
+</li>
+</ul>
+<p class="MarginBottomZero"><b>Handle Treatment Planned</b>: Determine whether treatment planned procedures should be included in the Amortization Schedule immediately or as the work is completed. If toggling this setting, click Create Schedule to see changes.  </p>
+<ul class="MarginBottomGap">
+<li><b>Await procedure completion</b>: Do not include treatment planned procedures in the Amortization Schedule until the work is completed. When selected, treatment planned work does not display on printed Payment Plans. The patient may need to re-sign the plan each time work is completed.</li>
+<li><b>Procedure as complete</b>: Include treatment planned procedures in the Amortization Schedule. PayPlan Production line items are added to the account once procedures are set complete. </li>
+</ul>
+<h2>Term Buttons</h2>
+<img src="images/paymentPlanDynamicTermButtons.png" width="111" height="99"/><p class="MarginBottomZero"><b>Create Schedule</b>: Create the Amortization Schedule based on the terms. A description of the terms show in the Note field. Production must be attached first.  </p>
+<ul class="MarginBottomGap">
+<li>If there is a <i>Down Payment</i> amount and the <i>Date of First Payment</i> is in the past, the Down Payment is due as of the Date of First Payment. The first charge due is scheduled based on the Charge Frequency (e.g., one month from the Down Payment). </li>
+<li>When editing the terms on existing plans, click <b>Create Schedule</b> to update the Amortization Schedule.</li>
+</ul>
+<p><b>Cancel</b>: Do not save changes made to the Terms on existing plans. Click <b>Unlock</b> to enable. Only appears for existing Payment Plans.</p>
+<p><b>Save</b>: Save changes made to the Terms on existing plans. Only appears for existing Payment Plans. Click <b>Unlock</b> to enable. </p>
+<p><b>Templates</b>: Open <a href="payplantemplates.html">Payment Plan Templates</a> to quickly set terms. </p>
+<h2>Loan Information</h2>
+<img src="images/paymentPlanDynamicCalculations.png" width="202" height="128"/><p>Once the schedule is created or, updated and saved, the calculations below are automatic.</p>
+<p><b>Total Cost of Loan</b>: Total Amount plus interest and any added charges.</p>
+<p><b>Accumulated Due</b>: The total amount that has been due up to the current date.</p>
+<p><b>Paid so far</b>: The total amount that has been paid towards the Payment Plan to date.</p>
+<p><b>Principal paid so far</b>: The total amount that has been paid towards the principal to date.</p>
+<p><b>Tx Completed Amt</b>: The total fee amount for charges that have come due.</p>
+<p><b>Total Tx Amt</b>: The total fee amount for all production that is attached to the Payment Plan. Does not display until after plan has been saved.</p>
+<h2>Charges Due Tab</h2>
+<img src="images/paymentPlanDynamicSchedule.png" width="677" height="391"/><p class="MarginBottomZero"><b>Amortization Schedule</b>: The Amortization Schedule is generated based on the Terms. Principal and interest are calculated automatically. Due dates are based on the <i>Date of First Payment</i> and selected <i>Charge Frequency</i>.<br></p>
+<ul class="MarginBottomGap">
+<li>A horizontal bold line indicates today's date and separates past items from future items.</li>
+<li>Line items in black represent charges that have been created in the database and have posted (i.e., the charge date has occured). Gray line items are projected charges that have not been created in the database or future charges that have been manually edited; this is the default for future charges. Charges are actually posted to the account using the <a href="opendentalservice.html">Open Dental Service</a> daily at the time determined in Preferences.</li>
+<li>Gray items can change if production is added or removed, or additional payments are made.</li>
+<li>Payments attached to this plan show as green credits and affect the running balance. If extra payments show here, but should not, uncheck the <i>Attached to Payment Plan</i> box on the <a href="payment.html">Payment</a> window for each payment.</li>
+</ul>
+<p><b>Current Totals</b>: Automatically calculated based on current and past charges, accumulated payments, and the running balance.</p>
+<p class="MarginBottomZero"><b>Ungrouped</b>: Determine how PayPlan Charges and payments are displayed in the Amortization Schedule.  </p>
+<ul class="MarginBottomGap">
+<li>Unchecked (default): Individual PayPlan Charges for the same date are grouped into a single line item. Payments are displayed as a single line item.</li>
+<li>Checked: Displays individual PayPlan Charges and additional details, including procedure information and notes. Charge amounts shown are based on what is attached to each production item (i.e., procedure or adjustment) for the date. Individual payment splits are listed.</li>
+</ul>
+<img src="images/dynamicPayPlanSchedUngrouped.png" width="671" height="283"/><p><b>Hide past activity</b>: When checked, only future-dated line items are shown in the Amortization Schedule and past activity is hidden. When unchecked, all activity shows. Totals are not affected by this setting. To set the default setting for the checkbox, see Preferences, <i>Payment Plans exclude past activity by default</i>.</p>
+<p><b>Add</b>: Create a new PayPlan charge. Any gray items in the Amortization Schedule may be updated (i.e., rescheduled or recalculated) to accommodate the new charge. See Edit an Existing Plan for details. </p>
+<h2>Production Tab</h2>
+<img src="images/paymentPlanDynamicProduction.png" width="677" height="151"/><p class="MarginBottomZero"><b>Attached Production</b>: Displays the procedures and adjustments attached to the payment plan. </p>
+<ul class="MarginBottomGap">
+<li><b>Date Showing</b>: The date used for PayPln:Production line items in the account. <ul>
+<li>If the preference <i>Use date of production as date showing</i> is enabled, the <i>Date Production</i> is used.</li>
+<li>If the preference <i>Use date of production as date showing</i> is disabled, the date the Payment Plan was created is used.</li>
+</ul>
+</li>
+<li><b>Date Production</b>: The procedure or adjustment date. </li>
+<li><b>Provider</b>: Provider attached to the procedure or adjustment. </li>
+<li><b>Amount</b>: Default amount charged for the attached production item.</li>
+<li><b>Amount Override</b>: Enter a new amount to override the default for the attached production item. Leave blank or enter zero to use the default amount.</li>
+<li>Production is sorted by the date added then ordered by Ortho Case procedures, completed procedures, positive adjustments, and treatment planned procedures. </li>
+</ul>
+<p><div class="Note">Note: Additional insurance payments or adjustments applied towards any of the attached production items after the plan was created automatically update future PayPlan Charges if the Amount Override is blank or <i>Permanent Lock</i> is unchecked.</div>
+</p>
+<p><b>Delete</b>: Delete the selected production item from the attached production list.</p>
+<p><b>Print</b>: Print the list of attached production (as shown), including the production total.</p>
+<p><b>Show Attached P&amp;I</b>: View PayPlan Charges and paysplits associated with the attached production.</p>
+<img src="images/dynamicPayPlanAttachedPI.png" width="671" height="301"/><p><b>Add</b>: Attach production to the Payment Plan. Opens the Select Production window.</p>
+<p></p>
+<img src="images/paymentPlanDynamicSelectProduction.png" width="582" height="459"/><p class="MarginBottomZero">Select from a list of adjustments, completed procedures, and treatment planned procedures to attach to the Payment Plan. Only positive adjustments not attached to procedures are listed. </p>
+<ul class="MarginBottomGap">
+<li><b>Amount Original</b>: Amount of the production item prior to any payments, adjustments, or insurance estimates.</li>
+<li><b>Amount End</b>: Amount owed on the production item after any payments, adjustments, and insurance estimates have been applied. </li>
+</ul>
+<p><div class="Note">Note: <ul>
+<li>Production items can only be attached to a single Payment Plan.</li>
+<li>To show automated sales tax amounts for newly treatment planned procedures, Update Fees in the <a href="treatmentplan.html">Treatment Plan Module</a>. </li>
+</ul>
+</div>
+</p>
+<h2>Saving and Additional Options</h2><img src="images/paymentPlanDynamicButtons.png" width="915" height="139"/><p><b>Signature Box</b>: If the payment plan terms have a valid <a href="electronicsignatures.html">Electronic Signatures</a>, the signature is displayed. If there is no electronic signature, this area is hidden. See <a href="paymentplanprint.html">Sign and Print Payment Plan</a> for details on signing the Payment Plan. </p>
+<p class="MarginBottomZero"><b>Note</b>: A detailed note of the terms shows for future reference. Any changes made to the terms are added to the note. Other notes can be added as needed. <a href="rightclicktextboxes.html">Right Click Text Box</a> options are available. </p>
+<ul class="MarginBottomGap">
+<li>If <i> Pay Plans use Sheets</i> is enabled in <a href="preferences.html">Preferences</a>, additional Terms and Conditions are displayed when viewing or signing the repayment agreement. Customize the <i>Payment Plan Terms and Conditions</i> in Preferences. Updating the terms also updates any replacement fields used in the default message.</li>
+</ul>
+<p><b>Delete</b>: Delete the entire plan. Also, clears any <a href="recurringchargesauthorize.html">Authorize Recurring Charges</a> attached to the plan. Payments cannot be attached.</p>
+<p class="MarginBottomZero"><b>Close Plan</b>: Click to close a Payment Plan that is no longer being paid on (i.e., paid off or patient stopped making payments). </p>
+<ul class="MarginBottomGap">
+<li>Remaining production items that did not have a posted PayPlan Charge Due are removed from the Payment Plan. The production amount is subtracted from the total principal and the PayPlan Production are removed from the account.</li>
+<li>Any <a href="hiddensplits.html">Hidden Splits</a> are transferred to the Close Out Charge. If there is income left over, it is transferred to <a href="unearnedprepayment.html">Unearned / Prepayment</a>. Use the income transfer manager to allocate the excess to other outstanding charges.</li>
+<li><a href="recurringchargesauthorize.html">Authorize Recurring Charges</a> attached to this Payment Plan are cleared.</li>
+<li>Interest charges for future-dated charges are removed. It does not affect historical charges.</li>
+</ul>
+<p class="MarginBottomZero">Printing options: The available printing option changes depending on certain factors. See <a href="paymentplanprint.html">Sign and Print Payment Plan</a> for detailed information. </p>
+<ul class="MarginBottomGap">
+<li><b>Print</b>: Only displays when electronic signatures cannot be used. Click to send the payment plan terms to the printer.</li>
+<li><b>Sign &amp; Print</b>: Only displays when electronic signatures can be used and there is no existing signature. Click to save changes and open a preview of the payment plan terms to print or sign.</li>
+<li><b>View &amp; Print</b>: Only displays when an electronic signature exists. Click to preview the payment plan terms to print or re-sign.</li>
+</ul>
+<p><b>eClipboard</b>: Send the Payment Plan to eClipboard. See <a href="eclipboardpaymentplans.html">eClipboard: Payment Plans</a>.</p>
+<p>Click <b>Save</b> to close the Payment Plan and keep changes.</p>
+<p>If changes are made to the <i>Terms</i> without clicking <i>Create Schedule</i> before clicking <i>Save</i>, <i>Sign &amp; Print</i>, <i>eClipboard</i>, or <i>GoTo</i>, the following prompt appears. Select <i>Yes</i> to save changes to the payment plan without creating a <i>Note</i>.</p>
+<img src="images/paymentPlanDynamicCreateSchedulePrompt.png"/>
+<h2>General Setup</h2>
+<p class="MarginBottomZero">To set up a Payment Plan, follow the steps below:  </p>
+<ol class="MarginBottomGap">
+<li>Verify the <i>Date of Agreement</i>. This is generally today, but a past date can be entered. </li>
+<li>Optional: Enter the <i>Down Payment</i>. The down payment is due today when the schedule is created, regardless of the <i>Date of First Payment </i>or <i>Date of Agreement</i>.</li>
+<li>Attach Production. Total Principal Amount calculates automatically. <ol>
+<li>Click the <b>Production</b> tab.</li>
+<li>Click <b>Add</b>.</li>
+<li>Select the procedure(s) or adjustment(s) to be paid by the Payment Plan. <ul>
+<li>Unattached negative adjustments cannot be attached to a Payment Plan. Attach the <a href="adjustments.html">Adjustment</a> to a procedure being paid by the Payment Plan instead. </li>
+</ul>
+</li>
+<li>Click <b>OK</b>.</li>
+<li>Repeat the steps to add any additional procedures.</li>
+</ol>
+</li>
+<li>Optional: Input the <i>APR</i> and interest terms.</li>
+<li>Input the <i>Number of Payments</i> or <i>Payment Amt</i>. </li>
+<li>Select the <b>Charge Frequency</b>.</li>
+<li>If treatment planned procedures are included in <i>Attached Production</i>, select an option for <b>Handle Treatment Planned</b>.</li>
+<li>Click <b>Create Schedule</b> to create the Amortization Schedule. </li>
+<li>Verify the Payment Plan information.</li>
+<li>Print or send the Payment Plan to the eClipboard for patient signature. </li>
+<li>Optional: To prevent changes (e.g., adding additional production, changing repayment terms, etc) to the Payment Plan once it is saved, enable <b>Permanent Lock</b>. Required for Payment Plans with APR when the preference, <i>Require full lock to save a Payment Plan if there is an APR entered</i>, is enabled.</li>
+</ol>
+<h2>Edit an Existing Plan</h2>
+<p>Double-click into an existing plan.</p>
+<p>Click <b>Unlock </b>to edit the Terms. Payment Plans with <i>Permanent Lock</i> enabled cannot be edited.</p>
+<p><b>Editing Payment Plan Charges</b><br> Double-click a PayPlan Charge to edit. Alternatively, right-click a PayPlan Charge from the Amortization Schedule and click <i>Edit</i>. Down Payments cannot be edited.</p>
+<img src="images/dynamicPayPlanEditCharge.png" width="397" height="327"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Date Entry</b>: Read only. Date and time stamp when the PayPlan Charge was originally created.</li>
+<li><b>Date Edit</b>: Read only. Date and time stamp when the PayPlan Charge was most recently edited.</li>
+<li><b>Date</b>: Defaults to the date the charge posted, but can be changed. This is that date displayed in the Amortization Schedule grid.</li>
+<li><b>Note</b>: Enter any applicable notes for the charge. The text "Down Payment" is not allowed as Down Payments cannot be edited.</li>
+<li><b>Principal</b>: PayPlan Charge amount not including interest. If the Principal amount is reduced, any excess is shifted to the next charge. Charge totals for each date are not increased, so the overall Amortization Schedule may be affected, and the end date of the Payment Plan may be moved out. </li>
+<li><b>Interest</b>: Automatically calculated based on Terms and Principal.</li>
+<li><b>Provider</b>: Provider assigned to production.</li>
+<li><b>Clinic</b>: Clinic assigned to production.</li>
+</ul>
+<p class="MarginBottomZero">Click <b>Delete</b> to remove the charge from its current date. This option is unavailable when editing a gray charge as these have not yet been created in the database. Only black charges (i.e., posted or already edited future charges) can be deleted. </p>
+<ul class="MarginBottomGap">
+<li>If other charges have been billed to the Payment Plan, the deleted charge is moved to the end of the Amortization Schedule. The end date for the Payment Plan may change.</li>
+<li>If this is the only charge billed for the Payment Plan, the charge is still scheduled for the original date listed.</li>
+<li>Alternatively, PayPlan Charge Due can be deleted from the Amortization Schedule or Patient Account Grid by right-clicking the PayPln: Charge Due line item (option only available when the<i> PayPlan charge logic</i> is set to Age Credits and Debits in Preferences).</li>
+</ul>
+<p>If a grouped charge with multiple production items is selected, the Pay Plan Charge Selection window opens instead.</p>
+<img src="images/dynamicPayPlanChargeSelect.png" width="290" height="147"/><p>Click <b>Zero out charges</b> to reduce the principal on all listed charges to zero. The charges are moved to the next charge date and subsequent charges rescheduled. To edit a specific charge, select it and click <b>OK</b> to open the Edit Payment Plan Charges window for the selected charge. </p>
+<p class="MarginBottomZero"><b>Adding New Charges</b><br> To create a new PayPlan Charge in the Amortization Schedule: </p>
+<ol>
+<li>From the Charges Due tab, click <b>Add</b>.</li>
+<li>Enter the details for the new PayPlan Charge. See Editing Payment Plan Charges above.</li>
+<li>Click <b>Save</b>.</li>
+</ol>
+<p class="MarginBottomGap">Once the new PayPlan Charge is added, the Amortization Schedule is updated. The <i>Total Cost of Loan</i> is not changed when adding a PayPlan Charge, instead the Amortization Schedule is recalculated.</p>
+<p><b>Update Amortization Schedule</b><br> After editing production or changing any terms, the Amortization Schedule must be updated. Click <b>Create Schedule</b> to update the Amortization Schedule. Any current charges that have been billed are not changed, but future charges are updated to match the current terms.</p>
+<p>Once changes have been made to the Payment Plan Terms or the Amortization Schedule, click <b>Save</b> in the Terms area to keep changes and lock the Payment Plan. </p>
+<h2>View or Reopen Closed Payment Plans</h2>
+<p>Payment Plans that have been closed are still available to view or to reopen if needed. Only open Payment Plans can be edited; changing historical information is not recommended.</p>
+<p class="MarginBottomZero">To show closed Payment Plans in the Payment Plan grid: </p>
+<ol class="MarginBottomGap">
+<li>In the Account Module, click the Show tab.</li>
+<li>Check the box for <b>Show Completed Pay Plans</b>. This affects all workstations.</li>
+</ol>
+<p>All closed plans for the patient list in the Payment Plan grid in a light text color.</p>
+<img src="images/paymentPlanClosed.gif" width="756" height="69"/><p class="MarginBottomZero">To reopen a closed Payment Plan: </p>
+<ol class="MarginBottomGap">
+<li>Double-click the closed plan to open the Payment Plan window.</li>
+<li>In the lower right, click Reopen.</li>
+</ol>
+<img src="images/paymentplanReOpen.png" width="712" height="150"/><p>Only past activity shows in the Amortization Schedule. To reinstate the Payment Plan, a new Amortization Schedule needs to be created.</p>
+<h2>Account Module Patient Account Tab</h2>
+<p>PayPlan Production, PayPlan Charge Due, and payments made to a Payment Plan can optionally show as line items in the patient's Account Module and affect balances and aging depending on the <i>PayPlan charge logic </i> preference.</p>
+<p>If the <i>PayPlan charge logic</i> is set to an option that displays PayPlan Charges Due as line items in the account grid, treatment planned procedures are not added until they have been set complete. </p>
+<h2>Setting up a Payment Plan in Conjunction with an Insurance Payment Plan</h2>
+<p>In order for a Payment Plan to function properly with an ongoing <a href="paymentplanins.html">Insurance Payment Plans</a>, it must be set up a specific way. Follow the steps below to set up a Payment Plan for use with an Insurance Payment Plan.</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Create the Payment Plan:</li>
+<ol>
+<li>Attach production to the plan for the correct procedures. Ensure the amount (i.e., patient portion) is correct.</li>
+<li>Set all other plan terms, schedule, and verify any other information. </li>
+<li>In the Production tab, enter the <i>Amount Override</i> for the expected patient portion for all procedures being paid by the Insurance Payment Plan.</li>
+</ol>
+<li>Create the <a href="paymentplanins.html">Insurance Payment Plans</a> at the time of receiving first insurance payment.  <ul>
+<li>Be sure to input the correct <i>Tx Completed Amount</i> (this should be the expected total payment from insurance).</li>
+</ul>
+<ul>
+</ul>
+</li>
+</ol>
+<p>If the patient portion changes, update the<i> Amount Override</i> in the Production tab of the Payment Plan for plans not set to Permanent Lock. If the plan is set to Permanent Lock, this cannot be updated. </p>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,130 @@
+# File: ./www.opendental.com/manual243/recallsetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Setup Recall</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('recallsetup','+appointments','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/recallsetup.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/recallsetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/recallsetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/recallsetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/recallsetup.html" >v23.2</option><option value="https://www.opendental.com/manual231/recallsetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/recallsetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/recallsetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/recallsetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/recallsetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/recallsetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/recallsetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/recallsetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/recallsetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/recallsetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/recallsetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/recallsetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/recallsetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/recallsetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/recallsetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/recallsetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/recallsetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/recallsetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/recallsetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/recallsetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/recallsetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/recallsetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/recallsetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Setup Recall</p></div>
+<div class="GeneralPageContent">
+<p>Set up recall reminder messages, reminder intervals, and the Recall List default options.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Appointments, Recall.</p>
+<img src="images/recallSetup.png" width="902" height="722"/><h2>Messages</h2>
+<p>The Messages grid lists the email subject and body, postcard, and text message for recall reminders sent from the Recall List.</p>
+<img src="images/recallSetupMsg.png" width="880" height="471"/><p class="MarginBottomZero"><b>Language</b>: Select a <a href="patientlanguages.html">Language</a> from the dropdown to edit the message sent for patients with the selected Preferred Language. </p>
+<ul class="MarginBottomGap">
+<li>Available languages are determined by <i>Languages used by patients</i> set up in <a href="patientlanguages.html">Language Definitions</a>.</li>
+<li>If the message template is blank for a language, the default (first in the list) language template is used.</li>
+<li>If the language for a patient is set to <i>None</i> or <i>Declined to Specify</i> in <a href="patientedit.html">Edit Patient Information</a>, the default language template is used.</li>
+</ul>
+<p class="MarginBottomZero">Messages grid: Settings reflect the currently selected language. </p>
+<ul class="MarginBottomGap">
+<li><b>Remind</b>: The reminder number (first reminder, second reminder, etc.) The message corresponds with the reminder number the patient is on. <i>All </i>is used on aggregated messages (i.e., family messages). If sending more than three reminders, the third reminder template is used for all subsequent reminders.</li>
+<li><b>Mode</b>: When the message is used based on the method of delivery (Email, Postcard, WebSched Email, WebSched Text). <i>Web Sched Aggregate</i> Modes are automatically used when when multiple patients sharing the same email address or phone number (e.g., a family) are sent a <a href="webschedrecallsetup.html">Web Sched Recall</a> reminder. Recall information is aggregated into a single message for the family (rather than one message for each individual family member). </li>
+<li><b>Third column</b>: General guidance about the message and its use.</li>
+<li><b>Message</b>: The message text. A text message segment is 160 characters. Each additional message segment results in additional charges.  <ul>
+<li>A carriage return (i.e., line break) adds two characters.</li>
+<li>The following characters are allowed. If other characters are used the message fails. <p class="codeblock">a-z, A-Z, 0-9, . , : ; ! ? ( ) ~ = + - _ \ / @ $ # &amp; %</p></li>
+</ul>
+</li>
+</ul>
+<p class="MarginBottomZero">To change the email subject line or email, postcard, and text message for a Remind#, double-click the Message for the corresponding Remind# and Mode. Enter the subject or message text and insert variables as needed (see below). Click <b>Save</b> to keep changes. </p>
+<ul class="MarginBottomGap">
+<li>Message types that support HTML formatting open the <a href="emailhtml.html">HTML Email</a> editor. Raw HTML is not supported for Recall messages.</li>
+<li>Postcard messages have a limit of 465 characters. Characters exceeding the limit are omitted from the printed postcard.</li>
+</ul>
+<img src="images/recallMsgEdit.png" width="498" height="214"/><p>Variables are the text with brackets which pull information directly from the database. For example, the message might look like this: "John, you are due for your regular dental check-up on 11/12/2022."</p>
+<p class="MarginBottomZero">Available variables:<br/></p>
+<ul class="MarginBottomGap">
+<li>[NameF]: Patient first name only.</li>
+<li>[FamilyList]: List first name and recall due date of all family members (if Group Families is selected).</li>
+<li>[DueDate]: Date the recall is due.</li>
+<li>[URL]: (Web Sched only) The unique link the patient clicks to schedule their appointment.</li>
+<li>[ClinicName]: Clinic name (patient's default clinic).</li>
+<li>[ClinicPhone]: Clinic phone number.</li>
+<li>[FamilyListURLs]: (Web Sched Only) The unique links for an aggregated message (i.e., family) to schedule appointments.</li>
+<li>[PracticeName]: Practice name.</li>
+<li>[PracticePhone]: Practice phone.</li>
+<li>[OfficePhone]: Uses clinic phone number if available, otherwise inserts practice phone.</li>
+</ul>
+<h2>Recall Status Options</h2>
+<p>The status options determine which recall status is automatically applied when a recall reminder is sent. Customize options in <a href="definitionsrecallunschedstatus.html">Definitions: Recall / Unsched Status</a>.<br/><img src="images/recallSetupStatus.png" width="385" height="98" class="ImageInParagraph"/></p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Status for mailed recall</b>: The status applied when a recall postcard is printed.</li>
+<li><b>Status for emailed recall</b>: The status applied when a recall reminder is emailed.</li>
+<li><b>Status for texted recall</b>: The status applied when a recall reminder is sent via text message using Web Sched Recall.</li>
+<li><b>Status for emailed and texted recall</b>: The status applied when a recall reminder is emailed and texted using Web Sched Recall.</li>
+</ul>
+<h2>Recall List Defaults</h2>
+<p>The following options affect what shows in the recall list by default. For offices using the feature, these settings also affect which patients receive automated <a href="webschedrecallsetup.html">Web Sched Recall</a> reminders. </p>
+<p><b>Types to show in recall list</b>: Highlight the <a href="recalltypes.html">Recall Types</a> to send recall reminders for. To highlight multiple types, click and drag or press ctrl while clicking each type. The prophy type covers both adult and child prophies.</p>
+<p class="MarginBottomZero">Select the Recall List Default View filter and sort options. </p>
+<ul class="MarginBottomGap">
+<li><b>Group Families</b>: Determines the default setting of the Group Families box. When checked, family members are grouped together in the recall list. Web Sched Recall reminders are sent using aggregate messages to the family guarantor, regardless of whether the guarantor is due or not.</li>
+<li><b>Days Past</b>: Determines the default <i>From Date</i> of the Recall List. More patients appear on the recall list the further back this time frame is set. If using Web Sched Recall, this cannot be blank.</li>
+<li><b>Days Future</b>: Determines the default <i>To Date</i> of the Recall List. Leave blank to include all future recalls. This value may be left blank for Web Sched Recall.</li>
+</ul>
+<p class="MarginBottomZero">Select one of the exclude options to exclude certain patients from the recall list. </p>
+<ul class="MarginBottomGap">
+<li><b>Exclude from list if recall scheduled</b>: Do not include patients who have a scheduled recall appointment.</li>
+<li><b>Exclude from list if any future appt</b>: Do not include patients who have any scheduled appointment.</li>
+</ul>
+<p class="MarginBottomZero">Set the reminder intervals to <b>Also show in list if # of days since</b> the patient's last reminder. Each patient first shows up on the list when they are due for recall. Once a reminder (Recall <a href="commlog.html">Commlog</a> type) is sent, they disappear from the list until they are due for their next reminder. </p>
+<ul class="MarginBottomGap">
+<li><b>Initial Reminder</b>: The number of days from the first reminder until the second reminder is triggered (e.g., 90 days from first reminder). This cannot be zero if using Web Sched Recall.</li>
+<li><b>Second (or more) Reminder</b>: The number of days from the second reminder until the third and subsequent reminders are triggered (e.g., 182 days from the second reminder). This cannot be zero if using Web Sched Recall.</li>
+</ul>
+<p><div class="Note">Note: If the <i># of days since</i> is set to zero, the patient is not hidden from the Recall List after the reminder type. If the <i># of days since</i> is blank, the patient is hidden from the Recall List indefinitely.</div>
+</p>
+<p><b>Max # of Auto Reminders</b>: Maximum number of automated Web Sched Recall reminders that can be sent. </p>
+<p><b>Max # of Reminders</b>: Maximum number of reminders before a patient is removed from the list. Leave the box empty to set no maximum. Counts only reminders sent after the <i>Initial Reminder</i> (i.e., <i>Second (or more) Reminders</i>). The <i>Initial Reminder</i> is sent in addition. <br/><div class="Note">Note: If the Max # of Auto Reminders does not exceed the Max # of Reminders, a patient receiving Web Sched Recall reminders will still appear on the Recall List after receiving the Max # of Auto Reminders. The office can create manual reminders for these patients.</div>
+</p>
+<h2>Reminder Postcard Options</h2>
+<p class="MarginBottomZero">Select the postcard print options (also affects printing of <a href="confirmationlist.html">Confirmation List</a> postcards). </p>
+<ul class="MarginBottomGap">
+<li><b>Postcards per sheet (1, 3, or 4)</b>: The number of postcards that print per page.</li>
+<li><b>Show return address</b>: Check the box to print the <a href="practice.html">Practice</a> return address.</li>
+<li><b>Adjust Postcard Position in Inches</b>: Change the offset when printing.</li>
+</ul>
+<h2>Reminder Email Options</h2>
+<p class="MarginBottomZero">Select when an email reminder is sent (also affects confirmation list email and automated Web Sched Recall reminders).<br/></p>
+<ul class="MarginBottomGap">
+<li><b>Has Email Address</b>: Email is the default contact method when a patient has an email address entered (<a href="patientedit.html">Edit Patient Information</a>) and no other preferred method is selected for recall.</li>
+<li><b>Email is preferred contact method</b>: Email will be a patient's default Contact method only when Email is the preferred confirmation or recall method.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

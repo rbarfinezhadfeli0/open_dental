@@ -1,0 +1,69 @@
+# File: ./www.opendental.com/site/version3_1.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: Version 3.1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>Version 3.1</h1>
+		</div>
+		<div id="Content">
+<p>See <a href="versions.html">Versions</a></p>
+<h2>Version 3.1</h2>
+<p>Released on 1/5/05.</p>
+<p><b>E-claims:</b> Open Dental now generates <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7clearinghouses.html">E-Claims</a> in X12 (HIPAA 837) format. This format is, in theory, accepted by ANY clearinghouse. No other dental software can directly generate X12 format; they instead depend on the clearinghouse to do this. X12 is also directly accepted by some insurance carriers, especially Medicaid and Blue Cross. The number of insurance carriers accepting X12 will increase every year, increasing your choices and options.</p>
+<p><b>E-claims responses:</b> 277U- Unsolicited Claim Status Notification. This is the simplest X12 format for getting a response from the clearinghouse on the status of claims recently sent. Usually available the following day. There are many other additional X12 formats that will follow in future versions including 835-Payments, 276/277-Claim status request/response, 270/271-Eligibility, and 277-Request for additional information. </p>
+<p><b>Prosthesis fields:</b> In the procedure edit window, you now have a place to put whether a crown, bridge, or denture is initial or replacement, and what the original placement date was. There is also a claim note box.</p>
+<p><b>Language translations:</b> Maintenance of the language translations features was made easier by adding a recursive function that automatically translates all buttons and labels on each form so it doesn't have to be done manually. Also, buttons resize automatically if text is too long. Also, the 255 character limit on translations has been removed. Various minor improvements made such as better handling of weekdays, and enabling translations of various listboxes.</p>
+<p><b>Chart module:</b> Shading on teeth for 3D appearance:</p>
+<p><img src="images/teethShading.gif" width="412" height="264"/></p>
+<p><b>Recall: </b>A recall table was added to the database, making due dates easily accessible and reporting more flexible. Directly print sheets of labels for recall. Directly print postcards in 3 different sizes with custom notes. More control over intervals, setting statuses, overriding due dates, keeping notes, etc. </p>
+<p><b>Procedure Notes: </b>Any procedure note can be locked, creating a legally tight patient record. The date that the note was locked will always show for future reference. Nobody can unlock it no matter what their permissions. </p>
+<p><b>Miscellaneous:</b><br>  Elimination of the discount feature from within a payment. It will be replaced by adjustment functionality. <br>  Bridge to Sirona Sidexis Imaging<br> The Select Patient drop down list was refined slightly. <br> Changed behavior when double clicking on blank area of Appointments module. <br> Set date when quick add procedure in appointment. <br> Adding a new referral was streamlined and more features added to referrals.<br> Todays procedures highlighted in Progress Notes <br>  Added an option to let multiple versions of the program run simultaneously for Windows terminal services.<br>  Payment plans-fixed bug where the last payment was getting changed to $0 on subsequent openings.<br><br><br></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+</div>	
+	</div>
+</body>
+</html>```

@@ -1,0 +1,71 @@
+# File: ./www.opendental.com/manual232/direct.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Email Direct Encryption</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('direct','emailencrypted','emailmessage','toolbar','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/direct.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/direct.html" >v24.2</option><option value="https://www.opendental.com/manual241/direct.html" >v24.1</option><option value="https://www.opendental.com/manual233/direct.html" >v23.3</option><option value="https://www.opendental.com/manual232/direct.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/direct.html" >v23.1</option><option value="https://www.opendental.com/manual224/direct.html" >v22.4</option><option value="https://www.opendental.com/manual223/direct.html" >v22.3</option><option value="https://www.opendental.com/manual222/direct.html" >v22.2</option><option value="https://www.opendental.com/manual221/direct.html" >v22.1</option><option value="https://www.opendental.com/manual214/direct.html" >v21.4</option><option value="https://www.opendental.com/manual213/direct.html" >v21.3</option><option value="https://www.opendental.com/manual212/direct.html" >v21.2</option><option value="https://www.opendental.com/manual211/direct.html" >v21.1</option><option value="https://www.opendental.com/manual205/direct.html" >v20.5</option><option value="https://www.opendental.com/manual204/direct.html" >v20.4</option><option value="https://www.opendental.com/manual203/direct.html" >v20.3</option><option value="https://www.opendental.com/manual202/direct.html" >v20.2</option><option value="https://www.opendental.com/manual201/direct.html" >v20.1</option><option value="https://www.opendental.com/manual194/direct.html" >v19.4</option><option value="https://www.opendental.com/manual193/direct.html" >v19.3</option><option value="https://www.opendental.com/manual192/direct.html" >v19.2</option><option value="https://www.opendental.com/manual191/direct.html" >v19.1</option><option value="https://www.opendental.com/manual184/direct.html" >v18.4</option><option value="https://www.opendental.com/manual183/direct.html" >v18.3</option><option value="https://www.opendental.com/manual182/direct.html" >v18.2</option><option value="https://www.opendental.com/manual181/direct.html" >v18.1</option><option value="https://www.opendental.com/manual174/direct.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Email Direct Encryption</p></div>
+<div class="GeneralPageContent">
+<p><span style="color:red">EHR Direct Messaging is obsolete. Open Dental now offers <xref href="secureemail.xml">Secure Email</xref>, the easiest and most secure method to communicate with patients and outside providers via email. EHR Direct Messaging was a previous method for secure communication. While still available, it is complex to set up and is not recommended. The information below is available as a reference but may not be up-to-date.</span></p>
+<p>Information on this page relates to the EHR Incentive Program. For a secure email option, see <a href="secureemailsetup.html">Secure Email Setup</a> instead.</p>
+<p>Direct messaging is a method of <a href="emailencrypted.html">Encrypted Email</a> used by EHR providers to exchange patient PHI with other providers (e.g., summaries of care). It is intended to automate the discovery of public security certificates so that messages can be encrypted and sent directly to trusted recipients. For more information about the Direct project, see <a href="http://www.directproject.org" target="_blank">http://www.directproject.org</a>.</p>
+<p class="MarginBottomZero">Requirements: </p>
+<ul class="MarginBottomGap">
+<li>Open Dental version 14.2 or greater.</li>
+<li>You must have an email address associated with a domain name you own (gmail.com will not work).</li>
+<li>The email address must be associated with an email security certificate. You need one certificate per Direct email address. For EHR, each provider in a practice is not required to have their own email address.</li>
+<li>The email certificate's public and private keys must be installed on each workstation that will receive encrypted email.</li>
+<li>Public keys for both sender and recipient must be hosted in DNS so they can be discovered based on the recipient's domain.</li>
+</ul>
+<p>If you do not want to setup Direct messaging in Open Dental, another option is to contract with a Health Information Service Provider (HISP). A HISP performs authentication, encryption, and trust verification on your behalf. To send summaries of care, export the documents, then use the HISP mail client to send. The downside to this option is that you may have to get a new email address supplied by the HISP and it is more expensive.</p>
+<p class="MarginBottomZero"><b>Sending Direct Messages</b>: </p>
+<ol class="MarginBottomGap">
+<li>Enter the email settings and set the email address as the Default email address in the <a href="emailsetup.html">Email Setup</a>.</li>
+<li>Obtain an <a href="emailsecuritycertificates.html">Email Certificate</a> associated with the email address.</li>
+<li>Install public and private keys on workstations that will receive the direct email. See <a href="emailcertinstall.html">Email Certificate Install</a>.</li>
+<li>Install the public certificate on a hosting server. You can host it with Open Dental (see <a href="emailcerthost.html">Email Certificate Hosting</a>) or host it yourself. Each time a certificate expires, you will need to purchase a new certificate, and, if hosting the certificate on Open Dental's server, re-register the certificate.</li>
+</ol>
+<p class="MarginBottomZero"><b>Receiving Direct Messages</b>: To receive direct messages, you must also modify each domain that will be used to receive direct messages. It usually takes 30 - 60 minutes before changes are recognized, but can take up to 48 hours. </p>
+<ol class="MarginBottomGap">
+<li>Purchase an internet domain name if you do not already have one. GoDaddy is recommended because that is all we have tested. Other domain providers are allowed, but have not been tested.</li>
+<li>Login to your domain provider website and launch the domain.</li>
+<li>Create a new host name under the Host Names section. Use host certdns2 with IP address 198.0.40.74 (the Open Dental certificate server). Use the IP address for another certificate host or HISP if you wish.</li>
+<li>Add a new name server record under the Nameservers section. If your domain name is yourdomain.com, then you need to add the name server certdns.yourdomain.com. This name server should be listed last in the Nameservers section, since it is the lowest priority for name look up.</li>
+</ol>
+<p><b>Become a Trusted Source</b>: To send secure messages to a provider who does not use Direct (e.g., a non-EHR provider), the receiving provider must become a trusted source by obtaining a digital signature and setting it up on their system. See <a href="emailoutlooksign.html">Email Certificate Outlook</a> for instructions on how to create and setup a digital signature in Microsoft Outlook.</p>
+</div>
+</div>
+</body>
+</html>```

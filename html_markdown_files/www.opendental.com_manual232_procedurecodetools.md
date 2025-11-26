@@ -1,0 +1,74 @@
+# File: ./www.opendental.com/manual232/procedurecodetools.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Procedure Code Tools</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('procedurecodetools','procedurecodes','+lists','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/procedurecodetools.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/procedurecodetools.html" >v24.2</option><option value="https://www.opendental.com/manual241/procedurecodetools.html" >v24.1</option><option value="https://www.opendental.com/manual233/procedurecodetools.html" >v23.3</option><option value="https://www.opendental.com/manual232/procedurecodetools.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/procedurecodetools.html" >v23.1</option><option value="https://www.opendental.com/manual224/procedurecodetools.html" >v22.4</option><option value="https://www.opendental.com/manual223/procedurecodetools.html" >v22.3</option><option value="https://www.opendental.com/manual222/procedurecodetools.html" >v22.2</option><option value="https://www.opendental.com/manual221/procedurecodetools.html" >v22.1</option><option value="https://www.opendental.com/manual214/procedurecodetools.html" >v21.4</option><option value="https://www.opendental.com/manual213/procedurecodetools.html" >v21.3</option><option value="https://www.opendental.com/manual212/procedurecodetools.html" >v21.2</option><option value="https://www.opendental.com/manual211/procedurecodetools.html" >v21.1</option><option value="https://www.opendental.com/manual205/procedurecodetools.html" >v20.5</option><option value="https://www.opendental.com/manual204/procedurecodetools.html" >v20.4</option><option value="https://www.opendental.com/manual203/procedurecodetools.html" >v20.3</option><option value="https://www.opendental.com/manual202/procedurecodetools.html" >v20.2</option><option value="https://www.opendental.com/manual201/procedurecodetools.html" >v20.1</option><option value="https://www.opendental.com/manual194/procedurecodetools.html" >v19.4</option><option value="https://www.opendental.com/manual193/procedurecodetools.html" >v19.3</option><option value="https://www.opendental.com/manual192/procedurecodetools.html" >v19.2</option><option value="https://www.opendental.com/manual191/procedurecodetools.html" >v19.1</option><option value="https://www.opendental.com/manual184/procedurecodetools.html" >v18.4</option><option value="https://www.opendental.com/manual183/procedurecodetools.html" >v18.3</option><option value="https://www.opendental.com/manual182/procedurecodetools.html" >v18.2</option><option value="https://www.opendental.com/manual181/procedurecodetools.html" >v18.1</option><option value="https://www.opendental.com/manual174/procedurecodetools.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Procedure Code Tools</p></div>
+<div class="GeneralPageContent">
+<p>Use Procedure Code Tools to update to the latest CDT codes and more.</p>
+<p>In <a href="procedurecodes.html">Procedure Codes</a>, at the lower left, click <b>Tools</b>.</p>
+<img src="images/procedureCodeTools.png" width="700" height="458"/><p class="MarginBottomZero">Procedure Code Tools should be run in the following situations: </p>
+<ul class="MarginBottomGap">
+<li>Immediately after updating to the full version from the trial version. The trial version comes with T (temp) codes instead of D codes. Check all boxes to remove the T codes, add missing D and N codes, and reset defaults. See <a href="updatefullversion.html">Update to Full Version</a>.</li>
+<li>To reset default auto codes, recall types, procedure buttons, and/or appt proc quick add procedures.</li>
+<li>To update to the ADA CDT Codes each calendar year.</li>
+</ul>
+<p><div class="Note">Note: Use caution when selecting and running tools as to not accidentally reset customized Auto Codes, Procedure Buttons, Appt Proc Quick Adds, or Recall Types. The <a href="permissionssecurityadmin.html">Security Admin</a> and <i>Procedure Code Edit </i><a href="permissions.html">Permissions</a> are required to run Procedure Code Tools.</div>
+</p>
+<p>Check the box next to the tools to run. Uncheck a box to deselect a tool.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>T codes</b>: Remove all temp codes (T) that were installed with the Trial version.</li>
+<li><b>N codes</b>: Add missing no-fee procedure codes.</li>
+<li><b>D codes</b>: Add missing ADA CDT codes and set descriptions to the defaults. For Canadian offices, adds or updates Canadian codes. Add abbreviations for codes where the abbreviation is currently blank. <br/><div class="Note">Note: New CDT codes are periodically released by the American Dental Association and generally released in Open Dental version updates at the beginning of the appropriate year. CDT codes are only available for distribution in the U.S. <ul>
+<li>2024 CDT Codes: Version 23.2.27 or greater. If the 2019 claim form was the default or was set in insurance plans, the default and corresponding insurance plans are automatically updated to 2024.</li>
+<li>2023 CDT Codes: Version 22.2.43 or 22.3.14 or greater.</li>
+</ul>
+<br/> When updating to a version above, old codes no longer in use by the ADA are automatically moved to the Obsolete category.<br/><img src="images/YouTube_PlayButton_15px.png" width="15" height="12" class="ImageInParagraph" style="margin-bottom: 0px"/>See our video:<a href="https://youtu.be/6BkLSTcTyjE">QuickTip: How to Update CDT Codes</a></div>
+</li>
+<li><b>Auto Codes</b>: Delete all existing <a href="autocode.html">Auto Codes</a> and reset to default. Procedure buttons will be dissociated from the deleted auto codes.</li>
+<li><b>Procedure Buttons</b>: Delete all existing <a href="procedurebuttons.html">Procedure Buttons</a> and reset to default.</li>
+<li><b>Appt Procs Quick Add</b>: Delete all existing <a href="definitionsapptquickadd.html">Appt Procs Quick Adds</a> and reset to default. Reset the list of Quick Add procedures on the <a href="aptedit.html">Edit Appointment</a> to defaults.</li>
+<li><b>Recall Types</b>: Delete all existing <a href="recalltypes.html">Recall Types</a> and triggers and reset to default. Any trigger T codes will be replaced with D codes.</li>
+</ul>
+<p><b>Run Now</b>: Click to run all selected tools. A message indicates when updates are done.</p>
+<h2>Troubleshooting</h2>
+<img src="images/dCodes.png" width="409" height="159"/><p><b>I get the message above when attempting to run the D Codes. </b></p>
+<p>Solution: This message appears when running the D Code tool prior to the 1st of the new year. Claims may be rejected if new procedure codes are sent before they take affect. Click <b>Yes</b> to continue importing the new codes, or <b>No</b> to cancel.</p>
+</div>
+</div>
+</body>
+</html>```

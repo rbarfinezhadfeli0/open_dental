@@ -1,0 +1,88 @@
+# File: ./www.opendental.com/manual232/eroutingsetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - eRouting Setup</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('eroutingsetup','erouting','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/eroutingsetup.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/eroutingsetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/eroutingsetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/eroutingsetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/eroutingsetup.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/eroutingsetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/eroutingsetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/eroutingsetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/eroutingsetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/eroutingsetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/eroutingsetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/eroutingsetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/eroutingsetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/eroutingsetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/eroutingsetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/eroutingsetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/eroutingsetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/eroutingsetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/eroutingsetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/eroutingsetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/eroutingsetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/eroutingsetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/eroutingsetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/eroutingsetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/eroutingsetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/eroutingsetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/eroutingsetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/eroutingsetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>eRouting Setup</p></div>
+<div class="GeneralPageContent">
+<p>Set up customized eRouting definitions to meet the flow of different types of appointments.</p>
+<p>In <a href="erouting.html">eRouting</a>, click <b>Setup</b>.</p>
+<img src="images/eRoutingDefs.png" width="498" height="477"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Clinic</b>: Select the clinic assigned to the definition. </li>
+<li><b>Use Default</b>: Check to use the default definitions instead of clinic specific definitions. Set default definitions by setting the clinic to <i>HQ Default</i>. </li>
+<li><b>Add</b>: Click to add a new eRouting definition. </li>
+<li><b>Duplicate</b>: Select an existing definition, then click to create a copy.</li>
+</ul>
+<p>Click <b>Add</b>, or double-click an existing definition to edit.</p>
+<img src="images/eRoutingDefEdit.png" width="915" height="488"/><p><b>Description</b>: Enter a name for the eRouting definition. </p>
+<p><b>Actions</b>: Add actions to take for this eRouting definitions. Each action opens the appropriate screen in ODTouch. </p>
+<p class="MarginBottomZero">Use the <b>Add Action</b> dropdown to select an action, then click <b>Add</b> to include it. Add each action individually. Use the <b>Up</b> and <b>Down</b> arrows to reorder actions. Options include:  </p>
+<ul class="MarginBottomGap">
+<li>No Action: Do nothing on ODTouch.</li>
+<li>Perio Chart: Open <a href="odtouchperio.html">ODTouch: Perio</a>.</li>
+<li>Treatment Plan: Open <a href="odtouchtreatmentplans.html">ODTouch: Treatment Plans</a>.</li>
+<li>Payment Plans: Open <a href="odtouchpayplan.html">ODTouch: Payment Plans</a>. </li>
+<li>Chart Procedures: Open <a href="odtouchchart.html">ODTouch: Chart</a>.</li>
+<li>Imaging: Open <a href="odtouchimages.html">ODTouch: Images</a>.</li>
+<li>Complete Appointment: Complete the appointment.</li>
+<li>Take Payment: </li>
+<li>Schedule Followup: Open <a href="odtouchappts.html">ODTouch: Appointments</a>.</li>
+</ul>
+<p>To remove an Action Type, highlight it, then click <b>Remove</b>.</p>
+<p><b>eRouting Triggers</b>: Add trigger types to determine when a definition should be used. When patients meet the trigger criteria, the appropriate eRouting definition is begun in ODTouch. If multiple triggers are met, the user can select the definition to use.</p>
+<p class="MarginBottomZero">Use the <b>Add Trigger Type</b> dropdown to select a trigger for patients to meet, then click <b>Add</b> to include it. Each trigger type is added individually. Options include:  </p>
+<ul class="MarginBottomGap">
+<li>General: Used for patients that do not meet other trigger criteria. <ul>
+<li>Add: Add a General trigger.</li>
+</ul>
+</li>
+<li>Appointment: Use appointments as a trigger for patient criteria. <ul>
+<li>Add: Add appointments as a trigger without a specific appointment type.</li>
+<li>Add Appt Types: Add a specific appointment type as a trigger. </li>
+</ul>
+</li>
+<li>Billing Type: Use Billing Type as a trigger for patient criteria. <ul>
+<li>Add: Add a specific Billing Type as a trigger.</li>
+</ul>
+</li>
+</ul>
+<p>To remove a Trigger, highlight it, then click <b>Remove</b>.</p>
+<p>Click <b>OK</b> to save changes. Click <b>Delete </b>to remove the entire eRouting definition.</p>
+</div>
+</div>
+</body>
+</html>```

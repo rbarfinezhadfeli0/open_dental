@@ -1,0 +1,113 @@
+# File: ./www.opendental.com/site/canadasetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Register Canadian Providers for E-Claims</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('canadasetup','canada','countries','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Register Canadian Providers for E-Claims</p></div>
+		<div class="GeneralPageContent">
+<p>For a <a href="canada.html">Canada</a> user to send claims, providers must be registered with the appropriate organizations. </p>
+<p>Please note, Open Dental Support cannot assist with registration, this page is only offered as a courtesy starting point for users.</p>
+<h2>Dentists</h2>
+<p>Each provider should be set up with their province organization. </p>
+<p><table class="simpletable">
+<tr>
+<th style="width:30%">Province</th>
+<th style="width:70%">Organization</th>
+</tr>
+<tr>
+<td>Alberta</td>
+<td><a href="https://www.albertadentalassociation.ca/">Alberta Dental Association</a></td>
+</tr>
+<tr>
+<td>British Columbia</td>
+<td><a href="https://www.bcdental.org/" target="_blank">British Columbia Dental Association</a></td>
+</tr>
+<tr>
+<td>Manitoba</td>
+<td><a href="https://www.manitobadentist.ca/" target="_blank">Manitoba Dental Association</a></td>
+</tr>
+<tr>
+<td>New Brunswick</td>
+<td><a href="https://www.nbdent.ca/" target="_blank">New Brunswick Dental Society</a></td>
+</tr>
+<tr>
+<td>Newfoundland and Labrador</td>
+<td><a href="https://nlda.net/" target="_blank">Newfoundland and Labrador Dental Association</a></td>
+</tr>
+<tr>
+<td>Nova Scotia</td>
+<td><a href="https://nsdental.org/" target="_blank">Nova Scotia Dental Association</a></td>
+</tr>
+<tr>
+<td>Ontario</td>
+<td><a href="https://www.oda.ca/" target="_blank">Ontario Dental Association</a></td>
+</tr>
+<tr>
+<td>Prince Edward Island</td>
+<td><a href="https://www.dapei.ca/" target="_blank">Dental Association of Prince Edward Island</a></td>
+</tr>
+<tr>
+<td>Quebec</td>
+<td><a href="https://www.acdq.qc.ca/en/" target="_blank">Association des Chirurgiens dentistes du Quebec </a></td>
+</tr>
+<tr>
+<td>Saskatchewan</td>
+<td><a href="https://saskdentists.com/" target="_blank">College of Dental Surgeons of Saskatchewan</a></td>
+</tr>
+</table>
+</p>
+<p>When a provider joins with their organization, they automatically access CDA Membership benefits. The exception is Quebec, where ACDQ members may optionally obtain a <a href="https://www.cda-adc.ca/en/about/membership/" target="_blank">CDA Membership</a> to use ITRANS. Otherwise, ACDQ members must contact the ACDQ for help installing ACDQ Express for electronic claim submission through Open Dental. </p>
+<p>Some carriers may require additional registration. </p>
+<p>Once Provincial and CDA Membership has been completed, contact Open Dental to install <a href="itrans20.html">ITRANS 2.0</a>. </p>
+<h2>Hygienists</h2>
+<p>Hygiene-only practices, also known as Independent Practices, should be registered with the Canadian Dental Hygiene Association, as well as their local provincial organization. For more information, see <a href="https://www.cdha.ca/cdha/The_Profession_folder/Independent_Practice_folder/Claim_Forms__UIN_Application_folder/CDHA/The_Profession/Independent_Practice/Claim_Forms.aspx" target="_blank">CDHA Claim Forms and Billing Set-Up</a>.</p>
+<p>To send electronic claims, hygienists (independent practitioners) may also need to register with TELUS and Express Scripts. </p>
+<p>Some carriers may require additional registration. </p>
+<p>Once CDHA, TELUS, and Express Scripts registration is complete, contact Open Dental to install <a href="ccdws.html">CCDWS</a> to send claims, known in Open Dental as <a href="claimstream.html">Claimstream</a>. </p>
+<h2>Mixed Practices</h2>
+<p>If a practice has both Dentists and Independent Dental Hygiene Practitioners, and they are sharing a single database, use ITRANS 2.0 for claims. </p>
+<h2>Denturists</h2>
+<p>Denturists should be registered with the Denturist Association of Canada (DAC), as well as their local provincial organization. For more information, see <a href="https://www.dacnet.ca/en/dacnettm-2">https://www.dacnet.ca/en/dacnettm-2</a>.</p>
+<p>Some carriers may require additional registration.</p>
+<p>Once DAC registration is complete, contact Open Dental to install CCDWS to send claims, known in Open Dental as Claimstream.</p>
+<h2>Change of Ownership</h2>
+<p>For practices changing ownership, there are some required steps to register for electronic claims.</p>
+<p><b>CDA Members</b>: On the <a href="https://services.cda-adc.ca/">CDA Practice Support Services</a> website, the old owner or practice admin must invite the new owner to join the existing office. Alternatively, the new owner can start the process by requesting to join the existing office. Once accepted, the old owner or practice admin must set the new owner's role as <i>Owner </i>and may then leave the office. The new owner should subscribe to ITRANS as soon as possible and may then install their <a href="cdadigitalcert.html">CDA Digital ID</a>. The new owner's electronic claims will be able to send after the registration changes have been received by the insurance carriers.</p>
+<p><b>Other providers</b>: Contact your professional association(s) for guidance.</p>
+		</div>
+	</div>
+</body>
+</html>```

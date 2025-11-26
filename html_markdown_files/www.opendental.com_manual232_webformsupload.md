@@ -1,0 +1,114 @@
+# File: ./www.opendental.com/manual232/webformsupload.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Web Form Setup</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('webformsupload','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/webformsupload.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/webformsupload.html" >v24.2</option><option value="https://www.opendental.com/manual241/webformsupload.html" >v24.1</option><option value="https://www.opendental.com/manual233/webformsupload.html" >v23.3</option><option value="https://www.opendental.com/manual232/webformsupload.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/webformsupload.html" >v23.1</option><option value="https://www.opendental.com/manual224/webformsupload.html" >v22.4</option><option value="https://www.opendental.com/manual223/webformsupload.html" >v22.3</option><option value="https://www.opendental.com/manual222/webformsupload.html" >v22.2</option><option value="https://www.opendental.com/manual221/webformsupload.html" >v22.1</option><option value="https://www.opendental.com/manual214/webformsupload.html" >v21.4</option><option value="https://www.opendental.com/manual213/webformsupload.html" >v21.3</option><option value="https://www.opendental.com/manual212/webformsupload.html" >v21.2</option><option value="https://www.opendental.com/manual211/webformsupload.html" >v21.1</option><option value="https://www.opendental.com/manual205/webformsupload.html" >v20.5</option><option value="https://www.opendental.com/manual204/webformsupload.html" >v20.4</option><option value="https://www.opendental.com/manual203/webformsupload.html" >v20.3</option><option value="https://www.opendental.com/manual202/webformsupload.html" >v20.2</option><option value="https://www.opendental.com/manual201/webformsupload.html" >v20.1</option><option value="https://www.opendental.com/manual194/webformsupload.html" >v19.4</option><option value="https://www.opendental.com/manual193/webformsupload.html" >v19.3</option><option value="https://www.opendental.com/manual192/webformsupload.html" >v19.2</option><option value="https://www.opendental.com/manual191/webformsupload.html" >v19.1</option><option value="https://www.opendental.com/manual184/webformsupload.html" >v18.4</option><option value="https://www.opendental.com/manual183/webformsupload.html" >v18.3</option><option value="https://www.opendental.com/manual182/webformsupload.html" >v18.2</option><option value="https://www.opendental.com/manual181/webformsupload.html" >v18.1</option><option value="https://www.opendental.com/manual174/webformsupload.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Web Form Setup</p></div>
+<div class="GeneralPageContent">
+<p>Set up web forms to be filled online by patients.</p>
+<p>In <a href="webformsretrieve.html">Web Forms Retrieve</a>, click <b>Setup</b> in the upper left.</p>
+<img src="images/webFormSetup.gif" width="913" height="522"/><p>Alternatively, in the Main Menu, click Setup, Web Forms.</p>
+<h2>Available Web Forms</h2>
+<p>The Available Web Forms grid displays all forms currently uploaded to the Open Dental web server. These forms are available to use online.</p>
+<p>Only sheets with a type of <i>PatientForm</i> or <i>MedicalHistory</i> are listed. If there are no custom patient forms or medical histories, the internal versions show.</p>
+<img src="images/webFormSetupAvailable.png" width="294" height="250"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Add</b>: Click to add a new form to the available list. The Pick Sheet window will open. Highlight a form, then click OK to upload it. <br/><img src="images/webFormPickSheet.gif" width="390" height="328" class="ImageInParagraph"/></li>
+<li><b>Update</b>: When changes have been made to a sheet, the form must be updated to take affect. Highlight the form in the Available grid, then click to update it. Alternatively, web forms in use can be updated immediately after updating the sheet by clicking Yes to the prompt.</li>
+<li><b>Delete</b>: Highlight a form, then click to delete it from the Available grid. The form will no longer be available for online use.</li>
+</ul>
+<h2>Preferences</h2>
+<p>These settings affect every web form uploaded to the web server. Click Save to save any changes to preferences.</p>
+<img src="images/webFormSetupPrefs.png" width="611" height="128"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Host Server Address</b>: The address where web forms are hosted. Do not edit this address.</li>
+<li><b>Border Color:</b> The background color of the Web Form window. Click Change to select a different color.</li>
+<li><b>Disable Web Form Signatures:</b> Select whether to allow signatures on web forms.  <ul>
+<li>Checked: Do not allow signatures on any web form. The text "Signature will be recorded later" replaces the signature box. When the patient arrives to the office for their appointment, office staff can retrieve the signature via kiosk, eClipboard, or by printing. </li>
+<li>Unchecked: Allow signatures on all web forms.</li>
+</ul>
+</li>
+<li><b>Enable automatic download of web forms</b>: Determines whether web forms automatically download when a patient match is found. The <a href="opendentalservice.html">Open Dental Service</a> must be installed and running to utilize this preference.  <ul>
+<li>Checked: Enable automatic download of web forms. Users must still manually retrieve web forms for patients that do not have a match (e.g., new patients). When enabled, the OpenDentalService checks for retrieval every two minutes. </li>
+<li>Unchecked: Do not enable automatic download of web forms. Users must manually retrieve all web forms.</li>
+</ul>
+</li>
+</ul>
+<h2>Construct URL</h2>
+<p>Build the URL patients will use to access the web form(s). Parameters in the URL also determine options available on the web form. Patients will use the web form URL to access the form via the office website, email, etc. </p>
+<p>The settings below are not saved preferences. They only need to be entered once to create the URL used going forward.</p>
+<p>To construct a URL, start by highlighting one or more forms under Available Web Forms. Each form selected will generate a unique URL. </p>
+<img src="images/webFormSetupConstruct.png" width="634" height="349"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Redirect URL</b>: When patients complete their forms, they can be automatically redirected back to the office website. Enter the full URL (e.g., https://opendental.com) where patients should be redirected to. The URLs area will update to include the redirect code.<br/><ol>
+<img src="images/webFormsConstructRedirect.png" width="493" height="63"/></ol>
+</li>
+<li><b>Next Forms</b>: Link multiple web forms together. Patients will see a list of all linked forms on the left side of their browser and can click on each one to move from form to form.  <ol>
+<li>Under Available Web Forms, highlight the first web form user will view. </li>
+<li>Click<b> [...]</b> next to Next Forms.</li>
+<li>The Select Next Forms window will open. </li>
+<img src="images/webFormsNextForms.gif" width="643" height="340"/><ul>
+<li>Forms listed under Available Web Forms can be added to a URL. </li>
+<li>Forms listed under Web Forms Selected will be added to the URL. </li>
+<li>Highlight a form, then use the Left and Right arrows to move it to the appropriate grid.</li>
+<li>Highlight a form, then use the Up and Down arrows to re-oder forms that display for a patient. </li>
+<li>Do not include the form highlighted in Step 1. The form selected in Step 1 will always be the first form for the patient. </li>
+</ul>
+<li>Click OK. The URLs area will update to include code for the new 'linked' forms (&amp;NFID=12345). <br/><img src="images/webFormsConstructNext.gif" width="494" height="79" class="ImageInParagraph"/></li>
+</ol>
+</li>
+<li><b>Clinic</b>: Click the Clinic dropdown to associate a clinic, or click [...] to select from the Clinic List. When a new patient fills out a form and no patient record exists yet, the clinic associated to the web form(s) will be assigned to the patient. This clinic will not override clinic selection on any existing patient records. <ol>
+<img src="images/webFormsConstructClinic.gif" width="495" height="66"/></ol>
+</li>
+<li><b>Inherit (Auto Fill) Last Name, First Name, and Birthdate from Previous Form</b>: When including <i>Next Forms</i>, auto-fill the last name, first name, and birthdate from the previous form. To turn off this option for web forms in this URL, uncheck this box. <span class="codeblock">&amp;AFNAB=N</span> will be added to the URL.</li>
+<br/><li><b>Disable Typed Signature</b>: Allow or block patient from typing a signature. By default, patients can type a signature in a web form signature box. To block typing of signatures for web forms in this URL, check this box. <span class="codeblock">&amp;DTS=Y</span> will be added to the URL. <ol>
+<img src="images/webformsConstructSign.gif" width="503" height="63"/></ol>
+</li>
+<li><b>URLs</b>: As the URL is built, the box will update to include the URL code. This is the URL sent to patients via email, or can be used as a link on the office website. <ul>
+<li><b>Navigate to URL(s)</b>: Click to open the URL(s) in a browser. </li>
+<li><b>Copy to Clipboard</b>: Copy the URL. </li>
+</ul>
+</li>
+</ul>
+<h2>Details</h2>
+<p>Every uploaded web form sheet must contain <a href="inputfieldnames.html">Input Fields</a> for LastName, FirstName, and Birthdate so that the completed, retrieved form can be matched to the correct patient. The Birthdate field should only be used once per sheet. If additional date fields are needed (e.g., insurance effective date), use the Misc input field instead. Forms can be uploaded or deleted from the server at any time without damaging patient records.</p>
+<p>Other sheet types, such as <i>PatientLetter</i> or <i>Consent</i>, are not available for use as web forms. Web forms are designed to have information input (i.e., patient is updating information). Patient Letters are designed to have information output (i.e., patient is receiving information). Consents are designed to have information input by the office (e.g., tooth number or procedure). </p>
+<p>Only [dateToday] and [dateTodayLong] <a href="statictextfields.html">Static Text Fields</a> will be populated on web forms. As other Static Text Fields are unique to the patient, they will be left blank.</p>
+<p></p>
+</div>
+</div>
+</body>
+</html>```

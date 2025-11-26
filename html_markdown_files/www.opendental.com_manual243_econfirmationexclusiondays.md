@@ -1,0 +1,58 @@
+# File: ./www.opendental.com/manual243/econfirmationexclusiondays.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - eConfirmation and Web Sched Recall Exclusion Days</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('econfirmationexclusiondays','automatedmessaging','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/econfirmationexclusiondays.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/econfirmationexclusiondays.html" >v24.2</option><option value="https://www.opendental.com/manual241/econfirmationexclusiondays.html" >v24.1</option><option value="https://www.opendental.com/manual233/econfirmationexclusiondays.html" >v23.3</option><option value="https://www.opendental.com/manual232/econfirmationexclusiondays.html" >v23.2</option><option value="https://www.opendental.com/manual231/econfirmationexclusiondays.html" >v23.1</option><option value="https://www.opendental.com/manual224/econfirmationexclusiondays.html" >v22.4</option><option value="https://www.opendental.com/manual223/econfirmationexclusiondays.html" >v22.3</option><option value="https://www.opendental.com/manual222/econfirmationexclusiondays.html" >v22.2</option><option value="https://www.opendental.com/manual221/econfirmationexclusiondays.html" >v22.1</option><option value="https://www.opendental.com/manual214/econfirmationexclusiondays.html" >v21.4</option><option value="https://www.opendental.com/manual213/econfirmationexclusiondays.html" >v21.3</option><option value="https://www.opendental.com/manual212/econfirmationexclusiondays.html" >v21.2</option><option value="https://www.opendental.com/manual211/econfirmationexclusiondays.html" >v21.1</option><option value="https://www.opendental.com/manual205/econfirmationexclusiondays.html" >v20.5</option><option value="https://www.opendental.com/manual204/econfirmationexclusiondays.html" >v20.4</option><option value="https://www.opendental.com/manual203/econfirmationexclusiondays.html" >v20.3</option><option value="https://www.opendental.com/manual202/econfirmationexclusiondays.html" >v20.2</option><option value="https://www.opendental.com/manual201/econfirmationexclusiondays.html" >v20.1</option><option value="https://www.opendental.com/manual194/econfirmationexclusiondays.html" >v19.4</option><option value="https://www.opendental.com/manual193/econfirmationexclusiondays.html" >v19.3</option><option value="https://www.opendental.com/manual192/econfirmationexclusiondays.html" >v19.2</option><option value="https://www.opendental.com/manual191/econfirmationexclusiondays.html" >v19.1</option><option value="https://www.opendental.com/manual184/econfirmationexclusiondays.html" >v18.4</option><option value="https://www.opendental.com/manual183/econfirmationexclusiondays.html" >v18.3</option><option value="https://www.opendental.com/manual182/econfirmationexclusiondays.html" >v18.2</option><option value="https://www.opendental.com/manual181/econfirmationexclusiondays.html" >v18.1</option><option value="https://www.opendental.com/manual174/econfirmationexclusiondays.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>eConfirmation and Web Sched Recall Exclusion Days</p></div>
+<div class="GeneralPageContent">
+<p>Determine which days to exclude sending eConfirmations and Web Sched Recalls.</p>
+<p>In <a href="automatedmessagingadvanced.html">Automated Messaging Advanced Settings</a>, click <b>Exclusion Days</b>.</p>
+<img src="images/eConfirmationExclusions.png" width="441" height="509"/><p>Determine which days of the week or specific dates to exclude sending eConfirmation and Web Sched Recall messages. If a message is scheduled to send on an excluded day, it is sent using the typical send time (as set in <a href="eservicesmisctab.html">eServices Misc</a>) on the non-excluded day prior to the excluded day (e.g., if scheduled for Saturday, the message is sent on Friday).</p> 
+<p><b>Clinic</b>: Select the clinic to apply exclusions to. Select <i>Default</i> to set default exclusions for all clinics.</p>
+<p><b>Use Default Settings</b>: Only displays when a clinic other than Default is selected. Check to use the default settings. Uncheck to set specific settings for the selected clinic only. </p>
+<p><b>Exclusion Days</b>: Highlight one more days of the week to routinely exclude when sending eConfirmations (e.g., weekends).</p>
+<p class="MarginBottomZero"><b>Exclusion Dates</b>: Add specific dates to exclude when sending messages (e.g., holidays). </p>
+<ul class="MarginBottomGap">
+<li><b>Show Past Dates</b>: Show exclusions dates that have passed.</li>
+<li><b>Add</b>: Click to add a new date. The Choose Date window displays. Select the date from the calendar, then click OK to add.</li>
+<li><b>Delete</b>: Highlight a date from the list, then click to delete it.</li>
+</ul>
+<p><div class="Note">Note: Settings only affect future dates. Setting an exclusion date for today does not stop messages from sending.</div>
+</p>
+</div>
+</div>
+</body>
+</html>```

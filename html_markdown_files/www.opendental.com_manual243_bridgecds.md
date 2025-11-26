@@ -1,0 +1,52 @@
+# File: ./www.opendental.com/manual243/bridgecds.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Central Data Storage CDS Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridgecds','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/bridgecds.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/bridgecds.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridgecds.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridgecds.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridgecds.html" >v23.2</option><option value="https://www.opendental.com/manual231/bridgecds.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridgecds.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridgecds.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridgecds.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridgecds.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridgecds.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridgecds.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridgecds.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridgecds.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridgecds.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridgecds.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridgecds.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridgecds.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridgecds.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridgecds.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridgecds.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridgecds.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridgecds.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridgecds.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridgecds.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridgecds.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridgecds.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridgecds.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Central Data Storage CDS Bridge</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>. Double-click on <b>Central Data Storage</b>.</p>
+<img src="images/bridgeCDS.png" width="770" height="594"/><p>Central Data Storage (CDS) is off-site STaaS (storage as a service). To sign up and begin using their services, visit their website: <a href="https://www.centraldatastorage.com/open-dental/" target="_blank">Central Data Storage</a>. Also see <a href="backupsonline.html">Online Backups</a>.</p>
+<p class="MarginBottomZero">The only purpose of the CDS bridge is to remove the CDS button from the Backup window. </p>
+<ol class="MarginBottomGap">
+<li>Verify that <b>Enabled</b> is NOT checked.</li>
+<li>Check <b>Hide Unused Button</b>.</li>
+<li>Click Save.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>```

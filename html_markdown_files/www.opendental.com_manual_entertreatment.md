@@ -1,0 +1,111 @@
+# File: ./www.opendental.com/manual/entertreatment.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Enter Treatment</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('entertreatment','+chartTabs','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/entertreatment.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/entertreatment.html" >v24.2</option><option value="https://www.opendental.com/manual241/entertreatment.html" >v24.1</option><option value="https://www.opendental.com/manual233/entertreatment.html" >v23.3</option><option value="https://www.opendental.com/manual232/entertreatment.html" >v23.2</option><option value="https://www.opendental.com/manual231/entertreatment.html" >v23.1</option><option value="https://www.opendental.com/manual224/entertreatment.html" >v22.4</option><option value="https://www.opendental.com/manual223/entertreatment.html" >v22.3</option><option value="https://www.opendental.com/manual222/entertreatment.html" >v22.2</option><option value="https://www.opendental.com/manual221/entertreatment.html" >v22.1</option><option value="https://www.opendental.com/manual214/entertreatment.html" >v21.4</option><option value="https://www.opendental.com/manual213/entertreatment.html" >v21.3</option><option value="https://www.opendental.com/manual212/entertreatment.html" >v21.2</option><option value="https://www.opendental.com/manual211/entertreatment.html" >v21.1</option><option value="https://www.opendental.com/manual205/entertreatment.html" >v20.5</option><option value="https://www.opendental.com/manual204/entertreatment.html" >v20.4</option><option value="https://www.opendental.com/manual203/entertreatment.html" >v20.3</option><option value="https://www.opendental.com/manual202/entertreatment.html" >v20.2</option><option value="https://www.opendental.com/manual201/entertreatment.html" >v20.1</option><option value="https://www.opendental.com/manual194/entertreatment.html" >v19.4</option><option value="https://www.opendental.com/manual193/entertreatment.html" >v19.3</option><option value="https://www.opendental.com/manual192/entertreatment.html" >v19.2</option><option value="https://www.opendental.com/manual191/entertreatment.html" >v19.1</option><option value="https://www.opendental.com/manual184/entertreatment.html" >v18.4</option><option value="https://www.opendental.com/manual183/entertreatment.html" >v18.3</option><option value="https://www.opendental.com/manual182/entertreatment.html" >v18.2</option><option value="https://www.opendental.com/manual181/entertreatment.html" >v18.1</option><option value="https://www.opendental.com/manual174/entertreatment.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Enter Treatment</p></div>
+<div class="GeneralPageContent">
+<p>Chart procedures for a patient using the Enter Treatment area.</p>
+<p>In the <a href="chart.html">Chart Module</a>, select the <b>Enter Treatment</b> tab.</p>
+<img src="images/entertreatment.png" width="915" height="305"/><p>Planned treatment, treatment that is referred out, or existing treatment (done at your office or another location) can be charted. Entered treatment displays on the <a href="graphicaltoothchart.html">Graphical Tooth Chart</a> and in Progress Notes.</p>
+<p><img src="images/YouTube_PlayButton_15px.png" width="15" height="12" style="margin-bottom: 0px"/> See our video: <a href="https://youtu.be/1muCgXGk2f0">Clinical Charting 1: Entering Treatment Webinar</a>.</p>
+<p class="MarginBottomZero"><b>Tooth Surface Buttons (B/F, V, M, O/I, D, L):</b> Click a button to populate a surface in the box above. To remove an entry, click the button again. Multiple surfaces can be selected. The box itself cannot be edited.  </p>
+<ul class="MarginBottomGap">
+<li>Open Dental uses V to indicate a Class 5 location along the gingival margin of the B or F.</li>
+<li> The V identifier is drawn separately on the tooth chart. There is no corresponding lingual Class 5 indicator.</li>
+<li>V is not one of the surfaces allowed when submitting to insurance, so it is converted to B or F on all claims.</li>
+<li>V is also not counted as a surface for Auto Codes.</li>
+<li>Do not count a V as another surface additionally to B or F because no line angles were crossed. For example, a patient may have a two-surface DBV, which would be automatically converted to a DB on outgoing claims.</li>
+<li>Surfaces are handled slightly differently in <a href="canada.html">Canada</a>.</li>
+</ul>
+<p class="MarginBottomZero"><b>Entry Status:</b> Determines the procedure status. Set status colors in <a href="definitionschartgraphiccolors.html">Definitions: Chart Graphic Colors</a>. </p>
+<ul class="MarginBottomGap">
+<li>TreatPlan (default): For treatment that is recommended, but not yet complete. Procedure(s) have an entry date and a fee. If added to the active treatment plan, the status is <i>TP</i>. If added to inactive plans only, the status is <i>TPi</i>. If no treatment plan is selected, the procedures are added to the active plan.</li>
+<li>Complete: For work that is already completed. Procedure(s) have a fee and are immediately billed to the Account.</li>
+<li>ExistCurProv: For treatment that was done in your practice prior to using Open Dental. Procedure(s) have no fee.</li>
+<li>ExistOther: For treatment that was done by another provider, either before the patient came to your practice, or because they were referred out for treatment and completed. Procedure(s) have no date and no fee.</li>
+<li>Referred: For treatment the patient needs, but will be done at another office. Once the work has been completed, change the procedure status to Existing Other (EO). Referred procedures usually have the date of the referral, but no fee. For more information, see <a href="referrals.html">Referrals</a>. </li>
+<li>Condition: For charting conditions or watches. See the following Entering Treatment, Conditions and Diagnoses section for details.</li>
+</ul>
+<p><b>Date</b>: The date assigned to procedures when charting, regardless of Entry Status. Check <b>Today</b> to insert the current date. To use a different date, prior to entering treatment, uncheck Today and enter the procedure date. </p>
+<p><b>Diagnosis (optional):</b> One diagnosis can be set per procedure. Diagnoses are not displayed on the Graphical Tooth Chart. Customize options in <a href="definitionsdiagnoses.html">Definitions: Diagnosis Types</a>. To chart diagnoses separate from proposed treatment, use the Condition (Cn) entry status. See the following Entering Treatment, Conditions and Diagnoses section for details.</p>
+<p><b>Prognosis (optional)</b>: One prognosis can be set per procedure. Customize options in <a href="definitionsprognosis.html">Definitions: Prognosis</a>.</p>
+<p><b>Priority (optional)</b>: Assign a <a href="treatmentplan.html">Treatment Plan</a> priorty to the procedure. Affects the order of the procedure in active and inactive Treatment Plans. Used to prioritize treatment planned procedures. Customize options in <a href="definitionstreatplanpriorities.html">Definitions: Treat' Plan Priorities</a>.</p>
+<p class="MarginBottomZero">Use one of the following options to chart treatment: </p>
+<ul class="MarginBottomGap">
+<li><b>Procedure List</b>: Select a code from the <a href="procedurecodes.html">Procedure Codes</a> list.</li>
+<li><b>Procedure Buttons</b>: These buttons are associated with multiple codes or Auto Codes and organized by category. To customize options see <a href="procedurebuttons.html">Setup Procedure Buttons</a>.</li>
+<li><b>Type Proc Code</b>: Manually type the code then click <b>OK</b>. If a D code, entry of the D is optional.</li>
+<li><b>Quick Buttons</b>: These buttons are associated with a single code and designed to quickly chart fillings and sealants. Customize options in the <a href="quickprocedurebutton.html">Quick Buttons</a> area of Setup Procedure Buttons. </li>
+</ul>
+<p><b>Treatment Plans:</b> Check this box to show treatment plan information in place of the Progress Notes. See <a href="charttp.html">Treatment Plan in Chart</a>. This check box only shows when <i>Is TP View</i> is also selected for the Chart View on the Show tab (<a href="showtabchart.html">Show Chart Views</a>).</p>
+<h2>Entering Treatment</h2>
+<p class="MarginBottomZero">Entering by treatment area: </p>
+<ul class="MarginBottomGap">
+<li>When entering a procedure code for one tooth, select the tooth from the graphics.  <ul>
+<li>Select multiple teeth if entering the same procedure for each tooth.</li>
+</ul>
+</li>
+<li>When entering a procedure for a tooth range, select the range of teeth from the Graphical Tooth Chart. The selected teeth are automatically assigned to the treatment area of the selected procedure code .</li>
+<li>When entering a procedure for a quadrant, select any tooth in that quadrant. The charted procedure code is automatically assigned to the correct quadrant.</li>
+<li>When entering a procedure for an arch, select any tooth in that arch. The charted procedure code is automatically assigned to the correct arch.</li>
+</ul>
+<p>By default, procedures are charted with a status of <i>Treatment Planned</i>. Double-click a procedure to manually change the procedure status, or before charting treatment, change the radio button in the Enter Treatment tab to the correct status.</p>
+<p>Treatment Planned procedures default to the provider and clinic for the patient's first appointment of the day, if it exists.</p>
+<p>The procedure is added to Progress Notes and shows on the tooth chart (if applicable). If information is missing, the <a href="procedureedit.html">Procedure</a> opens. Double-click a procedure to edit it.</p>
+<p class="MarginBottomZero"><b>Conditions and Diagnoses</b>: There are two possible workflow options for charting diagnoses (e.g., caries). </p>
+<ul class="MarginBottomGap">
+<li>Attach a diagnosis to the procedure being treatment planned: <ol>
+<li>Set the Entry Status to <i>TreatPlan</i> (or <i>Referred</i> if the treatment is being done outside the office).</li>
+<li>Select a diagnosis.</li>
+<li>Select the treatment area as needed.</li>
+<li>Chart the procedure code.</li>
+ The diagnosis is now attached to the charted treatment. If the diagnosis needs to be changed or was not attached at the time the treatment was charted, double-click the procedure to open the Procedure Edit window. A diagnosis can also be attached here. </ol>
+</li>
+<li>Enter diagnoses as Conditions, separate from any planned restorations: <ol>
+<li>Set the Entry Status to <i>Condition</i>.</li>
+<li>Select a diagnosis from the list.</li>
+<li>Chart a watch procedure.</li>
+</ol>
+</li>
+</ul>
+<h2>Change Code Recommendations</h2>
+<p>If using <a href="autocode.html">Auto Codes</a>, users may be prompted to change a procedure code if Open Dental has recognized a mismatch. </p>
+<img src="images/autocodeRequired.png" width="513" height="238"/><p>To set whether or not staff is required to accept Auto Code suggestions set <i>Require use of suggested auto codes</i> in <a href="preferences.html">Preferences</a>.</p>
+</div>
+</div>
+</body>
+</html>```

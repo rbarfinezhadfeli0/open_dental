@@ -1,0 +1,60 @@
+# File: ./www.opendental.com/manual/odbc.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - ODBC</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('odbc','databasemanagementsystems','advancedtopics','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/odbc.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/odbc.html" >v24.2</option><option value="https://www.opendental.com/manual241/odbc.html" >v24.1</option><option value="https://www.opendental.com/manual233/odbc.html" >v23.3</option><option value="https://www.opendental.com/manual232/odbc.html" >v23.2</option><option value="https://www.opendental.com/manual231/odbc.html" >v23.1</option><option value="https://www.opendental.com/manual224/odbc.html" >v22.4</option><option value="https://www.opendental.com/manual223/odbc.html" >v22.3</option><option value="https://www.opendental.com/manual222/odbc.html" >v22.2</option><option value="https://www.opendental.com/manual221/odbc.html" >v22.1</option><option value="https://www.opendental.com/manual214/odbc.html" >v21.4</option><option value="https://www.opendental.com/manual213/odbc.html" >v21.3</option><option value="https://www.opendental.com/manual212/odbc.html" >v21.2</option><option value="https://www.opendental.com/manual211/odbc.html" >v21.1</option><option value="https://www.opendental.com/manual205/odbc.html" >v20.5</option><option value="https://www.opendental.com/manual204/odbc.html" >v20.4</option><option value="https://www.opendental.com/manual203/odbc.html" >v20.3</option><option value="https://www.opendental.com/manual202/odbc.html" >v20.2</option><option value="https://www.opendental.com/manual201/odbc.html" >v20.1</option><option value="https://www.opendental.com/manual194/odbc.html" >v19.4</option><option value="https://www.opendental.com/manual193/odbc.html" >v19.3</option><option value="https://www.opendental.com/manual192/odbc.html" >v19.2</option><option value="https://www.opendental.com/manual191/odbc.html" >v19.1</option><option value="https://www.opendental.com/manual184/odbc.html" >v18.4</option><option value="https://www.opendental.com/manual183/odbc.html" >v18.3</option><option value="https://www.opendental.com/manual182/odbc.html" >v18.2</option><option value="https://www.opendental.com/manual181/odbc.html" >v18.1</option><option value="https://www.opendental.com/manual174/odbc.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>ODBC</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="databasemanagementsystems.html">Database Management Systems</a>.</p>
+<p>ODBC is a standardized data connection format which will allow all your data to be directly available to other programs without having to do an export first. Any program can then access the database including Word, Excel, Access, and OpenOffice.org. You will have to install the ODBC driver on each computer where you want to access the database.</p>
+<p>ODBC connections are not an option to use as a data source for our actual client software. See <a href="multiplelocations.html">Multiple Locations</a> for better options such as Middle Tier or VPN with direct connection.</p>
+<p> Download and install the <a href="mysql.html">MySQL</a> ODBC version 8.0.12 (32-bit) driver from <a href="https://downloads.mysql.com/archives/c-odbc/">https://downloads.mysql.com/archives/c-odbc/</a><div class="Note">Note: If you have a 64-bit Office, or third party program, you can use the 64-bit driver instead.</div>
+</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Open Control Panel, (Performance and Maintenance), Administrative Tools, ODBC Data Sources (32-bit). </li>
+<li>Click on the second tab, System DSN. </li>
+<ul>
+<li>Open Dental will not be on the list, so you will be adding it to the list which will make it accessible from other programs. <br/><img src="images/odbcmain.png" width="594" height="421" class="ImageInParagraph"/></li>
+</ul>
+<li>Click Add. <br/><img src="images/odbcpick.png" width="464" height="352" class="ImageInParagraph"/></li>
+<li>Find the MySQL ODBC driver on the list, and click Finish.<br/><img src="images/odbcconfig.png" width="421" height="413" class="ImageInParagraph"/></li>
+</ol>
+<p>The Data Source Name is just any name that you want to use to refer to this data source. Fill in the Host/Server Name, Database Name, User, and Root as described in setting up the freedentalconfig.xml file. The Host/Server name will only be localhost if you have one computer that is not networked. Otherwise, it will be the name of the computer that is the server. The database name will be opendental unless you have changed it. The username will be root with no password unless you have set up passwords in MySQL/MariaDB.</p>
+</div>
+</div>
+</body>
+</html>```

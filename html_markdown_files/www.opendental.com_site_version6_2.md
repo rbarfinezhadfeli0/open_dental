@@ -1,0 +1,60 @@
+# File: ./www.opendental.com/site/version6_2.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: Version 6.2</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>Version 6.2</h1>
+		</div>
+		<div id="Content">
+<p>See <a href="versions.html">Versions</a></p>
+<p>Version 6.2 was released on 1/6/09.</p>
+<p><b>Security: </b>Global closeout date to prevent backdating procedures, adjustments, patient payments, and insurance payments. Permission types added for insurance payment create and edit. Audit trail includes these new permission types. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7security.html">Security</a>. </p>
+<p><b>Responsible Party: </b>This is a public health field used to track the person responsible for medical decisions in a nursing home. Field added to the patient table and to the treatplan table. All saved treatment plans have this field available. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7publichealth.html">Public Health</a>. </p>
+<p><b>Letter Merge: </b>Added some new fields: TPResponsPartyNameFL, TPResponsPartyAddress, TPResponsPartyCityStZip, SiteDescription, DateOfLastSavedTP, DateRecallDue, CarrierName, CarrierAddress, CarrierCityStZip, SubscriberNameFL, SubscriberID, and NextSchedAppt. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7lettermerge.html">LetterMerge</a>. </p>
+<p><b>Accounting Reports: </b>The General Ledger and Balance Sheet can now be selected by date range. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7accounting.html">Accounting</a>.</p>
+<p><b>Payment Report:</b> Filter by type. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportdailypayments.html">Daily Payments Report</a>. </p>
+<p><b>Minor changes:</b><br>  Payment plans on statements now show the remaining balance amount.<br>  Rx date can now be with spelled out month, like Oct 29, 2008.<br>  Setting appointments complete from Chart module now requires verification.<br>  Account module orders by tooth number.</p>
+
+</div>	
+	</div>
+</body>
+</html>```

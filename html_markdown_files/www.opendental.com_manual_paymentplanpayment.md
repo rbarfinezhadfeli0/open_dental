@@ -1,0 +1,127 @@
+# File: ./www.opendental.com/manual/paymentplanpayment.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Payment to a Payment Plan</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('paymentplanpayment','paymentplandynamic','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/paymentplanpayment.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/paymentplanpayment.html" >v24.2</option><option value="https://www.opendental.com/manual241/paymentplanpayment.html" >v24.1</option><option value="https://www.opendental.com/manual233/paymentplanpayment.html" >v23.3</option><option value="https://www.opendental.com/manual232/paymentplanpayment.html" >v23.2</option><option value="https://www.opendental.com/manual231/paymentplanpayment.html" >v23.1</option><option value="https://www.opendental.com/manual224/paymentplanpayment.html" >v22.4</option><option value="https://www.opendental.com/manual223/paymentplanpayment.html" >v22.3</option><option value="https://www.opendental.com/manual222/paymentplanpayment.html" >v22.2</option><option value="https://www.opendental.com/manual221/paymentplanpayment.html" >v22.1</option><option value="https://www.opendental.com/manual214/paymentplanpayment.html" >v21.4</option><option value="https://www.opendental.com/manual213/paymentplanpayment.html" >v21.3</option><option value="https://www.opendental.com/manual212/paymentplanpayment.html" >v21.2</option><option value="https://www.opendental.com/manual211/paymentplanpayment.html" >v21.1</option><option value="https://www.opendental.com/manual205/paymentplanpayment.html" >v20.5</option><option value="https://www.opendental.com/manual204/paymentplanpayment.html" >v20.4</option><option value="https://www.opendental.com/manual203/paymentplanpayment.html" >v20.3</option><option value="https://www.opendental.com/manual202/paymentplanpayment.html" >v20.2</option><option value="https://www.opendental.com/manual201/paymentplanpayment.html" >v20.1</option><option value="https://www.opendental.com/manual194/paymentplanpayment.html" >v19.4</option><option value="https://www.opendental.com/manual193/paymentplanpayment.html" >v19.3</option><option value="https://www.opendental.com/manual192/paymentplanpayment.html" >v19.2</option><option value="https://www.opendental.com/manual191/paymentplanpayment.html" >v19.1</option><option value="https://www.opendental.com/manual184/paymentplanpayment.html" >v18.4</option><option value="https://www.opendental.com/manual183/paymentplanpayment.html" >v18.3</option><option value="https://www.opendental.com/manual182/paymentplanpayment.html" >v18.2</option><option value="https://www.opendental.com/manual181/paymentplanpayment.html" >v18.1</option><option value="https://www.opendental.com/manual174/paymentplanpayment.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Payment to a Payment Plan</p></div>
+<div class="GeneralPageContent">
+<p>Payments can be applied directly to payment plan charges.</p>
+<p>In the <a href="payment.html">Payment</a> window, payments attached to payment plans show as a <i>PayPlanCharge</i> payment splits.</p>
+<img src="images/paymentPaymentPlan.png" width="915" height="251"/><p>Typically, patient payments to a <a href="paymentplandynamic.html">Payment Plan</a> or an <a href="paymentplanpatient.html">Old Payment Plan</a> are entered from the account of the person making the payment. </p>
+<p>Depending on what <i>Pay Plan charge logic </i> is set to in <a href="preferences.html">Preferences</a>, users can attach payments to payment plans in a number of ways.</p>
+<p>If <i>Pay Plan charge logic</i> is set to <i>Age Credits and Debits</i>, select the <i>PayPln: Debit</i> charge(s) from the account before clicking the <b>Payment </b>button. This ensures that if other outstanding charges exist on the account, Open Dental allocates the payment to the Payment Plan first. </p>
+<img src="images/payPlanDebit.png" width="757" height="88"/><p class="MarginBottomZero">For all other charge logic settings, including <i>Age Credits and Debits</i>, payments can be attached to Payment Plans in the following ways: </p>
+<ul class="MarginBottomGap">
+<li>Select procedures attached to the payment plan before clicking the <b>Payment</b> button. Double-click the payment split and check <b>Attached to Payment Plan</b></li>
+<li>Click <b>Payment</b> and delete any unwanted auto-created payment splits. Select outstanding charges with type of <i>PayPlanCharge</i> from the Outstanding Charges list and click <b>Pay</b>. Proceed with entering payment details as normal. See <a href="payment.html">Patient Payment</a>.</li>
+</ul>
+<img src="images/payPlanOutstanding.png" width="612" height="300"/><p>The payment shows in the payment plan's Amortization Schedule. Double-click the plan to view.</p>
+<img src="images/payplanPaymentAmort.png" width="671" height="157"/><p><div class="Note">Note: If a single payment is for multiple pay plan charges, it is split into a line item for each pay plan charge and for the pay plan charge amount.</div>
+</p>
+<p>If the <i>Pay Plan charge logic</i> preference is set to <i>Age Debits and Credits</i>, payment plan payments also show in the account grid of the patient with the pay plan or the payment plan guarantor (if the guarantor is not in the same family).</p>
+<img src="images/payplanPaymentLineItem.gif" width="736" height="23"/><p><b>Simple Allocations Setup</b></p>
+<p>If the Paysplits preference in <a href="allocationssetup.html">Allocations Setup</a> is set to <i>Manual</i>, any patient payment posted to an account with an active payment plan is automatically attached to the payment plan. If multiple payment plans exist, users are prompted to select a plan from the Select Payment Plan window.</p>
+<img src="images/payPlanSelect.png" width="611" height="176"/><p>Select the plan to attach payment and click <b>OK</b>. To only view active plans, check <b>Show Active Only</b>.</p>
+<h2>Payment Plan Prepayments</h2>
+<p>To pay extra towards a Payment Plan than what is currently due, overpay the pay plan principal charge. Highlight the pay plan debits due, then click <b>Payment</b> and enter the payment amount. When the payment window opens:</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Under the Current Payment Splits, delete any pay splits not associated to the payment plan, then double-click the pay plan principal charge.<br/> If the payment did not auto-split to a pay plan charge, click <b>Delete Splits</b>, select the pay plan charges from the Outstanding Charges grid, and click <b>Pay</b>. Then, double-click a pay plan charge.</li>
+<li>On the Edit Payment Split window, enter the extra payment amount and click <b>OK</b>. The amount of this pay plan charge should be the current charge amount plus the additional payment amount.</li>
+<li>Enter the payment details and process the payment.</li>
+<br/> Users are prompted to apply the overpayment to principal or to prepay for the next payment plan charge.<br/><img src="images/dynamicPayPlanPrompt.png" width="412" height="211" class="ImageInParagraph"/><li>Select whether to apply the overpayment to principal or create a prepayment on the payment plan. <ul>
+<li>Click <b>Yes</b> to apply the overpayment to principal and recalculate future interest charges. A new pay plan charge (PayPln:Debit) is added for the excess amount.<br/><div class="Note">Note: If there are unpaid pay plan charges, the overpayment is first transferred to the principal charges, ignoring any unpaid interest. A new principal charge is added for the remaining overpaid amount and the payment is transferred to the new charge. It is recommended to create payment splits for all unpaid pay plan charges before overpaying a principal charge.</div>
+</li>
+<li>Click <b>No</b> to apply the overpayment as a prepayment. An income transfer is automatically created, transferring the overpayment to the default <i>Payment plan unearned type</i>, set in Preferences. The prepayment is considered a hidden split and does not affect the patient's balance until the next pay plan charge is due. When the next pay plan charge posts, the prepayment is automatically transferred to the interest charge, and any excess is transferred to the principal charge. See <a href="hiddensplits.html">Hidden Splits</a>, Payment Plan Prepayment.<br/><div class="Note">Note: If the extra payment exceeds the total loan amount, the excess is transferred to unearned income to be allocated later.</div>
+</li>
+<li>Click <b>Cancel</b> to return to the payment window and manually make changes to the payment.</li>
+</ul>
+</li>
+</ol>
+<p>To prepay towards a Payment Plan before a pay plan charge is due, click <b>Payment</b> and enter the payment amount. When the payment window opens:</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Delete the Current Payment Splits, click <b>Delete Splits</b>.</li>
+<li>Create a new pay split, click <b>Add Split</b>.</li>
+<li>Enter the <a href="paysplit.html">Paysplit</a> details, then click <b>OK</b>. <ul>
+<li>Enter the payment amount.</li>
+<li>Check attached to payment plan.</li>
+<li>Select the unearned type for Payment Plans</li>
+<li>Set the clinic and provider to<i> None</i>.</li>
+</ul>
+</li>
+<li>Enter the payment details and process the payment.</li>
+</ol>
+<p>The payment is moved to the Hidden Splits tab and when the next pay plan charge is due, the prepayment is automatically transferred to the next pay plan charge.</p>
+<h2>Old Payment Plan Prepayments</h2>
+<p>To prepay or pay extra toward an Old Payment Plan, click Payment, and enter the payment amount. When the payment window opens:</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Under the Current Payment Splits, delete any pay splits not associated to the payment plan but keep any prepayment split. If no prepayment split was created, click <b>Add</b> to create one.</li>
+<li>Double-click on the prepayment split</li>
+<li>Enter the <a href="paysplit.html">Paysplit</a> details and click<b> OK</b>. <ul>
+<li>Enter the prepayment amount.</li>
+<li>Select the unearned type.</li>
+<li>Set the clinic and provider to None.</li>
+<li>Check <b>Attached to Payment Plan</b>.</li>
+</ul>
+</li>
+<li>Enter the payment details and process the payment.</li>
+<li>Double-click on the payment plan to recalculate the amortization schedule for the new prepayment. See <a href="paymentplanrecalculate.html">Payment Plan Recalculate</a><ol>
+<li>Click <b>Recalculate</b>. </li>
+<li>Select <b>Prepay</b> or <b>Pay on Principal</b>.</li>
+<li>Optional: If the payment plan includes interest, check <b>Recalculate Interest</b> to recalculate interest as well.</li>
+<li>Click <b>OK</b>.</li>
+</ol>
+ After a selection is made, a new pay plan charge is added for the prepayment amount.</li>
+<li>Allocate the prepayment to the new charge: either use the <a href="incometransfermanager.html">Income Transfer Manager</a> or highlight the charge, click the Payment dropdown, and select <a href="unearnedallocate.html">Allocate Unearned Income</a>.</li>
+</ol>
+<h2>Detaching a Payment from a Payment Plan</h2>
+<p>If a payment was attached to a payment plan by mistake, it can be detached by editing the payment split (paysplit).</p>
+<p class="MarginBottomZero">To edit the paysplit: </p>
+<ol class="MarginBottomGap">
+<li>From the Payment Plan or Old Payment Plan window, double-click the payment.</li>
+<li>Double-click the <a href="paysplit.html">Paysplit</a>.</li>
+<li>Uncheck <i>Attached to Payment Plan</i>.</li>
+<li>Click <b>OK</b>. </li>
+<li>Repeat with any additional paysplits.</li>
+<li>Click <b>OK</b> to save changes to the payment.</li>
+</ol>
+<p>If the payment is attached to a procedure that it should not be attached to, consider completing an <a href="incometransfer.html">Income Transfer</a> to reallocate the payment to the correct procedure. </p>
+</div>
+</div>
+</body>
+</html>```

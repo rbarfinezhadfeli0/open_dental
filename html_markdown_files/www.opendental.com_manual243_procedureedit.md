@@ -1,0 +1,144 @@
+# File: ./www.opendental.com/manual243/procedureedit.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Procedure</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('procedureedit','entertreatment','+chartTabs','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/procedureedit.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/procedureedit.html" >v24.2</option><option value="https://www.opendental.com/manual241/procedureedit.html" >v24.1</option><option value="https://www.opendental.com/manual233/procedureedit.html" >v23.3</option><option value="https://www.opendental.com/manual232/procedureedit.html" >v23.2</option><option value="https://www.opendental.com/manual231/procedureedit.html" >v23.1</option><option value="https://www.opendental.com/manual224/procedureedit.html" >v22.4</option><option value="https://www.opendental.com/manual223/procedureedit.html" >v22.3</option><option value="https://www.opendental.com/manual222/procedureedit.html" >v22.2</option><option value="https://www.opendental.com/manual221/procedureedit.html" >v22.1</option><option value="https://www.opendental.com/manual214/procedureedit.html" >v21.4</option><option value="https://www.opendental.com/manual213/procedureedit.html" >v21.3</option><option value="https://www.opendental.com/manual212/procedureedit.html" >v21.2</option><option value="https://www.opendental.com/manual211/procedureedit.html" >v21.1</option><option value="https://www.opendental.com/manual205/procedureedit.html" >v20.5</option><option value="https://www.opendental.com/manual204/procedureedit.html" >v20.4</option><option value="https://www.opendental.com/manual203/procedureedit.html" >v20.3</option><option value="https://www.opendental.com/manual202/procedureedit.html" >v20.2</option><option value="https://www.opendental.com/manual201/procedureedit.html" >v20.1</option><option value="https://www.opendental.com/manual194/procedureedit.html" >v19.4</option><option value="https://www.opendental.com/manual193/procedureedit.html" >v19.3</option><option value="https://www.opendental.com/manual192/procedureedit.html" >v19.2</option><option value="https://www.opendental.com/manual191/procedureedit.html" >v19.1</option><option value="https://www.opendental.com/manual184/procedureedit.html" >v18.4</option><option value="https://www.opendental.com/manual183/procedureedit.html" >v18.3</option><option value="https://www.opendental.com/manual182/procedureedit.html" >v18.2</option><option value="https://www.opendental.com/manual181/procedureedit.html" >v18.1</option><option value="https://www.opendental.com/manual174/procedureedit.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Procedure</p></div>
+<div class="GeneralPageContent">
+<p>View and edit procedure information, including procedure notes, from the Procedure Info window.</p>
+<p>In the <a href="chart.html">Chart Module</a>, double-click a procedure to edit.</p>
+<img src="images/procedureEdit.png" width="915" height="670"/><p>Alternatively,</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Double-click a procedure from the <a href="account.html">Account Module</a>.</li>
+<li>Double-click a procedure from the <a href="treatmentplan.html">Treatment Plan Module</a>.</li>
+<li>Double-click a procedure from <a href="aptedit.html">Edit Appointment</a>.</li>
+</ul>
+<p>To edit, delete, or set procedures complete, the logged-on user must have the correct <a href="permissions.html">Permissions</a>.</p>
+<h2>Date</h2>
+<img src="images/procEditDate.png" width="362" height="88"/><p><b>Date Entry</b>: Initially this date is the day the procedure was entered. The date is updated when the procedure is set complete. It cannot be manually edited.</p>
+<p><b>Date TP</b>: The day the procedure was added to the treatment plan. </p>
+<p><b>Date</b>: Date of the procedure. This is the date used in the Chart and Account.</p>
+<p><b>Time Start</b>: Enter the procedure start time. </p>
+<p><b>End</b>: Only shows when Medical Insurance is turned on. Enter the procedure end time.</p>
+<p><b>Now</b>: Only shows when Medical Insurance is turned on. Inserts the current time. If no time exists in Time Start, button insert time heres. If there is already a start time, it inserts an end time instead. If both a start and end time exist, the button overrides the existing end time.</p>
+<p><b>Final</b>: Only shows when Medical Insurance is turned on. Automatically calculates the total minutes based on Time Start and End.</p>
+<p><b>Original Date Comp</b>: Only shows for <i>Complete</i> procedures if the <i>Date</i> is changed. Displays date procedure was originally set complete. Cannot be changed</p>
+<h2>Procedure and Treatment Area</h2>
+<img src="images/procEditTreatArea.png" width="362" height="227"/><p><b>Procedure</b>: Procedure code of the attached procedure.</p>
+<p><b>Description</b>: Description of the attached procedure.</p>
+<p class="MarginBottomZero"><b>Change</b>: Open the <a href="procedurecodes.html">Procedure Codes List</a> to choose a different Procedure Code. The <i>Amount</i> is updated to reflect the updated procedure.  </p>
+<ul class="MarginBottomGap">
+<li>If a code is selected with a different treatment area than what is currently in use (e.g., tooth vs. surface), the code change will not be allowed due to treatment area mismatch. For example, a user cannot change a filling procedure to a prophy procedure, because the treatment area for a filling is Tooth and for a prophy is Mouth. </li>
+<li>Once the procedure has been attached to a claim, there are more complex steps to correct <a href="claimpaymentincorrectproc.html">Incorrect Procedures on Claim</a>. </li>
+</ul>
+<p class="MarginBottomZero"><b>Tooth/Surface</b>: Options for tooth number and surfaces are different depending on the procedure code's <i>Treatment Area</i> set in <a href="procedurecodeedit.html">Edit Procedure Code</a>.  </p>
+<ul class="MarginBottomGap">
+<li>Tooth: A single tooth number. Required if procedure code treatment area is set to <i>Tooth</i>. <a href="supernumeraryteeth.html">Supernumerary Teeth</a> must be manually entered.</li>
+<li>Surfaces: B/F, V, M, O/I, D, L. Type manually or click a button to select. Click button again to clear. Required if procedure code treatment area is set to <i>Surface</i>.</li>
+<li>Quadrant: UR (upper right), UL (upper left), LR (lower right), LL (lower left). Required if procedure code treatment area is set to <i>Quadrant</i>.</li>
+<li>Sextant: 1 - 6 in United States. 03 - 08 in Canada. Required if procedure code treatment area is set to <i>Sextant</i>.</li>
+<li>Arch: U (upper), L (lower). Required if procedure code treatment area is set to arch. Maxillary codes default to U. Mandibular codes default to L.</li>
+<li>Tooth Range: Click and drag to select a range of teeth. At least one tooth must be selected if procedure code treatment area is set to <i>Tooth Range</i>. Teeth marked primary list the primary tooth letter. Only molars marked permanent are listed.</li>
+</ul>
+<p><b>Amount</b>: The billable fee of the procedure based on the fee schedule. Enter default fees in the Procedure Code List. The fee only shows if the logged-on user has the <i>Show Procedure Fee</i> security permission.</p>
+<p><b>Hide Graphics</b>: Check to hide this procedure on the Graphical Tooth Chart.</p>
+<p><b>Diagnosis</b>: Only one diagnosis per procedure allowed. If a procedure requires more than one diagnosis (e.g., cracked tooth, IP, Apical perio) add them as notes. Diagnoses do not affect the Graphical Tooth Chart. Customize options in <a href="definitionsdiagnoses.html">Definitions: Diagnosis Types</a>. To see diagnoses separately from the proposed treatment, see the comments regarding the Condition (Cn) Status.</p>
+<p><b>Priority</b>: Used to prioritize treatment in the Treatment Plan Module. Options can be customized in <a href="definitionstreatplanpriorities.html">Definitions: Treat' Plan Priorities</a>.</p>
+<h2>Prosthesis Replacement</h2>
+<img src="images/procCodeEditProsthesis.png" width="277" height="88"/><p>This area is only visible if the procedure code has been set up as <i>Is Prosthesis</i>. This information is sent in e-claims only and is required before sending electronically.</p>
+<p><b>Crown Bridge, Denture, or RPD</b>: Select<i> Initial</i> or <i>Replacement</i>. If <i>No</i> is selected when closing the Procedure Info window, users are prompted with the window below. When attempting to save or send claims with the procedure attached, users also receive a warning that the claim is missing data.</p>
+<img src="images/procEditProsthDate.png" width="286" height="133"/><p><b>Original Date</b>: Required when prosthesis is marked as <i>Replacement</i>.</p>
+<p><b>Is Estimated</b>: Check if <i>Original Date</i> entered is an estimate. The flag is only supported in 5010 e-claims. For 4010 e-claims, there is no place to send this flag, but it may be useful for documentation. Enter this information for printed claims on the <a href="claimtabgeneral.html">Edit Claim - General Tab</a>.</p>
+<h2>E-Claim Note</h2>
+<img src="images/procEditeClaimNote.png" width="380" height="50"/><p><b>E-claim Note</b>: A place for short notes that pertain to this procedure. Limited to 80 characters for electronic claims. It should be used rarely and is only sent in e-claims or printed on the <a href="claimform1500.html">1500-02-12 Claim Form</a>, Box 24 (supplemental). It is not printed on other paper claims. The note is procedure level, not claim level. To enter a claim note, see Edit Claim - General Tab.</p>
+<p><a href="rightclicktextboxes.html">Right-Click</a> the text box for additional options.</p>
+<h2>Procedure Status, Provider, and Referral</h2>
+<img src="images/procEditProvider.png" width="457" height="106"/><p class="MarginBottomZero"><b>Procedure Status</b>: The procedure status can be one of the following: </p>
+<ul class="MarginBottomGap">
+<li>Treatment Planned (TP): For work that is recommended, but not complete yet.</li>
+<li>Complete (C): The work is done and shows in the patient's account.</li>
+<li>Complete (In Process) (C/P): The procedure has been grouped with other related procedures. Implies other work must still be completed before a claim can be sent. (e.g., crowns).</li>
+<li>Existing-Current Prov (EC): Procedure was done in your practice before starting to use Open Dental.</li>
+<li>Existing-Other Prov (EO): Procedure was done by another provider, either before the patient came to your practice, or because they were referred out for treatment.</li>
+<li>Referred Out (R): Procedure the patient needs, but that will be done at another office. Once the work has been completed, users can change the status of the procedure to EO.</li>
+<li>Condition (Cn): Chart caries and other conditions as a separate step in order to see them on the Graphical Tooth Chart. Most offices will not use this status. To use this status, users must also add dummy procedure codes that represent the conditions being shown. The mouth area and paint type of each dummy code must be carefully set.</li>
+<li>Treatment Planned Inactive (TPi): Procedures that are not part of an active treatment plan.</li>
+<li>Deleted (D): Procedure has been deleted. Only displays in Chart Module when audit is enabled. Once deleted, information is read-only. Procedures status and information cannot be edited.</li>
+</ul>
+<div class="Note">Note: The procedure status determines the color used on the Graphical Tooth Chart, with the exception of procedures using a color override. Manually changing a procedure status to <i>Complete</i> using the dropdown only changes the status. It does not copy default procedure notes.</div>
+<p><b>Set Complete</b>: Assign the status of complete, insert default procedure notes, change the Date Entry and Date to today's date, and close the window.</p>
+<p><b>Clinic</b>: The Clinic associated with this procedure. Only visible when <a href="clinics.html">Clinics</a> is enabled.</p>
+<p class="MarginBottomZero"><b>Provider</b>: The provider associated with the procedure (i.e., treating provider). </p>
+<ul class="MarginBottomGap">
+<li>Set <i>Procedure Fee Update Behavior</i> in <a href="preferences.html">Preferences</a> to determine how the procedure fee is affected when a provider with a different fee is selected. </li>
+<li>If using Clinics and providers are restricted to Clinics in security, only providers available for the selected Clinic are options.</li>
+<li>If the procedure is set complete and attached to a payment split, changing the provider here also changes the provider on the attached payment splits.</li>
+</ul>
+<p><b>Referral</b>: Click <b>[...] </b>to refer this procedure to a Referral source. Referrals out can be tracked individually.</p>
+<h2>Notes</h2>
+<img src="images/procEditNotes.png" width="519" height="279"/><p><b>User</b>: Identifies the most recent User associated with the Notes and to any electronic signature (below). Defaults to the logged-on user. To override the user, click <b>[...]</b> then enter log-on credentials.</p>
+<p><b>Auto Note</b>: Click to manually insert <a href="autonotes.html">Auto Notes</a>.</p>
+<p><b>Edit Auto Note</b>: Only appears when an Auto Note has been used and prompts have been left unanswered. Click to complete Auto Note.</p>
+<p class="MarginBottomZero"><b>Notes</b>: For Procedure Notes. Usually empty until the procedure status is set complete. Once set complete, default procedure notes are automatically copied and staff can make changes to the notes as needed. </p>
+<ul class="MarginBottomGap">
+<li>Create default procedure notes from <a href="procedurecodeedit.html">Procedure Code</a>.</li>
+<li>If a default procedure note contains an Auto Note (and the Preference, <i>Procedures Prompt for Auto Note</i>, is enabled) reopening the procedure triggers any Auto Note prompts.</li>
+<li>If a note contains quotes (i.e.,""), then information must be filled in between the quotes or the note is considered <i>Incomplete</i>. Use the <a href="reportincompleteprocnote.html">Incomplete Procedure Notes Report</a> to find incomplete notes.</li>
+<li>If EHR is enabled, click <b>Search</b>, enter the search term, then click <b>OK</b> to search the Notes field. The first matching result is highlighted.</li>
+<li>If the procedure was created or completed today, the cursor is automatically at the end of the Notes. Otherwise, the cursor is automatically shown at the beginning of the Notes.</li>
+<li><a href="rightclicktextboxes.html">Right-Click</a> the text box for additional options.</li>
+</ul>
+<p class="MarginBottomZero"><b>Signature/Initials</b>: Sign the Notes with an <a href="electronicsignatures.html">Electronic Signature</a>. The user tied to the Notes is indicated in the User box above the Notes area. </p>
+<ul class="MarginBottomGap">
+<li>If Notes are edited later or the User is changed, the signature is automatically cleared.</li>
+<li>Enable <i>Block procedure note signatures when there are uncompleted auto note prompts</i> in <a href="preferences.html">Preferences</a> to prevent users from signing Group Notes with incomplete auto notes.</li>
+<li>An <a href="alerts.html">Alert</a> is generated when a signature is cleared by another user.</li>
+<li>If a signature is cleared by another user without adding a replacement, users are warned when saving the procedure.</li>
+</ul>
+<h2>Tabs</h2>
+<img src="images/procEditTabs.png" width="153" height="36"/><p><b><a href="procedurefinancial.html">Procedure - Financial Tab</a></b>: View and add insurance estimates, adjustments, payments, and <a href="treatmentplandiscounts.html">TP Procedure Discount</a>.</p>
+<p><b><a href="proceduremedical.html">Procedure - Medical Tab</a></b>: To view this tab, Medical Insurance must be enabled in <a href="showfeatures.html">Show Features</a>. Use it to attach ICD-10 diagnosis codes to the procedure (if required by insurance) or enter other medical claim information.</p>
+<p><b><a href="proceduremisc.html">Procedure - Misc Tab</a></b>: Medicaid and Public Health options.</p>
+<h2>Save, Edit, or Delete</h2>
+<img src="images/procEditButtons.png" width="776" height="27"/><p><b>Delete</b>: Delete the procedure. Deleted procedures can be viewed by enabling Audit mode from <a href="showtabchart.html">Show Chart Views</a>, but deleting cannot be undone. If the <i>Appointments require procedures</i> preference is enabled, the below message appears when deleting the last procedure attached to an appointment. </p>
+<img src="images/procedureDeleteProcEdit.png" width="398" height="146"/><p><b>Edit Anyway</b>: Button only appears on procedures attached to claims or preauthorizations. Click to edit procedure information. Some fields (e.g., procedure code) still cannot be edited even after clicking this button. Read-only fields are greyed out after clicking this button. </p>
+<p><b>OK</b>: Close the window and save changes.</p>
+<p><b>Cancel</b>: Close the window. Some changes are saved.</p>
+</div>
+</div>
+</body>
+</html>```

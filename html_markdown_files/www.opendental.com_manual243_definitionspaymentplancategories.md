@@ -1,0 +1,51 @@
+# File: ./www.opendental.com/manual243/definitionspaymentplancategories.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Definitions: Payment Plan Categories</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('definitionspaymentplancategories','definitions','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/definitionspaymentplancategories.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/definitionspaymentplancategories.html" >v24.2</option><option value="https://www.opendental.com/manual241/definitionspaymentplancategories.html" >v24.1</option><option value="https://www.opendental.com/manual233/definitionspaymentplancategories.html" >v23.3</option><option value="https://www.opendental.com/manual232/definitionspaymentplancategories.html" >v23.2</option><option value="https://www.opendental.com/manual231/definitionspaymentplancategories.html" >v23.1</option><option value="https://www.opendental.com/manual224/definitionspaymentplancategories.html" >v22.4</option><option value="https://www.opendental.com/manual223/definitionspaymentplancategories.html" >v22.3</option><option value="https://www.opendental.com/manual222/definitionspaymentplancategories.html" >v22.2</option><option value="https://www.opendental.com/manual221/definitionspaymentplancategories.html" >v22.1</option><option value="https://www.opendental.com/manual214/definitionspaymentplancategories.html" >v21.4</option><option value="https://www.opendental.com/manual213/definitionspaymentplancategories.html" >v21.3</option><option value="https://www.opendental.com/manual212/definitionspaymentplancategories.html" >v21.2</option><option value="https://www.opendental.com/manual211/definitionspaymentplancategories.html" >v21.1</option><option value="https://www.opendental.com/manual205/definitionspaymentplancategories.html" >v20.5</option><option value="https://www.opendental.com/manual204/definitionspaymentplancategories.html" >v20.4</option><option value="https://www.opendental.com/manual203/definitionspaymentplancategories.html" >v20.3</option><option value="https://www.opendental.com/manual202/definitionspaymentplancategories.html" >v20.2</option><option value="https://www.opendental.com/manual201/definitionspaymentplancategories.html" >v20.1</option><option value="https://www.opendental.com/manual194/definitionspaymentplancategories.html" >v19.4</option><option value="https://www.opendental.com/manual193/definitionspaymentplancategories.html" >v19.3</option><option value="https://www.opendental.com/manual192/definitionspaymentplancategories.html" >v19.2</option><option value="https://www.opendental.com/manual191/definitionspaymentplancategories.html" >v19.1</option><option value="https://www.opendental.com/manual184/definitionspaymentplancategories.html" >v18.4</option><option value="https://www.opendental.com/manual183/definitionspaymentplancategories.html" >v18.3</option><option value="https://www.opendental.com/manual182/definitionspaymentplancategories.html" >v18.2</option><option value="https://www.opendental.com/manual181/definitionspaymentplancategories.html" >v18.1</option><option value="https://www.opendental.com/manual174/definitionspaymentplancategories.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Definitions: Payment Plan Categories</p></div>
+<div class="GeneralPageContent">
+<p>Create Payment Plan Categories to help distinguish payment plans when there are multiple in a family.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="definitions.html">Definitions</a>, Payment Plan Categories.</p>
+<img src="images/definitionspaymentplancats.png" width="713" height="444"/><p>The Payment Plan Categories determine the list of category options available for <a href="paymentplandynamic.html">Payment Plans</a>, <a href="paymentplanins.html">Insurance Payment Plans</a> and <a href="paymentplanpatient.html">Old Payment Plans</a>. This list is empty by default. Add new categories as needed. </p>
+<p> If no category is created, all payment plans default to <i>None</i>.</p>
+<p>Double-click an existing item or click <b>Add</b> to create a new item. The Edit Definition window opens.</p>
+<img src="images/definitionEditPaymentPlanCats.png" width="425" height="196"/><p><b>Name</b>: Give the category a name. </p>
+<p><b>Hidden</b>: Check to hide this category. </p>
+</div>
+</div>
+</body>
+</html>```

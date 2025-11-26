@@ -1,0 +1,72 @@
+# File: ./www.opendental.com/manual243/webformsdiagram.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Web Forms Technical Diagram</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('webformsdiagram','webformsupload','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/webformsdiagram.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/webformsdiagram.html" >v24.2</option><option value="https://www.opendental.com/manual241/webformsdiagram.html" >v24.1</option><option value="https://www.opendental.com/manual233/webformsdiagram.html" >v23.3</option><option value="https://www.opendental.com/manual232/webformsdiagram.html" >v23.2</option><option value="https://www.opendental.com/manual231/webformsdiagram.html" >v23.1</option><option value="https://www.opendental.com/manual224/webformsdiagram.html" >v22.4</option><option value="https://www.opendental.com/manual223/webformsdiagram.html" >v22.3</option><option value="https://www.opendental.com/manual222/webformsdiagram.html" >v22.2</option><option value="https://www.opendental.com/manual221/webformsdiagram.html" >v22.1</option><option value="https://www.opendental.com/manual214/webformsdiagram.html" >v21.4</option><option value="https://www.opendental.com/manual213/webformsdiagram.html" >v21.3</option><option value="https://www.opendental.com/manual212/webformsdiagram.html" >v21.2</option><option value="https://www.opendental.com/manual211/webformsdiagram.html" >v21.1</option><option value="https://www.opendental.com/manual205/webformsdiagram.html" >v20.5</option><option value="https://www.opendental.com/manual204/webformsdiagram.html" >v20.4</option><option value="https://www.opendental.com/manual203/webformsdiagram.html" >v20.3</option><option value="https://www.opendental.com/manual202/webformsdiagram.html" >v20.2</option><option value="https://www.opendental.com/manual201/webformsdiagram.html" >v20.1</option><option value="https://www.opendental.com/manual194/webformsdiagram.html" >v19.4</option><option value="https://www.opendental.com/manual193/webformsdiagram.html" >v19.3</option><option value="https://www.opendental.com/manual192/webformsdiagram.html" >v19.2</option><option value="https://www.opendental.com/manual191/webformsdiagram.html" >v19.1</option><option value="https://www.opendental.com/manual184/webformsdiagram.html" >v18.4</option><option value="https://www.opendental.com/manual183/webformsdiagram.html" >v18.3</option><option value="https://www.opendental.com/manual182/webformsdiagram.html" >v18.2</option><option value="https://www.opendental.com/manual181/webformsdiagram.html" >v18.1</option><option value="https://www.opendental.com/manual174/webformsdiagram.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Web Forms Technical Diagram</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="webformsupload.html">Web Form Setup</a>.</p>
+<p>This diagram explains the background process / workflow when handling Web Forms.</p>
+<img src="images/webFormsDiagram.png" width="915" height="430"/><p class="MarginBottomZero"><b>Dental Office Web Form Process</b><br/> All steps are performed from within an instance of Open Dental. </p>
+<ol class="MarginBottomGap">
+<li>The dental office manages Web Forms within the <a href="webformsupload.html">Web Form Setup</a> window where Open Dental will directly communicate with the Host Server Address specified.</li>
+<li>The dental office can use the Web Form Setup window to help construct URLs that patients will use to visit the WebForms.html page hosted by Open Dental Software. </li>
+<li>The dental office provides a means to access these constructed URLs however they deem fit (redirects from their own websites, emails, etc).</li>
+<li>The dental office will periodically check for web forms that have been filled out by patients via the Web Forms window.</li>
+<li>Clicking the <i>Retrieve New Forms</i> button will directly communicate with the Host Server Address specified in step 1. <ul>
+<li>Retrieved web forms will be deleted from the HQ database.</li>
+<li>See <a href="webformsretrieve.html">Web Forms Retrieve</a></li>
+</ul>
+</li>
+</ol>
+<p class="MarginBottomZero"><b>Browser Web Form Process</b></p>
+<ol class="MarginBottomGap">
+<li>Patient visits <i>https://patientviewer.com/...WebForms.html</i> provided by the dental office. <ul>
+<li>See <a href="webformspatient.html">Web Forms: What Patient Sees</a>.</li>
+</ul>
+</li>
+<li>The browser downloads the JavaScript necessary to interact with WebForms.html.</li>
+<li>Patient interacts with WebForms.html in order to fill out the Web Forms.</li>
+<li>Patient clicks the <i>Submit </i>button which calls a web service dedicated to the web app that is hosted by the same server that served the HTML host page as to not violate same origin policy (SOP). <ul>
+<li>See <a href="https://en.wikipedia.org/wiki/Same-origin_policy">https://en.wikipedia.org/wiki/Same-origin_policy</a> for more information.</li>
+</ul>
+</li>
+<li>All web forms are then stored within the HQ database until downloaded by the dental office, at which point they are deleted.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>```

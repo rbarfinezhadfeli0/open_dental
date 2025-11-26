@@ -1,0 +1,78 @@
+# File: ./www.opendental.com/manual243/uninstall.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Uninstalling Open Dental</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('uninstall','installation','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/uninstall.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/uninstall.html" >v24.2</option><option value="https://www.opendental.com/manual241/uninstall.html" >v24.1</option><option value="https://www.opendental.com/manual233/uninstall.html" >v23.3</option><option value="https://www.opendental.com/manual232/uninstall.html" >v23.2</option><option value="https://www.opendental.com/manual231/uninstall.html" >v23.1</option><option value="https://www.opendental.com/manual224/uninstall.html" >v22.4</option><option value="https://www.opendental.com/manual223/uninstall.html" >v22.3</option><option value="https://www.opendental.com/manual222/uninstall.html" >v22.2</option><option value="https://www.opendental.com/manual221/uninstall.html" >v22.1</option><option value="https://www.opendental.com/manual214/uninstall.html" >v21.4</option><option value="https://www.opendental.com/manual213/uninstall.html" >v21.3</option><option value="https://www.opendental.com/manual212/uninstall.html" >v21.2</option><option value="https://www.opendental.com/manual211/uninstall.html" >v21.1</option><option value="https://www.opendental.com/manual205/uninstall.html" >v20.5</option><option value="https://www.opendental.com/manual204/uninstall.html" >v20.4</option><option value="https://www.opendental.com/manual203/uninstall.html" >v20.3</option><option value="https://www.opendental.com/manual202/uninstall.html" >v20.2</option><option value="https://www.opendental.com/manual201/uninstall.html" >v20.1</option><option value="https://www.opendental.com/manual194/uninstall.html" >v19.4</option><option value="https://www.opendental.com/manual193/uninstall.html" >v19.3</option><option value="https://www.opendental.com/manual192/uninstall.html" >v19.2</option><option value="https://www.opendental.com/manual191/uninstall.html" >v19.1</option><option value="https://www.opendental.com/manual184/uninstall.html" >v18.4</option><option value="https://www.opendental.com/manual183/uninstall.html" >v18.3</option><option value="https://www.opendental.com/manual182/uninstall.html" >v18.2</option><option value="https://www.opendental.com/manual181/uninstall.html" >v18.1</option><option value="https://www.opendental.com/manual174/uninstall.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Uninstalling Open Dental</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="installation.html">Installation</a>.</p>
+<p>Uninstalling Open Dental can be useful when removing an old computer from your office.</p>
+<img src="images/uninstall.png" width="323" height="188"/><h2>Uninstall Open Dental on a Workstation</h2>
+<p>Only the Open Dental program needs removed from a workstation. </p>
+<ol>
+<li>In the Control Panel, click <i>Programs and Features</i>.</li>
+<li>Highlight <i>OpenDental</i> from the list.</li>
+<li>Click <b>Uninstall</b>.</li>
+<li>Follow the prompts.</li>
+</ol>
+<br/><h2>Uninstall Open Dental on a Server</h2>
+<p>If removing Open Dental from a server, first consider making <a href="backups.html">Backups</a> or performing a <a href="servermigration.html">Server Migration</a>.</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Uninstall any services (see Uninstall a Service below).</li>
+<li>Uninstall the Open Dental program (see Uninstall Open Dental on a Workstation above).</li>
+<li>Uninstall the MySQL or MariaDB service (see Uninstall MySQL below).</li>
+</ol>
+<h2>Uninstall MySQL</h2>
+<p class="MarginBottomZero"><b>Uninstall the MySQL service.</b></p>
+<ol class="MarginBottomGap">
+<li>In the Control Panel, click <i>Programs and Features</i>.</li>
+<li>Highlight <i>MySQL</i> or<i> MariaDB</i> from the list.</li>
+<li>Click <b>Uninstall</b>.</li>
+<li>Follow any prompts.</li>
+</ol>
+<p class="MarginBottomZero">Occasionally, MySQL does not list in Programs and Features. It can instead be permanently disabled. </p>
+<ol class="MarginBottomGap">
+<li>In Services, highlight the MySQL service.</li>
+<li>Right-click and select Properties.</li>
+<li>In the General Tab, change the Startup Type to <i>Disabled</i>.</li>
+</ol>
+<h2>Uninstall a Service</h2>
+<p>Additional services, such as the eConnector or OpenDentalService, can be uninstalled from the <a href="servicemanager.html">Service Manager</a>.</p>
+</div>
+</div>
+</body>
+</html>```

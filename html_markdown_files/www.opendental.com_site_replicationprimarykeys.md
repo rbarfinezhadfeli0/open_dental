@@ -1,0 +1,54 @@
+# File: ./www.opendental.com/site/replicationprimarykeys.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Random Primary Keys</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('replicationprimarykeys','replication','advancedtopics','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Random Primary Keys</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="replication.html">Replication</a>.</p>
+<p>Random primary keys are unique key ranges used by each server on Replication (both <a href="replicationoneway.html">One-Way Replication</a> and <a href="replicationdaisychain.html">Daisy Chain Replication</a>). They are an older method and not recommended. The recommended method is to instead use auto-increment variables to avoid data collision. See <a href="replicationautoincrement.html">Replication Auto Increment</a>.</p>
+<h2>Turn on Random Primary Keys</h2>
+<p>Random Primary Keys cannot be enabled in newer versions of Open Dental. Users who had Random Primary Keys enabled in the past will still have settings display in the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7replicationservers.html">Replication Setup</a> window.</p>
+<img src="images/replicationPrimaryKeysEnable.png" width="367" height="37"/><p><b>Use Random Primary Keys</b>: Once random primary keys are enabled, they can never be turned off. Ranges can be freely edited. All of primary keys in all tables will be longer. </p>
+<img src="images/replicationRandomPrimaryButtons.png" width="687" height="90"/><p><b>Set Ranges</b>: Once servers are added, click to automatically create ranges.</p>
+<p><b>Test</b>: Click to generate sample keys for testing.</p>
+<p></p>
+<p>Double-click a server to edit the following: </p>
+<img src="images/replicationPrimaryKeysRange.png" width="516" height="62"/><p><b>Range Start/End</b>: The allowed range is extremely large. Open Dental uses 64 bit signed int types internally and in the database. The allowed range is from 1 to 9,223,372,036,854,775,807. This key range is so large that this solution can be scaled up without ever running out of keys, no matter how many clinics are connected. We recommend ranges of at least 100,000,000 numbers. If smaller ranges are used, replication may become slow or unresponsive as the number of available primary keys runs out. This range recommendation will result in keys that are a very manageable 9 digits long. Also, JavaScript and other programs have a max int size of 9,007,199,254,740,992 (1000 times smaller), so it makes sense to stay under this value for future flexibility with other software.</p>
+		</div>
+	</div>
+</body>
+</html>```

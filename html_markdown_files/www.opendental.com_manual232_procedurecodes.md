@@ -1,0 +1,109 @@
+# File: ./www.opendental.com/manual232/procedurecodes.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Procedure Codes</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('procedurecodes','+lists','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/procedurecodes.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/procedurecodes.html" >v24.2</option><option value="https://www.opendental.com/manual241/procedurecodes.html" >v24.1</option><option value="https://www.opendental.com/manual233/procedurecodes.html" >v23.3</option><option value="https://www.opendental.com/manual232/procedurecodes.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/procedurecodes.html" >v23.1</option><option value="https://www.opendental.com/manual224/procedurecodes.html" >v22.4</option><option value="https://www.opendental.com/manual223/procedurecodes.html" >v22.3</option><option value="https://www.opendental.com/manual222/procedurecodes.html" >v22.2</option><option value="https://www.opendental.com/manual221/procedurecodes.html" >v22.1</option><option value="https://www.opendental.com/manual214/procedurecodes.html" >v21.4</option><option value="https://www.opendental.com/manual213/procedurecodes.html" >v21.3</option><option value="https://www.opendental.com/manual212/procedurecodes.html" >v21.2</option><option value="https://www.opendental.com/manual211/procedurecodes.html" >v21.1</option><option value="https://www.opendental.com/manual205/procedurecodes.html" >v20.5</option><option value="https://www.opendental.com/manual204/procedurecodes.html" >v20.4</option><option value="https://www.opendental.com/manual203/procedurecodes.html" >v20.3</option><option value="https://www.opendental.com/manual202/procedurecodes.html" >v20.2</option><option value="https://www.opendental.com/manual201/procedurecodes.html" >v20.1</option><option value="https://www.opendental.com/manual194/procedurecodes.html" >v19.4</option><option value="https://www.opendental.com/manual193/procedurecodes.html" >v19.3</option><option value="https://www.opendental.com/manual192/procedurecodes.html" >v19.2</option><option value="https://www.opendental.com/manual191/procedurecodes.html" >v19.1</option><option value="https://www.opendental.com/manual184/procedurecodes.html" >v18.4</option><option value="https://www.opendental.com/manual183/procedurecodes.html" >v18.3</option><option value="https://www.opendental.com/manual182/procedurecodes.html" >v18.2</option><option value="https://www.opendental.com/manual181/procedurecodes.html" >v18.1</option><option value="https://www.opendental.com/manual174/procedurecodes.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Procedure Codes</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Lists, Procedure Codes.</p>
+<img src="images/procedurecodes.gif" width="915" height="670"/><p class="MarginBottomZero">Alternatively:  </p>
+<ul class="MarginBottomGap">
+<li>Press Ctrl+Shift+F.</li>
+<li>In the <a href="chart.html">Chart Module</a>, Enter Treatment tab, click <b>Procedure List</b>.</li>
+</ul>
+<div class="Note">Note: During the Trial installation, temporary (T) codes are installed. When offices first updates to the full version of Open Dental, they will need to remove these T codes. At the lower left, click <a href="procedurecodetools.html">Tools</a>.</div>
+<br/><br/><p>The <b>Procedures</b> grid lists procedure codes that exist for the highlighted categories. Fees for up to three fee schedules can be viewed at a time, each represented by a Fee column (Fee 1, Fee 2, Fee 3). The criteria set under Compare Fee Schedules determines the fees that show.</p>
+<p>To enter fees, click in a <b>Fee</b> column cell. Press tab to quickly move from cell to cell.</p>
+<p>Double-click a row to edit the <a href="procedurecodeedit.html">Procedure Code</a>.</p>
+<h2>Search</h2>
+<p>Search the selected category(s) for a procedure code. As users enter text the list will update with matching results.</p>
+<img src="images/procCodeSearch.png" width="173" height="321"/><p><b>By Abbrev</b>: Search by procedure code abbreviation.</p>
+<p><b>By Descript</b>: Search by description text.</p>
+<p><b>By Code</b>: Search by code.</p>
+<p><b>Sort Order</b>: Choose a sort order for procedure codes. Sort by Category or Procedure Code. Set the default in Preferences, <i>Procedure Code List sort</i>.</p>
+<p><b>By Category</b>: The highlighted categories determine which procedure codes show in the grid. To select all categories click All.</p>
+<p><b>Edit Categories</b> Click to customize categories and sort order. See <a href="definitionsproccodecategories.html">Definitions: Proc Code Categories</a>.</p>
+<p><b>Show Hidden</b>: Check to show or hide categories marked as <i>Hidden</i>. Click <b>default</b> to set the current setting as the default. This option is only available when the Procedure Codes window is accessed via Lists, Procedure Codes.</p>
+<h2>Procedure Codes</h2>
+<p> This section is only available for users with the <i>Procedure Code Edit </i><a href="permissions.html">Permission</a>.</p>
+<img src="images/procCodeTools.png" width="173" height="99"/><p><b>Import/Export</b>: Import or export procedure codes in an XML format. If exporting, only codes currently showing in the grid are exported. When importing, only codes that do not yet exist in the database will be imported. Existing codes will not be edited. To import/export fees, see <a href="feescheduletools.html">Fee Tools</a>. <div class="Note">Note:  It is a violation of the copyright to share CDT codes with another office. However non-CDT codes and other types of codes (e.g., for Foreign Countries) can be exported then imported to other databases.</div>
+</p>
+<p><b>Tools</b>: Launch <a href="procedurecodetools.html">Procedure Code Tools</a> to remove temporary codes, update CDT codes, add missing D or N codes, and/or reset default auto codes, procedure buttons, appt proc quick adds or recall types. Buttons are only visible to users with the <i>Setup</i> permission.</p>
+<p><b>New</b>: <a href="procedurecodenew.html">Add Procedure Code</a> (e.g., non-CDT codes or codes used in another country).</p>
+<h2>Procedures</h2>
+<p>A list of all procedure codes that exist for the selected category and meet any entered search criteria. Procedure fees for up to three fee schedules may also show, depending on the criteria set under Compare Fee Schedules.</p>
+<img src="images/procCodeList.png" width="612" height="262"/><p><b>Category</b>: Procedure Code Category. Displays once per category when Sort Order is set to <i>Category</i>. No category is shown when Sort Order is set to <i>ProcCode</i>.</p>
+<p><b>Description</b>: Procedure code description. For non-custom codes, this is the CDT description.</p>
+<p><b>Code</b>: Procedure code.</p>
+<p><b>Fee 1</b>, <b>Fee 2</b>, <b>Fee 3</b>: Each column displays the fee for the corresponding fee schedule selected at the right under Compare Fee Schedules (e.g., Fee 1 column = Fee 1 Fee Schedule, Fee 2 column = Fee 2 Fee Schedule).</p>
+<h2>Compare Fee Schedules</h2>
+<p>Select the criteria that determines which fees show in the Procedures grid.</p>
+<p>See <a href="procedurefeeoverrides.html">Fee Override for Provider or Clinic</a></p>
+<p>See <a href="feeschedulelogic.html">Fee Schedule Logic</a></p>
+<img src="images/procCodesCompare.png" width="208" height="656"/><p><b>Show Fee Schedule Groups</b>: Only visible if <i>Show Fee Schedule Groups</i> is enabled in <a href="enterprisesetup.html">Enterprise Setup</a>. Changes the Clinic dropdown to Fee Schedule Group. Check to allow edits to fee schedules grouped by clinic.</p>
+<p><b>Fee Schedule</b>: Click the dropdown or <b>[...]</b> to select the fee schedule.</p>
+<p><b>Clinic</b>: To view or enter fees specific to a clinic, click the drop down or <b>[...]</b> to select the clinic. If a user is restricted to a clinic, they will only be able to view fees for the clinic they are restricted to.</p>
+<p><b>Provider</b>: To view or enter fees specific to a provider, click the drop down or <b>[...]</b> to select the provider. <div class="Note">Note: Clinic and Provider are only enabled if the fee schedule allows provider and/or clinic-specific fees (Use Global Fees is unchecked).</div>
+</p>
+<p class="MarginBottomZero"><b>Fee Colors</b>: The fee color is a quick method of identifying whether a fee is global or provider and/or clinic-specific. The default colors are listed below. Customize fee colors in <a href="definitionsfeecolors.html">Definitions: Fee Colors</a>. </p>
+<ul class="MarginBottomGap">
+<li>Black: A global fee.</li>
+<li>Orange: Clinic-specific fee.</li>
+<li>Green: Provider-specific fee.</li>
+<li>Blue: The fee is specific to a provider and clinic.</li>
+</ul>
+<p><b>Fee Scheds</b>: Create <a href="feeschedules.html">Fee Schedules</a>.</p>
+<p><b>Fee Tools</b>: Copy, export or import fees, increase fees by a percentage, or update fees for treatment planned procedures. See <a href="feescheduletools.html">FeeTools</a>.</p>
+<p><div class="Note">Note: Fee Scheds and Fee Tools buttons are only visible for users with the <a href="permissionssetup.html">"Setup" Permission</a>.</div>
+</p>
+<h2>Enter Fees via the Procedure Code List</h2>
+<p>To quickly enter fees in a fee schedule, use the Procedure Code List.</p>
+<ol>
+<li>Highlight the procedure categories to show in the <b>Procedures</b> grid.</li>
+<li>Under Compare Fee Schedules, select the fee schedule(s) for to enter fees into. Up to three fee schedules can be selected at a time. If a fee schedule allows fees that are provider and/or clinic specific, both the clinic and provider options will be available. As a user selects criteria, the Fee 1, 2, and 3 columns will update with the current fees.  <ul>
+<li><b>Fee Schedule</b>: Click the dropdown or <b>[...]</b> to select the fee schedule.</li>
+<li><b>Clinic</b>: To enter fees specific to a clinic, click the drop down or <b>[...]</b> to select the clinic.</li>
+<li><b>Provider</b>: To enter fees specific to a provider, click the drop down or <b>[...]</b> to select the provider.</li>
+</ul>
+</li>
+<li>Click in a fee column and enter the fee. Press tab to quickly move from cell to cell for quick data entry.</li>
+<li>When finished, click <b>Close</b> to save the fees and close the window.</li>
+</ol>
+<br/><div class="Note">Note: An <a href="audittrail.html">Audit Trail</a> entry is made when a fee is changed.</div>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,56 @@
+# File: ./www.opendental.com/manual/topazsetuphsb.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Topaz HSB Model Setup</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('topazsetuphsb','electronicsignatures','procedureedit','entertreatment','+chartTabs','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/topazsetuphsb.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/topazsetuphsb.html" >v24.2</option><option value="https://www.opendental.com/manual241/topazsetuphsb.html" >v24.1</option><option value="https://www.opendental.com/manual233/topazsetuphsb.html" >v23.3</option><option value="https://www.opendental.com/manual232/topazsetuphsb.html" >v23.2</option><option value="https://www.opendental.com/manual231/topazsetuphsb.html" >v23.1</option><option value="https://www.opendental.com/manual224/topazsetuphsb.html" >v22.4</option><option value="https://www.opendental.com/manual223/topazsetuphsb.html" >v22.3</option><option value="https://www.opendental.com/manual222/topazsetuphsb.html" >v22.2</option><option value="https://www.opendental.com/manual221/topazsetuphsb.html" >v22.1</option><option value="https://www.opendental.com/manual214/topazsetuphsb.html" >v21.4</option><option value="https://www.opendental.com/manual213/topazsetuphsb.html" >v21.3</option><option value="https://www.opendental.com/manual212/topazsetuphsb.html" >v21.2</option><option value="https://www.opendental.com/manual211/topazsetuphsb.html" >v21.1</option><option value="https://www.opendental.com/manual205/topazsetuphsb.html" >v20.5</option><option value="https://www.opendental.com/manual204/topazsetuphsb.html" >v20.4</option><option value="https://www.opendental.com/manual203/topazsetuphsb.html" >v20.3</option><option value="https://www.opendental.com/manual202/topazsetuphsb.html" >v20.2</option><option value="https://www.opendental.com/manual201/topazsetuphsb.html" >v20.1</option><option value="https://www.opendental.com/manual194/topazsetuphsb.html" >v19.4</option><option value="https://www.opendental.com/manual193/topazsetuphsb.html" >v19.3</option><option value="https://www.opendental.com/manual192/topazsetuphsb.html" >v19.2</option><option value="https://www.opendental.com/manual191/topazsetuphsb.html" >v19.1</option><option value="https://www.opendental.com/manual184/topazsetuphsb.html" >v18.4</option><option value="https://www.opendental.com/manual183/topazsetuphsb.html" >v18.3</option><option value="https://www.opendental.com/manual182/topazsetuphsb.html" >v18.2</option><option value="https://www.opendental.com/manual181/topazsetuphsb.html" >v18.1</option><option value="https://www.opendental.com/manual174/topazsetuphsb.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Topaz HSB Model Setup</p></div>
+<div class="GeneralPageContent">
+<p>The Topaz HID USB (HSB) signature pad is our recommended Topaz model for simple <a href="electronicsignatures.html">Electronic Signatures</a> pad integration. HSB models require fewer permissions than BSB.</p>
+<p>First time HSB Topaz pad users will need to install software drivers for their model. See <a href="https://www.sigpluspro.com/index.html">SigPlus Pro website</a> to select your model and download drivers.</p>
+<p>Local Use: Use the <a href="https://sigpluspro.com/sigplus-index.html">SigPlus Installation</a>. It will not always be the case that plug and play will work, as it is up to Windows to install the driver and recognize the device automatically. The How-To Guide steps (below) might not be necessary for local use.</p>
+<p class="MarginBottomZero">Client/Server installation: The <a href="https://www.topazsystems.com/Software/download/SigSock.pdf">SigSock HSB Pad How-to-Guide</a> (PDF) covers the following topics. </p>
+<ul class="MarginBottomGap">
+<li>Overview</li>
+<li>Setting up SigSock (Client-Side)</li>
+<li>Setting up SigSock (Server-Side)</li>
+<li>Using SigSock</li>
+</ul>
+<p>The How-To Guide is subject to change and is owned by Topaz Systems Inc.</p>
+<div class="Note">Note: For remote desktop users, If you are going to turn on the Terminal Services role on your remote desktop server, HSB models will not work. The HSB model is not recommended for Terminal Services, although it will work with single remote desktop sessions when the Terminal Services role is turned off. Use the <a href="topazsetupbsb.html">Topaz BSB Model Setup</a> instead.</div>
+</div>
+</div>
+</body>
+</html>```

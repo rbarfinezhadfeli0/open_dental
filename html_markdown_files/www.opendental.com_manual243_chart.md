@@ -1,0 +1,176 @@
+# File: ./www.opendental.com/manual243/chart.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Chart Module</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/chart.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/chart.html" >v24.2</option><option value="https://www.opendental.com/manual241/chart.html" >v24.1</option><option value="https://www.opendental.com/manual233/chart.html" >v23.3</option><option value="https://www.opendental.com/manual232/chart.html" >v23.2</option><option value="https://www.opendental.com/manual231/chart.html" >v23.1</option><option value="https://www.opendental.com/manual224/chart.html" >v22.4</option><option value="https://www.opendental.com/manual223/chart.html" >v22.3</option><option value="https://www.opendental.com/manual222/chart.html" >v22.2</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Chart Module</p></div>
+<div class="GeneralPageContent">
+<p>The Chart <a href="modules.html">Module</a> is where the clinical information is entered and organized for a patient.</p>
+<img src="images/chart.png" width="915" height="792"/><p><img src="images/YouTube_PlayButton_15px.png" width="15" height="12" style="margin-bottom: 0px"/> See our <a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCkrtlgrAR0MSazd7Ez9-Z0R">Chart Module playlist</a>.</p>
+<p class="MarginBottomZero">Other options:  </p>
+<ul class="MarginBottomGap">
+<li>To view only clinical information, see <a href="showfeatures.html">Show Features</a>. </li>
+<li>Define colors in <a href="definitionschartgraphiccolors.html">Definitions: Chart Graphic Colors</a>.</li>
+<li>Customize the layout in <a href="layout.html">Chart Layout</a>.</li>
+</ul>
+<h2>Chart Toolbar</h2>
+<img src="images/chartToolbar.png" width="777" height="31"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Print</b>: Launch a print preview of Progress Notes. When the Hospitals feature is enabled in <a href="showfeatures.html">Show Features</a>, printout includes date and signature lines.</li>
+<li><b>New Rx</b>: Create a single <a href="rx.html">Rx / Prescription</a>.  <ul>
+<li><b>Rx Manage</b>: Create and print multiple prescriptions at once. See <a href="rxmanage.html">Rx Manage</a>.</li>
+</ul>
+</li>
+<li><b>eRx:</b> Create an electronic prescription. If using DoseSpot, opens the <a href="dosespotuse.html">DoseSpot eRx / Prescription</a> interface. If the logged-on user is a Proxy user, a prompt displays to select a provider before launching the DoseSpot interface. If using Ensora eRx (formerly NewCrop eRx), opens the <a href="newcrop.html">Ensora eRX / Prescription</a> interface. If eRx is not enabled for the practice, an error displays. Click the dropdown to view additional options. <ul>
+<li><b>Refresh</b>: Manually copy new electronic prescriptions to the Progress Notes and Medication List. </li>
+<li><b>Pending Prescriptions</b>: View prescriptions that have been added for the patient but not yet sent to the pharmacy. <ul>
+<li>If using DoseSpot, the number of pending prescriptions displays. Click to view pending prescriptions in the DoseSpot interface.</li>
+<li>If using Ensora eRx, the number of pending prescriptions does not display. Click to view pending prescriptions in the Ensora interface. </li>
+</ul>
+</li>
+<li><b>Refill Requests</b>: View requests for a prescription refill sent by the patient's pharmacy.  <ul>
+<li>If using DoseSpot, the number of refill requests displays. Click to view refill requests in the DoseSpot interface. </li>
+<li>If using Ensora eRx, the number of refill requests does not display. Click to view refill requests in the Ensora interface. </li>
+</ul>
+</li>
+<li><b>Transaction Errors</b>: View errors associated with a prescription that has failed to reach the pharmacy.  <ul>
+<li>If using DoseSpot, the number of transaction errors displays. Click to view transaction errors in the DoseSpot interface. </li>
+<li>If using Ensora eRx, the number of transaction errors does not display. Click to view transaction errors in the Ensora interface.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>LabCase</b>: Create new <a href="labcaseedit.html">Lab Cases</a>. </li>
+<li><b>Perio Chart</b>: Enter periodontal information in the <a href="perio.html">Perio Chart</a>. </li>
+<li><b>Ortho Chart</b> :Only available when <i>Show Ortho button and tab in Chart Module</i> is enabled in <a href="preferences.html">Preferences</a>. Open the <a href="orthochart.html">Ortho Chart</a>, an alternate method of keeping track of visits. Ortho Chart entries can also be viewed from the Ortho tab. Click the dropdown to open a specific tab when multiple tabs are set up. </li>
+<li><b>Consent:</b> See <a href="consentforms.html">Consent Form</a>.</li>
+<li><b>Tooth Chart</b>: Click to open dropdown options. Choose <i>Show Big</i> to open the <a href="chartbig.html">Big Graphical Tooth Chart</a>. Choose <i>Save to Images</i> to save a copy of the tooth chart to the <a href="images.html">Imaging Module</a>.</li>
+<li><b>Exam Sheet</b>: Create an <a href="examsheets.html">Exam Sheet</a>.</li>
+<li><b>CCD</b>: Open the <a href="ehrccd.html">Continuity of Care Document (CCD)</a> window. </li>
+<li><b>EHR</b>: Launch the <a href="ehrdashboard1.html">EHR Dashboard</a> (EHR users only).</li>
+<li><b>Layout</b>: Allows switching between different versions of the <a href="layout.html">Chart Layout</a>. Click the drop down to select a custom layout. Click the button to create a new layout (stored as a custom <a href="sheets.html">Sheet</a>). Layout selection affects the logged-on user only. To change the default chart layout see <a href="sheetdefaults.html">Sheet Def Defaults</a>.</li>
+<li><b>Bridge buttons</b>: Additional bridge buttons display when enabled in <a href="programlinks.html">Program Links</a>.</li>
+</ul>
+<h2>Graphical Chart</h2>
+<img src="images/chartGraphical.png" width="419" height="414"/><p class="MarginBottomZero">The <a href="graphicaltoothchart.html">Graphical Tooth Chart</a> shows all restorative treatment that has been performed or is planned for the patient. Drag the slider bar under the tooth chart to view procedure changes to the tooth chart over time. </p>
+<ul class="MarginBottomGap">
+<li>Customize procedure status colors in Definitions: Chart Graphic Colors.</li>
+<li>Customize the type of graphic on the <a href="procedurecodeedit.html">Procedure Code</a> (Paint Type).</li>
+<li>Select freehand drawing options on the Draw tab.</li>
+<li>Control which procedures are shown on the graphical chart on the Show tab.</li>
+<li><b>Odontogram Notes</b>: The white text box below the tooth chart can be used for any notes that are not pertinent to the patient's treatment. The history of these notes is not saved or tracked. This text box supports <a href="rightclicktextboxes.html">Right-Click Options</a>.</li>
+</ul>
+<h2>Tabs</h2>
+<img src="images/chartTabs.png" width="468" height="28"/><p class="MarginBottomZero">To show/hide tab details, click the currently selected tab. </p>
+<ul class="MarginBottomGap">
+<li><b>Enter Treatment</b>: Enter and chart procedures. See <a href="entertreatment.html">Enter Treatment</a>.</li>
+<li><b>Missing/Primary</b>: Record missing teeth, and mark primary/permanent teeth on the graphical tooth chart. See <a href="missingteeth.html">Missing/Primary Teeth</a>.</li>
+<li><b>Movements</b>: Indicate tooth movement on the graphical tooth chart. See <a href="movements.html">Tooth Movements</a>.</li>
+<li><b>Planned Appts</b>: If treatment is needed, set up the patient's next appointment. See <a href="apptplanned.html">Planned Appointments</a>.</li>
+<li><b>Show</b>: Set up different views for the Progress Notes grid. See <a href="showtabchart.html">Show Chart Views</a>.</li>
+<li><b>Draw</b>: Freehand draw on the graphical tooth chart. See <a href="chartdrawing.html">Draw on Tooth Chart</a>.</li>
+<li><b>Ortho</b>: Only available when the preference, <i>Show Ortho button and tab in Chart Module</i>, is enabled. Displays the Chart in <a href="ortho.html">Ortho</a> mode to view chart hardware and Ortho Chart notes.</li>
+</ul>
+<h2>Patient Info</h2>
+<img src="images/chartPatInfo.png" width="418" height="365"/><p>Patient information is in the lower left. The fields that appear are defined in <a href="displayfields.html">Display Fields</a>. Double-click a white row to open <a href="patientedit.html">Edit Patient Information</a>.</p>
+<div class="Note">Note: <a href="custompatientfields.html">Patient Fields</a> only show if there are PatFields added to <i>Fields Showing</i> in Display Fields, ChartPatientInformation.</div>
+<br/><br/><p>A summary of medical information appears in pink/light red by default. To change the color of the medical area, see <a href="definitionsmisccolors.html">Definitions: Misc Colors</a>. Double-click on a medical row to open the <a href="medical.html">Medical Chart</a>.</p>
+<h2>Progress Notes</h2>
+<img src="images/chartProgress.png" width="701" height="351"/><p class="MarginBottomZero">The grid title and items that show in the Progress Notes area are determined by the options selected for the active Chart View under the Show tab.  </p>
+<ul class="MarginBottomGap">
+<li>The color for specific types of entries can be customized in <a href="definitionsprognotecolors.html">Definitions: Prog Note Colors</a>.</li>
+<li>If the preference, <i>Use provider color in chart</i>, is enabled, rows for Completed and Existing Complete procedures are filled with the <a href="providerseditwindow.html">Provider</a> color of the treating provider.</li>
+<li>Completed procedures may use the <i>Existing Other</i> color when the logged-on user has <i>Chart graphics color distinguishes current provider</i> enabled. See <a href="usersettings.html">User Settings</a> for details. </li>
+</ul>
+<p>To edit an item in the Progress Notes, double-click on it. Right-click to view additional options.</p>
+<p class="MarginBottomZero">Items in the Progress Notes are sorted in the following order: </p>
+<ol class="MarginBottomGap">
+<li>Date (oldest on top)</li>
+<li>Type (task, procedure, sheet, etc.)</li>
+<ul>
+ Procedures are sorted in the following order: <ol>
+<li>Date (oldest on top)</li>
+<li>Status (treatment planned procedures show before completed procedures)</li>
+<li>Priority (highest to lowest based on the order on priority options)</li>
+<li>Tooth number (no tooth number first, then lowest to highest)</li>
+<li>Procedure Code (lowest to highest)</li>
+</ol>
+</ul>
+</ol>
+<p>See <a href="showtabchart.html">Show Chart Views</a> for additional information on filtering the Progress Notes section.</p>
+<p class="MarginBottomZero"><b>Right-Click Options: </b> Right-click options change depending on items selected. Unavailable options are greyed out. Some right-click options may be hidden depending on a user's <a href="permissions.html">Permissions</a></p>
+<ul class="MarginBottomGap">
+<li><b>Delete</b>: Delete the selected item. Completed procedures and group notes attached to at least one completed procedure cannot be deleted from here. </li>
+<ul>
+<li>The warning <i>At least one procedure must be attached to the appointment</i> appears when a selected procedure is the last remaining on an appointment and the preference, <i>Appointments require procedures</i> is enabled. Click OK to close the warning. No procedures are deleted. De-select one or more procedures attached to an appointment to delete other procedures.</li>
+</ul>
+<li><b>Set Complete</b>: Set appointments, procedures, and tasks complete. Procedure dates are updated based on the date set in the Enter Treatment tab, unless the procedures are attached to an appointment, in which case the appointment date is used. <br/><div class="Note">Note: Procedures can only be set complete when the preference, <i>Allow setting procedures complete</i>, is enabled.</div>
+</li>
+<li><b>Set Existing Current</b>: Set a procedure to a status of Existing Current. Procedure dates are updated based on the date set in the Enter Treatment tab. </li>
+<li><b>Set Existing Other</b>: Set a procedure to a status of Existing Other. Procedure dates are updated based on the date set in the Enter Treatment tab. </li>
+<li><b>Edit All</b>: Change the date, provider, or clinic (if enabled) for selected procedures.<br/><img src="images/editAllProcs.png" width="420" height="165" class="ImageInParagraph"/></li>
+<li><b>Group Note</b>: Attach a single clinical <a href="procgroupnote.html">Procedure Group Note</a> to multiple procedures that have been set complete and have the same procedure date.</li>
+<li><b>Print Progress Notes</b>: Print the progress notes as they currently show on screen. Each page of the printed notes include the patient name, ChartNumber (if any), and page number. When Hospitals is enabled in Show Features, printout includes date and signature lines.</li>
+<li><b>Print Day for Hospital</b>: In Show Features, Hospital must be checked. Print only completed procedures, a photo of the patient (if available), and a signature line at the bottom for the staff to sign.</li>
+<li><b>Group for Multiple Visits</b>: Group together related procedures that are done during multiple visits (e.g., crowns). When a procedure is set complete the procedure status displays as <i>Complete (In Process)</i> until all other procedures in the group are set complete as well.</li>
+<li><b>View Multivisit Group(s)</b>: View grouped procedures, and ungroup as needed. See <a href="procsmultipleappts.html">Procedure over Multiple Appointments</a>.</li>
+<li><b>Print Routing Slip</b>: Print a single routing slip for the selected appointment.</li>
+</ul>
+<p>Use the Show Tab, Search box to search through progress notes using a word or phrase.</p>
+<div class="Note">Note: Forms designed using sheets can only be deleted by double-clicking the form, then deleting it from the Fill Sheet window. Deleted sheets are not permanently removed from the database. They can be viewed in Audit mode and also restored if needed.</div>
+<br/><br/><p><b>Paging (&lt;&lt;, &lt;, &gt;, &gt;&gt;)</b>: As progress notes become longer, use the arrows or numbers to navigate through progress note pages. Paging only appears if the patient has more than 500 items in their progress notes (commlogs, procedures, tasks, emails, etc). When the progress notes are sorted by a column, paging is disabled for the results until the Chart Module is refreshed." </p>
+<h2>Image Tabs</h2>
+<img src="images/chartImageTabs.png" width="299" height="145"/><p class="MarginBottomZero">The tabs below Patient Info reflect Image categories that have been marked as <i>Show in Chart module</i> in <a href="definitionsimagecat.html">Definitions: Image Categories</a>. This is useful to view items like radiographs and photos directly in the Chart Module.  </p>
+<ul class="MarginBottomGap">
+<li>Image files display a thumbnail preview.</li>
+<li>The height of the images section can be made taller or shorter by dragging the splitter.</li>
+<li>To quickly minimize/maximize the area, click on the current tab.</li>
+<li>Click the All tab to show all images for all tabs.</li>
+<li>Double-click an image to open the image full size in a new window. The new window can be dragged to another monitor if multiple monitors are used, and it can remain open while returning to the Chart. When an image is displayed, the following right-click options are available:  <ul>
+<li>Copy: Copy the selected image. </li>
+<li>Flip Horizontally: Flip the image orientation horizontally. Orientation saves when closed. </li>
+<li>Rotate Left: Rotate the image to the left. Rotation saves when closed. </li>
+<li>Rotate Right: Rotate the image to the right. Rotation saves when closed.</li>
+<li>Rotate 180: Rotate the image 180 degrees. Rotation saves when closed.</li>
+<li>Info: Open the Item Info window.</li>
+</ul>
+</li>
+<li>Double-clicking a non-image file (e.g., xls, txt) opens that file in the default program for that file type.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

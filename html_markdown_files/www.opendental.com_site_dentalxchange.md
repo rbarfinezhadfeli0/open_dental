@@ -1,0 +1,85 @@
+# File: ./www.opendental.com/site/dentalxchange.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: DentalXChange</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>DentalXChange</h1>
+		</div>
+		<div id="Content">
+<p>DentalXChange is a <a href="0_clearinghouses.html">Clearinghouse</a> integrated with Open Dental.</p>
+<img src="images/headerDentalXChange.png" width="900" height="300"/><p class="MarginBottomZero">DentalXChange offers various electronic revenue cycle management solutions that are integrated with Open Dental. This includes: </p>
+<ul class="MarginBottomGap">
+<li>Claims</li>
+<li>Attachments</li>
+<li>Eligibility</li>
+<li>Electronic Remittance Advice (ERAs)</li>
+<li>Patient Statements</li>
+<li>Merchant Services</li>
+</ul>
+<p>Visit <a href="https://www.dentalxchange.com/" target="_blank">DentalXChange.com</a> for more information and to sign up.</p>
+<table><tr><td><h2>Advantages</h2><p class="MarginBottomZero">DentalXChange solutions are integrated with Open Dental to streamline connections and data sharing between providers and payers to keep claims moving. With DentalXChange practices can: </p>
+<ul class="MarginBottomGap">
+<li>Submit, edit, and manage claims directly within Open Dental</li>
+<li>Connect to 1400+ payers</li>
+<li>Validate claims instantly</li>
+<li>Reduce billing overhead</li>
+<li>Improve clean claim rates</li>
+<li>Gain complete visibility into claims workflow</li>
+<li>Access unlimited training and support</li>
+</ul>
+</td>
+<td><img src="images/dentalXChangeGraphic.png" width="461" height="250" margin="center" height="250" width="461"/></td>
+</tr>
+</table>
+<h2>Claims</h2><p>Through ClaimConnect by DentalXChange, you can easily validate and send electronic claims without leaving the Open Dental program.</p>
+<h2>Attachments</h2><p>Easily create and send electronic attachments for your insurance claims right from Open Dental. Even select images already saved to the Open Dental Imaging Module.</p>
+<h2>Eligibility</h2><p>Quickly process eligibility and benefits requests in Open Dental to ensure the accuracy of patient insurance benefits. Efficiently import benefits right to an insurance plan</p>
+<h2>ERAs</h2><p>Receive Electronic Remittance Advice directly in Open Dental from DentalXChange once you've enrolled with carriers. ERAs can even be automatically downloaded and processed to streamline workflow.</p>
+<h2>Patient Statements</h2><p>Send electronic statements right from the Open Dental Billing List to DentalXChange.</p>
+<a name='payconnect'></a><h2>Merchant Services</h2><p>PayConnect by DentalXChange is integrated with Open Dental for easy processing of credit card payments. Payments are automatically posted to the Account Module.</p>
+<h2>Getting Started</h2><p>Contact <a href="https://www.dentalxchange.com/" target="_blank">DentalXChange</a> to sign up for your preferred solutions. Once you're signed up, you can complete setup in Open Dental using credentials provided by DentalXChange.</p>
+<style>td{border:0} table { width: 100%; border-collapse: collapse; /* Ensures no borders between cells */ margin: 0 auto; /* Center the table horizontally */ } /* Table cells */ td { width: 65%; padding: 0px; /* Add padding for better spacing */ vertical-align: middle; /* Vertically align content in the middle */ } /* Optional: Style for table header if applicable */ th { padding: 10px; vertical-align: middle; } </style>
+
+</div>	
+	</div>
+</body>
+</html>```

@@ -1,0 +1,921 @@
+# File: ./www.opendental.com/site/conversionimages.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Image Conversions</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('conversionimages','conversions','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Image Conversions</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="conversions.html">Conversions</a>.</p>
+<div align="center">
+<img src="images/imageConversionsSiteHeader.png" width="915" height="152"/></div>
+<p>Image conversions take the images and documents stored in your current software and place them in Open Dental. Most of the image conversions listed below only convert documents and scanned images. There are only a couple of image conversions listed below that convert x-rays. You can speak with a member of the Open Dental Conversion Department if you have specific questions about what types of images will convert from your current software.</p>
+<p>A conversion of scanned documents is distinct from imaging software (usually for radiography or x-rays, intraoral imaging etc.) See <a href="programbridges.html">Program Bridges</a> for more information. </p>
+<p class="MarginBottomZero">Converting scanned documents and patient pictures is different than a data <a href="conversions.html"> Conversion</a> and incurs a separate fee. </p>
+<ul class="MarginBottomGap">
+<li> Fees vary depending on the complexity of the conversion and quality of images.</li>
+</ul>
+<p class="MarginBottomZero">Converting X-Rays is different than a scanned document and patient picture image conversion and incurs a separate fee. </p>
+<ul class="MarginBottomGap">
+<li> Fees vary depending on the complexity of the conversion and size of x-ray image directory.</li>
+</ul>
+<p class="MarginBottomZero">The "Normal Charge" cost is for image directories that are less than 500GB in size. </p>
+<ul class="MarginBottomGap">
+<li>Most image conversions cost $800, most dental offices have less than 500GB of images, so $800 is the image conversion charge 95% of the time but there are a few exceptions. </li>
+</ul>
+<p>Below is a list applications and estimated image conversion fees. If your application is not listed, we still may be able to convert, so please ask us. We are constantly looking for new ways to convert scanned documents, patient pictures, and x-rays. <br></p>
+<h3>Image Conversion Estimates by application</h3><table class="simpletable">
+<tr>
+<th style="width:20%"><b>Application Name</b></th>
+<th style="width:7%"><b>Min Charge</b></th>
+<th style="width:7%"><b>Normal Charge</b></th>
+<th style="width:40%"><b>Comments</b></th>
+<th style="width:15%">Scanned Documents or Patient Pictures</th>
+<th style="width:11%">X-rays</th>
+</tr>
+<tr>
+<td>AbelDent</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Ace Dental</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Ai-Dental</td>
+<td>$800</td>
+<td>$800</td>
+<td>This image conversion will attempt to renumber the images from "standalone" mode to be used in "bridged" mode. There will not be a 100% match rate if the software was used in "standalone" mode.</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>AltaPoint</td>
+<td>$800</td>
+<td>$800</td>
+<td>We need to use the 'Patient Image.adm' file in order to run an image conversion from AltaPoint</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Amazing Charts</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>American Dental Partners</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Apteryx</td>
+<td>$800</td>
+<td>$800</td>
+<td>The image conversion matches by patient name, so it will not match 100% of the exported Apteryx images.</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Archy</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Aspire (FPC)</td>
+<td>$800</td>
+<td>$800</td>
+<td>FPC must export the data in order for us to run an image conversion.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Autopia</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Camsight</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>We do not convert the Camsight images. Use the "Camsight" bridge in Open Dental (an image conversion is not necessary).</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Carestack </td>
+<td>$800 </td>
+<td> $800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>CareStream</td>
+<td>$800 </td>
+<td> $800</td>
+<td>The CareStream images will be copied into the OpenDentImages folder where we can match the CareStream patient IDs to the Open Dental patient IDs. We usually have close to 100% match rate as long as CareStream was being used in Bridged Mode.</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>ClearDent</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Cloud 9</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Complete Exam (TCE)</td>
+<td>$800</td>
+<td>$800</td>
+<td>The images are stored in folders that have the same ID as the patients in The Complete Exam (and the conversion).</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Curve Dental</td>
+<td>$800</td>
+<td>$800</td>
+<td>The dental office must request a copy of their images from Curve Dental. Curve will provide them with a copy of scanned documents and x-rays.</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Curve DMS</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Daisy</td>
+<td>$800</td>
+<td>$800</td>
+<td>Daisy must export and decrypt the images in order for us to run an image conversion. They are generally located in "C:\DMC\DocMgr" on your server.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Data Con</td>
+<td>$800</td>
+<td>$800</td>
+<td>DataCon is required to export the patients and images in order for us to convert these.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Dental Exec</td>
+<td>$800</td>
+<td>$800</td>
+<td>The files in the "Attachments" folder.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>DentalMate</td>
+<td>$800</td>
+<td>$800</td>
+<td>We can link up the DentalMate attachments and patient pictures to patients by using the chart number values. This does not always have a 100% match rate since chart numbers can be manually edited over time.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Dental Vision</td>
+<td>$800</td>
+<td>$800</td>
+<td>The scanned image files are usually located in the "Document_Center" and "Patient_Photos" folders on the Dental Vision server.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Dental Works</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Dentech </td>
+<td>$100</td>
+<td>$100</td>
+<td>Patient pictures only in the "Picture" folder.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Denticon</td>
+<td>$800</td>
+<td>$800</td>
+<td>Denticon is a web based software. You must contact Denticon so they can grant you access to see and download all of the images from their ftps site. You can use FileZilla in implicit mode to download the images to your server. Open Dental can then run an image conversion on those downloaded images.</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Dentimax</td>
+<td>$800</td>
+<td>$800</td>
+<td>We can decrypt and export the scanned documents from the Dentimax "dcdocument.blb" files.</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Dentisoft</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Dentisoft Office Online</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Dentitek</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Dentrix Ascend</td>
+<td>$800</td>
+<td>$800</td>
+<td>In some cases, it may be possible to convert the files in the "Images" folder. </td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Dentrix Clarity</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Dentrix (Patient Pictures)</td>
+<td>$100</td>
+<td>$100</td>
+<td>This is for the Dentrix patient pictures only.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Dentrix (Document Center)</td>
+<td>$800</td>
+<td>$800</td>
+<td>We can convert the Dentrix scanned documents (usually in the "...\Dentrix\Data\DocFiles" folder). The image conversion will run at a rate of about 1 GB per 5 minutes.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Dentrix Enterprise (Document Center)</td>
+<td>$800</td>
+<td>$800</td>
+<td>We can convert the Dentrix Enterprise scanned documents (usually in the "...\Dentrix\Data\DocFiles" folder). The image conversion will run at a rate of about 1 GB per 5 minutes.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Dentrix Imaging Center</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Desco</td>
+<td>$800</td>
+<td>$800</td>
+<td>We can convert the files in the "DescoData/Images" folder.</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Dexis</td>
+<td>$800</td>
+<td>$800</td>
+<td>The Dexis images will be copied into the OpenDentImages folder as Dicom images where we can match the Dexis patient records to Open Dental patient records. We usually have close to 100% match rate as long as Dexis was being used in Bridged Mode. We are matching patients using the Dexis "ExternalID", so we can only perform this Dexis image conversion for Dexis version 10 (and greater) using SQL Server.</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Dexis Patient ID Renumbering </td>
+<td>$300</td>
+<td>$500</td>
+<td>We can renumber the Dexis patient IDs within the Dexis database if Dexis was used in Bridged Mode. As long as we can identify the link between the Dexis patient IDs with the Open Dental patient IDs, then we can renumber the Dexis patient IDs within the Dexis SQL Server database. This is currently only for Dexis version 10 and greater.</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Dolphin</td>
+<td>$800</td>
+<td>$800</td>
+<td>We can convert the Dolphin images in the "Documents" folder (usually located in the "...\Dolphin\Working\Data\Documents" directory).</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Dovetail</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>DOX</td>
+<td>$800</td>
+<td>$800</td>
+<td>We can convert the DOX scanned patient images in the "PatientDocs" folder (usually located in the "...\DOX\Letterwriting\PatientDocs" directory).</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Dr. Chrono</td>
+<td>$800</td>
+<td>$800</td>
+<td>This image conversion will attempt to match the exported Dr. Chrono files to the converted patients based off of the file names.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>DSN</td>
+<td>$800</td>
+<td>$800</td>
+<td>The files in the "Attachments" folder can be converted, but these images may be old if you are on a newer version of DSN. For newer versions of DSN, the image files are being stored in the SQL Server database in the 'dsnfile' table, and these images cannot be converted since they are encrypted. Please contact DSN to see if they have a process for exporting and decrypting all of the images out of the SQL Server database if you are interested in an image conversion to Open Dental.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>DTX</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Eaglesoft</td>
+<td>$800</td>
+<td> $1200</td>
+<td>We can convert Eaglesoft Smart Docs scanned documents and Eaglesoft Advanced Imaging x-rays. The mounts for the x-rays will not be identical to how they are in Eaglesoft, but the x-ray image conversion does include auto-generated mounts. For more information, see <a href="../resources/conversions/conversioneaglesoft.pdf">Eaglesoft.pdf</a>.<br></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Easy Dent</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Exan Power Practice</td>
+<td>$800</td>
+<td>$800</td>
+<td>The scanned image files are usually located in the "Attachments" folder on the Exan Power Practice server.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>EZ Dental (Patient Pictures)</td>
+<td>$100</td>
+<td>$100</td>
+<td>This is for the EZ Dental patient pictures only.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>EZ Dental (Scanned Documents)</td>
+<td>$800</td>
+<td>$800</td>
+<td>We can convert EZ Dental scanned documents (usually in the "...\EZDental\Data\DocFiles" folder). The image conversion will run at a rate of about 1 GB per 5 minutes.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>EZDent-i</td>
+<td>$800</td>
+<td>$800</td>
+<td>The EZDent-i images will be copied into the OpenDentImages folder where we can match the EZDent-i patient IDs to the Open Dental patient IDs. We usually have close to 100% match rate as long as EZDent-i was being used in Bridged Mode.</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Focus Ortho</td>
+<td>$800</td>
+<td>$800</td>
+<td>The scanned documents can be requested from Focus Ortho, and they are usually provided in an "Attachments" folder with each patient's images separated by sub-folder.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Genesis</td>
+<td>$800</td>
+<td>$800</td>
+<td>The scanned documents are usually located in a folder called "efile" on the Genesis server.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Genesis (Patient Pictures)</td>
+<td>$100</td>
+<td>$100</td>
+<td>The patient pictures are usually located in a folder called "PatPics" on the Genesis server.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Gold Dental</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>iDentalSoft</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>ImageX</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>IMS EVO Digital Office</td>
+<td>$800</td>
+<td>$800</td>
+<td>The scanned images are located in folders labeled by the patient ID.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Kodak </td>
+<td>$800</td>
+<td>$800</td>
+<td>The Kodak images will be copied into the OpenDentImages folder where we can match the Kodak patient IDs to the Open Dental patient IDs. We usually have close to 100% match rate as long as Kodak was being used in Bridged Mode.</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Lighthouse Launcher (WinDocs)</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>LiveDDM</td>
+<td>$800</td>
+<td>$800</td>
+<td>We can convert the files in the "ElectronicDocuments" and "PatientDocuments" folders.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>MacPractice</td>
+<td>$800</td>
+<td>$800</td>
+<td>We can convert 100% of EDR\EMR Forms and a limited 20-40% of attachments.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Maxident (Doc Manager)</td>
+<td>$800</td>
+<td>$800</td>
+<td>We can probably move a copy of the images in the 'DocManager folder' (usually located at "c:\Program Files\Maxident6\DocManager") to the Open Dental 'OpenDentImages' folder (based off of patient ID).</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>MediaDent</td>
+<td>$800</td>
+<td>$1200</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Mogo</td>
+<td>$1200</td>
+<td>$1200</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Mogo Cloud</td>
+<td>$800</td>
+<td>$800</td>
+<td>Encourage Mogo to generate a separate filed for scanned documents. Previously they are in the same zipped file. </td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>NewSoft DS</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Oasis</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>OCS</td>
+<td>$800</td>
+<td>$800</td>
+<td>This converts the scanned images in the OCS "Documents" folder on the server.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Onsite Dentistry</td>
+<td>$800</td>
+<td>$800</td>
+<td>The scanned image files are usually located in the "Documents" folder on the Onsite Dentistry server.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Ortho2</td>
+<td>$800</td>
+<td>$800</td>
+<td>The Correspondence History is converted as images. These images are stored in the Ortho2 database in the 'documentarchive' table. We can also convert the ".jpg" files in the Ortho2 image folder.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>OrthoEase</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>OrthoTrac</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Oryx</td>
+<td>$800</td>
+<td>$800</td>
+<td>Scanned documents in the patient folders.</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Panda Perio</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Paperless Technologies</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Patterson Fuse</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Patterson Imaging</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>PBS Perio</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>PEB (Patient Pictures)</td>
+<td>$100</td>
+<td>$100</td>
+<td>This is for PEB patient pictures only.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>PerfectByte</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Practice Works</td>
+<td>$800</td>
+<td>$800</td>
+<td>You can use the Trophy Enhanced bridge (in numbered mode) to view the radiographical images, but you will need an image conversion to view the scanned images stored in the PWImages directory.</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>QSI CPS </td>
+<td>$800</td>
+<td>$800</td>
+<td>The images located in the "...\CPS\Documents\..." folder. They have a file extension of ".cmp".</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Romexis (Dimaxis)</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Sassy</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Schick CDR DICOM</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Sidexis</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Softdent</td>
+<td>$800</td>
+<td>$800</td>
+<td>You can use the Trophy Enhanced bridge (in numbered mode) to view the radiographical images, but you will need an image conversion to view the scanned images stored in the PWImages directory.</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>SOTA</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Suzy</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Tab32</td>
+<td>$800</td>
+<td>$800</td>
+<td>You will need to request a full export of your scanned documents from Tab32.</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>TCE</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>TDO (The Digital Office)</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>TigerView</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>TMnDX</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>TOPS Ortho</td>
+<td>$800</td>
+<td>$800</td>
+<td>You will need to request a copy of your images from TOPS Ortho.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Tracker</td>
+<td>$800</td>
+<td>$800</td>
+<td>The scanned documents are usually located in a folder called "Docs" on the Tracker server, and the intraoral pictures are usually in a folder called "Images".</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Umbie</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Viive IArchive</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>VisionX</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>VixWin</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Windent</td>
+<td>$800</td>
+<td>$800</td>
+<td>Scanned documents commonly located in the image directory on the server.</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>WinOMS</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>XDR</td>
+<td>$800</td>
+<td>$800</td>
+<td>The XDR images will be copied into the OpenDentImages folder where we can match the XDR patient IDs to the Open Dental patient IDs. We usually have close to 100% match rate as long as XDR was being used in Bridged Mode.</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>XLDent</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>XVWeb</td>
+<td>$800</td>
+<td>$800</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+</table>
+<style>table td:nth-child(6), table td:nth-child(7) { text-align:center } </style>
+		</div>
+	</div>
+</body>
+</html>```

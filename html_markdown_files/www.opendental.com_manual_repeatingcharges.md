@@ -1,0 +1,80 @@
+# File: ./www.opendental.com/manual/repeatingcharges.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Repeating Charges</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('repeatingcharges','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/repeatingcharges.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/repeatingcharges.html" >v24.2</option><option value="https://www.opendental.com/manual241/repeatingcharges.html" >v24.1</option><option value="https://www.opendental.com/manual233/repeatingcharges.html" >v23.3</option><option value="https://www.opendental.com/manual232/repeatingcharges.html" >v23.2</option><option value="https://www.opendental.com/manual231/repeatingcharges.html" >v23.1</option><option value="https://www.opendental.com/manual224/repeatingcharges.html" >v22.4</option><option value="https://www.opendental.com/manual223/repeatingcharges.html" >v22.3</option><option value="https://www.opendental.com/manual222/repeatingcharges.html" >v22.2</option><option value="https://www.opendental.com/manual221/repeatingcharges.html" >v22.1</option><option value="https://www.opendental.com/manual214/repeatingcharges.html" >v21.4</option><option value="https://www.opendental.com/manual213/repeatingcharges.html" >v21.3</option><option value="https://www.opendental.com/manual212/repeatingcharges.html" >v21.2</option><option value="https://www.opendental.com/manual211/repeatingcharges.html" >v21.1</option><option value="https://www.opendental.com/manual205/repeatingcharges.html" >v20.5</option><option value="https://www.opendental.com/manual204/repeatingcharges.html" >v20.4</option><option value="https://www.opendental.com/manual203/repeatingcharges.html" >v20.3</option><option value="https://www.opendental.com/manual202/repeatingcharges.html" >v20.2</option><option value="https://www.opendental.com/manual201/repeatingcharges.html" >v20.1</option><option value="https://www.opendental.com/manual194/repeatingcharges.html" >v19.4</option><option value="https://www.opendental.com/manual193/repeatingcharges.html" >v19.3</option><option value="https://www.opendental.com/manual192/repeatingcharges.html" >v19.2</option><option value="https://www.opendental.com/manual191/repeatingcharges.html" >v19.1</option><option value="https://www.opendental.com/manual184/repeatingcharges.html" >v18.4</option><option value="https://www.opendental.com/manual183/repeatingcharges.html" >v18.3</option><option value="https://www.opendental.com/manual182/repeatingcharges.html" >v18.2</option><option value="https://www.opendental.com/manual181/repeatingcharges.html" >v18.1</option><option value="https://www.opendental.com/manual174/repeatingcharges.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Repeating Charges</p></div>
+<div class="GeneralPageContent">
+<p>Use the Repeating Charges tool or set up automated repeating charges to post repeating procedures to patient accounts each month.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Tools, Repeating Charges.</p>
+<img src="images/repeatingChargeTool.gif" width="530" height="274"/><p> To use this feature, enable <i>Repeating Charges</i> in <a href="showfeatures.html">Show Features</a>.</p>
+<p>To set up repeating procedures for a patient, see <a href="repeatingcharge.html">Repeating Charge</a>.</p>
+<p>To edit the charge amount for existing repeating charges on all patients or, just patients in a <a href="superfamily.html">Super Family</a> at once, see the <a href="databasemaintenance.html">Database Maintenance</a> tool, <i>Repeat Charge</i>.</p>
+<h2>Repeating Charges Tool</h2>
+<p>The repeating charge tool will complete any repeating procedures set up for a patient, create a primary and secondary insurance claim for the procedure (if enabled), and allocate any prepayments (if enabled). Run this tool before generating the <a href="billinglist.html">Billing List</a> to include repeating charges on patient statements and before running the recurring charges tool to include these patients with new balances.</p>
+<p class="MarginBottomZero">To run the tool: </p>
+<ol class="MarginBottomGap">
+<li>In the main menu, click Tools, Repeating Charges.</li>
+<li><b>Run aging on accounts after posting charges</b>: Check to run <a href="aging.html">Aging</a> and update the age of account balances for patients with the new charges.</li>
+<li>Click OK. The total number of procedures and claims added will show.</li>
+</ol>
+<p><div class="Note">Note: <ul>
+<li>If the tool is run after the scheduled repeating charge day (up to 1 month and 20 days after), it will backdate all missed repeating charges to the patient's account with the date of the scheduled charge.</li>
+<li>An <a href="audittrail.html">Audit Trail</a> entry is made each time Repeating Charges is run.</li>
+</ul>
+</div>
+</p>
+<h2>Automated Repeating Charges</h2>
+<p>Optionally, enable automatic Repeating Charges in <a href="preferences.html">Preferences</a> to automatically post repeating procedures at a specific time each day instead of manually running the tool. The automated service also creates primary and secondary insurance claims for posted procedures (if <i>Create Claim</i> is enabled for the repeating charge), and allocates any prepayments (if <i>Use Unearned</i> is enabled for the Repeating Charge). To enable the service, enable the <i>Repeating charges run automatically</i> preference and set the <i>Repeating charges run time</i>. To include Repeating Charges on Statements, set the time to run prior to generating the Billing List. Set the run time at least 30 minutes to an hour before the automated <i><a href="recurringcharges.html">Recurring Charges</a> run time</i> (if enabled). </p>
+<p>This is to include repeating procedures on statements and in credit card charges. Also, ensure the computer with the <a href="servicemanager.html">OpenDentalService</a> (typically the server) is on at the scheduled run time. Open Dental does not need to be running but the computer must be on for the service to work.</p>
+<p>Once enabled, Repeating Charges only post once per day and are not run if Automated Repeating charges are currently running or have been run or if the Repeating Charge Tool is currently running or has been run. If the <i>Repeating charges run time</i> is changed, the service will not run again until the next day. The Repeating Charge Tool may be safely run at any time to post new Repeating Charges that are set up after the automated preference has been run.</p>
+<p>Automated Repeating Charges cannot run if Aging is currently running. If Aging is running at the scheduled <i>Repeating charges run time</i>, it is attempted again until successful (i.e., Aging is no longer running).</p>
+<p><b>Example of transactions when a prepayment is applied to a repeating charge using an income transfer. </b></p>
+<img src="images/repeatingchargePrepayment.gif" width="757" height="120"/><p><b>Example of transactions when a claim is created automatically for a repeating charge.</b></p>
+<img src="images/repeatingChargeClaim.gif" width="757" height="140"/><h2>Troubleshooting</h2>
+<p><p><b>Why is a repeating charge on the patient's account, but there is no log in the Audit Trail?</b></p>
+</p>
+<p>Repeating Charges do not create Audit Trail entries. Additionally, if <i>Create Claim</i> or <i>Use Unearned</i> are enabled for the recurring charge, there is no Audit Trail log for these actions.</p>
+<p><p><b>Why do I get a message with the date and time repeating charges last started when trying to run the tool?</b></p>
+</p>
+<p>If you attempt to run the repeating charges tool and get the message below, this indicates repeating charges are still in progress.</p>
+<img src="images/repeatingChargeToolFlgMsg.png" width="404" height="146"/><p>Once repeating charges have started, whether by the tool or automated service, a flag with the start date and time is set to prevent other users from running the tool again. When complete, the flag is cleared. If, after 24 hours, you continue to get this message or notice repeating charges have not posted, try clearing the flag manually. Have a user with the <i>Security Admin</i> permission log in and re-run the repeating charges tool.</p>
+<p>The security admin is prompted to restart repeating charges.</p>
+<img src="images/repeatingChargeToolFxMsg.png" width="391" height="146"/><p>Click OK. The flag will reset and the repeating charge tool will restart. If successful, a message box will appear with the total number of repeating procedures posted.</p>
+</div>
+</div>
+</body>
+</html>```

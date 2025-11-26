@@ -1,0 +1,59 @@
+# File: ./www.opendental.com/manual/cdt.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - ADA CDT Codes</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('cdt','procedurecodes','+lists','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/cdt.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/cdt.html" >v24.2</option><option value="https://www.opendental.com/manual241/cdt.html" >v24.1</option><option value="https://www.opendental.com/manual233/cdt.html" >v23.3</option><option value="https://www.opendental.com/manual232/cdt.html" >v23.2</option><option value="https://www.opendental.com/manual231/cdt.html" >v23.1</option><option value="https://www.opendental.com/manual224/cdt.html" >v22.4</option><option value="https://www.opendental.com/manual223/cdt.html" >v22.3</option><option value="https://www.opendental.com/manual222/cdt.html" >v22.2</option><option value="https://www.opendental.com/manual221/cdt.html" >v22.1</option><option value="https://www.opendental.com/manual214/cdt.html" >v21.4</option><option value="https://www.opendental.com/manual213/cdt.html" >v21.3</option><option value="https://www.opendental.com/manual212/cdt.html" >v21.2</option><option value="https://www.opendental.com/manual211/cdt.html" >v21.1</option><option value="https://www.opendental.com/manual205/cdt.html" >v20.5</option><option value="https://www.opendental.com/manual204/cdt.html" >v20.4</option><option value="https://www.opendental.com/manual203/cdt.html" >v20.3</option><option value="https://www.opendental.com/manual202/cdt.html" >v20.2</option><option value="https://www.opendental.com/manual201/cdt.html" >v20.1</option><option value="https://www.opendental.com/manual194/cdt.html" >v19.4</option><option value="https://www.opendental.com/manual193/cdt.html" >v19.3</option><option value="https://www.opendental.com/manual192/cdt.html" >v19.2</option><option value="https://www.opendental.com/manual191/cdt.html" >v19.1</option><option value="https://www.opendental.com/manual184/cdt.html" >v18.4</option><option value="https://www.opendental.com/manual183/cdt.html" >v18.3</option><option value="https://www.opendental.com/manual182/cdt.html" >v18.2</option><option value="https://www.opendental.com/manual181/cdt.html" >v18.1</option><option value="https://www.opendental.com/manual174/cdt.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>ADA CDT Codes</p></div>
+<div class="GeneralPageContent">
+<p>The ADA license allows us to include the ADA (CDT) <a href="procedurecodes.html">Procedure Codes</a> for distribution within the United States only. As required by the ADA CDT content license, every United States customer of Open Dental Software must fill out and return a <a href="../resources/cdtcompliance.pdf">CDT Compliance Form (PDF)</a>. This form discloses in writing the number and location of all end-user sites that use the software, and thus the CDT codes.</p>
+<p>To download new CDT codes, see <a href="procedurecodetools.html">Procedure Code Tools</a>.</p>
+<p><b>What locations are considered United States?</b></p>
+<p>The ADA license specifically addresses this as follows: <i>The United States version of Open Dental may be distributed in all 50 states, the District of Columbia, the Commonwealths of Puerto Rico, and the Northern Mariana Islands or any territory of the United States.</i></p>
+<p class="MarginBottomZero">Based on this wording, the following locations are considered within the United States for licensing purposes: </p>
+<ul class="MarginBottomGap">
+<li>50 States</li>
+<li>Washington DC</li>
+<li>Puerto Rico</li>
+<li>Northern Mariana Islands</li>
+<li>Guam</li>
+<li>US Virgin Islands</li>
+<li>American Samoa</li>
+</ul>
+<p>Countries not included in this list must arrange their own purchase of CDT codes and ADA claim forms.</p>
+</div>
+</div>
+</body>
+</html>```

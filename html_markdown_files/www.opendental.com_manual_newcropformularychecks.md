@@ -1,0 +1,78 @@
+# File: ./www.opendental.com/manual/newcropformularychecks.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - NewCrop eRx Drug Formulary Checks</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('newcropformularychecks','newcrop','+eRx','+chartToolbar','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/newcropformularychecks.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/newcropformularychecks.html" >v24.2</option><option value="https://www.opendental.com/manual241/newcropformularychecks.html" >v24.1</option><option value="https://www.opendental.com/manual233/newcropformularychecks.html" >v23.3</option><option value="https://www.opendental.com/manual232/newcropformularychecks.html" >v23.2</option><option value="https://www.opendental.com/manual231/newcropformularychecks.html" >v23.1</option><option value="https://www.opendental.com/manual224/newcropformularychecks.html" >v22.4</option><option value="https://www.opendental.com/manual223/newcropformularychecks.html" >v22.3</option><option value="https://www.opendental.com/manual222/newcropformularychecks.html" >v22.2</option><option value="https://www.opendental.com/manual221/newcropformularychecks.html" >v22.1</option><option value="https://www.opendental.com/manual214/newcropformularychecks.html" >v21.4</option><option value="https://www.opendental.com/manual213/newcropformularychecks.html" >v21.3</option><option value="https://www.opendental.com/manual212/newcropformularychecks.html" >v21.2</option><option value="https://www.opendental.com/manual211/newcropformularychecks.html" >v21.1</option><option value="https://www.opendental.com/manual205/newcropformularychecks.html" >v20.5</option><option value="https://www.opendental.com/manual204/newcropformularychecks.html" >v20.4</option><option value="https://www.opendental.com/manual203/newcropformularychecks.html" >v20.3</option><option value="https://www.opendental.com/manual202/newcropformularychecks.html" >v20.2</option><option value="https://www.opendental.com/manual201/newcropformularychecks.html" >v20.1</option><option value="https://www.opendental.com/manual194/newcropformularychecks.html" >v19.4</option><option value="https://www.opendental.com/manual193/newcropformularychecks.html" >v19.3</option><option value="https://www.opendental.com/manual192/newcropformularychecks.html" >v19.2</option><option value="https://www.opendental.com/manual191/newcropformularychecks.html" >v19.1</option><option value="https://www.opendental.com/manual184/newcropformularychecks.html" >v18.4</option><option value="https://www.opendental.com/manual183/newcropformularychecks.html" >v18.3</option><option value="https://www.opendental.com/manual182/newcropformularychecks.html" >v18.2</option><option value="https://www.opendental.com/manual181/newcropformularychecks.html" >v18.1</option><option value="https://www.opendental.com/manual174/newcropformularychecks.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>NewCrop eRx Drug Formulary Checks</p></div>
+<div class="GeneralPageContent">
+<p>Drug formulary checks automatically indicate insurance coverage when searching for drugs using the <a href="newcrop.html">Ensora eRx (formerly NewCrop eRx) / Prescription</a> interface.</p>
+<img src="images/newCropFormularyStatus.png" width="915" height="467"/><p>Drug formulary checking is only available in the comprehensive version of Ensora eRx. For EHR measure details, see <a href="../site/ehreprescribing.html">EHR Objective 4: ePrescribing</a>.</p>
+<p>Offices must complete two steps to set up drug formulary checks:</p>
+<ol>
+<li>Add health plans to the Ensora eRx Account Health Plans list. Health plans are preloaded in Ensora eRx.</li>
+<li>Attach health plans to patients in Ensora eRx. Insurance information from Open Dental is not passed to Ensora eRx.</li>
+</ol>
+<br/><p>Once set up, checks occur automatically when <a href="newcrop.html">Writing and Transmitting Ensora eRx Prescriptions</a>.</p>
+<h2>Add Health Plans to List</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>In the <a href="chart.html">Chart Module</a>, click eRx to open the Ensora eRx interface.</li>
+<li>Click the <b>Admin</b> tab in the upper right corner.</li>
+<li>Click <b>Account Health Plans</b> in the <i>List Maintenance</i> area.</li>
+<li>Click <b>Add</b>.</li>
+<img src="images/newCropAddHealthPlans.png" width="915" height="141"/><li>Check the boxes next to any health plan(s) to add. By default, choices for the prescriber's state are listed. To search for national accounts, type in the search box and click <b>Search</b><ul>
+<li>If users cannot find the desired plan, try a different or shorter version of the name.</li>
+</ul>
+</li>
+<li>Click <b>Add</b>.</li>
+<li>Once plans are added, a banner displays at the top of the window noting the number of plans added. </li>
+</ol>
+<p>All selected health plans should now list under the Account Health Plans list.</p>
+<h2>Attach a Health Plan to a Patient</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>In Ensora eRx, click the <b>Pt Details </b>tab.</li>
+<li>In the <i>Health Plan Information</i> section, click the appropriate dropdown for the type of health plan (e.g., Primary, Secondary, etc.) then select the patient's health plan. <ul>
+<li>If the patient's insurance is not currently listed, click <b>Add Health Plan</b> from the dropdown and follow the steps in Add Health Plans to List above before proceeding</li>
+</ul>
+</li>
+<li>Click <b>Save</b>.</li>
+<img src="images/newCropHealthPlanInfo.png" width="650" height="516"/></ol>
+<p>The health plan is now attached to this patient. Ensora eRx automatically checks the formulary whenever drugs are searched and indicates formulary status.</p>
+</div>
+</div>
+</body>
+</html>```

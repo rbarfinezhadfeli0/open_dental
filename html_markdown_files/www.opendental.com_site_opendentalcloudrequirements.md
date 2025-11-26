@@ -1,0 +1,54 @@
+# File: ./www.opendental.com/site/opendentalcloudrequirements.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Open Dental Cloud Requirements</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('opendentalcloudrequirements','opendentalcloud','order.html','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Open Dental Cloud Requirements</p></div>
+		<div class="GeneralPageContent">
+<p><a href="opendentalcloud.html">Open Dental Cloud</a> requires certain hardware and setup.</p>
+<h2>Computer Requirements</h2>
+<p>These requirements pertain to each individual workstation accessing Open Dental Cloud.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>ODCloudClient must be installed on a Windows machine to bridge to third-party softwares (such as imaging software, credit card processing, etc.).</li>
+<li>Workstations should meet basic Open Dental <a href="computerrequirements.html">Computer Requirements</a> to run the ODCloudClient.</li>
+<li>High Speed internet. 20 mbps download. 10 mbps upload.</li>
+<li>Chrome is the recommended internet browser, however Open Dental Cloud may work with other browsers as well.</li>
+</ul>
+		</div>
+	</div>
+</body>
+</html>```

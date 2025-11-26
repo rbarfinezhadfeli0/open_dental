@@ -1,0 +1,94 @@
+# File: ./www.opendental.com/site/webinars.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Webinars and Tutorials</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('webinars','support','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Webinars and Tutorials</p></div>
+		<div class="GeneralPageContent">
+<p><img src="images/WebinarsTutorialsSiteHeader.png" width="912" height="304" width="912" height="304" alt=""/></p>
+<p>Webinars and tutorials are available on our YouTube channel to view at any time. These videos are presented by Open Dental trainers. Subscribe to our <a href="https://www.youtube.com/channel/UC2f1mkxYSud-V72gxpgmRrQ?sub_confirmation=1">YouTube channel</a> to receive notifications of new content. Each webinar is placed in one or more playlists by topic. Click a link below to begin the playlist.</p>
+<p class="MarginBottomZero">Refer to a getting started checklist for initial setup information that should be entered before participating in a webinar:  </p>
+<ul class="MarginBottomGap">
+<li><a href="checklistblankdb.html">Blank Database Setup Checklist</a>: For users who are starting with a blank database. <br></li>
+<li><a href="checklistconverteddb.html">Post-Data Conversion Setup Checklist</a>: For users who have had a <a href="conversionsfinal.html">Final Data Conversion</a>.</li>
+</ul>
+<h2>Getting Started</h2><div class="indentLeft">
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCmWM4cUxQ8zt88I-XvEkDIx">Introduction and Demo</a></b><br>  Meet Open Dental Software's dental practice management solution and view a free demo to learn how to use the basic features of the program.</p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCkA3APEb3igyfu8K6CpTsbJ">eServices</a></b><br>  Learn how to make your practice more efficient and simplify patient communication by setting up features like eReminders, eConfirmations, Integrated Texting, Patient Portal, Web Forms, Web Sched, Mobile Web, and more with eServices from Open Dental.<br></p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCmntAiWgBDa7MBjVl3JGONs">Trial Version</a></b><br>  Learn how to install the trial version of our dental practice management software for free today, no strings attached.</p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCkAMaFMm5-MGYcSMTkaXRnu">Conversions</a></b><br>  Learn about the conversion process.<br></p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynClRJvykoVOGn8xU9ek3lob9">General Setup</a></b><br>  Learn how to set up and customize various features in Open Dental like Time Cards, Quick Buttons, Automation, Auto Notes, and many more.</p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCmYVDu3ikedfkXAd7HeUwJ0">Post-Conversion Setup</a></b><br> Learn about what to do after converting to Open Dental.</p>
+</div>
+<h2>Updating Versions</h2><div class="indentLeft">
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCmNE4QvwbcA095SlcKu3e1K">Update Version</a></b><br>  Learn how to update your Open Dental version, as well as CDT Codes. </p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCmgCmi0eBMbGsUOdf8wkkRV">New Feature Highlights</a></b><br>  Learn about new and highlighted features from Open Dental so you can get the most out of your practice management software.</p>
+</div>
+<h2>Modules</h2><div class="indentLeft">
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCmlEORfQVD5o1a1lC78tlMz">Appointment Module</a></b><br>  Learn how to set up multiple appointment views, fill your appointment book, set up and manage recall, etc. from the Appointment Module in Open Dental.</p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCmRWyNcN1QW9Rttvl6cpBOd">Family Module</a></b><br>  Learn how to enter insurance benefit information, understand plan types, customize patient recall, etc. from the Family Module of Open Dental.</p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCnYKR2Y5ngkYf-rLqjw9j5F" target="_blank">Account Module</a></b><br>  Learn how to create claims, enter payments, make income transfers, manage payment plans, etc. from the Account Module in Open Dental.</p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynClmOo-iRmtFC7cOuq7Je5Io">Treatment Plan Module</a></b><br>  Learn how to understand and customize the Treatment Plan Module in Open Dental.<br></p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCkrtlgrAR0MSazd7Ez9-Z0R">Chart Module</a></b><br>  Learn how to enter treatment, enter clinical notes, use the perio chart, etc. from the Chart Module in Open Dental.</p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCn2gpkJ9PyahkXpbjHj9AK5">Manage Module</a></b><br>  Learn how to use features like Billing, Time Cards, Messaging, etc. from the Manage Module in Open Dental.</p>
+</div>
+<h2>Topics</h2><div class="indentLeft">
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCkmu-GjXhgyaR9iR5K35VNC">Billing</a></b><br> Learn how to set up your billing defaults, send statements, and apply finance charges to patient accounts. </p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCn6AIj1x7tSrn2GgwCOojUy">eForms</a></b><br> Learn how to set up and use eForms in Open Dental.</p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynClZ7-d1HXUEXs1JeAKJzBgY">eRx - Electronic Prescriptions</a><br></b>Learn how to use the DoseSpot and Ensora integrations.<b><br></b></p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCmo7F4AApt-eOkyqV5iuDlO">Insurance</a></b><br> Learn all about setting up insurance plans, updating fee schedules, receiving payments, and more. </p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCnHe6KoOGZ-zeLDeJjpwU5t">Integrated Third Party Services</a></b><br> See what third party programs integrate in Open Dental.</p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCkTGQT-plH4ftvLX0lUpurW">Ortho</a></b><br> See what Open Dental can do for your Orthodontic practice.</p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynClCJyAtQ7XvgefbFFPDBco8">Recall</a></b><br> Learn how to set up and manage Recall in Open Dental.</p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCk9ZnreHS6G4b0AmfQM-RUH">Referrals</a></b><br> Learn how to set up, manage, and track referrals in your practice with Open Dental Software.</p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCloFv0b3D9YNEM8FH8aMXQn">Reports</a></b><br>  Learn how to run reports in Open Dental like Payments Report, Outstanding Insurance Report, etc. </p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCkq2c7edvWusslmr_O8LS4N">Sheets/Forms/Kiosk</a></b><br>  Learn how to customize and create patient letters, consent forms, medical history forms, etc. and how to use the Kiosk feature in Open Dental.<br></p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCkrbf5hF0pzSVViropH3Q6Y">Task List</a></b><br>  Learn about setting up and using Task Lists.</p>
+</div>
+<h2>Playlists by Job Title</h2><p>These webinars will help your staff use the tools in Open Dental to manage responsibilities typical for their position. </p>
+<div class="indentLeft">
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCm4EJlVp0Ysur8JzdgwcG5o">Front Desk / Reception</a></b><br></p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCmlAR1IOxq2dYT7A1xS2rWd">Office Manager / Billing Specialist</a></b></p>
+</div>
+<h2>FAQs and QuickTips</h2><div class="indentLeft">
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCkqYvO6Z9IdTVOoE_O7fZC8">FAQs</a></b><br>  Learn the answers to the most frequently asked questions by Open Dental users.</p>
+<p><b><a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCnGuXhUNNwSFSvLZTq29YWi">QuickTips</a></b><br>  Quickly learn tips and tricks throughout the program in four minutes or less!<br></p>
+</div>
+<style>.indentLeft{margin-left:40px} </style>
+		</div>
+	</div>
+</body>
+</html>```

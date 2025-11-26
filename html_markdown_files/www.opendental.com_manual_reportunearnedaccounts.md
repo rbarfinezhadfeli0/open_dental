@@ -1,0 +1,65 @@
+# File: ./www.opendental.com/manual/reportunearnedaccounts.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Unearned Accounts Report</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reportunearnedaccounts','reportunearnedincome','+monthly','reportsstandard','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/reportunearnedaccounts.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/reportunearnedaccounts.html" >v24.2</option><option value="https://www.opendental.com/manual241/reportunearnedaccounts.html" >v24.1</option><option value="https://www.opendental.com/manual233/reportunearnedaccounts.html" >v23.3</option><option value="https://www.opendental.com/manual232/reportunearnedaccounts.html" >v23.2</option><option value="https://www.opendental.com/manual231/reportunearnedaccounts.html" >v23.1</option><option value="https://www.opendental.com/manual224/reportunearnedaccounts.html" >v22.4</option><option value="https://www.opendental.com/manual223/reportunearnedaccounts.html" >v22.3</option><option value="https://www.opendental.com/manual222/reportunearnedaccounts.html" >v22.2</option><option value="https://www.opendental.com/manual221/reportunearnedaccounts.html" >v22.1</option><option value="https://www.opendental.com/manual214/reportunearnedaccounts.html" >v21.4</option><option value="https://www.opendental.com/manual213/reportunearnedaccounts.html" >v21.3</option><option value="https://www.opendental.com/manual212/reportunearnedaccounts.html" >v21.2</option><option value="https://www.opendental.com/manual211/reportunearnedaccounts.html" >v21.1</option><option value="https://www.opendental.com/manual205/reportunearnedaccounts.html" >v20.5</option><option value="https://www.opendental.com/manual204/reportunearnedaccounts.html" >v20.4</option><option value="https://www.opendental.com/manual203/reportunearnedaccounts.html" >v20.3</option><option value="https://www.opendental.com/manual202/reportunearnedaccounts.html" >v20.2</option><option value="https://www.opendental.com/manual201/reportunearnedaccounts.html" >v20.1</option><option value="https://www.opendental.com/manual194/reportunearnedaccounts.html" >v19.4</option><option value="https://www.opendental.com/manual193/reportunearnedaccounts.html" >v19.3</option><option value="https://www.opendental.com/manual192/reportunearnedaccounts.html" >v19.2</option><option value="https://www.opendental.com/manual191/reportunearnedaccounts.html" >v19.1</option><option value="https://www.opendental.com/manual184/reportunearnedaccounts.html" >v18.4</option><option value="https://www.opendental.com/manual183/reportunearnedaccounts.html" >v18.3</option><option value="https://www.opendental.com/manual182/reportunearnedaccounts.html" >v18.2</option><option value="https://www.opendental.com/manual181/reportunearnedaccounts.html" >v18.1</option><option value="https://www.opendental.com/manual174/reportunearnedaccounts.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Unearned Accounts Report</p></div>
+<div class="GeneralPageContent">
+<p>This Unearned Income Report shows the total family unearned income balance by guarantor.</p>
+<p>In <a href="reportunearnedincome.html">Unearned Income Reports</a>, click <b>Unearned Accounts</b>.</p>
+<img src="images/reportUnearnedAccounts.png" width="616" height="326"/><p>This helps identify the remaining <a href="unearnedprepayment.html">Unearned / Prepayment</a> balance for a family that can be allocated.</p>
+<p><div class="Note">Note: To determine user access to these reports, see <a href="reportsecurity.html">Report Setup: Security Permissions</a>. </div>
+</p>
+<h2>Filters</h2>
+<p>If using clinics, the report can be filtered. </p>
+<p class="MarginBottomZero"><b>Clinics</b>: Select clinics to include in the report. Ctrl + click to select multiple clinics or check <b>All (includes hidden)</b> to include all clinics, including those marked hidden.  </p>
+<ul class="MarginBottomGap">
+<li>Filters by clinic guarantor's assigned clinic.</li>
+<li>If user is restricted to specific clinics, only accessible clinics will list. When checking <b>All (includes hidden)</b>, results will include all clinics user has access to, including those marked hidden, and anything unassigned to a clinic; results do not include clinics user is restricted from.</li>
+</ul>
+<h2>Report Preview</h2>
+<p>Click <b>OK</b> to generate the report. Below is an example of the report and explanation of the report columns. For a description of toolbar buttons, see <a href="reportcomplex.html">Complex Report System</a>.</p>
+<img src="images/reportUnearnedAccountsResults.png" width="915" height="540"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Guarantor</b>: Last name and first name of family guarantor. This may be a different person than the patient who made the payment(s) associated with the unearned income.</li>
+<li><b>Type</b>: Unearned type(s) associated with unearned income balance. Multiple unearned types may be listed.</li>
+<li><b>Clinic</b>: Guarantor's assigned clinic.</li>
+<li><b>Amount</b>: Total unearned income balance on family account.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

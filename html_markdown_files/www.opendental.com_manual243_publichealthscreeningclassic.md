@@ -1,0 +1,78 @@
+# File: ./www.opendental.com/manual243/publichealthscreeningclassic.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Public Health Classic Screening</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('publichealthscreeningclassic','publichealthscreenings','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/publichealthscreeningclassic.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/publichealthscreeningclassic.html" >v24.2</option><option value="https://www.opendental.com/manual241/publichealthscreeningclassic.html" >v24.1</option><option value="https://www.opendental.com/manual233/publichealthscreeningclassic.html" >v23.3</option><option value="https://www.opendental.com/manual232/publichealthscreeningclassic.html" >v23.2</option><option value="https://www.opendental.com/manual231/publichealthscreeningclassic.html" >v23.1</option><option value="https://www.opendental.com/manual224/publichealthscreeningclassic.html" >v22.4</option><option value="https://www.opendental.com/manual223/publichealthscreeningclassic.html" >v22.3</option><option value="https://www.opendental.com/manual222/publichealthscreeningclassic.html" >v22.2</option><option value="https://www.opendental.com/manual221/publichealthscreeningclassic.html" >v22.1</option><option value="https://www.opendental.com/manual214/publichealthscreeningclassic.html" >v21.4</option><option value="https://www.opendental.com/manual213/publichealthscreeningclassic.html" >v21.3</option><option value="https://www.opendental.com/manual212/publichealthscreeningclassic.html" >v21.2</option><option value="https://www.opendental.com/manual211/publichealthscreeningclassic.html" >v21.1</option><option value="https://www.opendental.com/manual205/publichealthscreeningclassic.html" >v20.5</option><option value="https://www.opendental.com/manual204/publichealthscreeningclassic.html" >v20.4</option><option value="https://www.opendental.com/manual203/publichealthscreeningclassic.html" >v20.3</option><option value="https://www.opendental.com/manual202/publichealthscreeningclassic.html" >v20.2</option><option value="https://www.opendental.com/manual201/publichealthscreeningclassic.html" >v20.1</option><option value="https://www.opendental.com/manual194/publichealthscreeningclassic.html" >v19.4</option><option value="https://www.opendental.com/manual193/publichealthscreeningclassic.html" >v19.3</option><option value="https://www.opendental.com/manual192/publichealthscreeningclassic.html" >v19.2</option><option value="https://www.opendental.com/manual191/publichealthscreeningclassic.html" >v19.1</option><option value="https://www.opendental.com/manual184/publichealthscreeningclassic.html" >v18.4</option><option value="https://www.opendental.com/manual183/publichealthscreeningclassic.html" >v18.3</option><option value="https://www.opendental.com/manual182/publichealthscreeningclassic.html" >v18.2</option><option value="https://www.opendental.com/manual181/publichealthscreeningclassic.html" >v18.1</option><option value="https://www.opendental.com/manual174/publichealthscreeningclassic.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Public Health Classic Screening</p></div>
+<div class="GeneralPageContent">
+<p>Practices utilizing Public Health can complete screenings using the classic form.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Tools, <a href="publichealthscreenings.html">Public Health Screening</a>.</p>
+<img src="images/screeningGroups.gif" width="501" height="309"/><p class="MarginBottomZero">These steps explain how to use the classic <a href="publichealth.html">public health</a> screening form. </p>
+<ul class="MarginBottomGap">
+<li>In <a href="preferences.html">Preferences</a>, uncheck <i>Screening Use Sheets</i> to use the classic form.</li>
+<li>Before patients can be screened, set up screening groups and add patients. See <a href="publichealthscreenings.html">Public Health Screening</a>.</li>
+</ul>
+<p>Double-click the screening group to select it. Screening groups are grouped by date. If needed, change the date and click <b>Refresh</b>.</p>
+<img src="images/publicScreeningGroupClassic.gif" width="874" height="339"/><p class="MarginBottomZero">Patients should already list under Patients for Screening. </p>
+<ul class="MarginBottomGap">
+<li>Only patients with <i>Allowed</i> permission will be screened. Change permissions if needed by right clicking on a patient.</li>
+<li>To change patient information, double click a patient then enter on the <a href="patientedit.html">Edit Patient Information</a>.</li>
+<li>Anonymous screenings do not require adding a patient or setting screening permissions. See Anonymous Screenings at the bottom of this page.</li>
+</ul>
+<p>Click <b>Screen Patients</b>. The classic screening form for the first patient with an <i>Allowed</i> permission that hasn't been screened yet will open. <br/><img src="images/screenEdit.gif" width="321" height="519" class="ImageInParagraph"/><br/><b>Row</b>: Determines the sort order of the screening in the list of screenings. Automatically uses the next row in the sequence.<br/><b>Name</b>: Cannot be changed from here.</p>
+<p><b>Grade level, age, birthdate</b>: Automatically populates if information is already entered on the Edit Patient Information window. Change if needed.</p>
+<p>Charting Options: Check a box  <img src="images/publicClassicUnknown.gif" width="15" height="15" style="margin-bottom: 0px"/> to select it. Each option has three available states: blank, checked, or unknown. You only need to enter information that is required by your organization.</p>
+<p><b>Race ethnicity, gender, urgency</b>: Automatically populates if information is already entered on the Edit Patient Information window. Change if needed.</p>
+<p>Click <b>OK</b> to save. A new row will show in the Screenings list for this patient.</p>
+<p>If there are more patients to screen, a new screening form will open for the next patient who has an <i>Allowed</i> permission and hasn't been screened. The new patient's information will be auto-filled if known. If not known, the information from the previous screened patient is automatically used.</p>
+<div class="Note">Note: <ul>
+<li>To exit screenings, click <b>Cancel</b> on the screening form. To resume, click <b>Screen Patients</b> again.</li>
+<li>If a patient screening is deleted, their permission level returns to <i>Unknown</i>.</li>
+</ul>
+</div>
+<br/><br/><h2>Add Anonymous Screenings</h2>
+<p class="MarginBottomZero">Anonymous screenings do not require adding a patient or setting screening permissions.  </p>
+<ol class="MarginBottomGap">
+<li>Click <b>Add Anonymous.</b></li>
+<li>Enter the information. All information except Name can be entered.</li>
+<li>Click <b>OK</b>, a new screening form will open, filled in with information from the previous individual.</li>
+<li>When finished entering all anonymous screenings, click <b>Cancel </b>to close the screening form.</li>
+</ol>
+<p>If the person needs treatment, consider entering them into the system as a regular patient (if not already entered) and putting their patient ID number in the <i>Comments</i> section.</p>
+</div>
+</div>
+</body>
+</html>```

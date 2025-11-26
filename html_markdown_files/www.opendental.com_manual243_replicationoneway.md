@@ -1,0 +1,112 @@
+# File: ./www.opendental.com/manual243/replicationoneway.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - One-Way Replication</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('replicationoneway','replication','advancedtopics','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/replicationoneway.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/replicationoneway.html" >v24.2</option><option value="https://www.opendental.com/manual241/replicationoneway.html" >v24.1</option><option value="https://www.opendental.com/manual233/replicationoneway.html" >v23.3</option><option value="https://www.opendental.com/manual232/replicationoneway.html" >v23.2</option><option value="https://www.opendental.com/manual231/replicationoneway.html" >v23.1</option><option value="https://www.opendental.com/manual224/replicationoneway.html" >v22.4</option><option value="https://www.opendental.com/manual223/replicationoneway.html" >v22.3</option><option value="https://www.opendental.com/manual222/replicationoneway.html" >v22.2</option><option value="https://www.opendental.com/manual221/replicationoneway.html" >v22.1</option><option value="https://www.opendental.com/manual214/replicationoneway.html" >v21.4</option><option value="https://www.opendental.com/manual213/replicationoneway.html" >v21.3</option><option value="https://www.opendental.com/manual212/replicationoneway.html" >v21.2</option><option value="https://www.opendental.com/manual211/replicationoneway.html" >v21.1</option><option value="https://www.opendental.com/manual205/replicationoneway.html" >v20.5</option><option value="https://www.opendental.com/manual204/replicationoneway.html" >v20.4</option><option value="https://www.opendental.com/manual203/replicationoneway.html" >v20.3</option><option value="https://www.opendental.com/manual202/replicationoneway.html" >v20.2</option><option value="https://www.opendental.com/manual201/replicationoneway.html" >v20.1</option><option value="https://www.opendental.com/manual194/replicationoneway.html" >v19.4</option><option value="https://www.opendental.com/manual193/replicationoneway.html" >v19.3</option><option value="https://www.opendental.com/manual192/replicationoneway.html" >v19.2</option><option value="https://www.opendental.com/manual191/replicationoneway.html" >v19.1</option><option value="https://www.opendental.com/manual184/replicationoneway.html" >v18.4</option><option value="https://www.opendental.com/manual183/replicationoneway.html" >v18.3</option><option value="https://www.opendental.com/manual182/replicationoneway.html" >v18.2</option><option value="https://www.opendental.com/manual181/replicationoneway.html" >v18.1</option><option value="https://www.opendental.com/manual174/replicationoneway.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>One-Way Replication</p></div>
+<div class="GeneralPageContent">
+<p>MySQL comes with its own <a href="replication.html">Replication</a> capabilities. The recommended steps below include setting up auto-increment variables to avoid data collision. If you already use random primary keys instead, see <a href="replicationonewayrandomprimary.html">One-Way Replication (random primary keys)</a>.</p>
+<p><div class="Note">Note: Versions of MySQL or MariaDB must match on all servers.</div>
+</p>
+<h2>Instructions</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li><b>Add servers and install the <i>OpenDentalReplicationService</i> to each Replica</b>. See <a href="replicationservers.html">Replication Setup</a>.</li>
+<li><b>Stop the MySQL Service on both the Primary and Replica (<span class="codeblock">net stop mysql</span>)</b>. On some operating systems, this will require you go into the system services in Control Panel, Administrative Tools, Services and stop the MySQL service manually. If the MySQL service is started on the Primary or Replica before step 5, then replication on the Replica will fail.</li>
+<li><b>On all replication servers, wipe out all loose files in the mysql data directory which do not reside in a subfolder. </b>If all tables in all databases are MyISAM and the database management system in use is MySQL 5.5, then all of the "ib" files can be moved to a loose files folder. If all tables in all databases are MyISAM and the database management system in use is MySQL 5.6 or MariaDB 10.5 or any InnoDB tables exist in any database, the "ib" files should not be removed. </li>
+<li><b>Make an identical database or data directory copy from Primary to Replica.</b> If all tables in all databases are MyISAM and the database management system in use is MySQL 5.5, a database copy from Primary to Replica is sufficient. If all tables in all databases are MyISAM and the database management system in use is MySQL 5.6 or MariaDB 10.5 or any InnoDB tables exist in any database, make an identical of the entire data directory from the Primary to Replica server. The replicated database or data directory must be exactly the same before replication begins the first time. <ul>
+<li>If the one-way replication server is being added to an existing daisy chain, the database or data directory copy must be a snapshot from the point in time that the daisy chain was setup (before any SQL statements were ever replicated). If you do not have this older copy of the database or data directory, reset the daisy chain immediately before copying the database or data directory to the one-way server. </li>
+</ul>
+</li>
+<li><b>On the Replica and Primary, set auto increment / offset variables in the my.ini file</b>. See <a href="replicationautoincrement.html">Replication Auto Increment</a>.</li>
+<li><b>Make sure the Primary and Replica are synced to the same date and time</b>.</li>
+<li><b>Start the MySQL service on the Primary and Replica (<span class="codeblock">net start mysql</span>)</b>. On some operating systems, such as Windows Vista, this will require you go into the system services in Control Panel, Administrative Tools, Services and start the MYSQL service manually.</li>
+<li><b>On the Replica, point the Replica to the Primary (Master)</b>. Go the command line and navigate to the appropriate bin folder of the MySQL service, typically <b>C:\Program Files\MySQL\MySQL Server 5.5\bin</b> or <b>C:\Program Files\MariaDB 10.5\bin</b>.<br/> Type the following: <span class="codeblock">mysql -u root opendental</span> where <span class="codeblock">opendental</span> is the name of the database. If you have a MySQL user password, add <span class="codeblock">-p</span> and <span class="codeblock">-h </span>to the command.<br/><br/>
+<p>For users on MySQL 5.5 / 5.6 / MariaDB 10.5 or lower:</p><p class="codeblock">CHANGE MASTER TO</p><p class="codeblock">MASTER_HOST = 'SERVER_MASTER',</p><p class="codeblock">MASTER_USER = 'repl',</p><p class="codeblock">MASTER_PASSWORD = 'ENTER PASSWORD HERE';</p><br/>
+<p>For users on MariaDB 10.11:</p><p class="codeblock">CHANGE MASTER TO</p><p class="codeblock">MASTER_HOST = 'SERVER_MASTER',</p><p class="codeblock">MASTER_USER = 'repl',</p><p class="codeblock">MASTER_PASSWORD = 'ENTER PASSWORD HERE',</p><p class="codeblock">MASTER_USE_GTID = no;</p><br/>
+<ul>
+<li>Set <span class="codeblock">MASTER_HOST</span> to either the IP address or computer name of the Primary (Master).</li>
+<li>Set <span class="codeblock">MASTER_PASSWORD</span> to a password of your choosing.</li>
+</ul>
+<p><div class="Note">Note: If using a port alternate to 3306, <span class="codeblock">MASTER_PORT</span> may also need to be run.</div>
+</p>
+</li>
+<li><b>Run the following queries on the Primary to grant permission for the Replica to read data</b>. This step is easy to get wrong.<br/><br/><p class="codeblock">GRANT CREATE TEMPORARY TABLES ON opendental.* TO'repl' IDENTIFIED BY 'ENTER PASSWORD HERE';</p><p class="codeblock">GRANT SUPER ON *.* TO'repl' IDENTIFIED BY 'ENTER PASSWORD HERE';</p><p class="codeblock">GRANT REPLICATION SLAVE ON *.* TO'repl' IDENTIFIED BY 'ENTER PASSWORD HERE';</p><ul>
+<li>The <span class="codeblock">opendental.*</span> should be the name of your mysql database and must be lowercase. The <span class="codeblock">.*</span> means everything within the specified database.</li>
+</ul>
+</li>
+<li><b>Run the <span class="codeblock">START SLAVE;</span> in the mysql command interface on the Replica</b>.</li>
+<li><b>Run <span class="codeblock">SHOW SLAVE STATUS \G</span> in the mysql command interface on the Replica</b>. Make sure that the Slave IO Running and Slave SQL Running columns both say, Yes. <br/><img src="images/Replication_slavestatus.png" width="505" height="519" class="ImageInParagraph"/></li>
+<li> Launch Open Dental on Primary Server using <i>LocalHost</i> and the replicated database. Input report server settings. See <a href="reportserver.html">Report Setup: Report Server</a>.</li>
+<li>Ensure replication is working as intended by performing the following: <ol>
+<li>On the Primary Server, create an appointment for a test patient and make note of the patient's Patient Number. See <a href="patientedit.html">Edit Patient Information</a></li>
+<li>Verify the appointment was created on the Report Server by querying it from the Primary Server. Go to Reports in the main menu, User Query and ensure that the "Run on report server" box is checked before running the following query: <span class="codeblock">SELECT * FROM appointment WHERE PatNum = [Patient's PatNum] ORDER BY SecDateTEntry DESC LIMIT 10;</span></li>
+<li>On the Primary server: Delete the appointment and run the above query to again to verify the appointment was removed from the report server.</li>
+</ol>
+</li>
+</ol>
+<b>Alternative Test</b><p><table class="simpletable">
+<tr>
+<th style="width:33%"></th>
+<th style="width:33%">Master IP 192.168.0.1 <p></p>
+database=databasename</th>
+<th style="width:33%">Slave IP 192.168.0.2 <p></p>
+database=databasename</th>
+</tr>
+<tr>
+<td><p>Launch Open Dental on Primary Server using LocalHost and the replicated database, then check the log files to make sure the files were created and time stamps are recent. <b>C:\mysql\data</b></p>
+</td>
+<td><p><b>C:\mysql\data&gt;dir</b></p>
+<p>02/22/2008 01:25 PM 57 relay-log.info</p>
+<p>02/22/2008 09:12 PM 235 server-relay-bin.000043</p>
+<p>02/22/2008 09:12 PM 26 server-relay-bin.index</p>
+<p>02/22/2008 01:22 PM 17,642 server.err</p>
+<p>02/22/2008 01:22 PM 5 server.pid</p>
+</td>
+<td><p><b>C:\mysql\data&gt;dir</b></p>
+<p>02/22/2008 01:25 PM 57 relay-log.info</p>
+<p>02/22/2008 09:12 PM 235 server-relay-bin.000043</p>
+<p>02/22/2008 09:12 PM 26 server-relay-bin.index</p>
+<p>02/22/2008 01:22 PM 17,642 server.err</p>
+<p>02/22/2008 01:22 PM 5 server.pid</p>
+</td>
+</tr>
+</table>
+</p>
+</div>
+</div>
+</body>
+</html>```

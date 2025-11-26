@@ -1,0 +1,81 @@
+# File: ./www.opendental.com/site/apiinsplans.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API InsPlans</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apiinsplans','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API InsPlans</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7insplanlist.html">Insurance Plans</a> for more information.</p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96insplan.html" target="_blank">InsPlan Database Schema.</a></p>
+<h2>InsPlans GET (single)</h2>
+<p>Version Added: 24.2.11</p>
+<p>Gets a single insplan.</p>
+<p><b>PlanNum:</b> Required in URL.</p>
+<p><b>Example Request:</b><br> GET /insplans/6<br></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "PlanNum": 6,<br> "GroupName": "United States Post Office",<br> "GroupNum": "PB181863",<br> "PlanNote": "Mostly covered.",<br> "FeeSched": 54,<br> "PlanType": "p",<br> "ClaimFormNum": 1,<br> "ClaimsUseUCR": "false",<br> "CopayFeeSched": 0,<br> "EmployerNum": 23,<br> "CarrierNum": 10,<br> "IsMedical": "false",<br> "FilingCode": 4,<br> "ShowBaseUnits": "false",<br> "CodeSubstNone": "true",<br> "IsHidden": "false",<br> "MonthRenew": 0,<br> "FilingCodeSubtype": 0,<br> "CobRule": "Standard",<br> "SecUserNumEntry": 0,<br> "SecDateEntry": "2023-01-21",<br> "SecDateTEdit": "2023-01-21 06:47:00",<br> "BillingType": 40,<br> "ExclusionFeeRule": "PracticeDefault",<br> "ManualFeeSchedNum": 0,<br> "IsBlueBookEnabled": "false",<br> "InsPlansZeroWriteOffsOnAnnualMaxOverride": "Default",<br> "InsPlansZeroWriteOffsOnFreqOrAgingOverride": "Default"<br> } </span></p>
+<p>200 OK<br> 404 NotFound (with explanation)<br></p>
+<h2>InsPlans GET (multiple)</h2>
+<p>Version Added: 22.3.30</p>
+<p>Gets a list of insplans.</p>
+<p><b>Parameters:</b> All optional.</p>
+<p><b>PlanType: </b> (Added in version 24.2.11) Must be one of the following: "percentage" (Percentage), "p" (PPO Percentage), "f" (Flat Copay), or "c" (Capitation). Percentage PlanTypes are stored as blank in the database.<br><b>CarrierNum: </b> (Added in version 24.2.11) FK to carrier.CarrierNum.<br></p>
+<p><b>Example Request:</b><br> GET /insplans<br> GET /insplans?PlanType=p<br> GET /insplans?CarrierNum=10<br></p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br> {<br> "PlanNum": 6,<br> "GroupName": "United States Post Office",<br> "GroupNum": "PB181863",<br> "PlanNote": "Mostly covered.",<br> "FeeSched": 54,<br> "PlanType": "p",<br> "ClaimFormNum": 1,<br> "ClaimsUseUCR": "true",<br> "CopayFeeSched": 0,<br> "EmployerNum": 23,<br> "CarrierNum": 10,<br> "IsMedical": "false",<br> "FilingCode": 0,<br> "ShowBaseUnits": "false",<br> "CodeSubstNone": "true",<br> "IsHidden": "false",<br> "MonthRenew": 0,<br> "FilingCodeSubtype": 0,<br> "CobRule": "Basic",<br> "SecUserNumEntry": 0,<br> "SecDateEntry": "2023-01-21",<br> "SecDateTEdit": "2023-01-21 06:47:00",<br> "BillingType": 313,<br> "ExclusionFeeRule": "UseUcrFee",<br> "ManualFeeSchedNum": 0,<br> "IsBlueBookEnabled": "false",<br> "InsPlansZeroWriteOffsOnAnnualMaxOverride": "Default",<br> "InsPlansZeroWriteOffsOnFreqOrAgingOverride": "Default"<br> },<br> {<br> "PlanNum": 14,<br> "GroupName": "REI",<br> "GroupNum": "G189614",<br> "PlanNote": "",<br> "FeeSched": 0,<br> "PlanType": "c",<br> "ClaimFormNum": 1,<br> "ClaimsUseUCR": "false",<br> "CopayFeeSched": 56,<br> "EmployerNum": 23,<br> "CarrierNum": 10,<br> "IsMedical": "false",<br> "FilingCode": 23,<br> "ShowBaseUnits": "true",<br> "CodeSubstNone": "false",<br> "IsHidden": "true",<br> "MonthRenew": 6,<br> "FilingCodeSubtype": 41,<br> "CobRule": "Standard",<br> "SecUserNumEntry": 34,<br> "SecDateEntry": "2023-12-07",<br> "SecDateTEdit": "2023-12-04 09:15:00",<br> "BillingType": 315,<br> "ExclusionFeeRule": "DoNothing",<br> "ManualFeeSchedNum": 0,<br> "IsBlueBookEnabled": "false",<br> "InsPlansZeroWriteOffsOnAnnualMaxOverride": "No",<br> "InsPlansZeroWriteOffsOnFreqOrAgingOverride": "No"<br> },<br> etc...<br> ]<br></span></p>
+<p>200 OK<br> 400 BadRequest (with explanation)<br></p>
+<h2>InsPlans POST </h2>
+<p>Version Added: 22.4.24</p>
+<p>Creates a new insplan. </p>
+<p><b>CarrierNum: </b>Required. FK to carrier.CarrierNum.</p>
+<p><b>GroupName: </b>Optional. Typically the same as the employer. Used to identify difference in plans.<br><b>GroupNum: </b>Optional. The Plan Number in Canada.<br><b>PlanNote: </b>Optional. Note for this plan. Same for all subscribers.<br><b>FeeSched: </b>Optional. FK to feesched.FeeSchedNum. Default 0.<br><b>PlanType: </b>Optional. Must be one of the following: "" (Percentage), "p" (PPO Percentage), "f" (Flat Copay), or "c" (Capitation). Default is "" (Percentage).<br><b>ClaimFormNum: </b>(Added in version 25.2.24) Optional. FK to claimform.ClaimFormNum. Defaults to the DefaultClaimForm preference.<br><b>ClaimsUseUCR: </b>(Added in version 25.1.20) Optional. Either "true" or "false". Default is "true" if the preference InsDefaultShowUCRonClaims is enabled and the PlanType is "" (Percentage), otherwise "false".<br><b>CopayFeeSched: </b>(Added in version 23.3.17) Optional. FK to feesched.FeeSchedNum when FeeSchedType is CoPay. Typically only used for capitation or copay plans. Default 0.<br><b>EmployerNum: </b>Optional. FK to employer.EmployerNum. Default 0.<br><b>IsMedical: </b>(Added in version 24.4.34) Optional. Either "true" or "false". Default "false".<br><b>FilingCode: </b>(Added in version 25.1.20) Optional. FK to insfilingcode.InsFilingCodeNum. Default 0.<br><b>ShowBaseUnits: </b>(Added in version 25.1.20) Optional. Either "true" or "false". Default "false".<br><b>CodeSubstNone: </b>(Added in version 22.4.31) Optional. Either "true" or "false". Set "true" if this Insurance Plan should ignore any Substitution Codes. Default "false".<br><b>IsHidden: </b>(Added in version 22.4.31) Optional. Either "true" or "false". Default "false".<br><b>MonthRenew: </b>Optional. The month, 1-12, when the insurance plan renews. It will renew on the first of the month. Default 0 to indicate calendar year.<br><b>FilingCodeSubtype: </b>(Added in version 25.1.20) Optional. FK to insfilingcodesubtype.InsFilingCodeSubtypeNum. Default 0.<br><b>CobRule: </b>(Added in version 25.1.20) Optional. Either "Basic", "Standard", "CarveOut" or "SecondaryMedicaid". Defaults to the InsDefaultCobRule preference.<br><b>BillingType: </b>(Added in version 25.1.20) Optional. FK to definition.DefNum where definition.Category=4. Default 0.<br><b>ExclusionFeeRule: </b>(Added in version 25.1.20) Optional. Either "PracticeDefault", "DoNothing" or "UseUcrFee". Default is "PracticeDefault".<br><b>ManualFeeSchedNum: </b>(Added in version 25.2.24) Optional. FK to feesched.FeeSchedNum when feesched.FeeSchedType is ManualBlueBook. Only allowed if the AllowedFeeSchedsAutomate preference is set to "BlueBook" and if <b>IsBlueBookEnabled</b> is "true". Default 0 to indicate "None".<br><b>IsBlueBookEnabled: </b>Optional. Determines if the plan utilizes BlueBook or not. Cannot be set to true if <b>PlanType</b> is set to anything other than "" (Percentage). Defaults to true if AllowedFeeSchedsAutomate is set to BlueBook, otherwise defaults to false.<br><b>InsPlansZeroWriteOffsOnAnnualMaxOverride: </b>(Added in version 25.1.20) Optional. Either "Default", "Yes" or "No". Default is "Default".<br><b>InsPlansZeroWriteOffsOnFreqOrAgingOverride: </b>(Added in version 25.1.20) Optional. Either "Default", "Yes" or "No". Default is "Default".<br></p>
+<b>Example Requests:</b><br> POST /insplans<br><p><span class="codeblock"> {<br> "CarrierNum": 10<br> }<br></span></p>
+<p> or<br></p>
+<p><span class="codeblock"> {<br> "GroupName": "Walmart",<br> "GroupNum": "W4875",<br> "PlanNote": "Copayments",<br> "FeeSched": 56,<br> "PlanType": "f",<br> "ClaimsUseUCR": "false",<br> "CopayFeeSched": 172,<br> "EmployerNum": 23,<br> "CarrierNum": 10,<br> "IsMedical": "false",<br> "ShowBaseUnits": "true",<br> "CodeSubstNone": "false",<br> "IsHidden": "false",<br> "MonthRenew": 12,<br> "CobRule": "Basic",<br> "BillingType": 313,<br> "ExclusionFeeRule": "DoNothing",<br> "IsBlueBookEnabled": "false"<br> }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "PlanNum": 16,<br> "GroupName": "Walmart",<br> "GroupNum": "W4875",<br> "PlanNote": "Copayments",<br> "FeeSched": 56,<br> "PlanType": "f",<br> "ClaimFormNum": 1,<br> "ClaimsUseUCR": "false",<br> "CopayFeeSched": 172,<br> "EmployerNum": 23,<br> "CarrierNum": 10,<br> "IsMedical": "false",<br> "FilingCode": 0,<br> "ShowBaseUnits": "true",<br> "CodeSubstNone": "false",<br> "IsHidden": "false",<br> "MonthRenew": 12,<br> "FilingCodeSubtype": 0,<br> "CobRule": "Basic",<br> "SecUserNumEntry": 0,<br> "SecDateEntry": "2023-01-21",<br> "SecDateTEdit": "2023-01-21 06:47:00",<br> "BillingType": 313,<br> "ExclusionFeeRule": "DoNothing",<br> "ManualFeeSchedNum": 0,<br> "IsBlueBookEnabled": "false",<br> "InsPlansZeroWriteOffsOnAnnualMaxOverride": "Default",<br> "InsPlansZeroWriteOffsOnFreqOrAgingOverride": "Default"<br> }<br></span></p>
+<p> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>InsPlans PUT </h2>
+<p>Version Added: 22.3.30</p>
+<p>Updates an insplan. </p>
+<p><b>PlanNum: </b>Required in the URL.<br><br><b>GroupName: </b>Optional. Typically the same as the employer. Used to identify difference in plans.<br><b>GroupNum: </b>Optional. The Plan Number in Canada.<br><b>PlanNote: </b>Optional. Note for this plan. Same for all subscribers.<br><b>FeeSched: </b>Optional. FK to feesched.FeeSchedNum.<br><b>PlanType: </b>Optional. Must be one of the following: "" (Percentage), "p" (PPO Percentage), "f" (Flat Copay), or "c" (Capitation).<br><b>ClaimFormNum: </b>(Added in version 25.2.24) Optional. FK to claimform.ClaimFormNum.<br><b>ClaimsUseUCR: </b>(Added in version 25.1.20) Optional. Either "true" or "false".<br><b>CopayFeeSched: </b>(Added in version 23.3.17) Optional. FK to feesched.FeeSchedNum when FeeSchedType is CoPay. Typically only used for capitation or copay plans.<br><b>EmployerNum: </b>(Added in version 22.4.24) Optional. FK to employer.EmployerNum.<br><b>CarrierNum: </b>(Added in version 22.4.24) Optional. FK to carrier.CarrierNum.<br><b>IsMedical: </b>(Added in version 24.4.34) Optional. Either "true" or "false".<br><b>FilingCode: </b>(Added in version 25.1.20) Optional. FK to insfilingcode.InsFilingCodeNum.<br><b>ShowBaseUnits: </b>(Added in version 25.1.20) Optional. Either "true" or "false".<br><b>CodeSubstNone: </b>(Added in version 22.4.31) Optional. Either "true" or "false". Set "true" if this Insurance Plan should ignore any Substitution Codes.<br><b>IsHidden: </b>(Added in version 22.4.31) Optional. Either "true" or "false".<br><b>MonthRenew: </b>Optional. The month, 1-12, when the insurance plan renews. It will renew on the first of the month. Use 0 to indicate calendar year.<br><b>FilingCodeSubtype: </b>(Added in version 25.1.20) Optional. FK to insfilingcodesubtype.InsFilingCodeSubtypeNum.<br><b>CobRule: </b>(Added in version 25.1.20) Optional. Either "Basic", "Standard", "CarveOut" or "SecondaryMedicaid".<br><b>BillingType: </b>(Added in version 25.1.20) Optional. FK to definition.DefNum where definition.Category=4.<br><b>ExclusionFeeRule: </b>(Added in version 25.1.20) Optional. Either "PracticeDefault", "DoNothing" or "UseUcrFee".<br><b>ManualFeeSchedNum: </b>(Added in version 25.2.24) Optional. FK to feesched.FeeSchedNum when feesched.FeeSchedType is ManualBlueBook. Only allowed if the AllowedFeeSchedsAutomate preference is set to "BlueBook" and if <b>IsBlueBookEnabled</b> is "true". Use 0 to indicate "None".<br><b>IsBlueBookEnabled: </b>(Added in version 22.4.24) Optional. Determines if the plan utilizes BlueBook or not. Cannot be set to true if <b>PlanType</b> is set to anything other than "" (Percentage).<br><b>InsPlansZeroWriteOffsOnAnnualMaxOverride: </b>(Added in version 25.1.20) Optional. Either "Default", "Yes" or "No".<br><b>InsPlansZeroWriteOffsOnFreqOrAgingOverride: </b>(Added in version 25.1.20) Optional. Either "Default", "Yes" or "No".<br></p>
+<b>Example Requests:</b><br> PUT /insplans/15<br><p><span class="codeblock"> {<br> "FeeSched": 0,<br> "PlanType": "",<br> "MonthRenew": 0<br> }<br></span></p>
+<p> or<br></p>
+<p><span class="codeblock"> {<br> "GroupName": "Pixar",<br> "GroupNum": "Y4845",<br> "PlanNote": "Copayments",<br> "FeeSched": 56,<br> "PlanType": "f",<br> "ClaimsUseUCR": "false",<br> "CopayFeeSched": 172,<br> "EmployerNum": 12,<br> "CarrierNum": 8,<br> "IsMedical": "false",<br> "FilingCode": 21,<br> "CodeSubstNone": "false",<br> "IsHidden": "false",<br> "MonthRenew": 12<br> "FilingCodeSubtype": 3,<br> "CobRule": "CarveOut",<br> "BillingType": 314,<br> "ExclusionFeeRule": "PracticeDefault",<br> "IsBlueBookEnabled": "false",<br> "InsPlansZeroWriteOffsOnAnnualMaxOverride": "No",<br> "InsPlansZeroWriteOffsOnFreqOrAgingOverride": "Yes"<br> }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "PlanNum": 15,<br> "GroupName": "Pixar",<br> "GroupNum": "Y4845",<br> "PlanNote": "Copayments",<br> "FeeSched": 56,<br> "PlanType": "f",<br> "ClaimFormNum": 1,<br> "ClaimsUseUCR": "false",<br> "CopayFeeSched": 172,<br> "EmployerNum": 12,<br> "CarrierNum": 8,<br> "IsMedical": "false",<br> "FilingCode": 21,<br> "ShowBaseUnits": "false",<br> "CodeSubstNone": "false",<br> "IsHidden": "false",<br> "MonthRenew": 12<br> "FilingCodeSubtype": 3,<br> "CobRule": "CarveOut",<br> "SecUserNumEntry": 0,<br> "SecDateEntry": "2023-01-21",<br> "SecDateTEdit": "2023-01-21 06:47:00",<br> "BillingType": 314,<br> "ExclusionFeeRule": "PracticeDefault",<br> "ManualFeeSchedNum": 0,<br> "IsBlueBookEnabled": "false",<br> "InsPlansZeroWriteOffsOnAnnualMaxOverride": "No",<br> "InsPlansZeroWriteOffsOnFreqOrAgingOverride": "Yes"<br> }<br></span></p>
+<p> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>```

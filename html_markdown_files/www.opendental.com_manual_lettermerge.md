@@ -1,0 +1,95 @@
+# File: ./www.opendental.com/manual/lettermerge.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Letter Merge</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('lettermerge','letterspatient','toolbar','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/lettermerge.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/lettermerge.html" >v24.2</option><option value="https://www.opendental.com/manual241/lettermerge.html" >v24.1</option><option value="https://www.opendental.com/manual233/lettermerge.html" >v23.3</option><option value="https://www.opendental.com/manual232/lettermerge.html" >v23.2</option><option value="https://www.opendental.com/manual231/lettermerge.html" >v23.1</option><option value="https://www.opendental.com/manual224/lettermerge.html" >v22.4</option><option value="https://www.opendental.com/manual223/lettermerge.html" >v22.3</option><option value="https://www.opendental.com/manual222/lettermerge.html" >v22.2</option><option value="https://www.opendental.com/manual221/lettermerge.html" >v22.1</option><option value="https://www.opendental.com/manual214/lettermerge.html" >v21.4</option><option value="https://www.opendental.com/manual213/lettermerge.html" >v21.3</option><option value="https://www.opendental.com/manual212/lettermerge.html" >v21.2</option><option value="https://www.opendental.com/manual211/lettermerge.html" >v21.1</option><option value="https://www.opendental.com/manual205/lettermerge.html" >v20.5</option><option value="https://www.opendental.com/manual204/lettermerge.html" >v20.4</option><option value="https://www.opendental.com/manual203/lettermerge.html" >v20.3</option><option value="https://www.opendental.com/manual202/lettermerge.html" >v20.2</option><option value="https://www.opendental.com/manual201/lettermerge.html" >v20.1</option><option value="https://www.opendental.com/manual194/lettermerge.html" >v19.4</option><option value="https://www.opendental.com/manual193/lettermerge.html" >v19.3</option><option value="https://www.opendental.com/manual192/lettermerge.html" >v19.2</option><option value="https://www.opendental.com/manual191/lettermerge.html" >v19.1</option><option value="https://www.opendental.com/manual184/lettermerge.html" >v18.4</option><option value="https://www.opendental.com/manual183/lettermerge.html" >v18.3</option><option value="https://www.opendental.com/manual182/lettermerge.html" >v18.2</option><option value="https://www.opendental.com/manual181/lettermerge.html" >v18.1</option><option value="https://www.opendental.com/manual174/lettermerge.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Letter Merge</p></div>
+<div class="GeneralPageContent">
+<p>Letter Merge allows users to create a Word document for a single patient only. </p>
+<p>In the <a href="toolbar.html">Main Toolbar</a>, click the <a href="letterspatient.html">Letter</a> dropdown. Select <b>Merge</b>.</p>
+<img src="images/letterMerge.png" width="581" height="387"/><p>Letter Merge is an old method for patient letters. Consider using the internal <a href="sheets.html">Sheets</a> function for a more updated option. Sheets can be used for any patient letter or form and can be customized within Open Dental.</p>
+<p>Letter Merge only works with Microsoft Word 2002 or later.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Edit Categories</b>: Open <a href="definitionslettermerge.html">Definitions: Letter Merge Cats</a> to create letter categories and set the category order.</li>
+<li><b>Add</b>: Click to create a new letter. </li>
+</ul>
+<p class="MarginBottomZero">In Open Dental, create the letter from the Letter Merge window. There are four options listed in the Create area. </p>
+<ul>
+<li><b>Data File</b>: Create a data file only.</li>
+<li><b>View Data</b>: View the data file only.</li>
+<li><b>Print</b>: Print the full letter.</li>
+<li><b>Preview</b>: Preview the full letter.</li>
+<li><b>Image Folder</b>: Informational only. View the image folder this letter saves to. Make changes to the default save folder by double clicking the letter to open the Edit Letter Merge window.</li>
+</ul>
+<p class="MarginBottomGap"><div class="Note">Note: Keep in mind this is a merge letter for only one patient, so the data file always has only one row of data.</div>
+</p>
+<h2>Create a New Letter</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>In the Letter Merge window, highlight a category, then click <b>Add</b>. </li>
+<li>The Edit Letter Merge window opens. Enter each field as needed.</li>
+<li>Click <b>New</b> to create a new file template. Word opens a blank document. </li>
+<li>Close Word.</li>
+<li>In the Letter Merge window, highlight the letter and click <b>Edit Template</b>. </li>
+<li>Word opens a blank template, create a data file with one row, and attach the data file to the template as a data source.</li>
+<li>In Word, click Mailings, then Start Mail Merge, Letters.</li>
+<li>In Word, click Select Recipients, Use an Existing List.</li>
+<li>Browse to the Letter Merge path. Select the Data Source to use.</li>
+<li>Type the letter. Any place where a merge field is wanted, click Insert Merge Fields. From here, insert fields, set up address fields using the Match Fields button, etc.</li>
+<li>Save the template and return to Open Dental. Return here anytime to further edit the template, add more fields, etc.</li>
+</ol>
+<h2>Edit Letter Merge</h2>
+<p>Click Add or double-click an existing letter to edit.</p>
+<img src="images/letterMergeEdit.png" width="896" height="710"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Description</b>: Enter the letter name.</li>
+<li><b>Letter Merge Path</b>: Displays the path where letters are stored. Click<b> Edit Paths</b> to change the location. A file location must already exist before one can be selected.</li>
+<li><b>Template File Name</b>: Enter the name of the file being created or edited.  <ul>
+<li>Click <b>Browse</b> to copy an existing letter.</li>
+<li>Click <b>New</b> to create a new letter.</li>
+</ul>
+</li>
+<li><b>Category</b>: Select the category to show the letter in.</li>
+<li><b>Save to Image Folder</b>: Save copy of letter to patient's selected image folder.</li>
+<li><b>Patient Fields</b>: Select the patient fields to merge into the letter. (e.g., Patient Last Name, Address, Email, etc.).</li>
+<li><b>Referred From</b>: Optional. Select the referral information to merge into the letter.</li>
+<li><b>Other</b>: Optional. Select additional information to merge into the letter.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

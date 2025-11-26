@@ -1,0 +1,82 @@
+# File: ./www.opendental.com/manual232/mysqlusermanager.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - MySQL User Manager</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('mysqlusermanager','databasemanagementsystems','advancedtopics','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/mysqlusermanager.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/mysqlusermanager.html" >v24.2</option><option value="https://www.opendental.com/manual241/mysqlusermanager.html" >v24.1</option><option value="https://www.opendental.com/manual233/mysqlusermanager.html" >v23.3</option><option value="https://www.opendental.com/manual232/mysqlusermanager.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/mysqlusermanager.html" >v23.1</option><option value="https://www.opendental.com/manual224/mysqlusermanager.html" >v22.4</option><option value="https://www.opendental.com/manual223/mysqlusermanager.html" >v22.3</option><option value="https://www.opendental.com/manual222/mysqlusermanager.html" >v22.2</option><option value="https://www.opendental.com/manual221/mysqlusermanager.html" >v22.1</option><option value="https://www.opendental.com/manual214/mysqlusermanager.html" >v21.4</option><option value="https://www.opendental.com/manual213/mysqlusermanager.html" >v21.3</option><option value="https://www.opendental.com/manual212/mysqlusermanager.html" >v21.2</option><option value="https://www.opendental.com/manual211/mysqlusermanager.html" >v21.1</option><option value="https://www.opendental.com/manual205/mysqlusermanager.html" >v20.5</option><option value="https://www.opendental.com/manual204/mysqlusermanager.html" >v20.4</option><option value="https://www.opendental.com/manual203/mysqlusermanager.html" >v20.3</option><option value="https://www.opendental.com/manual202/mysqlusermanager.html" >v20.2</option><option value="https://www.opendental.com/manual201/mysqlusermanager.html" >v20.1</option><option value="https://www.opendental.com/manual194/mysqlusermanager.html" >v19.4</option><option value="https://www.opendental.com/manual193/mysqlusermanager.html" >v19.3</option><option value="https://www.opendental.com/manual192/mysqlusermanager.html" >v19.2</option><option value="https://www.opendental.com/manual191/mysqlusermanager.html" >v19.1</option><option value="https://www.opendental.com/manual184/mysqlusermanager.html" >v18.4</option><option value="https://www.opendental.com/manual183/mysqlusermanager.html" >v18.3</option><option value="https://www.opendental.com/manual182/mysqlusermanager.html" >v18.2</option><option value="https://www.opendental.com/manual181/mysqlusermanager.html" >v18.1</option><option value="https://www.opendental.com/manual174/mysqlusermanager.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>MySQL User Manager</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="databasemanagementsystems.html">Database Management Systems</a>.</p>
+<p>The MySQL User Manager is useful when adding or managing MySQL users.</p>
+<p>In the Open Dental installation folder, double-click <b>MySQLManager</b>.</p>
+<img src="images/mysqlUserManager.png" width="626" height="530"/><p>The MySQL Manager tool can only be used on the server. It is especially useful for offices using <a href="middletier.html">Middle Tier</a>.</p>
+<p><div class="Note">Note: <ul>
+<li>This tool cannot be used to add or edit MySQL Reserved System Users.</li>
+<li>The information on this page applies to both MySql and <a href="mariadb.html">MariaDB</a> users.</li>
+<li>Also see: <a href="securitymysql.html">MySQL Security</a></li>
+</ul>
+</div>
+</p>
+<p class="MarginBottomZero">Connection Settings: Enter the connection settings prior to managing the users. </p>
+<ul class="MarginBottomGap">
+<li><b>Server Name</b>: This shows as <i>localhost</i> since this tool is only usable from the server.</li>
+<li><b>Port - If different than the default 3306</b>: Typically blank. If using a custom port, enter the number here. </li>
+<li><b>MySQL User</b>: Typically <i>root</i>. If using a different user, enter the username here.</li>
+<li><b>MySQL Password</b>: Enter the password as set during the MySQL installations. Leave this blank if no password has been created.</li>
+</ul>
+<p class="MarginBottomZero">Users: Lists all users associated with MySQL. </p>
+<ul class="MarginBottomGap">
+<li><b>Add</b>: Add a new MySQL User. </li>
+<li><b>Edit</b>: Click to make changes to the highlighted user. Alternatively, double-click a user to edit.</li>
+<li><b>Drop</b>: Remove an existing MySQL User. The user currently connected cannot be dropped.</li>
+</ul>
+<p>When adding or editing a user, the following window appears:</p>
+<img src="images/mysqlusereddit.png" width="410" height="277"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>MySQL Username</b>: If editing, this is the existing username. If adding, create a new username. </li>
+<li><b>Password</b>: Enter the password for the selected user, or create a new password. Use this box to create a new password for the selected user if needed.</li>
+<li><b>Retype Password</b>: Re-enter the password to verify.</li>
+</ul>
+<p class="MarginBottomZero">Permission Level: Grant the desired level of permissions to the selected user. </p>
+<ul class="MarginBottomGap">
+<li><b>Full</b>: Allows full permissions for the user.</li>
+<li><b>Low</b>: Only allows user to read data. This user cannot access the Open Dental program, but can run SELECT queries from the command line.</li>
+</ul>
+<p><div class="Note">Note: The <a href="opendentalservice.html">Open Dental Service</a> and <a href="econnector.html">eConnector</a> must be reinstalled after using the MySQL User Manager to create or change a password for the user they are set up with. This is normally the 'root' user.</div>
+</p>
+</div>
+</div>
+</body>
+</html>```

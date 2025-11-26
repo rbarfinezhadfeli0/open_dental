@@ -1,0 +1,56 @@
+# File: ./www.opendental.com/site/apihistappointments.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API HistAppointments</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apihistappointments','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API HistAppointments</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96histappointment.html" target="_blank">HistAppointment Database Schema.</a></p>
+<h2>HistAppointments GET (multiple)</h2>
+<p>Version Added: 23.1.30</p>
+<p>A HistAppointment is a historical copy of an appointment. A new HistAppointment entry is created anytime an appointment is created, changed, missed, cancelled, or deleted. A single AptNum may have many associated HistAppointments.</p>
+<p><b>Parameters:</b> All optional.<br></p>
+<p><b>HistApptAction:</b> Either "Created", "Changed", "Missed", "Cancelled", or "Deleted".<br><b>AptNum: </b>Filter responses by AptNum.<br><b>PatNum: </b>Filter responses by PatNum.<br><b>AptStatus: </b>Either "Scheduled", "Complete", "UnschedList", "Broken", or "Planned".<br><b>ClinicNum: </b>Filter responses by ClinicNum. Leave blank if not using clincs or want results for all clinics.<br><b>date:</b> For a single day, in "yyyy-MM-dd" format.<br><b>dateStart, dateEnd:</b> For a date range, inclusive of both dates, in "yyyy-MM-dd" format.<br></p>
+<p><b>Example Requests:</b><br> GET /histappointments<br> GET /histappointments?PatNum=1<br> GET /histappointments?AptNum=266<br></p>
+<p><b>Example Responses:</b><br><span class="codeblock"> [<br> {<br> "HistApptNum": 1,<br> "HistUserNum": 0,<br> "HistDateTStamp": "2021-05-20 14:50:44",<br> "HistApptAction": "Created",<br> "ApptSource": "EConnector",<br> "AptNum": 1,<br> "PatNum": 1,<br> "AptStatus": "Scheduled",<br> "Pattern": "//XXXX//",<br> "Confirmed": 19,<br> "confirmed": "Not Called",<br> "TimeLocked": "false",<br> "Op": 7,<br> "Note": "",<br> "ProvNum": 1,<br> "provAbbr": "DOC",<br> "ProvHyg": 0,<br> "AptDateTime": "2021-05-20 15:50:44",<br> "NextAptNum": 0,<br> "UnschedStatus": 0,<br> "unschedStatus": "",<br> "IsNewPatient": "false",<br> "ProcDescript": "",<br> "ClinicNum": 1,<br> "IsHygiene": "false",<br> "DateTStamp": "2021-05-20 14:50:44",<br> "DateTimeArrived": "0001-01-01 00:00:00",<br> "DateTimeSeated": "0001-01-01 00:00:00",<br> "DateTimeDismissed": "0001-01-01 00:00:00",<br> "InsPlan1": 1,<br> "InsPlan2": 0,<br> "DateTimeAskedToArrive": "0001-01-01 00:00:00",<br> "colorOverride": "0,0,0",<br> "AppointmentTypeNum": 0,<br> "SecUserNumEntry": 1,<br> "SecDateTEntry": "2021-05-20 14:49:02",<br> "Priority": "Normal",<br>  "PatternSecondary": "/X////X/",<br> "ItemOrderPlanned": 0<br> },<br> {<br> "HistApptNum": 3,<br> "HistUserNum": 1,<br> "HistDateTStamp": "2021-05-24 14:32:40",<br> "HistApptAction": "Changed",<br> "ApptSource": "None",<br> "AptNum": 2,<br> "PatNum": 1,<br> "AptStatus": "Scheduled",<br> "Pattern": "//XXXXXXXX//",<br> "Confirmed": 19,<br> "confirmed": "Not Called",<br> "TimeLocked": "false",<br> "Op": 7,<br> "Note": "",<br> "ProvNum": 1,<br> "provAbbr": "DOC",<br> "ProvHyg": 0,<br> "AptDateTime": "2021-05-24 12:00:00",<br> "NextAptNum": 0,<br> "UnschedStatus": 0,<br> "unschedStatus": "",<br> "IsNewPatient": "true",<br> "ProcDescript": "PerEx, LimEx, CmpEx",<br> "ClinicNum": 1,<br> "IsHygiene": "false",<br> "DateTStamp": "2021-05-24 14:32:40",<br> "DateTimeArrived": "0001-01-01 00:00:00",<br> "DateTimeSeated": "0001-01-01 00:00:00",<br> "DateTimeDismissed": "0001-01-01 00:00:00",<br> "InsPlan1": 1,<br> "InsPlan2": 0,<br> "DateTimeAskedToArrive": "0001-01-01 00:00:00",<br> "colorOverride": "0,0,0",<br> "AppointmentTypeNum": 0,<br> "SecUserNumEntry": 1,<br> "SecDateTEntry": "2021-05-24 14:32:36",<br> "Priority": "Normal",<br>  "PatternSecondary": "XX////////XX",<br> "ItemOrderPlanned": 0<br> },<br> {<br> "HistApptNum": 4,<br> "HistUserNum": 1,<br> "HistDateTStamp": "2021-05-25 08:39:47",<br> "HistApptAction": "Changed",<br> "ApptSource": "None",<br> "AptNum": 2,<br> "PatNum": 1,<br> "AptStatus": "Scheduled",<br> "Pattern": "//XXXXXXXX//",<br> "Confirmed": 19,<br> "confirmed": "Not Called",<br> "TimeLocked": "false",<br> "Op": 7,<br> "Note": "",<br> "ProvNum": 1,<br> "provAbbr": "DOC",<br> "ProvHyg": 0,<br> "AptDateTime": "2021-05-25 12:00:00",<br> "NextAptNum": 0,<br> "UnschedStatus": 0,<br> "unschedStatus": "",<br> "IsNewPatient": "true",<br> "ProcDescript": "PerEx, LimEx, CmpEx",<br> "ClinicNum": 1,<br> "IsHygiene": "false",<br> "DateTStamp": "2021-05-25 08:39:47",<br> "DateTimeArrived": "0001-01-01 00:00:00",<br> "DateTimeSeated": "0001-01-01 00:00:00",<br> "DateTimeDismissed": "0001-01-01 00:00:00",<br> "InsPlan1": 1,<br> "InsPlan2": 0,<br> "DateTimeAskedToArrive": "0001-01-01 00:00:00",<br> "colorOverride": "0,0,0",<br> "AppointmentTypeNum": 0,<br> "SecUserNumEntry": 1,<br> "SecDateTEntry": "2021-05-25 08:38:52",<br> "Priority": "Normal",<br>  "PatternSecondary": "XX////////XX",<br> "ItemOrderPlanned": 0<br> },<br> etc...<br> ]<br></span></p>
+<p>or</p>
+<p><span class="codeblock"> [<br> {<br> "HistApptNum": 2751,<br> "HistUserNum": 1,<br> "HistDateTStamp": "2022-05-16 09:51:38",<br> "HistApptAction": "Changed",<br> "ApptSource": "None",<br> "AptNum": 266,<br> "PatNum": 68,<br> "AptStatus": "Scheduled",<br> "Pattern": "//XX//",<br> "Confirmed": 19,<br> "confirmed": "Not Called",<br> TimeLocked": "false",<br> "Op": 15,<br> "Note": "",<br> "ProvNum": 1,<br> "provAbbr": "DOC",<br> "ProvHyg": 0,<br> "AptDateTime": "2022-05-16 12:40:00",<br> "NextAptNum": 0,<br> "UnschedStatus": 0,<br> "unschedStatus": "",<br> "IsNewPatient": "false",<br> "ProcDescript": "ProChild",<br> "ClinicNum": 5,<br> "IsHygiene": "false",<br> "DateTStamp": "2022-05-16 09:51:38",<br> "DateTimeArrived": "0001-01-01 00:00:00",<br> "DateTimeSeated": "0001-01-01 00:00:00",<br> "DateTimeDismissed": "0001-01-01 00:00:00",<br> "InsPlan1": 12,<br> "InsPlan2": 5,<br> "DateTimeAskedToArrive": "0001-01-01 00:00:00",<br> "colorOverride": "0,0,0",<br> "AppointmentTypeNum": 0,<br> "SecUserNumEntry": 1,<br> "SecDateTEntry": "2022-05-16 09:51:14",<br> "Priority": "Normal",<br> "PatternSecondary": "//////",<br> "ItemOrderPlanned": 0<br> },<br> {<br> "HistApptNum": 2752,<br> "HistUserNum": 1,<br> "HistDateTStamp": "2022-05-16 09:52:28",<br> "HistApptAction": "Changed",<br> "ApptSource": "None",<br> "AptNum": 266,<br> "PatNum": 68,<br> "AptStatus": "Scheduled",<br> "Pattern": "//XX//",<br> "Confirmed": 19,<br> "confirmed": "Not Called",<br> TimeLocked": "false",<br> "Op": 15,<br> "Note": "",<br> "ProvNum": 1,<br> "provAbbr": "DOC",<br> "ProvHyg": 0,<br> "AptDateTime": "2022-05-16 12:40:00",<br> "NextAptNum": 0,<br> "UnschedStatus": 0,<br> "unschedStatus": "",<br> "IsNewPatient": "false",<br> "ProcDescript": "ProChild",<br> "ClinicNum": 5,<br> "IsHygiene": "false",<br> "DateTStamp": "2022-05-16 09:52:28",<br> "DateTimeArrived": "2022-05-16 00:00:00",<br> "DateTimeSeated": "2022-05-16 00:00:00",<br> "DateTimeDismissed": "2022-05-16 00:00:00",<br> "InsPlan1": 9,<br> "InsPlan2": 15,<br> "DateTimeAskedToArrive": "0001-01-01 00:00:00",<br> "colorOverride": "0,0,0",<br> "AppointmentTypeNum": 0,<br> "SecUserNumEntry": 1,<br> "SecDateTEntry": "2022-05-16 09:51:47",<br> "Priority": "Normal",<br> "PatternSecondary": "//////",<br> "ItemOrderPlanned": 0<br> },<br> {<br> "HistApptNum": 2753,<br> "HistUserNum": 1,<br> "HistDateTStamp": "2022-05-16 09:55:06",<br> "HistApptAction": "Missed",<br> "ApptSource": "None",<br> "AptNum": 266,<br> "PatNum": 68,<br> "AptStatus": "Broken",<br> "Pattern": "//XX//",<br> "Confirmed": 19,<br> "confirmed": "Not Called",<br> "TimeLocked": "false",<br> "Op": 15,<br> "Note": "",<br> "ProvNum": 1,<br> "provAbbr": "DOC",<br> "ProvHyg": 0,<br> "AptDateTime": "2022-05-16 12:40:00",<br> "NextAptNum": 0,<br> "UnschedStatus": 0,<br> "unschedStatus": "",<br> "IsNewPatient": "false",<br> "ProcDescript": "ProChild",<br> "ClinicNum": 5,<br> "IsHygiene": "false",<br> "DateTStamp": "2022-05-16 09:55:06",<br> "DateTimeArrived": "2022-05-16 00:00:00",<br> "DateTimeSeated": "2022-05-16 00:00:00",<br> "DateTimeDismissed": "2022-05-16 00:00:00",<br> "InsPlan1": 3,<br> "InsPlan2": 0,<br> "DateTimeAskedToArrive": "0001-01-01 00:00:00",<br> "colorOverride": "0,0,0",<br> "AppointmentTypeNum": 0,<br> "SecUserNumEntry": 1,<br> "SecDateTEntry": "2022-05-16 09:54:38",<br> "Priority": "Normal",<br> "PatternSecondary": "//////",<br> "ItemOrderPlanned": 0<br> },<br> {<br> "HistApptNum": 2754,<br> "HistUserNum": 1,<br> "HistDateTStamp": "2022-05-16 09:55:19",<br> "HistApptAction": "Deleted",<br> "ApptSource": "None",<br> "AptNum": 266,<br> "PatNum": 68,<br> "AptStatus": "Broken",<br> "Pattern": "//XX//",<br> "Confirmed": 19,<br> "confirmed": "Not Called",<br> "TimeLocked": "false",<br> "Op": 15,<br> "Note": "",<br> "ProvNum": 1,<br> "provAbbr": "DOC",<br> "ProvHyg": 0,<br> "AptDateTime": "2022-05-16 12:40:00",<br> "NextAptNum": 0,<br> "UnschedStatus": 0,<br> "unschedStatus": "",<br> "IsNewPatient": "false",<br> "ProcDescript": "ProChild",<br> "ClinicNum": 5,<br> "IsHygiene": "false",<br> "DateTStamp": "2022-05-16 09:55:19",<br> "DateTimeArrived": "2022-05-16 00:00:00",<br> "DateTimeSeated": "2022-05-16 00:00:00",<br> "DateTimeDismissed": "2022-05-16 00:00:00",<br> "InsPlan1": 4,<br> "InsPlan2": 0,<br> "DateTimeAskedToArrive": "0001-01-01 00:00:00",<br> "colorOverride": "0,0,0",<br> "AppointmentTypeNum": 0,<br> "SecUserNumEntry": 1,<br> "SecDateTEntry": "2022-05-16 09:54:44",<br> "Priority": "Normal",<br> "PatternSecondary": "//////",<br> "ItemOrderPlanned": 0<br> }<br> ]<br></span></p>
+<p> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)</p>
+		</div>
+	</div>
+</body>
+</html>```

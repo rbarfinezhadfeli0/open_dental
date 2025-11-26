@@ -1,0 +1,80 @@
+# File: ./www.opendental.com/site/apiemployers.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API Employers</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apiemployers','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API Employers</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96employer.html" target="_blank">Employer Database Schema.</a></p>
+<h2>Employers GET (single)</h2>
+<p>Version Added: 23.3.22</p>
+<p>Gets a single employer.</p>
+<p><b>Parameters:</b></p>
+<p><b>EmployerNum:</b> Required in URL.</p>
+<p><b>Example Request:</b><br> GET /employers/5 </p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br>  "EmployerNum": 5,<br>  "EmpName": "Sergio and Sons Co"<br> }<br></span></p>
+<p> 200 OK<br> 404 NotFound (with explanation)<br></p>
+<h2>Employers GET (multiple)</h2>
+<p>Version Added: 23.3.22</p>
+<p>Gets a list of employers.</p>
+<p><b>Example Requests:</b><br> GET /employers<br> GET /employers?Offset=200<br></p>
+<p><span class="codeblock"> [<br> {<br>  "EmployerNum": 1,<br>  "EmpName": "Store Mart"<br> },<br> {<br>  "EmployerNum": 2,<br>  "EmpName": "Townville Hospital"<br> },<br> etc...<br> ]<br></span></p>
+<p><b>Example Response:</b><br> 200 OK<br></p>
+<h2>Employers POST (create)</h2>
+<p>Version Added: 21.4</p>
+<p>Creates a new employer.</p>
+<p><b>EmpName: </b>Required. The employer's name. <br></p>
+<p><b>Example Request:</b><br> POST /employers </p>
+<span class="codeblock"> {<br> "EmpName": "James Smith Confectionery Co."<br> }<br></span><br><p><b>Example Response:</b><br><span class="codeblock"> {<br> "EmployerNum": 4,<br> "EmpName": "James Smith Confectionery Co."<br> }<br></span></p>
+<p> 201 Created<br> 400 Bad Request (with explanation)<br></p>
+<h2>Employers PUT (update)</h2>
+<p>Version Added: 21.4</p>
+<p>Updates the employer's name.</p>
+<p><b>EmployerNum:</b> Required in the URL.<br><br><b>EmpName: </b>Required. The Employer's name. <br></p>
+<p><b>Example Request:</b><br> PUT /employers/4<br></p>
+<p><span class="codeblock"> {<br> "EmpName": "Jamie Smith Confectionery Co."<br> }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br>  "EmployerNum": 4,<br>  "EmpName": "Jamie Smith Confectionery Co."<br> }<br></span><br> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>Employers DELETE</h2>
+<p>Version Added: 23.3.22</p>
+<p>Deletes an employer. Employers associated with a patient or an insurance plan cannot be deleted.</p>
+<p><b>EmployerNum:</b> Required in the URL.<br></p>
+<p><b>Example Request:</b><br> DELETE /employers/4<br></p>
+<p><b>Example Response:</b><br> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>```

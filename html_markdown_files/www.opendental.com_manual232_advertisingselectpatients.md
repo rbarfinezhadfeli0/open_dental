@@ -1,0 +1,101 @@
+# File: ./www.opendental.com/manual232/advertisingselectpatients.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Advertising - Select Patients</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('advertisingselectpatients','postcardsupload','+advertising','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/advertisingselectpatients.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/advertisingselectpatients.html" >v24.2</option><option value="https://www.opendental.com/manual241/advertisingselectpatients.html" >v24.1</option><option value="https://www.opendental.com/manual233/advertisingselectpatients.html" >v23.3</option><option value="https://www.opendental.com/manual232/advertisingselectpatients.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/advertisingselectpatients.html" >v23.1</option><option value="https://www.opendental.com/manual224/advertisingselectpatients.html" >v22.4</option><option value="https://www.opendental.com/manual223/advertisingselectpatients.html" >v22.3</option><option value="https://www.opendental.com/manual222/advertisingselectpatients.html" >v22.2</option><option value="https://www.opendental.com/manual221/advertisingselectpatients.html" >v22.1</option><option value="https://www.opendental.com/manual214/advertisingselectpatients.html" >v21.4</option><option value="https://www.opendental.com/manual213/advertisingselectpatients.html" >v21.3</option><option value="https://www.opendental.com/manual212/advertisingselectpatients.html" >v21.2</option><option value="https://www.opendental.com/manual211/advertisingselectpatients.html" >v21.1</option><option value="https://www.opendental.com/manual205/advertisingselectpatients.html" >v20.5</option><option value="https://www.opendental.com/manual204/advertisingselectpatients.html" >v20.4</option><option value="https://www.opendental.com/manual203/advertisingselectpatients.html" >v20.3</option><option value="https://www.opendental.com/manual202/advertisingselectpatients.html" >v20.2</option><option value="https://www.opendental.com/manual201/advertisingselectpatients.html" >v20.1</option><option value="https://www.opendental.com/manual194/advertisingselectpatients.html" >v19.4</option><option value="https://www.opendental.com/manual193/advertisingselectpatients.html" >v19.3</option><option value="https://www.opendental.com/manual192/advertisingselectpatients.html" >v19.2</option><option value="https://www.opendental.com/manual191/advertisingselectpatients.html" >v19.1</option><option value="https://www.opendental.com/manual184/advertisingselectpatients.html" >v18.4</option><option value="https://www.opendental.com/manual183/advertisingselectpatients.html" >v18.3</option><option value="https://www.opendental.com/manual182/advertisingselectpatients.html" >v18.2</option><option value="https://www.opendental.com/manual181/advertisingselectpatients.html" >v18.1</option><option value="https://www.opendental.com/manual174/advertisingselectpatients.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Advertising - Select Patients</p></div>
+<div class="GeneralPageContent">
+<p>Use the filters and settings to create a list of patients to send Postcards.</p>
+<p>In <a href="postcardsupload.html">Upload Postcard Recipients</a>, click <b>Select Patients</b>.</p>
+<img src="images/advertisingSelectPat.png" width="915" height="424"/><p>Patients without an address are automatically filtered out of the list.</p>
+<h2>User Query</h2>
+<img src="images/advertisingSelectPatQuery.png" width="504" height="126"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>User Query</b>: When checked, the window displays a Query box instead of filters. Enter the query, then click <b>Refresh</b> to see results.  <ul>
+<li>User must have the <i>User Query</i> permission.</li>
+<li>Queries must include a <span class="codeblock">Select</span> statement and include any table with a PatNum column. </li>
+<li>The PatNum column cannot have an alias.</li>
+<li><span class="codeblock">SET</span> statements cannot be used and will cause an error.</li>
+</ul>
+</li>
+<li><b>Favorites</b>: Click to select a query from <a href="queryfavorites.html">Query Favorites</a>. </li>
+</ul>
+<h2>Filters</h2>
+<img src="images/advertisingSelectPatFilters.png" width="494" height="115"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Clinic</b>: Filter by patients assigned to the selected clinic. Select <i>All</i> to show all patients. </li>
+<li><b>Patient Age</b>: Enter the age range. The default is 1 to 110.</li>
+<li><b>Hide patients with future appointments</b>: Check to exclude patients who have a scheduled appointment.</li>
+<li><b>Exclude patients not seen since</b>: Check to exclude patients who have not been seen since the entered date.</li>
+<li><b>Exclude patients seen since</b>: Check to exclude patients who have been seen since the entered date.</li>
+</ul>
+<h2>Filters (continued)</h2>
+<img src="images/advertisingSelectPatFiltersCont.png" width="498" height="108"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Preferred Contact Method</b>: Filter by preferred contact method as set in the <a href="patientedit.html">Edit Patient Information</a> window. <ul>
+<ul>
+<li>Any: Patient has any method set as preferred contact method.</li>
+<li>Email: Patient has email set as preferred contact method.</li>
+<li>None: Patient does not have a preferred contact method set.</li>
+</ul>
+</ul>
+</li>
+<li><b>Patient Status</b>: Filter by patient status. Options include: <ul>
+<ul>
+<li>Patient</li>
+<li>Non-patient</li>
+<li>Inactive</li>
+<li>Archived</li>
+<li>Prospective</li>
+</ul>
+</ul>
+</li>
+<li><b>Patient Billing Type</b>: Filter by <a href="definitionsbillingtypes.html">Billing Type</a>. </li>
+</ul>
+<h2>Available Patients</h2>
+<img src="images/advertisingSelectPatSet.png" width="915" height="156"/><p>The list of patients matching the filter criteria will show. Select which patients will receive the communication.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Set All</b>: Mark all patients to send to. </li>
+<li><b>Set Selected</b>: Set only the highlighted patients to send to. </li>
+<li><b>Clear Selected</b>: Clear the Send list. </li>
+<li><b>OK</b>: Click to continue to Postcards. </li>
+<li><b>Cancel</b>: Close the window without saving changes.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

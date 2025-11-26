@@ -1,0 +1,114 @@
+# File: ./www.opendental.com/manual232/securitysettings.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Global Security Settings</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('securitysettings','security','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/securitysettings.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/securitysettings.html" >v24.2</option><option value="https://www.opendental.com/manual241/securitysettings.html" >v24.1</option><option value="https://www.opendental.com/manual233/securitysettings.html" >v23.3</option><option value="https://www.opendental.com/manual232/securitysettings.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/securitysettings.html" >v23.1</option><option value="https://www.opendental.com/manual224/securitysettings.html" >v22.4</option><option value="https://www.opendental.com/manual223/securitysettings.html" >v22.3</option><option value="https://www.opendental.com/manual222/securitysettings.html" >v22.2</option><option value="https://www.opendental.com/manual221/securitysettings.html" >v22.1</option><option value="https://www.opendental.com/manual214/securitysettings.html" >v21.4</option><option value="https://www.opendental.com/manual213/securitysettings.html" >v21.3</option><option value="https://www.opendental.com/manual212/securitysettings.html" >v21.2</option><option value="https://www.opendental.com/manual211/securitysettings.html" >v21.1</option><option value="https://www.opendental.com/manual205/securitysettings.html" >v20.5</option><option value="https://www.opendental.com/manual204/securitysettings.html" >v20.4</option><option value="https://www.opendental.com/manual203/securitysettings.html" >v20.3</option><option value="https://www.opendental.com/manual202/securitysettings.html" >v20.2</option><option value="https://www.opendental.com/manual201/securitysettings.html" >v20.1</option><option value="https://www.opendental.com/manual194/securitysettings.html" >v19.4</option><option value="https://www.opendental.com/manual193/securitysettings.html" >v19.3</option><option value="https://www.opendental.com/manual192/securitysettings.html" >v19.2</option><option value="https://www.opendental.com/manual191/securitysettings.html" >v19.1</option><option value="https://www.opendental.com/manual184/securitysettings.html" >v18.4</option><option value="https://www.opendental.com/manual183/securitysettings.html" >v18.3</option><option value="https://www.opendental.com/manual182/securitysettings.html" >v18.2</option><option value="https://www.opendental.com/manual181/securitysettings.html" >v18.1</option><option value="https://www.opendental.com/manual174/securitysettings.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Global Security Settings</p></div>
+<div class="GeneralPageContent">
+<p>Set security settings to affect all users in Global Security Settings.</p>
+<p>In the <a href="security.html">Security</a> window, at the upper left, click <b>Global Security Settings</b>.</p>
+<img src="images/securityGlobalSecuritySettings.gif" width="380" height="535"/><p class="MarginBottomZero"><b>Time Card Security Enabled:</b></p>
+<ul class="MarginBottomGap">
+<li>Checked: Enables the <i>Users cannot edit their own time card</i> and <i>Users cannot edit their own time card except current pay period</i> boxes (see below). Limits users without the <i>Edit All Time Cards</i> permission from viewing other employee timecards.</li>
+<li>Unchecked: Disables the <i>Users cannot edit their own time card</i> and <i>Users cannot edit their own time card except current pay period</i> boxes.</li>
+</ul>
+<p class="MarginBottomZero"><b>Users cannot edit their own time card:</b> This option can only be changed if the Time Card Security Enabled box is also checked. The setting of this box will override the <i>Edit All Time Cards</i> security permission.  </p>
+<ul class="MarginBottomGap">
+<li>Checked: Individual users cannot make changes to their time card. Cannot be checked if <i>Users cannot edit their own time card except current pay period</i> is checked.</li>
+<li>Unchecked: Individual users can make changes to their time card. Since error fixing is tracked well in time cards, most offices keep this box unchecked because it is useful when employees can make notes and fix errors.</li>
+</ul>
+<p class="MarginBottomZero"><b>Users cannot edit their own time card except current pay period</b>: This option can only be changed if the <i>Time Card Security Enabled</i> box is also checked.  </p>
+<ul class="MarginBottomGap">
+<li>Checked: Allow users to edit time cards during the current pay period. Cannot be checked if <i>Users cannot edit their own time card</i> is checked.</li>
+<li>Unchecked: Do not allow users to edit their own time card during the current pay period.</li>
+</ul>
+<p class="MarginBottomZero"><b>Disable Monthly Backup Reminder:</b></p>
+<ul class="MarginBottomGap">
+<li>Checked: The monthly <a href="backupreminder.html">Backup Reminder</a> will no longer show. Do not disable unless the practice has an established backup and recovery process (for HIPAA compliance). A password is required to change this option. It is <i>abracadabra</i>.</li>
+<li>Unchecked: The next backup reminder will show one month after the date it is deselected.</li>
+</ul>
+<p class="MarginBottomZero"><b>Log off user on Windows lock:</b></p>
+<ul class="MarginBottomGap">
+<li>Checked: Automatically logs the current user out of Open Dental whenever they lock Windows.</li>
+<li>Unchecked: Do not automatically log off the user when Windows is locked.</li>
+</ul>
+<p class="MarginBottomZero"><b>Passwords must be strong:</b></p>
+<ul class="MarginBottomGap">
+<li>Checked: All passwords must be at least 8 characters and contain at least one number, one uppercase letter, and one lowercase letter.  <div class="Note">Note: <ul>
+<li>If using ODMobile and <i>Passwords must be strong</i> is enabled, users who do not have a strong password must change passwords to meet the criteria before they can access the ODMobile app. Users who already have a strong password do not need to go through this process.</li>
+<li>When passwords must be strong, a password is required when adding a new user.</li>
+</ul>
+</div>
+</li>
+<li>Unchecked: Strong passwords are not required.</li>
+</ul>
+<p class="MarginBottomZero"><b>Strong passwords require special character:</b></p>
+<ul class="MarginBottomGap">
+<li>Checked: When passwords must be strong is enabled, the password must also contain at least one special character (e.g., #, $, !).</li>
+<li>Unchecked: A special character is not required.</li>
+</ul>
+<p class="MarginBottomZero"><b>Force password change if not strong:</b></p>
+<ul class="MarginBottomGap">
+<li>Checked: When passwords must be strong is enabled, users who do not have a strong password will be required to change their password the next time they log on so it meets criteria.</li>
+<li>Unchecked: Users will not be required or prompted to change to a strong password.</li>
+</ul>
+<p class="MarginBottomZero"><b>Manually enter log on credentials:</b></p>
+<ul class="MarginBottomGap">
+<li>Checked: Requires users to manually type their user name when logging in.</li>
+<li>Unchecked: Users will select their user name from a list.</li>
+</ul>
+<p class="MarginBottomZero"><b>Maintain selected patient when changing users</b>: Only visible when <a href="clinics.html">Clinics</a> is enabled. </p>
+<ul class="MarginBottomGap">
+<li>Checked: When a user <a href="securitylogin.html">Logs Off</a>, the previously selected patient, as well as the 5 previous patients in the dropdown menu, will remain selected for the next user who logs on.  <ul>
+<li>If the previously selected patient is not assigned to a clinic, the patient will not be maintained.</li>
+<li>If the next user to log on does not have access to the clinics associated with the previously selected patients, those patients will not show in the list.</li>
+</ul>
+</li>
+<li>Unchecked: Do not maintain previously selected patients when a user logs off.</li>
+</ul>
+<p><b>Default User Group:</b> Select the default user group to apply to new users added via the Main Menu, Setup, Security, Add User. Groups that have the <i>Security Admin</i> permission enabled cannot be used as a Default User Group. See <a href="securityusers.html">User Edit</a>.</p>
+<p><b>Automatic logoff time in minutes (0 to disable):</b> Set a time when, after a period of inactivity, Open Dental will automatically log off the current user. Enter 0 to prevent automatic log off. If automatic log off is turned on, and a user manually clicks Log Off, any unsaved changes will be lost, and no warning message will show.</p>
+<p class="MarginBottomZero"><b>Allow user override for automatic logoff</b>: Determines whether users are allowed to have a specific logoff time entered. </p>
+<ul class="MarginBottomGap">
+<li>Checked: Allow a user specific override for automatic logoff times. See <a href="securityusers.html">User Edit</a> to enter a time.</li>
+<li>Unchecked: Do not allow user specific overrides for automatic logoff times. </li>
+</ul>
+<p><b>Domain Login</b>: See <a href="singlesignon.html">Single Sign-On / Domain Login</a>.</p>
+<p><b>Global Lock</b>: See <a href="securitylockdates.html">Security Lock Dates</a>.</p>
+</div>
+</div>
+</body>
+</html>```

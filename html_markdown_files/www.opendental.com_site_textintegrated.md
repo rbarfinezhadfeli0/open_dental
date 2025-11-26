@@ -1,0 +1,74 @@
+# File: ./www.opendental.com/site/textintegrated.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: Integrated Texting Feature</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>Integrated Texting Feature</h1>
+		</div>
+		<div id="Content">
+<p>Open Dental's Integrated Texting <a href="eservices.html">eService</a> allows you to send and receive text messages* between patients and the office directly from Open Dental. It works in conjunction with other eServices for enhanced patient communication.</p>
+<div align="center">
+<img src="images/integratedTextingSiteHeader.png" width="900" height="300"/></div>
+<h2>Feature Highlights</h2>
+<p><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> Watch our video: <a href="https://youtu.be/tk_1lSk1jIo">Integrated Texting Webinar </a>. </p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Works with <a href="ereminders.html">Automated Messaging</a> to send appointment reminders and other texts automatically**</li>
+<li>Easily send appointment texts for all appointments for the day from the <a href="0_appointments.html">Appointments Module</a></li>
+<li>See texts from the Text Message Inbox and filter by patient</li>
+<li><a href="mobileapp.html">ODMobile</a> and <a href="odtouch.html">ODTouch</a> users can text using the mobile apps**</li>
+<li><a href="websched.html">Web Sched</a> users can send text messages with links**</li>
+</ul>
+<h2>Getting Started</h2>
+<p class="MarginBottomZero">A per-location access fee is included in <a href="eservicesbundle.html">eServices Bundle </a>or is available for a standalone monthly fee. Additional fees apply per outbound text message (see <a href="textmsgfaq.html">Integrated Texting Q and A</a>).  </p>
+<ul class="MarginBottomGap">
+<li>United States, Canada, Puerto Rico see: <a href="https://opendental.com/site/fees.html#eservices">Fees for Software, Support, and Services</a></li>
+<li>Other Countries: See <a href="textintegratedfees.html">International Fees</a>.</li>
+</ul>
+<p>Practices must be on support and have a unique, active registration key to sign up for Integrated Texting (see <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7eservicessignup.html">eServices Signup</a>).</p>
+<img src="images/texting.png" width="915" height="423"/><p>*Text messages are not a secure method of sending PHI. See <a href="encryption.html">Encryption of Data at Rest and in Transit</a>.</p>
+<p>**Additional eService required.</p>
+
+</div>	
+	</div>
+</body>
+</html>```

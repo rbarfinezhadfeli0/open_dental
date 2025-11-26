@@ -1,0 +1,66 @@
+# File: ./www.opendental.com/site/canadaproccodetools.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Canada Procedure Code Tools</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('canadaproccodetools','canada','countries','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Canada Procedure Code Tools</p></div>
+		<div class="GeneralPageContent">
+<p>The Procedure Code Tool can automatically update the Procedure Codes with any missing CDA codes, missing N codes, default auto codes, add default Procedure Buttons, and remove any temporary codes (T codes) installed with the trial version.</p>
+<p>For <a href="canada.html">Canada</a> users, in the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procedurecodes.html">Procedure Codes</a> window, click <b>Tools</b>. </p>
+<img src="images/canadaProcCodeTools.png" width="700" height="485"/><p><div class="Note">Note: <ul>
+<li>Use caution when selecting and running tools so that customized Auto Codes and Procedure Buttons are not reset. </li>
+<li>Codes from the Canadian Dental Hygienist Association (CDHA) are not automatically included in Open Dental. Contact Open Dental Support to quickly import most procedure codes.</li>
+<li>Codes from the Denturist Association of Canada (DAC) are not included in Open Dental and must be created manually if needed.</li>
+</ul>
+</div>
+</p>
+<p>Check the tools to run, then click <b>Run Now</b>. A message displays when updates are done. </p>
+<p><b>T codes</b>: Remove all temp codes (T) that were only needed for the trial version.</p>
+<p><b>N Codes</b>: Add missing no-fee procedure codes.</p>
+<p class="MarginBottomZero"><b>CDA Codes</b>: Add missing CDA procedure codes.  </p>
+<ul class="MarginBottomGap">
+<li>Some newer codes may not be available. </li>
+<li>This tool does not update existing codes. Contact Open Dental for possible solutions if existing codes need to be updated. </li>
+<li>Additional codes can be added manually as needed. See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procedurecodenew.html">Add Procedure Code</a> for details.</li>
+</ul>
+<p><b>Auto Codes</b>: Generate <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7canadaautocodes.html">Canada Auto Codes</a> or reset to the default Auto Codes.</p>
+<p><b>Procedure Buttons</b>: Generate <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procedurebuttons.html">Procedure Buttons</a> or reset to the default Procedure Buttons.</p>
+<p><b>Appt Procs Quick Add</b>: Generates single-click buttons in the Appointment Edit window. See <a href="canadaapptprocsquickadd.html">Canada Definitions: Appt Procs Quick Add</a>.</p>
+<p><b>Recall Types</b>: Resets recall types to the default. See <a href="canadarecalltypes.html">Canada Recall Types</a>.</p>
+		</div>
+	</div>
+</body>
+</html>```

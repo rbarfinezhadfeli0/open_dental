@@ -1,0 +1,71 @@
+# File: ./www.opendental.com/manual243/sheetsetupmobile.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Edit Mobile Sheet Def</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('sheetsetupmobile','sheetsetup','sheets','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/sheetsetupmobile.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/sheetsetupmobile.html" >v24.2</option><option value="https://www.opendental.com/manual241/sheetsetupmobile.html" >v24.1</option><option value="https://www.opendental.com/manual233/sheetsetupmobile.html" >v23.3</option><option value="https://www.opendental.com/manual232/sheetsetupmobile.html" >v23.2</option><option value="https://www.opendental.com/manual231/sheetsetupmobile.html" >v23.1</option><option value="https://www.opendental.com/manual224/sheetsetupmobile.html" >v22.4</option><option value="https://www.opendental.com/manual223/sheetsetupmobile.html" >v22.3</option><option value="https://www.opendental.com/manual222/sheetsetupmobile.html" >v22.2</option><option value="https://www.opendental.com/manual221/sheetsetupmobile.html" >v22.1</option><option value="https://www.opendental.com/manual214/sheetsetupmobile.html" >v21.4</option><option value="https://www.opendental.com/manual213/sheetsetupmobile.html" >v21.3</option><option value="https://www.opendental.com/manual212/sheetsetupmobile.html" >v21.2</option><option value="https://www.opendental.com/manual211/sheetsetupmobile.html" >v21.1</option><option value="https://www.opendental.com/manual205/sheetsetupmobile.html" >v20.5</option><option value="https://www.opendental.com/manual204/sheetsetupmobile.html" >v20.4</option><option value="https://www.opendental.com/manual203/sheetsetupmobile.html" >v20.3</option><option value="https://www.opendental.com/manual202/sheetsetupmobile.html" >v20.2</option><option value="https://www.opendental.com/manual201/sheetsetupmobile.html" >v20.1</option><option value="https://www.opendental.com/manual194/sheetsetupmobile.html" >v19.4</option><option value="https://www.opendental.com/manual193/sheetsetupmobile.html" >v19.3</option><option value="https://www.opendental.com/manual192/sheetsetupmobile.html" >v19.2</option><option value="https://www.opendental.com/manual191/sheetsetupmobile.html" >v19.1</option><option value="https://www.opendental.com/manual184/sheetsetupmobile.html" >v18.4</option><option value="https://www.opendental.com/manual183/sheetsetupmobile.html" >v18.3</option><option value="https://www.opendental.com/manual182/sheetsetupmobile.html" >v18.2</option><option value="https://www.opendental.com/manual181/sheetsetupmobile.html" >v18.1</option><option value="https://www.opendental.com/manual174/sheetsetupmobile.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Edit Mobile Sheet Def</p></div>
+<div class="GeneralPageContent">
+<p>Sheets can be optimized for use with mobile devices and eClipboard.</p>
+<p>In <a href="sheetsetup.html">Edit Sheet Def</a>, at the upper right, click <b>Show Mobile</b>.</p>
+<img src="images/mobileWebFormSheetEdit.png" width="628" height="420"/><p>If instead a button for <b>Hide Mobile</b> is shown, the mobile layout is already enabled.</p>
+<p>Alternatively, in <a href="sheetproperties.html">Sheet Def Properties</a>, enable <i>Use Mobile Layout</i>.</p>
+<p>This toggles a pane that shows a mobile-optimized view. Mobile layout is available for patient forms, consent forms, exam sheets, and medical histories. </p>
+<p><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> See our video on Mobile Web Forms: <a href="https://youtu.be/vxTM-m3JHBU">Web Forms Tutorial</a>.<br/> Sheets enabled with mobile layout, excluding Exam Sheets, can be used in <a href="../site/eclipboard.html">eClipboard</a> and <a href="../site/odtouch.html">ODTouch</a>. Exam Sheets with a mobile layout can be used in ODTouch only.</p>
+<p>Double-click a <a href="sheetsinputfield.html">Sheet Input Field</a> to edit. Drag and drop to change the order of the fields.<br/><div class="Note">Note: Mobile sheets do not support images. If you are using a scanned image as a background in the desktop version of your sheet, it will not show for mobile layout users.</div>
+</p>
+<p><b>Use Mobile Layout</b>: Check to enable mobile version of sheet for use with <a href="../site/webforms.html">Web Forms</a>.</p>
+<p><b>Add Header</b>: Click to add a header to the mobile layout of the sheet.<br/><img src="images/mobileWebFormSheetEditHeader.png" width="451" height="145" class="ImageInParagraph"/></p>
+<p class="MarginBottomZero"><b>Order Fields from Desktop</b>: Click to automatically sort the mobile layout fields using the tab order determined in the desktop layout of the sheet.  </p>
+<ul class="MarginBottomGap">
+<li>Some fields cannot be ordered automatically. If these fields exist you will get a prompt reminding you to re-order them manually. Static Text Fields, Signatures, and fields without a tab order will list in orange at the top. Click and drag each field to their appropriate location.</li>
+<li>Once moved, orange fields return to white.</li>
+</ul>
+<h2>Filling out Mobile Sheets</h2>
+<p>Filling out Mobile Sheets may differ from the <a href="sheetsfillout.html">Fill Sheet</a> window or <a href="webformspatient.html">Web Forms: What Patient Sees</a> when filling out on a computer web browser.</p>
+<p><a href="eclipboardsees.html">eClipboard</a>: When filling out sheets via eClipboard, some information may be filled in on sheets if it exists in the database or the patient has filled out the form previously. Patients can update or change information as needed.</p>
+<p><a href="sheetsmedicalhistory.html">MedicalHistory</a> Sheets: For any blank <i>InputMed</i> fields, there is a single <b>Add</b> button located where the <i>InputMed1</i> value is in the mobile layout available for the patient to input medications. The number of available inputs various depending on how many have been added to the sheet. In eClipboard, if medication information already exists for the patient, they will see a list of medications. A <b>Remove</b> button is listed next to each existing medication associated to a <i>CheckMed</i> field.</p>
+<h2>Troubleshooting</h2>
+<img src="images/sheetEditMobileError.png" width="611" height="209"/><p class="MarginBottomZero">If a mobile field has errors it will be highlighted red in the Edit Mobile Layout window. Errors may include:  </p>
+<ul>
+<li>Missing Mobile Caption or Mobile Item Caption.</li>
+<li>Misc CheckBox is missing Group Name, Mobile Group Caption, and Mobile Item Caption.</li>
+<li>Mobile Header is blank.</li>
+</ul>
+<p class="MarginBottomGap"> Double-click a mobile field to resolve the error.</p>
+</div>
+</div>
+</body>
+</html>```

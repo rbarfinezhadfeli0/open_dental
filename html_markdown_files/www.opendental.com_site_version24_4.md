@@ -1,0 +1,126 @@
+# File: ./www.opendental.com/site/version24_4.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Version 24.4</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('version24_4','versions','advancedtopics','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Version 24.4</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="versions.html">Versions</a>.</p>
+<p><a href="https://opendental.blog/version24_4/" target="_blank"><img src="images/versionHighlightsBlog.png" width="900" height="125"/></a></p>
+<p>Version 24.4 was released as stable on 03/20/2025.</p>
+<h2>Major Changes</h2><p class="MarginBottomZero">eForms added for use with upcoming updated eClipboard app. </p>
+<ul class="MarginBottomGap">
+<li>Includes various forms. </li>
+<li>Ability to customize included forms or create new forms.</li>
+<li>Dynamic fields means patients only see fields applicable to them. </li>
+</ul>
+<h2>Changes by Category</h2><p class="MarginBottomZero"><b>Account Module</b></p>
+<ul class="MarginBottomGap">
+<li>Select specific sheet for use when printing Payment Plans. </li>
+<li>Preference to hide Message-to-Pay option in Account Module, Payment dropdown. </li>
+<li>Send message-to-pay messages to guarantor when sending single patient statement. </li>
+<li>Associate Message-to-Pay payments with a Payment Type. </li>
+<li>Quickly add procedure code for Sales Tax. </li>
+</ul>
+<p class="MarginBottomZero"><b>Appointments Module</b></p>
+<ul class="MarginBottomGap">
+<li>Button to copy Appointment Views. </li>
+</ul>
+<p class="MarginBottomZero"><b>Chart Module</b></p>
+<ul class="MarginBottomGap">
+<li>Implant icon removed from Perio Chart when an implant is removed. </li>
+<li>Added <i>Attached Gingiva</i> to Perio Chart. </li>
+<li>Option to use the term Recession instead of Gingival Margin. </li>
+<li>Chart letters via Microsoft Word allows for longer notes. </li>
+</ul>
+<p class="MarginBottomZero"><b>eServices</b></p>
+<ul class="MarginBottomGap">
+<li>Typed signatures on Web Forms display date and time stamp on imported form.</li>
+<li>Allow custom time formatting on Automated Messages. </li>
+</ul>
+<p class="MarginBottomZero"><b>Manage Module</b></p>
+<ul class="MarginBottomGap">
+<li>Option to export Accounting Transaction History as .csv or .txt file.</li>
+<li>Match ERA with claim when fee or date of service do not match. </li>
+</ul>
+<p class="MarginBottomZero"><b>Miscellaneous</b></p>
+<ul class="MarginBottomGap">
+<li>Filters added to Query Monitor. </li>
+<li>New permissions for<i> ImageSignatureCreate </i>and <i>SignedImageEdit</i>. </li>
+<li>Effective date for fee schedules. </li>
+<li>Ability to include notes about fee schedules. </li>
+<li>New Incomplete Procedure Notes option to include all procedures with no notes. </li>
+<li>Audit Trail entry when changes are made to the Report Server. (Also backported to 24.3.35) </li>
+<li>Updated CDA procedure codes for 2025. (Also backported to 24.3.32) </li>
+<li>Enhanced Raw Emails tool to cleanup Unicode white space characters. </li>
+<li>Daily Procedures report split into two reports. </li>
+<li>Individual Procedures report available to right-click to go to patient. </li>
+<li>Easier entry of code ranges in Code Groups.</li>
+<li>Improved Medication List search. </li>
+<li>Added additional secondary insurance Static Text Fields. </li>
+<li>Combined CareCredit and PayConnect fees on Daily Payment Report. </li>
+<li>Added hospitalization dates to medical claim form. </li>
+</ul>
+<p class="MarginBottomZero"><b>API</b>: <a href="apispecification.html">API Specification</a></p>
+<ul class="MarginBottomGap">
+<li>Added carriers GET (single) to carriers endpoint.</li>
+<li>Procedurelogs GET (multiple) can now be filtered by PlannedAptNum.</li>
+<li>Added Labturnarounds PUT and POST.</li>
+<li>Claimprocs GET multiple can now be filtered by Status.</li>
+<li>Added MedicaidID to patients POST and PUT.</li>
+<li>Added Tasks GET (single). </li>
+<li>Referrals GET by BusinessName.</li>
+<li>Added more fields to Referrals object.</li>
+<li>Insverifies GET (multiple) can now be filtered by FKey.</li>
+<li>Providers GET now includes a single and multiple.</li>
+<li>Added Labcases PUT, POST, and DELETE.</li>
+<li>New TaskNotes resource.</li>
+<li>Laboratories - Add POST.</li>
+<li>Appointments GET by AppointmentTypeNum.</li>
+<li>Laboratories - Add PUT. </li>
+<li>Queries PUT and POST - enhance query screening.</li>
+<li>Added ProcTPs PUT.</li>
+<li>PaySplits GET by ProcNum.</li>
+<li>Added treatplans - Add DELETE.</li>
+<li>Added payments POST Refund.</li>
+<li>Added a ToothInitial table ApiEvent.</li>
+<li>Added PayPlans GET single.</li>
+<li>Providers POST - add ability to set StateLicense and NationalProvID.</li>
+</ul>
+		</div>
+	</div>
+</body>
+</html>```

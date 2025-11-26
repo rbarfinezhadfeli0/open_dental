@@ -1,0 +1,54 @@
+# File: ./www.opendental.com/site/apifamilymodules.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API FamilyModules</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apifamilymodules','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API FamilyModules</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<h2>FamilyModules GET Insurance</h2>
+<p>Version Added: 21.4</p>
+<p>Gets the insurance information for a patient similarly to how it shows in the Family Module. Will typically return between 0 and 2 rows, one row for each insurance for the patient. Use another API method or a query to get additional details in each table. This area of the Family Module UI also shows discount plans, which are obtained through DiscountPlanSubs GET.</p>
+<p><b>PatNum:</b> Required in the URL.</p>
+<p>Returned fields are detailed below:</p>
+<p><b>InsSubNum:</b>inssub.InsSubNum. Primary key to insurance subscriber.<br><b>Subscriber:</b> inssub.Subscriber. The PatNum of the subscriber.<br><b>subscriber:</b> First and last name of Subscriber from patient table.<br><b>SubscriberID:</b> inssub.SubscriberID. Number assigned by insurance company, may be Medicaid ID.<br><b>SubscNote:</b> inssub.SubscNote. Stores any other information that affects coverage.<br><b>PatPlanNum:</b> patplan.PatPlanNum. Primary key to patient plan.<br><b>Ordinal:</b> patplan.Ordinal. Numerical representation of the patient's insurance order. 1, 2, 3, etc.<br><b>ordinal:</b> Description of Ordinal. Primary, Secondary, Medical, or Other insurance.<br><b>IsPending:</b> patplan.IsPending. Informational only. true or false. Identifies insurance information that is incomplete or unverified.<br><b>Relationship:</b> patplan.Relationship to subscriber. Self, Spouse, Child, Employee, HandicapDep, SignifOther, InjuredPlaintiff, LifePartner, or Dependant.<br><b>PatID:</b> patplan.PatID. Optional patient ID which overrides Subscriber ID on eclaims.<br><b>CarrierNum:</b> carrier.CarrierNum. Primary key to the carrier.<br><b>CarrierName:</b> carrier.CarrierName. Full name of carrier.<br><b>PlanNum: </b>insplan.PlanNum. Primary key to the insurance plan.<br><b>GroupName:</b> insplan.GroupName. Each plan has a group name, typically similar to employer.<br><b>GroupNum:</b> insplan.GroupNum. Issued by the carrier.<br><b>PlanNote:</b> insplan.PlanNote. Notes specific to the subscriber and associated family members.<br><b>FeeSched:</b> insplan.FeeSched, foreign key to feesched.FeeSchedNum.<br><b>feeschedule:</b> feesched.Description of the fee schedule.<br><b>PlanType:</b> insplan.PlanType. ""=percentage, "p"=ppo percentage, "f"=flat copay, "c"=capitation.<br><b>planType:</b> Description of PlanType. Category Percentage, PPO Fixed Benefit, PPO Percentage, Medicaid or Flat Co-pay, or Capitation.<br><b>CopayFeeSched:</b> insplan.CopayFeeSched, foreign key to feesched.FeeSchedNum.<br><b>EmployerNum:</b> insplan.EmployerNum, foreign key to employer.EmployerNum.<br><b>employer:</b> employer.EmpName. Description of EmployerNum.<br><b>IsMedical:</b> insplan.IsMedical. True if this is medical insurance rather than dental insurance.<br></p>
+<p><b>Example Request:</b><br> GET /familymodules/13/Insurance </p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br>  {<br>  "PatNum": 13,<br>  "InsSubNum": 7,<br>  "Subscriber": 10,<br>  "subscriber": "Eve Wilkins",<br>  "SubscriberID": "541147842",<br>  "SubscNote": "",<br>  "PatPlanNum": 17,<br>  "Ordinal": 1,<br>  "ordinal": "Primary",<br>  "IsPending": "false",<br>  "Relationship": "LifePartner",<br>  "PatID": "",<br>  "CarrierNum": 8,<br>  "CarrierName": "BCBS",<br>  "PlanNum": 7,<br>  "GroupName": "",<br>  "GroupNum": "",<br>  "PlanNote": "",<br>  "FeeSched": 53,<br>  "feeSchedule": "Standard",<br>  "PlanType": "",<br>  "planType": "Category Percentage",<br>  "CopayFeeSched": 0,<br>  "EmployerNum": 0,<br>  "employer": "",<br>  "IsMedical": "false"<br>  },<br>  {<br>  "PatNum": 13,<br>  "InsSubNum": 16,<br>  "Subscriber": 13,<br>  "subscriber": "John Wilkins",<br>  "SubscriberID": "987654",<br>  "SubscNote": "",<br>  "PatPlanNum": 18,<br>  "Ordinal": 2,<br>  "ordinal": "Secondary",<br>  "IsPending": "false",<br>  "Relationship": "Self",<br>  "PatID": "",<br>  "CarrierNum": 9,<br>  "CarrierName": "Metlife Dental",<br>  "PlanNum": 11,<br>  "GroupName": "",<br>  "GroupNum": "",<br>  "PlanNote": "Insurance plan note.",<br>  "FeeSched": 0,<br>  "feeSchedule": "",<br>  "PlanType": "p",<br>  "planType": "PPO Percentage",<br>  "CopayFeeSched": 0,<br>  "EmployerNum": 2,<br>  "employer": "Happy Dental",<br>  "IsMedical": "false"<br> }<br> ]<br></span></p>
+<p>200 OK<br> 400 Bad Request (with explanation)<br> 404 Not Found (with explanation)</p>
+		</div>
+	</div>
+</body>
+</html>```

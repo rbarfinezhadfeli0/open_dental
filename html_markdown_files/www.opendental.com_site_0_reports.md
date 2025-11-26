@@ -1,0 +1,133 @@
+# File: ./www.opendental.com/site/0_reports.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Reports</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('0_reports','+0mainmenu','quickmanual','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Reports</p></div>
+		<div class="GeneralPageContent">
+<p>Open Dental has many report options accessed from the Main Menu to view data in organized formats.</p>
+<img src="images/reportsMain.png" width="471" height="175"/><p>Reports can easily be printed or exported after running.</p>
+<a name='standard'></a><h2>Standard Reports</h2><p>Open Dental has over 50 built-in reports to help you track and view data. Reports have customizable filters and settings. Some important filters are noted in the following report descriptions. Set report favorites to easily choose from a short list of your most commonly-used reports.</p>
+<img src="images/reports.png" width="682" height="692"/><p class="MarginBottomZero">These reports include: </p>
+<ul class="MarginBottomGap">
+<br><li><h3>Production and Income Reports:</h3> There are various reports for running production and income data. <ul>
+<li><b>Today</b>: Quickly generate a report for today's date using default settings.</li>
+<li><b>Yesterday</b>: Quickly generate a report for yesterday using default settings. </li>
+<li><b>This Month</b>: Quickly generate a report the current month (1 - 31) using default settings.</li>
+<li><b>Last Month</b>: Quickly generate a report for last month (1 - 31) using default settings.</li>
+<li><b>This Year</b>: Quickly generate a report for the current year (Jan 1 - Dec 31) using default settings.</li>
+<li><b>More Options</b>: Generate a report using customizable options, like detail, date range or provider.</li>
+<li><b>Monthly Production Goal Report</b>: This report compares production goals with actual production.</li>
+<li><b>Provider Payroll Production and Income Report</b>: This report can be used to determine a provider's net production and income.</li>
+</ul>
+</li>
+<br><li><h3>Daily Reports:</h3> These are common reports that are normally run each day. These reports can be run for a single day or a larger date range. <ul>
+<li><b>Daily Adjustments Report</b>: This report shows detail for adjustments made in the date range. This can be filtered by adjustment type.</li>
+<li><b>Incomplete Procedure Notes Report</b>: This report can be used to find incomplete chart notes.</li>
+<li><b>Net Production Detail Daily Report</b>: This is a true daily report that lists net production by transaction in a specified date range.</li>
+<li><b>Patient Portion Uncollected Report</b>: This report can be used to easily find completed treatment with an uncollected patient balance.</li>
+<li><b>Daily Payments Report</b>: This report shows detail of payments in a date range. This can be filtered by provider and payment type.</li>
+<li><b>Daily Procedures Report</b>: Lists all completed procedures within a date range. Includes fees and can be filtered by provider</li>
+<li><b>Routing Slips</b>: Use this report to quickly print appointment routing slips for the day. </li>
+<li><b>Unfinalized Insurance Payment Report</b>: Use this report to find claims that were received but payment wasn't finalized.</li>
+<li><b>Daily Write-off Report</b>: Use this report to find write-offs, grouped by patient, for the date range. </li>
+</ul>
+</li>
+<br><li><h3>Monthly Reports:</h3> These are reports commonly run monthly and are usually part of a billing practices. Report dates can be adjusted. <ul>
+<li><b>Aging of A/R Report:</b> Use this report to see all accounts receivable. This can be filtered by account age and billing type.</li>
+<li><b>Capitation Utilization Report</b>: For practices using Capitation Insurance Plans, use this report to see all procedures performed for capitation patients in a date range.</li>
+<li><b>Claims Not Sent Report</b>: Use this report to find claims that still need to be sent to insurance, including claims that are ready to send or may be waiting on a primary claim.</li>
+<li><b>Custom Aging Report</b>: This report is similar to the Aging of A/R Report but allows for additional filtering and customization. </li>
+<li><b>Finance Charge Report</b>: This report lists all Finance Charges applied on a selected date.</li>
+<li><b>Insurance Aging Report</b>: This report is useful for viewing a breakdown of insurance and patient portion estimates by age of account.</li>
+<li><b>Insurance Overpaid Report</b>: This report finds situations where the insurance payment, plus any write-off, exceeds the procedure fee. This is useful for determining if an insurance refund is necessary or a write-off should be adjusted.</li>
+<li><b>Insurance Payment Plans Past Due Report</b>: Use this report to track insurance repayment agreements where there may be overdue payment.</li>
+<li><b>Outstanding Insurance Claims Report</b>: Use this report to track outstanding insurance claims and preauthorizations that may need follow up. You can also assign users to follow up on specific claims or preauthorizations and add status information. </li>
+<li><b>Payment Plans Report</b>: Use this report to view of list of patient repayment agreements, including balance details.</li>
+<li><b>PPO Writeoffs Report</b>: Use this report to compare write-offs by claim or carrier.</li>
+<li><b>Presented Treatment Production Report</b>: This report gives a breakdown of the production from presented treatment that has now been completed.</li>
+<li><b>Treatment Plan Presentation Statistics Report</b>: Use this report to find metrics, by user, on presented treatment. </li>
+<li><b>Procedures Not Billed to Insurance Report</b>: Use this report to find procedures that haven't yet been billed to insurance. Claims can quickly be created from the report.</li>
+<li><b>Procedures Overpaid Report</b>: Use this report to find procedures that are overpaid due to patient or insurance payments, write-offs, or adjustments. This can be helpful to find if a refund may be needed.</li>
+<li><b>Receivables Breakdown Report</b>: use this report to see changes in accounts receivable throughout a calendar month.</li>
+<li><b>Unearned Income Reports</b>: There are several report to help find payments that may need to be allocated to procedures.</li>
+<li><b>Payment Plans Overcharged Report</b>: Use this report to find and fix Payment Plans where production is overcharged.</li>
+</ul>
+</li>
+<br><li><h3>Lists:</h3> These are reports used to pull lists of various patient data. <ul>
+<li><b>Active Patients Report</b>: Use this report to get a list of active patients with address and insurance information.</li>
+<li><b>Appointments Report</b>: Generate a list of appointments scheduled for or created in a date range.</li>
+<li><b>Birthday Report and Postcards</b>: Use this report to get a list of patients with birthdays in a specified date range and quickly generate postcards.</li>
+<li><b>Broken Appointments Report</b>: Track appointments that were broken using this report. Includes broken appointment fees. </li>
+<li><b>Discount Plans Report</b>: Use this report to get a list of patients with a specific discount plan.</li>
+<li><b>Insurance Plans Report</b>: Use this report to get a list of patients with a specific insurance carrier.</li>
+<li><b>New Patients Report</b>: Find patients who had their first procedure completed in a date range by running this report.</li>
+<li><b>Patients Report</b>: Use this report to create highly customizable lists of patient information. </li>
+<li><b>Patient Notes Report</b>: Use this report to search for keywords in certain patient note fields. </li>
+<li><b>Prescriptions Report</b>: Easily get a list of patients with a specific prescription or a list of prescriptions attached to a specific patient.</li>
+<li><b>Procedure Codes - Fee Schedules Report</b>: Use this report to easily print or export a fee schedule.</li>
+<li><b>Referral - Raw Report</b>: Use this report to generate a highly customizable list of referral sources. </li>
+<li><b>Referral Analysis Report</b>: This report analyzes the incoming referral count and production for a specific date range.</li>
+<li><b>Referred Procedure Tracking Report</b>: Use this report to track and manage procedures that were referred out.</li>
+<li><b>Treatment Finder Report</b>: Use this interactive report to identify patients who need to schedule planned treatment. The report includes filters for reamining insurance benefits and code range. </li>
+<li><b>Web Sched Appointments Report</b>: Use this report to find patients who have scheduled appointments using the <a href="websched.html">Web Sched Feature</a>. </li>
+<li><b>Hidden Payment Splits Report</b>: Use this report to track accounts with treatment planned prepayments. This can be helpful to make sure payment is allocated or to determine if a refund is needed for treatment not scheduled.</li>
+<li><b>ERAs Automatically Processed Report</b>: Use this interactive report to see the history of Electronic Remittance Advice (ERA) that has been automatically processed or take action on ERAs that need to be manually processed.</li>
+<li><b>Insurance Pending Supplementals Report</b>: Use this report to find all pending supplemental insurance overpayments and underpayments.</li>
+</ul>
+</li>
+<br><li><h3>Public Health Reports:</h3> These are reports used to pull Public Health data. <ul>
+<li><b>UDS Report</b>: Use this report for FQHC Dental Sealant Measure data.</li>
+<li><b>Raw Screening Data Report</b>: This report produces Public Health Screening data as a single table.</li>
+<li><b>Raw Population Data Report</b>: this report produces a list of patients who had treatment during a specific date range.</li>
+</ul>
+</li>
+</ul>
+<a name='graphic'></a><h2>Graphic Reports</h2><p>Graphic reports are used to quickly compare and analyze trends and data. Report options and types are customizable.</p>
+<img src="images/reportsGraphicOverview.gif" width="842" height="454"/><p class="MarginBottomZero">These can be used to display the following: </p>
+<ul class="MarginBottomGap">
+<li>Production</li>
+<li>Income</li>
+<li>Accounts Receivable</li>
+<li>New Patients</li>
+<li>Broken Appointments</li>
+</ul>
+<a name='query'></a><h2>User Queries</h2><p>The User Query feature can be used to compose or run SQL queries to retrieve information from the database that is not accessible using standard reports. Users can access our existing library of over 1400 <a href="queryexamples.html">Queries</a> or submit custom <a href="queryrequest.html">Query Requests</a>.</p>
+<img src="images/queryrun.png" width="915" height="362"/><p></p>
+		</div>
+	</div>
+</body>
+</html>```
