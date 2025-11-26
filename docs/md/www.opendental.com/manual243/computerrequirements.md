@@ -1,0 +1,5 @@
+|  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | [![](../open-dental/LogoInner.jpg)](../index.html) | |  | | --- | | [![](../open-dental/home.gif)Home](../index.html) [![](../open-dental/UserManual.gif)User Manual](manual.html) [![](../open-dental/DiscForum.gif)Discussion Forum](http://opendentalsoft.com/forum/) [![](../open-dental/SearchIcon.gif)Search](search.html) | | |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | |  | * [TRIAL    VERSION](../trial.html) | ![](../open-dental/Line.gif) | * [PROGRAMMERS    & DISTRIBUTORS](../programmers-resellers.html) | ![](../open-dental/Line.gif) | * [ORDER    HERE](https://www.opendental.com/order.html) | ![](../open-dental/Line.gif) | * [CONTACT    INFORMATION](../contact.html) | | | |
+| Computer Requirements  If you browser does not refresh automatically please click this link for [Fees and Services](../site/computerrequirements.html) |
+| Open Dental Software 1-503-363-5432 |

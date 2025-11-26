@@ -1,0 +1,1 @@
+If your browser does not refresh automatically, please click this link for [Programming Resources](https://opendental.com/site/programmingresources.html).

@@ -1,0 +1,92 @@
+Table of Contents
+
+[Help](https://www.opendental.com/site/help.html)
+
+[![Home](resources/logoWhite160.png)](../index.html)
+
+[![](resources/search.gif)](searchSite.html)
+
+API ApptFieldDefs
+
+See [API Specification](apispecification.html)
+
+Appointment Field Defs allow you to organize notes specific to a patient's appointment and are displayed in the bottom left of the Edit Appointment window.
+
+Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.
+ See [ApptFieldDef Database Schema.](SchemaRedirect%EF%B9%96apptfielddef.html)
+
+## ApptFieldDefs GET
+
+Version Added: 21.4
+
+Gets a list of all Appointment Field Defs.
+
+**Example Request**
+ GET /apptfielddefs
+
+**Example Response:**
+ [
+ {
+ "ApptFieldDefNum": 7,
+ "FieldName": "Verify Insurance",
+ "FieldType": "Text",
+ "PickList": ""
+ },
+ {
+ "ApptFieldDefNum": 8,
+ "FieldName": "Patient a minor",
+ "FieldType": "PickList",
+ "PickList": "Yes\r\nNo\r\nUnknown"
+ },
+ {
+ "ApptFieldDefNum": 11,
+ "FieldName": "Temperature",
+ "FieldType": "Text",
+ "PickList": ""
+ }
+ ]
+
+## ApptFieldDefs POST (create)
+
+Version Added: 21.4
+
+The API supports creating both Text type and PickList type ApptFieldDefs. Duplicate ApptFieldDefs are not allowed.
+
+**FieldName:**Required. The name of the field.
+**FieldType**: Optional. Either "Text" or "PickList". If "Text", in the Edit Appointment window, users can enter any free-form text. If "PickList", users will select from a list of items. Default is "Text".
+**PickList:** Optional. Only used if FieldType is "PickList". Each item in the list must be separated by a \r\n to display properly in the Edit Appointment window.
+
+**Example Request:**
+ POST /apptfielddefs
+
+{
+ "FieldName": "Temperature"
+ }
+
+or
+
+{
+ "FieldName": "Patient a minor?",
+ "FieldType": "PickList",
+ "PickList": "Yes\r\nNo\r\nUnknown"
+ }
+
+**Example Response:**
+ {
+ "ApptFieldDefNum": 11,
+ "FieldName": "Temperature",
+ "FieldType": "Text",
+ "PickList": ""
+ }
+
+or
+
+{
+ "ApptFieldDefNum": 8,
+ "FieldName": "Patient a minor?",
+ "FieldType": "PickList",
+ "PickList": "Yes\r\nNo\r\nUnknown"
+ }
+
+201 Created
+ 400 Bad Request (with explanation)

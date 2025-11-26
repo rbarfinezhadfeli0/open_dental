@@ -1,0 +1,1 @@
+If your browser does not refresh automatically, please click this link for [Query Requests](https://opendental.com/site/queryrequest.html).

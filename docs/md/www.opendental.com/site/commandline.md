@@ -1,0 +1,183 @@
+Table of Contents
+
+[Help](https://www.opendental.com/site/help.html)
+
+[![Home](resources/logoWhite160.png)](../index.html)
+
+[![](resources/search.gif)](searchSite.html)
+
+Command Line Arguments
+
+See [Advanced Topics](advancedtopics.html).
+
+The following command-line arguments are allowed. Quotes around the information are required if there are any spaces, otherwise optional. Order is unimportant. They are listed alphabetically.
+
+Note: Options set using a command line argument are not saved to [FreeDentalConfig.xml](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7freedentalconfig.html)
+
+**AptNum:** Corresponds to the visit ID in eCW.
+
+**ChartNumber**: Causes the current patient to change. If a PatNum is passed in, then this is ignored.
+
+**ClinicNum**: Primary key for a clinic. Launch Open Dental for a specific clinic. User security permissions are considered.
+
+**DatabaseName**: For a direct db connection.
+
+**DynamicMode**: Indicates Open Dental should start with [Dynamic Mode](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7choosedatabase.html) enabled. (Ex.: DynamicMode=True)
+
+**EcwConfigPath**: Path to the eCW Configuration.xml file.
+
+**JSESSIONID** and **JSESSIONIDSSO**: Only used by eCW.
+
+**IsSilentUpdate**: Allows the ability to forcefully update the database without any prompt. To use, specify True. Must also pass in ServerName, DatabaseName, MySqlUser, MySqlPassword, UserName, and PassHash or OdPassword. For a list of codes the program will use to relay any problems, see Exit Codes at the bottom of this page. MySqlPassword cannot be blank; the UserName and OdPassword/PassHash can be set to a non-existent user and password.
+
+To prevent accidental updates of Open Dental when multiple locations potentially run different Open Dental versions, set an *Update Server* name in [Preferences](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7preferences.html). This computer will be the one and only computer that has permission to execute updates.
+
+**Module**: This will open the chosen module (Appt, Family, Account, TxPlan, TreatPlan, Chart, Images, Manage), case insensitive (Ex.: Module=Account opens the account module.
+
+**MySqlUser**: For a direct db connection. Typically root.
+
+**MySqlPassHash**: For a direct db connection so user doesn't have to manually type the MySQL password on the Choose Database window in plain text. Uses the obfuscated MySql password from the FreeDentalConfig.xml file. The [FreeDentalConfig.xml](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7freedentalconfig.html) file and the obfuscated password must already exist.
+
+**MySqlPassword**: For a direct db connection. Can be omitted if blank.
+
+**OdPassword**: The Open Dental password for the specified UserName. The Log On window will be skipped. Used in conjunction with the UserName argument.
+
+**PassHash**: This argument only works if the [eCW Bridge](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7ecwbridgesetup.html) is turned on in tight integration mode; it is not functional for regular customers not using the eCW bridge. If both UserName and PassHash are passed in, then the current user in OD will change. It is the MD5 hash of the user password, base-16 encoded. The PassHash is the hash of the password as it is stored in the eCW database. eCW and OD use slightly different encodings for storing the password hash. eCW hashes the ASCII text and encodes it as base-16. OD hashes the Unicode text and encodes it as base 64 text. In order to allow simple bridging, if the eCW bridge is turned on, then OD will change its behavior to store passwords in a manner identical to eCW. That way, the hashed passwords will always exactly match in both databases. If the eCW bridge is turned off, none of the existing passwords will work. And if a user turns on the eCW bridge, the existing passwords will also stop working. So before turning on the bridge, make sure that the admin password in OD is blank. After the bridge is turned on, then a password may be set.
+
+**PatNum**: This is the primary key, the patient's internal patient ID. It is visible to users, but it cannot be changed. Passing in this parameter causes that patient to be loaded. When this parameter is used for eCW, it is both the internal ID for eCW and the external ID for Open Dental.
+
+**PatNum:##** (related, but not command line) Place "PatNum:##" on the Windows clipboard, and then click the [Select Patient](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7patientselect.html) button. This will cause Open Dental to switch to that patient instead of bringing up a list of patients.
+
+**ServerName**: For a direct db connection. Can be name or IP address.
+
+**Show**: Conditionally displays a patient's popups, patient select window, or appointment list (the same list that opens when selecting View Pat Appts in the appointment module). The appointment list will only open if the starting module is the appointment module, and both forms will only open if the user also has a PatNum argument. Allows Popup, Popups, ApptsForPatient, and SearchPatient. SearchPatient will open the Patient Select window and doesn't require any other command line arguments.
+
+**SSN**: Causes the current patient to change. If a PatNum or ChartNumber is passed in, then this is ignored.
+
+**UserID**: Only used with eCW, it's the primary key for the user in eCW.
+
+**UserName**: The Open Dental user that is logging in. Capitalization must match. This is usually used in combination with OdPassword. If the username and password do not match, then the Log On window will be displayed as usual. If the user is in Middle Tier and the username or password is incorrect, they will be presented with the database selection window. When this argument is used for eCW with tight integration, the PassHash is used instead of the OdPassword. In that case, if the user does not exist, then a user with the specified UserName and PassHash will be created. The new user will have the permissions of the default user group set in the eCW setup window. If the username does exist, but the password does not match, then the user will be presented with the login screen in OD. After the user logs in with their old password, they will need to change their password in OD to their new one.
+
+**WebServiceUri**: The URI to the [Middle Tier](middletier.html).
+
+**WebServiceIsEcw**: If not using eCW, omit this argument. If using eCW, specify True.
+
+## Reuse
+
+The current Open Dental window does not get reused when passing in command line arguments. It will instead result in a new instance of Open Dental being launched. Multiple instances of Open Dental can run simultaneously without any conflict. See PatNum above for a related technique to reuse the same window.
+
+## Examples
+
+**Example 1** (a shortcut to a direct database connection on the current computer)
+"C:\Program Files (x86)\Open Dental\OpenDental.exe" ServerName=localhost DatabaseName=opendental MySqlUser=root
+
+**Example 2** (a shortcut to a database connection, including Open Dental username and password)
+"C:\Program Files (x86)\Open Dental\OpenDental.exe" ServerName=server DatabaseName=opendental MySqlUser=root UserName="DrSmith" OdPassword=secret
+
+**Example 3** (typical eCW parameters)
+"C:\Open Dental\OpenDental.exe" PatNum=123 UserName=pam PassHash="5ebe2294ecd0e0f08eab7690d2a6ee69" AptNum=72919 EcwConfigPath="C:\Program Files\EclinicalWorks\Configuration.xml" UserID=32
+
+**Example 4** (a shortcut to open a web service at a remote location, using eCW)
+"C:\Open Dental\OpenDental.exe" WebServiceUri="http://server3/OpenDentalServer/ServiceMain.asmx" UserName="Admin" WebServiceIsEcw=True
+
+## Shortcut Instructions
+
+To set up a Windows shortcut, right-click on the desktop, hover on New, then select Shortcut.
+
+![](images/shortcut.png)
+
+The name of the shortcut can be set in the General tab. For eCW installs, the Target has the following text:
+
+"C:\Open Dental\OpenDental.exe" ServerName=localhost DatabaseName=opendental MySqlUser=root
+
+For other installs, the Start in path may include Program Files, giving the Target the following text:
+
+"C:\Program Files\Open Dental\OpenDental.exe" ServerName=localhost DatabaseName=opendental MySqlUser=root
+
+![](images/shortcut3.gif)
+
+## Exit Codes
+
+If any errors occur with the IsSilentUpdate argument, the program will use an exit code to relay the problem.
+
+0 No Failures (Default)
+
+1 IsSilentUpdate is set
+
+100 Database could not be accessed for cache refresh
+
+101 Database Backup failed
+
+102 Failed to convert InnoDB tables to MyISAM format
+
+103 Default database .ini setting is innoDB\
+
+104 Required command line arguments have not been set for silent updating
+
+105 File versions do not match
+
+106 Connection to specified database has failed
+
+107 Connection to the Middle Tier has failed
+
+108 Crashed Table Exception
+
+110 MySQL version lower than 5.0
+
+111 Global SQL mode could not be set
+
+112 Database must be upgraded using MySQL 4.1 or it will fail
+
+120 Computer trying to access DB during update
+
+130 Database must be upgraded to 2.8 to continue
+
+131 Database must be upgraded to 11.1 to continue
+
+138: Update must be done manually in order to get data loss notification(s)
+
+139 Update must be done manually to fix Insurance Plan Schema
+
+140 Web client cannot convert database
+
+141 Updates are only allowed from a designated web server
+
+142 Update is already in progress from another computer
+
+143 Database has already been updated from another computer
+
+150 Replication server is blocked from performing updates
+
+160 File not found exception
+
+161 ConversionFiles folder could not be found
+
+190 Cannot convert this database version which was only for development purposes
+
+191 Trial versions cannot connect to live databases
+
+200 Convert Database has failed during execution (Unknown Error)
+
+201 Database was corrupted due to an update failure
+
+300 AtoZ folder not found (Warning)
+
+301 UpdateFiles folder cannot be deleted (Warning)
+
+302 Installation files could not be copied
+
+303 Failed inserting update files into database
+
+304 Error compressing UpdateFiles
+
+305 Unable to start UpdateFileCopier process
+
+309 The database version is higher than the client version
+
+310 Client version is higher than Server Version and update is not allowed from Client.
+
+311 Registration Key could not be validated
+
+399 Classic View is not supported with Silent Update (Warning)
+
+999 Unknown Problem

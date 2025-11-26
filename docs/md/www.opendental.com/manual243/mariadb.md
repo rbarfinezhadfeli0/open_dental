@@ -1,0 +1,1 @@
+If your browser does not refresh automatically, please click this link for [MariaDB](https://opendental.com/site/mariadb.html).

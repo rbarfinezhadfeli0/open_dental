@@ -1,0 +1,126 @@
+Table of Contents
+
+[Help](https://www.opendental.com/site/help.html)
+
+[![Home](resources/logoWhite160.png)](../index.html)
+
+[![](resources/search.gif)](searchSite.html)
+
+API ToothInitials
+
+See [API Specification](apispecification.html)
+
+See [Missing/Primary Teeth](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7missingteeth.html) for more information.
+
+Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.
+ See [ToothInitial Database Schema.](SchemaRedirect%EF%B9%96toothinitial.html)
+
+## ToothInitials GET
+
+Version Added: 24.2.3
+
+Gets all toothinitials.
+
+**PatNum:** Optional.
+
+**Example Requests:**
+ GET /toothinitials
+ GET /toothinitials?PatNum=13
+
+**Example Response:**
+ [
+ {
+ "ToothInitialNum": 322,
+ "PatNum": 13,
+ "ToothNum": "32",
+ "InitialType": "Missing",
+ "Movement": "0",
+ "DrawingSegment": "",
+ "ColorDraw": "0,0,0",
+ "SecDateTEntry": "2024-05-30 12:18:00",
+ "SecDateTEdit": "2024-05-30 12:18:00",
+ "DrawText": ""
+ },
+ {
+ "ToothInitialNum": 324,
+ "PatNum": 13,
+ "ToothNum": "17",
+ "InitialType": "Hidden",
+ "Movement": "0",
+ "DrawingSegment": "",
+ "ColorDraw": "0,0,0",
+ "SecDateTEntry": "2024-05-30 12:18:08",
+ "SecDateTEdit": "2024-05-30 12:18:08",
+ "DrawText": ""
+ },
+ {
+ "ToothInitialNum": 344,
+ "PatNum": 13,
+ "ToothNum": "22",
+ "InitialType": "Rotate",
+ "Movement": "-20",
+ "DrawingSegment": "",
+ "ColorDraw": "0,0,0",
+ "SecDateTEntry": "2024-05-30 12:42:57",
+ "SecDateTEdit": "2024-05-30 12:42:57",
+ "DrawText": ""
+ },
+ etc...
+ ]
+
+200 OK
+ 400 BadRequest (with explanation)
+ 404 NotFound (with explanation)
+
+## ToothInitials POST (create)
+
+Version Added: 24.2.3
+
+Creates a toothinitial for a patient.
+
+**PatNum:** Required.
+**ToothNum:** Required. A single tooth number, either 1-32 or A-T.
+**InitialType:** Required. Either "Missing", "Hidden", or "Primary".
+
+**Example Request:**
+ POST /toothinitials
+
+{
+ "PatNum": 13,
+ "ToothNum": 32,
+ "InitialType": "Missing"
+ }
+
+**Example Response:**
+ {
+ "ToothInitialNum": 346,
+ "PatNum": 13,
+ "ToothNum": "32",
+ "InitialType": "Missing",
+ "Movement": "0",
+ "DrawingSegment": "",
+ "ColorDraw": "0,0,0",
+ "SecDateTEntry": "2024-05-30 14:11:19",
+ "SecDateTEdit": "2024-05-30 14:11:19",
+ "DrawText": ""
+ }
+
+201 Created
+ 400 BadRequest (with explanation)
+ 404 NotFound (with explanation)
+
+## ToothInitials DELETE
+
+Version Added: 24.2.3
+
+Deletes an existing toothinitial with an InitialType of "Missing", "Hidden", or "Primary".
+
+**ToothInitialNum:** Required in the URL.
+
+**Example Request:**
+ DELETE /toothinitials/346
+
+**Example Responses:**
+ 200 OK
+ 400 BadRequest (with explanation)
+ 404 NotFound (with explanation)

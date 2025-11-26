@@ -1,0 +1,1 @@
+If your browser does not refresh automatically, please click this link for [Central Enterprise Management Tool ( CEMT )](https://opendental.com/site/central.html).

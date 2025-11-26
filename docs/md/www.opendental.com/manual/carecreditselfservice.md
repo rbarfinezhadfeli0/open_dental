@@ -1,0 +1,1 @@
+If your browser does not refresh automatically, please click this link for [CareCredit Self-Service Payment](https://opendental.com/r.htm?carecreditselfservice).

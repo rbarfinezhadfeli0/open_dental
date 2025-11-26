@@ -1,0 +1,1 @@
+If your browser does not refresh automatically, please click this link for [Server Migration](https://opendental.com/site/servermigration.html).

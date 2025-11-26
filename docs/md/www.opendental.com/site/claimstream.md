@@ -1,0 +1,50 @@
+Table of Contents
+
+[Help](https://www.opendental.com/site/help.html)
+
+[![Home](resources/logoWhite160.png)](../index.html)
+
+[![](resources/search.gif)](searchSite.html)
+
+Claimstream
+
+For [Canada](canada.html) Independent Hygienist and Denturist users, the CCDWS service (Claimstream) is used to submit claims to Insurance Carriers.
+
+Note:
+
+* Open Dental support is required to install the CCDWS service that Claimstream runs on.
+* Open Dental is CCDWS certified software.
+* Quebec users should not install Claimstream.
+
+## Install Claimstream / CCDWS
+
+Claimstream uses the CCDWS service to send claims. See [CCDWS Service](ccdws.html) for installation instructions.
+
+## Setup the Claimstream Clearinghouse
+
+In the [Main Menu](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7mainmenu.html), click Family/Insurance, [Clearinghouses](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7clearinghouses.html). Double-click Claimstream to edit.
+
+![](images/clearinghouseClaimstream.png)
+
+1. Set the Claim Export Path to **\\ServerName\ccd\**.
+2. Set the Report Path to **\\ServerName\ccd\**.
+3. Ensure **Use Claim Export Path** is checked.
+4. Set the preferred Explanation of Benefits (EOB) option:
+   * **Do Not Download EOBs:** EOBs display, but amounts from EOBs are not downloaded into claims/predeterminations.
+   * **Download EOBs, Do Not Auto Receive:** EOBs display and amounts from EOBs are automatically downloaded as insurance estimate overrides (claims and predeterminations) and preauth estimates (predeterminations only), but the claim/predetermination is not marked as received.
+   * **Download EOBs and Auto Receive:** EOBs display and amounts from EOBs are automatically downloaded as insurance estimate overrides (claims and predeterminations) and as preauth estimates (predeterminations only), and claim procedures are received using the same amounts. Claim payment need to be finalized after receiving payment from the carrier.
+
+Note: Some fields may automatically fill that are not needed. They can be removed.
+
+* Launch Client Program
+* Payors (rarely used)
+
+## Technical Details of Upload
+
+Open Dental checks the claim export path (usually **C:\ccd** on the claim server) for the existence of OPENDENTAL.pem and automatically creates the OPENDENTAL.pem file if it does not already exist.
+
+Files being sent from Open Dental to Claimstream are named input.### (i.e., input.000, input.001, etc...) and are placed in the **C:\ccd** folder on the server by default.
+
+To prevent the CCDWS service from processing input before the input file is finished writing, a temp file is first written in format tempinput.###, then the file is renamed to input.###. File names are cycled through until they reach 999 and then start over at 000.
+
+The purpose of the file name incrementing is to prevent transactions of different client machines from colliding while they are being adjudicated. The CCDWS service first renames the input.### file to \_nput.### to prevent the file from being processed more than once. The CCDWS service then sends the \_nput.### file data via a secure SSL connection to Claimstream. The reply comes back in under two minutes as output.### or utput.### in the same folder. The output.### file is immediately imported into Open Dental, then the output.### and \_nput.### files are deleted by Open Dental.

@@ -1,0 +1,127 @@
+Table of Contents
+
+[Help](https://www.opendental.com/site/help.html)
+
+[![Home](resources/logoWhite160.png)](../index.html)
+
+[![](resources/search.gif)](searchSite.html)
+
+API InsVerifies
+
+See [API Specification](apispecification.html)
+
+Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.
+ See [InsVerify Database Schema.](SchemaRedirect%EF%B9%96insverify.html)
+
+## InsVerifies GET (single)
+
+Version Added: 23.2.23
+
+Gets a single insurance verification.
+
+**InsVerifyNum**: Required in the URL.
+
+**Example Request:**
+ GET /insverifies/12
+
+**Example Response:**
+ {
+ "InsVerifyNum": 12,
+ "DateLastVerified": "2022-11-07",
+ "UserNum": 0,
+ "VerifyType": "InsuranceBenefit",
+ "FKey": 45,
+ "DefNum": 0,
+ "Note": "",
+ "DateLastAssigned": "0001-01-01",
+ "SecDateTEdit": "2022-11-07 09:39:54"
+ }
+
+200 OK
+ 404 NotFound (with explanation)
+
+## InsVerifies GET (multiple)
+
+Version Added: 23.2.23
+
+Gets insurance verifications.
+
+**Parameters:** All optional.
+
+**VerifyType:** Required if **FKey** is specified. Either "PatientEnrollment" to verify a patient's insurance eligibility, or "InsuranceBenefit" to verify an insurance plan's benefits.
+**FKey:** (Added in version 24.4.17) FK to patplan.PatPlanNum or FK to insplan.PlanNum depending on the **VerifyType**.
+**SecDateTEdit:** Only include InsVerifies with a SecDateTEdit altered after the specified date and time. String in "yyyy-MM-dd HH:mm:ss" format.
+
+**Example Requests:**
+ GET /insverifies
+ GET /insverifies?VerifyType=PatientEnrollment&FKey=10
+ GET /insverifies?VerifyType=InsuranceBenefit&SecDateTEdit=2024-03-25%2005%3A30%3A00
+
+**Example Response:**
+ [
+ {
+ "InsVerifyNum": 12,
+ "DateLastVerified": "2022-11-07",
+ "UserNum": 0,
+ "VerifyType": "InsuranceBenefit",
+ "FKey": 45,
+ "DefNum": 789,
+ "Note": "Need additional pat info",
+ "DateLastAssigned": "2024-03-26",
+ "SecDateTEdit": "2024-03-26 09:39:54"
+ },
+ {
+ "InsVerifyNum": 13,
+ "DateLastVerified": "2024-03-27",
+ "UserNum": 0,
+ "VerifyType": "InsuranceBenefit",
+ "FKey": 325,
+ "DefNum": 0,
+ "Note": "",
+ "DateLastAssigned": "0001-01-01",
+ "SecDateTEdit": "2022-09-29 11:09:13"
+ },
+ etc...
+ ]
+
+200 OK
+ 400 BadRequest (with explanation)
+
+## InsVerifies PUT
+
+Version Added: 21.1
+
+Updates an insurance verification. **DateLastVerified** sets the 'Eligibility Last Verified' or 'Benefits Last Verified' fields as seen on the [Insurance Plan](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7insplan.html) window . As with all insverify entries in our database, historical entries are always retained in the insverifyhist table. See [Insurance Verification List](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7insverifylist.html) for more information on insurance verification.
+
+**DateLastVerified:** (Optional after version 24.1.17) String in "yyyy-MM-dd" format.
+**VerifyType:** Required. Can be either "PatientEnrollment" to verify a patient's insurance eligibility, or "InsuranceBenefit" to verify an insurance plan's benefits.
+**FKey:** Required. If "PatientEnrollment" was passed in for VerifyType, then FKey must be a valid patplan.PatPlanNum. If "InsuranceBenefit" was passed in for VerifyType, FKey must be a valid insplan.PlanNum.
+**DefNum:** Optional. Must be a valid DefNum where definition.Category=38.
+**Note:** (Added in version 24.1.17) Optional. Status note for this insurance verification.
+
+**Example Request:**
+ PUT /insverifies
+
+{
+ "DateLastVerified": "2024-03-27",
+ "VerifyType": "PatientEnrollment",
+ "FKey": 325,
+ "DefNum": 721,
+ "Note": "Need additional pat info"
+ }
+
+**Example Response:**
+ {
+ "InsVerifyNum": 1234,
+ "DateLastVerified": "2024-03-27",
+ "UserNum": 0,
+ "VerifyType": "PatientEnrollment",
+ "FKey": 325,
+ "DefNum": 0,
+ "Note": "",
+ "DateLastAssigned": "0001-01-01",
+ "SecDateTEdit": "2024-03-27 09:39:54"
+ }
+
+ 200 OK
+ 400 BadRequest (with explanation)

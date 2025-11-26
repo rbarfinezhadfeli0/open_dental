@@ -1,0 +1,1 @@
+If your browser does not refresh automatically, please click this link for [Trial Version](https://opendental.com/site/trial.html).

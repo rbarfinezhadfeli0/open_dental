@@ -1,0 +1,68 @@
+Table of Contents
+
+[Help](https://www.opendental.com/site/help.html)
+
+[![Home](resources/logoWhite160.png)](../index.html)
+
+[![](resources/search.gif)](searchSite.html)
+
+API PatientRaces
+
+See [API Specification](apispecification.html)
+
+Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.
+ See [PatientRace Database Schema.](SchemaRedirect%EF%B9%96patientrace.html)
+
+## PatientRaces GET
+
+Version Added: 22.3.12
+
+Gets all of the Race and Ethnicity information for a Patient, similarly to how it shows in the [Edit Patient Information: Public Health Tab](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7patienteditpublichealth.html). The dental office must have Public Health enabled to record this information.
+
+In the example below, a single patient has two races specified as well as an ethnicity.
+
+**PatNum:** Required.
+
+Returned fields are detailed below:
+
+**PatientRaceNum:** Primary key of the patientrace table.
+**PatNum:** The PatNum of the patient.
+**CdcrecCode:** CDC Race and Ethnicity unique identifier code.
+**descripition:** Race or Ethnicity Description corresponding to the CdcrecCode.
+**isEthnicity:** True for ethnicity or False for race information.
+**heirarchicalCode:** Alphanumeric code that the CDC uses to organize CdcrecCodes.
+
+**Example Request**
+ GET /patientraces?PatNum=73
+
+**Example Response:**
+ [
+ {
+ "PatientRaceNum": 16,
+ "PatNum": 73,
+ "CdcrecCode": "2066-9",
+ "descripition": "ZAIREAN",
+ "isEthnicity": "false",
+ "heirarchicalCode": "R3.03.006"
+ },
+ {
+ "PatientRaceNum": 17,
+ "PatNum": 73,
+ "CdcrecCode": "2120-4",
+ "descripition": "EGYPTIAN",
+ "isEthnicity": "false",
+ "heirarchicalCode": "R5.02.002"
+ },
+ {
+ "PatientRaceNum": 18,
+ "PatNum": 73,
+ "CdcrecCode": "2186-5",
+ "descripition": "NOT HISPANIC OR LATINO",
+ "isEthnicity": "true",
+ "heirarchicalCode": "E2"
+ }
+ ]
+
+200 OK
+ 400 Bad Request (Patient is deleted, etc)
+ 401 NotFound (Patient not found)

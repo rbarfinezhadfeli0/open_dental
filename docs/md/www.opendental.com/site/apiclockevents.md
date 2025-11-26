@@ -1,0 +1,126 @@
+Table of Contents
+
+[Help](https://www.opendental.com/site/help.html)
+
+[![Home](resources/logoWhite160.png)](../index.html)
+
+[![](resources/search.gif)](searchSite.html)
+
+API ClockEvents
+
+See [API Specification](apispecification.html)
+
+See [TimeCard](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7timeclockedit.html) for more information.
+
+Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.
+ See [ClockEvent Database Schema.](SchemaRedirect%EF%B9%96clockevent.html)
+
+## ClockEvents GET (single)
+
+Version Added: 24.1.11
+
+Gets a single clockevent.
+
+**ClockEventNum:**  Required in the URL.
+
+**Example Request:**
+ GET /clockevents/19123
+
+**Example Response:**
+
+{
+ "ClockEventNum": 19123,
+ "EmployeeNum": 13,
+ "TimeEntered1": "2024-01-23 10:55:37",
+ "TimeDisplayed1": "2024-01-23 08:00:00",
+ "ClockStatus": "Home",
+ "Note": "Forgot to clock in this morning.",
+ "TimeEntered2": "2024-01-23 16:01:16",
+ "TimeDisplayed2": "2024-01-23 16:01:16",
+ "OTimeHours": "-01:00:00",
+ "OTimeAuto": "00:00:00",
+ "Adjust": "00:00:00",
+ "AdjustAuto": "00:00:00",
+ "AdjustIsOverridden": "false",
+ "Rate2Hours": "-01:00:00",
+ "Rate2Auto": "00:00:00",
+ "ClinicNum": 0,
+ "Rate3Hours": "-01:00:00",
+ "Rate3Auto": "00:00:00",
+ "IsWorkingHome": "false"
+ }
+
+200 OK
+ 404 NotFound (with explanation)
+
+## ClockEvents GET (multiple)
+
+Version Added: 24.1.11
+
+Gets a list of clockevents.
+
+**Parameters:** All optional.
+
+**EmployeeNum:**  FK to employee.EmployeeNum.
+**ClockStatus:** Either "Home", "Lunch", or "Break".
+**ClinicNum:** FK to clinic.ClinicNum.
+**date:**  For a single day. String in "yyyy-MM-dd" format.
+**dateStart:**  Only return clockevents with a TimeDisplayed1 on or after this date. String in "yyyy-MM-dd" format.
+**dateEnd:**  Only return clockevents with a TimeDisplayed1 before this date. String in "yyyy-MM-dd" format.
+
+**Example Requests:**
+ GET /clockevents?EmployeeNum=13
+ GET /clockevents?ClockStatus=Home&date=2024-01-23
+ GET /clockevents?EmployeeNum=13&dateStart=2024-02-26&dateEnd=2024-03-11
+
+**Example Response:**
+
+[
+ {
+ "ClockEventNum": 19123,
+ "EmployeeNum": 13,
+ "TimeEntered1": "2024-02-26 10:55:37",
+ "TimeDisplayed1": "2024-02-26 08:00:00",
+ "ClockStatus": "Home",
+ "Note": "Forgot to clock in this morning.",
+ "TimeEntered2": "2024-02-26 16:01:16",
+ "TimeDisplayed2": "2024-02-26 16:01:16",
+ "OTimeHours": "-01:00:00",
+ "OTimeAuto": "00:00:00",
+ "Adjust": "00:00:00",
+ "AdjustAuto": "00:00:00",
+ "AdjustIsOverridden": "false",
+ "Rate2Hours": "-01:00:00",
+ "Rate2Auto": "00:00:00",
+ "ClinicNum": 0,
+ "Rate3Hours": "-01:00:00",
+ "Rate3Auto": "00:00:00",
+ "IsWorkingHome": "false"
+ },
+ {
+ "ClockEventNum": 19124,
+ "EmployeeNum": 13,
+ "TimeEntered1": "2024-02-26 12:00:25",
+ "TimeDisplayed1": "2024-02-26 12:00:05",
+ "ClockStatus": "Break",
+ "Note": "Forgot to clock in this morning.",
+ "TimeEntered2": "2024-02-26 12:33:18",
+ "TimeDisplayed2": "2024-02-26 12:33:18",
+ "OTimeHours": "-01:00:00",
+ "OTimeAuto": "00:00:00",
+ "Adjust": "00:00:00",
+ "AdjustAuto": "00:03:13",
+ "AdjustIsOverridden": "false",
+ "Rate2Hours": "-01:00:00",
+ "Rate2Auto": "00:00:00",
+ "ClinicNum": 0,
+ "Rate3Hours": "-01:00:00",
+ "Rate3Auto": "00:00:00",
+ "IsWorkingHome": "false"
+ },
+ etc...
+ ]
+
+200 OK
+ 400 BadRequest (with explanation)
+ 404 NotFound (with explanation)

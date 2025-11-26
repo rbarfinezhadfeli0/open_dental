@@ -1,0 +1,1 @@
+If your browser does not refresh automatically, please click this link for the [Integrated Texting Q and A](https://opendental.com/help252/textmsgfaq.html).

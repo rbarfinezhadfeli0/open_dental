@@ -1,0 +1,67 @@
+Table of Contents
+
+[Help](https://www.opendental.com/site/help.html)
+
+[![Home](resources/logoWhite160.png)](../index.html)
+
+[![](resources/search.gif)](searchSite.html)
+
+API AllergyDefs
+
+See [API Specification](apispecification.html)
+
+Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.
+ See [AllergyDef Database Schema.](SchemaRedirect%EF%B9%96allergydef.html)
+
+## AllergyDefs GET
+
+Version Added: 21.3
+
+Gets a list of all allergies that that are assigned to patients.
+
+Rarely used. Usually just use Allergies GET and POST.
+
+**Example Requests:**
+ GET /allergydefs
+ GET /allergydefs?Offset=200
+
+**Example Response:**
+ [
+ {
+ "AllergyDefNum": 44,
+ "Description ": "Allergy - Phentermine",
+ "IsHidden": "false",
+ "DateTStamp": "2020-07-17 02:45:38",
+ "SnomedType": "",
+ "MedicationNum": 0,
+ "UniiCode": "",
+ },
+ {
+ "AllergyDefNum": 45,
+ "Description ": "Allergy - Sudogest",
+ "IsHidden": "false",
+ "DateTStamp": "2015-12-10 05:40:32",
+ "SnomedType": "",
+ "MedicationNum": 0,
+ "UniiCode": "",
+ },
+ etc...
+ ]
+
+## AllergyDefs POST
+
+Version Added: 21.3
+
+Inserts a single AllergyDef using a unique **Description.**
+
+Rarely used. Usually just use Allergies GET and POST.
+
+**Example Request:**
+ POST /allergydefs
+
+{
+ "Description": "Tylenol"
+ }
+
+**Example Response:** 201 Created
+ 400 BadRequest "Description is required" or "An AllergyDef with that name already exists".

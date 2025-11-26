@@ -1,0 +1,107 @@
+Table of Contents
+
+[Manual](manual.html)
+
+[![Home](resources/logoWhite160.png)](../index.html)
+
+Manual
+v24.3 betav24.2v24.1v23.3v23.2v23.1v22.4v22.3v22.2v22.1v21.4v21.3v21.2v21.1v20.5v20.4v20.3v20.2v20.1v19.4v19.3v19.2v19.1v18.4v18.3v18.2v18.1v17.4
+
+[![](resources/home.gif)](manual.html) [![](resources/search.gif)
+
+Search](searchmanual.html)
+
+Host Multiple Databases from One Web Server
+
+See [Advanced Topics](advancedtopics.html).
+
+One data center might want to host databases for multiple Open Dental customers. These databases may be on the same physical machine if care is taken to isolate the customers from having access to each other's data.
+
+Also see: [Multiple Locations](multiplelocations.html)
+
+## Web Server
+
+We do not recommend hosting multiple databases from one web server (e.g., third-party hosted server, such as Amazon RDS) unless a capable IT in involved and they fully understand what is required during updates.
+
+1. In IIS, create a New Application on the desired web site.
+2. Copy all files from the Open Dental installation directory into the root of the new application.
+3. Edit the OpenDentalServerConfig.xml to point to a different location.
+
+## Virtual Machine
+
+The current recommendation is for each customer to have a separate virtual machine (VM) with its own instance of MySQL and its own A to Z folders. There can be some economies of scale compared to a traditional server because multiple customers can share the same hardware. There are also some advantages in disaster recovery because a VM can be easily moved to a different physical server.
+
+## Connection Security
+
+When clients connect to the server over the internet, the data must be encrypted. The current recommendation is for the VM to be connected to the physical office by VPN.
+
+## Workstation Connections
+
+The three workstation connection options are direct, RDP, or [Middle Tier](middletier.html). This still applies to multi-tenant scenarios, so the workstation connections must be considered as part of the complete solution.
+
+## MySQL Security
+
+A different MySQL User will need to be set up for each customer ([MySQL Security](securitymysql.html)). If, for example, a customer database is called od\_springfield\_4932, then, then set up the MySQL user for that customer to have full access to od\_springfield\_4932\*. Notice the \* wild card character. This allows Open Dental to make backups of the database during the update process. The MySQL user must also have full privileges, including create table and drop table.
+
+If wanting to work from particular devices or IP address ranges. Information about setting up usernames for specific devices or network segments is available in the [MySQL Documentation](https://dev.mysql.com/doc/refman/5.6/en/account-names.html) or [MariaDB Documentation](https://mariadb.com/kb/en/create-user/) . Open Dental does not provide advice or direct support on setting up usernames for particular devices or network segments. Open Dental is functional as long as the specified MySQL user has the correct (full) permission set.
+
+## HL7 Service
+
+If the customers are bridging to eCW using HL7 ([eClinicalWorks HL7](hl7ecw.html)), multiple instances of the HL7 service will need to be set up, each with a different service name, exe folder, FreeDentalConfig.xml file, and database connection. Different customers may be on different versions of Open Dental. Each HL7 service can be shut down independently as needed.
+
+## HL7 TCP/IP
+
+We recommend HL7 TCP/IP ports instead of HL7 folders. This will eliminate any HL7 folder sharing issues ([Generic HL7](hl7.html)).
+
+## Multiple Databases on One Server
+
+Each database will require it's own [A to Z Folder](atozfolder.html). See [Paths](paths.html) for more information.
+
+## Updating with Multiple Middle Tiers
+
+Different versions of the [Middle Tier](middletier.html) can be hosted on one server.
+
+## Updating with Multiple Middle Tiers: Option 1
+
+**Multiple Open Dental Directories**
+
+1. Stop all *OpenDent* services. (OpenDentalServices and OpenDentalEConnectors; actual service names may vary).
+2. Launch Open Dental as administrator from a directory that was not already updated.
+3. Connect to whichever database is linked to that folder. (i.e., If the folder is for Dr. X, connect to Dr. X's database).
+4. Select OK when UpdateFileCopier asks to update your version of Open Dental.
+5. Repeat steps 1-3 for each additional Open Dental Directory.
+
+The UpdateFileCopier does not copy over the OpenDentalEConnector or OpenDentalService folders, so go through the steps for Multiple eConnector Folders below.
+
+**Multiple eConnector Folders**
+
+1. Stop all *OpenDent* services. OpenDentalServices and OpenDentalEConnectors; actual service names may vary.
+2. Launch any Open Dental and follow the normal Update process. Make note of which Open Dental directory is being updated.
+3. Copy the contents (Except the OpenDentWebConfig.xml and Logger folder) of the OpenDentalEConnector folder from the default Open Dental directory.
+    (e.g., C:\Program Files (x86)\Open Dental\OpenDentalEConnector).
+4. Browse to the OpenDentalEConnector folder in the new Open Dental Directory.
+    (e.g., C:\Program Files (x86)\Open Dental\OpenDentalEConnector\_DrX\ or \Open Dental DrX\OpenDentalEConnector\).
+5. Make a copy of the config file (hold 'Ctrl' and drag it lower in the same folder) and rename it to prevent accidental loss of vital setup information.
+    (e.g., OpenDentalWebConfig\_bak.xml).
+6. Paste the contents from the default eConnector folder into this one and allow it to replace the files when prompted.
+7. Uninstall (if applicable) then reinstall each Open Dental Service and eConnector. Make sure to use the same naming convention you took note of when you uninstalled all the eConnectors and Open Dental Services.
+8. Repeat these steps for the OpenDentalService(s) as well.
+9. Start all *OpenDent* services and all of the services that were stopped in Update all databases, Step 1.
+
+## Updating with Multiple Middle Tiers: Option 2
+
+For advanced IT professionals only.
+
+**Multiple Open Dental Directories**
+
+1. Check to make sure all services are stopped. You may need to disable the services if you have a Task Scheduler to start the service if stopped.
+2. Using 7zip, extract the opendental.msi from the Setup File or download the MSI directly from the Setup, Update, Download MSI.
+3. Use msiexec.exe in an elevated command line to install the MSI to a separate folder: msiexec /a C:\TempOD\opendental.msi /quiet /qn TARGETDIR="C:\TempOD\OD"
+4. Copy the entire contents from the C:\TempOD\OD\Program Files\Open Dental\ to each directory where Open Dental is currently installed.
+
+**Multiple eConnector Folders**
+
+1. Check to make sure all Services are stopped. You may need to disable the services if you have a Task Scheduler to start the service if stopped.
+2. Using 7zip, extract the opendental.msi from the Setup File or download the MSI directly from the Setup, Update, Download MSI.
+3. Use msiexec.exe in an elevated command line to install the MSI to a separate folder: msiexec /a C:\TempOD\opendental.msi /quiet /qn TARGETDIR="C:\TempOD\OD"
+4. Copy the entire contents from the C:\TempOD\OD\Program Files\Open Dental\eConnector to each directory where the service program is installed.

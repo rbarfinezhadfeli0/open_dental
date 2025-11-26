@@ -1,0 +1,162 @@
+Table of Contents
+
+[Help](https://www.opendental.com/site/help.html)
+
+[![Home](resources/logoWhite160.png)](../index.html)
+
+[![](resources/search.gif)](searchSite.html)
+
+API CovCats
+
+See [API Specification](apispecification.html)
+
+See [Insurance Categories](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7inscatssetup.html) for additional information.
+
+Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.
+ See [CovCat Database Schema.](SchemaRedirect%EF%B9%96covcat.html)
+
+## CovCats GET (single)
+
+Version Added: 23.3.8
+
+Gets a single covcat.
+
+**Parameters:**
+
+**CovCatNum:**  Required in the URL.
+
+**Example Request:**
+ GET /covcats/1
+
+**Example Response:**
+
+{
+ "CovCatNum": 1,
+ "Description": "General",
+ "DefaultPercent": -1,
+ "CovOrder": 0,
+ "IsHidden": "false",
+ "EbenefitCat": "General"
+ }
+
+200 OK
+ 404 NotFound (with explanation)
+
+## CovCats GET (multiple)
+
+Version Added: 23.3.8
+
+Gets a list of covcats.
+
+**Example Request:**
+ GET /covcats
+
+**Example Response:**
+
+[
+ {
+ "CovCatNum": 1,
+ "Description": "General",
+ "DefaultPercent": -1,
+ "CovOrder": 0,
+ "IsHidden": "false",
+ "EbenefitCat": "General"
+ },
+ {
+ "CovCatNum": 2,
+ "Description": "Diagnostic",
+ "DefaultPercent": 100,
+ "CovOrder": 1,
+ "IsHidden": "false",
+ "EbenefitCat": "Diagnostic"
+ },
+ {
+ "CovCatNum": 3,
+ "Description": "Preventive",
+ "DefaultPercent": 100,
+ "CovOrder": 3,
+ "IsHidden": "false",
+ "EbenefitCat": "RoutinePreventive"
+ },
+ etc.
+ ]
+
+200 OK
+
+## CovCats POST (create)
+
+Version Added: 24.1.24
+
+Creates a covcat. Do not alter [Insurance Categories](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7inscatssetup.html) without a full understanding of what this does as insurance categories are global and changes may affect all plans.
+
+One of each Electronic Benefit Category (**EbenefitCat**) must be assigned to a corresponding coverage category. There can be no duplicates and no missing categories in order for Open Dental [Benefit Processing](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7benefitinfo.html) and [Electronic Eligibility and Benefits](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7ebenefits.html) to function properly.
+
+**Description:** Required. Description of this category.
+**DefaultPercent:** Optional. Coverage percentage assigned to category when creating a new [Insurance Plan](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7insplan.html). Integer between -1 and 100. Specifying -1 will not apply a percentage. Default -1.
+**IsHidden:** Optional. Either "true" or "false". Default "false".
+**EbenefitCat:** Optional. Either "None", "General", "Diagnostic", "Periodontics", "Restorative", "Endodontics", "MaxillofacialProsth", "Crowns", "Accident", "Orthodontics", "Prosthodontics", "OralSurgery", "RoutinePreventive", "DiagnosticXRay", or "Adjunctive". Default "None".
+
+**Example Request:**
+ POST /covcats
+
+{
+ "Description": "Implants",
+ "DefaultPercent": 80,
+ "IsHidden": "false",
+ "EbenefitCat": "None"
+ }
+
+**Example Response:**
+ {
+ "CovCatNum": 25,
+ "Description": "Implants",
+ "DefaultPercent": 80,
+ "CovOrder": 16,
+ "IsHidden": "false",
+ "EbenefitCat": "None"
+ }
+
+201 Created
+ 400 BadRequest (with explanation)
+ 404 NotFound (with explanation)
+
+## CovCats PUT (update)
+
+Version Added: 24.1.24
+
+Updates a covcat. This does affect all benefits that are currently tied to this CovCat.
+
+CovOrder is important as multiple benefits can apply to a single procedure code. If some benefits are of the same type, there is a hierarchy to determine which benefits affect insurance estimates. See the [Benefit Hierarchy](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7benefitinfo.html) section for more information.
+
+**CovCatNum:** Required in the URL.
+
+**Description:** Description of this category.
+**DefaultPercent:** Coverage percentage assigned to category when creating a new [Insurance Plan](../autoLogin.aspx%EF%B9%96ReturnUrl%3D%EA%A4%B7help253%EA%A4%B7insplan.html). Integer between -1 and 100. Specifying -1 will not apply a percentage.
+**CovOrder:** The order in which the categories are displayed. CovCats with a lower CovOrder are more general, while CovCats with a higher CovOrder will have priority and override the lower categories.
+**IsHidden:** Either "true" or "false".
+**EbenefitCat:** Either "None", "General", "Diagnostic", "Periodontics", "Restorative", "Endodontics", "MaxillofacialProsth", "Crowns", "Accident", "Orthodontics", "Prosthodontics", "OralSurgery", "RoutinePreventive", "DiagnosticXRay", or "Adjunctive".
+
+**Example Request:**
+ PUT /covcats/34
+
+{
+ "Description": "Sealants",
+ "DefaultPercent": 80,
+ "CovOrder": 17,
+ "IsHidden": "false",
+ "EbenefitCat": "None"
+ }
+
+**Example Response:**
+ {
+ "CovCatNum": 34,
+ "Description": "Sealants",
+ "DefaultPercent": 80,
+ "CovOrder": 17,
+ "IsHidden": "false",
+ "EbenefitCat": "None"
+ }
+
+200 OK
+ 400 BadRequest (with explanation)
+ 404 NotFound (with explanation)

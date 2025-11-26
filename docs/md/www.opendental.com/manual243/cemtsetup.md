@@ -1,0 +1,1 @@
+If your browser does not refresh automatically, please click this link for [CEMT Setup](https://opendental.com/site/cemtsetup.html).
