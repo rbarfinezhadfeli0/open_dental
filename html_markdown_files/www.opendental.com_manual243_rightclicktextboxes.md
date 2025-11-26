@@ -1,0 +1,66 @@
+# File: ./www.opendental.com/manual243/rightclicktextboxes.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Right Click Text Box</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('rightclicktextboxes','procedureedit','entertreatment','+chartTabs','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/rightclicktextboxes.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/rightclicktextboxes.html" >v24.2</option><option value="https://www.opendental.com/manual241/rightclicktextboxes.html" >v24.1</option><option value="https://www.opendental.com/manual233/rightclicktextboxes.html" >v23.3</option><option value="https://www.opendental.com/manual232/rightclicktextboxes.html" >v23.2</option><option value="https://www.opendental.com/manual231/rightclicktextboxes.html" >v23.1</option><option value="https://www.opendental.com/manual224/rightclicktextboxes.html" >v22.4</option><option value="https://www.opendental.com/manual223/rightclicktextboxes.html" >v22.3</option><option value="https://www.opendental.com/manual222/rightclicktextboxes.html" >v22.2</option><option value="https://www.opendental.com/manual221/rightclicktextboxes.html" >v22.1</option><option value="https://www.opendental.com/manual214/rightclicktextboxes.html" >v21.4</option><option value="https://www.opendental.com/manual213/rightclicktextboxes.html" >v21.3</option><option value="https://www.opendental.com/manual212/rightclicktextboxes.html" >v21.2</option><option value="https://www.opendental.com/manual211/rightclicktextboxes.html" >v21.1</option><option value="https://www.opendental.com/manual205/rightclicktextboxes.html" >v20.5</option><option value="https://www.opendental.com/manual204/rightclicktextboxes.html" >v20.4</option><option value="https://www.opendental.com/manual203/rightclicktextboxes.html" >v20.3</option><option value="https://www.opendental.com/manual202/rightclicktextboxes.html" >v20.2</option><option value="https://www.opendental.com/manual201/rightclicktextboxes.html" >v20.1</option><option value="https://www.opendental.com/manual194/rightclicktextboxes.html" >v19.4</option><option value="https://www.opendental.com/manual193/rightclicktextboxes.html" >v19.3</option><option value="https://www.opendental.com/manual192/rightclicktextboxes.html" >v19.2</option><option value="https://www.opendental.com/manual191/rightclicktextboxes.html" >v19.1</option><option value="https://www.opendental.com/manual184/rightclicktextboxes.html" >v18.4</option><option value="https://www.opendental.com/manual183/rightclicktextboxes.html" >v18.3</option><option value="https://www.opendental.com/manual182/rightclicktextboxes.html" >v18.2</option><option value="https://www.opendental.com/manual181/rightclicktextboxes.html" >v18.1</option><option value="https://www.opendental.com/manual174/rightclicktextboxes.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Right Click Text Box</p></div>
+<div class="GeneralPageContent">
+<p>Right-click options are supported in various text boxes throughout Open Dental allowing users to insert Quick Paste Notes, spellcheck, and more.</p>
+<p>In <a href="procedureedit.html">Procedure Notes</a>, right-click.</p>
+<img src="images/rightclick.png" width="529" height="365"/><p>If a text box supports right-click options, this is notated on its respective manual page.</p>
+<p><h2>Options</h2>
+</p>
+<p>Below are standard right-click options for right-click-enabled text boxes. If additional options exist for a text box (e.g., <a href="queryoverview.html">User Query</a>, text box), these are notated on the manual page for the window the text box appears.</p>
+<p class="MarginBottomZero">If <a href="spellcheck.html">Spell Check</a> is enabled, the following options appear when right-clicking a misspelled (underlined in red) word. </p>
+<ul class="MarginBottomGap">
+<li><b>Suggestions</b></li>
+<li><b>Add to Dictionary</b></li>
+<li>Disable Spell Check</li>
+</ul>
+<p class="MarginBottomZero"><b>Insert Date</b>: Add the current date to the text box. Additionally, the current date can be added using the following methods: </p>
+<ul class="MarginBottomGap">
+<li>CTRL + D keyboard shortcut.</li>
+<li>Click <b>Date</b> in the Quick Paste Notes window.</li>
+</ul>
+<p><b>Insert Quick Paste Note</b>: Open <a href="quickpastenotessetup.html">Quick Paste Notes</a> window to select an option to insert into the text box.</p>
+<p><b>Insert Auto Note</b>: Open <a href="autonotes.html">Auto Notes</a> window to select an option to insert into the text box. Not available for all right-click-enabled text boxes. </p>
+<p><b>Cut</b>: Highlight text before right-clicking and click to remove from the text box.</p>
+<p><b>Copy</b>: Highlight text before right-clicking and click to add to the clipboard.</p>
+<p><b>Paste</b>: Add text from clipboard to text box.</p>
+</div>
+</div>
+</body>
+</html>```

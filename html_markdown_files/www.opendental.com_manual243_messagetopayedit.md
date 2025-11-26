@@ -1,0 +1,60 @@
+# File: ./www.opendental.com/manual243/messagetopayedit.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Message-to-Pay Edit</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('messagetopayedit','payment','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/messagetopayedit.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/messagetopayedit.html" >v24.2</option><option value="https://www.opendental.com/manual241/messagetopayedit.html" >v24.1</option><option value="https://www.opendental.com/manual233/messagetopayedit.html" >v23.3</option><option value="https://www.opendental.com/manual232/messagetopayedit.html" >v23.2</option><option value="https://www.opendental.com/manual231/messagetopayedit.html" >v23.1</option><option value="https://www.opendental.com/manual224/messagetopayedit.html" >v22.4</option><option value="https://www.opendental.com/manual223/messagetopayedit.html" >v22.3</option><option value="https://www.opendental.com/manual222/messagetopayedit.html" >v22.2</option><option value="https://www.opendental.com/manual221/messagetopayedit.html" >v22.1</option><option value="https://www.opendental.com/manual214/messagetopayedit.html" >v21.4</option><option value="https://www.opendental.com/manual213/messagetopayedit.html" >v21.3</option><option value="https://www.opendental.com/manual212/messagetopayedit.html" >v21.2</option><option value="https://www.opendental.com/manual211/messagetopayedit.html" >v21.1</option><option value="https://www.opendental.com/manual205/messagetopayedit.html" >v20.5</option><option value="https://www.opendental.com/manual204/messagetopayedit.html" >v20.4</option><option value="https://www.opendental.com/manual203/messagetopayedit.html" >v20.3</option><option value="https://www.opendental.com/manual202/messagetopayedit.html" >v20.2</option><option value="https://www.opendental.com/manual201/messagetopayedit.html" >v20.1</option><option value="https://www.opendental.com/manual194/messagetopayedit.html" >v19.4</option><option value="https://www.opendental.com/manual193/messagetopayedit.html" >v19.3</option><option value="https://www.opendental.com/manual192/messagetopayedit.html" >v19.2</option><option value="https://www.opendental.com/manual191/messagetopayedit.html" >v19.1</option><option value="https://www.opendental.com/manual184/messagetopayedit.html" >v18.4</option><option value="https://www.opendental.com/manual183/messagetopayedit.html" >v18.3</option><option value="https://www.opendental.com/manual182/messagetopayedit.html" >v18.2</option><option value="https://www.opendental.com/manual181/messagetopayedit.html" >v18.1</option><option value="https://www.opendental.com/manual174/messagetopayedit.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+		<div class="TopBar2"><p>Message-to-Pay Edit</p></div>
+		<div class="GeneralPageContent">
+<p>Send messages via text or email to a patient with a direct link to the Payment Portal.</p>
+<p>In the <a href="account.html">Account Module</a>, Payment dropdown, click <b>Send Message-to-Pay</b>.</p>
+<img src="images/msgToPayEdit.png"/><p>When using the <a href="portalpaymentsbypatient.html">Payment Portal</a>, Message-to-Pay allows a patient to quickly make a payment without needing to log into the Patient Portal. See <a href="messagetopaysees.html">Message-to-Pay: What Patient Sees</a> for more details.</p>
+<p class="MarginBottomZero">Statement Type: Select what information to include on the statement. </p>
+<ul class="MarginBottomGap">
+<li>Family: Send statement information for all family members. </li>
+<li>Patient Only: Send statement information for the selected patient only.</li>
+</ul>
+<p class="MarginBottomZero">Select one or both options to send a Message-to-Pay link. Text and email messages display beneath their respective boxes. Customize the default messages in <a href="paymentportalsetup.html">Payment Portal Setup</a>. Messages can be manually altered on a per-patient basis.  </p>
+<ul class="MarginBottomGap">
+<li><b>Send Email</b>: Send the patient an email message. A default email address must be enabled for the practice or clinic. Edit the email Subject as needed.</li>
+<li><b>Send Text</b>: Send the patient a text message. Only available when integrated texting is enabled and the patient allows text messages.</li>
+</ul>
+<p><b>Edit Email Message</b>: Click to open the <a href="emailhtml.html">HTML Email</a> Edit window. </p>
+<p><b>Preview Statement</b>: Click to preview the statement before sending.</p>
+<p><b>Send</b>: Click to send the message. A statement is immediately generated and can be viewed in the patient's account. The statement details use options found in <a href="billingdefaults.html">Billing Defaults</a>.</p> 
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,92 @@
+# File: ./www.opendental.com/site/cancel.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: Cancel Support</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>Cancel Support</h1>
+		</div>
+		<div id="Content">
+<p>See <a href="fees.html">Fees</a>.</p>
+<h2>Users on support receive the following benefits:</h2>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Telephone, email, and chat support</li>
+<li>Software updates, bug fixes, and new features as new versions are released</li>
+<li>The Acquire and Video Capture Imaging Module features </li>
+<li><a href="webforms.html">Web Forms</a></li>
+<li><a href="patientportal.html">Patient Portal</a></li>
+<li><a href="paymentportal.html">Payment Portal Feature</a></li>
+<li>Emailed eReminders </li>
+<li>Emailed Automated Thank-You Messages</li>
+<li>Emailed General Messages</li>
+<li>Access to <a href="helpfeature.html">Help Feature</a></li>
+</ul>
+<p>If a user chooses to cancel Open Dental support, access to the above items will no longer be available.</p>
+<p>Users on support also have the option to purchase additional services such as the eServices, eRx, online trainings, and more.</p>
+<h2>To cancel Open Dental support:</h2>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Please <a href="contact.html">Contact Us</a> by phone. You will receive a confirmation email for your records.</li>
+<li>Users must have completed the initial 12 month support period.</li>
+<li>Users cannot be sharing a database with other locations that remain on support and are able to receive software updates (e.g., using replication, remote desktop/ remote app server, middle tier).</li>
+</ul>
+<p>Any discounts earned while on support will be lost when support is cancelled. </p>
+<p class="MarginBottomZero">Users not on support have two options when support is needed: </p>
+<ul class="MarginBottomGap">
+<li>Reinstate support for a minimum of three months. Support will be reinstated at the current pricing listed. Any previous discounts will no longer be valid.</li>
+<li>Incident support. Users may pay a one-time incident support fee. </li>
+</ul>
+<p>You may continue to use Electronic Prescriptions (eRx) and Integrated Texting if support is cancelled, although increased usage charges may apply. </p>
+<p><b>To cancel eRx, see </b><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7erxdisable.html">Disabling eRx</a>.</p>
+<p><b>To cancel eServices, see the </b><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7eservicessignup.html">eService Portal</a>.</p>
+<p><b>To cancel Open Dental Cloud:</b></p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Please <a href="contact.html">Contact Us</a>. You will receive a confirmation email for your records.</li>
+<li>Users will be converted to the local network version of Open Dental. We will assist in moving the data back to a local server. This process could take multiple days.</li>
+<li>If reverting back to a self-hosted version of Open Dental, the current monthy Open Dental Support <a href="fees.html">Fees</a> apply.</li>
+</ul>
+
+</div>	
+	</div>
+</body>
+</html>```

@@ -1,0 +1,86 @@
+# File: ./www.opendental.com/manual/textintegratedtroubleshooting.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Integrated Texting Troubleshooting</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('textintegratedtroubleshooting','textintegratedusage','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/textintegratedtroubleshooting.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/textintegratedtroubleshooting.html" >v24.2</option><option value="https://www.opendental.com/manual241/textintegratedtroubleshooting.html" >v24.1</option><option value="https://www.opendental.com/manual233/textintegratedtroubleshooting.html" >v23.3</option><option value="https://www.opendental.com/manual232/textintegratedtroubleshooting.html" >v23.2</option><option value="https://www.opendental.com/manual231/textintegratedtroubleshooting.html" >v23.1</option><option value="https://www.opendental.com/manual224/textintegratedtroubleshooting.html" >v22.4</option><option value="https://www.opendental.com/manual223/textintegratedtroubleshooting.html" >v22.3</option><option value="https://www.opendental.com/manual222/textintegratedtroubleshooting.html" >v22.2</option><option value="https://www.opendental.com/manual221/textintegratedtroubleshooting.html" >v22.1</option><option value="https://www.opendental.com/manual214/textintegratedtroubleshooting.html" >v21.4</option><option value="https://www.opendental.com/manual213/textintegratedtroubleshooting.html" >v21.3</option><option value="https://www.opendental.com/manual212/textintegratedtroubleshooting.html" >v21.2</option><option value="https://www.opendental.com/manual211/textintegratedtroubleshooting.html" >v21.1</option><option value="https://www.opendental.com/manual205/textintegratedtroubleshooting.html" >v20.5</option><option value="https://www.opendental.com/manual204/textintegratedtroubleshooting.html" >v20.4</option><option value="https://www.opendental.com/manual203/textintegratedtroubleshooting.html" >v20.3</option><option value="https://www.opendental.com/manual202/textintegratedtroubleshooting.html" >v20.2</option><option value="https://www.opendental.com/manual201/textintegratedtroubleshooting.html" >v20.1</option><option value="https://www.opendental.com/manual194/textintegratedtroubleshooting.html" >v19.4</option><option value="https://www.opendental.com/manual193/textintegratedtroubleshooting.html" >v19.3</option><option value="https://www.opendental.com/manual192/textintegratedtroubleshooting.html" >v19.2</option><option value="https://www.opendental.com/manual191/textintegratedtroubleshooting.html" >v19.1</option><option value="https://www.opendental.com/manual184/textintegratedtroubleshooting.html" >v18.4</option><option value="https://www.opendental.com/manual183/textintegratedtroubleshooting.html" >v18.3</option><option value="https://www.opendental.com/manual182/textintegratedtroubleshooting.html" >v18.2</option><option value="https://www.opendental.com/manual181/textintegratedtroubleshooting.html" >v18.1</option><option value="https://www.opendental.com/manual174/textintegratedtroubleshooting.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Integrated Texting Troubleshooting</p></div>
+<div class="GeneralPageContent">
+<p>Below is some general help if you experience issues with <a href="textintegratedusage.html">Integrated Texting</a>.</p>
+<p class="MarginBottomZero">Other resources: </p>
+<ul class="MarginBottomGap">
+<li><a href="eservicestroubleshooting.html">General eServices Troubleshooting</a></li>
+<li><a href="eremindertroubleshooting.html">eReminder and eConfirmation Troubleshooting</a></li>
+<li><a href="webschedtroubleshooting.html">Web Sched Troubleshooting</a></li>
+<li><a href="appointmenttexts.html">Appointment Texts</a></li>
+</ul>
+<p><b>Problem: Text messages show a status of <i>Pending</i>.</b></p>
+<p class="MarginBottomZero">It is likely the eConnector was down when texts were first sent.  </p>
+<ol class="MarginBottomGap">
+<li>Go to eServices, eConnector.</li>
+<li>Acknowledge any errors. </li>
+<li>Refresh the eConnector.</li>
+</ol>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>If no errors show and the eConnector status is working, then the text messages have gone through.</li>
+<li>If the eConnector still has an error, contact Support for assistance or see <a href="eservicestroubleshooting.html">eServices Troubleshooting</a>.</li>
+</ul>
+<p>There is a waiting period when an office switches to a landline number. Texts will have a pending status until the number has been confirmed by Open Dental HQ.</p>
+<p>Text messages may continue to show a status of Pending, even if they have successfully sent.</p>
+<p><b>Problem: Patients aren't receiving text messages.</b></p>
+<p class="MarginBottomZero">Suggestions: </p>
+<ul class="MarginBottomGap">
+<li>First send yourself a test text message.</li>
+<li>If the message to yourself does not go through, contact support. If it does goes through, send the patient another text message to ensure it wasn't a temporary issue.</li>
+<li>If the patient still doesn't receive the message, contact support for further troubleshooting.</li>
+</ul>
+<p><b>Some text messages have a status of failed or I received a text stating "Delivery Failure Receipt." What do I need to do?</b></p>
+<p class="MarginBottomZero">It's likely you tried to send a message to a recipient (patient) with an invalid wireless phone in Edit Patient Information. The common causes for this are: </p>
+<ul class="MarginBottomGap">
+<li>Recipient phone is a landline.</li>
+<li>Recipient country code and/or area code are incorrect.</li>
+<li>Recipient country code is not eligible to receive messages from this practice.</li>
+<li>Patient phone number is formatted incorrectly.</li>
+</ul>
+<p>To fix this, edit the patient's wireless phone and try again. If you receive these error messages frequently and are unable to fix the issue, please contact support.</p>
+<p><b>Problem: Can't delete text message commlog.</b></p>
+<p>Information: Commlogs are created whenever a text is sent or received. Sent text commlogs can be deleted, however received text commlogs cannot because they are directly tied to the received text.</p>
+<p><b>Problem: Some manual text messages are not delivered to the patient.</b></p>
+<p>Manual text messages that include URLs (e.g., webform links) can be blocked by the carrier. Links should only be sent if they are generated and sent by the Open Dental <a href="../site/ereminders.html">Automated Messaging Feature</a> (e.g., Web Sched).</p>
+</div>
+</div>
+</body>
+</html>```

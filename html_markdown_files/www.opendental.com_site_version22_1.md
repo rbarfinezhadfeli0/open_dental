@@ -1,0 +1,149 @@
+# File: ./www.opendental.com/site/version22_1.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Version 22.1</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('version22_1','versions','advancedtopics','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Version 22.1</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="versions.html">Versions</a>.</p>
+<p>Version 22.1 was released on 06/01/2022. </p>
+<p><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> Overview of <a href="https://youtu.be/xjoAXkSrYtA">Version 22.1</a>.</p>
+<h2>Major Changes</h2>
+<p class="MarginBottomZero"><b>Create perio charts with default probe measurements</b></p>
+<ul class="MarginBottomGap">
+<li>Quickly create a default perio chart. Insert the default when charting for a patient, then make changes to the patient as needed. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7perio.html">Perio Chart</a></li>
+</ul>
+<p class="MarginBottomZero"><b>eClipboard enhancements</b></p>
+<ul class="MarginBottomGap">
+<li>Set frequencies for images on eClipboard. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7eclipboardsetup.html">eClipboard Setup</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7eclipboardimages.html">eClipboard Images</a></li>
+<li>Updating sheets prompts user when sheet is in use with eClipboard. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7sheetsetup.html">Edit Sheet Def</a></li>
+<li>eClipboard confirmation warning when a patient is loaded to a device in use. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7eclipboardtroubleshooting.html">eClipboard Troubleshooting</a></li>
+</ul>
+<h2>Changes by Category</h2>
+<p class="MarginBottomZero"><b>Account Module</b></p>
+<ul class="MarginBottomGap">
+<li>Account Module Preference to prevent changes to existing transactions. <a href="https://www.opendental.com/manual221/modulesetupaccount.html">Account Module Preferences</a></li>
+<li>New Allocations preference: <i>Adjustments offset each other</i>. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7allocationssetup.html">Allocations Setup</a></li>
+<li>Preference to remove Do Nothing option from Secondary Claim prompt. <a href="https://www.opendental.com/manual221/modulesetupaccount.html">Account Module Preferences</a></li>
+</ul>
+<p class="MarginBottomZero"><b>eServices</b></p>
+<ul class="MarginBottomGap">
+<li>Patient Portal uses Providers preferred name. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7providerseditwindow.html">Provider</a></li>
+<li>Web Sched uses Providers preferred name. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7providerseditwindow.html">Provider</a></li>
+<li>Web Sched Existing Patient allows patients with disabled recall to schedule a recall appointment. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webschedexistingpatsetup.html">Web Sched Existing Patient</a></li>
+<li>Audit trail entry when logging off Open Dental Mobile. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7audittrail.html">Audit Trail</a></li>
+<li>Audit trail entry when editing patient in Open Dental Mobile. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7audittrail.html">Audit Trail</a></li>
+<li>Added Patient Fields to Open Dental Mobile. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7appointmentvieweditwindow.html">Appointment View Edit</a></li>
+<li>Added Appointment Fields to Open Dental Mobile. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7appointmentvieweditwindow.html">Appointment View Edit</a></li>
+<li>Appointment View options for Open Dental Mobile. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7appointmentvieweditwindow.html">Appointment View Edit</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7opendentalmobileappts.html">ODMobile Appointments</a></li>
+<li>Updated wording of Secure Email notification.<a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7secureemailworkflow.html">Secure Email: Workflow</a></li>
+<li>General Messages consider appointment confirmations status. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7automatedmessagingadvanced.html">Automated Messaging Advanced Settings</a></li>
+<li>Copy phone numbers from Open Dental Mobile. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7opendentalmobilepatients.html">ODMobile Patients</a></li>
+<li>Disable card selector in eClipboard if no cards are present when making a payment. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7eclipboardpayment.html">eClipboard: Payment</a></li>
+<li>Secure Email allows attachments in replies. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7secureemailworkflow.html">Secure Email: Workflow</a></li>
+<li>Enhanced Mass Email logic so only one email is sent when two or more patients share an email address. <a href="https://www.opendental.com/manual221/massemailworkflow.html">Mass Email Workflow</a></li>
+<li>Prevent a mass email from being sent more than once in a 31-day period to the same email address. (Affects all versions). <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7advertisingselectpatients.html">Advertising - Select Patients</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Family Module</b></p>
+<ul class="MarginBottomGap">
+<li>Popups default Level to Family. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7popups.html">Popups</a></li>
+<li>Dropping a discount plan allows user to save subscriber note to a commlog. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7discountplan.html">Discount Plan Subscriber Edit</a></li>
+<li>Patient-level overrides for Frequency Limitations. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7otherbenefits.html">Other Benefits</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Security</b></p>
+<ul class="MarginBottomGap">
+<li>New permission for <i>Carrier Edit</i>. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>Log Source added to Audit Trail to view entries made by automations. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7audittrail.html">Audit Trail</a></li>
+<li>Audit Trail permission for <i>SecurityGlobal</i>. (Also backported to 21.4.26) <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7audittrailpermissions.html">Audit Trail Permissions</a></li>
+<li>Audit trail entry when deleting a mount. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7audittrailpermissions.html">Audit Trail Permissions</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Manage Module</b></p>
+<ul class="MarginBottomGap">
+<li>Option to output clinic number on electronic billing files. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7billingdefaults.html">Billing Defaults</a></li>
+<li>Option for Task Search to include task attachments. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7tasksearch.html">Task Search</a></li>
+<li>Option to manually refresh task counts for enterprise users. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7enterprisesetup.html">Enterprise Setup</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7tasksarea.html">Tasks Area</a></li>
+<li>Determine which data to delete in Remove Old Data tool. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7removeolddata.html">Remove Old Data</a></li>
+<li>Claims Waiting to Send displays if claim is primary or secondary. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimsend.html">Send Claims</a></li>
+<li>New billing option, <i>Exclude if insurance pending __ days or less</i>. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7billing.html">Billing</a></li>
+<li>Time clock event checkbox when working from home. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7timeclockedit.html">TimeCard</a></li>
+<li>Determine where accounting attachments are saved to. <a href="https://www.opendental.com/manual221/modulesetupmanage.html">Manage Module Preferences</a></li>
+<li>Archiving a task list will automatically unsubscribe users. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7tasksarea.html">Tasks Area</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Miscellaneous</b></p>
+<ul class="MarginBottomGap">
+<li>Clearinghouse option for users in Puerto Rico. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7lantek.html">Lantek</a></li>
+<li>CareCredit windows open using Open Dental instead of separate web browser. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7carecreditsetup.html">CareCredit Setup</a></li>
+<li>CareCredit, do not send requests when Merchant ID is closed. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7carecreditsetup.html">CareCredit Setup</a></li>
+<li>CareCredit Transactions window displays information when Merchant ID is closed. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7carecredittransactions.html">CareCredit Transactions</a></li>
+<li>Determine maximum number of automatic reminders for recall. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7recallsetup.html">Setup Recall</a></li>
+<li>Delete or acknowledge multiple alerts at once. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7alerts.html">Alerts</a></li>
+<li>Option to exclude other coverage on primary claims. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7insfilingcodes.html">Insurance Filing Codes</a></li>
+<li>Open Dental Cloud allows using PDF Toolbar in Imaging Module. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7images.html">Imaging Module</a></li>
+<li>Clear Query Feed content on Query Monitor. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7querymonitor.html">Query Monitor</a></li>
+<li>Query Monitor and Payload Monitor added to CEMT. <a href="central.html">Central Enterprise Management Tool ( CEMT )</a></li>
+<li>Bridge to Medit Link. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7bridgemeditlink.html">Medit Link Bridge</a></li>
+<li>Service Manager includes MySQL. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7servicemanager.html">Service Manager</a></li>
+<li>Sched Patient and Sched Family buttons in Recall List now jump to recall due date. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7recalllist.html">Recall List</a></li>
+<li>Enhanced web form retrieval for large batches. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webformsretrieve.html">Web Forms Retrieve</a></li>
+<li>Simplified adding additional forms to a Web Form URL. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webformsupload.html">Web Form Setup</a></li>
+<li>Copy new fields to language translations on sheets. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7sheetsetup.html">Edit Sheet Def</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7sheetsetuplanguage.html">Language Translations for Sheets</a></li>
+<li>Label setting in sheets moved to Sheet Defaults. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7sheetdefaults.html">Sheet Def Defaults</a></li>
+<li><i>Go To Patient</i> option added to User Queries. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7queryoverview.html">User Query</a></li>
+<li>Enterprise Preference to use primary provider's PPO fee for Hygiene procedures. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7enterprisesetup.html">Enterprise Setup</a></li>
+<li>Simplified Canada Carrier Import. <a href="canadacarriers.html">Canada Carriers</a></li>
+<li>Included warning when hiding an appointment field or patient field that is in use. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7appointmentfields.html">Appointment Field Defs</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7custompatientfields.html">Patient Fields</a></li>
+<li>Added Imaging Module preference for Apteryx XV Web users. <a href="https://www.opendental.com/manual221/modulesetupimages.html">Imaging Module Preferences</a></li>
+<li>Alerts specific to a user (e.g., WebMail) display regardless of the logged-on user's alert subscriptions. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7alerts.html">Alerts</a></li>
+<li>Clinic level override for email address alias. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7cliniceditwindow.html">Clinic</a></li>
+</ul>
+<p class="MarginBottomZero"><b>API</b>: <a href="apispecification.html">API Specification</a></p>
+<ul class="MarginBottomGap">
+<li>Recalls PUT Status to allow all RecallTypes</li>
+<li>API access for customers not on support</li>
+<li>Recalls GET List</li>
+<li>Add AppointmentType to Appointments resource.</li>
+<li>New Method ProcedureLogs DELETE</li>
+<li>New Method Subscriptions PUT</li>
+<li>New Method Procedurelogs PUT</li>
+<li>New Method Diseases PUT</li>
+<li>New Method Allergies DELETE</li>
+<li>New Method Allergies PUT</li>
+<li>New Method Diseases DELETE</li>
+</ul>
+		</div>
+	</div>
+</body>
+</html>```

@@ -1,0 +1,191 @@
+# File: ./www.opendental.com/manual232/aptedit.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Edit Appointment</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('aptedit','appointments','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/aptedit.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/aptedit.html" >v24.2</option><option value="https://www.opendental.com/manual241/aptedit.html" >v24.1</option><option value="https://www.opendental.com/manual233/aptedit.html" >v23.3</option><option value="https://www.opendental.com/manual232/aptedit.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/aptedit.html" >v23.1</option><option value="https://www.opendental.com/manual224/aptedit.html" >v22.4</option><option value="https://www.opendental.com/manual223/aptedit.html" >v22.3</option><option value="https://www.opendental.com/manual222/aptedit.html" >v22.2</option><option value="https://www.opendental.com/manual221/aptedit.html" >v22.1</option><option value="https://www.opendental.com/manual214/aptedit.html" >v21.4</option><option value="https://www.opendental.com/manual213/aptedit.html" >v21.3</option><option value="https://www.opendental.com/manual212/aptedit.html" >v21.2</option><option value="https://www.opendental.com/manual211/aptedit.html" >v21.1</option><option value="https://www.opendental.com/manual205/aptedit.html" >v20.5</option><option value="https://www.opendental.com/manual204/aptedit.html" >v20.4</option><option value="https://www.opendental.com/manual203/aptedit.html" >v20.3</option><option value="https://www.opendental.com/manual202/aptedit.html" >v20.2</option><option value="https://www.opendental.com/manual201/aptedit.html" >v20.1</option><option value="https://www.opendental.com/manual194/aptedit.html" >v19.4</option><option value="https://www.opendental.com/manual193/aptedit.html" >v19.3</option><option value="https://www.opendental.com/manual192/aptedit.html" >v19.2</option><option value="https://www.opendental.com/manual191/aptedit.html" >v19.1</option><option value="https://www.opendental.com/manual184/aptedit.html" >v18.4</option><option value="https://www.opendental.com/manual183/aptedit.html" >v18.3</option><option value="https://www.opendental.com/manual182/aptedit.html" >v18.2</option><option value="https://www.opendental.com/manual181/aptedit.html" >v18.1</option><option value="https://www.opendental.com/manual174/aptedit.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Edit Appointment</p></div>
+<div class="GeneralPageContent">
+<p>Create, edit, or update appointment details from the Edit Appointment window.</p>
+<p>In the <a href="appointments.html">Appointments Module</a>, with a patient selected, double-click on an open area to create a new Appointment.</p>
+<img src="images/apptEdit.png" width="915" height="537"/><p class="MarginBottomZero">Alternatively: </p>
+<ul class="MarginBottomGap">
+<li>In the Appointments Module, double-click an existing appointment to edit.</li>
+<li>In the Appointments Module, click Make Appt, Make Recall, or Fam Recall.</li>
+<li>In the <a href="apptspatient.html">Patient Appointments</a> window, click Copy to Pinboard, Schedule Recall, Entire Family, or Create New Appt.</li>
+<li>In the <a href="recalllist.html">Recall List</a>, <a href="unscheduled.html">Unscheduled List</a>, or <a href="appttracker.html">Planned Appointment Tracker</a>, double-click an appointment row.</li>
+<li>When using Web Sched, patients can schedule their own appointments online.</li>
+</ul>
+<p><div class="Note">Note: <ul>
+<li>When scheduling a procedure with an insurance frequency limitation, and <a href="insfrequencylimitations.html">Frequency Limitations</a> are enabled, users are warned if a frequency conflict is detected.</li>
+<li>A warning appears when scheduling an appointment for a patient who is on the <a href="unscheduled.html">Unscheduled List</a>. Users can continue to create the appointment or schedule the appointment on the Unscheduled List. </li>
+<li>To block out appointment times in Operatories, see <a href="blockouts.html">Blockouts</a>.</li>
+</ul>
+</div>
+</p>
+<h2>Title and Time Bar</h2>
+<img src="images/apptEditTitleTime.png" width="383" height="135"/><p><b>Title Bar</b>: Shows the patient name, appointment day, date, and time, and the appointment's Operatory.</p>
+<p class="MarginBottomZero"><b>Time Bar</b>: Along the left side are color-coded <a href="timebars.html">Time Bars</a> that indicate appointment length. The default appointment time is based on the procedure's time pattern. The total length of the appointment displays. </p>
+<ul class="MarginBottomGap">
+<li>To shorten or increase time, drag the slider up or down.</li>
+<li>The left column displays the primary treating provider color. When <i>Is Hygiene</i> is checked, this is the <i>Hygienist</i> color. When <i>Is Hygiene</i> is unchecked, this is the Provider (dentist) color.</li>
+<li>The middle column displays the secondary treating provider color. Click a box to assign secondary provider time. When <i>Is Hygiene</i> is checked, this is the <i>Provider</i> (dentist) color. When <i>Is Hygiene</i> is unchecked, this is the <i>Hygienist</i> color.</li>
+<li>Type into the right column to add any abbreviations to note on the appointment. Examples include assistant abbreviation assignments or symbols for any purpose.<br/><div class="Note">Note:  Because of the way these letters are stored in the database, it is assumed that <a href="appointmentviewsetup.html">Appointment View</a> time increments and rows per increment will not change.</div>
+</li>
+<li>Change the width of the Time Bar in <a href="preferences.html">Preferences</a>.</li>
+</ul>
+<h2>Patient Information and Appointment Fields</h2>
+<img src="images/apptEditPatInfoApptField.png" width="260" height="375"/><p class="MarginBottomZero"><b>Patient Information</b>: Shows basic patient information. Fields displayed cannot be customized or edited.  </p>
+<ul class="MarginBottomGap">
+<li>First Name, Last Name, Middle Initial, Birthdate, and Billing Type: Comes from the <a href="patientedit.html">Edit Patient Information</a> window.</li>
+<li>Total Balance: Current patient balance without insurance estimates or write-offs. </li>
+<li>Address and Phone Notes: Comes from the <a href="patientedit.html">Edit Patient Information</a> window.</li>
+<li>Family Balance: Current family balance after insurance estimates and write-offs. </li>
+<li>Est. Patient Portion: Patient portion for procedures attached to the appointment. Includes write-offs, insurance estimates, and treatment plan discounts. For estimates to calculate correctly the procedure must be charted procedure from the Chart Module then attached to the appointment. If procedures are added directly to the appointment, users must click into the Treatment Plan Module to update estimates.</li>
+<li>Fee this Appt: Total fee for procedures attached to the appointment. </li>
+</ul>
+<p><b>Appt Fields</b>: A list of all <a href="appointmentfields.html">Appointment Field Defs</a>. Double-click on a field to enter patient information.</p>
+<h2>Appointment Settings</h2>
+<img src="images/apptSettings1.png" width="235" height="273"/><p class="MarginBottomZero"><b>Status</b>: The appointment's current status. </p>
+<ul class="MarginBottomGap">
+<li>Scheduled: The appointment is scheduled.</li>
+<li>Complete: The appointment has been <a href="apptcomplete.html">Set Complete</a>.</li>
+<li>Unsched List: Sends an appointment to the <a href="unscheduled.html">Unscheduled List</a>. The option is disabled if the appointment is accessed from the Unscheduled List and an appointment has not been scheduled.</li>
+<li>Broken: The appointment has been <a href="apptbreak.html">Broken</a>.</li>
+</ul>
+<p><b>ASAP</b>: Marks the appointment as ASAP and add it to the <a href="asaplist.html">ASAP List</a>. This means the patients wants to come in sooner if an opening becomes available. ASAP can also be a set as a display option in <a href="appointmentviews.html">Appointment Views</a>.</p>
+<p><b>Unscheduled Status</b>: Used in the Unscheduled List, <a href="recalllist.html">Recall List</a>, and <a href="appttracker.html">Planned Appointment Tracker</a> to easily identify why an appointment has not been scheduled and determine whether to contact patient or not. Customize options in <a href="definitionsrecallunschedstatus.html">Definitions: Recall / Unsched Status</a>.</p>
+<p><b>Confirmed</b>: The <a href="confirmationstatus.html">Confirmation Status</a>. Confirmed statuses are also linked to Time Arrived, Time Seated, and Time Dismissed values (see below).</p>
+<div class="Note">Note: To also indicate confirmed status in the appointment box on the schedule, add <i>Confirmed Color</i> to the Appointment View. A small colored circle shows on the appointment box.</div>
+<br/><br/><p class="MarginBottomZero"><b>New Patient</b>: This box automatically checks on the first appointment created for a patient. When checked, <i>NP</i> shows in the upper-left corner of the appointment box on the schedule. </p>
+<ul class="MarginBottomGap">
+<li>This box can be manually unchecked at any time. </li>
+<li>This box checks by default if there is no <i>Date of First Service</i> entered in the <a href="patienteditother.html">Edit Patient Information: Other Tab</a>, and there are no completed procedures for the patient.</li>
+</ul>
+<p><b>Clinic</b>: The patient's default clinic. Only visible when <a href="clinics.html">Clinics</a> is turned on.</p>
+<p class="MarginBottomZero"><b>Provider</b>: The dentist assigned to the appointment. Every appointment must have a dentist and can optionally have a hygienist.  </p>
+<ul class="MarginBottomGap">
+<li>The default provider on an appointment is the provider <a href="schedule.html">Scheduled</a> in the Operatory. </li>
+<li>If no provider is scheduled in the Operatory, the default provider is the provider assigned to the <a href="operatories.html">Operatory</a>.</li>
+<li>If no provider is scheduled in or assigned to the Operatory, the default provider is the patient's assigned Primary Provider in <a href="patientedit.html">Edit Patient Information</a>.</li>
+<li>The provider can be manually changed if needed.</li>
+</ul>
+<p class="MarginBottomZero"><b>Hygienist</b>: The hygienist assigned to the appointment.  </p>
+<ul class="MarginBottomGap">
+<li>The default hygienist is the provider marked secondary (i.e., hygienist) scheduled in the Operatory.</li>
+<li>If no hygiensit is scheduled to the Operatory, the hygienist assigned to the Operatory is used by default.</li>
+<li>If no hygienist is scheduled in or assigned to the Operatory, the patient's assigned Secondary Provider in Edit Patient Information is used by default. </li>
+<li>If the patient has no Secondary Provider assigned, and no hygienist is scheduled in or assigned to the Operatory, no hygienist is assigned by default.</li>
+<li>The hygienist is assigned as the provider on procedures marked <i>Is Hygiene Procedure</i> in <a href="procedurecodeedit.html">Procedure Code Edit</a>.</li>
+<li>To always assign the Operatory's hygienist to the appointment, even if it is <i>none</i>, enable <i>Force op's hygiene provider as secondary provider</i> in Preferences.</li>
+</ul>
+<p class="MarginBottomZero"><b>Is Hygiene</b>: Mark the appointment as a hygiene appointment. The appointment uses the hygienist's color, unless there is a color override, and the provider Time Bar changes to hygienist. </p>
+<ul class="MarginBottomGap">
+<li>Automatically checked if the Operatory is marked as <i>Is Hygiene</i>.</li>
+<li>If no provider is scheduled in the Operatory or assigned to the Operatory, but a hygienist is assigned to the Operatory, the box is automatically checked.</li>
+</ul>
+<p><div class="Note">Note: When moving an appointment, the Is Hygiene flag changes to match the new Operatory settings.</div>
+</p>
+<p><b>Assistant</b>: Displays first name of employee assigned as the assistant. Click the dropdown to choose from the <a href="employees.html">Employees</a> list.</p>
+<p><b>Time Locked</b>: When checked, added procedures do not automatically adjust the appointment time pattern. If users manually adjust the appointment time using the Time Bar, the box is automatically checked.</p>
+<p><b>Color</b>: Override the provider color for this appointment only. The color remains until the appointment is set complete. Click <b>none</b> to remove an existing color override.</p>
+<p><b>Appointment Type</b>: Assign an <a href="appointmenttypes.html">Appointment Type</a> to automatically assign color overrides, time patterns, attach procedures, and more. </p>
+<h2>Appointment Settings (Cont.)</h2>
+<img src="images/apptSettings2.png" width="234" height="241"/><p><b>Time Ask to Arrive</b>: If an <i>Ask to Arrive Early</i> value is entered on the Edit Patient Information window, this field automatically fills each time an appointment is scheduled an appointment. A <a href="timeasktoarrive.html">Time Ask to Arrive</a> (00:00 PM) can also be entered manually.</p>
+<p><b>Time Arrived</b>, <b>Time Seated</b>, <b>Time Dismissed</b>: These values are automated based on time triggers set in Preferences. Usually users do not change them from this window, but instead base values on a confirmed status that in turn trigger an entry. Confirmed statuses are usually selected in the Appointments Module. Users can manually change the field values as well, or right-click, then select <b>Now</b> to insert the current time.</p>
+<p class="MarginBottomZero">These confirmed statuses are usually set as the time trigger defaults for each field: </p>
+<ul class="MarginBottomGap">
+<li>Time Arrived trigger: Arrived</li>
+<li>Time Seated trigger: In Treatment Room</li>
+<li>Time Dismissed trigger: Front Desk</li>
+</ul>
+<p><b>Lab</b>: Attach a <a href="labcaseedit.html">Lab Case</a> to this appointment or edit an existing Lab Case. This information can be displayed in an Appointment View.</p>
+<p class="MarginBottomZero"><b>InsPlan1</b> / <b>InsPlan2</b>: When an appointment is created these fields automatically fill based on the patient's current primary and secondary insurance carrier. Once scheduled, they are updated automatically when insurance plans are dropped or added. Once an appointment is set complete, the information no longer updates automatically. </p>
+<ul class="MarginBottomGap">
+<li>For large public health clinics, the insurance plan fields allow users to run historical reports once a patient's insurance coverage changed.</li>
+<li>To change plan information on a completed appointment, <b> [...]</b>. Select the plan information from the Select Insurance Plan window and click <b>OK</b>. Plan options are limited to other plans entered for the family. To clear a selection click <b>None</b>.</li>
+</ul>
+<img src="images/apptEditInsPlan.png" width="685" height="246"/><p><b>Req</b>: Only visible if <a href="dentalschools.html">Dental Schools</a> feature is enabled. Click to attach <a href="requirements.html">Dental School Requirements</a> to an appointment.</p>
+<p><b>Obs</b>: Only visible if EHR is enabled. Click to open the Appointment Observations window and enter <a href="ehrsyndromicdataobs.html">EHR Syndromic Surveillance Observations</a>.</p>
+<h2>Procedures on the Appointment</h2>
+<img src="images/apptEditProcs.png" width="698" height="355"/><p><b>Single Click List</b>: Lists commonly-used procedure groupings. Click a line item to quickly treatment plan and attach the procedures to the appointments. Customize groupings in <a href="definitionsapptquickadd.html">Definitions: Appt Procs Quick Add</a>. </p>
+<p class="MarginBottomZero"><b>Procedures on this Appointment</b>: This area lists the patient's treatment planned procedures, along with any completed procedures that have the same date as the appointment. Customize which columns show in <a href="displayfields.html">Display Fields</a>. Highlight procedures in the grid to attach to the appointment. </p>
+<ul class="MarginBottomGap">
+<li>Double-click a procedure from the grid to open <a href="procedureedit.html">Procedure Info</a>. Users can delete procedures from this window if needed.</li>
+</ul>
+<p class="MarginBottomZero"><b>Delete</b>: Click to to permanently delete all currently highlighted procedures from the list of Procedures on this Appointment. To only delete one procedure, make sure it is the only highlighted procedure, then click <b>Delete</b>. </p>
+<ul class="MarginBottomGap">
+<li>When the preference, <i>Appointments require procedures</i> is enabled, the message below appears when attempting to delete a procedure marked <i>(other appt)</i>. Click <b>OK</b> to close the message and deselect any <i>(other appt)</i> procedures to proceed with deleting. <i>(other appt) </i>procedures can be deleted from the <a href="chart.html">Chart Module</a> or from their original appointment. <p><img src="images/procedureDeleteOtherAppt.png" width="413" height="133"/></p>
+</li>
+</ul>
+<p><b>Add</b>: Click to select a procedure from the <a href="procedurecodes.html">Procedure Codes</a> list.</p>
+<p><b>Attach All</b>: Click to highlight all listed procedures with a single click.</p>
+<p><div class="Note">Note: <ul>
+<li>To prevent staff from creating appointments with no procedures attached, enable <i>Appointments require procedures</i> in Preferences. </li>
+<li>If a procedure on an appointment is marked as complete, then later set back to treatment planned, the procedure is detached from the original appointment.</li>
+</ul>
+</div>
+</p>
+<h2>Appointment Note</h2>
+<img src="images/apptEditNote.png" width="394" height="66"/><p><b>Appointment Note</b>: Notes entered here appear in the Appointment Bubble when users hover over an appointment. This field can also be added to an Appointment View.<br/> Right-click to insert the date, a Quick Paste Note, or an Auto Note.</p>
+<h2>Commlogs and Buttons</h2>
+<img src="images/apptEditComm.png" width="546" height="296"/><p><b>Show Automated Commlogs</b>: Show commlog entries that have been automatically generated (e.g., Recalls, FHIR, Web Sched, etc). This checkbox is user specific, and affects automated commlogs in the Account Module, Chart Module, and Appointment Edit window. </p>
+<p><b>Communications Log</b>: A log of all scheduling related communications that have been logged (calls, texts, sent eReminder emails, and sent eConfirmation emails) so users can easily see appointments that were rescheduled, canceled, etc. See <a href="commlog.html">Commlog</a>. This helps staff avoid calling a patient too often when they have indicated a wish to wait. Similarly, if a patient says that nobody called for their recall, staff can immediately confirm by reviewing the history. Typically users do not make an entry for appointment confirmations. To edit or view an entry, double-click on it. Set the default commlog type in <a href="definitionscommlogtypes.html">Definitions: Commlog Types</a>.</p>
+<p><b>Comm</b>: Enter a log entry in the Communications Log.</p>
+<p class="MarginBottomZero"><b>Text</b>: Send a confirmation text message to the patient. Set the default message in <a href="confirmationsetup.html">Confirmation Setup</a>. This field is only enabled if:  </p>
+<ol class="MarginBottomGap">
+<li>On the Edit Patient Information window, a wireless number has been entered for the patient and Yes has been set for Text Messages.</li>
+<li>Text Messaging has been set up.</li>
+</ol>
+<p><b>Audit Trail</b>: View a log of actions that have been taken for this specific appointment. This audit trail is accessible to all users. It is different than the audit trail accessed via the Tools menu.</p>
+<p><b>To Task List</b>: Send this appointment to a specific <a href="tasklists.html">Task List</a> to keep track of appointments that need follow up or appointments of a certain type.</p>
+<p><b>Pinboard</b>: Only appears when opening an appointment from the Appointments for Patient window. Click to send an appointment to the <a href="apptpinboard.html">Pinboard</a> to schedule or reschedule.</p>
+<p><b>Delete</b>: Delete the appointment.</p>
+<p><b>OK</b>: Save changes and close the window.</p>
+<p><b>Cancel</b>: Close the window without saving changes.</p>
+<h2>Edit Patient Note</h2>
+<p>In the <a href="apptspatient.html">Patient Appointments</a> window, click <b>NOTE for Patient</b> to create a note for the patient. Opens a window nearly identical to the Edit Appointment window. Enter the patient note and click <b>OK</b>. Then add the note to the schedule. </p>
+<img src="images/apptEditPatNote.png" width="915" height="636"/><p class="MarginBottomZero">These types of notes can be useful when:  </p>
+<ul class="MarginBottomGap">
+<li>Overlapping appointments is allowed. The NOTE appointment can be scheduled directly next to the original appointment and can pertain any notes relevant to the patient or appointment.</li>
+<li>An Operatory designated for notes is added to the Appointment View. The NOTE appointment can be used as a To-Do list for the staff. Such as reminders for contacting insurance. </li>
+</ul>
+<h2>Troubleshooting</h2>
+<p><p><b>When saving changing to an appointment, I get the message "Not authorized for Appointment Resize. The appointment length needs to be XX:XX."</b></p>
+ Only users with the <i>Appointment Resize </i><a href="permissions.html">Permission</a> are allowed to edit appointment length. Click OK on the message and return the appointment to it's original length using the Time Bar. Once the appointment is returned to its original length, click OK on the Edit Appointment window to save any other changes.</p>
+</div>
+</div>
+</body>
+</html>```

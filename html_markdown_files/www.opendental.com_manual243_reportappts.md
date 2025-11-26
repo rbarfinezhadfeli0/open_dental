@@ -1,0 +1,106 @@
+# File: ./www.opendental.com/manual243/reportappts.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Appointments Report</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reportappts','+reportlists','reportsstandard','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/reportappts.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/reportappts.html" >v24.2</option><option value="https://www.opendental.com/manual241/reportappts.html" >v24.1</option><option value="https://www.opendental.com/manual233/reportappts.html" >v23.3</option><option value="https://www.opendental.com/manual232/reportappts.html" >v23.2</option><option value="https://www.opendental.com/manual231/reportappts.html" >v23.1</option><option value="https://www.opendental.com/manual224/reportappts.html" >v22.4</option><option value="https://www.opendental.com/manual223/reportappts.html" >v22.3</option><option value="https://www.opendental.com/manual222/reportappts.html" >v22.2</option><option value="https://www.opendental.com/manual221/reportappts.html" >v22.1</option><option value="https://www.opendental.com/manual214/reportappts.html" >v21.4</option><option value="https://www.opendental.com/manual213/reportappts.html" >v21.3</option><option value="https://www.opendental.com/manual212/reportappts.html" >v21.2</option><option value="https://www.opendental.com/manual211/reportappts.html" >v21.1</option><option value="https://www.opendental.com/manual205/reportappts.html" >v20.5</option><option value="https://www.opendental.com/manual204/reportappts.html" >v20.4</option><option value="https://www.opendental.com/manual203/reportappts.html" >v20.3</option><option value="https://www.opendental.com/manual202/reportappts.html" >v20.2</option><option value="https://www.opendental.com/manual201/reportappts.html" >v20.1</option><option value="https://www.opendental.com/manual194/reportappts.html" >v19.4</option><option value="https://www.opendental.com/manual193/reportappts.html" >v19.3</option><option value="https://www.opendental.com/manual192/reportappts.html" >v19.2</option><option value="https://www.opendental.com/manual191/reportappts.html" >v19.1</option><option value="https://www.opendental.com/manual184/reportappts.html" >v18.4</option><option value="https://www.opendental.com/manual183/reportappts.html" >v18.3</option><option value="https://www.opendental.com/manual182/reportappts.html" >v18.2</option><option value="https://www.opendental.com/manual181/reportappts.html" >v18.1</option><option value="https://www.opendental.com/manual174/reportappts.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Appointments Report</p></div>
+<div class="GeneralPageContent">
+<p>Generate a list of appointments scheduled for or created in a date range using the Appointment report.</p>
+<p>In <a href="reportsstandard.html">Standard Reports</a>, in the Lists section, click <b>Appointments</b>.</p>
+<img src="images/reportappts.png" width="604" height="380"/><p>The Appointments report is a list of all appointments for a date or date range and all or specific providers or clinics. It can also be used to track which appointments made using Web Sched Recall, Web Sched New Patient, Web Sched Existing Patient, or Web Sched ASAP (see <a href="../site/websched.html">Web Sched Feature</a>).</p>
+<p><div class="Note">Note: <ul>
+<li>To control user access to this report, see <a href="reportsecurity.html">Report Setup: Security Permissions</a>.</li>
+<li>Another option for Web Sched appointments is the <a href="webschedapptreport.html">Web Sched Appointments Report</a>.</li>
+</ul>
+</div>
+</p>
+<h2>Filters</h2>
+<p>Set the report criteria and filters before running the report.</p>
+<p class="MarginBottomZero"><b>Providers</b>: Highlight the providers to include. Check <b>All</b> to include all listed providers. Filters by the provider or hygienist assigned to appointment.
+<ul class="MarginBottomGap">
+	<li>To exclude hidden providers from the report, manually select visible providers from the list.</li>
+</ul></p>
+<p class="MarginBottomZero"><b>Clinics</b>: Only available when Clinics are enabled in <a href="showfeatures.html">Show Features</a>Highlight clinics to include in the report. Check <b>All (includes hidden)</b> to include all clinics, including those marked hidden.  </p>
+<ul class="MarginBottomGap">
+<li>Filters by clinic assigned to the appointment.</li>
+<li>If user is restricted to specific clinics, only accessible clinics are listed. When checking <b>All (includes hidden)</b>, results include all clinics user has access to, including those marked hidden; results do not include clinics user is restricted from or appointments not assigned to a clinic.</li>
+</ul>
+<p class="MarginBottomZero"><b>Date Range</b>: Enter the date range of appointments to include.  </p>
+<ul class="MarginBottomGap">
+<li><b>From / To</b>: Enter the start and end date of appointments to include in the report. To run for a single day, enter the same date in both boxes. <ul>
+<li><b>Today</b>: Click to change the <i>From</i> and <i>To</i> dates to the current date.</li>
+<li><b>Tomorrow</b>: Click to change the <i>From</i> and <i>To</i> dates to tomorrow's date.</li>
+</ul>
+</li>
+<li><b>Appointment Date</b>: Applies the selected date range to the appointment date. <i>Date</i> column displays the scheduled appointment date; The date created is included when selecting this option. Appointments are sorted by appointment date.</li>
+<li><b>Appointment Date Created</b>: Applies the selected date range to the date the appointment was created. Includes both<i>DateCreated </i>and <i>Apt Date</i> columns. Appointments are sorted by date created.</li>
+<li><b>Show "Note" Appointments</b>: Includes notes for patients that have been created from the <a href="apptspatient.html">Patient Appointments</a> window.</li>
+</ul>
+<p class="MarginBottomZero"><b>Web Sched Appointments Only</b>: If using <a href="../site/websched.html">Web Sched</a>, track which appointments were scheduled using each service by filtering the report. Selecting any of these options results in only appointments that meet the criteria to be included in the report. All other appointments (e.g., non-Web Sched) are excluded. </p>
+<ul class="MarginBottomGap">
+<li><b>Show Recall Appointments</b>: Show appointments scheduled using Web Sched Recall.</li>
+<li><b>Show New Patient Appointments</b>: Show appointments scheduled using Web Sched New Patient.</li>
+<li><b>Show ASAP Appointments</b>: Show appointments scheduled using Web Sched ASAP.</li>
+<li><b>Show Existing Patient Appointments</b>: Show appointments scheduled using Web Sched Existing Patient.</li>
+</ul>
+<h2>Report Preview</h2>
+<p>After setting the report filters, click <b>OK</b> to generate a print preview of the report. Below is an example of the report and explanation of the report columns. For a description of toolbar buttons, see <a href="reportcomplex.html">Complex Report System</a>.</p>
+<img src="images/reportsApptPrint.png" width="915" height="397"/><p>Results are grouped by clinic and date. </p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>When <i>Appointment Date</i> behavior is selected, results are sorted by Time and the following columns appear:  <ul>
+<li><b>Date</b>: Appointment date.</li>
+</ul>
+</li>
+<li> When <i>Appointment Date Created</i> behavior is selected, results are sorted by Patient and the following columns appear: <ul>
+<li><b>DateCreated</b>: Date appointment was originally created. This generally differs from the date the appointment is scheduled.</li>
+<li><b>Apt Date</b>: The scheduled appointment date.</li>
+</ul>
+</li>
+<li><b>PatNum</b>: Unique Patient Number. See <a href="patientedit.html">Edit Patient Information</a>.</li>
+<li><b>Patient</b>: Patient last name, preferred name, and first name.</li>
+<li><b>Age</b>: Patient age in years.</li>
+<li><b>Time</b>: Scheduled time of appointment.</li>
+<li><b>Length</b>: Length of appointment in minutes.</li>
+<li><b>Description</b>: Procedure abbreviations of any procedures attached to the appointment.</li>
+<li><b>Home Ph.</b>: Patient's home phone number.</li>
+<li><b>Work Ph.</b>: Patient's work phone number.</li>
+<li><b>Cell Ph.</b>: Patient's wireless phone number.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

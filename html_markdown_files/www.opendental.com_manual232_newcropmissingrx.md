@@ -1,0 +1,73 @@
+# File: ./www.opendental.com/manual232/newcropmissingrx.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Report a Failed or Missing Prescription in NewCrop eRx</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('newcropmissingrx','newcrop','+eRx','+chartToolbar','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/newcropmissingrx.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/newcropmissingrx.html" >v24.2</option><option value="https://www.opendental.com/manual241/newcropmissingrx.html" >v24.1</option><option value="https://www.opendental.com/manual233/newcropmissingrx.html" >v23.3</option><option value="https://www.opendental.com/manual232/newcropmissingrx.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/newcropmissingrx.html" >v23.1</option><option value="https://www.opendental.com/manual224/newcropmissingrx.html" >v22.4</option><option value="https://www.opendental.com/manual223/newcropmissingrx.html" >v22.3</option><option value="https://www.opendental.com/manual222/newcropmissingrx.html" >v22.2</option><option value="https://www.opendental.com/manual221/newcropmissingrx.html" >v22.1</option><option value="https://www.opendental.com/manual214/newcropmissingrx.html" >v21.4</option><option value="https://www.opendental.com/manual213/newcropmissingrx.html" >v21.3</option><option value="https://www.opendental.com/manual212/newcropmissingrx.html" >v21.2</option><option value="https://www.opendental.com/manual211/newcropmissingrx.html" >v21.1</option><option value="https://www.opendental.com/manual205/newcropmissingrx.html" >v20.5</option><option value="https://www.opendental.com/manual204/newcropmissingrx.html" >v20.4</option><option value="https://www.opendental.com/manual203/newcropmissingrx.html" >v20.3</option><option value="https://www.opendental.com/manual202/newcropmissingrx.html" >v20.2</option><option value="https://www.opendental.com/manual201/newcropmissingrx.html" >v20.1</option><option value="https://www.opendental.com/manual194/newcropmissingrx.html" >v19.4</option><option value="https://www.opendental.com/manual193/newcropmissingrx.html" >v19.3</option><option value="https://www.opendental.com/manual192/newcropmissingrx.html" >v19.2</option><option value="https://www.opendental.com/manual191/newcropmissingrx.html" >v19.1</option><option value="https://www.opendental.com/manual184/newcropmissingrx.html" >v18.4</option><option value="https://www.opendental.com/manual183/newcropmissingrx.html" >v18.3</option><option value="https://www.opendental.com/manual182/newcropmissingrx.html" >v18.2</option><option value="https://www.opendental.com/manual181/newcropmissingrx.html" >v18.1</option><option value="https://www.opendental.com/manual174/newcropmissingrx.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Report a Failed or Missing Prescription in NewCrop eRx</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="newcrop.html">NewCrop eRx / Prescription</a> interface, click the <b>Tasks</b> tab. At the bottom is a Failed Prescriptions list.</p>
+<p>If a prescription failed to transmit electronically or a pharmacy or patient claims to have not received it, first research the issue. Follow the steps below to report the missing or failed prescription.</p>
+<img src="images/newCropFailedRxTask.png" width="915" height="116"/><p class="MarginBottomZero">Criteria to research a missing or failed prescription: </p>
+<ul class="MarginBottomGap">
+<li>It must be electronically transmitted. Printed and faxed prescriptions are not tracked.</li>
+<li>It must be no more than 5 days from the write date of the prescription.</li>
+<li>Mail order prescriptions: Allow 72 hours from transmission before reporting a prescription as failed or missing. Mail order pharmacies have 72 hours to update their database with prescriptions.</li>
+</ul>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>In the NewCrop eRx window, Compose Rx tab, click the Edit dropdown.</li>
+<li>Click <b>Detail</b>.</li>
+<li>Scroll to the bottom. In the <i>Prescription History </i>section, any Failure will be noted in the status column.  <ul>
+<li>An <i>Action</i> of <i>ERx</i> is required for a prescription to be marked as <i>Failure</i>. Printed or Faxed prescriptions will not be marked as <i>Failure</i>.</li>
+<li>If the status is marked <i>Failure</i>, the prescription may be missing. Proceed to steps to Report a Failed Transmission.</li>
+<li>If the status is marked <i>Verified</i>, the prescription may be missing. Proceed to steps to Report a Missing Prescription.</li>
+</ul>
+</li>
+<img src="images/newCropFailedRx.png" width="915" height="323"/></ol>
+<h2>Report a Failed Transmission </h2>
+<p>Click <b>Report Failed Rx</b>. When an explanation or outcome has been determined for the failed transmission, an Open Dental eRx team member will notify the office via phone. </p>
+<h2>Report a Missing Prescription</h2>
+<p>If a prescription status is <i>Verified</i>, but the pharmacy or patient claims there is no record of the prescription, the prescription should be reported as missing.</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Click <b>Report Missing Rx.</b>. </li>
+<img src="images/newCropReportMissingRx.png" width="915" height="257"/><li>Fill in the two required fields: </li>
+<img src="images/newCropMissingRxReport.png" width="502" height="398"/><li>Click <b>Send</b> to report it. When an explanation or outcome has been determined for the missing prescription, an Open Dental eRx team member will notify the office via phone.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>```

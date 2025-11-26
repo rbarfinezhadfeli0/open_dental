@@ -1,0 +1,99 @@
+# File: ./www.opendental.com/manual/eclaimswebmd.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Change Healthcare E-Claims</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('eclaimswebmd','clearinghouses','+familyinsurance','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/eclaimswebmd.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/eclaimswebmd.html" >v24.2</option><option value="https://www.opendental.com/manual241/eclaimswebmd.html" >v24.1</option><option value="https://www.opendental.com/manual233/eclaimswebmd.html" >v23.3</option><option value="https://www.opendental.com/manual232/eclaimswebmd.html" >v23.2</option><option value="https://www.opendental.com/manual231/eclaimswebmd.html" >v23.1</option><option value="https://www.opendental.com/manual224/eclaimswebmd.html" >v22.4</option><option value="https://www.opendental.com/manual223/eclaimswebmd.html" >v22.3</option><option value="https://www.opendental.com/manual222/eclaimswebmd.html" >v22.2</option><option value="https://www.opendental.com/manual221/eclaimswebmd.html" >v22.1</option><option value="https://www.opendental.com/manual214/eclaimswebmd.html" >v21.4</option><option value="https://www.opendental.com/manual213/eclaimswebmd.html" >v21.3</option><option value="https://www.opendental.com/manual212/eclaimswebmd.html" >v21.2</option><option value="https://www.opendental.com/manual211/eclaimswebmd.html" >v21.1</option><option value="https://www.opendental.com/manual205/eclaimswebmd.html" >v20.5</option><option value="https://www.opendental.com/manual204/eclaimswebmd.html" >v20.4</option><option value="https://www.opendental.com/manual203/eclaimswebmd.html" >v20.3</option><option value="https://www.opendental.com/manual202/eclaimswebmd.html" >v20.2</option><option value="https://www.opendental.com/manual201/eclaimswebmd.html" >v20.1</option><option value="https://www.opendental.com/manual194/eclaimswebmd.html" >v19.4</option><option value="https://www.opendental.com/manual193/eclaimswebmd.html" >v19.3</option><option value="https://www.opendental.com/manual192/eclaimswebmd.html" >v19.2</option><option value="https://www.opendental.com/manual191/eclaimswebmd.html" >v19.1</option><option value="https://www.opendental.com/manual184/eclaimswebmd.html" >v18.4</option><option value="https://www.opendental.com/manual183/eclaimswebmd.html" >v18.3</option><option value="https://www.opendental.com/manual182/eclaimswebmd.html" >v18.2</option><option value="https://www.opendental.com/manual181/eclaimswebmd.html" >v18.1</option><option value="https://www.opendental.com/manual174/eclaimswebmd.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Change Healthcare E-Claims</p></div>
+<div class="GeneralPageContent">
+<p>Change Healthcare (formerly Emdeon) is an e-claims clearinghouse.</p>
+<p>In <a href="clearinghouses.html">Clearinghouses</a>, double-click Emdeon (may also display as WebMD).</p>
+<img src="images/eClaimsWebMD.png" width="915" height="689"/><p>Change Healthcare is not a recommended clearinghouse solution. It appears Change Healthcare has stopped providing clearinghouse services after a cyber attack that took place in early 2024. </p>
+<h2>New Change Healthcare Registrations</h2>
+<p>Offices wishing to use Change Healthcare can register using the steps below.</p>
+<p><div class="Note">Note: If a second office is signing up but using a different database, a separate username and password must be acquired from Open Dental. If the second office is using the same database, refer to <a href="clearinghousesclinics.html">Clearinghouse Clinic Setup</a>.</div>
+</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Call Open Dental Support. We will provide a Change Healthcare Login ID and a Password.</li>
+<li>Fill out a registration form and email it to <i>dentalenrollment@changehealthcare.com</i> or fax it to 615-340-6107. <ul>
+<li>Batch claim registration forms: <ul>
+<li><a href="http://opendental.com/resources/Open%20Dental%20$39.95%20Registration%20Form%2001292016.pdf" target="_blank">Registration $39.95 a month</a> (PDF)</li>
+<li><a href="http://opendental.com/resources/Open%20Dental%20$0.37%20Registration%20Form%2001222016.pdf" target="_blank">Registration $0.37 per claim</a> (PDF)</li>
+</ul>
+</li>
+<li>Electronic Eligibility registration form: <a href="http://opendental.com/resources/Open%20Dental%20RTE%20Registration%20Form%2001222016.pdf" target="_blank">Registration $17.95 per provider per month</a> (PDF) <div class="Note">Note: If already signed up for batch claims and electronic eligibility is desired, fill out the Electronic Eligibility form and send to Change Healthcare to complete the enrollment. If not signed up for claims, sign up for both simultaneously.</div>
+</li>
+</ul>
+</li>
+<li>Download and run <a href="../resources/WebMD%20Eclaims%20Setup.exe">WebMD Eclaims Setup.exe</a> on the workstations where claims will be sent from.  <ul>
+<li>Set the Change Healthcare client program to always run as administrator. The program location is indicated in the Launch Client Program field on the Edit Clearinghouse window.</li>
+</ul>
+</li>
+<li>Download and save <a href="../resources/WebMd_FileTransfer_ConClient.zip">WebMd_FileTransfer_ConClient.zip</a>.</li>
+<li>Right-click the zip file and select <i>Open with...</i>, then select File Explorer. </li>
+<li>Copy the three files, then paste them into <b>C:\Program Files (x86)\WebMD</b>.</li>
+<li>A Replace or Skip files window appears. Select <i>Replace the files in this destination</i>. This updates the necessary files for claim submission.</li>
+<li>In Open Dental, set up the Emdeon (Change Healthcare) clearinghouse using screenshot above as a reference. </li>
+</ol>
+<p class="MarginBottomZero"><b>Payer Enrollment Forms</b>: </p>
+<ul class="MarginBottomGap">
+<li>Batch Claims: <a href="https://support.changehealthcare.com/customer-resources/enrollment-services/dental-claims-enrollment-forms" target="_blank">https://support.changehealthcare.com/customer-resources/enrollment-services/dental-claims-enrollment-forms</a></li>
+<li>Real Time: <a href="https://support.changehealthcare.com/customer-resources/enrollment-services/dental-real-time-enrollment-forms" target="_blank">https://support.changehealthcare.com/customer-resources/enrollment-services/dental-real-time-enrollment-forms</a></li>
+<li>ERA: <a href="https://support.changehealthcare.com/customer-resources/enrollment-services/dental-era-enrollment-forms" target="_blank">https://support.changehealthcare.com/customer-resources/enrollment-services/dental-era-enrollment-forms</a><ul>
+<li>Dental ERAs cannot be automatically downloaded from Change Healthcare/Emdeon. See <a href="claimsera835troubleshooting.html">ERA Troubleshooting</a> for information on manually downloading to Open Dental.</li>
+</ul>
+</li>
+<li>NPI: <a href="https://www.changehealthcare.com/content/dam/change-healthcare/support/enrollment-forms/dental-enrollment-forms/Claims/npi_all.pdf" target="_blank">https://www.changehealthcare.com/content/dam/change-healthcare/support/enrollment-forms/dental-enrollment-forms/Claims/npi_all.pdf</a></li>
+</ul>
+<p><b>Dental Payer Lists</b>: <a href="https://support.changehealthcare.com/customer-resources/payer-lists" target="_blank">https://support.changehealthcare.com/customer-resources/payer-lists</a></p>
+<h2>Claims</h2>
+<p>After sending claims to Change Healthcare from Open Dental, the Change Healthcare Claims Manager launches automatically. Click <b>Confirm</b> to complete claim submission.</p>
+<h2>Electronic Eligibility</h2>
+<p class="MarginBottomZero">For <a href="dentical.html">Denti-Cal</a> carriers, also enter the Denti-Cal password on the Denti-Cal Clearinghouse Setup window. </p>
+<ol class="MarginBottomGap">
+<li>In Clearinghouses, double-click <i>Denti-Cal.</i></li>
+<li>For Clearinghouse ID (ISA08) enter DENTICAL.</li>
+<li>Enter the Denti-Cal password.</li>
+<li>Click OK. <p><img src="images/eclaimsemdeonDentiCalPW.gif" width="438" height="138"/></p>
+</li>
+</ol>
+<h2>Updating to TLS 1.2</h2>
+<p>07/24/2018: Offices already using Change Healthcare to submit electronic claims must update their installation to TLS 1.2 by November 2018. TLS 1.2 is a more secure method of sending claims. The update must happen on all workstations set up to send e-claims.</p>
+<p>To update the Change Healthcare installation, follow steps 4 through 8 under New Change Healthcare Registrations above.</p>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,55 @@
+# File: ./www.opendental.com/manual243/suni.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Suni</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('suni','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/suni.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/suni.html" >v24.2</option><option value="https://www.opendental.com/manual241/suni.html" >v24.1</option><option value="https://www.opendental.com/manual233/suni.html" >v23.3</option><option value="https://www.opendental.com/manual232/suni.html" >v23.2</option><option value="https://www.opendental.com/manual231/suni.html" >v23.1</option><option value="https://www.opendental.com/manual224/suni.html" >v22.4</option><option value="https://www.opendental.com/manual223/suni.html" >v22.3</option><option value="https://www.opendental.com/manual222/suni.html" >v22.2</option><option value="https://www.opendental.com/manual221/suni.html" >v22.1</option><option value="https://www.opendental.com/manual214/suni.html" >v21.4</option><option value="https://www.opendental.com/manual213/suni.html" >v21.3</option><option value="https://www.opendental.com/manual212/suni.html" >v21.2</option><option value="https://www.opendental.com/manual211/suni.html" >v21.1</option><option value="https://www.opendental.com/manual205/suni.html" >v20.5</option><option value="https://www.opendental.com/manual204/suni.html" >v20.4</option><option value="https://www.opendental.com/manual203/suni.html" >v20.3</option><option value="https://www.opendental.com/manual202/suni.html" >v20.2</option><option value="https://www.opendental.com/manual201/suni.html" >v20.1</option><option value="https://www.opendental.com/manual194/suni.html" >v19.4</option><option value="https://www.opendental.com/manual193/suni.html" >v19.3</option><option value="https://www.opendental.com/manual192/suni.html" >v19.2</option><option value="https://www.opendental.com/manual191/suni.html" >v19.1</option><option value="https://www.opendental.com/manual184/suni.html" >v18.4</option><option value="https://www.opendental.com/manual183/suni.html" >v18.3</option><option value="https://www.opendental.com/manual182/suni.html" >v18.2</option><option value="https://www.opendental.com/manual181/suni.html" >v18.1</option><option value="https://www.opendental.com/manual174/suni.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Suni</p></div>
+<div class="GeneralPageContent">
+<p>Suni was a <a href="programlinks.html">Program Link</a> available for imaging software.</p>
+<p>Suni has discontinued operations. Many Suni users migrated to <a href="bridgeapteryx.html">Apteryx</a>. </p>
+<h2>Open Dental Information</h2>
+<p>If the Suni bridge is enabled, the Imaging Module uses the Version 19.4 interface. See <a href="https://www.opendental.com/manual194/images.html">Imaging Module</a> for Version 19.4 features.</p>
+<p>To capture an image, click <b>Capture</b> in the Imaging Module.</p>
+<p>We provide limited support for direct connection to Suni sensors. The 1200, 1200C, 1600, 1800 series are supported. #1 &amp; #2 hi res are the only supported sensors. Currently, there is only a 4BW mount used for capturing. See <a href="imagingsetup.html">Scanning/Imaging Defaults</a> to set the Suni hardware options. Because of the limited mounts and lack of a ruler, the support for Suni is marginal, and very likely not ready for prime time. But it is functional.</p>
+<p><b>Set up a Suni Sensor</b><br/> To set up a Suni sensor for use with Open Dental directly copy the contents of the Suni CD that came with your sensor into the <b>C:\Program Files\Open Dental\Suni\</b> directory. If you have more than one sensor, you must be sure to copy the contents of the CD that came with the sensor hooked up to the computer in question. You should also ensure that the drivers for your Suni sensor are up to date in the Windows hardware manager. Check these before you try anything else. It may help if you reset your Suni hardware. You can do that by unplugging the USB connection from the back of the computer and unplugging the connection to the wall socket (if there is one). Leave the device disconnected for at least 1 minute, then reconnect and try to capture again.</p>
+<p>Open Dental does not currently support more than one sensor per workstation.</p>
+<p>Also see this document: <a href="http://opendental.com/resources/SuniSensorDocument.pdf">SuniSensorDocument.pdf</a></p>
+<p><div class="Note">Note: Suni sensor models 1200, 1600, and 1800 are not compatible with Windows 7, Windows 8, or Windows 8.1 because there are no drivers available for the 32 or 64 bit versions.</div>
+</p>
+</div>
+</div>
+</body>
+</html>```

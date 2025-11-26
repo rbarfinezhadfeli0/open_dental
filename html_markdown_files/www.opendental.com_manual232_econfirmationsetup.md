@@ -1,0 +1,113 @@
+# File: ./www.opendental.com/manual232/econfirmationsetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - eConfirmations</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('econfirmationsetup','automatedmessaging','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/econfirmationsetup.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/econfirmationsetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/econfirmationsetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/econfirmationsetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/econfirmationsetup.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/econfirmationsetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/econfirmationsetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/econfirmationsetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/econfirmationsetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/econfirmationsetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/econfirmationsetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/econfirmationsetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/econfirmationsetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/econfirmationsetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/econfirmationsetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/econfirmationsetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/econfirmationsetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/econfirmationsetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/econfirmationsetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/econfirmationsetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/econfirmationsetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/econfirmationsetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/econfirmationsetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/econfirmationsetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/econfirmationsetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/econfirmationsetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/econfirmationsetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/econfirmationsetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>eConfirmations</p></div>
+<div class="GeneralPageContent">
+<p>eConfirmations are automated text messages about upcoming appointments that also allow the patient to confirm their appointment.</p>
+<p>In <a href="eservicessetup.html">eServices Setup</a>, click <a href="automatedmessaging.html">Automated Messaging</a>.</p>
+<img src="images/eConfirmationSetup.png" width="915" height="551"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><img src="images/YouTube_PlayButton_15px.png" width="15" height="12" style="margin-bottom: 0px"/>See our video: <a href="https://youtu.be/YuKNAHdNC9g">Automated Messaging</a>.</li>
+<li> eConfirmations is a paid service. For signup and pricing, see <a href="eservicessignup.html">eServices Signup</a>.</li>
+</ul>
+<p>When sending eConfirmations, the practice can send a confirmation code (e.g., reply C to confirm) or have the patient click a URL to confirm. </p>
+<h2>Activate / Deactivate eConfirmations</h2>
+<p>eConfirmations can be activated or deactivated as needed.</p>
+<img src="images/eConfirmationsActivateDeactivate.png" width="360" height="236"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>To enable eConfirmations, click <b>Activate eConfirmations</b>. The eConfirmation row displays in green with a status of <i>Active</i>.</li>
+<li>To disable eConfirmations, click <b>Deactivate eConfirmations</b>. The eConfirmations row displays in red with a status of <i>Inactive</i>.</li>
+</ul>
+<p>After activating eConfirmations, set up eConfirmation Rules.</p>
+<h2>eConfirmation Rules</h2>
+<p>To edit an existing eConfirmation Rule, double-click a Confirmation Rule from the Automated Messaging Rules grid. To add a new rule, click <b>Add eConfirmation</b>.</p>
+<p>For information on adding and editing rules, see <a href="editrule.html">Edit Rule</a>.</p>
+<h2>eConfirmation Exclusions</h2>
+<p>To exclude eConfirmations from being sent on certain days of the week (e.g., weekends), or certain days (e.g., holidays), set the <a href="econfirmationexclusiondays.html">eConfirmation Exclusion Days</a>.</p>
+<h2>Troubleshooting</h2>
+<p class="MarginBottomZero">Troubleshooting resources: </p>
+<ul class="MarginBottomGap">
+<li><a href="eremindertroubleshooting.html">eReminder and eConfirmation Troubleshooting</a></li>
+<li><a href="eservicestroubleshooting.html">eServices Troubleshooting</a></li>
+</ul>
+<p><b>What happens when a patient clicks the eConfirmation URL and selects Request Callback? </b></p>
+<p>The appointment status changes to the status selected for Not Accepted and an <a href="alerts.html">Alert</a> in Open Dental notifies staff (those subscribed to the Patient Requested Callback alert). <div class="Note">Note: The alert created when the patient selects <i>Request Callback</i> cannot be deleted but will go away once the appointment status is changed or marked complete.</div>
+</p>
+<p><b>How can I prevent an eConfirmation being sent for a specific appointment? </b></p>
+<p>See <a href="automatedmessagingadvanced.html">Automated Messaging Advanced Settings</a> to determine which appointment statuses allow eConfirmations.</p>
+<p><b>How can I prevent an eConfirmation being sent for a specific patient?</b></p>
+<p>Set the <i>Exclude Automated Msgs</i> setting in the <a href="patientedit.html">Edit Patient Information</a>. If text or email is selected, the patient will not receive eReminders or eConfirmations via the selected method. Select both to exclude all.</p>
+<p><b>What happens if a patient has multiple appointments on the same day?</b></p>
+<p>When a patient has multiple appointments on the same day, only one eConfirmation is sent for the patient's first appointment of the day. If a patient then replies to the confirmation, the eConfirmation marks all appointments on that day as confirmed.</p>
+<p><b>My patient did not receive their eConfirmation, why would that be?</b></p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>The automated eServices schedule also affects send time. See <a href="eservicesmisctab.html">eServices Setup Miscellaneous Tab</a>. If a confirmation is scheduled to be sent before the automated start time set on the eServices Setup Miscellaneous tab, the <i>Do not send</i> value is ignored.</li>
+<li> Patients cannot be sent more than one eConfirmation text in the same day.</li>
+<li><i>Text Msg OK, assume default is 'No' for patients with no selection</i> is enabled in <a href="preferences.html">Preferences</a> and the patient has no <i>Text OK</i> status selected. If this is checked, patients without a <i>Text OK</i> are not sent text messages. Disable this preference to allow text to send to all patients with no <i>Text OK</i> status or change the individual patient's <i>Text OK status</i> to <i>Yes</i> in <a href="patientedit.html">Edit Patient Information</a>. </li>
+<li>The patient does not have a Wireless Phone number or Email address in the appropriate fields in Patient Information. <div class="Note">Note: For Pediatric offices where younger patients might not have Wireless Numbers, Email Addresses, or be of an age to confirm appointments, you will need to mark <i>same for family</i> when adding Wireless Phone and Email Address to the guarantor of the family. Currently dependents do not automatically use their parents' contact information if the dependents' information is blank.</div>
+</li>
+</ul>
+<p><b>What happens if I have multiple eConfirmation rules and schedule an appointment inside the rule time frame? </b></p>
+<p class="MarginBottomZero"> When a new appointment is created and the send time for some rules have already passed, the rule closest to the appointment date/time will be used.  </p>
+<ul class="MarginBottomGap">
+<li>Example: There are two rules: 7 day and 3 day. A new appointment is created 2 days from now. The 3 day rule will be used for the appointment since it is closest.</li>
+</ul>
+<p><b>Why did my patient receive a message stating, "Confirmation Failed - Please contact your provider to confirm this appointment." or "This appointment is no longer at this date and time." when trying to confirm their appointment?</b></p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Your patient had an appointment that was rescheduled to a different date or time and a new eConfirmation text was not sent.</li>
+<ul>
+<li>When rescheduling an appointment, users will be prompted to send a new eConfirmation. If the office chose not to send a new eConfirmation, when the patient replies to the eConfirmation text, the appointment they are attempting to confirm no longer exists at the date and time they're attempting to confirm, so they receive an error in response. </li>
+<li>If office staff opts to re-send the eConfirmation with the updated appointment details, the patient will be able to confirm the appointment without an error.</li>
+<li>If an appointment was rescheduled to a different operatory, but remains at the same date and time, the eConfirmation does not need to be re-sent. The patient should be able to confirm using the original message.</li>
+</ul>
+<li>The appointment the eConfirmation text was sent for has been broken. The patient will be unable to confirm a broken appointment.</li>
+</ul>
+<p><b>Is it possible to send eConfirmations manually instead of having them sent out automatically?</b></p>
+<p class="MarginBottomZero">Yes, to send eConfirmations manually instead of automatically, do the following: </p>
+<ol class="MarginBottomGap">
+<li>In <a href="definitionsapptconfirmed.html">Definitions: Appt Confirmed</a>, create a new confirmation status named <i>ReadyForSend</i>.</li>
+<li>In <a href="automatedmessagingadvanced.html">Automated Messaging Advanced Settings</a>, under the <i>Send eConfirmation</i> column, uncheck the X for each status except the status <i>ReadyForSend</i>.</li>
+</ol>
+<p>When you are ready to send an eConfirmation to a patient, change the appointment status to <i>ReadyForSend</i>. This ensures eConfirmations are only sent for an appointment if the status has been specifically changed. </p>
+<p>The eConfirmation is sent using the <a href="editrule.html">eConfirmation Rule Send Time</a>. To send the eConfirmation immediately upon changing the appointment status, set the send time to 180 days.</p>
+</div>
+</div>
+</body>
+</html>```

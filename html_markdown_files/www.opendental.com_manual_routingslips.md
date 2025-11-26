@@ -1,0 +1,63 @@
+# File: ./www.opendental.com/manual/routingslips.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Routing Slips</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('routingslips','+daily','reportsstandard','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/routingslips.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/routingslips.html" >v24.2</option><option value="https://www.opendental.com/manual241/routingslips.html" >v24.1</option><option value="https://www.opendental.com/manual233/routingslips.html" >v23.3</option><option value="https://www.opendental.com/manual232/routingslips.html" >v23.2</option><option value="https://www.opendental.com/manual231/routingslips.html" >v23.1</option><option value="https://www.opendental.com/manual224/routingslips.html" >v22.4</option><option value="https://www.opendental.com/manual223/routingslips.html" >v22.3</option><option value="https://www.opendental.com/manual222/routingslips.html" >v22.2</option><option value="https://www.opendental.com/manual221/routingslips.html" >v22.1</option><option value="https://www.opendental.com/manual214/routingslips.html" >v21.4</option><option value="https://www.opendental.com/manual213/routingslips.html" >v21.3</option><option value="https://www.opendental.com/manual212/routingslips.html" >v21.2</option><option value="https://www.opendental.com/manual211/routingslips.html" >v21.1</option><option value="https://www.opendental.com/manual205/routingslips.html" >v20.5</option><option value="https://www.opendental.com/manual204/routingslips.html" >v20.4</option><option value="https://www.opendental.com/manual203/routingslips.html" >v20.3</option><option value="https://www.opendental.com/manual202/routingslips.html" >v20.2</option><option value="https://www.opendental.com/manual201/routingslips.html" >v20.1</option><option value="https://www.opendental.com/manual194/routingslips.html" >v19.4</option><option value="https://www.opendental.com/manual193/routingslips.html" >v19.3</option><option value="https://www.opendental.com/manual192/routingslips.html" >v19.2</option><option value="https://www.opendental.com/manual191/routingslips.html" >v19.1</option><option value="https://www.opendental.com/manual184/routingslips.html" >v18.4</option><option value="https://www.opendental.com/manual183/routingslips.html" >v18.3</option><option value="https://www.opendental.com/manual182/routingslips.html" >v18.2</option><option value="https://www.opendental.com/manual181/routingslips.html" >v18.1</option><option value="https://www.opendental.com/manual174/routingslips.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Routing Slips</p></div>
+<div class="GeneralPageContent">
+<p>Open Dental is designed for use in a paperless office, but there are still some offices that like to use printed routing slips.</p>
+<p>In <a href="reportsstandard.html">Standard Reports</a>, in the <i>Daily</i> section, click <b>Routing Slips</b>.</p>
+<img src="images/ReportRoutingSlips.png" width="481" height="323"/><p>From here Open Dental can print a batch of routing slips for all appointments for an entire day. To customize routing slips, see <a href="sheetsroutingslips.html">Routing Slip Layout</a>.</p>
+<p><b>Providers:</b> Highlight the Providers to print routing slips for. Check All to select all providers.<br/><b>Clinics:</b> Highlight the clinics to print routing slips for. Check All to select all clinics, including clinics marked as hidden.<br/><b>Date:</b> Enter the date. Click <b>Today</b> to insert today's date, or <b>Displayed</b> to insert the current date shown in the Appointments Module.</p>
+<div class="Note">Note: <ul>
+<li>To control user access to this report, see <a href="reportsecurity.html">Report Setup: Security Permissions</a>.</li>
+<li>If there is more than one custom routing slip in Open Dental, the first one listed alphabetically in <a href="sheets.html">Sheets</a> will be used.</li>
+</ul>
+</div>
+<br/><br/><p class="MarginBottomZero">Routing slips can also be printed from the <a href="appointments.html">Appointments Module</a>:  </p>
+<ul class="MarginBottomGap">
+<li>To print a routing slip for a single appointment, right-click on an appointment and click <b>Routing Slip</b>.</li>
+<li>To print routing slips for multiple appointments at once, click the Print icon in the toolbar:  <ul>
+<li>Click <b>All for Day</b> to print routing slips for all appointments for the selected day, regardless of the selected Appointment View.</li>
+<li>Click <b>Current View Only</b> to print routing slips for only appointments visible in the selected Appointment View for the selected day. </li>
+</ul>
+</li>
+</ul>
+<p>Below is an example of the internal Routing Slip.</p>
+<img src="images/RoutingSlip.png" width="690" height="668"/></div>
+</div>
+</body>
+</html>```

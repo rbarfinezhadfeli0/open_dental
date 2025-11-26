@@ -1,0 +1,85 @@
+# File: ./www.opendental.com/manual243/mailmergeword.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Mail Merge in Word</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('mailmergeword','letterspatient','toolbar','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/mailmergeword.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/mailmergeword.html" >v24.2</option><option value="https://www.opendental.com/manual241/mailmergeword.html" >v24.1</option><option value="https://www.opendental.com/manual233/mailmergeword.html" >v23.3</option><option value="https://www.opendental.com/manual232/mailmergeword.html" >v23.2</option><option value="https://www.opendental.com/manual231/mailmergeword.html" >v23.1</option><option value="https://www.opendental.com/manual224/mailmergeword.html" >v22.4</option><option value="https://www.opendental.com/manual223/mailmergeword.html" >v22.3</option><option value="https://www.opendental.com/manual222/mailmergeword.html" >v22.2</option><option value="https://www.opendental.com/manual221/mailmergeword.html" >v22.1</option><option value="https://www.opendental.com/manual214/mailmergeword.html" >v21.4</option><option value="https://www.opendental.com/manual213/mailmergeword.html" >v21.3</option><option value="https://www.opendental.com/manual212/mailmergeword.html" >v21.2</option><option value="https://www.opendental.com/manual211/mailmergeword.html" >v21.1</option><option value="https://www.opendental.com/manual205/mailmergeword.html" >v20.5</option><option value="https://www.opendental.com/manual204/mailmergeword.html" >v20.4</option><option value="https://www.opendental.com/manual203/mailmergeword.html" >v20.3</option><option value="https://www.opendental.com/manual202/mailmergeword.html" >v20.2</option><option value="https://www.opendental.com/manual201/mailmergeword.html" >v20.1</option><option value="https://www.opendental.com/manual194/mailmergeword.html" >v19.4</option><option value="https://www.opendental.com/manual193/mailmergeword.html" >v19.3</option><option value="https://www.opendental.com/manual192/mailmergeword.html" >v19.2</option><option value="https://www.opendental.com/manual191/mailmergeword.html" >v19.1</option><option value="https://www.opendental.com/manual184/mailmergeword.html" >v18.4</option><option value="https://www.opendental.com/manual183/mailmergeword.html" >v18.3</option><option value="https://www.opendental.com/manual182/mailmergeword.html" >v18.2</option><option value="https://www.opendental.com/manual181/mailmergeword.html" >v18.1</option><option value="https://www.opendental.com/manual174/mailmergeword.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Mail Merge in Word</p></div>
+<div class="GeneralPageContent">
+<p>These steps are provided as a courtesy as an alternative to <a href="letterspatient.html">Letter</a> or <a href="sheets.html">Sheets</a>.</p>
+<p><div class="Note">Note: <ul>
+<li>Open Dental support technicians do not assist with Microsoft Mail Merges. We cannot walk users through these steps as it is not an Open Dental skill, but rather a Microsoft Office skill. </li>
+<li>The steps below are specific to Word version 1911. Please see <a href="https://support.office.com/">Microsoft Support</a> for additional information or other versions. Other programs, such as Excel or Open Office, can also perform a Mail Merge, but the steps are different.</li>
+<li>Similar steps can be taken to do an email merge, which can be used to send mass emails. </li>
+</ul>
+</div>
+</p>
+<p>If using Word and a mail merge is needed, there are a couple different choices. For a single letter, see <a href="lettermerge.html">Letter Merge</a>. If merging letters for multiple patients, either do a query and export the result, or link directly to the database.</p>
+<h2>Query Export</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>In Open Dental, run the report for the data needed. Click <b>Export</b> and select the file location. The default is <b>C:\OpenDentalExports</b>. <div class="Note">Note: For a list of patients with upcoming appointments and contact details, see <a href="https://opendentalsoft.com:1943/ODQueryList/QueryList.aspx">Query 1505</a>. </div>
+</li>
+<li>The report is saved as a text document.  <img src="images/WordDataSource.gif" width="835" height="319"/><br/> The first row of the text file contains the names of the columns, and the fields are separated by tabs. <img src="images/WordDataTextDoc.gif" width="774" height="178"/></li>
+<li>Open Word. Open an existing letter template, or a blank document.</li>
+<li>Select the <b>Mailings</b> tab.</li>
+<li>If mailing letters, click the <b>Start Mail Merge</b> dropdown, then <b>Step-by-Step Mail Merge Wizard <img src="images/WordStepByStep.gif" width="693" height="314"/></b><br/> If emailing a letter, click the <b>E-Mail Messages</b> dropdown, then <b>Step-by-Step Mail Merge Wizard.</b><img src="images/mailMergeEmail.png" width="559" height="318"/></li>
+<li>The Mail Merge Wizard goes through creating the letter step-by-step. See the Word manual for more information.</li>
+</ol>
+<p>Emailing letters from Word uses the email setup from Outlook. This can also be done using Thunderbird. There is no confirmation that emails have been sent.</p>
+<h2>Direct Link</h2>
+<p>Another way to use the data is to directly link to the database. This is normally not needed since the text export is simpler, but here are instructions in case it's needed.</p>
+<p>Be sure to set up the ODBC Connection first. See <a href="odbc.html">ODBC</a>.</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Open ODBC Data Sources on the computer to access the data. </li>
+<li>Open a blank Word document and go to the <b>Mailings</b> tab.</li>
+<li>Use the <b>Select Recipients</b> dropdown and select <b>Use an Existing List</b>. This opens the Select Data Source window.</li>
+<li>Click <b>New Source</b>.<br/><img src="images/WordMailList.gif" width="778" height="333" class="ImageInParagraph"/></li>
+<li>Select <b>Other/Advanced</b> and click Next.<br/><img src="images/WordDataConnect.gif" width="512" height="363" class="ImageInParagraph"/></li>
+<li>Select the <b>Connection</b> tab.</li>
+<li>Select OpenDental from the data source list and enter the MySQL username and password.<br/><img src="images/WordDataLink.gif" width="365" height="468" class="ImageInParagraph"/><br/><div class="Note">Note: <ul>
+<li>If not using a MySQL password, check Blank Password.</li>
+<li>Click Test Connection to verify a good connection.</li>
+</ul>
+</div>
+</li>
+<li>Select the table wanted from the list and then select the new data source created.</li>
+</ol>
+<p>This creates a list which can be filtered, sorted, and selected from, just as in the text import section.</p>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,67 @@
+# File: ./www.opendental.com/site/0_webschedrecallsees.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: Web Sched Recall: What Patient Sees</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>Web Sched Recall: What Patient Sees</h1>
+		</div>
+		<div id="Content">
+<p>See <a href="websched.html">Web Sched Feature</a>.</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>The patient receives a notification to schedule their appointment with a clickable link that is patient-specific.<br><img src="images/webSchedRecallNotification.png" width="268" height="114" class="ImageInParagraph"/></li>
+<li>When the link is clicked, Web Sched Recall opens in a browser. <br><img src="images/webschedRecallUI.png" width="906" height="765" class="ImageInParagraph"/><ul>
+<li>Patients can select a date and time from provider available times. The options shown to the patient can be controlled by the Web Sched Recall settings. You can also allow the patient to select a provider. </li>
+<li>The patient can also request to be notified if an earlier appointment time becomes available. This will add them to the <a href="0_asaplist.html">ASAP List</a>.</li>
+</ul>
+</li>
+<li>Click <b>Finalize Appt</b>.</li>
+<li>A confirmation message shows for the patient to click <b>Yes</b> or <b>No</b>. <br><img src="images/webschedConfirm.png" width="351" height="124" class="ImageInParagraph"/></li>
+<li>If Yes, a confirmation of the now scheduled appointment shows. <br><img src="images/webschedBooked.png" width="906" height="765" class="ImageInParagraph"/></li>
+<li>Close the browser to end the session.</li>
+</ol>
+<h3>In Open Dental</h3><p> Scheduled appointments instantly show up in the <a href="0_appointments.html">Appointments Module</a>.</p>
+
+</div>	
+	</div>
+</body>
+</html>```

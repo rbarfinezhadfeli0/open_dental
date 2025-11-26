@@ -1,0 +1,164 @@
+# File: ./www.opendental.com/manual243/showtabchart.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Show Chart Views</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('showtabchart','+chartTabs','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/showtabchart.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/showtabchart.html" >v24.2</option><option value="https://www.opendental.com/manual241/showtabchart.html" >v24.1</option><option value="https://www.opendental.com/manual233/showtabchart.html" >v23.3</option><option value="https://www.opendental.com/manual232/showtabchart.html" >v23.2</option><option value="https://www.opendental.com/manual231/showtabchart.html" >v23.1</option><option value="https://www.opendental.com/manual224/showtabchart.html" >v22.4</option><option value="https://www.opendental.com/manual223/showtabchart.html" >v22.3</option><option value="https://www.opendental.com/manual222/showtabchart.html" >v22.2</option><option value="https://www.opendental.com/manual221/showtabchart.html" >v22.1</option><option value="https://www.opendental.com/manual214/showtabchart.html" >v21.4</option><option value="https://www.opendental.com/manual213/showtabchart.html" >v21.3</option><option value="https://www.opendental.com/manual212/showtabchart.html" >v21.2</option><option value="https://www.opendental.com/manual211/showtabchart.html" >v21.1</option><option value="https://www.opendental.com/manual205/showtabchart.html" >v20.5</option><option value="https://www.opendental.com/manual204/showtabchart.html" >v20.4</option><option value="https://www.opendental.com/manual203/showtabchart.html" >v20.3</option><option value="https://www.opendental.com/manual202/showtabchart.html" >v20.2</option><option value="https://www.opendental.com/manual201/showtabchart.html" >v20.1</option><option value="https://www.opendental.com/manual194/showtabchart.html" >v19.4</option><option value="https://www.opendental.com/manual193/showtabchart.html" >v19.3</option><option value="https://www.opendental.com/manual192/showtabchart.html" >v19.2</option><option value="https://www.opendental.com/manual191/showtabchart.html" >v19.1</option><option value="https://www.opendental.com/manual184/showtabchart.html" >v18.4</option><option value="https://www.opendental.com/manual183/showtabchart.html" >v18.3</option><option value="https://www.opendental.com/manual182/showtabchart.html" >v18.2</option><option value="https://www.opendental.com/manual181/showtabchart.html" >v18.1</option><option value="https://www.opendental.com/manual174/showtabchart.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Show Chart Views</p></div>
+<div class="GeneralPageContent">
+<p>Use the Show Tab to set up different views for the grid in the lower right of the Chart Module (often called the Progress Notes) and define what information shows in each view. </p>
+<p>In the <a href="chart.html">Chart Module</a> module, click the Show tab.</p>
+<img src="images/show.png" width="528" height="263"/><p>Some selections also affect what shows in the <a href="graphicaltoothchart.html">Graphical Tooth Chart</a>.</p>
+<p>Items that are checked show in the current view. Check or uncheck an item to change the view. Changing an item here does not permanently change view settings.</p>
+<p class="MarginBottomZero"><b>Procedures</b>: Check a box to show a procedure status. Uncheck a box to hide a procedure status. This also affects what shows on the Graphical Tooth Chart. </p>
+<ul class="MarginBottomGap">
+<li>Treat Plan: Procedures with a TP status.</li>
+<li>Completed: Procedures with a C status.</li>
+<li>Existing: Procedures with a EO or EC status.</li>
+<li>Referred: Procedures with a R status.</li>
+<li>Conditions: Procedures with a Cn status.</li>
+</ul>
+<p><b>Proc Notes</b>: Shows <a href="procedurenotes.html">Procedure Notes</a>, <a href="commlog.html">Commlog</a> text, body of emails, appointment notes, and task details of corresponding Procedures or Object Types. </p>
+<p><b>Selected Teeth</b>: Show only procedures and progress notes for teeth selected in the Graphical Tooth Chart. Also includes related quadrant and arch procedures and notes. Selecting this box deselects all Object Types (e.g., Appointments, Commlogs, etc).</p>
+<p><b>All</b>: Click to select all procedure status options, Object Types, and Proc Notes checkbox.</p>
+<p><b>None</b>: Click to deselect all procedure status options, Object Types, and Proc Notes checkbox.</p>
+<p><b>Date Filter</b>: Indicates the date range of items that are showing. Click <b>[...]</b> to change the date range. <br/><img src="images/showtabDateFilter.png" width="309" height="237" class="ImageInParagraph"/></p>
+<p class="MarginBottomZero"></p>
+<ul>
+<li>Date options: Quickly select a date range from the list.  <ul>
+<li>All: All dates (i.e., no date filter) </li>
+<li>Today: Click to insert the current date into the Start Date and End Date. </li>
+<li>Yesterday: Click to insert yesterday's date into the Start Date and End Date. </li>
+<li>This Year: Click to insert January 1 of the current year into the Start Date and December 31 of the current year into the End Date. </li>
+<li>Last Year: Click to insert January 1 of the previous year into the Start Date and December 31 of the previous year into the End Date.</li>
+</ul>
+</li>
+<li><b>Start Date</b>: Starting date of the date range filter. Type a date here. Only items on or after this date will be displayed. Click <b>Now</b> to quickly insert today's date.</li>
+<li><b>End Date</b>: Ending date of the date range filter. Type a date here. Only items on or before this date will be displayed. Click <b>Now</b> to quickly insert today's date.</li>
+<li>Click <b>OK</b> to save the date range filter.</li>
+<li>Click <b>Cancel</b> to close the window without saving the date range filter.</li>
+</ul>
+<p class="MarginBottomGap"><div class="Note">Note: With a date range defined, right-click and select Print Progress Notes to print notes in that date range.</div>
+</p>
+<p><b>Search</b>: Find progress note items that match search terms. This will search through all showing Object Types. Any item matching the search term will display. </p>
+<p class="MarginBottomZero"><b>Object Types</b>: In addition to procedures, show other objects.  </p>
+<ul class="MarginBottomGap">
+<li>Appointments: Check to show appointments for the patient.</li>
+<li>Commlog: Check to show commlogs for the patient. <ul>
+<li>Family: Check to also show commlogs and tasks for family members. </li>
+<li>Super Family: Check to also show commlogs for super family members. Only shows if Super Family is enabled in <a href="showfeatures.html">Show Features</a>.</li>
+</ul>
+</li>
+<li>Tasks: Check to show tasks attached to the patient, any family members, or to an appointment. The full path to the task will show.</li>
+<li>Emails: Check to show emails sent to the patient. Will display the body of the email if Proc Notes option is checked.</li>
+<li>Lab Cases: Check to show lab cases. </li>
+<li>Rx: Check to show paper or electronic prescriptions.</li>
+<li>Sheets: Check to show filled patient forms. </li>
+</ul>
+<p><b>Show Auto Commlogs</b>: Show Commlog entries that have been automatically generated (i.e., not user-generated or created by user action). Includes Commlogs created by WebSched, Program Links, Appointment Reminders and Confirmations, Automated Thank-Yous, New Patient Thank-Yous, and FHIR. Checkbox is user specific, and affects automated Commlogs in the Account Module, Chart Module, and Appointment Edit window. </p>
+<p><b>Audit</b>: Switch to Audit mode to include deleted procedures (status of D) and deleted sheets in the view. Procedures can't be edited in Audit mode. Deleted sheets can be restored by double clicking to open the Fill Sheet window, then clicking Restore.</p>
+<p><b>Is TP View</b>: Adds a Treatment Plan check box to the <a href="entertreatment.html">Enter Treatment</a> tab. The Treatment Plan check box allows users to view and create treatment plans from the Chart module. See <a href="charttp.html">Treatment Plan in Chart</a>. Checked by default when users create a new view. It is also checked in existing views if a user updates and no existing views have the box checked.</p>
+<p><b>Chart Views</b>: A list of all chart views currently set up. When a user highlights a Chart View, the grid switches and the view's default options show on the left. These values can be changed without affecting the default view settings. If a user changes an option, <i>Custom View</i> will show under the Chart Views list.</p>
+<img src="images/showChartViews.png" width="199" height="230"/><p>Open Dental comes with a Default View set up. We recommend the office renames it <i>Progress Notes</i> or create a new view called Progress Notes. Users can also create other views that show or hide specific information. The view listed first is the default view every time a user starts Open Dental. Switch between views using the function keys (F1-F12) on the keyboard or by clicking on a row. Use the Up/Down arrows to reorder views.</p>
+<h2>Chart View Edit</h2>
+<p>Double-click a chart view to edit or click <b>Add</b> to create a new view. <br/><img src="images/chartViewEdit.png" width="665" height="612" class="ImageInParagraph"/></p>
+<p><b>Description</b>: Enter the name of the view. This will also show as the grid title.</p>
+<p><b>Dates Showing</b>: Select the date range of items that will show. Select <i>All</i> to prevent the view from being filtered by a date range.</p>
+<p class="MarginBottomZero">Enable Procedures, Object Types, and additional options to determine what appears in the Chart View. Descriptions for Procedures and Object Types are the same as noted at the top of this page. </p>
+<ul class="MarginBottomGap">
+<li><b>Procedures</b>: Check the procedure statuses to include in the view. Descriptions are the same as noted above</li>
+<li><b>Object Types</b>: Check the Object Types to include in the view.</li>
+<li>Click <b>All</b> to quickly select Procedures, Proc Notes, and Object Types. Click <b>None</b> to quickly clear all selections.</li>
+<li><b>Proc Notes</b>: Shows Procedure Notes, Group Note details, Commlog text, body of emails, appointment notes, and task details of corresponding Procedures or Object Types. </li>
+<li><b>Selected Teeth</b>: Check to limit the view to only teeth selected from the Graphical Tooth Chart.</li>
+<li><b>Audit</b>: Check to enable Audit Mode in this view.</li>
+<li><b>Is TP View</b>: Check to enable TP View.</li>
+</ul>
+<p><b>Set to Default</b>: Set all items in the Fields Showing list back to system defaults. Some items may be moved to/from Available Fields.</p>
+<p class="MarginBottomZero"><b>Fields Showing</b>: Lists the columns currently in the view, in the order each column will show from left to right.  </p>
+<ul class="MarginBottomGap">
+<li><b> Up</b> / <b>Down</b>: Highlight an item in the list and use the arrow to reorder it in the list. </li>
+<li><b>Right</b> arrow: Highlight an item and click the arrow to remove it from Fields Showing. It is added to Available Fields and no longer appears in the Progress Notes area for the Chart View.</li>
+<li>Double-click a Field Showing to edit field details. See Field Showing section below.</li>
+</ul>
+<p><b>Available Fields</b>: Lists all columns currently hidden from the current Chart View. Select an item and click the <b>Left</b> arrow to move it to Fields showing. It will now appear in the current Chart View's <i>Progress Notes</i> area.</p>
+<h2>Fields Showing</h2>
+<p>Double-click a Field Showing to edit.</p>
+<img src="images/showTabFieldEdit.png" width="551" height="253"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Internal Name</b>: Default name of the field. This is read only.</li>
+<li><b>New Description</b>: Enter text here to override the Internal Name. This will be the column header in Progress Notes.</li>
+<li><b>Minimum Width</b>: Indicates the column minimum width needed to accomodate the <i>New Description</i>, or <i>Internal Name</i> if no <i>New Description</i>.</li>
+<li><b>Column Width</b>: Enter any number equal to or greater than the Minimum Width.</li>
+</ul>
+<p>Click <b>OK</b> on the Chart View Edit window to save the view.</p>
+<br/><p class="MarginBottomZero">Some Field Names are not self explanatory. Below are brief descriptions. </p>
+<ul class="MarginBottomGap">
+<li>Date: In most cases, the date the item was created. Appointments show the date the appointment takes place.</li>
+<li>Time: Varies by object. Emails show exact time it was created. Appointments show the scheduled time. This option will not show procedure times.</li>
+<li>Th: Tooth Number.</li>
+<li>Surf: Tooth Surface.</li>
+<li>Dx: Diagnosis.</li>
+<li>Description: Description of the appointment, procedure, etc.</li>
+<li>Stat: Procedure status.</li>
+<li>Prov: The attached provider.</li>
+<li>Amount: The procedure's billable fee.</li>
+<li>Proc Code: The procedure code.</li>
+<li>User: The user logged on to Open Dental when the item was entered. If a procedure, lists the user who last created or edited the procedure's notes. If an email, lists the user logged-on when the email was sent.</li>
+<li>Signed: Indicates whether or not an item (e.g. consent form, procedure) has been electronically or digitally signed.</li>
+<li>Priority: The procedure's priority level.</li>
+<li>Date TP: Day the procedure was added to the treatment plan.</li>
+<li>Date Entry: Day the procedure was entered.</li>
+<li>Prognosis: The procedure's prognosis.</li>
+<li>Length: Appointment length.</li>
+<li>Abbr: Procedure code abbreviation.</li>
+<li>Locked: Indicates if a procedure has been locked using <a href="procedurelocking.html">Procedure Lock</a>.</li>
+<li>HL7 Sent: Indicates if a procedure has been sent via HL7.</li>
+<li>Attachment: Indicates if a <a href="tasks.html">Task</a> includes attachments.</li>
+<li>ClinicDesc: The procedure's clinic description set in Lists, Clinics.</li>
+<li>Clinic: The procedure's clinic abbreviation set in Lists, Clinics.</li>
+</ul>
+<h2>Logic of Row Order in Progress Notes</h2>
+<p>The Progress notes is a grid with many different kinds of objects in it. The following logic is used:</p>
+<ol>
+<li>All rows sorted by date (but not time).</li>
+<li>Within each date, rows sorted by type (commlogs and sheets are treated as the same type and will be intermingled).</li>
+<li>Within procedures of same date, sort by status, then priority, then tooth number, and finally procedure code.</li>
+<li>Other object types that are not procedures (like commlogs, sheets, etc), which have the same date, are further sorted by time.</li>
+</ol>
+<br/></div>
+</div>
+</body>
+</html>```

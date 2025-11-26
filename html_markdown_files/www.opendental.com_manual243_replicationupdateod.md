@@ -1,0 +1,82 @@
+# File: ./www.opendental.com/manual243/replicationupdateod.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Replication: Update Open Dental Version</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('replicationupdateod','replication','advancedtopics','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/replicationupdateod.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/replicationupdateod.html" >v24.2</option><option value="https://www.opendental.com/manual241/replicationupdateod.html" >v24.1</option><option value="https://www.opendental.com/manual233/replicationupdateod.html" >v23.3</option><option value="https://www.opendental.com/manual232/replicationupdateod.html" >v23.2</option><option value="https://www.opendental.com/manual231/replicationupdateod.html" >v23.1</option><option value="https://www.opendental.com/manual224/replicationupdateod.html" >v22.4</option><option value="https://www.opendental.com/manual223/replicationupdateod.html" >v22.3</option><option value="https://www.opendental.com/manual222/replicationupdateod.html" >v22.2</option><option value="https://www.opendental.com/manual221/replicationupdateod.html" >v22.1</option><option value="https://www.opendental.com/manual214/replicationupdateod.html" >v21.4</option><option value="https://www.opendental.com/manual213/replicationupdateod.html" >v21.3</option><option value="https://www.opendental.com/manual212/replicationupdateod.html" >v21.2</option><option value="https://www.opendental.com/manual211/replicationupdateod.html" >v21.1</option><option value="https://www.opendental.com/manual205/replicationupdateod.html" >v20.5</option><option value="https://www.opendental.com/manual204/replicationupdateod.html" >v20.4</option><option value="https://www.opendental.com/manual203/replicationupdateod.html" >v20.3</option><option value="https://www.opendental.com/manual202/replicationupdateod.html" >v20.2</option><option value="https://www.opendental.com/manual201/replicationupdateod.html" >v20.1</option><option value="https://www.opendental.com/manual194/replicationupdateod.html" >v19.4</option><option value="https://www.opendental.com/manual193/replicationupdateod.html" >v19.3</option><option value="https://www.opendental.com/manual192/replicationupdateod.html" >v19.2</option><option value="https://www.opendental.com/manual191/replicationupdateod.html" >v19.1</option><option value="https://www.opendental.com/manual184/replicationupdateod.html" >v18.4</option><option value="https://www.opendental.com/manual183/replicationupdateod.html" >v18.3</option><option value="https://www.opendental.com/manual182/replicationupdateod.html" >v18.2</option><option value="https://www.opendental.com/manual181/replicationupdateod.html" >v18.1</option><option value="https://www.opendental.com/manual174/replicationupdateod.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Replication: Update Open Dental Version</p></div>
+<div class="GeneralPageContent">
+<p>To update Open Dental when using <a href="replication.html">Replication</a>, refer to the steps below. </p>
+<p class="MarginBottomZero">Before updating, make sure required setup is complete. </p>
+<ul>
+<li>All workstations need shared access to an <a href="atozfolder.html">A to Z Folder</a> with the updated contents of the Update Files folder (e.g., use file replication for shared network folders). See <a href="paths.html">Paths</a>.</li>
+<li>Disable third-party programs that may try to query the Open Dental database.</li>
+<li>Pick one replication server that will always perform updates. This is typically the first server in your replication chain. Set this server as your <i>Update Server</i> in <a href="preferences.html">Preferences</a> to ensure updates are not initiated by any other workstation. </li>
+<li>Coordinate a specific time to perform the update with all locations. Users should stay out of Open Dental for up to 60 minutes.</li>
+</ul>
+<p class="MarginBottomGap"><br/></p>
+<p>When ready to update Open Dental for all locations, follow the steps below:</p>
+<ol>
+<li>From your Update Server, kick all users out of Open Dental. Go to Tools, Misc Tools, <a href="shutdown.html">Shutdown All Workstations</a>. This tool reminds users about the update and closes Open Dental on all workstations.<br/><img src="images/shutdownWorkstations.png" width="652" height="263" class="ImageInParagraph"/></li>
+<li>Ensure all MySQL replication servers are running smoothly.</li>
+<ol>
+<li>From the File Explorer, navigate to the MySQL folder. The default location is <span class="codeblock">C:\Program Files (x86)\MySQL\MySQL Server 5.5</span> or <span class="codeblock">C:\Program Files\MariaDB 10.5</span></li>
+<li>Locate the MySQL <i>bin</i> folder. (Typically <span class="codeblock">C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin</span> or <span class="codeblock">C:\Program Files\MariaDB 10.5\bin</span>) Double-click into it. </li>
+<li>In the address bar, type <i>CMD </i>and hit enter to open CMD.<br/><img src="images/replicationCommandWindow.gif" width="656" height="397" class="ImageInParagraph"/></li>
+<li>Run the following command. Replace <i>opendental</i> with the name of the database if different. <p class="codeblock">mysql -u root -c opendental</p><div class="Note">Note: If the MySQL service has a password add <span class="codeblock">-p</span> to the command.</div>
+</li>
+<li>Run the next command.<p class="codeblock">show slave status \G</p><br/></li>
+<p>You will get the following information: <br/><img src="images/replicationCommandWindow2.gif" width="422" height="407" class="ImageInParagraph"/></p>
+</ol>
+<li>Repeat step two for each server.  <div class="Note">Note: <ul>
+<li>An <i>Empty set</i> is expected on the primary server in a two server one-way setup as only the reporting server will have a replica (slave) running</li>
+<li>By running the <span class="codeblock">show slave status</span> command on each server it will determine if replication is up and running. Do not continue if any slave status says that the Slave IO or Slave SQL is not running.</li>
+<li>In cases where replication is not running: In Open Dental go to Setup, Advanced Setup, Replication. <ul>
+<li>For Daisy Chain configurations, click <i>Sync</i> in the lower left. This stops and starts the Replicas and will ensure all replication servers receive the database update queries.</li>
+<li>For One Way configurations, this is generally not necessary, though you could run the stop slave; and start slave; commands to be certain.</li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li>From the Update Server, open Open Dental and go to Help, Update. Install the updated version. </li>
+<li>Launch Open Dental to upgrade the database.</li>
+<li>Launch Open Dental on all servers in the replication chain and log into a user at least once, to ensure the <a href="opendentalreplicationservice.html">Replication Service Monitor</a> can monitor the health of the replication chain. The Replication Service Monitor service may need to be stopped to complete the Open Dental Client update. The service can be started once the client update completes. </li>
+<li>Once complete, users can log back into Open Dental. They will be prompted to update to the new version. Click OK, then log in as normal.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>```

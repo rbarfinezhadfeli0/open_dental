@@ -1,0 +1,211 @@
+# File: ./www.opendental.com/manual/payment.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Payment</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('payment','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/payment.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/payment.html" >v24.2</option><option value="https://www.opendental.com/manual241/payment.html" >v24.1</option><option value="https://www.opendental.com/manual233/payment.html" >v23.3</option><option value="https://www.opendental.com/manual232/payment.html" >v23.2</option><option value="https://www.opendental.com/manual231/payment.html" >v23.1</option><option value="https://www.opendental.com/manual224/payment.html" >v22.4</option><option value="https://www.opendental.com/manual223/payment.html" >v22.3</option><option value="https://www.opendental.com/manual222/payment.html" >v22.2</option><option value="https://www.opendental.com/manual221/payment.html" >v22.1</option><option value="https://www.opendental.com/manual214/payment.html" >v21.4</option><option value="https://www.opendental.com/manual213/payment.html" >v21.3</option><option value="https://www.opendental.com/manual212/payment.html" >v21.2</option><option value="https://www.opendental.com/manual211/payment.html" >v21.1</option><option value="https://www.opendental.com/manual205/payment.html" >v20.5</option><option value="https://www.opendental.com/manual204/payment.html" >v20.4</option><option value="https://www.opendental.com/manual203/payment.html" >v20.3</option><option value="https://www.opendental.com/manual202/payment.html" >v20.2</option><option value="https://www.opendental.com/manual201/payment.html" >v20.1</option><option value="https://www.opendental.com/manual194/payment.html" >v19.4</option><option value="https://www.opendental.com/manual193/payment.html" >v19.3</option><option value="https://www.opendental.com/manual192/payment.html" >v19.2</option><option value="https://www.opendental.com/manual191/payment.html" >v19.1</option><option value="https://www.opendental.com/manual184/payment.html" >v18.4</option><option value="https://www.opendental.com/manual183/payment.html" >v18.3</option><option value="https://www.opendental.com/manual182/payment.html" >v18.2</option><option value="https://www.opendental.com/manual181/payment.html" >v18.1</option><option value="https://www.opendental.com/manual174/payment.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Payment</p></div>
+<div class="GeneralPageContent">
+<p>Use the Payment window to make patient payments or refunds, or view payment split information.</p>
+<p>In the <a href="account.html">Account Module</a>, click <b>Payment</b>.</p>
+<img src="images/patientPaymentWindow.png" width="915" height="594"/><p>Enter a patient payment or process a <a href="refunds.html">Patient Refund</a>. By default, payments are automatically allocated via <a href="paysplit.html">Payment Splits</a> (paysplits) to the oldest adjustments, pay plan charges, and procedures with a remaining balance. If the production charges are paid in full, expected to be paid in full, or the patient has a credit balance, payments are allocated to unearned income (e.g., prepayment). To change payment allocation settings, see <a href="allocationssetup.html">Allocations Setup</a>.</p>
+<p><img src="images/YouTube_PlayButton_15px.png" width="15" height="12" style="margin-bottom: 0px"/> See our video: <a href="https://youtu.be/x3CKA_n1qEs">Entering Patient Payments Webinar</a></p>
+<h2>Creating a Payment</h2>
+<p>See <a href="paymentpatientcreditcard.html">Credit Card Payment</a> for instructions on processing a credit card payment using an integrated processor.</p>
+<b>Selected Charges Method (Recommended)</b><p class="MarginBottomZero">To apply a payment to specific charges: </p>
+<ol class="MarginBottomGap">
+<li>Highlight the charges (adjustments, pay plan debits, procedures) from the patient account grid.</li>
+<li> Click <b>Payment</b>.</li>
+<img src="images/paymentAmount.png" width="236" height="158"/><li> Enter the payment amount.</li>
+<li>Click <b>OK</b> to proceed to the payment window (shown above) and enter payment details. <div class="Note">Note: When charges are selected, the payment amount is split between the charges by their remaining patient portion due. <ul>
+<li>Any charges with no balance due are skipped, and the payment is automatically split to the next oldest outstanding charge.</li>
+<li>If a selected charge was previously overpaid, the overpaid amount is deducted from the charge and reallocated to another charge within the current payment.</li>
+</ul>
+</div>
+</li>
+<li>Click <b>Save</b> to finalize the payment.</li>
+</ol>
+<b>First In, First Out (FIFO) Method</b><p class="MarginBottomZero">To create a payment without selecting procedures: </p>
+<ol class="MarginBottomGap">
+<li>Without any charges selected in the patient account grid, click <b>Payment</b>.</li>
+<li>Enter the payment amount. <ul>
+<li>Check <i>Prefer this patient</i> to apply the payment to the patient's oldest outstanding charges. Leave unchecked to apply the payment to the oldest outstanding charges for the entire family.</li>
+</ul>
+</li>
+<li>If the <i>Paysplits</i> setting in <a href="allocationssetup.html">Allocations Setup</a> is set to <i>Rigorous</i> or <i>Auto-Split</i>, Open Dental automatically creates payment splits for outstanding charges. If set to <i>Manual</i>, paysplits are made for the patient only.</li>
+<li>Enter payment details.</li>
+<li>Click <b>Save</b> to finalize payment.</li>
+</ol>
+<b>Outstanding Charges and Treatment Plan Prepayment Method</b><p class="MarginBottomZero">To apply payment to charges in the Outstanding Charges or Treat Plan grid: </p>
+<ol class="MarginBottomGap">
+<li>Click <b>Payment</b>.</li>
+<li>Enter payment amount.</li>
+<li>Click <b>Delete All</b> to delete automatically generated paysplits.</li>
+<li>Select charges from the <i>Outstanding</i> or <i>Treat Plan</i> tab.</li>
+<ul>
+<li>Treat Plan tab is only available if <i>Allow prepayments to allocate to treatment planned procedures</i> is enabled in Allocations Setup.</li>
+</ul>
+<li>Click <b>Pay</b>.</li>
+<li>Repeat as necessary until all charges are added to the payment.</li>
+<li>Click <b>Save</b> to finalize payment</li>
+</ol>
+<h2>Payment Details</h2>
+<img src="images/patPaymentDetails.png" width="440" height="210"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Clinic</b>: Only displayed when Clinics are enabled in <a href="showfeatures.html">Show Features</a>. The default clinic is determined by <i>Default Clinic for patient payments</i> set in <a href="preferences.html">Preferences</a>. Click the dropdown to select a different clinic. Clinic specified determines which payment processor credentials are used for merchant services if defined per <a href="clinics.html">Clinic</a>. If using <a href="depositslip.html">Deposits</a>, this is the clinic the payment is associated with.</li>
+<li><b>Paid By</b>: The name of the patient making the payment. When a payment is split to multiple family members, the payment description in the Patient Account grid shows the <i>Paid By</i> name.</li>
+<li><b>Entry Date</b>: The date the payment is entered. This is system-generated based on when the payment was created and cannot be changed.</li>
+<li><b>Surcharge Fee</b>: Surcharge or merchant fee amount charged by the payment processor. Only displays for <a href="carecreditpayment.html">CareCredit</a> and <a href="payconnectpaymentwindow.html">PayConnect</a> 2.0 users. Does not affect patient account balance. This is a database field that can be used for reporting (i.e., <a href="reportdailypayments.html">Daily Payments Report</a>). <ul>
+<li>For <a href="carecreditpayment.html">CareCredit</a> users, the field is displayed once a transaction is processed and is read-only.</li>
+<li>For <a href="payconnectpaymentwindow.html">PayConnect</a> 2.0 users, the field can be edited if no transaction has been processed on the payment. This is useful for entering payments that were processed outside of Open Dental. Once a transaction is processed on the payment, the field displays surcharge fee amount attached to the transaction and is read-only. </li>
+</ul>
+</li>
+<li><b>Payment Date</b>: The date the payment is received. Used on Deposit Slips, reports, and Patient Account grid.</li>
+<li><b>Amount</b>: The payment amount. This amount must match the total Current Payment Splits <i>Amount</i> (see below).</li>
+<li><b>Prepay</b>: Click to delete existing paysplits and replace with a single paysplit using the <i>Default unearned type for unallocated paysplits</i> set in Preferences. The payment window closes immediately after clicking this button. For additional information, see <a href="unearnedprepayment.html">Unearned / Prepayment</a>.</li>
+<li><b>Check #</b>: Optional, but recommended. Enter the check number associated with the payment. This can help distinguish one check payment from another on reports.</li>
+<li><b>Bank-Branch</b>: Optional. Enter the bank branch associated with the check. This can help differentiate check payments with the same check number or same payment amount.</li>
+<li><b>Note</b>: A note with the <a href="paymenttransdetails.html">Credit Card Transaction Details</a> is automatically added after processing a credit card payment. Optionally, add a note that appears in the patient's account as the payment description in addition to the Payment Type. Notes show on statements when the <i>Show notes for payments</i> preference is enabled. <a href="rightclicktextboxes.html">Right-Click</a> the text box for additional options.</li>
+<li><b>Hide Splits/Show Splits</b>: Click to toggle showing the Payment Splits and Charges areas. If <i>Hide paysplits from payment window by default</i> is disabled in <a href="allocationssetup.html">Allocations Setup</a>, this area shows by default. See <i>Current Payment Splits</i> and <i>Outstanding Charges and Treatment Planned Procedures</i> sections below for more information.</li>
+</ul>
+<h2>Payment Type and Credit Card Details</h2>
+<img src="images/patPaymentType.png" width="566" height="177"/><p class="MarginBottomZero"><b>Payment Type</b>: The type of payment. Affects reports. </p>
+<ul class="MarginBottomGap">
+<li><b>None (Income Transfer)</b>: Check to mark the payment as an <a href="incometransfer.html">Income Transfer</a>.  <ul>
+<li>When checked, other Payment Type options are disabled, the <b>Pay</b> button changes to <b>Transfer</b>, and the Outstanding Charges grid groups by patient, clinic, and provider. </li>
+<li>This option is disabled after a credit card transaction is processed or when editing existing payments that are attached to a deposit or are not $0. </li>
+</ul>
+</li>
+<li>Choose the Payment Type in the list. Customize options in <a href="definitionspaymenttypes.html">Definitions: Payment Types</a>. If the preference <i>Payments prompt for Payment Type</i> is disabled, a Payment Type is selected by default and can be changed. If the preference is enabled, a Payment Type must be selected manually. </li>
+</ul>
+<p><b>Pay Into Account</b>: If using the <a href="accounting.html">Accounting</a> feature, and Auto Payment Entries are set up for the selected Payment Type, use the dropdown to select an asset account to debit or credit the payment to. Set available accounts in <a href="accountingsetup.html">Accounting Setup</a>.</p>
+<p><b>Credit Card</b>: Process a <a href="paymentpatientcreditcard.html">Credit Card Payment</a>. </p>
+<p><b>Apply to Recurring Charge</b>: Check to apply this payment to a scheduled recurring charge (i.e., currently in the <a href="recurringcharges.html">CC Recurring Charges Tool </a>list). The user is prompted to select a date to apply the recurring charge. The patient is removed from the Recurring Charges List for the date the payment was applied.</p>
+<h2>Current Payment Splits</h2>
+<p><a href="paysplit.html">Payment Splits</a> (paysplits) currently attached to this payment are listed here. Paysplits can be allocated to production (i.e., procedures or adjustments), providers, clinics, patients, pay plan charges, etc. Paysplits can also be unallocated and attached to an <a href="unearnedprepayment.html">Unearned / Prepayment</a>. Double-click a row to <a href="paysplitsedit.html">Revise a Paysplit</a>.</p>
+<p>Use the <b>Filtering Current Payment Splits</b> options to highlight specific paysplits in the Current Payment Splits grid that meet filtering criteria.</p>
+<img src="images/paySplitsCurrentFilter.png" width="501" height="88"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Patients</b>: Select one or more specific patients attached to the payment to filter paysplits. Only patients with paysplits attached to the current payment are available in the dropdown.</li>
+<li><b>Providers</b>: Select one or more specific providers attached to the payment to filter paysplits. Only providers attached to production items or with outstanding or treat plan charges in the family are available in the dropdown. </li>
+<li><b>Clinics</b>: Select one or more specific Clinics attached to the payment to filter paysplits. Only Clinics with paysplits attached to the current payment are available in the dropdown.</li>
+<li><b>Amt Min</b>: Enter a positive value to filter the paysplits with a value greater than or equal to this amount.</li>
+<li><b>Amt Max</b>: Enter a positive value to filter the paysplits with a value less than or equal to this amount.</li>
+</ul>
+<p>Click <b>Refresh</b> to update filter criteria. Positive and negative paysplits matching the criteria are highlighted in the grid.</p>
+<p>All paysplits currently attached to the payment are listed in the <b>Current Payment Splits</b> grid. The grid columns indicate the provider, patient, procedure code, and amount of the paysplit. The <i>Type</i> column indicates the type of production (procedure, adjustment, etc.) attached to the paysplit and any additional details (e.g., procedure abbreviation, adjustment type description, etc.)</p>
+<img src="images/paymentCurrentSplits.png" width="491" height="251"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Delete Splits</b>: Delete the selected paysplits from the grid. The total amount of the deleted split is added back to the Amt End under Outstanding Charges for future splits.</li>
+<li><b>Delete All</b>: Delete all the paysplits in the grid. All paysplit amounts are added back to the Amt End under Outstanding Charges for future splits.</li>
+<li><b>Add Split</b>: Manually create an additional paysplit.</li>
+<li><b>Total</b>: The sum of all current payment splits. The Total must match the total payment Amount to save the payment.</li>
+</ul>
+<p><div class="Note">Note: <ul>
+<li>If a payment is split to multiple providers, only the provider most recently added to the <a href="providers.html">Providers</a> list is shown in the Patient Account Grid. Double-click an existing payment to see a breakdown of all providers attached to a payment.</li>
+<li>Payments split to multiple patients (e.g., family members) display text noting the first name of the Paid By account (i.e., where the payment was created) and <i>(split)</i> if the payment is split to multiple patients (e.g., <i>Paid by Oliver (split)</i>). Payment line items only display for accounts that have Payment Splits, regardless of the Paid By account.</li>
+</ul>
+</div>
+</p>
+<h2>Outstanding Charges and Treatment Planned Procedures</h2>
+<p>See what charges are currently outstanding and view treatment planned procedures. These charges can be used to generate new paysplits.</p>
+<p>To change what shows in the Outstanding Charges or Treatment Planned Procedures grid (see below), use the <b>Filtering</b> options.</p>
+<img src="images/paymentSplitsFiltering.png" width="611" height="88"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Patients</b>: Select one or more family members with outstanding or treatment planned charges from the dropdown. </li>
+<li><b>Providers</b>: Select one or more specific providers. Only providers attached to production items or with outstanding or treat plan charges in the family are available in the dropdown. </li>
+<li><b>Type</b>: Select one or more specific charge types (e.g., adjustments, procedures, or pay plan charges).</li>
+<li><b>Clinics</b>: Select one or more Clinics from the dropdown.</li>
+<li><b>Amt End Min</b>: Enter a value to limit the charges with a minimum remaining balance greater than or equal to this amount.</li>
+<li><b>Amt End Max</b>: Enter a value to limit the charges with a maximum remaining balance less than or equal to this amount.</li>
+<li><b>From/To Dates</b>: Enter a value or use the calendar dropdown to select a date range. Only procedures completed or treatment planned/scheduled in this date range are shown.</li>
+<li><b>Proc Codes</b>: Narrow the charges by procedure code(s). This field is case-sensitive. To enter more than one code, separate each code with a comma (e.g., D0210,D1110).</li>
+</ul>
+<p>Click <b>Refresh</b> to update items in the grid after setting filter options.</p>
+<p>By default, the Outstanding tab is selected and the grid lists outstanding charges matching the filter criteria. Users can select completed charges or treatment planned procedures to create paysplits.</p>
+<img src="images/paymentOutstandingCharges.png" width="612" height="330"/><p class="MarginBottomZero"><b>Outstanding Tab</b>: Lists all adjustments, pay plan charges, and completed procedures that meet the filter criteria. </p>
+<ul class="MarginBottomGap">
+<li>Use the checkboxes at the top of the grid to further filter the listed charges. <ul>
+<li><b>Show Only Allocated Credits</b> (Outstanding tab only): Only show production items with a remaining balance after their attached adjustments and payments have been applied. This may be useful if an outstanding charge is not listed because it has been indirectly paid off by unallocated credits.</li>
+<li><b>Show Super Family Charges</b> (Outstanding tab only): Show or hide charges for every patient in the <a href="superfamily.html">Super Family</a>. Only appears when the selected patient is in a Super Family.</li>
+<li><b>Show All Charges</b> (Outstanding tab only): By default, only unpaid adjustments, pay plan charges, and procedures in the family show. Check this box to also show paid charges.</li>
+</ul>
+</li>
+<li>All paysplits matching the applied filters are listed in the Outstanding Charges grid. <ul>
+<li>Amt Orig: Amount owed on a charge prior to any payments, adjustments, or insurance estimates.</li>
+<li>Amt End: Amount owed on a charge after all payments, adjustments, and insurance estimates including the current payment.</li>
+<li>Total: The total <i>Amt End</i> of all the selected outstanding charges. If no charges are selected, this is the total <i>Amt End</i> of all charges in the grid.</li>
+</ul>
+</li>
+</ul>
+<p><div class="Note">Note: If the preference <i>Balances don't subtract insurance estimate</i> is enabled, the charge balances reflect the amount after all payments, adjustments, and PPO write-offs. Insurance estimates are not included.</div>
+</p>
+<p class="MarginBottomZero"><b>Treat Plan Tab</b>: This tab is only available when <i>Allow prepayments to allocate to treatment planned procedures</i> is enabled in <a href="allocationssetup.html">Allocations Setup</a>. Lists all treatment planned procedures that meet the filter criteria. </p>
+<ul class="MarginBottomGap">
+<li>Amt Orig: Amount owed on a charge prior to any payments, adjustments, or insurance estimates.</li>
+<li>Amt End: Amount owed on a charge after all payments, adjustments, and insurance estimates including the current payment.</li>
+<li>Total: The total <i>Amt End</i> of all the selected treatment planned procedures. If no procedures are selected, this is the total <i>Amt End</i> of all procedures in the grid.</li>
+</ul>
+<p><b>Pay</b>: Click to create paysplits for the selected outstanding charges or treatment planned procedures.</p>
+<p><b>Transfer</b>: When <i>None (Income Transfer)</i> is the Payment Type, the Pay button changes to Transfer. Useful for <a href="incometransfer.html">Income Transfers</a>.</p>
+<p><b>Add Partials</b>: Click to create a paysplit for only part of an outstanding charge. There is a prompt to enter the partial paysplit amount after clicking this button.</p>
+<p class="MarginBottomZero"><b>Group By</b>: Change the grouping of items in the grid.  </p>
+<ul>
+<li>None (default): Show all charges for all patients in the family, sorted first by date (oldest charge at the top), then by procedure code.</li>
+</ul>
+<p class="MarginBottomGap"><img src="images/outstandingChargesGroupNone.png" width="606" height="166"/><ul>
+<li>Provider: Combine each family member's outstanding charges into one row per provider. When grouping by provider, the Type and Clinics filters are disabled.</li>
+</ul>
+<img src="images/outstandingChargesGroupProv.PNG" width="606" height="166"/><ul>
+<li>Clinic and Provider: Combine each family member's charges into one row per provider and clinic. When grouping by clinic, the Type filter is disabled.</li>
+</ul>
+<img src="images/outstandingChargesGroupProvClin.PNG" width="606" height="126"/></p>
+<h2>Save Payment, Receipts, and More</h2>
+<ul>
+<li><b>Print Receipt</b>: Reprint XCharge or PayConnect receipts. This button only shows if a receipt already exists for the transaction.</li>
+<li><b>Email Receipt</b>: Generate a PDF copy of the XCharge or PayConnect receipt and email it to the patient. A copy of the receipt is saved in the patient's <a href="images.html">Imaging Module</a>.</li>
+<li><b>Delete</b>: Delete the entire payment. Only enabled on existing payments.</li>
+<li><b>Save</b>: Post the payment to the patient account or save changes.</li>
+<li>When exiting a Payment without clicking Save, the behavior varies depending on the point the user is in the payment process. <ul>
+<li>New payment, no credit card transaction: If this is a new payment and no credit card has been processed, exiting deletes the payment.</li>
+<li>New payment with a credit card transaction: If this is a new payment and a credit card was processed, exiting voids the credit card transaction, posts the payment, and posts a separate voided payment.</li>
+<li>Editing an existing payment: Exiting cancels any changes made in the payment window.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

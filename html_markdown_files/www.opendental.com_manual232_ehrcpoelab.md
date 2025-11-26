@@ -1,0 +1,66 @@
+# File: ./www.opendental.com/manual232/ehrcpoelab.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - EHR Medical Lab Order ( CPOE )</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('ehrcpoelab','ehrdashboard1','+chartToolbar','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/ehrcpoelab.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/ehrcpoelab.html" >v24.2</option><option value="https://www.opendental.com/manual241/ehrcpoelab.html" >v24.1</option><option value="https://www.opendental.com/manual233/ehrcpoelab.html" >v23.3</option><option value="https://www.opendental.com/manual232/ehrcpoelab.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/ehrcpoelab.html" >v23.1</option><option value="https://www.opendental.com/manual224/ehrcpoelab.html" >v22.4</option><option value="https://www.opendental.com/manual223/ehrcpoelab.html" >v22.3</option><option value="https://www.opendental.com/manual222/ehrcpoelab.html" >v22.2</option><option value="https://www.opendental.com/manual221/ehrcpoelab.html" >v22.1</option><option value="https://www.opendental.com/manual214/ehrcpoelab.html" >v21.4</option><option value="https://www.opendental.com/manual213/ehrcpoelab.html" >v21.3</option><option value="https://www.opendental.com/manual212/ehrcpoelab.html" >v21.2</option><option value="https://www.opendental.com/manual211/ehrcpoelab.html" >v21.1</option><option value="https://www.opendental.com/manual205/ehrcpoelab.html" >v20.5</option><option value="https://www.opendental.com/manual204/ehrcpoelab.html" >v20.4</option><option value="https://www.opendental.com/manual203/ehrcpoelab.html" >v20.3</option><option value="https://www.opendental.com/manual202/ehrcpoelab.html" >v20.2</option><option value="https://www.opendental.com/manual201/ehrcpoelab.html" >v20.1</option><option value="https://www.opendental.com/manual194/ehrcpoelab.html" >v19.4</option><option value="https://www.opendental.com/manual193/ehrcpoelab.html" >v19.3</option><option value="https://www.opendental.com/manual192/ehrcpoelab.html" >v19.2</option><option value="https://www.opendental.com/manual191/ehrcpoelab.html" >v19.1</option><option value="https://www.opendental.com/manual184/ehrcpoelab.html" >v18.4</option><option value="https://www.opendental.com/manual183/ehrcpoelab.html" >v18.3</option><option value="https://www.opendental.com/manual182/ehrcpoelab.html" >v18.2</option><option value="https://www.opendental.com/manual181/ehrcpoelab.html" >v18.1</option><option value="https://www.opendental.com/manual174/ehrcpoelab.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>EHR Medical Lab Order ( CPOE )</p></div>
+<div class="GeneralPageContent">
+<p>Medical lab orders can be entered in Open Dental and the results can be imported or entered directly. For an order to count for the EHR measure CPOE Laboratory Orders, a provider must be logged on when the order is created.</p>
+<ol>
+<li>From the <a href="ehrdashboard1.html">EHR Dashboard</a>, click <b>Edit labs</b>. <br/><img src="images/ehrCpoeLab.gif" width="915" height="135" class="ImageInParagraph"/> Only orders entered after December 31, 2013 show. To view prior orders, click Labs/Rads on the EHR dashboard.</li>
+<li>Click Add. <br/><img src="images/ehrLabEdit.gif" width="915" height="679" class="ImageInParagraph"/></li>
+<li>Enter the order information then click Save.  <ul>
+<li>Required fields for a CPOE Lab Order: <ul>
+<li><b>Ordering Provider</b>: Identifier, ID, Identifier Type, Universal ID. Click [...] to select a provider and auto-populate provider information. If the provider has an NPI, the default Identifier will be the NPI number. If the provider does not have an NPI, the Provider Number (OID) is the default. Identifier must be the NPI or Provider Number.</li>
+<li><b>Service Identifier</b>: Code System, Observation ID and Date/Time Start. Click [...] to select the LOINC code for this order.<br/> Date/Time Start must be entered using this format: YYYY-MM-DD.</li>
+</ul>
+</li>
+<li>Other Fields: <ul>
+<li>Place Order Number: To auto create order numbers, check the Auto box. Objecdt Identifiers (OIDs) must be set up. The Place Order ID number should exactly match the identifying number on the lab order being sent to the lab.</li>
+<li><b>Last Update</b>: This date reflects the last time results changed and affects the date of the order on the Lab Orders window. It is not updated automatically.</li>
+<li><b>All Dates</b>: Must be entered using this format: YYYY-MM-DD</li>
+<li><b>TQ1 Dates</b>: TQ1 equals Timing and Quantity.</li>
+<li><b>Notes</b>: Notes about the lab. You can create new notes, or add comments to existing notes.</li>
+<li><b>Add Result</b>: Add a lab result.</li>
+</ul>
+</li>
+</ul>
+<br/> If results for this lab have already been imported or entered, a line entry for each result will show. Double click to view.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>```

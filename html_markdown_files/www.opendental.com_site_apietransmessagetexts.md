@@ -1,0 +1,53 @@
+# File: ./www.opendental.com/site/apietransmessagetexts.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API EtransMessageTexts</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apietransmessagetexts','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API EtransMessageTexts</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96etransmessagetext.html" target="_blank">EtransMessageText Database Schema.</a></p>
+<h2>EtransMessageTexts GET (single)</h2>
+<p>Version Added: 23.2.11</p>
+<p>Gets a single EtransTextMessage. For more information, see <a href="canadaetransedit.html">Etrans Edit</a>.</p>
+<p><b>Parameters</b>:<br><br><b>EtransMessageTextNum</b>: Required in URL.<br></p>
+<p><b>Example Request:</b><br> GET /etransmessagetexts/45</p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "EtransMessageTextNum": 45,<br> "MessageText": "ISA*00* *00* *30*330989922 *30*330989922 *171003*0802*U*00401*000000000*0*P*:~..."<br> }<br></span></p>
+<p>200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>```

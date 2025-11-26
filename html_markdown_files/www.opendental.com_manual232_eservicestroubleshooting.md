@@ -1,0 +1,112 @@
+# File: ./www.opendental.com/manual232/eservicestroubleshooting.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - eServices Troubleshooting</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('eservicestroubleshooting','econnector','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/eservicestroubleshooting.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/eservicestroubleshooting.html" >v24.2</option><option value="https://www.opendental.com/manual241/eservicestroubleshooting.html" >v24.1</option><option value="https://www.opendental.com/manual233/eservicestroubleshooting.html" >v23.3</option><option value="https://www.opendental.com/manual232/eservicestroubleshooting.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/eservicestroubleshooting.html" >v23.1</option><option value="https://www.opendental.com/manual224/eservicestroubleshooting.html" >v22.4</option><option value="https://www.opendental.com/manual223/eservicestroubleshooting.html" >v22.3</option><option value="https://www.opendental.com/manual222/eservicestroubleshooting.html" >v22.2</option><option value="https://www.opendental.com/manual221/eservicestroubleshooting.html" >v22.1</option><option value="https://www.opendental.com/manual214/eservicestroubleshooting.html" >v21.4</option><option value="https://www.opendental.com/manual213/eservicestroubleshooting.html" >v21.3</option><option value="https://www.opendental.com/manual212/eservicestroubleshooting.html" >v21.2</option><option value="https://www.opendental.com/manual211/eservicestroubleshooting.html" >v21.1</option><option value="https://www.opendental.com/manual205/eservicestroubleshooting.html" >v20.5</option><option value="https://www.opendental.com/manual204/eservicestroubleshooting.html" >v20.4</option><option value="https://www.opendental.com/manual203/eservicestroubleshooting.html" >v20.3</option><option value="https://www.opendental.com/manual202/eservicestroubleshooting.html" >v20.2</option><option value="https://www.opendental.com/manual201/eservicestroubleshooting.html" >v20.1</option><option value="https://www.opendental.com/manual194/eservicestroubleshooting.html" >v19.4</option><option value="https://www.opendental.com/manual193/eservicestroubleshooting.html" >v19.3</option><option value="https://www.opendental.com/manual192/eservicestroubleshooting.html" >v19.2</option><option value="https://www.opendental.com/manual191/eservicestroubleshooting.html" >v19.1</option><option value="https://www.opendental.com/manual184/eservicestroubleshooting.html" >v18.4</option><option value="https://www.opendental.com/manual183/eservicestroubleshooting.html" >v18.3</option><option value="https://www.opendental.com/manual182/eservicestroubleshooting.html" >v18.2</option><option value="https://www.opendental.com/manual181/eservicestroubleshooting.html" >v18.1</option><option value="https://www.opendental.com/manual174/eservicestroubleshooting.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>eServices Troubleshooting</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="econnector.html">eConnector</a>.</p>
+<p>Below are some general troubleshooting steps when experiencing issues with the eConnector or eServices in general. </p>
+<p class="MarginBottomZero">For steps that relate to a specific eService, refer to the service's troubleshooting page: </p>
+<ul class="MarginBottomGap">
+<li><a href="eremindertroubleshooting.html">eReminder and eConfirmation Troubleshooting</a></li>
+<li><a href="textintegratedtroubleshooting.html">Integrated Texting Troubleshooting</a></li>
+<li><a href="mobilewebtroubleshooting.html">Mobile Web Troubleshooting</a></li>
+<li><a href="portaltroubleshooting.html">Patient Portal Troubleshooting</a></li>
+<li><a href="webschedtroubleshooting.html">Web Sched Troubleshooting</a></li>
+<li><a href="../site/eserviceports.html">Ports and IP Addresses for eServices</a></li>
+</ul>
+<h2>eConnector Requirements</h2>
+<p>The server that hosts the eConnector must remain on at all times for eServices to work. The eConnector is how the practice securely communicates with Open Dental HQ. If the server hosting the eConnector is off, or the eConnector service is not running, eServices cannot operate.</p>
+<p>Ensure all machines are synched to the same time. Time differences between workstations and the eConnector server will cause eServices to appear down even when they are not.</p>
+<p>WebView2 must be installed on the server hosting the eConnector.</p>
+<h2>General Troubleshooting</h2>
+<p class="MarginBottomZero">When eServices go down, you may notice the following: </p>
+<ul class="MarginBottomGap">
+<li>An <i>eConnector Down</i><a href="alerts.html"> Alert</a>.</li>
+<li>Unable to load a page or feature (e.g., Patient Portal, Web Sched, eClipboard, etc.). </li>
+<li>Unable to send or receive text messages. </li>
+<li>The eConnector status is <i>Error</i>.</li>
+<li>In the <a href="servicemanager.html">Service Manager</a>, the service has a status of <i>installed, stopped</i>.</li>
+</ul>
+<p class="MarginBottomZero">To fix, follow these steps in this order. If one step doesn't fix the issue, proceed to the next. </p>
+<ol class="MarginBottomGap">
+<li>Check the internet connection and ensure the eConnector server is on. </li>
+<li>Check to ensure the eConnector is running. If not, restart it.</li>
+<li>Manually uninstall and reinstall the eConnector.</li>
+<li>Uninstall and reinstall Open Dental on the eConnector server. </li>
+<li>Check your firewall settings. See <a href="allowapplication.html">eConnector Firewall</a>.</li>
+<li>Check for errors in the eConnector log (<b>C:\Program Files (x86)\Open Dental\OpenDentalEConnector\Logger</b>).</li>
+</ol>
+<h2>General Service Error Messages</h2>
+<p><b>Could not reach HQ. Please make sure you have an internet connection and try again or call support. Unable to connect to the remote server. </b></p>
+<p>See <a href="../site/eserviceports.html">Ports and IP Addresses for eServices</a>.</p>
+<p><b>error code 200 </b></p>
+<p>This can occur when trying to access a web page in the Patient Portal, Mobile Web, or Web Sched, but the link has been edited in the browser. Retype the URL in the browser address bar using the exact URL provided for the eService in eServices Setup. If the issue persists, contact us.</p>
+<p><b>Failed to access registry</b></p>
+<p>This can occur during installation of eConnector. Log into Windows as a user with higher privileges (e.g. administrator) or manually install the eConnector.</p>
+<p><b>Failed upgrading to the eConnector service: Unable to install the service.</b></p>
+<p>Run the Open Dental setup file on the eConnector host computer and try the installation process again.</p>
+<p><b>Listener Version does not match Program Version</b></p>
+<p>The service was not stopped prior to updating Open Dental. In the Service Manager, stop the eConnector, then reinstall Open Dental.</p>
+<p><b>Message from: server - Unable to connect to any of the specified MySQL hosts</b></p>
+<p>Try to start the eConnector manually.</p>
+<p><b>Internet Explorer can't display this page</b></p>
+<p>Use a different browser.</p>
+<p><b>This is not an error... </b></p>
+<p>Ignore this error.</p>
+<p><b>Inner Thread Loop Failed</b></p>
+<p>Ignore this error.</p>
+<p><b>ValidatePatientPortal registraton failed</b></p>
+<p>This indicates that registration failed due to the previous error in the Event Viewer list. Check the previous error to troubleshoot.</p>
+<p><b>(in a logger folder) Object reference not set to an instance of an object</b></p>
+<p>Update to the latest stable version.</p>
+<p><b>No immortal socket connection found for RegistrationKeyNum...</b></p>
+<p>Open Dental headquarters cannot communicate with your eConnector. Follow the eServices are not working steps at the top of this page.</p>
+<p><b>Error: MethodWebSchedRSs, unknown method: GetHeaderInfo. </b></p>
+<p>Re-run setup file for current OpenDental version on server. There are likely missing .dll files for the eConnector that were missed on the initial update.</p>
+<h2>Access Issues</h2>
+<p><b>I recently changed my Listener Port or my IP address. Now I am unable to access eServices.</b></p>
+<p>If you have bookmarked the long version of the URL used by the eService, it may be causing this issue. (e.g. for Patient Portal or Mobile Web), this may be causing the issue. This was a version related issue. We recommend updating to the latest stable version or bookmarking the short URL instead. Typically the short URL generated by Open Dental will look something like this: <p class="codeblock">https://www.patientviewer.com/?ID=abc123.</p></p>
+<h2>Mobile App Images</h2>
+<p><b>Images not generating on mobile devices.</b></p>
+<p>Before images like the Tooth Chart can be retrieved from Open Dental, make sure that the server hosting the office's eConnector has Microsoft Visual C++ 2015 Redistributable Update 3 installed.</p>
+<h2>Signup Portal</h2>
+<p>To view the Signup Portal, WebView2 must be installed. If WebView2 is not installed, a popup will display asking the user to download the installation. This only needs to be done once on each workstation.</p>
+</div>
+</div>
+</body>
+</html>```

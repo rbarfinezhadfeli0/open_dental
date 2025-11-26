@@ -1,0 +1,172 @@
+# File: ./www.opendental.com/site/version21_4.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Version 21.4</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('version21_4','versions','advancedtopics','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Version 21.4</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="versions.html">Versions</a>.</p>
+<p>Version 21.4 was released on 03/03/2022. </p>
+<p><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> Overview of <a href="https://youtu.be/nUMjpsULDVQ">Version 21.4</a>.</p>
+<h2>Major Changes</h2>
+<p class="MarginBottomZero"><b>New options when printing appointments</b></p>
+<ul class="MarginBottomGap">
+<li>Print in full color, partial color, or black and white. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7apptprint.html">Print Appointments</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Enter insurance information when scheduling appointments via Web Sched</b></p>
+<ul class="MarginBottomGap">
+<li>Available for Web Sched New Patient and Web Sched Existing Patient. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webschedexistingpatientsees.html">Web Sched Existing Patient: What Patient Sees</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webschednewpatsees.html">Web Sched New Patient: What Patient Sees</a></li>
+<li>Select which carriers to allow or not allow. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webschedcarrierrule.html">Web Sched Carrier Rule</a></li>
+<li>Patients enter insurance information when scheduling. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webschedexistingpatientsees.html">Web Sched Existing Patient: What Patient Sees</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webschednewpatsees.html">Web Sched New Patient: What Patient Sees</a></li>
+</ul>
+<p><b>Create Continuity of Care Documents from the Chart Module </b><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7ehrccd.html">Continuity of Care Document (CCD)</a></p>
+<h2>Changes by Category</h2>
+<p class="MarginBottomZero"><b>Account Module</b></p>
+<ul class="MarginBottomGap">
+<li>Delete payment plan charges from the Dynamic Payment Plan window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paymentplandynamic.html">Payment Plan</a></li>
+<li>Preference to run a limited income transfer on overpaid procedures attached to a received claim. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7allocationssetup.html">Allocations Setup</a></li>
+<li>Users must select a status when using Custom Claim Tracking. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimtabstatus.html">Edit Claim - Status History Tab</a></li>
+<li>Disallow negative adjustments on dynamic payment plans. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paymentplandynamic.html">Payment Plan</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Appointments Module</b></p>
+<ul class="MarginBottomGap">
+<li>Reorder appointment field defs. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7appointmentfields.html">Appointment Field Defs</a></li>
+<li>Warn users when deleting the last procedure from an appointment. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7aptedit.html">Edit Appointment</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procedureedit.html">Procedure</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7chart.html">Chart Module</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Chart Module</b></p>
+<ul class="MarginBottomGap">
+<li>Preview an exam sheet. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7examsheets.html">Exam Sheet</a></li>
+<li>Commlog preference to not set type, mode, or sent/received status. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7enterprisesetup.html">Enterprise Setup</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7commlog.html">Commlog</a></li>
+<li>New commlog modes for Phone and Text. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7commlog.html">Commlog</a></li>
+</ul>
+<p class="MarginBottomZero"><b>eServices</b></p>
+<ul class="MarginBottomGap">
+<li>Open Dental Mobile considers selected clinic when running report. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7opendentalmobilereports.html">ODMobile Reports</a></li>
+<li>Display progress bar when downloading web forms. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webformsretrieve.html">Web Forms Retrieve</a></li>
+<li>Track which part of eClipboard a patient is in. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7eclipboardsetup.html">eClipboard Setup</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7kiosk.html">Kiosk Manager</a></li>
+<li>Option not to save card information when making payment via eClipboard. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7eclipboardpayment.html">eClipboard: Payment</a></li>
+<li>Alert if Web Sched Recalls are unable to send. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7alerts.html">Alerts</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7recalllist.html">Recall List</a></li>
+<li>Update Payment Plan title when sending to eClipboard. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7eclipboardpaymentplans.html">eClipboard: Payment Plans</a></li>
+<li>Open Dental Mobile visual changes in Appointments Module. (Also backported to Version 21.3.34) <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7opendentalmobileappts.html">ODMobile Appointments</a></li>
+<li>eService Activity Log tracks Patient Portal Payments. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7eserviceactivitylog.html">eService Activity Log</a></li>
+<li>Ability to restrict Web Sched Recall appointments to specific blockouts. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webschedrecallsetup.html">Web Sched Recall</a></li>
+<li>Allow CCDs in the Patient Portal without requiring EHR settings. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7portalpatientsees.html">Patient Portal: What Patient Sees</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7ehrccd.html">Continuity of Care Document (CCD)</a></li>
+<li>Display history of previous secure email messages. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7secureemailworkflow.html">Secure Email: Workflow</a></li>
+<li>Web Sched Recall preference to determine how many months into the future a patient can schedule their appointment. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webschedrecallsetup.html">Web Sched Recall</a></li>
+<li>eClipboard option to ignore specific sheets. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7eclipboardsetup.html">eClipboard Setup</a></li>
+<li>Secure Email alert includes patient name. (Also backported to Version 21.3.45) <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7alerts.html">Alerts</a></li>
+<li>Print secure email messages. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7secureemailworkflow.html">Secure Email: Workflow</a></li>
+<li>Added<i> [NamePreferredOrFirst]</i> replacement tag to Automated Messaging. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7editrule.html">Edit Rule</a></li>
+<li>Ability for patients with a patient clone to schedule Web Sched Existing Patient appointments. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webschedexistingpatientsees.html">Web Sched Existing Patient: What Patient Sees</a></li>
+<li>Notes are optional on payments made via Patient Portal. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7portalpaymentsbypatient.html">Payment Portal</a></li>
+<li>Prevent a mass email from being sent more than once in a 31-day period to the same email address. (Affects all versions) <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7advertisingselectpatients.html">Advertising - Select Patients</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Imaging Module</b></p>
+<ul class="MarginBottomGap">
+<li>Preference to set default import folder. <a href="https://www.opendental.com/manual214/modulesetupimages.html">Imaging Module Preferences</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7images.html">Imaging Module</a></li>
+<li>Freehand drawing with pen, point to point lines, edit, change color, etc. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7draw.html">Draw</a></li>
+<li>Edit existing mounts. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7mountinfo.html">Mount Info</a></li>
+<li>Determine where an image will display on screen. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7images.html">Imaging Module</a></li>
+<li>Mounts can now contain generated text. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7mountdefinitions.html">Mount Definitions</a></li>
+<li>Unmounted area for retakes. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7images.html">Imaging Module</a></li>
+<li>Display photos as thumbnails. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7definitionsimagecat.html">Definitions: Image Categories</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7images.html">Imaging Module</a></li>
+<li>Rotate images by any number of degrees. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7mountsize.html">Image Size</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Manage Module</b></p>
+<ul class="MarginBottomGap">
+<li>Add attachments to tasks. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7taskattachments.html">Task Attachments</a></li>
+<li>ADP Run supports semi-monthly pay periods. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7timecardmanage.html">Manage Time Cards</a></li>
+<li>Manage Module preference to hide providers without a DEA number when generating an Rx sheet. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7rx.html">Rx / Prescription</a>, <a href="https://www.opendental.com/manual214/modulesetupmanage.html">Manage Module Preferences</a></li>
+<li>Restore functionality updated to check for which database management system is in use. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7backuptool.html">Backup Tool</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7removeolddata.html">Remove Old Data</a></li>
+<li>ADP Run uses PayrollID instead of EmployeeNum. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7timecardmanage.html">Manage Time Cards</a></li>
+<li>Filing Code filter for the Billing List. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7billing.html">Billing</a></li>
+<li>Printed ERAs display column for Claim Adjustment Reason Codes. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimsera835.html">ERAs</a></li>
+<li>Canada Claims - <i>Undo </i>no longer deletes claim data. <a href="canadaclaimsend.html">Canada Claim History and ROT</a></li>
+<li>Display validation warning in Send Claims window when carrier does not support attachments. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimsend.html">Send Claims</a></li>
+<li>Attach claims to ERAs when they are imported. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7era.html">ERA</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Open Dental Cloud</b></p>
+<ul class="MarginBottomGap">
+<li>Open Dental Cloud users are prompted if a new Cloud Client exists. <a href="opendentalcloudsignin.html">Open Dental Cloud Sign In</a></li>
+<li>Open Dental Cloud displays maximum OpenDentImages size and maximum license number. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7cloudmanagement.html">Cloud Management</a></li>
+<li>Disabled Backup Reminder for Open Dental Cloud users. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7backupreminder.html">Backup Reminder</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Reports</b></p>
+<ul class="MarginBottomGap">
+<li>Added additional options for viewing query results. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7queryoverview.html">User Query</a></li>
+<li>Added clarification on reports that hidden clinics are included when All is selected. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportsstandard.html">Standard Reports</a></li>
+<li>Right-click options added to User Queries. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7queryoverview.html">User Query</a></li>
+<li>Added a new checkbox to Insurance Overpaid report that filters overpaid procedures that do not have an insurance payment or write-off. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportproceduresoverpaid.html">Procedures Overpaid Report</a></li>
+<li>Added a disclaimer to Insurance Overpaid Report. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportinsoverpaid.html">Insurance Overpaid Report</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Security</b></p>
+<ul class="MarginBottomGap">
+<li>Security permission for adding or editing definitions. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>Security permission to merge prescriptions. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7prescriptionscombine.html">Combine Prescriptions</a></li>
+<li>Security permission for Text Message View. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>Security permission for Text Message Send. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>Security permission for updating Open Dental. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7audittrailpermissions.html">Audit Trail Permissions</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7update.html">Update</a></li>
+<li>Security permission for determining which adjustments a user can add to an account. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>Audit trail entry when automation toggles the <i>Appointment scheduling is restricted</i> checkbox. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7audittrailpermissions.html">Audit Trail Permissions</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Miscellaneous</b></p>
+<ul class="MarginBottomGap">
+<li>Tool to merge prescriptions. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7prescriptionscombine.html">Combine Prescriptions</a></li>
+<li>Auto Ortho preference to stop treatment months when debond code is completed. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7orthoauto.html">Auto Ortho</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7orthosetup.html">Ortho Setup</a></li>
+<li>Provider overrides allowed for Canada Lab Fees. <a href="canadalabfees.html">Canada Lab Fees</a></li>
+<li>Add favorite queries to Advertising - Select Patients. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7advertisingselectpatients.html">Advertising - Select Patients</a></li>
+<li>Family Balancer Tool option for FIFO transfer.</li>
+<li>Family Balancer tool for single family.</li>
+<li>Mark procedures as Do not bill insurance by insurance plan. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7insplanoverrides.html">Insurance Plans Overrides</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procedurecodeedit.html">Procedure Code</a></li>
+<li>New [UserName] replacement tag for program links. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7programlinkoutputfile.html">Program Link Output File</a></li>
+<li>Plug-ins must be whitelisted to work within Open Dental. <a href="plugins.html">Plug-in Framework</a></li>
+<li>Allow users without the <i>Ins Plan Edit</i> permission to request electronic benefits. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>Added Ai-Dental program bridge. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7bridgeaidental.html">Ai-Dental Bridge</a></li>
+<li>Implemented 2022 ODA Fee Guides. (Also backported to Version 21.3.37) <a href="canadafeeschedules.html">Canada Fee Guides</a></li>
+<li>Implemented 2022 BCDA Fee Guides. (Also backported to Version 21.3.39) <a href="canadafeeschedules.html">Canada Fee Guides</a></li>
+<li>Option to reset Zoom settings on another workstation. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7computer.html">Computers</a></li>
+<li>Wiki search enhanced to preferentially disable find-as-you-type behavior. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7wikisearch.html">Wiki Search</a></li>
+<li>Age restriction added to CareCredit Batch QuickScreen. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7carecreditsetup.html">CareCredit Setup</a></li>
+<li>Added Output Text Field <i>TermsAndConditions</i> to Payment Plan Sheet. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7sheetsoutputtext.html">Sheet Output Text Field</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paymentplansheets.html">Payment Plan Layout</a></li>
+<li>Added 2021 SNOMED Codes. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7snomedct.html">SNOMED CT Codes</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7codesystemimport.html">Importing Code Systems</a></li>
+<li>Gmail users can determine which emails to download to the Email Inbox. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7emailaddressedit.html">Email Address Edit</a></li>
+<li>Enhancements to DentalXChange Attachment Tool snipping feature. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7dentalxchangeattachmentservice.html">DentalXChange Attachment</a></li>
+<li>Queries allow user to copy all data from selected rows in a tab-delimited format. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7queryoverview.html">User Query</a></li>
+</ul>
+		</div>
+	</div>
+</body>
+</html>```

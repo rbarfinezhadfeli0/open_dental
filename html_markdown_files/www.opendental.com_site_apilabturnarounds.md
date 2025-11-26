@@ -1,0 +1,80 @@
+# File: ./www.opendental.com/site/apilabturnarounds.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API LabTurnarounds</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apilabturnarounds','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API LabTurnarounds</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7laboratories.html">Laboratories</a> for more information.</p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96labturnaround.html" target="_blank">LabTurnaround Database Schema.</a></p>
+<h2>LabTurnarounds GET (single)</h2>
+<p>Version Added: 24.2.29</p>
+<p>Gets a single labturnaround.</p>
+<p><b>LabTurnaroundNum:</b> Required in URL.</p>
+<p><b>Example Request:</b><br> GET /labturnarounds/23<br></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "LabTurnaroundNum": 23,<br> "LaboratoryNum": 7,<br> "Description": "Implant",<br> "DaysPublished": 3,<br> "DaysActual": 4<br> } </span></p>
+<p>200 OK<br> 404 NotFound (with explanation)<br></p>
+<h2>LabTurnarounds GET (multiple)</h2>
+<p>Version Added: 24.2.29</p>
+<p>Gets a list of labturnarounds.</p>
+<p><b>LaboratoryNum: </b> Optional. FK to laboratory.LaboratoryNum.<br></p>
+<p><b>Example Requests:</b><br> GET /labturnarounds<br> GET /labturnarounds?LaboratoryNum=7<br></p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br> {<br> "LabTurnaroundNum": 23,<br> "LaboratoryNum": 7,<br> "Description": "Implant",<br> "DaysPublished": 3,<br> "DaysActual": 4<br> },<br> {<br> "LabTurnaroundNum": 24,<br> "LaboratoryNum": 7,<br> "Description": "Repair",<br> "DaysPublished": 1,<br> "DaysActual": 2<br> },<br> etc...<br> ]<br></span></p>
+<p>200 OK<br> 404 NotFound (with explanation)<br></p>
+<h2>LabTurnarounds POST (create)</h2>
+<p>Version Added: 24.4.13</p>
+<p>Creates a labturnaround for a laboratory.</p>
+<p><b>LaboratoryNum: </b>Required. FK to laboratory.LaboratoryNum.<br><b>Description:</b> Required. The description of the service that the lab is performing.<br><b>DaysActual:</b> Required. The actual number of days.<br><br><b>DaysPublished:</b> Optional. The number of days that the lab publishes as the turnaround time for the service.<br></p>
+<p><b>Example Request:</b><br> POST /labturnarounds<br></p>
+<p><span class="codeblock"> {<br> "LaboratoryNum": 6,<br> "Description": "Implant",<br> "DaysPublished": 3,<br> "DaysActual": 4<br> }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "LabTurnaroundNum": 23,<br> "LaboratoryNum": 6,<br> "Description": "Implant",<br> "DaysPublished": 3,<br> "DaysActual": 4<br> }<br></span></p>
+<p>201 Created<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>LabTurnarounds PUT (update)</h2>
+<p>Version Added: 24.4.13</p>
+<p>Updates a labturnaround for a laboratory.</p>
+<p><b>LabTurnaroundNum:</b> Required in the URL.<br></p>
+<p><b>Description:</b> Optional. The description of the service that the lab is performing. Overwrites existing description.<br><b>DaysPublished:</b> Optional. The number of days that the lab publishes as the turnaround time for the service.<br><b>DaysActual:</b> Optional. The actual number of days.<br></p>
+<p><b>Example Requests:</b><br> PUT /labturnarounds/23<br></p>
+<p><span class="codeblock"> {<br> "Description": "Implant"<br> }<br></span></p>
+<p>or</p>
+<p><span class="codeblock"> {<br> "DaysPublished": 3,<br> "DaysActual": 4<br> }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "LabTurnaroundNum": 23,<br> "LaboratoryNum": 6,<br> "Description": "Implant",<br> "DaysPublished": 3,<br> "DaysActual": 4<br> }<br></span></p>
+<p>200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>```

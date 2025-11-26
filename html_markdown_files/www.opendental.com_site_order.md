@@ -1,0 +1,171 @@
+# File: ./www.opendental.com/site/order.html
+
+```html
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/templateSite.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<!-- InstanceBeginEditable name="title" -->
+		<title>Open Dental: Ordering</title>
+	<!-- InstanceEndEditable -->
+	<!--All paths are relative for these MP generated or DW templated pages in the site folder.-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="resources/site.css" rel="stylesheet" type="text/css">
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <script src = "resources/site.js" defer></script>
+    <link rel="icon" type="image/png" href="resources/favicon.png">
+	<!--The head-misc section below is used for style and script that are specific to this page-->
+	<!-- InstanceBeginEditable name="head-misc" -->
+	<style type="text/css"><!--
+		.container {
+			display: flex;
+			gap: 10px; /* Space between columns */
+		}
+		.left-column {
+			flex: 1; /*Take up the remaining space.*/
+			border-right: 1px solid rgb(158,158,158);
+			padding-right: 13px;
+		}
+		.left-column ul{
+			margin-left: 40px;
+		}
+		.right-column {
+			flex: 0 0 180px; /* Fixed width. image is 180 wide*/
+			display: flex;
+			flex-direction: column;
+			gap: 10px; /* Space between image and order box */
+		}
+		@media (max-width: 700px) {
+			.right-column {
+				display: none;
+			}
+			.left-column {
+				flex: 1; /* Full width */
+			}
+		}
+		.image-container img {
+			max-width: 100%;
+			height: auto;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		.order-box {
+			border: 1px solid rgba(153,153,153,1.00);
+			padding: 0px;
+		}
+		.order-header {
+			background-color: rgba(151,151,151,1.00);
+			color: white;
+			padding: 3px 0px 2px 5px;/*T R B L*/
+			font-weight: bold;
+			font-size: .85rem;
+		}
+		.order-content {
+			padding:5px 5px;/*TB LR*/
+			font-size: .82rem;
+			line-height: 1.1rem;
+		}
+		h2{
+			color: black;
+			margin-top:5px;
+			margin-bottom: 8px;
+			font-size: 1.2rem;
+		}
+		-->
+	</style>
+	<!-- InstanceEndEditable -->
+	<!--Todo: This script section is a placeholder for google analytics, but they just switched to GA4. Someone would need to implement.-->
+	<script>
+	 
+	</script>
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>
+			<!-- InstanceBeginEditable name="pageTitle" -->Ordering
+			<!-- InstanceEndEditable -->
+			</h1>
+		</div>
+        <div id="Content">
+			<!-- InstanceBeginEditable name="content" -->
+			<div class="container">
+				<div class="left-column">
+					<h2>Ready to order the full version of Open Dental? Call us today! +1 503-363-5432</h2>
+					<p><strong>More information:</strong>
+					<ul>
+						<li>Watch our short <a href="https://youtu.be/_wHYqzs2PF8?si=eiY_R4Uq3PrhDFRK" target="_blank" class="Links">Discover Open Dental</a> introductory video!</li>
+						<li>Install  the free <a href="trial.html" class="Links">Trial Version</a> if you would like to evaluate Open Dental before ordering (we can help you with this).</li>
+						<li>View the one-hour Open Dental <a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCmWM4cUxQ8zt88I-XvEkDIx">Demo</a> video. </li>
+						<li>If you would like to speak with a  current Open Dental user prior to purchasing Open Dental,   please contact us for a <a href="references.html" class="Links">Reference</a>.</li>
+					</ul><br/>
+					<p><strong>Monthly Support Fee (U.S.)</strong><br>
+					$179 per month per location or office (12 month contract)</p>
+					<ul>
+						<li> Includes the software, full telephone support, and all software releases as they come out.&nbsp;</li>
+						<li>Includes access to the Acquire and Video Capture Imaging Module features. </li>
+						<li>Includes access to Web Forms, Patient Portal, emailed eReminders, emailed Automated Thank-You Messages, and emailed General Messages.</li>
+						<li>Covers all computers per location or office for up to 3 dentists. <span class="redtext">Mobile treatment units are each treated as one physical location for billing purposes. </span></li>
+						<li>After 12 months, the monthly fee goes down to $129.&nbsp;</li>
+						<li>The initial contract is for 12 months and automatically continues after that on a month-to-month basis. Most users remain on the support plan so that they can continue to receive new versions and telephone support. The software comes with a 90 day money-back guarantee.&nbsp;</li>
+					</ul><br/>
+					<p>For additional services or fees for  practices outside of the United States, see&nbsp;<a href="../manual/fees.html" class="Links">Fees
+					for Software, Support, and Services</a>. </p>
+					<p>We accept payment by MasterCard, Visa,  check, and some other forms of payment. See <a href="submitpayment.html" class="Links">Submit a Payment</a>.</p>
+					<p><strong>Conversions</strong><br>
+					If you will be converting your data from a previous dental software, plan for this before you start using Open Dental. Conversion fees vary by software. For details, see <a href="conversions.html" class="Links">Data 
+					Conversions</a>.</p>
+					<p>After your order is complete, we will send you a&nbsp;Welcome email with your Registration Key. Refer to <a href="learning.html" class="Links">Learning Resources</a> for information to help you get started.</p>
+					<p><strong>Training</strong><br>
+					&quot;Full telephone support&quot; does not include training. Free learning resources are available anytime  via pre-recorded videos on our  <a href="https://www.youtube.com/channel/UC2f1mkxYSud-V72gxpgmRrQ?sub_confirmation=1" class="Links"> YouTube channel</a>. Customized online training with an Open Dental Trainer is available for $50 per hour.</p>
+					<p><strong>Support</strong><br>
+					Open   Dental support calls often include Open Dental staff connecting to your   systems and computer screens. When we are in a screen sharing session,   it will be securely recorded and stored. It is your responsibility to   not connect if you do not want the session to be recorded.</p>
+					<p>Each support call or chat has a two question/issue limit. Users are welcome to call or chat again to request additional help.</p>
+					<p>  Support hours are listed on our <a href="contact.html" class="Links">Contact</a> page.</p>
+					<p><a href="../manual/licenses.html">Licenses</a> can be viewed within Open Dental.</p>
+				</div>
+				<div class="right-column">
+					<div class="image-container">
+						<img src="images/Ordering.jpg" width="180" height="180" alt="Customer placing order">
+					</div>
+					<div class="order-box">
+						<div class="order-header">ORDER HERE</div>
+						<div class="order-content">
+							<p>Call now to order <strong>Open Dental</strong> at <strong>503-363-5432</strong>. For $179 per month (twelve month contract) you get all software releases as they come out plus  full telephone support.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- InstanceEndEditable -->
+		</div>	
+	</div>
+</body>
+<!-- InstanceEnd --></html>
+```

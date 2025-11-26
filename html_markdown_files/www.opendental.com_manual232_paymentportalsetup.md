@@ -1,0 +1,73 @@
+# File: ./www.opendental.com/manual232/paymentportalsetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Payment Portal Setup</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('paymentportalsetup','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/paymentportalsetup.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/paymentportalsetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/paymentportalsetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/paymentportalsetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/paymentportalsetup.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/paymentportalsetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/paymentportalsetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/paymentportalsetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/paymentportalsetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/paymentportalsetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/paymentportalsetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/paymentportalsetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/paymentportalsetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/paymentportalsetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/paymentportalsetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/paymentportalsetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/paymentportalsetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/paymentportalsetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/paymentportalsetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/paymentportalsetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/paymentportalsetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/paymentportalsetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/paymentportalsetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/paymentportalsetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/paymentportalsetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/paymentportalsetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/paymentportalsetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/paymentportalsetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Payment Portal Setup</p></div>
+<div class="GeneralPageContent">
+<p>Copy the URL used to access the Payment Portal.</p>
+<p>In <a href="eservicessetup.html">eServices Setup</a>, click <b>Payment Portal</b>.</p>
+<img src="images/paymentPortalSetup.png" width="572" height="207"/><p><b>Clinic</b>: Select the clinic to generate the URL for. When selected, the URL updates.</p>
+<h2>Enable Payment Portal Payments</h2>
+<p>Payment Portal is available for payment processors integrated in Open Dental.</p>
+<p class="MarginBottomZero">Before using the Payment Portal, enable Online Payments in the <a href="programlinks.html">Program Link</a> for the credit card processor being used: </p>
+<ul class="MarginBottomGap">
+<li><a href="xchargesetup.html">XCharge Setup</a>: <i>Enable X-Web for Payment Portal payments</i></li>
+<li><a href="payconnectsetup.html">PayConnect Setup</a>: Payment Portal Payments, <i>Enabled</i></li>
+<li><a href="edgeexpresssetup.html">EdgeExpress Setup</a>: <i>Enable payments for Payment Portal and eClipboard</i></li>
+<li><a href="paysimplesetup.html">PaySimple Setup</a>: <i>Allow online payments</i></li>
+</ul>
+<h2>Provide Patient Access</h2>
+<p>Once Online Payments are enabled, patients can be provided access to the <a href="portalpaymentsbypatient.html">Payment Portal</a>.</p>
+<p class="MarginBottomZero">There are two options to provide patients access to the Payment Portal: </p>
+<ul class="MarginBottomGap">
+<li><b>Payment Portal URL</b>: Copy the Payment Portal URL to send to patients to make online payments. To place the link on the office website, contact the office webmaster. Offices using PaySimple must use this option.</li>
+<li><b>Patient Portal</b>: Patients can access the Payment Portal through a link in the <a href="portalpatientsees.html">Patient Portal</a>. <ol>
+<li>In <a href="eservicessignup.html">eServices Signup</a>, More Settings tab, enable<i> Make Payments</i> as a portal feature.</li>
+<li>Provide patients <a href="portalaccess.html">Patient Portal Access</a>.</li>
+<li>Provide a link to access Patient Portal.  <ul>
+<li>On the practice website, provide a link to the Hosted Payment URL or Hosted URL. Generate a URL from the eServices <a href="portalhostedbyod.html">Patient Portal</a> window.</li>
+<li>On statements, add the [statementURL] or [statementShortURL] output text field. See <a href="statementsheets.html">Statement Layout</a>. These URLs launch the Patient Portal Sign in window where patients can log in to view an online version of the statement or make a payment.</li>
+<li>When generating statements from the Billing List, also trigger text messages that include a clickable URL to the Patient Portal Sign in window. Include the [StatementURL] or [StatementShortURL] variable in the text message to insert the clickable link (<a href="billingdefaults.html">Billing Defaults</a>). Only statements with modes that match selected <i>Sent text messages to these modes</i> (<a href="billing.html">Billing</a>) will receive a text message, as long as the patient is eligible to receive text messages. <a href="../site/textintegrated.html">Integrated Texting Feature</a> must be enabled.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

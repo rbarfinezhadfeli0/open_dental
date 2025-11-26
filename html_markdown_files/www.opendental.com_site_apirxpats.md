@@ -1,0 +1,61 @@
+# File: ./www.opendental.com/site/apirxpats.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API RxPats</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apirxpats','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API RxPats</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7rx.html">Rx / Prescription</a> for more information.</p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96rxpat.html" target="_blank">RxPat Database Schema.</a></p>
+<h2>RxPats GET (single)</h2>
+<p>Version Added: 24.2.35</p>
+<p>Gets a single rxpat.</p>
+<p><b>RxNum:</b> Required in URL.<br></p>
+<p><b>Example Request:</b><br> GET /rxpats/13<br></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "RxNum": 13,<br> "PatNum": 125,<br> "RxDate": "2024-09-26",<br> "Drug": "Amoxicillin 500 mg",<br> "Sig": "Take 4 caps 1 hour prior to dental appointment.",<br> "Disp": "4",<br> "Refills": "0",<br> "ProvNum": 13,<br> "Notes": "",<br> "PharmacyNum": 2,<br> "IsControlled": "false",<br> "DateTStamp": "2024-09-26 14:43:42",<br> "SendStatus": "Unsent",<br> "IsErxOld": "false",<br> "ErxPharmacyInfo": "",<br> "IsProcRequired": "false",<br> "ProcNum": 0,<br> "DaysOfSupply": 0.0,<br> "PatientInstruction": "Take all 4 caps 1 hour prior to dental appointment.",<br> "ClinicNum": 3<br> }<br></span></p>
+<p>200 OK<br> 404 NotFound (with explanation)<br></p>
+<h2>RxPats GET (multiple)</h2>
+<p>Version Added: 24.2.35</p>
+<p>Gets a list of rxpats.</p>
+<p><b>PatNum: </b>Optional. FK to patient.PatNum.<br></p>
+<p><b>Example Requests:</b><br> GET /rxpats<br> GET /rxpats?PatNum=458<br></p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br> {<br> "RxNum": 60,<br> "PatNum": 458,<br> "RxDate": "2024-09-26",<br> "Drug": "Amoxicillin 500 mg",<br> "Sig": "Take 2 tablets prior to dental appointment.",<br> "Disp": "2",<br> "Refills": "0",<br> "ProvNum": 13,<br> "Notes": "",<br> "PharmacyNum": 12,<br> "IsControlled": "false",<br> "DateTStamp": "2024-09-26 14:43:42",<br> "SendStatus": "Unsent",<br> "IsErxOld": "false",<br> "ErxPharmacyInfo": "",<br> "IsProcRequired": "false",<br> "ProcNum": 0,<br> "DaysOfSupply": 0.0,<br> "PatientInstruction": "Take 2 tablets prior to dental appointment.",<br> "ClinicNum": 10<br> },<br> {<br> "RxNum": 62,<br> "PatNum": 458,<br> "RxDate": "2024-09-26",<br> "Drug": "Percocet 5",<br> "Sig": "Take 1 tablet every 4 hours as needed for pain.",<br> "Disp": "24",<br> "Refills": "0",<br> "ProvNum": 13,<br> "Notes": "",<br> "PharmacyNum": 12,<br> "IsControlled": "true",<br> "DateTStamp": "2024-09-26 14:44:12",<br> "SendStatus": "Unsent",<br> "IsErxOld": "false",<br> "ErxPharmacyInfo": "",<br> "IsProcRequired": "true",<br> "ProcNum": 1587,<br> "DaysOfSupply": 7.0,<br> "PatientInstruction": "Take 1 tablet every 4 hours as needed for pain.",<br> "ClinicNum": 10<br> },<br> etc...<br> ]<br></span></p>
+<p>200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>```

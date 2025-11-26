@@ -1,0 +1,51 @@
+# File: ./www.opendental.com/manual243/convfutureappts.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Conversions: Overlapping Appointments</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('convfutureappts','usingodconversion','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/convfutureappts.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/convfutureappts.html" >v24.2</option><option value="https://www.opendental.com/manual241/convfutureappts.html" >v24.1</option><option value="https://www.opendental.com/manual233/convfutureappts.html" >v23.3</option><option value="https://www.opendental.com/manual232/convfutureappts.html" >v23.2</option><option value="https://www.opendental.com/manual231/convfutureappts.html" >v23.1</option><option value="https://www.opendental.com/manual224/convfutureappts.html" >v22.4</option><option value="https://www.opendental.com/manual223/convfutureappts.html" >v22.3</option><option value="https://www.opendental.com/manual222/convfutureappts.html" >v22.2</option><option value="https://www.opendental.com/manual221/convfutureappts.html" >v22.1</option><option value="https://www.opendental.com/manual214/convfutureappts.html" >v21.4</option><option value="https://www.opendental.com/manual213/convfutureappts.html" >v21.3</option><option value="https://www.opendental.com/manual212/convfutureappts.html" >v21.2</option><option value="https://www.opendental.com/manual211/convfutureappts.html" >v21.1</option><option value="https://www.opendental.com/manual205/convfutureappts.html" >v20.5</option><option value="https://www.opendental.com/manual204/convfutureappts.html" >v20.4</option><option value="https://www.opendental.com/manual203/convfutureappts.html" >v20.3</option><option value="https://www.opendental.com/manual202/convfutureappts.html" >v20.2</option><option value="https://www.opendental.com/manual201/convfutureappts.html" >v20.1</option><option value="https://www.opendental.com/manual194/convfutureappts.html" >v19.4</option><option value="https://www.opendental.com/manual193/convfutureappts.html" >v19.3</option><option value="https://www.opendental.com/manual192/convfutureappts.html" >v19.2</option><option value="https://www.opendental.com/manual191/convfutureappts.html" >v19.1</option><option value="https://www.opendental.com/manual184/convfutureappts.html" >v18.4</option><option value="https://www.opendental.com/manual183/convfutureappts.html" >v18.3</option><option value="https://www.opendental.com/manual182/convfutureappts.html" >v18.2</option><option value="https://www.opendental.com/manual181/convfutureappts.html" >v18.1</option><option value="https://www.opendental.com/manual174/convfutureappts.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Conversions: Overlapping Appointments</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="usingodconversion.html">Use Converted Database</a>.</p>
+<p>After a final <a href="../site/conversions.html">Conversion</a>, clean up appointments if the previous software allowed unassigned appointments. During the final conversion, any appointments that are not assigned to an operatory, are pushed into an Unassigned or Extra operatory. These appointments must be moved into the correct operatory.</p>
+<p></p>
+<p>To find these appointments: In <a href="queryfavorites.html">User Query Favorites</a>, double-click the <i>Conv - Future Appts by Operatory</i> query.</p>
+<img src="images/queryFutureApptsOp.gif" width="894" height="293"/><p>For each appointment identified, go to the <a href="appointments.html">Appointments Module</a> and move the appointment to the correct operatory.</p>
+<p>When all appointments in the Unassigned and Extra operatories have been moved, the operatory can be removed from the Appointments Module by hiding it in <a href="operatories.html">Operatory Setup</a>.</p>
+<p>Resource: <a href="../resources/conversions/Post%20Conversion%20Checklist.pdf">Post Conversion Checklist (PDF)</a></p>
+</div>
+</div>
+</body>
+</html>```

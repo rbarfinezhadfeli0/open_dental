@@ -1,0 +1,62 @@
+# File: ./www.opendental.com/manual243/opendentalmobilepatients.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - ODMobile Patients</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('opendentalmobilepatients','opendentalmobile','eservicessignup','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/opendentalmobilepatients.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/opendentalmobilepatients.html" >v24.2</option><option value="https://www.opendental.com/manual241/opendentalmobilepatients.html" >v24.1</option><option value="https://www.opendental.com/manual233/opendentalmobilepatients.html" >v23.3</option><option value="https://www.opendental.com/manual232/opendentalmobilepatients.html" >v23.2</option><option value="https://www.opendental.com/manual231/opendentalmobilepatients.html" >v23.1</option><option value="https://www.opendental.com/manual224/opendentalmobilepatients.html" >v22.4</option><option value="https://www.opendental.com/manual223/opendentalmobilepatients.html" >v22.3</option><option value="https://www.opendental.com/manual222/opendentalmobilepatients.html" >v22.2</option><option value="https://www.opendental.com/manual221/opendentalmobilepatients.html" >v22.1</option><option value="https://www.opendental.com/manual214/opendentalmobilepatients.html" >v21.4</option><option value="https://www.opendental.com/manual213/opendentalmobilepatients.html" >v21.3</option><option value="https://www.opendental.com/manual212/opendentalmobilepatients.html" >v21.2</option><option value="https://www.opendental.com/manual211/opendentalmobilepatients.html" >v21.1</option><option value="https://www.opendental.com/manual205/opendentalmobilepatients.html" >v20.5</option><option value="https://www.opendental.com/manual204/opendentalmobilepatients.html" >v20.4</option><option value="https://www.opendental.com/manual203/opendentalmobilepatients.html" >v20.3</option><option value="https://www.opendental.com/manual202/opendentalmobilepatients.html" >v20.2</option><option value="https://www.opendental.com/manual201/opendentalmobilepatients.html" >v20.1</option><option value="https://www.opendental.com/manual194/opendentalmobilepatients.html" >v19.4</option><option value="https://www.opendental.com/manual193/opendentalmobilepatients.html" >v19.3</option><option value="https://www.opendental.com/manual192/opendentalmobilepatients.html" >v19.2</option><option value="https://www.opendental.com/manual191/opendentalmobilepatients.html" >v19.1</option><option value="https://www.opendental.com/manual184/opendentalmobilepatients.html" >v18.4</option><option value="https://www.opendental.com/manual183/opendentalmobilepatients.html" >v18.3</option><option value="https://www.opendental.com/manual182/opendentalmobilepatients.html" >v18.2</option><option value="https://www.opendental.com/manual181/opendentalmobilepatients.html" >v18.1</option><option value="https://www.opendental.com/manual174/opendentalmobilepatients.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>ODMobile Patients</p></div>
+<div class="GeneralPageContent">
+<p>Search patients and view basic patient information from the mobile device.</p>
+<p>In <a href="opendentalmobile.html">ODMobile</a>, tap the <b>Patients</b> tab.</p>
+<img src="images/mobilePatientSearch.png" width="300" height="606"/><h2>Search for a Patient</h2>
+<p>Tap into the search bar to begin searching for a patient. Results include any patient with the letter combination anywhere in their name. </p>
+<h2>View Patient Information</h2>
+<p>Select a patient from the results to view patient information, appointments, allergies, and prescriptions.</p>
+<img src="images/mobilePatientView.png" width="300" height="613"/><p>Tap the carets to expand a section and view details.</p>
+<p class="MarginBottomZero">Contact Options: Available contact options appear based on availability. For example, email is only visible for patients with an email address on file.  </p>
+<ul class="MarginBottomGap">
+<li><b>Email</b>: Tap to email the patient. The default email app on the user's phone opens. </li>
+<li><b>Phone</b>: Tap to open an options window. Choose whether to call the patient, text the patient, or copy the phone number. If calling, the default call app on the user's phone opens. </li>
+<li><b>Text</b>: Tap to text the patient.</li>
+<li><b>eRx</b>: Tap to send a prescription through <a href="dosespotuse.html">DoseSpot</a>. <br/><div class="Note">Note: DoseSpot opened via ODMobile is scaled for optimized mobile viewing. The mobile view includes the same features and functionality as the full desktop version. Steps noted in the DoseSpot link above are the same for both mobile and desktop versions.</div>
+</li>
+</ul>
+<h2>Edit Patient Information</h2>
+<p>Tap the <i>Pencil</i> icon to edit basic patient information.</p>
+<img src="images/mobilePatientEdit.png" width="300" height="595"/><p>Tap <b>Save</b> to save changes.</p>
+</div>
+</div>
+</body>
+</html>```

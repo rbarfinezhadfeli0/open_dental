@@ -1,0 +1,52 @@
+# File: ./www.opendental.com/manual232/apipayplancharges.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - API PayPlanCharges</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('apipayplancharges','apispecification','advancedtopics','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/apipayplancharges.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/apipayplancharges.html" >v24.2</option><option value="https://www.opendental.com/manual241/apipayplancharges.html" >v24.1</option><option value="https://www.opendental.com/manual233/apipayplancharges.html" >v23.3</option><option value="https://www.opendental.com/manual232/apipayplancharges.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/apipayplancharges.html" >v23.1</option><option value="https://www.opendental.com/manual224/apipayplancharges.html" >v22.4</option><option value="https://www.opendental.com/manual223/apipayplancharges.html" >v22.3</option><option value="https://www.opendental.com/manual222/apipayplancharges.html" >v22.2</option><option value="https://www.opendental.com/manual221/apipayplancharges.html" >v22.1</option><option value="https://www.opendental.com/manual214/apipayplancharges.html" >v21.4</option><option value="https://www.opendental.com/manual213/apipayplancharges.html" >v21.3</option><option value="https://www.opendental.com/manual212/apipayplancharges.html" >v21.2</option><option value="https://www.opendental.com/manual211/apipayplancharges.html" >v21.1</option><option value="https://www.opendental.com/manual205/apipayplancharges.html" >v20.5</option><option value="https://www.opendental.com/manual204/apipayplancharges.html" >v20.4</option><option value="https://www.opendental.com/manual203/apipayplancharges.html" >v20.3</option><option value="https://www.opendental.com/manual202/apipayplancharges.html" >v20.2</option><option value="https://www.opendental.com/manual201/apipayplancharges.html" >v20.1</option><option value="https://www.opendental.com/manual194/apipayplancharges.html" >v19.4</option><option value="https://www.opendental.com/manual193/apipayplancharges.html" >v19.3</option><option value="https://www.opendental.com/manual192/apipayplancharges.html" >v19.2</option><option value="https://www.opendental.com/manual191/apipayplancharges.html" >v19.1</option><option value="https://www.opendental.com/manual184/apipayplancharges.html" >v18.4</option><option value="https://www.opendental.com/manual183/apipayplancharges.html" >v18.3</option><option value="https://www.opendental.com/manual182/apipayplancharges.html" >v18.2</option><option value="https://www.opendental.com/manual181/apipayplancharges.html" >v18.1</option><option value="https://www.opendental.com/manual174/apipayplancharges.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>API PayPlanCharges</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="../site/apispecification.html">API Specification</a></p>
+<h2>PayPlanCharges GET</h2>
+<p>Version Added: <span style="color:red">In dev for 23.3.1</span></p>
+<p>Gets all payplancharges for a specified payment plan.</p>
+<p><b>PayPlanNum:</b> Required.<br/></p>
+<p><b>Example Request:</b><br/> GET /payplancharges?PayPlanNum=23<br/></p>
+<p><b>Example Response:</b><br/><span class="codeblock"> [<br/> {<br/> "PayPlanChargeNum": 42,<br/> "PayPlanNum": 23,<br/> "Guarantor": 30,<br/> "PatNum": 30,<br/> "ChargeDate": "2023-09-20",<br/> "Principal": 25.0,<br/> "Interest": 0.0,<br/> "Note": "Down Payment",<br/> "ProvNum": 2,<br/> "ClinicNum": 0,<br/> "ChargeType": "Debit",<br/> "ProcNum": 0,<br/> "SecDateTEntry": "2023-09-20 09:24:16",<br/> "SecDateTEdit": "2023-09-20 09:24:16",<br/> "StatementNum": 0,<br/> "FKey": 134,<br/> "LinkType": "Procedure",<br/> "IsOffset": "false"<br/> },<br/> {<br/> "PayPlanChargeNum": 43,<br/> "PayPlanNum": 23,<br/> "Guarantor": 30,<br/> "PatNum": 30,<br/> "ChargeDate": "2023-10-20",<br/> "Principal": 40.96,<br/> "Interest": 0.12,<br/> "Note": "",<br/> "ProvNum": 2,<br/> "ClinicNum": 0,<br/> "ChargeType": "Debit",<br/> "ProcNum": 0,<br/> "SecDateTEntry": "2023-10-20 08:58:27",<br/> "SecDateTEdit": "2023-10-20 08:58:27",<br/> "StatementNum": 0,<br/> "FKey": 134,<br/> "LinkType": "Procedure",<br/> "IsOffset": "false"<br/> },<br/> {<br/> "PayPlanChargeNum": 44,<br/> "PayPlanNum": 23,<br/> "Guarantor": 30,<br/> "PatNum": 30,<br/> "ChargeDate": "2023-10-23",<br/> "Principal": 8.04,<br/> "Interest": 0.0,<br/> "Note": "Close Out Charge",<br/> "ProvNum": 2,<br/> "ClinicNum": 0,<br/> "ChargeType": "Debit",<br/> "ProcNum": 0,<br/> "SecDateTEntry": "2023-10-23 15:38:30",<br/> "SecDateTEdit": "2023-10-23 15:38:30",<br/> "StatementNum": 0,<br/> "FKey": 134,<br/> "LinkType": "Procedure",<br/> "IsOffset": "false"<br/> }<br/> ]<br/></span></p>
+<p>200 OK<br/> 400 BadRequest (with explanation)<br/> 404 NotFound (with explanation)<br/></p>
+</div>
+</div>
+</body>
+</html>```

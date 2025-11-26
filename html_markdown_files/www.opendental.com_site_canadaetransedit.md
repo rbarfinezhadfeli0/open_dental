@@ -1,0 +1,107 @@
+# File: ./www.opendental.com/site/canadaetransedit.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Canada Etrans Edit</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('canadaetransedit','canadaclaims','canada','countries','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Canada Etrans Edit</p></div>
+		<div class="GeneralPageContent">
+<p>For Canada users, claim history and claim responses can be viewed and saved as needed. </p>
+<p>In <a href="canadaclaims.html">Canada Claims</a>, click <b>History</b>.</p>
+<img src="images/canadaEtransEdit.png" width="897" height="519"/><p>The Etrans Edit window displays the history of the last action taken on a claim. A history of Etrans for previous actions taken can be found in <a href="canadaclaimsend.html">Canada Claim History and ROT</a>, History section. </p>
+<p><b>Message Text Sent</b>: Displays the message sent electronically to the carrier. </p>
+<p><b>Message Text Received</b>: Displays the message received from the carrier. </p>
+<p><b>Preview</b>: Click to generate a new printable document containing the response from the carrier.  <div class="Note">Note: Previews generated manually may not contain historically accurate data. </div>
+</p>
+<h2>Carrier Response</h2>
+<p>After a claim is received, a carrier sends back an EOB, Rejection, or Claim Acknowledgment.</p>
+<img src="images/canadaResponse.png" width="762" height="691"/><p class="MarginBottomZero"><b>Write Amounts to Claim</b>: Enter the insurance benefit amounts from the claim response to the procedure estimates on the claim. Only usable for claims that receive an Explanation of Benefits. </p>
+<ul class="MarginBottomGap">
+<li>If the Clearinghouse Setup is set to <i>Download EOBs and Auto Receive</i>, the amounts are also written and the insurance insurance payments and claim is marked as received. </li>
+</ul>
+<p><b>Print Patient Copy / Print Dentist Copy</b>: Prints the currently displayed claim response and appends the title with Patient Copy or Dentist Copy, respectively. </p>
+<h2>Claim Responses and Payments</h2>
+<p class="MarginBottomZero">When a claim is sent electronically, a response is generally received immediately. In some cases, responses may take a few moments to be returned. There are are three possible claim responses: </p>
+<ul class="MarginBottomGap">
+<li><b>Explanation of Benefits (EOB)</b>:  <ul>
+<li>Claim EOB: Insurance paid amounts are automatically entered on the Edit Claim window, though users still need to finalize the payment. See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimpayfinalize.html">Finalize Insurance Payment</a>.</li>
+<li><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7preauth.html">Preauthorization</a> EOB: Amounts are automatically entered as estimates. Automatic insurance paid amounts can be turned on/off in clearinghouse setup.</li>
+<li>Patient balances update according to the EOB when the clearinghouse option is set to either <i>Download EOBs, Do Not Auto Receive</i> or <i>Download EOBs and Auto Receive</i>.</li>
+</ul>
+</li>
+<li><b>Claim Acknowledgment (Ack)</b>: This is not the same as an EOB. This indicates that the claim has been sent successfully, but the carrier was unable to provide a coverage breakdown in real-time.  <ul>
+<li>Software vendors have no control over whether an office receives a claim acknowledgment or EOB. </li>
+<li>The carrier may send their follow-up response by mail or electronically as a mailbox item (Outstanding Transaction), as indicated by the verbiage listed on the Claim Acknowledgment ("...may be sent ...electronically..." or "..response will NOT be sent back to the dentist... electronically."). See, <a href="canadaclaimsend.html">Canada Claim History and ROT</a>.</li>
+</ul>
+</li>
+<li><b>Rejection</b>: <ul>
+<li>Verify the patient, subscriber, and plan information, then try again. If the claim is rejected again, contact the carrier for further guidance.</li>
+</ul>
+</li>
+</ul>
+<p class="MarginBottomZero">A response may come back in French for a subscriber.  </p>
+<ol class="MarginBottomGap">
+<li>If the carrier has the subscriber's preferred language set to <i>French</i> on their end, then we honor the carrier's information and display the response in French. </li>
+<li>If the subscribers's preferred language is set to <i>fr</i> in the Edit Patient Information window, then we display the response in French, even if the preferred language is English for the carrier.<br><div class="Note">Note: In order to display responses in French, a custom language of <i>fr</i> must be added in <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7patientlanguages.html">Language Definitions</a>. Using <i>French</i> does not work.</div>
+</li>
+<li>The disposition and notes on a response come directly from the carrier. Sometimes this information displays in English, sometimes French, and sometimes both. There are no settings in Open Dental to change this. </li>
+</ol>
+<p>Claims sent as non-assignment can be automatically closed with No Payment to reduce the number of steps for the office. Enable the preference, <i>Auto receive claims with no assignment of benefits</i>. Rejected claims are not automatically closed and need to be handled by the user.</p>
+<p>Also see <a href="canadainsplan.html">Canada Insurance Plans</a>.</p>
+<h2>Automatic Printing</h2>
+<p class="MarginBottomZero">ITRANS and Claimstream require automatically printing patient copies of certain forms in particular circumstances. Dentist copies are never automatically printed. A single patient copy of a response from ITRANS or Claimstream automatically prints immediately in the following situations: </p>
+<ul class="MarginBottomGap">
+<li>After a claim is sent, if the response is not a rejection notice.</li>
+<li>After a claim reversal request.</li>
+<li>After a request for outstanding transactions (each item prints separately).</li>
+<li>After a payment reconciliation request.</li>
+</ul>
+<p class="MarginBottomZero">A claim form prints automatically in these scenarios: </p>
+<ul class="MarginBottomGap">
+<li>When the carrier sends a response that manual printing is need (etrans AckCode M).</li>
+<li>When the secondary carrier does not support COB claim transactions.</li>
+</ul>
+<p>Responses should be printed or saved immediately after being received. If actions are taken on the claim after receiving the response (such as deleting the claim, changing patient information, updating carrier information, etc), the preview may contain inaccurate information. </p>
+<p class="MarginBottomZero">Some offices find the extra printing less useful than others. There are a few options if users do not want to automatically print copies: </p>
+<ol class="MarginBottomGap">
+<li>On each computer where claims are typically processed, set the default claim printer to a PDF printer.</li>
+<li>In File, Print, Claims, select the Prompt option. Then the user is prompted before printing begins and have the option to cancel the print job. See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7printersetup.html">Printer Setup</a>.</li>
+</ol>
+<h2>Automatic Saving of Claim Responses</h2>
+<p>To automatically save a copy of the claim response to the Imaging Module, set an Image Category with the Usage type of <i>Claim Responses</i> in <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7definitionsimagecat.html">Definitions: Image Categories</a>.</p>
+		</div>
+	</div>
+</body>
+</html>```

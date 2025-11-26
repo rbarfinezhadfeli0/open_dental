@@ -1,0 +1,141 @@
+# File: ./www.opendental.com/manual232/patientclone.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Clone</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('patientclone','family','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/patientclone.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/patientclone.html" >v24.2</option><option value="https://www.opendental.com/manual241/patientclone.html" >v24.1</option><option value="https://www.opendental.com/manual233/patientclone.html" >v23.3</option><option value="https://www.opendental.com/manual232/patientclone.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/patientclone.html" >v23.1</option><option value="https://www.opendental.com/manual224/patientclone.html" >v22.4</option><option value="https://www.opendental.com/manual223/patientclone.html" >v22.3</option><option value="https://www.opendental.com/manual222/patientclone.html" >v22.2</option><option value="https://www.opendental.com/manual221/patientclone.html" >v22.1</option><option value="https://www.opendental.com/manual214/patientclone.html" >v21.4</option><option value="https://www.opendental.com/manual213/patientclone.html" >v21.3</option><option value="https://www.opendental.com/manual212/patientclone.html" >v21.2</option><option value="https://www.opendental.com/manual211/patientclone.html" >v21.1</option><option value="https://www.opendental.com/manual205/patientclone.html" >v20.5</option><option value="https://www.opendental.com/manual204/patientclone.html" >v20.4</option><option value="https://www.opendental.com/manual203/patientclone.html" >v20.3</option><option value="https://www.opendental.com/manual202/patientclone.html" >v20.2</option><option value="https://www.opendental.com/manual201/patientclone.html" >v20.1</option><option value="https://www.opendental.com/manual194/patientclone.html" >v19.4</option><option value="https://www.opendental.com/manual193/patientclone.html" >v19.3</option><option value="https://www.opendental.com/manual192/patientclone.html" >v19.2</option><option value="https://www.opendental.com/manual191/patientclone.html" >v19.1</option><option value="https://www.opendental.com/manual184/patientclone.html" >v18.4</option><option value="https://www.opendental.com/manual183/patientclone.html" >v18.3</option><option value="https://www.opendental.com/manual182/patientclone.html" >v18.2</option><option value="https://www.opendental.com/manual181/patientclone.html" >v18.1</option><option value="https://www.opendental.com/manual174/patientclone.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Clone</p></div>
+<div class="GeneralPageContent">
+<p>Patient Clones are a useful feature for practices that have different types of providers who treat the same patient. The tool can be used to create one or more clones of the original patient, with data continually synched between patient and clone.</p>
+<img src="images/patientCloneToolbar.gif" width="773" height="34"/><p class="MarginBottomZero">For example, a general dentistry office may also provide orthodontic and endodontic treatment. </p>
+<ul class="MarginBottomGap">
+<li>Use the original patient record to track general dentistry work.</li>
+<li>Create a patient clone with a specialty of orthodontics to track orthodontic work.</li>
+<li>Create another patient clone with a specialty of endodontics to track endodontic work.</li>
+</ul>
+<h2>Turn on Patient Clones</h2>
+<p>For patient clone options to show in the interface, <i>Patient Clone</i> must be turned on in <a href="showfeatures.html">Show Features</a>.</p>
+<h2>Patient Clones in the Family Module</h2>
+<p>Manage patient clones, create new patient clones, and view patient clone relationships in the <a href="family.html">Family Module</a>.</p>
+<img src="images/patientCloneFamily.gif" width="589" height="197"/><p>The original patient is listed in mixed case (e.g., Smith, John). Clones are listed in all capital letters (e.g., SMITH, JOHN).</p>
+<p><b>Family Members grid</b>: By default, patient clones are added to the original patient's family.</p>
+<p>Another option is to place new patient clones in their own family, and associate the clone to the original via <a href="superfamily.html">Super Family</a>. This is useful when offices want to maintain separate financial accounts for each clone (e.g., send separate statements for orthodontic versus dentistry work).</p>
+<p class="MarginBottomZero">To add a clone to a super family: </p>
+<ol class="MarginBottomGap">
+<li>Turn on Super Families and restart Open Dental.</li>
+<li>Enable the preference for <i>New patient clones use super family instead of regular family</i>.</li>
+<li>Create the clone. A separate Super Family grid will show in the Family Module with the original patient as the super head and clones as family members.</li>
+</ol>
+<p><b>Patient Clones grid:</b> This grid shows when one or more patient clones exist. The original patient will list in red with clones listed below.</p>
+<p class="MarginBottomZero"><b>Specialty:</b> Assigning specialties is optional, but can be a useful method of differentiating patient clones.  </p>
+<ul class="MarginBottomGap">
+<li>Set up specialty options in <a href="definitionsclinicspecialties.html">Definitions: Clinic Specialties</a></li>
+<li>Assign specialties when creating the clone or on the <a href="patientedit.html">Edit Patient Information</a></li>
+<li>Include specialty in the Title Bar and Patient Select Area of the Account Module. See <a href="miscsetup.html">Miscellaneous Setup</a>.</li>
+<li>Include specialty in the Select Patient window and Chart Patient Information. See <a href="displayfields.html">Display Fields</a>.</li>
+</ul>
+<div class="Note">Note: To exclude patient clones from the insurance verification list, see <a href="insverifylistsetup.html">Insurance Verification Setup</a>.</div>
+<br/><br/><h2>Add Patient Clones</h2>
+<p>In the Family Module, select the original patient from the Family Members. In the toolbar, click <b>Add</b> to the right of Clones.</p>
+<p><img src="images/patientCloneAddFamily.png" width="774" height="140"/></p>
+<p>In the Clone Add window, select the clone's primary provider, specialty and clinic. <br/><img src="images/patientCloneAdd.gif" width="531" height="279" class="ImageInParagraph"/><p><b>Primary Provider</b>: Defaults to the provider selected on the patient's Edit Patient Information window. Click the dropdown or <b>[...]</b> to change.</p>
+<p><b>Specialty</b>: The clone's specialty. <i>Unspecified</i> can only be selected if a clinic in the database has no specialty associated.</p>
+<p><b>Clinic</b>: The clone's clinic. Only clinics associated with the selected specialty are options (See <a href="clinicsetup.html">Clinic List</a>).</p>
+</p>
+<p>Click <b>Clone</b> to create the clone. The new patient clone will be created in all caps.</p>
+<img src="images/patientCloneAdded.gif" width="483" height="180"/><br/><h2>Break Patient-Clone Relationships</h2>
+<p class="MarginBottomZero">To break the relationship between a single patient clone and the original patient: </p>
+<ol class="MarginBottomGap">
+<li>In the Family module, select the patient clone.</li>
+<li>Click <b>Break</b>.</li>
+<li>A confirmation message will show. Click <b>Yes</b> to break the relationship.</li>
+</ol>
+<p class="MarginBottomZero">To break all relationships between the original patient and every patient clone: </p>
+<ol class="MarginBottomGap">
+<li>In the Family module, select the original patient.</li>
+<li>Click <b>Break</b>.</li>
+<li>A confirmation message will show. Click <b>Yes</b> to break the relationship.</li>
+</ol>
+<p>Once the relationship is broken, clones no longer list in the Patient Clones grid, but will still list as family members or super family members if the clone has not been moved from the family or super family.</p>
+<h2>Link Duplicate Patients as Clones</h2>
+<p class="MarginBottomZero">If a duplicate account exists for a patient, and the duplicate account should be a patient clone, users can use the patient merge tool to merge the duplicate account into a fresh patient clone.  </p>
+<ol class="MarginBottomGap">
+<li>On the original account (the account to be kept), create a patient clone (see above).</li>
+<li>Open the <a href="mergepatients.html">Merge Patients</a> tool. </li>
+<li>Merge the duplicate account into the newly created patient clone. </li>
+</ol>
+<h2>Synch Original Patient and Clone</h2>
+<p class="MarginBottomZero">The following information can be synched between the original patient and clones. </p>
+<ul class="MarginBottomGap">
+<li>First Name</li>
+<li>Last Name</li>
+<li>Preferred Name</li>
+<li>Middle Initial</li>
+<li>Responsible Party</li>
+<li>Patient Status</li>
+<li>Gender</li>
+<li>Race</li>
+<li>Language</li>
+<li>SSN</li>
+<li>Position</li>
+<li>Address, Address 2, City, State, Zip</li>
+<li>Address Note</li>
+<li>Hm, Wireless, Wk, Phones</li>
+<li>Email</li>
+<li>Text Message OK</li>
+<li>Billing Type</li>
+<li>Fee Schedule</li>
+<li>Credit Type</li>
+<li>Medicaid ID</li>
+<li>Medical Urgent Note</li>
+<li>Ins Plan Info</li>
+</ul>
+<p>Patient forms are not synched, however forms already created on the original patient are copied to the cloned patient. Forms created after the clone has been created are separate between the clone and the original patient.</p>
+<p>Insurance coverage amounts are not synched (amounts used and benefits available), so insurance estimates may be inaccurate. To ensure both the original and clone reflect updated amounts, whenever an amount changes for one, add <a href="adjinsbenefits.html">Adjustments to Insurance Benefits</a> to the other.</p>
+<div class="Note">Note: <p>This may not be an issue if general dental and orthodontic benefits are different and users have entered Ortho Lifetime Max and Percentage as <a href="benefitinfo.html">Benefit Information</a>.</p>
+</div>
+<br/><br/> Synch Information: <p>In the Family module, Family Members grid, select the patient or clone. <div class="Note">Note: If a user synchs from the clone, all clone names will become ALL CAPS, and the original patient name will become mixed case (e.g. John L. Smith).</div>
+</p>
+<p>In the toolbar, click <b>Synch</b>. <br/><img src="images/patientCloneSynch.gif" width="413" height="159" class="ImageInParagraph"/></p>
+<p>Click <b>Yes</b> to continue.</p>
+<p>A detailed list of synched changes will list. <br/><img src="images/patientCloneSynched.gif" width="588" height="319" class="ImageInParagraph"/></p>
+<p>Click <b>OK</b> to close the window. Click <b>Print</b> to print a copy of all changes.</p>
+<h2>Troubleshooting</h2>
+<p>Version 17.1 and earlier: If the original patient's first and last name is in ALL CAPS, users may be blocked from creating a clone. To resolve, change the original patient name so first and/or last name is not in all capital letters (Smith, John). Then users will be allowed to create the clone.</p>
+<p>Bridges to other software: Open Dental always sends the information of the original patient to bridged software, not the clone. If, in the bridged software, information is associated with the clone, users may have issues accessing it. We recommend moving all information to the original patient instead.</p>
+</div>
+</div>
+</body>
+</html>```

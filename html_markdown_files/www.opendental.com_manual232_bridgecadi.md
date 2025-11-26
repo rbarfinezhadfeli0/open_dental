@@ -1,0 +1,66 @@
+# File: ./www.opendental.com/manual232/bridgecadi.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - CADI Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridgecadi','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/bridgecadi.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/bridgecadi.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridgecadi.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridgecadi.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridgecadi.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/bridgecadi.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridgecadi.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridgecadi.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridgecadi.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridgecadi.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridgecadi.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridgecadi.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridgecadi.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridgecadi.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridgecadi.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridgecadi.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridgecadi.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridgecadi.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridgecadi.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridgecadi.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridgecadi.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridgecadi.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridgecadi.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridgecadi.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridgecadi.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridgecadi.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridgecadi.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridgecadi.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>CADI Bridge</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a> click Setup, <a href="programlinks.html">Program Links</a>. Double-click on <b>CADI from www.cadi.net</b>.</p>
+<img src="images/bridgecadi.png" width="778" height="598"/><p>CADI is an imaging software. It is a re-branded version of <a href="bridgemediadent.html">MediaDent Bridge</a>. Website: <a href="http://www.cadi.net" target="_blank">http://www.cadi.net</a></p>
+<p class="MarginBottomZero">To enable the bridge: </p>
+<ol class="MarginBottomGap">
+<li>Check the <b>Enabled</b> box.</li>
+<li>Verify the <b>Path of file to open</b>.</li>
+<li>Double-click on a row in <b>Additional Properties</b> to change settings.  <ol>
+<li>Use the PatNum (enter 0) or ChartNum (enter 1) as the patient ID.</li>
+<li>Verify <b>Image Folder</b> path.</li>
+</ol>
+</li>
+<li>Set up a clickable bridge button.  <ol>
+<li>Under <b>Add a button to these toolbars</b>, highlight where to display the button.</li>
+<li>Enter the <b>Text on button</b>.</li>
+<li>(Optional) Import an image to show on the button (22 x 22 pixels).</li>
+</ol>
+</li>
+<li>If using clinics, click <b>Hide Button for Clinics</b>. Select which clinics the button should display on.</li>
+<li>Click <b>OK</b>.</li>
+</ol>
+<h2>Technical Details</h2>
+<p>CADI version 6.10.x is MediaDent version 4.</p>
+</div>
+</div>
+</body>
+</html>```

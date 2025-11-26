@@ -1,0 +1,68 @@
+# File: ./www.opendental.com/manual232/insplanoverrides.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Insurance Plans Overrides</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('insplanoverrides','procedurecodes','+lists','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/insplanoverrides.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/insplanoverrides.html" >v24.2</option><option value="https://www.opendental.com/manual241/insplanoverrides.html" >v24.1</option><option value="https://www.opendental.com/manual233/insplanoverrides.html" >v23.3</option><option value="https://www.opendental.com/manual232/insplanoverrides.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/insplanoverrides.html" >v23.1</option><option value="https://www.opendental.com/manual224/insplanoverrides.html" >v22.4</option><option value="https://www.opendental.com/manual223/insplanoverrides.html" >v22.3</option><option value="https://www.opendental.com/manual222/insplanoverrides.html" >v22.2</option><option value="https://www.opendental.com/manual221/insplanoverrides.html" >v22.1</option><option value="https://www.opendental.com/manual214/insplanoverrides.html" >v21.4</option><option value="https://www.opendental.com/manual213/insplanoverrides.html" >v21.3</option><option value="https://www.opendental.com/manual212/insplanoverrides.html" >v21.2</option><option value="https://www.opendental.com/manual211/insplanoverrides.html" >v21.1</option><option value="https://www.opendental.com/manual205/insplanoverrides.html" >v20.5</option><option value="https://www.opendental.com/manual204/insplanoverrides.html" >v20.4</option><option value="https://www.opendental.com/manual203/insplanoverrides.html" >v20.3</option><option value="https://www.opendental.com/manual202/insplanoverrides.html" >v20.2</option><option value="https://www.opendental.com/manual201/insplanoverrides.html" >v20.1</option><option value="https://www.opendental.com/manual194/insplanoverrides.html" >v19.4</option><option value="https://www.opendental.com/manual193/insplanoverrides.html" >v19.3</option><option value="https://www.opendental.com/manual192/insplanoverrides.html" >v19.2</option><option value="https://www.opendental.com/manual191/insplanoverrides.html" >v19.1</option><option value="https://www.opendental.com/manual184/insplanoverrides.html" >v18.4</option><option value="https://www.opendental.com/manual183/insplanoverrides.html" >v18.3</option><option value="https://www.opendental.com/manual182/insplanoverrides.html" >v18.2</option><option value="https://www.opendental.com/manual181/insplanoverrides.html" >v18.1</option><option value="https://www.opendental.com/manual174/insplanoverrides.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Insurance Plans Overrides</p></div>
+<div class="GeneralPageContent">
+<p>In <a href="procedurecodeedit.html">Procedure Code</a>, at the left, click <b>InsPlans Overrides</b>.</p>
+<img src="images/insPlanOverrides.png" width="915" height="464"/><p>The purpose of this window is to override the default setting of the <i>Do Not Bill to Ins</i> checkbox on the <a href="procedurefinancial.html">Procedure - Financial Tab</a> on an insurance plan level.</p>
+<p>Each line entry refers to an individual plan. The number of plan subscribers is indicated under the Subs column. If an override is present, the type will be indicated in the NoBillIns Override column.</p>
+<p class="MarginBottomZero">To narrow or sort the list of plans, enter filter criteria. As you type in a field, only matching entries will list. </p>
+<ul class="MarginBottomGap">
+<li><b>Employer</b>: Filter by employer name.</li>
+<li><b>Group Num</b>: Filter by group number.</li>
+<li><b>Carrier</b>: Filter by carrier name.</li>
+<li><b>Group Name</b>: Filter by group name.</li>
+<li><b>Ins Plan ID</b>: Filter by the insurance plan ID number (visible on the Edit <a href="insplan.html">Insurance Plan</a> window).</li>
+<li><b>Order By</b>: Select the sort order of the list. <ul>
+<li>Employer: Sort by employer name. </li>
+<li>Carrier: Sort by carrier name.</li>
+</ul>
+</li>
+</ul>
+<p><b>Get All</b>: The first 200 results that match filter criteria will display. Click to view all results that match. </p>
+<p><b>Show Hidden</b>: Include/exclude plans that have been marked Hidden on the Edit <a href="insplan.html">Insurance Plan</a> window</p>
+<p class="MarginBottomZero"><b>Overrides</b>: Highlight insurance plans and use the buttons below to enable or delete insurance plan overrides. </p>
+<ul class="MarginBottomGap">
+<li><b>Bill to Insurance</b>: Defaults the procedure to have the <i>Do Not Bill to Ins</i> box unchecked.</li>
+<li><b>Don't Bill</b>: Defaults the procedure to have the <i>Do Not Bill to Ins</i> box checked.</li>
+<li><b>Delete</b>: Delete any existing insurance plan overrides. The insurance plan will use the setting assigned in the <a href="procedurecodeedit.html">Procedure Code</a> window. </li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

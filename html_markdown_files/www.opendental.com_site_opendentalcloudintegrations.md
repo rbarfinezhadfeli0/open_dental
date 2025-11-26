@@ -1,0 +1,205 @@
+# File: ./www.opendental.com/site/opendentalcloudintegrations.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Open Dental Cloud 3rd Party Integrations</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('opendentalcloudintegrations','opendentalcloud','order.html','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Open Dental Cloud 3rd Party Integrations</p></div>
+		<div class="GeneralPageContent">
+<p>The integrations on this page are expected to work within <a href="opendentalcloud.html">Open Dental Cloud</a>. Not all integrations have been tested. Please contact Open Dental Support if any problems are experienced. </p>
+<h2>Imaging Software</h2>
+<p><table class="simpletable">
+<tr>
+<th style="width:20%"></th>
+<th style="width:20%"></th>
+<th style="width:20%"></th>
+<th style="width:20%"></th>
+<th style="width:20%"></th>
+</tr>
+<tr>
+<td>Acteon</td>
+<td>ADSTRA</td>
+<td>Apteryx</td>
+<td>BioPAK</td>
+<td>CamSight</td>
+</tr>
+<tr>
+<td>CaptureLink</td>
+<td>Cerec</td>
+<td>Carestream</td>
+<td>CleaRay</td>
+<td>CliniView</td>
+</tr>
+<tr>
+<td>ClioSoft / SOTA Imaging</td>
+<td>DentalStudio</td>
+<td>Dexis</td>
+<td>Digora Soredex Optime</td>
+<td>Dr. Ceph</td>
+</tr>
+<tr>
+<td>DXIS</td>
+<td>EzDenti </td>
+<td>HandyDentist</td>
+<td>HDX Will</td>
+<td>i-Dixel</td>
+</tr>
+<tr>
+<td>ImageFX Bridge</td>
+<td>iRYS</td>
+<td>Lightyear</td>
+<td>MediaDent</td>
+<td>MiPACS</td>
+</tr>
+<tr>
+<td>NewTom NNT</td>
+<td>OrthoCAD</td>
+<td>Ortho Insight 3D</td>
+<td>Planmeca</td>
+<td>PreXion</td>
+</tr>
+<tr>
+<td>Prexion Acquire</td>
+<td>Progeny</td>
+<td>RayMage</td>
+<td>Romexis Bridge</td>
+<td>Scanora</td>
+</tr>
+<tr>
+<td>Sirona Sidexis</td>
+<td>SMARTDent (New)</td>
+<td>Sopro</td>
+<td>SOTA Cloud</td>
+<td>Genoray Triana</td>
+</tr>
+<tr>
+<td>Trophy (Simple)</td>
+<td>Tscan</td>
+<td>visOra</td>
+<td>VistaDent</td>
+<td>VixWin</td>
+</tr>
+<tr>
+<td>VixWin (Numbered) </td>
+<td>XDR</td>
+<td>XVWeb Apteryx </td>
+<td></td>
+<td></td>
+</tr>
+</table>
+</p>
+<h2>Clearinghouses</h2>
+<p><table class="simpletable">
+<tr>
+<th style="width:25%"></th>
+<th style="width:25%"></th>
+<th style="width:25%"></th>
+<th style="width:25%"></th>
+</tr>
+<tr>
+<td>AOS Data Systems</td>
+<td>BCBS Georgia</td>
+<td>DentalXChange ClaimConnect</td>
+<td>Dentical</td>
+</tr>
+<tr>
+<td>Electronic Dental Services</td>
+<td>Electronic Dental Services - Medical</td>
+<td>Inmediata</td>
+<td>Post-n-Track</td>
+</tr>
+</table>
+</p>
+<h2>Payment Processors</h2>
+<p><table class="simpletable">
+<tr>
+<th style="width:25%"></th>
+<th style="width:25%"></th>
+<th style="width:25%"></th>
+<th style="width:25%"></th>
+</tr>
+<tr>
+<td><a href="paysimpleintegration.html">PaySimple</a></td>
+<td><a href="dentalxchange.html">PayConnect</a></td>
+<td><a href="dentalxchange.html">PayConnect 2.0*</a></td>
+<td><a href="globalpaymentsintegration.html">Global Payments (EdgeExpress)</a></td>
+</tr>
+</table>
+</p>
+<h2>eRx Integrations</h2><p><table class="simpletable">
+<tr>
+<th style="width:50%"></th>
+<th style="width:50%"></th>
+</tr>
+<tr>
+<td><a href="dosespot.html">DoseSpot eRx </a></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7newcrop.html">Ensora eRx* </a></td>
+</tr>
+</table>
+</p>
+<h2>Miscellaneous Integrations</h2>
+<p><table class="simpletable">
+<tr>
+<th style="width:25%"></th>
+<th style="width:25%"></th>
+<th style="width:25%"></th>
+<th style="width:25%"></th>
+</tr>
+<tr>
+<td>Bamboo</td>
+<td><a href="carecredit.html">CareCredit</a></td>
+<td>DentalTek Rapid Call</td>
+<td><a href="dentalxchange.html">DentalXChange</a> (for statements)</td>
+</tr>
+<tr>
+<td>Florida Probe</td>
+<td>Oryx</td>
+<td>Panda Perio</td>
+<td>PDMP</td>
+</tr>
+<tr>
+<td>PerioPal</td>
+<td><a href="pearl.html">Pearl</a></td>
+<td>QuickBooks Online</td>
+<td><a href="tsiintegration.html">Transworld Systems Inc. (TSI)</a></td>
+</tr>
+</table>
+</p>
+<h2>Additional Integrations</h2><p>In addition to the integrations on this page, third-party vendors using the Open Dental API are also available to Open Dental Cloud users. See the Authorized list of API vendors here: <a href="https://opendental.com/site/vendorsthirdparty.html">Third-Party Vendors</a></p>
+<p>*Only available for some Open Dental Cloud users. Please contact us if you are interested in this integration.</p>
+		</div>
+	</div>
+</body>
+</html>```

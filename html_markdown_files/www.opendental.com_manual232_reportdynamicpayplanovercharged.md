@@ -1,0 +1,93 @@
+# File: ./www.opendental.com/manual232/reportdynamicpayplanovercharged.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Dynamic Payment Plans Overcharged Report</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reportdynamicpayplanovercharged','+monthly','reportsstandard','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/reportdynamicpayplanovercharged.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/reportdynamicpayplanovercharged.html" >v24.2</option><option value="https://www.opendental.com/manual241/reportdynamicpayplanovercharged.html" >v24.1</option><option value="https://www.opendental.com/manual233/reportdynamicpayplanovercharged.html" >v23.3</option><option value="https://www.opendental.com/manual232/reportdynamicpayplanovercharged.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/reportdynamicpayplanovercharged.html" >v23.1</option><option value="https://www.opendental.com/manual224/reportdynamicpayplanovercharged.html" >v22.4</option><option value="https://www.opendental.com/manual223/reportdynamicpayplanovercharged.html" >v22.3</option><option value="https://www.opendental.com/manual222/reportdynamicpayplanovercharged.html" >v22.2</option><option value="https://www.opendental.com/manual221/reportdynamicpayplanovercharged.html" >v22.1</option><option value="https://www.opendental.com/manual214/reportdynamicpayplanovercharged.html" >v21.4</option><option value="https://www.opendental.com/manual213/reportdynamicpayplanovercharged.html" >v21.3</option><option value="https://www.opendental.com/manual212/reportdynamicpayplanovercharged.html" >v21.2</option><option value="https://www.opendental.com/manual211/reportdynamicpayplanovercharged.html" >v21.1</option><option value="https://www.opendental.com/manual205/reportdynamicpayplanovercharged.html" >v20.5</option><option value="https://www.opendental.com/manual204/reportdynamicpayplanovercharged.html" >v20.4</option><option value="https://www.opendental.com/manual203/reportdynamicpayplanovercharged.html" >v20.3</option><option value="https://www.opendental.com/manual202/reportdynamicpayplanovercharged.html" >v20.2</option><option value="https://www.opendental.com/manual201/reportdynamicpayplanovercharged.html" >v20.1</option><option value="https://www.opendental.com/manual194/reportdynamicpayplanovercharged.html" >v19.4</option><option value="https://www.opendental.com/manual193/reportdynamicpayplanovercharged.html" >v19.3</option><option value="https://www.opendental.com/manual192/reportdynamicpayplanovercharged.html" >v19.2</option><option value="https://www.opendental.com/manual191/reportdynamicpayplanovercharged.html" >v19.1</option><option value="https://www.opendental.com/manual184/reportdynamicpayplanovercharged.html" >v18.4</option><option value="https://www.opendental.com/manual183/reportdynamicpayplanovercharged.html" >v18.3</option><option value="https://www.opendental.com/manual182/reportdynamicpayplanovercharged.html" >v18.2</option><option value="https://www.opendental.com/manual181/reportdynamicpayplanovercharged.html" >v18.1</option><option value="https://www.opendental.com/manual174/reportdynamicpayplanovercharged.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Dynamic Payment Plans Overcharged Report</p></div>
+<div class="GeneralPageContent">
+<p> Use the Dynamic Payment Plans Overcharged Report to find and fix overcharged production on Dynamic Payment Plans.</p>
+<p>In <a href="reportsstandard.html">Standard Reports</a>, in the Monthly section, click <b>Dynamic Payment Plans Overcharged</b>.</p>
+<img src="images/reportDynamicPayplanOvercharged.PNG" width="915" height="247"/><p>A <a href="paymentplandynamic.html">Dynamic Payment Plan</a> is considered overcharged if the sum of the payment plan debits (before interest) exceeds the sum of the production attached to the plan. Overcharged plans will turn yellow in the Payment Plans grid of the Account Module.</p>
+<p><div class="Note">Note: <ul>
+<li>Adjustments, payments, and write-offs must be allocated to procedures in order for this report to pull data correctly.</li>
+<li>Payment plan debits (PayPln: Debit) are the charges created by the payment plan for the principal balance. </li>
+<li>To control user access to this report, see <a href="reportsecurity.html">Report Setup: Security Permissions</a>.</li>
+</ul>
+</div>
+</p>
+<h2>Filters</h2>
+<p>Change the filters to update report results.</p>
+<p><b>From / To</b>: Filters by the start date of dynamic pay plans. Defaults to a month from the current date.</p>
+<p><b>Providers</b>: Click the dropdown to select providers. Ctrl + click to choose multiple providers or click <b>All</b> to include all listed providers. Filters by provider associated with the overcharged production.</p>
+<p class="MarginBottomZero"><b>Clinics</b>: Select the clinics to include in the report. Ctrl + click to select multiple clinics or click <b>All (includes hidden)</b> to include all clinics, including those marked hidden.  </p>
+<ul class="MarginBottomGap">
+<li>Filters by clinic associated with the overcharged production. </li>
+<li>If user is restricted to specific clinics, only accessible clinics will list. When checking <b>All (includes hidden)</b>, results will include all clinics user has access to, including those marked hidden, and anything unassigned to a clinic; results do not include clinics user is restricted from.</li>
+</ul>
+<p class="MarginBottomZero"><b>Patient</b>: Lists the name of the selected account currently filtering the report. The currently selected patient is entered automatically when opening the report. If no patient is selected, the report returns results for all patients that meet the other filter criteria. </p>
+<ul class="MarginBottomGap">
+<li><b>Current</b>: Click to filter the report by the currently selected patient.</li>
+<li><b>Find</b>: Click to open <a href="patientselect.html">Select Patient</a> and find a specific patient to filter the report.</li>
+<li><b>All</b>: Click to include all patients. Clears any current patient filter.</li>
+</ul>
+<h2>Overcharged Production</h2>
+<p class="MarginBottomZero">Click <b>Refresh</b> to update the Overcharged Prodcution grid. Right-click any item in the grid and select to <b>Go To Account</b> to launch the <a href="account.html">Account Module</a> for the selected patient. Below is a description of each column included in the grid: </p>
+<ul class="MarginBottomGap">
+<li><b>Start Date</b>: Date of the first payment plan charge.</li>
+<li><b>Patient</b>: Patient with the payment plan.</li>
+<li><b>Guarantor</b>: Guarantor of the payment plan.</li>
+<li><b>Provider</b>: Abbreviation of the provider associated to the overcharged production.</li>
+<li><b>Clinic</b>: Abbreviation of the clinic associated to the overcharged production.</li>
+<li><b>Description</b>: Lists the overcharged production (adjustment or procedure).</li>
+<li><b>Overridden</b>: An 'X' indicates the production item has an override, meaning the procedure or adjustment value in the Amount Attached field was changed from the default.</li>
+<li><b>Pat Portion</b>: The remaining balance of the production item after insurance payments, estimates, write-offs, and adjustments (outside of the payment plan) have been applied.</li>
+<li><b>Pat Paid Outside Plan</b>: The total amount paid by the patient. Sums all patient payments attached to the production item (outside of payment plan).</li>
+<li><b>Pat Portion On Plan</b>: The remaining balance of the production item after all patient and insurance payments, write-offs, and adjustments have been applied (Pat Portion - Pat Paid Outside Plan). If the production has an override, the override amount is displayed instead.</li>
+<li><b>Plan Debits</b>: The total debits on the payment plan associated to the production item.</li>
+<li><b>Overcharged</b>: The amount overcharged for this production item (Plan Debits - Pat Portion On Plan).</li>
+<li><b>Pat Paid On Plan</b>: The total amount of payment plan payments made towards the production item.</li>
+<li><b>Pat Overpaid</b>: The amount overpaid on the production item by the patient (Pat Paid On Plan - Pat Portion On Plan) if, the total payment amount is greater than the patient portion on plan. Otherwise, displays $0.00.</li>
+</ul>
+<p>Click <b>Print</b> to launch a print preview of the report. The print preview includes the same data columns as the Overcharged Production grid listed above. For a description of toolbar buttons, see <a href="reportcomplex.html">Complex Report System</a>.</p>
+<h2>Fixing Overcharged Production</h2>
+<p>To fix the overcharged production items in the list, select one or more items in the grid and click <b>Fix</b>. If nothing is selected, clicking Fix will correct all listed production. A negative charge and negative payment plan debit will be added for each item selected.</p>
+<p>The negative charge is added to the Amortization Schedule for the total amount overcharged on the production item.</p>
+<img src="images/reportDynamicPayplanOverchargedAmSched.png" width="666" height="83"/><p>The negative payment plan debit is added to the Patient Account if the Pay Plan charge logic, <i>Age Credits and Debits</i>, is set in <a href="preferences.html">Preferences</a>. This is to offset the pay plan debits that overcharged the production item.</p>
+<img src="images/reportDynamicPayplanOverchargedFix.png" width="758" height="202"/><p>The total cost of the loan is reduced to reflect the updated total tx amount (attached production). If the patient has been actively making payments to the payment plan, it may become overpaid after fixing the production. Run the <a href="incometransfermanager.html">Income Transfer Manager</a> to re-allocate the income from the overpaid charges to other charges or to <a href="unearnedprepayment.html">Unearned Income</a> to be allocated later.</p>
+</div>
+</div>
+</body>
+</html>```

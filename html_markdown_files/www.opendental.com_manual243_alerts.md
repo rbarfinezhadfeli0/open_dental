@@ -1,0 +1,334 @@
+# File: ./www.opendental.com/manual243/alerts.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Alerts</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('alerts','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/alerts.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/alerts.html" >v24.2</option><option value="https://www.opendental.com/manual241/alerts.html" >v24.1</option><option value="https://www.opendental.com/manual233/alerts.html" >v23.3</option><option value="https://www.opendental.com/manual232/alerts.html" >v23.2</option><option value="https://www.opendental.com/manual231/alerts.html" >v23.1</option><option value="https://www.opendental.com/manual224/alerts.html" >v22.4</option><option value="https://www.opendental.com/manual223/alerts.html" >v22.3</option><option value="https://www.opendental.com/manual222/alerts.html" >v22.2</option><option value="https://www.opendental.com/manual221/alerts.html" >v22.1</option><option value="https://www.opendental.com/manual214/alerts.html" >v21.4</option><option value="https://www.opendental.com/manual213/alerts.html" >v21.3</option><option value="https://www.opendental.com/manual212/alerts.html" >v21.2</option><option value="https://www.opendental.com/manual211/alerts.html" >v21.1</option><option value="https://www.opendental.com/manual205/alerts.html" >v20.5</option><option value="https://www.opendental.com/manual204/alerts.html" >v20.4</option><option value="https://www.opendental.com/manual203/alerts.html" >v20.3</option><option value="https://www.opendental.com/manual202/alerts.html" >v20.2</option><option value="https://www.opendental.com/manual201/alerts.html" >v20.1</option><option value="https://www.opendental.com/manual194/alerts.html" >v19.4</option><option value="https://www.opendental.com/manual193/alerts.html" >v19.3</option><option value="https://www.opendental.com/manual192/alerts.html" >v19.2</option><option value="https://www.opendental.com/manual191/alerts.html" >v19.1</option><option value="https://www.opendental.com/manual184/alerts.html" >v18.4</option><option value="https://www.opendental.com/manual183/alerts.html" >v18.3</option><option value="https://www.opendental.com/manual182/alerts.html" >v18.2</option><option value="https://www.opendental.com/manual181/alerts.html" >v18.1</option><option value="https://www.opendental.com/manual174/alerts.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Alerts</p></div>
+<div class="GeneralPageContent">
+<p>Alerts notify users of errors, warnings, and actions needed. </p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click <b>Alerts</b>.</p>
+<img src="images/alertsExample.png" width="825" height="329"/><p>Only alerts the user for <a href="alertcategories.html">Alert Categories</a> selected in User Edit, <a href="alertsubscribe.html">Alert Subscription</a> are displayed. Additionally, if using Clinics, only alerts for the currently selected clinic are displayed.</p>
+<p><img src="images/alertShow.png" width="70" height="26" style="margin-bottom: 0px"/> When there are new, unread alerts, the Alert item in the Main Menu appears red and indicates the number of active alerts. Alerts are updated based on the <i>Check alert interval in seconds</i> set in <a href="preferences.html">Preferences</a>.</p>
+<p class="MarginBottomZero">Highlight an alert in the grid to take action, or select multiple alerts to quickly acknowledge them. The options vary depending on the alert. </p>
+<ul class="MarginBottomGap">
+<li><b>Mark Read</b>: Mark the alert as read, but do not remove it. Alerts are marked as read for the logged-in user only.</li>
+<li><b>View Details</b>: View details of the alert.</li>
+<li><b>Delete</b>: Remove the alert. Alerts are deleted for all users.</li>
+<li><b>Open</b>: Open a window to perform an action related to the alert. </li>
+<li><b>Acknowledge</b>: Marks the selected alerts as read or deletes if allowed. A warning displays before deleting any alerts. Alerts marked as read are marked for the logged-in user. Deleted alerts are deleted for all users.</li>
+</ul>
+<h2>Alert Descriptions</h2>
+<p>The <a href="opendentalservice.html">Open Dental Service</a> is required to generate many of these alerts. </p>
+<p><table class="simpletable">
+<tr>
+<th style="width:25%">Example</th>
+<th style="width:10%">Alert Category</th>
+<th style="width:15%">Alert Type</th>
+<th style="width:25%">Description</th>
+<th style="width:25%">Action Needed</th>
+</tr>
+<tr>
+<td>Open Dental Service Error</td>
+<td>All</td>
+<td>Generic</td>
+<td>General alerts from Open Dental (tips, new features, update notifications).</td>
+<td>Informational. No action needed.</td>
+</tr>
+<tr>
+<td>Pending Online Payments: 4</td>
+<td>All</td>
+<td>Online Payments Pending</td>
+<td>Notifies user that there are pending online patient payments that need processed in Open Dental. This alert only stays marked as read once all Pending Online Payments have been processed.</td>
+<td>Process payments using the steps outlined on <a href="portalonlinepayments.html">Online Patient Payments</a>.</td>
+</tr>
+<tr>
+<td>Radiology Orders: 2</td>
+<td>All</td>
+<td>Radiology Orders</td>
+<td>Alerts the logged-on EHR provider of upcoming radiology orders needing approval (mark CPOE).</td>
+<td>Approve orders in the <a href="ehrcpoeradapprove.html">Radiology Order List</a>.</td>
+</tr>
+<tr>
+<td>Patient would like a callback regarding this appointment: Sally Smith on 12/11/2017</td>
+<td>All/eServices</td>
+<td>Patient Requests Callback</td>
+<td>Notifies user about patients who have requested a callback about an <a href="../site/ereminders.html">eConfirmation</a>. </td>
+<td>Click <i>Open Appointment</i> to open the Edit Appointment window. Alert is deleted once the appointment confirmation status is no longer <i>Not Accepted</i>, or if the appointment is no longer scheduled.</td>
+</tr>
+<tr>
+<td>The Web Sched New Pat feature now asks patients questions to verify patient information...</td>
+<td>All/eServices</td>
+<td>Web Sched New Patient</td>
+<td>General informational alerts about the <a href="../site/websched.html">Web Sched New Patient</a> eService.</td>
+<td>Informational. No action needed.</td>
+</tr>
+<tr>
+<td>New WebSched Appointment: 11/22/2017 2:00:00 PM</td>
+<td>All/eServices</td>
+<td>Web Sched New Pat Appointment Created</td>
+<td>Alerts user of appointments that have been scheduled by new patients via Web Sched New Patient. </td>
+<td> Click <i>Open eServices Web Sched New Pat Appointment</i> to view the appointments in the <a href="webschedapptreport.html">Web Sched Appointments Report</a>.</td>
+</tr>
+<tr>
+<td>Number Barred From Texting: 15035551234 has cancelled Appointment Texts and must text OPTIN to 1(503)363-5432 to begin receiving Appointment Texts.</td>
+<td>All/eServices</td>
+<td>Numbers Barred from Texting</td>
+<td>Notifies user of wireless phone numbers that have rejected text messages. These patients' Text Message status automatically changed from OK to No.</td>
+<td>Informational. No action needed.</td>
+</tr>
+<tr>
+<td>The number of current MySQL connections has exceeded half the number of maximum connections allowed.</td>
+<td>All</td>
+<td>MySQL Maximum Connection Issues</td>
+<td>Alerts user that the MySQL server has more than half of the allowed connections. </td>
+<td>Click More Details to view information about the current connections, issues that can result when the maximum amount of connections are exceeded, and how to increase the number of connections.</td>
+</tr>
+<tr>
+<td>New WebSched Appointment: 11/22/2017 2:00:00 PM</td>
+<td>All/eServices</td>
+<td>Web Sched ASAP Appointment Created</td>
+<td>Alerts user about appointments that have been scheduled using <a href="../site/websched.html">Web Sched ASAP</a>. </td>
+<td>Click <i>Open Web Sched Appointments</i> to view the appointments in the Web Sched Appointments report.</td>
+</tr>
+<tr>
+<td>eConnector services are being run on these computers:</td>
+<td>All/eServices</td>
+<td>Multiple eConnectors</td>
+<td>Notifies user that multiple computers are running an instance of the <a href="econnector.html">eConnector</a>.</td>
+<td>Only one computer should run the eConnector. Contact Support for assistance in finding the correct eConnector computer.</td>
+</tr>
+<tr>
+<td>eConnector Down: eConnector needs to be restarted</td>
+<td>All/eServices</td>
+<td>eConnection Down</td>
+<td>Notifies user that the eConnector is down. </td>
+<td>See <a href="eservicestroubleshooting.html">General Services Troubleshooting</a>.</td>
+</tr>
+<tr>
+<td>eConnector Error</td>
+<td>All/eServices</td>
+<td>eConnection Error</td>
+<td>Notifies user when the eConnector has an error.</td>
+<td>See <a href="eservicestroubleshooting.html">General Services Troubleshooting</a>.</td>
+</tr>
+<tr>
+<td>OpenDentalService Down. No instance of Open Dental Service is running.</td>
+<td>All/eServices</td>
+<td>eConnection Error</td>
+<td>Notifies user when the OpenDentalService is down.</td>
+<td>See <a href="servicemanager.html">Service Manager</a> (Add/Edit a Service).</td>
+</tr>
+<tr>
+<td>DoseSpot Provider Registered: User automatically assigned.</td>
+<td>All/eRx</td>
+<td>DoseSpot Provider Registered</td>
+<td>Shows the User ID for the assigned user.</td>
+<td>Informational. No action needed.</td>
+</tr>
+<tr>
+<td>DoseSpot Provider Registered: Select user to assign ID.</td>
+<td>All/eRx</td>
+<td>DoseSpot Provider Registered</td>
+<td>Appears when multiple users are assigned to one provider, or there are no users assigned.</td>
+<td> Open the <a href="dosespotalerts.html">DoseSpot Assign User ID Window</a>. Use the dropdown menu to assign a user. </td>
+</tr>
+<tr>
+<td>DoseSpot Clinic Registered: Clinic Name has been registered.</td>
+<td>All/eRx</td>
+<td>DoseSpot Clinic Registered</td>
+<td>Notifies user that a clinic was successfully registered.</td>
+<td>Informational. No action needed.</td>
+</tr>
+<tr>
+<td>New WebSched Appointment: 11/22/2017 2:00:00 PM</td>
+<td>All/eServices</td>
+<td>Web Sched Recall Appointment Created</td>
+<td>Alerts user about appointments that have been scheduled using <a href="../site/websched.html">Web Sched Recall</a>. </td>
+<td>Click <i>Open Web Sched Appointments</i> to view the appointments in the Web Sched Appointments report.</td>
+</tr>
+<tr>
+<td>Clinic Feature Changed, you may need to restart the eConnector if you are subscribed to eServices</td>
+<td>N/A</td>
+<td>Clinic Feature Changed</td>
+<td>Alerts user to restart the eConnector when turning Clinics on/off.</td>
+<td>Restart the <a href="econnector.html">eConnector</a>.</td>
+</tr>
+<tr>
+<td>Clinics Changed</td>
+<td>N/A</td>
+<td>Clinic Feature Changed (internal)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Multiple OpenDentalServices</td>
+<td>N/A</td>
+<td>Multiple OpenDentalServices</td>
+<td>Alerts users that multiple OpenDentalServices are running on a single database.</td>
+<td>Go to the <a href="servicemanager.html">Service Manager</a> and stop excess services.</td>
+</tr>
+<tr>
+<td>No instance of Open Dental Service is running.</td>
+<td>All/eServices</td>
+<td>OpenDentalService Down</td>
+<td>Alerts the user the OpenDentalService is down.</td>
+<td>Restart the OpenDentalService.</td>
+</tr>
+<tr>
+<td>Unread WebMail</td>
+<td>All</td>
+<td>New WebMail</td>
+<td>Alerts logged in Provider users of unread WebMail messages. </td>
+<td>Click to view <a href="securewebmail.html">WebMail</a> inbox. This alerts always displays for the intended user, regardless of alert subscriptions.</td>
+</tr>
+<tr>
+<td>4 consecutive failed email sends detected. 07/12/2019 11:37:00 AM</td>
+<td>All/eServices</td>
+<td>eConnector Email Send Failures</td>
+<td>Alert will display if Emails have failed to send more than three times. Shows number of messages effected and time of last failure. </td>
+<td>Informational. No action needed.</td>
+</tr>
+<tr>
+<td>Supplemental Backup successful</td>
+<td>All/Supplemental Backups</td>
+<td>Supplemental Backups</td>
+<td>The supplemental backup was successful. Alert created due to a successful supplemental backup</td>
+<td>Informational. No action needed. </td>
+</tr>
+<tr>
+<td>Mismatched eConnector time detected. eConnector: 7/20/2020 09:04:00, Database: 7/20/2020 10:04:00. eConnector time must match database time. Please correct eConnector computer time to match database time and restart eConnector.</td>
+<td>All/eServices</td>
+<td>eConnector Time</td>
+<td>Notifies user that the MySQL time and eConnector time differ. <br/><br/> Only occurs when the MySQL and eConnector are hosted on different computers.</td>
+<td>Correct the time on the server hosting the eConnector, then restart the eConnector service.</td>
+</tr>
+<tr>
+<td>CareCredit Batch Errors: Errors processing CareCredit batch requests</td>
+<td>N/A</td>
+<td>CareCredit Batch Errors</td>
+<td>Alert will display when there is an error when running CareCredit batch quickscreens due to a closed merchant number.</td>
+<td>Click to open the <a href="carecredittransactions.html">CareCredit Transactions</a> window.</td>
+</tr>
+<tr>
+<td>Patient arrived at 12:26 07/16/2020 for appointment at 12:30 07/16/2020</td>
+<td>All/eServices</td>
+<td>Patient Arrival</td>
+<td>Alert will display when a patient has replied to an <a href="arrivalssetup.html">Arrivals</a> message. This indicates the patient has arrived for their appointment and is waiting outside.</td>
+<td>Click Open Form to open the patient appointment. </td>
+</tr>
+<tr>
+<td>New Secure Email</td>
+<td>All</td>
+<td>New Secure Email</td>
+<td>Alert will display when a patient has sent the office a secure email reply.</td>
+<td>Information. View the reply in the Email Inbox.</td>
+</tr>
+<tr>
+<td>Cloud Sessions Limit</td>
+<td>All</td>
+<td>Cloud Sessions Limit</td>
+<td>Notifies user the number of Open Dental Cloud sessions open is reaching it's maximum allowed.</td>
+<td>Click to open Cloud Management to increase limit or kick out inactive sessions.</td>
+</tr>
+<tr>
+<td>New Web Sched Existing Patient Appointment.</td>
+<td>All/eServices</td>
+<td>Web Sched Existing Pat Appointment Created</td>
+<td>Notifies user an existing patient has scheduled an appointment using Web Sched Existing Patient. </td>
+<td>Click to view the appointments in the Web Sched Appointments report.</td>
+</tr>
+<tr>
+<td>Web Forms Ready to Retrieve - HQ 3</td>
+<td>All</td>
+<td>Web Forms Ready to Retrieve</td>
+<td>Runs once an hour. Notifies user that web forms are ready to be retrieved. Also displays clinic and the number of web forms waiting. </td>
+<td>Click to open the Web Forms window and retrieve web forms. </td>
+</tr>
+<tr>
+<td>Monitoring the slave status is now monitored by the OpenDentalReplicationService. Each replication server will need the new OpenDentalReplicationService installed. See <a href="opendentalreplicationservice.html">Open Dental Replication Service</a>. </td>
+<td>All</td>
+<td>Update Completed - Action Required</td>
+<td>Warns user to install the replication service.</td>
+<td></td>
+</tr>
+<tr>
+<td>Warning: Replication data receive is off at server 'SERVER NAME'. The server will not receive updates until the slave is started again. Contact your IT admin to run the SQL command START SLAVE.</td>
+<td>All</td>
+<td>Replication Monitor Warning</td>
+<td>Warns user that replication is having errors.</td>
+<td></td>
+</tr>
+<tr>
+<td>No recalls have been sent in the past 3 days. Please check your Web Sched setup or contact support.</td>
+<td>eServices</td>
+<td>Web Sched Recalls Not Sending</td>
+<td>Warns user that Web Sched Recall messages have not been sent in three days.</td>
+<td>Verify Web Sched setup or contact Open Dental Support for assistance.</td>
+</tr>
+<tr>
+<td></td>
+<td>N/A</td>
+<td>Clinic Has Gone Over Daily Max Message Limit for TenDlc</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Automated messaging has been halted for eReminders</td>
+<td>eServices</td>
+<td>Invalid Automated Messaging Tags Detected - AddToCalendar</td>
+<td>Warns user that the [AddToCalendar] tag is in use with an eReminder when eConfirmations are not in use.</td>
+<td>Remove [AddToCalendar] tag from automated messaging rules or sign up for eConfirmations. eConfirmations are required in order to use the [AddToCalendar] tag.</td>
+</tr>
+<tr>
+<td>Signature Cleared: Procedure Note Change with PatNum: 59 Date: 11/07/2023 Code: D6740 </td>
+<td>Procedure or Group Note's Signature Cleared</td>
+<td>Signature Cleared</td>
+<td>Warns user that a procedure note or group note signature has been cleared by another user.</td>
+<td>Manually replace signature.</td>
+</tr>
+<tr>
+<td>Pearl AI Imaging Error: Patient Name, Example folder, FileName.png.</td>
+<td>Program Link Alerts</td>
+<td>Program Link Alert</td>
+<td>An image sent to Pearl AI timed out. </td>
+<td>Resend image to Pearl or upload a new image.</td>
+</tr>
+</table>
+</p>
+</div>
+</div>
+</body>
+</html>```

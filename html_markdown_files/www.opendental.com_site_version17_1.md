@@ -1,0 +1,242 @@
+# File: ./www.opendental.com/site/version17_1.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Version 17.1</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('version17_1','versions','advancedtopics','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Version 17.1</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="versions.html">Versions</a>.</p>
+<p>Version 17.1 was released on 6/29/2017. EHR certified 2014 edition.</p>
+<p class="redtext">Note: Open Dental 17.1 requires a minimum 1280 x 768 resolution. Before updating, please evaluate your monitors and determine if you need to upgrade. </p>
+<p>Appointments</p>
+<ul>
+<li>New tool changes providers on future appointments based on the providers assigned to the operatory. <a href="../manual/updateprovsfutureappts.html">Update Provs on Future Appts</a></li>
+<li>[famRecallDue] static text field in Sheets will only include family members that are due for a recall and are not scheduled. <a href="../manual/statictextfields.html">Static Text Fields Descriptions</a></li>
+<li>[dueForBWYN] and [dueForPanoYN] static text fields now take disabled recall into account based on date and family balance. <a href="../manual/statictextfields.html">Static Text Fields Descriptions </a></li>
+<li> Filter the Unscheduled List by procedure. <a href="../manual/unscheduled.html">Unscheduled List</a></li>
+<li>Updated labels on blockout Cut-Copy-Paste tool to reflect accurate behavior. </li>
+</ul>
+<p>Billing</p>
+<ul>
+<li>Set a specific time of day to automatically run daily aging (e.g. non-peak hours). <a href="../manual/miscsetup.html">Miscellaneous Setup</a></li>
+<li>Update eStatement credentials without clearing the billing list. <a href="../manual/billinglist.html">Billing List</a></li>
+<li>Option to send a statement directly to the Patient Portal. <a href="../manual/statementwindow.html">Statement Window</a></li>
+<li>Scheduled date shows in Recurring Charges window. <a href="../manual/recurringcharges.html">Recurring Charges</a></li>
+<li>Preference to use the transaction date as the Payment date (instead of the scheduled recurring charge date) when running Recurring Charges. <a href="https://www.opendental.com/manual/modulesetupaccount.html">Account Module Preferences</a></li>
+</ul>
+<p>Chart Module</p>
+<ul>
+<li>Use slider on the tooth chart to show procedure changes to the tooth chart over time. <a href="../manual/graphicaltoothchart.html">Graphical Tooth Chart</a></li>
+<li> When a medication is marked as 'discontinued' in eRx, the same medication will be marked 'discontinued' in Open Dental upon refresh of the Chart module. <a href="https://www.opendental.com/manual/erxMedications.html">eRx Medications</a></li>
+<li>New preference to prompt user on how to handle fees when a provider changes on a procedure. <a href="https://www.opendental.com/manual/modulesetupchart.html">Chart Module Preferences</a></li>
+<li>For Canada, lab fee procedures now show on claims and lab fee estimates are based on the coverage of the associated procedure. <a href="../manual/canadalabfees.html">Canada Lab Fees</a></li>
+</ul>
+<p>Claims and Claim Payments</p>
+<ul>
+<li>Process claim payments via virtual credit cards using X-Charge or PayConnect. <a href="../manual/claimpayfinalize.html">Finalize Claim Payments</a></li>
+<li>Process ERA 835s from a central window. Options to filter ERAs by date, amount, clinic, carrier, trace or check #, and status. <a href="../manual/claimsERA835.html">Electronic EOBs (ERA 835s)</a></li>
+<li>Finalize Payment button added to the Electronic Remittance Advice (ERA) window. <a href="../manual/claimsERA835.html">Electronic EOBs (ERA 835s)</a></li>
+<li>Option to turn on/off automatic download of ERA 835s from Electronic Dental Services (EDS). <a href="../manual/eclaimseds.html">Electronic Dental Services (EDS)</a></li>
+<li>Supplemental payments can have negative writeoff amounts. <a href="../manual/claimpaymentsupplemental.html">Supplemental Insurance Payments</a></li>
+<li>Preference to force users to finalize insurance payments from the Batch Insurance window only. <a href="https://www.opendental.com/manual/modulesetupmanage.html">Manage Module Preferences</a></li>
+<li>Finalize zero dollar claim payments so you can scan and view EOBs. <a href="../manual/claimpayfinalize.html">Finalize Claim Payments</a></li>
+<li>Date Sent Orig field added to Edit Claim window to record original send date of claim. <a href="../manual/claimedit.html">Edit Claim Window</a></li>
+<li>Date Sent field auto-populated when claim is sent. If resent, label changes to Date Resent and date is updated. <a href="../manual/claimedit.html">Edit Claim Window</a></li>
+<li>Checkbox added to printed medical claim form 1500 to indicate 'Assignment of Benefits'. <a href="../manual/claimform1500.html">1500 HCFA Claim Form'</a></li>
+<li>Attach a Claim Error Code to the status history of a claim. <a href="../manual/claimtabstatus.html">Edit Claim - Status History Tab</a></li>
+<li> Preference determines which procedure description is used on printed claims when chart procedure code differs from a base procedure code description. <a href="https://www.opendental.com/manual/modulesetupfamily.html">Family Module Preferences</a></li>
+<li> Assign outstanding claims to specific users for follow-up. <a href="../manual/reportoutins.html">Outstanding Insurance Claims Report</a></li>
+<li>Logged on user and date/time received is captured on the procedure level when an insurance payment is received. <a href="../manual/claimreceive.html">Receiving Insurance Payments</a></li>
+<li>Claim Type: Other window now shows plan type in column. <a href="../manual/claimtypes.html">Claim Types</a></li>
+<li>Claim Identifier added as an optional item to add to Claim Forms. <a href="../manual/claimforms.html">Claim Form Setup</a></li>
+</ul>
+<p>Clinics</p>
+<ul>
+<li>Mobile Web supports clinics. Filter information by clinic the user has access to. <a href="../manual/mobilewebuse.html">Using the Mobile Web</a></li>
+<li>External ID field added for mapping purposes. <a href="../manual/clinicsetup.html">Clinic Names, Contact Info, and Defaults</a></li>
+<li>Set clinic-specific billing filter options. <a href="https://www.opendental.com/manual/billingfilter.html">Billing Options</a></li>
+<li>Option to search for patients associated to clinics that are hidden. <a href="../manual/patientselect.html">Selecting Patients</a></li>
+<li>When using QuickBooks and clinics, select the 'class refs' which will be available when sending deposits to QuickBooks. <a href="../manual/quickbooks.html">QuickBooks</a></li>
+<li>Clinics can only be hidden, not deleted. <a href="../manual/clinicsetup.html">Clinic Names, Contact Info, and Defaults</a></li>
+</ul>
+<p>Commlogs</p>
+<ul>
+<li>Add auto notes to commlogs. <a href="../manual/commlog.html">Communications Log</a></li>
+<li> Preference to auto save commlogs every 10 seconds if changes have been made. <a href="https://www.opendental.com/manual/modulesetupchart.html">Chart Module Setup</a></li>
+</ul>
+<p>Dropbox enhancements </p>
+<ul>
+<li>Works with statements, email and claim attachments, summaries of care, wiki files and more. <a href="../manual/dropbox.html">Dropbox</a></li>
+</ul>
+<p>eConfirmations</p>
+<ul>
+<li>Sign up for eConfirmations using the eServices Signup Portal. <a href="../manual/econfirmationsetup.html">eConfirmations Set up and Sign up</a></li>
+<li>Stop sending of eConfirmations for appointments with a specific confirmation status. <a href="../manual/confirmationstatus.html">Appointment Confirmation Status</a></li>
+<li>Stop the automatic update of the appointment confirmation status when the eConfirmation is sent. <a href="../manual/confirmationstatus.html">Appointment Confirmation Status</a></li>
+<li>Setup wizard removed. <a href="../manual/econfirmationsetup.html">eConfirmations Set up and Sign up</a></li>
+</ul>
+<p>eReminders</p>
+<ul>
+<li>Stop sending of eReminders for appointments with a specific confirmation status. <a href="../manual/confirmationstatus.html">Appointment Confirmation Status</a></li>
+<li>Select the status to apply to emailed and texted eReminders in Confirmation List Setup. <a href="../manual/confirmationsetup.html">Confirmation List Setup</a></li>
+<li>Setup wizard removed. <a href="../manual/ereminderssetup.html">eReminders Set up</a></li>
+</ul>
+<p>Email Inbox: <a href="../manual/emailinbox.html">Email Inbox - Receive and Send Messages</a></p>
+<ul>
+<li>Compose new messages and reply to received messages. </li>
+<li>View messages that you have sent.</li>
+<li>Search emails based on specific criteria.</li>
+<li>Email Inbox is non-modal (other windows can be open at the same time).</li>
+</ul>
+<p>eServices</p>
+<ul>
+<li>Use the eServices Signup Portal to sign up for eServices. <a href="../manual/signupportalhelp.html">eServices Signup Portal Help</a></li>
+<li>Set patient portal features in the Signup Portal. <a href="../manual/portalhostedbyod.html">Patient Portal Setup</a></li>
+</ul>
+<p> Integrated Texting</p>
+<ul>
+<li>Sign up for Integrated Texting using the eServices Signup Portal. <a href="https://www.opendental.com/manual/textintegratedsignup.html">Integrated Texting Sign up</a></li>
+<li>Monthly limit is a per-clinic limit that applies to every clinic. <a href="https://www.opendental.com/manual/textintegratedsignup.html">Integrated Texting Sign up</a></li>
+<li>Change monthly limits in the Signup Portal. <a href="../manual/textintegratedmonthlylimit.html">Change Monthly Limits</a></li>
+<li>View usage summaries on the Texting Services tab. <a href="../manual/textintegratedusage.html">Usage Summary</a></li>
+<li>Send Web Sched Recall reminders via integrated texting. <a href="https://www.opendental.com/manual/webschedrecall.html">Web Sched Recall</a></li>
+</ul>
+<p>Orthodontics</p>
+<ul>
+<li>For each column in the Ortho Chart, option to enter an internal name and display name. <a href="../manual/orthochartsetup.html">Ortho Chart Setup</a></li>
+<li>Print button added to Ortho Chart. <a href="../manual/orthochart.html">Ortho Chart</a></li>
+<li>Header on Ortho Chart printout reflects chart name and selected tab. <a href="../manual/orthochart.html">Ortho Chart</a></li>
+<li>Add an electronic signature stamp in the Ortho Chart for the person currently logged in. <a href="../manual/orthochart.html">Ortho Chart</a></li>
+<li>Option to define procedures that can be considered orthodontic placement procedures (used to determine the Date Start for claims created using the Auto Ortho Claim tool). <a href="../manual/orthosetup.html">Ortho Setup</a></li>
+<li>Option to override the Date Start on the Ortho Case tab. <a href="../manual/orthocase.html">Ortho Case</a></li>
+</ul>
+<p>Payment Plans</p>
+<ul>
+<li>Attached to Payment Plan checkbox removed from Payment window and replaced with label indicating the number of splits attached to a plan. <a href="../manual/paymentplanpatient.html">Payment Plan window</a></li>
+<li>When patient has a payment plan and a payment is entered, a prompt will ask the user whether the payments should be attached to a plan or not. <a href="../manual/paymentplanpayment.html">Entering Payments to a Payment Plan</a></li>
+</ul>
+<p>Payments</p>
+<ul>
+<li>Procedure code columns added in Pay Split Manager. <a href="https://www.opendental.com/manual/paysplitmanager.html">Pay Split Manager</a></li>
+<li>Preference for 'Payments prompt for auto splits' includes option to force allocated payments to have pay splits attached to a procedure. <a href="https://www.opendental.com/manual/modulesetupaccount.html">Account Module Preferences</a></li>
+<li>Changing the provider on a completed procedure attached to a pay split will also change the provider on the pay split. <a href="../manual/procedureedit.html">Editing Procedure</a></li>
+<li>When allocating a prepayment, new credit filter options when selecting procedures (include all, only explicitly attached, exclude all). <a href="https://www.opendental.com/manual/prepaymentpatient.html">Prepayments</a></li>
+</ul>
+<p>Reports</p>
+<ul>
+<li> Insurance Payment Plans Past Due Report lists insurance payment plans with balances that are overdue. <a href="../manual/reportinspayplanpastdue.html">Insurance Payment Plans Past Due Report</a></li>
+<li> Uniform Data Systems (UDS) report interface for the FQHC sealant measure. <a href="https://www.opendental.com/manual/federallyqualified.html">Federally Qualified Health Centers</a></li>
+<li>Option to cancel a query when it is running. <a href="../manual/queryoverview.html">Run a Query</a></li>
+<li>Option to print Graphic Reports or export as PDF. <a href="../manual/reportsgraphic.html">Graphic Reports</a></li>
+<li>Appointments Report header includes information about selected providers. <a href="../manual/reportappts.html">Appointments Report</a></li>
+<li>Unearned Income report uses complex reporting system. <a href="../manual/reportcomplex.html">Printing Reports - Complex Report System</a></li>
+<li>Option to include writeoff estimates and adjustments in the Production and Income report. <a href="../manual/reportprodinc.html">Production and Income Report</a></li>
+<li>Option to include writeoff estimates in the Aging of A/R report. <a href="../manual/reportaging.html">Aging of Accounts Receivable (A/R) Report</a></li>
+<li>Option to calculate aging by patient or guarantor in the Aging of A/R report. <a href="../manual/reportaging.html">Aging of Accounts Receivable (A/R) Report</a></li>
+<li>Option to include procedures with no insurance estimates in the Procedures not Billed to Insurance report.</li>
+<li>Filter the Treatment Finder Report by clinic. Users only see clinics they are restricted to. <a href="../manual/reporttreatfinder.html">Treatment Finder Report</a></li>
+<li>Treatment Finder Report "TP Date Since" now includes same-day treatment. <a href="../manual/reporttreatfinder.html">Treatment Finder Report</a></li>
+<li>In the Outstanding Insurance Claims report, new option determines whether the date a claim was last sent shows, or the date the claim was originally sent shows. <a href="../manual/reportoutins.html">Outstanding Insurance Claims Report</a></li>
+</ul>
+<p>Security</p>
+<ul>
+<li>Option to force users to change their password at next login attempt when passwords are required to be 'strong' and their password does not meet the criteria. <a href="../manual/security.html">Security</a></li>
+<li>After five consecutive failed log-on attempts, a user will be temporarily locked out of Open Dental, the CEMT, and/or the Mobile Web for 5 minutes or until the account is manually unlocked. <a href="../manual/securityusers.html">Security User Profiles</a>, <a href="../manual/cemtsecurity.html">CEMT Security</a></li>
+<li>After a patient merge, history for both the merge 'from' and 'to' patient can be viewed in the Audit Trail. <a href="../manual/audittrail.html">Audit Trail</a></li>
+<li>Reports - Daily permission allows/blocks a user from running daily reports for adjustments, payments, procedures, and writeoffs. <a href="../manual/permissions.html">Permissions</a></li>
+<li> Daily - View All Providers permission allows/blocks a user from viewing other provider information in a daily report. <a href="../manual/permissions.html">Permissions</a></li>
+<li> Production and Income, View All Providers permission allows/blocks a user from viewing other provider information in the Production and Income report. <a href="../manual/permissions.html">Permissions</a></li>
+<li>Patient Restriction Edit permission allows/blocks user from changing the 'Appointment Scheduling is Restricted' checkbox. <a href="../manual/permissions.html">Permissions</a></li>
+<li>Patient Billing Type Edit permission only allows/blocks user from changing billing type. <a href="../manual/permissions.html">Permissions</a></li>
+<li>Graphics Edit permission allows/blocks user from changing graphic settings. <a href="../manual/permissions.html">Permissions</a></li>
+<li>Sheet Delete permissions allows/blocks user from deleting sheets associated with a patient. <a href="../manual/permissions.html">Permissions</a></li>
+<li>Update Custom Tracking permission allows/blocks user from updating tracking status from the Outstanding Insurance Report. <a href="../manual/permissions.html">Permissions</a></li>
+<li>Insurance Plan Ortho Edit permission allows/blocks user from editing insurance plan ortho information. <a href="../manual/permissions.html">Permissions</a></li>
+<li>Insurance Plan Edit permission is required to add or edit discount plans. <a href="../manual/permissions.html">Permissions</a></li>
+</ul>
+<p>Tasks</p>
+<ul>
+<li>Option to collapse/expand large tasks. Determine default behavior in Task Options. <a href="../manual/tasksarea.html">Tasks Area</a></li>
+<li>Add auto notes to tasks. <a href="../manual/tasks.html">Create Tasks</a></li>
+<li>Right click on a URL in a task note to open it in a browser. <a href="../manual/tasks.html">Create Tasks</a></li>
+</ul>
+<p>Time Clock / Time Cards <a href="../manual/timecardsetup.html">Time Card Setup</a></p>
+<ul>
+<li> Visual changes to Time Card Setup window.</li>
+<li> Ability to delete multiple pay periods at once. </li>
+<li>Not able to create pay periods that overlap existing pay periods.</li>
+<li>Preference to hide pay periods that are older than six months. </li>
+</ul>
+<p>Treatment Plans</p>
+<ul>
+<li>Treatment plan layout is determined using sheets. Classic mode is discontinued. <a href="../manual/sheetstreatplan.html">Customizing Treatment Plans using Sheets</a></li>
+</ul>
+<p>Web Forms</p>
+<ul>
+<li>When retrieving Web Forms, email address and phone number are also considered when matching forms to patients. <a href="../manual/webformsretrieve.html">Retrieve Submitted Forms</a></li>
+<li>When entering data in linked Web Forms, once first name, last name, and birth date are entered, they are inherited on each subsequent form. <a href="../manual/webformspatient.html">Web Forms: What the Patient Sees</a></li>
+<li>Default host server address redirects to https://patientviewer.com. <a href="../manual/webformsupload.html">Upload Web Forms</a></li>
+<li>URL arguments for Dental Office ID, Web Sheet ID and Next Form ID updated. <a href="../manual/webformsupload.html">Upload Web Forms</a></li>
+</ul>
+<p>Web Sched New Patient: <a href="https://www.opendental.com/manual/webschednewpat.html">Web Sched New Patient</a></p>
+<ul>
+<li>Sign up for Web Sched New Patient using the eServices Signup Portal. <a href="../manual/webschednewpatsetup.html">Web Sched New Patient: Sign up an Set up</a></li>
+<li>Enhanced interface allows patient to choose appointment date/time using a calendar. <a href="../manual/webschednewpatsees.html">Web Sched New Patient: What the Patient Sees</a></li>
+<li>Embed Web Sched New Patient into your practice website. <a href="../manual/webschednewpatsetup.html">Web Sched New Patient: Sign up an Set up</a></li>
+<li>Change the interface color theme when embedding in your website. <a href="../manual/webschednewpatsetup.html">Web Sched New Patient: Sign up an Set up</a></li>
+<li>Set up Web Sched New Patient Appt Types as 'reasons for appointment'. <a href="../manual/definitionswebschednewpatappttypes.html">Definitions: Web Sched New Patient Appt Types</a>.</li>
+<li>Customize a help message that shows when a patient is selecting an appointment type. <a href="../manual/webschednewpatsetup.html">Web Sched New Patient: Sign up an Set up</a></li>
+<li>Create blockouts in the appointment schedule that allow Web Sched New Patient appointments. <a href="../manual/webschednewpatsetup.html">Web Sched New Patient: Sign up an Set up</a></li>
+</ul>
+<p>Web Sched Recall: <a href="https://www.opendental.com/manual/webschedrecall.html">Web Sched Recall</a></p>
+<ul>
+<li>Sign up for Web Sched New Patient using the eServices Signup Portal. <a href="../manual/webschedrecallsetup.html">Web Sched Recall: Sign up and Setup</a></li>
+<li>Enhanced interface allows patient to choose appointment date/time using a calendar. <a href="../manual/webschedrecallsees.html">Web Sched Recall: What the Patient Sees</a></li>
+<li>Create blockouts in the appointment schedule that allow Web Sched Recall appointments. <a href="../manual/webschedrecallsetup.html">Web Sched Recall: Sign up and Setup</a></li>
+<li>Send Web Sched Recall notifications via Integrated Texting (automated or manual). <a href="../manual/webschedrecallsetup.html">Web Sched Recall: Sign up and Setup</a>, <a href="../manual/recalllist.html">Recall List</a></li>
+<li>Manual Web Sched Recall reminders sent from the Recall List are aggregated for multiple family members. <a href="../manual/recalllist.html">Recall List</a></li>
+</ul>
+<p><a href="../manual/wikilists.html">Wiki Lists</a></p>
+<ul>
+<li>Right click on a URL in a wiki list to open it in a browser. </li>
+<li>Search option in wiki lists filters results. <br></li>
+<li>Advanced search option added to wiki lists. </li>
+</ul>
+<p> Recall List and Confirmation List Setup windows divided into separate windows. <a href="../manual/recallsetup.html">Recall List Setup</a>, <a href="../manual/confirmationsetup.html">Confirmation List Setup</a><br>  "Show Graphical Tooth Chart" has been removed from Treatment Plan Module preferences. <a href="https://www.opendental.com/manual/modulesetuptreat.html">Treatment Plan Module Preferences</a><br>  Secondary insurance with Carve Out COB type includes deductible in calculation. <a href="../manual/cob.html">Coordination of Benefits (COB)</a><br>  EHR Modified Stage 2 dashboard now shows correct description for Objective 9 - Secure Messaging. <a href="../manual/ehrdashboard1.html">EHR Dashboard</a><br>  Clicking "Add Estimate" on a procedure on an insurance plan will open only the currently existing estimate instead of creating another estimate. <a href="../manual/procedurefinancial.html">Procedures - Financial Tab </a><br>  "Action Needed" toolbar button moved to Alerts menu. <a href="../manual/ehrcpoeradapprove.html">Enter and Approve CPOE Radiology Orders</a><br>  Added a ClinicDesc display field to the Account module and the Chart module. <a href="../manual/showtabchart.html">Customizing Chart Views</a><br>  Add a custom referral type (in addition to referral from and referral to). <a href="../manual/referrals.html">Referrals</a><br>  One referral per provider shows in the Patient Information grid. <a href="../manual/referrals.html">Referrals</a><br>  Dropbox reenabled. <a href="../manual/dropbox.html">Dropbox</a><br>  Dropbox works with statements, email and claim attachments, summaries of care, wiki files and more. <a href="../manual/dropbox.html">Dropbox</a><br>  Create appointments and patients using FHIR RESTful API Service. <a href="../manual/fhir.html">Open Dental FHIR - RESTful API Service</a><br>  Ability to add more messaging buttons. <a href="../manual/messagingbuttons.html">Messaging Buttons</a><br>  User is no longer required to run Open Dental as Admin when using X-Charge. <a href="../manual/xcharge.html">X-Charge</a><br>  Include procedure status in PR1 segment of HL7 inbound ADT messages. <a href="../manual/hl7genericmsg.html">HL7 Generic Message Structure</a><br>  Email PDF button added to the Edit Deposit Slip window. <a href="../manual/depositslip.html">Deposits and Deposit Slips</a><br>  New FeeScheduleHiddenWithPatient DBM unhides fee schedules if they are associated with patients. <a href="../manual/databasemaintenance.html">Database Maintenance</a><br>  Galera enterprise users can manually disable the MySQL integrity check during database maintenance. <a href="../manual/databasemaintenance.html">Database Maintenance</a><br>  DPlan added as option in Display Fields, TreatmentPlanModule. <a href="../manual/displayfields.html">Display Fields</a><br>  Providers marked 'hidden' cannot access eRx. <a href="../manual/providerseditwindow.html">Edit Provider Window</a><br>  Practice by Numbers bridge. <a href="../manual/bridgepracticebynumbers.html">Bridge - Practice by Numbers</a><br>  Carestream bridge name changed to Carestream Ortho/OMS from carestreamdental.com. <a href="../manual/bridgecarestream.html">Bridge - Carestream</a><br>  i-Dixel bridge. <a href="../manual/bridgeidixel.html">Bridge - i-Dixel</a><br>  NewTom bridge. Bridge - <a href="../manual/bridgenewtom.html">NewTom NNT</a><br>  ADSTRA Imaging bridge. <a href="../manual/bridgeadstra.html">Bridge - ADSTRA Imaging</a><br></p>
+		</div>
+	</div>
+</body>
+</html>```

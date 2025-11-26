@@ -1,0 +1,74 @@
+# File: ./www.opendental.com/manual/employees.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Employees</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('employees','+lists','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/employees.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/employees.html" >v24.2</option><option value="https://www.opendental.com/manual241/employees.html" >v24.1</option><option value="https://www.opendental.com/manual233/employees.html" >v23.3</option><option value="https://www.opendental.com/manual232/employees.html" >v23.2</option><option value="https://www.opendental.com/manual231/employees.html" >v23.1</option><option value="https://www.opendental.com/manual224/employees.html" >v22.4</option><option value="https://www.opendental.com/manual223/employees.html" >v22.3</option><option value="https://www.opendental.com/manual222/employees.html" >v22.2</option><option value="https://www.opendental.com/manual221/employees.html" >v22.1</option><option value="https://www.opendental.com/manual214/employees.html" >v21.4</option><option value="https://www.opendental.com/manual213/employees.html" >v21.3</option><option value="https://www.opendental.com/manual212/employees.html" >v21.2</option><option value="https://www.opendental.com/manual211/employees.html" >v21.1</option><option value="https://www.opendental.com/manual205/employees.html" >v20.5</option><option value="https://www.opendental.com/manual204/employees.html" >v20.4</option><option value="https://www.opendental.com/manual203/employees.html" >v20.3</option><option value="https://www.opendental.com/manual202/employees.html" >v20.2</option><option value="https://www.opendental.com/manual201/employees.html" >v20.1</option><option value="https://www.opendental.com/manual194/employees.html" >v19.4</option><option value="https://www.opendental.com/manual193/employees.html" >v19.3</option><option value="https://www.opendental.com/manual192/employees.html" >v19.2</option><option value="https://www.opendental.com/manual191/employees.html" >v19.1</option><option value="https://www.opendental.com/manual184/employees.html" >v18.4</option><option value="https://www.opendental.com/manual183/employees.html" >v18.3</option><option value="https://www.opendental.com/manual182/employees.html" >v18.2</option><option value="https://www.opendental.com/manual181/employees.html" >v18.1</option><option value="https://www.opendental.com/manual174/employees.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Employees</p></div>
+<div class="GeneralPageContent">
+<p>The Employees list is a place to manage employee contact information.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Lists, Employees.</p>
+<img src="images/employees.png" width="915" height="389"/><p>Employees must be created here to use the <a href="timeclock.html">Time Clock</a>. Employees can also be associated with <a href="securityusers.html">Users</a> and <a href="schedule.html">Schedules.</a></p>
+<p><b>Search</b>: Search by first name, last name, phone number, or email address.</p>
+<p class="MarginBottomZero">Filter the employee list using the following options: </p>
+<ul class="MarginBottomGap">
+<li><b>Hidden</b>: Show employees marked as <i>Hidden</i>.</li>
+<li><b>Furloughed</b>: Show employees marked as <i>Furloughed</i>.</li>
+<li><b>Non-Furloughed</b>: Show employees not marked as <i>Furloughed</i>.</li>
+</ul>
+<p><b>Add</b>: Create a new employee entry. Opens Employee Edit. </p>
+<p><b>Delete All</b>: Delete unused employees. Employees attached to time clock events are not deleted.</p>
+<p><b>Export List</b>: Export the employee list to a text or XLS file.</p>
+<p>For steps to take when an employee leaves the practice, see <a href="employeeleaving.html">Employee Leaving</a>.</p>
+<h2>Employee Edit</h2>
+<p>Click <b>Add</b> to create a new employee or double-click an existing employee to edit.</p>
+<img src="images/employeeEdit.png" width="460" height="382"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Hidden</b>: Check this box when the employee is no longer at the office. Hides the employee from the <a href="timeclock.html">Time Clock</a> and other areas that display the employees list. </li>
+<li><b>First Name / Last Name / MI</b>: Enter the employee's name.</li>
+<li><b>Payroll ID </b>: Only used if processing payroll through a third party (such as ADP).</li>
+<li><b>Phone Ext</b>: Enter the employee's phone extension.</li>
+<li><b>Wireless Phone</b>: Enter the employee's wireless phone number.</li>
+<li><b>Email Work</b>: Enter the employee's work email.</li>
+<li><b>Email Personal</b>: Enter the employee's personal email.</li>
+<li><b>Furloughed</b>: Only check this box if the employee is not currently active, but still technically employed.</li>
+<li><b>Reports To</b>: Select another employee that the currently selected employee reports to (e.g., office manager, lead, etc.).</li>
+<li><b>Delete</b>: Remove the employee from the Employees list. Only employees with no <a href="timeclockedit.html">Time Card</a> events can be deleted.</li>
+</ul>
+<p>Click <b>Save</b> to finish adding a new employee or keep changes.</p>
+</div>
+</div>
+</body>
+</html>```

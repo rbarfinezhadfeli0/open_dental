@@ -1,0 +1,117 @@
+# File: ./www.opendental.com/manual243/webschedasap.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Web Sched ASAP</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('webschedasap','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/webschedasap.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/webschedasap.html" >v24.2</option><option value="https://www.opendental.com/manual241/webschedasap.html" >v24.1</option><option value="https://www.opendental.com/manual233/webschedasap.html" >v23.3</option><option value="https://www.opendental.com/manual232/webschedasap.html" >v23.2</option><option value="https://www.opendental.com/manual231/webschedasap.html" >v23.1</option><option value="https://www.opendental.com/manual224/webschedasap.html" >v22.4</option><option value="https://www.opendental.com/manual223/webschedasap.html" >v22.3</option><option value="https://www.opendental.com/manual222/webschedasap.html" >v22.2</option><option value="https://www.opendental.com/manual221/webschedasap.html" >v22.1</option><option value="https://www.opendental.com/manual214/webschedasap.html" >v21.4</option><option value="https://www.opendental.com/manual213/webschedasap.html" >v21.3</option><option value="https://www.opendental.com/manual212/webschedasap.html" >v21.2</option><option value="https://www.opendental.com/manual211/webschedasap.html" >v21.1</option><option value="https://www.opendental.com/manual205/webschedasap.html" >v20.5</option><option value="https://www.opendental.com/manual204/webschedasap.html" >v20.4</option><option value="https://www.opendental.com/manual203/webschedasap.html" >v20.3</option><option value="https://www.opendental.com/manual202/webschedasap.html" >v20.2</option><option value="https://www.opendental.com/manual201/webschedasap.html" >v20.1</option><option value="https://www.opendental.com/manual194/webschedasap.html" >v19.4</option><option value="https://www.opendental.com/manual193/webschedasap.html" >v19.3</option><option value="https://www.opendental.com/manual192/webschedasap.html" >v19.2</option><option value="https://www.opendental.com/manual191/webschedasap.html" >v19.1</option><option value="https://www.opendental.com/manual184/webschedasap.html" >v18.4</option><option value="https://www.opendental.com/manual183/webschedasap.html" >v18.3</option><option value="https://www.opendental.com/manual182/webschedasap.html" >v18.2</option><option value="https://www.opendental.com/manual181/webschedasap.html" >v18.1</option><option value="https://www.opendental.com/manual174/webschedasap.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Web Sched ASAP</p></div>
+<div class="GeneralPageContent">
+<p>Use Web Sched ASAP to quickly send email and/or text messages to patients on the ASAP List about last minute appointment openings. </p>
+<p>In the <a href="asaplist.html">ASAP List</a>, send Web Sched ASAP messages.</p>
+<img src="images/webSchedASAPMain.gif" width="915" height="476"/><p>Messages include a clickable link patients can use to accept and reschedule their ASAP appointment. Patients also have the option to decline.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> See our video: <a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCmBChRburobugDCOe_WjdA9">Web Sched ASAP</a>.</li>
+<li><a href="webschedasappatientsees.html">Web Sched ASAP: What Patient Sees</a></li>
+<li><a href="webschedtroubleshooting.html">Web Sched Troubleshooting</a></li>
+<li><a href="asaplist.html">ASAP List</a></li>
+</ul>
+<p class="MarginBottomZero">Requirements: </p>
+<ul class="MarginBottomGap">
+<li>Patients must have an appointment or recall marked ASAP.</li>
+<li>To send text messages, <a href="../site/textintegrated.html">Integrated Texting Feature</a> must be turned on. </li>
+<li>To send text messages, patient must have a wireless number and allow text messages (<a href="patientedit.html">Edit Patient Information</a>).</li>
+<li>To send email messages, patient must have an email address.</li>
+</ul>
+<p class="MarginBottomZero">To send a Web Sched ASAP message:  </p>
+<ol class="MarginBottomGap">
+<li>In the Appointments Module, right-click on the available time slot, then select <i>Text ASAP List</i>. The ASAP List will open.</li>
+<li>Change the Web Sched ASAP settings on the right if needed, then click Send.</li>
+<li>In the Send Web Sched ASAP Alerts window, verify the Send Mode and message, then send.</li>
+<li>A blockout will appear on the schedule so staff is aware a Web Sched ASAP message has been sent to fill the available time.</li>
+</ol>
+<h2>ASAP List</h2>
+<p>All appointments whose length fits within the Start/End time will be selected by default. Information about the available time slot will show at the right in the <i>Web Sched ASAP</i> section.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Operatory</b>: Displays operatory of selected opening.</li>
+<li><b>Start/End Time</b>: Click the down arrow to change.</li>
+<li><b>Send</b>: Click to open <i>Send Mode</i>. Details below.</li>
+<li><b>History</b>: Click to open <a href="webschedasaphistory.html">Web Sched ASAP History</a>.</li>
+<li><b>Notification Settings</b>: Open <a href="webschedverify.html">Web Sched Notify Setup</a> for ASAP messages.</li>
+</ul>
+<p>Highlighted patients will receive the Web Sched ASAP notification. Click <b>Send</b> to proceed.</p>
+<h2>Send Mode</h2>
+<img src="images/webSchedASAPAlerts.gif" width="684" height="565"/><p class="MarginBottomZero"><b>Send Mode</b>: Select how to send the notification. Send Details will change based on the selected option and additional details about send time will show in the upper right. </p>
+<ul class="MarginBottomGap">
+<li><b>Text Message and Email</b>: Send both text and email messages.</li>
+<li><b>Text Message</b>: Send text messages only.</li>
+<li><b>Email</b>: Send email messages only.</li>
+<li><b>Preferred contact method</b>: Send using the patient's preferred contact method (email or text message only).</li>
+</ul>
+<p>Send Details will indicate what each patient will receive based on the selections and notes to explain the logic. Verify the message text and click Send to transmit messages.</p>
+<p><b>Text Message Text</b>: Review and edit the message sent on the text as needed. The default message can be edited in <a href="asapmsgs.html">ASAP Message Setup</a>. </p>
+<p class="MarginBottomZero"><b>Email Message Text</b>: Review and edit the message sent on emails. The default message can be edited in ASAP Message Setup.  </p>
+<ul class="MarginBottomGap">
+<li><b>Edit</b>: Click to add HTML to the message. See <a href="emailhtml.html">HTML Email</a> for details.</li>
+</ul>
+<p>Click <b>Send</b> to message the selected patients.</p>
+<h2>Web Sched ASAP Blockouts</h2>
+<p>In the Appointment Module, a blockout will show on the available opening to indicate a Web Sched ASAP notification has been sent about the opening.</p>
+<img src="images/webSchedASAPBlockout.gif" width="313" height="72"/><br/><p>Web Sched ASAP Blockouts do not follow traditional blockout behavior. They cannot be edited and are informational only.</p>
+<p>These blockouts can be deleted by right-clicking on them and selecting <i>Delete Web Schedule ASAP Blockout</i>.</p>
+<h2>Send Details Logic</h2>
+<p class="MarginBottomZero">Text Messages: </p>
+<ul class="MarginBottomGap">
+<li>Text messages are sent in staggered batches. <ul>
+<li>Texts will be sent for unscheduled appointments first, then scheduled appointments, then recalls.</li>
+<li>Texts for appointments that are farthest in the future are sent first.</li>
+<li>When the available time slot is less than 2 hours from the time the texts will send, texts are sent every minute.</li>
+<li>When the available time slot is within 2 and 12 hours, the texts are sent every 2 minutes.</li>
+<li>When the available time slot is within 12 and 48 hours, the texts are sent every 4 minutes.</li>
+<li>When the available time slot is more than 48 hours in the future, texts are sent every 8 minutes.</li>
+<li>Texts scheduled to be sent after the automated eServices End time are sent at the end time.</li>
+<li>Text messages are only sent during the automated eServices time window (<a href="eservicesmisctab.html">eServices Misc</a>), not necessarily when Send is clicked.</li>
+</ul>
+</li>
+<li>The <i>Maximum number of texts to send to a patient in a day via Web Sched</i> setting in ASAP Message Setup affects how many Web Sched text messages can be sent to a patient per day. Defaults to 2. If a Web Sched ASAP notification is not sent because a patient has met their maximum number of texts for the day, the available opening will still be offered as a selection option in the Web Sched ASAP interface (e.g., if other notifications that include the URL have been sent).</li>
+<li>Once a patient opts out of future ASAP notifications for an appointment, they will no longer receive text or email Web Sched ASAP notifications for the appointment.</li>
+</ul>
+<p>Emails: Emails are sent immediately when Send is clicked. They do not adhere to the automated eServices schedule.</p>
+<p>Text and Emails: Notifications only are sent if the available opening is at least 20 minutes after the send time of the text and/or email.</p>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,204 @@
+# File: ./www.opendental.com/manual243/timeclockedit.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - TimeCard</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('timeclockedit','timeclock','manage','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/timeclockedit.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/timeclockedit.html" >v24.2</option><option value="https://www.opendental.com/manual241/timeclockedit.html" >v24.1</option><option value="https://www.opendental.com/manual233/timeclockedit.html" >v23.3</option><option value="https://www.opendental.com/manual232/timeclockedit.html" >v23.2</option><option value="https://www.opendental.com/manual231/timeclockedit.html" >v23.1</option><option value="https://www.opendental.com/manual224/timeclockedit.html" >v22.4</option><option value="https://www.opendental.com/manual223/timeclockedit.html" >v22.3</option><option value="https://www.opendental.com/manual222/timeclockedit.html" >v22.2</option><option value="https://www.opendental.com/manual221/timeclockedit.html" >v22.1</option><option value="https://www.opendental.com/manual214/timeclockedit.html" >v21.4</option><option value="https://www.opendental.com/manual213/timeclockedit.html" >v21.3</option><option value="https://www.opendental.com/manual212/timeclockedit.html" >v21.2</option><option value="https://www.opendental.com/manual211/timeclockedit.html" >v21.1</option><option value="https://www.opendental.com/manual205/timeclockedit.html" >v20.5</option><option value="https://www.opendental.com/manual204/timeclockedit.html" >v20.4</option><option value="https://www.opendental.com/manual203/timeclockedit.html" >v20.3</option><option value="https://www.opendental.com/manual202/timeclockedit.html" >v20.2</option><option value="https://www.opendental.com/manual201/timeclockedit.html" >v20.1</option><option value="https://www.opendental.com/manual194/timeclockedit.html" >v19.4</option><option value="https://www.opendental.com/manual193/timeclockedit.html" >v19.3</option><option value="https://www.opendental.com/manual192/timeclockedit.html" >v19.2</option><option value="https://www.opendental.com/manual191/timeclockedit.html" >v19.1</option><option value="https://www.opendental.com/manual184/timeclockedit.html" >v18.4</option><option value="https://www.opendental.com/manual183/timeclockedit.html" >v18.3</option><option value="https://www.opendental.com/manual182/timeclockedit.html" >v18.2</option><option value="https://www.opendental.com/manual181/timeclockedit.html" >v18.1</option><option value="https://www.opendental.com/manual174/timeclockedit.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>TimeCard</p></div>
+<div class="GeneralPageContent">
+<p>View and edit clock events, calculate overtime, add adjustments, and print time cards for individual employees from the Time Card window.</p>
+<p>In the <a href="timeclock.html">Time Clock</a> area, select an employee. Click <b>View Time Card</b> or <b>View Breaks</b>.</p>
+<img src="images/timeCard.png" width="915" height="456"/><p>Alternatively, in <a href="timecardmanage.html">Time Card Management</a>, double-click an employee.</p>
+<p>All users can view their time card and breaks. If users are allowed to edit their time cards they can also edit clock events.</p>
+<p class="MarginBottomZero">The Pay Period dates are shown at the top. Clock events in the pay period are listed in the grid.  </p>
+<ul class="MarginBottomGap">
+<li>If a clock event has been altered, it is flagged in red text.</li>
+<li>If time card clock events are missing or not showing, this can be a clue to add more pay periods.</li>
+<li><b>Pay Period right/left arrows</b>: Move back or forward one pay period.</li>
+<li><b>Note</b>: A note specific to the pay period as a whole. This note is not blocked from editing by <a href="securitysettings.html">Global Security Settings</a> or <a href="permissions.html">Permissions</a>. All users with access to the Manage Module can edit this note at any time.</li>
+<li><b>Time Card</b> or <b>Breaks</b> radio button: Switch between full time card view and breaks only view. The Breaks radio button is disabled when <i>Allow 30 minutes of paid break</i> is unchecked (off) in Preferences.</li>
+</ul>
+<p class="MarginBottomZero">Time Card Grid Columns </p>
+<ul class="MarginBottomGap">
+<li><b>In/Out</b>: The time the employee clocked in and out. Seconds are included in the math.</li>
+<li><b>Total</b>: The total number of hours for the clock event.</li>
+<li><b>Adjust</b>: Adjustments to hours worked.  <ul>
+<li>Includes excess time subtracted from the time card when breaks exceed 30 minutes and <i>Calc Daily button makes adjustments if breaks over 30 minutes</i> is checked in Time Card Setup and manual adjustments created using <b>Add Adjustment</b> button.</li>
+<li>Excludes time card adjustments with a <i>PTO Type</i> or marked <i>Protected Leave</i>.</li>
+</ul>
+</li>
+<li><b>Rate2</b>: Hours worked that qualify as differential hours. Set up differential hours in <a href="timecardsetup.html">Time Card Setup</a> under Time Card Rules.</li>
+<li><b>Rate3</b>: Hours worked that qualify as weekend hours. Set up weekend hours in Time Cards Rules.</li>
+<li><b>PTO</b>: The paid time off hours added as an adjustment with a PTO type selected. See <a href="timecardmanage.html">Manage Time Cards</a>.</li>
+<li><b>OT</b>: Hours entered for a time card adjustment with <i>Overtime Adjustment</i> checked.  <ul>
+<li>Automatically created when using <b>Calc Daily</b> or <b>Calc Week OT</b>, depending on Time Card Rules. Can also be manually entered.</li>
+<li>These hours are removed from the <i>Day</i> total. </li>
+<li>May not match the total weekly overtime at the bottom because when the Admin user calculates weekly overtime, the values are not rounded up until the end. The bottom value is more accurate. </li>
+<li>Overtime number accounts for seconds but rounds to the nearest hundredth.</li>
+</ul>
+</li>
+<li><b>PL</b>: Number of hours marked as <i>Protected Leave</i>.</li>
+<li><b>Day</b>: Total regular hours worked that day. Calculated by <span class="codeblock">Total + Adjust</span>. </li>
+<li><b>Week</b>: Total regular hours worked for the week. Sum of all <i>Day</i> hours for the week. Hours display in the weekly column at the start of every day, until the end of the scheduled week.</li>
+<li><b>Clinic</b>: The abbreviation of the selected <a href="clinics.html">Clinic</a> in the Main Menu when the employee clocked-in.</li>
+<li><b>Note</b>: Enter a note for a clock event, usually when an employee must change the time or type of the clock event.</li>
+</ul>
+<p class="MarginBottomZero">For users with the <i>Edit All Time Cards</i> permission (See <a href="timecardmanage.html">Manage Time Cards</a>): </p>
+<ul class="MarginBottomGap">
+<li>Employee right/left arrows: Scroll to the previous or next employee's time card.</li>
+<li><b>Add Adjustments</b>: Add adjustments rows to the grid for holidays, overtime, etc.</li>
+<li><b>Calc Daily</b>: Calculate daily totals for this employee only. The employee must be clocked out for the day.</li>
+<li><b>Calc Week OT</b>: Calculate weekly overtime (over 40 hours) for this employee only. The employee must be clocked out for the day.</li>
+</ul>
+<p><b>Print</b>: Print the selected employee's time card or breaks.</p>
+<h2>How Time is Calculated</h2>
+<p>Total Hours display at the bottom of the time card. The left column shows total time worked rounded to the nearest minute in hours: minutes (colon) format. The right column shows times rounded to the nearest hundredth of an hour in decimal format. See <a href="timecardsetup.html">Time Card Setup</a> for the difference between colon and decimal format. Time accounts for seconds in the entire pay period, but seconds are rounded up before the time is displayed. </p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Regular Time</b>: All clocked-in hours, including Rate2 and Rate3, and non-PTO or Protected Leave adjustments (i.e., <span class="codeblock">Total + Adjust</span> for the pay period).</li>
+<li><b>Overtime</b>: Total of all overtime adjustments.</li>
+<li><b>Rate2</b>: Hours worked at differential rate (e.g., before 6am or after 5pm).</li>
+<li><b>Rate3</b>: Hours worked at weekend rate.</li>
+<li><b>PTO</b>: Total hours of adjustments with a PTO Type. </li>
+<li><b>Protected Leave</b>: Total hours of adjustments marked as Protected Leave.</li>
+</ul>
+<p>Totals include completed clock events only (i.e., clock events with both a Clock In Date/Time and Clock Out Date/Time).</p>
+<p>See <a href="timeclock.html">Time Clock</a>, Clock out section for how breaks are calculated.</p>
+<h2>Edit a Clock Event</h2>
+<ol>
+<li>Double-click a row in the <b>Time Card</b> grid. <br/><img src="images/clockEvent.png" width="671" height="512" class="ImageInParagraph"/></li>
+<li>Edit the Clock In Date or Time, Clock Out Date and Time, or Out Status as needed. Only the Displayed fields can be edited.</li>
+<li>(optional) Enter a note to describe the reason for the change.</li>
+<li>Click <b>Save</b> once finished to exit the window and keep changes.</li>
+</ol>
+<br/><p class="MarginBottomZero"><b>Time Spans</b></p>
+<ul class="MarginBottomGap">
+<li><b>Clocked Time</b>: Calculated automatically using displayed clock in and clock out times.</li>
+<li><b>Adj</b>: Added automatically when daily totals are calculated at the end of the pay period. If the option to make adjustments for breaks over 30 minutes is selected in Time Card Setup, a negative adjustment is made when an employee exceeds the allowed 30 minute break time on a given day. An override can be manually entered.</li>
+<li><b>Overtime</b>: If there is an overtime rule for daily hours (e.g. overtime after 8 hours), and an employee meets the criteria, a value is entered. Hours are then transferred from regular time to overtime in calculation totals. An override can be entered manually.</li>
+<li><b>Regular time</b>: The total hours, plus or minus adjustments and over time.</li>
+</ul>
+<p><div class="Note">Note:  Automatic adjustments are not created until <b>Calc Daily</b> or<b> Calc Weekly OT</b> tools are run.</div>
+</p>
+<p class="MarginBottomZero"><b>Rate 2 or Rate 3: </b>Used to determine differential hours based on time card rules. </p>
+<ul class="MarginBottomGap">
+<li><b>Total Time</b>: All hours worked (Including regular, overtime, Rate2, and Rate3 hours).</li>
+<li><b>Rate 2 Time</b>: How many of the total hours are Rate 2 hours (differential hours). Can be overridden manually.</li>
+<li><b>Rate 3 Time</b>: How many of the total hours are Rate 3 (weekend hours). Can be overridden manually.</li>
+<li><b>Rate 1 Time</b>: Total Time - Rate 2 Time - Rate 3 Time. Adjusts automatically based on the override amount.</li>
+</ul>
+<p>To delete a clock event, users must have the <i>Time Card Delete Entry</i> permission.</p>
+<h2>Time Card Security</h2>
+<p>Several permissions affect users' ability to see or edit time cards. Below are common scenarios and how to set up permissions. <a href="securitysettings.html">Global Security Settings</a> affect all users. <a href="permissions.html">Permissions</a> set in <a href="securityusergroups.html">User Groups</a> affect only users assigned to the group.</p>
+<p class="MarginBottomZero"><b> All Users Can Clock in For any Employee, see any Time Card, and Edit Their Own Time Card</b><br/> To allow all users access to all employee Time Cards and allow all users to edit their own Time Cards, set the following permissions:<br/> In Global Security Settings: </p>
+<ul class="MarginBottomGap">
+<li>Uncheck <i>Time card security enabled</i>.</li>
+</ul>
+<p class="MarginBottomZero"> (<i>Optional</i>) To allow users to edit other employees Time Cards, assign the following permissions to their User Group as needed: </p>
+<ul class="MarginBottomGap">
+<li><i>Edit All Time Cards</i>: Allows users to edit time card events for all employees. Users without this permission can edit their own time card events.</li>
+<li><i>Time Card Delete Entry</i>: Allows users to delete an entire time card event.</li>
+<li><i>Edit Protected Leave Time Card Adjustments</i>: Allows users to edit Time Cards Adjustments marked Protected Leave. Users without this permission can edit these adjustments on their own Time Card. All users can create new Adjustments.</li>
+</ul>
+<p class="MarginBottomZero"><b>Scenario 2 - Users Can Edit Their own Time Cards and Certain Users Can Edit Other Employee Time Cards</b><br/> In Global Security Permissions: </p>
+<ul class="MarginBottomGap">
+<li>Check <i>Time card security enabled</i>. </li>
+<li>(<i>Optional</i>) Check <i>Users cannot edit their own time card except current pay period</i>: Allows employees to only edit their Time Card for the current pay period.</li>
+</ul>
+<p class="MarginBottomZero"> (<i>Optional</i>) To allow users to edit other employees Time Cards, assign the following permissions to their User Group as needed: </p>
+<ul class="MarginBottomGap">
+<li><i>Edit All Time Cards</i></li>
+<li><i>Time Card Delete Entry</i></li>
+<li><i>Edit Protected Leave Time Card Adjustments</i></li>
+</ul>
+<p class="MarginBottomZero"><b>Scenario 3 - Users Cannot Edit Their Own Time Cards, but Certain Users Can Edit Other Employee Time Cards</b><br/> In Global Security Permissions: </p>
+<ul class="MarginBottomGap">
+<li>Check <i>Time card security enabled</i>. </li>
+<li>Check <i>Users cannot edit their own time card</i>.</li>
+</ul>
+<p class="MarginBottomZero"> (<i>Optional</i>) To allow users to edit other employees Time Cards, assign the following permissions to their User Group as needed: </p>
+<ul class="MarginBottomGap">
+<li><i>Edit All Time Cards</i></li>
+<li><i>Time Card Delete Entry</i></li>
+<li><i>Edit Protected Leave Time Card Adjustments</i></li>
+</ul>
+<h2>Troubleshooting</h2>
+<p class="MarginBottomZero"><p><b>Forgot to clock in for the day.</b></p>
+</p>
+<ol class="MarginBottomGap">
+<li>Clock the employee in upon realizing the mistake. The Clock In time will be wrong.</li>
+<li>Double-click on the inaccurate clock event.</li>
+<li>Correct the Clock In date and the time.</li>
+<li>If the employee has left for the day, clock the employee out.</li>
+<li>Double-click the inaccurate clock event.</li>
+<li>Correct the Clock Out date and time.</li>
+</ol>
+<p class="MarginBottomZero"><p><b>Forgot to clock out when leaving for the day.</b></p>
+</p>
+<ol class="MarginBottomGap">
+<li>Clock the employee out upon realizing the mistake. The Clock Out time will be wrong.</li>
+<li>If the employee is working today, immediately clock back in to begin today's time.</li>
+<li>Double-click on the inaccurate clock event.</li>
+<li>Correct the Clock Out date and the time. </li>
+</ol>
+<p class="MarginBottomZero"><p><b>Forgot to clock out to lunch or break.</b></p>
+</p>
+<ol>
+<li>Clock the employee out for lunch (or break). The Clock Out time will be inaccurate.</li>
+<li>If the employee has returned from lunch (or break), clock the employee back in.</li>
+<li>Double-click on the clock event.</li>
+<li>Correct the Clock In and Clock Out times.</li>
+</ol>
+<p class="MarginBottomGap">If the employee has not yet returned from lunch (or break), they will clock in as normal.</p>
+<p class="MarginBottomZero"><p><b>Clocked out for lunch and then never came back to work.</b></p>
+</p>
+<ol class="MarginBottomGap">
+<li>The next working day, have the employee clock in as usual.</li>
+<li>Double-click on the clock out event for the previous day's lunch.</li>
+<li>Change the status from Lunch to Home.</li>
+</ol>
+<p><p><b>When clocking out for break, an employee discovers that someone else accidentally clocked out using their time card. The time card shows the employee has been on break for two hours and time is still ticking.</b></p>
+</p>
+<p>Option 1: Delete the clock event (double click on it, then click Delete). Only users with the <i>Time Card Delete Entry</i> permission are allowed to do this.</p>
+<p>Option 2: When the employee is ready to clock back in, do so. Then, double-click on the first inaccurate clock event and change the Clock In time so that it shows correctly.</p>
+<p><p><b>When trying to edit a clock event on my own Time Card, I get a warning that I don't have permission.</b></p>
+</p>
+<p><a href="securitysettings.html">Global Security Settings</a> may prevent you from editing your own Time Card. Depending on your setup, you may not be allowed to edit your own Time Card at all or may only be allowed to edit it during the current pay period. The message differs depending on if you can edit the current pay period or not.</p>
+<p>A user with the <i>Edit All Time Cards</i> permission, who is not the same person as the employee whose Time Card needs to be edited, must edit the clock event. </p>
+<p>Users with the <i>Edit All Time Cards</i> permission can still edit other employees Time Cards.</p>
+</div>
+</div>
+</body>
+</html>```

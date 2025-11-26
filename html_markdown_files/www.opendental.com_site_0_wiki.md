@@ -1,0 +1,51 @@
+# File: ./www.opendental.com/site/0_wiki.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Wiki</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('0_wiki','+0tools','+0mainmenu','quickmanual','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Wiki</p></div>
+		<div class="GeneralPageContent">
+<p>Each office can have their own internal wiki, similar to wikipedia.</p>
+<p>In the Main Menu, click Tools, Wiki.</p>
+<img src="images/wikiHome.png" width="908" height="854"/><p>A wiki can be useful for posting employee policies, sharing troubleshooting information, keeping lists, etc. Wiki pages can link to another page, folder, file, or external URL.</p>
+<h2>Editing Wiki Pages</h2><p>In the Wiki, click Edit.</p>
+<img src="images/wikiEdit.png" width="915" height="416"/><p>Create and customize wiki pages to meet your practice's needs. You can add formatting such as tables, bulleted and numbered lists, and special characters. Images, colors, and fonts are also supported.</p>
+<h2>Wiki Lists</h2><p>In the Wiki, click Lists.</p>
+<img src="images/wikiEditList.png" width="915" height="382"/><p>Wiki Lists are a way to store non-clinical data in a convenient table format. They can be searched and used in custom reports.</p>
+		</div>
+	</div>
+</body>
+</html>```

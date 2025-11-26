@@ -1,0 +1,74 @@
+# File: ./www.opendental.com/manual/reportehrexport.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - EHR Patient Export</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reportehrexport','reportsstandard','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/reportehrexport.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/reportehrexport.html" >v24.2</option><option value="https://www.opendental.com/manual241/reportehrexport.html" >v24.1</option><option value="https://www.opendental.com/manual233/reportehrexport.html" >v23.3</option><option value="https://www.opendental.com/manual232/reportehrexport.html" >v23.2</option><option value="https://www.opendental.com/manual231/reportehrexport.html" >v23.1</option><option value="https://www.opendental.com/manual224/reportehrexport.html" >v22.4</option><option value="https://www.opendental.com/manual223/reportehrexport.html" >v22.3</option><option value="https://www.opendental.com/manual222/reportehrexport.html" >v22.2</option><option value="https://www.opendental.com/manual221/reportehrexport.html" >v22.1</option><option value="https://www.opendental.com/manual214/reportehrexport.html" >v21.4</option><option value="https://www.opendental.com/manual213/reportehrexport.html" >v21.3</option><option value="https://www.opendental.com/manual212/reportehrexport.html" >v21.2</option><option value="https://www.opendental.com/manual211/reportehrexport.html" >v21.1</option><option value="https://www.opendental.com/manual205/reportehrexport.html" >v20.5</option><option value="https://www.opendental.com/manual204/reportehrexport.html" >v20.4</option><option value="https://www.opendental.com/manual203/reportehrexport.html" >v20.3</option><option value="https://www.opendental.com/manual202/reportehrexport.html" >v20.2</option><option value="https://www.opendental.com/manual201/reportehrexport.html" >v20.1</option><option value="https://www.opendental.com/manual194/reportehrexport.html" >v19.4</option><option value="https://www.opendental.com/manual193/reportehrexport.html" >v19.3</option><option value="https://www.opendental.com/manual192/reportehrexport.html" >v19.2</option><option value="https://www.opendental.com/manual191/reportehrexport.html" >v19.1</option><option value="https://www.opendental.com/manual184/reportehrexport.html" >v18.4</option><option value="https://www.opendental.com/manual183/reportehrexport.html" >v18.3</option><option value="https://www.opendental.com/manual182/reportehrexport.html" >v18.2</option><option value="https://www.opendental.com/manual181/reportehrexport.html" >v18.1</option><option value="https://www.opendental.com/manual174/reportehrexport.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>EHR Patient Export</p></div>
+<div class="GeneralPageContent">
+<p>The EHR Patient Export tool is useful when users want to export a summary of a patient's health information as an XML file.</p>
+<p>In <a href="reportsstandard.html">Standard Reports</a>, click <b>EHR Pat Export</b>.</p>
+<img src="images/reportsEHRExport.png" width="628" height="284"/><p>Only available when EHR is enabled in <a href="showfeatures.html">Show Features</a>.</p>
+<h2>Filters</h2>
+<p>Input or select filter criteria to update search results.</p>
+<p><b>First Name</b>: Type a patient's first name to limit results. Does not need to be the full name (e.g., "Anna" includes results for "Joanna" and "Annabelle").</p>
+<p><b>Last Name</b>: Type a patient's last name. Does not need to be the full name.</p>
+<p><b>Patnum</b>: Type a patient's system-generated Patient Number. This can be found in <a href="patientedit.html">Edit Patient Information</a>. Does not need to be a full PatNum (e.g., "187" includes results for "1187", "1872", etc.). </p>
+<p><b>Primary Provider</b>: Select a provider from the dropdown. Select <b>All</b> to include patients with any assigned primary provider, including those marked hidden.</p>
+<p><b>Clinic</b>: Only available when Clinics are enabled in Show Features. Select a <a href="clinicsetup.html">Clinic</a> to include only patients assigned to the selected clinic. Select <b>All</b> to include patients assigned to any clinic or unassigned to a clinic.</p>
+<p><b>Site</b>: Select a <a href="sites.html">Site</a> to include only patients assigned to the selected site. Select <i>All</i> to include patients assigned to any site and those assigned to no site. See <a href="patienteditpublichealth.html">Edit Patient Information: Public Health Tab</a>.</p>
+<h2>Patient Export List</h2>
+<p>Click <b>Search</b> to update the Patient Export List grid based on the search criteria.</p>
+<p class="MarginBottomZero"><b>Patient Export List</b>: Lists patients who meet the entered search criteria. Results only include records with a Status of <i>Patient</i> (not Inactive, NonPatient, etc) set in Edit Patient Information. Below is a description of each column in the grid: </p>
+<ul class="MarginBottomGap">
+<li>PatNum: Automatically Patient Number.</li>
+<li>Patient Name: Patient last name and first name.</li>
+<li>Primary Provider: Patient's assigned Primary Provider in Edit Patient Information</li>
+<li>Clinic: Patient's assigned clinic in Edit Patient Information.</li>
+<li>Site: Patient's assigned site in Edit Patient Information, Public Health tab.</li>
+</ul>
+<h2>Export Selected</h2>
+<p>Highlight patients whose records are to be exported or click <b>Select All</b> to highlight all patients in the list.</p>
+<p class="MarginBottomZero">Click <b>Export Selected</b> to export records for all highlighted patients.  </p>
+<ul class="MarginBottomGap">
+<li>If necessary system information is missing (e.g., code systems, provider NPI, etc), a warning appears and data is not exported.</li>
+<li>There is a prompt to select the folder where the exported file should be saved. </li>
+<li>A message is displayed once the export is complete. If there are any errors exporting patients, any skipped patients are listed in the message. Patients may be skipped due to missing information. Go to the <a href="ehrdashboard1.html">EHR Dashboard</a> to fill in missing information. </li>
+<li>Exported files are saved in XML format to a folder with the export date (e.g., 2022_8_15 is a folder created on August 15, 2022). Each file is named using Last Name, First Name, and PatNum (e.g., Smith_John_1524).</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,74 @@
+# File: ./www.opendental.com/manual232/dentalschools.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Dental Schools</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('dentalschools','showfeatures','+menusetupAdvanced','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/dentalschools.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/dentalschools.html" >v24.2</option><option value="https://www.opendental.com/manual241/dentalschools.html" >v24.1</option><option value="https://www.opendental.com/manual233/dentalschools.html" >v23.3</option><option value="https://www.opendental.com/manual232/dentalschools.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/dentalschools.html" >v23.1</option><option value="https://www.opendental.com/manual224/dentalschools.html" >v22.4</option><option value="https://www.opendental.com/manual223/dentalschools.html" >v22.3</option><option value="https://www.opendental.com/manual222/dentalschools.html" >v22.2</option><option value="https://www.opendental.com/manual221/dentalschools.html" >v22.1</option><option value="https://www.opendental.com/manual214/dentalschools.html" >v21.4</option><option value="https://www.opendental.com/manual213/dentalschools.html" >v21.3</option><option value="https://www.opendental.com/manual212/dentalschools.html" >v21.2</option><option value="https://www.opendental.com/manual211/dentalschools.html" >v21.1</option><option value="https://www.opendental.com/manual205/dentalschools.html" >v20.5</option><option value="https://www.opendental.com/manual204/dentalschools.html" >v20.4</option><option value="https://www.opendental.com/manual203/dentalschools.html" >v20.3</option><option value="https://www.opendental.com/manual202/dentalschools.html" >v20.2</option><option value="https://www.opendental.com/manual201/dentalschools.html" >v20.1</option><option value="https://www.opendental.com/manual194/dentalschools.html" >v19.4</option><option value="https://www.opendental.com/manual193/dentalschools.html" >v19.3</option><option value="https://www.opendental.com/manual192/dentalschools.html" >v19.2</option><option value="https://www.opendental.com/manual191/dentalschools.html" >v19.1</option><option value="https://www.opendental.com/manual184/dentalschools.html" >v18.4</option><option value="https://www.opendental.com/manual183/dentalschools.html" >v18.3</option><option value="https://www.opendental.com/manual182/dentalschools.html" >v18.2</option><option value="https://www.opendental.com/manual181/dentalschools.html" >v18.1</option><option value="https://www.opendental.com/manual174/dentalschools.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Dental Schools</p></div>
+<div class="GeneralPageContent">
+<p>Open Dental works well in dental schools or dental hygiene schools.</p>
+<h2>Setup</h2>
+<p>Dental Schools must be set up in the following order. </p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Enable Dental Schools in <a href="showfeatures.html">Show Features</a>.</li>
+<li>Create <a href="dsclasses.html">Dental School Classes</a>.</li>
+<li>Create <a href="dscourses.html">Dental School Courses</a>.</li>
+<li>Create User Groups for students and instructors in <a href="dssecurity.html">Dental School Security</a>. Assign permissions to each group. </li>
+<li>In <a href="dsusergroupdefaults.html">Dental School Setup</a>: <ul>
+<li>Assign the User Group defaults.</li>
+<li>Set up <a href="dsgradingscale.html">Dental School Grading Scales</a>. </li>
+<li>Set up <a href="dsevaluationsetup.html">Dental School Evaluations</a>.</li>
+</ul>
+</li>
+<li>In <a href="dsproviders.html">Dental School Providers</a>: <ul>
+<li>Add <a href="dsinstructors.html">Dental School Instructors</a>. </li>
+<li>Add <a href="dsstudents.html">Dental School Students</a>.</li>
+</ul>
+</li>
+<li>Add, copy, and manage course <a href="requirements.html">Dental School Requirements Needed</a>.</li>
+</ol>
+<p>Dental Schools should have their IT team set up the server and workstations with Open Dental. Also see <a href="dentalserverreq.html">Dental School Servers</a>. </p>
+<h2>Using Dental Schools</h2>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Create <a href="dsevaluations.html">Dental Student Evaluations</a>. </li>
+<li><a href="dsfillevaluation.html">Fill out Student Evaluations</a>.</li>
+<li>Generate <a href="dsreports.html">Dental Student Reports</a> as needed.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,76 @@
+# File: ./www.opendental.com/manual243/bridgexdr.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - XDR Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridgexdr','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/bridgexdr.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/bridgexdr.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridgexdr.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridgexdr.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridgexdr.html" >v23.2</option><option value="https://www.opendental.com/manual231/bridgexdr.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridgexdr.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridgexdr.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridgexdr.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridgexdr.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridgexdr.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridgexdr.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridgexdr.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridgexdr.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridgexdr.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridgexdr.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridgexdr.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridgexdr.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridgexdr.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridgexdr.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridgexdr.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridgexdr.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridgexdr.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridgexdr.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridgexdr.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridgexdr.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridgexdr.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridgexdr.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>XDR Bridge</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>. Double-click on <b>XDR from www.XDRradiology.com</b>.</p>
+<img src="images/bridgeXDR.png" width="492" height="517"/><p>XDR website: <a href="http://www.xdrradiology.com" target="_blank">www.xdrradiology.com</a>.</p>
+<p class="MarginBottomZero">To enable the bridge: </p>
+<ol class="MarginBottomGap">
+<li>Check the <b>Enabled</b> box.</li>
+<li>Verify the <b>Path of file to open</b>.</li>
+<li>Enter a <b>Local path override</b> if needed.</li>
+<li>Verify the <b>InfoFile path</b>.</li>
+<li>Enter the <b>Location ID</b> as assigned by XDR.</li>
+<li>If using clinics, select the <b>Clinic</b> from the dropdown.</li>
+<li>Select how XDR should open using the <b>XDR Patient ID</b>. <ul>
+<li>PatientNum: Uses the automatically assigned patient number from Open Dental.</li>
+<li>ChartNum: Uses the manually assigned chart number from Open Dental.</li>
+</ul>
+</li>
+<li>Enter the <b>Text on button</b>.</li>
+<li>Under <b>Add a button to these toolbars</b>, highlight where to display the button.</li>
+<li>(Optional) Import an image to show on the button (22 x 22 pixels).</li>
+<li>Click Save when finished.</li>
+</ol>
+<h2>Technical Data</h2>
+<p>This bridge sends patient data to the specified InfoFile. It then launches XDR and passes the name of the InfoFile as a command line argument.</p>
+<p>The Open Dental user that launched the bridge transfers to XDR to ensure the correct database is selected.</p>
+<p>XDR now has a standalone MySQL installer that creates a separate MySQL service named MyXDR which uses port 3310 (MySQL for OD uses port 3306). The typical XDR install location is <b>C:\XDR\MyXDR</b>. The complete install, including the bin and data directories are in that location. The drive varies depending on customer needs and hardware setup. The MyXDR instance should not interfere with any current or future install of MySQL, so long as it does not use port 3310.</p>
+<h2>Multiple Locations</h2>
+<p class="MarginBottomZero">XDR can store images in 3 different ways: </p>
+<ol class="MarginBottomGap">
+<li>Flat files and folders.</li>
+<li>Hybrid, where metadata is in SQL database, but images are in files.</li>
+<li>SQL database, with images stored directly in the database itself.</li>
+</ol>
+<p>For multiple locations, the recommended solution is to use a single central SQL database to store images. All locations should be connected by a fast VPN, and then the images are all accessed from each location by connecting to the SQL database.</p>
+</div>
+</div>
+</body>
+</html>```

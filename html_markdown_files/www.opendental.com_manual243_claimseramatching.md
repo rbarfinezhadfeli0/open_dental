@@ -1,0 +1,119 @@
+# File: ./www.opendental.com/manual243/claimseramatching.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - ERA Match with Claim</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('claimseramatching','era','claimsera835','manage','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/claimseramatching.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/claimseramatching.html" >v24.2</option><option value="https://www.opendental.com/manual241/claimseramatching.html" >v24.1</option><option value="https://www.opendental.com/manual233/claimseramatching.html" >v23.3</option><option value="https://www.opendental.com/manual232/claimseramatching.html" >v23.2</option><option value="https://www.opendental.com/manual231/claimseramatching.html" >v23.1</option><option value="https://www.opendental.com/manual224/claimseramatching.html" >v22.4</option><option value="https://www.opendental.com/manual223/claimseramatching.html" >v22.3</option><option value="https://www.opendental.com/manual222/claimseramatching.html" >v22.2</option><option value="https://www.opendental.com/manual221/claimseramatching.html" >v22.1</option><option value="https://www.opendental.com/manual214/claimseramatching.html" >v21.4</option><option value="https://www.opendental.com/manual213/claimseramatching.html" >v21.3</option><option value="https://www.opendental.com/manual212/claimseramatching.html" >v21.2</option><option value="https://www.opendental.com/manual211/claimseramatching.html" >v21.1</option><option value="https://www.opendental.com/manual205/claimseramatching.html" >v20.5</option><option value="https://www.opendental.com/manual204/claimseramatching.html" >v20.4</option><option value="https://www.opendental.com/manual203/claimseramatching.html" >v20.3</option><option value="https://www.opendental.com/manual202/claimseramatching.html" >v20.2</option><option value="https://www.opendental.com/manual201/claimseramatching.html" >v20.1</option><option value="https://www.opendental.com/manual194/claimseramatching.html" >v19.4</option><option value="https://www.opendental.com/manual193/claimseramatching.html" >v19.3</option><option value="https://www.opendental.com/manual192/claimseramatching.html" >v19.2</option><option value="https://www.opendental.com/manual191/claimseramatching.html" >v19.1</option><option value="https://www.opendental.com/manual184/claimseramatching.html" >v18.4</option><option value="https://www.opendental.com/manual183/claimseramatching.html" >v18.3</option><option value="https://www.opendental.com/manual182/claimseramatching.html" >v18.2</option><option value="https://www.opendental.com/manual181/claimseramatching.html" >v18.1</option><option value="https://www.opendental.com/manual174/claimseramatching.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>ERA Match with Claim</p></div>
+<div class="GeneralPageContent">
+<p>If Open Dental cannot automatically find matching claims for an ERA, then users are prompted to find the correct claim.</p>
+<p>In an <a href="era.html">ERA</a>, in the Claims Paid grid, double-click on an EOB. If a matching claim is not found, the ERA 835 Claim Select window opens..</p>
+<img src="images/claimERAClaimNotFound.png" width="786" height="345"/><p class="MarginBottomZero">When attempting to automatically match <a href="claimsera835.html">ERAs</a> with a claim, Open Dental looks for this criteria: </p>
+<ul class="MarginBottomGap">
+<li>Claims with a matching date of service and claim fee.</li>
+<ul>
+<li>If claim date of service or claim fee differs, a warning is displayed but claims are still matched.</li>
+</ul>
+<li>Claims with one or more of the following:</li>
+<ul>
+<li>Claims with a matching claim identifier (it must be an exact match or partially match at least the first 15 characters of the ERA Claim Identifier).</li>
+<li>Claims with a matching patient first name and last name (not case sensitive), with an exact subscriber ID match or partial match of all but the last 1 or 2 characters.</li>
+<div class="Note">Note: If multiple claims have the same claim identifier, Open Dental uses patient first and last name in addition to claim identifier to ensure proper matching.</div>
+</ul>
+</ul>
+<p>Claim identifiers are viewable on the <a href="claimtabmisc.html">Edit Claim - Misc Tab</a>.</p>
+<h2>Claim Filters</h2>
+<p>Change the filters to find the claim associated with the ERA. </p>
+<img src="images/claimERANotFoundFilters.png" width="722" height="56"/><p><b>Find</b>: Click to search for a patient.</p>
+<p><b>Date From/To</b>: The date of service on a claim.</p>
+<p><b>Claim Fee</b>: The total fee on a claim (i.e., total fee billed to insurance).</p>
+<p>Click <b>Refresh</b> to update the results.</p>
+<h2>Claims</h2>
+<p>All claims for the selected patient are listed in this grid. Claims matching the filter criteria are listed in red text. Select a claim from the list to view procedure detail.</p>
+<img src="images/claimERANotFoundClaimsGrid.png" width="752" height="110"/><p class="MarginBottomZero">Columns: Columns reflect claim information as it is entered in Open Dental. </p>
+<ul class="MarginBottomGap">
+<li>Date Service: Date of Service.</li>
+<li>Carrier: Insurance carrier.</li>
+<li>Status: Claim status (e.g., Sent-Verified, Received).</li>
+<li>ClaimFee: Total fee billed to insurance.</li>
+</ul>
+<h2>Procedure Matching Details</h2>
+<img src="images/claimERANotFoundProcMatchDetails.png" width="590" height="126"/><p class="MarginBottomZero">The Procedure Matching Details show a list of procedures on the selected claim. If they match the ERA, they display in green. If they do not match the ERA, they display in red. When matching procedures, Open Dental looks for the following criteria:  </p>
+<ul class="MarginBottomGap">
+<li>Procedure matches via a unique identifier (ProcNum). </li>
+<li>Procedures that do not match via the unique identifier must match all of the following: <ul>
+<li>Procedure Code (ProcCode)</li>
+<li>Procedure Fee (ProcFee)</li>
+<li>Procedure Status (ProcStatus)</li>
+</ul>
+</li>
+</ul>
+<p class="MarginBottomZero">Columns: </p>
+<ul class="MarginBottomGap">
+<li>ProcCode: Procedure code from Open Dental claim.</li>
+<li>ProcFee: Fee billed to insurance from <a href="claimprocedure.html">Claim Procedures ( claimprocs )</a>.</li>
+<li>ProcStatus: Procedure status from Claim Procedure. Blank indicates Not received</li>
+<li>IsMatch: Y indicates a matching procedure on both the ERA and selected claim. N indicates there is no match.</li>
+<li>EraCode: Procedure code from the ERA.</li>
+<li>EraFee: Fee from the ERA.</li>
+</ul>
+<p>A procedure in black indicates the procedure is on the Open Dental Claim and not an ERA or has been marked received. </p>
+<h2>Matching a Claim</h2>
+<p>All claims attached to the selected patient are displayed in the Claims grid, follow the steps below to match the correct claim to the ERA.</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Select a claim from the Claims grid to view procedure details.</li>
+<li>Verify the claim details in the Procedure Matching Details grid.</li>
+<li>Once the correct claim has been determined for the ERA, click <b>OK</b>.</li>
+<ul>
+<li>If the claim in Open Dental does not match the ERA procedure details (see above), the claim must be detached from the ERA and processed outside of the ERA window. See <a href="era835workflow.html">ERA Workflow</a>, Detaching a Claim.</li>
+<li>If an error message appears, see steps below for how to proceed.</li>
+</ul>
+<li>Proceed to <a href="eraprocess.html">Process ERA</a>.</li>
+</ol>
+<h2>Error Message When Attempting to Match a Claim</h2>
+<p>If information on the claim and ERA do not match, the user may receive an error message when attempting to match. Below are error messages that may occur and how to proceed. </p>
+<p><b>Error</b>: A matching claim was found but the patient name the carrier sent does not match the patient on the claim.</p>
+<p>Solution: Click <b>OK</b> to continue processing the claim on the ERA. Users should verify the claim is correct before processing it as part of the ERA.</p>
+<p><b>Error</b>: Date of service on claim does not match service date range on ERA. Continue anyway?</p>
+<p>Solution: Click <b>OK</b> to continue processing the claim on the ERA. Users should verify the claim is correct before processing it as part of the ERA.</p>
+<p><b>Error</b>: Claim fee on claim does not match ERA. Continue anyway?</p>
+<p>Solution: Click <b>OK</b> to continue processing the claim on the ERA. Users should verify the claim is correct before processing it as part of the ERA.</p>
+<p><b>If a claim needs to be detached:</b></p>
+<p>If the correct claim is selected, but the user is unable to proceed with processing through the ERA window, the claim must be detached from the ERA and processed from the Account Module instead. See <a href="era835workflow.html">ERA Workflow</a>: Detaching a Claim for detailed steps. </p>
+</div>
+</div>
+</body>
+</html>```

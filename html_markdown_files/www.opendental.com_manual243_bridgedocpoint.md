@@ -1,0 +1,86 @@
+# File: ./www.opendental.com/manual243/bridgedocpoint.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Docpoint Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridgedocpoint','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/bridgedocpoint.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/bridgedocpoint.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridgedocpoint.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridgedocpoint.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridgedocpoint.html" >v23.2</option><option value="https://www.opendental.com/manual231/bridgedocpoint.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridgedocpoint.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridgedocpoint.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridgedocpoint.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridgedocpoint.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridgedocpoint.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridgedocpoint.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridgedocpoint.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridgedocpoint.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridgedocpoint.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridgedocpoint.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridgedocpoint.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridgedocpoint.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridgedocpoint.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridgedocpoint.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridgedocpoint.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridgedocpoint.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridgedocpoint.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridgedocpoint.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridgedocpoint.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridgedocpoint.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridgedocpoint.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridgedocpoint.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Docpoint Bridge</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="programlinks.html">Program Links</a>.</p>
+<p>Docpoint synchronization application is a tool that transfers appointment data from Open Dental to Docpoint Web Service, and vice versa. This tool works as a cross vendor database replication to carry out, create, update, and cancel operations, in a cycle that is executed every 1 minute.</p>
+<p>Open Dental does not maintain the Docpoint application. Any question on use of the program should be directed to Docpoint.</p>
+<p>For U.S. operations: <a href="http://www.docpoint.com" target="_blank">www.docpoint.com</a> and Puerto Rico: <a href="http://www.docpoint.com/pr" target="_blank">www.docpoint.com/pr</a>.</p>
+<h2>How it Works</h2>
+<p>Docpoint creates a local database (SQLite) on the client machine which works as an intermediate layer to keep track of every appointment created from Open Dental and Docpoint. This layer also works as a buffer in case of an internet outage.</p>
+<p><b>Transferring data from Open Dental to Docpoint</b>: Does not require any writes on Open Dental database.</p>
+<p class="MarginBottomZero">Create appointment: </p>
+<ol class="MarginBottomGap">
+<li>Select appointments newly created appointments: <p class="codeblock">SELECT AptNum, PatNum, ProvNum, Date(AptDateTime) as date, Time(AptDateTime) as time, Pattern, ProcDescriptFROM appointmentWHERE Date(AptDateTime) &gt;= ? AND AptNum &gt; ? AND AptStatus = 1 ORDER BY AptNum LIMIT ?</p></li>
+<li>Docpoint application stores this data in the SQLite database.</li>
+<li>A Docpoint process reads the appointments created in the SQLite database and sends to Docpoint Web Service through an HTTP API call. The appointments will be created on Docpoint if they pass the validation rules, and are sent over the appointment_docpoint_ids for the created appointments.</li>
+<li>Docpoint stores the appointment_docpoint_id into the SQLite database. At this point each appointment will have two identifiers: one for Open Dental and one for Docpoint. These mapping identifiers will be useful for all future steps.</li>
+</ol>
+<p class="MarginBottomZero">Update appointment: </p>
+<ol class="MarginBottomGap">
+<li>Similar to creating appointments, Docpoint periodically checks for updates made on appointments (e.g. rescheduled appointments) using the same query for selected new appointments with parameter variations.</li>
+<li>Docpoint stores an update even on SQLite database.</li>
+<li>Docpoint then sends updated appointments and gets the confirmation from the web service.</li>
+</ol>
+<p class="MarginBottomZero">Delete appointments: </p>
+<ol class="MarginBottomGap">
+<li>Docpoint selects deleted appointments by using an AptStatus filter.</li>
+<li>Docpoint stores a delete even on SQLite database.</li>
+<li>As usual events are send to Docpoint web service and get a confirmation.</li>
+</ol>
+<p><b>Transferring data from Docpoint to Open Dental</b>: Requires writes on Open Dental Database.</p>
+<p class="MarginBottomZero">Creating and updating appointments: </p>
+<ol class="MarginBottomGap">
+<li>Desktop application asks Web service for the latest created appointments through an HTTP API call get_appointments. This call will return all appointments relevant to the practice (for multiple providers if present).</li>
+<li>Desktop application then stores the information of each appointment into the SQLite database and inserts an update or create event depending on whether the appointment is present in the SQLite database.</li>
+<li>An insert query is executed on the Open Dental database if:<p class="codeblock">INSERT INTO appointment (PatNum, ProvNum, AptDateTime, Pattern, ProcDescript , Confirmed, TimeLocked, Op, AptStatus, ProvHyg, NextAptNum, UnschedStatus, Assistant,ClinicNum, InsPlan1, InsPlan2, ProcsColored,ColorOverride, DateTimeArrived, DateTimeSeated, DateTimeDismissed)VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)If the patient does not exist in the system then it will create one using this query:INSERT INTO patient (FName, LName, Gender, Birthdate, Address , City, State, Zip, WkPhone, Email, Guarantor, PriProv, SecProv, FeeSched, BillingType, SchoolName, EmployerNum, ClinicNum, Premed, PreferConfirmMethod, PreferContactMethod,PreferRecallMethod, SchedDayOfWeek, PayPlanDue,SiteNum, ResponsParty, CanadianEligibilityCode,AskToArriveEarly, OnlinePassword, SmokeStatus,PreferContactConfidential, SuperFamily, TxtMsgOk)VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)Or it will update the appointment if it already exists through:UPDATE appointment SET AptDateTime=?, Pattern=? WHERE AptNum = ?</p></li>
+</ol>
+<p class="MarginBottomZero">Delete appointment: </p>
+<ol class="MarginBottomGap">
+<li>The application asks Docpoint Web Service about the latest deleted appointments through HTTP API call get_deleted_appointments.</li>
+<li>Then the application modifies the SQLite database and adds delete events.</li>
+<li>Finally it will execute the following query for each deleted appointment:<p class="codeblock">UPDATE appointment SET AptStatus=0 WHERE AptNum = ?</p></li>
+</ol>
+<p>The application gives the client an option to make two-way synchronization or just one-way where the application only transfers data from Open Dental to Docpoint without writing anything on the database. If a two-way sync is selected, the application has to write on appointment and patient tables. Also the application comes in with a database backup feature that could be disabled as well. Database backup creates a daily backup folder that contains the Open Dental database.</p>
+<p>Example: If Open Dental database resides in: <b>C:\mysql\data\cpatientdate</b> then database would look like <b>C:\mysql\data\cpatientdate_2013-9-5</b></p>
+<p>The application handles internet outage gracefully since it stores every event on its local database. It also handles racing condition very well, so when a practice runs the application for the first time, and has 2000 unsynchronized appointments, the application will segment the workload and execute events in manageable bundles.</p>
+</div>
+</div>
+</body>
+</html>```

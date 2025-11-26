@@ -1,0 +1,61 @@
+# File: ./www.opendental.com/site/apiquickpastenotes.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API QuickPasteNotes</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apiquickpastenotes','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API QuickPasteNotes</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>QuickPasteNotes are used to easily replace abbreviated text with longer notes. See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7quickpastenotessetup.html">Quick Paste Notes Setup</a>.</p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96quickpastenote.html" target="_blank">QuickPasteNote Database Schema.</a></p>
+<h2>QuickPasteNotes GET (single)</h2>
+<p>Version Added: 22.3.24</p>
+<p>Gets the QuickPasteNote corresponding to a passed in QuickPasteNoteNum.</p>
+<p><b>Example Request:</b><br> GET /quickpastenotes/25<br></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "QuickPasteNoteNum": 25,<br> "QuickPasteCatNum": 3,<br> "ItemOrder": 0,<br> "Note": "Patient called to cancel upcoming appointment on DATE.",<br> "Abbreviation": "cancel"<br> }<br></span></p>
+<p>200 OK<br> 404 NotFound "QuickPasteNote not found."</p>
+<h2>QuickPasteNotes GET (multiple)</h2>
+<p>Version Added: 22.3.24</p>
+<p>Gets a list of QuickPasteNotes.</p>
+<p><b>Parameters:</b><br></p>
+<p><b>QuickPasteCatNum:</b> Optional. FK to quickpastecat.QuickPasteCatNum.</p>
+<p><b>Example Requests:</b><br> GET /quickpastenotes<br> GET /quickpastenotes?QuickPasteCatNum=3</p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br> {<br> "QuickPasteNoteNum": 25,<br> "QuickPasteCatNum": 3,<br> "ItemOrder": 0,<br> "Note": "Patient called to cancel upcoming appointment on DATE.",<br> "Abbreviation": "cancel"<br> },<br> {<br> "QuickPasteNoteNum": 26,<br> "QuickPasteCatNum": 3,<br> "ItemOrder": 1,<br> "Note": "Called patient to discuss:",<br> "Abbreviation": "call"<br> },<br> {<br> "QuickPasteNoteNum": 27,<br> "QuickPasteCatNum": 3,<br> "ItemOrder": 2,<br> "Note": "Scanned insurance card into Imaging Module. Insurance entered into Family Module.",<br> "Abbreviation": "ins"<br> },<br> etc...<br> ]<br></span></p>
+<p>200 OK<br></p>
+		</div>
+	</div>
+</body>
+</html>```

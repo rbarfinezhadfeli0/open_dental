@@ -1,0 +1,103 @@
+# File: ./www.opendental.com/manual/replication.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Replication</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('replication','advancedtopics','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/replication.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/replication.html" >v24.2</option><option value="https://www.opendental.com/manual241/replication.html" >v24.1</option><option value="https://www.opendental.com/manual233/replication.html" >v23.3</option><option value="https://www.opendental.com/manual232/replication.html" >v23.2</option><option value="https://www.opendental.com/manual231/replication.html" >v23.1</option><option value="https://www.opendental.com/manual224/replication.html" >v22.4</option><option value="https://www.opendental.com/manual223/replication.html" >v22.3</option><option value="https://www.opendental.com/manual222/replication.html" >v22.2</option><option value="https://www.opendental.com/manual221/replication.html" >v22.1</option><option value="https://www.opendental.com/manual214/replication.html" >v21.4</option><option value="https://www.opendental.com/manual213/replication.html" >v21.3</option><option value="https://www.opendental.com/manual212/replication.html" >v21.2</option><option value="https://www.opendental.com/manual211/replication.html" >v21.1</option><option value="https://www.opendental.com/manual205/replication.html" >v20.5</option><option value="https://www.opendental.com/manual204/replication.html" >v20.4</option><option value="https://www.opendental.com/manual203/replication.html" >v20.3</option><option value="https://www.opendental.com/manual202/replication.html" >v20.2</option><option value="https://www.opendental.com/manual201/replication.html" >v20.1</option><option value="https://www.opendental.com/manual194/replication.html" >v19.4</option><option value="https://www.opendental.com/manual193/replication.html" >v19.3</option><option value="https://www.opendental.com/manual192/replication.html" >v19.2</option><option value="https://www.opendental.com/manual191/replication.html" >v19.1</option><option value="https://www.opendental.com/manual184/replication.html" >v18.4</option><option value="https://www.opendental.com/manual183/replication.html" >v18.3</option><option value="https://www.opendental.com/manual182/replication.html" >v18.2</option><option value="https://www.opendental.com/manual181/replication.html" >v18.1</option><option value="https://www.opendental.com/manual174/replication.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Replication</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="advancedtopics.html">Advanced Topics</a>.</p>
+<p>Replication is a technology built into <a href="mysql.html">MySQL</a> that continuously keeps a Replica database synchronized with its Primary. If interested in Replication, contact Open Dental Support for general startup information. </p>
+<p>To learn more about replication, see the <a href="https://dev.mysql.com/doc/refman/5.6/en/replication-configuration.html">MySQL 5.6 Manual</a> or <a href="https://mariadb.com/kb/en/standard-replication/">MariaDB Documentation</a>.</p>
+<p><b>Support:</b> There is an additional fee per hour for replication support. See <a href="https://opendental.com/site/fees.html#replication">Replication Support</a> for the current rate. We will provide 15 minutes of free diagnostic support, but anything in excess will be charged at the replication support rate. Services are limited to general advice, startup assistance, and troubleshooting the cause of replication failure when asked.</p>
+<p class="MarginBottomZero">Also see:  </p>
+<ul class="MarginBottomGap">
+<li><a href="replicationbestpractices.html">Replication Best Practices</a></li>
+<li><a href="replicationupdateod.html">Replication: Update Open Dental Version</a></li>
+<li><a href="replicationdaisychainnewserver.html">Daisy Chain Replication: Add Server</a></li>
+<li><a href="replicationtroubleshooting.html">Replication Troubleshooting</a></li>
+<li><a href="replicationreinitialize.html">Reinitialize Replication</a></li>
+</ul>
+<h2>Warnings</h2>
+<p class="MarginBottomZero">Review the following warnings prior to considering Replication. </p>
+<ul class="MarginBottomGap">
+<li>Replication requires that proper safeguards be put in place to monitor and repair replication problems. It takes a very skilled database administrator to keep the synchronization running smoothly and to properly handle a downed network. Having a setup and response plan is important.</li>
+<li>We don't support any database access outside of Open Dental.</li>
+<li>The database administrator needs to keep the OpenDentImages folder synchronized. See <a href="sharednetworkfolder.html">Folder Replication</a>.</li>
+<li>If running Daisy Chain Replication on live databases, there must be a Replica monitor.</li>
+<li>Within Open Dental, (Query window) CREATE and DROP commands can only be run from <i>Report</i> servers because they have been known to break Replication.</li>
+<li>Certain repair methods using our <a href="databasemaintenance.html">Database Maintenance</a> tool are considered unsafe for Replication, and require special consideration. See details below.</li>
+</ul>
+<h2>Features that Won't Work with Replication</h2>
+<p class="MarginBottomZero">There are no plans to add support for the following features. </p>
+<ul class="MarginBottomGap">
+<li><a href="languages.html">Language Translation</a>: Uses strings for primary key instead of int. And because English phrases are added automatically and frequently, it would be hard (but not impossible) to adapt it for use with Replication. This is not an issue as long as each computer is set for English-US.</li>
+<li><a href="bridgeeclinicalworks.html">eClinicalWorks</a> bridge: Rarely used by dental offices. It assumes that various parameters are int32.</li>
+<li><a href="publichealth.html">Public Health</a>: School table and County table use strings instead of ints for primary keys. May end up with a few duplicates if not syncing in real-time. </li>
+</ul>
+<p>TimeStamp columns, such as procedurelog.DateTStamp, will have different values in each database because of the inherent lag with Replication. When looking at the columns in the database, be aware that this is normal and expected.</p>
+<h2>Replication Options</h2>
+<p><b>One Way Replication</b>: See <a href="replicationoneway.html">One-Way Replication</a>. This configuration is useful for offices that have many workstations or who experience slowness on the main server when running custom reports or complex backup scripts. Anyone considering Replication is encouraged to run this configuration for a number of months to get very familiar with the administration.</p>
+<img src="images/replicationSimple.png" width="850" height="250"/><p>The Replica pulls data from the Primary. No changes are ever made directly to the Replica database. Any users of Open Dental connecting to the Replica database should be trained to only run reports or make backups, not to do any data entry. Data is never sent from the Replica to the Primary because there is no replication process in that direction. If the Replica becomes corrupt, simply wipe it clean and start again.</p>
+<p><div class="Note">Note: The Primary, the Replica, and any client machines which connect to the Primary or Replica, must be on the same version of Open Dental.</div>
+</p>
+<p><b>Daisy Chain Replication</b>: <a href="replicationdaisychain.html">Daisy Chain Replication</a>. This configuration should only be attempted by users who are experienced with Replication. The Replication forms a ring. All the databases together are referred to as a single virtual database. Each location can continue to function normally even if the internet connection is lost. The data from the other locations will not be fresh, but an office typically doesn't care as much about that data. Once the internet connection is restored, the Replication quickly updates the database with current data.</p>
+<p>This configuration works well for mobile vans that service children or nursing homes. The servers at each location have identical data and they stay in sync using replication.</p>
+<p><div class="Note">Note: It takes a skilled database administrator to keep the synchronization running smoothly and to properly handle a downed network. Setting up the servers is time consuming and requires expertise that we might not be able to provide. Replication also requires that proper safeguards be put in place to monitor and repair any replication problems. </div>
+</p>
+<img src="images/replicationRing.png" width="850" height="250"/><h2>Database Maintenance</h2>
+<p class="MarginBottomZero">If running <a href="databasemaintenance.html">Database Maintenance</a> or <a href="databasemaintenancepat.html">Database Maintenance for Patient</a>: </p>
+<ol class="MarginBottomGap">
+<li>Connect to all servers in the Daisy Chain with Open Dental.</li>
+<li>In Database Maintenance, run a check on each server.  <ul>
+<li>Running a check is required. Do not run a fix.</li>
+</ul>
+</li>
+<li>Compare the problem results across all servers, highlighting the matching methods on a single server as they are compared. <ul>
+<li>If the result of what needs fixed is the same per method on every server it is safe to run the fix for that method.</li>
+<li>If there is a difference between the servers for a method then consider reinitialization as one server has data that is different than another server.</li>
+</ul>
+</li>
+<li>Run the fix on one server only. Do not attempt a fix on any other server.</li>
+<li>Because not all methods are safe to run with Replication, the following warning displays.<br/><img src="images/replicationDBM.png" width="370" height="146" class="ImageInParagraph"/><ul>
+<li>Click <b>Yes</b> to run both safe and unsafe selected methods. A prompt for a password displays. The password is <i>abracadabra</i>. <br/> If a wrong password is entered, or Cancel is clicked, only safe methods are run. <img src="images/databaseMaintenanceReplication.png" width="467" height="154"/><br/></li>
+<li>Click <b>No</b> to only run safe selected Database Maintenance methods. </li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+</body>
+</html>```

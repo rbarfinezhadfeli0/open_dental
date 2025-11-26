@@ -1,0 +1,122 @@
+# File: ./www.opendental.com/manual232/insplanedit.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Change Insurance Plan Information</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('insplanedit','insplan','family','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/insplanedit.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/insplanedit.html" >v24.2</option><option value="https://www.opendental.com/manual241/insplanedit.html" >v24.1</option><option value="https://www.opendental.com/manual233/insplanedit.html" >v23.3</option><option value="https://www.opendental.com/manual232/insplanedit.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/insplanedit.html" >v23.1</option><option value="https://www.opendental.com/manual224/insplanedit.html" >v22.4</option><option value="https://www.opendental.com/manual223/insplanedit.html" >v22.3</option><option value="https://www.opendental.com/manual222/insplanedit.html" >v22.2</option><option value="https://www.opendental.com/manual221/insplanedit.html" >v22.1</option><option value="https://www.opendental.com/manual214/insplanedit.html" >v21.4</option><option value="https://www.opendental.com/manual213/insplanedit.html" >v21.3</option><option value="https://www.opendental.com/manual212/insplanedit.html" >v21.2</option><option value="https://www.opendental.com/manual211/insplanedit.html" >v21.1</option><option value="https://www.opendental.com/manual205/insplanedit.html" >v20.5</option><option value="https://www.opendental.com/manual204/insplanedit.html" >v20.4</option><option value="https://www.opendental.com/manual203/insplanedit.html" >v20.3</option><option value="https://www.opendental.com/manual202/insplanedit.html" >v20.2</option><option value="https://www.opendental.com/manual201/insplanedit.html" >v20.1</option><option value="https://www.opendental.com/manual194/insplanedit.html" >v19.4</option><option value="https://www.opendental.com/manual193/insplanedit.html" >v19.3</option><option value="https://www.opendental.com/manual192/insplanedit.html" >v19.2</option><option value="https://www.opendental.com/manual191/insplanedit.html" >v19.1</option><option value="https://www.opendental.com/manual184/insplanedit.html" >v18.4</option><option value="https://www.opendental.com/manual183/insplanedit.html" >v18.3</option><option value="https://www.opendental.com/manual182/insplanedit.html" >v18.2</option><option value="https://www.opendental.com/manual181/insplanedit.html" >v18.1</option><option value="https://www.opendental.com/manual174/insplanedit.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Change Insurance Plan Information</p></div>
+<div class="GeneralPageContent">
+<p>When a patient's <a href="insplan.html">Insurance Plan</a> information or benefits change, updates also need to be made within Open Dental. The steps to take depend on the scenario.</p>
+<p>If a patient has a brand new plan, employer, carrier, etc., we recommend dropping the plan, not changing an existing plan. Dropping a plan does not change historical information, but changing plan information can. If in doubt, drop the plan, don't change it. See <a href="insplandrop.html">Drop Insurance Plan</a>.</p>
+<div class="Note">Note: When editing plan information via the <a href="insplan.html">Insurance Plan</a> Edit Window, always make sure the correct radio button for <i>create</i> or <i>change</i> is selected.</div>
+<br/><img src="images/insPlanNewvsChange.png" width="516" height="52" class="ImageInParagraph"/><p><b>Create new plan if needed</b>: When <a href="triggersnewplan.html">Fields that Trigger New Plan</a> are changed, a brand new plan is created for the subscriber (and any dependents). Changes to Benefit Information alone do not trigger a new plan. </p>
+<p><b>Change plan for all subscribers</b>: Changes, limited to <i>Fields that Trigger a New Plan</i>, change for all subscribers. To enable this option by default, enable <i>InsPlan option at bottom 'Change Plan for all subscribers', is default</i>. in <a href="preferences.html">Preferences</a></p>
+<h2>Change Employer Name</h2>
+<p class="MarginBottomZero">If an employer's name changes, update it via the <a href="employers.html">Employers</a> List. It will be updated for all patients with the plan. </p>
+<ol class="MarginBottomGap">
+<li>In the <a href="mainmenu.html">Main Menu</a>, click Lists, Employers.</li>
+<li>Double-click the employer to open the Edit Employer window.</li>
+<li>Change the name.</li>
+<li>Click OK to save.</li>
+</ol>
+<div class="Note">Note: If employer information is changed from within the Edit Insurance Plan window, a new employer is created.</div>
+<br/><br/><h2>Change Subscriber</h2>
+<p>If there is no claim history for the insurance plan, in the Edit Insurance Plan window, click Change and select the new subscriber.</p>
+<p>If there is claim history for the insurance plan, the subscriber cannot be changed. Instead, drop the insurance plan and create a new one with the new subscriber information.</p>
+<h2>Change Carrier Information (e.g. address, phone)</h2>
+<p class="MarginBottomZero">Always change carrier contact information via the <a href="carriers.html">Carriers</a> List. It will be updated for all patients with the plan. </p>
+<ol class="MarginBottomGap">
+<li>In the Main Menu, click Lists, Insurance Carriers.</li>
+<li>Double-click the carrier to open the Edit Carrier window.</li>
+<li>Change the details.</li>
+<li>Click <b>OK</b> to save.</li>
+</ol>
+<div class="Note">Note: If carrier information is changed from within the Edit Insurance Plan window, a new carrier is created.</div>
+<br/><br/><h2>Change Plan Information for All Subscribers</h2>
+<p>When multiple subscribers have the same plan, plan information can be changed for all subscribers at once. Usually this is only done when plan information is incomplete or inaccurate. Most changes do not affect historical estimates or claims. Changes can made via the <a href="insplanlist.html">Insurance Plans</a> List or from a subscribing patient's Edit Insurance Plan window.</p>
+<div class="Note">Note: If there is a new carrier for all subscribers on a plan, do not just change the carrier for all subscribers because this does affect historical claims. Instead create a new plan, then move subscribers to the new plan.</div>
+<br/><br/><p class="MarginBottomZero">To make changes from the Insurance Plans List: </p>
+<ol class="MarginBottomGap">
+<li>In the Main Menu, click Lists, Insurance Plans.</li>
+<li>Double-click the insurance plan to open a modified version of the Edit Insurance Plan window (Only Insurance Plan and Benefit Information shows).</li>
+<li>Change any insurance plan information or benefit percentages.</li>
+<li>Click OK to save.</li>
+</ol>
+<p class="MarginBottomZero">To make changes from a subscribing patient: </p>
+<ol class="MarginBottomGap">
+<li>Select the patient.</li>
+<li>In the Family module, double-click the insurance plan to open the Edit Insurance Plan window.</li>
+<li>Make sure <b>Change plan for all subscribers</b> is selected.</li>
+<li>Change any insurance plan information or benefit percentages.</li>
+<li>Click OK to save.</li>
+</ol>
+<h2>Change Plan for a Single Subscriber</h2>
+<p>Follow these steps to change plan information and/or benefits for a single subscriber only. These steps create a new insurance plan.</p>
+<div class="Note">Note: If there is a new carrier, do not just change the carrier because as this affects historical claims. Instead drop the old plan then create a new plan.</div>
+<br/><br/><p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Select the patient.</li>
+<li>In the Family Module, double-click the insurance plan to open the Edit Insurance Plan window.</li>
+<li>Select the <b>Create new Plan if needed</b> radio button.</li>
+<li>Change the insurance plan (including at least one <a href="triggersnewplan.html">Field that Triggers a New Plan</a>) and benefits as needed.</li>
+<li>Click <b>OK</b> to save.</li>
+</ol>
+<p>If there are multiple subscribers on the plan, a new plan is created and the subscriber, along with any dependents (patients under the subcribers's plans), are moved to the new plan.</p>
+<h2>Move Subscribers from One Plan to Another Plan</h2>
+<p>Moving subscribers is useful at the beginning of a benefit year when insurance plans may change for a group of subscribers. This tool moves subscribers of one plan to another plan, and drops the old plan. The move is irreversible. See <a href="subscribersmove.html">Move Subscribers</a>.</p>
+<h2>Check/Change Fee Schedule Assignments for Multiple Insurance Plans</h2>
+<p>Use the Check Ins Plan Fee tool to check which fee schedules are assigned to insurance plans and, if needed, quickly change the assigned fee schedule. Fee schedules can be changed for multiple plans at once. See <a href="feeschedulecheckfees.html">Check Ins Plan Fees</a> for more detailed steps and the password that is required.</p>
+<ol>
+<li>In the Main Menu, click Setup, Fee Schedules.</li>
+<li>Next to Check Ins Plan Fee Schedules, click <b>Go</b>.</li>
+<li>Review the fee schedules used by each plan.</li>
+<li>Select the insurance plan(s) to assign a new fee schedule.</li>
+<li>Click the New Fee Schedule dropdown to select the new fee schedule.</li>
+<li>Click Change to change the fee schedule for all selected insurance plans. A password is required.</li>
+</ol>
+<h2>Troubleshooting</h2>
+<p><b>Creating a New Plan for Dependents</b></p>
+<p>If a new plan is needed for the dependents on a plan, a new plan must be created instead. The same plan cannot be split between the subscriber and dependents. </p>
+<p><b>Creating a New Plan with Different Benefits</b></p>
+<p class="MarginBottomZero">If an existing plan is selected, the radio button setting is <i>Create New Plan</i>, and changes are made to insurance plan information fields, close the Edit Insurance Plan window before adding or editing benefit information for the new plan. If the window is not closed first, and benefit amounts are edited, any benefit changes are applied to both the new plan and all subscribers of the original plan. </p>
+<ol class="MarginBottomGap">
+<li>Click <b>OK</b>.</li>
+<li>Reopen the new plan.</li>
+<li>Double-click to edit Benefit Information.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>```

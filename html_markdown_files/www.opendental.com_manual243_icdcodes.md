@@ -1,0 +1,69 @@
+# File: ./www.opendental.com/manual243/icdcodes.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - ICD-10 Codes</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('icdcodes','medicalins','insplan','family','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/icdcodes.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/icdcodes.html" >v24.2</option><option value="https://www.opendental.com/manual241/icdcodes.html" >v24.1</option><option value="https://www.opendental.com/manual233/icdcodes.html" >v23.3</option><option value="https://www.opendental.com/manual232/icdcodes.html" >v23.2</option><option value="https://www.opendental.com/manual231/icdcodes.html" >v23.1</option><option value="https://www.opendental.com/manual224/icdcodes.html" >v22.4</option><option value="https://www.opendental.com/manual223/icdcodes.html" >v22.3</option><option value="https://www.opendental.com/manual222/icdcodes.html" >v22.2</option><option value="https://www.opendental.com/manual221/icdcodes.html" >v22.1</option><option value="https://www.opendental.com/manual214/icdcodes.html" >v21.4</option><option value="https://www.opendental.com/manual213/icdcodes.html" >v21.3</option><option value="https://www.opendental.com/manual212/icdcodes.html" >v21.2</option><option value="https://www.opendental.com/manual211/icdcodes.html" >v21.1</option><option value="https://www.opendental.com/manual205/icdcodes.html" >v20.5</option><option value="https://www.opendental.com/manual204/icdcodes.html" >v20.4</option><option value="https://www.opendental.com/manual203/icdcodes.html" >v20.3</option><option value="https://www.opendental.com/manual202/icdcodes.html" >v20.2</option><option value="https://www.opendental.com/manual201/icdcodes.html" >v20.1</option><option value="https://www.opendental.com/manual194/icdcodes.html" >v19.4</option><option value="https://www.opendental.com/manual193/icdcodes.html" >v19.3</option><option value="https://www.opendental.com/manual192/icdcodes.html" >v19.2</option><option value="https://www.opendental.com/manual191/icdcodes.html" >v19.1</option><option value="https://www.opendental.com/manual184/icdcodes.html" >v18.4</option><option value="https://www.opendental.com/manual183/icdcodes.html" >v18.3</option><option value="https://www.opendental.com/manual182/icdcodes.html" >v18.2</option><option value="https://www.opendental.com/manual181/icdcodes.html" >v18.1</option><option value="https://www.opendental.com/manual174/icdcodes.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>ICD-10 Codes</p></div>
+<div class="GeneralPageContent">
+<p>Diagnosis codes can be sent with procedure codes (e.g., for <a href="medicalins.html">Medical Insurance</a>). </p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>ICD-10 codes are an updated version of ICD-9 codes. The current ICD-10 download is for 2021.</li>
+<li>When updating to ICD-10 codes, first download the ICD-10 code system, then change the default settings to use ICD-10 codes (instead of ICD-9). The code system for procedures already created (treatment planned or completed) will not change.</li>
+</ul>
+<h2>Downloading Codes</h2>
+<p class="MarginBottomZero">Downloading ICD diagnosis codes is optional. </p>
+<ul class="MarginBottomGap">
+<li>For problems, the codes must be downloaded then chosen from a pick list.</li>
+<li>For procedures, codes can be manually entered or downloaded then chosen from a pick list.</li>
+</ul>
+<p>Download or update ICD code systems using the <a href="codesystemimport.html">Code System Importer</a>.</p>
+<h2>Default ICD Code System</h2>
+<p class="MarginBottomZero">Set diagnosis coding system defaults in <a href="preferences.html">Preferences</a>: </p>
+<ul class="MarginBottomGap">
+<li>Enable <i>Use ICD-10 Diagnosis Codes</i> to use the ICD-10 Code System by default, instead of the ICD-9 system .</li>
+<li>Enter a <i>Default ICD-10 code for new procedures and when set complete</i> to apply a default diagnosis for all procedures. This code is entered as ICD-10 Diagnosis Code 1 in the <a href="proceduremedical.html">Procedure - Medical Tab</a>.</li>
+</ul>
+<p>Set the code system for a specific procedure on the Procedure Info - Medical tab by checking or unchecking <i>Use ICD-10 Diagnosis Codes (uncheck for ICD-9)</i>. The field labels for diagnosis codes will change to reflect the setting.</p>
+<h2>Assigning Codes</h2>
+<p><b>For Problems</b>: Attach codes on the <a href="problemmaster.html">Problem Def Edit</a> window. Click the pick list button<b> [...]</b> to select.<br/><img src="images/icd10Prob.png" width="462" height="235" class="ImageInParagraph"/></p>
+<p><b>For Procedures</b>: Attach codes on the Procedures - Medical tab. Enter the code(s) manually or click a pick list button <b>[...]</b> next to Diagnosis Code 1, 2, 3, 4.<br/><img src="images/icd10Procedure.png" width="309" height="123" class="ImageInParagraph"/></p>
+<p>If choosing from a pick list, at first the list will be empty. Enter the first few characters of the description or code, then click<b> Search</b>. To see all diagnosis codes, leave the code and description blank, then click <b>Search</b>.</p>
+<img src="images/icd10.png" width="648" height="300"/><p>Double-click the code to select it and close the window. The selected code is automatically entered into the corresponding diagnosis field. </p>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,76 @@
+# File: ./www.opendental.com/manual243/consentforms.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Consent Form</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('consentforms','+chartToolbar','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/consentforms.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/consentforms.html" >v24.2</option><option value="https://www.opendental.com/manual241/consentforms.html" >v24.1</option><option value="https://www.opendental.com/manual233/consentforms.html" >v23.3</option><option value="https://www.opendental.com/manual232/consentforms.html" >v23.2</option><option value="https://www.opendental.com/manual231/consentforms.html" >v23.1</option><option value="https://www.opendental.com/manual224/consentforms.html" >v22.4</option><option value="https://www.opendental.com/manual223/consentforms.html" >v22.3</option><option value="https://www.opendental.com/manual222/consentforms.html" >v22.2</option><option value="https://www.opendental.com/manual221/consentforms.html" >v22.1</option><option value="https://www.opendental.com/manual214/consentforms.html" >v21.4</option><option value="https://www.opendental.com/manual213/consentforms.html" >v21.3</option><option value="https://www.opendental.com/manual212/consentforms.html" >v21.2</option><option value="https://www.opendental.com/manual211/consentforms.html" >v21.1</option><option value="https://www.opendental.com/manual205/consentforms.html" >v20.5</option><option value="https://www.opendental.com/manual204/consentforms.html" >v20.4</option><option value="https://www.opendental.com/manual203/consentforms.html" >v20.3</option><option value="https://www.opendental.com/manual202/consentforms.html" >v20.2</option><option value="https://www.opendental.com/manual201/consentforms.html" >v20.1</option><option value="https://www.opendental.com/manual194/consentforms.html" >v19.4</option><option value="https://www.opendental.com/manual193/consentforms.html" >v19.3</option><option value="https://www.opendental.com/manual192/consentforms.html" >v19.2</option><option value="https://www.opendental.com/manual191/consentforms.html" >v19.1</option><option value="https://www.opendental.com/manual184/consentforms.html" >v18.4</option><option value="https://www.opendental.com/manual183/consentforms.html" >v18.3</option><option value="https://www.opendental.com/manual182/consentforms.html" >v18.2</option><option value="https://www.opendental.com/manual181/consentforms.html" >v18.1</option><option value="https://www.opendental.com/manual174/consentforms.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Consent Form</p></div>
+<div class="GeneralPageContent">
+<p>Quickly create Consent forms from the Chart Module to print or have patients sign digitally. </p>
+<p>In the <a href="chart.html">Chart Module</a> toolbar, click <b>Consent</b>. </p>
+<img src="images/consent.png" width="868" height="833"/><p>Alternatively, in the <a href="treatmentplan.html">Treatment Plan Module</a> click <b>Consent</b>.</p>
+<p>If only one Consent form exists, it is generated. If more than one Consent form exists, click the dropdown, then select the form to generate instead.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>To customize layout or content, see <a href="sheetsconsent.html">Consent Form Layout</a>.</li>
+<li>View patient Consent forms in the Chart Module, Progress Notes, and <a href="account.html">Account Module</a>.</li>
+<li>Consent forms can be sent to the <a href="../site/eclipboard.html">eClipboard</a> or generated in <a href="../site/odtouch.html">ODTouch</a> when <a href="sheetsetupmobile.html">Mobile Layout</a> is enabled.</li>
+<li>Consent forms can be used with <a href="automation.html">Automation</a>.</li>
+</ul>
+<h2>Generating and Filling Out Consent Forms</h2>
+<p>If the Consent form includes the <i>ProcsWithFee</i> or <i>ProcsNoFee </i> <a href="sheetsgrid.html">Sheet Grid</a>:</p>
+<p>
+<ul>
+<li>When generating the form from the Chart Module, procedures can be selected from the Sheet Procedure Select window after clicking <b>Consent</b>.</li>
+<li>When generating the form from the Treatment Plan Module, highlight procedures before clicking <b>Consent</b> to include them on the form.</li>
+</ul> 
+</p>
+<p>To include information for all treatment planned procedures in the Active Treatment Plan, the sheet must include the <i>treatmentplanProcs</i> or <i>treatmentplanProcsPriority</i> static text fields. </p>
+<p>The form is opened in the <a href="sheetsfillout.html">Fill Sheet</a> window. Enter information as necessary. Pale yellow areas (e.g., Tooth numbers) indicate input areas. </p>
+<h2>Signing Consent Forms</h2>
+<p><a href="electronicsignatures.html">Electronic Signatures</a> are supported for Consent forms.</p>
+<p class="MarginBottomZero">There are multiple ways a patient can sign a Consent form:  </p>
+<ul class="MarginBottomGap">
+<li>Print the Consent for the patient to sign, then scan the Consent form into the Imaging Module. </li>
+<li>Have the patient sign electronically in the office via <a href="eclipboardworkflow.html">eClipboard</a> or ODTouch. <ul>
+<li>With eClipboard, the Consent form can be signed when seated in the operatory or prior to the appointment when checking in.</li>
+</ul>
+</li>
+<li>Have the patient sign electronically in the office via the kiosk. See Workflow in <a href="kiosk.html">Kiosk Manager</a>. </li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,133 @@
+# File: ./www.opendental.com/site/version25_3.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Version 25.3</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('version25_3','versions','advancedtopics','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Version 25.3</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="versions.html">Versions</a>.</p>
+<p>Version 25.3 was released as beta on 09/09/2025.</p>
+<p>Features and enhancements will be added to this page as the version progresses. </p>
+<h2>Major Changes</h2><p class="MarginBottomZero"><b>Web Sched Existing Patient overhaul</b></p>
+<ul class="MarginBottomGap">
+<li>Redesigned Web Sched New Patient with updated user interface</li>
+<li>Split Web Sched Existing Patient from Web Sched New Patient, making a new distinct URL</li>
+</ul>
+<p class="MarginBottomZero"><b>Internal office chat</b></p>
+<ul class="MarginBottomGap">
+<li>Intra-office chat with other Open Dental users</li>
+<li>Leave chat open, even when Open Dental is closed</li>
+</ul>
+<p class="MarginBottomZero"><b>Added 2026 CDT Codes</b></p>
+<ul class="MarginBottomGap">
+<li>Also backported to 25.2.62</li>
+</ul>
+<h2>Changes by Category</h2><p class="MarginBottomZero"><b>Account Module</b></p>
+<ul class="MarginBottomGap">
+<li>Removed excess text from Ortho Case window (Also backported to 25.2.38)</li>
+<li>Added clarification for the <i>Insurance Write-off Edit </i> permission (Also backported to 25.2.38)</li>
+<li>Log PayConnect errors in the eConnector (Also backported to 25.2.40) </li>
+<li>CareCredit option to set a Merchant Refund Adjustment Type to offset any adjustments created by merchant fees</li>
+<li>New preference to have payment plans bypass global lock (Also backported to 25.2.44)</li>
+<li>Allow attaching paysplits to Payment Plans in more scenarios (Also backported to 25.2.55)</li>
+</ul>
+<p class="MarginBottomZero"><b>Appointments Module</b></p>
+<ul class="MarginBottomGap">
+<li>New preference for <i>If no provider time set for either provider, show secondary color in appt timebar</i></li>
+<li>Audit trail logs more details when moving or editing appointments</li>
+<li>Changed permission name from <i>Appointment Create</i> to <i>Appointment Create. Also covers moving a planned appt off the pinboard in an attempt to schedule.</i> (Also backported to 25.2.40)</li>
+<li>Changed permission name from <i>Appointment Move. Dragging, moving to pinboard, or setting unscheduled. Does not block moving Unscheduled appointment from that list.</i> to <i>Appointment Move. Includes Dragging, moving to pinboard, and setting unscheduled, regardless of appt status. Does not block moving Unscheduled appointment from that list. Does not block moving planned appts to the pinboard.</i> (Also backported to 25.2.40)</li>
+<li>Mirror appointments when two providers see the same patient within the same appointment</li>
+</ul>
+<p class="MarginBottomZero"><b>eServices</b></p>
+<ul class="MarginBottomGap">
+<li>Ability to personalize eClipboard 25 devices with selected colors</li>
+<li>Deprecated BYOD</li>
+<li>Web Sched ASAP tracks which user sent a message</li>
+<li>Updated the Register with Carriers form for integrated texting</li>
+<li>View eClipboard 25 and eClipboard Web licenses</li>
+</ul>
+<p class="MarginBottomZero"><b>Family Module</b></p>
+<ul class="MarginBottomGap">
+<li>Updated editing interface for Other Benefits</li>
+<li>Insurance Plan list now includes In Net column to denote when a plan is in network</li>
+<li>Insurance Exclusions and Age Limitation by tooth number</li>
+</ul>
+<p class="MarginBottomZero"><b>Manage Module</b></p>
+<ul class="MarginBottomGap">
+<li>Added <i>Reports To</i> filter for the Employee Time Clock</li>
+<li>Button to quickly add check number in accounting transactions</li>
+<li>Print checks from Accounting Transactions for assets, includes new sheet type of <i>Check</i></li>
+<li>Add payee name to accounting transactions</li>
+<li>Email statements now include patient last name</li>
+<li>In Accounting, added checkbox to mark a transaction as <i>Needs Review</i></li>
+</ul>
+<p class="MarginBottomZero"><b>Miscellaneous</b></p>
+<ul class="MarginBottomGap">
+<li>In Edit Vital Signs window, added a notes box (Also backported to 25.2.36)</li>
+<li>In Support Status, added QR code to allow access to Help from mobile devices (Also backported to 24.4.56, 25.1.62, and 25.2.38)</li>
+<li>Edit Medication window, removed Missing/Generic tab (Also backported to 25.2.37) </li>
+<li>Moved database maintenance method for <i>Notes With Too Much White Space</i> to Tools tab (Also backported to 25.2.41) </li>
+<li>Added printer options window when printing from some areas</li>
+<li>In the Imaging Module, when editing text, font actual size and apparent size calculates automatically (Also backported to 25.2.41) </li>
+<li>Removed excess text from Edit Checkbox window</li>
+<li>Allow users to access other areas when Ortho Chart is open</li>
+<li><i>Export .csv </i>and <i>Export .txt </i>options added to various areas</li>
+<li>Ability to add barcode to statements for use with an envelope stuffing machine</li>
+<li>Changed permission name from <i>Claim Procedure Edit Fee billed To Ins </i>to <i>Claim Procedure Edit Fee Billed to Ins or Code Billed to Ins.</i></li>
+<li>Changed permission name from <i>Edit the Fee Billed to Ins on Claim Procedures.</i> to<i> Edit the Fee or Procedure Billed to Ins on Claim Procedures.</i></li>
+<li>File Monitor to record read and writes to the OpenDentImages folder</li>
+<li>New Database Maintenance method for <i>EmployeeMissingSupervisor</i></li>
+<li>Audit trail tracks changes to preferred name</li>
+<li>Easier entry of adding procedures to an active treatment plan</li>
+</ul>
+<p class="MarginBottomZero"><b>API</b></p>
+<ul class="MarginBottomGap">
+<li>Added TreatArea to benefits endpoint</li>
+<li>Procedurelogs PUT GroupNote - Added ability to append note</li>
+<li>CodeGroups - Added 'ShowInFrequency' and 'ShowInOther'</li>
+<li>PatFields PUT, return an object in the response</li>
+<li>RxPats GET Add ErxPharmacyInfo field</li>
+<li>Payments PUT Partial, allow PayPlanCharges</li>
+<li>Procedurelogs - Allow creating completed procedures without being attached to an appointment</li>
+<li>Added statements POST</li>
+<li>New PayPlanLinks resource</li>
+<li>Added PayPlans PUT (dynamic)</li>
+</ul>
+		</div>
+	</div>
+</body>
+</html>```

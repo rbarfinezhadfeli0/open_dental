@@ -1,0 +1,60 @@
+# File: ./www.opendental.com/site/version5_9.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: Version 5.9</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>Version 5.9</h1>
+		</div>
+		<div id="Content">
+<p>See <a href="versions.html">Versions</a></p>
+<p>Version 5.9 Released on 9/5/08. </p>
+<p>Install <a href="dotnet.html">dotNet 3.5</a> if you have time, or a few of the new features might not work for you. </p>
+<p><b>Feature Request Voting:</b> Users are able to request new features from an interface within Open Dental. Users can track their request history, search requests that others have made, and vote for their favorites. Users can add discussion entries to pending feature requests. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7featurerequests.html">Feature Requests</a>. </p>
+<p><b>Prescriptions:</b> Added Controlled Substance field which handles display of DEA# and automatic printer selection. Moved prescriptions over to sheets framework to allow full customization. This allows unlimited flexibility in Rx layout, and permits compliance with any local laws. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7rxsetup.html">Rx Setup</a>. </p>
+<p><b>Sheets:</b> Added rectangles, lines, and checkboxes. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7sheets.html">Sheets</a>. </p>
+<p><b>UAppoint integration:</b> Open Dental keeps the UAppoint server synched with any changes in patients, recall, and appointments. Customers using the UAppoint service will be able to let patients request specific appointment times based off of this synched data. The office receptionist would receive the appointment request by email and manually schedule it. </p>
+<p>Insplans can be hidden.<br>  Ins Carriers can be hidden. <br>  Carrier list interface enhanced with search, reselection, and plan count.<br>  Palmer notation tooth numbering.<br>  Patient select window is now resizable.<br>  Appointment time locked checkbox gets checked automatically when a user manually alters the appointment time.<br>  Appointment can be set complete from the Chart module.<br>  Users are no longer allowed to set procedures complete from the Chart module without turning on that option. <br>  Can edit the dates of multiple procedures simultaneously.<br>  Payments can now be split between regular accounts an payment plans without malfunction. </p>
+
+</div>	
+	</div>
+</body>
+</html>```

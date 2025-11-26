@@ -1,0 +1,89 @@
+# File: ./www.opendental.com/site/apifees.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API Fees</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apifees','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API Fees</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>Fees are complex. See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procedurecodes.html">Procedure Codes</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7feeschedules.html">Fee Schedules</a>, and <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7feeschedulelogic.html">Fee Schedule Logic</a> for more information. Fees associated with a FeeSchedGroup cannot be created, updated or deleted. See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7feeschedulegroups.html">Fee Schedule Groups</a> for more information.</p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96fee.html" target="_blank">Fee Database Schema.</a></p>
+<h2>Fees GET (single)</h2>
+<p>Version Added: 23.3.11</p>
+<p>Gets a single fee.</p>
+<p><b>FeeNum: </b> Required in the URL.<br></p>
+<p><b>Example Request:</b><br> GET /fees/112<br></p>
+<b>Example Response:</b><br><p><span class="codeblock"> {<br> "FeeNum": 112,<br> "Amount": 180.0,<br> "FeeSched": 55,<br> "CodeNum": 60,<br> "ClinicNum": 0,<br> "ProvNum": 0,<br> "SecUserNumEntry": 0,<br> "SecDateEntry": "2017-02-27",<br> "SecDateTEdit": "2017-02-28 18:23:04"<br> }<br></span></p>
+<p></p>
+<p> 200 OK <br> 404 NotFound (with explanation)<br></p>
+<h2>Fees GET (multiple)</h2>
+<p>Version Added: 23.3.11</p>
+<p>Gets a list of fees. Any fees with <b>ClinicNum</b> and/or <b>ProvNum</b> greater than zero are associated with a non-global <b>FeeSched</b>. See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procedurefeeoverrides.html">Fee Override for Provider or Clinic</a> for more information.</p>
+<p><b>Parameters:</b> All optional.</p>
+<p><b>FeeSched: </b> FK to feesched.FeeSchedNum.<br><b>CodeNum: </b>FK to procedurecode.CodeNum.<br><b>ClinicNum: </b>FK to clinic.ClinicNum.<br><b>ProvNum: </b> FK to provider.ProvNum.<br></p>
+<p><b>Example Requests:</b><br> GET /fees?FeeSched=13<br> GET /fees?ClinicNum=8<br> GET /fees?CodeNum=436&amp;ProvNum=21<br></p>
+<b>Example Response:</b><br><p><span class="codeblock"> [<br> {<br> "FeeNum": 1817,<br> "Amount": 97.0,<br> "FeeSched": 269,<br> "CodeNum": 688,<br> "ClinicNum": 1,<br> "ProvNum": 1,<br> "SecUserNumEntry": 0,<br> "SecDateEntry": "2023-09-12",<br> "SecDateTEdit": "2023-09-12 08:55:25"<br> },<br> {<br> "FeeNum": 1818,<br> "Amount": 99.0,<br> "FeeSched": 269,<br> "CodeNum": 677,<br> "ClinicNum": 3,<br> "ProvNum": 1,<br> "SecUserNumEntry": 0,<br> "SecDateEntry": "2023-09-12",<br> "SecDateTEdit": "2023-09-12 08:55:26"<br> },<br> etc...<br> ]<br></span></p>
+<p></p>
+<p> 200 OK <br> 404 NotFound (with explanation)<br></p>
+<h2>Fees POST (create)</h2>
+<p>Version Added: 23.3.11</p>
+<p>Fees are complex. If the <b>FeeSched</b> is non-global, you can specify a <b>ClinicNum</b> and/or a <b>ProvNum</b>. See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procedurefeeoverrides.html">Fee Override for Provider or Clinic</a> for more information.</p>
+<p><b>Amount: </b>Required. The amount usually charged.<br><b>FeeSched: </b>Required. FK to feesched.FeeSchedNum. <br><b>CodeNum: </b>Required. FK to procedurecode.CodeNum.<br><br><b>ClinicNum: </b>Optional. FK to clinic.ClinicNum. Default 0.<br><b>ProvNum: </b>Optional. FK to provider.ProvNum. Default 0.<br></p>
+<p><b>Example Requests:</b><br> POST /fees<br></p>
+<p><span class="codeblock"> {<br> "Amount": "99.99",<br> "FeeSched": 263,<br> "CodeNum": 693<br> }<br></span></p>
+<p>or</p>
+<p><span class="codeblock"> {<br> "Amount": "99.99",<br> "FeeSched": 263,<br> "CodeNum": 693,<br> "ClinicNum": 9,<br> "ProvNum": 23<br>  }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "FeeNum": 1907,<br> "Amount": "99.99",<br> "FeeSched": 263,<br> "CodeNum": 693,<br> "ClinicNum": 9,<br> "ProvNum": 23,<br> "SecUserNumEntry": 0,<br> "SecDateEntry": "2023-11-06",<br> "SecDateTEdit": "2023-11-06 13:28:06"<br> }<br></span></p>
+<p>200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>Fees PUT (update)</h2>
+<p>Version Added: 23.3.11</p>
+<p>Updates the amount of a single fee. </p>
+<p><b>FeeNum:</b> Required in the URL.<br></p>
+<p><b>Amount: </b> Required. The amount of the fee.<br></p>
+<p><b>Example Request:</b><br> PUT /fees/1793<br></p>
+<p><span class="codeblock"> {<br> "Amount": "79.99"<br> }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "FeeNum": 1793,<br> "Amount": "79.99",<br> "FeeSched": 264,<br> "CodeNum": 643,<br> "ClinicNum": 2,<br> "ProvNum": 16,<br> "SecUserNumEntry": 0,<br> "SecDateEntry": "2023-11-07",<br> "SecDateTEdit": "2023-11-07 10:25:09"<br> }<br></span></p>
+<p>200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>Fees DELETE</h2>
+<p>Version Added: 23.3.11</p>
+<p>Deletes a fee.</p>
+<p><b>FeeNum:</b> Required in the URL.<br></p>
+<p><b>Example Request:</b><br> DELETE /fees/293<br></p>
+<p><b>Example Responses:</b><br> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>```

@@ -1,0 +1,76 @@
+# File: ./www.opendental.com/site/carecredit.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: CareCredit</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>CareCredit</h1>
+		</div>
+		<div id="Content">
+<p>CareCredit is now integrated with Open Dental.</p>
+<img src="images/carecreditmain.png" width="900" height="300"/><p>CareCredit's integration into Open Dental helps your practice save time, increase productivity, and makes it easier for patients to apply for the CareCredit credit card and process transactions. Plus, you can easily identify which patients are pre-approved or already have an existing CareCredit credit card, even before they visit your office. This helps give patients a financing option so they can move forward with recommended treatment. </p>
+<p><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> See our video: <a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCnW2Toe70-u8yh3ub4n6JwR">CareCredit Integration Demo</a></p>
+<p><b>Increased financial visibility.</b></p>
+<p>Increased financial visibility. Cost can be one of the biggest barriers to care for patients. The CareCredit Quickscreen <img src="images/rightsReserved.png" width="10" height="10" style="margin-bottom: 0px"/> feature provides invaluable financial visibility that empowers your staff to confidently offer financing options. Eliminate uncertainty by pre-approving patients and checking available credit for existing CareCredit cardholders before their visit. Use these insights to help patients overcome cost barriers and increase treatment acceptance.</p>
+<p><b>Easier to apply.</b></p>
+<p>Patient information is automatically transferred from Open Dental to the CareCredit application. When your patient wants to apply for a CareCredit credit card, simply type in a few fields and click submit and receive a credit decision within seconds.</p>
+<p><b>Easier to transact.</b></p>
+<p>Now CareCredit credit card transactions can be processed directly from the Payment window and it will automatically post back to the patient's Account Module.</p>
+<h2>Getting Started</h2>
+<p>First, ensure your office is signed up with CareCredit. Once signed up, go to CareCredit Setup in Open Dental to enable the feature. If you're using Quickscreen <img src="images/rightsReserved.png" width="10" height="10" style="margin-bottom: 0px"/>, make sure to enable this in CareCredit setup as well. If you want to see Quickscreen <img src="images/rightsReserved.png" width="10" height="10" style="margin-bottom: 0px"/> information for a patient, add the applicable CareCredit fields to Patient Field Defs. </p>
+<p>If you are not currently using CareCredit and are interested in increasing treatment acceptance by becoming part of the CareCredit network, call (800) 859-9975, or visit <a href="https://www.carecredit.com/providers/">https://www.carecredit.com/providers/</a> to enroll today.</p>
+<h2>For Practices in California Only - Read below:</h2>
+<p><b>As of July 1, 2020: A new California state law impacts the current CareCredit application processes and materials used by Providers in California.</b></p>
+<p>Providers in California are no longer able to submit applications for the CareCredit credit card on behalf of patients or clients using CareCredit's website (Provider Center), integrated practice management software or CareCredit terminal. </p>
+<p class="MarginBottomZero">CareCredit offers several solutions that provide a positive application experience for Providers in California. Encourage individuals to apply in any of these ways: </p>
+<ul class="MarginBottomGap">
+<li>By using your custom link. Download your unique link at www.carecredit.com/customlink</li>
+<li>By visiting <a href="https://www.opendental.com/site/carecredit.com/apply">carecredit.com/apply</a> on their PC, smartphone or tablet (or downloading the CareCredit Mobile App).</li>
+<li>By calling 800-365-8295 to apply by phone.**</li>
+</ul>
+<p><b>Patients or clients can continue to use the CareCredit credit card to pay Providers in California, and they can process transactions through the Open Dental integration.</b></p>
+<p>If you have any questions, please call CareCredit at 800-859-9975.</p>
+<p>**Must be 18 or older to apply. Must be 21 or older to apply by phone. Provide individuals applying for the CareCredit credit card by phone with a copy of the cardholder agreement account terms.</p>
+
+</div>	
+	</div>
+</body>
+</html>```

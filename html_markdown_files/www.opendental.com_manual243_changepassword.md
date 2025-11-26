@@ -1,0 +1,63 @@
+# File: ./www.opendental.com/manual243/changepassword.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Change Password</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('changepassword','+file','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/changepassword.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/changepassword.html" >v24.2</option><option value="https://www.opendental.com/manual241/changepassword.html" >v24.1</option><option value="https://www.opendental.com/manual233/changepassword.html" >v23.3</option><option value="https://www.opendental.com/manual232/changepassword.html" >v23.2</option><option value="https://www.opendental.com/manual231/changepassword.html" >v23.1</option><option value="https://www.opendental.com/manual224/changepassword.html" >v22.4</option><option value="https://www.opendental.com/manual223/changepassword.html" >v22.3</option><option value="https://www.opendental.com/manual222/changepassword.html" >v22.2</option><option value="https://www.opendental.com/manual221/changepassword.html" >v22.1</option><option value="https://www.opendental.com/manual214/changepassword.html" >v21.4</option><option value="https://www.opendental.com/manual213/changepassword.html" >v21.3</option><option value="https://www.opendental.com/manual212/changepassword.html" >v21.2</option><option value="https://www.opendental.com/manual211/changepassword.html" >v21.1</option><option value="https://www.opendental.com/manual205/changepassword.html" >v20.5</option><option value="https://www.opendental.com/manual204/changepassword.html" >v20.4</option><option value="https://www.opendental.com/manual203/changepassword.html" >v20.3</option><option value="https://www.opendental.com/manual202/changepassword.html" >v20.2</option><option value="https://www.opendental.com/manual201/changepassword.html" >v20.1</option><option value="https://www.opendental.com/manual194/changepassword.html" >v19.4</option><option value="https://www.opendental.com/manual193/changepassword.html" >v19.3</option><option value="https://www.opendental.com/manual192/changepassword.html" >v19.2</option><option value="https://www.opendental.com/manual191/changepassword.html" >v19.1</option><option value="https://www.opendental.com/manual184/changepassword.html" >v18.4</option><option value="https://www.opendental.com/manual183/changepassword.html" >v18.3</option><option value="https://www.opendental.com/manual182/changepassword.html" >v18.2</option><option value="https://www.opendental.com/manual181/changepassword.html" >v18.1</option><option value="https://www.opendental.com/manual174/changepassword.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Change Password</p></div>
+<div class="GeneralPageContent">
+<p>Each user should have a unique password only they know.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click File, User Password.</p>
+<img src="images/changepassword.png" width="410" height="183"/><p> The logged-on user can change their password at any time.</p>
+<p><div class="Note">Note: <ul>
+<li>Users with the <i>Security Admin</i> permission can assign initial passwords when setting up <a href="securityusers.html">User Security Profiles</a>.</li>
+<li>To force a user to change their password the first time they use it to login, check <i>Require Password Reset</i> in the user's security profile.</li>
+<li>Central Enterprise Management Tool (CEMT) user passwords cannot be changed from this window. To change these passwords, see: <a href="cemtpasswords.html">CEMT Passwords</a> or <a href="cemtsecurity.html">CEMT Security</a></li>
+</ul>
+</div>
+</p>
+<p><li><b>User</b>: Displays the currently logged-on user.</li>
+<li><b>Current Password</b>: Enter the current password for the user.</li>
+<li><b>New Password</b>: Create a new password for the user. See below for password requirements.</li>
+<li><b>Show</b>: Check to show the new password.</li>
+</p>
+<p>Password requirements are determined by <a href="securitysettings.html">Global Security Settings</a>. Strong passwords must be at least 8 characters and have at least one number, one uppercase letter, and one lowercase letter. If strong passwords require special characters, it must also contain a symbol such as $, #, &gt;. If passwords do not meet requirements, a notification displays.</p>
+<h2>Temporary Passwords</h2>
+<p>Admin users can create a temporary password for a new user. When the user logs on, they can update their password in the window above. </p>
+<p>To create an initial temporary password, go to <a href="securityusers.html">User Edit</a> for the new user, then click <i>Create Password</i>. To require a password reset when the user first logs on, also check <i>Require Password Reset</i>.</p>
+</div>
+</div>
+</body>
+</html>```

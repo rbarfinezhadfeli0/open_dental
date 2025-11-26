@@ -1,0 +1,65 @@
+# File: ./www.opendental.com/manual243/reportreferralproctrack.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Referred Procedure Tracking Report</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reportreferralproctrack','+reportlists','reportsstandard','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/reportreferralproctrack.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/reportreferralproctrack.html" >v24.2</option><option value="https://www.opendental.com/manual241/reportreferralproctrack.html" >v24.1</option><option value="https://www.opendental.com/manual233/reportreferralproctrack.html" >v23.3</option><option value="https://www.opendental.com/manual232/reportreferralproctrack.html" >v23.2</option><option value="https://www.opendental.com/manual231/reportreferralproctrack.html" >v23.1</option><option value="https://www.opendental.com/manual224/reportreferralproctrack.html" >v22.4</option><option value="https://www.opendental.com/manual223/reportreferralproctrack.html" >v22.3</option><option value="https://www.opendental.com/manual222/reportreferralproctrack.html" >v22.2</option><option value="https://www.opendental.com/manual221/reportreferralproctrack.html" >v22.1</option><option value="https://www.opendental.com/manual214/reportreferralproctrack.html" >v21.4</option><option value="https://www.opendental.com/manual213/reportreferralproctrack.html" >v21.3</option><option value="https://www.opendental.com/manual212/reportreferralproctrack.html" >v21.2</option><option value="https://www.opendental.com/manual211/reportreferralproctrack.html" >v21.1</option><option value="https://www.opendental.com/manual205/reportreferralproctrack.html" >v20.5</option><option value="https://www.opendental.com/manual204/reportreferralproctrack.html" >v20.4</option><option value="https://www.opendental.com/manual203/reportreferralproctrack.html" >v20.3</option><option value="https://www.opendental.com/manual202/reportreferralproctrack.html" >v20.2</option><option value="https://www.opendental.com/manual201/reportreferralproctrack.html" >v20.1</option><option value="https://www.opendental.com/manual194/reportreferralproctrack.html" >v19.4</option><option value="https://www.opendental.com/manual193/reportreferralproctrack.html" >v19.3</option><option value="https://www.opendental.com/manual192/reportreferralproctrack.html" >v19.2</option><option value="https://www.opendental.com/manual191/reportreferralproctrack.html" >v19.1</option><option value="https://www.opendental.com/manual184/reportreferralproctrack.html" >v18.4</option><option value="https://www.opendental.com/manual183/reportreferralproctrack.html" >v18.3</option><option value="https://www.opendental.com/manual182/reportreferralproctrack.html" >v18.2</option><option value="https://www.opendental.com/manual181/reportreferralproctrack.html" >v18.1</option><option value="https://www.opendental.com/manual174/reportreferralproctrack.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Referred Procedure Tracking Report</p></div>
+<div class="GeneralPageContent">
+<p>Track and manage referred procedures using the Referred Procedure Tracking Report.</p>
+<p>In <a href="reportsstandard.html">Standard Reports</a>, in the Lists section, click <b>Referred Proc Tracking</b>.</p>
+<img src="images/reportReferredProcs.gif" width="820" height="565"/><p>Also see <a href="referrals.html">Referrals</a>.</p>
+<p>To control user access to this report, see <a href="reportsecurity.html">Report Setup: Security Permissions</a>.</p>
+<h2>Report Filters</h2>
+<p><b>Date From/To</b>: Type in a date range to filter the report. Filters by Date Referred.</p>
+<p><b>Show Completed Procedures</b>: Check to include referred out procedures that have a Date Done (Date Proc Completed on Edit Referral Attachment window).</p>
+<h2>Referred Procedures Grid</h2>
+<p>After setting the report filters, click <b>Refresh</b> to update the results in the Referred Procedures grid. Click <b>Print</b> to print directly to the default printer. The printout will include the same results grid as on-screen and will include an additional line for the <b>Total Referrals</b> on the final page of the printout below the grid.</p>
+<p>Double-click a row to open the <a href="referrals.html">Edit Referral Attachment</a> window to view further details or edit the referral.</p>
+<p>Below is an example of the printout and an explanation of the grid columns.</p>
+<img src="images/reportReferredProcsPrint.gif" width="915" height="647"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Patient</b>: Last name, preferred name, and first name of patient attached to referral.</li>
+<li><b>Referred To</b>: Name if referral source (e.g., referred to provider).</li>
+<li><b>Description</b>: <a href="procedurecodeedit.html">Procedure Code</a> description of referred procedure.</li>
+<li><b>Note</b>: <i>Patient note</i> from Edit Referral Attachment window. </li>
+<li><b>Date Refer</b>: <i>Date</i> from Edit Referral Attachment. Defaults to the date the referral was created.</li>
+<li><b>Date Done</b>: <i>Date Proc Completed</i> from Edit Referral Attachment.</li>
+<li><b>Status</b>: <i>Status (if referred out)</i> from Edit Referral Attachement.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

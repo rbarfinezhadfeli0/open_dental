@@ -1,0 +1,72 @@
+# File: ./www.opendental.com/manual232/ecwgeneral.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - eCW General Information</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('ecwgeneral','bridgeeclinicalworks','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/ecwgeneral.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/ecwgeneral.html" >v24.2</option><option value="https://www.opendental.com/manual241/ecwgeneral.html" >v24.1</option><option value="https://www.opendental.com/manual233/ecwgeneral.html" >v23.3</option><option value="https://www.opendental.com/manual232/ecwgeneral.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/ecwgeneral.html" >v23.1</option><option value="https://www.opendental.com/manual224/ecwgeneral.html" >v22.4</option><option value="https://www.opendental.com/manual223/ecwgeneral.html" >v22.3</option><option value="https://www.opendental.com/manual222/ecwgeneral.html" >v22.2</option><option value="https://www.opendental.com/manual221/ecwgeneral.html" >v22.1</option><option value="https://www.opendental.com/manual214/ecwgeneral.html" >v21.4</option><option value="https://www.opendental.com/manual213/ecwgeneral.html" >v21.3</option><option value="https://www.opendental.com/manual212/ecwgeneral.html" >v21.2</option><option value="https://www.opendental.com/manual211/ecwgeneral.html" >v21.1</option><option value="https://www.opendental.com/manual205/ecwgeneral.html" >v20.5</option><option value="https://www.opendental.com/manual204/ecwgeneral.html" >v20.4</option><option value="https://www.opendental.com/manual203/ecwgeneral.html" >v20.3</option><option value="https://www.opendental.com/manual202/ecwgeneral.html" >v20.2</option><option value="https://www.opendental.com/manual201/ecwgeneral.html" >v20.1</option><option value="https://www.opendental.com/manual194/ecwgeneral.html" >v19.4</option><option value="https://www.opendental.com/manual193/ecwgeneral.html" >v19.3</option><option value="https://www.opendental.com/manual192/ecwgeneral.html" >v19.2</option><option value="https://www.opendental.com/manual191/ecwgeneral.html" >v19.1</option><option value="https://www.opendental.com/manual184/ecwgeneral.html" >v18.4</option><option value="https://www.opendental.com/manual183/ecwgeneral.html" >v18.3</option><option value="https://www.opendental.com/manual182/ecwgeneral.html" >v18.2</option><option value="https://www.opendental.com/manual181/ecwgeneral.html" >v18.1</option><option value="https://www.opendental.com/manual174/ecwgeneral.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>eCW General Information</p></div>
+<div class="GeneralPageContent">
+<p>Below is general information about using Open Dental with <a href="bridgeeclinicalworks.html">eClinicalWorks</a>.</p>
+<h2>Usernames and Passwords</h2>
+<p>Users in Open Dental are automatically created when a user first launches Open Dental from eCW. The initial Open Dental password will match the user's eCW password. If an eCW password changes, it also needs to be updated in Open Dental. This can be done by logging into Open Dental using the old eCW password, then selecting File, Change Password. <a href="changepassword.html">Change Password</a></p>
+<h2>Dental Visit Types</h2>
+<p>Every time you add a new visit type in eCW, contact eCW so they can update their interface.</p>
+<h2>PDFs</h2>
+<p class="MarginBottomZero">Two kinds of PDFs can be sent from Open Dental to eCW as part of the HL7 messages. </p>
+<ol class="MarginBottomGap">
+<li>A copy of the Progress Notes (procedures in Chart module). This happens in the <a href="aptedit.html">Edit Appointment</a> window when pushing the Finish &amp; Send button or the Notes PDF button.</li>
+<li>A <a href="treatmentplan.html">Treatment Plan</a> gets sent every time a TP is saved using the Save button.</li>
+</ol>
+<p>In eCW, the PDF files can be accessed in Patient Documents.</p>
+<h2>Medical History (Tight Integration)</h2>
+<p>Prescriptions, medications, problems, allergies, and medical history are entered into eCW and show in Open Dental's read only <a href="medical.html">Medical</a>.</p>
+<h2>Prescriptions (Tight Integration)</h2>
+<p class="MarginBottomZero">Prescriptions show in the read-only Medical window. For 32 bit operating systems they may show in the Progress Notes. Prescriptions should always be created in eCW. eCW will then create an identical prescription in Open Dental, viewable in the read-only Medical window. </p>
+<ul class="MarginBottomGap">
+<li>32 bit Operating Systems: The New Rx button in Open Dental may launch the eClinicalWorks prescriptions window where you can create the prescription, depending on your eCW configuration. Changes to the prescription in eCW do not propagate to Open Dental, so create a new prescription or alter in both places if you must edit a prescription. Note that if you are upping a dosage it is a new prescription, not an edited one. Normally you will not edit prescriptions once made.</li>
+<li>64 bit Operating systems: There is no New Rx button in Open Dental. Create the prescription in eCW.</li>
+</ul>
+<h2>EHR</h2>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li> Tight Integration: eCW will be your Practice Management and EHR system for meaningful use. Open Dental only provides dental charting.</li>
+<li> Standalone mode: You can use eCW or Open Dental for EHR meaningful use, but not both. If you are going to use Open Dental, see <a href="../site/ehrlicense.html">Open Dental EHR</a>.</li>
+</ul>
+<h2>Updating to a New Version of Open Dental</h2>
+<p>See <a href="update.html">Update</a>.</p>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,87 @@
+# File: ./www.opendental.com/manual243/practice.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Practice Setup</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('practice','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/practice.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/practice.html" >v24.2</option><option value="https://www.opendental.com/manual241/practice.html" >v24.1</option><option value="https://www.opendental.com/manual233/practice.html" >v23.3</option><option value="https://www.opendental.com/manual232/practice.html" >v23.2</option><option value="https://www.opendental.com/manual231/practice.html" >v23.1</option><option value="https://www.opendental.com/manual224/practice.html" >v22.4</option><option value="https://www.opendental.com/manual223/practice.html" >v22.3</option><option value="https://www.opendental.com/manual222/practice.html" >v22.2</option><option value="https://www.opendental.com/manual221/practice.html" >v22.1</option><option value="https://www.opendental.com/manual214/practice.html" >v21.4</option><option value="https://www.opendental.com/manual213/practice.html" >v21.3</option><option value="https://www.opendental.com/manual212/practice.html" >v21.2</option><option value="https://www.opendental.com/manual211/practice.html" >v21.1</option><option value="https://www.opendental.com/manual205/practice.html" >v20.5</option><option value="https://www.opendental.com/manual204/practice.html" >v20.4</option><option value="https://www.opendental.com/manual203/practice.html" >v20.3</option><option value="https://www.opendental.com/manual202/practice.html" >v20.2</option><option value="https://www.opendental.com/manual201/practice.html" >v20.1</option><option value="https://www.opendental.com/manual194/practice.html" >v19.4</option><option value="https://www.opendental.com/manual193/practice.html" >v19.3</option><option value="https://www.opendental.com/manual192/practice.html" >v19.2</option><option value="https://www.opendental.com/manual191/practice.html" >v19.1</option><option value="https://www.opendental.com/manual184/practice.html" >v18.4</option><option value="https://www.opendental.com/manual183/practice.html" >v18.3</option><option value="https://www.opendental.com/manual182/practice.html" >v18.2</option><option value="https://www.opendental.com/manual181/practice.html" >v18.1</option><option value="https://www.opendental.com/manual174/practice.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Practice Setup</p></div>
+<div class="GeneralPageContent">
+<p>Enter or update practice billing and contact information in the Edit Practice Info window.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Practice.</p>
+<img src="images/practiceEdit.png" width="893" height="605"/><p>Enter the general contact and billing information for the practice. Practices using clinics should enter each clinic's contact and billing information in the <a href="clinicsetup.html">Clinic List</a>.</p>
+<p><div class="Note">Note: Phone and fax numbers are formatted automatically in the following format, <i>(###)###-####</i>, when typing. Any non-numeric characters (e.g., letters) that are typed into Phone and Fax fields are not saved.</div>
+</p>
+<h2>General Practice Information</h2>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Practice is Medical</b>: Check to enable the non-dental interface. See <a href="nondentalinterface.html">Non-Dental</a>.</li>
+<li><b>Provider Name/Practice Title</b>: Enter the provider's name if there is only one provider or the practice title.</li>
+<li><b>Phone</b>: Enter the practice's main telephone number.</li>
+<li><b>Fax</b>: Enter the practice's fax number.</li>
+</ul>
+<h2>Practice and Billing Address</h2>
+<p>Enter the default practice address used on statements, sheets, etc., and the billing address and phone number used on claims. If using clinics, the clinic address and phone number overrides the practice address and phone. For more information on which address, and phone number is used on claims, see <a href="claimsaddresses.html">Claim Addresses</a>.</p>
+<p><b>Physical Treating Address</b>: Enter the address of the physical location where treatment is performed. This is used as the treating address on claims and the practice address on statements.</p>
+<p class="MarginBottomZero"><b>Billing Address</b>: Enter the billing address used on claims if different than the physical treating address. </p>
+<ul class="MarginBottomGap">
+<li><b>Use on Claims</b>: Check to use this address as the billing address on claims. If checked, the address cannot be a PO Box for e-claims. This overrides the practice address on DentalXChange statements.</li>
+<li><b>Phone</b>: Enter if different than the practice phone number. If <i>Use on Claims</i> is checked, this is used as the billing telephone number on claims.</li>
+</ul>
+<p class="MarginBottomZero"><b>Pay To Address</b>: Enter the address where insurance payments should be sent if different than the physical treating address. This can be a PO Box. It is used as the billing address on claims. If the billing address is also entered, and <i>Use on Claims</i> is checked, the pay to address is sent with the billing address on e-claims but overrides the billing address on printed claims. </p>
+<ul class="MarginBottomGap">
+<li><b>Phone</b>: Enter if different than the practice phone number. This is used as the billing phone number on claims.</li>
+</ul>
+<p><div class="Note">Note: A 9-digit zip code is required for all addresses when sending 5010 e-claims.</div>
+</p>
+<h2>Banking Info</h2>
+<p><b>Bank Deposit Acct Number and Info</b>: Enter the account information for bank deposits. This information is used on Deposit Slips.</p>
+<h2>Billing Default Type</h2>
+<p>Select the default billing type assigned to new patients. The billing type is automatically selected in the <a href="patientedit.html">Edit Patient Information</a> window when creating new patients.</p>
+<p>Customize options in <a href="definitionsbillingtypes.html">Definitions: Billing Types</a>.</p>
+<h2>Default Provider</h2>
+<p>Select the default provider assigned to new patients. The primary provider is automatically selected in the Edit Patient Information window when creating new patients.</p>
+<h2>Default Proc Place Service</h2>
+<p>Select the default place of service assigned to procedures (<a href="proceduremisc.html">Procedure - Misc Tab</a>). This option is only visible if <a href="publichealth.html">Public Health</a> is turned on.</p>
+<h2>Default Insurance Billing Provider</h2>
+<p class="MarginBottomZero">Select which provider is used as the default billing provider on claims. </p>
+<ul class="MarginBottomGap">
+<li><b>Default Practice Provider</b>: Check to use the practice provider.</li>
+<li><b>Treating Provider</b>: Check to use the treating provider. To see how the treating provider is selected on a claim, see <a href="claimedit.html">Claim</a>.</li>
+<li><b>Specific Provider</b>: Check to use a specific provider then select the provider from the dropdown menu.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

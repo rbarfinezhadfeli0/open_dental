@@ -1,0 +1,86 @@
+# File: ./www.opendental.com/manual/webschedcarrierrule.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Web Sched Carrier Rule</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('webschedcarrierrule','webschednewpatsetup','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/webschedcarrierrule.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/webschedcarrierrule.html" >v24.2</option><option value="https://www.opendental.com/manual241/webschedcarrierrule.html" >v24.1</option><option value="https://www.opendental.com/manual233/webschedcarrierrule.html" >v23.3</option><option value="https://www.opendental.com/manual232/webschedcarrierrule.html" >v23.2</option><option value="https://www.opendental.com/manual231/webschedcarrierrule.html" >v23.1</option><option value="https://www.opendental.com/manual224/webschedcarrierrule.html" >v22.4</option><option value="https://www.opendental.com/manual223/webschedcarrierrule.html" >v22.3</option><option value="https://www.opendental.com/manual222/webschedcarrierrule.html" >v22.2</option><option value="https://www.opendental.com/manual221/webschedcarrierrule.html" >v22.1</option><option value="https://www.opendental.com/manual214/webschedcarrierrule.html" >v21.4</option><option value="https://www.opendental.com/manual213/webschedcarrierrule.html" >v21.3</option><option value="https://www.opendental.com/manual212/webschedcarrierrule.html" >v21.2</option><option value="https://www.opendental.com/manual211/webschedcarrierrule.html" >v21.1</option><option value="https://www.opendental.com/manual205/webschedcarrierrule.html" >v20.5</option><option value="https://www.opendental.com/manual204/webschedcarrierrule.html" >v20.4</option><option value="https://www.opendental.com/manual203/webschedcarrierrule.html" >v20.3</option><option value="https://www.opendental.com/manual202/webschedcarrierrule.html" >v20.2</option><option value="https://www.opendental.com/manual201/webschedcarrierrule.html" >v20.1</option><option value="https://www.opendental.com/manual194/webschedcarrierrule.html" >v19.4</option><option value="https://www.opendental.com/manual193/webschedcarrierrule.html" >v19.3</option><option value="https://www.opendental.com/manual192/webschedcarrierrule.html" >v19.2</option><option value="https://www.opendental.com/manual191/webschedcarrierrule.html" >v19.1</option><option value="https://www.opendental.com/manual184/webschedcarrierrule.html" >v18.4</option><option value="https://www.opendental.com/manual183/webschedcarrierrule.html" >v18.3</option><option value="https://www.opendental.com/manual182/webschedcarrierrule.html" >v18.2</option><option value="https://www.opendental.com/manual181/webschedcarrierrule.html" >v18.1</option><option value="https://www.opendental.com/manual174/webschedcarrierrule.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Web Sched Carrier Rule</p></div>
+<div class="GeneralPageContent">
+<p>Web Sched Carrier Rules determine if patients are allowed to enter insurance information when scheduling an appointment via Web Sched New Patient or Web Sched Existing Patient.</p>
+<p>In <a href="webschednewpatsetup.html">Web Sched New Patient</a>, click <b>Insurance Rules</b>. </p>
+<img src="images/webSchedCarrierRule.png" width="915" height="396"/><p>Alternatively, in <a href="webschedexistingpatsetup.html">Web Sched Existing Patient</a>, click <b>Insurance Rules</b>.</p>
+<p>When enabled, insurance information is saved as a note to the appointment. This allows the practice to verify information before entering an insurance plan for the patient.</p>
+<p><b>Clinic</b>: Select the clinic to apply settings to.</p>
+<p><b>Enable for Web Sched New Patient</b>: Enable Carrier Rules for Web Sched New Patient. If using clinics, use the Clinic dropdown to enable for each desired clinic.</p>
+<p><b>Enable for Web Sched Existing Patient</b>: Enable Carrier Rules for Web Sched Existing Patient. If using clinics, use the Clinic dropdown to enable for each desired clinic.</p>
+<h2>Carrier Rules</h2>
+<p>The Insurance Carriers grid on the right displays all carriers entered in Open Dental. The Web Sched Carrier Rules grid on the left displays current rules enabled. Enabled carrier rules allow a patient to select or enter their carrier/insurance information when scheduling an appointment via Web Sched.</p>
+<img src="images/webSchedCarrierRuleRules.png" width="915" height="232"/><p> Use the <b>Left / Right</b> arrows to add or remove carrier rules.</p>
+<p>Double-click an item to add rules and messages.</p>
+<img src="images/webSchedCarrierRuleEdit.png" width="316" height="417"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Insurance Carrier Name</b>: The carrier name as entered in Open Dental. Cannot be edited from this window.</li>
+<li><b>Display Name for Patients</b>: The carrier name as known to patients. Can be edited as needed.</li>
+<li><b>Rule</b>: Determines whether this carrier is allowed for patients to input. <ul>
+<li><b>Allow</b>: Information for this carrier is allowed. Including a message for the patient to see is optional.</li>
+<li><b>Allow With Input</b>: Only available when <i>Other (Default) </i>is the selected carrier. This allows patients to enter their own insurance information. </li>
+<li><b>Allow With Message</b>: Information for this carrier is allowed. Including a message for the patient to see is required.</li>
+<li><b>Block With Message</b>: Information for this carrier is blocked. (i.e., The office does not accept this insurance or the office must input carrier information). Including a message for the patient to see is optional. </li>
+</ul>
+</li>
+<li><b>Message to Patients</b>: Include a message to display when a patient selects this carrier. Useful to clarify if insurance is accepted, what information is required, or other helpful details. </li>
+</ul>
+<p>Click <b>OK</b> to save a rule.</p>
+<h2>Suggest / Copy Rules</h2>
+<img src="images/webSchedCarrierRuleButtons.png" width="190" height="46"/><p><b>Suggest Rules</b>: Click to quickly input rules for the top 10 carriers in the practice. The rank is determined by highest volume of sent and received claims in the last 60 days. A warning will display the suggested carriers. Click Yes to continue.</p>
+<p><b>Copy Rules</b>: Click to open the Web Sched Copy Rule window. Allows a clinic user to quickly copy rules between clinics.<br/><img src="images/webSchedCarrierRuleCopy.png" width="915" height="294" class="ImageInParagraph"/></p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Copy From Clinic</b>: Use the dropdown to select which clinic to copy rules from. Rules for the selected clinic will display in the Web Sched Carrier Rules grid on the right. Highlight one or more rules from the list to copy.</li>
+<li><b>Copy To Clinics</b>: Highlight which clinic to copy rules to.</li>
+<li><b>Copy Rules</b>: Click to copy the selected rules from the <i>Copy From</i> clinic to the <i>Copy To</i> clinic.</li>
+<li><b>Copy to All Clinics</b>: Click to copy the selected rules from the <i>Copy From </i>clinic to all clinics.</li>
+<li><b>Delete all rules for "Copy To" clinics and replace with "Copy From"</b>: Determines which rules remain for the Copy To clinic. <ul>
+<li>Checked: Delete all current rules in the <i>Copy To</i> clinic and replace them only with the rules selected from the <i>Copy From</i> clinic.</li>
+<li>Unchecked: Merges the current rules in the <i>Copy To</i> clinic with the rules selected in the <i>Copy From </i> clinic.</li>
+</ul>
+</li>
+</ul>
+<p>When copying rules, a warning will display. Click Yes to continue. </p>
+<p></p>
+</div>
+</div>
+</body>
+</html>```

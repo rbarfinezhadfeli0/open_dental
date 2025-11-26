@@ -1,0 +1,69 @@
+# File: ./www.opendental.com/manual243/bridgeapixia.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Apixia Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridgeapixia','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/bridgeapixia.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/bridgeapixia.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridgeapixia.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridgeapixia.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridgeapixia.html" >v23.2</option><option value="https://www.opendental.com/manual231/bridgeapixia.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridgeapixia.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridgeapixia.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridgeapixia.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridgeapixia.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridgeapixia.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridgeapixia.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridgeapixia.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridgeapixia.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridgeapixia.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridgeapixia.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridgeapixia.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridgeapixia.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridgeapixia.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridgeapixia.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridgeapixia.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridgeapixia.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridgeapixia.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridgeapixia.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridgeapixia.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridgeapixia.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridgeapixia.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridgeapixia.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Apixia Bridge</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>. Double-click on <b>Apixia Digital Imaging by Apixia Inc</b>.</p>
+<img src="images/bridgeApixia.png" width="770" height="594"/><p>Apixia is a digital imaging software. Website: <a href="http://www.apixia.net/html/front/bin/home.phtml" target="_blank">http://www.apixia.net/html/front/bin/home.phtml</a>.</p>
+<p class="MarginBottomZero">To enable the bridge: </p>
+<ol class="MarginBottomGap">
+<li>Check the <b>Enabled</b> box.</li>
+<li>Verify the <b>Path of file to open</b>.</li>
+<li>Double-click on a row in <b>Additional Properties to change settings</b>.  <ol>
+<li>Verify the <b>System path to Apixia Digital Imaging ini file</b> value. The <span class="codeblock">Switch.ini</span> must be in the same folder as the digirex.exe executable.</li>
+<li>Use the PatNum (enter 0) or ChartNum (enter 1) as the patient ID.</li>
+</ol>
+</li>
+<li>Set up a clickable bridge button.  <ol>
+<li>Under <b>Add a button to these toolbars</b>, highlight where to display the button.</li>
+<li>Enter the <b>Text on button</b>.</li>
+<li>(Optional) Import an image to show on the button (22 x 22 pixels).</li>
+</ol>
+</li>
+<li>If using clinics, click <b>Hide Button for Clinics</b>. Select which clinics the button should display on.</li>
+<li>Click Save.</li>
+</ol>
+<h2>Technical Data</h2>
+<p>Apixia uses a <span class="codeblock">Switch.ini</span> file to identify selected patients. Open Dental sends the selected patient's birthdate, chart number (if selected), dentist ID (Open Dental provider abbreviation), digirex password (digirex), gender, name, and patient number to the <span class="codeblock">Switch.ini</span> file. The Apixia application loads the patient in the <span class="codeblock">Switch.ini</span> file.</p>
+<p>Example File:</p>
+<p><p class="codeblock">[Patient]</p><p class="codeblock">ID=17</p><p class="codeblock">Gender=Male</p><p class="codeblock">First=Derrick</p><p class="codeblock">Last=Robinson</p><p class="codeblock">Year=2008</p><p class="codeblock">Month=2</p><p class="codeblock">Day=24</p><p class="codeblock">[Dentist]</p><p class="codeblock">ID=doc1</p><p class="codeblock">Password=digirex</p></p>
+<p>Apixia requires user IDs and passwords (these are not the Open Dental usernames and passwords). Use the DigirexServer application to add users for Apixia. The Dr.ID must match the provider abbreviation (uses patient's primary provider) in Open Dental and all passwords must be digirex. If the user ID and password are not set up correctly, a message displays and Apixia freezes.</p>
+</div>
+</div>
+</body>
+</html>```

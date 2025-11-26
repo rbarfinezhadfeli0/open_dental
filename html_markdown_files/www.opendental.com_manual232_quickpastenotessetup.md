@@ -1,0 +1,75 @@
+# File: ./www.opendental.com/manual232/quickpastenotessetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Quick Paste Notes Setup</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('quickpastenotessetup','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/quickpastenotessetup.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/quickpastenotessetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/quickpastenotessetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/quickpastenotessetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/quickpastenotessetup.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/quickpastenotessetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/quickpastenotessetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/quickpastenotessetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/quickpastenotessetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/quickpastenotessetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/quickpastenotessetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/quickpastenotessetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/quickpastenotessetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/quickpastenotessetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/quickpastenotessetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/quickpastenotessetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/quickpastenotessetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/quickpastenotessetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/quickpastenotessetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/quickpastenotessetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/quickpastenotessetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/quickpastenotessetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/quickpastenotessetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/quickpastenotessetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/quickpastenotessetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/quickpastenotessetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/quickpastenotessetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/quickpastenotessetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Quick Paste Notes Setup</p></div>
+<div class="GeneralPageContent">
+<p>Organize and create new quick paste notes and categories from this window.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <b>Quick Paste Notes</b>.</p>
+<img src="images/quickPasteNotes.gif" width="915" height="441"/><p>Alternatively, right-click in a <a href="rightclicktextboxes.html">Right Click Text Box</a> that supports quick notes and select <i>Insert Quick Paste Note</i>.</p>
+<p class="MarginBottomZero">Category: Notes can be organized by category. The buttons below the list are specific to categories. </p>
+<ul class="MarginBottomGap">
+<li><b>Add</b>: Add a new category. See <a href="quickpastecategory.html">Quick Paste Category</a>.</li>
+<li><b>Delete</b>: Delete the selected category, along with all quick paste notes within the category.</li>
+<li><b>Up / Down</b>: Organize the list by moving a category up or down the list.</li>
+<li>Double-click a category to edit the name or default types. </li>
+</ul>
+<p class="MarginBottomZero">The buttons along the bottom pertain to the notes within the selected category.  </p>
+<ul class="MarginBottomGap">
+<li><b>Add</b>: Add a new quick paste note. See <a href="quickpastenoteedit.html">Quick Paste Note Edit</a>.</li>
+<li><b>Edit</b>: Edit the selected quick paste note. </li>
+<li><b>Up / Down</b>: Organize the quick paste notes by moving them or down the list. </li>
+<li><b>Alphabetize</b>: Organize the quick paste notes in alphabetical order. Notes can be organized by Abbreviation or Note.</li>
+</ul>
+<h2>Using Quick Paste Notes</h2>
+<p class="MarginBottomZero">To use quick paste notes, follow the steps below: </p>
+<ul class="MarginBottomGap">
+<li>Create a Quick Paste Note. <ol>
+<li> Click <b>Add</b> on the left to create a new category, or highlight an existing category. The selected category will determine which areas the Quick Paste Note will work.</li>
+<li>Click <b>Add</b> at the bottom to create a new note, or highlight an existing note and click Edit.</li>
+</ol>
+</li>
+<li>Enter the quick paste note when entering text into a supported area (e.g., procedure notes, commlogs, etc).  <ul>
+<li>Enter ? followed by the abbreviation to enter the pretedermined note. (e.g., Enter <i>?cancel</i> to enter the note <i>Patient cancelled upcoming appointment.</i>).</li>
+<li>Alternatively, in supported areas right-click can be used to insert a quick paste note. Right-click the text area, select <b>Insert Quick Paste Note</b>, choose a note to add from the list. Click OK. </li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

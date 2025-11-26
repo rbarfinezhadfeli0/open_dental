@@ -1,0 +1,66 @@
+# File: ./www.opendental.com/manual243/chartdrawing.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Draw on Tooth Chart</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('chartdrawing','+chartTabs','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/chartdrawing.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/chartdrawing.html" >v24.2</option><option value="https://www.opendental.com/manual241/chartdrawing.html" >v24.1</option><option value="https://www.opendental.com/manual233/chartdrawing.html" >v23.3</option><option value="https://www.opendental.com/manual232/chartdrawing.html" >v23.2</option><option value="https://www.opendental.com/manual231/chartdrawing.html" >v23.1</option><option value="https://www.opendental.com/manual224/chartdrawing.html" >v22.4</option><option value="https://www.opendental.com/manual223/chartdrawing.html" >v22.3</option><option value="https://www.opendental.com/manual222/chartdrawing.html" >v22.2</option><option value="https://www.opendental.com/manual221/chartdrawing.html" >v22.1</option><option value="https://www.opendental.com/manual214/chartdrawing.html" >v21.4</option><option value="https://www.opendental.com/manual213/chartdrawing.html" >v21.3</option><option value="https://www.opendental.com/manual212/chartdrawing.html" >v21.2</option><option value="https://www.opendental.com/manual211/chartdrawing.html" >v21.1</option><option value="https://www.opendental.com/manual205/chartdrawing.html" >v20.5</option><option value="https://www.opendental.com/manual204/chartdrawing.html" >v20.4</option><option value="https://www.opendental.com/manual203/chartdrawing.html" >v20.3</option><option value="https://www.opendental.com/manual202/chartdrawing.html" >v20.2</option><option value="https://www.opendental.com/manual201/chartdrawing.html" >v20.1</option><option value="https://www.opendental.com/manual194/chartdrawing.html" >v19.4</option><option value="https://www.opendental.com/manual193/chartdrawing.html" >v19.3</option><option value="https://www.opendental.com/manual192/chartdrawing.html" >v19.2</option><option value="https://www.opendental.com/manual191/chartdrawing.html" >v19.1</option><option value="https://www.opendental.com/manual184/chartdrawing.html" >v18.4</option><option value="https://www.opendental.com/manual183/chartdrawing.html" >v18.3</option><option value="https://www.opendental.com/manual182/chartdrawing.html" >v18.2</option><option value="https://www.opendental.com/manual181/chartdrawing.html" >v18.1</option><option value="https://www.opendental.com/manual174/chartdrawing.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Draw on Tooth Chart</p></div>
+<div class="GeneralPageContent">
+<p>Use the Draw tab to manually add indicators on the Graphical Tooth Chart.</p>
+<p>In the <a href="chart.html">Chart Module</a>, click the Draw tab.</p>
+<img src="images/chartDraw.png" width="915" height="336"/><p>Freehand draw on the <a href="graphicaltoothchart.html">Graphical Tooth Chart</a> using a mouse or touch screen. This is useful to indicate items that do not already have a graphic (e.g., cracked teeth, abscesses, supernumerary teeth, lingual archwires, etc.)</p>
+<h2>Drawing on the Chart</h2>
+<p>Use the following features to draw on and customize the tooth chart.</p>
+<p><b>Set Color</b>: Select the color to use when drawing or typing. Colors match what is set in <a href="definitionschartgraphiccolors.html">Definitions: Chart Graphic Colors</a>. Alternatively, click <b>Other</b> to select a custom color. The selected color is displayed on the right.</p>
+<p class="MarginBottomZero">Options:  </p>
+<ul class="MarginBottomGap">
+<li><b>Pointer</b>: Use to select teeth when charting procedures. After drawing on a tooth chart, always have <i>Pointer</i> selected before moving on.</li>
+<li><b>Move Text</b>: Use to move custom text around on the tooth chart. Only available with DirectX 11.</li>
+<li><b>Pen</b>: Use to draw on the tooth chart. </li>
+<li><b>Eraser</b>: Use to erase drawings.</li>
+<li><b>Change Color</b>: Use to change the color of an existing drawing or text. Select the new color, then select <i>Change Color</i>, and click on the drawing or text within the tooth chart.</li>
+</ul>
+<p class="MarginBottomZero"><b>Text</b>: Add or delete custom text to the tooth chart. </p>
+<ul class="MarginBottomGap">
+<li><b>Add</b>: Click to add Text. New text is added to the top-left. Use <b>Move Text</b> to click and drag the text to its desired location.</li>
+<li><b>Delete</b>: Highlight text from the box above, then click to delete.</li>
+<li>Custom text added here is distinct from text added by <a href="procedurecodes.html">Procedure Codes</a> with a Paint Type of <i>Text</i>. </li>
+<li>DirectX 11 <a href="graphics.html">Graphics</a> must be enabled for text to display on the tooth chart.</li>
+<li>Custom text is not available for Open Dental Cloud users. </li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

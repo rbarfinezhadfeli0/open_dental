@@ -1,0 +1,52 @@
+# File: ./www.opendental.com/manual/diagnostics.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Diagnostics</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('diagnostics','aboutwindow','+help','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/diagnostics.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/diagnostics.html" >v24.2</option><option value="https://www.opendental.com/manual241/diagnostics.html" >v24.1</option><option value="https://www.opendental.com/manual233/diagnostics.html" >v23.3</option><option value="https://www.opendental.com/manual232/diagnostics.html" >v23.2</option><option value="https://www.opendental.com/manual231/diagnostics.html" >v23.1</option><option value="https://www.opendental.com/manual224/diagnostics.html" >v22.4</option><option value="https://www.opendental.com/manual223/diagnostics.html" >v22.3</option><option value="https://www.opendental.com/manual222/diagnostics.html" >v22.2</option><option value="https://www.opendental.com/manual221/diagnostics.html" >v22.1</option><option value="https://www.opendental.com/manual214/diagnostics.html" >v21.4</option><option value="https://www.opendental.com/manual213/diagnostics.html" >v21.3</option><option value="https://www.opendental.com/manual212/diagnostics.html" >v21.2</option><option value="https://www.opendental.com/manual211/diagnostics.html" >v21.1</option><option value="https://www.opendental.com/manual205/diagnostics.html" >v20.5</option><option value="https://www.opendental.com/manual204/diagnostics.html" >v20.4</option><option value="https://www.opendental.com/manual203/diagnostics.html" >v20.3</option><option value="https://www.opendental.com/manual202/diagnostics.html" >v20.2</option><option value="https://www.opendental.com/manual201/diagnostics.html" >v20.1</option><option value="https://www.opendental.com/manual194/diagnostics.html" >v19.4</option><option value="https://www.opendental.com/manual193/diagnostics.html" >v19.3</option><option value="https://www.opendental.com/manual192/diagnostics.html" >v19.2</option><option value="https://www.opendental.com/manual191/diagnostics.html" >v19.1</option><option value="https://www.opendental.com/manual184/diagnostics.html" >v18.4</option><option value="https://www.opendental.com/manual183/diagnostics.html" >v18.3</option><option value="https://www.opendental.com/manual182/diagnostics.html" >v18.2</option><option value="https://www.opendental.com/manual181/diagnostics.html" >v18.1</option><option value="https://www.opendental.com/manual174/diagnostics.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Diagnostics</p></div>
+<div class="GeneralPageContent">
+<p>Diagnostics is a tool used by Open Dental support technicians to help gather basic database and connection information for troubleshooting purposes.</p>
+<p>In the <a href="aboutwindow.html">About Window</a>, click <b>Diagnostics</b>.</p>
+<img src="images/aboutDiagnostics.png" width="704" height="676"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Copy All</b>: Copies all text. </li>
+<li><b>Print</b>: Prints all text.</li>
+</ul>
+<p>Click <b>OK</b> to close.</p>
+</div>
+</div>
+</body>
+</html>```

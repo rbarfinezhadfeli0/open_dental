@@ -1,0 +1,64 @@
+# File: ./www.opendental.com/manual243/newcroptroubleshooting.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - NewCrop eRx Troubleshooting</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('newcroptroubleshooting','newcrop','+eRx','+chartToolbar','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/newcroptroubleshooting.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/newcroptroubleshooting.html" >v24.2</option><option value="https://www.opendental.com/manual241/newcroptroubleshooting.html" >v24.1</option><option value="https://www.opendental.com/manual233/newcroptroubleshooting.html" >v23.3</option><option value="https://www.opendental.com/manual232/newcroptroubleshooting.html" >v23.2</option><option value="https://www.opendental.com/manual231/newcroptroubleshooting.html" >v23.1</option><option value="https://www.opendental.com/manual224/newcroptroubleshooting.html" >v22.4</option><option value="https://www.opendental.com/manual223/newcroptroubleshooting.html" >v22.3</option><option value="https://www.opendental.com/manual222/newcroptroubleshooting.html" >v22.2</option><option value="https://www.opendental.com/manual221/newcroptroubleshooting.html" >v22.1</option><option value="https://www.opendental.com/manual214/newcroptroubleshooting.html" >v21.4</option><option value="https://www.opendental.com/manual213/newcroptroubleshooting.html" >v21.3</option><option value="https://www.opendental.com/manual212/newcroptroubleshooting.html" >v21.2</option><option value="https://www.opendental.com/manual211/newcroptroubleshooting.html" >v21.1</option><option value="https://www.opendental.com/manual205/newcroptroubleshooting.html" >v20.5</option><option value="https://www.opendental.com/manual204/newcroptroubleshooting.html" >v20.4</option><option value="https://www.opendental.com/manual203/newcroptroubleshooting.html" >v20.3</option><option value="https://www.opendental.com/manual202/newcroptroubleshooting.html" >v20.2</option><option value="https://www.opendental.com/manual201/newcroptroubleshooting.html" >v20.1</option><option value="https://www.opendental.com/manual194/newcroptroubleshooting.html" >v19.4</option><option value="https://www.opendental.com/manual193/newcroptroubleshooting.html" >v19.3</option><option value="https://www.opendental.com/manual192/newcroptroubleshooting.html" >v19.2</option><option value="https://www.opendental.com/manual191/newcroptroubleshooting.html" >v19.1</option><option value="https://www.opendental.com/manual184/newcroptroubleshooting.html" >v18.4</option><option value="https://www.opendental.com/manual183/newcroptroubleshooting.html" >v18.3</option><option value="https://www.opendental.com/manual182/newcroptroubleshooting.html" >v18.2</option><option value="https://www.opendental.com/manual181/newcroptroubleshooting.html" >v18.1</option><option value="https://www.opendental.com/manual174/newcroptroubleshooting.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>NewCrop eRx Troubleshooting</p></div>
+<div class="GeneralPageContent">
+<p>Below is troubleshooting help for the <a href="newcrop.html">Ensora eRx (formerly NewCrop eRx) / Prescription</a> interface.</p>
+<p><p><b>I can open Ensora eRx, but I can't click anything once the window opens.</b></p>
+</p>
+<p><a href="update.html">Update</a> Open Dental. You must be on Version 21.2 or higher.</p>
+<p><p><b>Problem: I keep getting a message that information is missing. What information is required for Ensora eRx?</b></p>
+</p>
+<img src="images/eRxMissingInfo.png" width="491" height="138"/><p>Solution: See <a href="newcroprequiredinfo.html">Required Ensora eRx Information</a></p>
+<p><b>Problem: eRx Button turns red. </b></p>
+<p>This can occur when eRx is clicked in the toolbar, or when switching to the Chart Module, causing Open Dental to attempt a sync with Ensora eRx to automatically copy completed prescriptions into the patient's Medication List and Progress Notes.</p>
+<p class="MarginBottomZero">Solution: The button turns red when Open Dental has attempted to communicate with Ensora eRx and failed. It may be that communication failed for a random reason. First try reloading the Chart Module to see if the problem fixed itself. If the problem continues, you need to determine what is causing the failure to communicate, then address it. Some common causes include: </p>
+<ol class="MarginBottomGap">
+<li>Intermittent internet connection issues or internet outage. To determine if it is an internet issue, try to open a web page in your internet browser. If the page will not load, there may be internet issues. Contact your internet service provider or IT.</li>
+<li>Hardware Firewall issue: If all computers connected to the hardware are experiencing the same issue, it could be a hardware firewall issue. If two workstations use the same networking components and one works while another does not, it is not a hardware issue. Instead see #3 below.</li>
+<li>Software desktop firewall issue: Open specific ports, or add an exception to the software firewall for the Open Dental application. Adding an exception for Open Dental would also allow other communication from Open Dental in the future (e.g., other web service communications as a result of new features).</li>
+<li>Anti-virus software: Add an exception to the Open Dental application for the same reason stated in #3.</li>
+<li>DNS: On the workstation with the error, open a web browser and type in "secure.newcropaccounts.com". If DNS is working, you will get an access forbidden message. Assuming your internet is working, if DNS is not working, you will see a "404 page not found" message.</li>
+<li>If you do not use electronic prescriptions, consider disabling the electronic Rx program link in <a href="programlinks.html">Program Links</a>.</li>
+</ol>
+<p><b>Problem: Pharmacy claims they did not receive a transmitted prescription.</b></p>
+<p>Solution: See <a href="newcropmissingrx.html">Report a Failed or Missing Prescription in Ensora eRx</a></p>
+</div>
+</div>
+</body>
+</html>```

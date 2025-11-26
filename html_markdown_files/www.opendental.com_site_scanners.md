@@ -1,0 +1,73 @@
+# File: ./www.opendental.com/site/scanners.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Scanners</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('scanners','computernetworksetup','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Scanners</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="computernetworksetup.html">Network and Computer Setup</a>.</p>
+<p>For ordinary scanning that does not require transparencies, nearly any scanner with an installed TWAIN driver works with the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7images.html">Imaging Module</a>. This page discusses known successes and problems with various scanners. </p>
+<h2>Successful Scanners</h2>
+<p>The following scanners are known to work well with Open Dental.</p>
+<p class="MarginBottomZero"><b>Known to work for duplex (multi-page) scanning</b>: </p>
+<ul class="MarginBottomGap">
+<li>Fi-8170 </li>
+<li>Fi-8270 </li>
+<li>Fi-8040</li>
+<li>Epson DS-320</li>
+<li>Epson Workforce DS-510</li>
+</ul>
+<h2>Unsuccessful Scanners</h2>
+<p>The following scanners have reported problems when scanning in Open Dental.</p>
+<p class="MarginBottomZero"><b>Known to have problems</b>: </p>
+<ul class="MarginBottomGap">
+<li>DocketPORT 488: Multi-page scanning doesn't work.</li>
+<li>Fujitsu ScanSnap: It does not have a flatbed for radiographs. It uses OCR (Optical Character Recognition) and advanced software to scan directly to PDF instead of JPG. </li>
+</ul>
+<h2>Transparency Scanners</h2>
+<p>To use a transparency scanner, scan using the scanner software and then import the image into Open Dental.</p>
+<h2>Troubleshooting Scanners</h2>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Check to make sure the scanner can be used outside of Open Dental (e.g., Windows Fax and Scan). If the scanner doesn't work outside of Open Dental, it will not work inside of Open Dental.</li>
+<li>Check to see if the scanner came with a TWAIN or WIA driver. If not, install a generic TWAIN driver.</li>
+<li>Try to update the driver from the manufacturer's website. If driver update fails, try using Microsoft Update.</li>
+<li>Sometimes, newer drivers are not well tested by the manufacturer and can cause unpredictable scanning results (Open Dental hanging after one scan, or Open Dental taking up 50% of the CPU waiting for the scanner, etc.). In this case, installing an older more stable driver can sometimes fix the issue. For example, the Epson GT-S50 issue was resolved by installing drivers from the CD.</li>
+</ul>
+		</div>
+	</div>
+</body>
+</html>```

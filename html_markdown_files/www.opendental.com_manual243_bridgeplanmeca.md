@@ -1,0 +1,72 @@
+# File: ./www.opendental.com/manual243/bridgeplanmeca.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Planmeca Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridgeplanmeca','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/bridgeplanmeca.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/bridgeplanmeca.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridgeplanmeca.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridgeplanmeca.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridgeplanmeca.html" >v23.2</option><option value="https://www.opendental.com/manual231/bridgeplanmeca.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridgeplanmeca.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridgeplanmeca.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridgeplanmeca.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridgeplanmeca.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridgeplanmeca.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridgeplanmeca.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridgeplanmeca.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridgeplanmeca.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridgeplanmeca.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridgeplanmeca.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridgeplanmeca.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridgeplanmeca.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridgeplanmeca.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridgeplanmeca.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridgeplanmeca.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridgeplanmeca.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridgeplanmeca.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridgeplanmeca.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridgeplanmeca.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridgeplanmeca.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridgeplanmeca.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridgeplanmeca.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Planmeca Bridge</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>. Double-click on <b>Dimaxis from Planmeca</b>.</p>
+<img src="images/bridgeDimaxis.png" width="770" height="594"/><p>Planmeca is an imaging software. It is also known as Dimaxis or Romexis. Website: <a href="http://www.planmeca.com/" target="_blank">www.planmeca.com</a>.</p>
+<p class="MarginBottomZero">To enable the bridge: </p>
+<ol class="MarginBottomGap">
+<li>Check the <b>Enabled</b> box.</li>
+<li>Verify the <b>Path of file to open</b>.</li>
+<li>Double-click on a row in <b>Additional Properties</b> to change settings.  <ol>
+<li>Use the PatNum (enter 0) or ChartNum (enter 1) as the patient ID.</li>
+<li>Enter Birthdate format. Use (dd/MM/yyyy) or (MM/dd/yyyy).</li>
+</ol>
+</li>
+<li>Set up a clickable bridge button.  <ol>
+<li>Under <b>Add a button to these toolbars</b>, highlight where to display the button.</li>
+<li>Enter the <b>Text on button</b>.</li>
+<li>(Optional) Import an image to show on the button (22 x 22 pixels).</li>
+</ol>
+</li>
+<li>If using clinics, click <b>Hide Button for Clinics</b>. Select which clinics the button should display on.</li>
+<li>Click Save.</li>
+</ol>
+<h2>Technical Data</h2>
+<p>Open Dental sends commands to Planmeca via the command line. This is made possible by a program called DxStart which Planmeca provides for this purpose. The syntax looks like this:</p>
+<p class="codeblock">DxStart.exe "PatientID" "FamilyName" "FirstName" "BirthDate" &lt;"Doctor"&gt;</p><p>All the fields are in quotation marks because they may include blanks. Normally Dimaxis asks the password to the database at startup. This can be prevented by adding the following line into the [ODBC] section of the <span class="codeblock">Dimaxis.ini</span> file (in the Windows directory). PWD=dixi</p>
+<p>If the patient that was passed in the DxStart command line exists in the Dimaxis database, the patient information in the database will be updated if any of the passed fields differs from the values in the database.</p>
+<p>The one disadvantage of this bridge is that it can only handle Latin characters, and not other character sets such as Greek. In order to support other character sets, we would have to implement the Windows DLL bridging interface, PmBridge, available for Dimaxis.</p>
+<p>The path of file to open may differ. If <i>DxStart.exe</i> does not work, try <i>DxStartW_64.exe</i>.</p>
+<h2>Romexis</h2>
+<p>DxStart.exe was designed for Dimaxis, but it also works with Romexis. When Romexis is first installed, perform a custom installation and make sure the PmBridge option is enabled. This should result in the installation of DxStart.exe. If Romexis is already installed and the PmBridge option was not enabled, then call Planmeca support for help reinstalling Romexis with the PmBridge option enabled.</p>
+</div>
+</div>
+</body>
+</html>```

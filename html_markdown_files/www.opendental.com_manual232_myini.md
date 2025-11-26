@@ -1,0 +1,66 @@
+# File: ./www.opendental.com/manual232/myini.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - my.ini</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('myini','databasemanagementsystems','advancedtopics','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/myini.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/myini.html" >v24.2</option><option value="https://www.opendental.com/manual241/myini.html" >v24.1</option><option value="https://www.opendental.com/manual233/myini.html" >v23.3</option><option value="https://www.opendental.com/manual232/myini.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/myini.html" >v23.1</option><option value="https://www.opendental.com/manual224/myini.html" >v22.4</option><option value="https://www.opendental.com/manual223/myini.html" >v22.3</option><option value="https://www.opendental.com/manual222/myini.html" >v22.2</option><option value="https://www.opendental.com/manual221/myini.html" >v22.1</option><option value="https://www.opendental.com/manual214/myini.html" >v21.4</option><option value="https://www.opendental.com/manual213/myini.html" >v21.3</option><option value="https://www.opendental.com/manual212/myini.html" >v21.2</option><option value="https://www.opendental.com/manual211/myini.html" >v21.1</option><option value="https://www.opendental.com/manual205/myini.html" >v20.5</option><option value="https://www.opendental.com/manual204/myini.html" >v20.4</option><option value="https://www.opendental.com/manual203/myini.html" >v20.3</option><option value="https://www.opendental.com/manual202/myini.html" >v20.2</option><option value="https://www.opendental.com/manual201/myini.html" >v20.1</option><option value="https://www.opendental.com/manual194/myini.html" >v19.4</option><option value="https://www.opendental.com/manual193/myini.html" >v19.3</option><option value="https://www.opendental.com/manual192/myini.html" >v19.2</option><option value="https://www.opendental.com/manual191/myini.html" >v19.1</option><option value="https://www.opendental.com/manual184/myini.html" >v18.4</option><option value="https://www.opendental.com/manual183/myini.html" >v18.3</option><option value="https://www.opendental.com/manual182/myini.html" >v18.2</option><option value="https://www.opendental.com/manual181/myini.html" >v18.1</option><option value="https://www.opendental.com/manual174/myini.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>my.ini</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="databasemanagementsystems.html">Database Management Systems</a>.</p>
+<p class="MarginBottomZero">There is a small text file called my.ini that is part of the <a href="mysql.html">MySQL</a> or <a href="mariadb.html">MariaDB</a> installation. </p>
+<ul class="MarginBottomGap">
+<li>For MySQL 5.5 users, it is usually found at <b>C:\Program Files (x86)\MySQL\MySQL Server 5.5\</b></li>
+<li>For MySQL 5.6 users, it is usually found at <b>C:\Program Files\MySQL\MySQL Server 5.6\</b></li>
+<li>For MariaDB 10.5 users, it is usually found at<b> C:\Program Files\MariaDB 10.5\</b></li>
+</ul>
+<h2>MariaDB 10.5</h2>
+<p>The file for MariaDB users will look like this: </p>
+<p><p class="codeblock">[mysqld]</p><p class="codeblock">basedir="C:/Program Files/MariaDB 10.5/"</p><p class="codeblock">datadir="C:/mysql/data/"</p><p class="codeblock">default-storage-engine=MyISAM</p><p class="codeblock">max_allowed_packet=40M</p><p class="codeblock">max_connections=3000</p><p class="codeblock">port=3306 </p><p class="codeblock">sql_mode=''</p><p class="codeblock">explicit_defaults_for_timestamp=1</p><p class="codeblock">innodb_file_per_table=1</p><p class="codeblock">myisam_recover_options=OFF</p><p class="codeblock">optimizer_switch=split_materialized=off</p></p>
+<h2>MySQL 5.5</h2>
+<p>The files looks like this: </p>
+<p class="codeblock">[mysqld]</p><p class="codeblock">basedir="C:/Program Files (x86)/MySQL/MySQL Server 5.5/"</p><p class="codeblock">datadir="C:/mysql/data/"</p><p class="codeblock">default-storage-engine=MyISAM</p><p class="codeblock">skip-innodb</p><p class="codeblock">max_allowed_packet=40M</p><br/><h2>MySQL 5.0</h2>
+<p>Or, if you are still using MySQL 5.0, then it might look like this:</p>
+<p class="codeblock">[mysqld]</p><p class="codeblock">basedir="C:/Program Files/MySQL/MySQL Server 5.0/"</p><p class="codeblock">datadir="C:/mysql/data/"</p><p class="codeblock">skip-innodb</p><br/><h2>Alternate Options</h2>
+<p>If you are a power user, you can look at the examples of alternate <span class="codeblock">my.ini</span> files in the same folder. For example, open <span class="codeblock">my-huge.ini</span> and look under the [mysqld] section. Selective copying of some of those Variables above into your <span class="codeblock">my.ini</span> file would help to take advantage of a more powerful server. For example, here is a suggested <span class="codeblock">my.ini</span> file. DO NOT change the existing path of the <span class="codeblock">basedir</span> or <span class="codeblock">datadir</span>. The paths in the example below might not be the same as on your system.</p>
+<p class="codeblock">[mysqld]</p><p class="codeblock">basedir="C:/Program Files/MySQL/MySQL Server 5.5/"</p><p class="codeblock">datadir="C:/mysql/data/"</p><p class="codeblock">default-storage-engine=MyISAM</p><p class="codeblock">skip-innodb</p><p class="codeblock">max_allowed_packet=40M</p><p class="codeblock">key_buffer = 384M</p><p class="codeblock">table_cache = 512</p><p class="codeblock">sort_buffer_size = 2M</p><p class="codeblock">read_buffer_size = 2M</p><p class="codeblock">read_rnd_buffer_size = 8M</p><p class="codeblock">myisam_sort_buffer_size = 64M</p><p class="codeblock">thread_cache_size = 8</p><p class="codeblock">query_cache_size = 32M</p><p class="codeblock">tmp_table_size = 32M</p><p class="codeblock">join_buffer_size = 128M</p><br/><p class="MarginBottomZero">Because the <span class="codeblock">my.ini</span> file is the Program Files folder, you will not be allowed by Windows to edit the file directly. There are two workarounds to the Windows security issue: </p>
+<ol class="MarginBottomGap">
+<li>Launch Notepad by as an administrator. Then, open the my.ini file from within Notepad by browsing to it.</li>
+<li>Copy and paste the entire my.ini file from an alternate temporary location into the target directory.</li>
+</ol>
+<p>In both cases, stop the MySQL service before making the changes, and then start the service after saving the changes.</p>
+</div>
+</div>
+</body>
+</html>```

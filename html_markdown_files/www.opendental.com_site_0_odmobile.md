@@ -1,0 +1,66 @@
+# File: ./www.opendental.com/site/0_odmobile.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: ODMobile: What Office Sees</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>ODMobile: What Office Sees</h1>
+		</div>
+		<div id="Content">
+<p>Use the ODMobile application to create and manage appointments, view patients, send text messages, and more.</p>
+<h2>Appointments Tab</h2>
+<p>In ODMobile, tap the <b>Appts</b> tab.</p>
+<img src="images/mobileAppts.png" width="300" height="581"/><p>The Appointments Tab opens by default when the app is opened. It displays the <a href="0_appointments.html">Appointments Module</a>.</p>
+<p>Manage the daily schedule by viewing, creating, and editing appointments. The operatories and information that displays can be customized. </p>
+<h2>Patients Tab</h2><p>With the Patients tab, you can search patients and view basic patient information from the mobile device.</p>
+<h3>Searching for Patients</h3><p>In ODMobile, tap the <b>Patients</b> tab.</p>
+<img src="images/mobilePatientSearch.png" width="300" height="606"/><p></p>
+<h3>Viewing Patient Information</h3><p>Select a patient from the results to view patient information, appointments, allergies, and prescriptions.</p>
+<img src="images/mobilePatientView.png" width="300" height="613"/><p>You can email, call, or send the patient a <a href="textintegrated.html">Text Message</a> once they have been selected. You can also send a prescription using the <a href="dosespot.html">DoseSpot eRx Feature</a>.</p>
+<h2>Messages Tab</h2><p>You can use the Messages tab to communicate with patients via text message using Integrated Texting.</p>
+<img src="images/mobileMessages.png" width="300" height="609"/><p>You can also choose to show notifications on the mobile device when a new message is received.</p>
+<h2>Menu Tab</h2><p>In ODMobile, tap <b>More Options</b>.</p>
+<img src="images/mobileMenu.png" width="300" height="596"/><p>Use the Menu tab to view some <a href="0_reports.html">Reports</a>, patient <a href="0_images.html">Images</a>, pharmacies, and use the <a href="dosespot.html">DoseSpot eRx Feature</a>.</p>
+
+</div>	
+	</div>
+</body>
+</html>```

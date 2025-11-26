@@ -1,0 +1,90 @@
+# File: ./www.opendental.com/manual/invoice.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Invoice</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('invoice','statementwindow','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/invoice.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/invoice.html" >v24.2</option><option value="https://www.opendental.com/manual241/invoice.html" >v24.1</option><option value="https://www.opendental.com/manual233/invoice.html" >v23.3</option><option value="https://www.opendental.com/manual232/invoice.html" >v23.2</option><option value="https://www.opendental.com/manual231/invoice.html" >v23.1</option><option value="https://www.opendental.com/manual224/invoice.html" >v22.4</option><option value="https://www.opendental.com/manual223/invoice.html" >v22.3</option><option value="https://www.opendental.com/manual222/invoice.html" >v22.2</option><option value="https://www.opendental.com/manual221/invoice.html" >v22.1</option><option value="https://www.opendental.com/manual214/invoice.html" >v21.4</option><option value="https://www.opendental.com/manual213/invoice.html" >v21.3</option><option value="https://www.opendental.com/manual212/invoice.html" >v21.2</option><option value="https://www.opendental.com/manual211/invoice.html" >v21.1</option><option value="https://www.opendental.com/manual205/invoice.html" >v20.5</option><option value="https://www.opendental.com/manual204/invoice.html" >v20.4</option><option value="https://www.opendental.com/manual203/invoice.html" >v20.3</option><option value="https://www.opendental.com/manual202/invoice.html" >v20.2</option><option value="https://www.opendental.com/manual201/invoice.html" >v20.1</option><option value="https://www.opendental.com/manual194/invoice.html" >v19.4</option><option value="https://www.opendental.com/manual193/invoice.html" >v19.3</option><option value="https://www.opendental.com/manual192/invoice.html" >v19.2</option><option value="https://www.opendental.com/manual191/invoice.html" >v19.1</option><option value="https://www.opendental.com/manual184/invoice.html" >v18.4</option><option value="https://www.opendental.com/manual183/invoice.html" >v18.3</option><option value="https://www.opendental.com/manual182/invoice.html" >v18.2</option><option value="https://www.opendental.com/manual181/invoice.html" >v18.1</option><option value="https://www.opendental.com/manual174/invoice.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Invoice</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="account.html">Account Module</a> toolbar, click the <a href="statementwindow.html">Statement</a> dropdown, <b>Invoice</b>.</p>
+<img src="images/statementDropdownInvoice.png" width="191" height="186"/><p>Invoice is generated based on selected procedures, adjustments, and pay plan charges.</p>
+<p><div class="Note">Note: <ul>
+<li>Selecting Invoice before selecting procedures creates an invoice for all procedures, adjustments, and pay plan charges for today, unless this is a Super Family. See Super Familes below for more information.</li>
+<li>Once attached to an invoice, the same procedures and adjustments cannot be attached to a new invoice.</li>
+<li>Printed and emailed invoices are saved as PDFs in the patient account and <a href="images.html">Imaging Module</a>, Statements image category.</li>
+<li>To reprint, resend, or view, double-click on the invoice number in the patient account.</li>
+</ul>
+</div>
+</p>
+<img src="images/invoiceStatementOptions.png" width="737" height="611"/><p class="MarginBottomZero">Change invoice options as needed. </p>
+<ul class="MarginBottomGap">
+<li><b>Date</b>: Defaults to today's date.</li>
+<li><b>Sent</b>: Automatically checked once the invoice is printed or emailed. It can also be changed manually.</li>
+<li><b>Hide payment options</b>: Automatically checked to exclude amount due, date due, amount enclosed, credit card payment section, and aging information. If unchecked, the entire family balance reflects in the <i>Amount Due</i> field which may be different than the invoice total.</li>
+<li><b>Single patient only</b>: Informational only and cannot be changed.</li>
+<li><b>Send to Super Family</b>: Informational only and cannot be changed.</li>
+<li><b>Invoice</b>: Always checked and cannot be changed.</li>
+<li><b>Invoice number</b>: Automatically generated and cannot be changed.</li>
+<li><b>Note</b>: By default shows the Invoice Note set in <a href="billingdefaults.html">Billing Defaults</a>.</li>
+<li><b>Bold Note</b>: Shows in bold red above and below the procedure grid.</li>
+</ul>
+<p>Click <b>View</b> to preview the invoice. If a PDF has been created, View opens the PDF. If no PDF exists, View opens <a href="sheetsfillout.html">Fill Sheet</a>. Edit any custom <a href="sheetsaddelements.html">Sheet Field Types</a> then Print or Email to save the changes. <p>Click <b>Print</b> to send the invoice to the default Printer.</p>
+<p>Click <b>Pat Portal</b> to send the invoice to the <a href="../site/patientportal.html">Patient Portal Feature</a>.</p>
+<p>Click <b>Email</b> to email the invoice as a PDF.</p>
+<p>Click <b>OK</b> to generate the invoice without saving, printing or emailing the PDF.</p>
+</p>
+<p>If the Mode is changed on an existing invoice, a new PDF is created.</p>
+<h2>Sample Invoice</h2>
+<img src="images/invoice.png" width="760" height="565"/><h2>Setup Options</h2>
+<p class="MarginBottomZero">Invoices use the <a href="statementsheets.html">Statement Layout</a> and can be customized. Set the sheet to use when generating Invoices in <a href="sheetdefaults.html">Sheet Def Defaults</a>.  </p>
+<ul class="MarginBottomGap">
+<li>Payments are not included on invoices by default. Add <i>StatementInvoicePayment</i> Grid to the Invoice statement layout to include them.</li>
+</ul>
+<p>In <a href="preferences.html">Preferences</a>, enable <i>Invoice payments grid shows write-offs</i> to show insurance write-offs on Invoices.</p>
+<h2>Super Families</h2>
+<p>When creating an invoice from a <a href="superfamily.html">Super Family</a>, if no procedures, adjustments, or pay plan charges are selected, Select Invoice Items opens. All completed procedures, adjustments, and pay plan charges for all members of the Super Family, that have not been attached to an invoice, are listed here.</p>
+<img src="images/invoiceSelectItems.png" width="766" height="591"/><p><b>Exclude $0 Fee</b>: Check to hide items from the grid with a $0 fee. </p>
+<p><b>All</b>: Click to highlight all items in the grid.</p>
+<p><b>None</b>: Click to deselect all items in the grid.</p>
+<p>Click <b>OK</b> to create the invoice with the selected items. The Statement window shown above opens.</p>
+<h2>Invoice Search</h2>
+<p>Set up a Display Field in the Patient Select window to search for patients by invoice number.</p>
+<h2>Foreign Users</h2>
+<p>To use the title <i>TAX INVOICE</i>, add the output text field, <i>statementIsTaxReceipt</i>, to the sheet.</p>
+<p>To show the word <i>COPY</i> at the top of statements printed more than once, add the output text field, <i>statementIsCopy</i>, to the sheet. To print again without the word <i>COPY</i>, uncheck the <i>Sent</i> checkbox and the<i> Invoice Copy </i>checkbox, then print again.</p>
+</div>
+</div>
+</body>
+</html>```

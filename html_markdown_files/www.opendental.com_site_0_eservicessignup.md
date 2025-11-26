@@ -1,0 +1,52 @@
+# File: ./www.opendental.com/site/0_eservicessignup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - eServices Signup</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('0_eservicessignup','+0eservicesetup','+0mainmenu','quickmanual','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>eServices Signup</p></div>
+		<div class="GeneralPageContent">
+<p>The Signup Portal is used to sign up for eServices.</p>
+<p>In the eServices Setup window, click <b>Signup</b>.</p>
+<img src="images/eservicesBasicView.png" width="915" height="506"/><p><div class="Note">Note:  Fees displayed on the screenshot above may not be current. Refer to <a href="fees.html">Fees for Support and Services</a> for the most up-to-date pricing.</div>
+</p>
+<h2>Integrated Texting Options</h2>
+<p>There are two options available when signing up for integrated texting service.</p>
+<img src="images/signupBasicIntText.png" width="548" height="113"/><p>Offices can use a new number that is automatically assigned, or an existing landline phone number. Only United States and Canadian numbers work with the <i>Use my Landline #</i> option. Mobile and some VOIP numbers are not supported, and not every telecomm provider supports landline texting.</p>
+<a name='textregister'></a><h3>Register with Carriers</h3><p>All Open Dental offices in the United States that are utilizing integrated text messaging must provide Open Dental their business contact information using the carrier registration form. All fields are required. Existing Open Dental users can visit <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7textregister.html">Register with Carriers</a> for more details.</p>
+<img src="images/textingBrandSetup.png" width="598" height="826"/>		</div>
+	</div>
+</body>
+</html>```

@@ -1,0 +1,59 @@
+# File: ./www.opendental.com/manual232/sheetseragridheader.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - ERA Grid Header Layout</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('sheetseragridheader','sheets','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/sheetseragridheader.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/sheetseragridheader.html" >v24.2</option><option value="https://www.opendental.com/manual241/sheetseragridheader.html" >v24.1</option><option value="https://www.opendental.com/manual233/sheetseragridheader.html" >v23.3</option><option value="https://www.opendental.com/manual232/sheetseragridheader.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/sheetseragridheader.html" >v23.1</option><option value="https://www.opendental.com/manual224/sheetseragridheader.html" >v22.4</option><option value="https://www.opendental.com/manual223/sheetseragridheader.html" >v22.3</option><option value="https://www.opendental.com/manual222/sheetseragridheader.html" >v22.2</option><option value="https://www.opendental.com/manual221/sheetseragridheader.html" >v22.1</option><option value="https://www.opendental.com/manual214/sheetseragridheader.html" >v21.4</option><option value="https://www.opendental.com/manual213/sheetseragridheader.html" >v21.3</option><option value="https://www.opendental.com/manual212/sheetseragridheader.html" >v21.2</option><option value="https://www.opendental.com/manual211/sheetseragridheader.html" >v21.1</option><option value="https://www.opendental.com/manual205/sheetseragridheader.html" >v20.5</option><option value="https://www.opendental.com/manual204/sheetseragridheader.html" >v20.4</option><option value="https://www.opendental.com/manual203/sheetseragridheader.html" >v20.3</option><option value="https://www.opendental.com/manual202/sheetseragridheader.html" >v20.2</option><option value="https://www.opendental.com/manual201/sheetseragridheader.html" >v20.1</option><option value="https://www.opendental.com/manual194/sheetseragridheader.html" >v19.4</option><option value="https://www.opendental.com/manual193/sheetseragridheader.html" >v19.3</option><option value="https://www.opendental.com/manual192/sheetseragridheader.html" >v19.2</option><option value="https://www.opendental.com/manual191/sheetseragridheader.html" >v19.1</option><option value="https://www.opendental.com/manual184/sheetseragridheader.html" >v18.4</option><option value="https://www.opendental.com/manual183/sheetseragridheader.html" >v18.3</option><option value="https://www.opendental.com/manual182/sheetseragridheader.html" >v18.2</option><option value="https://www.opendental.com/manual181/sheetseragridheader.html" >v18.1</option><option value="https://www.opendental.com/manual174/sheetseragridheader.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>ERA Grid Header Layout</p></div>
+<div class="GeneralPageContent">
+<p>The ERAGridHeader shows above every claim paid on a customized ERA Sheet and can be customized to meet an office's needs.</p>
+<p>In <a href="sheets.html">Sheets</a>, double-click on a custom sheet with the type of ERAGridHeader.</p>
+<img src="images/sheetseragridheader.gif" width="915" height="623"/><p class="MarginBottomZero">Alternatively, in Sheets:  </p>
+<ul class="MarginBottomGap">
+<li>Click <b>New</b> and choose <i>ERAGridHeader</i> as the Sheet Type to create a new ERAGridHeader from blank.</li>
+<li>Select an existing Custom <i>ERAGridHeader</i> sheet and click <b>Duplicate</b> to create a copy of an existing ERAGridHeader.</li>
+<li>Select the existing Internal <i>ERAGridHeader</i> sheet and click <b>Copy</b> to create a copy of the default ERAGridHeader that can be edited.</li>
+</ul>
+<p class="MarginBottomZero">Also see:  </p>
+<ul class="MarginBottomGap">
+<li><a href="sheetsera.html">ERA Sheet</a></li>
+<li><a href="sheetproperties.html">Sheet Def Properties</a></li>
+<li><a href="sheetsaddelements.html">Sheet Field Types</a></li>
+</ul>
+<p>To customize a ERAGridHeader sheet type, see <a href="sheetsetup.html">Edit Sheet Def</a>.</p>
+</div>
+</div>
+</body>
+</html>```

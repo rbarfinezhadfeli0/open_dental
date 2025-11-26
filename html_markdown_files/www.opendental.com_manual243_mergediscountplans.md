@@ -1,0 +1,62 @@
+# File: ./www.opendental.com/manual243/mergediscountplans.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Merge Discount Plans</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('mergediscountplans','+misc','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/mergediscountplans.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/mergediscountplans.html" >v24.2</option><option value="https://www.opendental.com/manual241/mergediscountplans.html" >v24.1</option><option value="https://www.opendental.com/manual233/mergediscountplans.html" >v23.3</option><option value="https://www.opendental.com/manual232/mergediscountplans.html" >v23.2</option><option value="https://www.opendental.com/manual231/mergediscountplans.html" >v23.1</option><option value="https://www.opendental.com/manual224/mergediscountplans.html" >v22.4</option><option value="https://www.opendental.com/manual223/mergediscountplans.html" >v22.3</option><option value="https://www.opendental.com/manual222/mergediscountplans.html" >v22.2</option><option value="https://www.opendental.com/manual221/mergediscountplans.html" >v22.1</option><option value="https://www.opendental.com/manual214/mergediscountplans.html" >v21.4</option><option value="https://www.opendental.com/manual213/mergediscountplans.html" >v21.3</option><option value="https://www.opendental.com/manual212/mergediscountplans.html" >v21.2</option><option value="https://www.opendental.com/manual211/mergediscountplans.html" >v21.1</option><option value="https://www.opendental.com/manual205/mergediscountplans.html" >v20.5</option><option value="https://www.opendental.com/manual204/mergediscountplans.html" >v20.4</option><option value="https://www.opendental.com/manual203/mergediscountplans.html" >v20.3</option><option value="https://www.opendental.com/manual202/mergediscountplans.html" >v20.2</option><option value="https://www.opendental.com/manual201/mergediscountplans.html" >v20.1</option><option value="https://www.opendental.com/manual194/mergediscountplans.html" >v19.4</option><option value="https://www.opendental.com/manual193/mergediscountplans.html" >v19.3</option><option value="https://www.opendental.com/manual192/mergediscountplans.html" >v19.2</option><option value="https://www.opendental.com/manual191/mergediscountplans.html" >v19.1</option><option value="https://www.opendental.com/manual184/mergediscountplans.html" >v18.4</option><option value="https://www.opendental.com/manual183/mergediscountplans.html" >v18.3</option><option value="https://www.opendental.com/manual182/mergediscountplans.html" >v18.2</option><option value="https://www.opendental.com/manual181/mergediscountplans.html" >v18.1</option><option value="https://www.opendental.com/manual174/mergediscountplans.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Merge Discount Plans</p></div>
+<div class="GeneralPageContent">
+<p>Discount plans can be merged into one and reassign patients as needed. </p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Tools, Misc Tools, Merge Discount Plans.</p>
+<img src="images/discountPlansMerge.png" width="665" height="277"/><p>Alternatively, in the <a href="discountplans.html">Discount Plans</a> window, click <b>Merge</b>.</p>
+<p><div class="Note">Note: <ul>
+<li>This tool is useful when a discount plan is created by mistake or the office wants to discontinue a plan.</li>
+<li>Merging discount plans is logged in the <a href="audittrail.html">Audit Trail</a>.</li>
+</ul>
+</div>
+</p>
+<p class="MarginBottomZero">To merge discount plans: </p>
+<ol class="MarginBottomGap">
+<li>Select the <i>Plan to merge into</i>. Click <b>Change </b>to select the discount plan to keep. This plan is assigned to all patients who have the selected in the next step. </li>
+<li>Select the <i>Plan to merge from</i>. Click <b>Change</b> to select the discount plan to remove. Patients who have this discount plan are reassigned to the plan selected in Step 1.</li>
+<li>Click <b>Merge</b> to combine the plans.</li>
+<li>A confirmation message displays. Click <b>Yes</b> to proceed. A message indicates when plans merged successfully. </li>
+</ol>
+<p><img src="images/discountPlanMergeConfirm.png" width="404" height="146"/></p>
+<p>Once the merge is complete, all patients who were previously assigned to the <i>Plan to merge from</i> (Step 2) are reassigned to the <i>Plan to merge into</i> (Step 1). The <i>Plan to merge from</i> is removed from the <a href="discountplans.html">Discount Plans</a> list.</p>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,193 @@
+# File: ./www.opendental.com/site/opendentalcloud.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: Open Dental Cloud</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>Open Dental Cloud</h1>
+		</div>
+		<div id="Content">
+<p>Open Dental Cloud is a hosted solution managed by Open Dental Software.</p>
+<img src="images/ODCloud.png" width="900" height="300"/><p>Open Dental Cloud looks and feels just like our local version, but can be accessed using a browser. To see if Open Dental Cloud is right for your office, give us a call. Our team will reach out to discuss the next steps.</p>
+<p><div class="Note">Note: Open Dental Cloud is only available for US customers. The service is currently in limited release. We accept a limited number of customers requesting the service and give preference to those whose situation is a good match. There are some limitations on interoperability with third-party solutions.</div>
+</p>
+<br><p>The total monthly cost for Open Dental Cloud varies depending on the needs of the practice. An official quote will be provided before signup. </p>
+<table class="simpletable">
+<tr>
+<th style="width:33%">Service Description</th>
+<th style="width:33%">Fee* (USD)</th>
+<th style="width:33%">Details</th>
+</tr>
+<tr>
+<td><p><b>Monthly Cloud Hosting and Support</b></p>
+</td>
+<td><p>$430/month/location or office</p>
+</td>
+<td><p>Covers one provider, includes 15 concurrent browser sessions** and 50GB of OpenDentImages storage.<br><br> Must be signed up for automatic credit card payments.</p>
+<p>Discounts are available for multiple locations sharing one database. Contact Support for details.</p>
+</td>
+</tr>
+<tr>
+<td><p><b>Additional Providers</b> (not counting hygienists)</p>
+</td>
+<td><p>$150/month/provider</p>
+</td>
+<td><p>Includes 10 additional concurrent browser sessions and 50GB of OpenDentImages storage for each additional provider.</p>
+</td>
+</tr>
+<tr>
+<td><p><b>Additional Sessions</b></p>
+</td>
+<td><p>$18/month/browser session</p>
+</td>
+<td><p>Allows for 1 additional concurrent browser session.</p>
+</td>
+</tr>
+<tr>
+<td><p><b>Additional OpenDentImages Storage</b></p>
+</td>
+<td><p>$0.40/GB over the monthly allotment</p>
+</td>
+<td><p>1GB of additional storage.</p>
+<p>Fee is based on the largest size recorded for the OpenDentImages folder, at any time during the billing cycle. Fees are applied each billing cycle the allotment is exceeded.</p>
+</td>
+</tr>
+<tr>
+<td><p><b>Migration</b></p>
+</td>
+<td><p>$400</p>
+</td>
+<td>One-time charge per signup. Collected before a Migration (Test or Final) is started.</td>
+</tr>
+</table>
+<p>*Open Dental Cloud service fees are non-refundable after services have been rendered.<br> **A browser session is one Open Dental Cloud user interface instance.</p>
+<h2>How it Works</h2>
+<p>Open Dental will do the cloud setup, then you can log in and get to work. All you need is a web browser and high-speed internet. See our <a href="opendentalcloudrequirements.html">Requirements</a> page.</p>
+<p class="MarginBottomZero">Also see:  </p>
+<ul class="MarginBottomGap">
+<li><a href="opendentalcloudsignin.html">Open Dental Cloud Sign In</a></li>
+<li><a href="opendentalcloudbackups.html">Open Dental Cloud Backups</a></li>
+<li><a href="opendentalcloudclient.html">Open Dental Cloud Client</a></li>
+</ul>
+<h2>The Benefits</h2>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Available from anywhere with internet access</li>
+<li>Automatic nightly backups handled by Open Dental</li>
+<li>Great for multiple location offices, easily expand</li>
+<li>Automatically updated with latest features</li>
+<li>Not reliant on IT for Server or Database upkeep or security</li>
+<li>Not stuck: easily switch from Cloud to Local host or vice-versa</li>
+</ul>
+<h2>Determine if Open Dental Cloud is Right for You</h2>
+<p></p>
+<table class="simpletable">
+<tr>
+<th style="width:50%">Open Dental Cloud may be a good fit if your practice</th>
+<th style="width:50%">Open Dental Cloud may NOT be a good fit if your practice</th>
+</tr>
+<tr>
+<td><p>uses Windows.</p>
+</td>
+<td><p>uses macOS. You can access Open Dental from a browser on a device running a full version of Windows. </p>
+</td>
+</tr>
+<tr>
+<td><p>has a reliable internet connection with a minimum speed of 20 Mbps download and 10 Mbps upload.</p>
+</td>
+<td><p>has an internet connection that is unstable or does not meet recommended minimum speeds.</p>
+</td>
+</tr>
+<tr>
+<td><p>has latency below 30ms with at least one of our data centers.</p>
+</td>
+<td><p>has latency above 50ms with our data centers.</p>
+</td>
+</tr>
+<tr>
+<td><p>wants to use the latest tools available in the software.</p>
+</td>
+<td><p>wants to choose when to update the software.</p>
+</td>
+</tr>
+<tr>
+<td><p>wants automated backups of the database and OpenDentImages folder.</p>
+</td>
+<td><p>wants to continue to self-manage backups.</p>
+</td>
+</tr>
+<tr>
+<td><p>does not have the resources or desire to manage a local server. The local computers that access the Open Dental Cloud are still fully managed by the practice or their IT.</p>
+</td>
+<td><p>has the resources to manage a local server.</p>
+</td>
+</tr>
+<tr>
+<td><p>does not use DirectX to view a full-screen 3D image of the patient's Perio Chart (Graphical button) or Ortho graphics.</p>
+</td>
+<td><p>uses DirectX and views the Graphical Perio Chart and Ortho graphics.</p>
+</td>
+</tr>
+<tr>
+<td><p>uses (or can use) Open Dental eServices for online patient scheduling and patient communications.</p>
+</td>
+<td><p>relies on certain third-party services like Flex, SolutionReach, etc. (It will take time for some vendors to build interfaces with our API, so this will vary by company.)*</p>
+</td>
+</tr>
+<tr>
+<td><p>uses separate Imaging software that doesn't need to be hosted.</p>
+</td>
+<td><p>wants separate Imaging software to be cloud hosted by Open Dental.</p>
+</td>
+</tr>
+</table>
+<p>*See <a href="opendentalcloudintegrations.html">Open Dental Cloud 3rd Party Integrations</a> for a list of compatible integrations.</p>
+<p>For a list of differences between Open Dental Cloud and the local/server version, see <a href="opendentalclouddifferences.html">Open Dental Cloud Differences</a>.</p>
+<h2>FAQ</h2>
+<p><b>How is cloud data protected?</b></p>
+<p>Each customer's database and A to Z folder (where documents and images are stored) are backed up periodically. The backups are encrypted, tested for integrity nightly, and stored off-site. See <a href="opendentalcloudbackups.html">Open Dental Cloud Backups</a> for more information.</p>
+<p><b>What happens in the unlikely event of an Open Dental Cloud server failure?</b></p>
+<p>In the event that the Open Dental Cloud server fails, the most recent backup will be restored to a new server by Open Dental staff.</p>
+
+</div>	
+	</div>
+</body>
+</html>```

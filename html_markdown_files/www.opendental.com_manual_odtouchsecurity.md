@@ -1,0 +1,53 @@
+# File: ./www.opendental.com/manual/odtouchsecurity.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - ODTouch Security</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('odtouchsecurity','eclipboardsetup','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/odtouchsecurity.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/odtouchsecurity.html" >v24.2</option><option value="https://www.opendental.com/manual241/odtouchsecurity.html" >v24.1</option><option value="https://www.opendental.com/manual233/odtouchsecurity.html" >v23.3</option><option value="https://www.opendental.com/manual232/odtouchsecurity.html" >v23.2</option><option value="https://www.opendental.com/manual231/odtouchsecurity.html" >v23.1</option><option value="https://www.opendental.com/manual224/odtouchsecurity.html" >v22.4</option><option value="https://www.opendental.com/manual223/odtouchsecurity.html" >v22.3</option><option value="https://www.opendental.com/manual222/odtouchsecurity.html" >v22.2</option><option value="https://www.opendental.com/manual221/odtouchsecurity.html" >v22.1</option><option value="https://www.opendental.com/manual214/odtouchsecurity.html" >v21.4</option><option value="https://www.opendental.com/manual213/odtouchsecurity.html" >v21.3</option><option value="https://www.opendental.com/manual212/odtouchsecurity.html" >v21.2</option><option value="https://www.opendental.com/manual211/odtouchsecurity.html" >v21.1</option><option value="https://www.opendental.com/manual205/odtouchsecurity.html" >v20.5</option><option value="https://www.opendental.com/manual204/odtouchsecurity.html" >v20.4</option><option value="https://www.opendental.com/manual203/odtouchsecurity.html" >v20.3</option><option value="https://www.opendental.com/manual202/odtouchsecurity.html" >v20.2</option><option value="https://www.opendental.com/manual201/odtouchsecurity.html" >v20.1</option><option value="https://www.opendental.com/manual194/odtouchsecurity.html" >v19.4</option><option value="https://www.opendental.com/manual193/odtouchsecurity.html" >v19.3</option><option value="https://www.opendental.com/manual192/odtouchsecurity.html" >v19.2</option><option value="https://www.opendental.com/manual191/odtouchsecurity.html" >v19.1</option><option value="https://www.opendental.com/manual184/odtouchsecurity.html" >v18.4</option><option value="https://www.opendental.com/manual183/odtouchsecurity.html" >v18.3</option><option value="https://www.opendental.com/manual182/odtouchsecurity.html" >v18.2</option><option value="https://www.opendental.com/manual181/odtouchsecurity.html" >v18.1</option><option value="https://www.opendental.com/manual174/odtouchsecurity.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>ODTouch Security</p></div>
+<div class="GeneralPageContent">
+<p>Require users to validate their credentials in ODTouch by enabling security options.</p>
+<p>In <a href="eservicessetup.html">eServices Setup</a>, click <b>ODTouch</b>. </p>
+<img src="images/odtouchSecurity.png" width="290" height="169"/><p>Setting ODTouch security options helps ensure a device is not accessible if it is set down and forgotten. </p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Enable Clinical Security</b>: Check to enable ODTouch security options. </li>
+<li><b>Frequency (Minutes)</b>: Enter the amount of time, in minutes, that a user is required to validate their credentials. Validation is done via pin number or a fingerprint scan, depending on options enabled in <a href="odtouchsettings.html">ODTouch: Settings</a>. If validation is required while the device is in use, the user can finish their current action before validating their credentials. </li>
+</ul>
+<p>Click OK to save.</p>
+</div>
+</div>
+</body>
+</html>```

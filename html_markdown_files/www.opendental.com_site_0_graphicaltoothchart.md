@@ -1,0 +1,63 @@
+# File: ./www.opendental.com/site/0_graphicaltoothchart.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Graphical Tooth Chart</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('0_graphicaltoothchart','0_chart','0_modules','quickmanual','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Graphical Tooth Chart</p></div>
+		<div class="GeneralPageContent">
+<p>The Graphical Tooth Chart visually displays the patient's teeth, as well as treatment that has been performed, is planned, or has been referred out.</p>
+<p>In the <a href="0_chart.html">Chart Module</a>, at the upper left, is the graphical tooth chart.</p>
+<img src="images/graphicalToothChart.png" width="414" height="341"/><p>Easily drag the slider bar under the chart to show historical changes to the patient's tooth chart. </p>
+<p class="MarginBottomZero"><b>Tooth Numbering</b>: Open Dental supports 4 different tooth numbering systems: </p>
+<ul class="MarginBottomGap">
+<li>Universal (Common in the United States, 1-32)</li>
+<li>FDI Notation (International, 11-48)</li>
+<li>Haderup (Danish)</li>
+<li>Palmer (Ortho)</li>
+</ul>
+<p class="MarginBottomZero"><b>Tooth Graphics</b>: </p>
+<ul class="MarginBottomGap">
+<li>Teeth can be selected from the Graphical Tooth Chart to chart procedures from the <a href="0_entertreatment.html">Enter Treatment</a> tab.</li>
+<li>Teeth can be marked as missing to hide them from the Graphical Tooth Chart.</li>
+<li>Teeth can be moved on the tooth chart for more accurate representation.</li>
+<li>Treatment graphics are determined by procedure code and can be customized.</li>
+<li>Colors are dependent on procedure status and can be customized. </li>
+<li>Additional annotations can be added using draw and text features.</li>
+</ul>
+		</div>
+	</div>
+</body>
+</html>```

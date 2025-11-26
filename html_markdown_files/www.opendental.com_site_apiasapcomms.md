@@ -1,0 +1,78 @@
+# File: ./www.opendental.com/site/apiasapcomms.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API AsapComms</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apiasapcomms','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API AsapComms</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>The AsapComm table is used by the Web Sched ASAP feature to quickly send text messages to patients on the ASAP List about last minute appointment openings. See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webschedasap.html">Web Sched ASAP</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webschedasaphistory.html">Web Sched ASAP History</a>, and <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webschedasappatientsees.html">Web Sched ASAP: What Patient Sees</a> for more information.</p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96asapcomm.html" target="_blank">AsapComm Database Schema.</a></p>
+<h2>AsapComms GET (single)</h2>
+<p>Version Added: 23.3.3</p>
+<p>Gets a single asapcomm.</p>
+<p><b>Parameters:</b></p>
+<p><b>AsapCommNum: </b> Required in the URL.<br></p>
+<p><b>Example Request:</b><br> GET /asapcomms/192<br></p>
+<b>Example Response:</b><br><p><span class="codeblock"> {<br> "AsapCommNum": 192,<br> "FKey": 539,<br> "FKeyType": "ScheduledAppt",<br> "ScheduleNum": 3523,<br> "PatNum": 1771,<br> "ClinicNum": 1,<br> "DateTimeEntry": "2023-08-24 10:04:14",<br> "DateTimeExpire": "2023-09-20 09:00:00",<br> "DateTimeSmsScheduled": "2023-09-14 10:04:14",<br> "SmsSendStatus": "SendSuccessful",<br> "DateTimeSmsSent": "2023-09-14 10:04:14",<br> "ResponseStatus": "PendingRsvp",<br> "DateTimeOrig": "2023-09-26 10:00:00",<br> "TemplateText": "[NameF], an appointment opening has become available on 08/28/2023 at 2:00 PM at SouthSide Dental. Visit [AsapURL] to reserve it.",<br> "Note": ""<br> }<br></span></p>
+<p></p>
+<p> 200 OK <br> 404 NotFound (with explanation)<br></p>
+<h2>AsapComms GET (multiple)</h2>
+<p>Version Added: 23.3.3</p>
+<p>Gets a list of asapcomms.</p>
+<p><b>Parameters:</b> All Optional.</p>
+<p><b>ClinicNum: </b> FK to clinic.ClinicNum. The clinic that is sending the ASAP text.<br><b>date: </b>For a single day. String in "yyyy-mm-dd" format.<br><b>dateStart: </b>Only return asapcomms with a DateTimeEntry on or after this date. String in "yyyy-mm-dd" format. Default is the last 7 days.<br><b>dateEnd: </b>Only return asapcomms with a DateTimeEntry before this date. String in "yyyy-mm-dd" format. Default is today at midnight.<br></p>
+<p><b>Example Request:</b><br> GET /asapcomms?ClinicNum=4<br> GET /asapcomms?ClinicNum=4&amp;date=2023-09-14<br> GET /asapcomms?ClinicNum=4&amp;dateStart=2023-09-01&amp;dateEnd=2023-09-14<br></p>
+<b>Example Response:</b><br><p><span class="codeblock"> [<br> {<br> "AsapCommNum": 1224,<br> "FKey": 11543,<br> "FKeyType": "ScheduledAppt",<br> "ScheduleNum": 13651,<br> "PatNum": 11775,<br> "ClinicNum": 4,<br> "DateTimeEntry": "2023-09-01 10:04:25",<br> "DateTimeExpire": "2023-09-08 10:00:00",<br> "DateTimeSmsScheduled": "0001-01-01 00:00:00",<br> "SmsSendStatus": "DoNotSend",<br> "DateTimeSmsSent": "0001-01-01 00:00:00",<br> "ResponseStatus": "UnableToSend",<br> "DateTimeOrig": "2023-09-24 10:00:00",<br> "TemplateText": "[NameF], an appointment opening has become available on 09/04/2023 at 2:00 PM at NorthSide Dental. Visit [AsapURL] to reserve it.",<br> "Note": "Not sending text because the patient has opted out of automated messaging."<br> },<br> {<br> "AsapCommNum": 1225,<br> "FKey": 11642,<br> "FKeyType": "UnscheduledAppt",<br> "ScheduleNum": 13619,<br> "PatNum": 11774,<br> "ClinicNum": 4,<br> "DateTimeEntry": "2023-09-01 10:04:25",<br> "DateTimeExpire": "2023-09-08 10:00:00",<br> "DateTimeSmsScheduled": "2023-09-01 10:04:25",<br> "SmsSendStatus": "SendSuccessful",<br> "DateTimeSmsSent": "2023-09-01 10:04:25",<br> "ResponseStatus": "PendingRsvp",<br> "DateTimeOrig": "2023-10-25 09:00:00",<br> "TemplateText": "[NameF], an appointment opening has become available on 09/04/2023 at 2:00 PM at NorthSide Dental. Visit [AsapURL] to reserve it.",<br> "Note": ""<br> },<br> {<br> "AsapCommNum": 1226,<br> "FKey": 11836,<br> "FKeyType": "PlannedAppt",<br> "ScheduleNum": 3459,<br> "PatNum": 11768,<br> "ClinicNum": 4,<br> "DateTimeEntry": "2023-09-01 10:04:25",<br> "DateTimeExpire": "2023-09-08 10:00:00",<br> "DateTimeSmsScheduled": "2023-09-01 10:06:25",<br> "SmsSendStatus": "DoNotSend",<br> "DateTimeSmsSent": "2023-09-01 10:06:25",<br> "ResponseStatus": "Failed",<br> "DateTimeOrig": "2023-10-21 10:00:00",<br> "TemplateText": "[NameF], an appointment opening has become available on 09/04/2023 at 2:00 PM at NorthSide Dental. Visit [AsapURL] to reserve it.",<br> "Note": "Not sending because the time slot has been taken by another appointment."<br>  },<br> etc.<br> ]<br></span></p>
+<p></p>
+<p> 200 OK <br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>AsapComms POST (Insert)</h2>
+<p>Version Added: 23.3.3</p>
+<p><span style="color:red">Rarely used. Dental office must be subscribed to the following eServices: </span><a href="websched.html">WebSched ASAP</a><span style="color:red"> and </span><a href="textintegrated.html">Integrated Texting Feature</a>. <span style="color:red">Only sends sms text messages.</span></p>
+<p>Creates an AsapComm and a Web Sched ASAP Blockout. See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webschedasap.html">Web Sched ASAP</a>, and <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7asapmsgs.html">ASAP Message Setup</a> for more information. The End Time is calculated from the pattern of the appointment or recall. Will not schedule if the new appointment would overlap with an existing appointment or blockout that does not allow overlap.</p>
+<p>Prior to running this method, obtain the <b>aptNum</b> of the appointment with Appointments GET ASAP. Then use Appointments GET Slots or Appointments GET (multiple) along with Schedules GET (multiple) to obtain an available time slot for the <b>dateTimeStart</b> and <b>op</b> for the ASAP Appointment.</p>
+<p><b>Parameters:</b></p>
+<p><b>op: </b>Required. FK to operatory.OperatoryNum.<br><b>aptNum: </b>This or <b>recallNum</b> is required. FK to appointment.AptNum. Appointment.Priority must be 1 (ASAP).<br><b>recallNum: </b>(Added in version 25.2.9) This or <b>aptNum</b> is required. FK to recall.RecallNum. Recall.Priority must be 1 (ASAP).<br><b>dateTimeStart: </b>Required. The date and start time of the Web Sched ASAP Blockout. String in "yyyy-MM-dd HH:mm:ss" format. <br></p>
+<p><b>Example Requests:</b><br> POST /asapcomms<br></p>
+<p><span class="codeblock"> {<br> "op": 2,<br> "aptNum": 11939,<br> "dateTimeStart": "2023-10-18 14:00:00"<br> }<br></span></p>
+<p>or<br></p>
+<p><span class="codeblock"> {<br> "op": 4,<br> "recallNum": 11534,<br> "dateTimeStart": "2025-06-17 13:30:00"<br> }<br></span></p>
+<p><b>Example Responses:</b><br><span class="codeblock"> {<br> "AsapCommNum": 2374,<br> "FKey": 11939,<br> "FKeyType": "Broken",<br> "ScheduleNum": 52527,<br> "PatNum": 6522,<br> "ClinicNum": 4,<br> "DateTimeEntry": "2023-10-16 09:01:25",<br> "DateTimeExpire": "2023-10-25 14:00:00",<br> "DateTimeSmsScheduled": "2023-10-16 09:01:25",<br> "SmsSendStatus": "SendNotAttempted",<br> "DateTimeSmsSent": "0001-01-01 00:00:00",<br> "ResponseStatus": "AwaitingTransmit",<br> "DateTimeOrig": "2023-10-31 16:00:00",<br> "TemplateText": "[NameF], an appointment opening has become available on 10/18/2023 at 2:00 PM at Southern Office. Visit [AsapURL] to reserve it.",<br> "Note": ""<br> }<br></span> or<br><span class="codeblock"> {<br> "AsapCommNum": 4398,<br> "FKey": 11534,<br> "FKeyType": "Recall",<br> "ScheduleNum": 170706,<br> "PatNum": 7189,<br> "ClinicNum": 1,<br> "DateTimeEntry": "2025-06-02 14:01:03",<br> "DateTimeExpire": "2025-06-24 13:30:00",<br> "DateTimeSmsScheduled": "2025-06-02 14:01:03",<br> "SmsSendStatus": "SendNotAttempted",<br> "DateTimeSmsSent": "0001-01-01 00:00:00",<br> "ResponseStatus": "AwaitingTransmit",<br> "DateTimeOrig": "2025-05-18 00:00:00",<br> "TemplateText": "[NameF], an appointment opening has become available on 06/17/2025 at 1:30 PM at Northern Office. Visit [AsapURL] to reserve it.",<br> "Note": ""<br> }<br></span></p>
+<p>201 Created<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>```

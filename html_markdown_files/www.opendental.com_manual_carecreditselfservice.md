@@ -1,0 +1,13 @@
+# File: ./www.opendental.com/manual/carecreditselfservice.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<meta http-equiv="Refresh" content="0; url=https://opendental.com/r.htm?carecreditselfservice" />
+</head>
+<body>
+	<p>If your browser does not refresh automatically, please click this link for <a href="https://opendental.com/r.htm?carecreditselfservice">CareCredit Self-Service Payment</a>.</body>
+</html>```

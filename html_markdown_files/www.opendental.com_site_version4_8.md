@@ -1,0 +1,58 @@
+# File: ./www.opendental.com/site/version4_8.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: Version 4.8</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>Version 4.8</h1>
+		</div>
+		<div id="Content">
+<p>See <a href="versions.html">Versions</a></p>
+<p>Released 4/25/07 </p>
+<p>Code Entry Enhancements: Make it very easy to enter new codes. Automatic defaults for autocodes and procedure buttons.</p>
+<p><b>E-claims:</b> Previously, you had to go through a clearinghouse to submit all e-claims. Open Dental can now create X-12 files that can be used by any carrier that supports direct X12 claims. You can now submit directly to many carries such as DentiCal, Medicaid, Delta, BCBS, etc. There is some work involved in contacting the carrier, getting their implementation guide, setting up a partnership agreement, testing, and finally uploading claims. We do not provide implementation details, leaving that up to the individual offices. But it can still be very useful.</p>
+<p>Laboratory table added. Does not yet include lab cases, just the labs themselves.<br>  Appointment edit window rewritten to show more info and be more efficient.<br>  ADA Code Update Tool </p>
+<p></p>
+
+</div>	
+	</div>
+</body>
+</html>```

@@ -1,0 +1,103 @@
+# File: ./www.opendental.com/manual243/eservicebundleworkflow.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - eServices Bundle Workflow</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('eservicebundleworkflow','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/eservicebundleworkflow.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/eservicebundleworkflow.html" >v24.2</option><option value="https://www.opendental.com/manual241/eservicebundleworkflow.html" >v24.1</option><option value="https://www.opendental.com/manual233/eservicebundleworkflow.html" >v23.3</option><option value="https://www.opendental.com/manual232/eservicebundleworkflow.html" >v23.2</option><option value="https://www.opendental.com/manual231/eservicebundleworkflow.html" >v23.1</option><option value="https://www.opendental.com/manual224/eservicebundleworkflow.html" >v22.4</option><option value="https://www.opendental.com/manual223/eservicebundleworkflow.html" >v22.3</option><option value="https://www.opendental.com/manual222/eservicebundleworkflow.html" >v22.2</option><option value="https://www.opendental.com/manual221/eservicebundleworkflow.html" >v22.1</option><option value="https://www.opendental.com/manual214/eservicebundleworkflow.html" >v21.4</option><option value="https://www.opendental.com/manual213/eservicebundleworkflow.html" >v21.3</option><option value="https://www.opendental.com/manual212/eservicebundleworkflow.html" >v21.2</option><option value="https://www.opendental.com/manual211/eservicebundleworkflow.html" >v21.1</option><option value="https://www.opendental.com/manual205/eservicebundleworkflow.html" >v20.5</option><option value="https://www.opendental.com/manual204/eservicebundleworkflow.html" >v20.4</option><option value="https://www.opendental.com/manual203/eservicebundleworkflow.html" >v20.3</option><option value="https://www.opendental.com/manual202/eservicebundleworkflow.html" >v20.2</option><option value="https://www.opendental.com/manual201/eservicebundleworkflow.html" >v20.1</option><option value="https://www.opendental.com/manual194/eservicebundleworkflow.html" >v19.4</option><option value="https://www.opendental.com/manual193/eservicebundleworkflow.html" >v19.3</option><option value="https://www.opendental.com/manual192/eservicebundleworkflow.html" >v19.2</option><option value="https://www.opendental.com/manual191/eservicebundleworkflow.html" >v19.1</option><option value="https://www.opendental.com/manual184/eservicebundleworkflow.html" >v18.4</option><option value="https://www.opendental.com/manual183/eservicebundleworkflow.html" >v18.3</option><option value="https://www.opendental.com/manual182/eservicebundleworkflow.html" >v18.2</option><option value="https://www.opendental.com/manual181/eservicebundleworkflow.html" >v18.1</option><option value="https://www.opendental.com/manual174/eservicebundleworkflow.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>eServices Bundle Workflow</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="eservicessetup.html">eServices Setup</a>. </p>
+<p>When using the <a href="eservicesbundle.html">eServices Bundle</a>, users have access to a variety of eService features. The goal of the eService Bundle is to increase productivity and efficiency in the office. </p>
+<p>Below, we outline the recommended workflow for Bundle users. (The workflow for each office may vary). This workflow is designed to get patients scheduled, help patients keep their appointments, and automate the check-in process.</p>
+<h2>Scheduling the Appointment</h2>
+<p>When using the eService Bundle, there are five options to help schedule patients: </p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>New Patients can schedule their appointment online via <a href="webschednewpatsetup.html">Web Sched New Patient</a>. </li>
+<li>Existing Patients can schedule their appointment online via <a href="webschedexistingpatsetup.html">Web Sched Existing Patient</a>.</li>
+<li>Patients on the <a href="asaplist.html">ASAP List</a> can be sent a link via <a href="webschedasap.html">Web Sched ASAP</a> when an appointment opens. </li>
+<li>Patients due for a recall appointment can be sent a link to schedule their appointment via <a href="webschedrecallsetup.html">Web Sched Recall</a>. </li>
+<li>If a patient calls while the staff is working from home, or an emergency call after hours, appointments can be scheduled using <a href="opendentalmobile.html">ODMobile</a>. </li>
+</ol>
+<h2>Prior to the Appointment</h2>
+<p>Once a patient schedules their appointment, it is important to keep in touch, so the patient keeps their appointment. Many of the following messages and time frames can be customized.</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Using <a href="autothankyousetup.html">Automated Thank-You messages</a>, the patient will be sent a thank you message for scheduling an appointment. This message is typically sent a couple hours after the appointment has been scheduled.  <ul>
+<li>The patient can save the appointment to the calendar on their device as a reminder. <br/><img src="images/bundleThankYouPat.png" width="275" height="121" class="ImageInParagraph"/></li>
+</ul>
+</li>
+<li>A few days prior to the appointment (e.g. 3 days), the patient is automatically sent an <a href="econfirmationsetup.html">eConfirmation</a> via text or email. <ul>
+<li> The patient will reply to the message to confirm the appointment.<br/><img src="images/bundleConfirm.png" width="367" height="144" class="ImageInParagraph"/></li>
+<li>Once the patient patient replies, the appointment status will automatically change to <i>Confirmed</i>. <br/><img src="images/bundleApptConfirmed.png" width="387" height="90" class="ImageInParagraph"/></li>
+</ul>
+</li>
+<li>One day before (or the day of) the appointment, the patient is automatically sent an <a href="ereminderssetup.html">eReminder</a> via text or email. <br/><img src="images/bundleReminder.png" width="276" height="106" class="ImageInParagraph"/></li>
+</ol>
+<h2>Day of the Appointment</h2>
+<p>Workflow on the day of the appointment varies for many offices. Below is an example of when a patient is unable to wait in the building (e.g. COVID restrictions). </p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>A few hours before the appointment, an <a href="arrivalssetup.html">Arrival</a> message is sent via text message asking the patient to wait in their car when they arrive. <ul>
+<li>When the patient arrives, they text 'A' to the office indicating they have arrived. <br/><img src="images/bundleArrival.png" width="358" height="182" class="ImageInParagraph"/></li>
+<li>This changes the appointment status to<i> Arrived</i>. <br/><img src="images/bundleApptArrived.png" width="384" height="88" class="ImageInParagraph"/></li>
+</ul>
+</li>
+<li>With <a href="byodworkflow.html">BYOD</a> (Bring Your Own Device) the patient will be sent a link to download and open <a href="../site/eclipboard.html">eClipboard</a>.  <ul>
+<li>The link will open the following page: <br/><img src="images/bundleBYOD.png" width="368" height="678" class="ImageInParagraph"/></li>
+<li>If the patient has already downloaded eClipboard, they will click <b>Check-In</b>. </li>
+<li>If the patient has not already downloaded eClipboard, they will click the link to Google Play (Android users) or the App Store (iOS users). Then users should return to this page to click <b>Check-In</b>.</li>
+</ul>
+</li>
+<li>eClipboard will open for the patient. They can then fill forms as needed. See <a href="byodsees.html">BYOD: What Patient Sees</a>. <ul>
+</ul>
+</li>
+<li>When the office is ready to see the patient, they will send a Come In text message.<br/><img src="images/bundleArrivalOffice.png" width="238" height="65" class="ImageInParagraph"/><ul>
+<li>The patient can then come into the office to proceed with their appointment.</li>
+</ul>
+</li>
+</ol>
+<h2>Other eServices</h2>
+<p class="MarginBottomZero">There are other eServices included in the Bundle not mentioned above. These services can help customize the workflow for your office. For example:  </p>
+<ul class="MarginBottomGap">
+<li><a href="../site/webforms.html">Web Forms </a>can be added to your site for patients to fill out prior to their appointment.</li>
+<li><a href="../site/patientportal.html">Patient Portal</a> is great for patients who want to view upcoming appointments, review statements, view their treatment plan, securely message the doctor, or want to make a payment. This is a great tool that you can enable for a patient after their appointment.</li>
+<li>In addition to scheduling appointments, ODMobile allows office staff to view their schedule, patient information, and pharmacy information, from the comfort of their home. This app is a great tool for those after-hours emergency calls.</li>
+<li>If your patients are able to wait in the office, you may consider installing <a href="../site/eclipboard.html">eClipboard</a> to a tablet device for the patient to check-in and fill out forms.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,22 @@
+# File: ./www.opendental.com/site/queryexamples.html
+
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Open Dental Query Examples</title>
+<style type="text/css"><!--
+.style1 {font-family: "Courier New", Courier, mono}
+-->
+</style>
+<meta http-equiv="REFRESH" content="0;url=http://opendentalsoft.com:1942/ODQueryList/QueryList.aspx"></
+</head>
+
+<body>
+
+</body>
+</html> 
+
+
+```

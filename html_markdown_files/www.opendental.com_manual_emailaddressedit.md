@@ -1,0 +1,121 @@
+# File: ./www.opendental.com/manual/emailaddressedit.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Email Address Edit</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('emailaddressedit','+file','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/emailaddressedit.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/emailaddressedit.html" >v24.2</option><option value="https://www.opendental.com/manual241/emailaddressedit.html" >v24.1</option><option value="https://www.opendental.com/manual233/emailaddressedit.html" >v23.3</option><option value="https://www.opendental.com/manual232/emailaddressedit.html" >v23.2</option><option value="https://www.opendental.com/manual231/emailaddressedit.html" >v23.1</option><option value="https://www.opendental.com/manual224/emailaddressedit.html" >v22.4</option><option value="https://www.opendental.com/manual223/emailaddressedit.html" >v22.3</option><option value="https://www.opendental.com/manual222/emailaddressedit.html" >v22.2</option><option value="https://www.opendental.com/manual221/emailaddressedit.html" >v22.1</option><option value="https://www.opendental.com/manual214/emailaddressedit.html" >v21.4</option><option value="https://www.opendental.com/manual213/emailaddressedit.html" >v21.3</option><option value="https://www.opendental.com/manual212/emailaddressedit.html" >v21.2</option><option value="https://www.opendental.com/manual211/emailaddressedit.html" >v21.1</option><option value="https://www.opendental.com/manual205/emailaddressedit.html" >v20.5</option><option value="https://www.opendental.com/manual204/emailaddressedit.html" >v20.4</option><option value="https://www.opendental.com/manual203/emailaddressedit.html" >v20.3</option><option value="https://www.opendental.com/manual202/emailaddressedit.html" >v20.2</option><option value="https://www.opendental.com/manual201/emailaddressedit.html" >v20.1</option><option value="https://www.opendental.com/manual194/emailaddressedit.html" >v19.4</option><option value="https://www.opendental.com/manual193/emailaddressedit.html" >v19.3</option><option value="https://www.opendental.com/manual192/emailaddressedit.html" >v19.2</option><option value="https://www.opendental.com/manual191/emailaddressedit.html" >v19.1</option><option value="https://www.opendental.com/manual184/emailaddressedit.html" >v18.4</option><option value="https://www.opendental.com/manual183/emailaddressedit.html" >v18.3</option><option value="https://www.opendental.com/manual182/emailaddressedit.html" >v18.2</option><option value="https://www.opendental.com/manual181/emailaddressedit.html" >v18.1</option><option value="https://www.opendental.com/manual174/emailaddressedit.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Email Address Edit</p></div>
+<div class="GeneralPageContent">
+<p>Set up an email address to send and receive email in Open Dental.</p>
+<p>In <a href="emailsetup.html">Email Setup</a>, click <b>Add</b>, or double-click on an existing address.</p>
+<img src="images/emailByUser.png" width="915" height="487"/><p>Alternatively, for user-specific emails, in the Main Menu, click File, User Email Address. When accessed this way, only the user-specific email displays. No other users can see emails sent to the address.</p>
+<p> Enter the email settings. Some known settings for different email hosts can be found on <a href="emailerrors.html">Email Errors</a>.</p>
+<h2>Email Address</h2>
+<img src="images/emailAddressUsername.png" width="331" height="45"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Username</b>: The full email address.</li>
+<li><b>Use SSL</b>: Check the box to enable SSL/TLS. Uncheck it to disable SSL/TLS.</li>
+</ul>
+<h2>Email Authentication</h2>
+<img src="images/emailAuthentication.png" width="107" height="87"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Password</b>: Select to see the password box. Only select this option if not using a Gmail or Microsoft account and entering email settings manually. </li>
+<li><b>Gmail</b>: Select to see Gmail options. Gmail account users must utilize this option. See Gmail Authorization below.</li>
+<li><b>Required for Microsoft addresses</b>: Select to see Microsoft options. Microsoft account users must utilize this option. See Microsoft Authorization below.</li>
+</ul>
+<h2>Gmail Authorization</h2>
+<p>This section displays when Gmail is selected as the <i>Email Authentication </i>option.</p>
+<img src="images/emailGmailAuth.png" width="457" height="294"/><p class="MarginBottomZero"><b>Sign in with Google</b>: Click to open Gmail Authorization in a web browser. Follow the prompts in the browser. </p>
+<ul class="MarginBottomGap">
+<li><b>Access Token </b> / <b>Refresh Token</b>: Automatically populated once Gmail Authorization is complete and access is granted.</li>
+<li>Gmail users must have a valid registration key for Open Dental.</li>
+</ul>
+<p><b>Sign Out</b>: Clears saved tokens. </p>
+<p><b>Download incoming emails</b>: Check the box to download incoming emails from Gmail mailbox into the <a href="emailinbox.html">Email Inbox</a>. When checked, Outgoing Email Settings display. When unchecked, Outgoing Email Settings remain blank.</p>
+<p><b>Inbox Search Operators for Filtering</b>: Only available when <i>Download incoming emails</i> is checked. Enter terms to filter which emails are downloaded into Open Dental. For example, <i> is:unread</i> only downloads unread email or <i>is:starred</i> only downloads starred emails from Gmail. </p>
+<p><b>Get unread mail only</b>: Only available when <i>Download incoming emails</i> is checked. Only download unread mail from the inbox.</p>
+<h2>Microsoft Authorization</h2>
+<p>This section displays when Microsoft is selected as the <i>Email Authentication </i>option.</p>
+<img src="images/emailMicrosoftAuth.png" width="389" height="216"/><p class="MarginBottomZero"><b>Sign in with Microsoft</b>: Click to open Microsoft Authorization in a web browser. Follow the prompts in the browser. </p>
+<ul class="MarginBottomGap">
+<li><b>Access Token </b> / <b>Refresh Token</b>: Automatically populated once Microsoft Authorization is complete and access is granted.</li>
+<li>Microsoft users must have a valid registration key for Open Dental.</li>
+</ul>
+<p><b>Sign Out</b>: Clears saved tokens. </p>
+<p><b>Download incoming emails</b>: Check the box to download incoming emails from Microsoft mailbox into the Email Inbox. When checked, Outgoing Email Settings display. When unchecked, Outgoing Email Settings remain blank.</p>
+<h2>Incoming Email Settings</h2>
+<p>Incoming email settings are only required if using the <a href="emailinbox.html">Email Inbox</a>. These settings are only enabled when Password is selected as the <i>Email Authentication </i>option. </p>
+<img src="images/emailIncoming.png" width="410" height="121"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Incoming POP3 Server</b>: Enter the Incoming POP3 Server.</li>
+<li><b>Incoming Port</b>: Enter the incoming port.</li>
+</ul>
+<h2>Outgoing Email Settings</h2>
+<p>Outgoing email settings are required to send email from Open Dental. These settings are only enabled when Password is selected as the <i>Email Authentication </i>option. </p>
+<img src="images/emailOutgoing.png" width="518" height="173"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Outgoing SMTP Server</b>: Enter the outgoing SMTP server. Some known options are listed.</li>
+<li><b>Outing Port</b>: Enter the outgoing port. </li>
+<li><b>Email address of sender</b>: This email address is the display name. Not recognized by all email providers. Appears in the From address instead of the username (full email address), though username credentials are still used. (e.g., If <i>Sparkly Dental &lt;bob@gmail.com&gt;</i> the recipient sees <i>Sparkly Dental</i> as the sender instead of <i>bob@gmail.com</i>.) <ul>
+<li>Do not use this field when utilizing Microsoft Authorization. Doing so may cause an error when sending emails.</li>
+<li>When sending encrypted email, this field is ignored. </li>
+</ul>
+</li>
+</ul>
+<h2>User</h2>
+<p class="MarginBottomZero">This section only displays when: </p>
+<ul class="MarginBottomGap">
+<li>accessed from File, User Email Address. The signed-in user displays but cannot be changed.</li>
+<li>adding a new email address. </li>
+<li>editing an existing email address that is not marked as<i> default </i>or <i>WebMail Notify</i>.</li>
+</ul>
+<img src="images/emailUser.png" width="285" height="31"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>User</b>: The user associated with the email address. Click <b>[...]</b> to select a user. <ul>
+<li>Users must have the <i>securityadmin</i> permission to change the user assigned to an email address.</li>
+</ul>
+</li>
+</ul>
+<h2>Buttons</h2>
+<img src="images/emailButtons.png" width="688" height="32"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Delete</b>: Remove the selected email address from <a href="emailsetup.html">Email Setup</a>. </li>
+<li><b>Certificate</b>: See <a href="emailcerthost.html">Email Certificate Hosting</a>. </li>
+<li>Click <b>Save</b> to close the window and keep changes.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

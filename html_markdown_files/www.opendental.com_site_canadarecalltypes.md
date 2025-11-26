@@ -1,0 +1,48 @@
+# File: ./www.opendental.com/site/canadarecalltypes.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Canada Recall Types</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('canadarecalltypes','canada','countries','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Canada Recall Types</p></div>
+		<div class="GeneralPageContent">
+<p>For <a href="canada.html">Canada</a> users, in the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7mainmenu.html">Main Menu</a>, click Setup, Appointments,<b> Recall Types</b>.</p>
+<img src="images/canadaRecallTypes.png" width="889" height="359"/><p>The above screenshot is an example of how a Canadian office might set up their Recall. </p>
+<p>Add default Recall Types, or reset to default Recall Types by running the <a href="canadaproccodetools.html">Canada Procedure Code Tools</a> for <i>Recall Types</i>.</p>
+<p>For details about the Recall feature, see <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7recalltypes.html">Recall Types</a>.</p>
+		</div>
+	</div>
+</body>
+</html>```

@@ -1,0 +1,54 @@
+# File: ./www.opendental.com/manual232/apischeduleops.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - API ScheduleOps</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('apischeduleops','apispecification','advancedtopics','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/apischeduleops.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/apischeduleops.html" >v24.2</option><option value="https://www.opendental.com/manual241/apischeduleops.html" >v24.1</option><option value="https://www.opendental.com/manual233/apischeduleops.html" >v23.3</option><option value="https://www.opendental.com/manual232/apischeduleops.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/apischeduleops.html" >v23.1</option><option value="https://www.opendental.com/manual224/apischeduleops.html" >v22.4</option><option value="https://www.opendental.com/manual223/apischeduleops.html" >v22.3</option><option value="https://www.opendental.com/manual222/apischeduleops.html" >v22.2</option><option value="https://www.opendental.com/manual221/apischeduleops.html" >v22.1</option><option value="https://www.opendental.com/manual214/apischeduleops.html" >v21.4</option><option value="https://www.opendental.com/manual213/apischeduleops.html" >v21.3</option><option value="https://www.opendental.com/manual212/apischeduleops.html" >v21.2</option><option value="https://www.opendental.com/manual211/apischeduleops.html" >v21.1</option><option value="https://www.opendental.com/manual205/apischeduleops.html" >v20.5</option><option value="https://www.opendental.com/manual204/apischeduleops.html" >v20.4</option><option value="https://www.opendental.com/manual203/apischeduleops.html" >v20.3</option><option value="https://www.opendental.com/manual202/apischeduleops.html" >v20.2</option><option value="https://www.opendental.com/manual201/apischeduleops.html" >v20.1</option><option value="https://www.opendental.com/manual194/apischeduleops.html" >v19.4</option><option value="https://www.opendental.com/manual193/apischeduleops.html" >v19.3</option><option value="https://www.opendental.com/manual192/apischeduleops.html" >v19.2</option><option value="https://www.opendental.com/manual191/apischeduleops.html" >v19.1</option><option value="https://www.opendental.com/manual184/apischeduleops.html" >v18.4</option><option value="https://www.opendental.com/manual183/apischeduleops.html" >v18.3</option><option value="https://www.opendental.com/manual182/apischeduleops.html" >v18.2</option><option value="https://www.opendental.com/manual181/apischeduleops.html" >v18.1</option><option value="https://www.opendental.com/manual174/apischeduleops.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>API ScheduleOps</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="../site/apispecification.html">API Specification</a></p>
+<p>A scheduleop links one schedule block to one operatory. A schedule block can be linked to one or more operatories. A schedule can also not have any scheduleops.</p>
+<h2>ScheduleOps GET</h2>
+<p>Version Added: 23.2.27</p>
+<p>Gets a list of scheduleops optionally filtered by either <b>ScheduleNum</b> or <b>OperatoryNum</b>.</p>
+<p><b>Parameters:</b> All optional.<br/></p>
+<p><b>ScheduleNum:</b> FK to schedule.ScheduleNum.<br/><b>OperatoryNum:</b> FK to operatory.OperatoryNum.<br/></p>
+<p><b>Example Requests:</b><br/> GET /scheduleops<br/> GET /scheduleops?ScheduleNum=1093<br/> GET /scheduleops?OperatoryNum=14<br/></p>
+<p><b>Example Response:</b><br/><span class="codeblock"> [<br/> {<br/>  "ScheduleOpNum": 156,<br/>  "ScheduleNum": 1092,<br/>  "OperatoryNum": 12<br/>  },<br/>  {<br/>  "ScheduleOpNum": 157,<br/>  "ScheduleNum": 1092,<br/>  "OperatoryNum": 13<br/>  },<br/>  {<br/>  "ScheduleOpNum": 158,<br/>  "ScheduleNum": 1092,<br/>  "OperatoryNum": 14<br/>  },<br/>  {<br/>  "ScheduleOpNum": 159,<br/>  "ScheduleNum": 1093,<br/>  "OperatoryNum": 12<br/>  },<br/>  {<br/>  "ScheduleOpNum": 160,<br/>  "ScheduleNum": 1093,<br/>  "OperatoryNum": 13<br/>  },<br/>  {<br/>  "ScheduleOpNum": 161,<br/>  "ScheduleNum": 1093,<br/>  "OperatoryNum": 14<br/>  },<br/> etc...<br/> ]<br/></span></p>
+<p>200 OK<br/> 400 BadRequest (with explanation)<br/> 404 NotFound (with explanation)<br/></p>
+</div>
+</div>
+</body>
+</html>```

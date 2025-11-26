@@ -1,0 +1,124 @@
+# File: ./www.opendental.com/site/ehrmodified2.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: EHR Modified Stage 2</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>EHR Modified Stage 2</h1>
+		</div>
+		<div id="Content">
+<p><span style="color:red">On October 1, 2018, CMS released a new Final Rule for the EHR/PI Incentive Program. The rule requires the use of 2015 edition certified electronic health record technology (CEHRT) to attest for Program Interoperability Stage 3 beginning in Calendar Year 2019. Open Dental has decided not to develop a certified 2015 edition software and will not be supporting attestation for years after 2018.</span></p>
+<p>A part of the <a href="ehrlicense.html">EHR Incentive Program</a> for program years 2015 - 2018 is demonstrating meaningful use (MU) of certified EHR software by meeting thresholds for a number of objectives.</p>
+<p>2017 and 2018 general MU requirements:</p>
+<ol>
+<li>All providers will report on a single set of 10 objectives (called Modified Stage 2) and 9 clinical quality measures.</li>
+<li>MU reporting period length: A minimum of 90 continuous days between Jan. 1 and Dec. 31 in the designated program year.</li>
+</ol>
+<p><a href="https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms/Downloads/TableofContents_EP_Medicaid_ModifiedStage2.pdf">2017 Specification Sheets </a> (PDF)</p>
+<p><a href="https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms/Downloads/TableofContents_EP_Medicaid_ModifiedStage2_2018.pdf">2018 Specification Sheets</a>(PDF)</p>
+<p>Before you begin:</p>
+<ul>
+<li>See <a href="meaningfulusebegin.html">EHR: Before You Begin a Reporting Period</a> for recommended steps to follow prior to beginning a reporting period.</li>
+<li>See <a href="ehrgettingstarted.html">EHR Setup</a>: Several items must be configured before you start a reporting period.</li>
+<li><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7ehrdashboard1.html">EHR Dashboard</a>: A central location to enter patient EHR data.</li>
+</ul>
+<h2>Modified Stage 2 objectives</h2>
+<p>There are 10 total objectives to report.</p>
+<ol>
+<li><a href="ehrprotecthealthinfo.html">EHR Objective 1: Protect Electronic Health Information</a>: Conduct a Security Risk Analysis.</li>
+<li><a href="ehrcds.html">EHR Objective 2: Clinical Decision Support ( CDS )</a></li>
+<li><a href="ehrcpoe.html">EHR Objective 3: Computerized Provider Order Entry (CPOE)</a></li>
+<li><a href="ehreprescribing.html">EHR Objective 4: ePrescribing</a></li>
+<li><a href="ehrhealthinfoexchange.html">EHR Objective 5: Health Information Exchange</a> (Summaries of Care)</li>
+<li><a href="ehredresources.html">EHR Objective 6: Patient-Specific Education</a></li>
+<li><a href="ehrmedicationreconcile.html">EHR Objective 7: Medication Reconciliation</a></li>
+<li><a href="ehreaccess.html">EHR Objective 8: Patient Electronic Access (VDT)</a></li>
+<li><a href="ehrsecuremsg.html">EHR Objective 9: Secure Messaging</a></li>
+<li><a href="ehrpublichealth.html">EHR Objective 10: Public Health Reporting</a></li>
+</ol>
+<div class="Note">Note: In October 2015, CMS simplified and reduced the measures you need to report on. Thus, in some areas of the software you may notice information that is not needed when you attest.</div>
+<h2>Clinical Quality Measures (CQMs)</h2>
+<p>See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7ehrcqm.html">EHR Clinical Quality Measures</a>.</p>
+<h2>Measures from previous stages</h2>
+<p>Some measures from previous stages do not need to be reported on anymore. However, the data will be used in measures you will report on, so you still need to enter information.</p>
+<table class="simpletable">
+<tr>
+<th style="width:33%"></th>
+<th style="width:33%">Task</th>
+<th style="width:33%">Where information is used</th>
+</tr>
+<tr>
+<td>Demographics</td>
+<td><p>Record patient demographics on the Edit Patient Information window (gender, date of birth, preferred language, race, ethnicity)</p>
+</td>
+<td>CDS, patient-specific education resources, summaries of care, public health reporting</td>
+</tr>
+<tr>
+<td>Vital Signs</td>
+<td> Enter <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7vitalsignsenter.html">EHR Vital Signs</a> and Interventions</td>
+<td>CQMs</td>
+</tr>
+<tr>
+<td>Smoking Status</td>
+<td> Assess <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7smokingenter.html">EHR Tobacco</a></td>
+<td>CQMs</td>
+</tr>
+<tr>
+<td>Problems</td>
+<td>Maintain <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7problempatient.html">Problems</a></td>
+<td>CDS, patient-specific education, summaries of care, CQMs</td>
+</tr>
+<tr>
+<td>Medications</td>
+<td>Maintain <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7medicationspatient.html">Medications</a></td>
+<td>CDS, patient-specific education resources, summaries of care, CQMs, drug interaction checks</td>
+</tr>
+<tr>
+<td>Medication Allergies</td>
+<td>Maintain <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7allergiespatient.html">Allergies</a></td>
+<td>CDS, patient-specific education resources, summaries of care, drug interaction checks, CQMs</td>
+</tr>
+</table>
+
+</div>	
+	</div>
+</body>
+</html>```

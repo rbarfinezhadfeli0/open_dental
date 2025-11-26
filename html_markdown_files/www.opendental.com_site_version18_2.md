@@ -1,0 +1,153 @@
+# File: ./www.opendental.com/site/version18_2.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: Version 18.2</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>Version 18.2</h1>
+		</div>
+		<div id="Content">
+<p>See <a href="versions.html">Versions</a></p>
+<p>Version 18.2 was released on 09/21/2018. EHR certified 2014 edition.</p>
+<p>.NET 4.5.2 is required. See <a href="dotnet.html">.NET</a> to upgrade (Windows 7 users).</p>
+<h2>Major Changes</h2>
+<ul>
+<li>Enter a term date for a provider to restrict sending claims or prescriptions, and scheduling or completing appointments. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7providerseditwindow.html">Provider</a></li>
+<li>New Patient Status Setter tool to inactivate patients that have not been in for a specified time. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7patientstatussetter.html">Patient Status Setter</a></li>
+<li>ACH option added for Pay Simple. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paysimpleaddcard.html">PaySimple Add Card</a></li>
+<li>Income transfer manager. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7incometransfer.html">Income Transfer</a></li>
+<li>2018 ICD 10 codes. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7icdcodes.html">ICD-10 Codes</a></li>
+<li>Integration with DentalXChange Attachment Service. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7dentalxchangeattachmentservice.html">DentalXChange Attachment</a></li>
+</ul>
+<br><h2>Changes by Category</h2>
+<p class="MarginBottomZero"><b>Account Module</b></p>
+<ul class="MarginBottomGap">
+<li>ACH option added for Pay Simple. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paysimpleaddcard.html">PaySimple Add Card</a></li>
+<li>Closing a payment plan will no longer remove remaining future adjustments. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paymentplanclose.html">Close Payment Plans</a></li>
+<li>Provider column added to Payment Plan Procedures and Credits window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paymentplantxcredits.html">Payment Plan Procedures and Credits</a></li>
+<li>Warning occurs when a procedure's provider is different from the payment plan's provider. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paymentplanpatient.html">Old Payment Plan</a></li>
+<li> Speed enhancements. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7account.html">Account Module</a><br></li>
+<li>Preselect specific payment plan charges or adjustments when entering a new payment. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7payment.html">Payment</a></li>
+<li>XCharge, PayConnect, and PaySimple can be enabled at the same time. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paymentpatientcreditcard.html">Credit Card Payment</a></li>
+<li><i>Prevent saving new cards</i> option determines whether new card information can be saved and whether new transactions can be processed. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7xchargesetup.html">XCharge Setup</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7payconnectsetup.html">PayConnect Setup</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paysimplesetup.html">PaySimple Setup</a></li>
+<li> Credit card security code (CVV) and zip code can be entered on PayConnect transactions saved tokens. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7payconnectpaymentwindow.html">PayConnect Window</a></li>
+<li> Option to automate recurring charges. <a href="https://www.opendental.com/manual182/modulesetupaccount.html">https://www.opendental.com/manual182/modulesetupaccount.html</a></li>
+<li>Recurring charges will now stop when Open Dental is shut down. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7recurringcharges.html">CC Recurring Charges</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Appointments</b></p>
+<ul class="MarginBottomGap">
+<li>Add NetProduction to an appointment view to show Daily Production in the Appointments module. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7appointmentvieweditwindow.html">Appointment View Edit</a></li>
+<li>Speed enhancements for clinic appointment search. </li>
+<li>Search results limited to providers on the schedule for the selected appointment view. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7apptpinboard.html">Pinboard</a></li>
+<li> Add broken appointments to the ASAP list. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7apptbreak.html">Break Appointment</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7asaplist.html">ASAP List</a></li>
+<li>Set a default date range in the unscheduled list. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7unscheduled.html">Unscheduled List</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Clinics</b></p>
+<ul class="MarginBottomGap">
+<li><i>Unrestricted Search</i> permission allows users who are restricted to a specific clinic to search all patients in the database. They can also change a patient's clinic from the Edit Patient Information grid. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>Time required to generate statements for multiple clinics has been reduced. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7billinglist.html">Billing List</a></li>
+<li>Clinic filter when retrieving web forms. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webformsretrieve.html">Web Forms Retrieve</a></li>
+<li>Limit to Ops in Clinic option added to Schedule Setup window. Quickly selects all providers and employees associated with the selected clinic. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7schedule.html">Schedule Setup</a></li>
+<li>Options to <i>Clear All Blockouts for Day, Op only, Limit to Ops in Clinic Filter, </i> or <i>Clear All Blockouts for Day, Clinic only</i> added to right-click menu on Appointments. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7blockouts.html">Blockouts</a></li>
+</ul>
+<p class="MarginBottomZero"><b>eServices</b></p>
+<ul class="MarginBottomGap">
+<li>Patients cannot be sent more than one eConfirmation text in the same day. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7econfirmationsetup.html">eConfirmations</a></li>
+<li>When logging on to the Mobile Web, Clinic defaults to the clinic last active when the user logged off or closed Open Dental. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7mobilewebuse.html">Mobile Web Home</a></li>
+<li>Option to enable/disable electronic signatures on all web forms. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webformsupload.html">Web Form Setup</a></li>
+<li>Option to enable/disable typed signatures on certain web forms by modifying the URL. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webformsupload.html">Web Form Setup</a></li>
+<li>Option to exclude a patient from eConfirmations and eReminders. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7patientedit.html">Edit Patient Information</a></li>
+<li>Time slot finding logic enhanced for the Web Sched appointment search.</li>
+<li>Web Sched Recalls can now be sent out for custom recall types. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webschedrecallsetup.html">Web Sched Recall</a></li>
+<li>Include an opt-out statement in eService emails that includes practice/clinic address and instructions to unsubscribe. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7emailsetup.html">Email Setup</a></li>
+<li>When using a StatementURL, patient will be directed to the Patient Portal sign-in window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7portalpaymentsbypatient.html">Payment Portal</a></li>
+<li>Appointment time patterns are preserved for appointments created from the mobile web feature. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7mobilewebuseops.html">Mobile Web Operatories</a></li>
+<li>Interface changes to the Patient Portal setup tab. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7portalhostedbyod.html">Patient Portal</a></li>
+<li>Option to add a clinic ID to the patient portal URL. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7portalhostedbyod.html">Patient Portal</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Feature Requests</b></p>
+<ul class="MarginBottomGap">
+<li>Comments column added to Feature Request window.<a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7featurerequests.html">Feature Requests</a></li>
+<li>Version Completed column added to Feature Request window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7featurerequests.html">Feature Requests</a></li>
+<li>Filter Feature Request window by Mine and My Votes. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7featurerequests.html">Feature Requests</a></li>
+<li>Bounty $ field removed from the Feature Request window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7featurerequests.html">Feature Requests</a></li>
+<li>Once a request is submitted, the Description and Details fields can no longer be edited.<a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7featurerequests.html">Feature Requests</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Insurance</b></p>
+<ul class="MarginBottomGap">
+<li>Additional frequency limitation categories. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7insfrequencylimitations.html">Frequency Limitations</a></li>
+<li>Frequency Checking tab in Treatment Plan Module Preferences. Set the codes that are affected by each frequency limitation category. <a href="https://www.opendental.com/manual182/modulesetuptreat.html">Treatment Plan Module Preferences</a></li>
+<li>Sealant Through Age option added to Benefit Info window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7benefitinfo.html">Benefits</a></li>
+<li>Mark fields on the Edit Insurance Payment as required. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7requiredfields.html">Required Fields</a></li>
+<li>New preference to allow, warn, or prevent users from creating claims with $0 procedures. <a href="https://www.opendental.com/manual182/modulesetupaccount.html">Account Module Preferences</a></li>
+<li>Option to not calculate PPO write-offs on downgrages. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7insplan.html">Insurance Plan</a></li>
+<li>Show HTML view panel for EDS eligibility requests (271s). <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7ebenefits.html">Electronic Eligibility and Benefits</a></li>
+<li>Prevent sending secondary insurance claims by carrier or by insurance plan. <i>Do not send claims electronically</i> checkbox on the Edit Carrier window and Edit Insurance Plan window changed to Send Electronically dropdown with three options (Send claims electronically, Don't send claims electronically, Don't send secondary claims electronically). <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7insplan.html">Insurance Plan</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7carriers.html">Carriers</a></li>
+<li>Waiting Period benefit type. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7benefitinfo.html">Benefits</a></li>
+<li>Print button added to the ERA procedure paid window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimseraeobdetails.html">EOB Claim Details</a></li>
+<li>Preauthorization estimates update when ERA835 preauthorizations are processed. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7preauth.html">Preauthorization</a></li>
+<li>ERAs check the procedure statuses on a claim when determining if a supplemental payment is needed <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7era.html">ERA</a></li>
+<li>When selecting a subscriber, patient status shows next to patient name. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7insadd.html">Add Insurance</a></li>
+<li>Add a discount plan indicator to an appointment view and/or appointment bubble. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7appointmentvieweditwindow.html">Appointment View Edit</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7displayfields.html">Display Fields</a><br></li>
+<li>Preference added to set how blank entries in fixed benefit fee schedules are handled. <a href="https://www.opendental.com/manual182/modulesetupfamily.html">Family Module Preferences</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7planppofixed.html">PPO Fixed Benefit Insurance Plan</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Reports</b></p>
+<ul class="MarginBottomGap">
+<li>Group and fitler the Insurance Aging Report by carrier or group name. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportinsaging.html">Insurance Aging Report</a></li>
+<li> Option to only view preauthorized claims in the Outstanding Insurance Claims report. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportoutins.html">Outstanding Insurance Claims Report</a></li>
+<li>Procedure Codes report renamed to Procedure Codes - Fee Schedules. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportprocedurecodes.html">Procedure Codes - Fee Schedules Report</a></li>
+<li>Procedures Not Billed to Insurance report includes a right-click <i>Go to Account</i> option. Report can stay open while working in other windows. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportprocsnotbilledins.html">Procedures Not Billed to Insurance Report</a></li>
+<li>PayPlan Credit and Production - PayPlanCredits columns added to Receivables Breakdown report when the Account Module Preference, Pay Plan Charge Logic is set to <i>Age Credits and Debits</i>. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportreceivablesbreakdown.html">Receivables Breakdown Report</a>, <a href="https://www.opendental.com/manual182/modulesetupaccount.html">Account Module Preferences</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Supply Inventory</b></p>
+<ul class="MarginBottomGap">
+<li>Track shipping charges in the Supply Orders window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7supplyorders.html">Supply Orders</a></li>
+<li>Interface changes to the Supply Orders window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7supplyorders.html">Supply Orders</a></li>
+<li>Quickly add all supplies on the shopping list to a new or pending order. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7supplies.html">Supplies</a></li>
+<li>Track who placed an order in the Supply Orders window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7supplyorders.html">Supply Orders</a></li>
+<li>Supply inventory auto-calculates quantity when adding to order. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7supplyorders.html">Supply Orders</a></li>
+</ul>
+<p><b>Miscellaneous</b><br> HTML formatted emails added to send emails with embedded images, tables, different text color, fonts, headings, and links. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7emailhtml.html">HTML Email</a><br> Enter a term date for a provider to restrict sending claims, sending prescriptions, and scheduling or completing appointments. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7providerseditwindow.html">Provider</a><br> Stop Database Maintenance button finishes current DBM and cancels the queued tools. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7databasemaintenance.html">Database Maintenance</a><br>  Some changes made by the database maintenance tool are tracked in the table dbmlog. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7databasemaintenance.html">Database Maintenance</a><br> 2018 ICD 10 codes. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7icdcodes.html">ICD-10 Codes</a><br> Improved billing summary window to include billing error details. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7billinglist.html">Billing List</a><br>  Add time card rules that prevent employees from clocking in before a designated time. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7timecardsetup.html">Time Card Setup</a><br><i>Allow paid 30 minute breaks</i> preference determines whether break time is considered paid or unpaid, and whether the Break option is available in the Time Clock. <a href="https://www.opendental.com/manual182/modulesetupmanage.html">Manage Module Preferences</a><br>  Removed Oracle Database Type label and list box from the Choose Database window. <a href="oracle.html">Oracle</a><br>  Exam sheet enhancement to warn users before overwriting changes others have made while the window is open. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7examsheets.html">Exam Sheet</a><br> EstPatientPortion added as an output text field for routing slips. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7outputtextfields.html">Output Text Field Names</a><br> EstPatientPortion added as an available field for the Edit Appointment window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7displayfields.html">Display Fields</a><br> referral.nameL added as an output text field for Referral Letters. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7outputtextfields.html">Output Text Field Names</a><br>  Alphabetize quick paste notes within a category. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7quickpastenotessetup.html">Quick Paste Notes Setup</a><br>  Diagnostics button added to About window to show user general system settings. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7aboutwindow.html">About</a><br>  Accounting entries are no longer created for income transfers when Auto Payment Entries is set up. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7transactionhistory.html">Accounting Transactions</a><br>  Receive a warning when provider schedules overlap. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7schedule.html">Schedule Setup</a><br> Minor changes to the Copy/Paste section in Schedule Setup. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7schedule.html">Schedule Setup</a><br>  Search progress notes for a specific word or phrase. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7showtabchart.html">Show Chart Views</a><br>  Reorder or alphabetize CEMT connections. <a href="cemtconnections.html">CEMT Connections</a><br>  Additional security checks added to the CEMT tool. <a href="cemtsecurity.html">CEMT Security</a><br>  Security permissions reorganized in the Security window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7security.html">Security</a><br>  Enforce Clinic Specialty option added to Appointments Module Preferences. <a href="https://www.opendental.com/manual182/modulesetupappts.html">Appointment Module Preferences</a><br> Option to show patient specialty in the main title bar and patient select area of the Account module. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7miscsetup.html">Miscellaneous Setup</a><br> Specialty added as available field for the Select Patient window and Chart Patient Information areas. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7displayfields.html">Display Fields</a><br> Days of supply in the Edit Rx window can now handle partial days. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7rx.html">Rx / Prescription</a><br> Option to Show patient account numbers in the Transworld AR Manager. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7tsicollections.html">TSI Collections</a><br> Last Proc added as an available column for the Transworld AR Manager grids (ArManagerSentGrid, ArManagerUnsentGrid). <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7displayfields.html">Display Fields</a><br> Audit trail entry when a user changes a user group's permissions or changes a user's group. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissionssecurityadmin.html">"Security Admin" Permission</a><br> Integration with DentalXChange Attachment Service. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7dentalxchangeattachmentservice.html">DentalXChange Attachment</a></p>
+
+</div>	
+	</div>
+</body>
+</html>```

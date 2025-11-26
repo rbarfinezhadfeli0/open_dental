@@ -1,0 +1,73 @@
+# File: ./www.opendental.com/manual/imagingdevices.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Imaging Devices</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('imagingdevices','+images','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/imagingdevices.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/imagingdevices.html" >v24.2</option><option value="https://www.opendental.com/manual241/imagingdevices.html" >v24.1</option><option value="https://www.opendental.com/manual233/imagingdevices.html" >v23.3</option><option value="https://www.opendental.com/manual232/imagingdevices.html" >v23.2</option><option value="https://www.opendental.com/manual231/imagingdevices.html" >v23.1</option><option value="https://www.opendental.com/manual224/imagingdevices.html" >v22.4</option><option value="https://www.opendental.com/manual223/imagingdevices.html" >v22.3</option><option value="https://www.opendental.com/manual222/imagingdevices.html" >v22.2</option><option value="https://www.opendental.com/manual221/imagingdevices.html" >v22.1</option><option value="https://www.opendental.com/manual214/imagingdevices.html" >v21.4</option><option value="https://www.opendental.com/manual213/imagingdevices.html" >v21.3</option><option value="https://www.opendental.com/manual212/imagingdevices.html" >v21.2</option><option value="https://www.opendental.com/manual211/imagingdevices.html" >v21.1</option><option value="https://www.opendental.com/manual205/imagingdevices.html" >v20.5</option><option value="https://www.opendental.com/manual204/imagingdevices.html" >v20.4</option><option value="https://www.opendental.com/manual203/imagingdevices.html" >v20.3</option><option value="https://www.opendental.com/manual202/imagingdevices.html" >v20.2</option><option value="https://www.opendental.com/manual201/imagingdevices.html" >v20.1</option><option value="https://www.opendental.com/manual194/imagingdevices.html" >v19.4</option><option value="https://www.opendental.com/manual193/imagingdevices.html" >v19.3</option><option value="https://www.opendental.com/manual192/imagingdevices.html" >v19.2</option><option value="https://www.opendental.com/manual191/imagingdevices.html" >v19.1</option><option value="https://www.opendental.com/manual184/imagingdevices.html" >v18.4</option><option value="https://www.opendental.com/manual183/imagingdevices.html" >v18.3</option><option value="https://www.opendental.com/manual182/imagingdevices.html" >v18.2</option><option value="https://www.opendental.com/manual181/imagingdevices.html" >v18.1</option><option value="https://www.opendental.com/manual174/imagingdevices.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Imaging Devices</p></div>
+<div class="GeneralPageContent">
+<p>Add sensors to be used with the Capture button in the Imaging Module.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Imaging, Devices.</p>
+<img src="images/imagingDevices.png" width="880" height="359"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Add</b>: Click to add a new device.</li>
+<li><b>Up / Down</b>: Highlight a device and click to move it up or down the list.</li>
+</ul>
+<p>Click <b>Add</b> to add a new device, or double-click a device to edit.</p>
+<img src="images/imagingDeviceEdit.png" width="560" height="268"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Description</b>: Enter a description for the device. Displays in the <a href="images.html">Imaging Module</a>.</li>
+<li><b>Computer Name</b>: Enter the computer name connected with this device. Leave blank to make available on all workstations. <ul>
+<li><b>This</b>: Click to quickly enter the current computer for this device. </li>
+</ul>
+</li>
+<li><b>Device Type</b>: Select a device type. <ul>
+<li>Twain Radiograph: Individual sensors. These sensors can still capture a series of images, but each image is displayed before the next one is acquired. </li>
+<li>Twain Multi: For use with sensors that cannot send individual images (e.g., phosphor plate systems, AT ScanX). As only groups of images are captured and displayed, a mount must be used for capture.</li>
+</ul>
+</li>
+<li><b>Twain Name</b>: Select the TWAIN device from the dropdown menu.</li>
+<li><b>Show Twain UI</b>: Check to show the options window for the specified TWAIN driver.</li>
+</ul>
+<p><div class="Note">Note: Only 32-bit TWAIN drivers are supported.</div></p>
+<h2>Troubleshooting</h2>
+<p>If errors or issues occur with an imaging device, it is useful to narrow down where the issue is originating. </p>
+<p>If issues occur, start by downloading the third-party application, <a href="https://github.com/twain/twain-toolkit/releases/tag/v2.5.0" target="_blank"> Twacker </a>. Twacker allows users to test the TWAIN drivers on the workstation outside of Open Dental. If the same errors occur when utilizing the Twacker application, then the issue lies with the device or the device driver. When this happens, we recommend reinstalling the device driver. If the device driver is still problematic, reach out to an IT Professional or the device manufacturer to determine the cause. </p>
+<p>If the issue does not occur within Twacker, but continues to occur in Open Dental, contact Open Dental Support for troubleshooting assistance. </p>
+<p>Dexis sensors using GxTwain drivers require the <i>Description</i> field in the Edit Imaging Device window to include the word "Dexis", otherwise xray images are inserted into mounts in reverse order.</p>
+</div>
+</div>
+</body>
+</html>```

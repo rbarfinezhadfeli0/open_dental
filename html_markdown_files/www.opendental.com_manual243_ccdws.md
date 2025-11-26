@@ -1,0 +1,71 @@
+# File: ./www.opendental.com/manual243/ccdws.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - CCDWS Service</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('ccdws','canada','countries','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/ccdws.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/ccdws.html" >v24.2</option><option value="https://www.opendental.com/manual241/ccdws.html" >v24.1</option><option value="https://www.opendental.com/manual233/ccdws.html" >v23.3</option><option value="https://www.opendental.com/manual232/ccdws.html" >v23.2</option><option value="https://www.opendental.com/manual231/ccdws.html" >v23.1</option><option value="https://www.opendental.com/manual224/ccdws.html" >v22.4</option><option value="https://www.opendental.com/manual223/ccdws.html" >v22.3</option><option value="https://www.opendental.com/manual222/ccdws.html" >v22.2</option><option value="https://www.opendental.com/manual221/ccdws.html" >v22.1</option><option value="https://www.opendental.com/manual214/ccdws.html" >v21.4</option><option value="https://www.opendental.com/manual213/ccdws.html" >v21.3</option><option value="https://www.opendental.com/manual212/ccdws.html" >v21.2</option><option value="https://www.opendental.com/manual211/ccdws.html" >v21.1</option><option value="https://www.opendental.com/manual205/ccdws.html" >v20.5</option><option value="https://www.opendental.com/manual204/ccdws.html" >v20.4</option><option value="https://www.opendental.com/manual203/ccdws.html" >v20.3</option><option value="https://www.opendental.com/manual202/ccdws.html" >v20.2</option><option value="https://www.opendental.com/manual201/ccdws.html" >v20.1</option><option value="https://www.opendental.com/manual194/ccdws.html" >v19.4</option><option value="https://www.opendental.com/manual193/ccdws.html" >v19.3</option><option value="https://www.opendental.com/manual192/ccdws.html" >v19.2</option><option value="https://www.opendental.com/manual191/ccdws.html" >v19.1</option><option value="https://www.opendental.com/manual184/ccdws.html" >v18.4</option><option value="https://www.opendental.com/manual183/ccdws.html" >v18.3</option><option value="https://www.opendental.com/manual182/ccdws.html" >v18.2</option><option value="https://www.opendental.com/manual181/ccdws.html" >v18.1</option><option value="https://www.opendental.com/manual174/ccdws.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>CCDWS Service</p></div>
+<div class="GeneralPageContent">
+<p>For <a href="canada.html">Canada</a> the CCDWS service can be used to submit claims to Insurance Carriers.</p>
+<p>Open Dental is a CCDWS certified software. The CCDWS service should only be installed for users sending claims through <a href="claimstream.html">Claimstream</a> and non-dentist providers sending claims through <a href="itrans20.html">ITRANS 2.0</a>.</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Using a Windows administrator account on the server, download CCDWS from <a href="https://ccdws.hardersoft.com/" target="_blank">https://ccdws.hardersoft.com/</a>. </li>
+<li>Click <i>ccdws-latest-win-install.exe</i> to download it.</li>
+<li>Open the downloaded file location, right-click the CCDWS installer and select <i>Run as administrator</i>. <ul>
+<li>If Microsoft Defender blocks the installation, click More Info, then Run Anyway.</li>
+</ul>
+</li>
+<li>Click <b>Next</b>.<br/><img src="images/ccdws1.gif" width="499" height="387" class="ImageInParagraph"/></li>
+<li>Check <i>I accept the terms of the license agreement</i>, then click <b>Next</b>.<br/><img src="images/ccdws2.gif" width="499" height="387" class="ImageInParagraph"/></li>
+<li>Click <b>Next</b>.<br/><img src="images/ccdws3.gif" width="499" height="387" class="ImageInParagraph"/></li>
+<li>Keep the install path at<b> c:\ccd</b>, then click <b>Next</b>.<br/><img src="images/ccdws4.gif" width="499" height="387" class="ImageInParagraph"/></li>
+<li>Ensure <i>Complete</i> is checked, then click <b>Next</b>.<br/><img src="images/ccdws5.gif" width="499" height="387" class="ImageInParagraph"/></li>
+<li>Enter the Service User Account and password. For most users, this can be any user account. For users with CDA Digital IDs (i.e., provider certificates), this is the user that the certificates are installed to. Then click <b>Next</b>. </li>
+<img src="images/ccdws6.gif" width="499" height="387"/><br/><div class="Note">Note:  Domain, user, and password must be entered correctly for the service to install. If not using a domain, enter the server name instead (e.g., server\user or .\user). </div>
+<li>Leave the REST Listener port entered as 9000, then click <b>Next</b>. <br/><img src="images/ccdws11.gif" width="499" height="387" class="ImageInParagraph"/></li>
+<li>Click <b>Next</b>.<br/><img src="images/ccdws7.gif" width="499" height="387" class="ImageInParagraph"/></li>
+<li>When prompted to view the CCDWS configuration file, click <b>No</b>.<br/><img src="images/ccdws9.gif" width="362" height="159" class="ImageInParagraph"/></li>
+<li>Ensure <i>Run CCDWS now</i> is checked, then click <b>Finish</b>.<br/><img src="images/ccdws10.gif" width="499" height="387" class="ImageInParagraph"/><br/></li>
+<li>Share the CCD folder. </li>
+<li><i>For Claimstream users</i>: Create and send a test claim. <br/><i>For ITRANS users</i>: Contact <a href="../contact.html">Open Dental Support</a> for an updated CCDWS.ini configuration file and Telus vendor certificate. </li>
+<li>Restart the CCDWS service for changes to take affect.</li>
+</ol>
+<h2>Troubleshooting</h2>
+<p>If the prompt in Step 12 does not appear, there may be an issue with the credentials. Re-run the installer as administrator, and when prompted for credentials (step 9), leave them blank and click Next. When the installation is complete, find CCDWS in Services and go to Properties. Re-enter the credentials under <i>This Account</i> in the Log On tab.</p>
+</div>
+</div>
+</body>
+</html>```

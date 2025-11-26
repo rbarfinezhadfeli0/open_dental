@@ -1,0 +1,62 @@
+# File: ./www.opendental.com/manual232/byodsees.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - BYOD: What Patient Sees</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('byodsees','eclipboardsetup','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/byodsees.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/byodsees.html" >v24.2</option><option value="https://www.opendental.com/manual241/byodsees.html" >v24.1</option><option value="https://www.opendental.com/manual233/byodsees.html" >v23.3</option><option value="https://www.opendental.com/manual232/byodsees.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/byodsees.html" >v23.1</option><option value="https://www.opendental.com/manual224/byodsees.html" >v22.4</option><option value="https://www.opendental.com/manual223/byodsees.html" >v22.3</option><option value="https://www.opendental.com/manual222/byodsees.html" >v22.2</option><option value="https://www.opendental.com/manual221/byodsees.html" >v22.1</option><option value="https://www.opendental.com/manual214/byodsees.html" >v21.4</option><option value="https://www.opendental.com/manual213/byodsees.html" >v21.3</option><option value="https://www.opendental.com/manual212/byodsees.html" >v21.2</option><option value="https://www.opendental.com/manual211/byodsees.html" >v21.1</option><option value="https://www.opendental.com/manual205/byodsees.html" >v20.5</option><option value="https://www.opendental.com/manual204/byodsees.html" >v20.4</option><option value="https://www.opendental.com/manual203/byodsees.html" >v20.3</option><option value="https://www.opendental.com/manual202/byodsees.html" >v20.2</option><option value="https://www.opendental.com/manual201/byodsees.html" >v20.1</option><option value="https://www.opendental.com/manual194/byodsees.html" >v19.4</option><option value="https://www.opendental.com/manual193/byodsees.html" >v19.3</option><option value="https://www.opendental.com/manual192/byodsees.html" >v19.2</option><option value="https://www.opendental.com/manual191/byodsees.html" >v19.1</option><option value="https://www.opendental.com/manual184/byodsees.html" >v18.4</option><option value="https://www.opendental.com/manual183/byodsees.html" >v18.3</option><option value="https://www.opendental.com/manual182/byodsees.html" >v18.2</option><option value="https://www.opendental.com/manual181/byodsees.html" >v18.1</option><option value="https://www.opendental.com/manual174/byodsees.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>BYOD: What Patient Sees</p></div>
+<div class="GeneralPageContent">
+<p>Bring Your Own Device (BYOD) allows patients to check-in and fill out forms via the eClipboard app.</p>
+<p>On an Android or iOS tablet, patients launch the <a href="eclipboardsetup.html">eClipboard</a> app.</p>
+<img src="images/byodSeesCheckIn.png" width="307" height="627"/><p class="MarginBottomZero">Patients receive a text message, either manually sent by the office, or via <a href="arrivalssetup.html">Arrivals</a>. They will follow the link to open the above web page.  </p>
+<ul class="MarginBottomGap">
+<li>If eClipboard is not already installed on the patient's device, they tap the corresponding link to their device to install it. Once installed, patients should come back to the page shown above and tap <b>Check-In</b>.</li>
+<li>For iOS users, if eClipboard is already installed on the patient's device, they tap <b>Check-In</b> to automatically launch eClipboard.</li>
+<li>For Android users, if eClipboard is already installed on the patient's device, they are instantly rerouted to the app. </li>
+<li>If <i>Allow payment when patient is checking in </i> is enabled in <a href="preferences.html">Preferences</a>, the <a href="eclipboardpayment.html">eClipboard: Payment</a> feature can be utilized using BYOD.</li>
+</ul>
+<h2>App Flow</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>A 6-digit authentication code is sent to the patient via text message. The patient is prompted to enter the code. </li>
+<li>Once entered, the patient taps <b>Validate</b>.</li>
+<li>The Check-In Checklist page opens.</li>
+<li>The patient completes each item.</li>
+<li>Once all items are complete, the patient taps <b>Submit</b>.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>```

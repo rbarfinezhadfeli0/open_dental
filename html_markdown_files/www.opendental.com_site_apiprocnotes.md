@@ -1,0 +1,63 @@
+# File: ./www.opendental.com/site/apiprocnotes.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API ProcNotes</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apiprocnotes','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API ProcNotes</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procedurenotes.html">Procedure Notes</a> for additional information.</p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96procnote.html" target="_blank">ProcNote Database Schema.</a></p>
+<h2>ProcNotes GET</h2>
+<p>Version Added: 24.2.29</p>
+<p>Gets a list of procnotes ordered by most recent. When a procnote is edited in Open Dental, a new procnote is created. No existing procnote can EVER be edited or deleted.</p>
+<p><b>PatNum:</b> Optional. FK to patient.PatNum.<br><b>ProcNum:</b> Optional. FK to procedure.ProcNum.</p>
+<p><b>Example Requests:</b><br> GET /procnotes?PatNum=426<br> GET /procnotes?PatNum=426&amp;ProcNum=1234</p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br> {<br> "ProcNoteNum": 17591,<br> "PatNum": 426,<br> "ProcNum": 1234,<br> "EntryDateTime": "2024-09-10 11:56:29",<br> "UserNum": 1,<br> "Note": "Review med hx \nPt chief complaint: Bleeding, swelling \nDue Date: \"\"\nBP taken: BP: 118 / 72 Pulse: 83 \n Follow up",<br> "SigIsTopaz": "false",<br> "isSigned": "true"<br> },<br> {<br> "ProcNoteNum": 17390,<br> "PatNum": 426,<br> "ProcNum": 1234,<br> "EntryDateTime": "2024-09-03 11:45:48",<br> "UserNum": 1,<br> "Note": "Review med hx \nPt chief complaint: Bleeding, swelling \nDue Date: \"\"\nBP taken: BP: 118 / 72 Pulse: 83 \n Follow up",<br> "SigIsTopaz": "false",<br> "isSigned": "false"<br> },<br> etc...<br> ]<br></span></p>
+<p>200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>ProcNotes POST</h2>
+<p>Version Added: 22.2</p>
+<p>Creates a new note that is associated with a procedure. If the Procedure Note contains 50 or more consecutive blank lines, they will be removed. The new procnote will always replace the existing procnote. Every change is recorded with an archived note history, which can be viewed in the Chart Module under Show Tab &gt; Audit.</p>
+<p>To sign a procnote set <b>isSigned</b> to true. The signature that appears on the procnote will be shown as the following: "Digitally Signed by [API DeveloperName] Date Signed: ["MM/dd/yyyy HH:mm:ss tt"]". See <a href="apiimplementation.html">API Implementation</a> for more information on API Signatures.</p>
+<p><b>PatNum:</b> Required.<br><b>ProcNum:</b> Required. ProcNum of the procedure.<br><b>Note:</b> Required. The actual note.<br><b>isSigned:</b> (added in version 24.2.29) Optional. Either "true" or "false". If "true", will digitally sign the procnote. Default "false".<br><b>doAppendNote:</b> (added in version 24.2.29) Optional. Either "true" or "false". If "true", will prepend the <b>Note</b> field with the most recent procnote.Note value followed by two newlines. Default "false".<br></p>
+<p><b>Example Request:</b><br> POST /procnotes</p>
+<p><span class="codeblock"> {<br> "PatNum": 74,<br> "ProcNum": 868,<br> "Note": "Signed on behalf of Doctor Joe Smith.",<br> "isSigned": "true",<br> "doAppendNote": "true"<br> }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "ProcNoteNum": 591,<br> "PatNum": 74,<br> "ProcNum": 868,<br> "EntryDateTime": "2024-09-10 11:56:29",<br> "UserNum": 0,<br> "Note": "Review med hx \nPt chief complaint: Bleeding, swelling \nDue Date: \"\"\nBP taken: BP: 118 / 72 Pulse: 83 \n Follow up\r\n\r\nSigned on behalf of Doctor Joe Smith.",<br> "SigIsTopaz": "false",<br> "isSigned": "true"<br> }<br></span></p>
+<p>201 Created<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>```

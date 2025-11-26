@@ -1,0 +1,97 @@
+# File: ./www.opendental.com/manual/autonotesetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Auto Note Setup</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('autonotesetup','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/autonotesetup.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/autonotesetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/autonotesetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/autonotesetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/autonotesetup.html" >v23.2</option><option value="https://www.opendental.com/manual231/autonotesetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/autonotesetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/autonotesetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/autonotesetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/autonotesetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/autonotesetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/autonotesetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/autonotesetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/autonotesetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/autonotesetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/autonotesetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/autonotesetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/autonotesetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/autonotesetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/autonotesetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/autonotesetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/autonotesetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/autonotesetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/autonotesetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/autonotesetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/autonotesetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/autonotesetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/autonotesetup.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Auto Note Setup</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Auto Notes.</p>
+<img src="images/autonoteSetup.png" width="433" height="271"/><p><a href="autonotes.html">Auto Notes</a> are templates used to insert large complex notes that are entered frequently in various text boxes throughout Open Dental. In addition to static text, prompts can offer a selection of responses or the ability to enter text.</p>
+<p class="MarginBottomZero">All existing Auto Notes are listed and organized in a tree view.  </p>
+<ul class="MarginBottomGap">
+<li>Click + to expand a folder tree. </li>
+<li>Click - to collapse. </li>
+<li>Check or uncheck the <b>Collapse All </b>checkbox to quickly collapse or expand all folders.</li>
+</ul>
+<p>To create or reorder folders, see <a href="definitionsautonotes.html">Definitions: Auto Note Categories</a>.</p>
+<p>To move an Auto Note to a different folder, select the Auto Note then drag it to another folder.</p>
+<p><b>Add</b>: Add a new Auto Note. See Auto Note Edit below for details </p>
+<p><b>Export</b>: Click to open the Auto Note Export window. See Auto Note Export below for details.</p>
+<p><b>Import</b>: Click to select a <i>JSON</i> file of Auto Notes exported from another Open Dental database to be imported. Imported Auto Notes do not retain folder organization. It may be required to re-add them to folders as desired.</p>
+<h2>Auto Note Edit</h2>
+<p>On the Auto Notes window, click Add, or double-click on an existing Auto Note to edit. The Auto Note Edit window opens.</p>
+<img src="images/autonoteEdit.png" width="837" height="368"/><p>The current text in the note is on the left. Prompts within the note are indicated by [Prompt:""].</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Name</b>: Enter an identifying name for the Auto Note.</li>
+<li><b>Text</b>: Enter the static text of the Auto Note.</li>
+<li><b>Add</b>: Add new prompt options. See below for details. </li>
+<li><b>Available Prompts</b>: All prompts that have been created are listed here. To insert a prompt, position the cursor in the Text field at the point of insertion, highlight the prompt, then click Insert. See Auto Note Prompt Edit below for details.</li>
+</ul>
+<h2>Auto Note Prompt Edit</h2>
+<p>In the Auto Note Edit window, click Add to create a new prompt, or double-click an existing prompt to edit.</p>
+<img src="images/autonotePrompt.png" width="753" height="366"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Description</b>: Identifying name of the prompt.</li>
+<li><b>Type</b>: There are three types of prompts:  <ul>
+<li>OneResponse: Users can select one option from a list of options. </li>
+<li>MultiResponse: Users can select many options from a list of options.<br/></li>
+<li>Text: Users can enter free-form text.</li>
+</ul>
+</li>
+<li><b>Prompt text</b>: The text that indicates what information is requested. There is a 50-character limit. Prompts longer than 50 characters can be entered in the Text field of the Auto Note Edit window.</li>
+<li><b>Possible responses</b>: For OneReponse or MultiResponse types only. Enter one response option per row. </li>
+<li><b>Default Text</b>: For Text types only. The default text that is entered as the response. May leave blank. Users can edit as needed.</li>
+<li><b>Auto Note Response</b>: For OneResponse only. Click to open Auto Note Response Picker.<br/><img src="images/autoNoteResponsePicker.png" width="453" height="245" class="ImageInParagraph"/><ul>
+<li><b>ResponseText</b>: Enter the text for the response. This is in addition to any Auto Note text.</li>
+<li>Select an Auto Note from the <b>Available Auto Notes</b> grid to assign to the response line.</li>
+<li>Click <b>OK</b> to close the window and save changes.</li>
+</ul>
+</li>
+<li><b>Up/Down</b>: Quickly reorder the list. Click an item then click up or down.</li>
+</ul>
+<h2>Auto Note Export</h2>
+<p>In the Auto Notes window, click <b>Export</b>. The Auto Note Export window displays. </p>
+<img src="images/autonoteExport.png" width="395" height="254"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Select All</b>: Check all Auto Notes to export. </li>
+<li><b>Clear Selection</b>: Deselect Auto Notes to export. </li>
+<li><b>Export Selected</b>: Export the selected Auto Notes. When the File Explorer opens, select where to export Auto Notes. </li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

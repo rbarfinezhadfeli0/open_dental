@@ -1,0 +1,70 @@
+# File: ./www.opendental.com/manual232/payconnectaddcard.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - PayConnect Add Card</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('payconnectaddcard','creditcardsmanage','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/payconnectaddcard.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/payconnectaddcard.html" >v24.2</option><option value="https://www.opendental.com/manual241/payconnectaddcard.html" >v24.1</option><option value="https://www.opendental.com/manual233/payconnectaddcard.html" >v23.3</option><option value="https://www.opendental.com/manual232/payconnectaddcard.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/payconnectaddcard.html" >v23.1</option><option value="https://www.opendental.com/manual224/payconnectaddcard.html" >v22.4</option><option value="https://www.opendental.com/manual223/payconnectaddcard.html" >v22.3</option><option value="https://www.opendental.com/manual222/payconnectaddcard.html" >v22.2</option><option value="https://www.opendental.com/manual221/payconnectaddcard.html" >v22.1</option><option value="https://www.opendental.com/manual214/payconnectaddcard.html" >v21.4</option><option value="https://www.opendental.com/manual213/payconnectaddcard.html" >v21.3</option><option value="https://www.opendental.com/manual212/payconnectaddcard.html" >v21.2</option><option value="https://www.opendental.com/manual211/payconnectaddcard.html" >v21.1</option><option value="https://www.opendental.com/manual205/payconnectaddcard.html" >v20.5</option><option value="https://www.opendental.com/manual204/payconnectaddcard.html" >v20.4</option><option value="https://www.opendental.com/manual203/payconnectaddcard.html" >v20.3</option><option value="https://www.opendental.com/manual202/payconnectaddcard.html" >v20.2</option><option value="https://www.opendental.com/manual201/payconnectaddcard.html" >v20.1</option><option value="https://www.opendental.com/manual194/payconnectaddcard.html" >v19.4</option><option value="https://www.opendental.com/manual193/payconnectaddcard.html" >v19.3</option><option value="https://www.opendental.com/manual192/payconnectaddcard.html" >v19.2</option><option value="https://www.opendental.com/manual191/payconnectaddcard.html" >v19.1</option><option value="https://www.opendental.com/manual184/payconnectaddcard.html" >v18.4</option><option value="https://www.opendental.com/manual183/payconnectaddcard.html" >v18.3</option><option value="https://www.opendental.com/manual182/payconnectaddcard.html" >v18.2</option><option value="https://www.opendental.com/manual181/payconnectaddcard.html" >v18.1</option><option value="https://www.opendental.com/manual174/payconnectaddcard.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>PayConnect Add Card</p></div>
+<div class="GeneralPageContent">
+<p>When using PayConnect, add patient credit or debit cards to store on file.</p>
+<p>In <a href="creditcardsmanage.html">Credit Card Manage</a>, click <b>Add New Card</b>.</p>
+<img src="images/payconnectAddCard.gif" width="402" height="425"/><p>Adding cards is only allowed when <i>Prevent saving new cards</i> is disabled in <a href="payconnectsetup.html">PayConnect Setup</a>.</p>
+<p class="MarginBottomZero">When adding new cards: </p>
+<ul class="MarginBottomGap">
+<li>A temporary $1.00 authorization hold may show on the patient's card statement.</li>
+<li>A token is created for the card, masking the first 12 digits of the card number.</li>
+<li>After the card has been successfully added, it appears in the Credit Card Manage list and is an available payment option in the <a href="payment.html">Payment</a> window.</li>
+</ul>
+<p>Alternatively, new cards can be added when when processing a payment through <a href="payconnectpaymentwindow.html">PayConnect Window</a> and <i>Save Token</i> or <i>Save Card</i> is checked. </p>
+<h2>PayConnect 1.0</h2>
+<p>For PayConnect 1.0 users, the interface shown in the screenshot at the top of this page appears when adding a new card.</p>
+<p class="MarginBottomZero">Enter the details for the credit or debit card: </p>
+<ul class="MarginBottomGap">
+<li><b>Transaction Type</b>: Automatically defaults to <i>Auth</i>. This cannot be changed when adding a card.</li>
+<li><b>Card Number / Security Code / Expiration / Zip / Name on Card</b>: Enter credit card details.</li>
+<li><b>Save Token</b>: Automatically checked. Allows the card to be saved.</li>
+<li><b>Force Duplicate</b>: Automatically checked.</li>
+<li><b>Signature</b>: (Optional) Patient may sign the authorization and the signature will be stored with PayConnect. </li>
+</ul>
+<p>Click <b>OK</b> to add card information. </p>
+<h2>PayConnect 2.0</h2>
+<p>For PayConnect 2.0 users, the interface shown below appears when adding a new card.</p>
+<img src="images/payConnect20AddCard.png" width="534" height="546"/><p><b>Name on Card / Card Number / CVV / MM / YYYY / ZIP</b>: Enter credit card details.</p>
+<p>Click <b>Process</b> to add card information.</p>
+<p></p>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,61 @@
+# File: ./www.opendental.com/manual243/benefitinforowview.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Edit Benefits - Row View</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('benefitinforowview','benefitinfo','insplan','family','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/benefitinforowview.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/benefitinforowview.html" >v24.2</option><option value="https://www.opendental.com/manual241/benefitinforowview.html" >v24.1</option><option value="https://www.opendental.com/manual233/benefitinforowview.html" >v23.3</option><option value="https://www.opendental.com/manual232/benefitinforowview.html" >v23.2</option><option value="https://www.opendental.com/manual231/benefitinforowview.html" >v23.1</option><option value="https://www.opendental.com/manual224/benefitinforowview.html" >v22.4</option><option value="https://www.opendental.com/manual223/benefitinforowview.html" >v22.3</option><option value="https://www.opendental.com/manual222/benefitinforowview.html" >v22.2</option><option value="https://www.opendental.com/manual221/benefitinforowview.html" >v22.1</option><option value="https://www.opendental.com/manual214/benefitinforowview.html" >v21.4</option><option value="https://www.opendental.com/manual213/benefitinforowview.html" >v21.3</option><option value="https://www.opendental.com/manual212/benefitinforowview.html" >v21.2</option><option value="https://www.opendental.com/manual211/benefitinforowview.html" >v21.1</option><option value="https://www.opendental.com/manual205/benefitinforowview.html" >v20.5</option><option value="https://www.opendental.com/manual204/benefitinforowview.html" >v20.4</option><option value="https://www.opendental.com/manual203/benefitinforowview.html" >v20.3</option><option value="https://www.opendental.com/manual202/benefitinforowview.html" >v20.2</option><option value="https://www.opendental.com/manual201/benefitinforowview.html" >v20.1</option><option value="https://www.opendental.com/manual194/benefitinforowview.html" >v19.4</option><option value="https://www.opendental.com/manual193/benefitinforowview.html" >v19.3</option><option value="https://www.opendental.com/manual192/benefitinforowview.html" >v19.2</option><option value="https://www.opendental.com/manual191/benefitinforowview.html" >v19.1</option><option value="https://www.opendental.com/manual184/benefitinforowview.html" >v18.4</option><option value="https://www.opendental.com/manual183/benefitinforowview.html" >v18.3</option><option value="https://www.opendental.com/manual182/benefitinforowview.html" >v18.2</option><option value="https://www.opendental.com/manual181/benefitinforowview.html" >v18.1</option><option value="https://www.opendental.com/manual174/benefitinforowview.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Edit Benefits - Row View</p></div>
+<div class="GeneralPageContent">
+<p>Use the Benefits Row view to view each benefit as a line item.</p>
+<p>In the <a href="benefitinfo.html">Edit Benefits</a> window, uncheck the Simplified View box.</p>
+<img src="images/benefitinfoRowView.png" width="782" height="521"/><p>This is useful when typical <a href="inscatssetup.html">Insurance Categories</a> are not used (e.g., in a country other than the U.S. or Canada).</p>
+<p class="MarginBottomZero"></p>
+<ul>
+<li><b>Simplified View</b>: Check/uncheck the box to switch between <a href="benefitinfo.html">Simplified View</a> and Row View.</li>
+<li><b>Benefit Year</b>: See Simplified View for details. This area does not change when using Simplified or Row View.</li>
+<li><b>Benefits</b>: Each row represents a benefit. Double-click to edit. See <a href="editbenefit.html">Edit Benefit</a>.</li>
+<li><b>Add</b>: Create a new insurance benefit. Opens the Edit Benefit window.</li>
+<li><b>Delete</b>: Select an item in the grid and click to remove an existing insurance benefit.</li>
+<li><b>Notes</b>: The same as subscriber notes on the <a href="insplan.html">Insurance Plan</a>. Certain types of benefits are not easily codified and cannot be added as a benefit row. If the benefit affects this subsciber (and dependents), the benefit information can be entered here. These are informational only. Examples of benefits which get entered as notes are:  <ul>
+<li>Missing tooth exclusion (a clause that states that if a tooth was extracted before the patient became insured through them, that they will not cover any replacement teeth including a partial or a bridge).</li>
+<li>Wait on major treatment (usually 6 months to a year).</li>
+</ul>
+</li>
+</ul>
+<p class="MarginBottomGap"><br/></p>
+</div>
+</div>
+</body>
+</html>```

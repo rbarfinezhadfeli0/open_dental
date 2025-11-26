@@ -1,0 +1,126 @@
+# File: ./www.opendental.com/manual232/treatmentplanedit.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Edit Treatment Plan</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('treatmentplanedit','treatmentplan','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/treatmentplanedit.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/treatmentplanedit.html" >v24.2</option><option value="https://www.opendental.com/manual241/treatmentplanedit.html" >v24.1</option><option value="https://www.opendental.com/manual233/treatmentplanedit.html" >v23.3</option><option value="https://www.opendental.com/manual232/treatmentplanedit.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/treatmentplanedit.html" >v23.1</option><option value="https://www.opendental.com/manual224/treatmentplanedit.html" >v22.4</option><option value="https://www.opendental.com/manual223/treatmentplanedit.html" >v22.3</option><option value="https://www.opendental.com/manual222/treatmentplanedit.html" >v22.2</option><option value="https://www.opendental.com/manual221/treatmentplanedit.html" >v22.1</option><option value="https://www.opendental.com/manual214/treatmentplanedit.html" >v21.4</option><option value="https://www.opendental.com/manual213/treatmentplanedit.html" >v21.3</option><option value="https://www.opendental.com/manual212/treatmentplanedit.html" >v21.2</option><option value="https://www.opendental.com/manual211/treatmentplanedit.html" >v21.1</option><option value="https://www.opendental.com/manual205/treatmentplanedit.html" >v20.5</option><option value="https://www.opendental.com/manual204/treatmentplanedit.html" >v20.4</option><option value="https://www.opendental.com/manual203/treatmentplanedit.html" >v20.3</option><option value="https://www.opendental.com/manual202/treatmentplanedit.html" >v20.2</option><option value="https://www.opendental.com/manual201/treatmentplanedit.html" >v20.1</option><option value="https://www.opendental.com/manual194/treatmentplanedit.html" >v19.4</option><option value="https://www.opendental.com/manual193/treatmentplanedit.html" >v19.3</option><option value="https://www.opendental.com/manual192/treatmentplanedit.html" >v19.2</option><option value="https://www.opendental.com/manual191/treatmentplanedit.html" >v19.1</option><option value="https://www.opendental.com/manual184/treatmentplanedit.html" >v18.4</option><option value="https://www.opendental.com/manual183/treatmentplanedit.html" >v18.3</option><option value="https://www.opendental.com/manual182/treatmentplanedit.html" >v18.2</option><option value="https://www.opendental.com/manual181/treatmentplanedit.html" >v18.1</option><option value="https://www.opendental.com/manual174/treatmentplanedit.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Edit Treatment Plan</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="treatmentplan.html">Treatment Plan Module</a>, double-click any of the inactive, active, or saved Treatment Plans to edit.</p>
+<img src="images/TreatEdit.gif" width="580" height="192"/><p>There are multiple types of treatment plans, each with their own designated usage. </p>
+<h2>Saved Treatment Plans</h2>
+<p>Saved Treatment Plans are designed to track treatment the patient has accepted. It can track acceptance rate and retains the fee information for the date it was saved. Saved treatment plans can also be used as one way to display treatment options (e.g. bridge vs implant).</p>
+<p class="MarginBottomZero">To save a treatment plan: </p>
+<ol class="MarginBottomGap">
+<li>In the Treatment Plan, highlight the accepted procedures or treatment options, then click <b>Save TP</b>. </li>
+<li>If <i>Prompt to save Treatment Plans</i> is checked in Preferences, a popup will appear to rename the Saved Treatment Plan. Rename as needed.</li>
+<li>Once saved, the Saved Treatment Plan will appear at the top of the Treatment Plan Module with a status of <i>Saved</i>. <ul>
+<li>Saved treatment plans can be viewed or printed anytime.</li>
+<li>Procedure fees within a Saved Treatment Plan are not affected by the Update Fees tool. </li>
+</ul>
+</li>
+</ol>
+<p>Double-click a Saved Treatment Plan to edit the date, heading, note, responsible party, and presenter information. Once a saved plan is electronically signed, it cannot be edited unless the signature is cleared.</p>
+<img src="images/TPedit.gif" width="686" height="345"/><p class="MarginBottomZero">Modify the information as needed: </p>
+<ul class="MarginBottomGap">
+<li><b>Date</b>: The date of the treatment plan.</li>
+<li><b>Note</b>: The note that typically appears at the bottom of the treatment plan. Set the<i> Default Note</i> in Preferences. Right-click the note field to insert a quick paste note.</li>
+<li><b>Responsible Party</b>: Only visible if <a href="publichealth.html">Public Health</a> is turned on in <a href="showfeatures.html">Show Features</a>. Click Pick to select the person, other than the patient or guarantor, who is responsible for approving the treatment plan. Click <b>X</b> to clear a name.</li>
+<li><b>Saved Document</b>: Only displays when the treatment plan has been signed and saved as a PDF. Click <b>View </b>to open the treatment plan. To always save treatment plans as PDF files, enable the preference, <i>Save Signed Treatment Plans to PDF</i>. When treatment plans are saved as PDF, they are automatically named. Users can rename the file from the <a href="images.html">Imaging Module</a>.</li>
+<li><b>Presenter</b>: The user who presented the treatment plan. Defaults to the logged-on user. Click [...] to select a different presenter. Presenter options include all users, or, users who are associated with the clinic.</li>
+<li><b>User Entry</b>: The user logged on when the treatment plan was saved. Cannot be changed.</li>
+<li><b>Delete</b>: Click to delete the Saved Treatment Plan. </li>
+<li><b>Clear Signature</b>: Click to clear the signature. Once cleared, edits can be made. </li>
+</ul>
+<p>When a treatment plan is saved, edits can be made to individual procedures as needed without affecting the original procedure. Select a Saved Treatment Plan, then double-click a procedure. Only procedures on unsigned treatment plans can be edited. </p>
+<img src="images/TPprocEdit.gif" width="617" height="459"/><h2>Active/Inactive Plans</h2>
+<p>An Active Treatment Plan displays treatment charted for the patient that has not been completed. Use Inactive Treatment Plans to keep a record of treatment the patient denied. Inactive Treatment Plans are also another way to present treatment options to a patient (e.g. bridge vs implant).</p>
+<p class="MarginBottomZero">To inactivate procedures (denied treatment): </p>
+<ol class="MarginBottomGap">
+<li>In the treatment plans grid, double-click the active treatment plan. <br/><img src="images/TPinactivate.gif" width="909" height="604" class="ImageInParagraph"/></li>
+<li>Using the left and right arrows, move denied treatment to the Available Procedures column on the right.  <ul>
+<li>This will mark the procedures with a <i>TPi</i> status (Treatment Plan Inactive).</li>
+<li>Procedures with a status of <i>TPi</i> do not display in the Chart Module, tooth chart, or Active Treatment Plans.</li>
+</ul>
+</li>
+<li>Click OK to save. <ul>
+<li>A new Inactive Treatment Plan will be created titled "Unassigned." This heading cannot be changed. </li>
+<li>Inactive Treatment Plans display in the Treatment Plans grid and can be viewed anytime. </li>
+</ul>
+</li>
+<li>Optional: Assign treatment to a treatment plan to access additional editing options. <ol>
+<li>In the Treatment Plan, click <b>New TP</b>.</li>
+<li>Select the procedures with status of TPi.</li>
+<li>Using the left and right arrows, move denied treatment to the Treatment Planned Procedures column on the left. </li>
+<li>Click OK to save. </li>
+</ol>
+</li>
+</ol>
+<p class="MarginBottomZero">To create treatment options:  </p>
+<ol class="MarginBottomGap">
+<li>In the Treatment Plan, click <b>New TP</b>.</li>
+<li>In the Active Treatment Plan window, use the left and right arrows to move the treatment option to the left column (Treatment Planned Procedures). </li>
+<li>Click OK to save.  <ul>
+<li>A new treatment plan with a status of <i>Inactive</i> will display in the Treatment Plans grid. </li>
+<li>Treatment Options saved as Inactive Treatments plans cannot be signed. </li>
+<li>Fees in an Inactive Treatment Plan are affected by the Update Fees tool. </li>
+<li>All treatment will still list in the Active Treatment Plan. </li>
+<li>Once treatment has been decided by the patient, save the treatment as a Saved Treatment Plan. The alternate treatment should have the procedures deleted or inactivated.</li>
+</ul>
+</li>
+</ol>
+<p class="MarginBottomZero">To make treatment active: </p>
+<ol class="MarginBottomGap">
+<li>Double-click an Inactive Treatment Plan. </li>
+<li>Move any treatment to the left column (Treatment Planned Procedures) if needed, then click <b>Make Active Treatment Plan</b>. </li>
+<li>Click OK to save. </li>
+<li>The previous Active Treatment Plan will change to Inactive.</li>
+<li>Alternatively, double-click the Active Treatment Plan and move any treatment to the left column (Treatment Planned Procedures). Click OK to save.</li>
+<div class="Note">Note: Unassigned Treatment Plans have limited editing options. Only the <b>Make Active Treatment Plan</b> option is available.</div>
+</ol>
+<p class="MarginBottomZero">Inactive Treatment Plans can be edited as needed. Double-click a plan to edit: </p>
+<ul class="MarginBottomGap">
+<li><b>Heading:</b> The title of the treatment plan. It will appear at the top of printed and emailed plans.</li>
+<li><b>Plan Type</b>: Indicates Discount or Insurance based on patient's plan type. If no insurance or discount plan is listed for patient, will default to Insurance. </li>
+<li><b>Note:</b> The note that will appear at the bottom of the treatment plan. Set the <i>Default Note</i> in Preferences.</li>
+<li><b>Treatment Planned Procedures</b> Column: Displays active treatment. </li>
+<li><b>Available Procedures</b> Column: Displays procedures available to choose from (including inactive procedures).</li>
+<li><b>Delete</b>: Click to delete the inactive treatment plan only. Procedures will not be deleted. TP status procedures remain in the active treatment plan. TPi status procedures are moved to an Unassigned inactive treatment plan.</li>
+<li><b>Make Active Treatment Plan</b>: Click to make the plan active.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

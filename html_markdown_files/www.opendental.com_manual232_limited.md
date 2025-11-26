@@ -1,0 +1,84 @@
+# File: ./www.opendental.com/manual232/limited.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Limited Statement</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('limited','statementwindow','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/limited.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/limited.html" >v24.2</option><option value="https://www.opendental.com/manual241/limited.html" >v24.1</option><option value="https://www.opendental.com/manual233/limited.html" >v23.3</option><option value="https://www.opendental.com/manual232/limited.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/limited.html" >v23.1</option><option value="https://www.opendental.com/manual224/limited.html" >v22.4</option><option value="https://www.opendental.com/manual223/limited.html" >v22.3</option><option value="https://www.opendental.com/manual222/limited.html" >v22.2</option><option value="https://www.opendental.com/manual221/limited.html" >v22.1</option><option value="https://www.opendental.com/manual214/limited.html" >v21.4</option><option value="https://www.opendental.com/manual213/limited.html" >v21.3</option><option value="https://www.opendental.com/manual212/limited.html" >v21.2</option><option value="https://www.opendental.com/manual211/limited.html" >v21.1</option><option value="https://www.opendental.com/manual205/limited.html" >v20.5</option><option value="https://www.opendental.com/manual204/limited.html" >v20.4</option><option value="https://www.opendental.com/manual203/limited.html" >v20.3</option><option value="https://www.opendental.com/manual202/limited.html" >v20.2</option><option value="https://www.opendental.com/manual201/limited.html" >v20.1</option><option value="https://www.opendental.com/manual194/limited.html" >v19.4</option><option value="https://www.opendental.com/manual193/limited.html" >v19.3</option><option value="https://www.opendental.com/manual192/limited.html" >v19.2</option><option value="https://www.opendental.com/manual191/limited.html" >v19.1</option><option value="https://www.opendental.com/manual184/limited.html" >v18.4</option><option value="https://www.opendental.com/manual183/limited.html" >v18.3</option><option value="https://www.opendental.com/manual182/limited.html" >v18.2</option><option value="https://www.opendental.com/manual181/limited.html" >v18.1</option><option value="https://www.opendental.com/manual174/limited.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Limited Statement</p></div>
+<div class="GeneralPageContent">
+<p>If a patient needs a statement for specific transactions or procedures, a Limited or Limited (Custom) Statement can be generated. </p>
+<p>In the <a href="account.html">Account Module</a> toolbar, click the <a href="statementwindow.html">Statement</a> dropdown, <b>Limited</b> or <b>Limited (Custom)</b>.</p>
+<img src="images/statementLimited.png" width="187" height="189"/><p class="MarginBottomZero">There are two options for creating limited statements: Limited and Limited (Custom). </p>
+<ul class="MarginBottomGap">
+<li>Limited: Shows transactions associated with selected procedures, pay plan debits, patient payments, insurance payments, and adjustments.</li>
+<li>Limited (Custom): Opens the Limited Statement Select window to select procedures, pay plan debits, patient payments, insurance payments, and adjustments.</li>
+</ul>
+<h2>Limited</h2>
+<p>In the Account Module, highlight procedures, Pay Plan Debits, patient payments, insurance payments, and adjustments. Then in the Statement dropdown, click <b>Limited</b>. </p>
+<p><div class="Note">Note: If no account items are selected, completed procedures from the current day along with any attached adjustments or payments will be automatically included.</div>
+</p>
+<img src="images/limitedOptions.png" width="745" height="615"/><p class="MarginBottomZero">The Statement options window will open. Select options for the limited statement. Most options match the <a href="statementwindow.html">Statement Window</a>. </p>
+<ul class="MarginBottomGap">
+<li><b>Exclude income transfers</b>: Specific to limited statements. Check to exclude income transfers from appearing on the statement. </li>
+</ul>
+<p><div class="Note">Note: The <i>Include patient last name</i> and <i>Exclude income transfers</i> options are only available on unsent, limited statements. These options, if checked, are not saved when the Statement options window is closed without sending.</div>
+</p>
+<p>If a limited statement is created from a non-guarantor family member, the family member contact information is used, and the statement is saved to the family member's account. If a limited statement is created from <i>Entire Family</i>, the guarantor's contact information is used, and the statement is saved to the gurantor's account. </p>
+<h2>Limited (Custom)</h2>
+<p>In the Statement dropdown, click <b>Limited (Custom)</b>. </p>
+<img src="images/statementLimitedSelect.png" width="915" height="400"/><p>The Limited Statement Select window will open. Select filters, then highlight the transactions to show. Click <b>OK</b> to continue to the Statement window.</p>
+<p class="MarginBottomZero">Filters: Set filters to determine items in the Limited Statement Items grid. </p>
+<ul class="MarginBottomGap">
+<li><b>From/To</b>: Enter date range of transactions to display.</li>
+<li><b>Transaction Types</b>: Highlight transaction types to show.</li>
+<li><b>Show entries for:</b> Highlight whose account items appear in the grid. Also determine whose name and address appear on the statement. <i>SuperFamily</i> option is only available when the selected patient is a member of a <a href="superfamily.html">Super Family</a> and <i>Included in Super Family Billing</i> is checked in <a href="patientedit.html">Edit Patient Information</a>. <ul>
+<li>When <i>Patient</i> is selected, the patient's name appears on the statement. The family guarantor's address is used. The statement is saved to the patient's account</li>
+<li>When <i>Family</i> is selected, the guarantor's name and address appear on the statement. The statement is saved to the family guarantor's account.</li>
+<li>When <i>SuperFamily</i> is selected, the Super Family head's name and address appear on the statement. The statement is saved to the Super Family head, family guarantor, and patient accounts.</li>
+</ul>
+</li>
+</ul>
+<p><b>All</b>: Select all transactions displayed in the grid.</p>
+<p><b>Today</b>: Select all displayed transactions with today's date.</p>
+<p><b>None</b>: Deselect all currently selected transactions.</p>
+<p>Click <b>OK</b> to generate limited statement for selected transactions.</p>
+<p>Customize the columns that appear in the Limited Statement Items grid from <a href="displayfields.html">Display Fields</a>. The columns that appear in the grid do not reflect the the columns that appear on the <i>StatementMain </i><a href="sheetsgrid.html">Sheet Grid</a>.</p>
+<p>The statement does not include aging or payment plan information. The total due, insurance estimate, and balance information is based on the items in the statement only. </p>
+<p><div class="Note">Note: Limited (Custom) statements include all transactions attached to selected procedures. This may include some transactions that were not selected or do not appear in the Limited Statement Select window.</div>
+</p>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,51 @@
+# File: ./www.opendental.com/site/screensize.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Screen Size</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('screensize','computernetworksetup','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Screen Size</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="computernetworksetup.html">Network and Computer Setup</a></p>
+<p>See <a href="computerrequirements.html">Computer Requirements</a></p>
+<p>Minimum resolution required for Open Dental is 1280 x 768. This is less than an HD monitor, which is 1920 x 1080. Open Dental should work on most monitors and laptops, but if you have a very small laptop, do make sure that the screen resolution is at least 1280 x 768. <div class="Note">Note: When using 1280 x 768, you might need to hide the Windows taskbar in order to interact with certain features.</div>
+</p>
+<p>If your monitor resolution is a little higher than the minimum above, you can use the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7zoom.html">Zoom</a> feature to make Open Dental easier to see.</p>
+<h2>Other Issues</h2>
+<p>See <a href="troubleshooting.html">Troubleshooting</a> for additional solutions to display related problems.</p>
+		</div>
+	</div>
+</body>
+</html>```

@@ -1,0 +1,141 @@
+# File: ./www.opendental.com/manual232/confirmationlist.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Confirmation List</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('confirmationlist','appointmentlists','appointments','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/confirmationlist.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/confirmationlist.html" >v24.2</option><option value="https://www.opendental.com/manual241/confirmationlist.html" >v24.1</option><option value="https://www.opendental.com/manual233/confirmationlist.html" >v23.3</option><option value="https://www.opendental.com/manual232/confirmationlist.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/confirmationlist.html" >v23.1</option><option value="https://www.opendental.com/manual224/confirmationlist.html" >v22.4</option><option value="https://www.opendental.com/manual223/confirmationlist.html" >v22.3</option><option value="https://www.opendental.com/manual222/confirmationlist.html" >v22.2</option><option value="https://www.opendental.com/manual221/confirmationlist.html" >v22.1</option><option value="https://www.opendental.com/manual214/confirmationlist.html" >v21.4</option><option value="https://www.opendental.com/manual213/confirmationlist.html" >v21.3</option><option value="https://www.opendental.com/manual212/confirmationlist.html" >v21.2</option><option value="https://www.opendental.com/manual211/confirmationlist.html" >v21.1</option><option value="https://www.opendental.com/manual205/confirmationlist.html" >v20.5</option><option value="https://www.opendental.com/manual204/confirmationlist.html" >v20.4</option><option value="https://www.opendental.com/manual203/confirmationlist.html" >v20.3</option><option value="https://www.opendental.com/manual202/confirmationlist.html" >v20.2</option><option value="https://www.opendental.com/manual201/confirmationlist.html" >v20.1</option><option value="https://www.opendental.com/manual194/confirmationlist.html" >v19.4</option><option value="https://www.opendental.com/manual193/confirmationlist.html" >v19.3</option><option value="https://www.opendental.com/manual192/confirmationlist.html" >v19.2</option><option value="https://www.opendental.com/manual191/confirmationlist.html" >v19.1</option><option value="https://www.opendental.com/manual184/confirmationlist.html" >v18.4</option><option value="https://www.opendental.com/manual183/confirmationlist.html" >v18.3</option><option value="https://www.opendental.com/manual182/confirmationlist.html" >v18.2</option><option value="https://www.opendental.com/manual181/confirmationlist.html" >v18.1</option><option value="https://www.opendental.com/manual174/confirmationlist.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Confirmation List</p></div>
+<div class="GeneralPageContent">
+<p>The Confirmation List is a way to manually manage reminders and confirmations for scheduled appointments. </p>
+<p>In <a href="appointmentlists.html">Appointment Lists</a>, click Confirmations.</p>
+<img src="images/confirmationList.png" width="915" height="369"/><p>Track communication with patients, send batch emails, postcards, and text messages. Users can browse to other windows while the Confirmation List is open.</p>
+<p>To customize confirmation message text and appointment status options, <a href="confirmationsetup.html">Confirmation Setup</a>.<br/>  To automatically send appointment reminders and confirmations, see <a href="ereminderssetup.html">eReminders</a> and <a href="econfirmationsetup.html">eConfirmations</a>.</p>
+<p><img src="images/YouTube_PlayButton_15px.png" width="15" height="12" style="margin-bottom: 0px"/> See our video: <a href="https://youtu.be/oVh2qGXvg-w">Confirmation List</a>.</p>
+<h2>View / Set Status / Email From</h2>
+<p>Use the <i>View</i> filters to determine which appear in the Confirmations List grid. Use the <i>Set Status</i> and <i>Email From </i>options to help manage the list.</p>
+<img src="images/confirmationListView.png" width="915" height="66"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Status</b>: Filter by appointments with a specific <a href="confirmationstatus.html">Confirmation Status</a>. Set <i>None</i> to see all. </li>
+<li><b>Confirm List</b>: Select which type of appointments show: <ul>
+<li>All: Include all appointments.</li>
+<li>Recall Only: Only include recall appointments (patient has at least one completed procedure and a scheduled appointment with a procedure marked as <i>Is Hygiene Procedure</i>).</li>
+<li>Exclude Recall: Don't include recall appointments (Appointment has no procedures marked as <i>Is Hygiene Procedure</i>).</li>
+<li>Hygiene Prescheduled: Only include appointments created more than two months before the Scheduled date. </li>
+</ul>
+</li>
+<li><b>From/To Date</b>: The date range of the appointments to list. Defaults to the next two business days.</li>
+<li><b>Provider</b>: Filter patients by provider on the appointment.</li>
+<li><b>Clinic</b>: Filter by clinic the appointment is scheduled in.</li>
+<li><b>Group Families</b>: Group members within a family together. When checked, and all family members are selected, only one reminder is sent per family, using the <i>multiple patients in one family</i> message template in Confirmation Setup.</li>
+</ul>
+<p>After setting filters, click <b>Refresh</b> at the bottom to update results. </p>
+<p><b>Set Status</b>: Change the confirmation status of selected appointments. First highlight the appointment(s), then select a Set Status option. The option is grayed out if the user does not have the <i>ApptConfirmStatusEdit</i> security permission.</p>
+<p class="MarginBottomZero"><b>Email From</b>: Select the <i>from</i> email when emailing confirmations.  </p>
+<ul class="MarginBottomGap">
+<li>If a single practice, Practice/Clinic refers to the default email set in <a href="emailsetup.html">Email Setup</a>.</li>
+<li>If using clinics, Practice/Clinic refers to the email address of the patient's clinic (<a href="clinicsetup.html">Clinic List</a>). If there is no clinic email, the practice default is used.</li>
+</ul>
+<h2>Confirmation List Grid</h2>
+<p>All patients who meet the view filter criteria are listed. </p>
+<img src="images/confirmationListGrid.png" width="915" height="221"/><p class="MarginBottomZero">Column definitions: </p>
+<ul class="MarginBottomGap">
+<li>Date Time: Date and time of the scheduled appointment.</li>
+<li>DateSched: Date and time the appointment was scheduled.</li>
+<li>Contact: Details for the confirmation contact method. Typically this matches the patient's Preferred Confirm Method (<a href="patientedit.html">Edit Patient Information</a>). Mail = Mail, Hm = HmPhone, Wk = WkPhone, Cell = Wireless, Email address = Email, SeeNotes = See Notes, Text = Text Message.</li>
+<li>Status: The <a href="confirmationstatus.html">Confirmation Status</a>. Use to track communication with the patient. Customize options in Definitions, Appt Confirmed. This status affects the color of the confirmation circle in the appointment schedule.</li>
+<li>Procs: Procedures attached to the appointment. </li>
+<li>Medical: Displays Medical Urgent notes, or if the patient is marked as Premedicate.</li>
+</ul>
+<p class="MarginBottomZero">Navigation: </p>
+<ul class="MarginBottomGap">
+<li>When one family member is highlighted, all other family members are highlighted in red text.</li>
+<li>To edit a patient's appointment, double-click a row.</li>
+<li>Right-click options:  <ul>
+<li>Select Patient: Select the patient only.</li>
+<li>See Chart: Select the patient and open the Chart Module.</li>
+<li>Send to Pinboard: Select the patient, open the Appointments Module, and place the appointment on the pinboard to reschedule.</li>
+</ul>
+</li>
+</ul>
+<h2>Buttons</h2>
+<p>Use the buttons at the bottom to help manage the Confirmations List.</p>
+<img src="images/confirmationListButtons.png" width="870" height="38"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Postcard Preview</b>: View, then print postcards for the selected appointments. When no patients are selected, only patients with <i>Mail</i> or <i>None</i> as their Preferred Confirm Method are selected. See By Postcard below for additional details.</li>
+<li><b>Label Preview</b>: View, then print labels for the selected appointments. Labels are printed on a standard sheet of 30.</li>
+<li><b>Email</b>: Click to send a confirmation email to the selected patients. When no patients are selected, only patients with <i>Email</i> as their Preferred Confirm Method are selected. See Managing the Confirmations List, By Email below for additional details.</li>
+<li><b>Text</b>: Click to text confirmations to selected patients. When no patients are selected, only patients with <i>TextMessage</i> as their Preferred Confirm Method are selected. Patients who have already been sent a confirmation text are not included. See Managing the Confirmations List, By Text below for additional details.</li>
+<li><b>Refresh</b>: Click when updating the confirmation list results using the View filters.</li>
+<li><b>Run Report</b>: Click to create a customized confirmation report and send the data to a simple text file. From there, merge it with any Word template to print customized postcards, letters, etc. See Confirmation Report below for additional details.</li>
+<li><b>Print List</b>: Click to print the list as shown.</li>
+</ul>
+<h2>Managing the Confirmations List</h2>
+<p>Manually managing the confirmation list differs practice by practice. Below are some options with information. </p>
+<p class="MarginBottomZero"><b>By Phone:</b> Here are a few tips when calling patients to confirm upcoming appointments. </p>
+<ul class="MarginBottomGap">
+<li>A phone number shows in the Contact column when the preferred confirmation method for a patient is None, HmPhone, WkPhone, or Wireless and a corresponding phone number has been entered.</li>
+<li>Manually change confirmation status using the Set Status dropdown.</li>
+<li><a href="commlog.html">Commlog</a> entries should be made for every phone call so there is a record of every attempt to contact the patient.</li>
+<li>If a patient needs to reschedule, right-click on the appointment, then click Send to Pinboard.</li>
+</ul>
+<p class="MarginBottomZero"><b>By Postcard</b>: Click Postcard Preview to send postcards to selected patients.  </p>
+<ul class="MarginBottomGap">
+<li>Define postcard layout in <a href="recallsetup.html">Setup Recall</a>.</li>
+<li>Customize the postcard text in Confirmation Setup.</li>
+<li>A Commlog is generated for each patient.</li>
+</ul>
+<p class="MarginBottomZero"><b>By Email</b>: Click Email to email selected patients a confirmation reminder. Use the Email From fields above to email from a specific address. </p>
+<ul class="MarginBottomGap">
+<li>When an email is sent, the confirmation status is changes to the status selected for <i>Status for emailed confirmation</i> in Confirmation Setup.</li>
+<li>Customize the email message in Confirmation Setup.</li>
+<li>Patients (or guarantor) must have an email address entered.</li>
+<li>Regular email is not a secure method of sending PHI.</li>
+</ul>
+<p class="MarginBottomZero"><b>By Text</b>: Click Text to text patients a confirmation message.  </p>
+<ul class="MarginBottomGap">
+<li>The practice must be signed up for <a href="textintegratedusage.html">Texting</a>.</li>
+<li>Patients must have a wireless phone number and be set to accept text messages (Edit Patient Information window, Text OK).</li>
+<li>Customize the message of the text in Confirmation Setup.</li>
+<li>Text messaging is not a secure method of sending PHI.</li>
+<li>When a text is sent, the confirmation status is changed to the status selected for <i>Status for text messaged confirmations</i> in Confirmation Setup.</li>
+<li>A Commlog is generated for each patient.</li>
+</ul>
+<h2>Confirmation Report</h2>
+<p>Click <b>Run Report</b> to open the Confirmation Report window.</p>
+<img src="images/confirmationReport.gif" width="548" height="439"/><p>Highlight the fields to include in the report, then click <b>OK</b>. The <a href="queryoverview.html">User Query</a> is launched where data can be exported.</p>
+</div>
+</div>
+</body>
+</html>```

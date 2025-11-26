@@ -1,0 +1,82 @@
+# File: ./www.opendental.com/manual/claimpaymentsupplemental.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Supplemental Insurance Payments</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('claimpaymentsupplemental','claimedit','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/claimpaymentsupplemental.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/claimpaymentsupplemental.html" >v24.2</option><option value="https://www.opendental.com/manual241/claimpaymentsupplemental.html" >v24.1</option><option value="https://www.opendental.com/manual233/claimpaymentsupplemental.html" >v23.3</option><option value="https://www.opendental.com/manual232/claimpaymentsupplemental.html" >v23.2</option><option value="https://www.opendental.com/manual231/claimpaymentsupplemental.html" >v23.1</option><option value="https://www.opendental.com/manual224/claimpaymentsupplemental.html" >v22.4</option><option value="https://www.opendental.com/manual223/claimpaymentsupplemental.html" >v22.3</option><option value="https://www.opendental.com/manual222/claimpaymentsupplemental.html" >v22.2</option><option value="https://www.opendental.com/manual221/claimpaymentsupplemental.html" >v22.1</option><option value="https://www.opendental.com/manual214/claimpaymentsupplemental.html" >v21.4</option><option value="https://www.opendental.com/manual213/claimpaymentsupplemental.html" >v21.3</option><option value="https://www.opendental.com/manual212/claimpaymentsupplemental.html" >v21.2</option><option value="https://www.opendental.com/manual211/claimpaymentsupplemental.html" >v21.1</option><option value="https://www.opendental.com/manual205/claimpaymentsupplemental.html" >v20.5</option><option value="https://www.opendental.com/manual204/claimpaymentsupplemental.html" >v20.4</option><option value="https://www.opendental.com/manual203/claimpaymentsupplemental.html" >v20.3</option><option value="https://www.opendental.com/manual202/claimpaymentsupplemental.html" >v20.2</option><option value="https://www.opendental.com/manual201/claimpaymentsupplemental.html" >v20.1</option><option value="https://www.opendental.com/manual194/claimpaymentsupplemental.html" >v19.4</option><option value="https://www.opendental.com/manual193/claimpaymentsupplemental.html" >v19.3</option><option value="https://www.opendental.com/manual192/claimpaymentsupplemental.html" >v19.2</option><option value="https://www.opendental.com/manual191/claimpaymentsupplemental.html" >v19.1</option><option value="https://www.opendental.com/manual184/claimpaymentsupplemental.html" >v18.4</option><option value="https://www.opendental.com/manual183/claimpaymentsupplemental.html" >v18.3</option><option value="https://www.opendental.com/manual182/claimpaymentsupplemental.html" >v18.2</option><option value="https://www.opendental.com/manual181/claimpaymentsupplemental.html" >v18.1</option><option value="https://www.opendental.com/manual174/claimpaymentsupplemental.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Supplemental Insurance Payments</p></div>
+<div class="GeneralPageContent">
+<p>In the Edit <a href="claimedit.html">Claim</a> window, at the upper-right, is a <b>Supplemental</b> button.</p>
+<img src="images/claimSupplementalButton.png" width="915" height="180"/><p>Supplemental claim payments are payments for procedures that have already been marked received. This can include additional payments, or negative amounts (e.g., <a href="insurancerefunds.html">Insurance Refunds</a>). Like any insurance payment, a user must receive it, then finalize the payment by attaching it to the claim.</p>
+<h2>Receiving a Supplemental Payment</h2>
+<p>If Pending Supplementals were entered, see <a href="claimpendingsupplemental.html">Enter Pending Supplemental Insurance Overpayments/Underpayments</a>, <b>To Supplemental</b> instead.</p>
+<p class="MarginBottomZero">To receive a supplemental payment, follow the steps below: </p>
+<ol class="MarginBottomGap">
+<li>Highlight the procedure line items associated with the supplemental payment. <ul>
+<li>The original procedure line item must be selected when entering a supplemental payment. Do not select a line item with the status of <i>Supp</i>. </li>
+</ul>
+</li>
+<li>Click <b>Supplemental</b>.</li>
+<li>Enter the payment amount in the <i>Ins Pay</i> column. </li>
+<li>Click <b>Save</b>.</li>
+<li>Proceed to <a href="claimpayfinalize.html">Finalize Insurance Payment</a>. </li>
+</ol>
+<p>Once created, supplemental payments are displayed as an additional line item in the grid of procedures with the Status of <i>Supp</i>.</p>
+<img src="images/claimSupplementalPay.gif" width="832" height="120"/><h2>Correcting Write-Offs Using a Supplemental Payment</h2>
+<p>Supplemental payments can be used to account for adjustments to write-offs already entered, as long as the net write-off is 0 or greater. This is useful when the write-off amount changes and a user does not want to or cannot change the original write-off amount (e.g., doing so would affect historical reports). </p>
+<p class="MarginBottomZero">Follow the steps below to use a supplemental payment to correct a write-off:  </p>
+<ol class="MarginBottomGap">
+<li>Highlight the procedure line items where the supplemental payment applies. <ul>
+<li>Users must select the original procedure line item when entering a supplemental payment. Do not select a line item with the status of Supp. </li>
+</ul>
+</li>
+<li>Click <b>Supplemental</b> in the upper right corner.</li>
+<li>Enter the write-off adjustment amount in the <i>WriteOff</i> column.  <ul>
+<li>If the write-off needs to be increased, enter a positive number.</li>
+<li>If the write-off needs to be decreased, enter a negative number.</li>
+<li>If a write-off was entered on another payment line, only the adjustment amount needs to be entered, not the full write-off amount (e.g., if the write-off was originally entered as 40, but should have only been 30, only enter the difference of -10). </li>
+</ul>
+</li>
+<li>Click <b>Save</b>.</li>
+</ol>
+<h2>Automatic Supplemental Payments</h2>
+<p>Supplemental payments can be automatically created by the <a href="incometransfermanager.html">Income Transfer Manager</a> if a claim was originally received As Total, rather than By Procedure. The supplemental entries are displayed as Txfr in the Status column of the Edit Claim window but are shown as Supplemental in the Edit Claim Procedure window.</p>
+<p>Automatic supplemental claim transfers cannot be edited but may be deleted. If a transfer entry is deleted, all other transfer entries on the claim are deleted as well.</p>
+<p>Additionally, if a claim with a supplemental transfer is edited, all the supplemental transfer entries are deleted. This includes editing or deleting a received claim procedure from the <a href="claimedit.html">Claim</a> Edit window and the <a href="procedureedit.html">Procedure</a> Info window and entering additional insurance payments to the claim.</p>
+<p>Open the Income Transfer Manager and click <b>Transfer</b> to re-transfer any remaining unallocated claim payments.</p>
+</div>
+</div>
+</body>
+</html>```

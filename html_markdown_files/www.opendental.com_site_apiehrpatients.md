@@ -1,0 +1,62 @@
+# File: ./www.opendental.com/site/apiehrpatients.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API EhrPatients</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apiehrpatients','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API EhrPatients</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96ehrpatient.html" target="_blank">EhrPatient Database Schema.</a></p>
+<h2>EhrPatients GET</h2>
+<p>Version Added: 24.1.15</p>
+<p>Gets a single ehrpatient.</p>
+<p><b>PatNum:</b> Required in the URL.<br></p>
+<p><b>Example Request:</b><br> GET /ehrpatients/11</p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "PatNum": 11,<br> "MotherMaidenFname": "Uriel",<br> "MotherMaidenLname": "Unallowed",<br> "VacShareOk": "Yes",<br> "MedicaidState": "OR",<br> "SexualOrientation": "20430005",<br> "GenderIdentity": "446151000124109",<br> "SexualOrientationNote": "",<br> "GenderIdentityNote": "",<br> "DischargeDate": "0001-01-01"<br> }<br></span></p>
+<p>200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>EhrPatients PUT (update)</h2>
+<p>Version Added: 24.1.15</p>
+<p>Updates an ehrpatient.</p>
+<p><b>PatNum:</b> Required in the URL.<br></p>
+<p><b>DischargeDate:</b> String in "yyyy-MM-dd" format.<br><b>MedicaidState:</b> (Added in version 24.4.13) The abbreviation for the state for the patient's MedicaidID.<br></p>
+<p><b>Example Request:</b><br> PUT /ehrpatients/11<br></p>
+<p><span class="codeblock"> {<br> "DischargeDate": "2024-02-15"<br> }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "PatNum": 11,<br> "MotherMaidenFname": "Uriel",<br> "MotherMaidenLname": "Unallowed",<br> "VacShareOk": "Yes",<br> "MedicaidState": "OR",<br> "SexualOrientation": "20430005",<br> "GenderIdentity": "446151000124109",<br> "SexualOrientationNote": "",<br> "GenderIdentityNote": "",<br> "DischargeDate": "2024-02-15"<br> }<br></span></p>
+<p>200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>```

@@ -1,0 +1,59 @@
+# File: ./www.opendental.com/site/firewalls.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Firewall</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('firewalls','securitycomputers','computernetworksetup','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Firewall</p></div>
+		<div class="GeneralPageContent">
+<p>Firewalls help protect computers by screening out hackers, viruses, and worms that try to reach computers. It is important to review firewall issues for <a href="securitycomputers.html">Computer Security</a>.</p>
+<p>Firewalls control incoming and outgoing network traffic. They establish barriers between the trusted, secure internal network and another network that is assumed to be not secure. Firewalls act by blocking all the ports on a computer. A port is simply a channel of communication that computers can use, and there are thousands of them available.</p>
+<h2>Windows Firewall</h2>
+<p class="MarginBottomZero">Below are general guidelines for turning the Windows Firewall on/off. </p>
+<ol class="MarginBottomGap">
+<li>On the Server, go to the Control Panel. <br><img src="images/ControlPanel.png" width="915" height="435" class="ImageInParagraph"/></li>
+<li>At the very bottom, click on Windows Defender Firewall. <br><img src="images/WindowsFirewall.png" width="843" height="624" class="ImageInParagraph"/></li>
+<li>On the left, click Turn Windows Defender Firewall on or off. <br><img src="images/WindowsFirewallOnOrOff.png" width="843" height="624" class="ImageInParagraph"/></li>
+</ol>
+<p>There are two kinds of firewalls:</p>
+<ul>
+<li><b>Hardware Firewalls</b>: Protect computer systems from attacks outside the local network. If connected to the internet via a cable modem or DSL, a router which acts as a firewall is necessary. The cable from the cable modem or DSL modem is connected to the Wide Area Network (WAN) port on the router. The LAN port of the router is then connected to the switch so that all computers have access to the internet. Some routers have a built-in switch, and in this case all the computers can be plugged into those ports instead of using an external switch. The router hides the LAN from outside computers, protecting from many types of virus attacks.</li>
+<li><b>Software Firewalls</b>: Help protect an individual computer from attacks from other computers in the office. They act as a second line of defense. For example, if one computer in the office gets infected, it can't spread to the others. Since Open Dental uses ports, software firewall settings will need to be adjusted. Each firewall has a different way of setting up which ports get blocked, but users should always be able to add ports to an exceptions list.  <p>Many antivirus software programs have their own software firewall feature. We recommend using the Windows Firewall instead, and turning off or uninstalling the software's firewall or internet security. If the practice still want to use its own firewall, then <a href="port3306.html">Port 3306</a> must be open on the server; not on each workstation.</p>
+</li>
+</ul>
+		</div>
+	</div>
+</body>
+</html>```

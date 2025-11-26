@@ -1,0 +1,81 @@
+# File: ./www.opendental.com/manual/bridgebolaai.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Bola AI</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridgebolaai','+needtoOrganize','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/bridgebolaai.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/bridgebolaai.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridgebolaai.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridgebolaai.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridgebolaai.html" >v23.2</option><option value="https://www.opendental.com/manual231/bridgebolaai.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridgebolaai.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridgebolaai.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridgebolaai.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridgebolaai.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridgebolaai.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridgebolaai.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridgebolaai.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridgebolaai.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridgebolaai.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridgebolaai.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridgebolaai.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridgebolaai.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridgebolaai.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridgebolaai.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridgebolaai.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridgebolaai.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridgebolaai.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridgebolaai.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridgebolaai.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridgebolaai.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridgebolaai.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridgebolaai.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Bola AI</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>. Double-click on <b>Bola AI from https://bola.ai</b>.</p>
+<img src="images/bridgebolaai.png" width="770" height="594"/><p>Bola AI is a voice perio charting software. Website: <a href="https://bola.ai">https://bola.ai</a>.</p>
+<p class="MarginBottomZero">To enable this bridge: </p>
+<ol class="MarginBottomGap">
+<li>Check the <b>Enabled</b> box.</li>
+<li>Verify the <b>Path of file to open</b>.</li>
+<li>Click <b>Save</b>.</li>
+</ol>
+<p>Once the program link is enabled, a button for <b>Launch Bola Voice</b> is available from the <a href="perio.html">Perio Chart</a> and the Microphone button to use <a href="periochartingvoice.html">Voice Perio Charting</a> in Open Dental is disabled.</p>
+<p>To remove the Bola AI button from the Perio Chart, uncheck <b>Enabled</b> and check <b>Hide Unused Button</b>. For Clinic users, if Bola AI is used by some clinics, but not others, use <b>Hide Button for Clinics</b> and move clinics to the Hidden list instead. When a hidden clinic is selected in the Main Menu, the Bola AI button is hidden and the Microphone button for voice perio is re-enabled.</p>
+<h2>Additional Details</h2>
+<p class="MarginBottomZero">When the program link is enabled, the title bar of the Perio Chart window displays information about the currently selected data cell, e.g., (6,7,3) (2,g,F,M). This indicates the following: </p>
+<ul class="MarginBottomGap">
+<li>Horizontal position of the cell in the grid.</li>
+<li>Vertical position of the selected exam in the grid.</li>
+<li>Position selected in the cell.</li>
+<li>Tooth number.</li>
+<li>Perio sequence type: <ul>
+<li>Period (.): Probing</li>
+<li>j: MGJ</li>
+<li>g: Gingival Margin</li>
+<li>f: Furcation</li>
+<li>m: Mobility</li>
+</ul>
+</li>
+<li>Facial or Lingual coordinate: <ul>
+<li>F: Facial</li>
+<li>L: Lingual</li>
+</ul>
+</li>
+<li>Surface of the tooth: <ul>
+<li>M: Mesial</li>
+<li>C: Central</li>
+<li>D: Distal</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,99 @@
+# File: ./www.opendental.com/manual/claimformedit.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Claim Form Edit</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('claimformedit','claimforms','+familyinsurance','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/claimformedit.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/claimformedit.html" >v24.2</option><option value="https://www.opendental.com/manual241/claimformedit.html" >v24.1</option><option value="https://www.opendental.com/manual233/claimformedit.html" >v23.3</option><option value="https://www.opendental.com/manual232/claimformedit.html" >v23.2</option><option value="https://www.opendental.com/manual231/claimformedit.html" >v23.1</option><option value="https://www.opendental.com/manual224/claimformedit.html" >v22.4</option><option value="https://www.opendental.com/manual223/claimformedit.html" >v22.3</option><option value="https://www.opendental.com/manual222/claimformedit.html" >v22.2</option><option value="https://www.opendental.com/manual221/claimformedit.html" >v22.1</option><option value="https://www.opendental.com/manual214/claimformedit.html" >v21.4</option><option value="https://www.opendental.com/manual213/claimformedit.html" >v21.3</option><option value="https://www.opendental.com/manual212/claimformedit.html" >v21.2</option><option value="https://www.opendental.com/manual211/claimformedit.html" >v21.1</option><option value="https://www.opendental.com/manual205/claimformedit.html" >v20.5</option><option value="https://www.opendental.com/manual204/claimformedit.html" >v20.4</option><option value="https://www.opendental.com/manual203/claimformedit.html" >v20.3</option><option value="https://www.opendental.com/manual202/claimformedit.html" >v20.2</option><option value="https://www.opendental.com/manual201/claimformedit.html" >v20.1</option><option value="https://www.opendental.com/manual194/claimformedit.html" >v19.4</option><option value="https://www.opendental.com/manual193/claimformedit.html" >v19.3</option><option value="https://www.opendental.com/manual192/claimformedit.html" >v19.2</option><option value="https://www.opendental.com/manual191/claimformedit.html" >v19.1</option><option value="https://www.opendental.com/manual184/claimformedit.html" >v18.4</option><option value="https://www.opendental.com/manual183/claimformedit.html" >v18.3</option><option value="https://www.opendental.com/manual182/claimformedit.html" >v18.2</option><option value="https://www.opendental.com/manual181/claimformedit.html" >v18.1</option><option value="https://www.opendental.com/manual174/claimformedit.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Claim Form Edit</p></div>
+<div class="GeneralPageContent">
+<p>Claim forms can be customized or added as needed.</p>
+<p>In the <a href="claimforms.html">Claim Forms</a> window, double-click a custom claim form.</p>
+<img src="images/claimFormEdit.png" width="915" height="801"/><p>Changes to claim forms only affect printed claims and do not affect electronic claims. We recommend contacting Open Dental support to make changes, as changes may affect claim submission and payment.</p>
+<p class="MarginBottomZero">Possible reasons to modify a claim form: </p>
+<ul class="MarginBottomGap">
+<li>Change the identifying name of the claim form.</li>
+<li>Remove the claim form as an option in various lists (hide).</li>
+<li>Set whether or not background claim form images print.</li>
+<li>Change the alignment when printing on a preprinted form.</li>
+<li>Modify fields on the claim form (not recommended).</li>
+</ul>
+<p>The left side of the window shows the items on the claim form. The right side of the window has an edit panel.</p>
+<h2>Options</h2>
+<img src="images/claimFormEditOptions.png" width="127" height="197"/><p><b>Description</b>: Name of the claim form.</p>
+<p><b>Width</b> / <b>Height</b>: Dimensions of the claim form when printed. Edit width and height when claim form is not printed on standard 8.5 in. x 11 in. paper.</p>
+<p><b>Is Hidden</b>: Hide a claim form so it no longer shows as an option in various drop downs.</p>
+<p class="MarginBottomZero"><b>Print Images</b>: Set whether or not background images print. </p>
+<ul class="MarginBottomGap">
+<li>Checked: Print background claim image.</li>
+<li>Unchecked: Do not print the image (e.g., when printing on a preprinted paper such as <a href="dentical.html">Denti-Cal</a> forms). </li>
+</ul>
+<p><b>Offset X</b> / <b>Offset Y</b>: Change the alignment of the form when printing on a preprinted form. Values can be positive or negative and shifts all elements on the page by the given number of pixels in hundredths of an inch.</p>
+<h2>Items</h2>
+<p>The Items grid displays fields currently added to the claim form. When an item is highlighted, the corresponding field on the claim form displays in red.</p>
+<img src="images/claimFormEditItems.png" width="127" height="220"/><p><b>Add</b>: Open the Claim Form Item window to add additional items to the claim form. Alternatively, double-click a field to change it. </p>
+<p><b>X / Y Pos</b>: The X and Y coordinates of the selected field. Can be edited.</p>
+<p><b>Width / Height</b>: The width and height of the selected field. Can be edited. </p>
+<h2>Edit Claim Form Item</h2>
+<p>Click <b>Add</b> to create a new Claim Form Item or double-click an existing Claim Form Item on the claim form to edit.</p>
+<img src="images/claimFormEditItemAdd.png" width="804" height="366"/><p><b>Image File Name</b>: When a background image is selected or being added, enter the file name here. The file must exist in the <a href="atozfolder.html">OpenDentImages Folder</a>. When an image is entered here, no fields should be selected on the right.</p>
+<p><b>Format String</b>: When adding a field that includes a date, enter the date format here.</p>
+<p><b>Field Name</b>: If not using an Image File Name, select the field to be used on the claim form. </p>
+<p>Click <b>Save</b> to keep changes.</p>
+<h2>Add a New Claim Form</h2>
+<p class="MarginBottomZero">If adding a new claim form from scratch (i.e., not importing XML), do the following in order.  </p>
+<ol class="MarginBottomGap">
+<li>Prepare a high resolution background image. Image must be GIF, JPEG, or EMF. </li>
+<li>Save the background image to the OpenDentImages folder.</li>
+<li>In the Claim Forms window, click <b>Add</b> to open the edit window. </li>
+<li>Add the background image. Click <b>Add</b> then enter the image file name in the Edit Claim Form Item window. Adjust the X and Y positions as needed. </li>
+<li>Click <b>Add</b> to add fields. When a field is added, move it to the appropriate location on the claim form.  <li>Move items by clicking and dragging or by using the arrow keys. <ul>
+<li>To make the movement larger press Shift while pressing an arrow key.</li>
+<li>To select groups of items to move as a unit, press Ctrl while clicking. When groups are selected, any change made in the X/Y Pos or Width/Height boxes apply to all items in the group.</li>
+</ul>
+</li>
+</li>
+<li>Click <b>Save</b> to keep changes and add the form.</li>
+</ol>
+<p class="MarginBottomZero">Hints: </p>
+<ul class="MarginBottomGap">
+<li>The dollar amount fields are right justified, so the X position functions differently (for now, click to the right of an amount field to highlight it).</li>
+<li>Be careful not to accidentally drag when highlighting items, especially groups.</li>
+<li>Set the width or height to zero to get rid of the surrounding rectangle and to not restrict the area of printing.</li>
+<li>The screen may flicker when dragging fields.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

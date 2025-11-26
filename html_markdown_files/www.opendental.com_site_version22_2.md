@@ -1,0 +1,158 @@
+# File: ./www.opendental.com/site/version22_2.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Version 22.2</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('version22_2','versions','advancedtopics','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Version 22.2</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="versions.html">Versions</a>.</p>
+<p>Version 22.2 was released as stable on 09/08/2022.</p>
+<p><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> Overview of <a href="https://youtu.be/ng3ctnmpbig">Version 22.2</a>.</p>
+<h2>Major Changes</h2>
+<p class="MarginBottomZero"><b>Added Orthodontic Tooth Graphics</b></p>
+<ul class="MarginBottomGap">
+<li><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> Webinar: <a href="https://youtu.be/aQVcEJ4RSPM">Orthodontic Charting</a></li>
+<li>Added Ortho tab to view and chart orthodontic treatment. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7ortho.html">Ortho</a></li>
+<li>Add custom ortho prescriptions for easier charting. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7orthoprescriptionssetup.html">Ortho Prescriptions Setup</a></li>
+<li>Add custom ortho hardware for ortho chart. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7orthohardwaresetup.html">Setup Ortho Hardware Specs</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Enhancements to Patient Information</b></p>
+<ul class="MarginBottomGap">
+<li>Option to note pronouns in Edit Patient Information window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7patientedit.html">Edit Patient Information</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7displayfields.html">Display Fields</a></li>
+<li>Gender options for <i>Other</i>. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7patientedit.html">Edit Patient Information</a></li>
+</ul>
+<h2>Changes by Category</h2>
+<p class="MarginBottomZero"><b>Appointments Module</b></p>
+<ul class="MarginBottomGap">
+<li>Default a tooth number on specific Appt Proc Quick Add procedure. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7definitionsapptquickadd.html">Definitions: Appt Procs Quick Add</a></li>
+<li>Appointment Module Preference, <i>Week View start day</i>. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7appointments.html">Appointments Module</a></li>
+<li>Quickly jump to specified date on Appointments calendar. (Also backported to V22.1.45) <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7appointments.html">Appointments Module</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Chart Module</b></p>
+<ul class="MarginBottomGap">
+<li>Ortho chart opens in read-only mode for users without edit permission. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7orthochart.html">Ortho Chart</a></li>
+<li>Removed Ortho Chart Locking notice. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7orthochart.html">Ortho Chart</a></li>
+</ul>
+<p class="MarginBottomZero"><b>eServices</b></p>
+<ul class="MarginBottomGap">
+<li>Automatically install eConnector upon update if one is not detected. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7econnector.html">eConnector</a></li>
+<li>Integrated texting users who are no longer on support can change their SMS texting limit. (Also backported to V22.1.31) <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7signupportalbasic.html">eServices Signup Basic</a></li>
+<li>Format Secure Email Access Code in HTML. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7secureemailworkflow.html">Secure Email: Workflow</a></li>
+<li>Removed mass email filter for <i>Days last received</i>. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7advertisingselectpatients.html">Advertising - Select Patients</a></li>
+<li>Character limit added to Web Sched carrier rules. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webschedcarrierrule.html">Web Sched Carrier Rule</a></li>
+<li>ProvName tag for Automated Messaging includes hygienist. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7editrule.html">Edit Rule</a></li>
+<li>Operatory headers use abbreviation instead of name. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7opendentalmobileappts.html">ODMobile Appointments</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Imaging Module</b></p>
+<ul class="MarginBottomGap">
+<li>Setting for thumbnails in Imaging Module is now separate from thumbnails in Chart Module. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7definitionsimagecat.html">Definitions: Image Categories</a></li>
+<li>Default image category for new images taken via video. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7videocapture.html">Video Capture</a></li>
+<li>Default measurement scale for new images. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7preferences.html">Preferences</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7draw.html">Draw</a></li>
+<li>Mount setting to default to Adj Mode after taking acquiring images. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7mountdefinitions.html">Mount Definitions</a></li>
+<li>Mount setting to automatically flip images upon acquire. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7mountdefinitions.html">Mount Definitions</a></li>
+<li> Mount setting to disable text background color. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7mountdefinitions.html">Mount Definitions</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Security</b></p>
+<ul class="MarginBottomGap">
+<li>New permission for Setup Wizard. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>New permission for Show Features. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>New permission for Printer Setup. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>New permission for Provider Add. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>New permission for Provider Edit. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>New permissions for Clinic Edit. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>New permission for Task Delete. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7audittrailpermissions.html">Audit Trail Permissions</a></li>
+<li>Audit trail entry when a superfamily is added or removed. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7audittrailpermissions.html">Audit Trail Permissions</a></li>
+<li>Dental School permissions are only active when Dental Schools is enabled. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>Added additional details for ProviderAdd and ProviderEdit Audit Trail permissions. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7audittrailpermissions.html">Audit Trail Permissions</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Sheets &amp; Forms</b></p>
+<ul class="MarginBottomGap">
+<li>Pre-fill patient forms using data from the database and previously filled forms. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7patientform.html">Patient Forms</a></li>
+<li>Add Imaging Module images to patient forms. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7sheetsfillout.html">Fill Sheet</a></li>
+<li>ComboBox option to select gender identity. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7sheetscombobox.html">Sheet ComboBox</a></li>
+<li>Overhauled Edit Sheet Def window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7sheetsetup.html">Edit Sheet Def</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Miscellaneous</b></p>
+<ul class="MarginBottomGap">
+<li>Overhauled Preferences window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7preferences.html">Preferences</a></li>
+<li>New claim status, Hold for In Process. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimedit.html">Claim</a></li>
+<li>Date Created added to commlogs. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7commlog.html">Commlog</a></li>
+<li>API Setup window is now accessible when user is not on support. (Also backported to V22.1.32) <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7fhir.html">API Setup</a></li>
+<li>Option to automatically disable popups at a specific time. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7miscsetup.html">Miscellaneous Setup</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7popups.html">Popups</a></li>
+<li>Added database maintenance method, <i>TaskListsAbandonedRepeating</i>. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7databasemaintenance.html">Database Maintenance</a></li>
+<li>Removed <i>Aging calculated monthly instead of daily</i> preference. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7aging.html">Aging</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7enterprisesetup.html">Enterprise Setup</a></li>
+<li>Added bridge to PORTRAY. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7bridgeportray.html">PORTRAY Bridge</a></li>
+<li>Preference to block signatures when there are incomplete auto note prompts on procedure. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procedurenotes.html">Procedure Notes</a></li>
+<li>Added Insurance Verify Batch Preferences. (Also backported to V22.1.35) <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7scheduledprocesses.html">Scheduled Processes</a></li>
+<li>New preference: <i>Initial primary insurance payment and write-off cannot exceed adjusted procedure fee</i>. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimreceive.html">Receive Claim</a></li>
+<li>Incomplete Procedure Notes report filters providers by selected clinic. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportincompleteprocnote.html">Incomplete Procedure Notes Report</a></li>
+<li>Allow users to change recurring charge frequency. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7recurringchargesauthorize.html">Authorize Recurring Charges</a></li>
+</ul>
+<p class="MarginBottomZero"><b>API</b>: <a href="apispecification.html">API Specification</a></p>
+<ul class="MarginBottomGap">
+<li>New method PayPlans GET (multiple)</li>
+<li>Add ChartModules GET PlannedAppts</li>
+<li>PayPlans POST - Add option to use patient current balance</li>
+<li>New method Appointments POST SchedulePlanned</li>
+<li>New field in ApiRequests: DateTimeFormatString</li>
+<li>Allow users to specify an UnschedStatus for Appointments</li>
+<li>Recalls PUT Status to allow all RecallTypes</li>
+<li>Patients PUT and POST - Add PreferRecallMethod</li>
+<li>Add support for Database ApiEvents to the API Service</li>
+<li>Add DateTime Arrived, Seated, and Dismissed to Appointments GET</li>
+<li>Add ClinicNum filter to Reports GET Aging method</li>
+<li>Adjustments GET, based on PatNum.</li>
+<li>New method PayPlans POST Dynamic</li>
+<li>Adjustments POST</li>
+<li>New method ProcNotes POST</li>
+<li>New Method Claims GET</li>
+<li>Adjustments PUT</li>
+<li>New method ProcedureLogs POST GroupNote</li>
+<li>Add appointment.DateTimeAskedToArrive to return object in Appointments GET methods</li>
+<li>New field in ApiRequests: DateFormatString</li>
+<li>Refresh SecurityPerm Cache for a customer</li>
+<li>Procedures Group Notes, PUT</li>
+<li>Add additional fields to Claims GET return object</li>
+<li>New method Appointments POST Planned</li>
+<li>Payments GET</li>
+<li>New Method Reports GET FinanceCharges</li>
+<li>New method ClaimProcs GET</li>
+<li>Add AdjType filter to existing Adjustments GET method</li>
+</ul>
+		</div>
+	</div>
+</body>
+</html>```

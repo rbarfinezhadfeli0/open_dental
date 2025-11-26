@@ -1,0 +1,64 @@
+# File: ./www.opendental.com/manual243/odtouchchart.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - ODTouch: Chart</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('odtouchchart','odtouchhome','odtouchsetup','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/odtouchchart.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/odtouchchart.html" >v24.2</option><option value="https://www.opendental.com/manual241/odtouchchart.html" >v24.1</option><option value="https://www.opendental.com/manual233/odtouchchart.html" >v23.3</option><option value="https://www.opendental.com/manual232/odtouchchart.html" >v23.2</option><option value="https://www.opendental.com/manual231/odtouchchart.html" >v23.1</option><option value="https://www.opendental.com/manual224/odtouchchart.html" >v22.4</option><option value="https://www.opendental.com/manual223/odtouchchart.html" >v22.3</option><option value="https://www.opendental.com/manual222/odtouchchart.html" >v22.2</option><option value="https://www.opendental.com/manual221/odtouchchart.html" >v22.1</option><option value="https://www.opendental.com/manual214/odtouchchart.html" >v21.4</option><option value="https://www.opendental.com/manual213/odtouchchart.html" >v21.3</option><option value="https://www.opendental.com/manual212/odtouchchart.html" >v21.2</option><option value="https://www.opendental.com/manual211/odtouchchart.html" >v21.1</option><option value="https://www.opendental.com/manual205/odtouchchart.html" >v20.5</option><option value="https://www.opendental.com/manual204/odtouchchart.html" >v20.4</option><option value="https://www.opendental.com/manual203/odtouchchart.html" >v20.3</option><option value="https://www.opendental.com/manual202/odtouchchart.html" >v20.2</option><option value="https://www.opendental.com/manual201/odtouchchart.html" >v20.1</option><option value="https://www.opendental.com/manual194/odtouchchart.html" >v19.4</option><option value="https://www.opendental.com/manual193/odtouchchart.html" >v19.3</option><option value="https://www.opendental.com/manual192/odtouchchart.html" >v19.2</option><option value="https://www.opendental.com/manual191/odtouchchart.html" >v19.1</option><option value="https://www.opendental.com/manual184/odtouchchart.html" >v18.4</option><option value="https://www.opendental.com/manual183/odtouchchart.html" >v18.3</option><option value="https://www.opendental.com/manual182/odtouchchart.html" >v18.2</option><option value="https://www.opendental.com/manual181/odtouchchart.html" >v18.1</option><option value="https://www.opendental.com/manual174/odtouchchart.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>ODTouch: Chart</p></div>
+<div class="GeneralPageContent">
+<p>View the patient's chart information and add or edit treatment as needed. </p>
+<p>From the <a href="odtouchhome.html">ODTouch: Home Screen</a>, tap Chart.</p>
+<img src="images/odtouchChart.png" width="766" height="508"/><p>The Chart Home screen mimics the <a href="chart.html">Chart Module</a> in Open Dental. This screen is not available when using a mobile phone device.</p>
+<p><div class="Note">Note: Text entered in ODTouch can be entered via the on-screen keyboard, an attachable keyboard, or using a stylus pen (e.g., Apple Pencil or Samsung S Pen).</div>
+</p>
+<p><b>Odontogram Notes</b>: Tap the edit icon to add or edit odontogram notes. </p>
+<p><b>Patient Info</b>: Scroll to view a read-only copy of patient information.</p>
+<p class="MarginBottomZero"><b>Progress Notes</b>: View the patient progress notes.  </p>
+<ul class="MarginBottomGap">
+<li>Tap the filter icon in the upper right to filter the progress notes.</li>
+<li>Use the <b>Prev</b> and <b>Next</b> buttons to view additional progress notes.</li>
+<li>Tap a procedure to make edits. See <a href="odtouchprocedure.html">ODTouch: Procedure Edit</a>.</li>
+<li>Tap an appointment to view appointment details. See <a href="odtouchappts.html">ODTouch: Appointments</a>.</li>
+</ul>
+<p>Tap the edit icon to chart procedures or edit the tooth chart. See <a href="odtouchchartedit.html">ODTouch: Chart Edit</a>.</p>
+<h2>Chart Dropdown</h2>
+<p>Tap the caret at the top to view additional chart options. </p>
+<img src="images/odtouchChartDropdown.png" width="256" height="100"/><p><b>New Rx</b>: Tap to create a new prescription. See <a href="odtouchnewrx.html">ODTouch: New Rx</a>. To send an electronic prescription, see <a href="odtoucherx.html">ODTouch: eRx</a> instead. </p>
+<p><b>Manage Rx</b>: Tap to open the Manage Rx screen. See <a href="odtouchrxmanage.html">ODTouch: Rx Manage</a>.</p>
+<p><b>Consent Form</b>: Tap to select a consent from the list to generate for the patient to sign. Only <a href="sheetsconsent.html">Consent Form Sheets</a> with <a href="sheetsetupmobile.html">Mobile Layout</a> enabled are available to select.</p>
+</div>
+</div>
+</body>
+</html>```

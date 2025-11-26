@@ -1,0 +1,73 @@
+# File: ./www.opendental.com/manual243/generalmessagesetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - General Messages</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('generalmessagesetup','automatedmessaging','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/generalmessagesetup.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/generalmessagesetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/generalmessagesetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/generalmessagesetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/generalmessagesetup.html" >v23.2</option><option value="https://www.opendental.com/manual231/generalmessagesetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/generalmessagesetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/generalmessagesetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/generalmessagesetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/generalmessagesetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/generalmessagesetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/generalmessagesetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/generalmessagesetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/generalmessagesetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/generalmessagesetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/generalmessagesetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/generalmessagesetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/generalmessagesetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/generalmessagesetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/generalmessagesetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/generalmessagesetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/generalmessagesetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/generalmessagesetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/generalmessagesetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/generalmessagesetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/generalmessagesetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/generalmessagesetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/generalmessagesetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>General Messages</p></div>
+<div class="GeneralPageContent">
+<p>General Messages are texts or emails sent after an appointment. </p>
+<p>In <a href="eservicessetup.html">eServices Setup</a>, click <a href="automatedmessaging.html">Automated Messaging</a>.</p>
+<img src="images/generalmessage.png" width="915" height="539"/><p>An example of a general message could be a text that goes out after the appointment inviting the patient to leave a review. Emailed messages can be sent at no additional cost. To send messages by text, <a href="textintegratedusage.html">eServices Texting</a> is required and a per text message fee applies.</p>
+<h2>Activate / Deactivate General Messages</h2>
+<p>General Messages can be activated or deactivated as needed.</p>
+<img src="images/generalMessageActivate.png" width="353" height="228"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>To enable General Messages, click <b>Activate General Messages</b>. The General Messages row displays in green with a status of <i>Active</i>. </li>
+<li>To disable General Messages, click <b>Deactivate General Messages</b>. The General Messages row displays in red with a status of<i> Inactive</i>.</li>
+</ul>
+<p>After activating General Messages, set up General Message Rules.</p>
+<h2>General Message Rules</h2>
+<p>To edit an existing General Message Rule, double-click a General Message Rule from the Automated Messaging Rules grid. To add a new rule, click<b> Add General Message</b>.</p>
+<p>For information on adding and editing rules, see <a href="editrule.html">Edit Rule</a>.</p>
+<h2>Using General Messages</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Activate General Messages.</li>
+<li>In <a href="automatedmessagingadvanced.html">Automated Messaging Advanced Settings</a>, choose which appointment statuses receive a general message once set complete. <ul>
+<li>To exclude patients from receiving general messages, create a new <a href="definitionsapptconfirmed.html">Appointment Confirmation Status</a> or choose existing statuses and ensure <i>Send General Message</i> is disabled in Automated Messaging Advanced Settings for those statuses.</li>
+</ul>
+</li>
+<li>Update the confirmation status of the appointment to a status that has enabled <i>Send General Message</i>. <ul>
+<li>To not send the general message (e.g., if the general message is a survey link that you don't want to send to a patient) make sure the updated appointment status has disabled <i>Send General Message</i> instead.</li>
+</ul>
+</li>
+<li>Set the appointment complete.</li>
+</ol>
+<p>Any general message is sent automatically as scheduled after the appointment's end time has passed and the appointment is set complete.</p>
+</div>
+</div>
+</body>
+</html>```

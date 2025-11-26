@@ -1,0 +1,49 @@
+# File: ./www.opendental.com/manual243/alertsubscribe.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Alert Subscription</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('alertsubscribe','securityusers','security','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/alertsubscribe.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/alertsubscribe.html" >v24.2</option><option value="https://www.opendental.com/manual241/alertsubscribe.html" >v24.1</option><option value="https://www.opendental.com/manual233/alertsubscribe.html" >v23.3</option><option value="https://www.opendental.com/manual232/alertsubscribe.html" >v23.2</option><option value="https://www.opendental.com/manual231/alertsubscribe.html" >v23.1</option><option value="https://www.opendental.com/manual224/alertsubscribe.html" >v22.4</option><option value="https://www.opendental.com/manual223/alertsubscribe.html" >v22.3</option><option value="https://www.opendental.com/manual222/alertsubscribe.html" >v22.2</option><option value="https://www.opendental.com/manual221/alertsubscribe.html" >v22.1</option><option value="https://www.opendental.com/manual214/alertsubscribe.html" >v21.4</option><option value="https://www.opendental.com/manual213/alertsubscribe.html" >v21.3</option><option value="https://www.opendental.com/manual212/alertsubscribe.html" >v21.2</option><option value="https://www.opendental.com/manual211/alertsubscribe.html" >v21.1</option><option value="https://www.opendental.com/manual205/alertsubscribe.html" >v20.5</option><option value="https://www.opendental.com/manual204/alertsubscribe.html" >v20.4</option><option value="https://www.opendental.com/manual203/alertsubscribe.html" >v20.3</option><option value="https://www.opendental.com/manual202/alertsubscribe.html" >v20.2</option><option value="https://www.opendental.com/manual201/alertsubscribe.html" >v20.1</option><option value="https://www.opendental.com/manual194/alertsubscribe.html" >v19.4</option><option value="https://www.opendental.com/manual193/alertsubscribe.html" >v19.3</option><option value="https://www.opendental.com/manual192/alertsubscribe.html" >v19.2</option><option value="https://www.opendental.com/manual191/alertsubscribe.html" >v19.1</option><option value="https://www.opendental.com/manual184/alertsubscribe.html" >v18.4</option><option value="https://www.opendental.com/manual183/alertsubscribe.html" >v18.3</option><option value="https://www.opendental.com/manual182/alertsubscribe.html" >v18.2</option><option value="https://www.opendental.com/manual181/alertsubscribe.html" >v18.1</option><option value="https://www.opendental.com/manual174/alertsubscribe.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Alert Subscription</p></div>
+<div class="GeneralPageContent">
+<p>Determine which Alerts a user receives.</p>
+<p>In the <a href="securityusers.html">User Edit</a> window, click the Alert Subs tab.</p>
+<img src="images/alertSubscribe.png" width="620" height="361"/><p><b>User Alert Subscriptions</b>: Highlight the <a href="alertcategories.html">Alert Categories</a> to have a user receive these alert types. </p>
+<p><b>Clinics Subscribed</b>: If using <a href="clinics.html">Clinics</a>, select the clinics a user is to receive alerts for. All Clinics are listed, regardless of Clinic restrictions set in the <i>Clinics</i> tab. </p>
+<p>Users receive any <a href="alerts.html">Alerts</a> in the selected categories for selected clinics that are not user restricted.</p>
+</div>
+</div>
+</body>
+</html>```

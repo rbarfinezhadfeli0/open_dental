@@ -1,0 +1,72 @@
+# File: ./www.opendental.com/manual232/permissionssecurityadmin.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - "Security Admin" Permission</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('permissionssecurityadmin','permissions','securityusergroups','security','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/permissionssecurityadmin.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/permissionssecurityadmin.html" >v24.2</option><option value="https://www.opendental.com/manual241/permissionssecurityadmin.html" >v24.1</option><option value="https://www.opendental.com/manual233/permissionssecurityadmin.html" >v23.3</option><option value="https://www.opendental.com/manual232/permissionssecurityadmin.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/permissionssecurityadmin.html" >v23.1</option><option value="https://www.opendental.com/manual224/permissionssecurityadmin.html" >v22.4</option><option value="https://www.opendental.com/manual223/permissionssecurityadmin.html" >v22.3</option><option value="https://www.opendental.com/manual222/permissionssecurityadmin.html" >v22.2</option><option value="https://www.opendental.com/manual221/permissionssecurityadmin.html" >v22.1</option><option value="https://www.opendental.com/manual214/permissionssecurityadmin.html" >v21.4</option><option value="https://www.opendental.com/manual213/permissionssecurityadmin.html" >v21.3</option><option value="https://www.opendental.com/manual212/permissionssecurityadmin.html" >v21.2</option><option value="https://www.opendental.com/manual211/permissionssecurityadmin.html" >v21.1</option><option value="https://www.opendental.com/manual205/permissionssecurityadmin.html" >v20.5</option><option value="https://www.opendental.com/manual204/permissionssecurityadmin.html" >v20.4</option><option value="https://www.opendental.com/manual203/permissionssecurityadmin.html" >v20.3</option><option value="https://www.opendental.com/manual202/permissionssecurityadmin.html" >v20.2</option><option value="https://www.opendental.com/manual201/permissionssecurityadmin.html" >v20.1</option><option value="https://www.opendental.com/manual194/permissionssecurityadmin.html" >v19.4</option><option value="https://www.opendental.com/manual193/permissionssecurityadmin.html" >v19.3</option><option value="https://www.opendental.com/manual192/permissionssecurityadmin.html" >v19.2</option><option value="https://www.opendental.com/manual191/permissionssecurityadmin.html" >v19.1</option><option value="https://www.opendental.com/manual184/permissionssecurityadmin.html" >v18.4</option><option value="https://www.opendental.com/manual183/permissionssecurityadmin.html" >v18.3</option><option value="https://www.opendental.com/manual182/permissionssecurityadmin.html" >v18.2</option><option value="https://www.opendental.com/manual181/permissionssecurityadmin.html" >v18.1</option><option value="https://www.opendental.com/manual174/permissionssecurityadmin.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>"Security Admin" Permission</p></div>
+<div class="GeneralPageContent">
+<p>The <i>Security Admin</i>&nbsp;<a href="permissions.html">Permission</a> allows access to administrator functions. At least one user must have this permission. It allows/blocks a user from the following:</p>
+<ul>
+<li>Locking <a href="accounting.html">Accounting</a> entries.</li>
+<li>Clean Up Allowed tool. <a href="feeschedules.html">Fee Schedules</a></li>
+<li>Access to <a href="procedurecodetools.html">Procedure Code Tools</a>.</li>
+<li>Access to <a href="ecwbridgesetup.html">eCW Program Link</a>.</li>
+<li>Access to create users and move patients in the <a href="providers.html">Providers</a>.</li>
+<li>Use Undo in the <a href="recalllist.html">Recall List</a>.</li>
+<li>Delete <a href="recalltypes.html">Recall Types</a>.</li>
+<li>Access to <a href="security.html">Security</a>.</li>
+<li>Access to the <a href="audittrail.html">Audit Trail</a>.</li>
+<li>Access to <a href="dsusergroupdefaults.html">Dental School Setup</a> (Dental Schools).</li>
+<li>Access to the <a href="employees.html">Employees</a> list.</li>
+<li>Access to the Etrans tool in <a href="databasemaintenance.html">Database Maintenance</a>.</li>
+<li>Make changes to Setup in <a href="update.html">Update</a>.</li>
+<li>Make changes to <a href="eservicessignup.html">eServices Signup</a>.</li>
+<li>Add IP Addresses in <a href="cloudmanagement.html">Cloud Management</a> (Open Dental Cloud users only).</li>
+<li>Access to the <a href="patientstatussetter.html">Patient Status Setter</a> tool. </li>
+<li>Using the Zero Claims button in the <a href="reportoutins.html">Outstanding Insurance Claims Report</a>.</li>
+<li>Access to certain <a href="databasemaintenancetools.html">Database Maintenance Tools</a>.</li>
+</ul>
+<br/><p class="MarginBottomZero">A SecurityAdmin log entry is also added to the Audit Trail when:  </p>
+<ul class="MarginBottomGap">
+<li>A user clicks <i>Stop Monitoring</i> on the eServices Setup, <a href="econnector.html">eConnector</a> Service window.</li>
+<li>A user edits permissions for a user group.</li>
+<li>The user group is changed for a user.</li>
+<li>The Registration Key is changed.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,82 @@
+# File: ./www.opendental.com/site/apicovcats.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API CovCats</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apicovcats','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API CovCats</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7inscatssetup.html">Insurance Categories</a> for additional information.</p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96covcat.html" target="_blank">CovCat Database Schema.</a></p>
+<h2>CovCats GET (single)</h2>
+<p>Version Added: 23.3.8</p>
+<p>Gets a single covcat.</p>
+<p><b>Parameters:</b></p>
+<p><b>CovCatNum: </b> Required in the URL.<br></p>
+<p><b>Example Request:</b><br> GET /covcats/1<br></p>
+<b>Example Response:</b><br><p><span class="codeblock"> {<br> "CovCatNum": 1,<br> "Description": "General",<br> "DefaultPercent": -1,<br> "CovOrder": 0,<br> "IsHidden": "false",<br> "EbenefitCat": "General"<br> }<br></span></p>
+<p></p>
+<p> 200 OK <br> 404 NotFound (with explanation)<br></p>
+<h2>CovCats GET (multiple)</h2>
+<p>Version Added: 23.3.8</p>
+<p>Gets a list of covcats.</p>
+<p><b>Example Request:</b><br> GET /covcats </p>
+<b>Example Response:</b><br><p><span class="codeblock"> [<br>  {<br> "CovCatNum": 1,<br> "Description": "General",<br> "DefaultPercent": -1,<br> "CovOrder": 0,<br> "IsHidden": "false",<br> "EbenefitCat": "General"<br> },<br> {<br> "CovCatNum": 2,<br> "Description": "Diagnostic",<br> "DefaultPercent": 100,<br> "CovOrder": 1,<br> "IsHidden": "false",<br> "EbenefitCat": "Diagnostic"<br> },<br> {<br> "CovCatNum": 3,<br> "Description": "Preventive",<br> "DefaultPercent": 100,<br> "CovOrder": 3,<br> "IsHidden": "false",<br> "EbenefitCat": "RoutinePreventive"<br> },<br> etc.<br> ]<br></span></p>
+<p></p>
+<p> 200 OK <br></p>
+<h2>CovCats POST (create)</h2>
+<p>Version Added: 24.1.24</p>
+<p> Creates a covcat. Do not alter <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7inscatssetup.html">Insurance Categories</a> without a full understanding of what this does as insurance categories are global and changes may affect all plans.</p>
+<p>One of each Electronic Benefit Category (<b>EbenefitCat</b>) must be assigned to a corresponding coverage category. There can be no duplicates and no missing categories in order for Open Dental <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7benefitinfo.html">Benefit Processing</a> and <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7ebenefits.html">Electronic Eligibility and Benefits</a> to function properly.</p>
+<p><b>Description: </b>Required. Description of this category.<br><b>DefaultPercent: </b>Optional. Coverage percentage assigned to category when creating a new <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7insplan.html">Insurance Plan</a>. Integer between -1 and 100. Specifying -1 will not apply a percentage. Default -1.<br><b>IsHidden: </b>Optional. Either "true" or "false". Default "false".<br><b>EbenefitCat: </b>Optional. Either "None", "General", "Diagnostic", "Periodontics", "Restorative", "Endodontics", "MaxillofacialProsth", "Crowns", "Accident", "Orthodontics", "Prosthodontics", "OralSurgery", "RoutinePreventive", "DiagnosticXRay", or "Adjunctive". Default "None".<br></p>
+<p><b>Example Request:</b><br> POST /covcats<br></p>
+<p><span class="codeblock"> {<br> "Description": "Implants",<br> "DefaultPercent": 80,<br> "IsHidden": "false",<br> "EbenefitCat": "None"<br>  }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "CovCatNum": 25,<br> "Description": "Implants",<br> "DefaultPercent": 80,<br> "CovOrder": 16,<br> "IsHidden": "false",<br> "EbenefitCat": "None"<br> }<br></span></p>
+<p>201 Created<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>CovCats PUT (update)</h2>
+<p>Version Added: 24.1.24</p>
+<p>Updates a covcat. This does affect all benefits that are currently tied to this CovCat.</p>
+<p>CovOrder is important as multiple benefits can apply to a single procedure code. If some benefits are of the same type, there is a hierarchy to determine which benefits affect insurance estimates. See the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7benefitinfo.html">Benefit Hierarchy</a> section for more information.</p>
+<p><b>CovCatNum:</b> Required in the URL.<br></p>
+<p><b>Description: </b>Description of this category.<br><b>DefaultPercent: </b>Coverage percentage assigned to category when creating a new <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7insplan.html">Insurance Plan</a>. Integer between -1 and 100. Specifying -1 will not apply a percentage.<br><b>CovOrder: </b>The order in which the categories are displayed. CovCats with a lower CovOrder are more general, while CovCats with a higher CovOrder will have priority and override the lower categories.<br><b>IsHidden: </b>Either "true" or "false".<br><b>EbenefitCat: </b>Either "None", "General", "Diagnostic", "Periodontics", "Restorative", "Endodontics", "MaxillofacialProsth", "Crowns", "Accident", "Orthodontics", "Prosthodontics", "OralSurgery", "RoutinePreventive", "DiagnosticXRay", or "Adjunctive".<br></p>
+<p><b>Example Request:</b><br> PUT /covcats/34<br></p>
+<p><span class="codeblock"> {<br> "Description": "Sealants",<br> "DefaultPercent": 80,<br> "CovOrder": 17,<br> "IsHidden": "false",<br> "EbenefitCat": "None"<br> }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "CovCatNum": 34,<br> "Description": "Sealants",<br> "DefaultPercent": 80,<br> "CovOrder": 17,<br> "IsHidden": "false",<br> "EbenefitCat": "None"<br> }<br></span></p>
+<p>200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>```

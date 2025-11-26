@@ -1,0 +1,49 @@
+# File: ./www.opendental.com/site/0_accounting.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Accounting</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('0_accounting','0_manage','0_modules','quickmanual','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Accounting</p></div>
+		<div class="GeneralPageContent">
+<p>Open Dental has a built-in accounting tool that can be used independently by small offices.</p>
+<p>In the <a href="0_manage.html">Manage Module</a>, click <b>Accounting</b>.</p>
+<img src="images/accounting.png" width="494" height="407"/><p>The Chart of Accounts is a list of the accounts used to organize finances and divide expenses, revenue, assets, liabilities, and equity. Certain account transactions can be set up to automatically create accounting transactions in the Chart of Accounts. You can also integrate this tool with QuickBooks or QuickBooks Online.</p>
+<h2>Accounting Transactions</h2><p>From the Transaction History, view, add, and edit accounting transactions.</p>
+<img src="images/transactionHistory.png" width="915" height="347"/><p>Transactions can include information such as amounts, memos, accounts to split to, and more. They can also be exported into an Excel or text file.</p>
+		</div>
+	</div>
+</body>
+</html>```

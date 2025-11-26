@@ -1,0 +1,71 @@
+# File: ./www.opendental.com/manual/ehrcpoelabresultsenter.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - EHR Lab Results</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('ehrcpoelabresultsenter','ehrcpoelab','ehrdashboard1','+chartToolbar','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/ehrcpoelabresultsenter.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/ehrcpoelabresultsenter.html" >v24.2</option><option value="https://www.opendental.com/manual241/ehrcpoelabresultsenter.html" >v24.1</option><option value="https://www.opendental.com/manual233/ehrcpoelabresultsenter.html" >v23.3</option><option value="https://www.opendental.com/manual232/ehrcpoelabresultsenter.html" >v23.2</option><option value="https://www.opendental.com/manual231/ehrcpoelabresultsenter.html" >v23.1</option><option value="https://www.opendental.com/manual224/ehrcpoelabresultsenter.html" >v22.4</option><option value="https://www.opendental.com/manual223/ehrcpoelabresultsenter.html" >v22.3</option><option value="https://www.opendental.com/manual222/ehrcpoelabresultsenter.html" >v22.2</option><option value="https://www.opendental.com/manual221/ehrcpoelabresultsenter.html" >v22.1</option><option value="https://www.opendental.com/manual214/ehrcpoelabresultsenter.html" >v21.4</option><option value="https://www.opendental.com/manual213/ehrcpoelabresultsenter.html" >v21.3</option><option value="https://www.opendental.com/manual212/ehrcpoelabresultsenter.html" >v21.2</option><option value="https://www.opendental.com/manual211/ehrcpoelabresultsenter.html" >v21.1</option><option value="https://www.opendental.com/manual205/ehrcpoelabresultsenter.html" >v20.5</option><option value="https://www.opendental.com/manual204/ehrcpoelabresultsenter.html" >v20.4</option><option value="https://www.opendental.com/manual203/ehrcpoelabresultsenter.html" >v20.3</option><option value="https://www.opendental.com/manual202/ehrcpoelabresultsenter.html" >v20.2</option><option value="https://www.opendental.com/manual201/ehrcpoelabresultsenter.html" >v20.1</option><option value="https://www.opendental.com/manual194/ehrcpoelabresultsenter.html" >v19.4</option><option value="https://www.opendental.com/manual193/ehrcpoelabresultsenter.html" >v19.3</option><option value="https://www.opendental.com/manual192/ehrcpoelabresultsenter.html" >v19.2</option><option value="https://www.opendental.com/manual191/ehrcpoelabresultsenter.html" >v19.1</option><option value="https://www.opendental.com/manual184/ehrcpoelabresultsenter.html" >v18.4</option><option value="https://www.opendental.com/manual183/ehrcpoelabresultsenter.html" >v18.3</option><option value="https://www.opendental.com/manual182/ehrcpoelabresultsenter.html" >v18.2</option><option value="https://www.opendental.com/manual181/ehrcpoelabresultsenter.html" >v18.1</option><option value="https://www.opendental.com/manual174/ehrcpoelabresultsenter.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>EHR Lab Results</p></div>
+<div class="GeneralPageContent">
+<p>Results for medical lab orders can be imported or copied from a .txt file in HL7 format or entered manually. Entering / importing lab test results was a measure in both stage 1 and stage 2, but is no longer a reporting requirement in <a href="../site/ehrmodified2.html">EHR Modified Stage 2</a>.</p>
+<h2>Importing or copying results from an HL7 .txt file</h2>
+<p>Open Dental will attempt to identify the patient from the lab result information and match the results with an existing Lab Order. If the order doesn't yet exist, it will be created automatically. If a patient match is not made, you will need to manually attach the correct patient.</p>
+<p>Option 1: If the lab results were emailed to you, and the results are sent as a .txt file attachment in HL7 format, they can be imported from email:</p>
+<ol>
+<li>Open your email inbox.</li>
+<li>Open the email message, then double-click on the txt attachment. If the file is properly formatted, the lab results will be parsed and attached to the lab order.</li>
+</ol>
+<br/><p>Option 2: Copy the HL7 message and import the results.</p>
+<ol>
+<li>Copy the received HL7 message to the clipboard (select all and press Ctrl + C).</li>
+<li>On the <a href="ehrdashboard1.html">EHR Dashboard</a>, click <b>Edit Labs</b>, <b>Import</b>. <br/><img src="images/ehrcpoeresultcopy.gif" width="592" height="165" class="ImageInParagraph"/></li>
+<li>Highlight <i>Paste HL7 Lab Message Text Here</i>, then press Ctrl + V to copy the results from the clipboard.</li>
+<li>Click OK.</li>
+</ol>
+<br/><p><b>View Results</b>: Open the original lab order. On the <a href="ehrcpoelab.html">Lab Order Edit</a> window, under Lab Results, a line item for the results should list. Double click to view.</p>
+<h2>Entering results manually</h2>
+<ol>
+<li>On the EHR Dashboard, click <b>Edit labs</b>. Double click on the original Lab Order.</li>
+<li>On the right, click <b>Add Result</b>. <br/><img src="images/cpoeLabResults.gif" width="915" height="667" class="ImageInParagraph"/></li>
+<li>Enter the results and click OK to save.</li>
+</ol>
+<div class="Note">Note: To count towards the numerator for EHR CPOE Lab Results, the following information is required: <ul>
+<li>Observation Value Type must equal Structured Numeric or Numeric.</li>
+<li>Must have a Code System/Element ID or Alt Code System/Alt Element ID, and it must a SNOMED CT code.</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>```

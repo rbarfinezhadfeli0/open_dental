@@ -1,0 +1,93 @@
+# File: ./www.opendental.com/site/apiperiomeasures.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API PerioMeasures</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apiperiomeasures','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API PerioMeasures</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7perio.html">Perio Chart</a> for more information.</p>
+<p>A PerioMeasure stores measurements for a single tooth in a PerioExam. One tooth can have multiple PerioMeasures on a single exam, but only one of each <b>SequenceType</b>. Different <b>SequenceTypes</b> have different ranges of measurements that <b>ToothValue</b> and Surface Values (<b>MBvalue, Bvalue, DBvalue, MLvalue, Lvalue, </b>and<b> DLvalue</b>) can contain. Values of -1 indicate no measurement. Values greater than 100 indicate negative values (Example: To use a value of 105, subtract it from 100. [100 - 105 = -5]). </p>
+<p><li>If <b>SequenceType</b> is "Mobility", then ToothValue can range from 0-19. All Surface Values must be -1.</li>
+<li>If <b>SequenceType</b> is "Furcation", then Surface Values can range from -1, 0-19. ToothValue must be -1.</li>
+<li>If <b>SequenceType</b> is "GingMargin", then Surface Values can range from -1, 0-19, or 101-119. ToothValue must be -1.</li>
+<li>If <b>SequenceType</b> is "MGJ", then Surface Values can range from -1, 0-19. However, if <b>IntTooth</b> is 1-16, then MLvalue, Lvalue, and DLvalue must all be -1. ToothValue must be -1.</li>
+<li>If <b>SequenceType</b> is "Probing", then Surface Values can range from -1, 0-19. ToothValue must be -1.</li>
+<li>If <b>SequenceType</b> is "SkipTooth", then ToothValue must be 1. All Surface Values must be -1.</li>
+<li>If <b>SequenceType</b> is "BleedSupPlaqCalc" ("Bleeding" prior to version 24.1), then Surface Values can range from 0-15. These values represent the sum of flags for bleeding(1), suppuration(2), plaque(4), and calculus(8). For example, a BleedSupPlaqCalc measurement of 13 means there is bleeding, plaque, and calculus (1+4+8=13). ToothValue must be -1.</li>
+<br> PerioMeasures of <b>SequenceType</b> "CAL" are not saved to the database. A Clinical Attachment Loss measurement for a surface is calculated by adding the Probing and GingMargin measurements of a surface.</p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96periomeasure.html" target="_blank">PerioMeasure Database Schema.</a></p>
+<h2>PerioMeasures GET</h2>
+<p>Version Added: 22.4.32</p>
+<p>Gets a list of periomeasures.</p>
+<p><b>PerioExamNum</b>: Optional. FK to perioexam.PerioExamNum. Use to get all measurements for a single exam.</p>
+<p>Returned fields are detailed below:</p>
+<p><b>SequenceType:</b> Specifies what is being measured.<br><b>IntTooth:</b> The tooth this measurement is associated to.<br><b>ToothValue:</b> Used when the measurement does not apply to a surface.<br><b>MBvalue:</b> Mesial Buccal surface value.<br><b>Bvalue:</b> Buccal surface value.<br><b>DBvalue:</b> Distal Buccal surface value.<br><b>MLvalue:</b> Mesial Lingual surface value.<br><b>Lvalue:</b> Lingual surface value.<br><b>DLvalue:</b> Distal Lingual surface value.<br><b>SecDateTEdit:</b> When this PerioMeasure was last modified.<br></p>
+<p><b>Example Requests:</b><br> GET /periomeasures<br> GET /periomeasures?PerioExamNum=3<br></p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br> {<br> "PerioMeasureNum": 66,<br> "PerioExamNum": 3,<br> "SequenceType": "SkipTooth",<br> "IntTooth": 16,<br> "ToothValue": 1,<br> "MBvalue": -1,<br> "Bvalue": -1,<br> "DBvalue": -1,<br> "MLvalue": -1,<br> "Lvalue": -1,<br> "DLvalue": -1,<br> "SecDateTEdit": "2023-03-15 11:35:22"<br> },<br> {<br> "PerioMeasureNum": 96,<br> "PerioExamNum": 3,<br> "SequenceType": "Probing",<br> "IntTooth": 17,<br> "ToothValue": -1,<br> "MBvalue": 3,<br> "Bvalue": 3,<br> "DBvalue": 3,<br> "MLvalue": 3,<br> "Lvalue": 2,<br> "DLvalue": 3,<br> "SecDateTEdit": "2023-03-15 11:44:14"<br> },<br> {<br> "PerioMeasureNum": 97,<br> "PerioExamNum": 3,<br> "SequenceType": "BleedSupPlaqCalc",<br> "IntTooth": 2,<br> "ToothValue": -1,<br> "MBvalue": 0,<br> "Bvalue": 15,<br> "DBvalue": 15,<br> "MLvalue": 0,<br> "Lvalue": 0,<br> "DLvalue": 0,<br> "SecDateTEdit": "2023-03-15 11:50:14"<br> },<br> etc...<br> ]<br></span></p>
+<p>200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)</p>
+<h2>PerioMeasures POST (create)</h2>
+<p>Version Added: 22.4.37</p>
+<p>Inserts a new periomeasure. New periomeasures are compared against existing periomeasures attached to the same perioexam to prevent duplicates.</p>
+<p><b>PerioExamNum: </b>Required. FK to perioexam.PerioExamNum.<br><b>SequenceType:</b> Required. Either "Mobility", "Furcation", "GingMargin", "MGJ", "Probing", "SkipTooth", or "BleedSupPlaqCalc".<br><b>IntTooth: </b>Required. Valid values are 1-32. The tooth that this measurement is associated to.<br><b>ToothValue, MBvalue, Bvalue, DBvalue, MLvalue, Lvalue, DLvalue</b>: See the top of this page for more information. Relies on <b>SequenceType</b>. When <b>SequenceType</b> allows Surface Values, at least one of the six values must contain a measurement. Default -1.<br></p>
+<p><b>Example Requests:</b><br> POST /periomeasures<br><span class="codeblock">{<br> "PerioExamNum": 5,<br> "SequenceType": "Probing",<br> "IntTooth": 8,<br> "MBvalue": 2,<br> "Bvalue": 3,<br> "DBvalue": 2,<br> "MLvalue": 2,<br> "Lvalue": 2,<br> "DLvalue": 2<br> }<br></span></p>
+<p>or<br></p>
+<p><span class="codeblock">{<br> "PerioExamNum": 5,<br> "SequenceType": "Mobility",<br> "IntTooth": 9,<br> "ToothValue": 4<br> }<br></span></p>
+<p><b>Example Responses:</b><br><span class="codeblock">{<br> "PerioMeasureNum": 206,<br> "PerioExamNum": 5,<br> "SequenceType": "Probing",<br> "IntTooth": 8,<br> "ToothValue": -1,<br> "MBvalue": 2,<br> "Bvalue": 3,<br> "DBvalue": 2,<br> "MLvalue": 2,<br> "Lvalue": 2,<br> "DLvalue": 2,<br> "SecDateTEdit": "2023-03-30 11:20:02"<br> }<br></span></p>
+<p>or<br></p>
+<p><span class="codeblock">{<br> "PerioMeasureNum": 207,<br> "PerioExamNum": 5,<br> "SequenceType": "Mobility",<br> "IntTooth": 9,<br> "ToothValue": 4,<br> "MBvalue": -1,<br> "Bvalue": -1,<br> "DBvalue": -1,<br> "MLvalue": -1,<br> "Lvalue": -1,<br> "DLvalue": -1,<br> "SecDateTEdit": "2023-03-30 11:23:31"<br> }<br></span></p>
+<p>201 Created<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>PerioMeasures PUT (update)</h2>
+<p>Version Added: 22.4.37</p>
+<p>Updates an existing periomeasure.</p>
+<p><b>PerioMeasureNum: </b>Required in the URL. Primary key.<br><b>ToothValue, MBvalue, Bvalue, DBvalue, MLvalue, Lvalue, DLvalue:</b> The values that can be supplied and the measurements they can contain rely on the SequenceType. See the top of this page for more information.<br></p>
+<p><b>Example Requests:</b><br> PUT /periomeasures/206<br><span class="codeblock">{<br> "MBvalue": 3,<br> "Bvalue": 2,<br> "DBvalue": 3,<br> "MLvalue": 3,<br> "Lvalue": 2,<br> "DLvalue": 3<br> }<br></span></p>
+<p>or<br></p>
+<p><span class="codeblock">{<br> "ToothValue": 4<br> }<br></span></p>
+<p><b>Example Responses:</b><br><span class="codeblock">{<br> "PerioMeasureNum": 206,<br> "PerioExamNum": 5,<br> "SequenceType": "Probing",<br> "IntTooth": 8,<br> "ToothValue": -1,<br> "MBvalue": 3,<br> "Bvalue": 2,<br> "DBvalue": 3,<br> "MLvalue": 3,<br> "Lvalue": 2,<br> "DLvalue": 3,<br> "SecDateTEdit": "2023-04-05 14:30:00"<br> }<br></span></p>
+<p>or<br></p>
+<p><span class="codeblock">{<br> "PerioMeasureNum": 207,<br> "PerioExamNum": 5,<br> "SequenceType": "Mobility",<br> "IntTooth": 9,<br> "ToothValue": 4,<br> "MBvalue": -1,<br> "Bvalue": -1,<br> "DBvalue": -1,<br> "MLvalue": -1,<br> "Lvalue": -1,<br> "DLvalue": -1,<br> "SecDateTEdit": "2023-04-03 09:48:23"<br> }<br></span></p>
+<p>200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>PerioMeasures DELETE</h2>
+<p>Version Added: 23.3.27</p>
+<p>Deletes an existing periomeasure with a SequenceType of "Mobility" or "SkipTooth".</p>
+<p><b>PerioMeasureNum: </b>Required in the URL.<br></p>
+<p><b>Example Request:</b><br> DELETE /periomeasures/207<br></p>
+<p><b>Example Responses:</b><br> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>```

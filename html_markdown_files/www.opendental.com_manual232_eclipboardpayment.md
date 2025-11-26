@@ -1,0 +1,100 @@
+# File: ./www.opendental.com/manual232/eclipboardpayment.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - eClipboard: Payment</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('eclipboardpayment','payment','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/eclipboardpayment.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/eclipboardpayment.html" >v24.2</option><option value="https://www.opendental.com/manual241/eclipboardpayment.html" >v24.1</option><option value="https://www.opendental.com/manual233/eclipboardpayment.html" >v23.3</option><option value="https://www.opendental.com/manual232/eclipboardpayment.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/eclipboardpayment.html" >v23.1</option><option value="https://www.opendental.com/manual224/eclipboardpayment.html" >v22.4</option><option value="https://www.opendental.com/manual223/eclipboardpayment.html" >v22.3</option><option value="https://www.opendental.com/manual222/eclipboardpayment.html" >v22.2</option><option value="https://www.opendental.com/manual221/eclipboardpayment.html" >v22.1</option><option value="https://www.opendental.com/manual214/eclipboardpayment.html" >v21.4</option><option value="https://www.opendental.com/manual213/eclipboardpayment.html" >v21.3</option><option value="https://www.opendental.com/manual212/eclipboardpayment.html" >v21.2</option><option value="https://www.opendental.com/manual211/eclipboardpayment.html" >v21.1</option><option value="https://www.opendental.com/manual205/eclipboardpayment.html" >v20.5</option><option value="https://www.opendental.com/manual204/eclipboardpayment.html" >v20.4</option><option value="https://www.opendental.com/manual203/eclipboardpayment.html" >v20.3</option><option value="https://www.opendental.com/manual202/eclipboardpayment.html" >v20.2</option><option value="https://www.opendental.com/manual201/eclipboardpayment.html" >v20.1</option><option value="https://www.opendental.com/manual194/eclipboardpayment.html" >v19.4</option><option value="https://www.opendental.com/manual193/eclipboardpayment.html" >v19.3</option><option value="https://www.opendental.com/manual192/eclipboardpayment.html" >v19.2</option><option value="https://www.opendental.com/manual191/eclipboardpayment.html" >v19.1</option><option value="https://www.opendental.com/manual184/eclipboardpayment.html" >v18.4</option><option value="https://www.opendental.com/manual183/eclipboardpayment.html" >v18.3</option><option value="https://www.opendental.com/manual182/eclipboardpayment.html" >v18.2</option><option value="https://www.opendental.com/manual181/eclipboardpayment.html" >v18.1</option><option value="https://www.opendental.com/manual174/eclipboardpayment.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>eClipboard: Payment</p></div>
+<div class="GeneralPageContent">
+<p>Patients can review statements and make payments on the eClipboard device.</p>
+<p>In the <a href="account.html">Account Module</a>, click the <a href="payment.html">Payment</a> dropdown. Select <b>Send Payment to eClipboard</b>.</p>
+<img src="images/accounteClipboard.png" width="311" height="161"/><p>Payments via eClipboard are only available for <a href="xcharge.html">XCharge (OpenEdge)</a>, <a href="edgeexpress.html">Edge Express</a>, or <a href="payconnectsetup.html">PayConnect 1.0</a> users.</p>
+<h2>Patient Currently in Session</h2>
+<p>If a patient is currently in an eClipboard session, click <b>Send Payment to eClipboard</b> to add the option to the Check-in checklist. </p>
+<p>Alternatively, this option can automatically be added to the Check-in checklist when <i>Allow payment when patient is checking in</i> is enabled in eClipboard Setup. Another checklist item (e.g., patient forms or patient photo) must display for patients to view payment information. </p>
+<img src="images/eclipboardPaymentChecklist.png" width="642" height="420"/><h2>Patient Not in Session</h2>
+<p>If the patient is not currently in an eClipboard session, the statements and payment request can be sent to the device.</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>In the Account Module, click the Payment dropdown. </li>
+<li>Select <b>Send Payment to eClipboard</b>. </li>
+<li>The following window displays:<br/><img src="images/eClipboardPaymentQR.png" width="417" height="373" class="ImageInParagraph"/></li>
+<li>In eClipboard, tap the <b>QR icon</b>. <ul>
+<li>Alternatively, in the eClipboard menu, tap <b>Patient Payment</b>.</li>
+</ul>
+<img src="images/eClipboardPaymentQRDevice.png" width="637" height="108"/></li>
+<li>Either use the device camera to scan the QR code, or type in the unlock code.</li>
+<li>The Payment window in eClipboard opens.<br/><img src="images/eClipboardPaymentMain.png" width="642" height="370" class="ImageInParagraph"/></li>
+</ol>
+<h2>Viewing Statements</h2>
+<p class="MarginBottomZero">All statements listed in the Account Module display.  </p>
+<ol class="MarginBottomGap">
+<li>In eClipboard, tap the dropdown next the statement to view.</li>
+<li>Tap <b>Open Statement</b>.</li>
+<li>A PDF of the statement opens.</li>
+<img src="images/eClipboardStatement.png" width="640" height="952"/></ol>
+<h2>Make a Payment</h2>
+<p>Make a payment using a card on file.</p>
+<p><div class="Note">Note: <ul>
+<li>If a card does not exist on file, see below for instructions on adding a card.</li>
+<li>It is recommended an updated statement is added to the account prior to taking a payment. To update the balance after opening eClipboard, create a statement in Open Dental, then tap <b>Refresh</b> in eClipboard.</li>
+</ul>
+</div>
+</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>At the top of the eClipboard Payment info, the balance of the last statement displays. <br/><img src="images/eClipboardPayInfo.png" width="642" height="197" class="ImageInParagraph"/></li>
+<li>Tap <b>Make Payment</b>. <br/><img src="images/eClipboardPay.png" width="642" height="197" class="ImageInParagraph"/></li>
+<li>The payment window opens.<br/><ul>
+<li>Enter an optional note, the amount, and select the card. Then tap<b> Make Payment</b>.</li>
+<li><b>Save new card?<b></b></b>: Tap the box to save the card. </li>
+</ul>
+</li>
+</ol>
+<h2>Manage Credit Cards</h2>
+<p>Cards can be added and deleted as needed. </p>
+<p>In eClipboard, tap <b>Manage Cards</b>.<br/><img src="images/eClipboardManageCards.png" width="642" height="197" class="ImageInParagraph"/></p>
+<p class="MarginBottomZero">Cards currently on file display. <br/></p>
+<ul class="MarginBottomGap">
+<li>Tap <b>New Card</b> to add a new card on file. Enter card and customer information. Then tap <b>Make Payment</b> to add the card. <ul>
+<li>This button is only visible for XCharge Users. If using PayConnect, add new cards from within the Open Dental Account Module instead. </li>
+</ul>
+</li>
+<li>Tap <b>Delete</b> to remove the selected card from file.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

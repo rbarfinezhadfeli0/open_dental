@@ -1,0 +1,60 @@
+# File: ./www.opendental.com/site/version7_3.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: Version 7.3</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>Version 7.3</h1>
+		</div>
+		<div id="Content">
+<p>See <a href="versions.html">Versions</a></p>
+<p>Version 7.3 was released on 10/18/2010 The following new features are included.</p>
+<p><b>Chart Views:</b> In the Chart module, the Show tab now allows saving different views. Each view also allows different combinations of columns in the Progress Notes grid. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7showtabchart.html">Show</a>.</p>
+<p><b>TimeAskedToArrive: </b>Added to appointment table. Automatically calculated from patient.AskToArriveEarly field. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7aptedit.html">Appt Edit</a>.<br></p>
+<p><b>Exam Sheets:</b> A new sheet type to support exams, such as soft tissue exam, perio exam, new patient exam, etc. Radio buttons can now be used anywhere. Some fields can be marked as required by user. Security added to completed sheets. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7examsheets.html">Exam Sheets</a>.</p>
+<p><b>Grouped Procedure Notes:</b> One note can be entered and signed for multiple procedures. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procgroupnote.html">Group Note</a>.</p>
+<p><b>Commlog:</b> Security added. Signatures supported. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7commlog.html">Commlog</a>.<br></p>
+<p><b>Minor Changes</b><br>  OrthoPlex Bridge<br>  Conditions now show on the TP in the graphical tooth chart image.<br> Sopro bridge. <br> Pt Info grid in Chart module implemented Display Fields, allowing users to show PatientFields in Chart module<br> Colored procedures on appointments and the option to show the previous date in parentheses.<br>  Bridge to Pay Connect, an alternative to X-Charge for credit card payment integration. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7payconnectpaymentwindow.html">PayConnect</a>.<br></p>
+
+</div>	
+	</div>
+</body>
+</html>```

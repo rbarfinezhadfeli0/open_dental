@@ -1,0 +1,111 @@
+# File: ./www.opendental.com/manual/reportdailypayments.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Daily Payments Report</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reportdailypayments','+daily','reportsstandard','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/reportdailypayments.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/reportdailypayments.html" >v24.2</option><option value="https://www.opendental.com/manual241/reportdailypayments.html" >v24.1</option><option value="https://www.opendental.com/manual233/reportdailypayments.html" >v23.3</option><option value="https://www.opendental.com/manual232/reportdailypayments.html" >v23.2</option><option value="https://www.opendental.com/manual231/reportdailypayments.html" >v23.1</option><option value="https://www.opendental.com/manual224/reportdailypayments.html" >v22.4</option><option value="https://www.opendental.com/manual223/reportdailypayments.html" >v22.3</option><option value="https://www.opendental.com/manual222/reportdailypayments.html" >v22.2</option><option value="https://www.opendental.com/manual221/reportdailypayments.html" >v22.1</option><option value="https://www.opendental.com/manual214/reportdailypayments.html" >v21.4</option><option value="https://www.opendental.com/manual213/reportdailypayments.html" >v21.3</option><option value="https://www.opendental.com/manual212/reportdailypayments.html" >v21.2</option><option value="https://www.opendental.com/manual211/reportdailypayments.html" >v21.1</option><option value="https://www.opendental.com/manual205/reportdailypayments.html" >v20.5</option><option value="https://www.opendental.com/manual204/reportdailypayments.html" >v20.4</option><option value="https://www.opendental.com/manual203/reportdailypayments.html" >v20.3</option><option value="https://www.opendental.com/manual202/reportdailypayments.html" >v20.2</option><option value="https://www.opendental.com/manual201/reportdailypayments.html" >v20.1</option><option value="https://www.opendental.com/manual194/reportdailypayments.html" >v19.4</option><option value="https://www.opendental.com/manual193/reportdailypayments.html" >v19.3</option><option value="https://www.opendental.com/manual192/reportdailypayments.html" >v19.2</option><option value="https://www.opendental.com/manual191/reportdailypayments.html" >v19.1</option><option value="https://www.opendental.com/manual184/reportdailypayments.html" >v18.4</option><option value="https://www.opendental.com/manual183/reportdailypayments.html" >v18.3</option><option value="https://www.opendental.com/manual182/reportdailypayments.html" >v18.2</option><option value="https://www.opendental.com/manual181/reportdailypayments.html" >v18.1</option><option value="https://www.opendental.com/manual174/reportdailypayments.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Daily Payments Report</p></div>
+<div class="GeneralPageContent">
+<p>Run the Daily Payments Report to see a breakdown of payments in a date range.</p>
+<p>In <a href="reportsstandard.html">Standard Reports</a>, in the <i>Daily</i> section, click <b>Payments</b>.</p>
+<img src="images/reportDailyPayments.png" width="846" height="534"/><p>The Daily Payments report is a list of all <a href="payment.html">Patient Payments</a> and <a href="claimpayfinalize.html">Claim Payments</a>.</p>
+<p>To control user access to this report, see <a href="reportsecurity.html">Report Setup: Security Permissions</a>.</p>
+<h2>Filters</h2>
+<p>Set the report criteria and filters before running the report.</p>
+<p><b>Calendar:</b> In the first calendar select the start date. In the second calendar select the end date. </p>
+<p class="MarginBottomZero"><b>Providers:</b> Select providers with attached payments to include. Ctrl + click to select multiple providers, or check <b>All</b> to include all providers, including those marked <i>Hidden on Reports</i>. </p>
+<ul class="MarginBottomGap">
+<li>For patient payments, filters by provider attached to <a href="paysplit.html">Payment Split</a>.</li>
+<li>For insurance payments, filters by <a href="claimprocedureprovider.html">Claimproc Provider</a>.</li>
+<li>Users without the <i>Daily - View All Providers</i> permission only see the provider associated with their <a href="securityusers.html">User</a> in the Providers list and the All checkbox is disabled. Users must have the <i>Daily - View All Providers</i> to access the full provider list and utilize the All checkbox. </li>
+<li>Check<b> Include Unearned</b> to include payments with an unearned type (e.g., prepayments, see <a href="unearnedprepayment.html">Unearned / Prepayment</a>). This should either always be selected when running the daily payment report or never selected.</li>
+<li>To exclude hidden providers from the report, manually select visible providers from the list.</li>
+</ul>
+<p class="MarginBottomZero"><b>Clinics:</b> Select clinics with attached payments to include in the report. Ctrl + click to select multiple clinics or check <b>All (Includes hidden)</b> to include all clinics, including those marked hidden.  </p>
+<ul class="MarginBottomGap">
+<li>For patient payments, filters by clinic attached to payment split. <i>Unassigned</i> refers to paysplits not assigned to a clinic.</li>
+<li>For insurance payments, filters by clinic attached to <a href="claimprocedure.html">Claim Procedure (claimproc)</a>. <i>Unassigned</i> refers to claimprocs not assigned to a clinic.</li>
+<li>If a user is restricted to specific clinics, only accessible clinics are listed When checking <b>All (includes hidden)</b>, results include all clinics user has access to, including those marked hidden; results do not include clinics user is restricted from or unassigned payments. </li>
+</ul>
+<p class="MarginBottomZero"><b>Group By:</b> Select how payments are grouped. Payments are always split by clinic if paysplits exist for multiple clinics. </p>
+<ul class="MarginBottomGap">
+<li><b>Check</b>: Group by payment. Patient payments are listed by the name of the Paid By patient. For bulk insurance checks, Open Dental chooses one patient name to display. </li>
+<li><b>Patient</b>: Bulk insurance payments are split by each patient on the payment. Patient payments are only listed the Paid By patient.</li>
+<li><b>Show splits by provider separately</b>: Check to split payments by provider. Uncheck to group payments; <i>Prov</i> column lists all providers attached to a payment.</li>
+</ul>
+<p class="MarginBottomZero"><b>Include hidden treatment planned prepayments</b>: Determines whether treatment planned prepayments (i.e., hidden splits) are included on the report. The default for this setting can be set in <a href="reportmiscsettings.html">Report Setup: Misc Settings</a>. </p>
+<ul class="MarginBottomGap">
+<li>Checked: Include treatment planned prepayments in the report. </li>
+<li>Unchecked: Do not include treatment planned prepayments in the report.</li>
+</ul>
+<p class="MarginBottomZero"><b>Show online patient payments separately</b>: Determines if <a href="portalonlinepayments.html">Online Payments</a> are grouped separately from other Patient Payments. </p>
+<ul class="MarginBottomGap">
+<li>Checked: Payments processed using <a href="portalpaymentsbypatient.html">Patient Portal</a> or CareCredit <i>Lookup</i> or <i>Apply</i> are grouped into an <i>Online Patient Payments</i> category before being sorted by Payment Type.</li>
+<li>Unchecked: Payments are grouped into <i>Patient Payments</i>, regardless of processing method.</li>
+</ul>
+<p><b>Show CareCredit fees</b>: Check to display a column or additional row and totals for CareCredit merchant fees. </p>
+<p><b>Show PayConnect fees</b>: Check to display a column or additional row and totals for PayConnect merchant fees. </p>
+<p><b>All insurance payment types:</b> Uncheck to only select certain insurance payment types. Ctrl + click to select multiple items. When checked, includes all <a href="inspaytypes.html">Insurance Payment Types</a>.</p>
+<p><b>All patient payment types:</b> Uncheck to select only specific <a href="definitionspaymenttypes.html">Patient Payment Types</a> to include. When checked, hidden payment types and income transfers are included in the report.<br/><div class="Note">Note: Income transfers list as a patient payment type. When running the report for specific providers, it is possible not all splits for an income transfer show. To see the full income transfer, all providers associated with the transaction must be selected.</div>
+</p>
+<p><b>All Claim Payment Groups:</b> Applies to insurance payments only. Uncheck to select only specific <a href="definitionsclaimpaymentgroups.html">Claim Payment Groups</a>. When checked, includes all Claim Payment Groups, including those marked hidden. See <a href="claimpayfinalize.html">Finalizing Insurance Payments</a> to assign claim payment groups. </p>
+<h2>Report Preview</h2>
+<p>Click <b>OK</b> to generate the report. Below is an example of the report and explanation of the report columns. For a description of toolbar buttons, see <a href="reportcomplex.html">Complex Report System</a></p>
+<img src="images/reportDailyPaymentsPaper.png" width="662" height="719"/><p class="MarginBottomZero">The Daily Payments report groups insurance payments and patient payments separately. Within those groups, payments are further grouped by Payment Type (e.g., check, credit card, etc).  </p>
+<ul class="MarginBottomGap">
+<li><b>Date</b>: Payment date.</li>
+<li><b>Paying Patient</b>: Paid by field from Patient Payments. This may differ from the patient account the payment is applied to. Patient attached to insurance claim for insurance payments. When running report grouped by Check, bulk insurance checks show only one patient name. An asterisk (*), when displayed, indicates a bulk check.</li>
+<li><b>Provider</b>: Provider(s) assigned to the payment.</li>
+<li><b>Clinic</b>: Only shows when Clinics <a href="showfeatures.html">feature is enabled</a>. Clinic assigned to the payment. If a payment includes payment splits assigned to different clinics, the payment is split between the clinics (i.e., the full payment total is not be listed on a single line even when <i>Group By Check</i> is selected) </li>
+<li><b>Check#</b>: Check # field from a patient or insurance payment.</li>
+<li><b>Amount</b>: Payment split total assigned to the clinic and provider combination. This may differ from the actual payment amount.</li>
+<li><b>CareCredit Fee</b>: Only shows for Patient Payments when <i>Show CareCredit fees</i> is checked. Surcharge Fee associated with a CareCredit payment.</li>
+<li><b>PayConnect Fee</b>: Only shows for Patient Payments when <i>Show PayConnect fees</i> is checked. Surcharge Fee associated with a PayConnect payment.</li>
+</ul>
+<p><div class="Note">Note: CareCredit Fees and PayConnect Fees are displayed on their own row, separate from the payment details.</div>
+</p>
+<p class="MarginBottomZero">Payment amounts are totaled at the end of the report and separately for insurance payments and patient payments. Each payment type includes subtotals below the grid. Below is additional information on how some totals are calculated. </p>
+<ul class="MarginBottomGap">
+<li><b>Total PayConnect Fees</b>: Total of all amounts in the PayConnect Fee column for the Patient Payments section. Shown at the end of the section.</li>
+<li><b>Total CareCredit Fees</b>: Total of all amounts in the CareCredit Fee column for the Patient Payments section. Shown at the end of the section.</li>
+<li><b>Total Patient Payments After Fees</b>: Net amount of patient payments after subtracting merchant fees. Calculated as <span class="codeblock">Total Patient Payments - (Total CareCredit Fees + Total PayConnect Fees)</span>. </li>
+<li><b>Total All PayConnect Fees</b>: Total of all amounts in the PayConnect Fee column. Shown at the end of the report.</li>
+<li><b>Total All CareCredit Fees</b>: Total of all amounts in the CareCredit Fee column. Shown at the end of the report.</li>
+<li><b>Total All Payments After Fees</b>: Net amount of all payments after subtracting merchant fees. Calculated as <span class="codeblock">Total All Payments - (Total All CareCredit Fees + Total All PayConnect Fees)</span>. </li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

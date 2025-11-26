@@ -1,0 +1,65 @@
+# File: ./www.opendental.com/manual232/allergiesmaster.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Allergy List</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('allergiesmaster','+lists','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/allergiesmaster.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/allergiesmaster.html" >v24.2</option><option value="https://www.opendental.com/manual241/allergiesmaster.html" >v24.1</option><option value="https://www.opendental.com/manual233/allergiesmaster.html" >v23.3</option><option value="https://www.opendental.com/manual232/allergiesmaster.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/allergiesmaster.html" >v23.1</option><option value="https://www.opendental.com/manual224/allergiesmaster.html" >v22.4</option><option value="https://www.opendental.com/manual223/allergiesmaster.html" >v22.3</option><option value="https://www.opendental.com/manual222/allergiesmaster.html" >v22.2</option><option value="https://www.opendental.com/manual221/allergiesmaster.html" >v22.1</option><option value="https://www.opendental.com/manual214/allergiesmaster.html" >v21.4</option><option value="https://www.opendental.com/manual213/allergiesmaster.html" >v21.3</option><option value="https://www.opendental.com/manual212/allergiesmaster.html" >v21.2</option><option value="https://www.opendental.com/manual211/allergiesmaster.html" >v21.1</option><option value="https://www.opendental.com/manual205/allergiesmaster.html" >v20.5</option><option value="https://www.opendental.com/manual204/allergiesmaster.html" >v20.4</option><option value="https://www.opendental.com/manual203/allergiesmaster.html" >v20.3</option><option value="https://www.opendental.com/manual202/allergiesmaster.html" >v20.2</option><option value="https://www.opendental.com/manual201/allergiesmaster.html" >v20.1</option><option value="https://www.opendental.com/manual194/allergiesmaster.html" >v19.4</option><option value="https://www.opendental.com/manual193/allergiesmaster.html" >v19.3</option><option value="https://www.opendental.com/manual192/allergiesmaster.html" >v19.2</option><option value="https://www.opendental.com/manual191/allergiesmaster.html" >v19.1</option><option value="https://www.opendental.com/manual184/allergiesmaster.html" >v18.4</option><option value="https://www.opendental.com/manual183/allergiesmaster.html" >v18.3</option><option value="https://www.opendental.com/manual182/allergiesmaster.html" >v18.2</option><option value="https://www.opendental.com/manual181/allergiesmaster.html" >v18.1</option><option value="https://www.opendental.com/manual174/allergiesmaster.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Allergy List</p></div>
+<div class="GeneralPageContent">
+<p>Allergy Setup is a master list that contains all allergies that can be added to a patient's Medical - Allergies tab.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Lists, Allergies.</p>
+<img src="images/allergySetup.png" width="406" height="392"/><p>Alternatively, go to Setup, Chart, <a href="ehrsetupwindow.html">EHR</a>, and click <b>Allergies</b>.</p>
+<p>Allergies are listed alphabetically. To show allergies marked hidden, check <b>Show Hidden</b> .</p>
+<p>Click <b>Add</b> to create a new allergy or double-click an existing allergy to edit. The Allergy Def Edit window will open. <br/><img src="images/allergyDefEdit.png" width="581" height="315" class="ImageInParagraph"/></p>
+<p>Allergies can also be added to the master list while editing a <a href="sheetsmedicalhistory.html">Medical History Sheet</a>.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Description</b>: Enter the allergy name.</li>
+<li>Only used in EHR for <a href="ehrccd.html">CCDs</a>: Most non-EHR offices can ignore these. <ul>
+<li><b>Allergy Type</b>: A value is required in order for the allergy to list on an <a href="ehrccd.html">EHR Continuity of Care Document ( CCD )</a>(e.g. Summary of Care).</li>
+<li>Allergen (only one): Either the UNII or Medication can be entered, not both. <ul>
+<li><b>UNII</b>: Used for ingredient allergies (e.g., latex, peanuts). Enter a UNII to show this allergy on the CCD. Must be manually entered as a 10 character, uppercase, alphanumeric code. To search for UNII codes see <a href="https://precision.fda.gov/uniisearch">https://precision.fda.gov/uniisearch </a>.</li>
+<li><b>Medication</b>: Click<b> [...] </b>to select from the <a href="medicationmaster.html">Medications List</a>. To show on an a CCD, medication allergies must be associated with medications that have an RxNorm. Click <b>None</b> to clear the box.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Is Hidden</b>: Check to hide the allergy from the Allergy Edit list when adding <a href="allergiespatient.html">Allergies</a> to a patient. The allergy is still shown in patient charts it was added to.</li>
+<li><b>Delete</b>: Remove an allergy from Allergy Setup. Allergies in use (i.e., added to a patient's Allergies) cannot be deleted. Mark <i>Is Hidden</i> instead.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

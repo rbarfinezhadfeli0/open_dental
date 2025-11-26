@@ -1,0 +1,194 @@
+# File: ./www.opendental.com/site/version20_4.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: Version 20.4</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>Version 20.4</h1>
+		</div>
+		<div id="Content">
+<p>See <a href="versions.html">Versions</a></p>
+<p>Version 20.4 was released on 12/17/2020. </p>
+<p><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> Overview of <a href="https://youtu.be/GZL2dWandCg">Version 20.4</a></p>
+<h2>Major Changes</h2>
+<p class="MarginBottomZero"><b>2021 CDT Codes</b>: The 2021 CDT codes are available in version 20.3.48 or 20.4.28 or greater. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procedurecodetools.html">Procedure Code Tools</a></p>
+<ul class="MarginBottomGap">
+<li><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> See our video: <a href="https://youtu.be/_z4X2tl2cEM">How to Update Your CDT Codes</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Zoom</b>: Allows users to enlarge the overall display of Open Dental.  </p>
+<ul class="MarginBottomGap">
+<li>Zoom window allows users to view current settings and set zoom scale. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7zoom.html">Zoom</a></li>
+<li>Added <i>Zoom</i> permission. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> See our video: <a href="https://youtu.be/Y20BGe1w8tA">Using the Zoom Tool</a></li>
+</ul>
+<p class="MarginBottomZero"><b>QuickBooks Online integration</b>: Connect QuickBooks Online to Open Dental. </p>
+<ul class="MarginBottomGap">
+<li>Determine which Deposit account, Income accounts, and Classes you want to display in Open Dental. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7quickbooksonline.html">QuickBooks Online</a></li>
+<li>Set QuickBooks Online as your default deposit software. <a href="https://www.opendental.com/manual204/modulesetupmanage.html">Manage Module Preferences</a></li>
+<li>Send deposit information to QuickBooks Online. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7depositslip.html">Deposit Slip</a></li>
+<li><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> See our Webinar: <a href="https://youtu.be/a1czPuwgoyY">QuickBooks Online Integration</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Insurance Verification Needed</b>: Display an icon on upcoming appointments if patient's insurance has not been marked as verified. </p>
+<ul class="MarginBottomGap">
+<li>Add Insurance Verification symbol to Appointment Views. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7appointmentvieweditwindow.html">Appointment View Edit</a></li>
+<li>Add <i>Verify Insurance</i> note to the Appointment Bubble. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7displayfields.html">Display Fields</a></li>
+<li><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> See our video: <a href="https://youtu.be/T7JWgDnRqg0">Adding Insurance Verification Needed Indicator to Appointments</a></li>
+</ul>
+<p class="MarginBottomZero"><b>PDMP for additional states</b>: PDMP is now available for all states. </p>
+<ul class="MarginBottomGap">
+<li>For users in California, Illinois, Kentucky, Maryland, Utah, and Washington, see <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7bridgepdmpillinois.html">PDMP Bridge</a></li>
+<li>For users outside of the above states, see <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7bridgeappriss.html">Bamboo Bridge</a></li>
+</ul>
+<h2>Changes by Category</h2>
+<p class="MarginBottomZero"><b>Account Module</b></p>
+<ul class="MarginBottomGap">
+<li>Patient portion on claims and procedures in Patient Account grid takes adjustments into consideration. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7account.html">Account Module</a></li>
+<li>Patient paid amount added to adjustments in Patient Account grid. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7adjustments.html">Adjustment</a></li>
+<li>The Hidden Splits tab turns gray once all outstanding paysplits have been allocated. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7hiddensplits.html">Hidden Splits</a></li>
+<li>Added ability to reuse an existing card on file for recurring charges. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7creditcardsmanage.html">Credit Card Manage</a></li>
+<li>Unearned types marked as Do Not Show on Account can now be hidden. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7definitionspaysplitunearned.html">Definitions: PaySplit Unearned Types</a></li>
+<li>Adding production to Dynamic Payment Plans made easier. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paymentplandynamic.html">Payment Plan</a></li>
+<li>Clinic appended to credit cards in the dropdown menu. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paymentpatientcreditcard.html">Credit Card Payment</a></li>
+<li>Adjustments are now highlighted when their associated payment plan credits are selected. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paymentplanpatient.html">Old Payment Plan</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paymentplandynamic.html">Payment Plan</a></li>
+<li>Adjustments with paysplits no longer appear in the Adjustment Picker window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procedurefinancial.html">Procedure - Financial Tab</a></li>
+<li>Option for limited statements to exclude income transfers. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7limited.html">Limited Statement</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Canada</b></p>
+<ul class="MarginBottomGap">
+<li>Added Recall Types to Procedure Code Tool for Canada users. <a href="canadaproccodetools.html">Canada Procedure Code Tools</a></li>
+<li>Added Appt Procs Quick Add to Procedure Code Tool for Canada users. <a href="canadaproccodetools.html">Canada Procedure Code Tools</a></li>
+<li>Update Carrier tool updated to better handle carriers sharing an electronic ID. <a href="canadacarriers.html">Canada Carriers</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Chart Module</b></p>
+<ul class="MarginBottomGap">
+<li>Superfamily option when viewing commlogs in the Chart Module. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7showtabchart.html">Show Chart Views</a></li>
+<li>Ability to add quicknotes and auto notes to lab case instructions. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7labcaseedit.html">Lab Case</a></li>
+<li>Setting to filter out automatically created commlogs. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7commlog.html">Commlog</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7showtabchart.html">Show Chart Views</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7account.html">Account Module</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7aptedit.html">Edit Appointment</a></li>
+<li>Exam notes added to perio exams. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7perio.html">Perio Chart</a></li>
+<li>View Multi Visit Groups window displays procedures currently grouped for multiple visits. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procsmultipleappts.html">Procedure over Multiple Appointments</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7chart.html">Chart Module</a></li>
+</ul>
+<p class="MarginBottomZero"><b>eServices</b></p>
+<ul class="MarginBottomGap">
+<li>Option to automatically delete old eConnector logs. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7econnector.html">eConnector</a></li>
+<li>Cursor in manual text messages defaults to text field. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7textmessages.html">Text Message</a></li>
+<li>When using Automated Messaging, the [NameF] field will use the patient's preferred name, then the patient's first name if no preferred name exists. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7ereminderssetup.html">eReminders</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7econfirmationsetup.html">eConfirmations</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7arrivalssetup.html">Arrivals</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7autothankyousetup.html">Automated Thank-Yous</a></li>
+<li>Character and message count added to text message window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7textmessages.html">Text Message</a></li>
+<li>Web forms skip all forms related to the same patient. All forms related to the same patient attach to the selected patient. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webformsretrieve.html">Web Forms Retrieve</a></li>
+<li>Customize URL button added to patient portal. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7portalhostedbyod.html">Patient Portal</a></li>
+<li>Mass email requires signature. <a href="https://www.opendental.com/manual204/massemails.html">Mass Email Setup</a>, <a href="https://www.opendental.com/manual204/sendmassemail.html">Send Mass Email</a></li>
+<li>Treatment plans can be added directly to check-in checklist for eClipboard. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7eclipboardtreatmentplan.html">eClipboard: Treatment Plan</a></li>
+<li>Providers preferred name displays on eClipboard. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7providerseditwindow.html">Provider</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7eclipboardsees.html">eClipboard 24: What Patient Sees</a></li>
+<li>Update behavior options for eClipboard sheets. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7eclipboardsetup.html">eClipboard Setup</a></li>
+<li>Language dropdown for Web Forms only displays when multiple languages exist for the sheet. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webformspatient.html">Web Forms: What Patient Sees</a></li>
+<li>eConnector status added to CEMT window. <a href="central.html">Central Enterprise Management Tool ( CEMT )</a></li>
+<li>Appointments report option to only show appointment scheduled via Web Sched Existing Patient. (Also backported to V20.3.49) <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportappts.html">Appointments Report</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Family Module</b><br></p>
+<ul class="MarginBottomGap">
+<li>Patient-specific time patterns for recall appointments. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7recall.html">Recall</a></li>
+<li>Subscriber ID no longer inherits SSN number. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7insplan.html">Insurance Plan</a></li>
+<li>Allow more than one downgrade per procedure code. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7downgrades.html">Estimate Downgrades</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Imaging Module</b></p>
+<ul class="MarginBottomGap">
+<li>Place file into specific category when adding a file through the A to Z folder. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7atozfolder.html">A to Z Folder</a></li>
+<li>Ability to swap images on mounts. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7images.html">Imaging Module</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Manage Module</b></p>
+<ul class="MarginBottomGap">
+<li>Users on a task can only be changed once the task has been saved. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7taskswindow.html">Task Window</a></li>
+<li>Ability to right-click on a task description to immediately navigate to website or UNC path. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7tasks.html">Task</a></li>
+<li>Short description available for tasks. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7tasks.html">Task</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7taskswindow.html">Task Window</a></li>
+<li>Selecting a task list also displays full path. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7tasks.html">Task</a></li>
+<li>Improved ERA claim matching. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimseramatching.html">ERA Match with Claim</a></li>
+<li>Prevent limited statements, receipts, and invoices from being sent electronically. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7billinglist.html">Billing List</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Reports</b></p>
+<ul class="MarginBottomGap">
+<li>Added Treating Provider filter to Treatment Finder report. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reporttreatfinder.html">Treatment Finder Report</a></li>
+<li>Added ability to exclude income transfers from the Daily Payments report. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportdailypayments.html">Daily Payments Report</a></li>
+<li>Option to exclude income transfers from the Aging of A/R Report. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportaging.html">Aging of Accounts Receivable (A/R) Report</a></li>
+<li>Daily Writeoff report adds additional columns when <i>Using initial claim date for write-off estimates, insurance pay date for write-off adjustments</i> is selected. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportdailywriteoffs.html">Daily Write-off Report</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Security</b></p>
+<ul class="MarginBottomGap">
+<li>The <i>Edit Protected Leave Time Card Adjustments</i> permission now allows changes to other user's time cards. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>Added <i>Query Monitor View</i> permission. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>Added <i>Web Forms Access</i> permission. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>Split <i>Edit Commlog</i> permission into<i> Create Commlog</i> and <i>Edit Commlog</i>. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+<li>Audit trail tracks created, deleted, and updated Repeating Charges. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7audittrailpermissions.html">Audit Trail Permissions</a></li>
+<li><i>ProcCompleteEdit</i> permission logs changes made to tooth number or surface. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7audittrailpermissions.html">Audit Trail Permissions</a></li>
+<li><i>TP Procedure Date</i> permissions uses <i>DateEntryC</i> rather than <i>ProcDate</i> when calculating lock date. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Sheets</b></p>
+<ul class="MarginBottomGap">
+<li><i>ICEPhone</i> and <i>ICEName</i> fields added to Medical History Sheet. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7inputfieldnames.html">Input Field Names</a></li>
+<li>Fields on mobile sheets can be sorted using the tab order determined on the desktop sheet. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7sheetsetupmobile.html">Edit Mobile Sheet Def</a></li>
+<li><i>dateLastSRP</i> added to Static Text Fields. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7statictextfields.html">Static Text Field Names</a></li>
+<li><i>dateLast</i> fields for <i>BW, Exam, PanoFMX, Perio, Prophy, and SRP</i> pull codes from Frequency Limitations. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7statictextfields.html">Static Text Field Names</a></li>
+<li>Revision ID added to sheets. </li>
+</ul>
+<p class="MarginBottomZero"><b>Miscellaneous</b></p>
+<ul class="MarginBottomGap">
+<li>Moved database maintenance method, <i>FormDatabaseMaintenance</i>, to Old tab. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7databasemaintenance.html">Database Maintenance</a></li>
+<li>Added database maintenance method, <i>ProcedurelogCodeNumInvalid</i>, to Database Maintenance for Patient. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7databasemaintenancepat.html">Database Maintenance for Patient</a></li>
+<li>Search exact matches in the Wiki Search. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7wikisearch.html">Wiki Search</a></li>
+<li>Adding internal wiki links no longer requires three-character minimum to search. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7wikiaddedit.html">Wiki Edit</a></li>
+<li>Option to hide unused definitions in Custom Claim Tracking. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7definitionsclaimcustomtracking.html">Definitions: Claim Custom Tracking</a></li>
+<li>Updated DentiCal claim form to latest version. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7dentical.html">Denti-Cal</a></li>
+<li>Bridge to TRIOS 3Shape. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7bridge3shape.html">3Shape Bridge</a></li>
+<li>For multiple location users. After updating via the File Copier, Open Dental will re-connect to the same database as before. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7update.html">Update</a></li>
+<li>Added Payload Monitor for Middle Tier users. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7payloadmonitor.html">Payload Monitor</a></li>
+<li>Text settings removed from Reactivation Setup. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reactivationsetup.html">Setup Reactivation</a></li>
+<li>Enterprise preference to match patients on exact phone number. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7enterprisesetup.html">Enterprise Setup</a></li>
+<li>Ability to disable <i>Refresh while typing</i> in Patient Select window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7enterprisesetup.html">Enterprise Setup</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7miscsetup.html">Miscellaneous Setup</a></li>
+<li>Treatment Plan display field for <i>appts</i> shows <i>U</i> for procedure associated with an unscheduled appointment. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7displayfields.html">Display Fields</a></li>
+<li>Enter key refreshes Patient Select window when <i>Refresh while typing</i> is unchecked. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7patientselect.html">Select Patient</a></li>
+<li>Fixed phone number formatting in Edit Clinic window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7cliniceditwindow.html">Clinic</a></li>
+<li>Medication Merge tool enhanced to allow merging generic medications into brand medications. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7mergemedications.html">Merge Medications</a></li>
+<li>ASAP List now prints the currently selected tab. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7asaplist.html">ASAP List</a></li>
+<li>Transworld warns users when an account with outstanding claims is sent to collections (also backported to V20.3.49). </li>
+</ul>
+
+</div>	
+	</div>
+</body>
+</html>```

@@ -1,0 +1,53 @@
+# File: ./www.opendental.com/manual243/ehrvaccinedrugunits.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - EHR Vaccine Drug Units</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('ehrvaccinedrugunits','ehrsetupwindow','+chart','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/ehrvaccinedrugunits.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/ehrvaccinedrugunits.html" >v24.2</option><option value="https://www.opendental.com/manual241/ehrvaccinedrugunits.html" >v24.1</option><option value="https://www.opendental.com/manual233/ehrvaccinedrugunits.html" >v23.3</option><option value="https://www.opendental.com/manual232/ehrvaccinedrugunits.html" >v23.2</option><option value="https://www.opendental.com/manual231/ehrvaccinedrugunits.html" >v23.1</option><option value="https://www.opendental.com/manual224/ehrvaccinedrugunits.html" >v22.4</option><option value="https://www.opendental.com/manual223/ehrvaccinedrugunits.html" >v22.3</option><option value="https://www.opendental.com/manual222/ehrvaccinedrugunits.html" >v22.2</option><option value="https://www.opendental.com/manual221/ehrvaccinedrugunits.html" >v22.1</option><option value="https://www.opendental.com/manual214/ehrvaccinedrugunits.html" >v21.4</option><option value="https://www.opendental.com/manual213/ehrvaccinedrugunits.html" >v21.3</option><option value="https://www.opendental.com/manual212/ehrvaccinedrugunits.html" >v21.2</option><option value="https://www.opendental.com/manual211/ehrvaccinedrugunits.html" >v21.1</option><option value="https://www.opendental.com/manual205/ehrvaccinedrugunits.html" >v20.5</option><option value="https://www.opendental.com/manual204/ehrvaccinedrugunits.html" >v20.4</option><option value="https://www.opendental.com/manual203/ehrvaccinedrugunits.html" >v20.3</option><option value="https://www.opendental.com/manual202/ehrvaccinedrugunits.html" >v20.2</option><option value="https://www.opendental.com/manual201/ehrvaccinedrugunits.html" >v20.1</option><option value="https://www.opendental.com/manual194/ehrvaccinedrugunits.html" >v19.4</option><option value="https://www.opendental.com/manual193/ehrvaccinedrugunits.html" >v19.3</option><option value="https://www.opendental.com/manual192/ehrvaccinedrugunits.html" >v19.2</option><option value="https://www.opendental.com/manual191/ehrvaccinedrugunits.html" >v19.1</option><option value="https://www.opendental.com/manual184/ehrvaccinedrugunits.html" >v18.4</option><option value="https://www.opendental.com/manual183/ehrvaccinedrugunits.html" >v18.3</option><option value="https://www.opendental.com/manual182/ehrvaccinedrugunits.html" >v18.2</option><option value="https://www.opendental.com/manual181/ehrvaccinedrugunits.html" >v18.1</option><option value="https://www.opendental.com/manual174/ehrvaccinedrugunits.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>EHR Vaccine Drug Units</p></div>
+<div class="GeneralPageContent">
+<p>Drug units must be set up before you can enter a patient vaccine.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Chart, <a href="ehrsetupwindow.html">EHR</a>, then click <b>Drug Unit</b>.</p>
+<img src="images/ehrDrugUnit.gif" width="340" height="216"/><p>Click Add, or double click an existing unit to edit.</p>
+<img src="images/ehrDrugUnitEdit.gif" width="382" height="187"/><p class="MarginBottomZero">Define the drug unit. </p>
+<ul class="MarginBottomGap">
+<li><b>Unit Identifier</b>: Enter a unit that matches a valid UCUM code. Measurements will be validated against UCUM codes before vaccine data is exported.</li>
+<li><b>Unit Text</b>: Enter text to describe the drug unit.</li>
+</ul>
+<p>Click OK to save.</p>
+</div>
+</div>
+</body>
+</html>```

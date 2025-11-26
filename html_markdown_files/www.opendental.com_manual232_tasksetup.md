@@ -1,0 +1,93 @@
+# File: ./www.opendental.com/manual232/tasksetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Tasks Preferences</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('tasksetup','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/tasksetup.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/tasksetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/tasksetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/tasksetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/tasksetup.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/tasksetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/tasksetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/tasksetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/tasksetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/tasksetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/tasksetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/tasksetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/tasksetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/tasksetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/tasksetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/tasksetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/tasksetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/tasksetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/tasksetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/tasksetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/tasksetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/tasksetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/tasksetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/tasksetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/tasksetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/tasksetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/tasksetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/tasksetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Tasks Preferences</p></div>
+<div class="GeneralPageContent">
+<p>Task preferences lets users customize global task settings, local computer default settings, and set up task inboxes.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="tasks.html">Tasks</a>.</p>
+<img src="images/tasksetupnew.png" width="394" height="383"/><h2>Global settings</h2>
+<p><b>Inbox Setup</b>: Set up user inboxes. See <a href="tasklists.html">Task List and Inbox</a>.</p>
+<p class="MarginBottomZero"><b>Show legacy repeating tasks</b>: This is checked by default if repeating tasks existed prior to updating to 16.3. Otherwise the box is unchecked by default. See <a href="tasklistrepeating.html">Repeating Task Lists (Legacy)</a>. </p>
+<ul class="MarginBottomGap">
+<li>Checked: The repeating task list tabs will show in the Tasks Area. Checking this box will disable reminder tasks.</li>
+<li>Unchecked: Repeating task lists do not show.</li>
+</ul>
+<p class="MarginBottomZero"><b>Always show task list</b></p>
+<ul class="MarginBottomGap">
+<li>Checked: The Tasks area will be docked at the bottom or to the right of the screen in all modules. The Local Computer Default Settings will be enabled.</li>
+<li>Unchecked: The Tasks area can only be accessed via the Manage Module, Tasks.</li>
+</ul>
+<p class="MarginBottomZero"><b>New/Viewed status tracked by individual user</b></p>
+<ul class="MarginBottomGap">
+<li>Checked: Users can independently mark tasks as viewed/not viewed without affecting others. This is useful when task lists are used heavily. For user inboxes, the new message count applies to the user the inbox is assigned to, not the currently logged on user. For all other task lists, the new message count applies to the currently logged on user only.</li>
+<li>Unchecked: The new/viewed status will be the same for everyone.</li>
+</ul>
+<p class="MarginBottomZero"><b>Show open tasks for user</b></p>
+<ul class="MarginBottomGap">
+<li>Checked: The Open Tasks tab will show in the Tasks area.</li>
+<li>Unchecked: The Open Tasks tab will not show in the Tasks area.</li>
+</ul>
+<p class="MarginBottomZero"><b>Default to sorting appointment type task lists by AptDate Time:</b> Set the sort order for Tasks Lists that have an object type of <i>appointment</i>. To change this setting for the current user only see Tasks, Options button. </p>
+<ul class="MarginBottomGap">
+<li>Checked: Task lists that have an appointment Object Type will sort tasks first by the attached appointment's date and time, then by all other object types.</li>
+<li>Unchecked: Tasks lists that have an appointment Object Type will sort tasks by the task creation date and time.</li>
+</ul>
+<p class="MarginBottomZero"><b>Global Filter for Task Lists</b>: Only available when <a href="clinics.html">Clinics</a> are enabled. Allows users to filter the task list by the clinic associated with the patient or appointment on the task. </p>
+<ul class="MarginBottomGap">
+<li>Disabled: Do not enable task filtering.</li>
+<li>None: Enable task list filtering but do not automatically filter.</li>
+<li>Clinic: Enable task list filtering and default to filter by the selected clinic.</li>
+<li>Region: Enable task list filtering and default to filter by region. See <a href="definitionsregions.html">Definitions: Regions</a>. A region must be assigned to each <a href="cliniceditwindow.html">Clinic</a>.</li>
+</ul>
+<p><b>Image category folder for attachments</b>: Select which Image Category task attachments save to. Options only include Image Categories marked as <i>Task Attachments</i>. To add a folder, see <a href="definitionsimagecat.html">Definitions: Image Categories</a>. For details on adding a task attachment, see <a href="taskattachments.html">Task Attachments</a>.</p>
+<h2>Local computer default settings</h2>
+<p>These options will affect the current workstation only.</p>
+<p class="MarginBottomZero"><b>Don't show on this computer</b></p>
+<ul class="MarginBottomGap">
+<li>Checked: Tasks lists will not show on this computer.</li>
+<li>Unchecked: Tasks lists will show based on the global setting for Always show task list.</li>
+</ul>
+<p class="MarginBottomZero"><b>Dock Right / Dock Bottom</b>: Determines where the Tasks area is docked when set to show in all modules. </p>
+<ul class="MarginBottomGap">
+<li>Dock Right: The Tasks area will be docked on the right side of the screen. Enter an X Default value to set the default location of the vertical splitter.</li>
+<li>Dock Bottom: The Tasks area will be docked across the bottom of the window. Enter a Y Default value to set the default location of the horizontal splitter.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

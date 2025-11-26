@@ -1,0 +1,178 @@
+# File: ./www.opendental.com/manual243/dosespotsetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - DoseSpot Setup</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('dosespotsetup','dosespotuse','+eRx','+chartToolbar','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/dosespotsetup.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/dosespotsetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/dosespotsetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/dosespotsetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/dosespotsetup.html" >v23.2</option><option value="https://www.opendental.com/manual231/dosespotsetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/dosespotsetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/dosespotsetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/dosespotsetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/dosespotsetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/dosespotsetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/dosespotsetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/dosespotsetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/dosespotsetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/dosespotsetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/dosespotsetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/dosespotsetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/dosespotsetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/dosespotsetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/dosespotsetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/dosespotsetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/dosespotsetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/dosespotsetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/dosespotsetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/dosespotsetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/dosespotsetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/dosespotsetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/dosespotsetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>DoseSpot Setup</p></div>
+<div class="GeneralPageContent">
+<p>DoseSpot is a method of sending electronic prescriptions in Open Dental. It is an internet based, secure e-Prescribing system. DoseSpot integrates with Open Dental using a program link.</p>
+<p>There are five parts to setting up DoseSpot. See each section below for details on each part. </p>
+<p><div class="Note">Note: Practices using Ensora eRx (formerly NewCrop eRx) can choose to switch to DoseSpot or continue using Ensora eRx. Once DoseSpot is enabled, there is an option to keep Ensora eRx enabled to allow users to continue sending prescriptions electronically while the DoseSpot Identity Proofing process is underway. Once the transition to DoseSpot is completed for all needed providers, call Open Dental Support to cancel Ensora eRx.</div>
+</p>
+<p><span style="color:red">Signing up for eRx initiates monthly fees that cannot be refunded.</span></p>
+<h2>Part 1: Enable DoseSpot Program Link</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>In the Open Dental <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>.</li>
+<li>Double-click <a href="bridgeerx.html">Electronic Rx</a>.<br/><img src="images/doseSpotEnable.png" width="754" height="534" class="ImageInParagraph"/></li>
+<li>Select DoseSpot as the eRx Solution. If the practice is in the process of switching to DoseSpot from Ensora eRx, select DoseSpot with Ensora eRx.<br/><div class="Note">Note: To continue the use of Ensora eRx, check <i>Allow Ensora eRx Option in the <a href="providerseditwindow.html">Provider Edit Window</a> for each needed provider until DoseSpot Identity Proofing is complete.</i></div>
+</li>
+<li>Check the <b>Enabled</b> box.</li>
+<li>Click OK.</li>
+</ol>
+<h2>Part 2: Fill out Clinic/Practice and Provider Registration Forms</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Designate a Practice Administrator for EPCS registrations (cannot be a doctor).</li>
+<li>Complete the <a href="https://opendentalsoft.com:1943/ODDoseSpotRegistration/DoseSpotRegistration.aspx">DoseSpot Registration Form</a>. <div class="Note">Note: <ul>
+<li>For each additional provider, use the same form and uncheck <i>Clinic</i> at the top. Each provider submitting electronic prescriptions needs to submit a Provider form.</li>
+<li>To register additional proxy (non-provider) users, please send an email with their first and last names to <a href="mailto:erx@opendental.com">erx@opendental.com</a>.</li>
+</ul>
+</div>
+</li>
+<li>After submitting the form, an email is sent to the Practice Administrator's email address with instructions on the next step.</li>
+<li>When ready for Open Dental to generate the Clinic ID and/or Provider ID, forward the email received to <a href="mailto:erx@opendental.com">erx@opendental.com</a>.</li>
+<li>An email is sent to the the practice administrator containing the Clinic Key, Clinic ID, DoseSpot User ID, and Practice Administrator registration. This can take 5-10 business days to receive.</li>
+</ol>
+<p><div class="Note">Note: Once the IDs are generated, charges are initiated. Charges cannot be refunded by Open Dental, regardless of whether or not the provider completes the registration process, as they involve multiple third parties. To minimize the charges, please notify Open Dental immediately if you do not wish to proceed at any point in the process.</div>
+</p>
+<h2>Part 3: Sign up for DoseSpot</h2>
+<p>The following instructions are for the first clinic registered. For subsequent clinics, see the Additional Clinics section below.</p>
+<p class="MarginBottomZero">Enter Clinic Key and Clinic ID: </p>
+<ol class="MarginBottomGap">
+<li>In <a href="bridgeerx.html">eRx Setup</a>, double-click Headquarters. The DoseSpot Property Edit window will open.<br/><img src="images/dosespotPropEdit.png" width="360" height="230" class="ImageInParagraph"/></li>
+<li>Enter the provided <b>Clinic Key</b> and <b>Clinic ID</b>.<br/><div class="Note">Note: <ul>
+<li>If clinic information is missing, click <b>Setup</b> to open the Edit Clinic window and enter required information.</li>
+<li>To delete clinic information, highlight the Clinic from the eRx Setup window and click <b>Delete</b>. A warning window will appear confirming the deletion of the selected row. Click OK to delete or Cancel to discard changes.</li>
+</ul>
+</div>
+</li>
+<li>Click OK to save.</li>
+</ol>
+<h2>Part 4: Enable Users</h2>
+<p>Open Dental will automatically insert the DoseSpot User ID into the <b>DoseSpot User ID</b> field of the User Edit window only for providers. Providers will be notified via an eRx Alert when registration is complete.</p>
+<p>The practice administrator must manually enter a DoseSpot User ID for non-doctors and providers with multiple ID numbers. This process can also be used for providers in the event a provider DoseSpot User ID was not automatically entered in the DoseSpot User ID field. </p>
+<p class="MarginBottomZero">Enter DoseSpot User ID to access DoseSpot: This is required for each provider and non-doctor who will be queuing e-Prescriptions. </p>
+<ol class="MarginBottomGap">
+<li>Once the DoseSpot User ID has been received, in Open Dental, click Setup, Security Settings (<a href="securitysettings.html">Global Security Settings</a>).</li>
+<li>Double-click the user to open the User Edit window. <br/><img src="images/dosespotSecurityUserEdit.png" width="858" height="444" class="ImageInParagraph"/></li>
+<li>In the DoseSpot User ID field, enter the <b>DoseSpot User ID</b>. <br/> For providers with multiple DoseSpot User IDs (e.g., providers with multiple NPIs), click<b> [...]</b> to enter a number per clinic.</li>
+<li>Non-doctors must have their employee associated with the user, and doctors must have their provider associated.</li>
+<li>Click OK to save.</li>
+</ol>
+<p>The provider and non-doctor(s) may now access DoseSpot.</p>
+<h2>Part 5: Complete Identity Proofing</h2>
+<p><b>Important: Identity Proofing is typically completed for each provider upon first launch of DoseSpot. In the event Identity Proofing was not completed, follow the steps below.</b></p>
+<p class="MarginBottomZero">This process only applies to prescribing providers. Each prescribing provider must complete Identity Proofing before sending e-Prescriptions. </p>
+<ol class="MarginBottomGap">
+<li>Select any patient and click <b>eRx</b>.</li>
+<li>Click and agree to the first two user agreements.</li>
+<li>Click the last link for Identity Proofing.</li>
+<li>Fill out the demographic information, enter personal phone number, and check the One Time Passcode (OTP) agreement box.</li>
+<li>Enter driver's license information. Enter personal credit card number. Credit card number is required for Identity Proofing.</li>
+<li>Click <b>Next</b>.</li>
+<li>A text message with a one time passcode is sent to the provider's phone. Enter the code into the box and click Next.</li>
+<li>Answer the security questions as prompted.</li>
+<li>Once security questions are complete click <b>Next</b>.</li>
+<li>Click <b>Set PIN</b>.</li>
+<li>Create a 4-digit pin that will be used when sending all prescriptions. Provider can now send non-controlled substances electronically.</li>
+</ol>
+<div class="Note">Note: <ul>
+<li>Each prescribing provider will create a PIN. This PIN is required every time an e-Prescription is sent.</li>
+<li>Some prescribing provider will receive a letter in the mail (via home address) from Experian that contains their Session ID needed for EPCS registrations. The provider will be notified after IDP if a letter is being sent.</li>
+</ul>
+</div>
+<br/><br/><h2>Additional Clinics</h2>
+<p class="MarginBottomZero">To register additional clinics: </p>
+<ol class="MarginBottomGap">
+<li>Go to Setup, Program Links.</li>
+<li>Double-click <b>electronic Rx</b>.</li>
+<li>Double-click the clinic.</li>
+<li>Click <b>Register</b>.</li>
+<li>Click <b>OK</b>.</li>
+<li>Repeat for each clinic.</li>
+<li>Select any patient and click <b>eRx</b> in the Chart Module.</li>
+<li>Clinic will be ready for use in 2-5 business days.</li>
+</ol>
+<h2>Register for EPCS</h2>
+<p>There are two parts to register for Electronic Prescribing for Controlled Substances (EPCS).</p>
+<p><b>Part 1: Practice Administrator Login</b></p>
+<p class="MarginBottomZero">The practice administrator is designated during the Sign Up for DoseSpot process above. This person will access the Administration Console in DoseSpot and enable EPCS for the registered provider(s). </p>
+<ol class="MarginBottomGap">
+<li>In a web browser, navigate to <a href="http://pss.dosespot.com/Admin">http://pss.dosespot.com/Admin</a>.</li>
+<li>Enter login information. Login information is sent via email when the clinic is registered for DoseSpot.</li>
+<li>Enter mobile phone number and click <i>Send Me DUO Activation Texts</i> to receive two text messages: one text to download the DUO Mobile app and another to sync the app to the Admin Console login.<br/><div class="Note">Note: DUO only supports Android 11+ and iOS 15+.</div>
+</li>
+<li>Download the DUO Mobile app and follow the on-app prompts.</li>
+<li>Click the link received in the second text message to sync the DUO app with the Admin Console.</li>
+<li>Enter the One-Time Passcode (OTP) in the Administration Console and click <i>Login</i>.</li>
+<li>Click Edit on the provider/clinician to enable EPCS.</li>
+<li>Under TFA Authentication, check the EPCS/TFA Activation box.</li>
+<li>Click <i>Save</i>.</li>
+</ol>
+<p><b>Part 2: Activate One Time Passcode (OTP) Device</b></p>
+<p class="MarginBottomZero">EPCS registration is required in order to submit electronic prescriptions for controlled substances. The provider will also need to download the DUO Mobile App from the <a href="https://play.google.com/store/apps/details?id=com.duosecurity.duomobile">Google Play Store</a> or <a href="https://itunes.apple.com/us/app/duo-mobile/id422663827?mt=8">Apple App Store</a>. </p>
+<ol class="MarginBottomGap">
+<li>Log into Open Dental as the provider who activated EPCS/TFA.</li>
+<li>In Open Dental, select a patient.</li>
+<li>In the Chart Module, click<b> eRx </b>to open DoseSpot.</li>
+<li>Click the notification alert  <img src="images/doseSpotNotification.png" width="26" height="25" style="margin-bottom: 0px"/> in the upper left.</li>
+<li>Click Activate TFA Authentication.</li>
+<li>The TFA Authentication window will display.</li>
+<li>Enter the Credential ID generated from the DUO Mobile app. Do not include spaces.</li>
+<li>Enter the Session ID from the Experian letter.</li>
+<li>Enter the displayed 6-digit code from DUO Mobile app into the TFA Code field on the computer.</li>
+<li>Enter in the provider's PIN created during the IDP setup process.</li>
+<li>Click Save.</li>
+</ol>
+<p>The provider can now send both controlled and non-controlled substances electronically.</p>
+<p><div class="Note">Note: EHR Incentive Program: e-Prescribing for the EHR Incentive Program is only possible with Ensora eRx - Comprehensive.</div>
+</p>
+<h2>New Phone </h2>
+<p class="MarginBottomZero">If the provider has a new phone, do the following: </p>
+<ol class="MarginBottomGap">
+<li>Download the DUO App from the app store.</li>
+<li>Have the practice admin log into the DoseSpot Admin Console (<a href="http://pss.dosespot.com/Admin">http://pss.dosespot.com/Admin</a>) and click <b>Edit</b> next to the provider's name. </li>
+<li>In the EPCS tab, click <b>Re-Send DUO Mobile</b>.</li>
+<li>Verify phone number. </li>
+<li>Click <b>Resend</b>.</li>
+<li>The provider will receive text message with a link. Click on the link to sync DoseSpot with new phone. </li>
+</ol>
+<p>If the provider's phone number has changed, contact Open Dental Support to have it updated.</p>
+</div>
+</div>
+</body>
+</html>```

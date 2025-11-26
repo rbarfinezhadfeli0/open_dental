@@ -1,0 +1,53 @@
+# File: ./www.opendental.com/site/0_supplyinventory.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Supply Inventory</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('0_supplyinventory','0_manage','0_modules','quickmanual','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Supply Inventory</p></div>
+		<div class="GeneralPageContent">
+<p>Use supply inventory to keep track of suppliers, equipment, supplies, and orders.</p>
+<p>In the <a href="0_manage.html">Manage Module</a>, click <b>Supply Inventory</b>.</p>
+<img src="images/supplyInventory.png" width="476" height="355"/><p>With the supply inventory feature, you can set up equipment to track for property taxes as well as create suppliers, categories for supplies, and a supplies list to easily manage supply orders.</p>
+<h2>Supplies Needed</h2>
+<p>The Supplies Needed list is a free-form list where any staff can quickly jot down an item that is running low. Once an order has been placed, the item can be removed from this list to start fresh.</p>
+<h2>Equipment</h2><p>In the Supply Inventory window, click <b>Equipment</b>.</p>
+<img src="images/equipment.png" width="913" height="355"/><p>Add to this list to track equipment for payment of property taxes. Information such as date purchased, cost, and estimated value can be entered and a serial number is randomly generated for labeling the equipment.</p>
+<h2>Supply Orders</h2><p>In the Supply Inventory window, click <b>Orders</b>.</p>
+<img src="images/supplyOrders.png" width="763" height="431"/><p>After creating suppliers and supplies, supply orders can be used to easily track costs, amounts of supplies, and received dates. </p>
+		</div>
+	</div>
+</body>
+</html>```

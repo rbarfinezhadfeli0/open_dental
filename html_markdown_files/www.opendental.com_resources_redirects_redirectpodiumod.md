@@ -1,0 +1,188 @@
+# File: ./www.opendental.com/resources/redirects/redirectpodiumod.html
+
+```html
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head><br>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77240952-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!--redirect code starts here /--> 
+<meta http-equiv="refresh" content="0;URL=https://www.podium.com/free-trial/?utm_medium=sponsored_link&amp;utm_source=open_dental&amp;utm_campaign=_22q4-noram-open_dental_software-sponsored_link&amp;utm_term=prospecting&amp;SCID=7015G000000K9ecQAC&amp;partner_id=0011a000006OlcxAAC">
+<script language="javascript">	
+    window.location.href = "https://www.podium.com/free-trial/?utm_medium=sponsored_link&utm_source=open_dental&utm_campaign=_22q4-noram-open_dental_software-sponsored_link&utm_term=prospecting&SCID=7015G000000K9ecQAC&partner_id=0011a000006OlcxAAC
+"
+</script>
+<!--redirect end /-->
+	
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Open Dental Software Manual - Podium Open Dental</title>
+
+
+<style type="text/css"><!--
+.style1 {font-family: "Courier New", Courier, mono}
+-->
+</style>
+<style type="text/css"><!--
+.TopLink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 13px;
+	color: #003300;
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+.TopLink:hover {
+	text-decoration: none;
+	background-color: #E3F4E8;
+	border-bottom: 0px dotted;
+}
+.TopMenu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #002353;
+	font-weight: bold;
+	line-height: 10px;
+}
+.BMenu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #347A92;
+	text-decoration: none;
+}
+.MLink {
+	text-decoration: none;
+}
+.MLink:hover {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+	color: #333333;
+}
+#Menu {
+	list-style-position: outside;
+	list-style-image: url(https://www.opendental.com/resources/open-dental/Bullet.gif);
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: 0px 0px 0px 5px;
+}
+#LIMenu {
+	margin: 0px;
+	padding: 0px;
+	list-style-position: outside;
+	list-style-image: url(https://www.opendental.com/resources/open-dental/Bullet.gif);
+	list-style-type: none;
+}
+-->
+</style>
+<link href="https://www.opendental.com/resources/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">body {
+	background-color: #507C77;
+}
+</style>
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="init()" onKeyPress="IEKeyCapture()">
+<table width="946" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+		<td>
+		<table width="100%" height="80" align="left" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+    		<td align="left"><a href="https://www.opendental.com/resources/index.html"><img src="https://www.opendental.com/resources/open-dental/LogoInner.jpg" width="235" height="80" border="0"></a></td>
+    		<td width="100%" align="left">
+					<table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" background="https://www.opendental.com/resources/open-dental/bg-top.jpg">
+      			<tr>
+        			<td height="25" align="right" valign="middle" style="padding-right:10px;">
+								<a href="https://www.opendental.com/resources/index.html" class="TopLink"><img src="https://www.opendental.com/resources/open-dental/home.gif" width="17" height="15" border="0">Home</a>
+								<a href="https://www.opendental.com/resources/redirects/toc.html" class="TopLink"><img src="https://www.opendental.com/resources/open-dental/UserManual.gif" width="27" height="15" border="0">User Manual</a>
+								<a href="http://opendentalsoft.com/forum/" class="TopLink">
+										<img src="https://www.opendental.com/resources/open-dental/DiscForum.gif" width="27" height="15" border="0">Discussion Forum</a>
+								<a href="https://www.opendental.com/resources/redirects/search.html" class="TopLink"><img src="https://www.opendental.com/resources/open-dental/SearchIcon.gif" width="27" height="15" border="0">Search</a>
+							</td>
+						</tr>
+						<tr>
+        			<td height="55" align="left" valign="top"">
+								<table width="100%" height="55" border="0" cellpadding="0" cellspacing="0">
+            			<tr align="left" valign="top">
+										<td width="20px">
+										</td>
+              			<td width="25%" style="padding-left:5px; padding-top:12px;">
+											<ul id="Menu">
+                				<li id="LIMenu"><a href="https://www.opendental.com/resources/trial.html" class="MLink"> 
+													<font size="2" face="Arial, Helvetica, sans-serif" class="TopMenu">TRIAL</font><br>
+                    			<font size="2" face="Arial, Helvetica, sans-serif" class="BMenu">VERSION</font> </a>
+                				</li>
+                  		</ul>
+										</td>
+                		<td align="center" valign="bottom"><img src="https://www.opendental.com/resources/open-dental/Line.gif" width="1" height="46"></td>
+                		<td width="25%" style="padding-left:5px; padding-top:12px;">
+											<ul id="Menu">
+                  			<li id="LIMenu"><a href="https://www.opendental.com/resources/programmers-resellers.html" class="MLink">
+													<font size="2" face="Arial, Helvetica, sans-serif" class="TopMenu">PROGRAMMERS</font><br>
+                      		<font size="2" face="Arial, Helvetica, sans-serif" class="BMenu">& DISTRIBUTORS</font> </a>
+												</li>
+                  		</ul>
+										</td>
+                		<td valign="bottom"><img src="https://www.opendental.com/resources/open-dental/Line.gif" width="1" height="46"></td>
+                		<td width="25%" style="padding-left:5px; padding-top:12px;">
+											<ul id="Menu">
+                  			<li id="LIMenu"><a href="https://www.opendental.com/resources/order.html" class="MLink">
+													<font size="2" face="Arial, Helvetica, sans-serif" class="TopMenu">ORDER</font><br>
+                      		<font size="2" face="Arial, Helvetica, sans-serif" class="BMenu">HERE</font> </a>
+												</li>
+                  		</ul>
+										</td>
+                		<td valign="bottom"><img src="https://www.opendental.com/resources/open-dental/Line.gif" width="1" height="46"></td>
+                		<td width="25%" style="padding-left:5px; padding-top:12px;">
+											<ul id="Menu">
+                				<li id="LIMenu"><a href="https://www.opendental.com/resources/contact.html" class="MLink">
+													<font size="2" face="Arial, Helvetica, sans-serif" class="TopMenu">CONTACT</font><br>
+                      		<font size="2" face="Arial, Helvetica, sans-serif" class="BMenu">INFORMATION</font> </a> </li>
+                    		</ul>
+											</td>
+                		</tr>
+              		</table>
+								</td>
+          		</tr>
+        		</table>
+					</td>
+				</tr>
+		</table>
+		</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF" style="padding-left:15px; padding-top:20px; padding-right:15px; background-image: url(https://www.opendental.com/resources/open-dental/Back.jpg); background-repeat: repeat-x;">
+			<p style="margin-top: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: bolder; color: #FFFFFF;">  Podium Open Dental
+			</p>
+<p></p>
+   	  <p>&nbsp;</p>
+	  <p>&nbsp;</p>
+		</td>
+  </tr>
+	<tr>
+		<td height="80" valign="top"><div align="center" style="color: #FFFFFF; font-size: 11px;">
+			  Open Dental Software  1-503-363-5432</div>
+		</td>
+  </tr>
+</table>
+
+
+</body>
+</html>
+```

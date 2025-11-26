@@ -1,0 +1,94 @@
+# File: ./www.opendental.com/manual243/orthochartsetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Ortho Chart Setup</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('orthochartsetup','orthochart','+chartToolbar','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/orthochartsetup.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/orthochartsetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/orthochartsetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/orthochartsetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/orthochartsetup.html" >v23.2</option><option value="https://www.opendental.com/manual231/orthochartsetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/orthochartsetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/orthochartsetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/orthochartsetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/orthochartsetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/orthochartsetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/orthochartsetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/orthochartsetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/orthochartsetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/orthochartsetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/orthochartsetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/orthochartsetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/orthochartsetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/orthochartsetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/orthochartsetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/orthochartsetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/orthochartsetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/orthochartsetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/orthochartsetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/orthochartsetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/orthochartsetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/orthochartsetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/orthochartsetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Ortho Chart Setup</p></div>
+<div class="GeneralPageContent">
+<p>The Ortho Chart can have customized tabs and fields to meet the needs of an office.</p>
+<p>In the <a href="orthochart.html">Ortho Chart</a>, click <b>Setup</b>.</p>
+<img src="images/displayFieldsOrtho.png" width="640" height="443"/><p class="MarginBottomZero">Alternatively: </p>
+<ul class="MarginBottomGap">
+<li>In <a href="preferences.html">Preferences</a>, click Edit next to <i>Ortho Chart Display Fields</i>.</li>
+<li>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="displayfields.html">Display Fields</a>, Ortho Chart.</li>
+</ul>
+<p> If the total width of all <i>Fields Showing</i> in an Ortho Chart Tab exceeds 915, when printing from <a href="orthochart.html">Ortho Chart</a>, some fields may be cut off.</p>
+<h2>Setup Display Fields</h2>
+<p>Ortho Chart Setup open in the Setup Display Fields window.</p>
+<p><b>Tab</b>: Choose the Ortho Chart tab to edit Display Fields. Click <b>Setup Tabs</b> to open Ortho Chart Tabs (see the following section).</p>
+<p><b>Fields Showing</b>: Lists the Display Fields currently visible for the selected tab. Highlight a field and use the <b>Up</b> / <b>Down</b> arrows to reorder the field in the list.</p>
+<p><b>Available Fields</b>: Lists the Display Fields that are not currently visible for the selected tab.</p>
+<p><b>Left</b> / <b>Right</b>: Highlight a field in the Available Fields list and click the <b>Left</b> arrow to move the field to the Fields Showing list. Highlight a field in Fields Showing and click the <b>Right</b> arrow to move the field to Available Fields.</p>
+<p><b>New Field</b>: Type a Display Field description and click the Left Arrow to create a new Display Field and add it to the currently selected tab.</p>
+<p>A field is hidden when it is moved into <i>Available Fields</i> for every tab.</p>
+<h2>Ortho Chart Tabs</h2>
+<p>Tabs are a way to organize Ortho Chart information. By default, there is one tab labeled <i>Ortho Chart</i>, additional tabs can be added. Each tab can have the same or different columns showing.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>The name of the first tab determines the text on the Ortho Chart button in the Chart Module toolbar and the text of the <i>Go to Ortho Chart</i> right-click option when clicking on an appointment in the Appointments Module.</li>
+<li>When there are multiple tabs, the Ortho Chart button in the toolbar includes a dropdown for each tab.</li>
+</ul>
+<p>Click <b>Setup Tabs</b> to make changes to the tabs displayed in the Ortho Chart. </p>
+<img src="images/orthoChartTabSetup.png" width="370" height="351"/><p>Click <b>Add</b> to create a new tab or double-click an existing tab name to edit. Ortho Chart Tab Edit opens.</p>
+<img src="images/orthoChartTabEdit.png" width="318" height="174"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Tab Name</b>: Enter a description / title for the tab. </li>
+<li><b>Is Hidden</b>: Check to hide this tab in the Ortho Chart.</li>
+<li>Click <b>Save</b> to keep changes.</li>
+</ul>
+<p><b>Up</b> / <b>Down</b>: Highlight a tab name and click to reorder in the list. The order affects how tabs are displayed in the Ortho Chart.</p>
+<p>Click <b>Save</b> to keep changes</p>
+<h2>Edit Ortho Display Field</h2>
+<p>Click the Tab dropdown and select the tab where a field is showing. Double-click a field from the Fields Showing list to edit. </p>
+<img src="images/displayFieldsOrthoEdit.png" width="512" height="387"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Description Override</b>: Enter text to display in the Ortho Chart instead of the Description. In <i>Fields Showing</i>, this is displayed in parentheses next to the Description. This is not displayed in <i>Available Fields</i>. </li>
+<li><b>Description</b>: The name of the column. Changing the description of an existing field that contains data creates a new field with the new name which does not contain data. The original field is moved to <i>Available Fields</i> and retains the original data.</li>
+<li><b>Minimum Width</b>: A fixed minimum column width based on the length of the Description.</li>
+<li><b>Column Width</b>: Enter the actual width of the column. If the minimum width is more than the column width, adjust the column width to match for best visual results.</li>
+<li><b>Type</b>: Determines how data can be entered into the field: <ul>
+<li>Text: Allows typing into the field.</li>
+<li>Pick List: Allows only items from a list to be entered into the field. Enter list items in the Pick List box below. Enter one selection item per line. Use the <b>Up</b> / <b>Down</b> arrows to reorder items. </li>
+<li>Signature: Allows no direct input into the field. Adding a field of this type to any tab enables a Signature box in the Ortho Chart. If a row is signed, this field indicates if the signature is valid.</li>
+<li>Provider: Displays the provider associated with the row. </li>
+</ul>
+</li>
+</ul>
+<p>Click <b>Save</b> to keep changes.</p>
+</div>
+</div>
+</body>
+</html>```

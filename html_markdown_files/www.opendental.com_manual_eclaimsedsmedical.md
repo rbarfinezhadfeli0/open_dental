@@ -1,0 +1,54 @@
+# File: ./www.opendental.com/manual/eclaimsedsmedical.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Electronic Dental Services - Medical</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('eclaimsedsmedical','clearinghouses','+familyinsurance','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/eclaimsedsmedical.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/eclaimsedsmedical.html" >v24.2</option><option value="https://www.opendental.com/manual241/eclaimsedsmedical.html" >v24.1</option><option value="https://www.opendental.com/manual233/eclaimsedsmedical.html" >v23.3</option><option value="https://www.opendental.com/manual232/eclaimsedsmedical.html" >v23.2</option><option value="https://www.opendental.com/manual231/eclaimsedsmedical.html" >v23.1</option><option value="https://www.opendental.com/manual224/eclaimsedsmedical.html" >v22.4</option><option value="https://www.opendental.com/manual223/eclaimsedsmedical.html" >v22.3</option><option value="https://www.opendental.com/manual222/eclaimsedsmedical.html" >v22.2</option><option value="https://www.opendental.com/manual221/eclaimsedsmedical.html" >v22.1</option><option value="https://www.opendental.com/manual214/eclaimsedsmedical.html" >v21.4</option><option value="https://www.opendental.com/manual213/eclaimsedsmedical.html" >v21.3</option><option value="https://www.opendental.com/manual212/eclaimsedsmedical.html" >v21.2</option><option value="https://www.opendental.com/manual211/eclaimsedsmedical.html" >v21.1</option><option value="https://www.opendental.com/manual205/eclaimsedsmedical.html" >v20.5</option><option value="https://www.opendental.com/manual204/eclaimsedsmedical.html" >v20.4</option><option value="https://www.opendental.com/manual203/eclaimsedsmedical.html" >v20.3</option><option value="https://www.opendental.com/manual202/eclaimsedsmedical.html" >v20.2</option><option value="https://www.opendental.com/manual201/eclaimsedsmedical.html" >v20.1</option><option value="https://www.opendental.com/manual194/eclaimsedsmedical.html" >v19.4</option><option value="https://www.opendental.com/manual193/eclaimsedsmedical.html" >v19.3</option><option value="https://www.opendental.com/manual192/eclaimsedsmedical.html" >v19.2</option><option value="https://www.opendental.com/manual191/eclaimsedsmedical.html" >v19.1</option><option value="https://www.opendental.com/manual184/eclaimsedsmedical.html" >v18.4</option><option value="https://www.opendental.com/manual183/eclaimsedsmedical.html" >v18.3</option><option value="https://www.opendental.com/manual182/eclaimsedsmedical.html" >v18.2</option><option value="https://www.opendental.com/manual181/eclaimsedsmedical.html" >v18.1</option><option value="https://www.opendental.com/manual174/eclaimsedsmedical.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Electronic Dental Services - Medical</p></div>
+<div class="GeneralPageContent">
+<p>EDS Medical is an e-claims clearinghouse that offers medical claims.</p>
+<p>In <a href="clearinghouses.html">Clearinghouses</a>, double-click <b>EdsMedical</b>.</p>
+<img src="images/clearinghouseEDSMedical.png" width="915" height="689"/><p>Users must also be using <a href="eclaimseds.html">EDS Dental</a> in order to use this clearinghouse.</p>
+<h2>Setup</h2>
+<p class="MarginBottomZero">Enter the following details when enabling EDS Medical:  </p>
+<ul class="MarginBottomGap">
+<li><b>Login ID</b>: Supplied by EDS Medical.</li>
+<li><b>Password</b>: The EDS Medical password.</li>
+<li><b>Comm Bridge</b>: Set to <i>EdsMedical</i> if not already done.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

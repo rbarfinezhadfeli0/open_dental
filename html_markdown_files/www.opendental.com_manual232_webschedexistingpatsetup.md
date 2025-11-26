@@ -1,0 +1,103 @@
+# File: ./www.opendental.com/manual232/webschedexistingpatsetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Web Sched Existing Patient</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('webschedexistingpatsetup','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/webschedexistingpatsetup.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/webschedexistingpatsetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/webschedexistingpatsetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/webschedexistingpatsetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/webschedexistingpatsetup.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/webschedexistingpatsetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/webschedexistingpatsetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/webschedexistingpatsetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/webschedexistingpatsetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/webschedexistingpatsetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/webschedexistingpatsetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/webschedexistingpatsetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/webschedexistingpatsetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/webschedexistingpatsetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/webschedexistingpatsetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/webschedexistingpatsetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/webschedexistingpatsetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/webschedexistingpatsetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/webschedexistingpatsetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/webschedexistingpatsetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/webschedexistingpatsetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/webschedexistingpatsetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/webschedexistingpatsetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/webschedexistingpatsetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/webschedexistingpatsetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/webschedexistingpatsetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/webschedexistingpatsetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/webschedexistingpatsetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Web Sched Existing Patient</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="eservicessetup.html">eServices Setup</a> window, click <b>Existing Patient</b>.</p>
+<img src="images/webschedExistingPatient.png" width="915" height="438"/><p>Web Sched Existing Patient allows current patients to schedule their appointment online. The office can determine which type of appointments a patient can schedule, what hours are available, what operatories are available, and other appointment criteria. </p>
+<p>To begin using Web Sched Existing Patient, first <a href="eservicessignup.html">Sign Up</a> for the service. After enabling and setting up Web Sched Existing Patient, see <a href="webschedadvanced.html">Web Sched Advanced</a> to create the Web Sched Existing Patient URL.</p>
+<p class="MarginBottomZero">For additional information: </p>
+<ul class="MarginBottomGap">
+<li><img src="images/YouTube_PlayButton_15px.png" width="15" height="12" style="margin-bottom: 0px"/> See our webinar: <a href="https://youtu.be/ag3lDGTYS0g">Web Sched Existing Patient</a>.</li>
+<li><a href="webschedexistingpatientsees.html">Web Sched Existing Patient: What Patient Sees</a></li>
+<li><a href="webschedtroubleshooting.html">Web Sched Troubleshooting</a></li>
+<li>To set up Web Sched for new patients, see: <a href="webschednewpatsetup.html">Web Sched New Patient</a></li>
+</ul>
+<h2>Appointment Types</h2>
+<p>Web Sched Existing Pat Appt Types must be created prior to offering Web Sched Existing Patient. Web Sched Existing Patient Appointment Types determine the reasons patients can select for their appointment, the procedures for the appointment, the appointment length, and the time pattern.</p>
+<img src="images/webSchedExistingPatApptTypes.png" width="388" height="180"/><p><b>Edit</b>: Click to open <a href="definitionswebschedexistingpatappttypes.html">Definitions: Web Sched Existing Appt Types</a>. Add or edit appointment types as needed.</p>
+<p><div class="Note">Note: Do not add an appointment type for recall procedures. Instead, use the <i>Recall display name</i> field below. When in use, Open Dental will include a recall option for patient's to select from. This allows Open Dental to update patient recall information.</div>
+</p>
+<h2>Operatories Considered </h2>
+<p>Lists the operatories considered for available time slots. Only operatories associated with <i>Existing Pat Appt Types</i> are considered. </p>
+<img src="images/webSchedExistingPatOpsConsidered.png" width="753" height="181"/><p><b>Edit</b>: Open <a href="operatories.html">Operatory Setup</a>. Add or edit operatories as needed.</p>
+<h2>Available Times for Patients</h2>
+<p>This area offers a preview of up to one month of open time slots for a location, based on the current settings.</p>
+<img src="images/webSchedExistingPatAvailableTimes.png" width="389" height="315"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Date</b>: Enter the first date to preview or click Today to insert today's date.</li>
+<li><b>Reason</b>: Select the Reason / Appointment Type to preview.</li>
+<li><b>Clinic</b>: Select the location to preview.</li>
+</ul>
+<p>Click <b>Refresh</b> to view openings.</p>
+<h2>Appointment Message</h2>
+<p>The Appointment Message is intended to provide useful information to patients and will display when the appointment is being created. Click in the message to customize it.</p>
+<img src="images/WebSchedExistingPatApptMessage.png" width="312" height="123"/><h2>Allowed Blockout Types</h2>
+<p>By default, Web Sched Existing Patient does not consider <a href="blockouts.html">Blockouts</a> as available time. However, scheduling can be allowed on top of specific blockout types. </p>
+<img src="images/webSchedExistingPatAllowedBlockouts.png" width="438" height="174"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Generally Allowed</b>: Lists blockouts that are allowed to be scheduled over. Click Edit to add blockout types.</li>
+<li><b>Restricted to Reasons</b>: Lists blockouts that have been restricted to a <a href="definitionswebschedexistingpatappttypes.html">Web Sched Existing Patient Appointment Type</a>. Click Edit to add blockouts. When restricted, the selected appointment types can only be scheduled over the associated blockouts.</li>
+</ul>
+<h2>Other Settings</h2>
+<p>Additional settings can determine the functionality of Web Sched Existing Patient.</p>
+<img src="images/webSchedExistingPatOtherSettings.png" width="749" height="139"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Allow patients to select provider</b>: When checked, all <a href="providers.html">Providers</a>, unless marked hidden or not a person, will be listed for patients to choose from, regardless of Operatories Considered or provider availability. Patients may not be able to schedule with all providers listed. When unchecked, patients are not shown a provider list and will only be shown available appointments for Operatories Considered. To add provider descriptions and photo that will be visible to the patient, see the <a href="providerseditwindow.html">Provider</a>, Web Sched tab.</li>
+<li><b>Prevent double booking</b>: Check to block double booking of appointments, even if <a href="appointmentrules.html">Appointment Rules</a> would permit it.</li>
+<li><b>Allow disabled recalls</b>: Check to allow patients to schedule a recall appointment via Web Sched, even if their recall is set to <i>disabled</i>. Useful for patients who have been set to<i> inactive</i> but want to return to the office.</li>
+<li><b>Minimum number of days out an appointment can be scheduled (empty is 0)</b>: Enter the number of days in the future to search for the first available openings. Leave blank to include all available openings. For example, when 5 is entered, the first available opening offered to a patient will be five days in the future. When left blank, an opening in the next 30 minutes could be offered.</li>
+<li><b>Confirm Status</b>: Select the <a href="confirmationstatus.html">Confirmation Status</a> to apply to all appointments scheduled using Web Sched Existing Patient. The default is <i>Created from Web Sched</i>.</li>
+<li><b>Recall display name</b>: Enter the term that patients will see when scheduling their recall appointment. When selected from Web Sched, a patient can schedule their recall appointment as of their due date onward. This prevents a patient from scheduling a recall appointment before they are due. When using this option, patient recall information is updated in Open Dental. The default is <i>Teeth Cleaning</i>. Leave blank to disable recall appointments for existing patients.</li>
+<li><b>Insurance Rules</b>: Click to open the <a href="webschedcarrierrule.html">Web Sched Carrier Rule</a> window. Determine if patients are allowed to enter insurance information when scheduling their appointment and what insurance carriers are allowed. </li>
+<li><b>Notification Settings</b>: Click to open <a href="webschedverify.html">Web Sched Notify Setup</a>. Determines if a notification is sent to the patient informing them the appointment was successfully scheduled.</li>
+</ul>
+<h2>Web Sched Existing Patient Logic</h2>
+<p><b>Providers / Operatories</b>: When there are multiple operatories with openings at the same time, an appointment will be scheduled in the operatory on the farthest left of the schedule.</p>
+<p> When a provider's schedule is not assigned to a specific operatory, Web Scheduling will consider all Web Sched operatories where they are a primary provider as open for scheduling. This can result in appointments being created in operatories that appear to be closed.</p>
+<h2>In Open Dental</h2>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Scheduled appointments instantly show up in the <a href="appointments.html">Appointments Module</a>.</li>
+<li>Alerts are created to notify staff an existing patient appointment has been scheduled. See <a href="alerts.html">Alerts</a>.</li>
+<li>Use the <a href="webschedapptreport.html">Web Sched Appointments Report</a> to view and track appointments scheduled using Web Sched.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

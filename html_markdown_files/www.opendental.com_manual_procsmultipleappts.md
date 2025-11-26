@@ -1,0 +1,88 @@
+# File: ./www.opendental.com/manual/procsmultipleappts.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Procedure over Multiple Appointments</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('procsmultipleappts','entertreatment','+chartTabs','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/procsmultipleappts.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/procsmultipleappts.html" >v24.2</option><option value="https://www.opendental.com/manual241/procsmultipleappts.html" >v24.1</option><option value="https://www.opendental.com/manual233/procsmultipleappts.html" >v23.3</option><option value="https://www.opendental.com/manual232/procsmultipleappts.html" >v23.2</option><option value="https://www.opendental.com/manual231/procsmultipleappts.html" >v23.1</option><option value="https://www.opendental.com/manual224/procsmultipleappts.html" >v22.4</option><option value="https://www.opendental.com/manual223/procsmultipleappts.html" >v22.3</option><option value="https://www.opendental.com/manual222/procsmultipleappts.html" >v22.2</option><option value="https://www.opendental.com/manual221/procsmultipleappts.html" >v22.1</option><option value="https://www.opendental.com/manual214/procsmultipleappts.html" >v21.4</option><option value="https://www.opendental.com/manual213/procsmultipleappts.html" >v21.3</option><option value="https://www.opendental.com/manual212/procsmultipleappts.html" >v21.2</option><option value="https://www.opendental.com/manual211/procsmultipleappts.html" >v21.1</option><option value="https://www.opendental.com/manual205/procsmultipleappts.html" >v20.5</option><option value="https://www.opendental.com/manual204/procsmultipleappts.html" >v20.4</option><option value="https://www.opendental.com/manual203/procsmultipleappts.html" >v20.3</option><option value="https://www.opendental.com/manual202/procsmultipleappts.html" >v20.2</option><option value="https://www.opendental.com/manual201/procsmultipleappts.html" >v20.1</option><option value="https://www.opendental.com/manual194/procsmultipleappts.html" >v19.4</option><option value="https://www.opendental.com/manual193/procsmultipleappts.html" >v19.3</option><option value="https://www.opendental.com/manual192/procsmultipleappts.html" >v19.2</option><option value="https://www.opendental.com/manual191/procsmultipleappts.html" >v19.1</option><option value="https://www.opendental.com/manual184/procsmultipleappts.html" >v18.4</option><option value="https://www.opendental.com/manual183/procsmultipleappts.html" >v18.3</option><option value="https://www.opendental.com/manual182/procsmultipleappts.html" >v18.2</option><option value="https://www.opendental.com/manual181/procsmultipleappts.html" >v18.1</option><option value="https://www.opendental.com/manual174/procsmultipleappts.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Procedure over Multiple Appointments</p></div>
+<div class="GeneralPageContent">
+<p>When <a href="entertreatment.html">Entering Treatment</a>, group procedures that occur over multiple visits.</p>
+<h2>Group for Multiple Visits</h2>
+<p>Procedures can be grouped as a reminder to only send the claim when all procedures have been completed.</p>
+<p>In the <a href="chart.html">Chart Module</a>, highlight the procedures, then right-click and select <b>Group for Multiple Visits</b>.</p>
+<img src="images/groupForMultiple.png" width="701" height="234"/><p>Alternatively, when setting up a <a href="procedurebuttonedit.html">Procedure Button</a>, mark the button as <b>Group for Multiple Visits</b>.</p>
+<img src="images/groupForMultipleProcButton.png" width="793" height="580"/><p>When one of the grouped procedures is set complete, it will display with a status of <i>Complete (In Process)</i> in the <a href="procedureedit.html">Procedure</a> Info window and <a href="account.html">Account Module</a>. Once all procedures in the group have been set complete or procedures are ungrouped, the <i>In Process</i> status will be removed.</p>
+<p>Once procedures are grouped, they can be ungrouped when needed. In the Chart Module, right-click on a grouped procedure and select <b>View Multivisit Group(s)</b>.</p>
+<img src="images/ungroupMultiVisit.png" width="701" height="256"/><p>The View Multi Visit Group window will open.</p>
+<img src="images/multiVisitGroup.png" width="736" height="282"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Ungroup</b>: Select procedures, then click to remove them from the group.</li>
+</ul>
+<h2>Insurance Estimates</h2>
+<p>If grouped treatment spans multiple benefit years, the current benefit year is used to calculate insurance estimates, rather than considering the benefit year when treatment began.</p>
+<p>For example, if a patient met their annual max when completing their first visit, but schedules remaining treatment for the following benefit year, only the benefits used for the current year are considered, so treatment should no longer be over annual max.</p>
+<h2>Claims</h2>
+<p>Claims that include procedures grouped for multiple visits will be assigned a Claim Status of <i>Hold for In Process</i>.</p>
+<p>If completed procedures are grouped with treatment planned procedures after a claim has been created and the claim status is <i>Waiting to Send</i>, <i>Hold until Pri Received</i>, or <i>Unsent </i>the claim status will be changed to <i>Hold for In Process</i>.</p>
+<p>Once all procedures in the group have been set complete or remaining treatment planned procedures are ungrouped, the claim status will be changed to <i>Waiting to Send</i>. The claim status cannot be changed if any procedure status is <i>Complete (In Process)</i>. See <a href="claimedit.html">Edit Claim</a>: Claim Status.</p>
+<p>If a claim needs to be sent prior to other procedures in the group being completed, ungroup the completed procedures to send the claim.</p>
+<p>When grouped, all procedure dates on the claim default to the date of the last procedure completed.</p>
+<h2>Fees</h2>
+<p>For crowns, bridges, dentures, partials, etc., there is usually a prep or impression appointment and then a seat or deliver appointment. The fee is either charged at the first appointment or the last appointment. Decide which method to use before setting up the <a href="procedurecodes.html">Procedure Codes</a>.</p>
+<p><div class="Note">Note: Some insurance companies prefer the procedure to be billed on the prep date, though many do request to be billed on the seat date. The insurance company may have a clause that the coverage date of the patient may only apply to the seat date. </div>
+</p>
+<p class="MarginBottomZero"><b>Fee due at first appointment</b>: If the practice chooses to bill procedure fees at the first appointment, consider the following steps. </p>
+<ol class="MarginBottomGap">
+<li>For the first appointment, use the standard ADA procedure codes to bill any applicable fees.</li>
+<li>For the second appointment, use a special no-fee procedure code. Mark <i>Do Not Bill Ins</i> on the <a href="procedureedit.html">Procedure</a> (<i>Do not usually bill to ins</i> can be set on the Procedure Code to check this by default). Set the procedure Amount to $0. </li>
+</ol>
+<p class="MarginBottomZero"><b>Fee due at the second or last appointment</b>: If the practice chooses to bill procedure fees at the second or last appointment, consider the following steps. This method tends to more closely follow most insurance company policies. </p>
+<ol class="MarginBottomGap">
+<li>For the first appointment, use the no-fee procedure code. </li>
+<li>For the second appointment, use the standard ADA procedure codes to bill any applicable fees. </li>
+</ol>
+<h2>Logic</h2>
+<ul>
+<li>When selecting procedures and grouping manually, using right-click <b>Group for Multiple Visits</b>, all procedures are grouped into one group.</li>
+<li>When charting procedures using a Procedure Button with <i>Group for mutliple visits</i> enabled: <ul>
+<li>Procedure buttons with <a href="autocode.html">Auto Codes</a> attached will be placed into one group, regardless of treatment area selected.</li>
+<li>Procedure buttons without Auto Codes attached will be placed into multiple groups, based on treatment area (e.g., tooth number).</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

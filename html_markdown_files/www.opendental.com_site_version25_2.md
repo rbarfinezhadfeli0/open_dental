@@ -1,0 +1,149 @@
+# File: ./www.opendental.com/site/version25_2.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Version 25.2</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('version25_2','versions','advancedtopics','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Version 25.2</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="versions.html">Versions</a>.</p>
+<p><a href="https://opendental.blog/version-25-2/" target="_blank"><img src="images/versionHighlightsBlog.png" width="900" height="125"/></a></p>
+<p>Version 25.2 was released as stable on 09/09/2025.</p>
+<h2>Major Changes</h2><p class="MarginBottomZero">eClipboard Web released </p>
+<ul class="MarginBottomGap">
+<li>Allow patients to fill forms and complete eClipboard checklist items from a web browser</li>
+<li>Send patient-specific links to eClipboard Web ahead of a patient appointment</li>
+</ul>
+<p class="MarginBottomZero">Integration with BetterDiagnostics </p>
+<ul class="MarginBottomGap">
+<li>Help providers easily identify common dental pathologies for patients 18 and above</li>
+<li>Filter AI annotations by pathology to customize your viewing experience</li>
+</ul>
+<p class="MarginBottomZero">Mass Email feature </p>
+<ul class="MarginBottomGap">
+<li>Upload patient email lists to a Mailchimp audience</li>
+<li>Commlogs emails on the accounts of patients who received an email</li>
+</ul>
+<h2>Changes by Category</h2><p class="MarginBottomZero"><b>Account Module</b></p>
+<ul class="MarginBottomGap">
+<li>Option to automatically add Carecredit Merchant Fee Adjustments</li>
+<li>Implemented XConnect to validate claims for DentalXChange users</li>
+<li>Added a read-only Credit Card field when processing a payment with a saved card via PayConnect</li>
+<li>Patient Payment Plans, added ability to attach paysplits to payment plans when an Unearned Type of Payment Plan Prepay is selected</li>
+<li>CareCredit Self-Service option</li>
+<li>New preference to prompt for Medical EOB on primary claims</li>
+</ul>
+<p class="MarginBottomZero"><b>Appointments Module</b></p>
+<ul class="MarginBottomGap">
+<li>New preference for <i>Provider time bars show on Operatory background</i></li>
+<li>Waiting Room button to open in new window</li>
+</ul>
+<p class="MarginBottomZero"><b>Chart Module</b></p>
+<ul class="MarginBottomGap">
+<li>In the Chart Module, Medical area, fixed Med Urgent and Medical Summary rows to be bold for consistency with other fields</li>
+<li>Allergies marked as Other on imported eForms can be converted to an allergy listed on the Allergy list</li>
+<li>Problems marked as Other on imported eForms can be converted to a problem listed on the Problem list</li>
+<li>Added birthdate to printed Graphical Perio Charts</li>
+</ul>
+<p class="MarginBottomZero"><b>eForms</b></p>
+<ul class="MarginBottomGap">
+<li>New eForm field for Patient List allows patients to select the family member that is the insurance subscriber</li>
+<li>New eForm field for Ins Pick allows easier entry and import of insurance plans</li>
+<li>eForms consider Sheets when calculating frequency</li>
+<li>Improved Patient Forms window interface</li>
+<li>Removed Imported status from Fill eForm window</li>
+</ul>
+<p class="MarginBottomZero"><b>eServices</b></p>
+<ul class="MarginBottomGap">
+<li>Secure Email messages allow patients to unsubscribe</li>
+<li>Moved option to use Secure Email for Web Sched Recall to Web Sched Recall Setup </li>
+<li>Allow Secure Email for Web Sched Recall to be determined by clinic</li>
+<li>Allow Message-to-Pay emails to send via Secure Email</li>
+<li>In Message-to-Pay Setup, customize receipt email template</li>
+</ul>
+<p class="MarginBottomZero"><b>Family Module</b></p>
+<ul class="MarginBottomGap">
+<li>User interface changed in the Edit Benefit window</li>
+<li>Updated Insurance Answers Plus bridge</li>
+<li>In Insurance History, edit or remove entered dates</li>
+</ul>
+<p class="MarginBottomZero"><b>Manage Module</b></p>
+<ul class="MarginBottomGap">
+<li>In the Task Filter window, the Clinic and Region dropdowns now include an <i>Unassigned</i> option.</li>
+<li>Task window now has a Task Category dropdown when enabled in Tasks Preferences</li>
+<li>In the Task Filter window, added the ability to select a specific patient</li>
+<li>Added additional logic to the preference, <i>Don't auto-process claims w/these CARCs</i></li>
+</ul>
+<p class="MarginBottomZero"><b>Miscellaneous</b></p>
+<ul class="MarginBottomGap">
+<li>Removed DentalXChange Patient Credit Score bridge, as the service has been discontinued</li>
+<li>Added bridge to DTX Studio</li>
+<li>New report, Insurance Pending Supplementals, for tracking pending insurance overpayments and underpayments</li>
+<li>Ability to add EOBs to preauthorizations</li>
+<li>Added domain login when changing the user on a procedure note or group note or when signing sheets</li>
+<li>Updated the names of several security permissions</li>
+<li>New security permission for <i>Treatment Planned Procedure Edit Fee</i></li>
+<li>New preferences for read/write delay when using replication</li>
+<li>Ability to open a read-only version of the wiki to use when Open Dental is closed </li>
+<li>New Database Maintenance Tool for Invalid Characters (GDI+) to clean up unsupported characters</li>
+<li>Wiki search option to limit page results</li>
+<li>In CareCredit Transactions, added a column for Net Amount</li>
+<li>Audit Trail logs when clinic for a patient has been changed</li>
+<li>Preference to <i>Blur when switching between modules to prevent accidental clicking</i></li>
+<li>Option to copy images in the Imaging Module without drawings or annotations </li>
+</ul>
+<p class="MarginBottomZero"><b>API</b>: <a href="apispecification.html">API Specification</a></p>
+<ul class="MarginBottomGap">
+<li>PaySplits PUT ProvNum</li>
+<li>ClaimProcs POST Supplemental</li>
+<li>SheetFields GET (single)</li>
+<li>ASAPComms, supports recalls</li>
+<li>Appointments - Add ability to set Time Arrived</li>
+<li>RefAttaches GET DateTStamp</li>
+<li>Added additional fields to the patientnotes endpoint</li>
+<li>SheetFields PUT</li>
+<li>Added FeeSched parameter and field to Patients GET</li>
+<li>Commlogs PUT</li>
+<li>Added Prosthesis, DateOriginalProsth and IsDateProsthEst to procedurelogs endpoint</li>
+<li>InsPlans POST/PUT ClaimFormNum/ManualFeeSchedNum</li>
+<li>Added EobAttaches DELETE</li>
+<li>ClaimForms GET</li>
+<li>ClaimPayments PUT CheckAmt</li>
+<li>Patients POST, Add Premed</li>
+</ul>
+		</div>
+	</div>
+</body>
+</html>```

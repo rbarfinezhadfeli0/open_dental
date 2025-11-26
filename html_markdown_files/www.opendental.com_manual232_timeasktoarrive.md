@@ -1,0 +1,66 @@
+# File: ./www.opendental.com/manual232/timeasktoarrive.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Time Ask to Arrive</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('timeasktoarrive','appointments','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/timeasktoarrive.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/timeasktoarrive.html" >v24.2</option><option value="https://www.opendental.com/manual241/timeasktoarrive.html" >v24.1</option><option value="https://www.opendental.com/manual233/timeasktoarrive.html" >v23.3</option><option value="https://www.opendental.com/manual232/timeasktoarrive.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/timeasktoarrive.html" >v23.1</option><option value="https://www.opendental.com/manual224/timeasktoarrive.html" >v22.4</option><option value="https://www.opendental.com/manual223/timeasktoarrive.html" >v22.3</option><option value="https://www.opendental.com/manual222/timeasktoarrive.html" >v22.2</option><option value="https://www.opendental.com/manual221/timeasktoarrive.html" >v22.1</option><option value="https://www.opendental.com/manual214/timeasktoarrive.html" >v21.4</option><option value="https://www.opendental.com/manual213/timeasktoarrive.html" >v21.3</option><option value="https://www.opendental.com/manual212/timeasktoarrive.html" >v21.2</option><option value="https://www.opendental.com/manual211/timeasktoarrive.html" >v21.1</option><option value="https://www.opendental.com/manual205/timeasktoarrive.html" >v20.5</option><option value="https://www.opendental.com/manual204/timeasktoarrive.html" >v20.4</option><option value="https://www.opendental.com/manual203/timeasktoarrive.html" >v20.3</option><option value="https://www.opendental.com/manual202/timeasktoarrive.html" >v20.2</option><option value="https://www.opendental.com/manual201/timeasktoarrive.html" >v20.1</option><option value="https://www.opendental.com/manual194/timeasktoarrive.html" >v19.4</option><option value="https://www.opendental.com/manual193/timeasktoarrive.html" >v19.3</option><option value="https://www.opendental.com/manual192/timeasktoarrive.html" >v19.2</option><option value="https://www.opendental.com/manual191/timeasktoarrive.html" >v19.1</option><option value="https://www.opendental.com/manual184/timeasktoarrive.html" >v18.4</option><option value="https://www.opendental.com/manual183/timeasktoarrive.html" >v18.3</option><option value="https://www.opendental.com/manual182/timeasktoarrive.html" >v18.2</option><option value="https://www.opendental.com/manual181/timeasktoarrive.html" >v18.1</option><option value="https://www.opendental.com/manual174/timeasktoarrive.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Time Ask to Arrive</p></div>
+<div class="GeneralPageContent">
+<p>Users can be prompted to remind a patient to arrive early for their appointment.</p>
+<p>In the <a href="appointments.html">Appointments Module</a>, schedule an appointment.</p>
+<img src="images/timeAskArrivePrompt.gif" width="295" height="133"/><p>When <i>Ask To Arrive Early</i> value has already been entered in <a href="patientedit.html">Edit Patient Information</a>, this message appears immediately upon creating or selecting a patient's scheduled appointment. The <i>Time Ask To Arrive</i> is automatically prefilled on new appointments for the patient. </p>
+<p>When a value is entered into the <i>Time Ask To Arrive</i> field of an appointment manually, the message appears only when rescheduling the appointment.</p>
+<p>Additionally, the time asked to arrive can be used when sending automated text messages to the patient.</p>
+<h2>Appointment Specific</h2>
+<p>Set an individual appointment with a reminder to arrive early. This can be useful for first appointments when the patient has forms to fill out. </p>
+<p>In the Appointments Module, double-click an existing appointment. In the <a href="aptedit.html">Edit Appointment</a> window, enter the <b>Time Ask To Arrive</b> in 00:00 format.</p>
+<img src="images/timeasktoarrive.gif" width="547" height="467"/><h2>All Appointments for a Patient</h2>
+<p>Set all appointments for a patient to prompt with a reminder to arrive early. This can be useful for patients who have a history of running late.</p>
+<p>In the patient's <a href="patientedit.html">Edit Patient Information</a>, enter a <b>Ask To Arrive Early</b> in minutes.</p>
+<img src="images/asktoarriveearly.gif" width="496" height="419"/><p>Additionally, check <b>Same for entire family</b> to apply the early arrival time to everyone in the patient's family.</p>
+<h2>Additional Details</h2>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>The appointment schedule will show the appointment time, not the Time Ask to Arrive.</li>
+<li>To display the Time Ask to Arrive in the appointment box, see <a href="appointmentviews.html">Appointment Views</a>.</li>
+<li>The Time Ask to Arrive will display on patient literature (e.g., email, postcard reminders, etc.). If no time is entered, the appointment time is used on this literature. </li>
+<li>When the [ApptTimeAskedArrive] tag is used, <a href="automatedmessaging.html">Automated Messaging</a> can send this time to a patient via text or email.</li>
+<li>If an appointment is rescheduled, the Time Ask to Arrive value will reset. If an Ask to Arrive Early value is entered on the Edit Patient Information window, it will be used to calculate a new arrival time, and a message will indicate the previous arrival time.</li>
+<li>A patient can be scheduled with a Time Ask to Arrive outside of open office hours without a warning message. For example, the clinic opens at 8:00 am, the patient is scheduled for an 8:00 am appointment but is asked to arrive at 7:45 am (the office is not open).</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

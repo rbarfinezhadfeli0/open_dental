@@ -1,0 +1,72 @@
+# File: ./www.opendental.com/manual232/aging.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Aging</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('aging','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/aging.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/aging.html" >v24.2</option><option value="https://www.opendental.com/manual241/aging.html" >v24.1</option><option value="https://www.opendental.com/manual233/aging.html" >v23.3</option><option value="https://www.opendental.com/manual232/aging.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/aging.html" >v23.1</option><option value="https://www.opendental.com/manual224/aging.html" >v22.4</option><option value="https://www.opendental.com/manual223/aging.html" >v22.3</option><option value="https://www.opendental.com/manual222/aging.html" >v22.2</option><option value="https://www.opendental.com/manual221/aging.html" >v22.1</option><option value="https://www.opendental.com/manual214/aging.html" >v21.4</option><option value="https://www.opendental.com/manual213/aging.html" >v21.3</option><option value="https://www.opendental.com/manual212/aging.html" >v21.2</option><option value="https://www.opendental.com/manual211/aging.html" >v21.1</option><option value="https://www.opendental.com/manual205/aging.html" >v20.5</option><option value="https://www.opendental.com/manual204/aging.html" >v20.4</option><option value="https://www.opendental.com/manual203/aging.html" >v20.3</option><option value="https://www.opendental.com/manual202/aging.html" >v20.2</option><option value="https://www.opendental.com/manual201/aging.html" >v20.1</option><option value="https://www.opendental.com/manual194/aging.html" >v19.4</option><option value="https://www.opendental.com/manual193/aging.html" >v19.3</option><option value="https://www.opendental.com/manual192/aging.html" >v19.2</option><option value="https://www.opendental.com/manual191/aging.html" >v19.1</option><option value="https://www.opendental.com/manual184/aging.html" >v18.4</option><option value="https://www.opendental.com/manual183/aging.html" >v18.3</option><option value="https://www.opendental.com/manual182/aging.html" >v18.2</option><option value="https://www.opendental.com/manual181/aging.html" >v18.1</option><option value="https://www.opendental.com/manual174/aging.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Aging</p></div>
+<div class="GeneralPageContent">
+<p>Aging is the length of time a balance has been outstanding and is useful for billling.</p>
+<p>In the upper left of the <a href="account.html">Account Module</a> is Family Aging.</p>
+<img src="images/agingFamily.png" width="263" height="41"/><p>Aging is automatically calculated in the Family Aging grid when opening the <a href="account.html">Account Module</a>.</p>
+<p>To run aging at a set time each day, the <a href="opendentalservice.html">Open Dental Service</a> must be installed on the server and an <i>Automated aging run time</i> be set in <a href="preferences.html">Preferences</a> or, for Enterprise users, an <i>Aging Service Time Due</i> be set in <a href="enterprisesetup.html">Enterprise Setup</a>.</p>
+<p class="MarginBottomZero">Aging is also automatically calculated on affected accounts when users: </p>
+<ul class="MarginBottomGap">
+<li>Run the <a href="repeatingcharges.html">Repeating Charges</a> tool, if <i>Run aging on accounts after posting charges</i> is checked.</li>
+<li>Run <a href="financecharges.html">Billing/Finance Charges</a> or <a href="latecharges.html">Late Charges</a>.</li>
+<li>Open an unsent statement from the <a href="billing.html">Billing</a> List.</li>
+<li>When receiving <a href="claimpaymentbatch.html">Batch Insurance Payment</a> if <i>Aging calculated on receipt of batch claim payments</i> is enabled in <a href="enterprisesetup.html">Enterprise Setup</a>.</li>
+</ul>
+<p class="MarginBottomZero">Aging is automatically calculated when generating the following reports, but not updated in accounts at that time: </p>
+<ul class="MarginBottomGap">
+<li><a href="reportaging.html">Aging of Accounts Receivable (A/R) Report</a></li>
+<li><a href="reportinsaging.html">Insurance Aging Report</a></li>
+</ul>
+<p>Additional settings for Aging are found in Preferences and, for Enterprise users, Enterprise Setup, Account tab. </p>
+<h2>How Aging is Calculated</h2>
+<p class="MarginBottomZero">By default, all charges within a family are sorted into four aging categories based on the date of the charge: </p>
+<ul class="MarginBottomGap">
+<li>0-30</li>
+<li>31-60</li>
+<li>61-90</li>
+<li>over 90</li>
+</ul>
+<p> Categories represent the number of days the remaining balance of a charge has been outstanding. Then, the sum of all credits for the entire family history is applied to the oldest category with a remaining balance. If the total credits were not sufficient to cover the total charges, categories will still contain amounts due.</p>
+<p>By default, credits are applied to the oldest debts first in order to give the family as much credit as possible. This way, if a family has a balance in the <i>over 90</i> category, the practice might be more comfortable moving the guarantor account to precollections. </p>
+<p>If the Preference, <i>Transactions attached to a procedure offset each other before aging</i>, is enabled, credits (e.g., adjustments, pay plan charges) attached to procedures are applied to the procedure balance instead of the oldest family balance. </p>
+</div>
+</div>
+</body>
+</html>```

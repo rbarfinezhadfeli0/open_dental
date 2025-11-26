@@ -1,0 +1,54 @@
+# File: ./www.opendental.com/manual232/mountacquire.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Select Mount and Acquire</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('mountacquire','images','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/mountacquire.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/mountacquire.html" >v24.2</option><option value="https://www.opendental.com/manual241/mountacquire.html" >v24.1</option><option value="https://www.opendental.com/manual233/mountacquire.html" >v23.3</option><option value="https://www.opendental.com/manual232/mountacquire.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/mountacquire.html" >v23.1</option><option value="https://www.opendental.com/manual224/mountacquire.html" >v22.4</option><option value="https://www.opendental.com/manual223/mountacquire.html" >v22.3</option><option value="https://www.opendental.com/manual222/mountacquire.html" >v22.2</option><option value="https://www.opendental.com/manual221/mountacquire.html" >v22.1</option><option value="https://www.opendental.com/manual214/mountacquire.html" >v21.4</option><option value="https://www.opendental.com/manual213/mountacquire.html" >v21.3</option><option value="https://www.opendental.com/manual212/mountacquire.html" >v21.2</option><option value="https://www.opendental.com/manual211/mountacquire.html" >v21.1</option><option value="https://www.opendental.com/manual205/mountacquire.html" >v20.5</option><option value="https://www.opendental.com/manual204/mountacquire.html" >v20.4</option><option value="https://www.opendental.com/manual203/mountacquire.html" >v20.3</option><option value="https://www.opendental.com/manual202/mountacquire.html" >v20.2</option><option value="https://www.opendental.com/manual201/mountacquire.html" >v20.1</option><option value="https://www.opendental.com/manual194/mountacquire.html" >v19.4</option><option value="https://www.opendental.com/manual193/mountacquire.html" >v19.3</option><option value="https://www.opendental.com/manual192/mountacquire.html" >v19.2</option><option value="https://www.opendental.com/manual191/mountacquire.html" >v19.1</option><option value="https://www.opendental.com/manual184/mountacquire.html" >v18.4</option><option value="https://www.opendental.com/manual183/mountacquire.html" >v18.3</option><option value="https://www.opendental.com/manual182/mountacquire.html" >v18.2</option><option value="https://www.opendental.com/manual181/mountacquire.html" >v18.1</option><option value="https://www.opendental.com/manual174/mountacquire.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Select Mount and Acquire</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="images.html">Imaging Module</a>, click <b>Mount / Acquire</b>.</p>
+<img src="images/imagingAcquire.png" width="757" height="450"/><p>Use this window to create mounts, take single images, or take images while placing them on a mount. An active registration key is required to acquire images, except in the Trial Version. </p>
+<h2>Create a Mount</h2>
+<p>To create a blank mount, select the mount from the Mount section, then click <b>Create Mount</b>. The mount is added to the selected Image Category.</p>
+<p>To create or edit mounts, see <a href="mountdefinitions.html">Mount Definitions</a>. </p>
+<h2>Take a Single Image</h2>
+<p>To take a single image, select the device under Device, then click <b>Acquire</b>. The image is added to the selected image category. </p>
+<h2>Take Multiple Images</h2>
+<p>To generate a mount and place images on it, select the Mount and Device, then click <b>Create Mount and Acquire</b>. The mount is added to the selected image category. Images automatically begin to acquire starting at item #1 on the mount. Acquiring stops automatically once all items in the mount have been acquired.</p>
+<p>Alternatively, after selecting an existing mount (e.g., an existing blank mount) from the Imaging Module, click <b>Acquire</b> to fill any empty items.</p>
+</div>
+</div>
+</body>
+</html>```

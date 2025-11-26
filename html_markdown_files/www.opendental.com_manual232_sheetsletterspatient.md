@@ -1,0 +1,58 @@
+# File: ./www.opendental.com/manual232/sheetsletterspatient.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Patient Letter Layout</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('sheetsletterspatient','sheets','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/sheetsletterspatient.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/sheetsletterspatient.html" >v24.2</option><option value="https://www.opendental.com/manual241/sheetsletterspatient.html" >v24.1</option><option value="https://www.opendental.com/manual233/sheetsletterspatient.html" >v23.3</option><option value="https://www.opendental.com/manual232/sheetsletterspatient.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/sheetsletterspatient.html" >v23.1</option><option value="https://www.opendental.com/manual224/sheetsletterspatient.html" >v22.4</option><option value="https://www.opendental.com/manual223/sheetsletterspatient.html" >v22.3</option><option value="https://www.opendental.com/manual222/sheetsletterspatient.html" >v22.2</option><option value="https://www.opendental.com/manual221/sheetsletterspatient.html" >v22.1</option><option value="https://www.opendental.com/manual214/sheetsletterspatient.html" >v21.4</option><option value="https://www.opendental.com/manual213/sheetsletterspatient.html" >v21.3</option><option value="https://www.opendental.com/manual212/sheetsletterspatient.html" >v21.2</option><option value="https://www.opendental.com/manual211/sheetsletterspatient.html" >v21.1</option><option value="https://www.opendental.com/manual205/sheetsletterspatient.html" >v20.5</option><option value="https://www.opendental.com/manual204/sheetsletterspatient.html" >v20.4</option><option value="https://www.opendental.com/manual203/sheetsletterspatient.html" >v20.3</option><option value="https://www.opendental.com/manual202/sheetsletterspatient.html" >v20.2</option><option value="https://www.opendental.com/manual201/sheetsletterspatient.html" >v20.1</option><option value="https://www.opendental.com/manual194/sheetsletterspatient.html" >v19.4</option><option value="https://www.opendental.com/manual193/sheetsletterspatient.html" >v19.3</option><option value="https://www.opendental.com/manual192/sheetsletterspatient.html" >v19.2</option><option value="https://www.opendental.com/manual191/sheetsletterspatient.html" >v19.1</option><option value="https://www.opendental.com/manual184/sheetsletterspatient.html" >v18.4</option><option value="https://www.opendental.com/manual183/sheetsletterspatient.html" >v18.3</option><option value="https://www.opendental.com/manual182/sheetsletterspatient.html" >v18.2</option><option value="https://www.opendental.com/manual181/sheetsletterspatient.html" >v18.1</option><option value="https://www.opendental.com/manual174/sheetsletterspatient.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Patient Letter Layout</p></div>
+<div class="GeneralPageContent">
+<p>Patient Letters can be customized to meet the needs of the practice.</p>
+<p>In <a href="sheets.html">Sheets</a>, double-click on a custom sheet with the type of PatientLetter.</p>
+<img src="images/sheetPatientLetter.gif" width="915" height="682"/><p>At least one custom sheet with a type of<i> PatientLetter</i> must exist before a patient letter can be generated. To create or send letters, see <a href="letterspatient.html">Letter</a>.</p>
+<p class="MarginBottomZero">Alternatively, in Sheets:  </p>
+<ul class="MarginBottomGap">
+<li>Click <b>New</b> and choose <i>PatientLetter</i> as the Sheet Type to create a new Patient Letter from blank.</li>
+<li>Select an existing Custom <i>PatientLetter</i> sheet and click <b>Duplicate</b> to create a copy of an existing Patient Letter.</li>
+<li>Select the existing Internal <i>PatientLetter</i> sheet and click <b>Copy</b> to create a copy of a default Patient Letter that can be edited.</li>
+</ul>
+<p>Also see: <a href="sheetproperties.html">Sheet Def Properties</a> and <a href="sheetsaddelements.html">Sheet Field Types</a>.</p>
+<p>To customize a <i>PatientLetter</i> sheet type, see <a href="sheetsetup.html">Edit Sheet Def</a>.</p>
+<p>For patient letters only, users can insert fields from a custom <a href="examsheets.html">Exam Sheet</a> within a <a href="sheetsstatictext.html">Static Text Field</a> (See: Exam Sheet Field).</p>
+<h2>Including Pre and Post Treatment Images in a Patient Letter</h2>
+<p>Below is an example of how an office might include patient images (Pat Images) in this type of sheet. To use multiple patient images, save each image in a separate Images category because only the first image from each category is pulled.</p>
+<img src="images/sheetPatientLetterExample.gif" width="915" height="700"/></div>
+</div>
+</body>
+</html>```

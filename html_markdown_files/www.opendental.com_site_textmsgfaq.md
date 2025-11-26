@@ -1,0 +1,124 @@
+# File: ./www.opendental.com/site/textmsgfaq.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: Integrated Texting Q and A</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>Integrated Texting Q and A</h1>
+		</div>
+		<div id="Content">
+<p>Below are some common questions regarding <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7textintegratedusage.html">Integrated Texting</a>.</p>
+<p><b>How do I get started?</b></p>
+<p>Sign up via the <a href="0_eservicessignup.html">eServices Signup</a> Portal.</p>
+<p><b>Are there character limitations for integrated texting messages?</b></p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>A message segment is 160 characters. Each additional message segment will result in additional per segment charges.</li>
+<li>Carriage returns add two characters.</li>
+<li>The following characters are allowed: a-z, A-Z, 0-9, . , : ; ! ? ( ) ~ = + - _ \ / @ $ # &amp; %. If other characters are used the message will fail.</li>
+<li>Characters are counted after replacement tags are filled when the message is sent. </li>
+</ul>
+<p><b>What happens when my message exceeds the message segment limit of 160 characters?</b></p>
+<p>In the U.S., Puerto Rico, and Canada each additional 160 characters is also charged a fee. </p>
+<table class="simpletable">
+<tr>
+<th style="width:34%">EXAMPLES</th>
+<th style="width:33%">Fee per outgoing message</th>
+<th style="width:33%">Message Length</th>
+</tr>
+<tr>
+<td>160 characters</td>
+<td><ul>
+<li>$0.04 - U.S.</li>
+<li>$0.05 - Canada</li>
+<li>$0.09 - Puerto Rico</li>
+</ul>
+</td>
+<td>one message</td>
+</tr>
+<tr>
+<td>162 characters</td>
+<td><ul>
+<li>$0.04 + 0.01 - U.S.</li>
+<li>$0.05 + 0.02 - Canada</li>
+<li>$0.09 + 0.06 - Puerto Rico</li>
+</ul>
+</td>
+<td>one message and one additional message segment (160 characters + 2 characters)</td>
+</tr>
+<tr>
+<td>321 characters</td>
+<td><ul>
+<li>$0.04 + 0.01 + 0.01 - U.S.</li>
+<li>$0.05 + 0.02 + 0.02 - Canada</li>
+<li>$0.09 + 0.06 + 0.06 - Puerto Rico</li>
+</ul>
+</td>
+<td>one message and 2 additional message segments (160 characters + 160 characters + 1 character)</td>
+</tr>
+</table>
+<br><p>For international message segment limitations, see <a href="textintegratedfees.html">International Fees</a>.</p>
+<p><div class="Note">Note: Non-English language characters may significantly increase the size of text messages and cause charges to vary.</div>
+</p>
+<p>The maximum length of a text message is 1600 characters (or 10 message parts). Messages exceeding this limit are blocked. Carriers recommend sending messages with a maximum length of 320 characters to ensure prompt delivery. </p>
+<p><b>Can I send URLs via text message? </b></p>
+<p>Yes. To prevent messages from being marked as spam, Open Dental detects URLs and replaces them with an approved redirect URL. Most commonly, a redirect URL will begin with <i>1dent1.com</i> or <i>2th111.com</i>. Specific URLs cannot be chosen. Some internally generated URLs may not shorten.</p>
+<p><b>Can images and videos be sent via text message? </b></p>
+<p>No, text messages can only contain the characters noted above. </p>
+<p><b>What if I send a text message to a landline number instead of a mobile number?</b></p>
+<p>In the U.S. and most other countries, text messages to a landline will be rejected. In Canada, some mobile numbers have been mistakenly marked as landlines. Thus, we allow messages to be sent to all numbers, even if marked as a landline. If the number is a mobile device, the text will be sent and you will be charged. If the number is a true landline, the message will not be sent, but you will still be charged.</p>
+<p><b>My patients all have Text OK set to ??. Do I have to manually change them all to Yes in order to send text messages?</b></p>
+<p>No, you do not have to manually change the status. In Setup, Preferences uncheck <i> Text Msg OK, assume default is 'No' </i>. All patients with no selected <i>Text OK</i> status will receive texts.</p>
+<p><b>If a family member's Wireless Phone field is blank in the Patient Information window, will a text message or email be sent? Will the program default to the guarantor's mobile number to send eConfirmations and Reminders?</b></p>
+<p>No. The program will only look to the patient's Wireless Phone number to send an Automated Text Message. If the patient's Wireless Phone field is blank, the program will look to the Email Addresses field to send the message by email. If both of these fields are blank, no message is sent. </p>
+<p><b>Can patients opt-out of text messaging?</b></p>
+<p>Yes. Patient's can reply with an opt-out response to opt out of text messaging. When a patient opts-out, the <i>Text OK</i> status is set to <i>No</i>. See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7eservicestermsofservice.html">Texting Terms of Service</a> for opt-out options.</p>
+<p><b>If a patient accidentally opts-out, or wants to opt back in to text messaging, can I just mark their Text OK status to Yes?</b></p>
+<p>No one at the office or at Open Dental can opt a patient back in for text messages once they opt themselves out. The patient is the only one that can opt themselves back in. They must send a text to the office text message phone number with the word OPTIN. Once received, Open Dental will create a commlog for the patient stating "Patient opted in for text messages," and the ability to send texts to the patient will be restored.</p>
+<p><b>Do I need to be on support to use Integrated Texting?</b></p>
+<p>You need to be on support to sign up for integrated texting. This will give you access to version updates and support as you begin using the new service. After a brief support period, you can cancel support and continue to use the integrated texting service if you choose.</p>
+<p><b>How do I cancel Integrated Texting?</b></p>
+<p>You must cancel the service using the Signup Portal or by contacting Open Dental. Canceling support will not automatically cancel integrated texting.</p>
+
+</div>	
+	</div>
+</body>
+</html>```

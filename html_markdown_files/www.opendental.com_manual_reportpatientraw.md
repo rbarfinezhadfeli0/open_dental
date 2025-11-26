@@ -1,0 +1,125 @@
+# File: ./www.opendental.com/manual/reportpatientraw.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Patients Report</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reportpatientraw','+reportlists','reportsstandard','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/reportpatientraw.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/reportpatientraw.html" >v24.2</option><option value="https://www.opendental.com/manual241/reportpatientraw.html" >v24.1</option><option value="https://www.opendental.com/manual233/reportpatientraw.html" >v23.3</option><option value="https://www.opendental.com/manual232/reportpatientraw.html" >v23.2</option><option value="https://www.opendental.com/manual231/reportpatientraw.html" >v23.1</option><option value="https://www.opendental.com/manual224/reportpatientraw.html" >v22.4</option><option value="https://www.opendental.com/manual223/reportpatientraw.html" >v22.3</option><option value="https://www.opendental.com/manual222/reportpatientraw.html" >v22.2</option><option value="https://www.opendental.com/manual221/reportpatientraw.html" >v22.1</option><option value="https://www.opendental.com/manual214/reportpatientraw.html" >v21.4</option><option value="https://www.opendental.com/manual213/reportpatientraw.html" >v21.3</option><option value="https://www.opendental.com/manual212/reportpatientraw.html" >v21.2</option><option value="https://www.opendental.com/manual211/reportpatientraw.html" >v21.1</option><option value="https://www.opendental.com/manual205/reportpatientraw.html" >v20.5</option><option value="https://www.opendental.com/manual204/reportpatientraw.html" >v20.4</option><option value="https://www.opendental.com/manual203/reportpatientraw.html" >v20.3</option><option value="https://www.opendental.com/manual202/reportpatientraw.html" >v20.2</option><option value="https://www.opendental.com/manual201/reportpatientraw.html" >v20.1</option><option value="https://www.opendental.com/manual194/reportpatientraw.html" >v19.4</option><option value="https://www.opendental.com/manual193/reportpatientraw.html" >v19.3</option><option value="https://www.opendental.com/manual192/reportpatientraw.html" >v19.2</option><option value="https://www.opendental.com/manual191/reportpatientraw.html" >v19.1</option><option value="https://www.opendental.com/manual184/reportpatientraw.html" >v18.4</option><option value="https://www.opendental.com/manual183/reportpatientraw.html" >v18.3</option><option value="https://www.opendental.com/manual182/reportpatientraw.html" >v18.2</option><option value="https://www.opendental.com/manual181/reportpatientraw.html" >v18.1</option><option value="https://www.opendental.com/manual174/reportpatientraw.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Patients Report</p></div>
+<div class="GeneralPageContent">
+<p>The Patients Report is used to create simple queries using fields in the Patient table.</p>
+<p>In <a href="reportsstandard.html">Standard Reports</a>, in the Lists section, click <b>Patients - Raw</b>.</p>
+<img src="images/patientsReport.png" width="915" height="690"/><p>Options are hard coded and may not reflect all database fields. For more query options, see <a href="queryexamples.html">Query Examples</a> or submit a <a href="https://opendentalsoft.com:1943/ODQueryRequest/QueryRequestForm.aspx">Query Request</a>.</p>
+<div class="Note">Note: To control user access to this report, see <a href="reportsecurity.html">Report Setup: Security Permissions</a>.</div>
+<br/><br/><h2>Select Tab</h2>
+<img src="images/patientsReportSelect.png" width="854" height="222"/><p>In the <b>Select</b> tab, choose which columns of data to include in the report (e.g., PatNum, Email, etc). This information is pulled directly from the Patient Table in Open Dental and most can be edited or added from <a href="patientedit.html">Edit Patient Information</a>. Most fields are self-explanatory. Below are fields that may need additional explanation.</p>
+<p class="MarginBottomZero"><b>Patient</b>: Select fields to include columns on patient information. </p>
+<ul class="MarginBottomGap">
+<li>PatNum: Patient Number. Unique number assigned to a patient when they are created. Cannot be changed. Change the Query Format to <i>Raw</i> to see the PatNum rather than the Patient Name when running the report.</li>
+<li>PatStatus: Patient status set in Edit Patient Information (i.e., <i>Patient</i>, <i>NonPatient</i>, <i>Inactive</i>, <i>Archived</i>, <i>Deceased</i>, <i>Prospective</i>, or <i>Deleted</i>).</li>
+<li>Position: Position set in Edit Patient Information (i.e.,<i>Single</i>, <i>Married</i>, <i>Child</i>, <i>Widowed</i>, or <i>Divorced</i>).</li>
+<li>FeeSched: Fee schedule assigned to a patient in Edit Patient Information <i>Fee Schedule (rarely used)</i> dropdown.</li>
+<li>ApptModNote: Appointment Module Note for individual patient. Edited in <a href="apptspatient.html">Patient Appointments</a>.</li>
+<li>Est Balance: Current patient balance. This number never subtracts insurance estimates. </li>
+<li>ImageFolder: Name of folder where patient images are stored. This is not set in Edit Patient Information and cannot be edited. </li>
+<li>MedUrgNote: Med Urgent Note entered in <a href="medical.html">Medical</a>.</li>
+<li>EmployerNum: Unique number assigned to an <a href="employers.html">Employer</a> when it is created. This number is system-generated and cannot be edited.</li>
+<li>Urgency: Treatment Urgency set in <a href="patienteditpublichealth.html">Edit Patient Information: Public Health Tab</a>.</li>
+<li>DateFirstVisit: The date that the patient first visited the office. This is automated. Can be changed in the <a href="patienteditother.html">Edit Patient Information: Other Tab</a>.</li>
+<li>ClinNum: Unique number of the patient's assigned clinic. This number is system-generated and cannot be edited.</li>
+<li>HasIns: "I" flag indicates patient has insurance.</li>
+<li>TrophyFolder: For offices using the <a href="bridgetrophy.html">Trophy Bridge</a>.</li>
+<li>Ward: Used by hospitals. Displays ward entered in <a href="patientedithospitals.html">Edit Patient Information: Hospitals Tab</a>.</li>
+<li>AdmitDate: Used by hospitals. Usually set automatically. Can be changed from the Edit Patient Information: Hospitals Tab.</li>
+<li>SiteNum: Unique number assigned to the patient's site. This number is system-generated and cannot be edited. </li>
+<li>DateTStamp: Date/Time stamp of the last time a row was added or changed in the Patient table (e.g., the last time information was updated or added for this patient).</li>
+<li>First Complete Proc: Date of the most first completed procedure. This is not stored in the Patient table.</li>
+<li>Last Complete Proc: Date of the most recent completed procedure. This is not stored in the Patient table.</li>
+</ul>
+<p class="MarginBottomZero"><b>Referral Type</b>: Select a referral type and at least one <i>Referred</i> field to filter patients with <a href="referrals.html">Referrals</a>. Patients with no referrals (or only referrals of a different type) are excluded from the report. Only one referral type can be selected at a time. To include patients without referrals, leave this section deselected. </p>
+<ul class="MarginBottomGap">
+<li>RefTo: Referred To. Select to see outbound patient referrals (e.g., patient referred out to a specialist).</li>
+<li>RefFrom: Referred From. Select to see inbound patient referrals (e.g., patient referred to your practice). </li>
+<li>RefCustom: Custom Referral. Select to see custom referrals.</li>
+</ul>
+<p class="MarginBottomZero"><b>Referred</b>: Select fields to include information on referral. For referrals that are not patients (e.g., providers), this information is entered in the Edit Referral window. See <a href="referralsetup.html">Referral List</a>. Most fields are self-explanatory. Below are fields that may need additional explanation.  </p>
+<ul class="MarginBottomGap">
+<li>IsHidden: "1" indicates referral has been marked <i>Hidden</i>.</li>
+<li>UsingTIN: Indicate if referral is using TIN instead of SSN. "0" indicates SSN column (if shown) is SSN. 1 indicates SSN column (if shown) is TIN.</li>
+<li>NotPerson: "1" indicates referral is marked as <i>Not Person</i>.</li>
+<li>ReferralNum: Unique number assigned to a referral when it is created. This number is system-generated and cannot be edited.</li>
+<li>Phone2: <i>Other Phone</i> in the Edit Referral window.</li>
+</ul>
+<h2>Where Tab</h2>
+<img src="images/patientsReportWhere.png" width="854" height="350"/><p class="MarginBottomZero">In the <b>Where</b> tab, users can select additional patient fields to limit report results. Most fields are self-explanatory. Below are fields that need additional explanation. Most fields are added or edited from Edit Patient Information.  </p>
+<ul class="MarginBottomGap">
+<li>Age: Age is not stored in the database. Age is always calculated as needed from birthdate.</li>
+<li>Birthdate: Date of birth, including year (e.g., 12/09/1992).</li>
+<li>Birthday: Day and month of birth, excludes year (e.g., 12/09).</li>
+<li>CreditType: Single character. Suggested use is A, B, or C to designate creditworthiness.</li>
+<li>FamFinUrgNote: Family Urgent Fin Note entered in account <a href="account.html">Account Module</a>.</li>
+<li>Last Complete Proc: Date of the most recent completed procedure. This is not stored in the Patient table.</li>
+<li>Last Visit Date: Date of the patient's most recent procedure. This may be a future date if the patient has future scheduled appointments. This is not stored in the Patient table.</li>
+</ul>
+<img src="images/patientsReportLimit.png" width="739" height="117"/><p>When including a <i>Where</i> statement to the Patients Report, it is necessary to choose how the data is being limited. A phrase can be entered or options selected from a list, depending on the selected field, to limit the results. Below are the options. For the examples noted, assume that <i>PatNum</i> and <i>14</i> are being used to filter. </p>
+<p><b>LIKE</b>: Include results from similar to the filter entered (e.g., results include PatNum: 14, 140, 7142, and any other results that include the combination of characters entered).</p>
+<p><b>=</b>: Only includes results matching the statement exactly (e.g., results only include PatNum: 14).</p>
+<p><b>&gt; </b>: Include all results greater than the statement entered (e.g., PatNums 15 and above are included in results).</p>
+<p><b>&lt;</b>: Include all results less than the statement entered (e.g., PatNums 13 and lower are included in results).</p>
+<p><b>&gt;=</b>: Include all results greater than or equal to the statement entered (e.g., PatNum 14 and above are included in results).</p>
+<p><b>&lt;=</b>: Include all results less than or equal to the statement entered (e.g., PatNum 14 and lower are included in results).</p>
+<p><b>&lt;&gt;</b>: Include only results less than or greater than the statement entered (e.g., PatNum 14 is excluded from the results, but 15 and above are included and 13 and lower are included).</p>
+<img src="images/patientsReportLimitAdded.png" width="616" height="115"/><p>This section displays the limitations that have already been added to the report. Click <b>Delete Row</b> to delete a limitation from the report.</p>
+<h2>Query</h2>
+<p>At the bottom of the window, regardless of the selected tab, is a preview of the query being written. Any time new criteria is selected or added, the raw query information is shown here. This section is read-only.</p>
+<img src="images/patientsReportQuery.png" width="669" height="61"/><p>Click <b>OK</b> to run the query after all desired criteria has been added. </p>
+<h2>Running the Patients Report</h2>
+<ol>
+<li>In the <b>SELECT</b> tab, select the Patient information the display on the report. Ctrl + Click to select multiple rows.</li>
+<li>Select information to include from <b>Referral Type/Referred</b> lists.</li>
+<li>Click the <b>WHERE</b> tab.</li>
+<li>Choose field(s) to limit query results.</li>
+<li>Enter necessary details and choose how to limit results.</li>
+<li>Click <b>Add</b>.</li>
+<li>Repeat steps 4-6 to add any additional limitations as needed. <ul>
+<li>Select a row and click <b>Delete Row</b> to remove a row that was added by mistake.</li>
+</ul>
+</li>
+<li>Click OK to run the report. The results are displayed in the <a href="queryoverview.html">User Query</a> window.</li>
+</ol>
+<div class="Note">Note: To quickly run this query again later, save it as a <a href="queryfavorites.html">Query Favorite</a>.</div>
+</div>
+</div>
+</body>
+</html>```

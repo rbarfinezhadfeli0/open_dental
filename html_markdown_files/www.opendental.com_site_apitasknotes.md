@@ -1,0 +1,79 @@
+# File: ./www.opendental.com/site/apitasknotes.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API TaskNotes</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apitasknotes','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API TaskNotes</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>TaskNotes are written by users in the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7taskswindow.html">Task Window</a>.</p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96tasknote.html" target="_blank">TaskNote Database Schema.</a></p>
+<h2>TaskNotes GET (single)</h2>
+<p>Version Added: 24.4.22.0</p>
+<p>Gets a single tasknote.</p>
+<p><b>TaskNoteNum:</b> Required in URL.</p>
+<p><b>Example Request:</b><br> GET /tasknotes/563</p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "TaskNoteNum": 563,<br> "TaskNum": 64,<br> "UserNum": 8,<br> "DateTimeNote": "2025-01-15 12:46:34",<br> "Note": "Sending to Dr. Smith's list."<br> }<br></span></p>
+<p> 200 OK<br> 404 NotFound (with explanation)<br></p>
+<h2>TaskNotes GET (multiple)</h2>
+<p>Version Added: 24.4.22.0</p>
+<p>Get a list of tasknotes.</p>
+<p><b>Parameters:</b></p>
+<p><b>TaskNum:</b> Optional. FK to task.TaskNum.<br><b>UserNum:</b> Optional. FK to userod.UserNum.<br></p>
+<p><b>Example Request:</b><br> GET /tasknotes?TaskNum=64<br></p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br> {<br> "TaskNoteNum": 563,<br> "TaskNum": 64,<br> "UserNum": 8,<br> "DateTimeNote": "2025-01-15 12:46:34",<br> "Note": "Sending to Dr. Smith's list."<br> },<br> {<br> "TaskNoteNum": 567,<br> "TaskNum": 64,<br> "UserNum": 4,<br> "DateTimeNote": "2025-01-15 13:27:12",<br> "Note": "Got it, thanks."<br> }<br> ]<br></span></p>
+<p> 200 OK<br> 404 NotFound (with explanation)<br></p>
+<h2>TaskNotes POST (create)</h2>
+<p>Version Added: 24.4.22.0</p>
+<p>Creates a new tasknote.</p>
+<p><b>TaskNum:</b> Required. FK to task.TaskNum.<br><b>UserNum:</b> Required. FK to userod.UserNum.<br><b>Note:</b> Required. Cannot be blank.<br></p>
+<p><b>Example Request:</b><br> POST /tasknotes</p>
+<p><span class="codeblock"> {<br> "TaskNum": 64,<br> "UserNum": 4,<br> "Note": "Sending back to mark done."<br> }<br></span></p>
+<b>Example Response:</b><br><p><span class="codeblock"> {<br> "TaskNoteNum": 582,<br> "TaskNum": 64,<br> "UserNum": 4,<br> "DateTimeNote": "2025-01-16 08:29:51",<br> "Note": "Sending back to mark done."<br> }<br></span></p>
+<p> 201 Created<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>TaskNotes PUT (update)</h2>
+<p>Version Added: 24.4.22.0</p>
+<p>Updates an existing tasknote.</p>
+<p><b>TaskNoteNum:</b> Required in the URL. </p>
+<p><b>DateTimeNote:</b> String in "yyyy-MM-dd HH:mm:ss" format.<br><b>Note:</b> Overwrites existing note. Cannot be blank.<br></p>
+<p><b>Example Request:</b><br> PUT /tasknotes/582</p>
+<p><span class="codeblock"> {<br> "DateTimeNote": "2025-01-16 09:12:00",<br> "Note": "Sending back to mark done. Edit: Actually, I still need this open."<br> }<br></span></p>
+<b>Example Response:</b><br><p><span class="codeblock"> {<br> "TaskNoteNum": 582,<br> "TaskNum": 64,<br> "UserNum": 8,<br> "DateTimeNote": "2025-01-16 09:12:00",<br> "Note": "Sending back to mark done. Edit: Actually, I still need this open."<br> }<br></span></p>
+<p> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>```

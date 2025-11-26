@@ -1,0 +1,111 @@
+# File: ./www.opendental.com/site/version20_1.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: Version 20.1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>Version 20.1</h1>
+		</div>
+		<div id="Content">
+<p>See <a href="versions.html">Versions</a></p>
+<p>Version 20.1 was released on 05/12/2020.</p>
+<p><img src="images/YouTube_PlayButton_15px.png" width="16" height="16" style="margin-bottom: 0px"/> Overview of <a href="https://opendental.blog/software-update-stable-version-20-1-highlights/">Version 20.1</a>.</p>
+<p class="MarginBottomZero"><b>Account Module</b></p>
+<ul class="MarginBottomGap">
+<li>Simplified Income Transfer Manager to allocate all credits to outstanding charges. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7incometransfermanager.html">Income Transfer Manager</a></li>
+<li>Ability to determine when interest begins charging on payment plans. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paymentplanpatient.html">Old Payment Plan</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paymentplandynamic.html">Payment Plan</a></li>
+<li>Create a Dynamic Payment Plan on an Ortho Case. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7orthocase.html">Ortho Case</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Chart Module</b></p>
+<ul class="MarginBottomGap">
+<li>Chart Module preference to force a user to be a provider to sign a note. <a href="https://www.opendental.com/manual201/modulesetupchart.html">Chart Module Preferences</a></li>
+<li>Log in added to Ortho Chart. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7orthochart.html">Ortho Chart</a></li>
+<li>Tooth Chart button to clear movements for selected teeth only. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7movements.html">Tooth Movements</a></li>
+<li>3D Tooth Chart rewritten from scratch to use DirectX 11 instead of DirectX 9. This makes installation easier and it works better.</li>
+</ul>
+<p class="MarginBottomZero"><b>eServices</b></p>
+<ul class="MarginBottomGap">
+<li>Patients can add appointment to their calendar when office is using eConfirmations and Automated Thank-Yous. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7autothankyousetup.html">Automated Thank-Yous</a></li>
+<li>eReminders and eConfirmations can send using the patient's preferred language. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7econfirmationsetup.html">eConfirmations</a>, , <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7ereminderssetup.html">eReminders</a></li>
+<li>Web Sched New Patient allows for restricting appointment types to specific blockouts. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7webschednewpatsetup.html">Web Sched New Patient</a></li>
+<li>Automated thank-you messages can send a when a patient schedules an appointment. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7autothankyousetup.html">Automated Thank-Yous</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Images Module</b></p>
+<ul class="MarginBottomGap">
+<li>Ability to merge Image Categories. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7mergeimagecategories.html">Merge Image Categories</a></li>
+<li>Image mounts for radiograph and photo collages. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7images.html">Imaging Module</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7mountdefinitions.html">Mount Definitions</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Manage Module</b></p>
+<ul class="MarginBottomGap">
+<li>Accounting report for Profit and Loss. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7accountingreports.html">Accounting Reports</a></li>
+<li>Updates to Accounting Balance Sheet. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7accountingreports.html">Accounting Reports</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Reports</b></p>
+<ul class="MarginBottomGap">
+<li>Ability to print page range in Audit Trail and User Query windows. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7queryoverview.html">User Query</a></li>
+<li>Report for overpaid payment plans. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportdynamicpayplanovercharged.html">Payment Plans Overcharged Report</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Security</b></p>
+<ul class="MarginBottomGap">
+<li>Ability to copy a user. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7security.html">Security</a></li>
+<li>Audit trail entry when merging discount plans. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7audittrailpermissions.html">Audit Trail Permissions</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7mergediscountplans.html">Merge Discount Plans</a></li>
+<li>Log off time user override moved to Security. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7securityusers.html">User Edit</a></li>
+<li>Patient level audit trail for insurance plans. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7insplan.html">Insurance Plan</a></li>
+<li>New permissions for editing completed procedures. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7permissions.html">Permissions</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7audittrailpermissions.html">Audit Trail Permissions</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Miscellaneous</b></p>
+<ul class="MarginBottomGap">
+<li>EDS Medical added as option for medical clearinghouse. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7eclaimsedsmedical.html">Electronic Dental Services - Medical</a></li>
+<li>Updated PreXion Bridge and added Prexion Aquire. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7bridgeprexion.html">PreXion Bridge</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7bridgeprexionaquire.html">Prexion Acquire Bridge</a></li>
+<li>Enhancements to appearance of Show Features. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7showfeatures.html">Show Features</a></li>
+<li>Showing inactive patients in the Patient Select window defaults to on. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7patientselect.html">Select Patient</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7miscsetup.html">Miscellaneous Setup</a></li>
+<li>Prompt before closing Open Dental. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7securitylogin.html">Log On</a></li>
+<li>Changes to appearance of Edit Appointment Window. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7aptedit.html">Edit Appointment</a></li>
+<li>Slow Query Log added for troubleshooting. <a href="slowquerylog.html">Slow Query Log Tool</a></li>
+<li>Paste a file when using DentalXChange Attachment Service. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7dentalxchangeattachmentservice.html">DentalXChange Attachment</a></li>
+<li>Additional information added to the employee list. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7employees.html">Employees</a></li>
+<li>Language translations for sheets. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7sheetsetup.html">Edit Sheet Def</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7patientedit.html">Edit Patient Information</a></li>
+</ul>
+
+</div>	
+	</div>
+</body>
+</html>```

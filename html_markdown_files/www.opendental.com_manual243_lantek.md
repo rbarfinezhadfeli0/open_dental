@@ -1,0 +1,55 @@
+# File: ./www.opendental.com/manual243/lantek.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Lantek</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('lantek','clearinghouses','+familyinsurance','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/lantek.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/lantek.html" >v24.2</option><option value="https://www.opendental.com/manual241/lantek.html" >v24.1</option><option value="https://www.opendental.com/manual233/lantek.html" >v23.3</option><option value="https://www.opendental.com/manual232/lantek.html" >v23.2</option><option value="https://www.opendental.com/manual231/lantek.html" >v23.1</option><option value="https://www.opendental.com/manual224/lantek.html" >v22.4</option><option value="https://www.opendental.com/manual223/lantek.html" >v22.3</option><option value="https://www.opendental.com/manual222/lantek.html" >v22.2</option><option value="https://www.opendental.com/manual221/lantek.html" >v22.1</option><option value="https://www.opendental.com/manual214/lantek.html" >v21.4</option><option value="https://www.opendental.com/manual213/lantek.html" >v21.3</option><option value="https://www.opendental.com/manual212/lantek.html" >v21.2</option><option value="https://www.opendental.com/manual211/lantek.html" >v21.1</option><option value="https://www.opendental.com/manual205/lantek.html" >v20.5</option><option value="https://www.opendental.com/manual204/lantek.html" >v20.4</option><option value="https://www.opendental.com/manual203/lantek.html" >v20.3</option><option value="https://www.opendental.com/manual202/lantek.html" >v20.2</option><option value="https://www.opendental.com/manual201/lantek.html" >v20.1</option><option value="https://www.opendental.com/manual194/lantek.html" >v19.4</option><option value="https://www.opendental.com/manual193/lantek.html" >v19.3</option><option value="https://www.opendental.com/manual192/lantek.html" >v19.2</option><option value="https://www.opendental.com/manual191/lantek.html" >v19.1</option><option value="https://www.opendental.com/manual184/lantek.html" >v18.4</option><option value="https://www.opendental.com/manual183/lantek.html" >v18.3</option><option value="https://www.opendental.com/manual182/lantek.html" >v18.2</option><option value="https://www.opendental.com/manual181/lantek.html" >v18.1</option><option value="https://www.opendental.com/manual174/lantek.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Lantek</p></div>
+<div class="GeneralPageContent">
+<p>Lantek is an E-Claims clearinghouse for Puerto Rican offices. </p>
+<p>In <a href="clearinghouses.html">Clearinghouses</a>, double-click <b>Lantek Networks Transmission Service</b></p>
+<img src="images/clearinghouseLantek.png" width="915" height="689"/><h2>Setup</h2>
+<p class="MarginBottomZero">Default settings are preset in this window. Set up additional fields as follows: </p>
+<ul class="MarginBottomGap">
+<li><b>The information below identifies the sender</b>: Selected.</li>
+<li><b>Tax ID Number</b>: Enter the Lantek account number.</li>
+<li><b>Name</b>: Enter doctor or practice name.</li>
+<li><b>Telephone Number</b>: Enter the practice telephone number.</li>
+<li><b>Login ID / Password</b>: Enter the Lantek credentials.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

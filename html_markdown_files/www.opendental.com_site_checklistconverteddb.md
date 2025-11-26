@@ -1,0 +1,281 @@
+# File: ./www.opendental.com/site/checklistconverteddb.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Post-Data Conversion Setup Checklist</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('checklistconverteddb','conversions','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Post-Data Conversion Setup Checklist</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="usingodconversion.html">Use Converted Database</a></p>
+<p>This page is a guide to help ensure that Open Dental is set up properly after a data conversion. If you have a Post Conversion Setup appointment scheduled, most of the items listed will be addressed during that appointment. Our support team is also available to help with each of these topics.</p>
+<p>In order to use the links on this page, access the Open Dental website using the <a href="helpfeature.html">Help Feature</a>.</p>
+<p>Print this page to check off items as you complete them.</p>
+<h2>Account Balances</h2><p class="MarginBottomZero"><table class="simpletable">
+<tr>
+<th style="width:5%"></th>
+<th style="width:90%"></th>
+</tr>
+<tr>
+<td></td>
+<td>Compare A/R balance in Open Dental with A/R balance in old software.</td>
+</tr>
+</table>
+</p>
+<ul class="MarginBottomGap">
+<li>Verify that the beginning total account balance in Open Dental is correct. <ul>
+<li>From your old software: Use the accounts receivable report, with credit balances included, run on the day of conversion.</li>
+<li>In Open Dental: Run the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportaging.html">Aging of A/R</a> report, include negative balances. If payment plans were converted, also run the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportpaymentplan.html">Payment Plans Report</a> (don't limit by date range), then combine reports to get the total beginning account balance.</li>
+</ul>
+</li>
+<li>Compare the total account balance in each report. They should match. Keep a copy of the reports for your records. </li>
+<li>Your aging report (0-30, 31-60, 61-90 day totals) will not be identical after your final conversion between Open Dental and your old software.</li>
+<li>Individual family member balances may not be identical to your old software after the final conversion is complete (even though the total family balances may be accurate).</li>
+</ul>
+<h2>General Setup</h2><p><table class="simpletable">
+<tr>
+<th style="width:5%"></th>
+<th style="width:90%"></th>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7updatesetup.html">Registration Key</a>: Verify the registration key entered matches the registration key entered in your welcome email.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7showfeatures.html">Show Features</a>: Turn on any necessary features (e.g., Clinics, Super Families, Medical Insurance, etc.)</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7programlinks.html">Program Links</a>: On each workstation, verify bridges are working (e.g., to digital imaging software).</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7clinicsetup.html">Clinic Setup</a>: If using clinics, verify names, addresses, default providers, etc.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7practice.html">Practice Setup</a>: Verify practice name, address, default provider, etc.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procedurecodes.html">Procedure Code List</a>: Verify each fee schedule is entered with fees. Ensure hygiene procedures are marked as <i>Is Hygiene procedure</i>. Add alternate codes (e.g., for merchandise).</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7providers.html">Provider List</a>: Verify provider names, IDs, appointment colors, default fee schedules. Move or reassign patients if needed.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7employees.html">Employee List</a>: Verify employee names. Add new employees and hide past employees.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7operatories.html">Operatory Setup</a>: Verify assigned dentists, hygienists, and clinics.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7schedule.html">Schedule Setup</a>: Set up provider schedules.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7appointmentviews.html">Appointment Views</a>: Set up appointment views.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7recalltypes.html">Recall Types</a>: Verify default recall types. (<b>Advanced</b>)</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7recallsetup.html">Recall List Defaults</a>: Set recall list default settings.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7preferences.html">Preferences</a>: Set default preferences for each module and set other miscellaneous preferences.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7security.html">Security</a>: Assign users to user groups, set user permissions, restrict access, change password requirements.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7timecardsetup.html">Time Card Setup</a>: Define pay periods and rules so employees can use the time clock.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimforms.html">Claim Form Setup</a>: Set the default claim form for printed claims.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7clearinghouses.html">Clearinghouse Setup</a>: Enable the default clearinghouse for electronic claims.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimsend.html">Electronic Claims</a>: Verify electronic claims send successfully to the clearinghouse.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7printersetup.html">Printer Setup</a>: Set default printers on each workstation.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7imagingsetup.html">Scanning Defaults</a>: Set scanner defaults on each workstation.</td>
+</tr>
+</table>
+</p>
+<h2>Conversion Cleanup</h2><p>Some cleanup is involved after a conversion. The queries discussed below are saved as Query Favorites in Open Dental.</p>
+<p><table class="simpletable">
+<tr>
+<th style="width:5%"></th>
+<th style="width:90%"></th>
+</tr>
+<tr>
+<td></td>
+<td>Conversion Specific Cleanup: Refer to your Conversion Specific Document to view any cleanup items specific to your conversion.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="convclaims.html">Outstanding Claims</a>: Create outstanding claims that were not converted (use the outstanding insurance report from your old software).</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="convperio.html">Perio vs. Prophy</a>: Use the <i>Conv-Perio Patients</i> query to see which patients are set as Perio. Change as needed.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7insverifylist.html">Verify Patient Insurance</a>: Verify patient insurance benefits using the Insurance Verification List. We recommend working on patients with upcoming appointments first.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="convfutureappts.html">Overlapping Appointments</a>: Run the <i>Conv-Future Apts by Operatory</i> query to find patients in an 'Unassigned' or 'Extra' operatory. Move those patients to the correct operatory then hide the unassigned/extra operatory.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7updateprovsfutureappts.html">Update Providers on Future Appointments</a>: Future hygiene appointments sometimes have hygienist assigned as the primary provider. Once providers and operatories are set up, make sure the correct dentist and hygienist are assigned.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportappts.html">Future Appointments</a>: Check that future appointments have the correct procedures attached.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="convduplicates.html">Duplicate Patients</a>: Run the <i>Conv-Possible Duplicate Patients</i> query to identify duplicate patients, then merge them.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="convclinicsunassigned.html">Unassigned Clinics</a>: If using clinics, run the <i>Conv-Patients in Unassigned Clinic</i> query to find patients with no default clinic and assign one to them.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7graphicaltoothchart.html">Graphical Tooth Chart</a>: Verify graphical tooth charts are accurate (e.g., missing teeth, movements, paint types).</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7billing.html">Billing</a>: Follow your plan for billing.   <li>Option 1: If you are incrementally verifying insurance and creating claims, only send statements to families who have claims entered.</li>
+<li>Option 2: Once all insurance is verified and all claims are entered, run a Billing List to generate statements.</li>
+</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procedurebuttons.html">Procedure Buttons</a>: Set up buttons that allow quick entry of commonly used procedures.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7procedurecodeedit.html">Procedure Code Notes</a>: Enter default notes for treatment planned or completed procedures.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7autonotesetup.html">Auto Notes</a>: Create templates for complex notes entered frequently (e.g., exams, root canals).</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7employers.html">Employer List</a>: Review employers, remove duplicates, add new.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7insplanlist.html">Insurance Plan List</a>: Review insurance plans, remove or combine duplicates. (<b>Advanced</b>)</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7carriers.html">Insurance Carrier List</a>: Review insurance carrier information, combine duplicates, add new. (<b>Advanced</b>)</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7allergiesmaster.html">Allergy List</a>: Review allergies in the master list, remove duplicates, add new.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7problemmaster.html">Problem List</a>: Review problems in the master list, remove duplicates, add new.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7medicationmaster.html">Medication List</a>: Review medications in the master list, remove duplicates, add new.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7referralsetup.html">Referral List</a>: Review referrals in the master list, remove duplicates, add new.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7laboratories.html">Laboratories</a>: Review dental laboratories in the master list, remove duplicates, add new.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7rxsetup.html">Prescription Templates</a>: Create prescription templates for printed Rx.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7pharmacies.html">Pharmacy List</a>: Review pharmacy information for printed Rx, remove duplicates, add new.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7definitions.html">Definition Setup</a>: Customize options and colors for backgrounds, text, and notifications.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7backups.html">Backups</a>: Work with your IT to create a backup plan suitable for your office.</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="eservices.html">eServices</a>: Open Dental has several eServices to help your office run efficiently. Contact support for details.</td>
+</tr>
+</table>
+</p>
+<p>(<b>Advanced</b>) We recommend contacting Open Dental support for assistance with changes to advanced features.</p>
+<p>Open Dental offers many resources to help you continue learning about Open Dental and its many capabilities. See <a href="learning.html">Learning Resources</a>.</p>
+<p>For help addressing HIPAA security requirements, see <a href="securitycomputers.html">Security Issues</a>.</p>
+		</div>
+	</div>
+</body>
+</html>```

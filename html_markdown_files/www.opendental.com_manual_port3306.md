@@ -1,0 +1,78 @@
+# File: ./www.opendental.com/manual/port3306.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Open Port 3306</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('port3306','installation','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/port3306.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/port3306.html" >v24.2</option><option value="https://www.opendental.com/manual241/port3306.html" >v24.1</option><option value="https://www.opendental.com/manual233/port3306.html" >v23.3</option><option value="https://www.opendental.com/manual232/port3306.html" >v23.2</option><option value="https://www.opendental.com/manual231/port3306.html" >v23.1</option><option value="https://www.opendental.com/manual224/port3306.html" >v22.4</option><option value="https://www.opendental.com/manual223/port3306.html" >v22.3</option><option value="https://www.opendental.com/manual222/port3306.html" >v22.2</option><option value="https://www.opendental.com/manual221/port3306.html" >v22.1</option><option value="https://www.opendental.com/manual214/port3306.html" >v21.4</option><option value="https://www.opendental.com/manual213/port3306.html" >v21.3</option><option value="https://www.opendental.com/manual212/port3306.html" >v21.2</option><option value="https://www.opendental.com/manual211/port3306.html" >v21.1</option><option value="https://www.opendental.com/manual205/port3306.html" >v20.5</option><option value="https://www.opendental.com/manual204/port3306.html" >v20.4</option><option value="https://www.opendental.com/manual203/port3306.html" >v20.3</option><option value="https://www.opendental.com/manual202/port3306.html" >v20.2</option><option value="https://www.opendental.com/manual201/port3306.html" >v20.1</option><option value="https://www.opendental.com/manual194/port3306.html" >v19.4</option><option value="https://www.opendental.com/manual193/port3306.html" >v19.3</option><option value="https://www.opendental.com/manual192/port3306.html" >v19.2</option><option value="https://www.opendental.com/manual191/port3306.html" >v19.1</option><option value="https://www.opendental.com/manual184/port3306.html" >v18.4</option><option value="https://www.opendental.com/manual183/port3306.html" >v18.3</option><option value="https://www.opendental.com/manual182/port3306.html" >v18.2</option><option value="https://www.opendental.com/manual181/port3306.html" >v18.1</option><option value="https://www.opendental.com/manual174/port3306.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Open Port 3306</p></div>
+<div class="GeneralPageContent">
+<p>Port 3306 is required for MySQL and MariaDB. </p>
+<p>See <a href="installation.html">Installation</a>.</p>
+<h2>MariaDB</h2>
+<p>Inbound rule, port 3306 is automatically opened when installing the MariaDB version of the trial installer. </p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>It will most likely be named <i>MariaDB 10.5 (x64)</i>.</li>
+<li>The network types are private and domain.  <ul>
+<li>If using a public network type, reach out to IT to resolve this.</li>
+</ul>
+</li>
+<li>Only opens 3306 for TCP connections.</li>
+<li>If MariaDB is uninstalled, the rule is deleted.</li>
+</ul>
+<h2>MySQL</h2>
+<p>Opening port 3306 must be done manually for MySQL users. Do this on the server only, not on each workstation install.</p>
+<ol>
+<li>Open the Control Panel and click Security.</li>
+<li>Click Windows Firewall.</li>
+<li>Click Advanced Settings, Inbound Rules. <br/><img src="images/openPortInbound.png" width="894" height="596" class="ImageInParagraph"/></li>
+<li>Click New Rule. <br/><img src="images/openPortRuleType.gif" width="714" height="581" class="ImageInParagraph"/></li>
+<li>Click Port, then Next. <ul>
+<li>Select TCP.</li>
+<li>Enter 3306 in Specific local ports.</li>
+</ul>
+</li>
+<li>Click Next, then click Allow the connection.</li>
+<li>Check Domain and Private. <br/><img src="images/openPortRules.gif" width="714" height="581" class="ImageInParagraph"/></li>
+<div class="Note">Note:  This step may vary depending on your network setup. We recommend consulting with your IT for more information.</div>
+<li>Enter MySQL as Name and Description.<br/><div class="Note">Note: If using MySQL for multiple applications, use Open Dental MySQL as the name and description instead, to avoid confusion.</div>
+</li>
+<li>Click Finish.</li>
+</ol>
+<br/><p>In some cases an outbound rule has to be created for port 3306 if the Network Administrator has blocked outbound traffic from a workstation. Follow the steps above for an outbound rule as well.</p>
+</div>
+</div>
+</body>
+</html>```

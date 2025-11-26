@@ -1,0 +1,61 @@
+# File: ./www.opendental.com/site/0_paths.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Paths</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('0_paths','0_setup','+0mainmenu','quickmanual','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Paths</p></div>
+		<div class="GeneralPageContent">
+<p>Data paths are set up in Open Dental to identify where Open Dental should store scanned or imported images and documents, exported files, and letter merge templates.</p>
+<p>In the Main Menu, click Setup, Data Paths.</p>
+<img src="images/paths.png" width="677" height="653"/><p>Verify all paths are accurate before pointing other computers to the server.</p>
+<h2>A to Z Images Folder</h2>
+<p>The A to Z folder is where Open Dental stores images and other documents that are accessible from the <a href="0_images.html">Imaging Module</a>.</p>
+<p class="MarginBottomZero">There are three configuration options for the A to Z folder: </p>
+<ul class="MarginBottomGap">
+<li><b>Store images and documents on a local or network folder</b>: Normally used for a network folder that is accessible by all workstations. If you have only one computer, this can also be a local folder path.</li>
+<li><b>Store images in Dropbox (an internet connection is required)</b>: Store images off-site on the cloud using Dropbox (<a href="http://www.dropbox.com">www.dropbox.com</a>).</li>
+<li><b>Store images on a server via SSH File Transfer Protocol (SFTP)</b>: Store images on a file transfer protocol (FTP) site using SFTP. An internet connection is required. </li>
+</ul>
+<p><div class="Note">Note: Dropbox and SFTP configurations can be used to restrict access to only the Open Dental program. This is not normally necessary and doing so may restrict your clinic from operating normally.</div>
+</p>
+<h2>Export Path</h2>
+<p>This is the default path where files exported from Open Dental will be saved. This can be a local or network path.</p>
+<h2>Letter Merge Path</h2>
+<p>This is the default path where letter templates used for letter merge are stored. This can be a local or network path. </p>
+<h2></h2>		</div>
+	</div>
+</body>
+</html>```

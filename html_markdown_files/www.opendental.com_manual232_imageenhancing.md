@@ -1,0 +1,59 @@
+# File: ./www.opendental.com/manual232/imageenhancing.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Enhancing Radiograph Images</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('imageenhancing','images','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/imageenhancing.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/imageenhancing.html" >v24.2</option><option value="https://www.opendental.com/manual241/imageenhancing.html" >v24.1</option><option value="https://www.opendental.com/manual233/imageenhancing.html" >v23.3</option><option value="https://www.opendental.com/manual232/imageenhancing.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/imageenhancing.html" >v23.1</option><option value="https://www.opendental.com/manual224/imageenhancing.html" >v22.4</option><option value="https://www.opendental.com/manual223/imageenhancing.html" >v22.3</option><option value="https://www.opendental.com/manual222/imageenhancing.html" >v22.2</option><option value="https://www.opendental.com/manual221/imageenhancing.html" >v22.1</option><option value="https://www.opendental.com/manual214/imageenhancing.html" >v21.4</option><option value="https://www.opendental.com/manual213/imageenhancing.html" >v21.3</option><option value="https://www.opendental.com/manual212/imageenhancing.html" >v21.2</option><option value="https://www.opendental.com/manual211/imageenhancing.html" >v21.1</option><option value="https://www.opendental.com/manual205/imageenhancing.html" >v20.5</option><option value="https://www.opendental.com/manual204/imageenhancing.html" >v20.4</option><option value="https://www.opendental.com/manual203/imageenhancing.html" >v20.3</option><option value="https://www.opendental.com/manual202/imageenhancing.html" >v20.2</option><option value="https://www.opendental.com/manual201/imageenhancing.html" >v20.1</option><option value="https://www.opendental.com/manual194/imageenhancing.html" >v19.4</option><option value="https://www.opendental.com/manual193/imageenhancing.html" >v19.3</option><option value="https://www.opendental.com/manual192/imageenhancing.html" >v19.2</option><option value="https://www.opendental.com/manual191/imageenhancing.html" >v19.1</option><option value="https://www.opendental.com/manual184/imageenhancing.html" >v18.4</option><option value="https://www.opendental.com/manual183/imageenhancing.html" >v18.3</option><option value="https://www.opendental.com/manual182/imageenhancing.html" >v18.2</option><option value="https://www.opendental.com/manual181/imageenhancing.html" >v18.1</option><option value="https://www.opendental.com/manual174/imageenhancing.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Enhancing Radiograph Images</p></div>
+<div class="GeneralPageContent">
+<p>A raw image, such as a radiograph, may need to be adjusted to make it easier to see a specific feature such as caries or an abscess. You cannot do this with a film radiograph, and this is a major advantage of using digital radiographs.</p>
+<p>This page discusses some of the terminology used when scanning or viewing digital radiographs. To scan radiographs, see the <a href="images.html">Imaging Module</a>. To set default scanning values, see <a href="imagingsetup.html">Imaging Quality</a>.</p>
+<h2>Pixels</h2>
+<p>An image is made up of many pixels, or dots. Each pixel can have a value between black (0) and white. The numeric value of white depends on the situation. If you are using 8 bits, white is 256, or for 12 bits, white is 4096. In the examples below, we use 1 as the value for white, with the various gray levels between 0 and 1.</p>
+<p>Below is a graph representing no enhancement. The x axis represents the color (gray level) of each pixel input from the raw image, and the y axis represents the resulting output in the enhanced image. As you can see, for any value that is input, the exact same value will be output. The red shows how an input of .5 results in an output of .5. So this graph is the basis against which all enhancements will be compared.</p>
+<img src="images/gamma10.gif" width="160" height="160"/><h2>Contrast and Brightness</h2>
+<p>Contrast is the steepness of the line; the steeper the line, the more contrast. Brightness is represented by a horizontal shift in the line without changing the contrast.</p>
+<h2>Gamma</h2>
+<p>Gamma is not used by Open Dental. It can describe a curve in the line with an exponent and is used for non-linear situations. It was more important when CRT monitors were used.</p>
+<h2>Windowing</h2>
+<p>Windowing is an alternative to contrast and brightness that is very useful for images like radiographs.</p>
+<img src="images/imagewindowing.gif" width="160" height="160"/><p>This is the Open Dental slider control that lets the user set the windowing values:</p>
+<img src="images/windowingSlider.gif" width="199" height="27"/><p>The line is steeper (more contrast) over a specific range of input values. This results in a smaller window of values which are spread into the output so they can be seen more easily. A window has a lower bound and an upper bound. All input values below the lower bound are output as black, and all values above the upper bound are output as white. This is a wonderful way to enhance a radiograph because you are usually interested in very subtle changes in a small range of gray values. Moving the window left and right isolates the gray levels you are interested in. The slider should affect the entire image in real time for it to be useful.</p>
+<h2>Histogram</h2>
+<p>A histogram is a count of how many pixels are in the image for each grayscale level. This is frequently shown in imaging software as a small bar graph. Open Dental internally uses histograms for certain algorithms such as conversion from 12 bit to 8 bit, but there is not currently a histogram tool for viewing the values in a graph. Some software does automatic contrast and brightness adjustment. One technique is Contrast Limited Adaptive Histogram Equalization. If the image is too dark or too light, then this technique will shift the pixels towards a more neutral shade. And if there is not enough contrast, then it will spread out the shades similarly to windowing. But it's all automated and based on localized regions of the image rather than just treating the image as a whole. This technique is used by Schick and a few others. It is not currently used by Open Dental.</p>
+</div>
+</div>
+</body>
+</html>```

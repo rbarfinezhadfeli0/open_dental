@@ -1,0 +1,136 @@
+# File: ./www.opendental.com/manual232/unearnedprepayment.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Unearned / Prepayment</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('unearnedprepayment','payment','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/unearnedprepayment.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/unearnedprepayment.html" >v24.2</option><option value="https://www.opendental.com/manual241/unearnedprepayment.html" >v24.1</option><option value="https://www.opendental.com/manual233/unearnedprepayment.html" >v23.3</option><option value="https://www.opendental.com/manual232/unearnedprepayment.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/unearnedprepayment.html" >v23.1</option><option value="https://www.opendental.com/manual224/unearnedprepayment.html" >v22.4</option><option value="https://www.opendental.com/manual223/unearnedprepayment.html" >v22.3</option><option value="https://www.opendental.com/manual222/unearnedprepayment.html" >v22.2</option><option value="https://www.opendental.com/manual221/unearnedprepayment.html" >v22.1</option><option value="https://www.opendental.com/manual214/unearnedprepayment.html" >v21.4</option><option value="https://www.opendental.com/manual213/unearnedprepayment.html" >v21.3</option><option value="https://www.opendental.com/manual212/unearnedprepayment.html" >v21.2</option><option value="https://www.opendental.com/manual211/unearnedprepayment.html" >v21.1</option><option value="https://www.opendental.com/manual205/unearnedprepayment.html" >v20.5</option><option value="https://www.opendental.com/manual204/unearnedprepayment.html" >v20.4</option><option value="https://www.opendental.com/manual203/unearnedprepayment.html" >v20.3</option><option value="https://www.opendental.com/manual202/unearnedprepayment.html" >v20.2</option><option value="https://www.opendental.com/manual201/unearnedprepayment.html" >v20.1</option><option value="https://www.opendental.com/manual194/unearnedprepayment.html" >v19.4</option><option value="https://www.opendental.com/manual193/unearnedprepayment.html" >v19.3</option><option value="https://www.opendental.com/manual192/unearnedprepayment.html" >v19.2</option><option value="https://www.opendental.com/manual191/unearnedprepayment.html" >v19.1</option><option value="https://www.opendental.com/manual184/unearnedprepayment.html" >v18.4</option><option value="https://www.opendental.com/manual183/unearnedprepayment.html" >v18.3</option><option value="https://www.opendental.com/manual182/unearnedprepayment.html" >v18.2</option><option value="https://www.opendental.com/manual181/unearnedprepayment.html" >v18.1</option><option value="https://www.opendental.com/manual174/unearnedprepayment.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Unearned / Prepayment</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="account.html">Account Module</a>, at the upper right, is the family Unearned Income balance.</p>
+<img src="images/unearned.png" width="726" height="45"/><p>Unearned income is typically a patient prepayment towards future charges or a patient overpayment to be refunded. When a patient payment has a <a href="paysplit.html">Payment Split</a> (paysplit) with an unearned type attached, it is considered a prepayment or unearned income. Prepayments may be allocated to treatment planned procedures at the time of the payment or left as unallocated, and manually allocated once a charge is completed. See <a href="unearnedallocate.html">Allocate Unearned Income</a>.</p>
+<h2>Unallocated Prepayment</h2>
+<p>Unallocated prepayments are patient payments assigned an unearned income type but not yet allocated to a charge. These are useful for collecting payments in advance for future charges (e.g. adjustments, pay plan charges, repeating charges, etc.) or prepayments to treatment not yet determined. To instead allocate a prepayment to treatment, see <i>Allocated Prepayment below</i>.</p>
+<p class="MarginBottomZero"><b>To create an unallocated prepayment to the default unearned type</b>: </p>
+<ol class="MarginBottomGap">
+<li>Click the <a href="payment.html">Payment</a> button. </li>
+<li>Enter the payment amount into the popup window.</li>
+<li>Enter the payment details. <ul>
+<li>If needed, process any <a href="paymentpatientcreditcard.html">Credit Card Payment</a>.</li>
+</ul>
+</li>
+<li>Click <b>Prepay</b>.</li>
+</ol>
+<img src="images/unearnedPaymentPrepay.png" width="471" height="213"/><p>The payment window will immediately close. One unallocated paysplit will be created with the <i>Default unearned type for unallocated paysplits</i> set in Preferences.</p>
+<p class="MarginBottomZero"><b>To create an unallocated prepayment to an alternate unearned type:</b></p>
+<ol class="MarginBottomGap">
+<li>Click <b>Payment</b>.</li>
+<li>Enter the payment amount into the popup window.</li>
+<li>Click <b>Delete Splits</b> to delete any auto-generated payment splits.</li>
+<li>Click <b>+Add Split</b></li>
+<li>Enter the paysplit details. <ul>
+<li>Enter an <i>Amount </i>for the pay split.</li>
+<li>Select an <i>Unearned Type</i> from the dropdown.</li>
+<li>(Optional) Assign a <i>Clinic</i> and <i>Provider</i> from the dropdowns.</li>
+<img src="images/unearnedPaysplitEdit.png" width="257" height="180"/></ul>
+</li>
+<li>If multiple prepayment types need to be assigned to the payment, repeat step 5 as needed. Current Payment Splits Total must match the Payment Amount.</li>
+<img src="images/unearnedPaysplitsMatch.png" width="668" height="310"/><li>Enter the payment details (e.g., Check #, Note, etc). <ul>
+<li>If needed, process any credit card payment</li>
+</ul>
+</li>
+<li>Click <b>OK</b> to save the payment.</li>
+</ol>
+<p>The payment will show as a credit line item in the Patient Account, affecting the patient's balance. The family's total unallocated amount will show under <i>Unearned</i> in the top aging bar. Hover over the total to view a breakdown of the family's unallocated, unearned balance. All unallocated prepayments within the family are summed by unearned income type. No breakdown is displayed if the total unearned balance is zero.</p>
+<img src="images/unearnedprepay.png" width="758" height="144"/><p>When new charges are due, transfer the prepayment to the charges. See <a href="unearnedallocate.html">Allocate Unearned Income</a>. To transfer unallocated prepayments to repeating charges, check <i>Use Unearned</i> in the <a href="repeatingcharge.html">Edit Repeat Charge</a> window. Run the <a href="reportunearnedincome.html">Unearned Income Reports</a> to track accounts with prepayments.</p>
+<p><div class="Note">Note: <ul>
+<li>Payments allocated to unearned types marked <i>Do Not Show in Account or on Reports</i> in <a href="definitionspaysplitunearned.html">Definitions: PaySplit Unearned Types</a> will only show in the Hidden Splits tab. They will not appear as a line item in the Patient Account tab. See: <a href="hiddensplits.html">Hidden Splits</a>.</li>
+<li>The <a href="incometransfermanager.html">Income Transfer Manager</a> may also create unallocated prepayments when a procedure is overpaid and there are no other outstanding charges due.</li>
+</ul>
+</div>
+</p>
+<h2>Allocated Prepayment</h2>
+<p>Allocated prepayments are patient payments assigned to a specific treatment planned procedure. Procedures are assigned the <i>Default treatment planned procedure unearned type</i> set in <a href="allocationssetup.html">Allocations Setup</a>. This is generally an unearned income type flagged as <i>Do Not Show on Account</i> (i.e. a hidden paysplit). <i>Allow prepayments to allocate to treatment planned procedures</i> in Allocations Setup must be enabled to allocate to treatment planned procedures.</p>
+<p class="MarginBottomZero"><b>To create an allocated prepayment</b>: </p>
+<ol class="MarginBottomGap">
+<li>Click <b> Payment</b>.</li>
+<li>Enter the payment amount into the popup window.</li>
+<li>Click <b>Delete Splits</b> to clear the default payment allocation.</li>
+<li>Select the <b>Treat Plan</b> tab</li>
+<li>Highlight the treatment planned procedures (TP) to allocate the payment.</li>
+<li>Click <b>Pay</b>.</li>
+<img src="images/unearnedTreatmentPlanPrepay.png" width="616" height="418"/><li>If needed, process any <a href="paymentpatientcreditcard.html">Credit Card Payment</a>.</li>
+<li>Click <b>OK</b> on the payment window.</li>
+</ol>
+<p>Hidden paysplits will be created for each TP procedure selected and assigned the <i>Default treatment planned procedure unearned type</i> set in Allocations Setup.</p>
+<p><div class="Note">Note: An allocated prepayment may also be created when a dynamic payment plan charge is overpaid. See <a href="paymentplandynamic.html">Dynamic Payment Plan</a>, Payment and Interest Logic.</div>
+</p>
+<p>When <i>Do Not Show in Account or on Reports</i> is enabled for the <i>Default treatment planned procedure unearned type</i>, the payment will be hidden from the Patient Account tab and most reports, to not affect the patient balance until the treatment planned procedure is set complete. It is also excluded from the Unearned balance since it is already allocated. A summary of the prepayment can be viewed under the <i>Hidden Splits</i> tab. Once the procedure is set complete, the prepayment is transferred to the Patient Account with an automatic income transfer. Run the <a href="reporthiddensplits.html">Hidden Payment Splits Report</a> to track accounts with these prepayments.</p>
+<h2>Negative Unearned</h2>
+<p>A negative unearned balance indicates that more unearned income than existed was allocated (e.g., unearned income that did not exist was allocated). It is never advisable to create a negative unearned balance. If income was overallocated from an unearned type, it will be noted as a negative when hovering over the unearned balance, even if the total unearned balance is positive.</p>
+<img src="images/unearnedNegative.png" width="448" height="82"/><p>To correct a negative unearned balance, a manual <a href="incometransfer.html">Income Transfer</a> will need to be created to offset what was overallocated to a procedure, provider, clinic, or adjustment. </p>
+<p class="MarginBottomZero">To create the manual income transfer:  </p>
+<ol class="MarginBottomGap">
+<li>Click <b>Payment</b>.</li>
+<li>Enter $0 as the payment amount.</li>
+<li>Check <b>None (Income Transfer)</b> as the payment type.</li>
+<li>Click <b>Add Split</b> to create a positive paysplit that offsets income to the family unearned balance. <ol>
+<li>On the <a href="paysplit.html">Edit Payment Split</a> window, enter an amount less than or equal to the unearned income amount. <ul>
+<li>Less than, to offset a partial amount.</li>
+<li>Equal to, to offset the entire amount.</li>
+</ul>
+</li>
+<li>Select the Patient (upper right) to apply the transfer to.</li>
+<li>Select the specific <i>Unearned Type</i> to transfer income back to.</li>
+<li>Click <b>OK</b> to save the positive paysplit and go back to the payment window.</li>
+</ol>
+</li>
+<li>Click <b>Add Split</b> again to create a negative paysplit that removes income from a production item or provider that has income attached. <ol>
+<li>Enter a negative amount matching the positive paysplit (e.g., if the positive split was $50, enter -50),</li>
+<li>Attach the paysplit to a procedure, adjustment, payment plan, or provider (one per paysplit).  <ul>
+<li>If a production item is selected, the clinic/provider is inherited from the selected production item.</li>
+<li>This will remove income from the selected production item or provider.</li>
+</ul>
+</li>
+<li>Click <b>OK</b> to save the negative paysplit and go back to the payment window.</li>
+</ol>
+</li>
+<img src="images/unearnedNegativeCorrectSplits.png" width="491" height="92"/></ol>
+<p>Repeat steps 4 and 5 as needed to offset any unearned income. When the total paysplits equal $0, click OK on the payment window to complete the transfer. If the amount transferred equaled the full negative unearned balance, there should no longer be a negative unearned balance. Any provider or clinic included in the transfer will show negative income splits on reports for the day. Once negative unearned is corrected, users may want to run the incometransfermanager to correct any other unallocated payments, overpayments, or unearned income.</p>
+<p><div class="Note">Note: Negative unearned balances may also occur when creating refunds if paysplits are not created on the refund properly. See <a href="refunds.html">Refund</a> for information on creating refunds.</div>
+</p>
+</div>
+</div>
+</body>
+</html>```

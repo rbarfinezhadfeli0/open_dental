@@ -1,0 +1,60 @@
+# File: ./www.opendental.com/manual/paymentplanclose.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Close Payment Plans</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('paymentplanclose','+misc','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/paymentplanclose.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/paymentplanclose.html" >v24.2</option><option value="https://www.opendental.com/manual241/paymentplanclose.html" >v24.1</option><option value="https://www.opendental.com/manual233/paymentplanclose.html" >v23.3</option><option value="https://www.opendental.com/manual232/paymentplanclose.html" >v23.2</option><option value="https://www.opendental.com/manual231/paymentplanclose.html" >v23.1</option><option value="https://www.opendental.com/manual224/paymentplanclose.html" >v22.4</option><option value="https://www.opendental.com/manual223/paymentplanclose.html" >v22.3</option><option value="https://www.opendental.com/manual222/paymentplanclose.html" >v22.2</option><option value="https://www.opendental.com/manual221/paymentplanclose.html" >v22.1</option><option value="https://www.opendental.com/manual214/paymentplanclose.html" >v21.4</option><option value="https://www.opendental.com/manual213/paymentplanclose.html" >v21.3</option><option value="https://www.opendental.com/manual212/paymentplanclose.html" >v21.2</option><option value="https://www.opendental.com/manual211/paymentplanclose.html" >v21.1</option><option value="https://www.opendental.com/manual205/paymentplanclose.html" >v20.5</option><option value="https://www.opendental.com/manual204/paymentplanclose.html" >v20.4</option><option value="https://www.opendental.com/manual203/paymentplanclose.html" >v20.3</option><option value="https://www.opendental.com/manual202/paymentplanclose.html" >v20.2</option><option value="https://www.opendental.com/manual201/paymentplanclose.html" >v20.1</option><option value="https://www.opendental.com/manual194/paymentplanclose.html" >v19.4</option><option value="https://www.opendental.com/manual193/paymentplanclose.html" >v19.3</option><option value="https://www.opendental.com/manual192/paymentplanclose.html" >v19.2</option><option value="https://www.opendental.com/manual191/paymentplanclose.html" >v19.1</option><option value="https://www.opendental.com/manual184/paymentplanclose.html" >v18.4</option><option value="https://www.opendental.com/manual183/paymentplanclose.html" >v18.3</option><option value="https://www.opendental.com/manual182/paymentplanclose.html" >v18.2</option><option value="https://www.opendental.com/manual181/paymentplanclose.html" >v18.1</option><option value="https://www.opendental.com/manual174/paymentplanclose.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Close Payment Plans</p></div>
+<div class="GeneralPageContent">
+<p>The Close Payment Plans tool allows offices to easily close out all payment plans with a zero balance and no future charges.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Tools, Misc Tools, Close Payment Plans.</p>
+<img src="images/payplanAutoClose.PNG" width="401" height="217"/><p>This tool is helpful if the practice has payment plans showing in the <a href="reportpaymentplan.html">Payment Plan Report</a> that have zero balance, no future charges, but are not closed.</p>
+<p>Once the tool is clicked, the above is displayed. By default, running the tool closes <a href="paymentplandynamic.html">Payment Plans</a> with zero balance or a negative balance and no future charges. Choose additional options to include other payment plan types. </p>
+<p class="MarginBottomZero"><b>Include Old Payment Plans</b>: Determine if <a href="paymentplanpatient.html">Old Payment Plans</a> are included in addition to Payment Plans when running the tool. </p>
+<ul class="MarginBottomGap">
+<li>Checked: Old Payment Plans with zero balance or a negative balance, no future charges, and no treatment planned procedures. </li>
+<li>Unchecked: Old Payment Plans are not closed when running the tool.</li>
+</ul>
+<p class="MarginBottomZero"><b>Include Insurance Payment Plans</b>: Determine if <a href="paymentplanins.html">Insurance Payment Plans</a> are included when running the tool in addition to Payment Plans. </p>
+<ul class="MarginBottomGap">
+<li>Checked: Insurance Payment Plans with zero balance or a negative balance, no future charges, and no treatment planned procedures. </li>
+<li>Unchecked: Insurance Payment Plans are not closed when running the tool.</li>
+</ul>
+<p>Click <b>Save</b> to continue and close all plans that meet the criteria.</p>
+<p>A confirmation appears once payment plans have finished closing, indicating the number of payments plans closed. If no payments plans met the criteria, a message appears instead indicating "<i>There were no plans to close.</i>"</p>
+<img src="images/payPlanAutoCloseConfirm.png" width="175" height="132"/></div>
+</div>
+</body>
+</html>```

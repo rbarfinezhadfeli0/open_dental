@@ -1,0 +1,81 @@
+# File: ./www.opendental.com/site/integrationsnative.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: Native Integrations</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>Native Integrations</h1>
+		</div>
+		<div id="Content">
+<p>Open Dental has partnered with a limited number of third-party vendors to develop integrations that are easily accessible directly from the Open Dental program. See <a href="integrationtypes.html">Open Dental Integration Types</a> for more details.</p>
+<h2>Electronic Prescriptions (eRx)<a name='erx'></a></h2>
+<p class="MarginBottomZero">See <a href="electronicrx.html">eRx Companies</a> for more details.  </p>
+<ul class="MarginBottomGap">
+<li><a href="dosespot.html">DoseSpot eRx</a></li>
+<li><a href="newcropfeature.html">Ensora eRx</a></li>
+</ul>
+<h2>Payment Processing</h2><p class="MarginBottomZero">See <a href="nativepaymentintegrations.html">Native Payment Integrations</a> for more details.  </p>
+<ul class="MarginBottomGap">
+<li><a href="globalpaymentsintegration.html">Global Payments</a></li>
+<li><a href="dentalxchange.html#payconnect">PayConnect by DentalXChange</a></li>
+<li><a href="paysimpleintegration.html">PaySimple</a></li>
+</ul>
+<h2>AI Image Analysis</h2><p class="MarginBottomZero">See <a href="aiimageanalysis.html">AI Image Analysis Integrations</a> for more details. </p>
+<ul class="MarginBottomGap">
+<li><a href="betterdiagnostics.html">BetterDiagnostics</a></li>
+<li><a href="pearl.html">Pearl</a></li>
+</ul>
+<h2>Clearinghouses</h2><p class="MarginBottomZero">The following clearinghouses are recommended as they also offer native integrations for claims, attachments, billing, and more. See <a href="0_clearinghouses.html">Clearinghouses</a> for more details. </p>
+<ul class="MarginBottomGap">
+<li><a href="dentalxchange.html">DentalXChange</a></li>
+<li><a href="electronicdentalservices.html">Electronic Dental Services (EDS)</a></li>
+</ul>
+<h2>Other</h2><p class="MarginBottomZero"> Click a link for additional details about a specific service. </p>
+<ul class="MarginBottomGap">
+<li><a href="bolaai.html">Bola AI</a> - Bola Voice Assist is integrated for voice perio</li>
+<li><a href="carecredit.html">CareCredit</a> - See page for details</li>
+<li><a href="tsiintegration.html">Transworld Systems Inc. (TSI)</a> - Collections and billing service</li>
+</ul>
+
+</div>	
+	</div>
+</body>
+</html>```

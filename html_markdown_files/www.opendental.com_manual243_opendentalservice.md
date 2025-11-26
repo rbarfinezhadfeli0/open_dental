@@ -1,0 +1,91 @@
+# File: ./www.opendental.com/manual243/opendentalservice.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Open Dental Service</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('opendentalservice','servicemanager','+misc','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/opendentalservice.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/opendentalservice.html" >v24.2</option><option value="https://www.opendental.com/manual241/opendentalservice.html" >v24.1</option><option value="https://www.opendental.com/manual233/opendentalservice.html" >v23.3</option><option value="https://www.opendental.com/manual232/opendentalservice.html" >v23.2</option><option value="https://www.opendental.com/manual231/opendentalservice.html" >v23.1</option><option value="https://www.opendental.com/manual224/opendentalservice.html" >v22.4</option><option value="https://www.opendental.com/manual223/opendentalservice.html" >v22.3</option><option value="https://www.opendental.com/manual222/opendentalservice.html" >v22.2</option><option value="https://www.opendental.com/manual221/opendentalservice.html" >v22.1</option><option value="https://www.opendental.com/manual214/opendentalservice.html" >v21.4</option><option value="https://www.opendental.com/manual213/opendentalservice.html" >v21.3</option><option value="https://www.opendental.com/manual212/opendentalservice.html" >v21.2</option><option value="https://www.opendental.com/manual211/opendentalservice.html" >v21.1</option><option value="https://www.opendental.com/manual205/opendentalservice.html" >v20.5</option><option value="https://www.opendental.com/manual204/opendentalservice.html" >v20.4</option><option value="https://www.opendental.com/manual203/opendentalservice.html" >v20.3</option><option value="https://www.opendental.com/manual202/opendentalservice.html" >v20.2</option><option value="https://www.opendental.com/manual201/opendentalservice.html" >v20.1</option><option value="https://www.opendental.com/manual194/opendentalservice.html" >v19.4</option><option value="https://www.opendental.com/manual193/opendentalservice.html" >v19.3</option><option value="https://www.opendental.com/manual192/opendentalservice.html" >v19.2</option><option value="https://www.opendental.com/manual191/opendentalservice.html" >v19.1</option><option value="https://www.opendental.com/manual184/opendentalservice.html" >v18.4</option><option value="https://www.opendental.com/manual183/opendentalservice.html" >v18.3</option><option value="https://www.opendental.com/manual182/opendentalservice.html" >v18.2</option><option value="https://www.opendental.com/manual181/opendentalservice.html" >v18.1</option><option value="https://www.opendental.com/manual174/opendentalservice.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Open Dental Service</p></div>
+<div class="GeneralPageContent">
+<p>The Open Dental Service is used to run background processes necessary for Open Dental.</p>
+<p>In the <a href="servicemanager.html">Service Manager</a>, double-click <b>OpenDentalService</b>. </p>
+<img src="images/openDentalService.PNG" width="721" height="198"/><div class="Note">Note:  The OpenDentalService will only list in the Service Manager on the server computer. The service should only be installed on the server, since additional installations on workstations may cause conflicts. The OpenDentalService should only be installed and running on one server for offices that are using replication.</div>
+<p>This service is required for customers using <a href="email.html">Email</a>, <a href="eservices.html">eServices</a> or customers utilizing certain third parties.</p>
+<p class="MarginBottomZero">The OpenDentalService does the following: </p>
+<ul class="MarginBottomGap">
+<li>Creates an alert: <ul>
+<li>if the number of current MySQL connections is greater than the <span class="codeblock">max_connections</span> variable in the <a href="myini.html">my.ini</a> file.</li>
+<li>when payments are made from the <a href="portalhostedbyod.html">Patient Portal</a>.</li>
+<li>when a <a href="webschednewpatsetup.html">Web Sched New Patient</a> appointment is created.</li>
+<li>when a <a href="webschedrecallsetup.html">Web Sched Recall</a> appointment is created.</li>
+<li>when a secure email message is received. </li>
+<li>when a web form is ready to be retrieved.</li>
+</ul>
+</li>
+<li>Downloads email from servers based on the <i>Inbox Receive Interval</i> set in <a href="emailsetup.html">Email Setup</a>.</li>
+<li>Runs aging at <i>Automated aging run time</i> or <i>Aging Service Time Due</i>, scheduled in <a href="preferences.html">Preferences</a>. </li>
+<li>Imports clearinghouse reports if <i>Receive Reports by Service</i> is checked in the E-Claims window.</li>
+<li>Send patient aging information to <a href="tsicollections.html">TSI Collections</a>.</li>
+<li>Sends information from Podium if <i>Use service to send invitations</i> is checked in the <a href="bridgepodium.html">Podium</a> program link.</li>
+<li>Runs <a href="recurringcharges.html">CC Recurring Charges</a>.</li>
+<li>Adds charges for <a href="paymentplandynamic.html">Payment Plans</a> based on <i>Pay Plan run time</i> scheduled in Preferences.</li>
+<li>Adds Automated <a href="repeatingcharges.html">Repeating Charges</a>.</li>
+<li>Runs various <a href="../site/carecredit.html">CareCredit</a> processes.</li>
+<li>Automatically retrieves <a href="../site/webforms.html">Web Forms</a>.</li>
+</ul>
+<h2>Installing the OpenDentalService</h2>
+<p>The OpenDentalService is typically installed on the server computer upon initial installation of Open Dental.</p>
+<p>Sometimes the OpenDentalService must be installed manually due to permission restrictions on the server. </p>
+<p class="MarginBottomZero">To manually install the OpenDentalService: </p>
+<ol class="MarginBottomGap">
+<li>In the Main Menu, click Tools, Misc Tools, <b>Service Manager</b>.</li>
+<li>Click <b>Add</b>.</li>
+<li>Click <b>Browse</b> and select the <i>OpenDentalService.exe</i>. This is typically located in <b>\Program Files (x86)\OpenDental\OpenDentalService\</b>. </li>
+<li>Click <b>Install</b>. <ol>
+<li>Enter the configuration settings. </li>
+<li>Click <b>OK</b> to close the Configuration window.</li>
+<li>If the installation is successful, the status will change from <i>Not Installed</i> to <i>Installed, Running</i>.</li>
+</ol>
+</li>
+</ol>
+<p><div class="Note">Note: <ul>
+<li>Offices utilizing the Open Dental Service for <i>CC Recurring Charges</i> and <i>Repeating Charges</i> or <i>Payment Plans</i>, may want to schedule <i>Recurring charges run time</i> after <i>Repeating charges run time</i> and <i>Pay Plan run time</i> when setting up <a href="preferences.html">Preferences</a> to ensure charges are posted before attempting payment. Not doing so may cause payments not to be processed if there is no charge (or balance) on the patient's account.</li>
+<li>If using a cloud-managed database system, enter the PEM filepath in the SkySQL PEM field when entering configuration settings. File must be accessible from all workstations.</li>
+</ul>
+</div>
+</p>
+</div>
+</div>
+</body>
+</html>```

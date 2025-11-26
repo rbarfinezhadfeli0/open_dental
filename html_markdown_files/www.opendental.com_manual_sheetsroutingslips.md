@@ -1,0 +1,57 @@
+# File: ./www.opendental.com/manual/sheetsroutingslips.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Routing Slip Layout</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('sheetsroutingslips','sheets','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/sheetsroutingslips.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/sheetsroutingslips.html" >v24.2</option><option value="https://www.opendental.com/manual241/sheetsroutingslips.html" >v24.1</option><option value="https://www.opendental.com/manual233/sheetsroutingslips.html" >v23.3</option><option value="https://www.opendental.com/manual232/sheetsroutingslips.html" >v23.2</option><option value="https://www.opendental.com/manual231/sheetsroutingslips.html" >v23.1</option><option value="https://www.opendental.com/manual224/sheetsroutingslips.html" >v22.4</option><option value="https://www.opendental.com/manual223/sheetsroutingslips.html" >v22.3</option><option value="https://www.opendental.com/manual222/sheetsroutingslips.html" >v22.2</option><option value="https://www.opendental.com/manual221/sheetsroutingslips.html" >v22.1</option><option value="https://www.opendental.com/manual214/sheetsroutingslips.html" >v21.4</option><option value="https://www.opendental.com/manual213/sheetsroutingslips.html" >v21.3</option><option value="https://www.opendental.com/manual212/sheetsroutingslips.html" >v21.2</option><option value="https://www.opendental.com/manual211/sheetsroutingslips.html" >v21.1</option><option value="https://www.opendental.com/manual205/sheetsroutingslips.html" >v20.5</option><option value="https://www.opendental.com/manual204/sheetsroutingslips.html" >v20.4</option><option value="https://www.opendental.com/manual203/sheetsroutingslips.html" >v20.3</option><option value="https://www.opendental.com/manual202/sheetsroutingslips.html" >v20.2</option><option value="https://www.opendental.com/manual201/sheetsroutingslips.html" >v20.1</option><option value="https://www.opendental.com/manual194/sheetsroutingslips.html" >v19.4</option><option value="https://www.opendental.com/manual193/sheetsroutingslips.html" >v19.3</option><option value="https://www.opendental.com/manual192/sheetsroutingslips.html" >v19.2</option><option value="https://www.opendental.com/manual191/sheetsroutingslips.html" >v19.1</option><option value="https://www.opendental.com/manual184/sheetsroutingslips.html" >v18.4</option><option value="https://www.opendental.com/manual183/sheetsroutingslips.html" >v18.3</option><option value="https://www.opendental.com/manual182/sheetsroutingslips.html" >v18.2</option><option value="https://www.opendental.com/manual181/sheetsroutingslips.html" >v18.1</option><option value="https://www.opendental.com/manual174/sheetsroutingslips.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Routing Slip Layout</p></div>
+<div class="GeneralPageContent">
+<p>Customize the information printed on routing slips for scheduled appointments.</p>
+<p>In <a href="sheets.html">Sheets</a>, double-click on a custom sheet with the type of RoutingSlip.</p>
+<img src="images/sheetRoutingSlip.gif" width="915" height="644"/><p class="MarginBottomZero">Alternatively, in Sheets:  </p>
+<ul class="MarginBottomGap">
+<li>Click <b>New</b> and choose <i>RoutingSlip</i> as the Sheet Type to create a new routing slip from blank.</li>
+<li>Select an existing Custom <i>RoutingSlip</i> sheet and click <b>Duplicate</b> to create a copy of an existing routing slip.</li>
+<li>Select the existing Internal <i>RoutingSlip</i> sheet and click <b>Copy</b> to create a copy of the default Routing Slip that can be edited.</li>
+</ul>
+<p>Also see: <a href="sheetproperties.html">Sheet Def Properties</a> and <a href="sheetsaddelements.html">Sheet Field Types</a></p>
+<p>To customize a RoutingSlip sheet type, see <a href="sheetsetup.html">Edit Sheet Def</a>.</p>
+<p>To print routing slips, see <a href="routingslips.html">Routing Slips</a>.</p>
+<p><div class="Note">Note: Language translations do not work with routing slips.</div>
+</p>
+</div>
+</div>
+</body>
+</html>```

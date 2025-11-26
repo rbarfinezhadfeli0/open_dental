@@ -1,0 +1,77 @@
+# File: ./www.opendental.com/manual243/feeschedulecopy.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Fees Copy</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('feeschedulecopy','feescheduletools','procedurecodes','+lists','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/feeschedulecopy.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/feeschedulecopy.html" >v24.2</option><option value="https://www.opendental.com/manual241/feeschedulecopy.html" >v24.1</option><option value="https://www.opendental.com/manual233/feeschedulecopy.html" >v23.3</option><option value="https://www.opendental.com/manual232/feeschedulecopy.html" >v23.2</option><option value="https://www.opendental.com/manual231/feeschedulecopy.html" >v23.1</option><option value="https://www.opendental.com/manual224/feeschedulecopy.html" >v22.4</option><option value="https://www.opendental.com/manual223/feeschedulecopy.html" >v22.3</option><option value="https://www.opendental.com/manual222/feeschedulecopy.html" >v22.2</option><option value="https://www.opendental.com/manual221/feeschedulecopy.html" >v22.1</option><option value="https://www.opendental.com/manual214/feeschedulecopy.html" >v21.4</option><option value="https://www.opendental.com/manual213/feeschedulecopy.html" >v21.3</option><option value="https://www.opendental.com/manual212/feeschedulecopy.html" >v21.2</option><option value="https://www.opendental.com/manual211/feeschedulecopy.html" >v21.1</option><option value="https://www.opendental.com/manual205/feeschedulecopy.html" >v20.5</option><option value="https://www.opendental.com/manual204/feeschedulecopy.html" >v20.4</option><option value="https://www.opendental.com/manual203/feeschedulecopy.html" >v20.3</option><option value="https://www.opendental.com/manual202/feeschedulecopy.html" >v20.2</option><option value="https://www.opendental.com/manual201/feeschedulecopy.html" >v20.1</option><option value="https://www.opendental.com/manual194/feeschedulecopy.html" >v19.4</option><option value="https://www.opendental.com/manual193/feeschedulecopy.html" >v19.3</option><option value="https://www.opendental.com/manual192/feeschedulecopy.html" >v19.2</option><option value="https://www.opendental.com/manual191/feeschedulecopy.html" >v19.1</option><option value="https://www.opendental.com/manual184/feeschedulecopy.html" >v18.4</option><option value="https://www.opendental.com/manual183/feeschedulecopy.html" >v18.3</option><option value="https://www.opendental.com/manual182/feeschedulecopy.html" >v18.2</option><option value="https://www.opendental.com/manual181/feeschedulecopy.html" >v18.1</option><option value="https://www.opendental.com/manual174/feeschedulecopy.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Fees Copy</p></div>
+<div class="GeneralPageContent">
+<p>Easily copy existing fees to a new fee schedule using Fee Tools.</p>
+<p>In <a href="feescheduletools.html">Fee Tools</a>, at the left, is the <i>Copy To</i> section.</p>
+<img src="images/feeToolsCopy.png" width="400" height="289"/><p>Use to copy fees in one fee schedule to a different fee schedule. Only fees that exactly match the selected criteria will be copied. Users can copy only global fees in a fee schedule or further narrow criteria to only clinic and/or provider-specific fees. As a preventive measure, before changing fees in a fee schedule (e.g., <a href="feescheduleincrease.html">Fees Increase</a> or <a href="feesimport.html">Fees Import</a>), we recommend creating a backup copy of the original fees.</p>
+<h2>Copying Fees</h2>
+<p class="MarginBottomZero">Before copying fees, create a new blank Fee Schedule: </p>
+<ol class="MarginBottomGap">
+<li>Open <a href="feeschedules.html">Fee Schedules</a>.</li>
+<li>Click <b>Add</b>.</li>
+<li>Name the fee schedule and select a type.</li>
+<li>Click <b>Save</b>.</li>
+</ol>
+<p class="MarginBottomZero">To copy an existing Fee Schedule: </p>
+<ol class="MarginBottomGap">
+<li>In Lists, Procedure Codes, click <b>Fee Tools</b>.</li>
+<li>Under <i>Select Fees</i>, select the fee criteria to copy by clicking the dropdown arrows or <b>[...]</b>. <ul>
+<li>Clinic and Provider options are only enabled if the selected fee schedule allows clinic and provider-specific fees (<i>Use Global Fees</i> is unchecked).</li>
+<li>Only fees that exactly match the criteria will be copied: <ul>
+<li>If only a fee schedule is selected, only the global fees will be copied.</li>
+<li>If a fee schedule and a clinic are selected, only the clinic-specific fees will be copied.</li>
+<li>If a fee schedule and a provider are selected, only the provider-specific fees will be copied.</li>
+<li>If a fee schedule, a clinic, and a provider are selected, only fees that are clinic and provider specific will be copied. </li>
+</ul>
+</li>
+</ul>
+</li>
+<img src="images/feeScheduleSelectFees.png" width="399" height="115"/><li>Under <i>Copy To</i>, select where the fees will be copied to.  <ul>
+<li>We recommend selecting similar criteria as the <i>Select Fees</i> criteria. To select multiple clinics, use the clinic picker <b>[...]</b>.</li>
+</ul>
+</li>
+<img src="images/feeScheduleCopyTo.png" width="399" height="149"/><li>Click <b>Copy</b>. </li>
+<img src="images/feeschedulecopymsg.png" width="412" height="159"/><li>A warning is shown to inform that existing fees are deleted and new fees will be copied. Click <b>OK</b> to continue.</li>
+<li>Once fees are copied, there is a <i>Done</i> message. Click <b>OK</b> to close the message.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>```

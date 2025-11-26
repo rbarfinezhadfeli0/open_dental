@@ -1,0 +1,109 @@
+# File: ./www.opendental.com/manual/webschednewpatsetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Web Sched New Patient</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('webschednewpatsetup','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/webschednewpatsetup.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/webschednewpatsetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/webschednewpatsetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/webschednewpatsetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/webschednewpatsetup.html" >v23.2</option><option value="https://www.opendental.com/manual231/webschednewpatsetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/webschednewpatsetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/webschednewpatsetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/webschednewpatsetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/webschednewpatsetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/webschednewpatsetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/webschednewpatsetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/webschednewpatsetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/webschednewpatsetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/webschednewpatsetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/webschednewpatsetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/webschednewpatsetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/webschednewpatsetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/webschednewpatsetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/webschednewpatsetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/webschednewpatsetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/webschednewpatsetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/webschednewpatsetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/webschednewpatsetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/webschednewpatsetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/webschednewpatsetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/webschednewpatsetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/webschednewpatsetup.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Web Sched New Patient</p></div>
+<div class="GeneralPageContent">
+<p>Web Sched New Patient allows new patients to schedule their appointment online.</p>
+<p>In the <a href="eservicessetup.html">eServices Setup</a> window, click <b>New Patient</b>.</p>
+<img src="images/webschedNewPatientAppts.png" width="915" height="438"/><p> The office can determine which type of appointments a new patient can schedule, what hours are available, what operatories are available, and other appointment criteria. Provider schedules must be created prior to utilizing Web Sched New Patient (see <a href="schedule.html">Schedule</a>).</p>
+<p>To begin using Web Sched New Patient, first <a href="eservicessignup.html">Sign Up</a> for the service. After enabling and setting up Web Sched New Patient, see <a href="webschedadvanced.html">Web Sched Advanced</a> to create the Web Sched New Patient URL. </p>
+<p class="MarginBottomZero">For additional information:  </p>
+<ul class="MarginBottomGap">
+<li><img src="images/YouTube_PlayButton_15px.png" width="15" height="12" style="margin-bottom: 0px"/> See our webinar: <a href="https://youtu.be/ag3lDGTYS0g">Web Sched New Patient</a></li>
+<li><a href="webschednewpatsees.html">Web Sched New Patient: What Patient Sees</a></li>
+<li><a href="webschedtroubleshooting.html">Web Sched Troubleshooting</a></li>
+<li>To set up Web Sched for existing patients see: <a href="webschedexistingpatsetup.html">Web Sched Existing Patient</a></li>
+</ul>
+<h2>Appointment Types</h2>
+<p>Web Sched New Pat Appt Types must be created prior to offering Web Sched New Patient. Web Sched New Patient Appointment Types determine the reasons patients can select for their appointment, the procedures for the appointment, the appointment length, and the time pattern.</p>
+<img src="images/webSchedNewPatApptTypes.png" width="385" height="179"/><p><b>Edit</b>: Click to open <a href="definitionswebschednewpatappttypes.html">Definitions: Web Sched New Patient Appt Types</a>. Add or edit appointment types as needed. </p>
+<h2>Operatories Considered </h2>
+<p>Lists the operatories considered for available time slots. Only operatories associated with <i>New Pat Appt Types</i> are considered. </p>
+<img src="images/webSchedNewPatOpsConsidered.png" width="750" height="182"/><p><b>Edit</b>: Click to open <a href="operatories.html">Operatory Setup</a>. Add or edit operatories as needed. </p>
+<h2>Available Times for Patients</h2>
+<p>This area offers a preview of up to one month of open time slots for a location, based on the current settings.</p>
+<img src="images/webSchedNewPatAvailableTimes.png" width="391" height="314"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Date</b>: Enter the first date to preview. Click <b>Today</b> to insert today's date.</li>
+<li><b>Reason</b>: Select the Reason / Appointment Type to preview.</li>
+<li><b>Clinic</b>: Select the location to preview.</li>
+</ul>
+<p>Click <b>Refresh</b> to view openings.</p>
+<h2>Appointment Message</h2>
+<p>The Appointment Message is intended to provide useful information to patients and displays when the appointment is being created. Click in the message to customize it. </p>
+<img src="images/webSchedNewPatApptMessage.png" width="313" height="128"/><h2>Allowed Blockout Types</h2>
+<p>By default, Web Sched New Patient does not consider <a href="blockouts.html">Blockouts</a> as available time. However, scheduling can be allowed on top of specific blockout types. </p>
+<img src="images/webSchedNewPatAllowedBlockouts.png" width="435" height="174"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Generally Allowed</b>: Lists blockouts that are allowed to be scheduled over. Click <b>Edit</b> to add blockout types.</li>
+<li><b>Restricted to Reasons</b>: Lists blockouts that have been restricted to a <a href="definitionswebschednewpatappttypes.html">Web Sched New Patient Appointment Type</a>. Click <b>Edit</b> to add blockouts. When restricted, the selected appointment types can only be scheduled over the associated blockouts.</li>
+</ul>
+<h2>Other Settings</h2>
+<p>Additional settings can determine the functionality of Web Sched New Patient.</p>
+<img src="images/webSchedNewPatOtherSettings.png" width="752" height="141"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Allow patients to select provider</b>: When checked, all <a href="providers.html">Providers</a>, unless marked hidden or not a person, will be listed for patients to choose from, regardless of Operatories Considered or provider availability. Patients may not be able to schedule with all providers listed. When unchecked, patients are not shown a provider list and will only be shown available appointments for Operatories Considered. To add provider descriptions and photo that will be visible to the patient, see the <a href="providerseditwindow.html">Provider</a>, Web Sched tab.</li>
+<li><b>Prevent double booking</b>: Check to block double booking of all Web Sched New Patient appointments. Uncheck to use <a href="appointmentrules.html">Appointment Rules</a> to block double booking of specific procedures.</li>
+<li><b>Force United States phone number format</b>: Determines the required phone number format. Check to force the United States format of 1- digits (XXX-XXX-XXXX). Uncheck to allow the patient to use any phone format.</li>
+<li><b>Minimum number of days out an appointment can be scheduled (empty is 0)</b>: Enter the number of days in the future to search for the first available openings. Leave blank to include all available openings. For example, when 5 is entered, the first available opening offered to a new patient will be five days in the future. When left blank, an opening in the next 30 minutes could be offered.</li>
+<li><b>Confirm Status</b>: Select the <a href="confirmationstatus.html">Confirmation Status</a> to apply to all appointments scheduled using Web Sched New Patient. The default is <i>Created from Web Sched</i>.</li>
+<li><b>Insurance Rules</b>: Click to open the <a href="webschedcarrierrule.html">Web Sched Carrier Rule</a> window. Determine if patients are allowed to enter insurance information when scheduling their appointment and what insurance carriers are allowed.</li>
+<li><p><b>Notification Settings</b>: Click to open <a href="webschedverify.html">Web Sched Notify Setup</a>. Determines if a notification is sent to the patient informing them the appointment was successfully scheduled.</p>
+</li>
+</ul>
+<h2>Web Sched New Patient Logic</h2>
+<p>Below are additional details and information that affect Web Sched New Patient appointment openings, provider assignment, and appointment details.</p>
+<p class="MarginBottomZero"><b>New Patients</b>: Before allowing a patient to schedule a new patient appointment, Web Sched verifies that a record for the patient doesn't already exist. </p>
+<ol class="MarginBottomGap">
+<li>First it checks for a matching last name, first name or preferred name, and birthdate. If no match, patient can schedule.</li>
+<li>If a match exists, Web Sched compares the entered email address to the email address of all family members for whom a record exists. If no match, patient can schedule.</li>
+<li>If a match exists, Web Sched compares the entered phone number to the phone number for all family members for whom a record exists. If no match, patient can schedule. If a match exists, patient cannot schedule.</li>
+</ol>
+<p><b>Providers / Operatories</b>: Providers are assigned based on the operatory the appointment is scheduled in. It is important to assign a default provider to the operatory and/or assign the operatory to the provider's schedule time block. Providers cannot be marked as <i>Not a Person</i> in the Provider Edit window.</p>
+<p>When there are multiple operatories with openings at the same time, an appointment will be scheduled in the operatory on the farthest left of the schedule.</p>
+<p>When a provider's schedule is not assigned to a specific operatory, Web Scheduling will consider all Web Sched operatories where they are a primary provider as open for scheduling. This can result in appointments being created in operatories that appear to be closed.</p>
+<p class="MarginBottomZero"><b>Available Appointments</b>: </p>
+<ul class="MarginBottomGap">
+<li>Openings are available as far as <a href="schedule.html">Schedule Setup</a> allows.</li>
+<li>The provider's Schedule Setup affects available openings. (Patients can't schedule appointments 2 months in the future if there is no schedule set 2 months out).</li>
+<li>The appointment schedule's time increment affects appointment start/end.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

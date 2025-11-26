@@ -1,0 +1,69 @@
+# File: ./www.opendental.com/site/0_manage.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Manage Module</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('0_manage','0_modules','quickmanual','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Manage Module</p></div>
+		<div class="GeneralPageContent">
+<p>The Manage <a href="0_modules.html">Module</a> contains miscellaneous management functions that do not apply to any single patient.</p>
+<p></p>
+<img src="images/manage.png" width="915" height="662"/><p><img src="images/YouTube_PlayButton_15px.png" width="16" height="16" style="margin-bottom: 0px"/> See our <a href="https://youtube.com/playlist?list=PLyjZ9PCVynCn2gpkJ9PyahkXpbjHj9AK5">Manage Module Playlist</a></p>
+<h2>Daily Area</h2>
+<p>Find tools to help manage the day-to-day operations of the practice in the Daily area.</p>
+<img src="images/manageDaily.png" width="282" height="191"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Send Claims:</b> View a list of claims waiting to be sent and quickly batch send or print. This window also shows history of sent or printed claims. </li>
+<li><b>Batch Ins:</b> Enter Batch <a href="0_insurancepayments.html">Insurance Payments</a>. </li>
+<li><b>Billing:</b> Print or email batch statements and set billing defaults. See <a href="0_billing.html">Billing</a>.</li>
+<li><b>Deposits:</b> Create and manage deposit slips. Deposit slips can be printed with bank account information. </li>
+<li><b>Supply Inventory:</b> Open <a href="0_supplyinventory.html">Supply Inventory</a> to track suppliers, supplies, orders, and equipment.</li>
+<li><b>TSI Collections:</b> Launch the TSI Collections integration. Transworld Systems Inc. (TSI) offers billing and collection services to dental practices.</li>
+<li><b>Tasks:</b> Opens the <a href="0_tasks.html">Tasks</a>. Tasks can be used for intra-office communication, settings reminders, and more. </li>
+<li><b>Backup:</b> Create a backup of your Open Dental database using the built-in <a href="0_backup.html">Backup Tool</a>.</li>
+<li><b>Accounting:</b> Open the <a href="0_accounting.html">Accounting</a> feature used to set up a chart of accounts and track expenses, income, assets, liabilities and equity.</li>
+<li><b>Email Inbox:</b> Open the <a href="0_email.html">Email Client</a>. You can set up email accounts that your practice uses to send and receive emails using Open Dental. </li>
+<li><b>ERAs:</b> Open the <a href="0_era.html">ERAs</a> window to process and manage ERAs.</li>
+</ul>
+<h2>Time Clock</h2>
+<p>In the Manage Module, at the upper-right, is the Time Clock area.</p>
+<img src="images/manageTimeClock.png" width="466" height="280"/><p>Employees can use the <a href="0_timecards.html">Time Clock</a> to clock in or out of work.</p>
+<h2>Messaging</h2>
+<p>In the Manage Module, at the bottom, is the Messaging area.</p>
+<img src="images/manageMessaging.png" width="897" height="285"/><p>Use <a href="0_messagingbuttons.html">Messaging Buttons</a> to send internal text, light, and sound messages to any workstation in the office.</p>
+		</div>
+	</div>
+</body>
+</html>```

@@ -1,0 +1,254 @@
+# File: ./www.opendental.com/manual232/recalllist.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Recall List</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('recalllist','appointmentlists','appointments','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/recalllist.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/recalllist.html" >v24.2</option><option value="https://www.opendental.com/manual241/recalllist.html" >v24.1</option><option value="https://www.opendental.com/manual233/recalllist.html" >v23.3</option><option value="https://www.opendental.com/manual232/recalllist.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/recalllist.html" >v23.1</option><option value="https://www.opendental.com/manual224/recalllist.html" >v22.4</option><option value="https://www.opendental.com/manual223/recalllist.html" >v22.3</option><option value="https://www.opendental.com/manual222/recalllist.html" >v22.2</option><option value="https://www.opendental.com/manual221/recalllist.html" >v22.1</option><option value="https://www.opendental.com/manual214/recalllist.html" >v21.4</option><option value="https://www.opendental.com/manual213/recalllist.html" >v21.3</option><option value="https://www.opendental.com/manual212/recalllist.html" >v21.2</option><option value="https://www.opendental.com/manual211/recalllist.html" >v21.1</option><option value="https://www.opendental.com/manual205/recalllist.html" >v20.5</option><option value="https://www.opendental.com/manual204/recalllist.html" >v20.4</option><option value="https://www.opendental.com/manual203/recalllist.html" >v20.3</option><option value="https://www.opendental.com/manual202/recalllist.html" >v20.2</option><option value="https://www.opendental.com/manual201/recalllist.html" >v20.1</option><option value="https://www.opendental.com/manual194/recalllist.html" >v19.4</option><option value="https://www.opendental.com/manual193/recalllist.html" >v19.3</option><option value="https://www.opendental.com/manual192/recalllist.html" >v19.2</option><option value="https://www.opendental.com/manual191/recalllist.html" >v19.1</option><option value="https://www.opendental.com/manual184/recalllist.html" >v18.4</option><option value="https://www.opendental.com/manual183/recalllist.html" >v18.3</option><option value="https://www.opendental.com/manual182/recalllist.html" >v18.2</option><option value="https://www.opendental.com/manual181/recalllist.html" >v18.1</option><option value="https://www.opendental.com/manual174/recalllist.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Recall List</p></div>
+<div class="GeneralPageContent">
+<p>Use the Recall List to send and track recall appointment reminders.</p>
+<p>In the <a href="appointmentlists.html">Appointment Lists</a>, click <b>Recall</b>.</p>
+<img src="images/recallList.png" width="911" height="440"/><p>Every active patient appears in the recall list for the default recall types. Once a patient has recall procedures completed, the patient's next recall due date is calculated and the list is updated. As patients are sent a reminder (either automatically or manually from the list), they disappear from the list for a specified number of days. If the patient has not scheduled their appointment before the specified number of days is up, they are put back on the list for another reminder. </p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><a href="recalllistrecentlycontacted.html">Recall List - Reminders</a>: View patients who have been sent an automatic or manual recall reminder.</li>
+<li><a href="recalllistreactivation.html">Recall List - Reactivations</a>: View inactive patients who have not been seen recently.</li>
+</ul>
+<p><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> Also see our <a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynClCJyAtQ7XvgefbFFPDBco8">Recall Video Playlist</a></p>
+<h2>Setup</h2>
+<p class="MarginBottomZero">The following must be set up prior to scheduling recall appointments:  </p>
+<ul class="MarginBottomGap">
+<li><a href="providers.html">Providers</a>: Add providers and hygienists.</li>
+<li><a href="operatories.html">Operatories</a>: Create operatories and assign the default providers. When using Web Sched, designate Web Sched operatories.</li>
+<li><a href="schedule.html">Schedule Setup</a>: Create each provider's schedule and assign to an operatory. Their schedules should extend as far into the future as appointments are to be scheduled. For example, recall appointments 6 months in the future cannot be scheduled if there is no provider schedule set 6 months out.</li>
+<li><a href="../site/websched.html">Web Sched Recall</a>: (optional) Sign up for the eService to automatically send text and email reminders to patients. Patients can click a link in these reminders to schedule their recall appointment online.</li>
+<li><a href="recalltypes.html">Recall Types</a>: Set up recall types. The defaults are Prophy, Child Prophy, and Perio. Edit the recall interval or recall procedures for the existing types or add new ones.</li>
+<li><a href="recallsetup.html">Setup Recall</a>: Review the Recall List defaults and settings.</li>
+</ul>
+<h2>Filters</h2>
+<p>Use the filters to determine which patients display on the list. Patients must meet all criteria entered to display.</p>
+<img src="images/recallListFilters.png" width="907" height="133"/><p class="MarginBottomZero">View: </p>
+<ul class="MarginBottomGap">
+<li><b>From/To</b>: Display patients whose Recall Due Date falls between these dates. Set the default values in Setup Recall. Leave <i>From</i> blank to include patients who have never had a recall procedure set complete.</li>
+<li><b>Show Reminders</b>: Only list patients with a specific number of reminders.</li>
+<li><b>Recall Type</b>: Only show patients with specific recall type. Select from Perio, Prophy, or All.</li>
+<li><b>Sort</b>: Sort the list by:  <ul>
+<li>Due Date: Recall due date</li>
+<li>Alphabetically: Alphabetical by last name. Families will sort by the last name of the guarantor even if the guarantor is not in the list.</li>
+<li>Billing type: Patient billing type.</li>
+</ul>
+</li>
+<li><b>Provider</b>: Only view patients assigned a specific provider. Search will consider both Primary and Secondary provider assigned in <a href="patientedit.html">Edit Patient Information</a>.</li>
+<li><b>Clinic</b>: Filter by patients assigned a specific <a href="clinics.html">Clinic</a>.</li>
+<li><b>Site</b>: Filter by patients assigned a specific <a href="sites.html">Site</a>. Only visible when <a href="publichealth.html">Public Health</a> is enabled.</li>
+<li><b>Group Families</b>: Group members together. When checked, and all family members are selected, only one reminder will be sent per family, using the <i>multiple patients in one family</i> message template in Setup Recall. </li>
+<li><b>Show Conflicting Types</b>: Only show patients whose recall type conflicts with the procedures on a scheduled recall appointment. For example, it will show prophy patients who have a scheduled appointment with perio procedures. Only applies to perio and prophy recalls. To show, the scheduled appointment must have all procedures associated with the conflicting recall type (e.g., a scheduled perio appointment must have all <i>Procedures on Appointment</i> for the perio recall type). See <a href="recalltypes.html">Recall Types</a>.</li>
+<li><b>Include Reminded</b>: Show patients that have already received reminders, and would otherwise be filtered out according to rules from <a href="recallsetup.html">Setup Recall</a>.</li>
+</ul>
+<p><b>Refresh List</b>: Click to refresh the list based on selected filters.</p>
+<p><b>Set Status</b>: Change the recall status for one or more patients. Highlight one or more patients from the list, select a status from the dropdown, then click <b>Set</b>. </p>
+<p><b>Email From</b>: Select an email address to use for sending email reminders. The default is Practice/Clinic set in <a href="emailsetup.html">Email Setup</a> (for a single practice) or <a href="clinicsetup.html">Clinic List</a> (for clinics). If there is no clinic email, the practice default is used.</p>
+<h2>Recall List Grid</h2>
+<p>The interactive Recall List grid, shows patients due for a recall and their recall information. Customize which columns show in <a href="displayfields.html">Display Fields</a>, Recall List.</p>
+<img src="images/recallListGrid.png" width="897" height="197"/><p class="MarginBottomZero">Columns: </p>
+<ul class="MarginBottomGap">
+<li><b>Due Date</b>: The date the recall type is due. Based off previously completed recall procedures or insurance history. If blank, the patient has never had a recall procedure set complete.</li>
+<li><b>Patient</b>: Name of the patient with recall due.</li>
+<li><b>Age</b>: Patient's age.</li>
+<li><b>Type</b>: Recall type due.</li>
+<li><b>Interval</b>: The length of time between each recall appointment for the recall type.</li>
+<li><b>#Remind</b>: The number of reminders sent since the patient's last recall appointment.</li>
+<li><b>LastRemind</b>: The date the last reminder was sent.</li>
+<li><b>Contact</b>: Displays the patient's <i>Preferred Recall Method</i> (as set in the <a href="patientedit.html">Edit Patient Information</a> window). If no preferred method is selected for the patient, Home Phone is the default. Override the preferred recall contact method with the <i>Use email if</i> setting in Setup Recall.  <ul>
+<li>When <i>Group Families</i> is checked, email addresses listed will be that of the guarantor. Other contact methods will be that of the individual patient.</li>
+<li>Contact abbreviations: Mail = mail postcard, Hm = home phone, Wk = work phone, Cell = wireless, Email address = email, SeeNotes = see notes (commlog or recall note), Text = text message.</li>
+</ul>
+</li>
+<li><b>Status</b>: Use to track recall communication about a patient's unscheduled recall appointment. The status can be changed by double-clicking the patient from the list or double-clicking the <a href="recall.html">Recall</a> grid in the <a href="family.html">Family Module</a>. Status options can be customized in <a href="definitionsrecallunschedstatus.html">Definitions: Recall / Unsched Status</a>.</li>
+<li><b>Note</b>: Administrative note specific to recall list. Entries are deleted every time Recall resets.</li>
+<li><b>WebSched</b>: The progress of a reminder sent using the Web Sched button.  <ul>
+<li>Progress status: Blank = no web sched recall reminder has been sent, Sending = reminder is being sent, Send Failed = web sched reminder failed to send (double-click to view error details).</li>
+</ul>
+</li>
+</ul>
+<p class="MarginBottomZero">Navigation:  </p>
+<ul class="MarginBottomGap">
+<li>Double-click a patient in the list to open the <a href="recall.html">Edit Recall</a> window.</li>
+<li>Right-click a patient to <i>See Family</i>.</li>
+<li>Right-click a patient to <i>See Account</i>.</li>
+<li> When one family member is highlighted, all other family members in the list will highlight in red text.</li>
+</ul>
+<h2>Options</h2>
+<img src="images/recallListOptions.png" width="892" height="59"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Postcard Preview</b>: Preview postcards to send to the selected patients. See Mail Reminders below for more information.</li>
+<li><b>Undo</b>: Only available to users with <a href="permissionssecurityadmin.html">"Security Admin" Permission</a>. Undo the last batch of recalls. Useful when patients were accidentally marked as contacted or the reminders failed to send. The following window will open. Confirm the date to undo recall. Recall notes, statuses, and commlogs will be removed from patient accounts. <br/><img src="images/recallUndo.gif" width="474" height="178" class="ImageInParagraph"/></li>
+<li><b>Single Labels</b>: Print a single address label for each selected patient to the default printer for Labels - Single. When printed, the recall status will change to <i>Mailed Postcard</i>.</li>
+<li><b>Label Preview</b>: Generate and preview a standard sheet of 30 address labels for selected patients. Click Print to print to the default printer for Labels - Sheet. When printed, the recall status will change to <i>Mailed Postcard</i>.</li>
+<li><b>E-Mail</b>: Email the selected patients. See Email Reminders below for more information.</li>
+<li><b>Run Report</b>: Click to generate a query of patient information. A window will open with criteria to select from. Useful if doing a <a href="mailmergeword.html">Mail Merge in Word</a> to send letters.</li>
+<li><b>Print List</b>: Print the entire Recall List.</li>
+<li><b>Go to Family</b>: Select a patient and go to the Family Module.</li>
+<li><b>Go to Account</b>: Select a patient and go to the Account Module.</li>
+<li><b>Comm</b>: Create a commlog for each selected patient. Adding a Recall Commlog counts as a reminder and the patient will be removed from the list.</li>
+<li><b>Sched Patient</b>: Schedule the selected patient's next recall appointment. Patient must be due for a <i>special </i>recall type (e.g., Prophy or Perio). <ul>
+<li>An appointment will be created and sent to the Pinboard. Recall procedures that are not attached to a <i>special</i> recall type will be added to appointments automatically along with the <i>special</i> recall if they are due on or before the same date.</li>
+<li>If the schedule is Day View, the Search function will be brought up. </li>
+<li>If the patient's secondary (or primary if no secondary is assigned) provider has openings after the patient's recall due date, the schedule will move to the first date. The search box will show additional available dates.</li>
+</ul>
+</li>
+<li><b>Sched Family</b>: Schedule recall appointments for all family members due for a <i>special</i> recall type (e.g., Prophy or Perio). This may include family members not in the current list. <ul>
+<li>For each family member due for a <i>special</i> recall type, an appointment will be created and sent to the Pinboard. Recall procedures that are not attached to a <i>special</i> recall type will be added to appointments automatically along with the <i>special</i> recall if they are due on or before the same date. </li>
+<li>If the schedule is Day View, the Search function will be brought up.</li>
+<li>Open Dental will search for openings for all family members' providers starting after the due date for the family member with the furthest out recall due date. </li>
+<li>If there are any available openings after that date, the schedule will move to the first available date. The search box will show additional available dates.</li>
+</ul>
+</li>
+<li><b>Web Sched</b>: When using Web Sched Recall, click to send recall reminders. See Web Sched Recall Reminders below for more information.</li>
+</ul>
+<h2>Reminders</h2>
+<p>Regardless of which method a reminder was sent to a patient, a commlog will be generated with a type of<i> Recall</i>. Once a commlog has been generated, the patient disappears from the list for a specified number of days (set in <a href="recallsetup.html">Setup Recall</a>). After the specified number of days has past, and if the patient has not scheduled an appointment, they reappear on the list for another attempt. After the maximum number of recall reminders have been sent, the patient will no longer reappear on the list. </p>
+<p>To continue sending reminders to patients who have reached the maximum sent, check <b>Include Reminded</b> to populate them on the list.</p>
+<h2>Web Sched Recall Reminders</h2>
+<p>When signed up for Web Sched Recall, email and/or text reminders can be sent manually or automatically. The recall reminder includes a link for the patient to schedule their appointment online. See <a href="webschedrecallsetup.html">Web Sched Recall</a> to set up Web Sched Recall.</p>
+<p>If Web Sched Recall messages have not been sent in three days, an <a href="alerts.html">Alert</a> will display.</p>
+<p class="MarginBottomZero">To manually send Web Sched Recall messages:  </p>
+<ol class="MarginBottomGap">
+<li>Select patients to send a recall reminder. <ul>
+<li> If no patients are manually selected, patients with email or text message as their <i>Preferred Recall Method</i> are automatically selected.</li>
+<li>If <i>Group Families</i> is checked, the guarantor's email/phone is used, even if only one patient from the family is selected. </li>
+</ul>
+</li>
+<li>Click <b>Web Sched</b>.</li>
+<li>A confirmation message will display. Click OK to send the recall reminders to the <a href="authrep.html">Authorized Representatives</a> of the selected patients.  <ul>
+<li>When multiple family members are sent a web sched recall reminder, the message will be aggregated into one and a commlog will be generated for each patient.</li>
+<li>Only openings available within the next three months are considered. If no openings are available, an alert will appear.</li>
+</ul>
+</li>
+<li>The selected patients are sent a text message, email, or both, depending on if a valid email address and wireless phone number are entered for the patient. </li>
+</ol>
+<p>Also see <a href="webschedrecallsees.html">Web Sched Recall: What Patient Sees</a>.</p>
+<h2>Automatic Reminders</h2>
+<p>To send automated text message or email recall reminders without allowing patients to schedule their appointments online, follow the steps below. <div class="Note">Note: <ul>
+<li>This method uses a portion of the Web Sched Recall system, but does not require the practice to be signed up for that service. The only fees incurred would be for the text messages sent.</li>
+<li>Users will still need to check the recall list periodically, as some patients may not meet the criteria for automated reminders. Users can verify that reminders are going out by looking at the Reminders Tab where the automated reminders sent will show.</li>
+</ul>
+</div>
+</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Remove all [URL] and [FamilyListURLs] tags from all Web Sched messages in <a href="recallsetup.html">Recall Setup</a>. Customize the messages to indicate how patients should contact the office to schedule.</li>
+<li>Configure the <i>Recall Types</i>, <i>Send Email Messages Automatically To</i> and <i>Send Text Messages Automatically To</i> options from <a href="webschedrecallsetup.html">Web Sched Recall</a>, but do not sign up for the eService.</li>
+<li>Set Start and End times for Automated eServices Schedule from <a href="eservicesmisctab.html">eServices Misc</a> to determine when recall notifications will be sent. </li>
+<li>Wait 10 minutes or restart the eConnector. Verify reminders are sending by going to the Reminders tab in the Recall List.</li>
+</ol>
+<p>When automatic reminders are sent, patients are removed from the recall list for the specified number of days. If the patient has not scheduled their appointment before the specified number of days is up, they are put back on the list for another reminder. Because these reminders are automatic, users may not see the patient on the list before their next reminder is sent. </p>
+<p class="MarginBottomZero">Once the maximum number of automated reminders have been sent for a patient, they must be manually contacted instead. To view patients who need to be contacted manually (e.g., by phone):  </p>
+<ol class="MarginBottomGap">
+<li>In the Recall List, check <b>Show Reminded</b>.</li>
+<li>Set the <b>Show Reminders</b> dropdown to the maximum number of reminders allowed.  <ul>
+<li>Users may need to do this for multiple reminder numbers as the patient may have already been manually contacted.</li>
+</ul>
+</li>
+<li>Click <b>Refresh</b>. Patients who meet the criteria and have had a reminder sent will list.</li>
+<li>Contact the patient and update their recall status.</li>
+</ol>
+<p><div class="Note">Note: When an automatic recall reminder is sent to an invalid phone number, the message will fail and the patient will remain on the Recall List. They will not be marked as reminded and they will be queued for another reminder the following day. Open Dental will continue to attempt to send automatic reminders each day until one or more of the following occurs:  <ul>
+<li>The patient is manually marked as reminded (e.g., Mailed Postcard).</li>
+<li>The patient's recall is disabled.</li>
+<li>The patient's phone number or email is updated and they are successfully sent an automatic reminder.</li>
+<li>The patient's recall due date is outside of the default date range.</li>
+<li>Enable <i>Exclude Automated Msgs</i> in <a href="patientedit.html">Edit Patient Information</a>. </li>
+</ul>
+</div>
+</p>
+<h2>Emailed Reminders</h2>
+<p>Manually email recall reminders from the recall list. Regular email and text messaging are not secure methods of sending PHI. </p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Select an email address to use for sending email in the <b>Email From</b> dropdown menu. </li>
+<li>Select patients to send a recall reminder. If no patients are manually selected, patients with email as their <i>Preferred Recall Method</i> (set in the Edit Patient Information window) are automatically selected.</li>
+<li>Click <b>Email</b>. </li>
+<li>A confirmation message will display. Click OK to send the recall reminders to the selected patients. <ul>
+<li> If <i>Group Families</i> is checked, the guarantor email is used, even if only one patient from the family is selected.</li>
+</ul>
+</li>
+<li>A record of the email is saved to the patient's progress notes.</li>
+</ol>
+<h2>Phone Reminders</h2>
+<p>For patients that prefer recall reminders by phone, contact the patient using the phone number listed.</p>
+<p>If an appointment is scheduled click <b>Sched Patient</b> or <b>Sched Family</b>. Recall appointments will be created, with recall procedures attached, and placed on the pinboard to be moved to an operatory on the schedule. The calendar will not jump to the recall due date, so remember the appointment due date to locate it on the schedule.</p>
+<p>If no appointment is scheduled click <b>Comm</b> to enter a custom note or highlight the patient from the list and select a recall status from the Set Status dropdown that corresponds with the result of the phone call.</p>
+<h2>Postcard Reminders</h2>
+<p class="MarginBottomZero">For patients that prefer mailed postcard reminders: </p>
+<ol class="MarginBottomGap">
+<li>Check <b>Group Families</b> to print one postcard for the entire family.</li>
+<li>Select patients to create a postcard for.  <ul>
+<li>If no patients are manually selected, every patient who does not have a <i>Preferred Recall Method</i> set, or whose Preferred Recall Method is Mail are automatically selected.</li>
+</ul>
+</li>
+<li>Click <b>Postcard Preview</b>. A preview of the postcards for all selected patients is generated.</li>
+<li>In the Preview window, click <b>Print</b> to send the postcards to the <a href="printersetup.html">Default Printer</a> for postcards.</li>
+<li>If the postcards printed successfully, click Yes on the next prompt to finish, otherwise click No to start over.</li>
+</ol>
+<p>To customize the wording of Recall Postcards, see <a href="recallsetup.html">Setup Recall</a>.</p>
+<h2>Troubleshooting</h2>
+<p><b>When trying to send Web Sched Recall emails, I receive a message that emails can't be sent because there are no available time slots.</b></p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Verify that all setup options for Web Sched Recall are complete and accurate. </li>
+<li>Verify the provider's schedule extend far enough into the future.</li>
+<li>Verify the operatories are correctly marked as <i>Is Web Sched</i>.</li>
+</ul>
+<p><b>Why might a patient not show in the recall list?</b></p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Patient already has a recall appointment scheduled.</li>
+<li>Patient has already received a reminder. All commlog entries with a type of 'Recall' are considered reminders.</li>
+<li>It has not been long enough since their last reminder.</li>
+<li>The date range does not go back far enough. Leave the start date blank to include patients who have never had a prophy or perio exam.</li>
+<li>The patient may be listed but not sorted as expected. For example, when grouped by family patients are sorted by the last name of guarantor, with associated family members underneath.</li>
+<li>Check that the correct recall types are set to show up in the recall list. See Recall List Setup.</li>
+<li>Patient status must be <i>Patient</i>.</li>
+<li>The patient's recall has been disabled.</li>
+<li> Patient has an appointment that was never marked complete so it is considered <i>scheduled</i>. Check their progress notes to locate it.</li>
+</ul>
+<p><b>Why might patients not be removed from the Recall List even though I have Automatic Reminders turned on?</b></p>
+<p>The <i>Send Text Messages Automatically To</i> and <i>Send Email Messages Automatically To</i> settings may not be enabled in <a href="webschedrecallsetup.html">Web Sched Recall</a>.</p>
+<p>A Web Sched URL is included in the Automated Reminder but Operatories and schedules are not set up correctly, so there is nowhere to schedule the appointment. If there are no Web Sched Recall openings and there is Web Sched URL in the Automated Reminder, the recall text or email will not go out and the patient will need to be contacted another way.</p>
+</div>
+</div>
+</body>
+</html>```

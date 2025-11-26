@@ -1,0 +1,98 @@
+# File: ./www.opendental.com/manual/patientformsimport.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Import Patient Forms and Medical Histories</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('patientformsimport','patientform','toolbar','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/patientformsimport.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/patientformsimport.html" >v24.2</option><option value="https://www.opendental.com/manual241/patientformsimport.html" >v24.1</option><option value="https://www.opendental.com/manual233/patientformsimport.html" >v23.3</option><option value="https://www.opendental.com/manual232/patientformsimport.html" >v23.2</option><option value="https://www.opendental.com/manual231/patientformsimport.html" >v23.1</option><option value="https://www.opendental.com/manual224/patientformsimport.html" >v22.4</option><option value="https://www.opendental.com/manual223/patientformsimport.html" >v22.3</option><option value="https://www.opendental.com/manual222/patientformsimport.html" >v22.2</option><option value="https://www.opendental.com/manual221/patientformsimport.html" >v22.1</option><option value="https://www.opendental.com/manual214/patientformsimport.html" >v21.4</option><option value="https://www.opendental.com/manual213/patientformsimport.html" >v21.3</option><option value="https://www.opendental.com/manual212/patientformsimport.html" >v21.2</option><option value="https://www.opendental.com/manual211/patientformsimport.html" >v21.1</option><option value="https://www.opendental.com/manual205/patientformsimport.html" >v20.5</option><option value="https://www.opendental.com/manual204/patientformsimport.html" >v20.4</option><option value="https://www.opendental.com/manual203/patientformsimport.html" >v20.3</option><option value="https://www.opendental.com/manual202/patientformsimport.html" >v20.2</option><option value="https://www.opendental.com/manual201/patientformsimport.html" >v20.1</option><option value="https://www.opendental.com/manual194/patientformsimport.html" >v19.4</option><option value="https://www.opendental.com/manual193/patientformsimport.html" >v19.3</option><option value="https://www.opendental.com/manual192/patientformsimport.html" >v19.2</option><option value="https://www.opendental.com/manual191/patientformsimport.html" >v19.1</option><option value="https://www.opendental.com/manual184/patientformsimport.html" >v18.4</option><option value="https://www.opendental.com/manual183/patientformsimport.html" >v18.3</option><option value="https://www.opendental.com/manual182/patientformsimport.html" >v18.2</option><option value="https://www.opendental.com/manual181/patientformsimport.html" >v18.1</option><option value="https://www.opendental.com/manual174/patientformsimport.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Import Patient Forms and Medical Histories</p></div>
+<div class="GeneralPageContent">
+<p>When a patient fills out a registration form or a medical history form, the data can be imported into the Open Dental database. </p>
+<p>In <a href="patientform.html">Patient Forms</a>, highlight a form, then click <b>Import</b>.</p>
+<img src="images/sheetImport.gif" width="890" height="692"/><p>This works for forms filled out via the <a href="kiosk.html">Kiosk Manager</a>, <a href="../site/webforms.html">Web Forms</a>, or <a href="../site/eclipboard.html">eClipboard</a>. The import process differs slightly depending on the sheet type.</p>
+<h2>Import a Patient Form</h2>
+<p>This window is a review of information on the completed form. Always verify any data with the patient and make sure the correct rows are flagged before you import. </p>
+<p class="MarginBottomZero">Columns:  </p>
+<ul class="MarginBottomGap">
+<li><b>FieldName</b>: The name of the field in the database and on the form.</li>
+<li><b>Current Value</b>: Shows a value if information already exists in Open Dental for this field.</li>
+<li><b>Entered Value</b>: What the patient entered on the form. If a value is in red bold text, it cannot be imported.</li>
+<li><b>Import Value</b>: What value, if any, Open Dental has determined should be imported. To change a value, double-click on the cell.</li>
+<li><b>Do Import</b>: If an X appears, this field is marked for import. Single click on a cell to toggle the X on/off. When marked for import, the entire row will be grey.</li>
+</ul>
+<p>When <b>[double click to pick]</b> displays in red, the information is too complex for Open Dental to automatically translate. Double-click in the cell to specify the information to import. For additional details on complex fields, see Complex Fields below. </p>
+<p>When the information has been reviewed, click <b>Import</b>. The selected fields will import into Open Dental and a <i>Done</i> message will display. </p>
+<h2>Import a Medical History</h2>
+<p>Medical history import values are represented by three states: yes, no and unknown. Empty columns represent unknown, or items which the patient left blank.</p>
+<img src="images/sheetImportMedical.gif" width="753" height="278"/><p>To change import status, double-click in the Import Value cell. </p>
+<p><b>Medications</b>: If a patient enters new medications, you will always have to select a value from the <a href="medicationmaster.html">Medications List</a>. By default, the medication entered by the patient will show in the Search box. Watch for misspellings, as the search will look for an exact match. Select the correct medication and it will appear in the FieldName column under Medications.</p>
+<p class="MarginBottomZero"><b>Medical history import logic</b>: </p>
+<ul class="MarginBottomGap">
+<li>If the Current Value = Y and Import Value = N <ul>
+<li>If imported, item status will be set to inactive. It will not be deleted.<br/><div class="Note">Note: For medication, the end date will be set as the current date. It will not be marked inactive until the following day.</div>
+</li>
+</ul>
+</li>
+<li>If Current Value = N and Import Value = Y <ul>
+<li>If imported, the item will be made active.</li>
+</ul>
+</li>
+<li>New items will never import with an inactive status.</li>
+</ul>
+<h2>Complex Fields</h2>
+<p class="MarginBottomZero"><b>Insurance Policies</b>: Only primary and secondary insurance policies can be imported, and the form must contain the following insurance fields:  </p>
+<ul class="MarginBottomGap">
+<li>Relationship</li>
+<li>Subscriber</li>
+<li>SubscriberID</li>
+<li>CarrierName</li>
+<li>CarrierPhone</li>
+</ul>
+<p><b>Subscriber</b>: Subscribers must be verified and added manually. Double-click the row to open the Select Subscriber window. If the subscriber does not exist in Open Dental, cancel the import and add them.</p>
+<p><b>Insurance Carrier Name and Phone</b>: Insurance carriers must be added manually. Double-click the row to open the Carriers window. New carriers can be added directly from the Carriers window. By default, the search will populate with the name and phone values entered by the patient.</p>
+<p class="MarginBottomZero"><b>New Insurance Plan</b>: If a new insurance plan was flagged for import, the <a href="insplanlist.html">Insurance Plans</a> window will open, and the search filters will populate with the import values. This lets you verify the plan does not already exist. </p>
+<ul class="MarginBottomGap">
+<li>To create a new plan using the import values, click Blank.</li>
+<li>To use a plan that already exists, select it and click OK. The import process will verify that all import values exactly match the existing plan's information. If a value does not exactly match, a message will popup, and you will have the option to use the existing plans value (click Yes), or create a new Blank plan with the import values (click No). Click Cancel to safely exit out of the import process and return to the Import window.</li>
+</ul>
+<p><b>Insurance Order</b>: Importing an insurance policy does not increase the order to secondary, tertiary, etc. A primary insurance import will overwrite primary insurance policies, and secondary insurance import will overwrite secondary insurance policies. For example, a patient has BCBS for primary insurance and they want to add a new Met Life policy as secondary. The new Met Life information must be entered into the secondary insurance fields on the form in order to be imported into the secondary insurance fields in Open Dental. If entered in the primary insurance fields, the import will overwrite the primary insurance instead (BCBS).</p>
+<p class="MarginBottomZero"><b>Address fields</b>: If the preference <i>Verify Addresses with USPS</i> is enabled, the address is verified when importing.  </p>
+<ul class="MarginBottomGap">
+<li>If a recommended address is found, the Address Compare opens. Click Yes to import the recommended address. If No is clicked, an address is not imported</li>
+<li>If no recommended address is found, a warning is show indicating <i>Failed to verify address with USPS</i>. Click Yes to continue importing the address. Click No to return the import window. To proceed with importing information other than the address, uncheck <i>Do Import </i>for any address lines. </li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

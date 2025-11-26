@@ -1,0 +1,61 @@
+# File: ./www.opendental.com/manual232/oospread.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - OpenOffice.org Spreadsheet</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('oospread','queryoverview','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/oospread.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/oospread.html" >v24.2</option><option value="https://www.opendental.com/manual241/oospread.html" >v24.1</option><option value="https://www.opendental.com/manual233/oospread.html" >v23.3</option><option value="https://www.opendental.com/manual232/oospread.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/oospread.html" >v23.1</option><option value="https://www.opendental.com/manual224/oospread.html" >v22.4</option><option value="https://www.opendental.com/manual223/oospread.html" >v22.3</option><option value="https://www.opendental.com/manual222/oospread.html" >v22.2</option><option value="https://www.opendental.com/manual221/oospread.html" >v22.1</option><option value="https://www.opendental.com/manual214/oospread.html" >v21.4</option><option value="https://www.opendental.com/manual213/oospread.html" >v21.3</option><option value="https://www.opendental.com/manual212/oospread.html" >v21.2</option><option value="https://www.opendental.com/manual211/oospread.html" >v21.1</option><option value="https://www.opendental.com/manual205/oospread.html" >v20.5</option><option value="https://www.opendental.com/manual204/oospread.html" >v20.4</option><option value="https://www.opendental.com/manual203/oospread.html" >v20.3</option><option value="https://www.opendental.com/manual202/oospread.html" >v20.2</option><option value="https://www.opendental.com/manual201/oospread.html" >v20.1</option><option value="https://www.opendental.com/manual194/oospread.html" >v19.4</option><option value="https://www.opendental.com/manual193/oospread.html" >v19.3</option><option value="https://www.opendental.com/manual192/oospread.html" >v19.2</option><option value="https://www.opendental.com/manual191/oospread.html" >v19.1</option><option value="https://www.opendental.com/manual184/oospread.html" >v18.4</option><option value="https://www.opendental.com/manual183/oospread.html" >v18.3</option><option value="https://www.opendental.com/manual182/oospread.html" >v18.2</option><option value="https://www.opendental.com/manual181/oospread.html" >v18.1</option><option value="https://www.opendental.com/manual174/oospread.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>OpenOffice.org Spreadsheet</p></div>
+<div class="GeneralPageContent">
+<p><span style="color:red">These steps are provided as a courtesy. Open Dental support technicians do not assist with Open Office Form Spreadsheets.</span></p>
+<p>Users have a couple of options for using data in an <a href="http://www.openoffice.org/">OpenOffice.org</a> spreadsheet, the Free alternative to Word/Excel. Users can either perform <a href="queryoverview.html">User Query</a> and export the result, or link directly to the database.</p>
+<p>The instructions provided may be for a different version of OpenOffice than in use by your office, so steps may differ depending on the version of OpenOffice.</p>
+<h2>Query Export</h2>
+<p>Users can do a query from within Open Dental and export the resulting table. It will normally be saved as a text file in the OpenDentalExports folder on the local <b>C:\</b> drive. The first row of the text file will contain the names of the columns, and the fields are separated by tabs. This makes it very easy to open in OpenOffice.org. First, open a new Text Document. Select Tools then Data Sources.</p>
+<img src="images/ooDataSource.gif" width="693" height="462"/><p>Click <b>New Data Source</b> at the top and name the data source. Set the type to <i>Text</i> Click Next. </p>
+<img src="images/ooDataSourcePath.gif" width="693" height="461"/><p>Select the OpenDentalExports folder (or other folder the query text file has been saved) as the <i>Path to Text Files</i>using the <b>Browse</b> button to the right. Change the field separator type to <i>{Tab}</i>. Users can also select which tables (files) they want to be made available from the ones on the list.</p>
+<p>Click <b>Next</b> to proceed with final steps and saving the database.</p>
+<h2>Direct Link</h2>
+<p>Another way to use the data is to directly link to the database. Users would not normally need to do this since the text export is simpler, but here are instructions if needed. First, set up the ODBC data source on the computer where the data is accessed. Then, open a new Text Document and the Data Sources as shown above.</p>
+<p>This time, select the database type as ODBC. Then use the search button at the right and select Open Dental from the list.</p>
+<h2>Inserting Data into the Spreadsheet</h2>
+<p>If opening a text file, select File and Open.</p>
+<img src="images/ooOpenTextFile.gif" width="915" height="475"/><p>First, change the file type to <i>Text CSV</i>. Then select the file to open and click <b>Open</b>.</p>
+<p>Another alternative for either text file or database link is to view the data sources as shown below by selecting View then Data Sources, or pressing F4.</p>
+<img src="images/ooSpreadsheet.png" width="915" height="481"/><p> The top of the window shows text file and ODBC data sources, which are browsable. Click a table to preview data. The bottom of the window is the original spreadsheet. </p>
+<p>To move data from the data source table to the spreadsheet, select the top-left blank cell of the table, this will select all cells of data, and drag to the spreadsheet below. Users can now manipulate the data from the spreadsheet.</p>
+</div>
+</div>
+</body>
+</html>```

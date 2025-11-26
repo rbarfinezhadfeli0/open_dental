@@ -1,0 +1,171 @@
+# File: ./www.opendental.com/manual232/timecardsetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Time Card Setup</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('timecardsetup','+manage','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/timecardsetup.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/timecardsetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/timecardsetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/timecardsetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/timecardsetup.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/timecardsetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/timecardsetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/timecardsetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/timecardsetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/timecardsetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/timecardsetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/timecardsetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/timecardsetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/timecardsetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/timecardsetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/timecardsetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/timecardsetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/timecardsetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/timecardsetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/timecardsetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/timecardsetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/timecardsetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/timecardsetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/timecardsetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/timecardsetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/timecardsetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/timecardsetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/timecardsetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Time Card Setup</p></div>
+<div class="GeneralPageContent">
+<p>Define pay periods, set default time card options, enter ADP company codes, and set up rule for clock in time, overtime, and differential hours from Time Card Setup.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Manage, Time Cards. </p>
+<img src="images/timecardSetup.png" width="915" height="385"/><p>Alternatively, from <a href="timecardmanage.html">Manage Time Cards</a>, click Setup.</p>
+<p>Pay periods must exist for the current date in order for employees to use the <a href="timeclock.html">Time Clock</a>.</p>
+<h2>Pay Periods</h2>
+<p>On the left, is a section listing recent and currently active pay periods. The current pay period is highlighted in blue in the grid.</p>
+<p class="MarginBottomZero"><b>Hide pay periods older than 6 months</b>: Checked by default. Determines which pay periods show in the Pay Periods grid.  </p>
+<ul class="MarginBottomGap">
+<li>Checked: Hides all pay periods older than six months from today's date, based on the pay period's start date.</li>
+<li>Unchecked: Shows all pay periods regardless of age.</li>
+</ul>
+<p><b>Pay Periods</b>: This grid shows pay periods that have been created. Double-click an existing pay period to edit. The Edit Pay Period window (see below) will open.</p>
+<p class="MarginBottomZero"><b>Add One</b>: Click to generate a single pay period. The Edit Pay Period window will open.<br/><img src="images/payPeriodEdit.png" width="425" height="212" class="ImageInParagraph"/></p>
+<ul class="MarginBottomGap">
+<li><b>Start Date</b>: Enter the date the pay period begins. This should not overlap with other pay periods.</li>
+<li><b>End Date</b>: Enter the date the pay period period ends. This should not overlap with other pay periods.</li>
+<li><b>Paycheck Date</b>: Enter the date employee paychecks will be issued after the pay period is complete.</li>
+<li><b>Delete</b>: Click to remove this pay period. </li>
+<li>Click <b>OK</b> to add the pay period or any changes.</li>
+</ul>
+<p><b>Generate Many</b>: Click to create several pay periods at once. The Pay Period Manager will open.</p>
+<img src="images/payPeriodManager.png" width="660" height="590"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Start Date</b>: Select the first pay period that will be generated. The default is today's date unless a pay period already exists for today. In that case, the start date will default to one day after the last pay period's end date.</li>
+<li><b>Interval</b>: Select the frequency and number of pay periods to generate. <ul>
+<li>Weekly: Pay periods will last 7 days.</li>
+<li>Monthly (default): Pay periods will last one month.</li>
+<li>Bi-Weekly: Pay periods will last 14 days.</li>
+<li>Semi-Monthly: Pay periods will happen twice a month based on Semi-Monthly Settings below. <ul>
+<li>If using <i>ADP Run</i>, Semi-Monthly is not currently supported.</li>
+</ul>
+</li>
+<li># Pay Periods to Generate: Type the total number of pay periods to create based on the interval selected above.</li>
+</ul>
+</li>
+<li><b>Semi-Monthly Settings</b>: Enter additional pay period settings if <i>Semi-Monthly</i> is the selected Interval. <ul>
+<li>Period 1 Day: Enter the day of the month used for the first pay period of the month. <ul>
+<li>When <i>End Date</i> is selected, this is the day the pay period ends on.</li>
+<li>When <i>Pay Date</i> is selected, this is the paycheck date for the pay period.</li>
+</ul>
+</li>
+<li>Period 2 Day: Enter the day of the month used for the second pay period of the month. <ul>
+<li>When <i>End Date</i> is selected, this is the day the pay period ends.</li>
+<li>When <i>Pay Date</i> is selected, this is the <i>Paycheck Date</i> for the pay period.</li>
+</ul>
+</li>
+<li>End Date: Select to set Period Days as the pay period End Date, and use <i># Days After Pay Period</i> setting to determine Paycheck Date.</li>
+<li>Pay Date: Select to use the Period Days as the the Paycheck Date.</li>
+<li>Last Day: Select the last day of the month for the second pay period. When checked, Period 2 Day is disabled.</li>
+</ul>
+</li>
+<li><b>Pay Day</b>: Select the method of determining Paycheck Dates (i.e., the day the employees are paid). There are two options. <ul>
+<li>Day of Week: Set the pay day to a specified day of the week. Only available under certain conditions. Click the dropdown to select a day of week. <ul>
+<li>To enable this option: <ul>
+<li>Use any interval other than Semi-Monthly.</li>
+<li>Set the # Days After Pay Period to 0. </li>
+</ul>
+</li>
+</ul>
+The paycheck date will be the first instance of the day after the end date (e.g., the first Tuesday, Monday, etc. after the pay period end date).</li>
+<li># Days After Pay Period: Set the paycheck date to a specific number of days after the end date.  <ul>
+<li><b>Exclude Weekends</b>: Check to force the paycheck date to a weekday. This will change the paycheck date even if using Semi-Monthly and setting the Pay Date if the Pay Date falls on a weekend (i.e., Saturday or Sunday). This may also affect the Start and End Dates of the Pay Period. Paycheck dates can be updated manually as needed by double-clicking a generated pay period. If checked, choose to <b>Pay Before Weekend</b> or <b>Pay After Weekend</b>.</li>
+</ul>
+</li>
+</ul>
+</li>
+ In the screenshot above, employees will be paid five days after the pay period end date, as long as it doesn't fall on a weekend. If it does, employees will be paid on the Friday before.  <li><b>Generate</b>: After setting pay period criteria, click to create pay periods.</li>
+<li><b>Pay Periods Grid</b>: Lists all newly generated pay periods.</li>
+<li>Click <b>OK</b> to save generated pay periods. </li>
+</ul>
+<h2>Rules</h2>
+<p>On the right side is the Rules grid. Automated time card rules are used for clock-in time, overtime, and differential hours in an employee time card. For example, the most common rule calculates overtime for all employees who work more than 8 hours a day. Rules can apply to all or individual employees.</p>
+<p class="MarginBottomZero"><b>Rules Grid</b>: Displays existing time card rules. Times are indicated in a 24-hour format (e.g., 5:00 PM is 17:00). Double-click an existing time card rule to edit. The Time Card Rule Edit window (see below) will open. </p>
+<ul class="MarginBottomGap">
+<li>Employee: Name of employee the time card rule applies to. <i>All Employees</i> indicates rule applies to anyone using the Time Clock.</li>
+<li>Rate 2 before x Time: Indicates employee receives their differential rate if clocked in before this time. </li>
+<li>Rate 2 after x Time: Indicates employee receives their differential rate if clocked in after this time.</li>
+<li>OT after x Hours: Indicates the number of hours an employee works in a day before overtime is calculated. </li>
+<li>Min Clock In Time: Indicates the earliest time the employee is allowed to clock in.</li>
+<li>Is OT Exempt: Indicates if an employee is exempt from overtime calculations.</li>
+<li>Has Weekend Rate 3: Indicates if employee is eligible for weekend rate. </li>
+</ul>
+<p><b>Add</b>: Click to add a new time card rule. The Time Card Rule Edit window will open.</p>
+<img src="images/timeCardRule.png" width="327" height="483"/><p class="MarginBottomZero"> Times can be entered in AM/PM or 24-hour format. </p>
+<ul class="MarginBottomGap">
+<li><b>Overtime if over Hours Per Day</b>: Enter the number of hours an employee can work per day before overtime is calculated.</li>
+<li><b>Rate2 Hours</b>: Enter the time that will be used to determine differential hours. These fields are in 24 hour format.  <ul>
+<li><b>Before Time of Day</b>: Enter a time to indicate hours worked before this time will be marked differential. Click <b>6 AM</b> to insert 6:00 AM as the differential time.</li>
+<li><b>After Time of Day</b>: Enter a time to indicate hours worked after this time will be marked differential. Click <b>5 PM</b> to insert 5:00 PM. </li>
+</ul>
+</li>
+<li><b>Use Rate3 for Weekend Hours</b>: Check to mark employees as eligible for the weekend hours rate.</li>
+<li><b>Is Overtime Exempt</b>: Check to mark employee as exempt from overtime calculations.</li>
+<li><b>Earliest Clock in Time</b>: Enter the earliest time an employee is allowed to clock in. Attempts to clock in before this time will trigger an alert indicating when the employee will be allowed to clock in. </li>
+<li><b>Employee</b>: Select the employee(s) to apply the rule. Select <i>All Employees</i> to apply the rule to everyone. Ctrl + click to select multiple employees. If using clinics, <i>Headquarters</i> must be selected to see individual employees.  <ul>
+<li>Each employee can only have one of each rule type that applies to them (one overtime rule and one AM/PM differential rule). </li>
+<li>If multiple rules of the same type apply to an employee, users will receive errors when attempting to close Time Card Setup or calculating.</li>
+<li>If multiple employees are selected, a rule will be created for each individual employee. If <i>All Employees</i> is selected, one rule will be created.</li>
+</ul>
+</li>
+<li><b>Delete</b>: Click to remove the time card rule. This rule will no longer apply when running time card calculations.</li>
+<li>Click <b>OK</b> to add the time card rule or save any changes.</li>
+</ul>
+<h2>ADP and Options</h2>
+<p>Additional options are at the bottom of the Time Card Setup window.</p>
+<p><b>ADPRunIID</b>: If using ADP Run, input IID as supplied by ADP. </p>
+<p><b>ADP Company Code</b>: If using ADP Workforce Now for payroll, enter the practice's company code as supplied by ADP. This code will show when a user clicks Export ADP in <a href="timecardmanage.html">Manage Time Cards</a>. To include the employee name when exporting, check the Manage Module Preference, <i>ADP export includes employee name</i>.</p>
+<p class="MarginBottomZero"><b>Options</b>: Set additional time card options. </p>
+<ul class="MarginBottomGap">
+<li><b>Use decimal format rather than colon format</b>: Determines the time format in the time card. Regardless of the option chosen, total regular and overtime hours are displayed in both colon and decimal format.  <ul>
+<li>Checked: Display total, daily, and weekly times as a decimal.</li>
+<li>Unchecked: Display the totals in colon format.</li>
+<li>Colon format in hours: minutes (e.g., 2:30) equals decimal format of 2.5. To convert back and forth, divide or multiply the last number by 60. 30/60=.5, or .5*60=30. This works for seconds as well as minutes.</li>
+<li>Rounding totals: Seconds are not shown in the grid, but are included in the math. A time card that displays minutes rather than decimals may show a total that is greater than if user adds all the times together.</li>
+</ul>
+</li>
+<li><b>Calc Daily button makes adjustments if breaks over 30 minutes</b>: Determines how break time that exceeds 30 minutes is handled when Daily totals are calculated. This option is ignored if the <a href="preferences.html">Preference</a>, <i>Allow paid 30 minute breaks</i> is unchecked. <ul>
+<li>Checked: When a break exceeds 30 minutes, subtract excess time from the time card using an adjustment. Excess time will be unpaid.</li>
+<li>Unchecked: Include all break time, regardless of length, as paid time.</li>
+</ul>
+</li>
+<li><b>Use seconds on time card when using colon format</b>: Determines whether seconds show on time cards (colon format only). <ul>
+<li>Check: Display seconds on time cards (e.g., 12:04:11). Useful when precise calculation of employee hours is necessary.</li>
+<li>Unchecked (default): Only display hours and minutes on time cards (e.g., 12:04). </li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

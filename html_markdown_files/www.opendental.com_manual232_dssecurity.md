@@ -1,0 +1,71 @@
+# File: ./www.opendental.com/manual232/dssecurity.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Dental School Security</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('dssecurity','security','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/dssecurity.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/dssecurity.html" >v24.2</option><option value="https://www.opendental.com/manual241/dssecurity.html" >v24.1</option><option value="https://www.opendental.com/manual233/dssecurity.html" >v23.3</option><option value="https://www.opendental.com/manual232/dssecurity.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/dssecurity.html" >v23.1</option><option value="https://www.opendental.com/manual224/dssecurity.html" >v22.4</option><option value="https://www.opendental.com/manual223/dssecurity.html" >v22.3</option><option value="https://www.opendental.com/manual222/dssecurity.html" >v22.2</option><option value="https://www.opendental.com/manual221/dssecurity.html" >v22.1</option><option value="https://www.opendental.com/manual214/dssecurity.html" >v21.4</option><option value="https://www.opendental.com/manual213/dssecurity.html" >v21.3</option><option value="https://www.opendental.com/manual212/dssecurity.html" >v21.2</option><option value="https://www.opendental.com/manual211/dssecurity.html" >v21.1</option><option value="https://www.opendental.com/manual205/dssecurity.html" >v20.5</option><option value="https://www.opendental.com/manual204/dssecurity.html" >v20.4</option><option value="https://www.opendental.com/manual203/dssecurity.html" >v20.3</option><option value="https://www.opendental.com/manual202/dssecurity.html" >v20.2</option><option value="https://www.opendental.com/manual201/dssecurity.html" >v20.1</option><option value="https://www.opendental.com/manual194/dssecurity.html" >v19.4</option><option value="https://www.opendental.com/manual193/dssecurity.html" >v19.3</option><option value="https://www.opendental.com/manual192/dssecurity.html" >v19.2</option><option value="https://www.opendental.com/manual191/dssecurity.html" >v19.1</option><option value="https://www.opendental.com/manual184/dssecurity.html" >v18.4</option><option value="https://www.opendental.com/manual183/dssecurity.html" >v18.3</option><option value="https://www.opendental.com/manual182/dssecurity.html" >v18.2</option><option value="https://www.opendental.com/manual181/dssecurity.html" >v18.1</option><option value="https://www.opendental.com/manual174/dssecurity.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Dental School Security</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Security.</p>
+<img src="images/dsSecurity.png" width="915" height="617"/><p>For <a href="dentalschools.html">Dental Schools</a>, students, instructors, and other providers are assigned to <a href="securityusergroups.html">User Groups</a>, and each group has specific security <a href="permissions.html">Permissions</a> that determine a user's access to various features.</p>
+<h2>User Groups and Security Permissions</h2>
+<p>Create at least three types of user groups and carefully consider which <a href="security.html">Security</a> permissions each group should have.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Admin users</b>: Typically have access to most if not all permissions, including: <ul>
+<li><i>Security Admin</i>: Define users, user groups, security permissions.</li>
+<li><i>Setup</i>: Access to setup functions, including dental courses and classes.</li>
+<li><i>Instructor Edit</i>: Create and edit providers that are instructors.</li>
+<li><i>Student Edit</i>: Create and edit providers that are students.</li>
+<li><i>Admin Evaluation Edit</i>: View and edit student evaluations; cannot create.</li>
+</ul>
+</li>
+<li><b>Instructors</b>: All instructors have the ability to create student evaluations; this is not related to a security permission. To set up evaluations, the instructor user group should have the <i>Setup</i> security permission. </li>
+<li><b>Students</b>: Students should not have access to permissions that involve system setup or security.</li>
+</ul>
+<p>To create a user group and assign security permissions, see <a href="securityusergroups.html">User Group</a>.</p>
+<h2>Assign Students and Instructors a User Group</h2>
+<p>After creating user groups, assign the default student and instructor groups in <a href="dsusergroupdefaults.html">Dental School Setup</a>. This determines the user group assignment when adding each new students and instructors.</p>
+<h2>User names and passwords</h2>
+<p class="MarginBottomZero">Each student, instructor, and other providers need a unique user name and password to <a href="securitylogin.html">Log On</a> to Open Dental. These are assigned when adding the providers: </p>
+<ul class="MarginBottomGap">
+<li>For instructors, see <a href="dsinstructors.html">Dental School Instructors</a>.</li>
+<li>For students, see <a href="dsstudents.html">Dental School Students</a>.</li>
+<li>For other providers, see <a href="dsproviders.html">Dental School Providers</a>.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

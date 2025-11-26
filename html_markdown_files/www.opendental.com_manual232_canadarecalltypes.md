@@ -1,0 +1,48 @@
+# File: ./www.opendental.com/manual232/canadarecalltypes.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Canada Recall Types</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('canadarecalltypes','canada','countries','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/canadarecalltypes.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/canadarecalltypes.html" >v24.2</option><option value="https://www.opendental.com/manual241/canadarecalltypes.html" >v24.1</option><option value="https://www.opendental.com/manual233/canadarecalltypes.html" >v23.3</option><option value="https://www.opendental.com/manual232/canadarecalltypes.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/canadarecalltypes.html" >v23.1</option><option value="https://www.opendental.com/manual224/canadarecalltypes.html" >v22.4</option><option value="https://www.opendental.com/manual223/canadarecalltypes.html" >v22.3</option><option value="https://www.opendental.com/manual222/canadarecalltypes.html" >v22.2</option><option value="https://www.opendental.com/manual221/canadarecalltypes.html" >v22.1</option><option value="https://www.opendental.com/manual214/canadarecalltypes.html" >v21.4</option><option value="https://www.opendental.com/manual213/canadarecalltypes.html" >v21.3</option><option value="https://www.opendental.com/manual212/canadarecalltypes.html" >v21.2</option><option value="https://www.opendental.com/manual211/canadarecalltypes.html" >v21.1</option><option value="https://www.opendental.com/manual205/canadarecalltypes.html" >v20.5</option><option value="https://www.opendental.com/manual204/canadarecalltypes.html" >v20.4</option><option value="https://www.opendental.com/manual203/canadarecalltypes.html" >v20.3</option><option value="https://www.opendental.com/manual202/canadarecalltypes.html" >v20.2</option><option value="https://www.opendental.com/manual201/canadarecalltypes.html" >v20.1</option><option value="https://www.opendental.com/manual194/canadarecalltypes.html" >v19.4</option><option value="https://www.opendental.com/manual193/canadarecalltypes.html" >v19.3</option><option value="https://www.opendental.com/manual192/canadarecalltypes.html" >v19.2</option><option value="https://www.opendental.com/manual191/canadarecalltypes.html" >v19.1</option><option value="https://www.opendental.com/manual184/canadarecalltypes.html" >v18.4</option><option value="https://www.opendental.com/manual183/canadarecalltypes.html" >v18.3</option><option value="https://www.opendental.com/manual182/canadarecalltypes.html" >v18.2</option><option value="https://www.opendental.com/manual181/canadarecalltypes.html" >v18.1</option><option value="https://www.opendental.com/manual174/canadarecalltypes.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Canada Recall Types</p></div>
+<div class="GeneralPageContent">
+<p>For <a href="canada.html">Canada</a> users, in the <a href="mainmenu.html">Main Menu</a>, click Setup, Appointments,<b> Recall Types</b>.</p>
+<img src="images/canadaRecallTypes.png" width="897" height="363"/><p>The above screenshot is an example of how a Canadian office might set up their Recall. </p>
+<p>Add default Recall Types, or reset to default Recall Types by running the <a href="canadaproccodetools.html">Canada Procedure Code Tools</a> for <i>Recall Types</i>.</p>
+<p>For details about the Recall feature, see <a href="recalltypes.html">Recall Types</a>.</p>
+</div>
+</div>
+</body>
+</html>```

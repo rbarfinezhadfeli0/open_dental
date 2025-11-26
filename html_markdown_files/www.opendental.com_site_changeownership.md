@@ -1,0 +1,81 @@
+# File: ./www.opendental.com/site/changeownership.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Practice Changing Ownership</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('changeownership','support','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Practice Changing Ownership</p></div>
+		<div class="GeneralPageContent">
+<p>If your practice is changing ownership, the following information will help you make informed decisions that affect your use of Open Dental. The information below is not intended to be legal advice, nor is it a complete set of instructions.</p>
+<p>For Canada users, see <a href="canadasetup.html">Register Canadian Providers for E-Claims</a> for additional steps.</p>
+<h2>Contact Open Dental</h2>
+<p>Contact Open Dental to confirm the change of ownership. The former owner should contact Open Dental to cancel support if they no longer need it, and the new owner should contact Open Dental to start support. If the new owner contacts Open Dental within 30 days of change of ownership, they will retain the former owner's payment terms (e.g., lower rate, months on support). The new owner can begin support immediately, however confirmation of change of ownership must be received from both parties to receive adjusted rates.</p>
+<p>Either the former owner or new owner may begin the Change of Ownership process by filling the <a href="https://opendentalsoft.com:1943/ODChangeOfOwnership/ChangeOfOwnership.aspx">Change of Ownership Request Form</a>. </p>
+<h2>Accounts Receivable (A/R)</h2>
+<p>The new and former owner must decide if Accounts Receivable (A/R) is included in the sale.</p>
+<p><b>If A/R is included in the sale</b>:</p>
+<p>There is no need for a conversion if the practice is already using Open Dental.</p>
+<p><b>If A/R is not included in the sale</b>:</p>
+<p>The new owner needs to decide how to handle outstanding patient balances. We recommend that all patient balances are set to zero. This process can be performed by our <a href="conversions.html">Conversions</a> department. Contact us to schedule ahead of the date of sale.</p>
+<p>Please review and complete the <a href="../resources/conversions/Change%20of%20Ownership.pdf">Change of Ownership Conversion form</a> if you would like to set balances to zero. Balances are set to zero as of the date of the conversion. </p>
+<h2>Selling Doctor Remains as an Associate</h2>
+<p> Sometimes the selling dentist stays on at the practice as an associate for a set amount of time. There are some additional steps to follow if that is the case:</p>
+<p><b>Create a new provider entry for the selling provider to differentiate the selling dentist's production/income before the sale versus the production after the sale</b></p>
+<p class="MarginBottomZero">This is important because the production/income after the sale belongs to the new owner, produced by an employee (the selling dentist). </p>
+<ul class="MarginBottomGap">
+<li>Once the sale is finalized, create at least one new provider (representing the selling dentist) in Open Dental.</li>
+<li>Associate all new appointments and procedures with the new provider(s). This will allow for simplified reporting. If you need assistance associating future appointments to the new provider, contact Open Dental Support.</li>
+<li>Mark the old entry for the selling provider hidden, so that it is not attached to new appointments or procedures. Set the provider color for the old entry to a new color, so it is obvious if appointments are still scheduled for the old provider entry.</li>
+</ul>
+<p><b>Determine how long the selling dentist will stay on at the practice. </b></p>
+<p class="MarginBottomZero">Once the selling dentist leaves, determine what will be done with the A/R. </p>
+<ul class="MarginBottomGap">
+<li>If the practice will keep the A/R, no additional steps are required.</li>
+<li>If the selling dentist will collect their own A/R after they leave, the new owner must zero out associated balances. Run an <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reportaging.html">Aging of A/R Report</a> for the selling provider, then manually zero out aging for all affected accounts.</li>
+<li>New owner receives a percentage of selling doctor's A/R. If the new owner will collect A/R on behalf of the selling doctor and receive a percentage amount, transfer income as needed. See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7trackingincome.html">Tracking Income by Provider</a>. </li>
+</ul>
+<h2>Data Merge / Data Split</h2>
+<p>Our Conversions Team can also perform database merges, to merge multiple existing Open Dental databases, or database splits, to split an existing Open Dental database into separate databases. See <a href="conversions.html">Conversions</a> for more information and pricing.</p>
+<p>In the case of a Database Split, it is important that the selling provider maintain control of the conversion process (in most instances). The selling provider should be the one communicating with the Open Dental Conversions Team, and the Test and Final Conversions should be delivered to and evaluated by the selling provider. The selling provider can then deliver any databases that they want to the purchasing provider (as needed), or they can allow the purchasing provider to see the converted data (while keeping the databases under the control of the selling provider). The selling provider should not relinquish the control of their full database to the purchasing provider unless this is part of the purchase agreement. </p>
+<p>Additionally, if there are multiple practices contained within the same database, and only part of the database information is being sold, then the selling provider will need to make certain that they check the contents of all conversions prior to delivering those databases to the purchasing provider.</p>
+<p>In the case of a Database Merge, there is no way to deliver a merged database until the sale is complete, and this is because neither the purchasing nor selling provider will own all of the data in a merged database prior to the purchase being complete. Each party (selling and purchasing) should maintain control over their own data until the sale is complete, so the best practice would be to perform any required database merges after the sale has been finalized.</p>
+<h2>New Owner Setup</h2>
+<p> Before starting to use Open Dental, the new owner should update information in Open Dental. Refer to the <a href="checklistblankdb.html">General Setup Checklist</a>.</p>
+<p>The new owner should verify or develop their own backup solution. All database ties should be cut from the selling dentist (e.g., no replication settings to old system should remain).</p>
+<p>If the selling office is a large corporation, notify the Open Dental support technicians so they can check the database for enterprise settings and, if necessary, change settings to prevent issues for the new owner.</p>
+		</div>
+	</div>
+</body>
+</html>```

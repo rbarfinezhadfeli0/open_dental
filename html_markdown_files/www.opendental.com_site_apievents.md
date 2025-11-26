@@ -1,0 +1,60 @@
+# File: ./www.opendental.com/site/apievents.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API Events</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apievents','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API Events</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>An API Event can fire from any workstation. The format is a webhook, which is a REST style call to an endpoint of your choice, so it's the reverse of a typical REST call you would make to the API. Two types of events exist: Database Events and UI Events. The elements sent by the event include the Customer Api Key in the Authorization header, name of the machine firing the event in the Workstation header (Added in version 22.4.28), and the event's type in the Event-Type header (Added in version 22.4.35). You manage which events you want to fire by using <a href="apisubscriptions.html">API Subscriptions</a>.</p>
+<p>See <a href="apiguideevents.html">API Guide - Subscriptions and Events</a> for more information.</p>
+<p><b>How to Use:</b></p>
+<p>1. Subscribe to UI and/or Database Events with Subscriptions POST.<br> 2. Begin monitoring the location specified in Subscription.EndPointUrl.<br> 3a. Database Events will fire at the interval specified in Subscription.PollingSeconds.<br> 3b. UI Events will fire instantly for the workstations specified in Subscription.WorkStation.<br> 4. View, modify, or remove Event monitoring with Subscriptions GET, PUT, and DELETE.</p>
+<h2>Database Event</h2>
+<p>Open Dental and the <a href="apilocal.html">API Service</a> generate these events by polling the database at the frequency you specify for any rows modified since the subscription's DateTimeStart. Each fired event has a maximum capacity of 1000 elements (Added in version 23.2.1). If an event contains more than 1000 elements, then the elements will be sent in batches of up to 1000 at a time. When an event is successfully sent to the endpoint, the DateTimeStart of the relevant subscription will be updated to the time at which it was polled.</p>
+<p></p>
+<p> If a subscription's Workstation is not running an instance of OpenDental.exe and/or OpenDentalAPIService.exe, such as if they are closed for a weekend, then that Workstation will not poll the database or send events. If an event is sent but is unsuccessful in reaching the subscription's endpoint, such as if it is offline, then the subscription's DateTimeStart will be unmodified. Upon the next successful connection to the endpoint, all changed rows of the specified WatchTable from up to the last three days will be included in the sent webhook, and the subscription's DateTimeStart will update as normal. </p>
+<p><b>Types:</b> The type is specified in the subscriptions.WatchTable field.<br> Appointment<br> AppointmentDeleted (Added in version 22.4.35)<br> Operatory (Added in version 24.2.11)<br> PatField (Added in version 22.4.8)<br> Patient<br> Provider (Added in version 24.2.11)<br> Schedule (Added in version 24.2.11)<br> ToothInitial (Added in version 24.4.30)<br></p>
+<p><b>Example:</b><br> POST https://myserver/apievents/appointmentevent<br> Authorization: VzkmZEaUWOjnQX2z<br> Workstation: MOLLYR<br> Event-Type: WatchTable: Appointment<br> (there are other headers that can be ignored)<br><br><span class="codeblock"> [<br> {<br> "AptNum": 18,<br> "PatNum": 17,<br> "AptStatus": "Scheduled",<br> "Pattern": "//XXXX//",<br> "Confirmed": 19,<br> "confirmed": "Not Called",<br> "TimeLocked": "false",<br> "Op": 3,<br> "Note": "",<br> "ProvNum": 1,<br> "provAbbr": "DOC1",<br> "ProvHyg": 0,<br> "AptDateTime": "2020-07-31 08:30:00",<br> "NextAptNum": 0,<br> "UnschedStatus": 0,<br> "unschedStatus": "",<br> "IsNewPatient": "false",<br> "ProcDescript": "Seal, Seal",<br> "ClinicNum": 0,<br> "IsHygiene": "false",<br> "DateTStamp":"2021-05-03 08:30:12",<br> "DateTimeArrived": "0001-01-01 00:00:00",<br> "DateTimeSeated": "0001-01-01 00:00:00",<br> "DateTimeDismissed": "0001-01-01 00:00:00",<br> "InsPlan1": 3,<br> "InsPlan2": 0,<br> "DateTimeAskedToArrive": "0001-01-01 00:00:00",<br> "colorOverride": "0,0,0",<br> "AppointmentTypeNum": 0,<br> "SecDateTEntry":"2020-07-04 09:12:05",<br> "Priority": "Normal",<br> "PatternSecondary": "XX////XX",<br> "ItemOrderPlanned": 0<br> },<br> etc...<br> ]<br></span></p>
+<h2>UI Event</h2>
+<p>Open Dental fires these events immediately upon user action. They are usually intended for a localhost endpoint.</p>
+<p><b>UiEventTypes:</b> Specified in the subscriptions.UiEventType field.<br> PatientSelected - Occurs whenever a patient is selected (Patient Select window, Account Module, etc.).</p>
+<p></p>
+<p>Example:<br> POST https://myserver/apievents/PatientSelected<br> Authorization: VzkmZEaUWOjnQX2z<br> Workstation: MOLLYR<br> Event-Type: UiEventType: PatientSelected<br> (there are other headers that can be ignored)<br><br><span class="codeblock"> {<br> "PatNum":28,<br> "LName":"Harrison",<br> "FName":"Bradley",<br> "MiddleI":"V",<br> "Preferred":"Brad",<br> "PatStatus":"Patient",<br> "Gender":"Male",<br> "Position":"Married",<br> "Birthdate":"1986-11-06",<br> "SSN":"",<br> "Address":"201 S Burnett Ln",<br> "Address2":"",<br> "City":"Lakewood",<br> "State":"Maine",<br> "Zip":"12345",<br> "HmPhone":"5552523366",<br> "WkPhone":"",<br> "WirelessPhone":"",<br> "Guarantor":27,<br> "Email":"",<br> "EstBalance":0,<br> "PriProv":1,<br> "priProvAbbr":"DOC1",<br> "SecProv":0,<br> "secProvAbbr":"",<br> "BillingType":"StandardAccount",<br> "ImageFolder":"HarrisonBradley28",<br> "ChartNumber":"",<br> "MedicaidID":"",<br> "BalTotal":0,<br> "DateFirstVisit": "0001-01-01",<br> "ClinicNum":"1",<br> "clinicAbbr":"Southside",<br> "PreferConfirmMethod":"None",<br> "PreferContactMethod":"None",<br> "PreferRecallMethod":"None",<br> "Language":"",<br> "siteDesc":"",<br> "DateTStamp":"2022-04-21 11:46:19",<br> "TxtMsgOk":"Unknown",<br> "SecDateEntry":"2021-12-04"<br> }<br></span></p>
+		</div>
+	</div>
+</body>
+</html>```

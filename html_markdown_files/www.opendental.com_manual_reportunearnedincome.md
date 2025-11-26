@@ -1,0 +1,54 @@
+# File: ./www.opendental.com/manual/reportunearnedincome.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Unearned Income Reports</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reportunearnedincome','+monthly','reportsstandard','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/reportunearnedincome.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/reportunearnedincome.html" >v24.2</option><option value="https://www.opendental.com/manual241/reportunearnedincome.html" >v24.1</option><option value="https://www.opendental.com/manual233/reportunearnedincome.html" >v23.3</option><option value="https://www.opendental.com/manual232/reportunearnedincome.html" >v23.2</option><option value="https://www.opendental.com/manual231/reportunearnedincome.html" >v23.1</option><option value="https://www.opendental.com/manual224/reportunearnedincome.html" >v22.4</option><option value="https://www.opendental.com/manual223/reportunearnedincome.html" >v22.3</option><option value="https://www.opendental.com/manual222/reportunearnedincome.html" >v22.2</option><option value="https://www.opendental.com/manual221/reportunearnedincome.html" >v22.1</option><option value="https://www.opendental.com/manual214/reportunearnedincome.html" >v21.4</option><option value="https://www.opendental.com/manual213/reportunearnedincome.html" >v21.3</option><option value="https://www.opendental.com/manual212/reportunearnedincome.html" >v21.2</option><option value="https://www.opendental.com/manual211/reportunearnedincome.html" >v21.1</option><option value="https://www.opendental.com/manual205/reportunearnedincome.html" >v20.5</option><option value="https://www.opendental.com/manual204/reportunearnedincome.html" >v20.4</option><option value="https://www.opendental.com/manual203/reportunearnedincome.html" >v20.3</option><option value="https://www.opendental.com/manual202/reportunearnedincome.html" >v20.2</option><option value="https://www.opendental.com/manual201/reportunearnedincome.html" >v20.1</option><option value="https://www.opendental.com/manual194/reportunearnedincome.html" >v19.4</option><option value="https://www.opendental.com/manual193/reportunearnedincome.html" >v19.3</option><option value="https://www.opendental.com/manual192/reportunearnedincome.html" >v19.2</option><option value="https://www.opendental.com/manual191/reportunearnedincome.html" >v19.1</option><option value="https://www.opendental.com/manual184/reportunearnedincome.html" >v18.4</option><option value="https://www.opendental.com/manual183/reportunearnedincome.html" >v18.3</option><option value="https://www.opendental.com/manual182/reportunearnedincome.html" >v18.2</option><option value="https://www.opendental.com/manual181/reportunearnedincome.html" >v18.1</option><option value="https://www.opendental.com/manual174/reportunearnedincome.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Unearned Income Reports</p></div>
+<div class="GeneralPageContent">
+<p>In <a href="reportsstandard.html">Standard Reports</a>, in the <i>Monthly</i> area, click <b>Unearned Income</b>.</p>
+<img src="images/reportUnearned.png" width="633" height="286"/><p><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> See our Webinar: <a href="https://youtu.be/hGlCnVSOSHE">Reports: Unearned Income</a></p>
+<p>There are four types of <a href="unearnedprepayment.html">Unearned Income</a> Reports.</p>
+<ul>
+<li><a href="reportunearnedaccounts.html">Unearned Accounts Report</a></li>
+<li><a href="reportunearnedallocation.html">Unearned Allocation Report</a></li>
+<li><a href="reportnetunearnedincome.html">Net Unearned Income Report</a></li>
+<li><a href="reportlineitemunearned.html">Line Item Unearned Income Report</a></li>
+</ul>
+<br/><div class="Note">Note: To determine user access to these reports, see <a href="reportsecurity.html">Report Setup: Security Permissions</a>. The Unearned Income reports use the <a href="reportcomplex.html">Complex Report System</a>.</div>
+</div>
+</div>
+</body>
+</html>```

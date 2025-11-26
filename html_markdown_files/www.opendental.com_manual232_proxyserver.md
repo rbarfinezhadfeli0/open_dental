@@ -1,0 +1,50 @@
+# File: ./www.opendental.com/manual232/proxyserver.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Proxy Server</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('proxyserver','middletier','advancedtopics','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/proxyserver.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/proxyserver.html" >v24.2</option><option value="https://www.opendental.com/manual241/proxyserver.html" >v24.1</option><option value="https://www.opendental.com/manual233/proxyserver.html" >v23.3</option><option value="https://www.opendental.com/manual232/proxyserver.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/proxyserver.html" >v23.1</option><option value="https://www.opendental.com/manual224/proxyserver.html" >v22.4</option><option value="https://www.opendental.com/manual223/proxyserver.html" >v22.3</option><option value="https://www.opendental.com/manual222/proxyserver.html" >v22.2</option><option value="https://www.opendental.com/manual221/proxyserver.html" >v22.1</option><option value="https://www.opendental.com/manual214/proxyserver.html" >v21.4</option><option value="https://www.opendental.com/manual213/proxyserver.html" >v21.3</option><option value="https://www.opendental.com/manual212/proxyserver.html" >v21.2</option><option value="https://www.opendental.com/manual211/proxyserver.html" >v21.1</option><option value="https://www.opendental.com/manual205/proxyserver.html" >v20.5</option><option value="https://www.opendental.com/manual204/proxyserver.html" >v20.4</option><option value="https://www.opendental.com/manual203/proxyserver.html" >v20.3</option><option value="https://www.opendental.com/manual202/proxyserver.html" >v20.2</option><option value="https://www.opendental.com/manual201/proxyserver.html" >v20.1</option><option value="https://www.opendental.com/manual194/proxyserver.html" >v19.4</option><option value="https://www.opendental.com/manual193/proxyserver.html" >v19.3</option><option value="https://www.opendental.com/manual192/proxyserver.html" >v19.2</option><option value="https://www.opendental.com/manual191/proxyserver.html" >v19.1</option><option value="https://www.opendental.com/manual184/proxyserver.html" >v18.4</option><option value="https://www.opendental.com/manual183/proxyserver.html" >v18.3</option><option value="https://www.opendental.com/manual182/proxyserver.html" >v18.2</option><option value="https://www.opendental.com/manual181/proxyserver.html" >v18.1</option><option value="https://www.opendental.com/manual174/proxyserver.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Proxy Server</p></div>
+<div class="GeneralPageContent">
+<p>Open Dental supports proxy servers for the <a href="middletier.html">Middle Tier</a> connection.</p>
+<p>Add a file called <span class="codeblock">MiddleTierProxyConfig.xml</span> to the Open Dental application folder. Windows will usually not allow manually adding files to a Program Files folder, so create the file someplace else, and the copy/paste to get it into the application folder.</p>
+<p>The contents should look similar to this:</p>
+<p class="codeblock">&lt;ProxySettings&gt;</p><p class="codeblock">&lt;Address&gt;https://20.154.23.100:3456&lt;/Address&gt;</p><p class="codeblock">&lt;UserName&gt;myusername&lt;/UserName&gt;</p><p class="codeblock">&lt;Password&gt;mypassword&lt;/Password&gt;</p><p class="codeblock">&lt;/ProxySettings&gt;</p><br/><p>Change the three values to match your proxy server settings. You must use a username and password; you can't leave those two values blank. To test and see if the file is even being processed by Open Dental, you can temporarily make the XML malformed and it should give you an error message when you try to connect to the Middle Tier from the Choose Database window.</p>
+<p>Another option, which has not been tested but might work, is to set Open Dental to use the default proxy settings that were already set up in Windows for the workstation. Edit <span class="codeblock">OpenDental.exe.config</span> as follows. Find the <span class="codeblock">&lt;system.net&gt;</span> element and add the following XML within that element:</p>
+<p class="codeblock">&lt;defaultProxy&gt;</p><p class="codeblock">&lt;proxy</p><p class="codeblock">proxyaddress="http://[your proxy address and port number]"</p><p class="codeblock">bypassonlocal="false"/&gt;</p><p class="codeblock">&lt;/defaultProxy&gt;</p><br/><p>Depending upon exactly what you need to achieve, you may or may not require some of the additional attributes of the <span class="codeblock">defaultProxy</span> or proxy elements. Refer to the Windows documentation. One significant disadvantage of this approach is that the <span class="codeblock">OpenDental.exe.config</span> file will get overwritten with each version Update. A process will need to be put in place to deal with this.</p>
+</div>
+</div>
+</body>
+</html>```

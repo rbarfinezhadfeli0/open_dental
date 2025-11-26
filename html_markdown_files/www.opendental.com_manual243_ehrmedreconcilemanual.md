@@ -1,0 +1,59 @@
+# File: ./www.opendental.com/manual243/ehrmedreconcilemanual.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - EHR Reconcile from Paper Document</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('ehrmedreconcilemanual','ehrdashboard1','+chartToolbar','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/ehrmedreconcilemanual.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/ehrmedreconcilemanual.html" >v24.2</option><option value="https://www.opendental.com/manual241/ehrmedreconcilemanual.html" >v24.1</option><option value="https://www.opendental.com/manual233/ehrmedreconcilemanual.html" >v23.3</option><option value="https://www.opendental.com/manual232/ehrmedreconcilemanual.html" >v23.2</option><option value="https://www.opendental.com/manual231/ehrmedreconcilemanual.html" >v23.1</option><option value="https://www.opendental.com/manual224/ehrmedreconcilemanual.html" >v22.4</option><option value="https://www.opendental.com/manual223/ehrmedreconcilemanual.html" >v22.3</option><option value="https://www.opendental.com/manual222/ehrmedreconcilemanual.html" >v22.2</option><option value="https://www.opendental.com/manual221/ehrmedreconcilemanual.html" >v22.1</option><option value="https://www.opendental.com/manual214/ehrmedreconcilemanual.html" >v21.4</option><option value="https://www.opendental.com/manual213/ehrmedreconcilemanual.html" >v21.3</option><option value="https://www.opendental.com/manual212/ehrmedreconcilemanual.html" >v21.2</option><option value="https://www.opendental.com/manual211/ehrmedreconcilemanual.html" >v21.1</option><option value="https://www.opendental.com/manual205/ehrmedreconcilemanual.html" >v20.5</option><option value="https://www.opendental.com/manual204/ehrmedreconcilemanual.html" >v20.4</option><option value="https://www.opendental.com/manual203/ehrmedreconcilemanual.html" >v20.3</option><option value="https://www.opendental.com/manual202/ehrmedreconcilemanual.html" >v20.2</option><option value="https://www.opendental.com/manual201/ehrmedreconcilemanual.html" >v20.1</option><option value="https://www.opendental.com/manual194/ehrmedreconcilemanual.html" >v19.4</option><option value="https://www.opendental.com/manual193/ehrmedreconcilemanual.html" >v19.3</option><option value="https://www.opendental.com/manual192/ehrmedreconcilemanual.html" >v19.2</option><option value="https://www.opendental.com/manual191/ehrmedreconcilemanual.html" >v19.1</option><option value="https://www.opendental.com/manual184/ehrmedreconcilemanual.html" >v18.4</option><option value="https://www.opendental.com/manual183/ehrmedreconcilemanual.html" >v18.3</option><option value="https://www.opendental.com/manual182/ehrmedreconcilemanual.html" >v18.2</option><option value="https://www.opendental.com/manual181/ehrmedreconcilemanual.html" >v18.1</option><option value="https://www.opendental.com/manual174/ehrmedreconcilemanual.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>EHR Reconcile from Paper Document</p></div>
+<div class="GeneralPageContent">
+<p>If you receive a paper document of a patient's medications, allergies, or problems from another provider, you can manually reconcile them with the patient's medication, allergy, and problem list in Open Dental. For another reconcile option, see <a href="ehrmedreconcileelectronic.html">EHR: Reconciling from an Imported Summary of Care</a>.</p>
+<ol>
+<li>Scan the document and save it as an image file (e.g. JPG, PNG, GIF) in an Images folder.</li>
+<li>On the <a href="ehrdashboard1.html">EHR Dashboard</a>, click <b>Manual Reconciliation</b>. <br/><img src="images/ehrMedReconManualRef.gif" width="725" height="227" class="ImageInParagraph"/></li>
+<li>Highlight the provider from whom the document came, then click OK to select. To add new <a href="referrals.html">Referrals</a> click Add. The referral must be marked as <i>Is Doctor</i>. All referrals marked as <i>Doctor</i> will also show a <b>Specialty</b>. <p>The medications in the patient's medication list show in the upper right.</p>
+<img src="images/ehrMedReconcilManual.gif" width="915" height="699"/></li>
+<li>Click [...] next to Image to Reconcile to view a list of all image files. <br/><img src="images/ehrMedReconcSelectImage.gif" width="627" height="146" class="ImageInParagraph"/></li>
+<li>Highlight the image you scanned in step 1 and click OK. The image will display in the left half of the window.</li>
+<li>Compare the medications in the image with the <a href="medicationspatient.html">Medications</a> list.  <ul>
+<li>To add a medication to the patient's list, click Add Medication at the top of the window, then select the medication from the <a href="medicationmaster.html">Medications List</a>.</li>
+<li>To edit or remove a medication, double click the item under medications to open the Medication for Patient window.</li>
+</ul>
+</li>
+<li>When Medications are accurate, click Add to document that medications have been reconciled. A dated log entry will show under <b>Reconciles</b>.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,80 @@
+# File: ./www.opendental.com/manual232/editinspayment.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Edit Insurance Payment</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('editinspayment','inspayeob','claimedit','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/editinspayment.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/editinspayment.html" >v24.2</option><option value="https://www.opendental.com/manual241/editinspayment.html" >v24.1</option><option value="https://www.opendental.com/manual233/editinspayment.html" >v23.3</option><option value="https://www.opendental.com/manual232/editinspayment.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/editinspayment.html" >v23.1</option><option value="https://www.opendental.com/manual224/editinspayment.html" >v22.4</option><option value="https://www.opendental.com/manual223/editinspayment.html" >v22.3</option><option value="https://www.opendental.com/manual222/editinspayment.html" >v22.2</option><option value="https://www.opendental.com/manual221/editinspayment.html" >v22.1</option><option value="https://www.opendental.com/manual214/editinspayment.html" >v21.4</option><option value="https://www.opendental.com/manual213/editinspayment.html" >v21.3</option><option value="https://www.opendental.com/manual212/editinspayment.html" >v21.2</option><option value="https://www.opendental.com/manual211/editinspayment.html" >v21.1</option><option value="https://www.opendental.com/manual205/editinspayment.html" >v20.5</option><option value="https://www.opendental.com/manual204/editinspayment.html" >v20.4</option><option value="https://www.opendental.com/manual203/editinspayment.html" >v20.3</option><option value="https://www.opendental.com/manual202/editinspayment.html" >v20.2</option><option value="https://www.opendental.com/manual201/editinspayment.html" >v20.1</option><option value="https://www.opendental.com/manual194/editinspayment.html" >v19.4</option><option value="https://www.opendental.com/manual193/editinspayment.html" >v19.3</option><option value="https://www.opendental.com/manual192/editinspayment.html" >v19.2</option><option value="https://www.opendental.com/manual191/editinspayment.html" >v19.1</option><option value="https://www.opendental.com/manual184/editinspayment.html" >v18.4</option><option value="https://www.opendental.com/manual183/editinspayment.html" >v18.3</option><option value="https://www.opendental.com/manual182/editinspayment.html" >v18.2</option><option value="https://www.opendental.com/manual181/editinspayment.html" >v18.1</option><option value="https://www.opendental.com/manual174/editinspayment.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Edit Insurance Payment</p></div>
+<div class="GeneralPageContent">
+<p>Enter insurance payment details when finalizing insurance payments.</p>
+<p>In the <a href="claimedit.html">Edit Claim</a> window, double-click an existing insurance payment.</p>
+<img src="images/claimPayEditInsWindow.png" width="530" height="585"/><p class="MarginBottomZero">Alternatively, this window opens when clicking: </p>
+<ul>
+<li><b>Batch</b> from Edit Claim</li>
+<li><b>This Claim Only</b> from Edit Claim</li>
+<li><b>Add</b> from <a href="claimpaymentbatch.html">Batch Insurance Payment</a></li>
+</ul>
+<p class="MarginBottomGap"> to finalize a new insurance payment.</p>
+<p>See <a href="claimpayfinalize.html">Finalize Insurance Payment</a> for detailed steps on finalizing insurance payments.</p>
+<p>Enter or change payment information as needed. Some fields are pre-filled. Some information is optional. <a href="requiredfields.html">Required Fields</a> are marked with an asterisk (*). When clicking <b>OK</b> if any required fields are incomplete, users have the option to proceed or return to the Edit Insurance Payment window to complete required fields.</p>
+<ul>
+<li><b>Clinic</b>: Default to the claim's clinic (<a href="patientedit.html">Edit Patient Information</a>). Click the dropdown to change. Determines where the money is received (e.g., <a href="depositslip.html">Deposits</a>).</li>
+<li><b>Payment Type</b>: The assigned <a href="inspaytypes.html">Definitions: Insurance Payment Types</a>. No default type is selected if the <i>Claim payments prompt for Payment Type</i> is enabled in <a href="preferences.html">Preferences</a>. Customize options in .</li>
+<li><b>Payment Group</b>: Typically used to group payments when multiple people are entering payments at once. Customize options in <a href="definitionsclaimpaymentgroups.html">Definitions: Claim Payment Groups</a>.</li>
+<li><b>Payment Posting Date</b>: The date of the payment. Defaults to today's date.</li>
+<li><b>Check EFT Issue Date</b>: Optional. The date the EFT payment was issued.</li>
+<li><b>Amount</b>: The total amount of the EOB. If the amount auto populated does not match the amount on the EOB, enter the EOB amount manually. Refer to <a href="claimpayfinalize.html">Finalize Insurance Payment</a>, Troubleshooting for additional information.</li>
+<li><b>Check #</b>: Useful for reporting. For EFT, use this field to enter the EFT number.</li>
+<li><b>Bank-Branch</b>: Useful for reporting.</li>
+<li><b>Carrier Name</b>: Auto populated with the claims insurance carrier.</li>
+<li><b>Virtual Credit Cards</b>: If payment is via a virtual credit card and <a href="xcharge.html">XCharge (OpenEdge)</a>, <a href="edgeexpress.html">Edge Express</a>, <a href="payconnectpaymentwindow.html">PayConnect</a>, or <a href="paysimple.html">PaySimple</a> is enabled, the corresponding payment buttons are displayed. Click a button to process the payment. When the transaction is complete, the Edit Insurance Payment window is still be open and transaction details are added to the<i>Note</i>.<br/><div class="Note">Note: <ul>
+<li>Clinics only: the payment processor credentials are used for the Clinic selected in this window.</li>
+<li>PaySimple users: the Carrier Name is sent to PaySimple when processing a credit card transaction.</li>
+</ul>
+</div>
+</li>
+<li><b>Auto Deposit:</b> Only visible if the preference<i>Insurance payments show auto deposit</i> is enabled.  <ul>
+<li>Date: Date used on the deposit.</li>
+<li>Amount: Amount of deposit. Matches check amount.</li>
+<li>Batch #: Optional. Used to track deposits.</li>
+<li>Auto Deposit Account: Select the deposit account. Customize options in <a href="definitionsautodepositaccount.html">Definitions: Auto Deposit Account</a>.</li>
+</ul>
+</li>
+</ul>
+<p>Click <b>OK</b> to save and proceed to the <a href="inspayeob.html">Insurance Payment (EOB)</a> window</p>
+</div>
+</div>
+</body>
+</html>```

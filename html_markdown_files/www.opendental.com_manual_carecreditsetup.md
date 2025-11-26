@@ -1,0 +1,111 @@
+# File: ./www.opendental.com/manual/carecreditsetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - CareCredit Setup</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('carecreditsetup','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/carecreditsetup.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/carecreditsetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/carecreditsetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/carecreditsetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/carecreditsetup.html" >v23.2</option><option value="https://www.opendental.com/manual231/carecreditsetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/carecreditsetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/carecreditsetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/carecreditsetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/carecreditsetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/carecreditsetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/carecreditsetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/carecreditsetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/carecreditsetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/carecreditsetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/carecreditsetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/carecreditsetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/carecreditsetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/carecreditsetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/carecreditsetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/carecreditsetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/carecreditsetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/carecreditsetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/carecreditsetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/carecreditsetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/carecreditsetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/carecreditsetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/carecreditsetup.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>CareCredit Setup</p></div>
+<div class="GeneralPageContent">
+<p>CareCredit is a third-party credit card for financing health care expenses.</p>
+<p>In Setup, <a href="programlinks.html">Program Links</a>, double-click <b>CareCredit from https://www.carecredit.com/</b>. </p>
+<img src="images/careCredit.png" width="615" height="558"/><p>CareCredit integrates into multiple areas of Open Dental.</p>
+<p class="MarginBottomZero">Set up the CareCredit program link to begin using the integration. </p>
+<ul class="MarginBottomGap">
+<li><b>Enabled</b>: Check to enable CareCredit. </li>
+<li><b>Hide advertising</b>: If not using CareCredit, check to hide CareCredit buttons in the Treatment Plan Module, Account Module, and Payment window.</li>
+<li><b>Pre-Approval Status Patient Field</b>: The field used to display Batch Quickscreen Approval Statuses.</li>
+<li><b>Pre-Approval Amount Patient Field</b>: The field used to display the patient's pre-approval amount. </li>
+<li><b>Available Credit Patient Field</b>: The field used to display the patient's available credit.</li>
+<li><b>Merchant number by provider</b>: Only displays when clinics is enabled. Determines how the Merchant Number (provided by CareCredit) is entered. <ul>
+<li>Checked: Removes Merchant Number box below. Enter the Merchant Number for each provider in the <a href="providerseditwindow.html">Providers Edit window</a>.</li>
+<li>Unchecked: Merchant Number is not by provider. Enter the Merchant Number in the box below.</li>
+</ul>
+</li>
+<li><b>Clinic</b>: Only displays if Clinics is enabled. Select the clinic the settings apply to.</li>
+</ul>
+<p class="MarginBottomZero">Clinic Settings: This heading only appears when clinics is enabled. When clinics is not enabled, these settings relate to the practice. When clinics is enabled, these settings relate to the selected clinic. </p>
+<ul class="MarginBottomGap">
+<li><b>Payment Type</b>: The default <a href="definitionspaymenttypes.html">Payment Type</a> used for CareCredit transactions. <ul>
+<li>If the <a href="preferences.html">Preference</a>,<i> Payments prompt for Payment Type</i>, is enabled, users must manually select a payment type. </li>
+</ul>
+</li>
+<li><b>Manage</b>: Only displays after CareCredit has been enabled. Opens the CareCredit Manage portal. Allows offices to set promotions. </li>
+<li><b>Merchant Number</b>: Unique 16-digit ID for the office. If using clinics, this number is the same for all clinics. This number is provided by CareCredit. </li>
+<li><b>Quickscreen Feature</b>: Quickscreen is a way to check if patients with upcoming appointments have been pre-approved for CareCredit. See Batch Quickscreen below for additional details. <ul>
+<li>Off: Disable the Quickscreen feature. Quickscreen Settings are hidden.</li>
+<li>On (with Bal): Enable the Quickscreen feature. Only considers patients with an estimated patient portion greater than $1. </li>
+<li>On (no Bal): Enable the Quickscreen feature. Considers all patients, regardless of estimated patient portion for the appointment. </li>
+<li>Lookup Only: Check only to see if a patient is a current CareCredit cardholder and retrieve the available credit, if any. Does not check for eligibility or pre-approval status.</li>
+</ul>
+</li>
+<li><b>Number of days out to check for pre-approvals for future appointments</b>: How many days in the future to check for pre-approvals. The default is 2. Options are 2, 3, or 4.  <ul>
+<li>When Lookup Only is selected, this changes to <i>Number of days out to check for lookups for future appointments.</i></li>
+</ul>
+</li>
+</ul>
+<p>The <a href="econnector.html">eConnector</a> and <a href="opendentalservice.html">Open Dental Service</a> are required to utilize CareCredit and receive CareCredit <a href="alerts.html">Alerts</a>.</p>
+<p class="MarginBottomZero">Click <b>Save</b> to save changes. If Quickscreen is enabled, and <i>CareCredit Approval Status</i> has not been added to an Appointment View, a prompt displays to add it. <br/><img src="images/careCreditPrompt.png" width="367" height="133" class="ImageInParagraph"/></p>
+<ul class="MarginBottomGap">
+<li>Click Yes to quickly add the <i>CareCredit Approval Status</i> to Appointment views. The <a href="appointmentviews.html">Appointment Views</a> window opens.</li>
+<li>Click No to continue without updating the Appointment Views. Views can be edited at any time.</li>
+</ul>
+<h2>Batch Quickscreen</h2>
+<p class="MarginBottomZero">Batch Quickscreen is a CareCredit feature that pre-approves patients for financing. When enabled, Batch Quickscreen automatically attempts to pre-approve patients for their estimated appointment fees (rounded to the nearest dollar) prior to their appointment. </p>
+<ul class="MarginBottomGap">
+<li>Only patients that have not had any completed CareCredit transactions (purchase/refunds/Quickscreen) in the last 60 days are sent for Quickscreen.</li>
+<li>Users must accept or decline the pre-approval before the patient can process a CareCredit transaction. Right-click on the appointment to accept or decline.</li>
+<li>If <i>Merchant number by Provider</i> is checked, the provider on the appointment must have a merchant number entered.</li>
+</ul>
+<p> When enabled, a webservice checks if a patient is pre-approved. Batch Quickscreen is run at 7:20 AM (local to the practice) each morning. If we do not get a response back from CareCredit when running Batch Quickscreen, the batch has a pending status. Open Dental continues trying for a response. If no response is received after 24 hours, the batch expires.</p>
+<p>QuickScreen is enabled by default, but can be turned off be selecting <i>Off</i>. Patients cannot individually opt out of QuickScreen.</p>
+<p>When enabled, minor patients (under the age of 18) are processed using the guarantor of the family. When screened, the pre-approval status still displays on the patient, even if the screening was done on the guarantor. If the minor patient is not in a family, the patient is not screened, and a <i>BatchError log </i>in the CareCredit Transaction window is added.</p>
+<p>The following information is required for patients to be screened: First Name, Last Name, Address, Zip Code, City, State, and Phone Number. Email, SSN, and Date of Birth are recommended but not required. The last 4 digits of the SSN is required when <i>Lookup Only</i> is selected.</p>
+<p>A patients Quickscreen status can be viewed in the Patient Information area of the <a href="family.html">Family Module</a> or by adding the <i>CareCredit Approval Status</i> to the <a href="appointmentvieweditwindow.html">Appointment view</a>.</p>
+<p class="MarginBottomZero">Quickscreen statuses:  </p>
+<ul class="MarginBottomGap">
+<li>Pre-Approved: Patient has been pre-approved. An application for this patient can be sent for financing.</li>
+<li>Unable to Pre-Approve - Refer Patient to Credit Application: CareCredit is unable to pre-approve this patient.</li>
+<li>Cardholder: The patient is a current CareCredit cardholder.</li>
+</ul>
+<h2>Closed Accounts</h2>
+<p>When an office closes their account with CareCredit, their Merchant Number is automatically updated with an<i> x</i> when Batch Quickscreen is attempted. This lets Open Dental know the account is closed and not to allow transactions. </p>
+<img src="images/careCreditMerchantClosed.png" width="434" height="29"/><p>To remove CareCredit buttons from different areas of the program (e.g., Treatment Plan and payments), uncheck the <i>Enabled</i> box.</p>
+<p>If an account has been closed, and the bridge has not been disabled, a warning appears in the CareCredit Setup window, in the CareCredit Action window, and when attempting to make a CareCredit payment.</p>
+<h2>Troubleshooting</h2>
+<p>Microsoft WebView2 is required to use CareCredit. If not already installed, users are prompted to install WebView2 the first time CareCredit is opened. Installation only needs to happen once on each workstation.</p>
+</div>
+</div>
+</body>
+</html>```

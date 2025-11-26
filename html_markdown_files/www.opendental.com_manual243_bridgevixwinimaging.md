@@ -1,0 +1,75 @@
+# File: ./www.opendental.com/manual243/bridgevixwinimaging.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - VixWin (Numbered) Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridgevixwinimaging','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/bridgevixwinimaging.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/bridgevixwinimaging.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridgevixwinimaging.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridgevixwinimaging.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridgevixwinimaging.html" >v23.2</option><option value="https://www.opendental.com/manual231/bridgevixwinimaging.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridgevixwinimaging.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridgevixwinimaging.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridgevixwinimaging.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridgevixwinimaging.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridgevixwinimaging.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridgevixwinimaging.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridgevixwinimaging.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridgevixwinimaging.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridgevixwinimaging.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridgevixwinimaging.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridgevixwinimaging.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridgevixwinimaging.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridgevixwinimaging.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridgevixwinimaging.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridgevixwinimaging.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridgevixwinimaging.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridgevixwinimaging.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridgevixwinimaging.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridgevixwinimaging.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridgevixwinimaging.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridgevixwinimaging.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridgevixwinimaging.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>VixWin (Numbered) Bridge</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>. Double-click on <b>VixWin (numbered)</b>.</p>
+<p><span style="color:red">Contact Open Dental support prior to setup or when troubleshooting any VixWin related issues.</span></p>
+<img src="images/bridgeVixWinNumbered.png" width="770" height="594"/><p>Gendex VixWin is imaging software. Website: <a href="https://dexis.com/" target="_blank">dexis.com</a>.</p>
+<p>The recommended bridge is VixWin (numbered). When using this bridge, images are stored in subdirectories based on Open Dental patient number, thus eliminating all performance issues linked to other VixWin versions. The last two numbers in the PatNum identify the first directory level. The second directory level is named the full PatNum. If currently using a different VixWin bridge, see Other VixWin Bridges below.</p>
+<p class="MarginBottomZero">To enable the bridge: </p>
+<ol class="MarginBottomGap">
+<li>Check the <b>Enabled</b> box.</li>
+<li>Verify the <b>Path of file to open</b>.</li>
+<li>Double-click on a row in <b>Additional Properties</b> to change settings.  <ol>
+<li>Pass across the PatNum (enter 0) or ChartNum (enter 1) as the patient ID.</li>
+<li>The Image Path is required and must be a mapped drive letter. The same drive letter and path must exist on all workstations that use VixWin. In addition, each workstation's VixWin settings (Options, Preferences) must be set to Bridge mode using the same mapped drive letter.</li>
+</ol>
+</li>
+<li>Set up a clickable bridge button. <ol>
+<li>Under <b>Add a button to these toolbars</b>, highlight where to display the button.</li>
+<li>Enter the <b>Text on button</b>.</li>
+<li>(Optional) Import an image to show on the button (22 x 22 pixels).</li>
+</ol>
+</li>
+<li>If using clinics, click <b>Hide Button for Clinics</b>. Select which clinics the button should display on.</li>
+<li>Click Save.</li>
+</ol>
+<div class="Note">Note: VixWin does not recognize UNC paths. Use mapped drive letters.</div>
+<br/><br/><h2>Other VixWin Bridges</h2>
+<p>If currently using one of the VixWin bridges listed below, we recommend contacting us. </p>
+<ul>
+<li>VixWin (old)</li>
+<li>VixWin (new)</li>
+<li>VixWin base 36</li>
+<li>VixWin base 41</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

@@ -1,0 +1,150 @@
+# File: ./www.opendental.com/manual232/claimprocedure.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Claim Procedures ( claimprocs )</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('claimprocedure','claimedit','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/claimprocedure.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/claimprocedure.html" >v24.2</option><option value="https://www.opendental.com/manual241/claimprocedure.html" >v24.1</option><option value="https://www.opendental.com/manual233/claimprocedure.html" >v23.3</option><option value="https://www.opendental.com/manual232/claimprocedure.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/claimprocedure.html" >v23.1</option><option value="https://www.opendental.com/manual224/claimprocedure.html" >v22.4</option><option value="https://www.opendental.com/manual223/claimprocedure.html" >v22.3</option><option value="https://www.opendental.com/manual222/claimprocedure.html" >v22.2</option><option value="https://www.opendental.com/manual221/claimprocedure.html" >v22.1</option><option value="https://www.opendental.com/manual214/claimprocedure.html" >v21.4</option><option value="https://www.opendental.com/manual213/claimprocedure.html" >v21.3</option><option value="https://www.opendental.com/manual212/claimprocedure.html" >v21.2</option><option value="https://www.opendental.com/manual211/claimprocedure.html" >v21.1</option><option value="https://www.opendental.com/manual205/claimprocedure.html" >v20.5</option><option value="https://www.opendental.com/manual204/claimprocedure.html" >v20.4</option><option value="https://www.opendental.com/manual203/claimprocedure.html" >v20.3</option><option value="https://www.opendental.com/manual202/claimprocedure.html" >v20.2</option><option value="https://www.opendental.com/manual201/claimprocedure.html" >v20.1</option><option value="https://www.opendental.com/manual194/claimprocedure.html" >v19.4</option><option value="https://www.opendental.com/manual193/claimprocedure.html" >v19.3</option><option value="https://www.opendental.com/manual192/claimprocedure.html" >v19.2</option><option value="https://www.opendental.com/manual191/claimprocedure.html" >v19.1</option><option value="https://www.opendental.com/manual184/claimprocedure.html" >v18.4</option><option value="https://www.opendental.com/manual183/claimprocedure.html" >v18.3</option><option value="https://www.opendental.com/manual182/claimprocedure.html" >v18.2</option><option value="https://www.opendental.com/manual181/claimprocedure.html" >v18.1</option><option value="https://www.opendental.com/manual174/claimprocedure.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Claim Procedures ( claimprocs )</p></div>
+<div class="GeneralPageContent">
+<p>View and edit details of a procedure attached to an insurance claim or estimate from the Edit Claim Procedure window.</p>
+<p>In a <a href="claimedit.html">Claim</a>, double-click on a procedure.</p>
+<img src="images/claimProc.png" width="915" height="636"/><p>Alternatively, in the <a href="procedurefinancial.html">Procedure - Financial Tab</a> double-click an estimate.</p>
+<p class="MarginBottomZero">A claim procedure (claimproc) is used for the following purposes: </p>
+<ul class="MarginBottomGap">
+<li>To attach procedures to claims.</li>
+<li>To split insurance payments on claims.</li>
+<li>To record total insurance payments on claims. These payments are not attached to procedures.</li>
+<li>To store insurance estimates before a claim is created.</li>
+</ul>
+<p class="MarginBottomZero">In a typical situation: </p>
+<ol class="MarginBottomGap">
+<li>While treatment planning, a procedure is created.</li>
+<li>A claimproc is automatically added to the procedure to keep track of its estimated insurance portion. Change the estimate by changing the claimproc.</li>
+<li>When the claim for the procedure is created, the claimproc links the procedure to the claim.</li>
+<li>When viewing the claim detail, all procedure estimates and payments are stored in the claimproc rather than with the procedure. This allows for an unlimited number of claims to be sent for each procedure and users to have very fine control over all estimates and payments for each claim.</li>
+<li>When receiving a claim, it can be itemized by procedure or entered as a total payment.</li>
+</ol>
+<p>Change the information as needed, then click <b>OK </b>to save. The logged-on user must have the correct security permission to edit write-offs and write-off estimates.</p>
+<h2>Miscellaneous Information</h2>
+<img src="images/claimProcMisc.png" width="441" height="208"/><p><b>Ins Plan</b>: The insurance plan and subscriber. Claimprocs are always associated with one insurance plan whether they are an estimate or attached to a claim.</p>
+<p class="MarginBottomZero"><b>Status</b>: The status of the claim procedure. </p>
+<ul class="MarginBottomGap">
+<li>Estimate: Not yet attached to a claim. Claim Info section is not shown. Estimates never affect the patient balance.</li>
+<li>Not Received: Attached to a claim with a status other than <i>Received</i>.</li>
+<li>Received: Attached to a claim with a <i>Received</i> status. Should also be attached to an insurance payment (finalized).</li>
+<li>PreAuthorization: Attached to a <a href="preauth.html">Preauthorization</a>.</li>
+<li>InsHist: Procedure was created by adding a date to <a href="inshistory.html">Insurance History</a>. </li>
+<li>Supplemental: Indicates an additional payment on the same procedure. Estimates are generally 0. Almost identical to Received.</li>
+<li>For <a href="plancapitation.html">Capitation ( HMO / DMO ) Insurance Plan</a>, the statuses below apply:  <ul>
+<li>CapClaim: Since most capitation procedures are not sent to insurance there are always duplicate claimprocs for a procedure (similar to Supplemental). The first claimproc tracks the copay and write-off and is never attached to a claim (status = CapComplete). The second claimproc has status of CapClaim.</li>
+<li>CapEstimate: Not yet attached to a claim or for a procedure that is treatment planned (TP). When procedure is completed, status can be changed to CapComplete but never to anything else.</li>
+<li>CapComplete: Only set when procedure is set complete. This stores the copay and write-off amounts. The copay is only there for reference; the write-off affects the balance. Never attached to a claim.</li>
+<li>(Adjustment: A hidden type set in the upper section of the <a href="insplan.html">Insurance Plan</a> using a completely different interface.)</li>
+</ul>
+</li>
+</ul>
+<p><b>Payment Tracking</b>: Document information about the payment of the procedure. Useful to track why payment was rejected. Customize options in <a href="definitionsclaimpaytracking.html">Definitions: Claim Payment Tracking</a>.</p>
+<p><b>Provider</b>: Provider attached to the claimproc. By default, this is the provider who performed the procedure, but can be different. This provider is assigned to any insurance payment. Click [...] to change. The provider can only be changed when the status is set to <i>Not Received</i>. See: <a href="claimprocedureprovider.html">Claimproc Provider</a>.</p>
+<p><b>Clinic</b>: Only visible if <a href="clinics.html">Clinics</a> is turned on. Normally the clinic assigned to the <a href="procedureedit.html">Procedure</a> (e.g., treating clinic), but it can differ. This does affect some reports. </p>
+<p><b>Pay Entry Date</b>: The date the related insurance payment was entered. Used to track account aging. Only displays after an insurance payment has been received.</p>
+<p><b>Payment Date</b>: Can be edited until attached to an insurance check. Once attached to an insurance check see <a href="claimpayfinalize.html">Finalize Insurance Payment</a> to edit payment information. </p>
+<p><b>Procedure Date</b>: The date the procedure was performed. Used to track annual benefits used.</p>
+<p><b>Description</b>: The procedure code description.</p>
+<h2>Claim</h2>
+<img src="images/claimProcClaim.png" width="468" height="334"/><p class="MarginBottomZero"><b>This is an estimate only/This is part of a claim</b>: Indicates if this claimproc is an estimate or has been attached to claim. If part of a claim, the following information shows: </p>
+<ul class="MarginBottomGap">
+<li><b>Code Sent to Ins</b>: The procedure code sent to insurance. Usually it is the same as the actual procedure code, but may be different if using alternate codes (e.g., for Medicaid), medical codes or custom codes with suffixes that get removed before being sent.</li>
+<li><b>Fee Billed to Ins</b>: The amount billed to insurance. Usually it is the same amount billed to the patient, but does not need to be. If <i>Claims show UCR fee</i> is checked on the Edit Insurance Plan window, the amount shown is the provider's UCR fee. So the claim may go out with a fee of $105, but the patient is only billed $100.</li>
+<li><b>Claim Adj Reason Code</b>: Read-only. Displays a Claim Adjustment Reason Code if procedure level adjustments from an <a href="era.html">ERA</a> were applied.</li>
+<li><b>Remarks from EOB</b>: EOB remarks that explain why insurance did not pay as expected on this procedure.</li>
+</ul>
+<h2>Fee Information</h2>
+<img src="images/claimProcFeeInfo.png" width="299" height="69"/><p><b>Do Not Bill to Insurance</b>: Only used when the claimproc is an estimate. Indicates that this claimproc will remain an estimate and never be attached to a claim. Estimate information is hidden when this box is checked. This box is greyed out when the procedure is attached to a claim or preauthorization.</p>
+<p><b>Fee</b>: The actual fee billed to the patient as entered on the <a href="procedureedit.html">Procedure</a>.</p>
+<p><b>Fee Schedule</b>: The fee schedule of the insurance plan listed first in the Family module. If this is a medical procedure code, this fee schedule may not accurately indicate where the fee is pulled from.</p>
+<h2>Carrier Allowed Amount</h2>
+<img src="images/claimProcCarrierAllowed.png" width="396" height="140"/><p><b>Substitution Code</b>: The Ins Subst Code entered for the procedure code. Used for situations like posterior composites, where the insurance company downgrades it to the rate of an amalgam.</p>
+<p><b>PPO Fee Schedule</b>: The Fee Schedule set for set for PPO Plan Type insurance in the <a href="insplan.html">Edit Insurance Plan</a> window.</p>
+<p><b>Allowed Fee Schedule</b>: The fee schedule set for Carrier Allowed Amounts on the Edit Insurance Plan window.</p>
+<p class="MarginBottomZero"><b>Allowed Amt</b>: Insurance allowed fee (e.g., contracted fee). Frequently, insurance companies do not allow the full fee because they claim it is above UCR for the area. In these cases, enter the allowed fee that should be used for all calculations instead of the <i>Fee</i>.  </p>
+<ul class="MarginBottomGap">
+<li>Changes to the allowed amount can be made for this claim only by entering a fee into the white box.</li>
+<li> If this is a PPO plan, an allowed amount may already be entered. Click <b>Edit Allowed Amt</b> to change the amount in the fee schedule. </li>
+<li>When entering <a href="claimpayfinalize.html">Insurance Payments</a>, there is also a column for allowed amounts, and these flow into the out-of-network fee schedule if one is set for the insurance plan (Edit Insurance Plan window, Carrier Allowed Amount). </li>
+<li>Out-of-network fee schedules can be auto-generated using the Blue Book feature. </li>
+</ul>
+<h2>Estimate Information</h2>
+<p>Changing information does not change the patient's balance. To update a patient's estimated balance, click <b>Recalculate Estimates</b> in the Edit Claim window after making any changes to procedures attached to a claim.</p>
+<img src="images/claimProcInsEst.png" width="383" height="255"/><p class="MarginBottomZero"><b>Patient Copay</b>: For most plan types, based on the insurance plan's <i>Patient Co-pay Amounts</i> fee schedule. </p>
+<ul class="MarginBottomGap">
+<li>For capitation, this automates calculation of write-off.</li>
+<li>For any other insurance, this amount is subtracted from what insurance will pay.</li>
+</ul>
+<p>For Fixed Benefit Plan Types, this Patient Copay is calculated as <span class="codeblock">(Fee or Allowed Amt) - Fixed Benefit Amount</span>. Fixed Benefit Amount is determined from from based <i>Fixed Benefit</i> fee schedule assigned to the insurance plan. </p>
+<p><b>Deductible</b>: The amount that the patient must pay each year before insurance kicks in. Usually waived on preventive procedures.</p>
+<p><b>Percentage %</b>: The percentage that insurance is expected to cover, based on a plan's benefits.</p>
+<p><b>Paid By Other Ins</b>: Adds up all amounts paid by insurance plans that are lower in order. For example, it will never contain an amount if this is primary insurance.</p>
+<p><b>BaseEst</b>: Base insurance estimate before considering any deductible or maximums (e.g., annual max). Calculated as <span class="codeblock">(Fee or Allowed) - Copay) x (Percentage or Percent Override)</span></p>
+<p><b>Insurance Estimate</b>: This value is the one shown in most places as the estimate. It depends on the order of treatment in the treatment plan. If the claimproc is already attached to a claim, this does not affect the patient balance and the Insurance Estimate under Claim Info should be used instead. Frequency Limitations are not considered in this field. Other limitations and exlusions are. See the <i>Estimate Note</i> for additional information on what may be affecting the estimate.</p>
+<p><b>Write-off Estimate</b>: Usually only used for PPO plans. This shows as a column in the treatment plan.</p>
+<p><b>Estimated Patient Portion</b>: The estimated amount the patient is responsible for after insurance estimate and write-offs (<span class="codeblock">Fee - Insurance Estimate - Write-off</span>).</p>
+<p><b>Estimate Note</b>: Contains automatically generated notes about annual max, limitations, exclusions, etc. that may affect the insurance calculations and also display in the Treatment Plan.</p>
+<p><div class="Note">Note: Overrides can be entered into the white boxes to the right of select fields. Be aware that manually entering overrides does not fully recalculate insurance coverage. For example: adding a missing coverage percentage does not result in a missing deductible being added. Whenever possible, it is best to correct coverage information here: <a href="insplanedit.html">Change Insurance Plan Information</a>.</div>
+</p>
+<h2>Claim Info</h2>
+<p>If the claimproc is still an estimate, this section is not be visible. Once attached to a claim, this section can only be edited from within a claim.</p>
+<img src="images/claimProcClaimInfo.png" width="396" height="128"/><p><b>Deductible</b>: The actual deductible as reported by the insurance company.</p>
+<p><b>Insurance Estimate</b>: The official amount estimated to be paid. Affects patient balance. Gets copied from Insurance Estimate when claim is created. After that, it can only be changed manually.</p>
+<p><b>Insurance Paid</b>: Once insurance pays, this is the amount actually paid on this procedure. Cannot be edited once the procedure is attached to a check.</p>
+<p><b>Write-off</b>: Amount not covered by insurance that office decides not to charge the patient. This is how Capitation is handled as well as assignment of benefits where provider has agreed not to charge above a set amount.</p>
+<p><b>Estimated Patient Portion</b>: The estimated amount the patient is responsible for after insurance and write-offs (<span class="codeblock">Fee - Insurance Estimate - Write-off</span>).</p>
+<h2>Buttons</h2>
+<img src="images/claimProcButtons.png" width="915" height="52"/><p><b>Attached to Insurance Payment Plan</b>: This box is automatically checked if this claimproc's insurance payment is attached to an Insurance Payment Plan. This box can be checked manually if payment is entered first and an <a href="paymentplanins.html">Insurance Payment Plan</a> is created after the fact. </p>
+<p class="MarginBottomZero"><b>Delete</b>: Remove the insurance estimate (claimproc) from a procedure.  </p>
+<ul class="MarginBottomGap">
+<li>If the procedure is attached to a claim, this also removes the procedure from the attached claim. </li>
+<li>Claimprocs with a procedure date for the current (today's) date cannot be deleted. Mark the procedure as <i>Do Not Bill to Ins</i> from the <a href="procedurefinancial.html">Procedure - Financial Tab</a> instead.</li>
+<li>Claimprocs for procedures with a procedure status of <i>Treatment Planned</i> cannot be deleted. Mark the procedure as <i>Do Not Bill to Ins</i> from the Procedure - Financial tab instead.</li>
+<li>The last claimproc cannot be deleted from a claim. The claim must be deleted instead. </li>
+</ul>
+<p><b>OK</b>: Close the window. Changes are saved.</p>
+<p><b>Cancel</b>: Close the window. Some changes may not be saved.</p>
+<h2>Blue Book</h2>
+<p>When <a href="bluebooksetup.html">Blue Book</a> is enabled, the <b>Blue Book Log</b> button is visible. Click to see the history of the blue book fee for this procedure code.</p>
+<img src="images/blueBookLog.gif" width="915" height="225"/><p>The history of the fee is shown. As allowed amounts are entered, or manual fees change, they are logged here.</p>
+</div>
+</div>
+</body>
+</html>```

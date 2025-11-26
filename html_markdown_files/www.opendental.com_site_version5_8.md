@@ -1,0 +1,63 @@
+# File: ./www.opendental.com/site/version5_8.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: Version 5.8</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>Version 5.8</h1>
+		</div>
+		<div id="Content">
+<p>See <a href="versions.html">Versions</a></p>
+<p>Version 5.8 Released on 8/19/08 </p>
+<p><b>Referral Slips</b><b>:</b> Referral slips can be generated for any patient/referral combination. All data on the referral slip can be edited before printing, including fields initially generated from the database. Printout is archived for later viewing. Referral slips for different referrals can be set up ahead of time and can be completely customized. Background images can be used. Freehand drawing is supported. Referral slips can be simultaneously emailed to patient and/or referral as a pdf. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7referralslips.html">Referral Slips</a>. </p>
+<p><b>Labels:</b> All Labels can now be totally customized. Appointment label added. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7labels.html">Labels</a>. </p>
+<p><b>Sheets Framework: </b> This framework is very general and powerful. It allows customization and archival of printouts. It includes use of images, static text, output text, input fields, and freehand drawing. The drawing with a stylus or mouse can be used to check boxes on a form, circle teeth, sign, etc. The sheets framework is now being used for labels and referral slips. It lays the foundation for many more exciting features later. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7sheets.html">Sheets</a>. </p>
+<p><b>Site table:</b> Added to the database. Replaces the old gradeschool table. Makes it more useful for mobile clinics to keep track of nursing homes and community sites. Added site field to procedure table. Added searching by site filter to unschedule appt list, planned appt tracker, recall list, and select patient window. Site can be set to show in title bar. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7sites.html">Sites</a>. </p>
+<p><b>Referral Analysis Report:</b> This is a new report. For a given period of time, it lists the referral sources that contributed to production. It lists the number of patients for each referral source. It optionally includes address information for letter merge. It has the option to only include new patients. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reports.html">Reports</a>. </p>
+<p><b>New Patient Report: </b>This is a new report. For a given period of time, it lists the new patient out individually as well as generating a running count. It includes production per patient. It optionally includes address information for letter merge. It has the option to exclude patients with no production. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7reports.html">Reports</a>.</p>
+<p><b>Pharmacy table:</b> Added a pharmacy table to the database in preparation for the switch to electronic Rx. Pharmacies can be attached to Prescriptions. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7pharmacies.html">Pharmacies</a>.</p>
+<p><b>Display Fields :</b> Extended the current display fields feature to include customization of the Patient Select window columns and the Family module patient info grid rows. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7displayfields.html">Display Fields</a></p>
+<p>If a payment is attached to a deposit, it now shows which deposit. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7payment.html">Payment</a>. <br>  Default insurance billing provider can now be set separately for each clinic. <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7clinics.html">Clinics</a>. </p>
+
+</div>	
+	</div>
+</body>
+</html>```

@@ -1,0 +1,55 @@
+# File: ./www.opendental.com/site/apipatientraces.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API PatientRaces</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apipatientraces','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API PatientRaces</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96patientrace.html" target="_blank">PatientRace Database Schema.</a></p>
+<h2>PatientRaces GET</h2>
+<p>Version Added: 22.3.12</p>
+<p>Gets all of the Race and Ethnicity information for a Patient, similarly to how it shows in the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7patienteditpublichealth.html">Edit Patient Information: Public Health Tab</a>. The dental office must have Public Health enabled to record this information.</p>
+<p>In the example below, a single patient has two races specified as well as an ethnicity.</p>
+<p><b>PatNum:</b> Required.</p>
+<p>Returned fields are detailed below:</p>
+<b>PatientRaceNum:</b> Primary key of the patientrace table.<br><b>PatNum:</b> The PatNum of the patient.<br><b>CdcrecCode:</b> CDC Race and Ethnicity unique identifier code.<br><b>descripition:</b> Race or Ethnicity Description corresponding to the CdcrecCode.<br><b>isEthnicity:</b> True for ethnicity or False for race information.<br><b>heirarchicalCode:</b> Alphanumeric code that the CDC uses to organize CdcrecCodes.<br><br><p><b>Example Request</b><br> GET /patientraces?PatNum=73</p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br>  {<br> "PatientRaceNum": 16,<br> "PatNum": 73,<br> "CdcrecCode": "2066-9",<br> "descripition": "ZAIREAN",<br> "isEthnicity": "false",<br> "heirarchicalCode": "R3.03.006"<br>  },<br>  {<br> "PatientRaceNum": 17,<br> "PatNum": 73,<br> "CdcrecCode": "2120-4",<br> "descripition": "EGYPTIAN",<br> "isEthnicity": "false",<br> "heirarchicalCode": "R5.02.002"<br>  },<br>  {<br> "PatientRaceNum": 18,<br> "PatNum": 73,<br> "CdcrecCode": "2186-5",<br> "descripition": "NOT HISPANIC OR LATINO",<br> "isEthnicity": "true",<br> "heirarchicalCode": "E2"<br> }<br> ]<br></span></p>
+<p> 200 OK<br> 400 Bad Request (Patient is deleted, etc)<br> 401 NotFound (Patient not found)<br></p>
+		</div>
+	</div>
+</body>
+</html>```

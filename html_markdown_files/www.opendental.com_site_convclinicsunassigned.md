@@ -1,0 +1,51 @@
+# File: ./www.opendental.com/site/convclinicsunassigned.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Conversions: Unassigned Clinics</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('convclinicsunassigned','usingodconversion','conversions','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Conversions: Unassigned Clinics</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="usingodconversion.html">Use Converted Database</a>.</p>
+<p>When <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7clinics.html">Clinics</a> is enabled, patient assignment to a clinic determines the default clinic used for billing, claims, payments, adjustments, and more. During <a href="conversions.html">Conversions</a>, any patients not already assigned to clinics are assigned to a clinic named <i>Conv_Unassigned</i>. We recommend identifying these patients, then assigning them to the correct clinic as soon possible after a conversion. To identify these patients, we provide the query, <i>Conv - Patients in Unassigned Clinic</i>.</p>
+<p>Go to <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7queryfavorites.html">User Query Favorites</a>, then double-click on the <i>Conv - Patients in Unassigned Clinic</i> query</p>
+<img src="images/convqueryClinics.png" width="915" height="404"/><p>For each patient listed, go the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7patientedit.html">Edit Patient Information Window</a> and assign a clinic.</p>
+<p>Once all patients have been assigned an actual clinic, delete the <i>Conv_Unassigned</i> clinic from the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7clinicsetup.html">Clinic List</a>.</p>
+<div class="Note">Note: To run <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7billing.html">Batch Billing</a> for patients who are assigned to the Conv_Unassigned clinic, select the Conv_Unassigned clinic in the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7billing.html">Billing Options</a> before creating the Billing List.</div>
+<br><br><p>Resource: <a href="checklistconverteddb.html">Post-Data Conversion Setup Checklist</a></p>
+		</div>
+	</div>
+</body>
+</html>```

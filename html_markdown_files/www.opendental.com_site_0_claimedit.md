@@ -1,0 +1,75 @@
+# File: ./www.opendental.com/site/0_claimedit.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Claims</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('0_claimedit','0_account','0_modules','quickmanual','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Claims</p></div>
+		<div class="GeneralPageContent">
+<p>Create, send, and receive claims for individual patients from the Edit Claim window.</p>
+<p>In the <a href="0_account.html">Account Module</a> toolbar, click <b>New Claim</b>.</p>
+<img src="images/claimPayFinalize.png" width="915" height="682"/><p>The Claim button automatically creates primary, secondary, and tertiary dental claims as needed. Individual claims can also be created using the dropdown. Claims are displayed as a line item on patient accounts for easy reference.</p>
+<p>An individual claim can be sent or printed from the Edit Claim window or multiple claims can be sent or printed from the <a href="0_manage.html">Manage Module</a>.</p>
+<p><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> See our Webinar: <a href="https://youtu.be/Zbdp3n4gne0">Creating Claims</a></p>
+<h2>Claim and Provider Information</h2>
+<p>View or update information that affects what is sent or printed on a claim.</p>
+<img src="images/claimFormTypeProviders.png" width="270" height="133"/><p><b>Med/Dent</b>: Create Dental, Medical, or Institutional claims. This affects information sent on electronic claims.</p>
+<p><b>Billing/Treating Provider</b>: Billing and treating providers are automatically attached to the claim based on settings and procedure providers. These can be manually updated as needed.</p>
+<h2>Insurance Plans</h2>
+<p>Update insurance subscriber relationship or other insurance coverage to make sure the correct information is included on a claim.</p>
+<img src="images/claimInsurancePlans.png" width="277" height="164"/><h2> Enter Payment </h2>
+<p>Receive itemized or total insurance payments, supplemental payments, or split a claim when certain procedures need to be resubmitted.</p>
+<img src="images/claimEnterPaymentSplitClaim.png" width="154" height="162"/><h2>Pending Payment</h2>
+<p>Use the Pending Payment feature to enter supplemental payments not yet received. This ensures that additional payments or insurance refunds are reflected in patient balances, even after receiving a claim.</p>
+<img src="images/claimPayPending.png" width="125" height="89"/><h2>Procedures and Estimates</h2>
+<p>View a breakdown of procedure estimates and payments on the claim.</p>
+<img src="images/claimProcedures.png" width="915" height="185"/><h2>Finalize Insurance Payments and Additional Payment Information</h2>
+<p>Finalize claim payments and view existing payment details.</p>
+<img src="images/finalizeInsPay.png" width="915" height="94"/><p><b>View ERA</b>: Access <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimsera835.html">ERAs</a> associated with the claim. </p>
+<p><b>View EOB</b>: View scanned EOBs for attached insurance payments.</p>
+<p><b>Batch</b>: Attach received claims to a batch insurance payment. </p>
+<p><b>This Claim Only</b>: Finalize payment by attaching only the current received claim to an insurance payment.</p>
+<p><b>Reasons Underpaid</b>: Enter details if a claim does not pay as much as expected, enter details about why. This information shows on the patient's statement so they know why they have to pay more for their procedures.</p>
+<p><b>Insurance Payments</b>: This grid displays any finalized insurance payments attached to the claim. Payments can be easily double-clicked to view additional information or to edit.</p>
+<h2>Tabs</h2>
+<img src="images/claimTabs.png" width="307" height="38"/><p><b>General Tab</b>: Enter information about prosthetics, orthodontic work, and claim referrals. </p>
+<p><b>Attachments Tab</b>: Enter information about attached images and documents. Integrated with the EDS Attachment Service. For DentalXChange users, attachments can be added to a claim using right-click options from the accouint. </p>
+<p><b>Misc Tab</b>: Enter information about Denti-Cal and other miscellaneous fields. </p>
+<p><b>Medical Tab</b>: Enter information used for medical claim forms, including the UB-04.</p>
+<p><b>Status History Tab</b>: Record custom claim tracking data. This is helpful if you need to document why a claim may be delayed, etc.</p>
+		</div>
+	</div>
+</body>
+</html>```

@@ -1,0 +1,77 @@
+# File: ./www.opendental.com/manual232/canadaattachments.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Canada Attachments</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('canadaattachments','canada','countries','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/canadaattachments.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/canadaattachments.html" >v24.2</option><option value="https://www.opendental.com/manual241/canadaattachments.html" >v24.1</option><option value="https://www.opendental.com/manual233/canadaattachments.html" >v23.3</option><option value="https://www.opendental.com/manual232/canadaattachments.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/canadaattachments.html" >v23.1</option><option value="https://www.opendental.com/manual224/canadaattachments.html" >v22.4</option><option value="https://www.opendental.com/manual223/canadaattachments.html" >v22.3</option><option value="https://www.opendental.com/manual222/canadaattachments.html" >v22.2</option><option value="https://www.opendental.com/manual221/canadaattachments.html" >v22.1</option><option value="https://www.opendental.com/manual214/canadaattachments.html" >v21.4</option><option value="https://www.opendental.com/manual213/canadaattachments.html" >v21.3</option><option value="https://www.opendental.com/manual212/canadaattachments.html" >v21.2</option><option value="https://www.opendental.com/manual211/canadaattachments.html" >v21.1</option><option value="https://www.opendental.com/manual205/canadaattachments.html" >v20.5</option><option value="https://www.opendental.com/manual204/canadaattachments.html" >v20.4</option><option value="https://www.opendental.com/manual203/canadaattachments.html" >v20.3</option><option value="https://www.opendental.com/manual202/canadaattachments.html" >v20.2</option><option value="https://www.opendental.com/manual201/canadaattachments.html" >v20.1</option><option value="https://www.opendental.com/manual194/canadaattachments.html" >v19.4</option><option value="https://www.opendental.com/manual193/canadaattachments.html" >v19.3</option><option value="https://www.opendental.com/manual192/canadaattachments.html" >v19.2</option><option value="https://www.opendental.com/manual191/canadaattachments.html" >v19.1</option><option value="https://www.opendental.com/manual184/canadaattachments.html" >v18.4</option><option value="https://www.opendental.com/manual183/canadaattachments.html" >v18.3</option><option value="https://www.opendental.com/manual182/canadaattachments.html" >v18.2</option><option value="https://www.opendental.com/manual181/canadaattachments.html" >v18.1</option><option value="https://www.opendental.com/manual174/canadaattachments.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Canada Attachments</p></div>
+<div class="GeneralPageContent">
+<p>For carriers that accept electronic attachments, Canada users can add the attachment to the claim or predetermination.</p>
+<p>For <a href="canada.html">Canada</a> users, in a claim, click the Attachments tab, Canadian tab. </p>
+<img src="images/canadaAttachmentsTab.png" width="695" height="263"/><p class="MarginBottomZero">Attached Images: Lists images currently associated with the claim. </p>
+<ul class="MarginBottomGap">
+<li><b>Add</b>: Search for a file to attach. File types accepted include TXT, DOC, DOCX, JPG, PNG, PDF, and TIF. Individual files cannot be larger than 10MB<br/><img src="images/canadaAttachmentsAdd.png" width="633" height="336" class="ImageInParagraph"/><ul>
+<li><b>Existing Images</b>: Lists images and files already saved to the Imaging Module. Select a file to send as an attachment. </li>
+<li><b>Import</b>: Import a new image or file from the File Explorer. </li>
+<li><b>Snipping Tool</b>: Click to launch the Windows Snipping Tool. Use the tool to snip an image on the screen.</li>
+<li><b>Paste Image</b>: Paste an image already saved to the clipboard.</li>
+</ul>
+</li>
+<li><b>Perio</b>: Attach an existing Perio Chart.</li>
+<li><b>Export</b>: Export attached files.</li>
+</ul>
+<p><b>Send Attachments</b>: Send attachments to the carrier.</p>
+<h2>Attachment Process</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Send the claim or predetermination as normal, without any attachments. </li>
+<li>The response will return as an Acknowledgment. Attachments can not be added if the response returns an EOB or Rejection.</li>
+<li>Navigate to the Canadian Attachments tab. </li>
+<li>Add images or files as needed. </li>
+<li>Click <b>Send Attachments</b>. </li>
+</ol>
+<p>Attachments can be sent immediately after receiving the Acknowledgment response, or much later if the attachments were requested by mail.</p>
+<p>Up to 30 attachments can be sent at one time.</p>
+<p></p>
+<h2>Setup</h2>
+<p class="MarginBottomZero">To utilize attachments:  </p>
+<ul class="MarginBottomGap">
+<li>An image category must be marked as <i>Claim Attachments</i> in <a href="definitionsimagecat.html">Definitions: Image Categories</a>.</li>
+<li>The carrier must have a Supported Transaction Type of <i>Attachment</i>.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>```

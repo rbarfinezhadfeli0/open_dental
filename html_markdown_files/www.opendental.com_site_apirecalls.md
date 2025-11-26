@@ -1,0 +1,100 @@
+# File: ./www.opendental.com/site/apirecalls.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API Recalls</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apirecalls','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API Recalls</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7recall.html">Recall</a> for more information.</p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96recall.html" target="_blank">Recall Database Schema.</a></p>
+<h2>Recalls GET</h2>
+<p>Version Added: 22.4.40</p>
+<p>Gets a list of recalls.</p>
+<p><b>Parameter:</b><br></p>
+<p><b>PatNum:</b> Optional.<br></p>
+<p><b>Example Requests:</b><br> GET /recalls<br> GET /recalls?PatNum=38<br></p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br> {<br> "RecallNum": 40,<br> "PatNum": 38,<br> "DateDue": "2022-09-09",<br> "DatePrevious": "0001-01-01",<br> "RecallInterval": "6m1d",<br>  "RecallStatus": 142,<br> "recallStatus": "Mailed Postcard",<br> "Note": "",<br> "IsDisabled": "false",<br> "DateTStamp": "2021-07-21 10:05:47",<br> "RecallTypeNum": 6,<br> "DisableUntilBalance": 0.0,<br> "DisableUntilDate": "0001-01-01",<br> "DateScheduled": "0001-01-01",<br> "Priority": "Normal",<br> "TimePatternOverride": ""<br> },<br> etc...<br> ]<br></span></p>
+<p>200 OK<br> 400 BadRequest<br> 404 NotFound </p>
+<h2>Recalls GET List</h2>
+<p>Version Added: 22.1</p>
+<p>Gets the Recall List similar to how it's shown in the Appointment Module when you click on Lists and select <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7recalllist.html">Recalls</a>. </p>
+<p>RecallType selection is dependant upon <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7recallsetup.html">Recall Setup</a>. RecallTypes are stored in CSV format in the RecallTypesShowingInList preference. That preference stores the primary keys from the RecallType table. This information can be retrieved using GET preferences?PrefName=RecallTypesShowingInList.</p>
+<p>URL Search Parameters:</p>
+<p><b>DateStart:</b> Due date range. String in "yyyy-mm-dd" format. Default is based on RecallDaysPast preference.<br><b>DateEnd:</b> Due date range. String in "yyyy-mm-dd" format. Default is based on RecallDaysFuture preference.<br><b>ProvNum:</b> Provider. Default is all providers. Will consider PriProv and SecProv.<br><b>ClinicNum:</b> Clinic. Default is all clinics. Use 0 for "Unassigned".<br><b>RecallType:</b> Typically either "Prophy" or "Perio". Default is all RecallTypes stored in the preference.<br><b>IncludeReminded:</b> Show patients that have already received reminders. Either "true" or "false". Default is false.<br></p>
+<p>Returned fields are detailed below:</p>
+<p><b>DueDate:</b> The date the recall is due. Based off previously completed recall procedures or insurance history. If blank, the patient has never had a recall procedure set complete.<br><b>PatNum:</b> Patient.PatNum.<br><b>Patient:</b> Patient's name. Last, First.<br><b>Age:</b> Patient's Age.<br><b>Type:</b> RecallType due.<br><b>Interval:</b> The length of time between each recall appointment for the recall type.<br><b>NumRemind:</b> The number of reminders sent since the patient's last recall appointment.<br><b>LastRemind:</b> The date the last reminder was sent.<br><b>Contact:</b> The patient's Preferred Recall Method.<br><b>Status:</b> Recall communication about a patient's unscheduled recall appointment. Example "Left Msg".<br><b>ClinicNum:</b> ClinicNum of clinic patient is assigned to. Will be 0 if not using Clinics.<br><b>Note:</b> Administrative note.<br></p>
+<p><b>Example Request:</b><br> GET /recalls/List?Offset=200<br> GET /recalls/List?IncludeReminded=true<br></p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br> {<br> "DueDate": "3/16/2022",<br> "PatNum": 15,<br> "Patient": "Strickler, Trent",<br> "Age": "38",<br> "Type": "Pano",<br> "Interval": "6m1d",<br> "NumRemind": "",<br> "LastRemind": "",<br> "Contact": "Text:(541)555-1234",<br> "Status": "",<br> "ClinicNum": 5,<br> "Note": ""<br> },<br> {<br> "DueDate": "1/10/2022",<br> "PatNum": 42,<br> "Patient": "Lehrer, 'Andy' Tom",<br> "Age": "29",<br> "Type": "Exam",<br> "Interval": "6m1d",<br> "NumRemind": "1",<br> "LastRemind": "11/4/2021",<br> "Contact": "meandu@earth.com",<br> "Status": "",<br> "ClinicNum": 4,<br> "Note": ""<br> },<br> etc...<br> ]<br></span></p>
+<p>200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>Recalls POST (create)</h2>
+<p>Version Added: 24.2.31</p>
+<p>Creates a recall for a patient. A patient should have at most, one recall for each <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7recalltypes.html">Recall Type</a>.</p>
+<p><b>Parameters:</b><br></p>
+<p><b>PatNum:</b> Required. FK to patient.PatNum.<br><b>RecallTypeNum:</b> Required. FK to recalltype.RecallTypeNum. A patient may only have one recall for each RecallType.<br><br><b>DateDue:</b> Optional. This is the date that is actually used when doing reports for recall. String in "yyyy-MM-dd" format.<br><b>RecallInterval:</b> Optional.The interval between recalls. String that contains a digit followed by 'y' for years, 'm' for months, 'w' for weeks, or 'd' for days. An example of 1 year, 6 months, and 20 days should be formatted as follows: '1y6m20d'. Default recalltype.DefaultInterval.<br><b>RecallStatus:</b> Optional. FK to definition.DefNum where definition.Category=13. Default 0.<br><b>Note:</b> Optional. An administrative note for staff use.<br><b>IsDisabled:</b> Optional. Either "true" or "false". Default "false".<br><b>DisableUntilBalance:</b> Optional. Family balance must be less than this value for the recall to show in the recall list. Default 0.<br><b>DisableUntilDate:</b> Optional. Recall will be disabled until this date. String in "yyyy-MM-dd" format.<br><b>Priority:</b> Optional. Either "Normal" or "ASAP". Default "Normal". <br><b>TimePatternOverride:</b> Optional. Used to override recalltype.DefaultInterval. Time pattern in 5 minute increments. A string consisting of 'X' and '/' characters only.<br></p>
+<p><b>Example Request:</b><br> POST /recalls<br><span class="codeblock"><br> {<br> "PatNum": 38,<br> "RecallTypeNum": 8,<br> "RecallInterval": "0y6m0w1d",<br> "RecallStatus": 142,<br> "Note": "New patient, try to get appoinment around the same time as child."<br> }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "RecallNum": 40,<br> "PatNum": 38,<br> "DateDue": "0001-01-01",<br> "DatePrevious": "0001-01-01",<br> "RecallInterval": "6m1d",<br>  "RecallStatus": 142,<br> "recallStatus": "Mailed Postcard",<br> "Note": "New patient, try to get appoinment around the same time as child.",<br> "IsDisabled": "false",<br> "DateTStamp": "2024-09-02 09:31:19",<br> "RecallTypeNum": 8,<br> "DisableUntilBalance": 0.0,<br> "DisableUntilDate": "0001-01-01",<br> "DateScheduled": "0001-01-01",<br> "Priority": "Normal",<br> "TimePatternOverride": ""<br> }<br></span></p>
+<p>200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation) </p>
+<h2>Recalls PUT (update)</h2>
+<p>Version Added: 24.2.31</p>
+<p>Updates a recall.</p>
+<p><b>RecallNum: </b>Required in URL.<br><br><b>DateDue:</b> This is the date that is actually used when doing reports for recall. String in "yyyy-MM-dd" format.<br><b>RecallInterval:</b> The interval between recalls. String that contains a digit followed by 'y' for years, 'm' for months, 'w' for weeks, or 'd' for days. An example of 1 year, 6 months, and 20 days should be formatted as follows: '1y6m20d'.<br><b>RecallStatus:</b> FK to definition.DefNum where definition.Category=13. Use 0 to set to "None".<br><b>Note:</b> An administrative note for staff use. Overwrites existing note.<br><b>IsDisabled:</b> Either "true" or "false".<br><b>DisableUntilBalance:</b> Family balance must be less than this value for the recall to show in the recall list.<br><b>DisableUntilDate:</b> Recall will be disabled until this date. String in "yyyy-MM-dd" format.<br><b>Priority:</b> Either "Normal" or "ASAP".<br><b>TimePatternOverride:</b> Used to override recalltype.DefaultInterval. Time pattern in 5 minute increments. A string consisting of 'X' and '/' characters only.<br></p>
+<p><b>Example Request:</b><br> PUT /recalls/1652</p>
+<p><span class="codeblock"> {<br> "DateDue": "2022-09-09",<br> "RecallInterval": "0y6m0w1d",<br> "RecallStatus": 142,<br> "Note": "New patient, try to get appoinment around the same time as child."<br> }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "RecallNum": 1652,<br> "PatNum": 38,<br> "DateDue": "2022-09-09",<br> "DatePrevious": "0001-01-01",<br> "RecallInterval": "6m1d",<br>  "RecallStatus": 142,<br> "recallStatus": "Mailed Postcard",<br> "Note": "New patient, try to get appoinment around the same time as child.",<br> "IsDisabled": "false",<br> "DateTStamp": "2021-07-21 10:05:47",<br> "RecallTypeNum": 6,<br> "DisableUntilBalance": 0.0,<br> "DisableUntilDate": "0001-01-01",<br> "DateScheduled": "0001-01-01",<br> "Priority": "Normal",<br> "TimePatternOverride": ""<br> }<br></span><br> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>Recalls PUT Status</h2>
+<p>Version Added: 21.2</p>
+<p>Updates the RecallStatus on a patient's recall. This status describes the recall reminder itself, and not the status of the resulting appointment. To instead change an appointment's status, use Appointments PUT Confirm. A commlog for the patient is also created with CommType.Recall, Mode_.None, and note with "Recall reminder" and the new RecallStatus.</p>
+<p><b>PatNum: </b>Required.<br><b>recallType:</b> Required. Typically either "Prophy" or "Perio". RecallType is dependent upon <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7recallsetup.html">Recall Setup</a> and <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7recalltypes.html">Recall Types</a>.<br><b>RecallStatus:</b> Optional. Any definition.DefNum where Definition.Category=13. Use 0 set status to "None".<br><b>commlogMode:</b> Optional. Either "None", "Email", "Mail", "Phone", "InPerson", "Text", "EmailAndText", or "PhoneAndText".<br><b>commlogNote:</b> Optional. This text will be used instead of the default commlog.Note.<br></p>
+<p><b>Example Requests:</b><br> PUT /recalls/Status<br></p>
+<p><span class="codeblock"> {<br>  "PatNum": 71,<br>  "recallType": "Prophy",<br>  "RecallStatus": 312,<br>  "commlogMode": "Phone",<br>  "commlogNote": "Patient out of town until 08/30/2021."<br> }<br></span></p>
+<p><span class="codeblock"> {<br>  "PatNum": 46,<br>  "recallType": "Perio"<br> }<br></span></p>
+<p><b>Example Response:</b><br> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>Recalls PUT SwitchType</h2>
+<p>Version Added: 22.4.41</p>
+<p class="MarginBottomZero">Switches a Recall's type similiar to clicking the 'Set Perio' or 'Set Prophy' button found in the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7recall.html">Recalls for Patient</a> window.<br><br></p>
+<ul class="MarginBottomGap">
+<li>If a patient has a Prophy type recall, it will be set to Perio. </li>
+<li>If a patient has a Perio type recall, it will be set to Prophy.</li>
+</ul>
+<p><b>PatNum: </b>Required.</p>
+<p><b>Example Request:</b><br> PUT /recalls/SwitchType</p>
+<p><span class="codeblock"> {<br>  "PatNum": 38<br> }<br></span></p>
+<p><b>Example Response:</b><br> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>```

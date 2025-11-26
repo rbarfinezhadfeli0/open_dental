@@ -1,0 +1,68 @@
+# File: ./www.opendental.com/manual232/webschedrecallsees.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Web Sched Recall: What Patient Sees</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('webschedrecallsees','webschedrecallsetup','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/webschedrecallsees.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/webschedrecallsees.html" >v24.2</option><option value="https://www.opendental.com/manual241/webschedrecallsees.html" >v24.1</option><option value="https://www.opendental.com/manual233/webschedrecallsees.html" >v23.3</option><option value="https://www.opendental.com/manual232/webschedrecallsees.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/webschedrecallsees.html" >v23.1</option><option value="https://www.opendental.com/manual224/webschedrecallsees.html" >v22.4</option><option value="https://www.opendental.com/manual223/webschedrecallsees.html" >v22.3</option><option value="https://www.opendental.com/manual222/webschedrecallsees.html" >v22.2</option><option value="https://www.opendental.com/manual221/webschedrecallsees.html" >v22.1</option><option value="https://www.opendental.com/manual214/webschedrecallsees.html" >v21.4</option><option value="https://www.opendental.com/manual213/webschedrecallsees.html" >v21.3</option><option value="https://www.opendental.com/manual212/webschedrecallsees.html" >v21.2</option><option value="https://www.opendental.com/manual211/webschedrecallsees.html" >v21.1</option><option value="https://www.opendental.com/manual205/webschedrecallsees.html" >v20.5</option><option value="https://www.opendental.com/manual204/webschedrecallsees.html" >v20.4</option><option value="https://www.opendental.com/manual203/webschedrecallsees.html" >v20.3</option><option value="https://www.opendental.com/manual202/webschedrecallsees.html" >v20.2</option><option value="https://www.opendental.com/manual201/webschedrecallsees.html" >v20.1</option><option value="https://www.opendental.com/manual194/webschedrecallsees.html" >v19.4</option><option value="https://www.opendental.com/manual193/webschedrecallsees.html" >v19.3</option><option value="https://www.opendental.com/manual192/webschedrecallsees.html" >v19.2</option><option value="https://www.opendental.com/manual191/webschedrecallsees.html" >v19.1</option><option value="https://www.opendental.com/manual184/webschedrecallsees.html" >v18.4</option><option value="https://www.opendental.com/manual183/webschedrecallsees.html" >v18.3</option><option value="https://www.opendental.com/manual182/webschedrecallsees.html" >v18.2</option><option value="https://www.opendental.com/manual181/webschedrecallsees.html" >v18.1</option><option value="https://www.opendental.com/manual174/webschedrecallsees.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Web Sched Recall: What Patient Sees</p></div>
+<div class="GeneralPageContent">
+<p>Below is a description of what happens when a practice sends Web Sched Recall reminders to patients (automated or manual) and the patients go online to schedule. See <a href="../site/websched.html">Web Sched Feature</a> for a description of the Web Sched Recall service.</p>
+<p>One reminder for each recall appointment is sent to the patient's <a href="authrep.html">Authorized Representatives</a>. Each reminder contains a clickable link that is patient-specific based on patient number.</p>
+<p>To schedule an appointment, the patient will follow these steps:</p>
+<ol>
+<li>Open the reminder and click on the link in the message text to open Web Sched Recall in a browser. <br/><img src="images/webschedRecallUI.gif" width="701" height="522" class="ImageInParagraph"/><ul>
+<br/><li>Practice or clinic name, address, and phone number: Based on the information entered in <a href="practice.html">Practice Setup</a> or <a href="clinicsetup.html">Clinic List</a> (patient's default clinic).</li>
+<li>Patient info: Only the patient's first name and age shows. If the patient is over 89, 89+ shows. No PHI is displayed.</li>
+</ul>
+</li>
+<li><b>Select a Provider</b>: If you have opted to allow patients to select a provider, and more than one provider has available openings, patient can select a provider. To view a provider photo and description, click +. Click - to collapse provider information. +/- only shows when provider details have been added to the provider's profile on the <a href="providerseditwindow.html">Provider</a>, Web Sched tab. There is no particular order of providers. <br/><img src="images/webSchedRecallProvider.gif" width="552" height="242" class="ImageInParagraph"/></li>
+<li><b>Calendar</b>: By default, the first dates with available time slots show, based on criteria selected in <a href="webschedrecallsetup.html">Web Sched Recall</a>. Select a date and available appointment times will show. Then select the desired appointment time.</li>
+<li>(optional) Check <b>Notify me if an earlier appointment time becomes available</b> to have the office notify patient about earlier appointments. This marks the appointment as ASAP and it will show on the ASAP List.</li>
+<li>Click <b>Finalize Appt</b>.</li>
+<li>A confirmation message will show. To confirm, click <b>Yes</b>. To return to the list of available dates, click No. <br/><img src="images/webschedConfirm.gif" width="344" height="71" class="ImageInParagraph"/></li>
+<li>If Yes, a confirmation of the now scheduled appointment will show. <br/><img src="images/webschedBooked.gif" width="484" height="174" class="ImageInParagraph"/></li>
+<li>Close the browser to end the session.</li>
+</ol>
+<br/><h2>In Open Dental</h2>
+<ul>
+<li>Scheduled appointments instantly show up in the <a href="appointments.html">Appointments Module</a>.</li>
+<li><a href="alerts.html">Alerts</a> are created to notify staff a Web Sched Recall appointment has been scheduled.</li>
+<li>Use the <a href="webschedapptreport.html">Web Sched Appointments Report</a> to view and track appointments scheduled using Web Sched.</li>
+</ul>
+<br/><div class="Note">Note: Once an appointment is scheduled it cannot be changed in Web Sched Recall. If a patient reopens the email link, they will be notified an appointment has already been booked.</div>
+</div>
+</div>
+</body>
+</html>```

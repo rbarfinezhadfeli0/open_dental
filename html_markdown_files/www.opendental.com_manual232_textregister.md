@@ -1,0 +1,76 @@
+# File: ./www.opendental.com/manual232/textregister.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Register with Carriers</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('textregister','signupportalbasic','eservicessignup','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/textregister.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/textregister.html" >v24.2</option><option value="https://www.opendental.com/manual241/textregister.html" >v24.1</option><option value="https://www.opendental.com/manual233/textregister.html" >v23.3</option><option value="https://www.opendental.com/manual232/textregister.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/textregister.html" >v23.1</option><option value="https://www.opendental.com/manual224/textregister.html" >v22.4</option><option value="https://www.opendental.com/manual223/textregister.html" >v22.3</option><option value="https://www.opendental.com/manual222/textregister.html" >v22.2</option><option value="https://www.opendental.com/manual221/textregister.html" >v22.1</option><option value="https://www.opendental.com/manual214/textregister.html" >v21.4</option><option value="https://www.opendental.com/manual213/textregister.html" >v21.3</option><option value="https://www.opendental.com/manual212/textregister.html" >v21.2</option><option value="https://www.opendental.com/manual211/textregister.html" >v21.1</option><option value="https://www.opendental.com/manual205/textregister.html" >v20.5</option><option value="https://www.opendental.com/manual204/textregister.html" >v20.4</option><option value="https://www.opendental.com/manual203/textregister.html" >v20.3</option><option value="https://www.opendental.com/manual202/textregister.html" >v20.2</option><option value="https://www.opendental.com/manual201/textregister.html" >v20.1</option><option value="https://www.opendental.com/manual194/textregister.html" >v19.4</option><option value="https://www.opendental.com/manual193/textregister.html" >v19.3</option><option value="https://www.opendental.com/manual192/textregister.html" >v19.2</option><option value="https://www.opendental.com/manual191/textregister.html" >v19.1</option><option value="https://www.opendental.com/manual184/textregister.html" >v18.4</option><option value="https://www.opendental.com/manual183/textregister.html" >v18.3</option><option value="https://www.opendental.com/manual182/textregister.html" >v18.2</option><option value="https://www.opendental.com/manual181/textregister.html" >v18.1</option><option value="https://www.opendental.com/manual174/textregister.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Register with Carriers</p></div>
+<div class="GeneralPageContent">
+<p>All Open Dental offices utilizing integrated text messaging must provide Open Dental their business contact information using the form below for registration purposes.</p>
+<p>In the <a href="signupportalbasic.html">eServices Signup Basic</a> Portal, click <b>Register with Carriers</b>.</p>
+<img src="images/textingBrandSetup.png" width="603" height="845"/><p>Due to new industry-wide standards, Open Dental needs to register the texting 'Brand' for each Integrated Texting customer. This new standard will improve the reliability of messages, as carriers will be less likely to block texts. </p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Registration only needs to be done once per database.</li>
+<li>If an office has multiple locations, and each location has its own database, register each location. </li>
+<li>If an office has multiple locations, but share the same database (i.e., uses the Open Dental Clinics feature), registration is only done once. </li>
+</ul>
+<p><div class="Note">Note: Practices must complete registration before making any changes in the Signup Portal. For those using clinics, this includes signing up new clinics. Once registration is complete, users will be able to make changes again. </div>
+</p>
+<p class="MarginBottomZero">All fields are required: </p>
+<ul class="MarginBottomGap">
+<li><b>Company Name</b>: The full company name.  <ul>
+<li>Enter the actual company name as used on tax records, rather than the name used with patients. (e.g., Happy Smiles Dental LLC rather than Happy Smiles Dental.)</li>
+</ul>
+</li>
+<li><b>EIN</b>: Enter the Employer Identification Number for the company. (e.g., Federal Tax ID) Enter it exactly as entered on tax records. <ul>
+<li>If the company is not a corporation and does not have an EIN, check <b>I do not have an EIN and this is not a corporation</b>.</li>
+</ul>
+</li>
+<li><b>Contact First / Last Name</b>: The first and last name of a contact person for the practice (e.g., owner, office manager, etc).</li>
+<li><b>Contact Email Address</b>: The email address best associated with the contact person.</li>
+<li><b>Company Website</b>: Enter the full website URL for the company. If there is not a website for the office, enter <i>None</i>. </li>
+<li><b>Mobile Phone #</b>: Enter a mobile phone number for the office contact. This number may be used for verification. It should not be the office phone or phone number used for integrated texting.</li>
+<li><b>Business Phone #</b>: Enter the practice phone number.</li>
+<li><b>Address / City / State / Zip</b>: Enter the full address for the company.</li>
+<li><b>Display Name</b>: Enter the company name as known by patients.</li>
+</ul>
+<p>Once all information is entered, click <b>Submit</b>.</p>
+<h2>Troubleshooting</h2>
+<p>If the information entered could not be verified, an error in red will display. Read through the error for steps to take. </p>
+<img src="images/textRegisterError.png" width="600" height="298"/></div>
+</div>
+</body>
+</html>```

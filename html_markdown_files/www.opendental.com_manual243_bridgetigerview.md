@@ -1,0 +1,78 @@
+# File: ./www.opendental.com/manual243/bridgetigerview.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - TigerView Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridgetigerview','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/bridgetigerview.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/bridgetigerview.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridgetigerview.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridgetigerview.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridgetigerview.html" >v23.2</option><option value="https://www.opendental.com/manual231/bridgetigerview.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridgetigerview.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridgetigerview.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridgetigerview.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridgetigerview.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridgetigerview.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridgetigerview.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridgetigerview.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridgetigerview.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridgetigerview.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridgetigerview.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridgetigerview.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridgetigerview.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridgetigerview.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridgetigerview.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridgetigerview.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridgetigerview.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridgetigerview.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridgetigerview.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridgetigerview.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridgetigerview.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridgetigerview.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridgetigerview.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>TigerView Bridge</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>. Double-click on <b>TigerView from www.televere.com</b>.</p>
+<img src="images/bridgeTigerview.png" width="770" height="594"/><p>TigerView is an imaging software. Website: <a href="http://www.televeresystems.com" target="_blank">www.televeresystems.com</a>.</p>
+<p>Visix for ScanX is a rebranded version of TigerView, so use the TigerView bridge to set up the Visix software. ScanX also has a self-named intraoral camera, which does not use this bridge. This bridge is for Visix and TigerView software only.</p>
+<p class="MarginBottomZero">To enable the bridge: </p>
+<ol class="MarginBottomGap">
+<li>Check the <b>Enabled</b> box.</li>
+<li>Verify the <b>Path of file to open</b>.</li>
+<li>Double-click on a row in <b>Additional Properties</b> to change settings.  <ol>
+<li>Set the <span class="codeblock">Tiger1.ini</span> file path. It should always be set to match the default TigerView ini path because TigerView always looks to its default path and does not return patient data if it cannot find the ini file.<br/><div class="Note">Note: Certain newer versions of TigerView may require the Tiger1.ini file to be located in the same folder as the Tiger1.exe program file (e.g., <b>C:\tigerview8\</b>).</div>
+</li>
+<li>Use the PatNum (enter 0) or ChartNum (enter 1) as the patient ID.</li>
+<li>Set the EMR folder path if using TigerView EMR.</li>
+<li>Set the format for birth dates. It should be set to MM/dd/yy (default) or MM/dd/yyyy (4-digit year).</li>
+</ol>
+</li>
+<li>Set up a clickable bridge button.  <ol>
+<li>Under <b>Add a button to these toolbars</b>, highlight where to display the button.</li>
+<li>Enter the <b>Text on button</b>.</li>
+<li>(Optional) Import an image to show on the button (22 x 22 pixels).</li>
+</ol>
+</li>
+<li>If using clinics, click <b>Hide Button for Clinics</b>. Select which clinics the button should display on.</li>
+<li>Click Save.</li>
+</ol>
+<h2>Technical Details</h2>
+<p>Clicking the Visix/TigerView button opens the patient in the Visix/TigerView software. If the patient doesn't yet exist, it creates a record using the patient's name and PatNum.</p>
+<p class="MarginBottomZero">Thumbnails are pulled into Open Dental with the help of TigerView EMR. </p>
+<ol class="MarginBottomGap">
+<li>Run TigerView EMR and set an export path.</li>
+<li>In Additional Properties on the Program Links window, set the TigerView EMR folder path to the export path.</li>
+</ol>
+<p>If set up properly, when Open Dental starts and while it's running, thumbnails will be copied from the TigerView export folder into the patient's OpenDentImages folder. An x-ray Image Category that shows in Chart Module is automatically created in <a href="definitions.html">Definition Setup</a>. Thumbnails show under the x-ray category in the <a href="images.html">Imaging Module</a> and in the x-ray tab at the bottom of the <a href="chart.html">Chart Module</a>.</p>
+<p>Open Dental writes data to the <span class="codeblock">Tiger1.ini</span> file similar to this:</p>
+<p class="codeblock">[Slave]</p><p class="codeblock">LastName=Spander</p><p class="codeblock">FirstName=Jeremy</p><p class="codeblock">PatientID=1234 </p><p class="codeblock">PatientSSN=123456789</p><p class="codeblock">Gender=Male</p><p class="codeblock">DOB=03/21/75 </p><p class="codeblock">AddrStreetNo=123 Main</p><p class="codeblock">AddrCity=</p><p class="codeblock">AddrState=OR </p><p class="codeblock">AddrZip=97302</p><p class="codeblock">PhHome=(503)363-5432</p><p class="codeblock">PhWork=(503)271-3821</p><br/><p>Open Dental then launches TigerView. TigerView opens with no splash screen to the designated patient. TigerView deletes the patient information from the ini file.</p>
+</div>
+</div>
+</body>
+</html>```

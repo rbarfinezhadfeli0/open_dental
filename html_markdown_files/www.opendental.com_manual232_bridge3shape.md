@@ -1,0 +1,64 @@
+# File: ./www.opendental.com/manual232/bridge3shape.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - 3Shape Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridge3shape','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/bridge3shape.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/bridge3shape.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridge3shape.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridge3shape.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridge3shape.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/bridge3shape.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridge3shape.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridge3shape.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridge3shape.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridge3shape.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridge3shape.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridge3shape.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridge3shape.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridge3shape.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridge3shape.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridge3shape.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridge3shape.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridge3shape.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridge3shape.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridge3shape.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridge3shape.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridge3shape.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridge3shape.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridge3shape.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridge3shape.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridge3shape.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridge3shape.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridge3shape.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>3Shape Bridge</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>. Double-click on <b>3Shape from www.3shape.com/en</b>.</p>
+<img src="images/bridge3shape.png" width="778" height="598"/><p>3Shape is a digital imaging software. Website: <a href="https://www.3shape.com/en" target="_blank">https://www.3shape.com/en</a>.</p>
+<p class="MarginBottomZero">To enable the bridge: </p>
+<ol class="MarginBottomGap">
+<li>Check the <b>Enabled</b> box.</li>
+<li>Verify the <b>Path of file to open</b>.<br/>  (Typically, <span class="codeblock">C:\Program Files\3Shape\Dental Desktop\Plugins\ThreeShape.PracticeManagementIntegration\DentalDesktopCmd.exe</span>.)</li>
+<li>Double-click on a row in <b>Additional Properties</b> to change settings. Use the PatNum (enter 0) or ChartNum (enter 1) as the patient ID.</li>
+<li>Set up a clickable bridge button.  <ol>
+<li>Under <b>Add a button to these toolbars</b>, highlight where to display the button.</li>
+<li>Enter the <b>Text on button</b>.</li>
+<li>(Optional) Import an image to show on the button (22 x 22 pixels).</li>
+</ol>
+</li>
+<li>If using clinics, click <b>Hide Button for Clinics</b>. Select which clinics the button should display on.</li>
+<li>Click OK.</li>
+</ol>
+<h2>Technical Details</h2>
+<p>The Open Dental <i>Patnum</i> is used to determine patient selection, but the Patnum does not display in 3Shape.</p>
+<p>If Birthdate and SSN are entered in Open Dental, these fields pass over to 3Shape. </p>
+<p>The <i>Command Line Interface</i> setting may need to be enabled in 3Shape settings in order for the bridge to work.</p>
+</div>
+</div>
+</body>
+</html>```

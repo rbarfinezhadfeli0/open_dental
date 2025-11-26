@@ -1,0 +1,88 @@
+# File: ./www.opendental.com/manual243/insverifylistsetup.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Insurance Verification Setup</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('insverifylistsetup','+appointments','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/insverifylistsetup.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/insverifylistsetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/insverifylistsetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/insverifylistsetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/insverifylistsetup.html" >v23.2</option><option value="https://www.opendental.com/manual231/insverifylistsetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/insverifylistsetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/insverifylistsetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/insverifylistsetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/insverifylistsetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/insverifylistsetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/insverifylistsetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/insverifylistsetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/insverifylistsetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/insverifylistsetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/insverifylistsetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/insverifylistsetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/insverifylistsetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/insverifylistsetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/insverifylistsetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/insverifylistsetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/insverifylistsetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/insverifylistsetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/insverifylistsetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/insverifylistsetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/insverifylistsetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/insverifylistsetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/insverifylistsetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Insurance Verification Setup</p></div>
+<div class="GeneralPageContent">
+<p>Use Insurance Verification Setup to set the default settings for the Insurance Verification List.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Appointments, Insurance Verification.</p>
+<img src="images/insVerifyListSetup.png" width="812" height="462"/><p>In addition to the <a href="insverifylist.html">Insurance Verification List</a>, these settings are also used to determine which patients are checked during a batch insurance verification using <a href="scheduledprocesses.html">Scheduled Processes</a>. </p>
+<p class="MarginBottomZero"><b>Show In Standard List When</b>: Set defaults for standard insurance and the Assign Standard Verification tab in the Insurance Verification List. Insurance plans with no assigned <i>Filing Code</i> (set in <a href="insplan.html">Edit Insurance Plan</a>, Other Ins Info Tab) or those with no filing code matching those selected in <i>Show in Medicaid List When</i> are considered Standard.  </p>
+<ul class="MarginBottomGap">
+<li><b>Scheduled appointment in</b>: Set the default for <i>Days until scheduled appointment</i> interval.</li>
+<li><b>Plan benefits haven't been verified in</b>: Set the default value, in days, for <i>Plan benefits haven't been verified in</i> interval.</li>
+<li><b>Patient eligibility has not been verified in</b>: Set the default value for <i>Days since patient eligibility</i> interval.</li>
+<li><b>Past due appointments up to</b>: Set a value, in days, that determines when verifications are considered past due and show on the <i>Past Due</i> tab.</li>
+</ul>
+<p class="MarginBottomZero"><b>Insurance Verification List defaults to the current user</b>: </p>
+<ul class="MarginBottomGap">
+<li>Checked: For User selection defaults to the logged-on user.</li>
+<li>Unchecked: For User selection defaults to All Users.</li>
+</ul>
+<p class="MarginBottomZero"><b>Exclude patients with insurance plans marked as Do Not Verify</b>: </p>
+<ul class="MarginBottomGap">
+<li>Checked: Exclude insurance benefit verifications (Ins) when a patient's insurance plan is marked Don't Verify on the <a href="insplan.html">Insurance Plan</a> Edit Window.</li>
+<li>Unchecked: The Don't Verify checkbox is not considered.</li>
+</ul>
+<p class="MarginBottomZero"><b>Always reverify service year insurance benefits</b>: </p>
+<ul class="MarginBottomGap">
+<li>Checked: When a plan's benefit renewal date is after the last verified date, benefit verifications are re-listed to remind staff to re-verify insurance benefits. When benefits are marked verified, the appointment date is used.</li>
+<li>Unchecked: Benefit renewal dates are not considered, only verification filters. When benefits are marked verified, the current date (i.e., today) is used. </li>
+</ul>
+<p class="MarginBottomZero"><b>Always reverify service year patient eligibility</b>: </p>
+<ul class="MarginBottomGap">
+<li>Checked: When a plan's benefit renewal date is after the last verified date, eligibility verifications are re-listed to remind staff to re-verify patient eligibility. When eligibility is marked verified, the appointment date is used.</li>
+<li>Unchecked: Benefit renewal dates are not considered, only verification filters. When eligibility is marked verified, the current date (i.e., today) is used.</li>
+</ul>
+<p class="MarginBottomZero"><b>Exclude Patient Clones</b>: Only appears if <a href="patientclone.html">Patient Clone</a> is enabled in <a href="showfeatures.html">Show Features</a></p>
+<ul class="MarginBottomGap">
+<li>Checked: Exclude patient clone accounts in the Insurance Verification List.</li>
+<li>Unchecked: Include patient clone accounts in the Insurance Verification List.</li>
+</ul>
+<p class="MarginBottomZero"><b>Show in Medicaid List When</b>: Set defaults for medicaid insurance and the Assign Medicaid Verification tab in the Insurance Verification List.  </p>
+<ul class="MarginBottomGap">
+<li><b>Scheduled appointment in</b>: Set the default for <i>Days until scheduled appointment</i>.</li>
+<li><b>Plan benefits haven't been verified in</b>: Set the default value, in days, for <i>Plan benefits haven't been verified in</i> interval.</li>
+<li><b>Patient eligibility has not been verified in</b>: Set the default value for <i>Days since patient eligibility</i> interval.</li>
+<li><b>Past due appointments up to</b>: Set a value, in days, that determines when verifications are considered past due and show on the <i>Past Due</i> tab.</li>
+<li><b>Insurance filing code in:</b> Highlight insurance filing codes assigned to medicaid plans. Only insurance plans with assigned <i>Filing Codes</i> matching those highlighted are considered medicaid in the Insurance Verification List.</li>
+</ul>
+<p>Click <b>OK</b> to save changes.</p>
+</div>
+</div>
+</body>
+</html>```

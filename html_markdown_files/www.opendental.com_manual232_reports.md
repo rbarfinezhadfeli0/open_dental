@@ -1,0 +1,65 @@
+# File: ./www.opendental.com/manual232/reports.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Reports</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/reports.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/reports.html" >v24.2</option><option value="https://www.opendental.com/manual241/reports.html" >v24.1</option><option value="https://www.opendental.com/manual233/reports.html" >v23.3</option><option value="https://www.opendental.com/manual232/reports.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/reports.html" >v23.1</option><option value="https://www.opendental.com/manual224/reports.html" >v22.4</option><option value="https://www.opendental.com/manual223/reports.html" >v22.3</option><option value="https://www.opendental.com/manual222/reports.html" >v22.2</option><option value="https://www.opendental.com/manual221/reports.html" >v22.1</option><option value="https://www.opendental.com/manual214/reports.html" >v21.4</option><option value="https://www.opendental.com/manual213/reports.html" >v21.3</option><option value="https://www.opendental.com/manual212/reports.html" >v21.2</option><option value="https://www.opendental.com/manual211/reports.html" >v21.1</option><option value="https://www.opendental.com/manual205/reports.html" >v20.5</option><option value="https://www.opendental.com/manual204/reports.html" >v20.4</option><option value="https://www.opendental.com/manual203/reports.html" >v20.3</option><option value="https://www.opendental.com/manual202/reports.html" >v20.2</option><option value="https://www.opendental.com/manual201/reports.html" >v20.1</option><option value="https://www.opendental.com/manual194/reports.html" >v19.4</option><option value="https://www.opendental.com/manual193/reports.html" >v19.3</option><option value="https://www.opendental.com/manual192/reports.html" >v19.2</option><option value="https://www.opendental.com/manual191/reports.html" >v19.1</option><option value="https://www.opendental.com/manual184/reports.html" >v18.4</option><option value="https://www.opendental.com/manual183/reports.html" >v18.3</option><option value="https://www.opendental.com/manual182/reports.html" >v18.2</option><option value="https://www.opendental.com/manual181/reports.html" >v18.1</option><option value="https://www.opendental.com/manual174/reports.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Reports</p></div>
+<div class="GeneralPageContent">
+<p>Open Dental has many report options accessed from the <a href="mainmenu.html">Main Menu</a> that allow offices to view their data in organized formats.</p>
+<img src="images/reportsMain.png" width="522" height="173"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Standard</b>: Standard, text based reports (production and income, daily and monthly reports, lists, and public health options). See <a href="reportsstandard.html">Standard Reports</a>.</li>
+<li><b>Standard Favorites</b>: Displays reports marked as <i>Sub Menu</i> in <a href="reportdisplaysettings.html">Report Setup: Display Settings</a>. <br/><img src="images/reportsStandardFiltered.png" width="401" height="261" class="ImageInParagraph"/></li>
+<li><b>Graphic</b>: Visual graphic reports by provider or clinic and customizable to fit office requirements (production and income, accounts receivable, new patients, and broken appointments). See <a href="reportsgraphic.html">Graphic Reports</a>.</li>
+<li><b>User Query</b>: Generate custom reports in any format and export any data a user wants. See <a href="queryoverview.html">User Query</a>.</li>
+<li><b>User Query Favorites</b>: Displays user queries marked as released in <a href="queryfavorites.html">Query Favorites</a>.<br/><img src="images/reportsUserQueryFiltered.png" width="500" height="266" class="ImageInParagraph"/></li>
+<li><b>eService Activity Log</b>: Opens the <a href="eserviceactivitylog.html">eService Activity Log</a>.</li>
+<li><b>Unfinalized Payments</b>: Shows the number of outstanding unfinalized payments in parentheses e.g., (3). Click to open the <a href="reportunfinalizedinsurancepayments.html">Unfinalized Insurance Payment Report</a>. For the number of unfinalized payments to show, the <a href="opendentalservice.html">Open Dental Service</a> must be installed and running. </li>
+</ul>
+<p class="MarginBottomZero">Other Reports in Open Dental: </p>
+<ul class="MarginBottomGap">
+<li>To add a click-able URL as a Reports menu option, see <a href="bridgecustom.html">Custom Bridges</a>.</li>
+<li><a href="appointmentlists.html">Appointment Lists</a></li>
+<li>Accounting reports (General Ledger Detail and Balance Sheets). See <a href="accountingcloseyear.html">Accounting Close Year</a>.</li>
+<li>Clearinghouse reports. See <a href="claimsend.html">Send Claims</a>.</li>
+<li><a href="../resources/Arizona.txt">Arizona Reports</a></li>
+<li>Custom Reports: Some users may have a Custom Reports menu item. It means there is a reports folder in the A to Z Folders (typically Reports) that contains at least one .rdl file (e.g., Unsched Treat Plans.rdl). For each .rdl file in the folder, there will be one menu item.</li>
+</ul>
+<div class="Note">Note: If an office converted from another software, users should not run reports with dates prior to or on the conversion day.</div>
+</div>
+</div>
+</body>
+</html>```

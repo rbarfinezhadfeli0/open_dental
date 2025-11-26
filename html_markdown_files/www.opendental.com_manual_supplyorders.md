@@ -1,0 +1,94 @@
+# File: ./www.opendental.com/manual/supplyorders.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Supply Orders</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('supplyorders','supplyinventory','manage','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/supplyorders.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/supplyorders.html" >v24.2</option><option value="https://www.opendental.com/manual241/supplyorders.html" >v24.1</option><option value="https://www.opendental.com/manual233/supplyorders.html" >v23.3</option><option value="https://www.opendental.com/manual232/supplyorders.html" >v23.2</option><option value="https://www.opendental.com/manual231/supplyorders.html" >v23.1</option><option value="https://www.opendental.com/manual224/supplyorders.html" >v22.4</option><option value="https://www.opendental.com/manual223/supplyorders.html" >v22.3</option><option value="https://www.opendental.com/manual222/supplyorders.html" >v22.2</option><option value="https://www.opendental.com/manual221/supplyorders.html" >v22.1</option><option value="https://www.opendental.com/manual214/supplyorders.html" >v21.4</option><option value="https://www.opendental.com/manual213/supplyorders.html" >v21.3</option><option value="https://www.opendental.com/manual212/supplyorders.html" >v21.2</option><option value="https://www.opendental.com/manual211/supplyorders.html" >v21.1</option><option value="https://www.opendental.com/manual205/supplyorders.html" >v20.5</option><option value="https://www.opendental.com/manual204/supplyorders.html" >v20.4</option><option value="https://www.opendental.com/manual203/supplyorders.html" >v20.3</option><option value="https://www.opendental.com/manual202/supplyorders.html" >v20.2</option><option value="https://www.opendental.com/manual201/supplyorders.html" >v20.1</option><option value="https://www.opendental.com/manual194/supplyorders.html" >v19.4</option><option value="https://www.opendental.com/manual193/supplyorders.html" >v19.3</option><option value="https://www.opendental.com/manual192/supplyorders.html" >v19.2</option><option value="https://www.opendental.com/manual191/supplyorders.html" >v19.1</option><option value="https://www.opendental.com/manual184/supplyorders.html" >v18.4</option><option value="https://www.opendental.com/manual183/supplyorders.html" >v18.3</option><option value="https://www.opendental.com/manual182/supplyorders.html" >v18.2</option><option value="https://www.opendental.com/manual181/supplyorders.html" >v18.1</option><option value="https://www.opendental.com/manual174/supplyorders.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Supply Orders</p></div>
+<div class="GeneralPageContent">
+<p>The purpose of this feature is to track supply orders.</p>
+<p>In the <a href="supplyinventory.html">Supply Inventory</a> window, click <b>Orders</b>.</p>
+<img src="images/supplyOrders.png" width="763" height="431"/><p><b>New Order</b>: Select a Supplier from the dropdown, then click New Order to create a new pending order.</p>
+<p><b>Show received</b>: Check to show received orders in the Order History grid. </p>
+<p><b>Supplier</b>: Use dropdown to filter the list by supplier, or to select the supplier for new orders.</p>
+<p><b>Order History</b>: The grid lists supply orders that have been created. Double-click an order to open the Supply Order window and make changes (see the Supply Order section for details). A <i>pending</i> order indicates there is no <i>Date Placed</i> entered.</p>
+<p><b>Supplies on One Order</b>: This grid lists all the supply items on the highlighted Supply Order. Click in the Qty or Price/Unit columns to edit this data. Double-click an item to open Supply Order Item to make edits to the item (see the Supply Order Item section for details).</p>
+<p><b>Add Supply</b>: Click to attach supplies to the selected order.</p>
+<p><b>Print</b>: Send the selected order to the default printer. </p>
+<h2>Supply Order</h2>
+<p>Double-click an order to open the Supply Order window. From here, track or update details of a specific order.</p>
+<img src="images/supplyOrderEdit.png" width="717" height="331"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Supplier</b>: Read only. This field cannot be changed. When creating a new order, the supplier is assigned based on the selection in the Supplier dropdown.</li>
+<li><b>Date Placed</b>: Defaults to today's date on new orders. Once a date is entered, the order is no longer considered pending.</li>
+<li><b>Placed By</b>: For tracking purposes, a user can be selected from the dropdown. This defaults to the currently logged-on user when the order is created, but is only saved once a Date Placed is entered. Pending orders always default to <i>None</i>. This is not a security field and can be edited at any time after order has been sent.</li>
+<li><b>Date Received</b>: Enter date the order was received. Click <b>Today</b> to enter current date. To mark individual items as received (e.g., the order was sent in multiple shipments), see Supply Order Item section. <ul>
+If individual items on the order are not marked as received, there is a prompt to mark the remaining items as received.   <li>Click Yes to automatically enter a Date Received on remaining items.</li>
+<li>Click No to leave the Date Received on individual items blank. These items show <i>pending</i> in the Supplies on One Order list.</li>
+</ul>
+</li>
+<li><b>Note</b>: Enter any additional details about the order.</li>
+</ul>
+<h2>Supply Order Item</h2>
+<p>Double-click a supply item from the <i>Supplies on One Order</i> grid to make edits.</p>
+<img src="images/supplyOrderItem.png" width="615" height="297"/><p class="MarginBottomZero">Most fields are read-only and populated based on information from the <a href="supplies.html">Supplies</a> list. The following fields can be edited: </p>
+<ul class="MarginBottomGap">
+<li>Quantity: Number of supply items on the order.</li>
+<li>Price: The price per unit. The subtotal is calculated by <span class="codeblock">Quantity x Price</span>.</li>
+<li>Date Received: If the item was received separately from other parts of the order, enter the date received for this item only. Click <b>Today</b> to enter the current date in this field.</li>
+</ul>
+<h2>Add a New Order</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Click the <b>Supplier</b> dropdown and select a supplier. </li>
+<li>Click <b>New Order</b>. A new pending order is added to <b>Order History</b> list, and it should be highlighted. </li>
+<li>Click <b>Add Supply</b> and select the supply. <ul>
+<li>Items manually added to an order have a default quantity of one and the price from the main Supplies list. Edit as required.</li>
+</ul>
+</li>
+<li>Click <b>Save</b>.</li>
+<li>Repeat steps 3 and 4 as needed until all supplies are added to the order. As supplies are added, the items are listed in the <i>Supplies on One Order</i> grid.</li>
+<li>Once all items have been added, double-click on the pending order from Order History. Edit or add details as needed.  <ul>
+<li>The Total Amount automatically calculates based on price and quantity entered. </li>
+<li>Shipping charges can be entered separately. </li>
+</ul>
+</li>
+</ol>
+<p></p>
+<p></p>
+</div>
+</div>
+</body>
+</html>```

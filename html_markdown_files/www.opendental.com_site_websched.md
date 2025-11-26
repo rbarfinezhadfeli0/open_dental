@@ -1,0 +1,111 @@
+# File: ./www.opendental.com/site/websched.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Open Dental: Web Sched Feature</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="resources/site.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/site.js" defer></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+</head>
+<body>
+	<div id="TitleAndNav">
+		<div id="TitleAndSocial">
+			<div id="Title">
+				<a href="../index.html">
+					<img src="resources/logo.png" alt="Open Dental Software">
+				</a>
+			</div>
+			<div id="Phone">
+				<a href="tel:1-503-363-5432" class="phoneLink">503-363-5432</a>
+			</div>
+		</div>
+		<div id="NavWrapper">
+			<nav>
+				<div id="HamburgerMenu">&#9776;</div>
+				<ul>
+					<!--See notes in up in the head for explanation of relative path choices.-->
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="trial.html">Trial Version</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+					<li><a href="http://opendentalsoft.com/forum/">Forum</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="searchSite.html"><img id="MenuIconSearch" src="resources/iconSearch.gif" alt=""/>Search</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+    <div id="PagePane"><!--The lighter foreground window that floats over the darker background-->
+		<div id="PageTitle">
+			<h1>Web Sched Feature</h1>
+		</div>
+		<div id="Content">
+<p>Web Sched <a href="eservices.html">eServices</a>, powered by PatientViewer, allow patients to schedule appointments online. Each service has additional per month/per location fees.</p>
+<div align="center">
+<img src="images/webSchedHeader.png" width="900" height="300"/></div>
+<h2>Getting Started</h2>
+<p>There are four separate Web Sched eServices, each available for an individual monthly fee or as part of the <a href="eservicesbundle.html">eService bundle</a>. See <a href="fees.html#eservices">Fees for Support and Services</a> for pricing.</p>
+<p>Practices must be on support and have a unique, active registration key to sign up for Web Sched eServices. Practices must remain on support while using the service. </p>
+<a name='recall'></a><h2>Web Sched Recall</h2>
+<p><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> Watch our video: <a href="https://youtu.be/yZvlozVRdN8">A Quick Look at Web Sched Recall </a>. </p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Manage recall reminders* and appointment scheduling by allowing patients to schedule their recall appointments online.</li>
+<li>Reminders with a Web Sched Recall link can be sent manually from the <a href="0_recalllist.html">Recall List</a> or set up to be sent automatically.</li>
+<li>Includes access to <a href="#asap">Web Sched ASAP</a> feature at no additional cost.</li>
+<li>Scheduled appointments are added to Open Dental automatically.</li>
+<li>Receive alerts in Open Dental when appointments are scheduled.</li>
+</ul>
+<p>Visit <a href="0_webschedrecallsees.html">Web Sched Recall: What Patient Sees</a> to take a closer look.</p>
+<p>*Text recall reminders require <a href="textintegrated.html">Integrated Texting</a>.</p>
+<a name='newpat'></a><h2>Web Sched New Patient</h2>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Allow new patients to schedule their first appointment online via your website.</li>
+<li>Once a patient enters their information online, a new patient record is created in Open Dental.</li>
+<li>Scheduled appointments are added to Open Dental automatically.</li>
+<li>Send an optional notification to patients with appointment details automatically.</li>
+<li>Receive alerts in Open Dental when appointments are scheduled.</li>
+</ul>
+<p>Visit <a href="0_webschednewpatsees.html">Web Sched New Patient: What Patient Sees</a> to take a closer look.</p>
+<a name='existing'></a><h2>Web Sched Existing Patient</h2>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Allow existing patients to schedule their appointments online via your website.</li>
+<li>Scheduled appointments are added to Open Dental automatically.</li>
+<li>Send an optional notification to patients with appointment details automatically.</li>
+<li>Receive alerts in Open Dental when appointments are scheduled.</li>
+</ul>
+<p>Visit <a href="0_webschedexistingpatientsees.html">Web Sched Existing Patient: What Patient Sees</a> to take a closer look.</p>
+<a name='asap'></a><h2>Web Sched ASAP</h2>
+<p><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> Watch our video: <a href="https://youtu.be/9tSUCVbEn4k">A Quick Look at Web Sched ASAP</a>.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Easily send emails or texts* from the <a href="0_asaplist.html">ASAP List</a> to notify patients of an appointment opening.</li>
+<li>Patients receive a unique link to claim or decline the opening.</li>
+<li>A blockout is created on the schedule when Web Sched ASAP notifications are sent, and you can easily check Web Sched ASAP History to find messages sent and appointment slots filled.</li>
+<li>Receive alerts in Open Dental when appointments are scheduled.</li>
+<li>Web Sched ASAP messages can be customized for your clinic's needs.</li>
+</ul>
+<p>Visit <a href="0_webschedasappatientsees.html">Web Sched ASAP: What Patient Sees</a> to take a closer look.</p>
+<p>*Text messages require <a href="textintegrated.html">Integrated Texting</a>.</p>
+<p><div class="Note">Note: Can be purchased stand-alone for a fee, or is included free with <a href="#recall">Web Sched Recall</a>.</div>
+</p>
+<h2>Try out Web Sched </h2>
+<p class="MarginBottomZero">Want to try out Web Sched before setting it up in your database? Check out our demos before signing up for the eServices and setting it up in your database. </p>
+<ul class="MarginBottomGap">
+<li><a href="http://www.patientviewer.com/wsrdemo.html">WebSched Recall Demo</a></li>
+<li><a href="http://www.patientviewer.com/wsnpdemo.html">Web Sched New Patient Demo</a></li>
+<li><a href="http://www.patientviewer.com/wsasapdemo.html">WebSched ASAP Demo</a></li>
+</ul>
+<p>For Web Sched Existing Patient and Web Sched New Patient, PatientViewer can also be embedded in a website to enhance its appearance. Check out this <a href="http://patientviewer.com/demo/wsnp_embedded">Example Website</a>. Your IT and/or webmaster can help you set this up. Open Dental is not able to embed or manage custom websites for your practice. </p>
+
+</div>	
+	</div>
+</body>
+</html>```

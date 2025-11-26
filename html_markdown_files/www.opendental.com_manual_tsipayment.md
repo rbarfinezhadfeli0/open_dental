@@ -1,0 +1,101 @@
+# File: ./www.opendental.com/manual/tsipayment.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - TSI Payments</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('tsipayment','tsicollections','manage','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/tsipayment.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/tsipayment.html" >v24.2</option><option value="https://www.opendental.com/manual241/tsipayment.html" >v24.1</option><option value="https://www.opendental.com/manual233/tsipayment.html" >v23.3</option><option value="https://www.opendental.com/manual232/tsipayment.html" >v23.2</option><option value="https://www.opendental.com/manual231/tsipayment.html" >v23.1</option><option value="https://www.opendental.com/manual224/tsipayment.html" >v22.4</option><option value="https://www.opendental.com/manual223/tsipayment.html" >v22.3</option><option value="https://www.opendental.com/manual222/tsipayment.html" >v22.2</option><option value="https://www.opendental.com/manual221/tsipayment.html" >v22.1</option><option value="https://www.opendental.com/manual214/tsipayment.html" >v21.4</option><option value="https://www.opendental.com/manual213/tsipayment.html" >v21.3</option><option value="https://www.opendental.com/manual212/tsipayment.html" >v21.2</option><option value="https://www.opendental.com/manual211/tsipayment.html" >v21.1</option><option value="https://www.opendental.com/manual205/tsipayment.html" >v20.5</option><option value="https://www.opendental.com/manual204/tsipayment.html" >v20.4</option><option value="https://www.opendental.com/manual203/tsipayment.html" >v20.3</option><option value="https://www.opendental.com/manual202/tsipayment.html" >v20.2</option><option value="https://www.opendental.com/manual201/tsipayment.html" >v20.1</option><option value="https://www.opendental.com/manual194/tsipayment.html" >v19.4</option><option value="https://www.opendental.com/manual193/tsipayment.html" >v19.3</option><option value="https://www.opendental.com/manual192/tsipayment.html" >v19.2</option><option value="https://www.opendental.com/manual191/tsipayment.html" >v19.1</option><option value="https://www.opendental.com/manual184/tsipayment.html" >v18.4</option><option value="https://www.opendental.com/manual183/tsipayment.html" >v18.3</option><option value="https://www.opendental.com/manual182/tsipayment.html" >v18.2</option><option value="https://www.opendental.com/manual181/tsipayment.html" >v18.1</option><option value="https://www.opendental.com/manual174/tsipayment.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>TSI Payments</p></div>
+<div class="GeneralPageContent">
+<p class="MarginBottomZero">When a payment is made to an account that is managed by <a href="tsicollections.html">TSI Collections</a> services, enter the <a href="payment.html">Payment</a> in Open Dental as normal. </p>
+<ul class="MarginBottomGap">
+<li>Payments may be made to TSI, who then sends the payment to to be entered by the office.</li>
+<li>If a guarantor pays the office directly, payment can also be entered. The information is sent to TSI using the <a href="opendentalservice.html">Open Dental Service</a> at the regular <i>sync</i> time.</li>
+</ul>
+<div class="Note">Note: <ul>
+<li>It is recommended to create a <a href="definitionspaymenttypes.html">Payment Type</a> and <a href="definitionsadjtypes.html">Adjustment Type</a> specific to TSI.</li>
+<li>Positive and negative adjustment information is sent to TSI using the <i>OpenDentalService</i> at regular sync time. </li>
+</ul>
+</div>
+<br/><br/><h2>Payments made by TSI</h2>
+<p class="MarginBottomZero">When a patient pays TSI, TSI sends an invoice with payment to the office after collecting their portion. </p>
+<ol class="MarginBottomGap">
+<li>Go to the patient's <a href="account.html">Account</a>.</li>
+<li>If the patient's balance was adjusted off using the <i>Exclude Negative Adj Type</i> set in TSI Setup, the balance must be adjusted back onto the account using the Exclude Positive Adj Type. <ol>
+<li>Click Adjustment.</li>
+<li>There is a prompt to confirm if the adjustment is being applied by the office. Click <b>Yes</b>. </li>
+<li>Enter an adjustment amount that matches the payment amount.</li>
+<li>Select the <i>Exclude Positive Adj Type </i>from the Addition adjustments list. </li>
+<li>Click <b>Save</b> to create the adjustment.</li>
+</ol>
+</li>
+<li>Click <b>Payment.</b> There is a prompt to determine if the payment was received from TSI or the patient</li>
+<img src="images/tsiGuarantorMsgNo.png" width="412" height="211"/><li>Select <b>No</b> to indicate the payment was made by TSI. This prevents a message about the payment from being sent to TSI.</li>
+<li>Enter the payment amount and complete the payment as usual.</li>
+<li>In the patient's account, click <b>Adjustment</b>. There is a prompt to determine if the adjustment is being applied by the office or is a result of payment from TSI. </li>
+<img src="images/tsiGuarantorMsgAdjNo.png" width="414" height="198"/><li>Click <b>No</b> to indicate the adjustment is being added as a result of payment received from TSI. This prevents a message about the adjustment from being sent to TSI.</li>
+<li>Add a subtraction adjustment reflecting the portion of the payment kept by TSI. The adjustment type used must not be excluded in <a href="tsisetup.html">TSI Setup</a>. Complete the adjustment as usual.</li>
+</ol>
+<h2>Payments made by Patient (directly to office)</h2>
+<p>When a patient pays the office, a message is automatically sent to TSI. TSI then sends an invoice to the office.</p>
+<p class="MarginBottomZero"><b>Enter the Payment</b>: </p>
+<ol class="MarginBottomGap">
+<li>Go to the patient's account.</li>
+<li>If the patient's balance was adjusted off using the <i>Exclude Negative Adj Type</i> set in TSI Setup, the balance must be adjusted back onto the account using the Exclude Positive Adj Type. <ol>
+<li>Click Adjustment.</li>
+<li>There is a prompt to confirm if the adjustment is being applied by the office. Click <b>Yes</b>. </li>
+<li>Enter an adjustment amount that matches the payment amount.</li>
+<li>Select the <i>Exclude Positive Adj Type </i>from the Addition adjustments list. </li>
+<li>Click <b>Save</b> to create the adjustment.</li>
+</ol>
+</li>
+<li>Click <b>Payment</b>. There is a prompt to determine if the payment was received from TSI or the patient.</li>
+<img src="images/tsiGuarantorMsg.png" width="412" height="211"/><li>Click <b>Yes</b> to indicate the payment was received from the patient (or guarantor). This sends a message to TSI about the payment.</li>
+<li>Enter the full payment amount and complete the payment as usual.</li>
+</ol>
+<p><b>Process TSI Invoice</b>:</p>
+<p class="MarginBottomZero">After message of the payment is sent to TSI, they send an invoice with information about TSI's portion of the payment. Follow the steps below after receiving the invoice: </p>
+<ol class="MarginBottomGap">
+<li>Go to the patient's account.</li>
+<li>Click <b>Payment</b> to enter TSI's portion. There is a prompt to determine if the payment was received from TSI or the patient. </li>
+<li>Click No to indicate the payment is from TSI.</li>
+<li>Enter the portion sent to TSI as a negative amount. (e.g., -100.00) Complete the payment as usual.</li>
+<li>In the patient's account, click Adjustments. There is a prompt to confirm if the adjustment is being applied by the office:</li>
+<img src="images/tsiGuarantorMsgAdj.png" width="413" height="198"/><li>Click <b>No</b> to indicate the adjustment is being added as a result of a payment. This prevents a message about the adjustment from being sent to TSI..</li>
+<li>Add a subtraction adjustment reflecting the portion of the payment kept by TSI. The adjustment type used must not be excluded in TSI Setup. Complete the adjustment as usual.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>```

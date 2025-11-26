@@ -1,0 +1,75 @@
+# File: ./www.opendental.com/site/apirefattaches.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API RefAttaches</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apirefattaches','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API RefAttaches</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7referrals.html">Referrals</a> and <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7ehrsummaryofcaresend.html">EHR Summaries of Care</a> for more information.</p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96refattach.html" target="_blank">RefAttach Database Schema.</a></p>
+<h2>RefAttaches GET</h2>
+<p>Version Added: 22.4.27</p>
+<p>Gets a list of refattaches.</p>
+<p><b>Parameters:</b><br></p>
+<p><b>ReferralNum:</b> (Added in version 25.2.10) Optional. Filter responses by ReferralNum.<br><b>PatNum:</b> Optional. Filter responses by PatNum.<br><b>DateTStamp:</b> (Added in version 25.2.10) Optional, string in "yyyy-MM-dd HH:mm:ss" format. Only include refattaches with a DateTStamp altered after the specified date and time.<br></p>
+<p><b>Example Requests:</b><br> GET /refattaches<br> GET /refattaches?PatNum=25<br></p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br> {<br> "RefAttachNum": 1,<br> "ReferralNum": 3,<br> "referralName": "Steve N Stevens, DDS",<br> "PatNum": 25,<br> "ItemOrder": 0,<br> "RefDate": "2022-01-05",<br> "ReferralType": "RefFrom",<br> "RefToStatus": "None",<br> "Note": "",<br> "IsTransitionOfCare": "false",<br> "ProcNum": 0,<br> "DateProcComplete": "0001-01-01",<br> "ProvNum": 0,<br> "DateTStamp": "2022-01-05 10:13:12"<br> },<br> etc...<br> ]<br></span></p>
+<p>200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>RefAttaches POST (create)</h2>
+<p>Version Added: 21.2</p>
+<p>Attaches a patient to a referral source. The referral source must be specified by either <b>ReferralNum</b> or <b>referralName</b>. Before calling this method, use Referrals GET to find the ReferralNum of an existing referral source. Alternatively, specify a referralName to search the LName of existing referrals for an exact match. If a match is not found, a new referral with that name is created and used.</p>
+<p><b>PatNum:</b> Required. FK to patient.PatNum.<br><b>ReferralNum:</b> This or <b>referralName</b> is required. FK to referral.ReferralNum.<br><b>referralName:</b> This or <b>ReferralNum</b> is required.<br><b>RefDate:</b> Optional. String in "yyyy-MM-dd" format. The date the referral source is attached to the patient. Default to today's date.<br><b>ReferralType:</b> Optional. Either "RefTo", "RefFrom", or "RefCustom". Default "RefFrom".<br><b>RefToStatus:</b> Optional. Typically only used with outgoing referrals. Either "None", "Declined", "Scheduled", "Consulted", "InTreatment", or "Complete". Default "None".<br><b>Note:</b> Optional. Referral note specific to this patient.<br><b>IsTransitionOfCare:</b> (Added in version 23.3.26) Optional. Either "true" or "false". Used to track EHR events. Default "false".<br><b>ProcNum:</b> (Added in version 23.3.26) Optional. FK to procedurelog.ProcNum. Default 0.<br><b>DateProcComplete:</b> (Added in version 23.3.26) Optional. String in "yyyy-MM-dd" format. Default "0001-01-01".<br><b>ProvNum:</b> (Added in version 23.3.26) Optional. FK to provider.ProvNum. Can only be specified when <b>ReferralType</b> is "RefTo". Default 0.<br></p>
+<p><b>Example Requests:</b><br> POST /refattaches</p>
+<p><span class="codeblock"> {<br> "PatNum": 972,<br> "ReferralNum": 17,<br> "ReferralType": "RefTo",<br> "RefToStatus": "Scheduled",<br> "Note": "12052 - Called Dr. Bokish to confirm this has been scheduled.",<br> "RefDate": "2023-12-05",<br> "ProvNum": 8<br> }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock">{<br> "RefAttachNum": 568,<br> "ReferralNum": 17,<br> "referralName": "Bokish",<br> "PatNum": 972,<br> "ItemOrder": 7,<br> "RefDate": "2023-12-05",<br> "ReferralType": "RefTo",<br> "RefToStatus": "Scheduled",<br> "Note": "",<br> "IsTransitionOfCare": "false",<br> "ProcNum": 1192,<br> "DateProcComplete": "0001-01-01",<br> "ProvNum": 8,<br> "DateTStamp": "2023-12-07 11:43:15"<br> }<br></span><br> 201 Created<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>RefAttaches PUT (update)</h2>
+<p>Version Added: 23.3.26</p>
+<p>Updates an existing refattach.</p>
+<p><b>RefAttachNum:</b> Required in the URL. <br><br><b>ReferralNum:</b> FK to referral.ReferralNum. <br><b>RefDate:</b> The date the referral source was attached to the patient.<br><b>ReferralType:</b> Either "RefTo", "RefFrom", or "RefCustom".<br><b>RefToStatus:</b> Either "None", "Declined", "Scheduled", "Consulted", "InTreatment", or "Complete".<br><b>Note:</b> Referral notes specific to this patient. Overwrites existing note.<br><b>IsTransitionOfCare:</b> Either "true" or "false".<br><b>ProcNum:</b> FK to procedurelog.ProcNum.<br><b>DateProcComplete:</b> String in "yyyy-MM-dd" format.<br><b>ProvNum:</b> FK to provider.ProvNum. Can only be specified when <b>ReferralType</b> is "RefTo".<br></p>
+<p><b>Example Request:</b><br> PUT /refattaches/568</p>
+<p><span class="codeblock"> {<br> "ReferralNum": 17,<br> "ReferralType": "RefTo",<br> "RefToStatus": "Complete",<br> "Note": "12/14 - Dr. Bokish called back to confirm this has been completed.",<br> "DateProcComplete": "2023-12-14"<br> }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock">{<br> "RefAttachNum": 568,<br> "ReferralNum": 17,<br> "referralName": "Bokish",<br> "PatNum": 972,<br> "ItemOrder": 1,<br> "RefDate": "2023-12-05",<br> "ReferralType": "RefTo",<br> "RefToStatus": "Complete",<br> "Note": "12/14 - Dr. Bokish called back to confirm this has been completed.",<br> "IsTransitionOfCare": "false",<br> "ProcNum": 1192,<br> "DateProcComplete": "2023-12-14",<br> "ProvNum": 8,<br> "DateTStamp": "2023-12-14 15:17:28"<br> }<br></span><br> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>RefAttaches DELETE</h2>
+<p>Version Added: 23.3.26</p>
+<p>Deletes a refattach.</p>
+<p><b>RefAttachNum:</b> Required in the URL. <br></p>
+<p><b>Example Requests:</b><br> DELETE /refattaches/867</p>
+<p><b>Example Response:</b><br> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>```

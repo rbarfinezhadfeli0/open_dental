@@ -1,0 +1,50 @@
+# File: ./www.opendental.com/manual232/quickpastenoteedit.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Quick Paste Note Edit</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('quickpastenoteedit','quickpastenotessetup','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/quickpastenoteedit.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/quickpastenoteedit.html" >v24.2</option><option value="https://www.opendental.com/manual241/quickpastenoteedit.html" >v24.1</option><option value="https://www.opendental.com/manual233/quickpastenoteedit.html" >v23.3</option><option value="https://www.opendental.com/manual232/quickpastenoteedit.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/quickpastenoteedit.html" >v23.1</option><option value="https://www.opendental.com/manual224/quickpastenoteedit.html" >v22.4</option><option value="https://www.opendental.com/manual223/quickpastenoteedit.html" >v22.3</option><option value="https://www.opendental.com/manual222/quickpastenoteedit.html" >v22.2</option><option value="https://www.opendental.com/manual221/quickpastenoteedit.html" >v22.1</option><option value="https://www.opendental.com/manual214/quickpastenoteedit.html" >v21.4</option><option value="https://www.opendental.com/manual213/quickpastenoteedit.html" >v21.3</option><option value="https://www.opendental.com/manual212/quickpastenoteedit.html" >v21.2</option><option value="https://www.opendental.com/manual211/quickpastenoteedit.html" >v21.1</option><option value="https://www.opendental.com/manual205/quickpastenoteedit.html" >v20.5</option><option value="https://www.opendental.com/manual204/quickpastenoteedit.html" >v20.4</option><option value="https://www.opendental.com/manual203/quickpastenoteedit.html" >v20.3</option><option value="https://www.opendental.com/manual202/quickpastenoteedit.html" >v20.2</option><option value="https://www.opendental.com/manual201/quickpastenoteedit.html" >v20.1</option><option value="https://www.opendental.com/manual194/quickpastenoteedit.html" >v19.4</option><option value="https://www.opendental.com/manual193/quickpastenoteedit.html" >v19.3</option><option value="https://www.opendental.com/manual192/quickpastenoteedit.html" >v19.2</option><option value="https://www.opendental.com/manual191/quickpastenoteedit.html" >v19.1</option><option value="https://www.opendental.com/manual184/quickpastenoteedit.html" >v18.4</option><option value="https://www.opendental.com/manual183/quickpastenoteedit.html" >v18.3</option><option value="https://www.opendental.com/manual182/quickpastenoteedit.html" >v18.2</option><option value="https://www.opendental.com/manual181/quickpastenoteedit.html" >v18.1</option><option value="https://www.opendental.com/manual174/quickpastenoteedit.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Quick Paste Note Edit</p></div>
+<div class="GeneralPageContent">
+<p>Create Quick Paste Notes to easily replace abbreviated text with longer notes.</p>
+<p>In <a href="quickpastenotessetup.html">Quick Paste Notes Setup</a>, click <b>Add</b>.</p>
+<img src="images/quickPasteNotesEdit.gif" width="729" height="204"/><p>Alternatively, double-click an existing note to edit.</p>
+<p><b>Abbreviation</b>: Enter the shortcut to use to insert the note in a text box (optional). Numbers, letters, and symbols or a combination of can be used. For the shortcut to work avoid using the same abbreviation as other notes or the same sequence of characters. For example, if di and dia are used as abbreviations, di will override dia. If no abbreviation is entered, no shortcut is assigned to the note. To insert notes without a shortcut, open the Quick Paste Notes list and double-click a note.</p>
+<p><b>Note</b>: Enter the full note text or a template. There is no limit to note size and it can span multiple lines.</p>
+<p>Example: Abbreviation = dlb. When the shortcut ?dlb is entered in a supported text box, 'Don't Lean Back' immediately replaces the abbreviation. The text box where the note is inserted also must have the note's category as its default. See <a href="quickpastecategory.html">Quick Paste Category</a> for additional information.</p>
+</div>
+</div>
+</body>
+</html>```

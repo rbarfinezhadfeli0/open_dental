@@ -1,0 +1,77 @@
+# File: ./www.opendental.com/manual243/codegroups.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Code Groups</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('codegroups','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/codegroups.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/codegroups.html" >v24.2</option><option value="https://www.opendental.com/manual241/codegroups.html" >v24.1</option><option value="https://www.opendental.com/manual233/codegroups.html" >v23.3</option><option value="https://www.opendental.com/manual232/codegroups.html" >v23.2</option><option value="https://www.opendental.com/manual231/codegroups.html" >v23.1</option><option value="https://www.opendental.com/manual224/codegroups.html" >v22.4</option><option value="https://www.opendental.com/manual223/codegroups.html" >v22.3</option><option value="https://www.opendental.com/manual222/codegroups.html" >v22.2</option><option value="https://www.opendental.com/manual221/codegroups.html" >v22.1</option><option value="https://www.opendental.com/manual214/codegroups.html" >v21.4</option><option value="https://www.opendental.com/manual213/codegroups.html" >v21.3</option><option value="https://www.opendental.com/manual212/codegroups.html" >v21.2</option><option value="https://www.opendental.com/manual211/codegroups.html" >v21.1</option><option value="https://www.opendental.com/manual205/codegroups.html" >v20.5</option><option value="https://www.opendental.com/manual204/codegroups.html" >v20.4</option><option value="https://www.opendental.com/manual203/codegroups.html" >v20.3</option><option value="https://www.opendental.com/manual202/codegroups.html" >v20.2</option><option value="https://www.opendental.com/manual201/codegroups.html" >v20.1</option><option value="https://www.opendental.com/manual194/codegroups.html" >v19.4</option><option value="https://www.opendental.com/manual193/codegroups.html" >v19.3</option><option value="https://www.opendental.com/manual192/codegroups.html" >v19.2</option><option value="https://www.opendental.com/manual191/codegroups.html" >v19.1</option><option value="https://www.opendental.com/manual184/codegroups.html" >v18.4</option><option value="https://www.opendental.com/manual183/codegroups.html" >v18.3</option><option value="https://www.opendental.com/manual182/codegroups.html" >v18.2</option><option value="https://www.opendental.com/manual181/codegroups.html" >v18.1</option><option value="https://www.opendental.com/manual174/codegroups.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Code Groups</p></div>
+<div class="GeneralPageContent">
+<p>Set up Code Groups for use with Frequency Limitations, Age Limits or Other Benefits for insurance plans.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Code Groups.</p>
+<img src="images/codeGroups.png" width="669" height="412"/><p><div class="Note">Note: Set up individual <a href="insfrequencylimitations.html">Frequency Limitations</a>, Age Limits, and <a href="otherbenefits.html">Other Benefits</a> from the <a href="benefitinfo.html">Edit Benefits</a> window for <a href="insplan.html">Insurance Plans</a>.</div>
+</p>
+<p class="MarginBottomZero">Code Groups: The grid displays Code Groups that have been created. </p>
+<ul class="MarginBottomGap">
+<li>Freq: Indicates if the Code Group displays in the Frequency Limitation Benefits grid for insurance plans.</li>
+<li>Age: Indicates if the Code Group displays in the Age Limits grid for insurance plans.</li>
+</ul>
+<p><b>Show Hidden</b>: Check to view Code Groups that have neither <i>Age</i> nor <i>Freq</i> checked in the grid.</p>
+<p><b>Add</b>: Opens Code Group Edit to create a new Code Group.</p>
+<p><b>Up</b> / <b>Down</b>: Select a Code Group from the grid and click to move in the list.</p>
+<p>Click <b>Save</b> to exit the window and keep any changes.</p>
+<h2>Code Group Edit </h2>
+<p>Double-click an existing Code Group from the grid to edit or click <b>Add</b> to create a new group.</p>
+<img src="images/codeGroupEdit.png" width="673" height="327"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Show In Age Limits</b>: Check to display this Code Group in the Age Limits grid for insurance plans.</li>
+<li><b>Show In Frequencies</b>: Check to display this Code Group in the Frequency Limitation Benefits grid for insurance plans. </li>
+<div class="Note">Note: Existing Code Groups are always available in the Code Group dropdown in the <a href="editbenefit.html">Edit Benefit</a> window.</div>
+<li><b>Group Name</b>: Description for the Code Group.</li>
+<li><b>Fixed Group</b>: Assign a predetermined grouping to use this Code Group with certain fixed fields like <a href="statictextfields.html">Static Text Fields</a> (e.g., dateLastExam). Fixed Groups affect the following: <ul>
+<li>Bitewing: <i>dateLastBW</i> Static Text Field </li>
+<li>Exam: <i>dateLastExam </i> Static Text Field</li>
+<li>Pano/FMX: <i>dateLastPanoFMX</i> Static Text Field</li>
+<li>Prophylaxis: <i>dateLastProphy</i> Static Text Field</li>
+<li>SRP: <i>dateLastSRP</i> Static Text Field</li>
+<li>Perio Maintenance:<i>dateLastPerio</i> Static Text Field</li>
+</ul>
+</li>
+<li><b>Proc Codes</b>: Enter procedure codes that apply to the Code Group. Click <b>Add</b> to open the <a href="procedurecodes.html">Procedure Codes</a> list and select procedure codes. </li>
+</ul>
+<p>Click <b>Save</b> to show changes in the Code Groups grid. Duplicate procedure codes are not saved (e.g., if <i>D0474,D0474</i> is entered, only <i>D0474</i> is saved).</p>
+</div>
+</div>
+</body>
+</html>```
