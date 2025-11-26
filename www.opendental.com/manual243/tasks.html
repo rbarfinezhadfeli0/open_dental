@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Task</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('tasks','toolbar','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/tasks.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/tasks.html" >v24.2</option><option value="https://www.opendental.com/manual241/tasks.html" >v24.1</option><option value="https://www.opendental.com/manual233/tasks.html" >v23.3</option><option value="https://www.opendental.com/manual232/tasks.html" >v23.2</option><option value="https://www.opendental.com/manual231/tasks.html" >v23.1</option><option value="https://www.opendental.com/manual224/tasks.html" >v22.4</option><option value="https://www.opendental.com/manual223/tasks.html" >v22.3</option><option value="https://www.opendental.com/manual222/tasks.html" >v22.2</option><option value="https://www.opendental.com/manual221/tasks.html" >v22.1</option><option value="https://www.opendental.com/manual214/tasks.html" >v21.4</option><option value="https://www.opendental.com/manual213/tasks.html" >v21.3</option><option value="https://www.opendental.com/manual212/tasks.html" >v21.2</option><option value="https://www.opendental.com/manual211/tasks.html" >v21.1</option><option value="https://www.opendental.com/manual205/tasks.html" >v20.5</option><option value="https://www.opendental.com/manual204/tasks.html" >v20.4</option><option value="https://www.opendental.com/manual203/tasks.html" >v20.3</option><option value="https://www.opendental.com/manual202/tasks.html" >v20.2</option><option value="https://www.opendental.com/manual201/tasks.html" >v20.1</option><option value="https://www.opendental.com/manual194/tasks.html" >v19.4</option><option value="https://www.opendental.com/manual193/tasks.html" >v19.3</option><option value="https://www.opendental.com/manual192/tasks.html" >v19.2</option><option value="https://www.opendental.com/manual191/tasks.html" >v19.1</option><option value="https://www.opendental.com/manual184/tasks.html" >v18.4</option><option value="https://www.opendental.com/manual183/tasks.html" >v18.3</option><option value="https://www.opendental.com/manual182/tasks.html" >v18.2</option><option value="https://www.opendental.com/manual181/tasks.html" >v18.1</option><option value="https://www.opendental.com/manual174/tasks.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Task</p></div>
+<div class="GeneralPageContent">
+<p>Choose which Task Lists to send a task. </p>
+<p>In the <a href="toolbar.html">Main Toolbar</a>, click <b>Tasks</b>.</p>
+<img src="images/taskListSelect.png" width="559" height="544"/><p class="MarginBottomZero">Alternatively, this window opens when: </p>
+<ul class="MarginBottomGap">
+<li> Clicking <b>Send To...</b> from the <a href="taskswindow.html">Task Window</a> on an existing task or a new task created from the Tasks Area. The window is labeled <i>Task Send User</i>.</li>
+<li>Clicking <b>Send To...</b> from the Task window on a new task created from the Main Toolbar. The window is labeled <i>Select Task List</i>.</li>
+<li>Clicking <b>To Task List</b> from <a href="aptedit.html">Edit Appointment</a>. The window is labeled <i>Add Task</i>.</li>
+</ul>
+<p><b>Search</b>: Type a search term to filter the Task List grid by <a href="tasklists.html">Task List </a>description.</p>
+<p><b>Send copies to multiple</b>: Only available when clicking <b>Send To...</b> on a new Task or <b>To Task List</b> from Edit Appointment. Check this box to select multiple Task Lists to send a copy of the task.</p>
+<p class="MarginBottomZero"><b>Show all task lists</b>: Only certain Task Lists are displayed when this window is opened. Check this box to see all Task Lists and nested Task Lists. </p>
+<ul class="MarginBottomGap">
+<li>When opened from the Main Toolbar, only Task Lists with the <i>Patient</i> type are listed by default.</li>
+<li>When opened from the Task window, only Task Lists assigned as inboxes are listed by default.</li>
+</ul>
+<p class="MarginBottomZero"><b>Task Lists</b>: Highlight the Task List(s) to send the task.  </p>
+<ul class="MarginBottomGap">
+<li>Task List: Displays the Task List description.</li>
+<li>Full Path: Displays the location of nested Task Lists (i.e., not listed in the Main tab of the Tasks area). </li>
+</ul>
+<p>Click <b>OK</b> to assign the task to the selected Task List(s). If this window was opened from the Main Toolbar or Edit Appointment, the Task window opens. If this window was opened from the Task window, the task is immediately sent.</p>
+</div>
+</div>
+</body>
+</html>

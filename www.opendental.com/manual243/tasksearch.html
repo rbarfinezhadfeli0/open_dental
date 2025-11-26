@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Task Search</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('tasksearch','tasks','toolbar','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/tasksearch.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/tasksearch.html" >v24.2</option><option value="https://www.opendental.com/manual241/tasksearch.html" >v24.1</option><option value="https://www.opendental.com/manual233/tasksearch.html" >v23.3</option><option value="https://www.opendental.com/manual232/tasksearch.html" >v23.2</option><option value="https://www.opendental.com/manual231/tasksearch.html" >v23.1</option><option value="https://www.opendental.com/manual224/tasksearch.html" >v22.4</option><option value="https://www.opendental.com/manual223/tasksearch.html" >v22.3</option><option value="https://www.opendental.com/manual222/tasksearch.html" >v22.2</option><option value="https://www.opendental.com/manual221/tasksearch.html" >v22.1</option><option value="https://www.opendental.com/manual214/tasksearch.html" >v21.4</option><option value="https://www.opendental.com/manual213/tasksearch.html" >v21.3</option><option value="https://www.opendental.com/manual212/tasksearch.html" >v21.2</option><option value="https://www.opendental.com/manual211/tasksearch.html" >v21.1</option><option value="https://www.opendental.com/manual205/tasksearch.html" >v20.5</option><option value="https://www.opendental.com/manual204/tasksearch.html" >v20.4</option><option value="https://www.opendental.com/manual203/tasksearch.html" >v20.3</option><option value="https://www.opendental.com/manual202/tasksearch.html" >v20.2</option><option value="https://www.opendental.com/manual201/tasksearch.html" >v20.1</option><option value="https://www.opendental.com/manual194/tasksearch.html" >v19.4</option><option value="https://www.opendental.com/manual193/tasksearch.html" >v19.3</option><option value="https://www.opendental.com/manual192/tasksearch.html" >v19.2</option><option value="https://www.opendental.com/manual191/tasksearch.html" >v19.1</option><option value="https://www.opendental.com/manual184/tasksearch.html" >v18.4</option><option value="https://www.opendental.com/manual183/tasksearch.html" >v18.3</option><option value="https://www.opendental.com/manual182/tasksearch.html" >v18.2</option><option value="https://www.opendental.com/manual181/tasksearch.html" >v18.1</option><option value="https://www.opendental.com/manual174/tasksearch.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Task Search</p></div>
+<div class="GeneralPageContent">
+<p>Users can search for tasks using multiple criteria.</p>
+<p>In the <a href="tasks.html">Tasks</a> area, click <b>Search</b>.</p>
+<img src="images/tasksearch.png" width="915" height="523"/><h2>Task Results</h2>
+<p>The task results grid displays tasks found using the criteria on the right. </p>
+<img src="images/taskSearchResults.png" width="822" height="124"/><p>The grid displays the date created, the date completed (when the task was marked as <i>Done</i>), and the task description. Double-click a task to open it.</p>
+<p class="MarginBottomZero">Right-click options:  </p>
+<ul class="MarginBottomGap">
+<li><b>Go To</b>: Click to open the attached patient or appointment.</li>
+<li><b>Wiki</b>: Click to open the the linked <a href="wiki.html">Wiki</a>. Only an option when <i>Detect wiki links in text boxes and grids</i> is enabled in Wiki Setup.</li>
+<li><b>Web</b>: Click to open the linked web page.</li>
+<li><b>PatNum</b>: Click to open the associated patient's account. Only an option if a user has commented <i>PatNum:#</i> (e.g., PatNum:1823) in the task description or a task note. Multiple accounts may be listed if commented in the task description or notes. </li>
+<li><b>TaskNum</b>: Click to open the associated task. Only an option if a user has commented <i>TaskNum:#</i> (e.g., TaskNum:2584) in the task description or a task note. Multiple tasks may be listed if commented in the task description or notes.</li>
+</ul>
+<h2>Search by:</h2>
+<p>Use the criteria on the right to find tasks. </p>
+<p>Users: Search tasks by user.</p>
+<img src="images/taskSearchUsers.png" width="192" height="76"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Show Hidden Users</b>: Check to include hidden users in the User dropdown.</li>
+<li><b>User:</b> Search for tasks from the specified user. Click <i> Me</i> to quickly select the logged-in user. If <i>Include Task Notes</i> is checked, also includes users attached to task notes.</li>
+</ul>
+<p>Task Info: Search by information within the task.</p>
+<img src="images/taskSearchTaskInfo.png" width="182" height="91"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Task List:</b> Search by <a href="tasklists.html">Task List</a> Description (i.e., name). </li>
+<li><b>Task Num:</b> Search by task number. Search refreshes automatically once seven digits are entered. </li>
+<li><b>PatNum:</b> Search for tasks associated with a patient number (for tasks that have a <i>Patient</i> type only). </li>
+<li><b>Priority:</b> Search by <a href="definitionstaskpriorities.html">Definitions: Task Priorities</a>. </li>
+</ul>
+<p>Text: Search for tasks by filtering keywords or phrases. Searches the Task Description (i.e., contents). If <i>Include Task Notes</i> is checked, includes task notes. If <i>Include Attachments</i> also searches Attachment Descriptions and Text. </p>
+<img src="images/taskSearchText.png" width="192" height="72"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>To include/exclude a phrase, enter it between quotations (e.g., "payment plan"). Multiple phrases can be searched by entering multiple sets of quotations (e.g., "payment plan" "past due"). To include/exclude individual keywords, type them outside of quotations (e.g., payment past due). </li>
+<li><b>Including</b>: Search for tasks that contain specified keyword(s) or phrase(s).</li>
+<li><b>Excluding</b>: Limit the task search by omitting tasks that contain the specified keyword(s) or phrase(s).</li>
+</ul>
+<p>Date Created: Search tasks created in a specified date range.</p>
+<img src="images/taskSearchDateCreated.png" width="192" height="90"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>From / To</b>: Search for tasks that have a Date/Time Entry between the date range. Click the calendar icon to select to and from dates. </li>
+<li><b>Clear</b>: Click to clear all dates. </li>
+</ul>
+<p>Date Completed: Search tasks completed in a specified date range. </p>
+<img src="images/taskSearchDateCompleted.png" width="192" height="90"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>From / To</b>: Search for tasks that have a Date/Time Finished between the date range. Click the calendar icon to select to and from dates. </li>
+<li><b>Clear</b>: Click to clear all dates. </li>
+</ul>
+<p>Additional Options: Search tasks by other criteria.</p>
+<img src="images/taskSearchOtherCriteria.png" width="192" height="75"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Include Task Notes</b>: When checked, applies filters to task notes.</li>
+<li><b>Include Completed</b>: When checked, includes completed tasks in search.</li>
+<li><b>Include Attachments</b>: When checked, applies filters to Attachment Descriptions and Text.</li>
+</ul>
+<img src="images/taskSearchButtons.png" width="215" height="88"/><p><b>New Task</b>: Click to create a new task.</p>
+<p><b>Refresh</b>: Click to update the Task Results grid using the criteria entered above.</p>
+<p><b>Limit Results (50):</b> When checked, search results are restricted to 50 tasks. When unchecked, there is no limit.</p>
+<p><b>Run on Report Server:</b> Only visible for offices using a report server (<a href="reportserver.html">Report Setup: Report Server</a>). Check to run the task search query on the report server to avoid slowness.</p>
+<h2>Hints</h2>
+<p>If the text <i>TaskNum:#####</i> is currently copied to the clipboard, the associated Task is immediately opened, without launching Task Search (e.g., if <i>TaskNum:254</i> is copied to the clipboard, TaskNum:254 is immediately opened). If a matching Task is not found, Task Search opens with the TaskNum entered into the search criteria.</p>
+</div>
+</div>
+</body>
+</html>

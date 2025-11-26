@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - API Laboratories</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('apilaboratories','+needtoOrganize','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/apilaboratories.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/apilaboratories.html" >v24.2</option><option value="https://www.opendental.com/manual241/apilaboratories.html" >v24.1</option><option value="https://www.opendental.com/manual233/apilaboratories.html" >v23.3</option><option value="https://www.opendental.com/manual232/apilaboratories.html" >v23.2</option><option value="https://www.opendental.com/manual231/apilaboratories.html" >v23.1</option><option value="https://www.opendental.com/manual224/apilaboratories.html" >v22.4</option><option value="https://www.opendental.com/manual223/apilaboratories.html" >v22.3</option><option value="https://www.opendental.com/manual222/apilaboratories.html" >v22.2</option><option value="https://www.opendental.com/manual221/apilaboratories.html" >v22.1</option><option value="https://www.opendental.com/manual214/apilaboratories.html" >v21.4</option><option value="https://www.opendental.com/manual213/apilaboratories.html" >v21.3</option><option value="https://www.opendental.com/manual212/apilaboratories.html" >v21.2</option><option value="https://www.opendental.com/manual211/apilaboratories.html" >v21.1</option><option value="https://www.opendental.com/manual205/apilaboratories.html" >v20.5</option><option value="https://www.opendental.com/manual204/apilaboratories.html" >v20.4</option><option value="https://www.opendental.com/manual203/apilaboratories.html" >v20.3</option><option value="https://www.opendental.com/manual202/apilaboratories.html" >v20.2</option><option value="https://www.opendental.com/manual201/apilaboratories.html" >v20.1</option><option value="https://www.opendental.com/manual194/apilaboratories.html" >v19.4</option><option value="https://www.opendental.com/manual193/apilaboratories.html" >v19.3</option><option value="https://www.opendental.com/manual192/apilaboratories.html" >v19.2</option><option value="https://www.opendental.com/manual191/apilaboratories.html" >v19.1</option><option value="https://www.opendental.com/manual184/apilaboratories.html" >v18.4</option><option value="https://www.opendental.com/manual183/apilaboratories.html" >v18.3</option><option value="https://www.opendental.com/manual182/apilaboratories.html" >v18.2</option><option value="https://www.opendental.com/manual181/apilaboratories.html" >v18.1</option><option value="https://www.opendental.com/manual174/apilaboratories.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>API Laboratories</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="../site/apispecification.html">API Specification</a></p>
+<p>See <a href="laboratories.html">Laboratories</a> for more information.</p>
+<h2>Laboratories GET (single)</h2>
+<p>Version Added: 24.2.33</p>
+<p>Gets a single laboratory.</p>
+<p><b>LaboratoryNum:</b> Required in URL.</p>
+<p><b>Example Request:</b><br/> GET /laboratories/1<br/></p>
+<p><b>Example Response:</b><br/><span class="codeblock"> {<br/> "LaboratoryNum": 1,<br/> "Description": "Go Smiles Lab",<br/> "Phone": "(503)240-1910",<br/> "Notes": "",<br/> "Slip": 0,<br/> "Address": "231 Hoyt Rd",<br/> "City": "Glendale",<br/> "State": "OR",<br/> "Zip": "91124",<br/> "Email": "",<br/> "WirelessPhone": "",<br/> "IsHidden": "false"<br/> } </span></p>
+<p>200 OK<br/> 404 NotFound (with explanation)<br/></p>
+<h2>Laboratories GET (multiple)</h2>
+<p>Version Added: 24.2.33</p>
+<p>Gets a list of laboratories.</p>
+<p><b>Example Request:</b><br/> GET /laboratories<br/></p>
+<p><b>Example Responses:</b><br/><span class="codeblock"> [<br/> {<br/> "LaboratoryNum": 1,<br/> "Description": "Go Smiles Lab",<br/> "Phone": "(503)240-1910",<br/> "Notes": "",<br/> "Slip": 0,<br/> "Address": "231 Hoyt Rd",<br/> "City": "Glendale",<br/> "State": "OR",<br/> "Zip": "91124",<br/> "Email": "",<br/> "WirelessPhone": "",<br/> "IsHidden": "false"<br/> },<br/> {<br/> "LaboratoryNum": 2,<br/> "Description": "Lab",<br/> "Phone": "(503)555-1810",<br/> "Notes": "",<br/> "Slip": 0,<br/> "Address": "",<br/> "City": "",<br/> "State": "",<br/> "Zip": "",<br/> "Email": "",<br/> "WirelessPhone": "",<br/> "IsHidden": "false"<br/> },<br/> etc...<br/> ]<br/></span></p>
+<p>200 OK<br/></p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Version 25.1</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('version25_1','versions','advancedtopics','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Version 25.1</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="versions.html">Versions</a>.</p>
+<p><a href="https://opendental.blog/version-25-1/" target="_blank"><img src="images/versionHighlightsBlog.png" width="900" height="125"/></a></p>
+<p>Version 25.1 was released as stable on 05/29/2025.</p>
+<h2>Major Changes</h2><p class="MarginBottomZero">eClipboard 25 released. (Also backported to Version 24.4) </p>
+<ul class="MarginBottomGap">
+<li>Updated interface, including accessibility options and dark mode. </li>
+<li>Electronic patient forms via eForms. </li>
+</ul>
+<h2>Changes by Category</h2><p class="MarginBottomZero"><b>Account Module</b></p>
+<ul class="MarginBottomGap">
+<li>View history of Canadian attachments.</li>
+<li>Deprecated Payment Plan charge logic.</li>
+<li>Added Pay Plan Unlock permission.</li>
+<li>PayConnect 2.0 receipts include cardholder information.</li>
+<li>Audit Trail now logs the dollar amount a Payment Plan's completed amount has changed. </li>
+<li>PayConnect 2.0 remembers last Terminal for Transaction by workstation.</li>
+<li>In the Patient Account tab, Sales Tax is sorted to the bottom of the date of service. (Also backported to Version 24.4.52)</li>
+<li>Allow Sales Tax procedures on claims. </li>
+</ul>
+<p class="MarginBottomZero"><b>Appointments Module</b></p>
+<ul class="MarginBottomGap">
+<li>New permission for BlockoutsFlagged. </li>
+<li>Allow more than one completed task on an appointment.</li>
+</ul>
+<p class="MarginBottomZero"><b>eServices</b></p>
+<ul class="MarginBottomGap">
+<li>Message-to-Pay alert when proper tags are not being included.</li>
+<li>Added <i>Disable Typed Signature</i> preference to New Patient Thank-You messages.</li>
+<li>Autosave eForms when submitted via eClipboard 25.</li>
+<li>Automatically send Message-to-Pay links on statement creation.</li>
+<li>In eClipboard Form Rule, option to prefill non-database fields using data from prior forms on Sheets and eForms. (Also backported to Version 24.4.51)</li>
+<li>In the Kiosk Manager, removed the Delete button for eClipboard devices. (Also backported to Version 24.4.52)</li>
+</ul>
+<p class="MarginBottomZero"><b>Family Module</b></p>
+<ul class="MarginBottomGap">
+<li>Ability to Hide and Delete Code Groups. </li>
+<li>Allow two Insurance History dates per category.</li>
+</ul>
+<p class="MarginBottomZero"><b>Imaging Module</b></p>
+<ul class="MarginBottomGap">
+<li>Integration with BetterDiagnostics.</li>
+<li>Document titles made more clear for Canada claim responses saved to the Imaging Module.</li>
+<li>Details button added to Scanning Setup window. </li>
+</ul>
+<p class="MarginBottomZero"><b>Manage Module</b></p>
+<ul class="MarginBottomGap">
+<li>Updated Totals for Period section of Time Cards. </li>
+<li>Preference to auto split ERAs with CARC denial codes. </li>
+</ul>
+<p class="MarginBottomZero"><b>Miscellaneous</b></p>
+<ul class="MarginBottomGap">
+<li>Group Notes allow multiple procedure providers, no procedures, or procedures with varying procedure statuses.</li>
+<li>Changes to InsEstOverride and AllowedAmtOverride fields logged in Audit Trail. </li>
+<li>Program Link replacement field for [SelectedProcNums]. (Also backported to Version 24.4.34)</li>
+<li>Always install API Service on dental office update. (Also backported to Vesions 24.3.61 and 24.4.33) </li>
+<li>Easily change user when providers are adding signatures on sheets. </li>
+<li>Updated process of autosaving Sheets to be more intuitive. </li>
+<li>Autofill data from a guarantor's account on certain eForm fields. </li>
+<li>Automatically import data from certain eForm fields. </li>
+<li>New Database Maintenance method for <i>EmailmessageInvalidCharactersInBodyText</i>. (Also backported to Version 24.4.42)</li>
+<li>Option to hide medications.</li>
+<li>Easily view Conditional Child Fields connected to a parent in eForms.</li>
+<li>Added bridge to Overjet.</li>
+<li>Ability to compare wiki drafts to current wiki page.</li>
+<li>New Database Maintenance method for <i>SecurityHashRehashPatientTable</i>. (Also backported to Version 24.4.48) </li>
+<li>Added Provider and Clinic filters to the Edit Procedure Code window, More Fees button. </li>
+<li>Added tabs to Fee Tools window.</li>
+</ul>
+<p class="MarginBottomZero">API: <a href="apispecification.html">API Specification</a></p>
+<ul class="MarginBottomGap">
+<li>InsPlans Add IsMedical.</li>
+<li>Claims PUT - add InsSubNum2 as an optional parameter.</li>
+<li>Userods PUT userGroupNums and IsPasswordResetRequired.</li>
+<li>Add ability to set paysplit amounts on payments.</li>
+<li>ProcedureLogs POST/PUT - add ability to set ProcStatus to CN, EC, or R.</li>
+<li>Popups PUT DateTimeDisabled.</li>
+<li>Commlogs GET DateTStamp.</li>
+<li>Schedules Add DateTStamp.</li>
+<li>Add optional SheetType filter to SheetDefs GET.</li>
+<li>Add additional fields to insplan resource.</li>
+<li>Add SheetFieldDefs GET.</li>
+<li>Add ClaimProcs GET (single).</li>
+<li>SecUserNumEntry can now be specified on Appointments POST.</li>
+</ul>
+		</div>
+	</div>
+</body>
+</html>

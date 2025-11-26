@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Version 24.2</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('version24_2','versions','advancedtopics','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Version 24.2</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="versions.html">Versions</a>.</p>
+<p><a href="https://opendental.blog/software-update-stable-version-24-2-highlights/" target="_blank"><img src="images/versionHighlightsBlog.png" width="900" height="125"/></a></p>
+<p>Version 24.2 was released as stable on 10/10/2024.</p>
+<p class="MarginBottomZero"><b>Appointments Module</b><br></p>
+<ul class="MarginBottomGap">
+<li>Added Insurance Carrier as display field for Recall List. </li>
+<li>Added Appointment View setting to only show days with scheduled appointments or providers in the week view. </li>
+<li>Language translations for recall messages. </li>
+</ul>
+<p class="MarginBottomZero"><b>Account Module</b><br></p>
+<ul class="MarginBottomGap">
+<li>Quarterly and yearly intervals added to Repeating Charges. </li>
+<li>Authorized Procedures section added to Recurring Charges.</li>
+<li>Hover over Ins Est to see outstanding Claim Procedures. </li>
+<li>Automatically create tertiary claims using the New Claim button. </li>
+<li>Payment Plan credits are only added to the account grid once a procedure is set complete.</li>
+<li>Multi Visit Group procedures use the current benefit year for estimates. </li>
+<li>Add additional PayPlan Charges and add or edit future PayPlan Charges.</li>
+<li>Preference to automatically prompt for dental claims when receiving a medical claim.</li>
+<li>Option to show Super Families in Account Module. </li>
+</ul>
+<p class="MarginBottomZero"><b>Chart Module</b></p>
+<ul class="MarginBottomGap">
+<li>Printed or saved Perio Charts show patient birthdate. </li>
+<li>Perio Chart defaults to logged-on provider. </li>
+</ul>
+<p class="MarginBottomZero"><b>Manage Module</b><br></p>
+<ul class="MarginBottomGap">
+<li>Date received field added for individual supplies in a Supply Order.</li>
+<li>Select multiple clinics to filter from the insurance claims window. </li>
+<li>Remove Old Data tool optionally includes the WikiListHist, WikiPageHist, and TaskHist tables. </li>
+</ul>
+<p class="MarginBottomZero"><b>eServices</b></p>
+<ul class="MarginBottomGap">
+<li>ODTouch app released as a stable.</li>
+<li>Added ability to print from ODTouch. </li>
+<li>Set a default sheet to load for eRouting actions in ODTouch. </li>
+<li>Additional Payment Portal actions added to the eService Activity Log. </li>
+<li>Text messages are also marked read in Open Dental when opened in ODMobile or ODTouch. </li>
+<li>Create custom eRouting actions. </li>
+<li>New setting to determine if secure email is used for statements. </li>
+<li>Preference to send an opt-out message when changing the Text OK status from Yes to No. </li>
+<li>eServices Listener automatically opens necessary eConnector ports. </li>
+</ul>
+<p class="MarginBottomZero"><b>Preferences</b></p>
+<ul class="MarginBottomGap">
+<li>Moved Ortho and Enterprise settings to Preferences. </li>
+<li>Preference to ensure addresses are valid. </li>
+<li>Preference to sort Imaging Module files by descending or ascending date. </li>
+</ul>
+<p class="MarginBottomZero"><b>Miscellaneous</b><br></p>
+<ul class="MarginBottomGap">
+<li>Ability to merge duplicate allergies. </li>
+<li>Added server name to the Query Monitor. </li>
+<li>Enhancement to include last two patnum digits in Trophy Enhanced bridge. </li>
+<li>New Database Maintenance method for ProcedurelogNotCompletedAttachedToReceivedClaimprocOrPaySplitOrAd. </li>
+<li>Appriss bridge renamed to Bamboo. </li>
+<li>Renamed EwooEZDent bridge to EZDenti and created a new bridge for Ez3Di. </li>
+<li>Daily Procedures report includes treatment area when applicable.</li>
+<li>New permission to control edits to the Fee Billed to Insurance. </li>
+<li>Integration with Bola AI.</li>
+<li>Deprecated the Midway Dental Supply bridge. </li>
+<li>New tool to mass change insurance plan types. </li>
+<li>Select email attachments from Image Categories. </li>
+<li>New window for Security Badge setup.</li>
+<li>Printer Setup includes additional options for virtual printers. </li>
+<li>Added new export options for queries. </li>
+</ul>
+<p class="MarginBottomZero"><b>API</b>: <a href="apispecification.html">API Specification</a><br></p>
+<ul class="MarginBottomGap">
+<li>Diseases GET make PatNum optional.</li>
+<li>New resource ToothInitial.</li>
+<li>Added RecallTypes GET.</li>
+<li>Added SecUserNumEntry, DateEntry, and SecDateTEdit to Adjustments GET.</li>
+<li>Added Get (single) to DiseaseDefs GET.</li>
+<li>Added Planned Appointments Item Order to Appointments resources. </li>
+<li>Tasks PUT allow taskStatus to be updated.</li>
+<li>Added Provider, Operatory, and Schedule tables to ApiEvents.</li>
+<li>Added GET(single) and optional CarrierNum and PlanType filters to InsPlans.</li>
+<li>Added CustomTracking to Claims GET, PUT, and POST.</li>
+<li>Added ClaimPayments POST Batch.</li>
+<li>Added GET (single) to Statements.</li>
+<li>Added Labcases GET.</li>
+<li>Added LabTurnarounds GET.</li>
+<li>Added ProcNotes GET.</li>
+<li>Added ability to digitally sign ProcNotes POST.</li>
+<li>Added Recalls PUT.</li>
+<li>Added Recalls POST.</li>
+<li>Added Documents PUT.</li>
+<li>Added Documents DELETE.</li>
+<li>Added Laboratories GET.</li>
+<li>Added RxPats GET.</li>
+<li>Added Pharmacies GET.</li>
+</ul>
+		</div>
+	</div>
+</body>
+</html>

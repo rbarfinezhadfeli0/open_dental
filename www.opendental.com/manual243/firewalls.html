@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Firewall</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('firewalls','securitycomputers','computernetworksetup','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/firewalls.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/firewalls.html" >v24.2</option><option value="https://www.opendental.com/manual241/firewalls.html" >v24.1</option><option value="https://www.opendental.com/manual233/firewalls.html" >v23.3</option><option value="https://www.opendental.com/manual232/firewalls.html" >v23.2</option><option value="https://www.opendental.com/manual231/firewalls.html" >v23.1</option><option value="https://www.opendental.com/manual224/firewalls.html" >v22.4</option><option value="https://www.opendental.com/manual223/firewalls.html" >v22.3</option><option value="https://www.opendental.com/manual222/firewalls.html" >v22.2</option><option value="https://www.opendental.com/manual221/firewalls.html" >v22.1</option><option value="https://www.opendental.com/manual214/firewalls.html" >v21.4</option><option value="https://www.opendental.com/manual213/firewalls.html" >v21.3</option><option value="https://www.opendental.com/manual212/firewalls.html" >v21.2</option><option value="https://www.opendental.com/manual211/firewalls.html" >v21.1</option><option value="https://www.opendental.com/manual205/firewalls.html" >v20.5</option><option value="https://www.opendental.com/manual204/firewalls.html" >v20.4</option><option value="https://www.opendental.com/manual203/firewalls.html" >v20.3</option><option value="https://www.opendental.com/manual202/firewalls.html" >v20.2</option><option value="https://www.opendental.com/manual201/firewalls.html" >v20.1</option><option value="https://www.opendental.com/manual194/firewalls.html" >v19.4</option><option value="https://www.opendental.com/manual193/firewalls.html" >v19.3</option><option value="https://www.opendental.com/manual192/firewalls.html" >v19.2</option><option value="https://www.opendental.com/manual191/firewalls.html" >v19.1</option><option value="https://www.opendental.com/manual184/firewalls.html" >v18.4</option><option value="https://www.opendental.com/manual183/firewalls.html" >v18.3</option><option value="https://www.opendental.com/manual182/firewalls.html" >v18.2</option><option value="https://www.opendental.com/manual181/firewalls.html" >v18.1</option><option value="https://www.opendental.com/manual174/firewalls.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Firewall</p></div>
+<div class="GeneralPageContent">
+<p>Firewalls help protect computers by screening out hackers, viruses, and worms that try to reach computers. It is important to review firewall issues for <a href="securitycomputers.html">Computer Security</a>.</p>
+<p>Firewalls control incoming and outgoing network traffic. They establish barriers between the trusted, secure internal network and another network that is assumed to be not secure. Firewalls act by blocking all the ports on a computer. A port is simply a channel of communication that computers can use, and there are thousands of them available.</p>
+<h2>Windows Firewall</h2>
+<p class="MarginBottomZero">Below are general guidelines for turning the Windows Firewall on/off. </p>
+<ol class="MarginBottomGap">
+<li>On the Server, go to the Control Panel. <br/><img src="images/ControlPanel.png" width="915" height="435" class="ImageInParagraph"/></li>
+<li>At the very bottom, click on Windows Defender Firewall. <br/><img src="images/WindowsFirewall.png" width="843" height="624" class="ImageInParagraph"/></li>
+<li>On the left, click Turn Windows Defender Firewall on or off. <br/><img src="images/WindowsFirewallOnOrOff.png" width="843" height="624" class="ImageInParagraph"/></li>
+</ol>
+<p>There are two kinds of firewalls:</p>
+<ul>
+<li><b>Hardware Firewalls</b>: Protect computer systems from attacks outside the local network. If connected to the internet via a cable modem or DSL, a router which acts as a firewall is necessary. The cable from the cable modem or DSL modem is connected to the Wide Area Network (WAN) port on the router. The LAN port of the router is then connected to the switch so that all computers have access to the internet. Some routers have a built-in switch, and in this case all the computers can be plugged into those ports instead of using an external switch. The router hides the LAN from outside computers, protecting from many types of virus attacks.</li>
+<li><b>Software Firewalls</b>: Help protect an individual computer from attacks from other computers in the office. They act as a second line of defense. For example, if one computer in the office gets infected, it can't spread to the others. Since Open Dental uses ports, software firewall settings will need to be adjusted. Each firewall has a different way of setting up which ports get blocked, but users should always be able to add ports to an exceptions list.  <p>Many antivirus software programs have their own software firewall feature. We recommend using the Windows Firewall instead, and turning off or uninstalling the software's firewall or internet security. If the practice still want to use its own firewall, then <a href="port3306.html">Port 3306</a> must be open on the server; not on each workstation.</p>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

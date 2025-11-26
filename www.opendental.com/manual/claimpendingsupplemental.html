@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Enter Pending Supplemental Insurance Overpayments/Underpayments</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('claimpendingsupplemental','claimedit','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/claimpendingsupplemental.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/claimpendingsupplemental.html" >v24.2</option><option value="https://www.opendental.com/manual241/claimpendingsupplemental.html" >v24.1</option><option value="https://www.opendental.com/manual233/claimpendingsupplemental.html" >v23.3</option><option value="https://www.opendental.com/manual232/claimpendingsupplemental.html" >v23.2</option><option value="https://www.opendental.com/manual231/claimpendingsupplemental.html" >v23.1</option><option value="https://www.opendental.com/manual224/claimpendingsupplemental.html" >v22.4</option><option value="https://www.opendental.com/manual223/claimpendingsupplemental.html" >v22.3</option><option value="https://www.opendental.com/manual222/claimpendingsupplemental.html" >v22.2</option><option value="https://www.opendental.com/manual221/claimpendingsupplemental.html" >v22.1</option><option value="https://www.opendental.com/manual214/claimpendingsupplemental.html" >v21.4</option><option value="https://www.opendental.com/manual213/claimpendingsupplemental.html" >v21.3</option><option value="https://www.opendental.com/manual212/claimpendingsupplemental.html" >v21.2</option><option value="https://www.opendental.com/manual211/claimpendingsupplemental.html" >v21.1</option><option value="https://www.opendental.com/manual205/claimpendingsupplemental.html" >v20.5</option><option value="https://www.opendental.com/manual204/claimpendingsupplemental.html" >v20.4</option><option value="https://www.opendental.com/manual203/claimpendingsupplemental.html" >v20.3</option><option value="https://www.opendental.com/manual202/claimpendingsupplemental.html" >v20.2</option><option value="https://www.opendental.com/manual201/claimpendingsupplemental.html" >v20.1</option><option value="https://www.opendental.com/manual194/claimpendingsupplemental.html" >v19.4</option><option value="https://www.opendental.com/manual193/claimpendingsupplemental.html" >v19.3</option><option value="https://www.opendental.com/manual192/claimpendingsupplemental.html" >v19.2</option><option value="https://www.opendental.com/manual191/claimpendingsupplemental.html" >v19.1</option><option value="https://www.opendental.com/manual184/claimpendingsupplemental.html" >v18.4</option><option value="https://www.opendental.com/manual183/claimpendingsupplemental.html" >v18.3</option><option value="https://www.opendental.com/manual182/claimpendingsupplemental.html" >v18.2</option><option value="https://www.opendental.com/manual181/claimpendingsupplemental.html" >v18.1</option><option value="https://www.opendental.com/manual174/claimpendingsupplemental.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Enter Pending Supplemental Insurance Overpayments/Underpayments</p></div>
+<div class="GeneralPageContent">
+<p>Use Pending Payments to update balances to reflect anticipated supplemental insurance payments.</p>
+<p>In the Edit <a href="claimedit.html">Claim</a> window, at the upper-right, is a Pending Payments section.</p>
+<img src="images/claimPayPending.png" width="125" height="89"/><p>Click an option to enter pending insurance underpayments or overpayments. Amounts entered affect estimated account balances.</p>
+<p><b>Ins Overpaid</b> Click to enter a pending insurance overpayment. Opens the window shown below. Enter the amount overpaid in the <i>Ins Overp</i> column. Amounts are added to the claim as a negative <i>PndSup</i> line item.</p>
+<p><b>Ins Underpaid</b> Click to enter a pending insurance underpayment. Opens the window shown below. Enter the amount underpaid in the <i>Ins Under</i> column. Amounts are added to the claim as a positive <i>PndSup</i> line item.</p>
+<img src="images/claimInsPendingOverUnderPay.png" width="876" height="390"/><p><b>To Supplemental</b>: Change all Pending Supplemental (<i>PndSup</i>) payments to Supplemental (<i>Supp</i>). <a href="claimpayfinalize.html">Finalize Insurance Payment</a> after using this option.</p>
+<h2>Pending Supplemental Payments in the Account</h2>
+<p>Once Pending Supplemental amounts are added to a claim, a line item is added to the patient account. The pending supplemental amount is reflected as pending insurance in the account balance. </p>
+<img src="images/accountpndsupp.png" width="755" height="272"/><p>If a supplemental payment is no longer expected (e.g., entered by mistake or insurance is no longer going to make an additional payment), double-click a <i>PndSup</i> line on the claim and clear the applicable <i>Ins Overp</i> or <i>Ins Under </i>amounts or set to 0.</p>
+</div>
+</div>
+</body>
+</html>

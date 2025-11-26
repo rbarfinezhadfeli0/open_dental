@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - CC Recurring Charges</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('recurringcharges','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/recurringcharges.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/recurringcharges.html" >v24.2</option><option value="https://www.opendental.com/manual241/recurringcharges.html" >v24.1</option><option value="https://www.opendental.com/manual233/recurringcharges.html" >v23.3</option><option value="https://www.opendental.com/manual232/recurringcharges.html" >v23.2</option><option value="https://www.opendental.com/manual231/recurringcharges.html" >v23.1</option><option value="https://www.opendental.com/manual224/recurringcharges.html" >v22.4</option><option value="https://www.opendental.com/manual223/recurringcharges.html" >v22.3</option><option value="https://www.opendental.com/manual222/recurringcharges.html" >v22.2</option><option value="https://www.opendental.com/manual221/recurringcharges.html" >v22.1</option><option value="https://www.opendental.com/manual214/recurringcharges.html" >v21.4</option><option value="https://www.opendental.com/manual213/recurringcharges.html" >v21.3</option><option value="https://www.opendental.com/manual212/recurringcharges.html" >v21.2</option><option value="https://www.opendental.com/manual211/recurringcharges.html" >v21.1</option><option value="https://www.opendental.com/manual205/recurringcharges.html" >v20.5</option><option value="https://www.opendental.com/manual204/recurringcharges.html" >v20.4</option><option value="https://www.opendental.com/manual203/recurringcharges.html" >v20.3</option><option value="https://www.opendental.com/manual202/recurringcharges.html" >v20.2</option><option value="https://www.opendental.com/manual201/recurringcharges.html" >v20.1</option><option value="https://www.opendental.com/manual194/recurringcharges.html" >v19.4</option><option value="https://www.opendental.com/manual193/recurringcharges.html" >v19.3</option><option value="https://www.opendental.com/manual192/recurringcharges.html" >v19.2</option><option value="https://www.opendental.com/manual191/recurringcharges.html" >v19.1</option><option value="https://www.opendental.com/manual184/recurringcharges.html" >v18.4</option><option value="https://www.opendental.com/manual183/recurringcharges.html" >v18.3</option><option value="https://www.opendental.com/manual182/recurringcharges.html" >v18.2</option><option value="https://www.opendental.com/manual181/recurringcharges.html" >v18.1</option><option value="https://www.opendental.com/manual174/recurringcharges.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>CC Recurring Charges</p></div>
+<div class="GeneralPageContent">
+<p>Use the Credit Card Recurring Charges Tool to process credit/debit cards or ACH payments for patients who have recurring charges (e.g., payment plans, repeating charges).</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Tools, CC Recurring Charges.</p>
+<img src="images/recurringCharges.png" width="915" height="485"/><p>Run the tool automatically at a scheduled time each day, or manually as needed.</p>
+<p>The <b>Recurring Charges</b> grid lists patients with a payment scheduled in the last 30 days but not yet processed. Double-click a row to go to that patient's account. This window can be left open to make it easy to view each patient's account.<br/><b>PatNum</b>: Patient account number.<br/><b>Name</b>: Patient last name, first name.<br/><b>Clinic</b>: The clinic assigned to the credit card token.<br/><b>Date</b>: Scheduled Recurring Charge date.<br/><b>Family Bal</b>: Total remaining balance for the family after subtracting pending insurance amounts.<br/><b>PayPlan Due</b>: Outstanding payment plan charges due (only shows if the payment plan is attached to a Recurring Charge).<br/><b>Total Due</b>: Total family balance and payment plan charges due.<br/><b>Repeat Amt</b>: Authorized recurring charge amount.<br/><b>Charge Amt</b>: Amount that will be charged.</p>
+<p>When multiple payment processing programs are enabled, each account in the list indicates the program the card or bank account the <a href="paymentpatientcreditcard.html">Token</a> was created for and will use the indicated program to process the payment. If a single credit card has a token for more than one processing program and authorized Recurring Charges, the Recurring Charges Tool will determine the program to use to process the payment in this order; XCharge, PayConnect, and then PaySimple.<br/><b>X-Charge</b>: X indicates the credit card token has been saved to X-Charge.<br/><div class="Note">Note: X-web must be enabled for X-Charge users to use Recurring charges.</div>
+<br/><b>EdgeExpress</b>: X indicates the credit card token has been saved to EdgeExpress.<br/><b>PayConnect:</b> X indicates the credit card token has been saved to PayConnect.<br/><b>Pay Simple</b>: X indicates the credit card/ACH token has been saved to PaySimple.<br/><b>IsActive</b>: X indicates the credit card is enabled for Recurring Charges. </p>
+<p>Edit the <b>Date / Clinic Filter</b> and click <b>Refresh</b> to limit or expand the number of patients in the Recurring Charges grid.<br/><b>Date Filter</b>: Filter the list by patients with a recurring charge date that is on or after the entered date.<br/><b>Clinic Filter</b>: Check All or select one or more clinics to filter the list by. Clinics are determined by the clinic associated with the credit card token.</p>
+<p><b>Show Inactive Charges</b>: Determines whether cards not set as <i>Is Recurring Active</i> display in the list. See <a href="recurringchargesauthorize.html">Authorize Recurring Charges</a>. Set whether this option is enabled or disabled in <a href="preferences.html">Preferences</a>, <i>Recurring charges show inactive charges by default</i>. </p>
+<p><b>Force Duplicates</b>: Uncheck to prevent more than one charge for the same amount to the same card in a day. Check to allow multiple charges. Useful if multiple family members use the same card for Recurring Charges or when a patient has made a payment for other services with the same card today. <div class="Note">Note: Check box does not apply to PaySimple credit/debit and ACH payments or PayConnect 2.0 credit/debit payments. PaySimple will decline identical transactions to the same card made within 5 minutes apart.</div>
+</p>
+<p>The <b>Counts</b> section shows the Recurring Charge progress.<br/><b>Total</b>: The total amount of Recurring Charges ready to be run.<br/><b>Selected</b>: The number of charges that are currently selected for processing.<br/><b>Charged</b>: The number of charges successfully processed during the most recent run. Patients with successful charges will be removed from the list.<br/><b>Updated</b>: (For the XCharge Decline Minimizer feature only) The number of credit cards updated by the Decline Minimizer, see XCharge (OpenEdge) below.<br/><b>Failed</b>: The number of charges that failed to process during the most recent run. When a payment declines, a matching transaction for $0.00, with a note that indicates the decline, will show in the patient's account ledger. Patients with failed charges will remain in the list until the authorized charge is cleared from the <a href="creditcardsmanage.html">Credit Card Manage</a>, their account balance is zero, or a payment is applied to their Recurring Charge.</p>
+<p><b>All</b>: Click to select all patients in the list.<br/><b>None</b>: Click to deselect all patients in the list.</p>
+<p><b>History</b>: Click to see the Recurring Charges history. See <a href="recurringchargeshistory.html">Recurring Charge History</a>.</p>
+<p><b>Print List</b>: Prints the Recurring Charges grid.</p>
+<p class="MarginBottomZero"><b>Send</b>: Click to process credit card and ACH payments for the selected patients using the credit card processing program indicated. </p>
+<ul class="MarginBottomGap">
+<li>Successful payment transactions are allocated to outstanding charges within the family using first in/first out logic (FIFO).</li>
+<li>Declined transactions create a $0 payment in the patient's account and in the payment plan (if attached) with the declined pay note. <ul>
+<li>If <i>Automatically inactivate declined cards</i> is enabled in Preferences, declined cards will automatically be inactivated for future Recurring Charges. Cards can be manually set back to active in the Credit Card Edit window.</li>
+</ul>
+</li>
+</ul>
+<h2>Setup Requirements</h2>
+<p class="MarginBottomZero">Before using the Recurring Charges feature, the following needs to be set up: </p>
+<ul class="MarginBottomGap">
+<li>Enable <a href="paymentpatientcreditcard.html">Credit Card Payment</a> with <a href="xcharge.html">XCharge (OpenEdge)</a>, <a href="edgeexpress.html">Edge Express</a>, <a href="payconnectpaymentwindow.html">PayConnect Window</a>, or <a href="paysimple.html">PaySimple</a> and store patient's payment information using tokens.</li>
+<li>Enable the practice's preferred <i>Recurring Charges </i><a href="preferences.html">Preferences</a> (i.e., provider allocation, payment transaction date, automatic run time, etc).</li>
+<li>Payment allocation is determined by <a href="allocationssetup.html">Allocations Setup</a>. </li>
+<ul>
+<li>For Enterprise users, this can also be set using the <i>Paysplit Allocation</i> preference.</li>
+</ul>
+<li>Determine how Recurring Charge payments (and all patient payments) are allocated to production, see <i>Enforce Valid Paysplits</i> in Preferences.</li>
+<li>Assign the default payment type for credit card Recurring Charge payments in Preferences. ACH Recurring Charges will use the type assigned in the <i>Payment Type ACH</i> dropdown of the <a href="paysimplesetup.html">PaySimple Setup</a> window. A payment type may also be set per patient when authorizing a Recurring Charge.</li>
+<li>Authorize charges for select patients with a <a href="paymentplanpatient.html">Old Payment Plan</a> or <a href="repeatingcharges.html">Repeating Charges</a>. See <a href="recurringchargesauthorize.html">Authorize Recurring Charges</a>.</li>
+</ul>
+<h2>Automatic Recurring Charges</h2>
+<p class="MarginBottomZero">One option is to run Recurring Charges automatically at a specific time each day. </p>
+<ol>
+<li>Ensure the computer with the <a href="servicemanager.html">OpenDentalService</a> (typically the server) is on at the scheduled run times, and the OpenDentalServiceConfig.xml is configured to the correct database. Open Dental does not need to be running but the computer must be on for the service to work.</li>
+<li> In Preferences, enable <i>Recurring charges run automatically</i>.</li>
+<li>Set the <i>Recurring charges run time</i>.</li>
+</ol>
+<p class="MarginBottomGap"><div class="Note">Note: <ul>
+<li>If using X-Charge, X-Web must be enabled with a XWeb ID, Auth Key and Terminal ID entered to use Automatic Recurring Charges.</li>
+<li>Be aware that failed charges will continue to run daily until successful, or manually stopped.</li>
+</ul>
+</div>
+</p>
+<p>Every day run the repeating charges tool before the aging and Recurring Charges run time (when using the repeating charge feature). Once recurring charges have finished, open the Credit Card Recurring Charges window to take care of the declined payments.</p>
+<h2>Manually Run the CC Recurring Charges Tool</h2>
+<p>The other option is to manually run Recurring Charges with the Recurring Charge Tool. Choose a standard day, such as the 1st or 15th of every month to run the tool. If the Recurring Charge frequency varies with patients, run the tool daily to be sure patient balances are up to date.</p>
+<div class="Note">Note: Do not run the tool and process charges at the same time on the same computer (e.g., do not have more than one instance of Open Dental running on the same computer, and use one instance to run the tool and another to process charges).</div>
+<ol>
+<li>Run the repeating charges tool (only if using the repeating charge feature).</li>
+<li>If billing is normally done at the same time, <a href="billinglist.html">Generate the Billing List</a>.</li>
+<li>Generate the Credit Card Recurring Charges list.</li>
+<li>Select the charges to process. Click <b>All</b> to select all outstanding Recurring Charges.</li>
+<li>Click <b>Send</b> to process ACH or credit card payments for the selected patients.</li>
+<li>Once finished, take care of the declined payments if needed.</li>
+</ol>
+<br/><h2>Apply Manual Payment to Recurring Charges</h2>
+<p>If a patient made a payment before the CC Recurring Charges tool was run, check the <i>Apply to Recurring Charge</i> box in the Payment window to manually apply the payment to a scheduled recurring charge (i.e., currently appears in the Recurring Charges Tool list) to prevent the patient's credit card from being charged when the tool is run. See Recurring Charge section in <a href="payment.html">Payment</a> page for more information.</p>
+<h2>Printing Receipts</h2>
+<p>There are a few options to print receipts when Recurring Charges have finished; statement receipts, credit card/ACH receipts, or Statements.</p>
+<p class="MarginBottomZero">To print statement receipts or credit card/ACH receipts: </p>
+<ol class="MarginBottomGap">
+<li>In the Credit Card Recurring Charges window, click <b>History</b>.</li>
+<li>Right-click a patient in the Recurring Charges list and select <b>Go To Account</b>.</li>
+<li>Then print/email a statement receipt. See <a href="receipt.html">Receipt</a>.<br/> Or double-click the Recurring Charge payment and click <b>Print Receipt</b> or <b>E-Mail Receipt</b> in the Payment window. This will generate a receipt from the processing merchant.</li>
+</ol>
+<p>To print statements reflecting the Recurring Charge payment, generate the billing list prior to running Recurring Charges. Once charges have posted, send statements.</p>
+<h2>Troubleshooting</h2>
+<p><b>Some patients with authorized Recurring Charges are not showing in the list. Why?</b></p>
+<p class="MarginBottomZero">There are many reasons a patient might not appear in the list. Some of these reasons are: </p>
+<ul class="MarginBottomGap">
+<li>Patient's balance is zero.</li>
+<li>The authorized charge is associated to a payment plan that has been paid off.</li>
+<li>A payment has been applied to the scheduled Recurring Charge. Check the most recent payments in the patient's account. If the <i>Apply to Recurring Charge</i> box is checked in the payment window, the Recurring Charge is not needed for this month.</li>
+<li>Another user may be processing the Recurring Charge. Check the Recurring Charge history for pending transactions. To remove a patient from the pending status, right-click and delete the pending charge. The patient will be put back into the Recurring Charge list.</li>
+<li>Check to make sure the scheduled payment date is on or after the date entered in the Date Filter.</li>
+<li>If a payment plan (that has an amount due) is added to an existing Recurring Charge that has processed this month, the payment plan will not be charged for the current month. The patient will appear in the list on the next Recurring Charge date for the previous month's pay plan due amount plus the new month's due amounts.</li>
+<li>The logged-on user does not have access to the clinic assigned to the credit card token when a payment plan is attached or the patient's assigned clinic (if no payment plan is attached). </li>
+</ul>
+<p><b>The payment date is different than the date the payment was processed. Why?</b></p>
+<p class="MarginBottomZero">If the tool is run on a date other than the patient's authorized Recurring Charge date, the payment date is determined by the following: </p>
+<ul>
+<li>If the preference<i>Recurring charges use transaction date</i> is enabled, the Payment date will be date the charge is run.</li>
+<li>If <i>Recurring charges use transaction date</i> is disabled, the Payment date will be backdated to the scheduled Recurring Charge date, unless there is a <a href="securitylockdates.html">Security Lock Date</a> in place to prevent it. </li>
+</ul>
+<p class="MarginBottomGap"> The Payment Entry date will always reflect the actual date the charge was made.</p>
+<p><b>I haven't seen any charges go through. Why?</b></p>
+<p>There are two places to check to see if charges go through. The first is the <a href="recurringchargeshistory.html">Recurring Charge History</a>. The second is in the Open Dental logger folder for Recurring Charges which is located on the computer with the <a href="opendentalservice.html">Open Dental Service</a> running (generally the server) at <b>C:\Program Files (x86)\Open Dental\OpenDentalService\Logger\</b>.</p>
+<p>If these have no data, the OpenDentalService may actually not be running. This can be checked by checking in Services in Windows and ensuring OpenDentService is actively running.</p>
+<p><b>I get a warning that payments cannot be processed due to a global lock date. What do I do?</b></p>
+<p>When the preference <i>Recurring charges use transaction date</i> is disabled, the Recurring Charges Tool backdates payments to the date a charge was scheduled to process. If this date is past the Global Lock Date, Open Dental skips the recurring charge. If running the tool manually, you will get a message noting any charges that cannot be processed.</p>
+<img src="images/recurringChargesLockDate.png" width="403" height="159"/><p>Process payments manually using the Apply Manual Payment steps above. The payment date will revert to the scheduled charge date again. Manually update the date to a date that does not conflict with the Global Lock Date (e.g., today's date).</p>
+</div>
+</div>
+</body>
+</html>

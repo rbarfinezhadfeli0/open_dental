@@ -1,0 +1,619 @@
+/*2022-09-08
+index.html uses two css files exclusively:
+index2.css (this file)
+titleandnavindex.css 
+Do not make any changes without talking to Jordan.
+
+SamR 2025-07-01
+index.html also uses reset.css to reset commonly used elements.
+There are a few things that, for readability, could be useful like moving around declarations so that like-selectors are near each other.
+Ex: .indexVersions between h2 and h2 a is split by .eServicesPortal
+*/
+
+*{/*Reset styles, this helps set default values for the page.*/
+	border: 0;
+	font-size:100%;
+	margin: 0;
+	padding: 0;
+	font-weight:normal;
+}
+
+body, html { overflow-x:hidden; }
+
+body {
+	background-color: #507C77;/*This is the teal green on either side of the content pane. Was #3c756e.*/
+	font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	min-height: 1080px;/*This ensures that the page content is at least as tall as the window or taller.*/
+}
+
+#mainContainer{
+	background-color:#FFFFFF;/*White*/
+	box-shadow:5px 5px 7px 0px #222222;/*right 5px, down 5p, dither 7px, enlarge 0px, color:#222222*/
+	margin:0px auto;
+}
+
+.GeneralPageContent{
+	background-image:url('../images/ODCampus_Image2_SkyEdit_5_F50.jpg');
+	background-repeat:no-repeat;
+	background-size:100%;
+	text-align:left;
+}
+
+.mantra {
+    display:flex;
+    flex-direction:column;
+    height:11.375rem;
+	justify-content:space-between;
+    width:33rem;
+}
+
+.heroText {
+    color:white;
+	font-family:Arial;
+	font-size:100%;
+	font-weight: bold;
+	margin-bottom:1.5rem;
+    text-shadow:1px 1px 4px black;
+}
+
+.heroTitle {
+    color: white;
+	font-family: Arial;
+	font-size: 162.5%;
+	font-weight: bold;
+	text-shadow: 1px 1px 4px black;
+}
+
+.orderOpenDentalButton {
+	background:#47bba4;
+	border:1px solid #398677;
+	border-radius:5px;
+	color:#fff;
+	cursor:pointer;
+	font-weight:bold;
+	height:1.25rem;
+	line-height:1.33rem;
+	margin:0 auto;
+	padding:5px 20px;
+	text-align:center;
+	text-decoration:none;
+	width:9rem;
+}
+
+.infoMain {
+	text-align:center;
+	position:relative;
+}
+
+.infoMain .videoWrapper{
+	margin-top: 5px;
+	text-align: left;
+	width:90%;
+	max-width: 800px;
+}
+
+.indexPageTitle{
+	height:41px;
+	width:100%;
+	background-color:#3c756e;
+	vertical-align:middle;
+	line-height:41px;
+}
+
+.indexPageTitle div {
+	text-align:left;
+	width: 98%;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 112.5%;
+    font-weight: bolder;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.indexPageTitle ul.tabGroup{
+	display:none;
+	width:100%;
+}
+
+.indexPageTitle ul.tabGroup li{
+	display:inline-block;
+	width:48%;
+}
+
+.indexPageTitle ul.tabGroup li.active a.tabItem{
+	color: #c7d7e0;
+}
+
+.indexPageTitle ul.tabGroup li.active a.tabItem span{
+	position:relative;
+}
+
+.indexPageTitle ul.tabGroup li.active a.tabItem span:before{
+	content: '';
+	height: 4px;
+	background-color: #c7d7e0;
+	position: absolute;
+	right: -25px;
+	bottom: -11px;
+	left: -25px;
+}
+
+.indexPageTitle ul.tabGroup li a.tabItem{
+	display:inline-block;
+    color: #FFFFFF;
+    white-space: nowrap;
+    text-decoration: none;
+	width:100%;
+}
+
+.indexPageTitle ul.tabGroup li a.tabItem:hover{
+	color: #c7d7e0;
+}
+
+.upperInfo {
+	display:flex;
+    justify-content:center;
+    align-items:center;
+	height:20.125rem;
+	width:100%;
+}
+
+/* SamR 2025-07-02 all indexPhone appearances are in this file and index-old-2022-09-02.html.
+*/
+
+.indexPhone{
+	width:234px;
+	height:59px;
+	display:inline-block;
+	border-radius:5px;
+	background-color:#FFFFFF;
+	box-shadow:0px 0px 6px 0px #888888;/*right 5px, down 5p, dither 7px, enlarge 0px, color:#222222*/
+	vertical-align:top;
+	margin:10px;
+	margin-top: 70px;
+}
+
+.indexPhone h1{
+	line-height:40px;
+	text-align:center;
+	vertical-align:middle;
+	font-size:200%;
+	color:#4d4d4d;
+	padding-top:5px;
+	margin-bottom:-5px;
+}
+
+.indexPhone h2{
+	text-align:right;
+	vertical-align:top;
+	line-height:19px;
+	font-size:66.66%;
+	padding-right:20px;
+	color:#4d4d4d;
+}
+
+.indexPhone h2 a{
+	color:#4d4d4d;
+}
+
+.indexPhone h2 a:hover{
+	color:#bd1d1d;
+}
+
+.indexTeeth{ 
+	box-shadow:4px 4px 4px 0px #666666;/*right 5px, down 5p, dither 7px, enlarge 0px, color:#666666*/
+	display:inline-block;
+	vertical-align:top;
+	margin-left: 20px;
+	float:right;
+}
+
+#urgentAnnouncements a{
+	color:#FF0000 ;
+}
+
+#urgentAnnouncements h2{
+	color:#FF0000 ;
+}
+
+.lowerInfo {
+	display:flex;
+	flex-direction:column;
+	height:100%;
+	margin:0 auto;
+	max-width:57.625rem;
+	text-align:center;
+}
+
+.infoBlock {
+	display:inline-block;
+	-webkit-flex: 1 1 auto;
+	-moz-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	-o-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+.lowerInfo .blockContainer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-direction: row;
+}
+
+.lowerInfo .orderEServicesButton {
+	background:#47bba4;
+	border:1px solid #398677;
+	border-radius:5px;
+	color:#fff;
+	cursor:pointer;
+	font-weight:bold;
+	height:1.875rem;	
+	line-height:2.1875rem;
+	padding:5px 20px;
+	text-align:center;
+	text-decoration:none;
+	width:9.375rem;
+}
+
+.lowerInfo .toothChartPicSection {
+	margin:0.5rem auto;
+	text-align:center;
+	width:inherit;
+}
+
+.lowerInfo .toothChartPic {
+	height:auto;
+	max-width:16.3125rem;
+	width:100%;
+}
+
+.lowerInfo .toothChartDescription {
+	color:#4d4d4d;
+	font-size:81.25%;
+	height:2.125rem;
+	margin:0 0.7rem;
+	text-align:start;
+}
+
+.lowerInfo .versionsContainer {
+	display:flex;
+	flex-direction:row;
+	padding:0 10px;
+}
+
+.indexContentBlock{
+	background-image:linear-gradient(180deg,#ffffff,#ffffff);
+	border:1px solid #244743;
+	border-radius:4px;
+	display:flex;
+	flex-direction:column;
+	height:24.1875rem;
+	margin:0 7px;
+	max-width:17.8125rem;
+	padding:7px 0;
+	text-align:left;
+	vertical-align:top;
+}
+
+.indexContentBlock h1{
+	margin-left:15px;
+	color:#0b0e3b;
+	font-size:100%;
+}
+
+.indexContentBlock ul{
+	margin-left:15px;
+}
+
+.indexContentBlock h2, .indexContentBlock  li{
+	margin-left:15px;
+	color:#4d4d4d;
+	font-family: Arial, 'Trebuchet MS', Trebuchet;
+	font-size:83%;
+	line-height:15pt;
+}
+
+.indexContentBlock  li a{
+	color:#4d4d4d;
+}
+
+.indexContentBlock  li a:hover{
+	color:#bd1d1d;
+}
+
+.indexContentBlock h2 a{
+	/*text-decoration:none;*/
+	color:#4d4d4d;
+}
+
+.indexContentBlock h2 a:hover{
+	/*text-decoration:none;*/
+	color:#bd1d1d;
+}
+
+.indexContentBlock .subSection {
+	display:block;
+	float:left;
+}
+
+.indexContentBlock .subSection:first-of-type {
+	margin-bottom: 5px;
+}
+
+.indexVersions{
+	padding:0 10px;
+	text-align:left;
+	vertical-align:top;
+	width:47%;
+}
+
+.indexVersions h1{
+	font-size:100%;
+	color:#0b0e3b;
+	margin-bottom:2px;
+}
+
+.indexVersions h2{
+	font-family: Arial, 'Trebuchet MS', Trebuchet;
+	font-size:83%;
+	margin-bottom:10px;
+}
+
+.eServicesPortal {
+	margin-bottom: 5px;
+	margin-top: 7px;
+	text-align: center;
+	max-width: 200px;
+	min-height: 70px;
+	border: 0px solid #47bba4;
+	border-radius: 10px;
+	margin:auto;
+	margin-top:10px;
+}
+
+.indexVersions h2 a{
+	color:#4d4d4d;
+}
+
+.indexVersions h2 a:hover{
+	color:#bd1d1d;
+}
+
+.indexEHRFooter{
+	background-image:url('../images/gradientIndexBottom.jpg');
+	background-repeat:repeat-x;
+	display:inline-block;
+	width:100%;
+	padding:15px 0;
+    text-align: center;
+}
+
+.indexEHRFooter img{
+	width:200px;
+	height:112px;
+}
+
+#drummondPic {
+	width:100px;
+	height:57px;
+}
+
+#oncPic {
+	width:225px;
+	height:94px;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.indexEHRFooter .ehrWrapper {
+	height: 94px;
+	display:inline-block;
+	padding-left:25px;
+	padding-top:25px;
+}
+
+.indexEHRFooter h1{
+	font-size:83.33%;
+	line-height:12pt;
+	color:#191919;
+	margin-left:24px;
+	margin-top:15px;
+}
+
+.indexEHRFooter h2{
+	color:#4d4d4d;
+	font-family: Arial, 'Trebuchet MS', Trebuchet;
+	line-height:10pt;
+	font-size:83.33%;
+	font-style:italic;
+}
+
+.indexEHRFooter h3{
+	color:#4d4d4d;
+	font-size:70.833%;
+}
+
+.indexEHRFooter h3 a{
+	margin:0;
+	color:#44606e;
+	font-size:79.16%;
+}
+
+.indexEHRFooter h3 a:hover{
+	margin:0;
+	color:#bd1d1d;
+	font-size:79.16%;
+}
+
+.indexEHRFooter .facebookWrapper {
+	height:94px;
+	display:inline-block;
+}
+
+.PageTitle{/*Some of the properties of this style are not used yet*/
+	margin-left:3px;
+	height:41px;
+	width:924px;
+	background-color:#3c756e;
+	display:inline-block;
+	vertical-align:middle;
+	line-height:41px;
+	float:left;
+}
+	
+.PageTitle h1{/*Not used yet*/
+	font-size:200%;
+	color:#FFFFFF;
+	padding-left:3px;
+}
+
+/*SamR 2025-07-02 Formats elements to be printed*/
+@media print {
+	body {
+		min-height: 0 !important;
+	}
+	
+	#smilingDoctorPic{
+		display: none !important;
+	}
+	
+	.indexPhone{
+		margin:10px 2px;
+		margin-top:70px;
+	}
+	
+	.indexTeeth {
+		display:none !important;
+	}
+	
+	.upperInfo {
+		height:12.125rem;
+	}
+	
+	.heroText {
+		text-shadow:1px 1px black;
+	}
+	
+	#TitleAndNav .social {
+		display:none;
+	}
+	
+	#TitleAndNav .navWrapper {
+		display:none;
+	}
+	
+	.indexPhone{
+		margin:10px 2px;
+	}
+	
+	.indexTeeth {
+		margin:10px 0px;
+	}
+
+	.indexContentBlock{
+		margin: inherit;
+	}
+}
+
+/*SamR 2025-07-02 Formats elements to fit a screen width between 420px and 768px*/
+@media only screen and (max-width: 768px) {
+	#smilingDoctorPic{
+		display: none !important;
+	}
+	
+	.indexPhone{
+		margin:10px 2px;
+		margin-top:30px !important;
+	}
+
+	.mantra {
+		top:inherit !important;
+		left:inherit !important;
+		position:inherit !important;
+		width:inherit !important;
+	}
+	
+	.indexTeeth {
+		display:none !important;
+	}
+
+	.indexVersions h1{
+		border-top:1px black dashed;
+		padding-top: 5px;
+	}
+
+	.indexPageTitle ul.tabGroup{
+		display:inline-block;
+	}
+
+	.indexPageTitle div {
+		display:none;
+	}
+}
+
+/*SamR 2025-07-02 Formats elements to fit a screen width between 768px and 992px*/
+@media only screen and (max-width: 992px) {
+	
+	#smilingDoctorPic {
+		margin-right:0;
+	}
+	
+	.indexPhone{
+		margin:10px 2px;
+		margin-top:70px;
+	}
+	
+	.indexTeeth {
+		margin:10px 0px;
+	}
+
+	.indexContentBlock{
+		margin: inherit;
+	}
+	
+	.indexContentBlock h2, .indexContentBlock  li{
+		float:left;
+		width:95%;
+	}
+	
+	.indexVersions{
+		width:90%;
+		padding:0;
+	}
+	
+	.blockContainer .indexContentBlock{
+		margin:0.33rem;
+		margin-top:5px;
+		width:90%;
+	}
+	
+	.lowerInfo .blockContainer {
+		flex-direction:row;
+		flex-wrap:wrap;
+	}
+	
+	.lowerInfo .toothChartDescription {
+		margin:0;
+		text-align:left;
+	}
+	
+	.lowerInfo .toothChartPicSection {
+		margin-left:0.9375rem;
+		text-align:left;
+	}
+	
+	.lowerInfo .versionsContainer {
+		flex-direction:column;
+	}
+}
+
+/*SamR 2025-07-02 Formats elements to fit a screen width 420px and below*/
+@media only screen and (max-width: 420px) {
+}
+	
+	
+	
+	
+	
+	

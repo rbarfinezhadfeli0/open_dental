@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - User Settings</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('usersettings','+file','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/usersettings.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/usersettings.html" >v24.2</option><option value="https://www.opendental.com/manual241/usersettings.html" >v24.1</option><option value="https://www.opendental.com/manual233/usersettings.html" >v23.3</option><option value="https://www.opendental.com/manual232/usersettings.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/usersettings.html" >v23.1</option><option value="https://www.opendental.com/manual224/usersettings.html" >v22.4</option><option value="https://www.opendental.com/manual223/usersettings.html" >v22.3</option><option value="https://www.opendental.com/manual222/usersettings.html" >v22.2</option><option value="https://www.opendental.com/manual221/usersettings.html" >v22.1</option><option value="https://www.opendental.com/manual214/usersettings.html" >v21.4</option><option value="https://www.opendental.com/manual213/usersettings.html" >v21.3</option><option value="https://www.opendental.com/manual212/usersettings.html" >v21.2</option><option value="https://www.opendental.com/manual211/usersettings.html" >v21.1</option><option value="https://www.opendental.com/manual205/usersettings.html" >v20.5</option><option value="https://www.opendental.com/manual204/usersettings.html" >v20.4</option><option value="https://www.opendental.com/manual203/usersettings.html" >v20.3</option><option value="https://www.opendental.com/manual202/usersettings.html" >v20.2</option><option value="https://www.opendental.com/manual201/usersettings.html" >v20.1</option><option value="https://www.opendental.com/manual194/usersettings.html" >v19.4</option><option value="https://www.opendental.com/manual193/usersettings.html" >v19.3</option><option value="https://www.opendental.com/manual192/usersettings.html" >v19.2</option><option value="https://www.opendental.com/manual191/usersettings.html" >v19.1</option><option value="https://www.opendental.com/manual184/usersettings.html" >v18.4</option><option value="https://www.opendental.com/manual183/usersettings.html" >v18.3</option><option value="https://www.opendental.com/manual182/usersettings.html" >v18.2</option><option value="https://www.opendental.com/manual181/usersettings.html" >v18.1</option><option value="https://www.opendental.com/manual174/usersettings.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>User Settings</p></div>
+<div class="GeneralPageContent">
+<p>Determine user-specific settings when logging off or viewing chart graphics.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click File, User Settings.</p>
+<img src="images/userSettings.png" width="369" height="222"/><p><b>Close/Log off message is suppressed</b>: Check to disable log off warning message. See <a href="securitylogin.html">Log On</a>.</p>
+<p class="MarginBottomZero"><b>Chart graphics color distinguishes current provider</b>: When checked, completed procedures done by a provider other than the one that is currently logged on are colored as <i>Existing Other</i> in the tooth chart. </p>
+<ul class="MarginBottomGap">
+<li>If the logged-on user is not associated with a provider, the provider on today's appointment is considered the logged-on provider.</li>
+<li>If the logged-on user is not associated with a provider, and there is no appointment today, the patient's default primary provider is considered the logged-on provider.</li>
+<li>When changing this setting, users must close out of Open Dental and re-open to see changes take effect.</li>
+</ul>
+<p><b>Automatic logoff time in minutes</b>: Displays the user specific logoff time as set in <a href="securityusers.html">User Edit</a>. No value entered means it uses the default set in <a href="securitysettings.html">Global Security Settings</a>. 0 means disabled. Users with the proper permissions can change their value in User Edit.<br/></p>
+</div>
+</div>
+</body>
+</html>

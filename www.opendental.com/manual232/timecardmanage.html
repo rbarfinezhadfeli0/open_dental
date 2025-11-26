@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Manage Time Cards</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('timecardmanage','timeclock','manage','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/timecardmanage.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/timecardmanage.html" >v24.2</option><option value="https://www.opendental.com/manual241/timecardmanage.html" >v24.1</option><option value="https://www.opendental.com/manual233/timecardmanage.html" >v23.3</option><option value="https://www.opendental.com/manual232/timecardmanage.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/timecardmanage.html" >v23.1</option><option value="https://www.opendental.com/manual224/timecardmanage.html" >v22.4</option><option value="https://www.opendental.com/manual223/timecardmanage.html" >v22.3</option><option value="https://www.opendental.com/manual222/timecardmanage.html" >v22.2</option><option value="https://www.opendental.com/manual221/timecardmanage.html" >v22.1</option><option value="https://www.opendental.com/manual214/timecardmanage.html" >v21.4</option><option value="https://www.opendental.com/manual213/timecardmanage.html" >v21.3</option><option value="https://www.opendental.com/manual212/timecardmanage.html" >v21.2</option><option value="https://www.opendental.com/manual211/timecardmanage.html" >v21.1</option><option value="https://www.opendental.com/manual205/timecardmanage.html" >v20.5</option><option value="https://www.opendental.com/manual204/timecardmanage.html" >v20.4</option><option value="https://www.opendental.com/manual203/timecardmanage.html" >v20.3</option><option value="https://www.opendental.com/manual202/timecardmanage.html" >v20.2</option><option value="https://www.opendental.com/manual201/timecardmanage.html" >v20.1</option><option value="https://www.opendental.com/manual194/timecardmanage.html" >v19.4</option><option value="https://www.opendental.com/manual193/timecardmanage.html" >v19.3</option><option value="https://www.opendental.com/manual192/timecardmanage.html" >v19.2</option><option value="https://www.opendental.com/manual191/timecardmanage.html" >v19.1</option><option value="https://www.opendental.com/manual184/timecardmanage.html" >v18.4</option><option value="https://www.opendental.com/manual183/timecardmanage.html" >v18.3</option><option value="https://www.opendental.com/manual182/timecardmanage.html" >v18.2</option><option value="https://www.opendental.com/manual181/timecardmanage.html" >v18.1</option><option value="https://www.opendental.com/manual174/timecardmanage.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Manage Time Cards</p></div>
+<div class="GeneralPageContent">
+<p>Print and manage all employee time cards from the Manage Time Cards window.</p>
+<p>In the <a href="timeclock.html">Time Clock</a>, click <b>Manage</b> to view all employee time cards at once.</p>
+<img src="images/timeCardManage.png" width="915" height="263"/><p>Time card management is only available to users with the <i>Edit All Timecards </i><a href="permissions.html">Permission</a>. Calculations correspond with ADP format requirements for offices that use ADP Workforce Now for payroll.</p>
+<div class="Note">Note: ADP Run does not accept the format used by ADP Workforce Now. </div>
+<p></p>
+<p class="MarginBottomZero">Related links </p>
+<ul class="MarginBottomGap">
+<li><a href="timecardsetup.html">Time Card Setup</a></li>
+<li><img src="images/YouTube_PlayButton_15px.png" width="15" height="12" style="margin-bottom: 0px"/> See our videos: <a href="https://youtu.be/IvXTWCr7CNM">Time Cards Webinar</a>.</li>
+</ul>
+<p><b>Setup</b>: Access <a href="timecardsetup.html">Time Card Setup</a>.</p>
+<p class="MarginBottomZero"><b>Reports</b>: Click the dropdown to run payroll reports. </p>
+<ul class="MarginBottomGap">
+<li><b>Print Grid</b>: Print the Employee Time Cards grid.</li>
+<li><b>Export Grid</b>: Click to export the Employee Time Cards grid as a .txt file to. Users will be prompted to select a folder to export to. When the export is complete, a message indicate the file name and location.</li>
+<li><b>Export ADP</b>: Click to export the time card data in ADP Workforce Now format (.csv file). Users will be prompted to select a folder to export to. If any errors are detected, a notification will appear. When the export is complete, a message indicate the file name and location. To include the employee name when exporting, enable the <a href="preferences.html">Preference</a>, <i>ADP export includes employee name</i>.</li>
+<li><b>Export ADP Run</b>: Click to export the time card data in ADP Run format (.csv file). Users will be prompted to select a folder to export to. If any errors are detected, a notification will appear. When the export is complete, a message indicate the file name and location. Requires <i>ADPRunIID</i> entered in <a href="timecardsetup.html">Time Card Setup</a>.</li>
+</ul>
+<p><b>Pay Period</b>: Click the right/left arrows to move back or forward a pay period. The Start, End, and Paycheck dates will automatically change to reflect the pay period of the Employee Time Cards grid.</p>
+<p><b>Clinic</b>: If using Clinics, select the clinic to manage time cards for. The logged-on user can only manage time cards for clinics they have access to. The default is determined by the clinic selected in the main menu, Clinics. All employees who have clock events for the selected clinic will list.</p>
+<p class="MarginBottomZero"><b>Employee Time Cards grid</b>: Each row represents an employee's time card for the pay period. Employees are listed in alphabetical order by last name. Only employees who have at least one clock in/out event during the pay period will list. Adjustments alone do not cause an employee's time card to show. </p>
+<ul class="MarginBottomGap">
+<li><b>Total Hrs</b>: Total number of hours worked (regular, overtime, and differential).</li>
+<li><b>Rate 1</b>: The number of regular hours worked.</li>
+<li><b>Rate 1 OT</b>: The number of regular overtime hours worked.</li>
+<li><b>Rate 2</b>: The number of regular differential (Rate 2) hours worked.</li>
+<li><b>Rate 2 OT</b>: The number of overtime differential (Rate 2) hours worked.</li>
+<li><b>Rate 3</b>: The number of regular weekend (Rate 3) hours worked. </li>
+<li><b>Rate 3 OT</b>: The number of overtime weekend (Rate 3) hours worked.</li>
+<li><b>PTO</b>: The number of hours for paid time off added as an adjustment with a PTO Type selected.</li>
+<li><b>PL Hours</b>: The number of hours marked as <i>Protected Leave</i>.</li>
+<li><b>Notes</b>: Note from the Pay Period section of the employee's <a href="timeclockedit.html">Time Card</a>. Does not show any individual Clock Event notes. </li>
+</ul>
+<p><b>Clear Manual Adjusts</b>: Clear any manually entered adjustments made to a clock event for selected employees.</p>
+<p class="MarginBottomZero">Calculations: Use the buttons to calculate total hours worked, overtime, and differentials, based on any rules (see Time Card Setup) created. Take note of any clock event notes and any errors that need to be fixed before running calculations. See Calculate Daily and Weekly Totals section below for additional information. </p>
+<ul class="MarginBottomGap">
+<li><b>Daily</b>: Calculate total hours worked each day for all employees, taking into account rules for overtime, differential hours, and your preference for breaks over 30 minutes. Adjustments will be made within a clock event; new rows will not be created. The current day will be excluded if it falls within the pay period being calculated. </li>
+<li><b>Weekly</b>: Calculate overtime for all employees (more than 40 hours in a week).</li>
+</ul>
+<p><b>Print All</b>: Print all time cards at once. </p>
+<p><b>Print Selected</b>: Only print time cards for selected employees. Press Ctrl + click to select multiple employees.</p>
+<p><div class="Note">Note: Time card notes may be limited when printing. Pay period notes will only print two lines (approximately 190 characters). Clock event notes will only print one line (approximately 25 characters).</div>
+</p>
+<h2>Other Time Card Options</h2>
+<p class="MarginBottomZero">Time card related settings can be found in the following places: </p>
+<ul class="MarginBottomGap">
+<li>Determine permissions and settings for Time Cards in <a href="security.html">Security</a>.</li>
+<li>See <a href="timecardsetup.html">Time Card Setup</a> for managing pay periods, overtime, differential, and time format.</li>
+<li>Change time card calculation in Preferences.</li>
+</ul>
+<h2>Add Adjustments to a Time Card</h2>
+<p>Manually enter adjustments to account for other hours, additional overtime, etc. These adjustments create a separate row in the time card.</p>
+<p>On the Employee Timecard, click <b>Add Adjustment</b> or double-click an existing adjustment to edit. </p>
+<img src="images/timeCardAdj.png" width="577" height="395"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Automatically Entered</b>: Indicates this adjustment was automatically entered.</li>
+<li><b>Manually entered</b>: Indicates this adjustment was entered manually and protects this adjustment from being deleted from auto deletion.</li>
+<li><b>Date/Time Entry</b>: Verify the date and time the adjustment is being entered. Defaults to today's date and the current time. Date/time determines the sort order of the adjustment on the time card. <ul>
+<li>If manually changing the time to midnight, the time will automatically reset 12:01. </li>
+</ul>
+</li>
+<li><b>Hours</b>: Enter the number of hours to add to the time card. If removing hours, enter a negative number. Enter 0 if adding a note.</li>
+<li><b>Overtime Adjustment</b>: Check this box when this is an adjustment to account for overtime. Calculations totals will deduct the entered hours from regular time and transfer to overtime. Cannot be checked if a PTO Type has been selected below.</li>
+<li><b>Protected Leave</b>: Marks the adjustment hours are protected. Protected leave hours are kept separate from all calculations for hours worked and payable hours, so they don't contribute to overtime calculations or any columns that sum total hours.</li>
+<li><b>PTO Type</b>: Select a PTO Adjustment Type if it applies to this adjustment. Add PTO types from <a href="definitionstimecardadjtypes.html">Definitions: Time Card Adj Types</a>.</li>
+<li><b>User</b>: The user who originally created the adjustment.</li>
+<li><b>Note</b>: Enter any notes about the adjustment.</li>
+</ul>
+<p>Click <b>OK</b> to save.</p>
+<p><div class="Note">Note: Adjustments add to overtime when the total hours is over 40 per week.<br/>  For example, if an employee worked 38 hours, and a user adds an 8 hour adjustment to that week, clicking <i>Calc Weekly</i> will calculate 40 regular hours and 6 overtime hours. </div>
+</p>
+<h2>Calculate Daily and Weekly Totals</h2>
+<p>At the end of each pay period, calculate regular and overtime hours. Calculations can be run for all employees at once or per time card.</p>
+<ol>
+<li>Check employee time cards for errors (e.g. no missing clock-in/out events). Add any manual adjustments. Correct any time card errors. See <a href="timeclockedit.html">Time Card Edit</a>.</li>
+<li>Calculate total hours worked each day, taking into account rules for overtime, differential hours, and the preference for breaks over 30 minutes. Adjustments will be made within a clock event; new rows will not be created. <ul>
+<li>To calculate for all employees, click <b>Daily</b>.</li>
+<li>To calculate for a single employee, click <b>Calc Daily</b> on their time card. If the results are not as anticipated or not the the user's liking, edit the rules in Time Card Setup and run it again. Alternatively, overrides can be made to individual clock events.</li>
+</ul>
+</li>
+<li>Calculate weekly overtime for employees who worked more than 40 hours in a week. Determine the start of the week in <a href="preferences.html">Preferences</a>, <i> Time Card first day of week for overtime</i>. <ul>
+<li>To calculate for all employees, click <b>Weekly</b>.</li>
+<li>To calculate for a single employee, click <b>Calc Week OT</b> on their time card. If the total hours for an employee in a week is over 40, an additional adjustment row will be added for overtime hours. The weekly calculation will cross pay periods.</li>
+</ul>
+</li>
+</ol>
+<br/><p>Calculations are completed only if an employee is clocked out. If calculations cannot be made a note is added to the employee denoting the date and clock event error (e.g., <i>the employee did not clock out</i>). If using Clinics, total hours and overtime hours are assigned by Clinic. </p>
+<h2>Hour Calculation Logic</h2>
+<p>The math behind time card hour calculations is explained below.</p>
+<p>Total hours = all hours worked (includes regular, overtime and differential (Rate 2) hours.</p>
+<p>OT hours = overtime hours</p>
+<p> Rate 1 hours = hours paid at the regular rate</p>
+<p> Rate 2 hours = hours paid at the differential rate</p>
+<p> Rate 3 hours = hours paid at the weekend rate</p>
+<p> Rate 1 hours = (1 - (Rate 2 + Rate 3)/Total hours) * Regular hours</p>
+<p> Rate 2 hours = (Rate 2/Total hours) * Regular hours</p>
+<p> Rate 3 hours = (Rate 3/Total hours) * Regular hours</p>
+<p> So Rate 1 hours + Rate 2 hours + Rate 3 Hours = Regular hours</p>
+<p> Rate 1 OT hours = (1 - (Rate 2 + Rate 3)/Total hours) * OT hours</p>
+<p> Rate 2 OT hours = (1 - (Rate 1 + Rate 3)/Total hours) * OT hours</p>
+<p> Rate 3 OT Hours = Total hours - (Rate 1 + Rate 2 + Rate 3 + Rate 1 OT + Rate 2 OT hours)</p>
+</div>
+</div>
+</body>
+</html>

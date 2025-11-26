@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Late Charges</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('latecharges','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/latecharges.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/latecharges.html" >v24.2</option><option value="https://www.opendental.com/manual241/latecharges.html" >v24.1</option><option value="https://www.opendental.com/manual233/latecharges.html" >v23.3</option><option value="https://www.opendental.com/manual232/latecharges.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/latecharges.html" >v23.1</option><option value="https://www.opendental.com/manual224/latecharges.html" >v22.4</option><option value="https://www.opendental.com/manual223/latecharges.html" >v22.3</option><option value="https://www.opendental.com/manual222/latecharges.html" >v22.2</option><option value="https://www.opendental.com/manual221/latecharges.html" >v22.1</option><option value="https://www.opendental.com/manual214/latecharges.html" >v21.4</option><option value="https://www.opendental.com/manual213/latecharges.html" >v21.3</option><option value="https://www.opendental.com/manual212/latecharges.html" >v21.2</option><option value="https://www.opendental.com/manual211/latecharges.html" >v21.1</option><option value="https://www.opendental.com/manual205/latecharges.html" >v20.5</option><option value="https://www.opendental.com/manual204/latecharges.html" >v20.4</option><option value="https://www.opendental.com/manual203/latecharges.html" >v20.3</option><option value="https://www.opendental.com/manual202/latecharges.html" >v20.2</option><option value="https://www.opendental.com/manual201/latecharges.html" >v20.1</option><option value="https://www.opendental.com/manual194/latecharges.html" >v19.4</option><option value="https://www.opendental.com/manual193/latecharges.html" >v19.3</option><option value="https://www.opendental.com/manual192/latecharges.html" >v19.2</option><option value="https://www.opendental.com/manual191/latecharges.html" >v19.1</option><option value="https://www.opendental.com/manual184/latecharges.html" >v18.4</option><option value="https://www.opendental.com/manual183/latecharges.html" >v18.3</option><option value="https://www.opendental.com/manual182/latecharges.html" >v18.2</option><option value="https://www.opendental.com/manual181/latecharges.html" >v18.1</option><option value="https://www.opendental.com/manual174/latecharges.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Late Charges</p></div>
+<div class="GeneralPageContent">
+<p>The Late Charges tool is an alternative to the Billing/Finance Charges tool. It is used to apply late charge adjustments to accounts with statements that have an unpaid balance. </p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Tools, <b>Late Charges</b>.</p>
+<img src="images/lateCharges.png" width="612" height="474"/><p>The charge amount is calculated based on the current remaining patient portion of production items on statements sent between a set number of days. The charges will post to the accounts of all guarantors and super family head's that meet the filtering criteria. <div class="Note">Note: <a href="aging.html">Aging</a> runs when opening the tool, again after late charges post, and after undoing previous late charges.</div>
+</p>
+<p class="MarginBottomZero">Setup Requirements: </p>
+<ul class="MarginBottomGap">
+<li>In <a href="showfeatures.html">Show Features</a>, check the radio button to enable the Late Charge feature. Once enabled, Late Charges will be available in the Tools menu.</li>
+<li>Set the Late Charge adjustment type in <a href="preferences.html">Preferences</a>.</li>
+</ul>
+<p><b>Date last run</b>: The date on the previously posted late charge adjustments.</p>
+<p><b>Date of new charges</b>: Enter the date the new charges should be applied. Defaults to today's date.</p>
+<p><b>Exclude accounts (guarantor) without Truth in Lending</b>: Check to exclude families that do not have a signed Truth in Lending agreement on record (<a href="patienteditother.html">Edit Patient Information: Other Tab</a>). For super family statements, this only applies to the super family head.</p>
+<p><b>Exclude existing late charges</b>: Check to exclude statement balances that already have late charges.</p>
+<p><b>Exclude if balance is less than</b>: Do not generate late charges for families that have a balance less than or equal to this set amount (after insurance estimates). <div class="Note">Note: Charges will only be made for super families whose sum of positive family balances are greater than or equal to this amount.</div>
+</p>
+<p><b>Percentage (% fee on amt due)</b>: Set the percent of the late charge fee. The percent applies to the current remaining balance of production items on statements that meet the late charge criteria. Set to zero or leave blank to apply a flat fee (see Minimum charge). <div class="Note">Note: Patient payments, adjustments, insurance payments, and insurance estimates attached to the production items on statements are considered when calculating the late charge fee.</div>
+</p>
+<p><b>Minimum charge</b>: Set the minimum late charge amount. For example, if set to $5.00, any late charge amount calculated from $0.01 to $4.99 will be charged as $5.00. Alternatively, this can be used to apply a flat fee when the Percentage is set to zero or left blank.</p>
+<p><b>Maximum charge</b>: Set the maximum late charge amount. For example, if set to $15.00, any late charge amount calculated as $15.01 and over will be charged as $15.00.</p>
+<p><b>Apply to statements sent between</b>: Set the number of days to consider late charges. Late charges are calculated based on the unpaid balances of the production items on statements sent on or between this set number of days. If a patient does not have a sent statement within this range, no late charge adjustment is applied to the account. <div class="Note">Note: <ul>
+<li>Late charges are not calculated on In-Person (walkout) <a href="statement.html">Statements</a>, <a href="invoice.html">Invoices</a>, <a href="receipt.html">Receipts</a>, statements marked as "(unsent)", and sent statements missing the <a href="images.html">Image Module</a> PDF. However, they are calculated on Electronic Statements when the <a href="billingdefaults.html">Billing Defaults</a> option, <i>Generate PDF</i> is unchecked.</li>
+<li>If a family has multiple statements sent in the set range and with the same production items, late charges will only be applied once for each item.</li>
+</ul>
+</div>
+</p>
+<p><b>Only apply to these Billing Types</b>: Select the billing types to apply the late charges. The charge is only applied if the guarantor of the family has one of the selected types.</p>
+<p><b>Save As Default</b>: Save the selected Late Charge Settings as default.</p>
+<p class="MarginBottomZero">Assign charges to: Select how the default provider is assigned to the late charge adjustment. </p>
+<ul class="MarginBottomGap">
+<li><b>Guarantor's Primary Provider</b>: Check to assign the primary provider of the family's guarantor to the late charge adjustment.</li>
+<li><b>Specific Provider</b>: Select a specific provider to assign to the late charge adjustment.</li>
+</ul>
+<p>Click <b>Run</b> to apply late charges to all included accounts. The late charge adjustment will post to the guarantors account with a note listing the statement date the charge was calculated for.</p>
+<img src="images/lateChargesAdj.png" width="731" height="65"/><h2>Undo Late Charges</h2>
+<p>To remove the most recent late charges, click <b>Undo</b>. All adjustments made on the same date, with the same late charge adjustment type, will be deleted. To undo late charges for a different date, users must manually go into each account and delete the individual adjustments. Use the <a href="reportdailyadj.html">Daily Adjustments Report</a> to identify accounts with adjustments made on that date.</p>
+<p>Late charge adjustments attached to a payment or dynamic payment plan cannot be deleted with this tool. To view a list of patients with late charge adjustments that cannot be deleted, click <b>Yes</b> when prompted.</p>
+<img src="images/lateChargesPrompt.png" width="413" height="159"/><p>Go to each patient on the list and manually detach the adjustment from pay splits or dynamic payment plans to delete the adjustment, if needed. </p>
+</div>
+</div>
+</body>
+</html>

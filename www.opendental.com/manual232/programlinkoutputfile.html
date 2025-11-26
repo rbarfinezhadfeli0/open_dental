@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Program Link Output File</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('programlinkoutputfile','bridgecustom','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/programlinkoutputfile.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/programlinkoutputfile.html" >v24.2</option><option value="https://www.opendental.com/manual241/programlinkoutputfile.html" >v24.1</option><option value="https://www.opendental.com/manual233/programlinkoutputfile.html" >v23.3</option><option value="https://www.opendental.com/manual232/programlinkoutputfile.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/programlinkoutputfile.html" >v23.1</option><option value="https://www.opendental.com/manual224/programlinkoutputfile.html" >v22.4</option><option value="https://www.opendental.com/manual223/programlinkoutputfile.html" >v22.3</option><option value="https://www.opendental.com/manual222/programlinkoutputfile.html" >v22.2</option><option value="https://www.opendental.com/manual221/programlinkoutputfile.html" >v22.1</option><option value="https://www.opendental.com/manual214/programlinkoutputfile.html" >v21.4</option><option value="https://www.opendental.com/manual213/programlinkoutputfile.html" >v21.3</option><option value="https://www.opendental.com/manual212/programlinkoutputfile.html" >v21.2</option><option value="https://www.opendental.com/manual211/programlinkoutputfile.html" >v21.1</option><option value="https://www.opendental.com/manual205/programlinkoutputfile.html" >v20.5</option><option value="https://www.opendental.com/manual204/programlinkoutputfile.html" >v20.4</option><option value="https://www.opendental.com/manual203/programlinkoutputfile.html" >v20.3</option><option value="https://www.opendental.com/manual202/programlinkoutputfile.html" >v20.2</option><option value="https://www.opendental.com/manual201/programlinkoutputfile.html" >v20.1</option><option value="https://www.opendental.com/manual194/programlinkoutputfile.html" >v19.4</option><option value="https://www.opendental.com/manual193/programlinkoutputfile.html" >v19.3</option><option value="https://www.opendental.com/manual192/programlinkoutputfile.html" >v19.2</option><option value="https://www.opendental.com/manual191/programlinkoutputfile.html" >v19.1</option><option value="https://www.opendental.com/manual184/programlinkoutputfile.html" >v18.4</option><option value="https://www.opendental.com/manual183/programlinkoutputfile.html" >v18.3</option><option value="https://www.opendental.com/manual182/programlinkoutputfile.html" >v18.2</option><option value="https://www.opendental.com/manual181/programlinkoutputfile.html" >v18.1</option><option value="https://www.opendental.com/manual174/programlinkoutputfile.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Program Link Output File</p></div>
+<div class="GeneralPageContent">
+<p>Output files are used to create custom program bridges.</p>
+<p>In a <a href="bridgecustom.html">Custom Program Bridge</a>, click <b>Output File</b>.</p>
+<img src="images/customBridgeOutputFile.png" width="714" height="447"/><p>Use this window to build a custom output file (TXT or INI). This requires technical knowledge of output file builds and should only be attempted by those who know how. Do not create an output file for bridges that do not require one.</p>
+<p><b>Output File Path:</b> Click [...] to select the path to the output file on the computer. </p>
+<p><b>Output Template:</b> Enter the body of the output file.</p>
+<p><b>Replacements:</b> Click to insert replacement fields that map data fields in the bridge output file to patient data fields.</p>
+<img src="images/bridgeCustomReplacement.png" width="797" height="504"/><p>Select field then click OK to insert field at cursor. Example: PATID (bridge) maps to [PatNum] in Open Dental.</p>
+<p>Click OK to save the custom bridge.</p>
+<p><div class="Note">Note: Select a patient in Open Dental prior to launching the bridge. Replacement Fields are only resolved when a patient is selected. Otherwise, the output only displays the Replacement Field names and not patient data. </div>
+</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Missing/Primary Teeth</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('missingteeth','+chartTabs','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/missingteeth.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/missingteeth.html" >v24.2</option><option value="https://www.opendental.com/manual241/missingteeth.html" >v24.1</option><option value="https://www.opendental.com/manual233/missingteeth.html" >v23.3</option><option value="https://www.opendental.com/manual232/missingteeth.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/missingteeth.html" >v23.1</option><option value="https://www.opendental.com/manual224/missingteeth.html" >v22.4</option><option value="https://www.opendental.com/manual223/missingteeth.html" >v22.3</option><option value="https://www.opendental.com/manual222/missingteeth.html" >v22.2</option><option value="https://www.opendental.com/manual221/missingteeth.html" >v22.1</option><option value="https://www.opendental.com/manual214/missingteeth.html" >v21.4</option><option value="https://www.opendental.com/manual213/missingteeth.html" >v21.3</option><option value="https://www.opendental.com/manual212/missingteeth.html" >v21.2</option><option value="https://www.opendental.com/manual211/missingteeth.html" >v21.1</option><option value="https://www.opendental.com/manual205/missingteeth.html" >v20.5</option><option value="https://www.opendental.com/manual204/missingteeth.html" >v20.4</option><option value="https://www.opendental.com/manual203/missingteeth.html" >v20.3</option><option value="https://www.opendental.com/manual202/missingteeth.html" >v20.2</option><option value="https://www.opendental.com/manual201/missingteeth.html" >v20.1</option><option value="https://www.opendental.com/manual194/missingteeth.html" >v19.4</option><option value="https://www.opendental.com/manual193/missingteeth.html" >v19.3</option><option value="https://www.opendental.com/manual192/missingteeth.html" >v19.2</option><option value="https://www.opendental.com/manual191/missingteeth.html" >v19.1</option><option value="https://www.opendental.com/manual184/missingteeth.html" >v18.4</option><option value="https://www.opendental.com/manual183/missingteeth.html" >v18.3</option><option value="https://www.opendental.com/manual182/missingteeth.html" >v18.2</option><option value="https://www.opendental.com/manual181/missingteeth.html" >v18.1</option><option value="https://www.opendental.com/manual174/missingteeth.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Missing/Primary Teeth</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="chart.html">Chart Module</a>, click the Missing/Primary tab.</p>
+<img src="images/missingTeeth.png" width="915" height="305"/><h2>Missing Teeth</h2>
+<p>Missing or hidden teeth are recorded at the patient's first visit, before entering treatment. This information is required when submitting claims and allows proper selection of pontics for bridges. Teeth marked as missing do not show on the <a href="graphicaltoothchart.html">Graphical Tooth Chart</a> and are marked <i>skipped</i> when a user creates the patient's first perio chart.</p>
+<p>When selecting teeth, click on one or more teeth in the tooth chart. Click and drag to quickly highlight multiple teeth.</p>
+<p class="MarginBottomZero">There are five options when selecting teeth:   </p>
+<ul class="MarginBottomGap">
+<li><b>Missing</b>: Mark a selected tooth as missing. The tooth number is still shown on the tooth chart, but the tooth is not.  <ul>
+<li>When a procedure with the <i>Extraction</i> paint type is set complete, existing other, or existing complete, the associated tooth is automatically marked missing. If an <i>Extraction</i> procedure is deleted; users must manually mark associated teeth as Not Missing for graphics to reappear.</li>
+</ul>
+</li>
+<li><b>Not Missing</b>: Return a missing tooth to the chart.</li>
+<li><b>Edentulous</b>: Mark all teeth as missing at once.</li>
+<li><b>Hidden</b>: Remove the selected tooth and tooth number, from the chart so there is no way to select it for procedures. This is commonly used when a premolar has been extracted and the teeth have been moved by orthodontics to close the space. To quickly hide four premolars at once: </li>
+<ol>
+<li>Highlight all four.</li>
+<li>Click <b>Hidden</b>.</li>
+<li>Click and drag to highlight all the teeth posterior to the hidden premolars.</li>
+<li>Click the <a href="movements.html">Movements</a> tab, then click the Mesial <b>+</b> button 3 times to close all the spaces.</li>
+</ol>
+<li><b>Unhide:</b> Select a hidden tooth, then unhide it.</li>
+</ul>
+<h2>Primary Teeth</h2>
+<p>By default, the <a href="graphicaltoothchart.html">Graphical Tooth Chart</a> shows permanent teeth. However, users can set teeth as primary or as mixed dentition.</p>
+<p class="MarginBottomZero">Select the option that best fits the patient:  </p>
+<ul class="MarginBottomGap">
+<li>Click a specific tooth click and drag to quickly highlight multiple teeth or teeth. Click <b>Primary</b> or <b>Permanent</b>. All selected teeth will be updated.</li>
+<li>Set all teeth at once.  <ul>
+<li><b>Set All Primary</b>: Mark all teeth currently on the tooth chart as primary.</li>
+<li><b>Set All Permanent</b>: Mark all teeth currently on the tooth chart as permanent.</li>
+<li><b>Set Mixed Dentition</b>: Change the tooth chart to show a combination of primary and permanent teeth (8 - 12 year olds).</li>
+</ul>
+</li>
+</ul>
+<h2>Tips for unique situations</h2>
+<p class="MarginBottomZero">Show movements on the unerupted permanent tooth: </p>
+<ol class="MarginBottomGap">
+<li>Enter the tooth movement.</li>
+<li>Mark tooth as primary.</li>
+</ol>
+<p>Show permanent molars as unerupted: Mark them as primary.</p>
+</div>
+</div>
+</body>
+</html>

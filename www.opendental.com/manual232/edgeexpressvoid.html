@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - EdgeExpress Void</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('edgeexpressvoid','edgeexpress','paymentpatientcreditcard','payment','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/edgeexpressvoid.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/edgeexpressvoid.html" >v24.2</option><option value="https://www.opendental.com/manual241/edgeexpressvoid.html" >v24.1</option><option value="https://www.opendental.com/manual233/edgeexpressvoid.html" >v23.3</option><option value="https://www.opendental.com/manual232/edgeexpressvoid.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/edgeexpressvoid.html" >v23.1</option><option value="https://www.opendental.com/manual224/edgeexpressvoid.html" >v22.4</option><option value="https://www.opendental.com/manual223/edgeexpressvoid.html" >v22.3</option><option value="https://www.opendental.com/manual222/edgeexpressvoid.html" >v22.2</option><option value="https://www.opendental.com/manual221/edgeexpressvoid.html" >v22.1</option><option value="https://www.opendental.com/manual214/edgeexpressvoid.html" >v21.4</option><option value="https://www.opendental.com/manual213/edgeexpressvoid.html" >v21.3</option><option value="https://www.opendental.com/manual212/edgeexpressvoid.html" >v21.2</option><option value="https://www.opendental.com/manual211/edgeexpressvoid.html" >v21.1</option><option value="https://www.opendental.com/manual205/edgeexpressvoid.html" >v20.5</option><option value="https://www.opendental.com/manual204/edgeexpressvoid.html" >v20.4</option><option value="https://www.opendental.com/manual203/edgeexpressvoid.html" >v20.3</option><option value="https://www.opendental.com/manual202/edgeexpressvoid.html" >v20.2</option><option value="https://www.opendental.com/manual201/edgeexpressvoid.html" >v20.1</option><option value="https://www.opendental.com/manual194/edgeexpressvoid.html" >v19.4</option><option value="https://www.opendental.com/manual193/edgeexpressvoid.html" >v19.3</option><option value="https://www.opendental.com/manual192/edgeexpressvoid.html" >v19.2</option><option value="https://www.opendental.com/manual191/edgeexpressvoid.html" >v19.1</option><option value="https://www.opendental.com/manual184/edgeexpressvoid.html" >v18.4</option><option value="https://www.opendental.com/manual183/edgeexpressvoid.html" >v18.3</option><option value="https://www.opendental.com/manual182/edgeexpressvoid.html" >v18.2</option><option value="https://www.opendental.com/manual181/edgeexpressvoid.html" >v18.1</option><option value="https://www.opendental.com/manual174/edgeexpressvoid.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>EdgeExpress Void</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="payment.html">Payment</a> window, click <b>Global Payments Integrated</b> (<a href="edgeexpress.html">Edge Express</a>). Select <i>Void</i> from the list of transaction types.</p>
+<img src="images/edgeExpressVoid.png" width="394" height="306"/><p>Voiding <a href="edgeexpress.html">Edge Express</a> credit card payments removes the original transaction from the patient's bank the same day. Transactions may only be voided before they are batched. If a transaction has been batched, process a <a href="paymentreturn.html">Credit Card Return</a> instead. Returns require a few days to process.</p>
+<h2>Void an EdgeExpress Transaction</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Locate the original transaction to be voided. Copy the <i>Transaction ID</i> from the Payment Note, then identify the payment amount and the clinic, provider, and procedure or unearned type allocation.</li>
+<li>In the patient's account, click <b>Payment</b>. </li>
+<li>Enter the amount of the original transaction as a negative (e.g., -50). <ul>
+<li>Alternatively, right-click the original payment, click <b>Refund</b>, and go to Step 5.</li>
+</ul>
+</li>
+<li>Click <b>OK</b> to open the <a href="payment.html">Payment</a> window. <ul>
+<li><b>Clinics</b>: If using <a href="clinics.html">Clinics</a>, select the clinic of the original payment.</li>
+<li><b>Current Payment Splits</b>: Allocate the voids payment split (<a href="paysplit.html">Paysplit</a>) to the production or unearned type of the original payment. See <a href="paysplitsedit.html">Paysplit Revise</a>.</li>
+</ul>
+</li>
+<li>After verifying the paysplits, click <b>Global Payments Integrated</b>. The original card is not required and the card selection in the Credit Card dropdown is ignored. <ul>
+<li>If using right-click, Refund, paysplits are added automatically to match the original payment.</li>
+</ul>
+</li>
+<li>In the EdgeExpress Transaction Types window, Select <i>Void</i> and enter the <i>Transaction ID</i>.</li>
+<li>Click <b>OK</b> to process the void. The payment window immediately closes if the void was successful, and the transaction details are automatically added to the payment note. If the void is unsuccessful, the payment window remains open and the note field contains the response, date and time information, and Notes field from EdgeExpress.</li>
+</ol>
+<p><div class="Note">Note: It is recommended to run the <a href="incometransfermanager.html">Income Transfer Manager</a> after the payment window has closed. This is to ensure the void is properly allocated.</div>
+</p>
+</div>
+</div>
+</body>
+</html>

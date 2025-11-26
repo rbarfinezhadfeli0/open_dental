@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - XCharge (OpenEdge)</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('xcharge','paymentpatientcreditcard','payment','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/xcharge.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/xcharge.html" >v24.2</option><option value="https://www.opendental.com/manual241/xcharge.html" >v24.1</option><option value="https://www.opendental.com/manual233/xcharge.html" >v23.3</option><option value="https://www.opendental.com/manual232/xcharge.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/xcharge.html" >v23.1</option><option value="https://www.opendental.com/manual224/xcharge.html" >v22.4</option><option value="https://www.opendental.com/manual223/xcharge.html" >v22.3</option><option value="https://www.opendental.com/manual222/xcharge.html" >v22.2</option><option value="https://www.opendental.com/manual221/xcharge.html" >v22.1</option><option value="https://www.opendental.com/manual214/xcharge.html" >v21.4</option><option value="https://www.opendental.com/manual213/xcharge.html" >v21.3</option><option value="https://www.opendental.com/manual212/xcharge.html" >v21.2</option><option value="https://www.opendental.com/manual211/xcharge.html" >v21.1</option><option value="https://www.opendental.com/manual205/xcharge.html" >v20.5</option><option value="https://www.opendental.com/manual204/xcharge.html" >v20.4</option><option value="https://www.opendental.com/manual203/xcharge.html" >v20.3</option><option value="https://www.opendental.com/manual202/xcharge.html" >v20.2</option><option value="https://www.opendental.com/manual201/xcharge.html" >v20.1</option><option value="https://www.opendental.com/manual194/xcharge.html" >v19.4</option><option value="https://www.opendental.com/manual193/xcharge.html" >v19.3</option><option value="https://www.opendental.com/manual192/xcharge.html" >v19.2</option><option value="https://www.opendental.com/manual191/xcharge.html" >v19.1</option><option value="https://www.opendental.com/manual184/xcharge.html" >v18.4</option><option value="https://www.opendental.com/manual183/xcharge.html" >v18.3</option><option value="https://www.opendental.com/manual182/xcharge.html" >v18.2</option><option value="https://www.opendental.com/manual181/xcharge.html" >v18.1</option><option value="https://www.opendental.com/manual174/xcharge.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>XCharge (OpenEdge)</p></div>
+<div class="GeneralPageContent">
+<p>XCharge is an integrated payment processor that allows practices to process credits and debit card payments directly in Open Dental.</p>
+<p>In the <a href="payment.html">Payment</a> window, in the <a href="paymentpatientcreditcard.html">Credit Card Payment</a> area, click XCharge.</p>
+<img src="images/xChargeTransactionTypes.gif" width="337" height="308"/><p><div class="Note">Note: <ul>
+<li><a href="xcharge.html">XCharge (OpenEdge)</a> was a previous option available through Global Payments Integrated. Existing XCharge installations can still be used, though Global Payments Integrated no longer supports XCharge. Users should contact Global Payments Integrated to switch to EdgeExpress, their updated payment processing option. </li>
+<li>Open Dental Cloud users are required to use EdgeExpress over XCharge. </li>
+</ul>
+</div>
+</p>
+<h2>XCharge Transaction Types</h2>
+<p>Select the transaction to process (e.g., Purchase, Return, Void, etc.).</p>
+<p class="MarginBottomZero"><b>Transaction Types</b>: Refer to the XCharge user manual for details on transaction types. </p>
+<ul class="MarginBottomGap">
+<li><a href="paymentpatientcreditcard.html">Purchase</a>: A standard credit card charge. <a href="paymentpatientcreditcard.html">Credit Card Payment</a></li>
+<li><a href="paymentreturn.html">Return</a>: Credits the amount of the transaction to the card. <a href="paymentreturn.html">Credit Card Return</a></li>
+<li><a href="xchargevoid.html">Void</a>: Reverse a sale soon after (same day) it was made. <a href="xchargevoid.html">XCharge Void Payment</a></li>
+</ul>
+<p><b>Save Token</b>: Check to securely store the credit card number and expiration date as a token for future use. Set the default in <a href="preferences.html">Preferences</a>, <i>Automatically store credit card tokens</i>.</p>
+<p><b>Prompt for Signature</b>: Check to prompt patients for a signature on the credit card terminal before completing transaction. Terminal must support electronic signature capabilities. Set as the default in <a href="xchargesetup.html">XCharge Setup</a>.</p>
+<p><b>Print Receipt</b>: Check to automatically print a receipt to the default receipt <a href="printersetup.html">Printer</a> when the transaction is completed. Set the default setting in XCharge Setup.</p>
+<h2>XCharge Release</h2>
+<p>This window appears after the XCharge Transaction Types when charging a new card or voiding a transaction. Enter the credit card details or swipe the credit card to auto insert the information.</p>
+<img src="images/xchargePaymentPurchase.gif" width="371" height="452"/><p><b>Toolbar</b>: Refer to the XCharge user manual for details.</p>
+<p><b>Clear</b>: Clears the information entered in the fields below.</p>
+<p><b>Amount</b>: The purchase amount entered in the Payment window. To edit, cancel the transaction and enter the correct amount in the Payment window.</p>
+<p><b>Credit Card #</b>: Type the credit card number or swipe the credit card to auto-populate this field.</p>
+<p><b>Expiration (MMYY)</b>: Type the credit card expiration date. Auto-populates when a card is swiped.</p>
+<p><b>Zip Code</b>: (optional) Enter the zipcode of the cardholder's billing address . Some banks require this information and decline the transaction if not entered.</p>
+<p><b>Address</b>: (optional) Enter the street address of the cardholder's billing address . Some banks require this information and decline the transaction if not entered.</p>
+<p><b>CVV2/CVC2</b>: (optional) Enter the 3-digit security code from the back of the VISA or MasterCard .</p>
+<p><b>Receipt #</b>: Auto-populated by XCharge. This is PAT followed by the patient's ID number assigned by Open Dental (e.g., PAT7453).</p>
+<p><b>Clerk ID</b>: The user logged into Open Dental. To edit, cancel the transaction and log into Open Dental as a different user.</p>
+<p><b>[F12] Process</b>: Click to complete the transaction, or select the F12 key.</p>
+<h2>EMV Transactions</h2>
+<p class="MarginBottomZero">To process transactions for credit cards with computer chips (EMV transactions) use XCharge version 8.1.1 or greater and a compatible terminal. Terminal options include: </p>
+<ul class="MarginBottomGap">
+<li>Ingenico iSC250 (electronic signature capabilities). Electronic signatures are stored on the workstation that acts as the XCharge server.</li>
+<li>Ingenico iPP320</li>
+<li>Ingenico iCMP (Bluetooth capable)</li>
+</ul>
+<h2>Decline Minimizer</h2>
+<p>Decline minimizer is a feature that automatically updates expired and outdated card information to reduce declined payments (for participating credit card brands). The decline minimizer automatically updates the credit card information stored in <a href="creditcardsmanage.html">Credit Card Manage</a>. The <i>XC Account ID Updated</i> is noted in the payment note transaction details when card details are updated. </p>
+<p>To add this feature at no additional cost, contact XCharge. No additional set up is required in Open Dental.</p>
+<h2>Additional Resources</h2>
+<p>XCharge, also known as OpenEdge or Global Payments, is an integrated credit card program that can be used to process credit and debit card transactions. To also process check payments, sign up for the OpenEdge check service.</p>
+<p>Website: <a href="https://lp.globalpaymentsintegrated.com/opendental/">https://lp.globalpaymentsintegrated.com/opendental/</a></p>
+<p class="MarginBottomZero">United States: </p>
+<ul class="MarginBottomGap">
+<li>Sales: 800-637-8268</li>
+<li>Technical Support: 800-338-6614</li>
+</ul>
+<p>Canada: 800-338-6614</p>
+<div class="Note">Note: Make sure to have a back up plan in place for the XCharge server after enabling the service. The XCharge server is not included in the Open Dental manual back up feature.</div>
+<br/><br/><p>Related Links:<br/><a href="xchargesetup.html">XCharge Setup</a><br/><a href="xchargeclinic.html">XCharge Setup for Clinics</a><br/><a href="paymentpatientcreditcard.html">Credit Card Payment</a><br/><a href="paymentreturn.html">Credit Card Return</a><br/><a href="xchargevoid.html">XCharge Void Payment</a><br/><a href="xchargeaddcard.html">XCharge Add Card</a><br/><a href="paymenttransdetails.html">Credit Card Transaction Details</a><br/><a href="portalonlinepayments.html">Online Payments</a><br/><a href="recurringcharges.html">CC Recurring Charges</a><br/><a href="xchargetroubleshooting.html">XCharge Troubleshooting</a></p>
+</div>
+</div>
+</body>
+</html>

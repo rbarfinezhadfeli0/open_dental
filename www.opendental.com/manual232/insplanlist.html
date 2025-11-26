@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Insurance Plans</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('insplanlist','+lists','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/insplanlist.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/insplanlist.html" >v24.2</option><option value="https://www.opendental.com/manual241/insplanlist.html" >v24.1</option><option value="https://www.opendental.com/manual233/insplanlist.html" >v23.3</option><option value="https://www.opendental.com/manual232/insplanlist.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/insplanlist.html" >v23.1</option><option value="https://www.opendental.com/manual224/insplanlist.html" >v22.4</option><option value="https://www.opendental.com/manual223/insplanlist.html" >v22.3</option><option value="https://www.opendental.com/manual222/insplanlist.html" >v22.2</option><option value="https://www.opendental.com/manual221/insplanlist.html" >v22.1</option><option value="https://www.opendental.com/manual214/insplanlist.html" >v21.4</option><option value="https://www.opendental.com/manual213/insplanlist.html" >v21.3</option><option value="https://www.opendental.com/manual212/insplanlist.html" >v21.2</option><option value="https://www.opendental.com/manual211/insplanlist.html" >v21.1</option><option value="https://www.opendental.com/manual205/insplanlist.html" >v20.5</option><option value="https://www.opendental.com/manual204/insplanlist.html" >v20.4</option><option value="https://www.opendental.com/manual203/insplanlist.html" >v20.3</option><option value="https://www.opendental.com/manual202/insplanlist.html" >v20.2</option><option value="https://www.opendental.com/manual201/insplanlist.html" >v20.1</option><option value="https://www.opendental.com/manual194/insplanlist.html" >v19.4</option><option value="https://www.opendental.com/manual193/insplanlist.html" >v19.3</option><option value="https://www.opendental.com/manual192/insplanlist.html" >v19.2</option><option value="https://www.opendental.com/manual191/insplanlist.html" >v19.1</option><option value="https://www.opendental.com/manual184/insplanlist.html" >v18.4</option><option value="https://www.opendental.com/manual183/insplanlist.html" >v18.3</option><option value="https://www.opendental.com/manual182/insplanlist.html" >v18.2</option><option value="https://www.opendental.com/manual181/insplanlist.html" >v18.1</option><option value="https://www.opendental.com/manual174/insplanlist.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Insurance Plans</p></div>
+<div class="GeneralPageContent">
+<p>Use the Insurance Plans list to review all insurance plans entered in Open Dental.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Lists, <b>Insurance Plans</b>.</p>
+<img src="images/insPlans.png" width="915" height="577"/><p>Alternatively: from the <a href="insplan.html">Insurance Plan</a> Edit Window, click <b>Pick From List</b>.</p>
+<p class="MarginBottomZero">See also: </p>
+<ul class="MarginBottomGap">
+<li><a href="insadd.html">Add Insurance</a></li>
+<li><a href="insplanedit.html">Change Insurance Plan Information</a></li>
+<li><a href="insplandrop.html">Drop Insurance Plan</a></li>
+<li><a href="subscribersmove.html">Move Subscribers</a></li>
+<li><img src="images/YouTube_PlayButton_15px.png" width="15" height="12" style="margin-bottom: 0px"/> See our video: <a href="https://www.youtube.com/watch?v=N9g-Cs8xSF0">QuickTip: Reordering Patient Insurance Plans</a>.</li>
+</ul>
+<h2>Filters</h2>
+<p class="MarginBottomZero">To narrow or sort the list of plans, enter filter criteria. Results update automatically. The first 200 results matching filter criteria display by default. </p>
+<ul class="MarginBottomGap">
+<li><b>Employer</b>: Enter <a href="employers.html">Employer</a> name.</li>
+<li><b>Group Num</b>: Enter insurance plan Group Number..</li>
+<li><b>Carrier</b>: Enter Insurance <a href="carriers.html">Carrier</a> name.</li>
+<li><b>Group Name</b>: Enter insurance plan Group Name.</li>
+<li><b>Trojan ID</b>: Only visible if the <a href="trojan.html">Trojan Bridge</a> is enabled. Enter Trojan ID number.</li>
+<li><b>Ins Plan ID</b>: Enter Insurance Plan ID number. This number is system-generated and visible on the Edit Insurance Plan window.</li>
+</ul>
+<p class="MarginBottomZero"><b>Order By</b>: Select the sort order of the list. </p>
+<ul class="MarginBottomGap">
+<li>Employer: Sort alphabetically by employer name. </li>
+<li>Carrier: Sort alphabetically by carrier name.</li>
+</ul>
+<p><b>Get All</b>: Click to view all results that matching the filter criteria. Results are not limited to 200.</p>
+<p><b>Show Hidden</b>: Include/exclude plans that have been marked Hidden on the Edit Insurance Plan window</p>
+<h2>Insurance Plans</h2>
+<p>Each line entry refers to an individual plan. The number of plan subscribers is indicated under the Subs column. Double-click a plan to view carrier, plan, and benefit information.</p>
+<p class="MarginBottomZero">Most columns are self-explanatory, below are descriptions of columns that may need additional explanation: </p>
+<ul class="MarginBottomGap">
+<li>noE: X in this column indicates <i>Don't Send Claims Electronically</i> has been marked for the insurance carrier attached to this plan.</li>
+<li>ElectID: <a href="payerids.html">Electronic Payer ID</a> for the carrier.</li>
+<li>Subs: Total subscribers associated to the plan.</li>
+<li>TrojanID: Only used by Trojan Bridge users.</li>
+</ul>
+<p><b>Combine</b>: Combine duplicate plans into a single plan. See <a href="insplancombine.html">Combine Insurance Plans</a>.</p>
+<p><b>Hide Unused</b>: Mark plans with 0 subscribers as hidden.</p>
+<p><b>Blank Plan</b>: Only visible when the list is accessed via the Edit Insurance Plan window. Click to open a blank Edit Insurance Plan window.</p>
+<h2>Questions and Answers</h2>
+<p><b>I have duplicate insurance plans in the list. Why and how do I fix this?</b></p>
+<p class="MarginBottomZero">There are a few reasons offices may have duplicate plans. Sometimes plans look the same, but when the details are examined they are different. What appear to be duplicate entries are really different plans that share the same employer, carrier, group name, group number. Double-click an insurace plan to check: </p>
+<ul class="MarginBottomGap">
+<li>Benefits (percentages, annual max, other benefits, benefit year)</li>
+<li>Fee schedule assignments</li>
+<li>Plan type</li>
+</ul>
+<p>If users created new insurance plans by mistake instead of using an existing plan, you can combine insurance plans. Combining is irreversible and changes historical data. See <a href="insplancombine.html">Combine Insurance Plans</a>.</p>
+<p class="MarginBottomZero">To avoid creating new plans inadvertently, follow these guidelines: </p>
+<ul class="MarginBottomGap">
+<li>When changing a plan for all subscribers via the Edit Insurance Plan window, make sure <i>Change plan for all subscribers</i> is selected.</li>
+<li>When entering a plan for a new patient, search for matching plans before creating a new plan (Pick from List).</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

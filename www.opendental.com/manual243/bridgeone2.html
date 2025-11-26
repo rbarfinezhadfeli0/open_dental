@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - One2 Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridgeone2','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/bridgeone2.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/bridgeone2.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridgeone2.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridgeone2.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridgeone2.html" >v23.2</option><option value="https://www.opendental.com/manual231/bridgeone2.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridgeone2.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridgeone2.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridgeone2.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridgeone2.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridgeone2.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridgeone2.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridgeone2.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridgeone2.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridgeone2.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridgeone2.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridgeone2.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridgeone2.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridgeone2.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridgeone2.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridgeone2.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridgeone2.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridgeone2.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridgeone2.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridgeone2.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridgeone2.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridgeone2.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridgeone2.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>One2 Bridge</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>. Double-click <b>One2 from https://osstem.com/</b>.</p>
+<img src="images/bridgeOne2.png" width="770" height="594"/><p>One2 is an imaging software. Website: <a href="https://osstem.com/">www.osstem.com</a>.</p>
+<p class="MarginBottomZero">To enable the bridge: </p>
+<ol class="MarginBottomGap">
+<li>Check the <b>Enabled</b> box.</li>
+<li>Verify the <b>Path of file to open</b>.</li>
+<li>Double-click on a row in <b>Additional Properties</b> to change settings. <ul>
+<li>Use the PatNum (enter 0) or ChartNum (enter 1) as the patient ID.</li>
+<li>Verify the<b> Patient.ini </b>path.</li>
+</ul>
+</li>
+<li>Set up a clickable bridge button. <ol>
+<li>Under <b>Add a button to these toolbars</b>, highlight where to display the button.</li>
+<li>Enter the <b>Text on button</b>.</li>
+<li>A Button Image is automatically added and is visible in the toolbar once enabled.</li>
+</ol>
+</li>
+<li>Click Save.</li>
+</ol>
+<h2>Technical Details</h2>
+<p>Patients must have a first name, gender, and birthdate entered for the bridge to launch. </p>
+<p>If the patient does not exist in One2, a patient is created. </p>
+</div>
+</div>
+</body>
+</html>

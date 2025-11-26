@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Output Text Field Names</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('outputtextfields','sheetsoutputtext','sheetsetup','sheets','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/outputtextfields.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/outputtextfields.html" >v24.2</option><option value="https://www.opendental.com/manual241/outputtextfields.html" >v24.1</option><option value="https://www.opendental.com/manual233/outputtextfields.html" >v23.3</option><option value="https://www.opendental.com/manual232/outputtextfields.html" >v23.2</option><option value="https://www.opendental.com/manual231/outputtextfields.html" >v23.1</option><option value="https://www.opendental.com/manual224/outputtextfields.html" >v22.4</option><option value="https://www.opendental.com/manual223/outputtextfields.html" >v22.3</option><option value="https://www.opendental.com/manual222/outputtextfields.html" >v22.2</option><option value="https://www.opendental.com/manual221/outputtextfields.html" >v22.1</option><option value="https://www.opendental.com/manual214/outputtextfields.html" >v21.4</option><option value="https://www.opendental.com/manual213/outputtextfields.html" >v21.3</option><option value="https://www.opendental.com/manual212/outputtextfields.html" >v21.2</option><option value="https://www.opendental.com/manual211/outputtextfields.html" >v21.1</option><option value="https://www.opendental.com/manual205/outputtextfields.html" >v20.5</option><option value="https://www.opendental.com/manual204/outputtextfields.html" >v20.4</option><option value="https://www.opendental.com/manual203/outputtextfields.html" >v20.3</option><option value="https://www.opendental.com/manual202/outputtextfields.html" >v20.2</option><option value="https://www.opendental.com/manual201/outputtextfields.html" >v20.1</option><option value="https://www.opendental.com/manual194/outputtextfields.html" >v19.4</option><option value="https://www.opendental.com/manual193/outputtextfields.html" >v19.3</option><option value="https://www.opendental.com/manual192/outputtextfields.html" >v19.2</option><option value="https://www.opendental.com/manual191/outputtextfields.html" >v19.1</option><option value="https://www.opendental.com/manual184/outputtextfields.html" >v18.4</option><option value="https://www.opendental.com/manual183/outputtextfields.html" >v18.3</option><option value="https://www.opendental.com/manual182/outputtextfields.html" >v18.2</option><option value="https://www.opendental.com/manual181/outputtextfields.html" >v18.1</option><option value="https://www.opendental.com/manual174/outputtextfields.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Output Text Field Names</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="sheetsoutputtext.html">Sheet Output Text Field</a>.</p>
+<p>Output Text fields are <a href="sheetsaddelements.html">Sheet Field Types</a> that pull information from the database when filling out forms. This list is in progress and not all fields have a description yet. The available output text fields vary by sheet type.</p>
+<table class="simpletable">
+<tr>
+<th style="width:50%">Output Text Field Name</th>
+<th style="width:50%">Description</th>
+</tr>
+<tr>
+<td>accountNumber</td>
+<td>Patient's PatNum or ChartNum, depending on the preference <i>Account Numbers use</i>. Displays on statements as "Account Number 1234".</td>
+</tr>
+<tr>
+<td>address</td>
+<td></td>
+</tr>
+<tr>
+<td>amountDueValue</td>
+<td></td>
+</tr>
+<tr>
+<td>appt.DateTime</td>
+<td>Date and time of the appointment.</td>
+</tr>
+<tr>
+<td>appt.estPatientPortion</td>
+<td>Estimated patient portion for attached procedures. (patient portion = gross production - estimated insurance write-offs + adjustments - insurance estimates)</td>
+</tr>
+<tr>
+<td>appt.length</td>
+<td>Length of the patient's appointment in minutes.</td>
+</tr>
+<tr>
+<td>appt.Note</td>
+<td>Note attached to the appointment.</td>
+</tr>
+<tr>
+<td>appt.procedures</td>
+<td>Procedures attached to the patient's appointment.</td>
+</tr>
+<tr>
+<td>appt.providers</td>
+<td>Providers attached the appointment.</td>
+</tr>
+<tr>
+<td>appt.timeDate</td>
+<td>Time and date on the appointment.</td>
+</tr>
+<tr>
+<td>APR</td>
+<td>Annual percentage rate on the payment plan.</td>
+</tr>
+<tr>
+<td>balanceLabel</td>
+<td>Displays the label =Balance: on statements.</td>
+</tr>
+<tr>
+<td>balanceValue</td>
+<td>Displays the total value of the patient or family balance on statements. </td>
+</tr>
+<tr>
+<td>billingAddress</td>
+<td>The guarantor name and address. If <i>Single patient only</i> is selected when generating a Statement, the patient name is used instead of guarantor. </td>
+</tr>
+<tr>
+<td>birthdate</td>
+<td>Date of birth for the selected patient.</td>
+</tr>
+<tr>
+<td>CarrierName</td>
+<td>Insurance carrier name.</td>
+</tr>
+<tr>
+<td>CashSumTotal</td>
+<td>Total of cash payments on a deposit slip. Payments must have a payment type of <i>Cash</i> associated for cashSumTotal to calculate.</td>
+</tr>
+<tr>
+<td>ccNumberMaskedWithExp</td>
+<td>Available for payment plans. Shows the patient credit card on file as a masked number, with the associated expiration date.<br>  (e.g., XXXXXXXXXXXX5555 Exp 12/23)</td>
+</tr>
+<tr>
+<td>ChartNumber</td>
+<td>Manually assigned from the Edit Patient Information window.</td>
+</tr>
+<tr>
+<td>checkNumber</td>
+<td>01 through 18. Each item displays the<i> Check Number</i> of a payment attached to the deposit. Blank <i>Check Numbers</i> are included.</td>
+</tr>
+<tr>
+<td>cityStateZip</td>
+<td></td>
+</tr>
+<tr>
+<td>clinic.address</td>
+<td>The address entered for the currently selected clinic.</td>
+</tr>
+<tr>
+<td>clinic.cityStateZip</td>
+<td>The city, state, and zip code entered for the currently selected clinic. </td>
+</tr>
+<tr>
+<td>clinic.phone</td>
+<td>The phone number entered for the currently selected clinic.</td>
+</tr>
+<tr>
+<td>County</td>
+<td></td>
+</tr>
+<tr>
+<td>dateLabReceived</td>
+<td>Date the first Lab Case listed on an appointment was marked received.</td>
+</tr>
+<tr>
+<td>dateLabSent</td>
+<td>Date the first Lab Case listed on an appointment was marked sent.</td>
+</tr>
+<tr>
+<td>DateOfAgreement</td>
+<td>Date of payment plan agreement.</td>
+</tr>
+<tr>
+<td>DateScreenGroup</td>
+<td></td>
+</tr>
+<tr>
+<td>dateTime.Today</td>
+<td>Todays date (mm/dd/yyyy)</td>
+</tr>
+<tr>
+<td>dateTSigned</td>
+<td>Records date of electronic signature on a Treatment Plan.</td>
+</tr>
+<tr>
+<td>dateTPracticeSigned</td>
+<td>Records date of electronic signature from secondary signature box on a Treatment Plan.</td>
+</tr>
+<tr>
+<td>DaysOfSupply</td>
+<td>Fills in with days from the Edit Rx window. Requires <i>Procedure code required on some prescriptions</i> preference. See <a href="rx.html">Rx / Prescription</a>, Procedure Required on Prescription for setup.</td>
+</tr>
+<tr>
+<td>defaultHeading</td>
+<td>Practice/clinic name, practice/clinic phone number, patient name, patient title (if any), date of birth, and Treatment Plan date</td>
+</tr>
+<tr>
+<td>deposit.BankAccountInfo</td>
+<td>Inserts information from the Bank Account Info box in the deposit.</td>
+</tr>
+<tr>
+<td>deposit.DateDeposit</td>
+<td>Date of deposit. (mm/dd/yyyy)</td>
+</tr>
+<tr>
+<td>depositItem</td>
+<td>01 through 18. Each item is a payment attached to the deposit slip.</td>
+</tr>
+<tr>
+<td>depositItemCount</td>
+<td>Number of deposit items.</td>
+</tr>
+<tr>
+<td>depositList</td>
+<td>Lists all deposit items. Date, patient name, check number, branch, and amount.</td>
+</tr>
+<tr>
+<td>depositTotal</td>
+<td>Total of payments attached to deposit.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td></td>
+</tr>
+<tr>
+<td>Disp</td>
+<td></td>
+</tr>
+<tr>
+<td>Drug</td>
+<td>Drug being prescribed in an Rx.</td>
+</tr>
+<tr>
+<td>futureAppointments</td>
+<td>Displays date, time, and procedures attached to any future schedule appointment. </td>
+</tr>
+<tr>
+<td>GradeSchool</td>
+<td></td>
+</tr>
+<tr>
+<td>guarantor</td>
+<td>Guarantor last name followed by first name.</td>
+</tr>
+<tr>
+<td>Heading</td>
+<td>Heading (i.e., description) of the Treatment Plan</td>
+</tr>
+<tr>
+<td>insEstLabel</td>
+<td></td>
+</tr>
+<tr>
+<td>insEstValue</td>
+<td></td>
+</tr>
+<tr>
+<td>invoicePaymentLabel</td>
+<td>Labeled Payments in the sheet, this is the sum of all the payments in the Patient Account grid, whether or not the payments are attached to a procedure.</td>
+</tr>
+<tr>
+<td>invoicePaymentValue</td>
+<td>This is the sum of all the payments in the Patient Account grid, whether or not the payments are attached to a procedure. If the preference, <i>Invoice payments grid shows write-offs</i> is checked, the procedure write-off will be included in this value.</td>
+</tr>
+<tr>
+<td>invoicePayPlanLabel</td>
+<td>Labeled Pay Plan Charges in the sheet.</td>
+</tr>
+<tr>
+<td>invoicePayPlanValue</td>
+<td>Displays the payment plan Charges Due amount.</td>
+</tr>
+<tr>
+<td>invoiceTotalLabel</td>
+<td>Labeled Balance Remaining in the sheet, this is the sum of the charges minus the sum of the payments. </td>
+</tr>
+<tr>
+<td>invoiceTotalValue</td>
+<td>Displays the balance remaining amount.</td>
+</tr>
+<tr>
+<td>lab.Address</td>
+<td></td>
+</tr>
+<tr>
+<td>lab.CityStZip</td>
+<td></td>
+</tr>
+<tr>
+<td>lab.Description</td>
+<td></td>
+</tr>
+<tr>
+<td>lab.Email</td>
+<td></td>
+</tr>
+<tr>
+<td>lab.Notes</td>
+<td></td>
+</tr>
+<tr>
+<td>lab.Phone</td>
+<td></td>
+</tr>
+<tr>
+<td>lab.WirelessPhone</td>
+<td></td>
+</tr>
+<tr>
+<td>labcase.DateTimeCreated</td>
+<td></td>
+</tr>
+<tr>
+<td>labcase.DateTimeDue</td>
+<td></td>
+</tr>
+<tr>
+<td>labcase.LabCaseNum</td>
+<td>Unique identifier for a lab case.</td>
+</tr>
+<tr>
+<td>labName</td>
+<td>Name of the Laboratory associated with the first Lab Case listed on an appointment.</td>
+</tr>
+<tr>
+<td>length</td>
+<td></td>
+</tr>
+<tr>
+<td>nameFL</td>
+<td>Patient first and last name.</td>
+</tr>
+<tr>
+<td>nameLF</td>
+<td>Patient last name, preferred name, and first name.</td>
+</tr>
+<tr>
+<td>Note</td>
+<td>The note entered on a payment plan.</td>
+</tr>
+<tr>
+<td>otherFamilyMembers</td>
+<td></td>
+</tr>
+<tr>
+<td>pat.address</td>
+<td></td>
+</tr>
+<tr>
+<td>pat.Birthdate</td>
+<td>Patient's birthdate (mm/dd/yyyy).</td>
+</tr>
+<tr>
+<td>pat.cityStateZip</td>
+<td></td>
+</tr>
+<tr>
+<td>pat.HmPhone</td>
+<td></td>
+</tr>
+<tr>
+<td>pat.nameFL</td>
+<td></td>
+</tr>
+<tr>
+<td>patient.address</td>
+<td>Patient address</td>
+</tr>
+<tr>
+<td>patient.cityStateZip</td>
+<td>Patient's city, state, and zip code</td>
+</tr>
+<tr>
+<td>patient.HmPhone</td>
+<td></td>
+</tr>
+<tr>
+<td>patient.NameFL</td>
+<td>Patient first and last name</td>
+</tr>
+<tr>
+<td>patient.priProvNameFL</td>
+<td>First and last name of the patient's primary provider</td>
+</tr>
+<tr>
+<td>patient.provider</td>
+<td>Usually patient's primary provider. For <a href="sheetsreferralslips.html">Referral Slip Layout</a> this is the Referring Provider.</td>
+</tr>
+<tr>
+<td>patient.salutation</td>
+<td>Enters the words "Dear Patient". Patient will be replaced with the patient's preferred name. If no preferred name is entered, the first name will be used.</td>
+</tr>
+<tr>
+<td>patient.WirelessPhone</td>
+<td></td>
+</tr>
+<tr>
+<td>patient.WkPhone</td>
+<td></td>
+</tr>
+<tr>
+<td>PatNum</td>
+<td></td>
+</tr>
+<tr>
+<td>payPlanAmtDueValue</td>
+<td>Displays the payment plan amount due, or "N/A" when used in a Limited Statement.</td>
+</tr>
+<tr>
+<td>PlaceOfService</td>
+<td></td>
+</tr>
+<tr>
+<td>PracticeAddress</td>
+<td>Physical address of the practice.</td>
+</tr>
+<tr>
+<td>practiceCityStateZip</td>
+<td>City, state, and zip code of the practice.</td>
+</tr>
+<tr>
+<td>PracticeTitle</td>
+<td>Title of the practice.</td>
+</tr>
+<tr>
+<td>Principal</td>
+<td>Principal balance on payment plan.</td>
+</tr>
+<tr>
+<td>priProvName</td>
+<td></td>
+</tr>
+<tr>
+<td>ProcCode</td>
+<td>The procedure code associated to the prescription. See <a href="rx.html">Rx / Prescription</a>, Procedure Required on Prescription for setup.</td>
+</tr>
+<tr>
+<td>prov.dEANum</td>
+<td>Providers DEA number.</td>
+</tr>
+<tr>
+<td>prov.nameFormal</td>
+<td></td>
+</tr>
+<tr>
+<td>prov.NationalProvID</td>
+<td></td>
+</tr>
+<tr>
+<td>prov.phone</td>
+<td></td>
+</tr>
+<tr>
+<td>prov.stateLicense</td>
+<td></td>
+</tr>
+<tr>
+<td>prov.stateRxID</td>
+<td></td>
+</tr>
+<tr>
+<td>providerLegend</td>
+<td>This output field only works for users in Australia, with language settings set to English-Australia. Adds a legend to the statement that shows all non-hidden providers. <ul>
+<li>Swiss bank routing fields do not show on the new custom statements.</li>
+<li>Australian Provider legend must be added from the available output fields.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>ProvName</td>
+<td></td>
+</tr>
+<tr>
+<td>referral.address</td>
+<td>The referrers street address.</td>
+</tr>
+<tr>
+<td>referral.cityStateZip</td>
+<td>The referrers city, state, and zip code.</td>
+</tr>
+<tr>
+<td>referral.nameFL</td>
+<td>The referrers first and last name.</td>
+</tr>
+<tr>
+<td>referral.nameL</td>
+<td>The referrers last name.</td>
+</tr>
+<tr>
+<td>referral.phone</td>
+<td>The referrers phone number.</td>
+</tr>
+<tr>
+<td>referral.phone2</td>
+<td></td>
+</tr>
+<tr>
+<td>referral.salutation</td>
+<td>The salutation (Dear) followed by the referrals first name. e.g., Dear John</td>
+</tr>
+<tr>
+<td>Refills</td>
+<td>Number of refills allowed on an Rx.</td>
+</tr>
+<tr>
+<td>returnAddress</td>
+<td>Inserts the address of the guarantor's assigned clinic.</td>
+</tr>
+<tr>
+<td>RxDate</td>
+<td>Date Rx was created.</td>
+</tr>
+<tr>
+<td>RxDateMonthSpelled</td>
+<td></td>
+</tr>
+<tr>
+<td>sheet.DateTimeSheet</td>
+<td></td>
+</tr>
+<tr>
+<td>Sig</td>
+<td></td>
+</tr>
+<tr>
+<td>SignatureText</td>
+<td>OutputText where patient may type their name.</td>
+</tr>
+<tr>
+<td>SignaturePracticeText</td>
+<td>OutputText where presenter may type their name.</td>
+</tr>
+<tr>
+<td>statement.DateSent</td>
+<td>Date statement was created.</td>
+</tr>
+<tr>
+<td>statement.Note</td>
+<td>Notes added to a statement. Drawn from <a href="billingdunningmsg.html">Dunning Messages</a>.</td>
+</tr>
+<tr>
+<td>statement.NoteBold</td>
+<td>Bold notes added to a statement.</td>
+</tr>
+<tr>
+<td>statementNum</td>
+<td>Available for Statements. Adds a statement number.</td>
+</tr>
+<tr>
+<td>statementIsCopy</td>
+<td>If printing a copy of an invoice the word COPY will be printed on the sheet.</td>
+</tr>
+<tr>
+<td>statementIsTaxReceipt</td>
+<td>Only shows when printing receipts. The field will show KEEP THIS RECEIPT FOR INCOME TAX PURPOSES.</td>
+</tr>
+<tr>
+<td>statementReceiptInvoice</td>
+<td>This field determines the title of the document based on how it is generated. <ul>
+<li>Statements will read STATEMENT #.</li>
+<li>Receipts will read RECEIPT.</li>
+<li>Invoices will read INVOICE.</li>
+<li>For Australia and New Zealand, it will read TAX INVOICE.</li>
+<li>For Singapore it will read RECEIPT #.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>statementURL</td>
+<td>Include a URL patients can use to launch the Patient Portal sign-in window (e.g., http://www.patientviewer.com/statement/CyVue8). Patients must have Patient Portal credentials. After logging in, a PDF copy of the statement is displayed. If <a href="paymentportalsetup.html">Payment Portal Setup</a> are enabled, patients can access the <a href="portalpaymentsbypatient.html">Payment Portal</a> to make payments. </td>
+</tr>
+<tr>
+<td>statementShortURL</td>
+<td>Include a short URL patients can use to launch the Patient Portal sign-in window (e.g., http://od.ag/s/CyVue8). Patients must have Patient Portal credentials. After logging in, a PDF copy of the statement is displayed. If Online Payments are enabled, patients can access the Payment Portal to make payments. </td>
+</tr>
+<tr>
+<td>TermsAndConditions</td>
+<td>The default Payment Plan Terms and Conditions set in <a href="preferences.html">Preferences</a>.</td>
+</tr>
+<tr>
+<td>today.DayDate</td>
+<td>Today's day of the week (i.e., Monday)</td>
+</tr>
+<tr>
+<td>totalCostOfLoan</td>
+<td>Total cost of loan on a payment plan.</td>
+</tr>
+<tr>
+<td>totalFinanceCharge</td>
+<td>Total finance charges on a payment plan.</td>
+</tr>
+<tr>
+<td>totalLabel</td>
+<td></td>
+</tr>
+<tr>
+<td>totalValue</td>
+<td></td>
+</tr>
+<tr>
+<td>tpPatPortionEst</td>
+<td>Estimated patient portion for a treatment plan</td>
+</tr>
+<tr>
+<td>weekdayDateTime</td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>

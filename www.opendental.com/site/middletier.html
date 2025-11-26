@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Middle Tier</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('middletier','advancedtopics','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Middle Tier</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="advancedtopics.html">Advanced Topics</a>.</p>
+<p>The Middle Tier is an option for <a href="multiplelocations.html">Multiple Locations</a> that isolates the database, improving speed and security by preventing client workstations from directly accessing the database. The server program sits between the database and the client machines. Workstations are ordinary thick clients running the full Windows version of Open Dental. Middle Tier is a useful option for large local networks that might be shared with non-users of Open Dental (like a college campus or hospital). Middle Tier also supports the usage of <a href="middletiersecuritycert.html">Security Certificates</a> for off site or self-hosted cloud solutions.</p>
+<p>This diagram explains the 3-tier architecture used in enterprise settings.</p>
+<img src="images/Tiers6.gif" width="669" height="337"/><ul>
+<li>The business layer can be on the same physical computer as the database or on a dedicated server.</li>
+<li>The large arrows represent chatty connections.</li>
+<li>The thin arrows represent the slow connections for which the program has been optimized. Fewer calls are made across the slow connections.</li>
+</ul>
+<br><p><b>Speed</b>: The goal is to have only one call to the server for each page of display on the screen. This single call will return a single dataset (group of tables) which is as small as possible. Eliminating multiple calls reduces latency (roundtrip time) issues, such as when connecting across a satellite connection. Keeping the result set small helps the program remain responsive even when the connection is slow (e.g., a dial-up connection).</p>
+<p class="MarginBottomZero"><b>Security</b>: An advantage of using a Middle Tier is increased security. In a direct connection, the MySQL username and password must be stored on the client computer. But with a Middle Tier, the client doesn't need access to the MySQL username and password. There is still not any security for the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7paths.html">Paths</a> if using local or network folders. Each client must still have access to a shared OpenDentImages folder to view items in the Imaging Module. There are a few options: </p>
+<ul class="MarginBottomGap">
+<li>Local Access: If only a single location uses Middle Tier (e.g., as an added security measure), then providing normal local access is a solid option.</li>
+<li>Multiple Location Access: It is best to replicate the files (e.g., DFS replication) or access the OpenDentImages folder via VPN connection. This helps prevent inconsistencies when storing images and documents.</li>
+</ul>
+<p>Although it is not shown above, multiple clients can connect through either of the two methods and both connection methods can be used simultaneously. In fact, a direct connection is required when updating versions, and this requirement is satisfied by running the OpenDental.exe directly on the Middle Tier server.</p>
+<p>See <a href="middletierinstallation.html">Middle Tier Installation</a> for more information.</p>
+		</div>
+	</div>
+</body>
+</html>

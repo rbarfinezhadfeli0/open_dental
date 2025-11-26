@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Tasks Area</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('tasksarea','manage','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/tasksarea.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/tasksarea.html" >v24.2</option><option value="https://www.opendental.com/manual241/tasksarea.html" >v24.1</option><option value="https://www.opendental.com/manual233/tasksarea.html" >v23.3</option><option value="https://www.opendental.com/manual232/tasksarea.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/tasksarea.html" >v23.1</option><option value="https://www.opendental.com/manual224/tasksarea.html" >v22.4</option><option value="https://www.opendental.com/manual223/tasksarea.html" >v22.3</option><option value="https://www.opendental.com/manual222/tasksarea.html" >v22.2</option><option value="https://www.opendental.com/manual221/tasksarea.html" >v22.1</option><option value="https://www.opendental.com/manual214/tasksarea.html" >v21.4</option><option value="https://www.opendental.com/manual213/tasksarea.html" >v21.3</option><option value="https://www.opendental.com/manual212/tasksarea.html" >v21.2</option><option value="https://www.opendental.com/manual211/tasksarea.html" >v21.1</option><option value="https://www.opendental.com/manual205/tasksarea.html" >v20.5</option><option value="https://www.opendental.com/manual204/tasksarea.html" >v20.4</option><option value="https://www.opendental.com/manual203/tasksarea.html" >v20.3</option><option value="https://www.opendental.com/manual202/tasksarea.html" >v20.2</option><option value="https://www.opendental.com/manual201/tasksarea.html" >v20.1</option><option value="https://www.opendental.com/manual194/tasksarea.html" >v19.4</option><option value="https://www.opendental.com/manual193/tasksarea.html" >v19.3</option><option value="https://www.opendental.com/manual192/tasksarea.html" >v19.2</option><option value="https://www.opendental.com/manual191/tasksarea.html" >v19.1</option><option value="https://www.opendental.com/manual184/tasksarea.html" >v18.4</option><option value="https://www.opendental.com/manual183/tasksarea.html" >v18.3</option><option value="https://www.opendental.com/manual182/tasksarea.html" >v18.2</option><option value="https://www.opendental.com/manual181/tasksarea.html" >v18.1</option><option value="https://www.opendental.com/manual174/tasksarea.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Tasks Area</p></div>
+<div class="GeneralPageContent">
+<p>Task Lists and Tasks are managed in the Tasks Area, and can be used for office communications, reminders, patient lists, daily, weekly, or monthly check off lists, etc.</p>
+<p>In the <a href="manage.html">Manage Module</a>, click <b>Tasks</b>.</p>
+<img src="images/tasklist.png" width="506" height="338"/><p class="MarginBottomZero">Alternatively:  </p>
+<ul class="MarginBottomGap">
+<li>The Task Area may also be docked to the bottom or side of the main Open Dental window.</li>
+<li>Click the <b>Tasks</b> dropdown in the main toolbar and click <i>For User</i> or <i>Reminders</i> to launch the Task window in the specified tab.</li>
+</ul>
+<p>A Task List can include nested Task Lists or Tasks.</p>
+<p class="MarginBottomZero">Related links </p>
+<ul class="MarginBottomGap">
+<li><a href="tasks.html">Task</a></li>
+<li><a href="taskreminders.html">Task Reminder</a></li>
+<li><a href="taskswindow.html">Task Window</a></li>
+</ul>
+<p class="MarginBottomZero">Setup </p>
+<ul class="MarginBottomGap">
+<li>Set permissions for editing and deleting Tasks in <a href="security.html">Security</a>.</li>
+<li><a href="tasksetup.html">Tasks Preferences</a></li>
+<li><a href="tasklists.html">Task List and Inbox</a></li>
+</ul>
+<p><img src="images/YouTube_PlayButton_15px.png" width="15" height="12" style="margin-bottom: 0px"/> See our video playlist: <a href="https://www.youtube.com/playlist?list=PLyjZ9PCVynCkrbf5hF0pzSVViropH3Q6Y">Task Lists</a>.</p>
+<p>When the Tasks area is docked, you can resize the area by dragging the splitter (the horizontal bar between the Tasks Area and the rest of the screen). To change docking options, right-click on the splitter, or click Setup, Task.</p>
+<h2>Task Toolbar</h2>
+<img src="images/taskToolbar.png" width="504" height="56"/><p class="MarginBottomZero"><b>Options</b>: Set Task List options.<br/><img src="images/tasklistOptions.png" width="378" height="222" class="ImageInParagraph"/></p>
+<ul class="MarginBottomGap">
+<li><b>Show Finished Tasks</b>: If checked, view Tasks that have been marked Done in the selected Task List.</li>
+<li><b>Finished Task Start Date</b>: View Tasks marked Done on or after this date. Enter any date in this field.</li>
+<li><b>Sort appointment type Task Lists by AptDateTime</b>: If checked, Task Lists that have Object Type set as Appointment will be grouped by scheduled and unscheduled appointments, then sorted by appointment date and time, rather than the date and time the Task was created.</li>
+<li><b>Default Tasks to collapsed state</b>: If checked, Tasks that meet the criteria will be collapsed by default.</li>
+<li><b>Show Archived Task Lists</b>: If checked, Task Lists that have been marked <i>Archived</i> will be shown.</li>
+<li><b>Blocked Task popups still make notification sound</b>: If checked, Task sound is included on blocked tasks.</li>
+</ul>
+<p><b>Add Task List</b>: Create a new Task List. Must be selected in the Main tab. See <a href="tasklists.html">Task List and Inbox</a>.</p>
+<p><b>Add Task</b>: Create a new Task. Click the dropdown to add a reminder Task. See <a href="tasks.html">Add Task</a>.</p>
+<p><b>Search</b>: Search for specific Tasks. See <a href="tasksearch.html">Task Search</a>.</p>
+<p><b>Manage Blocks</b>: Block Task popups for specific Task Lists. Select the lists to block, then click <b>OK</b>. Tasks in selected lists will not pop up, but will still show in the <i>New for User</i> tab until read.</p>
+<img src="images/taskBlocks.png" width="446" height="199"/><p class="MarginBottomZero"><b>Global Filter</b>: Only visible when <i>Global Filter for Task Lists</i> is enabled in Task Preferences. Allows a user to manually filter a Task List. Text on button will change depending on the filter selected. </p>
+<ul class="MarginBottomGap">
+<li>Default: Use the default filtering option selected in Task Preferences. Text on button will be dependent on the default option.</li>
+<li>None: Do not filter out Tasks in this list. Text on button is <i>Unfiltered</i>.</li>
+<li>Clinic: Filter the list by clinic. Highlight one or more clinics, then click <b>OK</b>. Text on button is <i>Filtered by Clinic</i>.</li>
+<li>Region: Filter the list by region. Highlight one or more regions, then click <b>OK</b>. Text on button is <i>Filtered by Region</i>.</li>
+</ul>
+<p><b>Task List Filter</b>: Type to filter the available Task Lists in the selected tab. Click <b>Clear</b> to view all Task Lists in the selected tab. Not functional in <i>New For</i> or <i>Patient Task</i> tabs.</p>
+<p><b>Refresh</b>: Button will only appear for <a href="enterprisesetup.html">Enterprise</a> users with the <i>Tasks, 'Main' and 'Reminders' tabs require manual refresh</i>. Click to refresh and get new Tasks and Task Lists in the <i>Main</i> or <i>Reminders</i> tab. Upon logging in, Enterprise users must click Refresh to see any Tasks Lists in the <i>Main</i> or <i>Reminders</i> tab.. </p>
+<h2>Tabs</h2>
+<img src="images/taskTabs.png" width="477" height="27"/><p> Click on a tab and its Tasks or Task Lists will show.</p>
+<p><b>For User:</b> Task Lists that the current user is subscribed to. </p>
+<p><b>New for User</b>: See unread Tasks for the currently logged-on user's subscribed Task Lists. Click <i>read</i> to remove a task from the list. Users may see Tasks from Task Lists they are no longer subscribed to if the Task was unread at the time of unsubscribing. </p>
+<p><b>Open Tasks</b>: Keep track of Tasks that have an object type of <i>Patient</i> and are <i>From</i> the currently logged-on user. This tab is only visible if <i>Show open Tasks for user</i> is checked in <a href="tasksetup.html">Tasks Preferences</a>.</p>
+<p><b>Patient Tasks</b>: Keep track of Tasks that have an object type of <i>Patient</i> and a patient attached. When the attached patient is selected, their Tasks will show in this list.</p>
+<p><b>Main</b>: All Task Lists and inboxes. Excludes archived Task Lists by default. </p>
+<p><b>Reminders</b>: All Task Lists and inboxes (excludes archived lists by default). Click a list to view all Task reminders regardless of due status. Reminders replace Repeating Tasks. See <a href="taskreminders.html">Task Reminder</a>.</p>
+<p><b>Repeating</b> (setup) / By Date / By Week / By Month: Only shows when <i>Show legacy repeating tasks</i> is enabled in Task Setup. </p>
+<h2>Task Lists</h2>
+<img src="images/tasksList.png" width="502" height="476"/><p>From a corresponding tab, click on a Task list to see the Tasks within.</p>
+<p class="MarginBottomZero">Right-click options: </p>
+<ul>
+<li><b>Edit Properties</b>: Edit Task List options.</li>
+<li><b>Set Priority</b>: Change the Task Priority. A Task Note is added with the user that changed the Task and the new Task Priority (only applies to non-inbox Task Lists).</li>
+<li><b>Cut</b>: Cut Task List to move into another list.</li>
+<li><b>Paste</b>: Paste a cut Task List into another location.</li>
+<li><b>Delete</b>: Delete this Task List.</li>
+<li><b>Subscribe</b>: Subscribe to the Task List.</li>
+<li><b>Unsubscribe</b>: Unsubscribe to the Task List.</li>
+<li><b>Archive</b>: Marks list as archived, allows it to be hidden by default.<br/><div class="Note">Note: <ul>
+<li>Archiving will archive any child lists. </li>
+<li>Archiving will unsubscribe any users subscribed to the list.</li>
+<li>Archived Task Lists disassociate any User Inboxes.</li>
+<li>To show Archived Task Lists, enable Show Archived Task Lists in Task Options above. <ul>
+<li>When Archived Task Lists are showing, a right-click option to <i>Unarchive</i> will be available. This does not restore Object of Date Type, or User Inbox associations.</li>
+</ul>
+</li>
+<li>Open Reminder Tasks will have their reminder settings removed. </li>
+</ul>
+</div>
+</li>
+</ul>
+<p class="MarginBottomGap"><div class="Note">Note: If a user moves a main Task List into its own nested Task List, the nested Task List(s) will become main Task List(s).</div>
+</p>
+<h2>Tasks</h2>
+<p>Click on a Task List or click the <i>New for User</i> or <i>Patient Tasks</i> tab to see Tasks.</p>
+<p>By default, only open Tasks are shown. Click <b>Options</b> to include closed Tasks. Tasks lists that have new Tasks are flagged with an orange checkbox and the number of new Tasks appears in parentheses. A Task List can include nested Task Lists or Tasks. </p>
+<img src="images/tasks.png" width="465" height="135"/><p>Double-click a Task to open it. See <a href="taskswindow.html">Task Window</a>.</p>
+<p class="MarginBottomZero">From the Tasks window or Tasks dock, right-click a Task to see the following options: </p>
+<ul class="MarginBottomGap">
+<li><b>Done</b> (affects all users): Mark a Task as done.</li>
+<li><b>Edit Properties</b>: Open Task to make edits.</li>
+<li><b>Set Priority</b>: Change Task Priority. Add Task Priorities in <a href="definitionstaskpriorities.html">Definitions: Task Priorities</a></li>
+<li><b>Cut</b>: Cut Task to move to another list.</li>
+<li><b>Copy</b>: Make a copy of the Task to move to another list.</li>
+<li><b>Paste</b>: Paste a cut or copied Task into a list.</li>
+<li><b>Delete</b>: Delete this Task.</li>
+<li><b>Send to Me</b>: Send selected Task to the current logged-on user's inbox.</li>
+<li><b>Send to Me &amp; Go to</b>: Send Task to the current logged-on user's inbox, select the attached patient, and add a note to the Task.</li>
+<li><b>Go To</b>: Go to the patient or appointment associated with the Task.</li>
+<li><b>Navigate to Attachment</b>: Opens the selected Task attachment.</li>
+<li><b>Mark as Read</b>: Mark Task as read. Removes task from the New For tab</li>
+</ul>
+<p>Task text that is more than 250 characters, has two or more Task Notes, or one Task Note more than 250 characters can be expanded or collapsed. The + or - in the +/-column indicates in current state. Click the +/-column header to toggle all Tasks between expand or collapse.</p>
+<p><b>-</b> indicates a Task that is expanded. Click - to collapse text.</p>
+<p><b>+</b>indicates a Task that is collapsed. Click + to expand.</p>
+<p>Set the default state in Task Preferences.</p>
+<h2>Task Popout Count</h2>
+<p>The Task popout window displays the number of new (i.e., unread) Tasks in the selected Task List. Hover over the Open Dental icon on the taskbar to view. Task count only shows when the Tasks window is open and a Task List or tab is selected.</p>
+<img src="images/tasksWindowsToolbar.png" width="683" height="216"/></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - AFP ProImage Eva Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridgedentxproimage','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/bridgedentxproimage.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/bridgedentxproimage.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridgedentxproimage.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridgedentxproimage.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridgedentxproimage.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/bridgedentxproimage.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridgedentxproimage.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridgedentxproimage.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridgedentxproimage.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridgedentxproimage.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridgedentxproimage.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridgedentxproimage.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridgedentxproimage.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridgedentxproimage.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridgedentxproimage.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridgedentxproimage.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridgedentxproimage.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridgedentxproimage.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridgedentxproimage.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridgedentxproimage.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridgedentxproimage.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridgedentxproimage.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridgedentxproimage.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridgedentxproimage.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridgedentxproimage.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridgedentxproimage.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridgedentxproimage.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridgedentxproimage.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>AFP ProImage Eva Bridge</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>. Double-click on <b>ProImage</b>.</p>
+<img src="images/bridgeDentx.png" width="778" height="598"/><p>AFP Imaging DBA Imageworks is a digital imaging program. Website: <a href="https://www.imageworkscorporation.com/evasoft-software/" target="_blank">https://www.imageworkscorporation.com/evasoft-software/</a>. Also known as Dent-X ProImage, Eva, or <a href="bridgeevasoft.html">EvaSoft Bridge</a>.</p>
+<p class="MarginBottomZero">To activate the bridge: </p>
+<ol class="MarginBottomGap">
+<li>Check the <b>Enabled</b> box.</li>
+<li>Verify the <b>Path of file to open</b>.</li>
+<li>Double-click on <b>Additional Properties</b> to change settings. Use the PatNum (enter 0) or ChartNum (enter 1) as the patient ID.</li>
+<li>Set up a clickable bridge button.  <ol>
+<li>Under <b>Add a button to these toolbars</b>, highlight where to display the button.</li>
+<li>Enter the <b>Text on button</b>.</li>
+<li>(Optional) Import an image to show on the button (22 x 22 pixels).</li>
+</ol>
+</li>
+<li>If using clinics, click <b>Hide Button for Clinics</b>. Select which clinics the button should display on.</li>
+<li>Click OK.</li>
+</ol>
+<h2>Technical Details</h2>
+<p>EvaSoft must be running in the background for the bridge to work.</p>
+<p>The ProImage database is based on the patient number. Open Dental sends the patient number, last name, first name, date of birth, address, etc. to ProImage. If the patient does not exist, a new patient record is created.</p>
+<p>If the patient number exists but the additional information sent does not match, the patient record will be updated to match the patient information from Open Dental.</p>
+<p class="MarginBottomZero">Check ProImage patient records to confirm the information matches Open Dental before using the bridge. To check: </p>
+<ol class="MarginBottomGap">
+<li>Select the patient in ProImage from the Update Patient button located in the upper left or File menu. If it is not visible, enable the button from the Advanced settings under the Edit menu, Preferences, then Toolbar Style.</li>
+<li>Select the same patient in Open Dental.</li>
+<li>Compare the ID in ProImage with the Patient Number in Open Dental. They must match before the bridge can be used.</li>
+<li>If they don't match, change the patient ID in ProImage to match the patient number in Open Dental (patient numbers in Open Dental cannot be changed). To print a list of names and patient numbers run this Query:<p class="codeblock">SELECT PatNum AS PatID,LName,FName, Birthdate FROM patient ORDER BY LName,FName</p></li>
+</ol>
+</div>
+</div>
+</body>
+</html>

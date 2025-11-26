@@ -1,0 +1,130 @@
+/*Jordan 2018-05-22 Will soon be DEPRECATED
+Do not make changes to this file without consulting me.
+*/
+/*SamR 2025-07-01
+There are three pages using this and they are all in site/:
+	advertisingpostcardsembedded.html
+	massemailembedded.html
+	secureemailembedded.html
+These files are not accessible via the website, they are accessible through the Open Dental program when a user doesn't have one of the services set up.
+This could be reorganized to make like-elements/selectors be grouped together.
+*/
+
+/*previously .parHead*/
+h2 {
+	font-size: 120%;/*was "medium", or about 109% but that wasn't quite big enough*/
+	color: #00648A;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+a {
+	color: #343C83;
+	text-decoration: underline;
+}
+a:visited {
+	color: rgb(85, 26, 139);
+}
+a:hover {
+	color: #CC0000;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;/*was 'small', but that was about 81%, which was just too small, then it was 87%, still too small, now it's 100%*/
+    margin:0px;
+}
+.LeftTree {
+	font-size: 87%;/*only left tree to prevent overflow*/
+}
+p {
+	margin-bottom: 5px;/*decided it's cleaner to split the spacing to both top and bottom*/
+	margin-top: 5px;/*this is the new one.  I think the default was in the range of 20px.*/
+}
+.Note{
+	color: #004C62;
+}
+img{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+ul, ol {
+	margin-top: 0px;/*we might also want to do this on the bottom*/
+}
+.codeblock{
+	font-family: monospace;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.simpletable{
+	border-collapse: collapse;
+}
+.simpletable th, .simpletable td {/*tr is not included here yet*/
+	border: 1px solid black;
+	padding-left: 4px;
+}
+h1 {/*previously .pageHead.  Designed to fit in the dark bar.*/
+	font-size: 125%;
+	font-weight: bold;
+	color: #FFFFFF;
+	margin-top: 0px;
+}
+.MenuImage {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.TopLink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	line-height: 13px;
+	color: #003300;
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+.TopLink:hover {
+	text-decoration: none;
+	background-color: #E3F4E8;
+	border-bottom: 0px dotted;
+}
+.TopMenu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 68.75%;
+	color: #002353;
+	font-weight: bold;
+	line-height: 10px;
+}
+.BMenu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	font-weight: bold;
+	color: #347A92;
+	text-decoration: none;
+}
+.MLink {
+	text-decoration: none;
+}
+.MLink:hover {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+	color: #333333;
+}
+#Menu {
+	list-style-position: outside;
+	list-style-image: url(../open-dental/Bullet.gif);
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: 0px 0px 0px 5px;
+}
+#LIMenu {
+	margin: 0px;
+	padding: 0px;
+	list-style-position: outside;
+	list-style-image: url(../open-dental/Bullet.gif);
+	list-style-type: none;
+}

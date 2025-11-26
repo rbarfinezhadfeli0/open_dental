@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Perio Chart</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('perio','+chartToolbar','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/perio.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/perio.html" >v24.2</option><option value="https://www.opendental.com/manual241/perio.html" >v24.1</option><option value="https://www.opendental.com/manual233/perio.html" >v23.3</option><option value="https://www.opendental.com/manual232/perio.html" >v23.2</option><option value="https://www.opendental.com/manual231/perio.html" >v23.1</option><option value="https://www.opendental.com/manual224/perio.html" >v22.4</option><option value="https://www.opendental.com/manual223/perio.html" >v22.3</option><option value="https://www.opendental.com/manual222/perio.html" >v22.2</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Perio Chart</p></div>
+<div class="GeneralPageContent">
+<p>Use the perio chart to record perio exams.</p>
+<p>In the <a href="chart.html">Chart Module</a>, click <b>Perio Chart</b>.</p>
+<img src="images/periochart.png" width="915" height="536"/><p><img src="images/YouTube_PlayButton_15px.png" width="15" height="12" style="margin-bottom: 0px"/> See our video: <a href="https://youtu.be/ApO1MkPkq48">Perio Charting</a>.</p>
+<p>Only users with the <i>Perio Chart Edit </i><a href="permissions.html">Permission</a> can make changes to measurements on existing exams or create new exams.</p>
+<h2>Setup</h2>
+<p>Click <b>Setup</b> to edit default perio exam probing depths. Enter measurements in sets of three, separated by a comma (e.g., 323, 323, etc.) for each tooth. Each box requires 48 digits.</p>
+<img src="images/perioSetup.png" width="556" height="264"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Upper Facial: Enter probing depths for the upper facial teeth from left to right.</li>
+<li>Upper Lingual: Enter probing depths for the upper lingual teeth from left to right.</li>
+<li>Lower Lingual: Enter probing depths for the lower lingual teeth from left to right</li>
+<li>Lower Facial: Enter probing depths for the lower facial teeth from left to right.</li>
+</ul>
+<p><b>Set All 323</b>: Automatically set probing depths of "323" for all teeth. This overrides any measurements currently entered.</p>
+<p>Click <b>Save</b> to exit the window and keep changes.</p>
+<h2>Exams</h2>
+<p>Up to six of the most recent exams are displayed for comparison. </p>
+<img src="images/perioExams.png" width="359" height="260"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Double-click an exam to edit the date, provider, or exam note. </li>
+<li><b>Add</b>: Create a new blank perio exam. A provider is automatically assigned to a new exam using the following logic:</li>
+<ul>
+<li>The provider associated to the logged-on user is the default.</li>
+<li>If no provider is associated with the user, the patient's secondary provider is used.</li>
+<li>If no provider is associated with the user and there is no assigned secondary provider, the patient's primary provider is used.</li>
+</ul>
+<li><b>Copy</b>: Only available for users with the <i>Perio Chart Copy</i> permission. Create a copy, with today's date, of the most recent exam.</li>
+<li><b>Default</b>: Add a new perio exam with default measurements.</li>
+<li><b>Delete</b>: Delete the selected exam.</li>
+<li><b>Show current exam only</b>: Only show data for the currently selected exam. This is a user setting and is remembered the next time the same user opens the perio chart.</li>
+</ul>
+<h2>Exam Notes</h2>
+<p>Type relevant exam notes here for the currently selected exam.</p>
+<img src="images/perioExamNotes.png" width="368" height="212"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Copy Note</b>: Copy exam notes to the user's clipboard.</li>
+</ul>
+<h2>Perio Chart</h2>
+<p>Data for the currently selected exam is shown in dark text. Data from up to five earlier exams is also displayed. Earlier exams are grayed out.</p>
+<img src="images/perioExamChart.png" width="610" height="649"/><p class="MarginBottomZero">Rows: </p>
+<ul class="MarginBottomGap">
+<li><b>Probing</b>: Each dated exam shows on a separate row. This row also displays markers for plaque, calculus, bleeding, and suppuration for each exam. </li>
+<li><b>Mobility</b>: Only shows on the facial. Only one number per tooth, in the middle cell, is allowed. There is no mechanism yet to show +.</li>
+<li><b>Furc</b>: Furcation. Enter 0-3.</li>
+<li><b>auto CAL</b>: Read only. Auto-calculated Clinical Attachment Loss. Calculated using Probing + Gingival Margin for the current exam.</li>
+<li><b>Ging Marg</b>: Gingival Margin. Gingival margins are implied negative values (recession). For reference, measurements entered prior to the selected exam are displayed and grayed out. New measurements can be entered over the old ones. When the gingival margin is coronal to the CEJ, a + number can be charted in one of two ways. <ol>
+<li>Check the <b>Ging Marg+</b> box, enter the positive value(s) using the keypad or keyboard, and then uncheck the box.</li>
+<li>On the keyboard, press Ctrl + the number (e.g., Ctrl + 3 = +3).</li>
+</ol>
+</li>
+<li><b>MGJ</b>: Mucogingival Junction. This can be charted on the facial of the maxillary and facial and lingual of the mandibular. For reference, measurements entered prior to the selected exam are displayed and grayed out. New measurements can be entered over the old ones. </li>
+</ul>
+<h2>Entering Data</h2>
+<p>When entering data, the selected cell displays in dark gray. Click and drag over multiple cells to enter data in all selected cells simultaneously. </p>
+<img src="images/perioDataButtons.png" width="216" height="405"/><p class="MarginBottomZero"><b>Advance Sequence</b>: Choose an option to determine how the perio chart auto advances when entering measurements. </p>
+<ul class="MarginBottomGap">
+<li><b>Maxillary First</b>: The perio chart auto advances to complete measurements for the maxillary arch before moving to the mandibular arch. By default, this sequence advances in the following order: <ul>
+<li>1-16 (facial)</li>
+<li>16-1 (lingual)</li>
+<li>32-17 (lingual)</li>
+<li>17-32 (facial)</li>
+</ul>
+</li>
+<li><b>Facials First</b>: The perio chart auto advances to complete all facial measurements before moving to lingual surfaces. By default, this sequence advances in the following order: <ul>
+<li>1-16 (facial)</li>
+<li>17-32 (facial)</li>
+<li>32-17 (lingual)</li>
+<li>16-1(lingual)</li>
+</ul>
+</li>
+</ul>
+<p><b>Current Direction</b>: The direction Advance Sequence is currently auto advancing. This updates automatically when the perio chart advances to a new section, but can be toggled to manually change the direction. Text indicates if the direction is going Forward or Reverse. </p>
+<p><b>Triplets</b>: Check to enter three measurements or values at once (e.g., plaque, calculus, or other values that are commonly the same for an entire tooth). </p>
+<p><b>Ging Marg+</b>: Check to enter positive values for the Gingival Margin. </p>
+<p><b>Microphone</b>: Click to begin <a href="periochartingvoice.html">Voice Perio Charting</a>.</p>
+<p><div class="Note">Note: Open Dental Cloud users are not able to utilize Voice Perio Charting.</div>
+</p>
+<p class="MarginBottomZero"><b>Launch Bola Voice</b>: For <a href="bridgebolaai.html">Bola AI</a> users, click to launch the Bola Voice Assistant program. </p>
+<ul class="MarginBottomGap">
+<li>If Bola AI is not enabled, there is a <b>Get Bola Voice</b> button. Click to launch a web page for additional information. To remove the button, go to Program Links, Bola AI, and check <i>Hide Unused Button</i></li>
+</ul>
+<p class="MarginBottomZero"><b>Number Entry</b>: Click numbers using the on-screen buttons or use the keyboard. </p>
+<ul class="MarginBottomGap">
+<li>On-screen: For numbers greater than 9, click the 10 button followed by the second digit (10 + 9 = 19).</li>
+<li>Keyboard: For numbers greater than 9, press Ctrl + the second number (Ctrl + 3 = 13). Backspace and Delete work as normal.</li>
+<li>A string of alphanumeric characters entered in a different text editor can also be copied and pasted into the grid (e.g., 1B1211C22S...), using Ctrl+V.</li>
+</ul>
+<p class="MarginBottomZero"><b>Plaque, Calculus, Bleeding, and Suppuration</b>: Enter using the on-screen buttons or use the keyboard shortcuts P, C, B, or S.  </p>
+<ul class="MarginBottomGap">
+<li>These are entered on the same rows as the probing depths. </li>
+<li>They are displayed as colored dots above each probing number. There is room for all four colored dots to show. </li>
+<li>These can be entered while charting probing depths or separately. If entering at the same time as the probing depths, enter the probing depth first (e.g., 5-bleeding). </li>
+<li>When entering the probing depth, Open Dental automatically advances to the next cell, but if the cell is empty, the program knows to enter the item on the previous probing entry. Customize colors for each by clicking the color boxes on the right.</li>
+<li>Statuses can be added to skipped teeth by manually selecting the gray cell for the skipped tooth. </li>
+</ul>
+<p class="MarginBottomZero"><b>Calc Index %</b>: Click to recalculate the four index percentages. </p>
+<ul class="MarginBottomGap">
+<li>Calculations are displayed in the box next to the corresponding index.</li>
+<li>Calculations are rounded down to the nearest whole number (e.g., 5.7% displays as 5%).</li>
+<li> Typically there are 6 sites per tooth and 32 teeth, totaling 192 possible sites. Example: If 19 of the 192 sites are marked as bleeding, the bleeding index is 10%. </li>
+<li>Teeth marked skipped are not considered available and are excluded from the calculation.</li>
+</ul>
+<p class="MarginBottomZero"><b>Navigation</b>: There are multiple ways to navigate the perio chart.  </p>
+<ul class="MarginBottomGap">
+<li>Use the cursor to click into a cell to enter data.</li>
+<li>Use the up, down, right, and left arrows on the keyboard to quickly navigate cells.</li>
+<li>Type J to move to the MGJ row of the select tooth area.</li>
+<li>Type G to move to the Ging Marg row of the selected tooth area.</li>
+<li>Type F to move to the Furc row of the selected tooth area.</li>
+<li>Type M to move to the Mobility row of the selected tooth area.</li>
+<li>Type a period (.) to move to the last probing area.</li>
+</ul>
+<h2>Numbers in Red</h2>
+<p>Flag measurements in the grid with red text when greater than or less than a certain value.</p>
+<img src="images/perioRed.png" width="229" height="192"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Count Teeth</b>: Click to refresh tooth counts.</li>
+<li><b>Red if</b>: Click the up/down arrows to change the value. Changes affect both old and new exams. Changes affect all patients. <ul>
+<li>For Probing, Ging Marg, CAL, Furc, and Mobility, measurements are flagged red when they are greater than or equal to the value.</li>
+<li>For MGJ, measurements are flagged red when less than or equal to the value. The main concern here is that it shows sites with little or no attached gingival.</li>
+</ul>
+</li>
+<li><b># Teeth</b>: For each row, this indicates the number of teeth that are marked in red. The printout lists out all the tooth numbers.</li>
+</ul>
+<h2>Additional Options</h2>
+<img src="images/perioOptions.png" width="204" height="95"/><p><b>Skip Teeth</b>: Select teeth to mark as skipped when perio charting.</p>
+<ul>
+<li>The perio exam does not start on a tooth marked missing.</li>
+<li>Missing teeth that will be skipped are indicated with a gray background, but measurements can still be recorded by manually clicking into a cell. </li>
+<li>Skipped teeth are automatically skipped during auto advance.</li>
+<li>Skipped teeth are stored with individual perio exams, so each exam can have different teeth skipped.</li>
+<li>Teeth marked skip in a previous exam are automatically marked skip in the next exam.</li>
+<li>To manually mark teeth to be skipped, select the teeth then click SkipTeeth. To unmark a tooth as skipped, select the tooth then click SkipTeeth again.</li>
+<li>Teeth with implants (i.e., with a completed or existing <a href="procedurecodeedit.html">Procedure Code</a> assigned the <i>Implant</i> paint type) are indicated on the perio chart with an <i>i</i> (e.g., 17i).</li>
+</ul>
+<br/><p><b>Graphical</b>: See <a href="graphicalperiochart.html">Graphical Perio Chart</a>.</p>
+<p><b>Save to Images</b>: Save the current perio chart to the Images module, Tooth Charts folder, named by date.</p>
+<p><b>Print</b>: Print the perio chart as it appears on the screen.</p>
+<h2>Additional Details</h2>
+<p><b>Supernumerary Teeth / Retained Deciduous Teeth</b>: <br/> There is no way to note these on the perio chart. Details about these teeth can be entered as an exam note.</p>
+<p><b>Primary Teeth</b>: <br/> Perio charting can only be done on permanent teeth. </p>
+<p><b>Missing Teeth</b>: <br/> In <a href="preferences.html">Preferences</a>, enable <i>Perio exams always skip missing teeth</i>, to skip missing teeth on auto advance when perio charting.</p>
+<p><b>Implants</b>: <br/> Disable the preference <i>Perio exams treat implants as not missing</i>, to treat implants as missing teeth on the perio exam.</p>
+<p>If the preference <i>Perio exams always skip missing teeth</i> is also enabled, implants are skipped on auto advance when perio charting, just as missing teeth are.</p>
+<h2>ODTouch</h2>
+<p>Perio exams can be completed when utilizing <a href="odtouchperio.html">ODTouch: Perio</a>. If an exam is open for a patient in ODTouch, the Perio Chart window is locked in Open Dental. </p>
+<p>Click <b>Unlock</b> to take over. This should only be done when the app is not being actively used. There is a warning prompt to ensure taking over is intentional. Click Yes to continue. </p>
+</div>
+</div>
+</body>
+</html>

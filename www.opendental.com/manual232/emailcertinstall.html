@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Email Certificate Install</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('emailcertinstall','emailsecuritycertificates','emailsetup','+manage','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/emailcertinstall.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/emailcertinstall.html" >v24.2</option><option value="https://www.opendental.com/manual241/emailcertinstall.html" >v24.1</option><option value="https://www.opendental.com/manual233/emailcertinstall.html" >v23.3</option><option value="https://www.opendental.com/manual232/emailcertinstall.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/emailcertinstall.html" >v23.1</option><option value="https://www.opendental.com/manual224/emailcertinstall.html" >v22.4</option><option value="https://www.opendental.com/manual223/emailcertinstall.html" >v22.3</option><option value="https://www.opendental.com/manual222/emailcertinstall.html" >v22.2</option><option value="https://www.opendental.com/manual221/emailcertinstall.html" >v22.1</option><option value="https://www.opendental.com/manual214/emailcertinstall.html" >v21.4</option><option value="https://www.opendental.com/manual213/emailcertinstall.html" >v21.3</option><option value="https://www.opendental.com/manual212/emailcertinstall.html" >v21.2</option><option value="https://www.opendental.com/manual211/emailcertinstall.html" >v21.1</option><option value="https://www.opendental.com/manual205/emailcertinstall.html" >v20.5</option><option value="https://www.opendental.com/manual204/emailcertinstall.html" >v20.4</option><option value="https://www.opendental.com/manual203/emailcertinstall.html" >v20.3</option><option value="https://www.opendental.com/manual202/emailcertinstall.html" >v20.2</option><option value="https://www.opendental.com/manual201/emailcertinstall.html" >v20.1</option><option value="https://www.opendental.com/manual194/emailcertinstall.html" >v19.4</option><option value="https://www.opendental.com/manual193/emailcertinstall.html" >v19.3</option><option value="https://www.opendental.com/manual192/emailcertinstall.html" >v19.2</option><option value="https://www.opendental.com/manual191/emailcertinstall.html" >v19.1</option><option value="https://www.opendental.com/manual184/emailcertinstall.html" >v18.4</option><option value="https://www.opendental.com/manual183/emailcertinstall.html" >v18.3</option><option value="https://www.opendental.com/manual182/emailcertinstall.html" >v18.2</option><option value="https://www.opendental.com/manual181/emailcertinstall.html" >v18.1</option><option value="https://www.opendental.com/manual174/emailcertinstall.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Email Certificate Install</p></div>
+<div class="GeneralPageContent">
+<p><span style="color:red">Encrypted Email is obsolete. Open Dental now offers <xref href="secureemail.xml">Secure Email</xref>, the easiest and most secure method to communicate with patients and outside providers via email. Encrypted Email was a previous method for secure communication. While still available, it is complex to set up and is not recommended. The information below is available as a reference but may not be up-to-date.</span></p>
+<p>Email security certificates are required for <a href="emailencrypted.html">Encrypted Email</a>. Once you have obtained an email security certificate and downloaded the pfx file to your computer, public and private certificate keys must be installed on each computer that will send/receive encrypted email. Also see <a href="emailsecuritycertificates.html">Email Certificate</a>.</p>
+<div class="Note">Note: This information is provided as a courtesy to assist you in setting up encrypted email. If you need further assistance, contact an IT professional or refer to your operating system documentation.</div>
+<br/><br/><p class="MarginBottomZero">On a workstation, there are three folders that pertain to security certificates: </p>
+<ul class="MarginBottomGap">
+<li><b>NHINDAnchors</b>: Certificates that you trust. Contains certificates for trusted certificate authorities such as Comodo, and also certificates for specific email addresses which are trusted. If a certificate for a certificate authority is in here, then every certificate created by that authority is also trusted. For example, if you have the Comodo anchor certificate, then you automatically trust any and all certificates created by Comodo.</li>
+<li><b>NHINDExternal</b>: Public certificates for email addresses which you have sent to before or trusted before. These certificates are public information and safe to share with others. These certificates are used to encrypt outgoing messages.</li>
+<li><b>NHINDPrivate</b>: Your private key certificates. These certificates are used to decrypt incoming messages which were encrypted with your public key. Do not share your private certificates with anyone, or else they could use your private key to read your encrypted messages.</li>
+</ul>
+<p>If these folders do not already exist, they will be created when you launch and login to Open Dental</p>
+<h2>Install Private Keys on a Workstation:</h2>
+<ol>
+<li>In Windows, click Start. In the Search programs and files field, type <i>mmc</i> then press Enter to run the Microsoft Management Console. <br/><img src="images/emailCertInstallMMC.gif" width="688" height="494" class="ImageInParagraph"/></li>
+<li>Click <b>File</b>, <b>Add/Remove Snap In</b>. <br/><img src="images/emailcertSnapIn.gif" width="263" height="215" class="ImageInParagraph"/></li>
+<li>Double click on <b>Certificates</b>. <br/><img src="images/emailcertCompAccount.gif" width="272" height="139" class="ImageInParagraph"/></li>
+<li>Select <b>Computer Account</b> and click <b>Next</b>.</li>
+<li>Click <b>Finish</b>, then <b>OK</b>. Certificate folders will be visible in tree view. <br/><img src="images/emailcertTreeView.gif" width="692" height="465" class="ImageInParagraph"/></li>
+<li>Import the .pfx or .p12 file to the NHINDPrivate folder:  <ul>
+<li>Right click on the <b>NHINDPrivate</b> folder, then click <b>All Tasks, Import</b>.</li>
+<li>Browse for the certificate file on your computer and complete the wizard to install the certificate. Set the file filter to All Files(*.*) to locate the pfx or p12 file.</li>
+<li>We recommend marking the key as exportable.</li>
+<li>You will need the key's password. It will be the same password you entered when saving the file.The files will display in the Certificates folder.</li>
+</ul>
+<br/><img src="images/emailCertInstallFileType.gif" width="786" height="434" class="ImageInParagraph"/></li>
+<li>Export the public key certificate. In the <b>NHINDPrivate/Certificates</b>folder, right click on the public key (e.g. xxxx @email.com), then click <b>All Tasks, Export</b>. Follow the wizard to export the public key as a .cer file. You may be asked if you'd like to export the private key. If so, choose <b>no</b>. <br/><img src="images/emailcertPrivExport.gif" width="445" height="140" class="ImageInParagraph"/></li>
+<li>In the <b>NHINDAnchors</b> and <b>NHINDExternal</b> folders:  <ul>
+<li>Right click on the NHINDAnchors or NHINDExternal folder, then click <b>All Tasks, Import.</b></li>
+<li>Follow the wizard to import the public key .cer file saved in step 7.</li>
+</ul>
+</li>
+</ol>
+<br/><div class="Note">Note: To send <a href="direct.html">Direct Messages</a>, public keys must also be installed on a hosting server. To host with Open Dental, see <a href="emailcerthost.html">Email Certificate Hosting</a>.</div>
+<br/><br/><p>Trust of Security Certificates: Trust of security certificates is computer-specific. If you send an email from the computer you use as your Email Inbox (Computer Name to Retrieve New Email From in <a href="emailsetup.html">Email Setup</a>), every time you send email, the recipient is added to your trusted list automatically. If you receive a message from unknown recipient that is not in your trusted list, when you open email and decrypt a message, you will be prompted to add the recipient to your trusted list.</p>
+</div>
+</div>
+</body>
+</html>

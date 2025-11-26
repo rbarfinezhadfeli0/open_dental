@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Adjustment</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('adjustments','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/adjustments.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/adjustments.html" >v24.2</option><option value="https://www.opendental.com/manual241/adjustments.html" >v24.1</option><option value="https://www.opendental.com/manual233/adjustments.html" >v23.3</option><option value="https://www.opendental.com/manual232/adjustments.html" >v23.2</option><option value="https://www.opendental.com/manual231/adjustments.html" >v23.1</option><option value="https://www.opendental.com/manual224/adjustments.html" >v22.4</option><option value="https://www.opendental.com/manual223/adjustments.html" >v22.3</option><option value="https://www.opendental.com/manual222/adjustments.html" >v22.2</option><option value="https://www.opendental.com/manual221/adjustments.html" >v22.1</option><option value="https://www.opendental.com/manual214/adjustments.html" >v21.4</option><option value="https://www.opendental.com/manual213/adjustments.html" >v21.3</option><option value="https://www.opendental.com/manual212/adjustments.html" >v21.2</option><option value="https://www.opendental.com/manual211/adjustments.html" >v21.1</option><option value="https://www.opendental.com/manual205/adjustments.html" >v20.5</option><option value="https://www.opendental.com/manual204/adjustments.html" >v20.4</option><option value="https://www.opendental.com/manual203/adjustments.html" >v20.3</option><option value="https://www.opendental.com/manual202/adjustments.html" >v20.2</option><option value="https://www.opendental.com/manual201/adjustments.html" >v20.1</option><option value="https://www.opendental.com/manual194/adjustments.html" >v19.4</option><option value="https://www.opendental.com/manual193/adjustments.html" >v19.3</option><option value="https://www.opendental.com/manual192/adjustments.html" >v19.2</option><option value="https://www.opendental.com/manual191/adjustments.html" >v19.1</option><option value="https://www.opendental.com/manual184/adjustments.html" >v18.4</option><option value="https://www.opendental.com/manual183/adjustments.html" >v18.3</option><option value="https://www.opendental.com/manual182/adjustments.html" >v18.2</option><option value="https://www.opendental.com/manual181/adjustments.html" >v18.1</option><option value="https://www.opendental.com/manual174/adjustments.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Adjustment</p></div>
+<div class="GeneralPageContent">
+<p>Adjustments are used to create additional charges or reduce charges on a patient account. </p>
+<p>In the <a href="account.html">Account Module</a>, in the toolbar, click <b>Adjustment</b>.</p>
+<img src="images/adjustment.png" width="733" height="531"/><p class="MarginBottomZero">Alternatively: </p>
+<ul class="MarginBottomGap">
+<li>In the Account Module, double-click a <a href="procedureedit.html">Procedure</a>, and click <b>Add New Adj</b>.</li>
+<li>In the Account Module, right-click a procedure, and click <b>Add Adjustment</b>.</li>
+<li>In a <a href="claimedit.html">Claim</a>, right-click a procedure, and click <b>Add Adjustment</b>. <i>Allow procedure adjustments from Edit Claim window</i> must be enabled in <a href="preferences.html">Preferences</a>.</li>
+</ul>
+<p>Adjustments affect production (see <a href="productionincome.html">Production and Income</a>). They are also used by the <a href="financecharges.html">Billing/Finance Charges</a>, <a href="latecharges.html">Late Charges</a>, <a href="apptbreak.html">Broken Appointments Automation</a>, <a href="discountplans.html">Discount Plans</a>, and <a href="salestax.html">Sales Tax</a> tools. Adjustments can be attached to a procedure but are always attached to a single patient and assigned to a provider and can be assigned to a clinic. </p>
+<p>To view a list of adjustments added in a date range, run the <a href="reportdailyadj.html">Daily Adjustments Report</a>.</p>
+<h2>Adjustment Details</h2>
+<p>Enter the adjustment amount, type, etc. at the top of the window.</p>
+<img src="images/adjCreateDetails.png" width="704" height="185"/><p><b>Entry Date</b>: Read only. The date the adjustment was created.</p>
+<p><b>Adjustment Date</b>: Typically the same as the entry date. This is the date that appears on the account and most reports. Modifying this date could potentially change historical data.</p>
+<p><b>(procedure date)</b>: The date of the procedure associated with the adjustment. Read only when a procedure is attached to the adjustment.</p>
+<p><b>Amount</b>: The amount of the adjustment.</p>
+<p class="MarginBottomZero"><b>Provider</b>: Defaults to the patient's primary provider. Click the dropdown or [...] to select a different provider or attach a procedure to inherit the procedure's provider. </p>
+<ul class="MarginBottomGap">
+<li>If using clinics, only providers with access to all clinics or restricted to the selected clinic are available.</li>
+</ul>
+<p class="MarginBottomZero"><b>Clinic</b>: Defaults to the patient's assigned clinic. Click the dropdown to select a different clinic or attach a procedure to inherit the procedure's clinic. </p>
+<ul class="MarginBottomGap">
+<li>If the user is restricted to specific clinics in <a href="securityusers.html">User Edit</a>, only these clinics are available.</li>
+<li>Creating new adjustments through the <a href="procedureedit.html">Procedure Edit</a> window automatically updates the clinic and provider on the adjustment to match that of the procedure.</li>
+<li>Linking existing adjustments to a procedure through the Procedure Edit window does not automatically update the clinic and provider assignment. Either choose an adjustment with a matching clinic and provider or edit the adjustment to match the procedure.</li>
+</ul>
+<p><b>Additions</b>: List of adjustment types that add the adjustment amount to the patient's account balance.</p>
+<p><b>Subtractions</b>: List of adjustment types that subtract the adjustment amount from the patient's account balance (issues a credit of production).</p>
+<p class="MarginBottomZero"><b>Only show TSI excluded adjustment types</b>: Only available when <a href="tsicollections.html">TSI Collections</a> is enabled and the selected patient has a <a href="definitionsbillingtypes.html">Billing Type</a> marked as <i>C </i>(Collections). Determine which Adjustment Types are listed: </p>
+<ul class="MarginBottomGap">
+<li>Checked: Default. Only the <i>Exclude Negative Adj Type</i> and <i>Exclude Positive Adj Type</i> Adjustment Types defined in <a href="tsisetup.html">TSI Setup</a> are listed.</li>
+<li>Unchecked: All non-hidden Adjustment Types are listed. </li>
+</ul>
+<p><div class="Note">Note: <ul>
+<li>To customize the list of adjustment types, see <a href="definitionsadjtypes.html">Definitions: Adj Types</a>.</li>
+<li>Additions and Subtractions only display types the user has access to. To edit available adjustment types for a user, edit the <i>Adjustment Type Deny </i> security permission. See Security section below.</li>
+</ul>
+</div>
+</p>
+<h2>Procedure</h2>
+<p>Attach or detach this adjustment from a procedure. To set whether users are required to allocate an adjustment to a procedure, see Adjustments in <a href="allocationssetup.html">Allocations Setup</a>. </p>
+<p>The clinic and provider of the adjustment must match the attached procedure. If the provider and clinic do not match, the procedure value is not updated and the adjustment is considered a separate charge when a payment is applied.</p>
+<img src="images/adjProcAttach.png" width="623" height="200"/><p><b>Attach</b>: Select a completed procedure from the <a href="selectprocedure.html">Select Procedure</a> window. <i>Subtraction</i> adjustments reduce the procedure fee and <i>Addition</i> adjustments increase the fee.<br/><div class="Note">Note: Procedures cannot be attached to adjustments that are attached to a patient payment or <a href="paymentplandynamic.html">Payment Plan</a>.</div>
+</p>
+<p><b>Detach</b>: Remove the attached procedure from the adjustment.</p>
+<p><b>Edit Anyway</b>: Button is only visible if the adjustment is attached to a procedure and the Adjustment setting in Allocations Setup is set to <i>Rigorous</i>. Click to change the provider or clinic. Users must have the <i>Setup</i> security permission.</p>
+<h2>Note and Buttons</h2>
+<p>Add notes regarding the adjustment, save changes, or delete the adjustment at the bottom of the window.</p>
+<img src="images/adjNoteButtons.png" width="705" height="105"/><p><b>Delete</b>: Remove the adjustment from the patient's account. Adjustments attached to a payment or payment plan cannot be deleted.</p>
+<p><b>Note</b>: Enter any notes about the adjustment. These notes can be included on statements when the <i>Show notes for adjustments</i> preference is enabled. This text box supports <a href="rightclicktextboxes.html">Right-Click Options</a>.</p>
+<p>Click <b>Save</b> to exit the window and add a new adjustment or keep changes. If a warning appears, see Negative Adjustments section below for additional information.</p>
+<h2>Add Multiple Adjustments</h2>
+<p>To create multiple adjustments attached to multiple procedures at once, see <a href="adjustmentsmultiwindow.html">Add Multiple Adjustments</a>.</p>
+<h2>Negative Adjustments</h2>
+<p>The <i>Negative Adjustments</i> preference determines if users are able to create subtraction adjustments that exceed the estimated patient portion remaining. When the preference is set to <i>Block</i>, there is a warning that the adjustment cannot be created. </p>
+<img src="images/adjNegBlock.png" width="409" height="146"/><p>Click <b>OK</b> on this message to return to the Edit Adjustment window and edit the adjustment as to not exceed the estimated patient portion remaining.</p>
+<p>If the <i>Negative Adjustment</i> preference is set to <i>Warn</i> and the adjustment exceeds the estimated patient portion remaining, there is an <i>Overpaid Procedure Warning</i> instead. Users can choose to <b>Cancel</b> the adjustment or click <b>OK</b> to proceed with creating the adjustment.</p>
+<h2>Security</h2>
+<p class="MarginBottomZero">The following <a href="permissions.html">Permissions</a> affect access to adjustments: </p>
+<ul class="MarginBottomGap">
+<li><i>Adjustment Create</i>: Users must have this permission to create new adjustments. Users without this permission can create $0 adjustments.</li>
+<li><i>Adjustment Edit</i>: Users must have this permission to edit existing adjustments.</li>
+<li><i>Adjustment Edit Zero Amount</i>: Allow users without <i>Adjustment Edit</i> to edit $0 adjustments with today's date.</li>
+<li><i>Adjustment Type Deny</i>: Permission denies access to certain Adjustment Types. See below.</li>
+</ul>
+<p><b>Adjustment Type Deny</b></p>
+<p>In the User Groups tab of the Security window, select a user group to deny access to specific Adjustment Types (e.g., finance charge, professional discount, etc.) If there are existing denied Adjustment Types for the user group, the permission box is filled. If the user group has no denied Adjustment Types, the box appears blank.</p>
+<img src="images/adjTypeDeny.gif" width="213" height="76"/><p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Click the box for the <i>Adjustment Type Deny</i> permission. The Definition Picker opens automatically. </li>
+. <img src="images/adjTypeDenyPicker.png" width="511" height="408"/><li> Highlight the Adjustment Types to deny for the user group.</li>
+<li>Click <b>OK</b> to close the Definition Picker and save changes.</li>
+</ol>
+<p>Users in the selected user group do not have access to the selected Adjustment Types. When creating a new adjustment (or editing an existing adjustment), denied Adjustment Types are hidden in the Adjustment Type lists.</p>
+<p>If a user is assigned to multiple User Groups, they are only denied access to specific Adjustment Types when all assigned User Groups are denied access. </p>
+</div>
+</div>
+</body>
+</html>

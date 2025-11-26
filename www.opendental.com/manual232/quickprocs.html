@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Quick Procs</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('quickprocs','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/quickprocs.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/quickprocs.html" >v24.2</option><option value="https://www.opendental.com/manual241/quickprocs.html" >v24.1</option><option value="https://www.opendental.com/manual233/quickprocs.html" >v23.3</option><option value="https://www.opendental.com/manual232/quickprocs.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/quickprocs.html" >v23.1</option><option value="https://www.opendental.com/manual224/quickprocs.html" >v22.4</option><option value="https://www.opendental.com/manual223/quickprocs.html" >v22.3</option><option value="https://www.opendental.com/manual222/quickprocs.html" >v22.2</option><option value="https://www.opendental.com/manual221/quickprocs.html" >v22.1</option><option value="https://www.opendental.com/manual214/quickprocs.html" >v21.4</option><option value="https://www.opendental.com/manual213/quickprocs.html" >v21.3</option><option value="https://www.opendental.com/manual212/quickprocs.html" >v21.2</option><option value="https://www.opendental.com/manual211/quickprocs.html" >v21.1</option><option value="https://www.opendental.com/manual205/quickprocs.html" >v20.5</option><option value="https://www.opendental.com/manual204/quickprocs.html" >v20.4</option><option value="https://www.opendental.com/manual203/quickprocs.html" >v20.3</option><option value="https://www.opendental.com/manual202/quickprocs.html" >v20.2</option><option value="https://www.opendental.com/manual201/quickprocs.html" >v20.1</option><option value="https://www.opendental.com/manual194/quickprocs.html" >v19.4</option><option value="https://www.opendental.com/manual193/quickprocs.html" >v19.3</option><option value="https://www.opendental.com/manual192/quickprocs.html" >v19.2</option><option value="https://www.opendental.com/manual191/quickprocs.html" >v19.1</option><option value="https://www.opendental.com/manual184/quickprocs.html" >v18.4</option><option value="https://www.opendental.com/manual183/quickprocs.html" >v18.3</option><option value="https://www.opendental.com/manual182/quickprocs.html" >v18.2</option><option value="https://www.opendental.com/manual181/quickprocs.html" >v18.1</option><option value="https://www.opendental.com/manual174/quickprocs.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Quick Procs</p></div>
+<div class="GeneralPageContent">
+<p>Use the Quick Procs button to quickly add procedures to the patient's account. </p>
+<p>In the <a href="account.html">Account Module</a>, click the <b>Quick Procs</b> dropdown. </p>
+<img src="images/quickprocs.gif" width="846" height="186"/><p>Quickprocs are useful to add retail items such as toothpaste or to add procedures that were not added via the Chart Module.</p>
+<h2>Add Quick Proc Items to the Patient's Account</h2>
+<p class="MarginBottomZero">There are two ways to add Quick Proc items. The <i>Account Procs Quick Add </i><a href="permissions.html">Permission</a> is required. </p>
+<ol class="MarginBottomGap">
+<li>Click the Quick Procs dropdown to select an item. The dropdown options are set up in <a href="definitionsaccountquickadd.html">Definitions: Account Procs Quick Add</a>. <br/></li>
+<li> Click the Quick Procs button (not the dropdown), type the full procedure code in the box, then press Enter. Codes are case sensitive. <i>Create Completed Procedure (or set complete) </i> permission is also required.<br/><img src="images/quickprocsButton.gif" width="790" height="29" class="ImageInParagraph"/></li>
+</ol>
+<div class="Note">Note: <ul>
+<li>Any procedures added using Quick Procs have a status of complete and also show in the <a href="chart.html">Chart Module</a> Progress Notes.</li>
+<li>If you add a procedure that requires a tooth or surface, users are prompted with a message to fix the tooth number or surface. Click <b>OK</b>, then enter the information on the <a href="procedureedit.html">Procedure Info Window</a>.</li>
+<li>When added to the patient's account, the procedure description always matches the procedure code's description, not necessarily the definition's name.</li>
+<li>The provider assigned to the procedure defaults to the patient's primary provider, unless the procedure code has a provider assigned (<a href="procedurecodeedit.html">Procedure Code</a>, Assigned to Provider). Double-click a procedure to change the provider.</li>
+<li>Every time a quick proc item is added to a patient's chart, a log is created in the <a href="audittrail.html">Audit Trail</a>.</li>
+<li>Base units are not considered when adding procedures using Quick Procs.</li>
+</ul>
+</div>
+<br/><br/><h2>Set up Quick Proc Items</h2>
+<p class="MarginBottomZero">All quick proc items must have a procedure code. </p>
+<ol class="MarginBottomGap">
+<li>Create new procedure codes for any quick proc items that don't already exist in the procedure code list. You can use any code you want, though you may want to consider using codes that are easy to type.</li>
+<li>Set up items that show in the Quick Proc dropdown. See <a href="definitionsaccountquickadd.html">Definitions: Account Procs Quick Add</a>.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>

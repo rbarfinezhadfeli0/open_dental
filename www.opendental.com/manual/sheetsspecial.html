@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Sheet Special Field</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('sheetsspecial','sheetsetup','sheets','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/sheetsspecial.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/sheetsspecial.html" >v24.2</option><option value="https://www.opendental.com/manual241/sheetsspecial.html" >v24.1</option><option value="https://www.opendental.com/manual233/sheetsspecial.html" >v23.3</option><option value="https://www.opendental.com/manual232/sheetsspecial.html" >v23.2</option><option value="https://www.opendental.com/manual231/sheetsspecial.html" >v23.1</option><option value="https://www.opendental.com/manual224/sheetsspecial.html" >v22.4</option><option value="https://www.opendental.com/manual223/sheetsspecial.html" >v22.3</option><option value="https://www.opendental.com/manual222/sheetsspecial.html" >v22.2</option><option value="https://www.opendental.com/manual221/sheetsspecial.html" >v22.1</option><option value="https://www.opendental.com/manual214/sheetsspecial.html" >v21.4</option><option value="https://www.opendental.com/manual213/sheetsspecial.html" >v21.3</option><option value="https://www.opendental.com/manual212/sheetsspecial.html" >v21.2</option><option value="https://www.opendental.com/manual211/sheetsspecial.html" >v21.1</option><option value="https://www.opendental.com/manual205/sheetsspecial.html" >v20.5</option><option value="https://www.opendental.com/manual204/sheetsspecial.html" >v20.4</option><option value="https://www.opendental.com/manual203/sheetsspecial.html" >v20.3</option><option value="https://www.opendental.com/manual202/sheetsspecial.html" >v20.2</option><option value="https://www.opendental.com/manual201/sheetsspecial.html" >v20.1</option><option value="https://www.opendental.com/manual194/sheetsspecial.html" >v19.4</option><option value="https://www.opendental.com/manual193/sheetsspecial.html" >v19.3</option><option value="https://www.opendental.com/manual192/sheetsspecial.html" >v19.2</option><option value="https://www.opendental.com/manual191/sheetsspecial.html" >v19.1</option><option value="https://www.opendental.com/manual184/sheetsspecial.html" >v18.4</option><option value="https://www.opendental.com/manual183/sheetsspecial.html" >v18.3</option><option value="https://www.opendental.com/manual182/sheetsspecial.html" >v18.2</option><option value="https://www.opendental.com/manual181/sheetsspecial.html" >v18.1</option><option value="https://www.opendental.com/manual174/sheetsspecial.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Sheet Special Field</p></div>
+<div class="GeneralPageContent">
+<p>Special fields are Sheet Field Types used in Treatment Plan Layout, Referral Letter Layout, Chart Layout, and Patient Dashboard.</p>
+<p>In <a href="sheetsetup.html">Edit Sheet Def</a>, click <b>Special</b>.</p>
+<img src="images/sheetsTreatmentPlanSpecial.gif" width="488" height="302"/><p>Alternatively, in Sheet Def Edit double-click an existing Special field in the preview area or Fields list to edit.</p>
+<p><b>FieldName</b>: There mulitple options depending on which sheet a user is editing. See below for examples of each field.</p>
+<p class="MarginBottomZero"><b>X and Y Pos</b>: Set the location of the upper left corner of the image in relation to the X and Y axis.  </p>
+<ul class="MarginBottomGap">
+<li>X = horizontal.</li>
+<li>Y = vertical.</li>
+</ul>
+<p><b>Width / Height</b>: The width and height of the image.The tooth chart will always have a fixed width to height ratio. Text size may not change even if the size of the field is increased.</p>
+<h2>Tooth Chart</h2>
+<p class="MarginBottomZero">The Tooth Chart fields can be added to the <a href="sheetstreatplan.html">Treatment Plan Layout</a>, <a href="sheetsreferrals.html">Referral Letter Layout</a>, <a href="layout.html">Chart Layout</a>, and <a href="patientdashboard.html">Patient Dashboard</a>. </p>
+<ul class="MarginBottomGap">
+<li>For Treatment Plan Sheets, the tooth chart displays all procedures.</li>
+<li>For Referral Letters, the tooth chart only displays procedures completed the same day the letter is generated.</li>
+</ul>
+<p>toothChart</p>
+<img src="images/sheetsSpecialToothChart.gif" width="418" height="316"/><p>toothChartLegend (not available on Chart Layout)</p>
+<img src="images/sheetsSpecialTCLegend.gif" width="659" height="23"/><h2>Insurance</h2>
+<p>Insurance fields can be added to Patient Dashboard Layouts.</p>
+<p>familyInsurance</p>
+<img src="images/sheetsSpecialFamIns.gif" width="202" height="89"/><p>individualInsurance</p>
+<img src="images/sheetsSpeicalIndIns.gif" width="202" height="169"/><h2>Chart Module</h2>
+<p>The following fields can be added to Chart Module Layouts.</p>
+<p>chartModuleTabs</p>
+<img src="images/sheetsSpecialChartModuleTabs.gif" width="469" height="268"/><p>TreatmentNotes</p>
+<img src="images/sheetsSpecialTreatmentNotes.gif" width="419" height="78"/><p>TrackToothProcDates</p>
+<img src="images/sheetsSpecialTrackToothProcs.png" width="419" height="36"/></div>
+</div>
+</body>
+</html>

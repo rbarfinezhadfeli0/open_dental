@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Carriers</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('carriers','+lists','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/carriers.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/carriers.html" >v24.2</option><option value="https://www.opendental.com/manual241/carriers.html" >v24.1</option><option value="https://www.opendental.com/manual233/carriers.html" >v23.3</option><option value="https://www.opendental.com/manual232/carriers.html" >v23.2</option><option value="https://www.opendental.com/manual231/carriers.html" >v23.1</option><option value="https://www.opendental.com/manual224/carriers.html" >v22.4</option><option value="https://www.opendental.com/manual223/carriers.html" >v22.3</option><option value="https://www.opendental.com/manual222/carriers.html" >v22.2</option><option value="https://www.opendental.com/manual221/carriers.html" >v22.1</option><option value="https://www.opendental.com/manual214/carriers.html" >v21.4</option><option value="https://www.opendental.com/manual213/carriers.html" >v21.3</option><option value="https://www.opendental.com/manual212/carriers.html" >v21.2</option><option value="https://www.opendental.com/manual211/carriers.html" >v21.1</option><option value="https://www.opendental.com/manual205/carriers.html" >v20.5</option><option value="https://www.opendental.com/manual204/carriers.html" >v20.4</option><option value="https://www.opendental.com/manual203/carriers.html" >v20.3</option><option value="https://www.opendental.com/manual202/carriers.html" >v20.2</option><option value="https://www.opendental.com/manual201/carriers.html" >v20.1</option><option value="https://www.opendental.com/manual194/carriers.html" >v19.4</option><option value="https://www.opendental.com/manual193/carriers.html" >v19.3</option><option value="https://www.opendental.com/manual192/carriers.html" >v19.2</option><option value="https://www.opendental.com/manual191/carriers.html" >v19.1</option><option value="https://www.opendental.com/manual184/carriers.html" >v18.4</option><option value="https://www.opendental.com/manual183/carriers.html" >v18.3</option><option value="https://www.opendental.com/manual182/carriers.html" >v18.2</option><option value="https://www.opendental.com/manual181/carriers.html" >v18.1</option><option value="https://www.opendental.com/manual174/carriers.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Carriers</p></div>
+<div class="GeneralPageContent">
+<p>Carriers are automatically added to the main list when entered on an insurance plan, but carriers can also be added manually without being attached to a plan.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Lists, Insurance Carriers.</p>
+<img src="images/carrier.png" width="915" height="288"/><p class="MarginBottomZero">The number of plans a carrier is attached to is indicated in the Plans column. To narrow or sort the list of carriers, enter filter criteria: </p>
+<ul class="MarginBottomGap">
+<li><b>Carrier:</b> Filter by carrier name. </li>
+<li><b>ElectID</b>: Filter by Electronic ID.</li>
+<li><b>Phone</b>: Filter by carrier name. </li>
+<li><b>Show Hidden</b>: Check to include carriers that have been marked as <i>Hidden</i>.</li>
+<li><b>CDAnet Only</b>: Check to only show CDAnet carriers in the list. (Canadian Dental Association)</li>
+</ul>
+<p><b>Add</b>: Open Edit Carrier (see below) to create a new carrier.</p>
+<p><b>Combine</b>: If multiple entries for the same carrier exist, combine them. See <a href="carrierscombine.html">Combine Carriers</a>.</p>
+<h2>Edit Carrier</h2>
+<p>Double-click an existing carrier to edit or click <b>Add</b> to create a new one. </p>
+<img src="images/carrierEdit.png" width="546" height="465"/><p>The <i>Carrier Edit </i><a href="permissions.html">Permission</a> is required to edit or update an existing carrier. The <i>Carrier Edit</i> and <i>Carrier Create</i> permissions are required to create a new carrier.</p>
+<p><b>Carrier ID</b>: A system-generated unique identifier that is useful for third-party reporting.</p>
+<p><b>Name, Phone, Address, Address2</b>: Carrier name, phone, and mailing address.</p>
+<p><b>Electronic ID</b>: The electronic ID used when submitting e-claims. Insurance companies or clearinghouses provide the correct number.</p>
+<p class="MarginBottomZero"><b>Send Electronically</b>: Determines the carrier's default setting for Send Electronically on the <a href="insplan.html">Insurance Plan</a>. </p>
+<ul class="MarginBottomGap">
+<li>Send Claims Electronically: Allow sending <a href="clearinghouses.html">E-Claims</a> to this carrier.</li>
+<li>Don't Send Claims Electronically: Do not allow sending e-claims to this carrier (e.g., claims must be printed and mailed).</li>
+<li>Don't Send Secondary Claims Electronically: Do not allow sending secondary e-claims to this carrier (e.g., when carrier requires that secondary claims are mailed with a copy of the primary EOB).</li>
+</ul>
+<p class="MarginBottomZero"><b>Send Paid By Other Insurance At</b>: Determines how primary paid amounts are sent to secondary insurance claims. </p>
+<ul class="MarginBottomGap">
+<li>Default: Uses the default as set in <a href="preferences.html">Preferences</a>.</li>
+<li>Claim Level: Send claim level paid amounts (e.g., amount of the claim paid overall).</li>
+<li>Procedure Level: Send procedure-level paid amounts (e.g., amount of claim paid procedure by procedure).</li>
+<li>Both: Send both claim and procedure level paid amounts.</li>
+</ul>
+<p class="MarginBottomZero"><b>ERA Automation</b>: Determines how <a href="era835workflow.html">ERAs</a> for this carrier are processed. </p>
+<ul class="MarginBottomGap">
+<li>Use Global Preference: Uses the global preference as set in Preferences.</li>
+<li>Review All: All ERAs must be processed manually for this carrier.</li>
+<li>Semi-automatic: ERAs for this carrier can be processed with a single click of the Auto Process button on the ERA window. This receives the claims associated with the ERA and finalizes the payment. ERAs can also be processed manually if needed.</li>
+<li>Fully-automatic: ERAs for this carrier are automatically processed when imported, receiving the claims associated with the ERA and finalizing the payment. If an ERA does not get automatically processed while being imported for any reason, users can still attempt to process them by clicking the Auto Process button on the ERA window or process them manually.</li>
+</ul>
+<p><b>Consolidate Ortho Ins Payments</b>: Determine if ortho insurance payments are consolidated. This affects the selected insurance plan only. The global preference is determined by the <i>Consolidate Ortho Insurance Payments</i> preference.</p>
+<p><b>Carrier Group</b>: Only visible if carrier group names exist in <a href="definitionscarriergroupnames.html">Definitions: Carrier Group Names</a>. Select a carrier group to associate with the carrier. Useful for queries.</p>
+<p><b>Hidden</b>: Hide this carrier so it is no longer available as a selection.</p>
+<p><b>Is trusted for real-time eligibility</b>: Check to enable automated import of <a href="ebenefits.html">Electronic Eligibility and Benefits</a> when using <a href="scheduledprocesses.html">Scheduled Processes</a> for this carrier.</p>
+<p><b>Appt Text Back Color (black=none)</b>: Background color for the carrier's name in the appointment box when <i>Insurance Color</i> is added to the appointment view. See <a href="appointmentvieweditwindow.html">Appointment View Edit</a>. Click <b>None</b> to clear current color selection. <div class="Note">Note: Selecting the color black is equivalent to having no color selected.</div>
+</p>
+<p class="MarginBottomZero"><b>Import Benefit Coinsurance:</b> When importing benefits using Electronic Eligibility, select how Open Dental imports received carrier benefit information. This affects insurance estimates. </p>
+<ul class="MarginBottomGap">
+<li>Carrier sends patient % (default): The carrier sends the percentage covered by the patient. Open Dental imports this as the percentage covered by insurance. For example, if patient pays 20%, Open Dental imports this as Insurance Pays 80%.</li>
+<li>Carrier sends insurance %: The carrier sends the percentage covered by insurance. Open Dental imports these benefits as is.</li>
+</ul>
+<p><b>Ins Plan Subscribers</b>: Indicates how many insurance plan subscribers are associated with this carrier. Click the dropdown to see all current and previous subscribers.</p>
+<p><b>Delete:</b> Only carriers not attached to any insurance plans or subscribers can be deleted. Usually, this is a carrier that was added but never used. For duplicate carriers attached to subscribers, use <a href="carrierscombine.html">Combine Carriers</a> from the Carriers list instead.</p>
+</div>
+</div>
+</body>
+</html>

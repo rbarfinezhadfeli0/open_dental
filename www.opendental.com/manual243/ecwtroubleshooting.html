@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - eCW Troubleshooting</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('ecwtroubleshooting','bridgeeclinicalworks','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/ecwtroubleshooting.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/ecwtroubleshooting.html" >v24.2</option><option value="https://www.opendental.com/manual241/ecwtroubleshooting.html" >v24.1</option><option value="https://www.opendental.com/manual233/ecwtroubleshooting.html" >v23.3</option><option value="https://www.opendental.com/manual232/ecwtroubleshooting.html" >v23.2</option><option value="https://www.opendental.com/manual231/ecwtroubleshooting.html" >v23.1</option><option value="https://www.opendental.com/manual224/ecwtroubleshooting.html" >v22.4</option><option value="https://www.opendental.com/manual223/ecwtroubleshooting.html" >v22.3</option><option value="https://www.opendental.com/manual222/ecwtroubleshooting.html" >v22.2</option><option value="https://www.opendental.com/manual221/ecwtroubleshooting.html" >v22.1</option><option value="https://www.opendental.com/manual214/ecwtroubleshooting.html" >v21.4</option><option value="https://www.opendental.com/manual213/ecwtroubleshooting.html" >v21.3</option><option value="https://www.opendental.com/manual212/ecwtroubleshooting.html" >v21.2</option><option value="https://www.opendental.com/manual211/ecwtroubleshooting.html" >v21.1</option><option value="https://www.opendental.com/manual205/ecwtroubleshooting.html" >v20.5</option><option value="https://www.opendental.com/manual204/ecwtroubleshooting.html" >v20.4</option><option value="https://www.opendental.com/manual203/ecwtroubleshooting.html" >v20.3</option><option value="https://www.opendental.com/manual202/ecwtroubleshooting.html" >v20.2</option><option value="https://www.opendental.com/manual201/ecwtroubleshooting.html" >v20.1</option><option value="https://www.opendental.com/manual194/ecwtroubleshooting.html" >v19.4</option><option value="https://www.opendental.com/manual193/ecwtroubleshooting.html" >v19.3</option><option value="https://www.opendental.com/manual192/ecwtroubleshooting.html" >v19.2</option><option value="https://www.opendental.com/manual191/ecwtroubleshooting.html" >v19.1</option><option value="https://www.opendental.com/manual184/ecwtroubleshooting.html" >v18.4</option><option value="https://www.opendental.com/manual183/ecwtroubleshooting.html" >v18.3</option><option value="https://www.opendental.com/manual182/ecwtroubleshooting.html" >v18.2</option><option value="https://www.opendental.com/manual181/ecwtroubleshooting.html" >v18.1</option><option value="https://www.opendental.com/manual174/ecwtroubleshooting.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>eCW Troubleshooting</p></div>
+<div class="GeneralPageContent">
+<p>Below are some common problems and solutions when using Open Dental and <a href="bridgeeclinicalworks.html">eClinicalWorks</a>. Also see <a href="ecwtechnical.html">eCW Technical</a>.</p>
+<p>New features and bug fixes are constantly being added to the bridge. Frequently, problems can be fixed by updating to the most recent stable version of Open Dental. If your current version of Open Dental is compatible with the eCW version you are using, newer versions of Open Dental will also be compatible. If you are going to update your eCW version, it is a good idea to update your Open Dental version well ahead of time in case an eCW fix required changes to Open Dental.</p>
+<p class="MarginBottomZero">Cases fixed by updating to most recent stable version of Open Dental: </p>
+<ul class="MarginBottomGap">
+<li>Provider Abbreviation issue: Enhanced on 7/8/2011 in Open Dental v.11.0 and eCW v. 9.0.33. provider.EcwID was added so that users could change their provider.Abbr abbreviations without breaking the eCW-Open Dental interface.</li>
+<li>Load Balancer Issue: Fixed on 3/21/2013 in Open Dental v. 12.4.52 and 13.1.16, and eCW v. 9.0.49.</li>
+<li>Tomcat Authentication Issue: Fixed on 2/23/2012, in Open Dental v. 12.0.18 or 12.1.5, and eCW v. 9.0.35. This resolves this issue in regular tomcat environments.</li>
+</ul>
+<p>For a few clients, eCW upgrades may not be an option, and they may need to go through eCW Release Management for approval of a customized fix without an eCW upgrade.</p>
+<h2>Other Problems/Solutions</h2>
+<p><b>Problem: Medical panel will not load and an error message shows about a script failing.</b></p>
+<p>Solution: This may be an issue on Load Balancing Servers during heavy use hours of production, when many computers are accessing the eCW database at once.Update to version 14.1.9 or greater. In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>, eClinicalWorks, then check the <b>Exclude LBSESSIONID</b> box.</p>
+<p><b>Problem: UserName already in use when trying to change a user's password within Open Dental.</b></p>
+<p class="MarginBottomZero">Solution: If using a version of Open Dental prior to 12.2.29, the duplicate user names will need to be renamed so that they are unique, then they must be hidden. If using Open Dental v. 12.2.29 or later, the duplicate user names only need to be hidden.  </p>
+<ol class="MarginBottomGap">
+<li>In the <a href="security.html">Security</a>, double click on a duplicate user to edit.</li>
+<li>Alter the user name so it is unique, then check the Is Hidden box.</li>
+<li>Repeat for all duplicated users.  <p>After names are unique and hidden, the password for the user you are logged in as can be changed.</p>
+</li>
+</ol>
+<p><b>Problem: HL7 SIU messages are not created by eClinicalWorks if you Cut and Paste an appointment. </b></p>
+<p>Solution: After pasting, open the appointment in eCW and change the status for the appointment information from eCW to show up in Open Dental.</p>
+<p><b>Problem: The Finish &amp; Send button not enabled inside the appointment.</b></p>
+<p>Solution: The Finish &amp; Send button inside the appointment will only be enabled if the appointment was originally created in eCW and transferred to Open Dental (that is, only if the visitID matches the aptNum). If this is an issue please call Open Dental to troubleshoot.</p>
+</div>
+</div>
+</body>
+</html>

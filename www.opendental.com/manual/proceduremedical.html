@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Procedure - Medical Tab</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('proceduremedical','procedureedit','entertreatment','+chartTabs','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/proceduremedical.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/proceduremedical.html" >v24.2</option><option value="https://www.opendental.com/manual241/proceduremedical.html" >v24.1</option><option value="https://www.opendental.com/manual233/proceduremedical.html" >v23.3</option><option value="https://www.opendental.com/manual232/proceduremedical.html" >v23.2</option><option value="https://www.opendental.com/manual231/proceduremedical.html" >v23.1</option><option value="https://www.opendental.com/manual224/proceduremedical.html" >v22.4</option><option value="https://www.opendental.com/manual223/proceduremedical.html" >v22.3</option><option value="https://www.opendental.com/manual222/proceduremedical.html" >v22.2</option><option value="https://www.opendental.com/manual221/proceduremedical.html" >v22.1</option><option value="https://www.opendental.com/manual214/proceduremedical.html" >v21.4</option><option value="https://www.opendental.com/manual213/proceduremedical.html" >v21.3</option><option value="https://www.opendental.com/manual212/proceduremedical.html" >v21.2</option><option value="https://www.opendental.com/manual211/proceduremedical.html" >v21.1</option><option value="https://www.opendental.com/manual205/proceduremedical.html" >v20.5</option><option value="https://www.opendental.com/manual204/proceduremedical.html" >v20.4</option><option value="https://www.opendental.com/manual203/proceduremedical.html" >v20.3</option><option value="https://www.opendental.com/manual202/proceduremedical.html" >v20.2</option><option value="https://www.opendental.com/manual201/proceduremedical.html" >v20.1</option><option value="https://www.opendental.com/manual194/proceduremedical.html" >v19.4</option><option value="https://www.opendental.com/manual193/proceduremedical.html" >v19.3</option><option value="https://www.opendental.com/manual192/proceduremedical.html" >v19.2</option><option value="https://www.opendental.com/manual191/proceduremedical.html" >v19.1</option><option value="https://www.opendental.com/manual184/proceduremedical.html" >v18.4</option><option value="https://www.opendental.com/manual183/proceduremedical.html" >v18.3</option><option value="https://www.opendental.com/manual182/proceduremedical.html" >v18.2</option><option value="https://www.opendental.com/manual181/proceduremedical.html" >v18.1</option><option value="https://www.opendental.com/manual174/proceduremedical.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Procedure - Medical Tab</p></div>
+<div class="GeneralPageContent">
+<p>Enter information on this tab when sending medical claims or if insurance requires ICD-10 diagnosis codes attached to a procedure.</p>
+<p>In the <a href="procedureedit.html">Procedure</a> Edit window, click the Medical tab. </p>
+<img src="images/procedureInfoMedical.png" width="791" height="255"/><p>The Medical tab appears when <a href="medicalins.html">Medical Insurance</a> is enabled in <a href="showfeatures.html">Show Features</a>. </p>
+<p><b>Medical Code:</b> Corresponding medical code for the dental procedure. If a default medical code is set on the <a href="procedurecodeedit.html">Procedure Code</a>, it automatically shows. Required when sending a medical e-claim.</p>
+<p><b>Mods:</b> Medical code modifiers.</p>
+<p><b>Unit Quantity:</b> Refers to the type. (e.g., 5 (unit quantity) minutes of anesthesia (unit type)). Procedure fee is multiplied by the unit quantity.</p>
+<p class="MarginBottomZero"><b>Unit Type</b>: Type of quantity.  </p>
+<ul class="MarginBottomGap">
+<li>MultProcs</li>
+<li>MinutesAnesth</li>
+<li>ServiceUnits</li>
+<li>Days</li>
+</ul>
+<p><b>Revenue Code:</b> If a Default Revenue Code is set for the procedure code, it is added automatically.</p>
+<p><b>Drug NDC:</b> National Drug Code. If a default value for the procedure code is set, it is added automatically.</p>
+<p><b>Drug Unit/Drug Qty</b>: Quantity refers to the unit. (e.g., 5 (drug quantity) milligrams (drug unit)).</p>
+<p><b>Is Emergency</b>: Check this box when the procedure is a medical procedure. When the <i>P1IsEmergency</i>field is added to the <a href="claimform1500.html">HCFA 1500 Claim Form</a>, the procedure is marked as an emergency.</p>
+<p class="MarginBottomZero"><b>SNOMED CT Body Site:</b> Only visible if <a href="../site/ehrlicense.html">EHR</a> is enabled.  </p>
+<ul class="MarginBottomGap">
+<li><b>[...]</b>: Select <a href="snomedct.html">SNOMED CT Codes</a> that references an anatomical site.</li>
+<li><b>None</b>: Clear the box.</li>
+</ul>
+<p><b>Princ Diag:</b> Indicates that Diagnosis Code 1 is a Principal Diagnosis. At least one claim procedure must have this box checked.</p>
+<p><b>Use ICD-10 Diagnosis Codes (uncheck for ICD-9):</b> Affects this procedure only. Check the box to use ICD-10 codes. Only ICD-10 codes should be used on new claims. </p>
+<p class="MarginBottomZero"><b>ICD-9/ICD-10 Diagnosis Code 1 - 4:</b> Enter diagnosis codes. If set in the <a href="procedurecodeedit.html">Edit Procedure Code</a> window, ICD-10 codes are pre-filled. </p>
+<ul class="MarginBottomGap">
+<li>Manually enter <a href="icdcodes.html">ICD-10 Codes</a> into the box.</li>
+<li><b>[...]</b>: Select up to four codes from Diagnosis Code pick list.</li>
+<li><b>None</b>: Clear the box. </li>
+</ul>
+<p><div class="Note">Note: Only <a href="icdcodes.html">ICD-10 Codes</a> should be used on new claims. ICD-9 codes are available for historical purposes and should not be sent on new claims. Default settings for diagnosis codes can be set in Preferences.</div>
+</p>
+<p class="MarginBottomZero"><b>Ordering Provider Override:</b> Ordering provider for procedure on claim. Provider overrides any other providers. By default, there is no override and the treating provider is used. See <a href="eclaimscomplexities.html">E-Claims Complexities</a>, Ordering Provider, for the logic. </p>
+<ul class="MarginBottomGap">
+<li>Internal: Select a provider from the <a href="providers.html">Providers</a>.</li>
+<li>Referral: Select a provider from the <a href="referralsetup.html">Referral List</a>.</li>
+<li>None: Clear the override.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

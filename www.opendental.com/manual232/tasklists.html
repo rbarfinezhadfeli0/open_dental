@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Task List and Inbox</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('tasklists','tasks','toolbar','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/tasklists.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/tasklists.html" >v24.2</option><option value="https://www.opendental.com/manual241/tasklists.html" >v24.1</option><option value="https://www.opendental.com/manual233/tasklists.html" >v23.3</option><option value="https://www.opendental.com/manual232/tasklists.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/tasklists.html" >v23.1</option><option value="https://www.opendental.com/manual224/tasklists.html" >v22.4</option><option value="https://www.opendental.com/manual223/tasklists.html" >v22.3</option><option value="https://www.opendental.com/manual222/tasklists.html" >v22.2</option><option value="https://www.opendental.com/manual221/tasklists.html" >v22.1</option><option value="https://www.opendental.com/manual214/tasklists.html" >v21.4</option><option value="https://www.opendental.com/manual213/tasklists.html" >v21.3</option><option value="https://www.opendental.com/manual212/tasklists.html" >v21.2</option><option value="https://www.opendental.com/manual211/tasklists.html" >v21.1</option><option value="https://www.opendental.com/manual205/tasklists.html" >v20.5</option><option value="https://www.opendental.com/manual204/tasklists.html" >v20.4</option><option value="https://www.opendental.com/manual203/tasklists.html" >v20.3</option><option value="https://www.opendental.com/manual202/tasklists.html" >v20.2</option><option value="https://www.opendental.com/manual201/tasklists.html" >v20.1</option><option value="https://www.opendental.com/manual194/tasklists.html" >v19.4</option><option value="https://www.opendental.com/manual193/tasklists.html" >v19.3</option><option value="https://www.opendental.com/manual192/tasklists.html" >v19.2</option><option value="https://www.opendental.com/manual191/tasklists.html" >v19.1</option><option value="https://www.opendental.com/manual184/tasklists.html" >v18.4</option><option value="https://www.opendental.com/manual183/tasklists.html" >v18.3</option><option value="https://www.opendental.com/manual182/tasklists.html" >v18.2</option><option value="https://www.opendental.com/manual181/tasklists.html" >v18.1</option><option value="https://www.opendental.com/manual174/tasklists.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Task List and Inbox</p></div>
+<div class="GeneralPageContent">
+<p>Task lists are a way to organize tasks and reminders.</p>
+<p>In the <a href="tasks.html">Tasks</a> area, in the Main tab, click <b>Add Task List</b>. </p>
+<img src="images/taskListEdit.png" width="505" height="215"/><ul>
+<li>Alternatively, open a task list and click <b>Add Task List</b> to create a sub-task list within a main task list. </li>
+<li>To edit an existing task list, right-click the list and select <b>Edit Properties</b>.</li>
+</ul>
+<br/><p>A task list can have nested task lists or tasks within it, much like the folder/file concept. A user's inbox is also considered a task list. </p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Description</b>: Enter the task list name.</li>
+<li><b>Object Type</b>: Select whether to attach patients or appointments to tasks in this list. <ul>
+<li>Patient: Task lists with this type selected will be listed automatically when users select <b>Tasks</b> from the Main Toolbar. This should be selected when setting up an inbox.</li>
+<li>Appointment: Task lists with this type will be listed automatically when users click <b>To Task List</b> in the <a href="aptedit.html">Edit Appointment</a> window.</li>
+</ul>
+</li>
+<li><b>Global Filter Override</b>: Only available when <i>Global Filter for Task Lists</i> is enabled. <ul>
+<li>Default: This task list will automatically use the filtering option selected in <a href="tasksetup.html">Tasks Preferences</a>.</li>
+<li>None: This task list will not automatically filter. This overrides the selection set in Task Preferences.</li>
+<li>Clinic: This task list will automatically filter by the selected clinic. This overrides the selection set in Task Preferences.</li>
+<li>Region: This task list will automatically filter by region. This overrides the selection set in Task Preferences.</li>
+</ul>
+</li>
+</ul>
+<p class="MarginBottomZero">The following options are only visible when <a href="tasklistrepeating.html">Repeating Task Lists (Legacy)</a> are enabled. </p>
+<ul class="MarginBottomGap">
+<li><b>Date</b>: Leave blank except to show all tasks added to this list on a dated list. </li>
+<li><b>Date Type</b>: Normally set to none.</li>
+<li><b>Is From Repeating</b>: Normally leave unchecked.</li>
+</ul>
+<h2>Set up a User Inbox</h2>
+<p>A User Inbox is a task list that contains tasks sent directly to a specific user when a user clicks <b>Send To</b> or <b>Reply</b>.</p>
+<p>For each inbox, create a task list for the user and select <i>Patient</i> as the task list's Object Type.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Tasks, Inbox Setup. <br/><img src="images/taskInboxSetup.png" width="727" height="561" class="ImageInParagraph"/><p>Current users appear on the left. All existing task lists appear on the right. To add or edit users, see <a href="securityusers.html">User Edit</a>.</p>
+</p>
+<p>To set an inbox, highlight the user on the left, then the associated task list on the right, and click <b>Set</b>.</p>
+<p>Have each user log in and subscribe to their inbox. See <a href="tasksarea.html">Tasks Area</a> for details on finding and subscribing to a list.</p>
+</div>
+</div>
+</body>
+</html>

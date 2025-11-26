@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - OpenOffice.org Form Letter</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('ooformletter','queryoverview','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/ooformletter.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/ooformletter.html" >v24.2</option><option value="https://www.opendental.com/manual241/ooformletter.html" >v24.1</option><option value="https://www.opendental.com/manual233/ooformletter.html" >v23.3</option><option value="https://www.opendental.com/manual232/ooformletter.html" >v23.2</option><option value="https://www.opendental.com/manual231/ooformletter.html" >v23.1</option><option value="https://www.opendental.com/manual224/ooformletter.html" >v22.4</option><option value="https://www.opendental.com/manual223/ooformletter.html" >v22.3</option><option value="https://www.opendental.com/manual222/ooformletter.html" >v22.2</option><option value="https://www.opendental.com/manual221/ooformletter.html" >v22.1</option><option value="https://www.opendental.com/manual214/ooformletter.html" >v21.4</option><option value="https://www.opendental.com/manual213/ooformletter.html" >v21.3</option><option value="https://www.opendental.com/manual212/ooformletter.html" >v21.2</option><option value="https://www.opendental.com/manual211/ooformletter.html" >v21.1</option><option value="https://www.opendental.com/manual205/ooformletter.html" >v20.5</option><option value="https://www.opendental.com/manual204/ooformletter.html" >v20.4</option><option value="https://www.opendental.com/manual203/ooformletter.html" >v20.3</option><option value="https://www.opendental.com/manual202/ooformletter.html" >v20.2</option><option value="https://www.opendental.com/manual201/ooformletter.html" >v20.1</option><option value="https://www.opendental.com/manual194/ooformletter.html" >v19.4</option><option value="https://www.opendental.com/manual193/ooformletter.html" >v19.3</option><option value="https://www.opendental.com/manual192/ooformletter.html" >v19.2</option><option value="https://www.opendental.com/manual191/ooformletter.html" >v19.1</option><option value="https://www.opendental.com/manual184/ooformletter.html" >v18.4</option><option value="https://www.opendental.com/manual183/ooformletter.html" >v18.3</option><option value="https://www.opendental.com/manual182/ooformletter.html" >v18.2</option><option value="https://www.opendental.com/manual181/ooformletter.html" >v18.1</option><option value="https://www.opendental.com/manual174/ooformletter.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>OpenOffice.org Form Letter</p></div>
+<div class="GeneralPageContent">
+<p><span style="color:red">These steps are provided as a courtesy. Open Dental support technicians do not assist with Open Office Form Letters.</span></p>
+<p>Users can either do a query and export the result or link directly to the database.</p>
+<p>The instructions provided may be for a different version of OpenOffice than in use by your office, so steps may differ depending on the version of OpenOffice.</p>
+<h2>Query Export</h2>
+<p>Users can perform a <a href="queryoverview.html">User Query</a> from within Open Dental and export the resulting table. It will normally be saved as a text file in the OpenDentalExports folder on the local <b>C:\</b> drive. The first row of the text file will contain the names of the columns, and the fields are separated by tabs. This makes it easy to open in OpenOffice.org. Once the text file has been created, use the following instructions to use it as a datasource for a form letter.</p>
+<p>Open a new database in OpenOffice.org. <br/><img src="images/ooDataSource.gif" width="693" height="462" class="ImageInParagraph"/><p>Select the last option as shown and change the type to <i>Text</i>. Click <b>Next</b>. <br/><img src="images/ooDataSourcePath.gif" width="693" height="461" class="ImageInParagraph"/></p>
+<p>Browse to the path where the text file is located. Users will choose the folder path, not the file. So it makes sense to use the OpenDentalExport folder which is the same one set up in <a href="paths.html">Data Paths</a>. The result will be that this connection will also work for any future text files users may save to the OpenDentalExport folder. Also, change the field separator to {Tab} as shown above.</p>
+<p>The next window gives users the opportunity to save the connection details as an .odb file. Users can save the file anywhere they wish, including the OpenDentalExport folder.</p>
+</p>
+<p>Open a new or existing template document in the word processing portion of OpenOffice.org. Once the document is open, go to Tools, Mail Merge Wizard. The wizard has 8 steps. On step 3, users will be attaching the datasource created above.</p>
+<img src="images/ooFormLetterStep3.png" width="770" height="536"/><p>Look at the name of the current address list. The name should match the datasource created earlier. If this needs to be changed, use the button above to select a different address list. Then, make sure the address in box 4 looks correct. </p>
+<p>Users may need to match fields. To do so, click <b>Match Fields...</b>. Select the query column name that corresponds to the Open Office address element.</p>
+<img src="images/ooFormLetterMatchField.png" width="581" height="486"/><p>On step 6, users can edit the letter document or template. Click <b>Edit Document...</b> to begin editing.</p>
+<img src="images/oofMailMergeStep6.png" width="774" height="538"/><p>To insert database fields click Insert, Fields, Other. This can also be done prior to starting the mail merge wizard. Users can leave this window floating over the main window as they work, inserting field names as placeholders. Only insert fields from one table or file within the same letter.</p>
+<img src="images/ooInsertFields.gif" width="601" height="444"/><p>Once any edits are complete to the letter. Click <b>Return to Mail Merge Wizard</b> to complete the remaining steps.</p>
+<p>During the final step of the Mail Merge Wizard, users will be able to print, email, or save the created letters.. </p>
+<p>Mail merge is complex, but it is very powerful. There are many other techniques and features users could take advantage of to generate quality merge letters. See the instructions for OpenOffice.org to learn more about those other features.</p>
+<p>From here users can print form letters. There are many other options and features in OpenOffice.org that will enable users to create high quality form letters. There are templates, variable fields, hidden text, etc.</p>
+<h2>Direct Link</h2>
+<p class="MarginBottomZero">Another way to use the data is to directly link to the database. Users would not normally need to do this since the text export is simpler, but here are instructions in case they need to. </p>
+<ol class="MarginBottomGap">
+<li>Set up the ODBC data source on the computer where users want to access the data.</li>
+<li>Open a new Text Document and the Data Sources as shown above.</li>
+<li>Select the database type as ODBC and use the search button at the right to select Open Dental from the list.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>

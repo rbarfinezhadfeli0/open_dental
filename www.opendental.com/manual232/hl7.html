@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Generic HL7</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('hl7','hl7genericmsg','+menusetupAdvanced','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/hl7.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/hl7.html" >v24.2</option><option value="https://www.opendental.com/manual241/hl7.html" >v24.1</option><option value="https://www.opendental.com/manual233/hl7.html" >v23.3</option><option value="https://www.opendental.com/manual232/hl7.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/hl7.html" >v23.1</option><option value="https://www.opendental.com/manual224/hl7.html" >v22.4</option><option value="https://www.opendental.com/manual223/hl7.html" >v22.3</option><option value="https://www.opendental.com/manual222/hl7.html" >v22.2</option><option value="https://www.opendental.com/manual221/hl7.html" >v22.1</option><option value="https://www.opendental.com/manual214/hl7.html" >v21.4</option><option value="https://www.opendental.com/manual213/hl7.html" >v21.3</option><option value="https://www.opendental.com/manual212/hl7.html" >v21.2</option><option value="https://www.opendental.com/manual211/hl7.html" >v21.1</option><option value="https://www.opendental.com/manual205/hl7.html" >v20.5</option><option value="https://www.opendental.com/manual204/hl7.html" >v20.4</option><option value="https://www.opendental.com/manual203/hl7.html" >v20.3</option><option value="https://www.opendental.com/manual202/hl7.html" >v20.2</option><option value="https://www.opendental.com/manual201/hl7.html" >v20.1</option><option value="https://www.opendental.com/manual194/hl7.html" >v19.4</option><option value="https://www.opendental.com/manual193/hl7.html" >v19.3</option><option value="https://www.opendental.com/manual192/hl7.html" >v19.2</option><option value="https://www.opendental.com/manual191/hl7.html" >v19.1</option><option value="https://www.opendental.com/manual184/hl7.html" >v18.4</option><option value="https://www.opendental.com/manual183/hl7.html" >v18.3</option><option value="https://www.opendental.com/manual182/hl7.html" >v18.2</option><option value="https://www.opendental.com/manual181/hl7.html" >v18.1</option><option value="https://www.opendental.com/manual174/hl7.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Generic HL7</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="hl7genericmsg.html">Generic HL7 Message Structure</a>.</p>
+<p>HL7 is the name of the file format that Open Dental uses to sync data with other medical software. Generic HL7 is an HL7 interface technology built into Open Dental. These interfaces can be customized to accommodate any software. </p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>For the eClinicalWorks HL7 interface technology, see <a href="hl7ecw.html">eClinicalWorks HL7</a> instead.</li>
+<li>For LabCorp HL7, see <a href="hl7labcorp.html">LabCorp HL7</a>.</li>
+<li>Also see <a href="http://opendental.com/resources/HL7MessagingInterfaceSpecs.pdf">Open Dental HL7 Interface Specifications</a> (PDF).</li>
+<li>Also see <a href="hl7tests.html">HL7 Unit Tests</a>.</li>
+</ul>
+<p class="MarginBottomZero">Messages are used to pass information between Open Dental and the other medical software. There are two options for this: </p>
+<ul class="MarginBottomGap">
+<li>Shared Folders: The Open Dental server can contain two shared folders that are used to pass files back and forth. </li>
+<li>TCP/IP: A TCP/IP connection can be used to pass files back and forth.</li>
+</ul>
+<h2>Setup Steps</h2>
+<p>The<i>OpenDentalHL7</i> service needs installed to the server. It handles the interaction between the HL7 messages and Open Dental database.</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Make sure the Open Dental program is installed on the server.</li>
+<li>In the Main Menu, click Setup, Advanced Setup, HL7. Enable and setup the HL7 message structure. </li>
+<li>Connect to the Database.  <ul>
+<li>The information for connecting to the database is in the FreeDentalConfig.xml file in the application folder. This is the same file that the main Open Dental program uses to connect to the database. The information in the file must be accurate before starting the OpenDentalHL7 service.</li>
+<li>Open Open Dental, on the <a href="choosedatabase.html">Choose Database</a> window, set the database connection information. Only simple direct database connections are supported. Uncheck <b>Do not show this window on startup</b> so this window appears the next time a users launches Open Dental from the workstation, then close the window. If Open Dental is run as an administrator, connection information is auto-saved to the FreeDentalConfig.xml file.</li>
+<li>Verify that the information saved correctly by re-launching Open Dental. If the information is correct, users can be sure that OpenDentalHL7 will connect to the correct database when the service is started.</li>
+</ul>
+</li>
+<li>Set up the HL7 Sync Folders (incoming and outgoing). For Generic HL7 this can be entered on the HL7 Def Edit window. Offices will most likely set up the folders from the server, so the paths will be relative to the machine user is on. However, be aware the setup window is viewable from other computers, so from other computers the paths will be invalid.</li>
+<li>Create a service to send and receive HL7 messages in the Open Dental <a href="servicemanager.html">Service Manager</a>. If there are multiple database for multiple customers hosted on one server, then multiple HL7 services, each with unique names, must be setup. Then, each database must be set up to match with a differently named HL7 service.</li>
+</ol>
+<h2>Troubleshooting</h2>
+<p class="MarginBottomZero"><p><b>If the service does not start as expected:</b></p>
+</p>
+<ul>
+<li>Verify that the database and HL7 folders are correct (steps 2 and 3 above).</li>
+<li>The service will not start if the version is not exactly the same as the version of the main Open Dental program.</li>
+<li>If it still won't start, check the Event Viewer, Windows Logs. Click on Application. The error and information entries help determine the reason why the OpenDentalHL7 will not start.</li>
+<br/></ul>
+<p class="MarginBottomGap"><img src="images/computermanagement.gif" width="385" height="459"/></p>
+<p class="MarginBottomZero"><p><b>If the messages are not being passed to Open Dental and processed as expected, follow the steps below. </b></p>
+</p>
+<ol class="MarginBottomGap">
+<li>Stop the OpenDentalHL7 service.</li>
+<li>Edit the FreeDentalConfig.xml file by adding a line for <b>&lt;HL7verbose&gt;True&lt;/HL7verbose&gt;.</b><br/><img src="images/hl7CodeBlock.gif" width="377" height="191" class="ImageInParagraph"/></li>
+<li>Start the service.</li>
+<li>In the other medical software, trigger outbound messages.</li>
+<li>Wait about 10 seconds for the message to be processed.</li>
+<li>Look in the Windows Event Viewer Application Log as described in Setup step 5, item 3 above, refreshing as needed. Verify that the information was processed by Open Dental. Both kinds of messages should result in an insert or update to the patient table. If the message is for a new appointment, the result should also be an insert or update of the appointment table.</li>
+<li>After troubleshooting, remove the &lt;HL7verbose&gt;True&lt;/HL7verbose&gt; line from the xml file. The line is usually removed automatically when the user clicks <b>OK</b> from the Choose Database window.</li>
+</ol>
+<p>If that does not solve the problem, follow the steps below.</p>
+<div class="Note">Note: These steps do not apply if using TCP/IP. Instead use Windows logs or Message History.</div>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Turn off the OpenDentalHL7 service.</li>
+<li>Locate the incoming and outgoing folder paths as set on the HL7 Def Edit window.</li>
+<li>Open the outgoing folder in Windows.</li>
+<li>In the other medical software, trigger outbound messages.</li>
+<li>Look for the message in the outgoing folder. Users may need to wait up to 60 seconds for the message to appear. <ul>
+<li>If it does not appear, the other software is not properly creating files.</li>
+<li>If it does appear, make a copy of the message for later analysis.</li>
+</ul>
+</li>
+<li>Start OpenDentalHL7. <ul>
+<li>If the original message does not disappear, then there is a problem with OpenDentalHL7. Look in the Windows Log for errors with the message processing.</li>
+<li>If the message still does not seem to have been processed, then it needs to be debugged. A copy of the message, and possibly the database itself, should be sent to Open Dental programmers for testing.</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+</body>
+</html>

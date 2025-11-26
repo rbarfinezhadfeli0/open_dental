@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API TreatPlanAttaches</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apitreatplanattaches','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API TreatPlanAttaches</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>Used to show Procedures attached to a TreatPlan with TPStatus of either Active or Inactive. For Saved treatment plans, use <a href="apiproctps.html">ProcTPs</a>. See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7treatmentplanedit.html">Treatment Plans</a> for more information. </p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96treatplanattach.html" target="_blank">TreatPlanAttach Database Schema.</a></p>
+<h2>TreatPlanAttaches GET</h2>
+<p>Version Added: 22.4.16</p>
+<p>Gets a list of treatplanattaches associated to a specified treatplan. Use <a href="apitreatplans.html">TreatPlans GET</a> to find the TreatPlanNum of an existing treatplan.</p>
+<p><b>TreatPlanNum:</b> Required in the URL. FK to treatplan.TreatPlanNum.<br></p>
+<p><b>Example Request:</b><br> GET /treatplanattaches?TreatPlanNum=1845<br></p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br> {<br> "TreatPlanAttachNum": 3211,<br> "TreatPlanNum": 1845,<br> "ProcNum": 1977,<br> "Priority": 151,<br> "priority": "1"<br> },<br> {<br> "TreatPlanAttachNum": 3222,<br> "TreatPlanNum": 1845,<br> "ProcNum": 11018,<br> "Priority": 159,<br> "priority": "Recmend"<br> },<br> {<br> "TreatPlanAttachNum": 3223,<br> "TreatPlanNum": 1845,<br> "ProcNum": 11017,<br> "Priority": 148,<br> "priority": "Wait"<br> },<br> {<br> "TreatPlanAttachNum": 3234,<br> "TreatPlanNum": 1845,<br> "ProcNum": 11005,<br> "Priority": 0,<br> "priority": ""<br> },<br> etc...<br> ]<br></span></p>
+<p> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>TreatPlanAttaches POST</h2>
+<p>Version Added: 23.2.17</p>
+<p>Creates an association between a treatment plan and a procedure.</p>
+<p><b>TreatPlanNum:</b> Required. FK to treatplan.TreatPlanNum.<br><b>ProcNum:</b> Required. FK to procedurelog.ProcNum.<br><br><b>Priority:</b> Optional. definition.DefNum where definition.Category=20. Default 0.<br></p>
+<p><b>Example Request:</b><br> POST /treatplanattaches<br><p><span class="codeblock"> {<br> "TreatPlanNum": 9,<br> "ProcNum": 132,<br> "Priority": 148<br> }<br></span></p>
+</p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "TreatPlanAttachNum": 70,<br> "TreatPlanNum": 9,<br> "ProcNum": 132,<br> "Priority": 148,<br> "priority": "Wait"<br> }<br></span></p>
+<p> 201 Created<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>TreatPlanAttaches PUT</h2>
+<p>Version Added: 23.2.17</p>
+<p>Updates the Priority on a treatplanattach.</p>
+<p><b>TreatPlanAttachNum:</b> Required in the URL.<br></p>
+<p><b>Priority:</b> definition.DefNum where definition.Category=20.<br></p>
+<p><b>Example Request:</b><br> PUT /treatplanattaches/70<br><p><span class="codeblock"> {<br> "Priority": 149<br> }<br></span></p>
+</p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "TreatPlanAttachNum": 70,<br> "TreatPlanNum": 9,<br> "ProcNum": 132,<br> "Priority": 149,<br> "priority": "Low"<br> }<br></span></p>
+<p> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>

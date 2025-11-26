@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Broken Appointments Report</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reportbrokenappt','+reportlists','reportsstandard','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/reportbrokenappt.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/reportbrokenappt.html" >v24.2</option><option value="https://www.opendental.com/manual241/reportbrokenappt.html" >v24.1</option><option value="https://www.opendental.com/manual233/reportbrokenappt.html" >v23.3</option><option value="https://www.opendental.com/manual232/reportbrokenappt.html" >v23.2</option><option value="https://www.opendental.com/manual231/reportbrokenappt.html" >v23.1</option><option value="https://www.opendental.com/manual224/reportbrokenappt.html" >v22.4</option><option value="https://www.opendental.com/manual223/reportbrokenappt.html" >v22.3</option><option value="https://www.opendental.com/manual222/reportbrokenappt.html" >v22.2</option><option value="https://www.opendental.com/manual221/reportbrokenappt.html" >v22.1</option><option value="https://www.opendental.com/manual214/reportbrokenappt.html" >v21.4</option><option value="https://www.opendental.com/manual213/reportbrokenappt.html" >v21.3</option><option value="https://www.opendental.com/manual212/reportbrokenappt.html" >v21.2</option><option value="https://www.opendental.com/manual211/reportbrokenappt.html" >v21.1</option><option value="https://www.opendental.com/manual205/reportbrokenappt.html" >v20.5</option><option value="https://www.opendental.com/manual204/reportbrokenappt.html" >v20.4</option><option value="https://www.opendental.com/manual203/reportbrokenappt.html" >v20.3</option><option value="https://www.opendental.com/manual202/reportbrokenappt.html" >v20.2</option><option value="https://www.opendental.com/manual201/reportbrokenappt.html" >v20.1</option><option value="https://www.opendental.com/manual194/reportbrokenappt.html" >v19.4</option><option value="https://www.opendental.com/manual193/reportbrokenappt.html" >v19.3</option><option value="https://www.opendental.com/manual192/reportbrokenappt.html" >v19.2</option><option value="https://www.opendental.com/manual191/reportbrokenappt.html" >v19.1</option><option value="https://www.opendental.com/manual184/reportbrokenappt.html" >v18.4</option><option value="https://www.opendental.com/manual183/reportbrokenappt.html" >v18.3</option><option value="https://www.opendental.com/manual182/reportbrokenappt.html" >v18.2</option><option value="https://www.opendental.com/manual181/reportbrokenappt.html" >v18.1</option><option value="https://www.opendental.com/manual174/reportbrokenappt.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Broken Appointments Report</p></div>
+<div class="GeneralPageContent">
+<p>Track broken appointments in a date range using the Broken Appointments Report.</p>
+<p>In <a href="reportsstandard.html">Standard Reports</a>, in the Lists area, click <b>Broken Appointments</b>.</p>
+<img src="images/reportsBrokenAppt.png" width="602" height="509"/><p>The Broken Appointment report lists patients who have a broken appointment during a date range and any associated fees charged. It is grouped by clinic. Also see <a href="apptbreak.html">Break Appointment</a>.</p>
+<p>To control user access to this report, see <a href="reportsecurity.html">Report Setup: Security Permissions</a>.</p>
+<h2>Filters</h2>
+<p>Set the report criteria and filters before running the report.</p>
+<p><b>Calendar</b>: Select the date range. Select the start date in the first calendar and the end date in the second calendar.</p>
+<p class="MarginBottomZero"><b>Providers</b>: Highlight the providers to include. Check <b>All</b> to select all listed providers.  </p>
+<ul class="MarginBottomGap">
+<li>When <i>By procedures</i> is selected, filters by provider attached to broken appointment <a href="procedureedit.html">Procedure</a>.</li>
+<li>When <i>By adjustments</i> is selected, filters by provider attached to broken appointment <a href="adjustments.html">Adjustment</a>.</li>
+<li>When <i>By appointment status</i> is selected, filters by provider or hygienist attached to broken appointment.</li>
+</ul>
+<p class="MarginBottomZero"><b>Clinics</b>: Only available when Clinics are enabled in <a href="showfeatures.html">Show Features</a>. Highlight the clinics to include. Check <b>All (Includes hidden)</b> to include all clinics, including those marked hidden.  </p>
+<ul class="MarginBottomGap">
+<li>When <i>By procedures</i> is selected, filters by the clinic assigned to the broken appointment procedure. By default, this is the clinic assigned to the appointment, but can be changed.</li>
+<li>When <i>By adjustments</i> is selected, filters by the clinic assigned to the broken appointment adjustment. By default, this is the clinic assigned to the appointment, but can be changed.</li>
+<li>When <i>By appointment</i> is selected, filters by the clinic assigned to broken appointment.</li>
+<li>If user is restricted to specific clinics, only accessible clinics are listed. When checking <b>All (includes hidden)</b>, results include all clinics user has access to, including those marked hidden and anything unassigned to a clinic; results do not include clinics user is restricted from.</li>
+</ul>
+<p class="MarginBottomZero">Select which patients are included based on the different methods of marking broken appointments. There are up to three options:  </p>
+<ul class="MarginBottomGap">
+<li><b>By procedures</b>: Include patients who have a D9986 or D9987 completed procedure. </li>
+<li><b>By adjustments</b>: Include patients with a specific adjustment type. Select the adjustment type in the list box on the right.</li>
+<li><b>By appointment status</b>: Include patients who have appointments with a status of <i>Broken</i>. Only appointments left on the appointment book are included. Deleted appointments and those sent to the <a href="unscheduled.html">Unscheduled List</a> or rescheduled do not appear on the report.</li>
+</ul>
+<p>Available options for the report may change based on the selected Broken Appointment Automation settings in <a href="preferences.html">Preferences</a>. See the subsequent Technical Details for additional information.</p>
+<h2>Report Preview</h2>
+<p>Click <b>OK</b> to generate a print preview the report. The report differs based on the broken appointment method selected. Results for all report types are grouped by clinic if applicable. </p>
+<p>The following are examples of each report type and explanation of the report columns. For a description of toolbar buttons, see <a href="reportcomplex.html">Complex Report System</a>. </p>
+<p><b>Broken appointment report by procedures</b>:</p>
+<img src="images/reportBrokenApptPrintCode.png" width="701" height="363"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Date</b>: Broken appointment procedure date (i.e., date appointment was broken).</li>
+<li><b>Provider</b>: Provider assigned to the broken appointment procedure. This defaults to the appointment provider, but can be changed.</li>
+<li><b>Code</b>: Broken appointment procedure code.</li>
+<li><b>Patient</b>: Patient last name and first name.</li>
+<li><b>Fee</b>: Fee associated with the broken appointment procedure.</li>
+</ul>
+<p>Fees are totaled for each clinic, at the end of that clinic's grid in bold. </p>
+<p>The <b>Total Broken Appointment Fees</b> and <b>Total Broken Appointments</b> are included on the last page of the report in bold. If using clinics, these are the totals for all clinics included in the report.</p>
+<p><b>Broken appointment report by adjustments</b>:</p>
+<img src="images/reportBrokenApptPrintAdjust.png" width="740" height="331"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Date</b>: Broken appointment adjustment date (i.e., date appointment was broken).</li>
+<li><b>Provider</b>: Provider assigned to the broken appointment procedure. This defaults to the appointment provider, but can be changed.</li>
+<li><b>Patient</b>: Patient last name and first name.</li>
+<li><b>Amount</b>: Amount (i.e., fee) associated with the broken appointment <a href="adjustments.html">Adjustment</a>.</li>
+<li><b>Note</b>: Adjustment note.</li>
+</ul>
+<p>Amounts are totaled for each clinic, at the end of that clinic's grid in bold. </p>
+<p>The <b>Total Broken Appointment Adjustment Amount</b> and <b>Total Broken Appointments</b> are included on the last page of the report in bold. If using clinics, these are the totals for all clinics included in the report.</p>
+<p><b>Broken appointment report by appointment status</b>:</p>
+<img src="images/reportBrokenApptPrintStatus.png" width="742" height="271"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>AptDate</b>: Date of appointment. The appointment must currently still be on the calendar to appear on the report.</li>
+<li><b>Patient</b>: Patient last name and first name.</li>
+<li><b>Doctor</b>: Provider assigned to the appointment.</li>
+<li><b>Hygienist</b>: Hygienist assigned to the appointment</li>
+<li><b>IsHyg</b>: X indicates the appointment is marked <i>Is Hygiene</i>.</li>
+</ul>
+<p>The <b>Total Broken Appointments</b> are included on the last page of the report in bold. If using clinics, this is the total for all clinics included in the report.</p>
+<h2>Technical Details</h2>
+<p>In the Broken Appointments Report, the default selection for report type is determined by the <i>Broken Appointment Automation </i><a href="preferences.html">Preferences</a>.</p>
+<ol>
+<li>If <i>Broken appointment procedure type</i> is set to anything other than <i>None</i>, the report defaults to <i>By procedure</i>. Only the selected <i>Broken appointment procedure type </i> procedure codes are available to choose from (e.g., if set to Missed, only the missed procedure code, D9986, is listed and included on the report) If the preference is set to <i>Both</i>, there are multiple options (i.e., missed, cancelled, both).</li>
+<li>If <i>Broken appointment procedure type</i> is set to None and <i>Make broken appointment adjustment</i> is enabled, <i>By Adjustments</i> is selected by default. Any subtraction adjustment type can be selected to include in the report; by default only the <i>Broken appt default adj type</i> is selected.</li>
+<li>If the <i>Broken appointment procedure type</i> is set to None and <i>Make broken appointment adjustment</i> is disabled, the report defaults to <i>By appointment status</i>.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>

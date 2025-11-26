@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API ChartModules</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apichartmodules','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API ChartModules</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<h2>ChartModules GET ProgNotes</h2>
+<p>Version Added: 21.4</p>
+<p>Gets the Progress Notes for a patient, similarly to how it shows in the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7chart.html">Chart Module</a>. Use another API method or a query to get specific details about each object.</p>
+<p><b>PatNum:</b> Required in the URL.</p>
+<p>Returned fields are detailed below:</p>
+<p><b>ObjectType:</b> The type of object being displayed: Appointment, Commlog, Task, Email, LabCase, Rx, or Sheet.<br><b>PrimaryKey:</b> Primary Key corresponding to the objectType. Example: AptNum=34.<br><b>Date:</b> Human readable date. Example 05/15/2021<br><b>Time:</b> Human readable time. Example 1:20p<br><b>DateTime:</b> Example 2021-12-21 10:00:00<br><b>Th:</b> ToothNum for a Procedure, otherwise blank.<br><b>Surf:</b> Tooth surface for the Procedure, otherwise blank.<br><b>Dx:</b> Description of the Diagnosis.<br><b>Description:</b> Description of the of the returned object. <br><b>Note:</b> Additional notes for the returned object.<br><b>Stat:</b> Status of the Procedure, otherwise blank. Example TP.<br><b>Prov:</b> Example Doc1.<br><b>ProvNum:</b> Example: 3<br><b>Amount:</b> ProcFee for Procedure, otherwise blank. Example 53.50<br><b>ProcCode:</b> ProcCode for Procedure, otherwise blank. Example D0220<br><b>User:</b> Name of the user who created the Commlog, Email, or Rx. Otherwise blank. <br><b>Signed:</b> Will be "Signed" if there is a signature on the Procedure or Sheet. Otherwise blank.<br><b>Length:</b> Length of the appointment in HH:mm format. Example 0:30.<br><b>Abbr:</b> Abbreviation of the Procedure, otherwise blank.<br><b>Clinic:</b> Clinic abbreviation. Example: Metro Office.<br><b>ClinicNum:</b> Example: 4<br></p>
+<p><b>Example Request:</b><br> GET /chartmodules/13/ProgNotes <br> GET /chartmodules/13/ProgNotes?Offset=100</p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br>  {<br> "ObjectType": "Appointment",<br> "PrimaryKey": "147",<br> "Date": "12/21/2021",<br> "Time": "11:40a",<br> "DateTime": "12/21/2021 11:40:00 AM",<br> "Th": "",<br> "Surf": "",<br> "Dx": "",<br> "Description": "Appointment - 11:40 AM PA",<br> "note": "",<br> "Stat": "",<br> "Prov": "",<br> "ProvNum": "",<br> "Amount": "",<br> "ProcCode": "",<br> "User": "",<br> "Signed": "",<br> "Length": "0:10",<br> "Abbr": "",<br> "Clinic": "",<br> "ClinicNum": "3"<br> },<br>  {<br> "ObjectType": "Procedure",<br> "PrimaryKey": "153",<br> "Date": "12/21/2021",<br> "Time": "",<br> "DateTime": "12/21/2021 12:00:00 AM",<br> "Th": "",<br> "Surf": "",<br> "Dx": "",<br> "Description": "PA",<br> "note": "",<br> "Stat": "TP",<br> "Prov": "Doc3",<br> "ProvNum": "10",<br> "Amount": "24.00",<br> "ProcCode": "D0220",<br> "User": "",<br> "Signed": "",<br> "Length": "",<br> "Abbr": "PA",<br> "Clinic": "Downtown Office",<br> "ClinicNum": "3"<br> },<br>  {<br> "ObjectType": "Commlog",<br> "PrimaryKey": "122",<br> "Date": "02/08/2022",<br> "Time": "3:18p",<br> "DateTime": "2/8/2022 3:18:00 PM",<br> "Th": "",<br> "Surf": "",<br> "Dx": "",<br> "Description": "Comm - ApptRelated",<br> "note": "Confirmed upcoming appointment. Asked to arrive 15 minutes early for paperwork.",<br> "Stat": "",<br> "Prov": "",<br> "ProvNum": "",<br> "Amount": "",<br> "ProcCode": "",<br> "User": "Admin",<br> "Signed": "Signed",<br> "Length": "",<br> "Abbr": "",<br> "Clinic": "",<br> "ClinicNum": "0"<br> },<br>  {<br> "ObjectType": "Task",<br> "PrimaryKey": "52",<br> "Date": "2/8/2022",<br> "Time": "3:25p",<br> "DateTime": "2/8/2022 3:25:56 PM",<br> "Th": "",<br> "Surf": "",<br> "Dx": "",<br> "Description": "Task - In List: People that will need a 1099",<br> "note": "Admin - Example Task Description ==Admin - 2/8/2022 3:26 PM - Notes on the task.",<br> "Stat": "",<br> "Prov": "",<br> "ProvNum": "",<br> "Amount": "",<br> "ProcCode": "",<br> "User": "",<br> "Signed": "",<br> "Length": "",<br> "Abbr": "",<br> "Clinic": "",<br> "ClinicNum": "0"<br> },<br>  {<br> "ObjectType": "Email",<br> "PrimaryKey": "212",<br> "Date": "02/08/2022",<br> "Time": "3:22p",<br> "DateTime": "2/8/2022 3:22:27 PM",<br> "Th": "",<br> "Surf": "",<br> "Dx": "",<br> "Description": "Email - (unsent) Spring Newsletter",<br> "note": " With warmer weather upon us...",<br> "Stat": "",<br> "Prov": "",<br> "ProvNum": "",<br> "Amount": "",<br> "ProcCode": "",<br> "User": "Admin",<br> "Signed": "",<br> "Length": "",<br> "Abbr": "",<br> "Clinic": "",<br> "ClinicNum": "0"<br> },<br>  {<br> "ObjectType": "Rx",<br> "PrimaryKey": "81",<br> "Date": "02/08/2022",<br> "Time": "",<br> "DateTime": "2/8/2022 12:00:00 AM",<br> "Th": "",<br> "Surf": "",<br> "Dx": "",<br> "Description": "Rx - Cephalexin 500 mg - #40 Walmart Lancaster",<br> "note": "",<br> "Stat": "",<br> "Prov": "HYG1",<br> "ProvNum": "2",<br> "Amount": "",<br> "ProcCode": "",<br> "User": "",<br> "Signed": "",<br> "Length": "",<br> "Abbr": "",<br> "Clinic": "",<br> "ClinicNum": "0"<br> },<br>  {<br> "ObjectType": "Sheet",<br> "PrimaryKey": "37",<br> "Date": "02/08/2022",<br> "Time": "3:27p",<br> "DateTime": "2/8/2022 3:27:00 PM",<br> "Th": "",<br> "Surf": "",<br> "Dx": "",<br> "Description": "PatientLetter",<br> "note": "",<br> "Stat": "",<br> "Prov": "",<br> "ProvNum": "",<br> "Amount": "",<br> "ProcCode": "",<br> "User": "",<br> "Signed": "",<br> "Length": "",<br> "Abbr": "",<br> "Clinic": "",<br> "ClinicNum": "0"<br> },<br> etc...<br> ]<br></span></p>
+<p>200 OK<br> 404 Not Found ("Patient not found")</p>
+<h2>ChartModules GET PatientInfo</h2>
+<p>Version Added: 22.1</p>
+<p>Gets Patient Info for a patient, similarly to how it shows in the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7chart.html">Chart Module</a>. Use another API method or a query to get specific details about returned elements.</p>
+<p><b>PatNum:</b> Required in the URL.</p>
+<p>Returned field types are detailed below:</p>
+<p><b>Age:</b> The age of the patient.<br><b>ABC0:</b> Indicates the patient's credit rating or other personal attributes discreetly.<br><b>Billing Type:</b> The patient's billing type.<br><b>Referred From:</b> Indicates a patient's referral source.<br><b>Date First Visit:</b> The date of the patient's first visit.<br><b>Prov. (Pri, Sec):</b> Comma separated abbreviations for the patient's primary provider and secondary provider, if they exist.<br><b>Pri Ins:</b> The patient's primary insurance plan.<br><b>Sec Ins:</b> The patient's secondary insurance plan.<br><b>Payor Types:</b> The system of payment (SOP code) that identifies this patient's payor status. <br><b>Premedicate:</b> Will only display for patients marked as 'Premed'. Displays any medications patients should take prior to appointments.<br><b>Problems:</b> A list of the patient's current and inactive problems. Will display as one entry with "None" as the content if no problems exist, or will display an entry for each of the patient's problems if at least one exists.<br><b>Med Urgent:</b> Any Med Urgent notes that have been entered for the patient will display here.<br><b>Medical Summary:</b> Any Medical Summary notes that have been entered for the patient will display here.<br><b>Service Notes:</b> Will display any entered information that has been learned through discussions with the patient, such as whether they need a blanket or pillow, nervous behavior, whether they are on a strict budget, etc.<br><b>Medications:</b> Lists the patient's medications. Will display as one entry with "None" as the content if no medications exist, or will display an entry for each of the patient's medications if at least one exists.<br><b>Allergies:</b> Lists the patient's known allergies. Will display as one entry with "None" as the content if no allergies exist, or will display an entry for each allergy associated to the patient if at least one exists.<br><b>Pat Restrictions:</b> Lists restrictions associated to the patient. Will display as one entry with "None" as the content if there are no restrictions, or will display an entry for each restriction's name/description if at least one exists.<br></p>
+<p><b>Example Request:</b><br> GET /chartmodules/15/PatientInfo</p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br> {<br> "Field": "Age",<br> "Content": "42"<br> },<br> {<br> "Field": "ABC0",<br> "Content": ""<br> },<br> {<br> "Field": "Billing Type",<br> "Content": "Standard Account"<br> },<br> {<br> "Field": "Referred From",<br> "Content": ""<br> },<br> {<br> "Field": "Date First Visit",<br> "Content": "4/30/2009"<br> },<br> {<br> "Field": "Prov. (Pri, Sec)",<br> "Content": "DOC 1, HYG 1"<br> },<br> {<br> "Field": "Pri Ins",<br> "Content": "Metlife"<br> },<br> {<br> "Field": "Sec Ins",<br> "Content": ""<br> },<br> {<br> "Field": "Payor Types",<br> "Content": ""<br> },<br> {<br> "Field": "Problem - Diabetes",<br> "Content": "Type 2"<br> },<br> {<br> "Field": "Problem - High Blood Pressure",<br> "Content": ""<br> },<br> {<br> "Field": "Med Urgent",<br> "Content": ""<br> },<br> {<br> "Field": "Medical Summary",<br> "Content": ""<br> },<br> {<br> "Field": "Service Notes",<br> "Content": ""<br> },<br> {<br> "Field": "Medication - Acetaminophen(Aspirin)",<br> "Content": "One in the morning, one at night"<br> },<br> {<br> "Field": "Allergy - Latex",<br> "Content": "Induces itching"<br> },<br> {<br> "Field": "Pat Restrictions",<br> "Content": "None"<br> }<br> ]<br></span></p>
+<p>200 OK</p>
+<h2>ChartModules GET PlannedAppts</h2>
+<p>Version Added: 22.2</p>
+<p>Gets Planned Appointments for a patient, similarly to how it shows in the Chart Module's <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7apptplanned.html">Planned Appointments</a> tab.</p>
+<p><b>PatNum:</b> Required in the URL.</p>
+<p>Returned field types are detailed below:</p>
+<p><b>AptNum:</b> The planned appointment's appointment.AptNum <br><b>ProvNum:</b> The provider associated with the appointment.<br><b>ItemOrder:</b> Order of the planned appointment.<br><b>minutes:</b> The length of the appointment in minutes.<br><b>ProcDescript:</b> The procedure(s) attached to this appointment.<br><b>Note:</b> Appointment Note.<br><b>dateSched:</b> DateTime of the linked scheduled appointment.<br><b>AptStatus:</b> appointment.AptStatus.<br></p>
+<p><b>Example Request:</b><br> GET /chartmodules/31/PlannedAppts </p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br> {<br> "AptNum": "999",<br> "ProvNum": "1",<br> "ItemOrder": "1",<br> "minutes": "50",<br> "ProcDescript": "#1-MOD-C3(P)",<br> "Note": "",<br> "dateSched": "2022-06-20 00:00:00",<br> "AptStatus": "Planned"<br> },<br> {<br> "AptNum": "1000",<br> "ProvNum": "3",<br> "ItemOrder": "2",<br> "minutes": "40",<br> "ProcDescript": "#19-ML-C2(P)",<br> "Note": "Pain in LL quadrant",<br> "dateSched": "2022-06-21 00:00:00",<br> "AptStatus": "Planned"<br> }<br> ]<br></span></p>
+<p>200 OK<br> 404 Not Found ("Patient not found.")</p>
+		</div>
+	</div>
+</body>
+</html>

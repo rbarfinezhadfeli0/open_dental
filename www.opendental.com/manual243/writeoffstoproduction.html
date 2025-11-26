@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Show Insurance Write-offs</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('writeoffstoproduction','reportmiscsettings','reportssetup','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/writeoffstoproduction.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/writeoffstoproduction.html" >v24.2</option><option value="https://www.opendental.com/manual241/writeoffstoproduction.html" >v24.1</option><option value="https://www.opendental.com/manual233/writeoffstoproduction.html" >v23.3</option><option value="https://www.opendental.com/manual232/writeoffstoproduction.html" >v23.2</option><option value="https://www.opendental.com/manual231/writeoffstoproduction.html" >v23.1</option><option value="https://www.opendental.com/manual224/writeoffstoproduction.html" >v22.4</option><option value="https://www.opendental.com/manual223/writeoffstoproduction.html" >v22.3</option><option value="https://www.opendental.com/manual222/writeoffstoproduction.html" >v22.2</option><option value="https://www.opendental.com/manual221/writeoffstoproduction.html" >v22.1</option><option value="https://www.opendental.com/manual214/writeoffstoproduction.html" >v21.4</option><option value="https://www.opendental.com/manual213/writeoffstoproduction.html" >v21.3</option><option value="https://www.opendental.com/manual212/writeoffstoproduction.html" >v21.2</option><option value="https://www.opendental.com/manual211/writeoffstoproduction.html" >v21.1</option><option value="https://www.opendental.com/manual205/writeoffstoproduction.html" >v20.5</option><option value="https://www.opendental.com/manual204/writeoffstoproduction.html" >v20.4</option><option value="https://www.opendental.com/manual203/writeoffstoproduction.html" >v20.3</option><option value="https://www.opendental.com/manual202/writeoffstoproduction.html" >v20.2</option><option value="https://www.opendental.com/manual201/writeoffstoproduction.html" >v20.1</option><option value="https://www.opendental.com/manual194/writeoffstoproduction.html" >v19.4</option><option value="https://www.opendental.com/manual193/writeoffstoproduction.html" >v19.3</option><option value="https://www.opendental.com/manual192/writeoffstoproduction.html" >v19.2</option><option value="https://www.opendental.com/manual191/writeoffstoproduction.html" >v19.1</option><option value="https://www.opendental.com/manual184/writeoffstoproduction.html" >v18.4</option><option value="https://www.opendental.com/manual183/writeoffstoproduction.html" >v18.3</option><option value="https://www.opendental.com/manual182/writeoffstoproduction.html" >v18.2</option><option value="https://www.opendental.com/manual181/writeoffstoproduction.html" >v18.1</option><option value="https://www.opendental.com/manual174/writeoffstoproduction.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Show Insurance Write-offs</p></div>
+<div class="GeneralPageContent">
+<p>Offices can choose the default write-off option that best fits their practice needs when running reports.</p>
+<p>In <a href="reportmiscsettings.html">Report Setup: Misc Settings</a>, near the bottom, is a dropdown for <i>Default selected date for PPO write-offs.</i></p>
+<img src="images/writeoffDefault.png" width="196" height="87"/><p>Choose the default setting that will affect the date write-offs will appear on reports. Insurance claims must be created before write-offs will appear on reports.</p>
+<h2>Reports</h2>
+<img src="images/prodincShowInsWriteoffs.png" width="289" height="143"/><p class="MarginBottomZero">The option chosen in Report Setup will affect the default <i>Show Insurance Write-offs</i> setting for the following reports: </p>
+<ul>
+<li><a href="reportprodinc.html">Production and Income Reports</a></li>
+<li><a href="reportdailywriteoffs.html">Daily Write-off Report</a></li>
+<li><a href="reportppowriteoffs.html">PPO Writeoffs Report</a></li>
+<li><a href="reportproductiongoal.html">Monthly Production Goal Report</a></li>
+<li><a href="reportcustomaging.html">Custom Aging Report</a></li>
+</ul>
+<p class="MarginBottomGap"> The setting can be changed manually when running the reports.</p>
+<p><div class="Note">Note: This setting does not affect the <a href="reportreceivablesbreakdown.html">Receivables Breakdown Report</a>, but the descriptions of how write-off dates are applied are still applicable to that report.</div>
+</p>
+<h2>Options</h2>
+<p><b>Insurance Pay Date</b>: Use insurance payment date. </p>
+<p class="MarginBottomZero">Apply write-offs when the insurance payment is received. Recommended when the write-off amount is unknown on the date of service (carrier fee schedule is unknown). </p>
+<ul>
+<li>Advantage: Historical reports will not be affected when the insurance payment (and write-off) is entered.</li>
+<li>Disadvantage: Net production (<i>Tot Prod</i>) for the day will not reflect the write-off. Instead, write-offs will be counted against production when the insurance payment is finalized. This may be very far after the actual procedure date. </li>
+</ul>
+<p class="MarginBottomGap">This method is used in the patient <a href="account.html">Account Module</a>. Use this method if the office uses global lock dates.</p>
+<p><b>Procedure Date</b>: Use procedure date.</p>
+<p class="MarginBottomZero">Apply write-offs on the date the procedure is completed. Recommended when the write-off amount is known on the date of service (carrier's fee schedule has been entered). </p>
+<ul class="MarginBottomGap">
+<li>Advantage: Net production for the day will reflect the write-off (production subtracts write-off amount).</li>
+<li>Disadvantage: If the write-off amount is changed when the insurance payment is entered, historical reports need to be re-run.</li>
+<li>Before claim payments are finalized, reports will reflect write-off estimates. After claim payments are finalized, reports will reflect the final write-off. If the final write-off differs from the write-off estimate, this will only show when reports are re-run for the historical procedure date.</li>
+</ul>
+<p><b>Initial Claim Date/Ins Pay Date</b>: Use initial claim date for write-off estimates, insurance payment date for write-off adjustments.</p>
+<p class="MarginBottomZero">On the claim date, the write-off estimate displays what was originally sent to insurance. Updating the write-off after the claim was sent will not reflect on the report under write off estimate but will display on reports as of the payment date under write-off adjustments once the payment has been finalized  </p>
+<ul class="MarginBottomGap">
+<li>Advantage: Historical reports will not be affected when the insurance payment (and write-off) is entered. Allows paying providers on adjusted production when it's completed, and correct for any discrepancies in the future.</li>
+<li>Disadvantage: If the claim is created after the day of service, write-off estimates will show on a different date than the production; If the claim is deleted, the <a href="claimsnapshot.html">Claim Snapshot</a> may not be accurate. Correction will occur when the claim is paid though a write-off adjustment.</li>
+<li>Uses the Claim Snapshot to determine write-off and write-off adjustments</li>
+<li><a href="reportppowriteoffs.html">PPO Writeoffs Report</a> Only: Both write-off estimates and write-off adjustments will be reported for the claim date. No write-off information will be reported for the insurance payment date.</li>
+</ul>
+<p>This option is not available for <a href="reportreceivablesbreakdown.html">Receivables Breakdown Report</a>.</p>
+<br/></div>
+</div>
+</body>
+</html>

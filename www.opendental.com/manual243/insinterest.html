@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Interest on Insurance Payments</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('insinterest','claimreceive','claimedit','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/insinterest.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/insinterest.html" >v24.2</option><option value="https://www.opendental.com/manual241/insinterest.html" >v24.1</option><option value="https://www.opendental.com/manual233/insinterest.html" >v23.3</option><option value="https://www.opendental.com/manual232/insinterest.html" >v23.2</option><option value="https://www.opendental.com/manual231/insinterest.html" >v23.1</option><option value="https://www.opendental.com/manual224/insinterest.html" >v22.4</option><option value="https://www.opendental.com/manual223/insinterest.html" >v22.3</option><option value="https://www.opendental.com/manual222/insinterest.html" >v22.2</option><option value="https://www.opendental.com/manual221/insinterest.html" >v22.1</option><option value="https://www.opendental.com/manual214/insinterest.html" >v21.4</option><option value="https://www.opendental.com/manual213/insinterest.html" >v21.3</option><option value="https://www.opendental.com/manual212/insinterest.html" >v21.2</option><option value="https://www.opendental.com/manual211/insinterest.html" >v21.1</option><option value="https://www.opendental.com/manual205/insinterest.html" >v20.5</option><option value="https://www.opendental.com/manual204/insinterest.html" >v20.4</option><option value="https://www.opendental.com/manual203/insinterest.html" >v20.3</option><option value="https://www.opendental.com/manual202/insinterest.html" >v20.2</option><option value="https://www.opendental.com/manual201/insinterest.html" >v20.1</option><option value="https://www.opendental.com/manual194/insinterest.html" >v19.4</option><option value="https://www.opendental.com/manual193/insinterest.html" >v19.3</option><option value="https://www.opendental.com/manual192/insinterest.html" >v19.2</option><option value="https://www.opendental.com/manual191/insinterest.html" >v19.1</option><option value="https://www.opendental.com/manual184/insinterest.html" >v18.4</option><option value="https://www.opendental.com/manual183/insinterest.html" >v18.3</option><option value="https://www.opendental.com/manual182/insinterest.html" >v18.2</option><option value="https://www.opendental.com/manual181/insinterest.html" >v18.1</option><option value="https://www.opendental.com/manual174/insinterest.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Interest on Insurance Payments</p></div>
+<div class="GeneralPageContent">
+<p>When <a href="claimreceive.html">Receiving a Claim</a>, if there is an interest charge, there are three options for entering it.</p>
+<h2>(Recommended) Option 1: Fake Patient Method</h2>
+<p>This method allows offices to track interest amounts per insurance company and keep the interest separate from the patient account. This method also works to track service charges or other fees charged by insurance. This method is useful to avoid patients being placed on the <a href="reportinsoverpaid.html">Insurance Overpaid Report</a> report and does not affect <a href="insremainingcalc.html">Insurance Remaining Calculations</a>.</p>
+<p><div class="Note">Note: This method cannot be used if the preference, <i>Payment exceeds procedure balance</i> is set to <i>Block</i>, or if the preference, <i>Initial primary insurance payment and write-off cannot exceed adjusted proc fee</i> is enabled. Either use a different method below, or talk to the practice administrator about updating these preferences.</div>
+</p>
+<p>1. Create a fake patient named for the insurance company (e.g., MedDent Insurance Co. Interest).</p>
+<p><img src="images/insInterestFakePat.png" width="186" height="188"/></p>
+<p>2. In the fake patient's <a href="family.html">Family Module</a>, add the patient's insurance plan.</p>
+<p>3. In <a href="procedurecodenew.html">Add Procedure Code</a>, create a N code procedure called interest or service charge.</p>
+<p><img src="images/insInterestProcCode.png" width="549" height="99"/></p>
+<p>4. Add the N code procedure to the fake patient's <a href="chart.html">Chart Module</a> and verify the correct provider is assigned (who should receive the charge or payment). Set the procedure complete.</p>
+<p>5. Go to the <a href="account.html">Account Module</a>. The N code procedure should have a zero fee. Highlight the procedure and click <b>New Claim</b>. Change the status to <i>Sent - Verified</i>. Click <b>OK</b> to create the claim.</p>
+<p><img src="images/insInterestFakeClaim.png" width="915" height="186"/></p>
+<p>6. <a href="claimreceive.html">Receive Claim</a>: Re-open the claim and enter a <b>By Procedure</b> payment. Indicate the amount charged or credited by insurance. For charges (e.g., service charges), enter a negative number.</p>
+<p><img src="images/insInterestEnterPay.png" width="915" height="228"/></p>
+<p>7. <a href="claimpayfinalize.html">Finalize Insurance Payment</a> as normal. If the interest or service charge was received as part of a bulk EOB, ensure the payment is received through a batch payment.</p>
+<h2> Option 2: Supplemental Payment Method</h2>
+<p>This method adds a supplemental payment to the claim and an adjustment to the patient account. This method results in patients being added to the Insurance Overpaid Report and affects Insurance Remaining Calculations. </p>
+<p>1. For a specific patient, open the received claim. A finalized insurance payment should already be created for the initial payment amount.</p>
+<p>2. Highlight a procedure, then click <b>Supplemental</b>.</p>
+<p>3. Enter the amount of the interest payment, enter a note that it is an interest payment, then click <b>OK</b>.</p>
+<p><img src="images/insInterestSupplemental.png" width="915" height="397"/></p>
+<p>4. Click Finalize Payment, enter the payment information, then click <b>OK</b>. We recommend entering a note that it is an interest payment.</p>
+<p>5. If Payment and Total Payment amounts match, click <b>OK</b>. At least two finalized payments show in the Insurance Payments area of the Edit Claim window: one for the insurance payment amount, one for the interest amount.</p>
+<p><img src="images/insInterestSuppFinalized.png" width="577" height="94"/></p>
+<p>6. The patient balance now reflects the interest amount. Add an addition adjustment to correct the patient's balance. We recommend creating an Interest addition adjustment type in <a href="definitionsadjtypes.html">Definitions: Adj Types</a></p>
+<p><img src="images/insInterestAdj.png" width="755" height="102"/></p>
+<p>7. To prevent the interest from being included in the patient's Insurance Remaining Calculations for the benefit year, add a negative <a href="adjinsbenefits.html">Adjustment to Insurance Benefits</a> matching the interest amount (e.g., if insurance paid $2 interest add a -2 adjustment to insurance benefits). </p>
+<p><img src="images/insInterestAdjInsBenefits.png" width="305" height="86"/></p>
+<p>To track interest amounts, run the <a href="reportdailyadj.html">Daily Adjustments Report</a>.</p>
+<h2>Option 3: Write-Off Method (PPO Insurance Plans Only)</h2>
+<p>If interest was paid on a PPO and the write-off amount is greater than the interest payment, follow these steps. This method keeps the account accurate, but does not track interest amounts. This method affects Insurance Remaining Calculations. </p>
+<p>1. Open the claim</p>
+<p>2. Click <b>By Procedure</b> to receive the claim. </p>
+<p>3. Reduce the write-off amount by the interest payment amount. (e.g., if the write-off was $40 and interest was $2, enter the write-off as $38)</p>
+<p>4. Enter the insurance payment, including the interest amount. (e.g., if the payment was $100 and interest is $2, enter payment as $102). </p>
+<p>5. Add a note to <b>Remarks</b> of procedures where insurance interest was added. </p>
+<p><img src="images/insInterestPPO.png" width="915" height="397"/></p>
+<p>6. Click <b>OK</b> to save.</p>
+<p>7. Finalize payment as normal.</p>
+<p>8. To prevent the interest from being included in the patient's Insurance Used calculations for the benefit year, add a negative Adjustment to Insurance Benefits matching the interest amount (e.g., if insurance paid $2 interest add a -2 adjustment to insurance benefits).</p>
+<p><img src="images/insInterestAdjInsBenefits.png" width="305" height="86"/></p>
+</div>
+</div>
+</body>
+</html>

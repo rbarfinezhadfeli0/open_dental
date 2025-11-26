@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Set Appointment Complete</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('apptcomplete','appointments','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/apptcomplete.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/apptcomplete.html" >v24.2</option><option value="https://www.opendental.com/manual241/apptcomplete.html" >v24.1</option><option value="https://www.opendental.com/manual233/apptcomplete.html" >v23.3</option><option value="https://www.opendental.com/manual232/apptcomplete.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/apptcomplete.html" >v23.1</option><option value="https://www.opendental.com/manual224/apptcomplete.html" >v22.4</option><option value="https://www.opendental.com/manual223/apptcomplete.html" >v22.3</option><option value="https://www.opendental.com/manual222/apptcomplete.html" >v22.2</option><option value="https://www.opendental.com/manual221/apptcomplete.html" >v22.1</option><option value="https://www.opendental.com/manual214/apptcomplete.html" >v21.4</option><option value="https://www.opendental.com/manual213/apptcomplete.html" >v21.3</option><option value="https://www.opendental.com/manual212/apptcomplete.html" >v21.2</option><option value="https://www.opendental.com/manual211/apptcomplete.html" >v21.1</option><option value="https://www.opendental.com/manual205/apptcomplete.html" >v20.5</option><option value="https://www.opendental.com/manual204/apptcomplete.html" >v20.4</option><option value="https://www.opendental.com/manual203/apptcomplete.html" >v20.3</option><option value="https://www.opendental.com/manual202/apptcomplete.html" >v20.2</option><option value="https://www.opendental.com/manual201/apptcomplete.html" >v20.1</option><option value="https://www.opendental.com/manual194/apptcomplete.html" >v19.4</option><option value="https://www.opendental.com/manual193/apptcomplete.html" >v19.3</option><option value="https://www.opendental.com/manual192/apptcomplete.html" >v19.2</option><option value="https://www.opendental.com/manual191/apptcomplete.html" >v19.1</option><option value="https://www.opendental.com/manual184/apptcomplete.html" >v18.4</option><option value="https://www.opendental.com/manual183/apptcomplete.html" >v18.3</option><option value="https://www.opendental.com/manual182/apptcomplete.html" >v18.2</option><option value="https://www.opendental.com/manual181/apptcomplete.html" >v18.1</option><option value="https://www.opendental.com/manual174/apptcomplete.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Set Appointment Complete</p></div>
+<div class="GeneralPageContent">
+<p>When a patient is finished with their appointment, set the appointment complete to change the appointment color and complete the attached procedures. </p>
+<p>In the <a href="appointments.html">Appointments Module</a>, select the appointment. In the toolbar, click <b>Complete</b></p>
+<img src="images/apptsetcomp.gif" width="781" height="70"/><p class="MarginBottomZero">Alternatively:  </p>
+<ul class="MarginBottomGap">
+<li>Right-click on the appointment. Select <i>Set Complete</i>.</li>
+<li>In the <a href="chart.html">Chart Module</a> Progress Notes, right-click the appointment. Click <i>Set Complete</i>.</li>
+<li>In the <a href="aptedit.html">Edit Appointment</a> window, change the status to <i>Complete</i>, then click <b>OK</b>.</li>
+</ul>
+<p class="MarginBottomZero">Several <a href="preferences.html">Preferences</a> affect behavior when setting an appointment complete. </p>
+<ul class="MarginBottomGap">
+<li><i> Allow setting future appointments complete</i></li>
+<li><i>Allow setting appointments without procedures complete</i></li>
+<li><i>Allow setting procedures complete</i></li>
+<li><i>Procedures Prompt for Auto Note</i></li>
+</ul>
+<p class="MarginBottomZero">When an appointment is set complete, the following changes occur: </p>
+<ul class="MarginBottomGap">
+<li>The appointment status changes to complete.</li>
+<li>The status of each attached <a href="procedureedit.html">Procedure</a> is changed from treatment planned (TP) to complete (C).</li>
+<li>The provider for each procedure is assigned automatically based on the <a href="aptedit.html">Appointment</a> settings.</li>
+<li>Default <a href="procedurenotes.html">Procedure Notes</a> are copied into each procedure.</li>
+<li>The procedure date is set to today's date.</li>
+<li>For advanced users:  <ul>
+<li>Sets the <b>SiteNum</b> for each procedure to be the same as <b>patient.SiteNum</b>.</li>
+<li>Sets appointment <b>InsPlan1</b> and <b>InsPlan2</b> according to the current coverage.</li>
+<li>Syncs recall.</li>
+</ul>
+</li>
+</ul>
+<p><div class="Note">Note: <ul>
+<li>If the appointment provider does not match at least one provider on an attached procedure, the user will receive a prompt.</li>
+<li>Manually changing a procedure's status to complete on the Procedure Info window only changes the status. It does not change the procedure date or copy default procedure notes.</li>
+</ul>
+</div>
+</p>
+<h2>Appointment Texts</h2>
+<p>If <a href="appointmenttexts.html">Appointment Texts</a> are enabled, and <i>Opt in Prompt on Appt Complete</i> is checked, a prompt will appear when an appointment is set complete and the patient has not yet opted in or out of Appointment Texts. The user must read the prompt to the patient and obtain verbal consent to allow Appointment Texts. <br/><img src="images/apptTextOptIn.png" width="523" height="201" class="ImageInParagraph"/><br/> If the patient does not consent to appointment texts, uncheck the box and click Close.</p>
+</div>
+</div>
+</body>
+</html>

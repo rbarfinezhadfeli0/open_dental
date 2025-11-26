@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Antivirus Best Practices</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('virusbestpractices','virus','securitycomputers','computernetworksetup','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/virusbestpractices.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/virusbestpractices.html" >v24.2</option><option value="https://www.opendental.com/manual241/virusbestpractices.html" >v24.1</option><option value="https://www.opendental.com/manual233/virusbestpractices.html" >v23.3</option><option value="https://www.opendental.com/manual232/virusbestpractices.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/virusbestpractices.html" >v23.1</option><option value="https://www.opendental.com/manual224/virusbestpractices.html" >v22.4</option><option value="https://www.opendental.com/manual223/virusbestpractices.html" >v22.3</option><option value="https://www.opendental.com/manual222/virusbestpractices.html" >v22.2</option><option value="https://www.opendental.com/manual221/virusbestpractices.html" >v22.1</option><option value="https://www.opendental.com/manual214/virusbestpractices.html" >v21.4</option><option value="https://www.opendental.com/manual213/virusbestpractices.html" >v21.3</option><option value="https://www.opendental.com/manual212/virusbestpractices.html" >v21.2</option><option value="https://www.opendental.com/manual211/virusbestpractices.html" >v21.1</option><option value="https://www.opendental.com/manual205/virusbestpractices.html" >v20.5</option><option value="https://www.opendental.com/manual204/virusbestpractices.html" >v20.4</option><option value="https://www.opendental.com/manual203/virusbestpractices.html" >v20.3</option><option value="https://www.opendental.com/manual202/virusbestpractices.html" >v20.2</option><option value="https://www.opendental.com/manual201/virusbestpractices.html" >v20.1</option><option value="https://www.opendental.com/manual194/virusbestpractices.html" >v19.4</option><option value="https://www.opendental.com/manual193/virusbestpractices.html" >v19.3</option><option value="https://www.opendental.com/manual192/virusbestpractices.html" >v19.2</option><option value="https://www.opendental.com/manual191/virusbestpractices.html" >v19.1</option><option value="https://www.opendental.com/manual184/virusbestpractices.html" >v18.4</option><option value="https://www.opendental.com/manual183/virusbestpractices.html" >v18.3</option><option value="https://www.opendental.com/manual182/virusbestpractices.html" >v18.2</option><option value="https://www.opendental.com/manual181/virusbestpractices.html" >v18.1</option><option value="https://www.opendental.com/manual174/virusbestpractices.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Antivirus Best Practices</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="virus.html">Antivirus</a>.</p>
+<p>The following are some basic best practices to prevent malware or ransomeware from infecting your computer systems.</p>
+<p><b>Education</b>: Educate yourself and your staff on how to recognize phishing attempts and suspect emails. Knowledge is the best protection against malware on office computers.</p>
+<p><b>Backups</b>: Regular, verified backups can greatly protect you. No matter what hits the office, you can always clean the computer or reinstall the operating system, then restore backups and get running again, without paying ransomers. <a href="backups.html">Backups</a></p>
+<p><b>Show File Extensions</b>: Turn on the option to <i>show file extensions</i> to help identify suspect programs before they are run. Cryptolocker likes to hide misnamed files (e.g., some-file.pdf.exe.) The double extension would masquerade like a pdf file without the show hidden file extensions feature on.</p>
+<p><b>Filter Emails</b>: Some email programs can filter emails out if they have an attachment with an exe extension. This can help in removing some phishing attempts but will not help prevent drive-by downloads.</p>
+<p><b>VPN</b>: If you have multiple offices, set up a VPN between the two. This will give you several options without having to open the RDP port 3389 or the MySQL port 3306 to the internet. With the VPN on you can use Microsoft RDP to the remote office computer through the VPN or direct connect using the Open Dental program to the remote office database. Either way, malicious attackers cannot port scan your offices and attempt to break in.</p>
+<p><b>Use a secure remote desktop product</b>: For the less technical, if you must remote connect from home to a computer in your office, don't rely on Microsoft RDP. While RDP gets the job done, it is easier and more secure to use another remote desktop product like Logmein or Teamviewer.</p>
+<p><b>Turn off mapped drives</b>: Turn off the ability to create mapped drives and remove all existing mapped drives. This can prevent ransomware from jumping computers. To protect your OpenDentImages folder use the UNC path.</p>
+<p><b>Install a reputable antivirus software</b>: Each device in the office should have a reputable anti-virus installed, especially if small devices like phones and tablets are allowed to connect to the office network. There should be a policy that each device must have an anti-virus installed. There is a sharp increase in attacks on these small mobile devices. See <a href="virus.html">Antivirus</a>.</p>
+<p><b>Unique usernames and passwords</b>: Each user should have their own username and password for any software they use, including the operating system, to track events and which accounts may be compromised. This is critical for Administrator accounts.</p>
+<p><b>Never surf the internet from the server</b>: Never surf the internet from a computer acting as your server. You are less likely to get a virus or cryptolocker infecting the server if there are no mapped drives in the office and no one ever surfs the internet or answers emails from the server computer.</p>
+<p><b>Never turn down the UAC</b>: If you can help it, never turn down the UAC (some older programs may force the reduction). It protects against un-authorized installations by forcing the user to accept the install and locking remote access to the desktop until it is authorized or rejected. This protection is most effective against drive-by downloads.</p>
+</div>
+</div>
+</body>
+</html>

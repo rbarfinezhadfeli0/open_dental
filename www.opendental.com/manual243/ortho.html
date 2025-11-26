@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Ortho</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('ortho','+chartTabs','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/ortho.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/ortho.html" >v24.2</option><option value="https://www.opendental.com/manual241/ortho.html" >v24.1</option><option value="https://www.opendental.com/manual233/ortho.html" >v23.3</option><option value="https://www.opendental.com/manual232/ortho.html" >v23.2</option><option value="https://www.opendental.com/manual231/ortho.html" >v23.1</option><option value="https://www.opendental.com/manual224/ortho.html" >v22.4</option><option value="https://www.opendental.com/manual223/ortho.html" >v22.3</option><option value="https://www.opendental.com/manual222/ortho.html" >v22.2</option><option value="https://www.opendental.com/manual221/ortho.html" >v22.1</option><option value="https://www.opendental.com/manual214/ortho.html" >v21.4</option><option value="https://www.opendental.com/manual213/ortho.html" >v21.3</option><option value="https://www.opendental.com/manual212/ortho.html" >v21.2</option><option value="https://www.opendental.com/manual211/ortho.html" >v21.1</option><option value="https://www.opendental.com/manual205/ortho.html" >v20.5</option><option value="https://www.opendental.com/manual204/ortho.html" >v20.4</option><option value="https://www.opendental.com/manual203/ortho.html" >v20.3</option><option value="https://www.opendental.com/manual202/ortho.html" >v20.2</option><option value="https://www.opendental.com/manual201/ortho.html" >v20.1</option><option value="https://www.opendental.com/manual194/ortho.html" >v19.4</option><option value="https://www.opendental.com/manual193/ortho.html" >v19.3</option><option value="https://www.opendental.com/manual192/ortho.html" >v19.2</option><option value="https://www.opendental.com/manual191/ortho.html" >v19.1</option><option value="https://www.opendental.com/manual184/ortho.html" >v18.4</option><option value="https://www.opendental.com/manual183/ortho.html" >v18.3</option><option value="https://www.opendental.com/manual182/ortho.html" >v18.2</option><option value="https://www.opendental.com/manual181/ortho.html" >v18.1</option><option value="https://www.opendental.com/manual174/ortho.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Ortho</p></div>
+<div class="GeneralPageContent">
+<p>Chart orthodontic hardware and track ortho treatment progress from the Ortho tab.</p>
+<p>In the <a href="chart.html">Chart Module</a>, click the Ortho tab.</p>
+<img src="images/orthoChartModule.png" width="915" height="548"/><p>Users can choose to see only information relating to the patient's orthodontic treatment and hide general chart notes and procedures. </p>
+<p>Enable <i>Show Ortho button and tab in Chart Module</i> in <a href="preferences.html">Preferences</a> to use this feature.</p>
+<h2>Filters</h2>
+<img src="images/orthoTabFilters.png" width="202" height="122"/><p class="MarginBottomZero"><b>Tooth chart ortho mode</b>: Determines the view of the odontogram.  </p>
+<ul class="MarginBottomGap">
+<li>Checked: Enables tooth chart ortho mode in the Ortho tab only. The odontogram displays the facial/buccal view of the teeth only.</li>
+<li>Unchecked: Disables tooth chart ortho mode.</li>
+</ul>
+<p class="MarginBottomZero"><b>Show Ortho grids</b>: Determine if the ortho grids or progress notes are shown.  </p>
+<ul class="MarginBottomGap">
+<li>Checked: Shows the Hardware and Ortho Chart tabs. Progress Notes are hidden.</li>
+<li>Unchecked: Shows Progress Notes. Hardware and Ortho Chart Tabs are hidden.</li>
+</ul>
+<p><div class="Note">Note: When the preference, <i>Automatically check and uncheck ortho mode and show grid checkboxes based on selection of Ortho tab</i>, is enabled, <i>Tooth Chart ortho mode</i> and <i> Show Ortho grids</i> are automatically checked when opening the Ortho tab and unchecked upon exiting the Ortho tab.</div>
+</p>
+<p class="MarginBottomZero"><b>Show Graphics</b>: Determine if ortho graphics (e.g., brackets) are shown on the <a href="graphicaltoothchart.html">Graphical Tooth Chart</a>. </p>
+<ul class="MarginBottomGap">
+<li>Checked: Ortho graphics are enabled in all tabs of the Chart Module.</li>
+<li>Unchecked: Ortho graphics are disabled in all tabs of the Chart Module.</li>
+</ul>
+<p class="MarginBottomZero"><b>Show Hidden</b>: Determine if Ortho hardware marked hidden is displayed on the Graphical Tooth Chart and listed in the Hardware tab. </p>
+<ul class="MarginBottomGap">
+<li>Checked: Hidden hardware is displayed when <i>Show Graphics</i> is checked and is listed in the Hardware tab.</li>
+<li>Unchecked: Hidden hardware is not displayed or listed.</li>
+</ul>
+<p><b>Show Exam Date</b>: The exam date that corresponds to the hardware items listed in the Hardware tab and Graphical Tooth Chart. Click to view a different exam date. Adding new hardware, prescriptions, or copying from an existing exam creates a new exam with today's date.</p>
+<h2>Hardware</h2>
+<img src="images/orthoTabHardware.png" width="217" height="189"/><p><b>Prescriptions</b>: Click to chart Ortho Hardware using <a href="orthoprescriptionssetup.html">Ortho Prescriptions</a>. Ortho Prescriptions are assigned to specific Ortho Hardware items and treatment areas. The Select Ortho Prescription window opens.</p>
+<img src="images/orthoPrescriptionAdd.png" width="682" height="393"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Highlight prescriptions from the <i>Available</i> list and click <b>Select</b> to move to the <i>Selected</i> list. Multiple prescriptions can be added to the <i>Selected</i> list.</li>
+<li>Highlight items from the <i>Selected</i> list and click <b>Remove</b> to move prescription(s) from back to the <i>Available</i> list. </li>
+<li>Click <b>OK</b> to automatically chart Hardware based on the <i>Selected</i> Ortho Prescriptions. </li>
+</ul>
+<p><b>Add Single</b>: Select teeth and click to add <a href="orthohardwaresetup.html">Ortho Hardware</a>. The Add Ortho Hardware window opens.</p>
+<img src="images/orthoAddHardware.png" width="622" height="321"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Highlight hardware items to add.</li>
+<li>Click <b>OK</b> to add hardware items to the selected teeth. </li>
+</ul>
+<p><b>Hide / Unhide</b>: Select hardware items from the grid and click <b>Hide</b> to remove graphics from the tooth chart. Select hardware items and click <b>Unhide</b> to display hardware on the tooth chart. </p>
+<p><b>Delete</b>: Select hardware items from the grid and click to delete. </p>
+<p><b>Copy</b>: Select an exam date and hardware items from the grid and click to copy to a new exam with today's date. If no items are selected, all items from the previous exam date are copied to today's date.</p>
+<h2>Hardware Tab</h2>
+<img src="images/orthoTabHardwareTab.png" width="752" height="436"/><p>Displays all hardware information for the selected exam date.</p>
+<p>Double-click a hardware item to edit information or delete hardware.</p>
+<img src="images/orthoHardwareEdit.png" width="526" height="277"/><p>Right-click selected rows to delete hardware.</p>
+<h2>Ortho Chart Tabs</h2>
+<p>The tabs displayed after the Hardware tab show the <a href="orthochart.html">Ortho Chart</a> tabs. Depending on <a href="orthochartsetup.html">Ortho Chart Setup</a>, <i>Setup Tabs</i>, the labels of the tabs and number of tabs may differ. The default is one tab labeled <i>Ortho Chart.</i></p>
+<p>Information in these tabs is read-only. Double-click anywhere in the grid to launch the Ortho Chart window to make changes or add a new entry to the Ortho Chart. </p>
+</div>
+</div>
+</body>
+</html>

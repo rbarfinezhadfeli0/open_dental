@@ -1,0 +1,248 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/manual.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Open Dental Software Manual - Using SQL</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+
+<style type="text/css"><!--
+.TopLink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 13px;
+	color: #003300;
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+.TopLink:hover {
+	text-decoration: none;
+	background-color: #E3F4E8;
+	border-bottom: 0px dotted;
+}
+.TopMenu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #002353;
+	font-weight: bold;
+	line-height: 10px;
+}
+.BMenu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #347A92;
+	text-decoration: none;
+}
+.MLink {
+	text-decoration: none;
+}
+.MLink:hover {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+	color: #333333;
+}
+#Menu {
+	list-style-position: outside;
+	list-style-image: url(../open-dental/Bullet.gif);
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: 0px 0px 0px 5px;
+}
+#LIMenu {
+	margin: 0px;
+	padding: 0px;
+	list-style-position: outside;
+	list-style-image: url(../open-dental/Bullet.gif);
+	list-style-type: none;
+}
+-->
+</style>
+<link href="../style.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="../favicon.png">
+<style type="text/css">body {
+	background-color: #507C77;
+}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77240952-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="init()" onKeyPress="IEKeyCapture()">
+<table width="946" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+		<td>
+		<table width="100%" height="80" align="left" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+    		<td align="left"><a href="../index.html"><img src="../open-dental/LogoInner.jpg" width="235" height="80" border="0"></a></td>
+    		<td width="100%" align="left">
+					<table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" background="../open-dental/bg-top.jpg">
+      			<tr>
+        			<td height="25" align="right" valign="middle" style="padding-right:10px;">
+								<a href="../index.html" class="TopLink"><img src="../open-dental/home.gif" width="17" height="15" border="0">Home</a>
+								<a href="../manual/manual.html" class="TopLink"><img src="../open-dental/UserManual.gif" width="27" height="15" border="0">User Manual</a>
+								<a href="http://opendentalsoft.com/forum/" class="TopLink">
+										<img src="../open-dental/DiscForum.gif" width="27" height="15" border="0">Discussion Forum</a>
+								<a href="../manual/search.html" class="TopLink"><img src="../open-dental/SearchIcon.gif" width="27" height="15" border="0">Search</a>
+							</td>
+						</tr>
+						<tr>
+        			<td height="55" align="left" valign="top"">
+								<table width="100%" height="55" border="0" cellpadding="0" cellspacing="0">
+            			<tr align="left" valign="top">
+										<td width="20px">
+										</td>
+              			<td width="25%" style="padding-left:5px; padding-top:12px;">
+											<ul id="Menu">
+                				<li id="LIMenu"><a href="../trial.html" class="MLink"> 
+													<font size="2" face="Arial, Helvetica, sans-serif" class="TopMenu">TRIAL</font><br>
+                    			<font size="2" face="Arial, Helvetica, sans-serif" class="BMenu">VERSION</font> </a>
+                				</li>
+                  		</ul>
+										</td>
+                		<td align="center" valign="bottom"><img src="../open-dental/Line.gif" width="1" height="46"></td>
+                		<td width="25%" style="padding-left:5px; padding-top:12px;">
+											<ul id="Menu">
+                  			<li id="LIMenu"><a href="../programmers-resellers.html" class="MLink">
+													<font size="2" face="Arial, Helvetica, sans-serif" class="TopMenu">PROGRAMMERS</font><br>
+                      		<font size="2" face="Arial, Helvetica, sans-serif" class="BMenu">& DISTRIBUTORS</font> </a>
+												</li>
+                  		</ul>
+										</td>
+                		<td valign="bottom"><img src="../open-dental/Line.gif" width="1" height="46"></td>
+                		<td width="25%" style="padding-left:5px; padding-top:12px;">
+											<ul id="Menu">
+                  			<li id="LIMenu"><a href="https://www.opendental.com/order.html" class="MLink">
+													<font size="2" face="Arial, Helvetica, sans-serif" class="TopMenu">ORDER</font><br>
+                      		<font size="2" face="Arial, Helvetica, sans-serif" class="BMenu">HERE</font> </a>
+												</li>
+                  		</ul>
+										</td>
+                		<td valign="bottom"><img src="../open-dental/Line.gif" width="1" height="46"></td>
+                		<td width="25%" style="padding-left:5px; padding-top:12px;">
+											<ul id="Menu">
+                				<li id="LIMenu"><a href="../contact.html" class="MLink">
+													<font size="2" face="Arial, Helvetica, sans-serif" class="TopMenu">CONTACT</font><br>
+                      		<font size="2" face="Arial, Helvetica, sans-serif" class="BMenu">INFORMATION</font> </a> </li>
+                    		</ul>
+											</td>
+                		</tr>
+              		</table>
+								</td>
+          		</tr>
+        		</table>
+					</td>
+				</tr>
+		</table>
+		</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF" style="padding-left:15px; padding-top:20px; padding-right:15px; background-image: url(../open-dental/Back.jpg); background-repeat: repeat-x;">
+			<p style="margin-top: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: bolder; color: #FFFFFF;">
+				<!-- InstanceBeginEditable name="title" -->Using SQL to Write Reports<!-- InstanceEndEditable -->
+			</p>
+			<!-- InstanceBeginEditable name="body" -->
+      	<p>This section may be useful for  writing <a href="../manual/queryoverview.html">Queries</a>.&nbsp; </p>
+        <p>Note:&nbsp; When writing queries for reports, you should only use <span class="CourierFont"> SELECT</span> commands which return a table. Never try to change  the actual data in the database from here using <span class="CourierFont">INSERT, UPDATE, DELETE, DROP, TRUNCATE,</span> or any other similar command.
+      	</p>
+        <p>As a starting point, here are the basic elements of an SQL command, and how they are used:</p>
+      	<table width="872" border="0" cellspacing="0" cellpadding="4">
+      		<tr>
+      			<td width="88" class="CourierFont">SELECT</td>
+      			<td width="776">The first word of the command. As with all the other commands, it does not need to be capitalized, but usually is for clarity.</td>
+      			</tr>
+      		<tr>
+      			<td class="CourierFont">*</td>
+      			<td>Means 'all'. This usually follows the select command to specify that all columns are being selected. If you only wish to select certain columns, you would have to list them here instead of using the star.</td>
+      			</tr>
+      		<tr>
+      			<td class="CourierFont">FROM</td>
+      			<td>Keyword that follows the columns. All other commands come after FROM.</td>
+      			</tr>
+      		<tr>
+      			<td class="CourierFont">WHERE</td>
+      			<td>Puts a limitation on the number of rows returned by specifying an expression after the WHERE. If the expression is true for that row, then it will be included in the rows returned. If the expression is false, it will not be present.</td>
+      			</tr>
+      		<tr>
+      			<td class="CourierFont">ORDER BY</td>
+      			<td>One or more column names are listed after this command. The rows will be sorted in ascending order (e.g. A-Z, 0-9) depending on the type of data in the column.&nbsp; If a second column is listed, then items with identical values in the first column will be further ordered according to the values in that column. As many columns can be listed as needed.</td>
+      			</tr>
+      		<tr>
+      			<td class="CourierFont">DESC</td>
+      			<td>Can follow the name of a column in the ORDER BY list to indicate it should be sorted in descending order (Z-A).</td>
+      			</tr>
+      		<tr>
+      			<td class="CourierFont">LIMIT</td>
+      			<td>Followed by a number. The number specifies a limit on the number of rows to return. This would not normally be used.</td>
+      			</tr>
+      		</table>
+      	<p>For a list of tables and columns in the Open Dental database, see <a href="programmingresources.html">Programming Resources</a>, Database Documentation.</p>
+      	<p><span class="parHead">Examples<br>
+      	  </span> <span class="CourierFont">SELECT ProcCode, AbbrDesc,Descript FROM procedurecode WHERE ProcTime = '/X/' AND ProcCode&lt;= &quot;D9999&quot; ORDER BY ProcCode DESC LIMIT 10;<br>
+    	    </span>The following table was returned:</p>
+      	<p><img src="../images/queryexample1.gif" width="622" height="189" border="1"></p>
+      	<p>Here is a breakdown of the query:</p>
+      	<p><span class="CourierFont">SELECT ProcCode, AbbrDesc,Descript -</span> Capitalization of column names are required in some mysql implementations.&nbsp; It is a setting on the MySQL server.&nbsp; For Linux the default is to be case-sensitive, for windows the default is case-insensitive.&nbsp; It is best practice to match capitalization of the database column. You can leave a space after the commas or you can omit it. In the example, a combination of styles was used. The names of the columns must be spelled precisely as in the database. If you need to know the names of the columns, use one of the simple included queries for viewing the tables (in this case: <span class="CourierFont">SELECT * from procedurecode</span>). The names of all the columns will be displayed with the table. For information on exactly what a column is used for, see <a href="programmingresources.html">Database Documentation</a>. Also switch back and forth between human-readable and raw formats to get a feel for the data. In the raw format, much of the information is in numeric format and linked to a definition, a provider, or a patient.</p>
+      	<p><span class="CourierFont">WHERE ProcTime = '/X/' AND ProcCode&lt;= &quot;D9999&quot;</span> - The WHERE clause has two expressions which must both be true for a row to be included in the results. Single quotes were used in the first part and double quotes in the second part simply to illustrate that either is acceptable. The first expression is ProcTime = '/X/' . So the results only include procedures with that time pattern. If you wanted to show all rows that did not have that time pattern, you could either use ProcTime != '/X/' or ProcTime &lt;&gt;'/X/' . The first means 'not' and the second means 'less than or greater than'; the result is the same. Because the second part of the WHERE statement limited results to codes with values 'less than or equal to' D9999 , codes like N1234 would not show up. (N-codes are used in the example database for NoFee codes and are not ADA recognized). In this example, the raw format is the same as the human-readable format, but often you will need to use the raw value in your WHERE statement. For instance if you wanted to select appointments with unconfirmed status, it would look like this: SELECT * FROM appointment WHERE confirmed='19' . It is easy to see that 19 is the correct value to use by looking at the entire appointments table, finding an appointment with unconfirmed status and switching to the raw format which shows the numeric representations for columns like this. Alternatively, you could go to the definitions table, where the 19 originated and order the table by category. In the ApptConfirmed category, it clearly shows that the unconfirmed status uses a 19 to represent it in all other parts of the program.</p>
+      	<p><span class="CourierFont">ORDER BY ProcCode DESC -</span> Orders the rows in descending order.</p>
+      	<p><span class="CourierFont">LIMIT 10</span> - Shows the first 10 rows of the results. Since this comes after the sorting, there will not be any skipped rows in the result unless they were excluded in the WHERE clause.</p>
+      	<p>The order of all the commands listed above must always be in the order listed if used. <span class="CourierFont">ORDER BY</span> can never come before <span class="CourierFont">WHERE</span>, for instance.</p>
+      	<p>More about raw formats: if you use database values in the where clause, not only do you have to use numbers as shown above, you also have to make sure your dates are in the correct format. For instance, the standard way of representing 3/13/03 in SQL is 2003-03-13. That's YYYY-MM-DD , which is really very logical but just unfamiliar to most users.</p>
+      	<hr>
+        <p>Some more useful commands:</p>
+        <p>AS - Lets you use an alias, or alternative name, for a column or table. The name of the column or table comes before the AS, and then the name you want to use follows it.</p>
+        <p>LIKE - Used in a WHERE clause if you are just doing a search on a portion of a value and not the entire value. For example, .....WHERE descript LIKE '%amalg%' only shows rows that have 'amalg' within the descript column. The % used on either side is the wildcard character. That means anything on either side of amalg is OK, the amalg could be anywhere within the description and it ignores capitalization.</p>
+        <p>LEFT JOIN - Used to pull information from two or more tables which are logically linked somehow. See the example below.</p>
+        <p>ON - The condition to use when doing a join. See the example:</p>
+        <p class="CourierFont">SELECT T1.ProcCode,<br>
+  f1.Amount AS '$ Standard', <br>
+  f2.Amount AS '$ ODS',<br>
+  f3.Amount AS '$ BCBS',<br>
+  AbbrDesc,Descript <br>
+  FROM procedurecode AS T1 <br>
+  LEFT JOIN fee AS f1 ON f1.FeeSched='53' AND T1.ProcCode=f1.ProcCode <br>
+  LEFT JOIN fee AS f2 ON f2.FeeSched='55' AND T1.ProcCode=f2.ProcCode <br>
+  LEFT JOIN fee AS f3 ON f3.FeeSched='54' AND T1.ProcCode=f3.ProcCode <br>
+  ORDER BY ProcCode</p>
+        <p>The first thing to notice is the following four AS commands:<br>
+  procedurecode AS T1<br>
+  fee AS f1<br>
+  fee AS f2<br>
+  fee AS f3</p>
+        <p>So, the procedurecode table is referred to elsewhere in the query as T1, and the fee table is referred to as either f1, f2, or f3. Now the first line should make more sense. It means select the ProcCode column of the procedurecode table. As you can see, the name of the table is followed by a period and then the name of the column. This could just as easily be written procedurecode.ProcCode , but only if the AS had not been used. The second line means that the second column of the table will be the Amount column of f1(the fee table) and that the name of the second column will be '$ Standard' . The next two rows define the third and fourth columns, and the fifth row defines the fifth and sixth columns. The T1 is not used before each of the last two columns because those columns are only present in the procedurecode table, so it is not ambiguous. The T1 must be used in the first column because it would be unclear whether to use the ProcCode column from the procedurecode table or the fee table (even though they are exactly the same).</p>
+        <p>And then there is a feature of Open Dental to be aware of when forming queries that involve prices. It has to do with the way the automatic formatting is done to make a table human-readable. The only way Open Dental knows how to format a column is by checking the name of the column. If the name of the column exactly matches the expected name (changing caps is ok) then the column values are changed, right formatted for prices, etc. But in the example above, we are renaming 3 of the columns because otherwise they would all be 'Amount' and the report would be unclear. Since the columns are renamed, Open Dental won't recognize them. To solve this problem, Open Dental will also recognize any column that begins with a '$' as a price and will then format it correctly and show a sum total at the bottom of the column. That is the reason for naming each column above beginning with a $.</p>
+        <p>The last part of the example above that still needs to be addressed is the LEFT JOIN lines. The ON command specifies the conditions that must be satisfied for each join to take place. The first table that is joined is one where the ProcCode matches and the FeeSched is '53'. That number was obtained from the raw view of the definition table. This process is repeated for each of the other two fee schedules.</p>
+      
+			<!-- InstanceEndEditable -->
+			<p>&nbsp;</p>
+		</td>
+  </tr>
+	<tr>
+		<td height="80" valign="top"><div align="center" style="color: #FFFFFF; font-size: 11px;">
+			  Open Dental Software  1-503-363-5432</div>
+		</td>
+  </tr>
+</table>
+
+
+</body>
+<!-- InstanceEnd --></html>

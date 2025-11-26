@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Ortho Auto Claims</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('orthoautoclaim','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/orthoautoclaim.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/orthoautoclaim.html" >v24.2</option><option value="https://www.opendental.com/manual241/orthoautoclaim.html" >v24.1</option><option value="https://www.opendental.com/manual233/orthoautoclaim.html" >v23.3</option><option value="https://www.opendental.com/manual232/orthoautoclaim.html" >v23.2</option><option value="https://www.opendental.com/manual231/orthoautoclaim.html" >v23.1</option><option value="https://www.opendental.com/manual224/orthoautoclaim.html" >v22.4</option><option value="https://www.opendental.com/manual223/orthoautoclaim.html" >v22.3</option><option value="https://www.opendental.com/manual222/orthoautoclaim.html" >v22.2</option><option value="https://www.opendental.com/manual221/orthoautoclaim.html" >v22.1</option><option value="https://www.opendental.com/manual214/orthoautoclaim.html" >v21.4</option><option value="https://www.opendental.com/manual213/orthoautoclaim.html" >v21.3</option><option value="https://www.opendental.com/manual212/orthoautoclaim.html" >v21.2</option><option value="https://www.opendental.com/manual211/orthoautoclaim.html" >v21.1</option><option value="https://www.opendental.com/manual205/orthoautoclaim.html" >v20.5</option><option value="https://www.opendental.com/manual204/orthoautoclaim.html" >v20.4</option><option value="https://www.opendental.com/manual203/orthoautoclaim.html" >v20.3</option><option value="https://www.opendental.com/manual202/orthoautoclaim.html" >v20.2</option><option value="https://www.opendental.com/manual201/orthoautoclaim.html" >v20.1</option><option value="https://www.opendental.com/manual194/orthoautoclaim.html" >v19.4</option><option value="https://www.opendental.com/manual193/orthoautoclaim.html" >v19.3</option><option value="https://www.opendental.com/manual192/orthoautoclaim.html" >v19.2</option><option value="https://www.opendental.com/manual191/orthoautoclaim.html" >v19.1</option><option value="https://www.opendental.com/manual184/orthoautoclaim.html" >v18.4</option><option value="https://www.opendental.com/manual183/orthoautoclaim.html" >v18.3</option><option value="https://www.opendental.com/manual182/orthoautoclaim.html" >v18.2</option><option value="https://www.opendental.com/manual181/orthoautoclaim.html" >v18.1</option><option value="https://www.opendental.com/manual174/orthoautoclaim.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Ortho Auto Claims</p></div>
+<div class="GeneralPageContent">
+<p>Use the Ortho Auto Claims Tool to generate periodic orthodontic claims.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Tools, <b>Ortho Auto Claims</b>.</p>
+<img src="images/orthoAutoClaims.png" width="915" height="281"/><p> Ortho Auto Claims are useful when a carrier wants a claim submitted for the initial procedure, plus periodic claims based on a set frequency (i.e., <i>Auto Proc Period</i>) instead of per visit.</p>
+<p><div class="Note">Note: The Auto Ortho tool cannot be used for a patient in conjunction with an <a href="orthocase.html">Ortho Case</a>.</div>
+</p>
+<p>Before setting complete the initial orthodontic treatment, make sure to review Ortho options in <a href="preferences.html">Preferences</a> and the carrier's Ortho settings (<a href="insplan.html">Insurance Plan</a>, Ortho tab). </p>
+<p class="MarginBottomZero"> Setup Requirements: </p>
+<ul class="MarginBottomGap">
+<li><i>Ortho Claim Type</i>: Initial Plus Periodic</li>
+<li>A <i>Default Auto Ortho Proc</i> must be set up in Preferences. This can be overridden from the Insurance Plan, Ortho tab.</li>
+</ul>
+<p class="MarginBottomZero">How it works: </p>
+<ol class="MarginBottomGap">
+<li>Once the initial orthodontic treatment procedure is set complete and a claim is sent, periodic claims are subsequently flagged for auto-generation based on the carrier's Auto Proc Frequency, Ortho Auto Proc, and Ortho Auto Fee.</li>
+<li>The initial claim is scheduled for the first day of next calendar month (e.g., 03/01/2023). <ul>
+<li>If the setting <i>Wait 30 days before creating first automatic claim</i> is enabled in Insurance, Ortho tab, the first claim date will be postponed until the first day of the month at least 30 days out.</li>
+</ul>
+</li>
+<li>Once the current date is at or after the NextClaim date, the patient is added to the Claims to be Created grid. </li>
+<li>Generate the claim using the Ortho Auto Claims Tool. </li>
+<li>Subsequent claim dates are determined by the Auto Proc Frequency after an Auto Ortho Claim is created (e.g., if a claim is created on 03/01/2023 and Auto Proc Frequency is quarterly, the next claim date is calculated as 06/01/2023). The NextClaim date is always calculated for the first day of the month the claim is due to be sent.</li>
+<li>Claims continue to be flagged for auto-generation until the total treatment time (i.e., <i>Total Tx Time</i>) is reached or the NextClaim date is manually removed.</li>
+</ol>
+<h2>Ortho Auto Claims Window</h2>
+<p><b>Clinic</b>: Only appears when the Clinics feature is enabled. Select a clinic from the dropdown to filter the list by the clinic assigned to patients.</p>
+<p><b>Claims to be Created Grid</b>: Patients due to send an Auto Ortho claim for the current month or past due are listed in the grid. Click a column name to change sorting. Numerical sorting uses the same logic as alphabetical sorting (e.g., rather than sorting as 1, 5, 10, the sort order is 1, 10, 5).</p>
+<img src="images/autoOrthoClaimsGrid.png" width="915" height="187"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Patient</b>: Patient last name and first name.</li>
+<li><b>Carrier</b>: Insurance carrier a claim will be attached to.</li>
+<li><b>Tx Months</b>: The total months elapsed that the patient has been in ortho treatment. Set up in <a href="orthoauto.html">Auto Ortho</a>.</li>
+<li><b>Banding</b>: Banding or ortho start date (i.e., date of the initial orthodontic procedure). Same as <i>Date Start</i> in Auto Ortho.</li>
+<li><b>MonthsRem</b>: Treatment time remaining. Displayed in months and days. Based off Banding and Tx Months.</li>
+<li><b>#Sent</b>: Total number of ortho claims sent for the carrier/patient.</li>
+<li><b>LastSent</b>: Date of the last Ortho Auto Claim sent for the carrier/patient.</li>
+<li><b>Next Claim</b>: Date of the next Ortho Auto Claim. This is used as the <i>Date of Service </i>when creating the Auto Ortho claim. </li>
+<li><b>Clinic</b>: Only shows when Clinics feature is enabled. Clinic assigned to patient.</li>
+</ul>
+<p><b>Generate Claims</b>: Select patients and click to create Auto Ortho claims. See the following Generate Periodic Ortho Claims using the Ortho Auto Claims Tool section for details.</p>
+<p><b>Select All</b>: Highlight all rows (i.e., patients) in the grid.</p>
+<h2>Ortho Settings</h2>
+<p class="MarginBottomZero">The following Ortho preferences must be set up in order to use the Ortho Auto Claims Tool: </p>
+<ul class="MarginBottomGap">
+<li>Enable <i>Show Auto Ortho in Account Module</i> so the Auto Ortho tab shows in the Account Module and an Ortho tab shows in the Edit Insurance Plan window.</li>
+<li>Set the <i>Default Ortho Auto Proc</i> to be used on orthodontic claims that are created automatically.</li>
+<li>Enable <i>Mark claims as Ortho if they have Ortho procedures</i> so that <i>Is Ortho</i> is always marked on automatically generated ortho claims.</li>
+<li>Enable <i>Use the first ortho procedure date as Date of Placement</i> so that the <i>Date of Placement</i> is always filled on automatically generated ortho claims.</li>
+<li>Set <i>Ortho Placement Procedures</i> to determine which procedures are considered for orthodontic placement.</li>
+<li>Enable <i>Consolidate Ortho Insurance Payments</i> to force users to enter Auto Ortho payments on the initial claim. Disable this setting to allow payments to Auto Ortho claims. </li>
+<li>Set other defaults as needed.</li>
+</ul>
+<h2>Insurance Plan Settings</h2>
+<p>In the Edit Insurance window, Ortho tab, specify the carrier's claim preferences. Any changes made affect all patients using the plan. <br/> See <a href="insplan.html">Insurance Plan</a> for details.</p>
+<h2>Schedule the Patient's Initial Treatment Procedure</h2>
+<p class="MarginBottomZero">As usual, schedule the patient's initial treatment appointment with the corresponding orthodontic placement procedure. </p>
+<ol class="MarginBottomGap">
+<li>At the time of treatment, set the appointment/procedure complete. Doing so populates the <i>next claim date</i> for the patient based on insurance plan ortho frequency setting. This will be the date for the first Ortho Auto claim.</li>
+<li>Check the <b>Auto Ortho tab</b> to verify that dates and fees are accurate.</li>
+<li>Manually create and send the initial claim for the ortho placement procedure.</li>
+</ol>
+<h2>Generate Periodic Ortho Claims using the Ortho Auto Claims Tool</h2>
+<p>Each month, check the Ortho Auto Claims Tool to see which periodic claims are due to be sent. The <i>next claim date</i> is always the first of the month.</p>
+<p class="MarginBottomZero">Claims that meet the following criteria are listed in the Claims to be Created grid: </p>
+<ul class="MarginBottomGap">
+<li>Patient insurance plan is set to <i>Initial Plus Periodic</i>.</li>
+<li>The initial ortho treatment procedure has been set complete.</li>
+<li>The next claim date is today or prior.</li>
+</ul>
+<p class="MarginBottomZero"> To create Ortho Auto Claims: </p>
+<ol class="MarginBottomGap">
+<li>Select the claims to automatically generate.  <ul>
+<li>Highlight specific claims to generate.</li>
+<li>Optionally filter claims by clinic using the <b>Clinic</b> dropdown.</li>
+<li>Click <b>Select All</b> to select all claims.</li>
+</ul>
+</li>
+<li>Click <b>Generate Claims</b>. A confirmation message is shown. Click <b>Yes</b> to continue.</li>
+<li>Another message indicates when the process is complete and the number of claims generated. Click <b>OK</b> to close the message.</li>
+</ol>
+<p>Close the Auto Ortho Claims window, then view the Account Module. Claims are created with the <i>Waiting to Send</i> status. Created claims can be viewed or sent for an individual patient from the Account Module. Multiple claims can be sent from the Manage Module, <a href="claimsend.html">Send Claims</a>. The Auto Proc Code in the claim (e.g., D8670.auto) is also charted to the patient's account. </p>
+<h2>Determining the Next Ortho Claim</h2>
+<p class="MarginBottomZero">There are two places to view when a patient's next ortho claim is flagged for generation with the Ortho Auto Claims Tool. </p>
+<ul class="MarginBottomGap">
+<li>Account Module: Auto Ortho tab, Next Claim. Double-click to open the Ortho Patient Setup window.</li>
+<li>Family Module: Double-click the insurance plan, then click the <b>Ortho</b> button in the Patient Information area.</li>
+</ul>
+<img src="images/insplanOrthoButton.png" width="367" height="227"/><p>The <b>Next Claim Date</b> is automatically updated each time the Ortho Auto Tool creates a claim. Manually change or clear the date from the Ortho Patient Setup window. This can be useful if a periodic claim needs to be skipped or claims need to be stopped altogether.</p>
+<p class="MarginBottomZero">A few hints: </p>
+<ul class="MarginBottomGap">
+<li>The date is always for the first of any given month, so even if a user enters 3/15/2023 the date saved is 3/1/2023.</li>
+<li>To stop auto-generated claims, leave the next claim date blank. There will be no next claim when this field is blank.</li>
+<li>Once a date is manually set, the date does not auto-update until the next auto-generation of a claim.</li>
+</ul>
+<h2>Providers on Claims</h2>
+<p class="MarginBottomZero">The treating provider on the claim depends on the billing provider for the practice. </p>
+<ul class="MarginBottomGap">
+<li>If the treating provider (the provider on the procedure) matches the billing provider, then the treating provider on the claim is the same. </li>
+<li>If the treating provider (the provider on the procedure) is different than the billing provider, then patient's default primary provider is set as the treating provider on the claim.</li>
+</ul>
+<h2>Claim Payments</h2>
+<p>When generating Auto Ortho claims, consider where claim payments should be entered: on the initial procedure's claim or on the auto-generated claim.</p>
+<p>To only allow staff to enter claim payments on the initial procedure's claim, enable the preference, <b>Consolidate Ortho Insurance Payments</b>. Installment payments can be entered as <a href="claimpaymentsupplemental.html">Supplemental Insurance Payments</a> on the original claim and auto-generated claims can be received as zero payment.</p>
+</div>
+</div>
+</body>
+</html>

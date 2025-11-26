@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Raw Population Data Report</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reportsrawpopulationdata','+reportsPublicHealth','reportsstandard','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/reportsrawpopulationdata.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/reportsrawpopulationdata.html" >v24.2</option><option value="https://www.opendental.com/manual241/reportsrawpopulationdata.html" >v24.1</option><option value="https://www.opendental.com/manual233/reportsrawpopulationdata.html" >v23.3</option><option value="https://www.opendental.com/manual232/reportsrawpopulationdata.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/reportsrawpopulationdata.html" >v23.1</option><option value="https://www.opendental.com/manual224/reportsrawpopulationdata.html" >v22.4</option><option value="https://www.opendental.com/manual223/reportsrawpopulationdata.html" >v22.3</option><option value="https://www.opendental.com/manual222/reportsrawpopulationdata.html" >v22.2</option><option value="https://www.opendental.com/manual221/reportsrawpopulationdata.html" >v22.1</option><option value="https://www.opendental.com/manual214/reportsrawpopulationdata.html" >v21.4</option><option value="https://www.opendental.com/manual213/reportsrawpopulationdata.html" >v21.3</option><option value="https://www.opendental.com/manual212/reportsrawpopulationdata.html" >v21.2</option><option value="https://www.opendental.com/manual211/reportsrawpopulationdata.html" >v21.1</option><option value="https://www.opendental.com/manual205/reportsrawpopulationdata.html" >v20.5</option><option value="https://www.opendental.com/manual204/reportsrawpopulationdata.html" >v20.4</option><option value="https://www.opendental.com/manual203/reportsrawpopulationdata.html" >v20.3</option><option value="https://www.opendental.com/manual202/reportsrawpopulationdata.html" >v20.2</option><option value="https://www.opendental.com/manual201/reportsrawpopulationdata.html" >v20.1</option><option value="https://www.opendental.com/manual194/reportsrawpopulationdata.html" >v19.4</option><option value="https://www.opendental.com/manual193/reportsrawpopulationdata.html" >v19.3</option><option value="https://www.opendental.com/manual192/reportsrawpopulationdata.html" >v19.2</option><option value="https://www.opendental.com/manual191/reportsrawpopulationdata.html" >v19.1</option><option value="https://www.opendental.com/manual184/reportsrawpopulationdata.html" >v18.4</option><option value="https://www.opendental.com/manual183/reportsrawpopulationdata.html" >v18.3</option><option value="https://www.opendental.com/manual182/reportsrawpopulationdata.html" >v18.2</option><option value="https://www.opendental.com/manual181/reportsrawpopulationdata.html" >v18.1</option><option value="https://www.opendental.com/manual174/reportsrawpopulationdata.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Raw Population Data Report</p></div>
+<div class="GeneralPageContent">
+<p>For offices utilizing Public Health features, the Raw Population Data report produces a list of patients who had treatment during a specific date range.</p>
+<p>In <a href="reportsstandard.html">Standard Reports</a>, in the Public Health area, click <b>Raw Population Data</b>.</p>
+<img src="images/reportsRawPopData.gif" width="775" height="471"/><p>This report is for offices utilizing <a href="publichealth.html">Public Health</a>. It produces a list of patients who had treatment during a specific date range. The resulting data is presented as a single table, with each patient shown on one row.</p>
+<h2>Filters</h2>
+<p>Set the report filters before running the report. </p>
+<p><b>Calendar</b>: Select the date range to include in the report. Select the start date in the left calendar and the end date on the right calendar. Filters by patients with completed procedures in the date range.</p>
+<p><b>Adjustments types for broken appointments:</b> Select the <a href="apptbreak.html">Broken Appointment</a>adjustment type used by the practice. Ctrl + click to select multiple select multiple types. At least one must be selected. This will be used to calculated NumberBroken on the report and will also include patients who had a broken appointment, even if there were no completed procedures in the date range.</p>
+<h2>Report Query</h2>
+<p>After setting the report criteria, click <b>OK</b> to see generate the results in the <a href="queryoverview.html">User Query</a> window.</p>
+<p> Below is an example of the report and explanation of the report columns.</p>
+<img src="images/reportRawPopData.gif" width="915" height="259"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>PatNum</b>: Displays patient name when format is set to <i>Human-Readable</i>. Set format to <i>Raw</i> to see unique Patient Number instead.</li>
+<li><b>ProcDate</b>: If no broken appointments are counted, this is the date of the first completed procedure in the report date range. If broken appointments are counted, this is the date of the patient's very first completed procedure, if any, or the first broken appointment adjustment. </li>
+<li><b>ProvName</b>: The name of the provider on the most recent procedure or broken appointment adjustment.</li>
+<li><b>County</b>: Patient's county. Set in <a href="patienteditpublichealth.html">Edit Patient Information: Public Health Tab</a>.</li>
+<li><b>CountyCode</b>: County code. Determined by patient's county. Set in <a href="counties.html">Counties</a>.</li>
+<li><b>gradeschool</b>: Site (or Grade School) set in Edit Patient Information: Public Health Tab.</li>
+<li><b>schoolCode</b>: Note in the <a href="sites.html">Site List</a> of the attached Site (gradeshchool).</li>
+<li><b>GradeLevel</b>: Patient's Grade Level set in Edit Patient Information: Public Health Tab.</li>
+<li><b>Birthdate</b>: Patient's birthdate set in <a href="patientedit.html">Edit Patient Information</a>.</li>
+<li><b>Race</b>: Patient's race set in Edit Patient Information: Public Health Tab.</li>
+<li><b>Gender</b>: Gender set in Edit Patient Information. May differ from Gender Identity set in Edit Patient Information: Public Health Tab.</li>
+<li><b>Urgency</b>: Treatment Urgency set in Edit Patient Information: Public Health Tab.</li>
+<li><b>BillingType</b>: Patient Billing Type set in Edit Patient Information. </li>
+<li><b>PlannedIsDone</b>: 1 indicates <i>Done</i> has been checked in the <a href="apptplanned.html">Planned Appointments</a> tab for this patient to mark all planned appointments as complete.</li>
+<li><b>NumberBroken</b>: Number of broken appointments. This is based on the number of broken appointment adjustment types in the date range.</li>
+</ul>
+<p>The data is intended to be saved to a text file and sent to a centralized office where it gets loaded into one larger table containing data from many locations. For instance, all data for an entire state could be sent to a central office once per month. The data format makes it easy to automate grouping and reporting.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Referral Letter Layout</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('sheetsreferrals','sheets','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/sheetsreferrals.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/sheetsreferrals.html" >v24.2</option><option value="https://www.opendental.com/manual241/sheetsreferrals.html" >v24.1</option><option value="https://www.opendental.com/manual233/sheetsreferrals.html" >v23.3</option><option value="https://www.opendental.com/manual232/sheetsreferrals.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/sheetsreferrals.html" >v23.1</option><option value="https://www.opendental.com/manual224/sheetsreferrals.html" >v22.4</option><option value="https://www.opendental.com/manual223/sheetsreferrals.html" >v22.3</option><option value="https://www.opendental.com/manual222/sheetsreferrals.html" >v22.2</option><option value="https://www.opendental.com/manual221/sheetsreferrals.html" >v22.1</option><option value="https://www.opendental.com/manual214/sheetsreferrals.html" >v21.4</option><option value="https://www.opendental.com/manual213/sheetsreferrals.html" >v21.3</option><option value="https://www.opendental.com/manual212/sheetsreferrals.html" >v21.2</option><option value="https://www.opendental.com/manual211/sheetsreferrals.html" >v21.1</option><option value="https://www.opendental.com/manual205/sheetsreferrals.html" >v20.5</option><option value="https://www.opendental.com/manual204/sheetsreferrals.html" >v20.4</option><option value="https://www.opendental.com/manual203/sheetsreferrals.html" >v20.3</option><option value="https://www.opendental.com/manual202/sheetsreferrals.html" >v20.2</option><option value="https://www.opendental.com/manual201/sheetsreferrals.html" >v20.1</option><option value="https://www.opendental.com/manual194/sheetsreferrals.html" >v19.4</option><option value="https://www.opendental.com/manual193/sheetsreferrals.html" >v19.3</option><option value="https://www.opendental.com/manual192/sheetsreferrals.html" >v19.2</option><option value="https://www.opendental.com/manual191/sheetsreferrals.html" >v19.1</option><option value="https://www.opendental.com/manual184/sheetsreferrals.html" >v18.4</option><option value="https://www.opendental.com/manual183/sheetsreferrals.html" >v18.3</option><option value="https://www.opendental.com/manual182/sheetsreferrals.html" >v18.2</option><option value="https://www.opendental.com/manual181/sheetsreferrals.html" >v18.1</option><option value="https://www.opendental.com/manual174/sheetsreferrals.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Referral Letter Layout</p></div>
+<div class="GeneralPageContent">
+<p>Referral Letters can be customized to meet the needs of the practice.</p>
+<p>In <a href="sheets.html">Sheets</a>, double-click on a custom sheet with the type of ReferralLetter.</p>
+<img src="images/sheetsReferral.png" width="915" height="675"/><p class="MarginBottomZero">Alternatively, in Sheets:  </p>
+<ul class="MarginBottomGap">
+<li>Click <b>New</b> and choose <i>ReferralLetter</i> as the Sheet Type to create a new Referral Letter from blank.</li>
+<li>Select an existing Custom <i>ReferralLetter</i> sheet and click <b>Duplicate</b> to create a copy of an existing Referral Letter.</li>
+<li>Select the existing Internal <i>ReferralLetter</i> sheet and click <b>Copy</b> to create a copy of the default Referral Letter that can be edited.</li>
+</ul>
+<p>Before creating or sending a letter to a referral, there must set be at least one custom sheet with a type of <i>ReferralLetter</i>. </p>
+<p class="MarginBottomZero">Also see:  </p>
+<ul class="MarginBottomGap">
+<li><a href="sheetproperties.html">Sheet Def Properties</a></li>
+<li><a href="sheetsaddelements.html">Sheet Field Types</a></li>
+<li><a href="letterreferral.html">Referral Letter</a></li>
+</ul>
+<p>To customize a Referral Letter, see <a href="sheetsetup.html">Edit Sheet Def</a>. The <i>Tooth Chart</i> and <i>Tooth Chart Legend</i> can be added to the Referral Letter by adding a <a href="sheetsspecial.html">Sheet Special Field</a>.</p>
+</div>
+</div>
+</body>
+</html>

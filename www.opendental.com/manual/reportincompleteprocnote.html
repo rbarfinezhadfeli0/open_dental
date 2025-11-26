@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Incomplete Procedure Notes Report</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reportincompleteprocnote','+daily','reportsstandard','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/reportincompleteprocnote.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/reportincompleteprocnote.html" >v24.2</option><option value="https://www.opendental.com/manual241/reportincompleteprocnote.html" >v24.1</option><option value="https://www.opendental.com/manual233/reportincompleteprocnote.html" >v23.3</option><option value="https://www.opendental.com/manual232/reportincompleteprocnote.html" >v23.2</option><option value="https://www.opendental.com/manual231/reportincompleteprocnote.html" >v23.1</option><option value="https://www.opendental.com/manual224/reportincompleteprocnote.html" >v22.4</option><option value="https://www.opendental.com/manual223/reportincompleteprocnote.html" >v22.3</option><option value="https://www.opendental.com/manual222/reportincompleteprocnote.html" >v22.2</option><option value="https://www.opendental.com/manual221/reportincompleteprocnote.html" >v22.1</option><option value="https://www.opendental.com/manual214/reportincompleteprocnote.html" >v21.4</option><option value="https://www.opendental.com/manual213/reportincompleteprocnote.html" >v21.3</option><option value="https://www.opendental.com/manual212/reportincompleteprocnote.html" >v21.2</option><option value="https://www.opendental.com/manual211/reportincompleteprocnote.html" >v21.1</option><option value="https://www.opendental.com/manual205/reportincompleteprocnote.html" >v20.5</option><option value="https://www.opendental.com/manual204/reportincompleteprocnote.html" >v20.4</option><option value="https://www.opendental.com/manual203/reportincompleteprocnote.html" >v20.3</option><option value="https://www.opendental.com/manual202/reportincompleteprocnote.html" >v20.2</option><option value="https://www.opendental.com/manual201/reportincompleteprocnote.html" >v20.1</option><option value="https://www.opendental.com/manual194/reportincompleteprocnote.html" >v19.4</option><option value="https://www.opendental.com/manual193/reportincompleteprocnote.html" >v19.3</option><option value="https://www.opendental.com/manual192/reportincompleteprocnote.html" >v19.2</option><option value="https://www.opendental.com/manual191/reportincompleteprocnote.html" >v19.1</option><option value="https://www.opendental.com/manual184/reportincompleteprocnote.html" >v18.4</option><option value="https://www.opendental.com/manual183/reportincompleteprocnote.html" >v18.3</option><option value="https://www.opendental.com/manual182/reportincompleteprocnote.html" >v18.2</option><option value="https://www.opendental.com/manual181/reportincompleteprocnote.html" >v18.1</option><option value="https://www.opendental.com/manual174/reportincompleteprocnote.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Incomplete Procedure Notes Report</p></div>
+<div class="GeneralPageContent">
+<p>Use this report to find procedures with an incomplete note or to find incomplete group notes.</p>
+<p>In <a href="reportsstandard.html">Standard Reports</a>, in the Daily section, click <b>Incomplete Procedure Notes</b>.</p>
+<img src="images/reportIncProcNote.png" width="893" height="375"/><p>Optionally, this report can include procedures with no note or an unsigned note.</p>
+<p class="MarginBottomZero">Definitions: </p>
+<ul class="MarginBottomGap">
+<li>Incomplete Procedure Note: A procedure with uncompleted quotations in the Notes text (e.g., Due Date ""). Flagged with a red<i> Incomplete Note</i> warning above the note.</li>
+<li>Incomplete Auto Notes: Procedures with Auto Notes that have skipped prompts.</li>
+<li>No Procedure Note: The procedure has no text in the Notes box, and all other procedures with the same date also have no note. If a procedure has uncompleted quotations, any other procedure completed the same day, without a note, will be excluded from the list.</li>
+<li>Unsigned Procedure Note: There is a note on the procedure that has not been signed (valid or invalid signature).</li>
+</ul>
+<p><div class="Note">Note:  To control user access to this report, see <a href="reportsecurity.html">Report Setup: Security Permissions</a>. </div>
+</p>
+<h2>Filters</h2>
+<p>Set the report filters to update the Incomplete Procedure Notes grid. </p>
+<img src="images/reportIncProcNoteFilters.png" width="867" height="126"/><p><b>Include procedures with no notes on any procedure for the same day</b>: Check to find patients with no notes for any procedures completed on the same day.</p>
+<p class="MarginBottomZero"><b>Include procedures with a note that is unsigned</b>: Check to include procedures with a note that is not signed (valid or invalid signature). </p>
+<ul class="MarginBottomGap">
+<li>If <i>Include procedures with no notes on any procedure for the same day</i> is also checked and no note exists in the procedure note field, the Unsigned column is blank.</li>
+</ul>
+<p><b>Show Excluded Codes</b>: Check to include codes normally excluded from the report. Set excluded codes in <a href="reportmiscsettings.html">Report Setup: Misc Settings</a>, <i>Excluded Codes for Incomplete Procedure Notes Report.</i></p>
+<p class="MarginBottomZero"><b>Clinics</b>: Only available when Clinics are enabled in <a href="showfeatures.html">Show Features</a>. Select the clinics to include in the report. Check <b>All (includes hidden)</b> to include all clinics, including those marked hidden.  </p>
+<ul class="MarginBottomGap">
+<li>Filters by clinic assigned to procedure.</li>
+<li>If user is restricted to specific clinics, only accessible clinics are listed. When selecting <b>All (includes hidden)</b>, results include all clinics user has access to, including those marked hidden; results do not include clinics user is restricted from or procedures not assigned to a clinic. </li>
+</ul>
+<p class="MarginBottomZero"><b>Providers</b>: Select the providers to include. Check <b>All</b> to include all listed providers.  </p>
+<ul class="MarginBottomGap">
+<li>When a clinic is selected, only providers limited to the clinic are listed. See <a href="providerseditwindow.html">Provider Edit</a>, Clinics Tab.</li>
+<li>Filters by provider assigned to procedure (i.e., treating provider).</li>
+</ul>
+<p class="MarginBottomZero"><b>Group By</b>: Results are sorted by completed procedure date and patient name. Select one of the following to group the list: </p>
+<ul class="MarginBottomGap">
+<li><b>Procedure</b>: Lists individual procedures (one row per procedure).</li>
+<li><b>Patient</b>: Groups by patient name (one row per patient).</li>
+<li><b>Date and Patient</b>: Groups by completed procedure date then patient name (one row per patient, per date).</li>
+</ul>
+<p><b>From / To</b>: Use the From and To dates dropdown menu to select a date range. Includes patients matching the filter criteria within the selected date range. Defaults to today's date. </p>
+<h2>Incomplete Procedure Notes</h2>
+<p>Click <b>Refresh</b> to update report results based on the currently selected filters. </p>
+<p>Available columns may change based on the filter criteria. The following is an example of report results and descriptions of each column.</p>
+<img src="images/reportIncProcNoteGrid.png" width="867" height="178"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Date</b>: Procedure date.</li>
+<li><b>Patient Name</b>: Patient last name and first name.</li>
+<li><b>Code</b>: Procedure code associated with the incomplete note. If <i>Group By</i> behavior is set to <i>Patient</i> or <i>Date and Patient</i>, procedure code is listed only when there is a single procedure (i.e., multiple procedure groups have no codes listed). </li>
+<li><b>Description</b>: Procedure description. If <i>Group By</i> behavior is set to <i>Patient</i> or <i>Date and Patient</i>, a description of "Multiple Procedures" is shown when multiple procedures contain incomplete notes. </li>
+<li><b>Tth</b>: Tooth number associated with an individual procedure.</li>
+<li><b>Surf</b>: Tooth surface associated with an individual procedure.</li>
+<li><b>Incomplete</b>: X indicates the note is tagged as incomplete ("") or there is an incomplete auto note (i.e., unanswered prompts). Column only appears when <i>Include procedures with no notes on any procedure for the same day</i> or <i>Include procedures with a note that is unsigned</i> are checked.</li>
+<li><b>No Note</b>: X indicates a blank procedure note. Column only appears when <i>Include procedures with no notes on any procedure for the same day</i> is checked.</li>
+<li><b>Unsigned</b>: X indicates a note that contains no valid signature. Column only appears when <i>Include procedures with a note that is unsigned</i> is checked</li>
+</ul>
+<p>Right-click or double-click a row to open the <a href="chart.html">Chart Module</a> for the selected patient.</p>
+<h2>Print / Export</h2>
+<img src="images/incompleteProcNotesButtons.png" width="172" height="32"/><p><b>Print</b>: Click to send the report results to the default printer.</p>
+<p><b>Export</b>: Click to save the report results as a TXT or XLS file.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Payment Plan Layout</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('paymentplansheets','sheets','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/paymentplansheets.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/paymentplansheets.html" >v24.2</option><option value="https://www.opendental.com/manual241/paymentplansheets.html" >v24.1</option><option value="https://www.opendental.com/manual233/paymentplansheets.html" >v23.3</option><option value="https://www.opendental.com/manual232/paymentplansheets.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/paymentplansheets.html" >v23.1</option><option value="https://www.opendental.com/manual224/paymentplansheets.html" >v22.4</option><option value="https://www.opendental.com/manual223/paymentplansheets.html" >v22.3</option><option value="https://www.opendental.com/manual222/paymentplansheets.html" >v22.2</option><option value="https://www.opendental.com/manual221/paymentplansheets.html" >v22.1</option><option value="https://www.opendental.com/manual214/paymentplansheets.html" >v21.4</option><option value="https://www.opendental.com/manual213/paymentplansheets.html" >v21.3</option><option value="https://www.opendental.com/manual212/paymentplansheets.html" >v21.2</option><option value="https://www.opendental.com/manual211/paymentplansheets.html" >v21.1</option><option value="https://www.opendental.com/manual205/paymentplansheets.html" >v20.5</option><option value="https://www.opendental.com/manual204/paymentplansheets.html" >v20.4</option><option value="https://www.opendental.com/manual203/paymentplansheets.html" >v20.3</option><option value="https://www.opendental.com/manual202/paymentplansheets.html" >v20.2</option><option value="https://www.opendental.com/manual201/paymentplansheets.html" >v20.1</option><option value="https://www.opendental.com/manual194/paymentplansheets.html" >v19.4</option><option value="https://www.opendental.com/manual193/paymentplansheets.html" >v19.3</option><option value="https://www.opendental.com/manual192/paymentplansheets.html" >v19.2</option><option value="https://www.opendental.com/manual191/paymentplansheets.html" >v19.1</option><option value="https://www.opendental.com/manual184/paymentplansheets.html" >v18.4</option><option value="https://www.opendental.com/manual183/paymentplansheets.html" >v18.3</option><option value="https://www.opendental.com/manual182/paymentplansheets.html" >v18.2</option><option value="https://www.opendental.com/manual181/paymentplansheets.html" >v18.1</option><option value="https://www.opendental.com/manual174/paymentplansheets.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Payment Plan Layout</p></div>
+<div class="GeneralPageContent">
+<p>Payment plan printouts can be customized to meet the needs of the practice.</p>
+<p>In <a href="sheets.html">Sheets</a>, double-click on a custom sheet with the type of PaymentPlan.</p>
+<img src="images/paymentplanSheet.png" width="915" height="780"/><p class="MarginBottomZero">Alternatively, in Sheets:  </p>
+<ul class="MarginBottomGap">
+<li>Click <b>New</b> and choose <i>PaymentPlan</i> as the Sheet Type to create a new payment plan sheet from blank.</li>
+<li>Select an existing Custom <i>PaymentPlan</i> sheet and click <b>Duplicate</b> to create a copy of an existing payment plan sheet.</li>
+<li>Select the existing Internal <i>PaymentPlan</i> sheet and click <b>Copy</b> to create a copy of the default payment plan sheet that can be edited.</li>
+</ul>
+<p>Also see: <a href="sheetproperties.html">Sheet Def Properties</a> and <a href="sheetsaddelements.html">Sheet Field Types</a>.</p>
+<h2>Preferences</h2>
+<p>Enable <i> Pay Plans use Sheets for printing</i> in <a href="preferences.html">Preferences</a> to use a sheet layout when <a href="paymentplanprint.html">Printing a Payment Plan</a> from the Account Module. </p>
+<p>If no custom sheet has been created, the internal sheet is used. If multiple custom <i>PaymentPlan</i> sheets exist, the top-most (i.e., first alphabetically) sheet is used when printing.</p>
+<h2>Customizing a Payment Plan Sheet</h2>
+<p>To customize a PaymentPlan sheet type, see <a href="sheetsetup.html">Edit Sheet Def</a>.</p>
+<p>The layout of printed <a href="paymentplanpatient.html">Payment Plan</a> terms (<a href="paymentplanprint.html">Sign and Print Payment Plan</a>) can be customized by setting up a sheet with a PaymentPlan type. If enabled, the same custom sheet is used for all printed payment plans.</p>
+<p class="MarginBottomZero">Additional information: </p>
+<ul class="MarginBottomGap">
+<li>There is one grid, <i>PayPlanGrid</i>, that is only available for sheets with a PaymentPlan type. The columns in the grid are fixed and cannot be changed. See <a href="sheetsgrid.html">Sheet Grid</a>.</li>
+<li>One <a href="sheetssignature.html">Sheet Signature Box</a> can be added to a payment plan sheet for <a href="electronicsignatures.html">Electronic Signatures</a>. If added, a preview window displays before printing so the plan can be signed.</li>
+<li>Printed and signed payment plans can be saved as PDFs in the Imaging Module by designating an Image Category usage as <i>(A) Payment Plans</i> in <a href="definitionsimagecat.html">Definitions: Image Categories</a>.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

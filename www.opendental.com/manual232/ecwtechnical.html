@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - eCW Technical</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('ecwtechnical','bridgeeclinicalworks','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/ecwtechnical.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/ecwtechnical.html" >v24.2</option><option value="https://www.opendental.com/manual241/ecwtechnical.html" >v24.1</option><option value="https://www.opendental.com/manual233/ecwtechnical.html" >v23.3</option><option value="https://www.opendental.com/manual232/ecwtechnical.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/ecwtechnical.html" >v23.1</option><option value="https://www.opendental.com/manual224/ecwtechnical.html" >v22.4</option><option value="https://www.opendental.com/manual223/ecwtechnical.html" >v22.3</option><option value="https://www.opendental.com/manual222/ecwtechnical.html" >v22.2</option><option value="https://www.opendental.com/manual221/ecwtechnical.html" >v22.1</option><option value="https://www.opendental.com/manual214/ecwtechnical.html" >v21.4</option><option value="https://www.opendental.com/manual213/ecwtechnical.html" >v21.3</option><option value="https://www.opendental.com/manual212/ecwtechnical.html" >v21.2</option><option value="https://www.opendental.com/manual211/ecwtechnical.html" >v21.1</option><option value="https://www.opendental.com/manual205/ecwtechnical.html" >v20.5</option><option value="https://www.opendental.com/manual204/ecwtechnical.html" >v20.4</option><option value="https://www.opendental.com/manual203/ecwtechnical.html" >v20.3</option><option value="https://www.opendental.com/manual202/ecwtechnical.html" >v20.2</option><option value="https://www.opendental.com/manual201/ecwtechnical.html" >v20.1</option><option value="https://www.opendental.com/manual194/ecwtechnical.html" >v19.4</option><option value="https://www.opendental.com/manual193/ecwtechnical.html" >v19.3</option><option value="https://www.opendental.com/manual192/ecwtechnical.html" >v19.2</option><option value="https://www.opendental.com/manual191/ecwtechnical.html" >v19.1</option><option value="https://www.opendental.com/manual184/ecwtechnical.html" >v18.4</option><option value="https://www.opendental.com/manual183/ecwtechnical.html" >v18.3</option><option value="https://www.opendental.com/manual182/ecwtechnical.html" >v18.2</option><option value="https://www.opendental.com/manual181/ecwtechnical.html" >v18.1</option><option value="https://www.opendental.com/manual174/ecwtechnical.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>eCW Technical</p></div>
+<div class="GeneralPageContent">
+<p>This information is for more technical users of <a href="bridgeeclinicalworks.html">eClinicalWorks</a>.</p>
+<h2>Middle Tier</h2>
+<p>The <a href="middletier.html">Middle Tier</a> feature works well with eCW integration and is particularly helpful for security for multiple location clinics where displaying the patient in Open Dental is slow due to network speed. In the <a href="choosedatabase.html">Choose Database</a> window, check the box for Using eCW.</p>
+<h2>Backups</h2>
+<p>It is extremely important to backup data as well as verify backup quality by restoring to a standalone MySQL server running on a different computer. Your backup plan should also include an off-site backup. See <a href="backups.html">Backups</a>.</p>
+<h2>Technical Details</h2>
+<p class="MarginBottomZero">This section is for programmers and power users only. It primarily refers to Tight Integration mode. </p>
+<ul class="MarginBottomGap">
+<li>See <a href="commandline.html">Command Line Arguments</a> for information on how eCW communicates with Open Dental.</li>
+<li>See <a href="hl7.html">Generic HL7</a> for installation instructions and technical details.</li>
+<li>See <a href="hostmultipledatabases.html">Host Multiple Databases from One Web Server</a> for instructions on how to host multiple customers on one database server.</li>
+</ul>
+<h2>Errors</h2>
+<p>See <a href="ecwtroubleshooting.html">eCW Troubleshooting</a>.</p>
+</div>
+</div>
+</body>
+</html>

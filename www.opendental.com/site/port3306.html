@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Open Port 3306</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('port3306','installation','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Open Port 3306</p></div>
+		<div class="GeneralPageContent">
+<p>Port 3306 is required for MySQL and MariaDB. </p>
+<p>See <a href="installation.html">Installation</a>.</p>
+<h2>MariaDB</h2>
+<p>Inbound rule, port 3306 is automatically opened when installing the MariaDB version of the trial installer. </p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>It will most likely be named <i>MariaDB 10.5 (x64)</i>.</li>
+<li>The network types are private and domain.  <ul>
+<li>If using a public network type, reach out to IT to resolve this.</li>
+</ul>
+</li>
+<li>Only opens 3306 for TCP connections.</li>
+<li>If MariaDB is uninstalled, the rule is deleted.</li>
+</ul>
+<h2>MySQL</h2>
+<p>Opening port 3306 must be done manually for MySQL users. Do this on the server only, not on each workstation install.</p>
+<ol>
+<li>Open the Control Panel and click Security.</li>
+<li>Click Windows Firewall.</li>
+<li>Click Advanced Settings, Inbound Rules. <br><img src="images/openPortInbound.png" width="894" height="596" class="ImageInParagraph"/></li>
+<li>Click New Rule. <br><img src="images/openPortRuleType.gif" width="714" height="581" class="ImageInParagraph"/></li>
+<li>Click Port, then Next. <ul>
+<li>Select TCP.</li>
+<li>Enter 3306 in Specific local ports.</li>
+</ul>
+</li>
+<li>Click Next, then click Allow the connection.</li>
+<li>Check Domain and Private. <br><img src="images/openPortRules.gif" width="714" height="581" class="ImageInParagraph"/></li>
+<div class="Note">Note:  This step may vary depending on your network setup. We recommend consulting with your IT for more information.</div>
+<li>Enter MySQL as Name and Description.<br><div class="Note">Note: If using MySQL for multiple applications, use Open Dental MySQL as the name and description instead, to avoid confusion.</div>
+</li>
+<li>Click Finish.</li>
+</ol>
+<br><p>In some cases an outbound rule has to be created for port 3306 if the Network Administrator has blocked outbound traffic from a workstation. Follow the steps above for an outbound rule as well.</p>
+		</div>
+	</div>
+</body>
+</html>

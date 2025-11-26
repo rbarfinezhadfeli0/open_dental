@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Web Forms Retrieve</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('webformsretrieve','webformsupload','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/webformsretrieve.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/webformsretrieve.html" >v24.2</option><option value="https://www.opendental.com/manual241/webformsretrieve.html" >v24.1</option><option value="https://www.opendental.com/manual233/webformsretrieve.html" >v23.3</option><option value="https://www.opendental.com/manual232/webformsretrieve.html" >v23.2</option><option value="https://www.opendental.com/manual231/webformsretrieve.html" >v23.1</option><option value="https://www.opendental.com/manual224/webformsretrieve.html" >v22.4</option><option value="https://www.opendental.com/manual223/webformsretrieve.html" >v22.3</option><option value="https://www.opendental.com/manual222/webformsretrieve.html" >v22.2</option><option value="https://www.opendental.com/manual221/webformsretrieve.html" >v22.1</option><option value="https://www.opendental.com/manual214/webformsretrieve.html" >v21.4</option><option value="https://www.opendental.com/manual213/webformsretrieve.html" >v21.3</option><option value="https://www.opendental.com/manual212/webformsretrieve.html" >v21.2</option><option value="https://www.opendental.com/manual211/webformsretrieve.html" >v21.1</option><option value="https://www.opendental.com/manual205/webformsretrieve.html" >v20.5</option><option value="https://www.opendental.com/manual204/webformsretrieve.html" >v20.4</option><option value="https://www.opendental.com/manual203/webformsretrieve.html" >v20.3</option><option value="https://www.opendental.com/manual202/webformsretrieve.html" >v20.2</option><option value="https://www.opendental.com/manual201/webformsretrieve.html" >v20.1</option><option value="https://www.opendental.com/manual194/webformsretrieve.html" >v19.4</option><option value="https://www.opendental.com/manual193/webformsretrieve.html" >v19.3</option><option value="https://www.opendental.com/manual192/webformsretrieve.html" >v19.2</option><option value="https://www.opendental.com/manual191/webformsretrieve.html" >v19.1</option><option value="https://www.opendental.com/manual184/webformsretrieve.html" >v18.4</option><option value="https://www.opendental.com/manual183/webformsretrieve.html" >v18.3</option><option value="https://www.opendental.com/manual182/webformsretrieve.html" >v18.2</option><option value="https://www.opendental.com/manual181/webformsretrieve.html" >v18.1</option><option value="https://www.opendental.com/manual174/webformsretrieve.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Web Forms Retrieve</p></div>
+<div class="GeneralPageContent">
+<p>Retrieve web forms submitted by patients.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Tools, <a href="webformsupload.html">Web Forms</a>.</p>
+<img src="images/webForms.png" width="765" height="372"/><p><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> See our video on Mobile Web Forms: <a href="https://youtu.be/vxTM-m3JHBU">Web Forms Tutorial</a>.</p>
+<p><b>Setup</b>: Click to open <a href="webformsupload.html">Web Form Setup</a>.</p>
+<p class="MarginBottomZero">Show Retrieved Forms: These filters affect which retrieved forms display. </p>
+<ul class="MarginBottomGap">
+<li><b>Start / End Date</b>: Show forms submitted within the date range. </li>
+<li><b>Today</b>: Click to only view forms submitted today.</li>
+<li><b>Clinic</b>: Select one or more clinics from the dropdown to only view forms submitted for specific clinics. Select <i>Headquarters</i> to view forms not assigned to a clinic.</li>
+<li><b>Refresh</b>: Click to apply changes.</li>
+</ul>
+<p class="MarginBottomZero">Web Forms Grid:  </p>
+<ul class="MarginBottomGap">
+<li>All web forms that have already been retrieved, for the date range and clinic, are listed. </li>
+<li>To view a form, double-click the row.</li>
+<li>To view all forms for a patient, right-click the patient row and select <i>View this patient's forms</i>.</li>
+</ul>
+<p><b>Batch Size</b>: Enter a batch size between 1 and 255. The default is 10. All forms are downloaded at once, however they are downloaded in batches in the background. Using a smaller batch size may help prevent large-volume practices from timing out. </p>
+<p class="MarginBottomZero"><b>Retrieve New Forms</b>: Click to retrieve forms.  </p>
+<ul class="MarginBottomGap">
+<li>An <a href="alerts.html">Alert</a> will appear when web forms are ready for retrieval. The alert runs once an hour.</li>
+<li>If <i>Enable automatic download of web forms</i> is checked in Web Form Setup, forms that have a patient match will automatically download. Forms that do not have a patient match (e.g., new patients) must still be retrieved using this button.</li>
+<li>When staff retrieves a Web Form, it is matched to a patient and viewable in the patient's <a href="chart.html">Chart Module</a> and <a href="patientform.html">Patient Forms</a>.  <li>If using clinics, the web forms retrieved are based on the Clinic selected in the dropdown menu.  <ul>
+<li>Select All to retrieve all forms, regardless of clinic.</li>
+<li>Select Headquarters to retrieve forms from patients who do not have a clinic assigned. </li>
+<li>Select a specific clinic to only retrieve forms for that clinic.</li>
+</ul>
+</li>
+</li>
+</ul>
+<p>To import data from a patient form or medication history into the database, see <a href="patientformsimport.html">Import Patient Forms and Medical Histories</a>.</p>
+<h2>Matching Patients</h2>
+<p>Open Dental will attempt to automatically attach each retrieved web form to an existing patient.</p>
+<p class="MarginBottomZero">If a match is not made, a prompt will display to pick a patient. </p>
+<ul class="MarginBottomGap">
+<li><b>Matches</b>: More than one patient with the same first name, last name, and birthdate was found for the web form. Double-click the correct patient.</li>
+<li><b>Close Matches</b>: No exact match was found for the web form. Choose a close match from the list, select an existing patient, or create a new patient.<br/> A close match is the first two letters of the last name, first two letters of the first name, and either an exact match on the DOB field or no birthday listed in the Open Dental program for the patient.</li>
+</ul>
+<img src="images/webFormPickPatient.gif" width="636" height="462"/><p class="MarginBottomZero">The submitted last name, first name, and birthdate show at the top. If using clinics, the clinic the form was generated from displays. </p>
+<ul class="MarginBottomGap">
+<li>Double-click a match to attach the form to the patient.</li>
+<li><b>Preview</b>: View the submitted form.</li>
+<li><b>Select</b>: Select a patient that is not listed. All forms related to the patient will then attach to the selected patient.</li>
+<li><b>Discard All</b>: Deletes all unretrieved forms submitted with the exact same first, last, birthdate, and all included phone numbers. Use with caution to avoid losing real patient data. Intended to be used to clear out multiple test forms submitted under a test patient.</li>
+<li><b>New</b>: Create a new patient record using the submitted information. <br/><div class="Note">Note: When using Clinics, the patient's clinic will be set to the clinic associated to the web form.</div>
+</li>
+<li><b>Skip</b>: Do not retrieve web form at this time. Skipped forms will be available for download the next time web forms are retrieved. Skips all forms related to the same patient.</li>
+<li><b>Cancel</b>: Cancel retrieval of all web forms.</li>
+</ul>
+<h2>Technical Details</h2>
+<p class="MarginBottomZero">Open Dental uses the following logic to match retrieved web forms to patients: </p>
+<ul class="MarginBottomGap">
+<li>Initially Open Dental will attempt to match a patient based on last name, first name, birthdate.</li>
+<li>If only one exact match is found, the web form will be automatically retrieved.</li>
+<li>If there is more than one match, email address and phone number will also be considered. If at least one phone number or email address matches any phone number or email address on file, the web form will be retrieved. If neither phone nor email has a match, a prompt will display to pick a patient or skip retrieval.</li>
+<li>If there is no match at all, a prompt will display to pick a patient or skip retrieval.</li>
+</ul>
+<p>Web forms that are successfully received are permanently deleted from the Open Dental web server. If a duplicate patient is created, see <a href="mergepatients.html">Merge Patients</a>.</p>
+<p>Web forms that have been submitted by the patient, but not retrieved by the office, will automatically deleted after 30 days. </p>
+<p>To restore a web form that was deleted from a patient's chart, double-click it. Click <b>UnDelete</b> at the bottom of the form.</p>
+</div>
+</div>
+</body>
+</html>

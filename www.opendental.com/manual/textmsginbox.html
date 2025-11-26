@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Text Messaging Mailbox</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('textmsginbox','textmessages','toolbar','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/textmsginbox.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/textmsginbox.html" >v24.2</option><option value="https://www.opendental.com/manual241/textmsginbox.html" >v24.1</option><option value="https://www.opendental.com/manual233/textmsginbox.html" >v23.3</option><option value="https://www.opendental.com/manual232/textmsginbox.html" >v23.2</option><option value="https://www.opendental.com/manual231/textmsginbox.html" >v23.1</option><option value="https://www.opendental.com/manual224/textmsginbox.html" >v22.4</option><option value="https://www.opendental.com/manual223/textmsginbox.html" >v22.3</option><option value="https://www.opendental.com/manual222/textmsginbox.html" >v22.2</option><option value="https://www.opendental.com/manual221/textmsginbox.html" >v22.1</option><option value="https://www.opendental.com/manual214/textmsginbox.html" >v21.4</option><option value="https://www.opendental.com/manual213/textmsginbox.html" >v21.3</option><option value="https://www.opendental.com/manual212/textmsginbox.html" >v21.2</option><option value="https://www.opendental.com/manual211/textmsginbox.html" >v21.1</option><option value="https://www.opendental.com/manual205/textmsginbox.html" >v20.5</option><option value="https://www.opendental.com/manual204/textmsginbox.html" >v20.4</option><option value="https://www.opendental.com/manual203/textmsginbox.html" >v20.3</option><option value="https://www.opendental.com/manual202/textmsginbox.html" >v20.2</option><option value="https://www.opendental.com/manual201/textmsginbox.html" >v20.1</option><option value="https://www.opendental.com/manual194/textmsginbox.html" >v19.4</option><option value="https://www.opendental.com/manual193/textmsginbox.html" >v19.3</option><option value="https://www.opendental.com/manual192/textmsginbox.html" >v19.2</option><option value="https://www.opendental.com/manual191/textmsginbox.html" >v19.1</option><option value="https://www.opendental.com/manual184/textmsginbox.html" >v18.4</option><option value="https://www.opendental.com/manual183/textmsginbox.html" >v18.3</option><option value="https://www.opendental.com/manual182/textmsginbox.html" >v18.2</option><option value="https://www.opendental.com/manual181/textmsginbox.html" >v18.1</option><option value="https://www.opendental.com/manual174/textmsginbox.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Text Messaging Mailbox</p></div>
+<div class="GeneralPageContent">
+<p>Use the Text Messaging Mailbox to view the history of sent and received text messages.</p>
+<p>In the <a href="toolbar.html">Main Toolbar</a>, click the <a href="textmessages.html">Text</a> dropdown. Select an option.</p>
+<img src="images/textInbox.png" width="915" height="473"/><p class="MarginBottomZero">The option selected in the dropdown determines which messages can be viewed upon opening:  </p>
+<ul class="MarginBottomGap">
+<li><b>Text Messages All</b>: View all sent and received messages.</li>
+<li><b>Text Messages Received</b>: View received messages only. An orange notification shows in the toolbar when there are unread text messages.</li>
+<li><b>Text Messages Sent</b>: View sent messages only.</li>
+</ul>
+<p>From this window, users can also reply to messages, block numbers, and attach unassigned messages to patients.</p>
+<h2>Filters</h2>
+<p>Use the filters to determine which messages display.</p>
+<img src="images/textMailboxFilters.png" width="899" height="66"/><p><b>Date From / To</b>: Show text messages sent or received within a specific date range.</p>
+<p class="MarginBottomZero"><b>Patient</b>: Filter by patient. </p>
+<ul class="MarginBottomGap">
+<li><b>Current</b>: Show texts for the patient currently selected in Open Dental. If patient is part of a family, the guarantor is selected.</li>
+<li><b>Find</b>: Select a different patient.</li>
+<li><b>All</b>: Show texts from all patients.</li>
+</ul>
+<p><b>Hidden / Received / Sent</b>: Check to show Hidden, Received, and Sent messages.</p>
+<p class="MarginBottomZero"><b>Group Messages By</b>: </p>
+<ul class="MarginBottomGap">
+<li><b>Patient</b>: Show one row per patient.</li>
+<li><b>Phone Number</b>: Groups messages by number and displays all patient that share the number.</li>
+<li><b>None</b>: Show every message per row.</li>
+</ul>
+<p><b>Clinics</b>: Filter by one or more clinics.</p>
+<p>Click <b>Refresh</b> to update the results.</p>
+<h2>Text Messages Grid</h2>
+<p>Text conversations, including those sent from ODMobile or ODTouch are listed. The grid results update based on filters set above. </p>
+<img src="images/textMailboxGrid.png" width="797" height="130"/><p>Up to 100 messages are displayed at a time. When there are more than 100 messages, use the navigation arrows above the grid to scroll through pages. Bold text indicates a conversation has unread messages. Click any header to sort. </p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>DateTime</b>: Displays the date and time the last text was sent or received.</li>
+<li><b>Sent / Received</b>: Only displays when Group Messages By is set to <i>None</i>. Displays whether the message was sent or received.</li>
+<li><b>Status</b>: Information changes depending on Group Messages By Setting.  <ul>
+<li>If Group Messages By is set to None: For sent messages, indicates if the message is Delivered, Pending, or Failed. For received messages, indicates if the message is Read or Unread.</li>
+<li>If Group Messages By is set to Patient or Phone Number: Indicates if the message was Sent or Received (Rcv). For Sent messages, also indicates if the message was Delivered, Pending, or Failed. For Received messages, also indicates if the message is Read or Unread.</li>
+<li>Messages are automatically marked read when opening a conversation in Open Dental, <a href="opendentalmobilemessages.html">ODMobile</a>, or <a href="odtouchmessages.html">ODTouch</a>.</li>
+</ul>
+</li>
+<li><b>#Phone Matches</b>: Only displays when Group Messages By is set to <i>None</i>. Displays a number if multiple patients share the same number. Right-click and select Change Pat to associate a specific patient.</li>
+<li><b>Patient Phone</b>: Displays the phone number for the patient.</li>
+<li><b>Patient</b>: Displays the patient name.  <ul>
+<li>Messages are automatically linked to a patient when phone numbers are an exact match.</li>
+<li>If multiple family members have matching numbers, it attaches to the guarantor.</li>
+<li>If multiple patients across two or more families have the same number, or there is no patient with a matching number, the patient is <i>Unassigned</i>.</li>
+</ul>
+</li>
+<li><b>Cost</b>: Only displays when Group Messages By is set to <i>None</i>. Displays the cost of the message sent. See <a href="textmsgfaq.html">Integrated Texting Q and A</a> for how cost is calculated.</li>
+<li><b>Clinic</b>: Displays the clinic associated to the patient.</li>
+<li><b>Latest Message</b>: Only displays when Group Messages By is set to <i>Patient</i> or <i>Phone Number</i>. Displays the last message sent or received. </li>
+</ul>
+<p class="MarginBottomZero">Right-click options: These options are only available when Group Messages By is set to <i>None</i>. </p>
+<ul class="MarginBottomGap">
+<li><b>Change Pat</b>: Change the patient attached to a received message.</li>
+<li><b>Mark Read/Unread</b>: Change the status of a received message.</li>
+<li><b>Hide/Unhide</b>: Hide or show the message in the list. Text messages cannot be deleted.</li>
+<li><b>Go to Patient</b>: Make the selected patient active.</li>
+<li><b>Block Number</b>: Block incoming text messages from specific mobile numbers. The sender sees the text message as delivered, but it does not appear in Open Dental. Blocked messages cannot be recovered.</li>
+</ul>
+<h2>View Messages</h2>
+<p>Click on a row to view the conversation thread on the right.</p>
+<img src="images/textMailboxMessage.png" width="259" height="449"/><p>Sent and received messages with the patient display. Messages sent to patients include a status in gray of<i> Delivered</i>, <i>Sent</i>, or <i>Not Delivered</i>.</p>
+<p>To send a reply, enter the message then click <b>Send</b>. The character and message count is updated as a message is typed.</p>
+<p>If the monthly texting limit is reached, there is a prompt to increase the limit in the <a href="textintegratedmonthlylimit.html">SMS Warning Amount</a>.</p>
+<p>If a message has a failed status, see <a href="textintegratedtroubleshooting.html">Integrated Texting Troubleshooting</a> to troubleshoot why.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,292 @@
+/*Jordan 2018-05-22 ===============NEW STYLE with TOC=================
+This css is used exclusively by the pages that are auto-generated in the manual folder,
+and those manual pages do not point to any other secondary css. 
+Do not make changes to this file without consulting me.*/
+
+.TempCursor{/*Used when editing pages to show position*/
+	background-color: rgb(255,255,150);
+}
+h2 {
+	font-size: 120%;/*was "medium", or about 109% but that wasn't quite big enough*/
+	color: #00648A;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+a {
+	color: #343C83;
+	text-decoration: underline;
+}
+a:visited {
+	color: #343C83;
+}
+a:hover {
+	color: #CC0000;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;/*was 'small', but that was about 81%, which was just too small*/
+    margin:0px;
+}
+.LeftTree {
+    font-size:.9rem;
+}
+p {
+	margin-top: 0px;
+	margin-bottom: 12px;
+}
+/*These are to handle simulating lists within paragraphs*/
+.MarginBottomZero{/*for the new paragraph above the list*/
+	margin-bottom: 0px;
+}
+.MarginBottomGap{/*for the list, if it's at the bottom of the paragraph*/
+	margin-bottom: 12px;
+}
+.Note{
+	color: rgb(30,30,30);/*#004C62;*/
+	background: rgb(235,235,235);
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(100,100,100);
+	border-radius:2px;
+	margin-top:2px;
+	margin-bottom:4px;
+	padding: 2px;
+	display:inline-block;
+	max-width:85%;
+}
+img{/*was .GeneralPageContent img*/
+    max-width:100%;
+    height:auto;
+	margin-bottom: 10px;
+}
+.ImageInParagraph{/*This is to create whitespace above an image after a br tag.*/
+	margin-top: 10px;
+	/*margin-bottom: 0px;doesn't work*/
+}
+ul, ol {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left:20px;/*default was 40.  This smaller number just leaves room for the bullets/numbers*/
+}
+.codeblock{
+	font-family: monospace;
+	margin-top: 0px;
+	margin-bottom: 0px;
+    font-size:120%;
+}
+.redtext {
+	color: #900;
+}
+.redbold {
+	color: #900;
+	font-weight: bold;
+}
+.simpletable{
+	border-collapse: collapse;
+}
+.simpletable th, .simpletable td {/*tr is not included here yet*/
+	border: 1px solid black;
+	padding-left: 4px;
+}
+.LeftTree{
+    position:fixed;
+    width:383px;
+    top:0;
+    bottom:0;
+    height:100%;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    display:none;/*for phones*/
+    border-right:1px solid gray;
+}
+.LeftTree img{
+    margin: 0px;
+}
+.LeftTree ul{
+    list-style-type:none;
+    padding-left:16px; /*default was 40*/
+    width:500px;/*keeps items from wrapping*/
+}
+.LeftTree li{
+	line-height:15pt;/*default was 12*/
+}
+.LeftTreeFirstNode {
+    margin-left:8px;
+    margin-top:5px;
+}
+.RightMain{
+    margin-left:0px;
+    margin-right:0px;
+	overflow-x:hidden;
+}
+@media screen and (min-width: 1100px) {/*When the viewport is huge*/
+    .LeftTree {
+        display:block;/*Show tree*/
+    }
+    .RightMain{
+        margin-left:384px;
+    }
+}
+.TopBarLeft {
+    position:relative;
+	height:60px;
+    width:100%;
+    background-color:rgb(65, 97, 106);
+}
+.TopBarLeft p{
+    position:absolute;
+    font-size:138.8%;
+    color:white;
+    left:90px;
+    top:26px;
+}
+.TopBar{
+    position:relative;
+	height:60px;
+    width:100%;
+    background-color:rgb(65, 97, 106);
+}
+.TopBar2 {/*remember, this is for phone*/
+    position:relative;
+    height:29px;
+    width:100%;
+    background-color:rgb(234, 238, 238);
+    border-bottom:1px solid gray;
+}
+.TopBar2 p{/*remember, this is for phone*/
+    position:absolute;
+    left:6px;
+    top:4px;
+	width:1100px;/*extra big, so no wrap*/
+    font-size:116.66%;
+    color:#153c4b;
+}
+.Logo{
+    position:absolute;
+    top:3px;
+    left:4px;
+    max-width:25%;
+    height:auto;
+}
+.Logo img{
+    position:relative;
+    z-index:1;/*position and z-index both need to be set for img to be clickable*/
+    max-width:100%;
+    height:auto;
+}
+.Logo a{
+    color:white;
+    text-decoration-line:none;
+}
+.TopBarLinks{/*Invisible.  Very similar to TopBar itself, but it stretches to the right differently.*/
+    display:block;
+    position:absolute;
+    width:100%;
+    height:60px;
+    max-width:935px;
+}
+.TopBarTitle{/*remember, this is for phone*/
+    display:block;
+    width:100%;
+    text-align:center;
+    font-size:125%;
+    margin-top:22px;
+    color:white;
+}
+.TopBarVersion{/*being deprecated*/
+    display:inline;
+    font-size:66.66%;
+}
+.TopBarVersionDrop{
+    display:inline;
+	vertical-align:2px;
+	margin-left: 5px;
+    font-size:66.66%;
+}
+.TopBarHome,.TopBarSearch{
+    display:block;
+    position:absolute;
+    right:3px;
+    top:4px;
+    width: 80px;
+    height: 25px;
+    color:black;
+    background-color:rgb(219, 230, 230);    
+}
+.TopBarHome{
+    top:32px;
+}
+.TopBarHome:hover,.TopBarSearch:hover{
+    background-color:rgb(180,195,195);
+}
+.TopBarHome p,.TopBarSearch p{
+    margin:0px;
+    position:absolute;
+    right:3px;
+    top:2px;
+    color:black;
+    text-decoration:none;
+}
+.TopBarHome img, .TopBarSearch img{
+    position:absolute;
+    left:4px;
+    top:6px;
+}
+@media screen and (min-width: 1100px) {/*When the tree is showing*/
+    .TopBarHome{/*, .TopBarSearch { no longer hiding search*/
+        display: none;/*hide */
+    }
+}
+@media screen and (min-width: 610px) {/*any screen bigger than a phone*/
+   .Logo{
+        top:8px;
+        left:9px;
+   }
+   .TopBarTitle{
+       margin-top:16px;
+       font-size:150%;
+   }
+   .TopBarVersion{
+       font-size:100%;
+   }
+   .TopBarVersionDrop{
+       font-size:66.66%;
+   }
+   .TopBarHome{
+       right:14px;
+   }
+   .TopBarSearch{
+       right:14px;
+   }
+   .TopBar2{
+       height:39px;
+   }
+   .TopBar2 p{
+       font-size:166.66%;
+   }
+}
+.GeneralPageContent {
+    padding: 10px 10px; /*t/b r/l*/
+    max-width: 915px;/*Doesn't cut off any images*/
+}
+.expbut {
+    position:relative;
+    left:-17px;
+    top:2px;
+}
+.exptxt{
+    display:inline-block;
+    position:relative;
+    width:380px;/*Gray highlight should be as wide as nav panel, but not as wide as ul*/
+}
+.thisPage {
+    background-color:rgb(227, 227, 227);
+}
+@media print {
+	.Logo,
+	.TopBarSearch,
+	.TopBarHome {
+		display: none !important;
+	}
+}

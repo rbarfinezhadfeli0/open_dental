@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - PaySimple</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('paysimple','paymentpatientcreditcard','payment','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/paysimple.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/paysimple.html" >v24.2</option><option value="https://www.opendental.com/manual241/paysimple.html" >v24.1</option><option value="https://www.opendental.com/manual233/paysimple.html" >v23.3</option><option value="https://www.opendental.com/manual232/paysimple.html" >v23.2</option><option value="https://www.opendental.com/manual231/paysimple.html" >v23.1</option><option value="https://www.opendental.com/manual224/paysimple.html" >v22.4</option><option value="https://www.opendental.com/manual223/paysimple.html" >v22.3</option><option value="https://www.opendental.com/manual222/paysimple.html" >v22.2</option><option value="https://www.opendental.com/manual221/paysimple.html" >v22.1</option><option value="https://www.opendental.com/manual214/paysimple.html" >v21.4</option><option value="https://www.opendental.com/manual213/paysimple.html" >v21.3</option><option value="https://www.opendental.com/manual212/paysimple.html" >v21.2</option><option value="https://www.opendental.com/manual211/paysimple.html" >v21.1</option><option value="https://www.opendental.com/manual205/paysimple.html" >v20.5</option><option value="https://www.opendental.com/manual204/paysimple.html" >v20.4</option><option value="https://www.opendental.com/manual203/paysimple.html" >v20.3</option><option value="https://www.opendental.com/manual202/paysimple.html" >v20.2</option><option value="https://www.opendental.com/manual201/paysimple.html" >v20.1</option><option value="https://www.opendental.com/manual194/paysimple.html" >v19.4</option><option value="https://www.opendental.com/manual193/paysimple.html" >v19.3</option><option value="https://www.opendental.com/manual192/paysimple.html" >v19.2</option><option value="https://www.opendental.com/manual191/paysimple.html" >v19.1</option><option value="https://www.opendental.com/manual184/paysimple.html" >v18.4</option><option value="https://www.opendental.com/manual183/paysimple.html" >v18.3</option><option value="https://www.opendental.com/manual182/paysimple.html" >v18.2</option><option value="https://www.opendental.com/manual181/paysimple.html" >v18.1</option><option value="https://www.opendental.com/manual174/paysimple.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>PaySimple</p></div>
+<div class="GeneralPageContent">
+<p>Use the PaySimple Payment Information window to take payments, add new cards, void a transaction, or process a return. </p>
+<p>In the <a href="payment.html">Payment</a> window, click <b>PaySimple</b>.</p>
+<img src="images/paysimpleCreditDebitTab.png" width="466" height="410"/><p class="MarginBottomZero">Alternatively,  </p>
+<ul class="MarginBottomGap">
+<li>In the <a href="claimpayfinalize.html">Edit Insurance Payment Window</a>, click <b>PaySimple</b>. </li>
+<li>In the <a href="creditcardsmanage.html">Credit Card Manage</a> window, add a card.</li>
+</ul>
+<p>Website: <a href="https://paysimple.com/partner/open-dental">paysimple.com</a>. Only available to U.S. customers.</p>
+<p><div class="Note">Note: <ul>
+<li>Deleting a card in Open Dental will also delete the card in PaySimple.</li>
+<li>EMV transactions are not supported for PaySimple.</li>
+<li>Also see: <a href="paysimplesetup.html">PaySimple Setup</a></li>
+</ul>
+</div>
+</p>
+<p>To automatically save new credit/debit cards and bank information to a patient's account after each transaction enable <i>Automatically store credit card tokens</i> in <a href="preferences.html">Preferences</a>.</p>
+<h2>Credit/Debit Tab</h2>
+<p>Enter a patient's credit or debit card information in the Credit/Debit tab.</p>
+<img src="images/paySimpleCDTab.png" width="426" height="322"/><p class="MarginBottomZero"><b>Transaction Type</b>: Select the transaction type. (Not available when adding a card in the Credit Card Manage window.) </p>
+<ul class="MarginBottomGap">
+<li><b> Sale</b>: A standard credit card charge.</li>
+<li><b>Auth</b>: Add a credit card.</li>
+<li><b>Void</b>: Reverse a sale soon after (same day) it was made. See below for details.</li>
+<li><b>Return</b>: Reverse a sale one or more days after it was made.</li>
+</ul>
+<p class="MarginBottomZero">Card Information:  </p>
+<ul class="MarginBottomGap">
+<li><b>Card Number</b>: Place the cursor in the field then swipe the credit card, or type the credit card number.</li>
+<li><b>Expiration (MMYY)</b>: Enter the credit card expiration date. When the card is swiped the expiration date will auto-populate.</li>
+<li><b>Security Code</b>: Enter the security code from the back of the credit card.</li>
+<li><b>Name On Card</b>: Auto-populates with the selected patient's name, or, when the card is swiped, the cardholder's name.</li>
+<li><b>Zip Code</b>: Enter the zip code of the cardholder's billing address. When using a card on file, the zip code stored in Credit Card Manage window auto-populates this field.</li>
+</ul>
+<p><b>Amount</b>: The amount entered in the payment window. To edit, cancel the transaction and enter the correct amount in the payment window.</p>
+<p class="MarginBottomZero"><b>One-Time Payment</b>: Determines whether a token is created and the card is saved in Credit Card Manage to use again later. Only available when adding a credit card while processing a payment. </p>
+<ul class="MarginBottomGap">
+<li>Checked: Card is used for the current transaction and is not be saved.</li>
+<li>Unchecked: Card is used for the current transaction, a token is created, and the card is saved.</li>
+</ul>
+<p><b>Print Receipt</b>: Automatically print a receipt to the default receipt <a href="printersetup.html">Printer</a> when the transaction is completed. Set as default in <a href="paysimplesetup.html">PaySimple Setup</a>.</p>
+<h2>ACH Tab</h2>
+<p>Enter a patient's checking or savings account information in the ACH tab. An active registration key and <a href="econnector.html">eConnector</a> is required.</p>
+<img src="images/paysimpleACHTab.png" width="424" height="321"/><p><b>Account Type</b>: Select the patient's account type to be used for direct payment, Checking or Savings.</p>
+<p class="MarginBottomZero">Bank Information: </p>
+<ul class="MarginBottomGap">
+<li><b>Routing Number</b>: Bank account routing number.</li>
+<li><b>Account Number</b>: Bank account number.</li>
+<li><b>Bank Name</b>: Name of the bank.</li>
+</ul>
+<p><b>Amount</b>: The amount entered in the payment window. If adding the account from the Credit Card Manage window, the Amount field is not visible.</p>
+<p class="MarginBottomZero"><b>One-Time Payment</b>: Determines whether a token is created and the card is saved in Credit Card Manage to use again later. Only available when adding a credit card while processing a payment. </p>
+<ul class="MarginBottomGap">
+<li>Checked: Card is used for the current transaction and is not be saved.</li>
+<li>Unchecked: Card is used for the current transaction, a token is created, and the card is saved.</li>
+</ul>
+<p><b>Print Receipt</b>: Automatically print a receipt to the default receipt printer when the transaction is completed. Set as default in PaySimple Setup.</p>
+<p>When an ACH transaction is processed, the payment status will be marked as Posted (pending) in the Payment Note. Once the transaction is settled with the bank, update the payment amount and status if the payment is declined. To automatically update the payment status (e.g., Settled or Failed), navigate to the <a href="paysimplesetup.html">PaySimple Setup</a> program link, re-open and click OK. This one time step will enable automatic status updates.</p>
+<h2>Process a Void</h2>
+<p>Payments or returns can be voided when the original transaction was processed in the last 24 hours and has not been deposited to the practice account. Voiding removes the original transaction from the patient's bank the same day. If the transaction is older or has been deposited, return the payment instead. Returns require a few days to process. See <a href="paymentreturn.html">Credit Card Return</a>.</p>
+<p><div class="Note">Note: ACH Payments cannot be voided within Open Dental. Instead, void them within the PaySimple portal, then manually edit the payment in Open Dental or create a <a href="refunds.html">Refund</a> transaction. </div>
+</p>
+<p class="MarginBottomZero">To void a PaySimple transaction:  </p>
+<ol class="MarginBottomGap">
+<li>Locate the transaction to void. In the payment note identify the <i>Ref Number</i> and payment amount.</li>
+<li>In the patient's <a href="account.html">Account Module</a>, click Payment.</li>
+<li>Enter an amount matching the original transaction.  <ul>
+<li> If voiding a payment, enter the amount as negative (e.g., -25). Alternatively, right-click the original payment, choose <b>Refund</b>, and go to Step 5.</li>
+<li>If voiding a refund, enter the amount as a positive (e.g., 25).</li>
+</ul>
+</li>
+<li>Click OK to open the <a href="payment.html">Payment</a>. <ul>
+<li>If using <a href="clinics.html">Clinics</a>, select the clinic of the original payment.</li>
+<li>Allocate <a href="paysplit.html">Payment Splits</a> to the production (i.e., procedures, adjustments, or unearned income types) of the original payment. See <a href="paysplitsedit.html">Paysplit Revise</a>.</li>
+</ul>
+</li>
+<li>After verifying the paysplits, Click <b>PaySimple</b> to open the PaySimple window.</li>
+<li>Enter the transaction information, using the same information as the original transaction (PaySimple needs this for verification purposes). <ul>
+<li>Select <i>Void</i> as the Transaction Type.</li>
+<li>Ref Number (i.e., <i>PaySimple Transaction Number</i>)</li>
+<li>Card Number, Expiration Date, and Security Code.</li>
+</ul>
+</li>
+<li>Click <b>OK</b> to process, the payment window will immediately close.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Referral Analysis Report</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reportreferralanalysis','+reportlists','reportsstandard','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/reportreferralanalysis.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/reportreferralanalysis.html" >v24.2</option><option value="https://www.opendental.com/manual241/reportreferralanalysis.html" >v24.1</option><option value="https://www.opendental.com/manual233/reportreferralanalysis.html" >v23.3</option><option value="https://www.opendental.com/manual232/reportreferralanalysis.html" >v23.2</option><option value="https://www.opendental.com/manual231/reportreferralanalysis.html" >v23.1</option><option value="https://www.opendental.com/manual224/reportreferralanalysis.html" >v22.4</option><option value="https://www.opendental.com/manual223/reportreferralanalysis.html" >v22.3</option><option value="https://www.opendental.com/manual222/reportreferralanalysis.html" >v22.2</option><option value="https://www.opendental.com/manual221/reportreferralanalysis.html" >v22.1</option><option value="https://www.opendental.com/manual214/reportreferralanalysis.html" >v21.4</option><option value="https://www.opendental.com/manual213/reportreferralanalysis.html" >v21.3</option><option value="https://www.opendental.com/manual212/reportreferralanalysis.html" >v21.2</option><option value="https://www.opendental.com/manual211/reportreferralanalysis.html" >v21.1</option><option value="https://www.opendental.com/manual205/reportreferralanalysis.html" >v20.5</option><option value="https://www.opendental.com/manual204/reportreferralanalysis.html" >v20.4</option><option value="https://www.opendental.com/manual203/reportreferralanalysis.html" >v20.3</option><option value="https://www.opendental.com/manual202/reportreferralanalysis.html" >v20.2</option><option value="https://www.opendental.com/manual201/reportreferralanalysis.html" >v20.1</option><option value="https://www.opendental.com/manual194/reportreferralanalysis.html" >v19.4</option><option value="https://www.opendental.com/manual193/reportreferralanalysis.html" >v19.3</option><option value="https://www.opendental.com/manual192/reportreferralanalysis.html" >v19.2</option><option value="https://www.opendental.com/manual191/reportreferralanalysis.html" >v19.1</option><option value="https://www.opendental.com/manual184/reportreferralanalysis.html" >v18.4</option><option value="https://www.opendental.com/manual183/reportreferralanalysis.html" >v18.3</option><option value="https://www.opendental.com/manual182/reportreferralanalysis.html" >v18.2</option><option value="https://www.opendental.com/manual181/reportreferralanalysis.html" >v18.1</option><option value="https://www.opendental.com/manual174/reportreferralanalysis.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Referral Analysis Report</p></div>
+<div class="GeneralPageContent">
+<p>This report analyzes the incoming referral count and production for a specific date range</p>
+<p>In <a href="reportsstandard.html">Standard Reports</a>, in the Lists section, click <b>Referral Analysis</b>.</p>
+<img src="images/reportReferralAnalysis.png" width="688" height="454"/><p>Patients must have a <i>Referred From</i> entered in the <a href="family.html">Family Module</a> to be included in the report. See <a href="referrals.html">Referrals</a></p>
+<p>To control user access to this report, see <a href="reportsecurity.html">Report Setup: Security Permissions</a>.</p>
+<h2>Report Filters</h2>
+<p><b>Providers</b>: Select the providers to include. Ctrl + click to select multiple providers. Select <b>All</b> to include all listed providers.</p>
+<p class="MarginBottomZero"><b>Date Range</b>: Type a date range for the report in the From/To boxes or use the buttons to set the date range. Applies to patients with procedures set complete in the date range. </p>
+<ul class="MarginBottomGap">
+<li><b>Arrows</b>: Click to move back or forward one month from the currently entered date.</li>
+<li><b>This Month</b>: Click to populate the text boxes with the current month.</li>
+</ul>
+<p><b>Include address information:</b> Check to include additional columns with referrer's address information in the report. </p>
+<p><b>Run as landscape:</b> Only shows when <i>Include address information</i> is checked. Prints the report in landscape.</p>
+<p><b>Only include new patients:</b> Check this box to only include new patients in the analysis. Patients will appear on the report if they had their first procedure completed by a selected provider in the date range. This may differ from the <a href="reportsnewpatient.html">New Patients Report</a>.</p>
+<h2>Report Preview</h2>
+<p>After setting report criteria, click <b>OK</b> to launch a print preview of the report results. Below is an example of the report and explanation of the report columns.</p>
+<p>For a description of toolbar buttons, see <a href="reportcomplex.html">Complex Report System</a>.</p>
+<img src="images/reportreferralanalysisPrint.gif" width="699" height="383"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Last Name</b>: Last name of the referrer. See <a href="referralsetup.html">Referral List</a>.</li>
+<li><b>First Name</b>: First name of the referrer. </li>
+<li><b>Count</b>: Number of patients referred by the referrer using the selected criteria (i.e., with completed procedures by the selected providers).</li>
+<li><b>Production</b>: Total gross production in the date range for selected providers from referred patients. </li>
+<li>The following columns will appear when <i>Include address information</i> is checked in the Report Filters window: <ul>
+<li><b>Title</b>: Referrer's title (e.g., DDS). Set in Edit Referral window. See Referral List.</li>
+<li><b>Address</b>, <b>Add2</b>, <b>City</b>, <b>State</b>, <b>Zip</b>: Referrer's address information. Set in Edit Referral window.</li>
+<li><b>Specialty</b>: Referrer's specialty. Set in Edit Referral window.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

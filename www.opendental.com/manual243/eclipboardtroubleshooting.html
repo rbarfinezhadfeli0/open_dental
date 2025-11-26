@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - eClipboard Troubleshooting</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('eclipboardtroubleshooting','eclipboardsetup','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/eclipboardtroubleshooting.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/eclipboardtroubleshooting.html" >v24.2</option><option value="https://www.opendental.com/manual241/eclipboardtroubleshooting.html" >v24.1</option><option value="https://www.opendental.com/manual233/eclipboardtroubleshooting.html" >v23.3</option><option value="https://www.opendental.com/manual232/eclipboardtroubleshooting.html" >v23.2</option><option value="https://www.opendental.com/manual231/eclipboardtroubleshooting.html" >v23.1</option><option value="https://www.opendental.com/manual224/eclipboardtroubleshooting.html" >v22.4</option><option value="https://www.opendental.com/manual223/eclipboardtroubleshooting.html" >v22.3</option><option value="https://www.opendental.com/manual222/eclipboardtroubleshooting.html" >v22.2</option><option value="https://www.opendental.com/manual221/eclipboardtroubleshooting.html" >v22.1</option><option value="https://www.opendental.com/manual214/eclipboardtroubleshooting.html" >v21.4</option><option value="https://www.opendental.com/manual213/eclipboardtroubleshooting.html" >v21.3</option><option value="https://www.opendental.com/manual212/eclipboardtroubleshooting.html" >v21.2</option><option value="https://www.opendental.com/manual211/eclipboardtroubleshooting.html" >v21.1</option><option value="https://www.opendental.com/manual205/eclipboardtroubleshooting.html" >v20.5</option><option value="https://www.opendental.com/manual204/eclipboardtroubleshooting.html" >v20.4</option><option value="https://www.opendental.com/manual203/eclipboardtroubleshooting.html" >v20.3</option><option value="https://www.opendental.com/manual202/eclipboardtroubleshooting.html" >v20.2</option><option value="https://www.opendental.com/manual201/eclipboardtroubleshooting.html" >v20.1</option><option value="https://www.opendental.com/manual194/eclipboardtroubleshooting.html" >v19.4</option><option value="https://www.opendental.com/manual193/eclipboardtroubleshooting.html" >v19.3</option><option value="https://www.opendental.com/manual192/eclipboardtroubleshooting.html" >v19.2</option><option value="https://www.opendental.com/manual191/eclipboardtroubleshooting.html" >v19.1</option><option value="https://www.opendental.com/manual184/eclipboardtroubleshooting.html" >v18.4</option><option value="https://www.opendental.com/manual183/eclipboardtroubleshooting.html" >v18.3</option><option value="https://www.opendental.com/manual182/eclipboardtroubleshooting.html" >v18.2</option><option value="https://www.opendental.com/manual181/eclipboardtroubleshooting.html" >v18.1</option><option value="https://www.opendental.com/manual174/eclipboardtroubleshooting.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>eClipboard Troubleshooting</p></div>
+<div class="GeneralPageContent">
+<p>Below are common errors and solutions for <a href="eclipboardsetup.html">eClipboard</a>. </p>
+<p class="MarginBottomZero"><b>Other Resources:</b></p>
+<ul class="MarginBottomGap">
+<li><a href="eservicestroubleshooting.html">eServices Troubleshooting</a></li>
+<li><a href="econnector.html">eConnector</a></li>
+</ul>
+<h2>General Troubleshooting</h2>
+<p>Follow these steps, in order, for general eClipboard troubleshooting. These steps resolve various issues.</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Remove the device(s) from Open Dental. </li>
+<li>Uninstall the eClipboard app from the device. </li>
+<li>Restart the device.</li>
+<li>Re-install eClipboard app on device. </li>
+<li>Add/enable the device in Open Dental. </li>
+</ol>
+<h2>eClipboard Errors</h2>
+<p><b>Validation Failed</b></p>
+<p>Each tablet needs to be enabled in Open Dental before it can be used for eClipboard. In <a href="devicemanager.html">Device Manager</a>, check the <i>eClipboard</i> box next to the device. </p>
+<p><b>No appointment for patient found. Please hand this device to staff so that we can assist you.</b></p>
+<p>Typically this error is caused by having no birthdate entered for the patient in Open Dental. Enter the patient's birthdate, then try again.</p>
+<p><b>"Unknown error occured" after checking in patient. Application might crash or close.</b></p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Solution 1: Uninstall eClipboard from the device and remove the device from eClipboard Setup. Then, reinstall eClipboard to the device.</li>
+<li>Solution 2: If using clinics, ensure eClipboard is logged into the correct clinic.</li>
+<li>Solution 3: On the server, navigate to the eConnector service. Update the username and password to match the server's administrator credentials, rather than running the service as a Local System account.</li>
+</ul>
+<p><b> "Cannot find appointment" when entering correct date/patient name in eClipboard</b></p>
+<p>Verify the date and time is correct to their time zone on the server, and the mobile device (iPad/Tablet). If the time is different in either case, eClipboard may not be able to recognize that the appointment is scheduled for today. </p>
+<p></p>
+<p><p><b>New Check-in Event<br/> Warning: A new check-in event has been sent to this device. Continuing will end the current session and result in lost progress. Do you want to allow? </b></p>
+<p>This warning displays on the eClipboard device when a staff member manually loads a patient to a device when the device is in use. This warning is just a confirmation that loading a patient is intentional.</p>
+<h2>Additional Troubleshooting</h2>
+<p><b>A device listed as compatible with eClipboard will not install the eClipboard app from App Store. </b></p>
+<p>Update tablet's operating system (OS). Some compatible devices might be running an older OS not compatible with eClipboard. </p>
+<p><b>eClipboard app works intermittently, certain forms not being received in Open Dental.</b></p>
+<p>Confirm internet connection to tablet. Some offices have reported issues using eClipboard in radiograph labs. The same radiation shielding that blocks X-rays will interfere with Wifi connections. </p>
+<p><b>When trying to send forms to eClipboard for iPad using Kiosk Manager, the device never receives the forms and stays in the <i>Waiting for Patient Information</i> loading screen.</b></p>
+</p>
+<p>Ensure the device is signed in with a valid Apple ID. Check Settings or the App Store on the iPad to sign in with the Apple ID. Attempt to send the forms to the tablet again.</p>
+</div>
+</div>
+</body>
+</html>

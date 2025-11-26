@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Hidden Payment Splits Report</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reporthiddensplits','+reportlists','reportsstandard','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/reporthiddensplits.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/reporthiddensplits.html" >v24.2</option><option value="https://www.opendental.com/manual241/reporthiddensplits.html" >v24.1</option><option value="https://www.opendental.com/manual233/reporthiddensplits.html" >v23.3</option><option value="https://www.opendental.com/manual232/reporthiddensplits.html" >v23.2</option><option value="https://www.opendental.com/manual231/reporthiddensplits.html" >v23.1</option><option value="https://www.opendental.com/manual224/reporthiddensplits.html" >v22.4</option><option value="https://www.opendental.com/manual223/reporthiddensplits.html" >v22.3</option><option value="https://www.opendental.com/manual222/reporthiddensplits.html" >v22.2</option><option value="https://www.opendental.com/manual221/reporthiddensplits.html" >v22.1</option><option value="https://www.opendental.com/manual214/reporthiddensplits.html" >v21.4</option><option value="https://www.opendental.com/manual213/reporthiddensplits.html" >v21.3</option><option value="https://www.opendental.com/manual212/reporthiddensplits.html" >v21.2</option><option value="https://www.opendental.com/manual211/reporthiddensplits.html" >v21.1</option><option value="https://www.opendental.com/manual205/reporthiddensplits.html" >v20.5</option><option value="https://www.opendental.com/manual204/reporthiddensplits.html" >v20.4</option><option value="https://www.opendental.com/manual203/reporthiddensplits.html" >v20.3</option><option value="https://www.opendental.com/manual202/reporthiddensplits.html" >v20.2</option><option value="https://www.opendental.com/manual201/reporthiddensplits.html" >v20.1</option><option value="https://www.opendental.com/manual194/reporthiddensplits.html" >v19.4</option><option value="https://www.opendental.com/manual193/reporthiddensplits.html" >v19.3</option><option value="https://www.opendental.com/manual192/reporthiddensplits.html" >v19.2</option><option value="https://www.opendental.com/manual191/reporthiddensplits.html" >v19.1</option><option value="https://www.opendental.com/manual184/reporthiddensplits.html" >v18.4</option><option value="https://www.opendental.com/manual183/reporthiddensplits.html" >v18.3</option><option value="https://www.opendental.com/manual182/reporthiddensplits.html" >v18.2</option><option value="https://www.opendental.com/manual181/reporthiddensplits.html" >v18.1</option><option value="https://www.opendental.com/manual174/reporthiddensplits.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Hidden Payment Splits Report</p></div>
+<div class="GeneralPageContent">
+<p>Use the Hidden Payment Splits Report to track accounts with prepayment types that are shown in the Hidden Splits tab of the Account.</p>
+<p>In <a href="reportsstandard.html">Standard Reports</a>, in the Lists section, click <b>Hidden Payment Splits</b>.</p>
+<img src="images/reportHiddenPaysplit.png" width="524" height="364"/><p>This report tracks <a href="paysplit.html">Payment Splits</a> (paysplits) with an <a href="definitionspaysplitunearned.html">Unearned Type</a> marked as <i>Do Not Show on Account</i>. These paysplits are not displayed in the main Patient Account tab in the <a href="account.html">Account Module</a> and instead are displayed in the Hidden Splits tab. </p>
+<h2>Filters</h2>
+<p>Set the report criteria and filters before running the report.</p>
+<p><b>From / To Dates</b>: Choose the date range for the report. Click the dropdown to select a date or type a date. Use the <b>W</b> arrows to quickly move forward or backward one week from the currently selected dates. Date range applies to the Payment Date associated with the paysplit.</p>
+<p class="MarginBottomZero"><b>Providers</b>: Select the providers to include in the report. Check <b>All</b> to include all listed providers and Unallocated hidden splits.  </p>
+<ul class="MarginBottomGap">
+<li>Filters by provider assigned to the paysplit.</li>
+<li>Selecting <b>No Provider</b> includes prepayments with no provider allocation (i.e., <i>Unallocated</i>).</li>
+</ul>
+<p><b>Unearned Types</b>: Select the Unearned Types marked <i>Do Not Show on Account</i> to include on the report. Check <b>All</b> to include all Unearned Types marked <i>Do Not Show on Account</i>, including those marked <i>Hidden</i>.</p>
+<p class="MarginBottomZero"><b>Clinics</b>: Only available when Clinics are enabled in <a href="showfeatures.html">Show Features</a>. Select the clinics to include in the report. Check <b>All (includes hidden)</b> to include all clinics and paysplits not attached to a clinic.  </p>
+<ul class="MarginBottomGap">
+<li>Filters by clinic assigned to paysplit.</li>
+<li>If user is restricted to specific clinics, only accessible clinics are listed. When checking <i>All (includes hidden)</i>, results include all clinics user has access to, including those marked hidden; results do not include clinics user is restricted from or payment splits not assigned to a clinic.</li>
+</ul>
+<h2>Report Preview</h2>
+<p>Click <b>OK</b> to display a print preview of the report results. Paysplits matching the filter criteria are listed. Negative values represent the prepayment transferred to completed procedures or refunded. </p>
+<p>The following is an example of the report and explanation of the report columns. For a description of toolbar buttons, see <a href="reportcomplex.html">Complex Report System</a>.</p>
+<img src="images/reportHiddenPaysplitPrint.png" width="745" height="328"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Date</b>: Payment date. See <a href="payment.html">Payment</a>.</li>
+<li><b>Patient</b>: Last name and first name of the patient attached to the paysplit.</li>
+<li><b>Provider</b>: Provider abbreviation of the provider attached to the paysplit.</li>
+<li><b>Clinic</b>: Clinic attached to the payment split. Hidden clinics are denoted.</li>
+<li><b>Code</b>: Procedure code attached to the payment split.</li>
+<li><b>Description</b>: Procedure description of the procedure code attached to the paysplit.</li>
+<li><b>Amount</b>: Amount of the listed payment split. If a single payment contains multiple paysplits, this differs from the total payment amount.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

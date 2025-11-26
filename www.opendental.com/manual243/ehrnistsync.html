@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - EHR NIST Time Synchronization</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('ehrnistsync','ehrsetupwindow','+chart','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/ehrnistsync.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/ehrnistsync.html" >v24.2</option><option value="https://www.opendental.com/manual241/ehrnistsync.html" >v24.1</option><option value="https://www.opendental.com/manual233/ehrnistsync.html" >v23.3</option><option value="https://www.opendental.com/manual232/ehrnistsync.html" >v23.2</option><option value="https://www.opendental.com/manual231/ehrnistsync.html" >v23.1</option><option value="https://www.opendental.com/manual224/ehrnistsync.html" >v22.4</option><option value="https://www.opendental.com/manual223/ehrnistsync.html" >v22.3</option><option value="https://www.opendental.com/manual222/ehrnistsync.html" >v22.2</option><option value="https://www.opendental.com/manual221/ehrnistsync.html" >v22.1</option><option value="https://www.opendental.com/manual214/ehrnistsync.html" >v21.4</option><option value="https://www.opendental.com/manual213/ehrnistsync.html" >v21.3</option><option value="https://www.opendental.com/manual212/ehrnistsync.html" >v21.2</option><option value="https://www.opendental.com/manual211/ehrnistsync.html" >v21.1</option><option value="https://www.opendental.com/manual205/ehrnistsync.html" >v20.5</option><option value="https://www.opendental.com/manual204/ehrnistsync.html" >v20.4</option><option value="https://www.opendental.com/manual203/ehrnistsync.html" >v20.3</option><option value="https://www.opendental.com/manual202/ehrnistsync.html" >v20.2</option><option value="https://www.opendental.com/manual201/ehrnistsync.html" >v20.1</option><option value="https://www.opendental.com/manual194/ehrnistsync.html" >v19.4</option><option value="https://www.opendental.com/manual193/ehrnistsync.html" >v19.3</option><option value="https://www.opendental.com/manual192/ehrnistsync.html" >v19.2</option><option value="https://www.opendental.com/manual191/ehrnistsync.html" >v19.1</option><option value="https://www.opendental.com/manual184/ehrnistsync.html" >v18.4</option><option value="https://www.opendental.com/manual183/ehrnistsync.html" >v18.3</option><option value="https://www.opendental.com/manual182/ehrnistsync.html" >v18.2</option><option value="https://www.opendental.com/manual181/ehrnistsync.html" >v18.1</option><option value="https://www.opendental.com/manual174/ehrnistsync.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>EHR NIST Time Synchronization</p></div>
+<div class="GeneralPageContent">
+<p>Open Dental has the ability to check and sync times with a NIST time server within 1 second. The check and synchronization is not automatic and we do not verify that it happens. This process checks local and database times for synchronization and verifies that all dates and times of <a href="audittrail.html">Audit Trail</a> entries are exact and accurate. Time synchronization was a certification requirement for <a href="ehrsetupwindow.html">EHR</a>. If you do not use Open Dental for time synchronization, you should synchronize time another way.</p>
+<p>We recommend you run Open Dental on the server (where the MySQL database is). Then Open Dental will check and sync times before you log on and every four hours thereafter. You do not need to log in to Open Dental for the sync to occur.</p>
+<p>If you are running Open Dental on a different machine (not the server), you can manually check and sync times.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Chart, EHR, then click <b>Time Synchronization</b>.</p>
+<img src="images/ehrTimeSync.png" width="540" height="320"/><p>The specific times for each server are listed. If Open Dental is unable to connect to the NIST time server, the operation may time out.</p>
+<p><b>Sync Time</b>: Check the NIST server time and synchronize all server times to match. You are limited to checking once every four seconds so the NIST server is not spammed with requests.</p>
+<p>Sometimes a difference in server times is harmless. In order for your times in Open Dental to be accurate, it is best to have both your server and local time in sync with an NIST time server. If you have concerns, please contact us.</p>
+<h2>Troubleshooting</h2>
+<p><b>Error: Time out of sync</b></p>
+<p>Solution: Make sure Open Dental is running on the server.</p>
+<p><b>Error: No response received</b></p>
+<p>Solution: This is a timeout response from the time server. It may happen intermittently due to the nature of the message and sending a UDP packet over the internet. If this is happening fairly often, there may be something stopping the time request messages from getting to the destination (e.g. <a href="firewalls.html">Firewall</a>).</p>
+</div>
+</div>
+</body>
+</html>

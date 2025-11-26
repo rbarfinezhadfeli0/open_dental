@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Add Family</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('familyadd','patientselect','toolbar','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/familyadd.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/familyadd.html" >v24.2</option><option value="https://www.opendental.com/manual241/familyadd.html" >v24.1</option><option value="https://www.opendental.com/manual233/familyadd.html" >v23.3</option><option value="https://www.opendental.com/manual232/familyadd.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/familyadd.html" >v23.1</option><option value="https://www.opendental.com/manual224/familyadd.html" >v22.4</option><option value="https://www.opendental.com/manual223/familyadd.html" >v22.3</option><option value="https://www.opendental.com/manual222/familyadd.html" >v22.2</option><option value="https://www.opendental.com/manual221/familyadd.html" >v22.1</option><option value="https://www.opendental.com/manual214/familyadd.html" >v21.4</option><option value="https://www.opendental.com/manual213/familyadd.html" >v21.3</option><option value="https://www.opendental.com/manual212/familyadd.html" >v21.2</option><option value="https://www.opendental.com/manual211/familyadd.html" >v21.1</option><option value="https://www.opendental.com/manual205/familyadd.html" >v20.5</option><option value="https://www.opendental.com/manual204/familyadd.html" >v20.4</option><option value="https://www.opendental.com/manual203/familyadd.html" >v20.3</option><option value="https://www.opendental.com/manual202/familyadd.html" >v20.2</option><option value="https://www.opendental.com/manual201/familyadd.html" >v20.1</option><option value="https://www.opendental.com/manual194/familyadd.html" >v19.4</option><option value="https://www.opendental.com/manual193/familyadd.html" >v19.3</option><option value="https://www.opendental.com/manual192/familyadd.html" >v19.2</option><option value="https://www.opendental.com/manual191/familyadd.html" >v19.1</option><option value="https://www.opendental.com/manual184/familyadd.html" >v18.4</option><option value="https://www.opendental.com/manual183/familyadd.html" >v18.3</option><option value="https://www.opendental.com/manual182/familyadd.html" >v18.2</option><option value="https://www.opendental.com/manual181/familyadd.html" >v18.1</option><option value="https://www.opendental.com/manual174/familyadd.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Add Family</p></div>
+<div class="GeneralPageContent">
+<p>This is a quick way to add multiple patients for one family all together.</p>
+<p>In <a href="patientselect.html">Select Patient</a>, click <b>Add Many</b>.</p>
+<img src="images/familyAdd.png" width="898" height="786"/><p><div class="Note">Note: <ul>
+<li>If a family member was already entered, to not use this window. Add additional family members in the <a href="family.html">Family Module</a> instead.</li>
+<li>Prompt staff to complete certain fields using <a href="requiredfields.html">Required Fields</a> marked with an *.</li>
+</ul>
+</div>
+</p>
+<p>Each family member is represented by an information column (last name, first name, gender/position, birthdate/age etc). The last three columns are designated for children. If there are more than five family members, add additional members in the Family Module. The guarantor is the person who is responsible for the account. To reduce data entry, some guarantor information will automatically populate for other family members.</p>
+<p>If adding a patient that matches an existing patient with the same first name, last name, and date of birth users receive a warning before continuing.</p>
+<p class="MarginBottomZero">Fields in this window match most fields in the <a href="patientedit.html">Edit Patient Information</a>. Below are details specific to this window:  </p>
+<ul class="MarginBottomGap">
+<li><b>Last Name/First Name</b>: Once the guarantor's last name is entered, the same last name is automatically populated for other family members as their first names are entered. </li>
+<li><b>Insurance 1, 2</b>: If Insurance 1 and/or 2 information is entered below, indicate which plans apply to each family member. Guarantor selections affect other family members but can be changed individually.</li>
+<li><b>Primary Provider</b>: Select the provider who will usually see the patient. If using clinics and providers are restricted to clinics, only providers available for the patient's assigned clinic are options. To change, user must have the <i>Patient Primary Provider Edit</i> security permission. Guarantor selections affect other family members but can be changed individually.</li>
+<li><i>Secondary Provider</i>: The patient's default secondary provider, often the hygienist. If using clinics and providers are restricted to clinics, only providers available for the patient's assigned clinic are options. Guarantor selections affect other family members but can be changed individually.</li>
+<li><b>Email Address</b>: Enter an email address for each patient. When <i>Autofill patient's email with the guarantor's when adding many new patients</i> is enabled in <a href="preferences.html">Preferences</a>, entering the guarantor's email address pre-fills the email for all family members.</li>
+<li><b>Wireless Phone</b>: Enter mobile phone number. Entering for the guarantor pre-fills for all members but can be changed individually. </li>
+<li><b>Text OK</b>: Indicate if patient can receive text messages. Guarantor selections affect other family members but can be changed individually.</li>
+<li><b>Billing Type</b>: Choose a billing type from the dropdown. Guarantor selections affect other family members but can be changed individually.</li>
+<li><b>Referred From</b>: Enter a referral for the family. Referrer will be added to each family member.</li>
+<li><b>Comm</b>: Enter a <a href="commlog.html">Commlog</a> that will be added to each family member's Progress Notes.</li>
+<li><b>Insurance 1/2</b>: If the family is covered by insurance, enter plan information for up to two insurance plans. First enter Subscriber information, (select the Subscriber from the dropdown and enter Subscriber ID). There are two options to enter plan information: <ul>
+<li>Click <b>Pick from List</b> to select an existing plan from the <a href="insplanlist.html">Insurance Plans</a> list.</li>
+<li>If entering a brand new insurance plan, enter the plan information into the Insurance 1/2 area. After exiting the Add Family window, add additional insurance information from <a href="insplan.html">Edit Insurance Plan</a> in the <a href="family.html">Family Module</a>. <ul>
+<li>To enter initial plan information, the logged-in user must have the <i>Insurance Plan Edit</i> permission. If they do not, they can only use Pick From List.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

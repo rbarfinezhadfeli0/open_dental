@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - HCFA 1500 Claim Form</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('claimform1500','claimforms','+familyinsurance','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/claimform1500.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/claimform1500.html" >v24.2</option><option value="https://www.opendental.com/manual241/claimform1500.html" >v24.1</option><option value="https://www.opendental.com/manual233/claimform1500.html" >v23.3</option><option value="https://www.opendental.com/manual232/claimform1500.html" >v23.2</option><option value="https://www.opendental.com/manual231/claimform1500.html" >v23.1</option><option value="https://www.opendental.com/manual224/claimform1500.html" >v22.4</option><option value="https://www.opendental.com/manual223/claimform1500.html" >v22.3</option><option value="https://www.opendental.com/manual222/claimform1500.html" >v22.2</option><option value="https://www.opendental.com/manual221/claimform1500.html" >v22.1</option><option value="https://www.opendental.com/manual214/claimform1500.html" >v21.4</option><option value="https://www.opendental.com/manual213/claimform1500.html" >v21.3</option><option value="https://www.opendental.com/manual212/claimform1500.html" >v21.2</option><option value="https://www.opendental.com/manual211/claimform1500.html" >v21.1</option><option value="https://www.opendental.com/manual205/claimform1500.html" >v20.5</option><option value="https://www.opendental.com/manual204/claimform1500.html" >v20.4</option><option value="https://www.opendental.com/manual203/claimform1500.html" >v20.3</option><option value="https://www.opendental.com/manual202/claimform1500.html" >v20.2</option><option value="https://www.opendental.com/manual201/claimform1500.html" >v20.1</option><option value="https://www.opendental.com/manual194/claimform1500.html" >v19.4</option><option value="https://www.opendental.com/manual193/claimform1500.html" >v19.3</option><option value="https://www.opendental.com/manual192/claimform1500.html" >v19.2</option><option value="https://www.opendental.com/manual191/claimform1500.html" >v19.1</option><option value="https://www.opendental.com/manual184/claimform1500.html" >v18.4</option><option value="https://www.opendental.com/manual183/claimform1500.html" >v18.3</option><option value="https://www.opendental.com/manual182/claimform1500.html" >v18.2</option><option value="https://www.opendental.com/manual181/claimform1500.html" >v18.1</option><option value="https://www.opendental.com/manual174/claimform1500.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>HCFA 1500 Claim Form</p></div>
+<div class="GeneralPageContent">
+<p>Below is an explanation of how each field on the printed HCFA 1500 <a href="claimforms.html">Claim Form</a> (also known as CMS 1500) is populated for medical claims. Claim Form <i>1500_02_2012</i> has the most updated fields for HCFA 1500 available in Open Dental, and should be used by most practices. </p>
+<p>Some fields require <a href="medicalins.html">Medical Insurance</a> features to be enabled. If a cell is blank, information is not automatically populated from the database.</p>
+<div class="Note">Note: Requirements for e-claims are different than requirements for paper claims. Printing a claim does not represent what is sent in an e-claim. Likewise, information sent in an e-claim does not necessarily print on a paper claim.</div>
+<br/><br/><table class="simpletable">
+<tr>
+<th style="width:33%">#</th>
+<th style="width:33%">Field name on form</th>
+<th style="width:33%">Where entered</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Medicare/Medicaid/Tricare/ChampVA/Group Health Plan/FECA Blk Lung/Other</td>
+<td><a href="patientedit.html">Edit Patient Information</a>, Medicaid ID.  <div class="Note">Note: <ul>
+<li>If Medicaid ID is entered for patient, Medicaid # is checked on form.</li>
+<li>If no Medicaid ID is entered, and Insurance Filing Code does not equal <i>Medicaid</i>, <i>Champus</i>, or <i>Veterans</i>, then <i>Group Health Plan</i> is checked on form.</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Patient's Name</td>
+<td>Edit Patient Information window, Last Name, First Name.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Patient's Birth Date/Sex</td>
+<td>Edit Patient Information window, Birthdate, Gender.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Insurer's Name</td>
+<td>Edit Patient Information, Last Name, First Name for patient marked as subscriber on the insurance plan.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Patient's Address</td>
+<td>Edit Patient Information window, Address, City, ST, Zip, Home Phone.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Patient's Relationship to Insured</td>
+<td><a href="insplan.html">Insurance Plan</a> window, Relationship to Patient or Edit <a href="claimedit.html">Claim</a> window, Relationship.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Insurer's Address</td>
+<td>Edit Patient Information window for patient marked as subscriber on the insurance plan.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Reserved for NUCC Use</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Other Insurer's Name</td>
+<td>The subscriber of any secondary insurance plan. Secondary coverage can be changed on Edit Claim window, Other Coverage.</td>
+</tr>
+<tr>
+<td>9a</td>
+<td>Other Insurer's Policy or Group Number</td>
+<td>Edit Insurance Plan window, Group Num (secondary plan).</td>
+</tr>
+<tr>
+<td>10a, b, c</td>
+<td>Is Patient's Condition Related to</td>
+<td><a href="claimtabgeneral.html">Edit Claim - General Tab</a>, Accident area.</td>
+</tr>
+<tr>
+<td>10d</td>
+<td>Claim Codes (designated by NUCC)</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Insurer's Policy Group or FECA Number</td>
+<td>Edit Insurance Plan window, Group Num (primary plan).</td>
+</tr>
+<tr>
+<td>11a</td>
+<td>Insurer's Date of Birth</td>
+<td>Edit Patient Information window, Birthdate for patient marked as subscriber on the insurance plan.</td>
+</tr>
+<tr>
+<td>11b</td>
+<td>Other Claim ID</td>
+<td>Edit Insurance Plan window.</td>
+</tr>
+<tr>
+<td>11c</td>
+<td>Insurance Plan Name or Program Name</td>
+<td>Edit Insurance Plan window, Carrier.</td>
+</tr>
+<tr>
+<td>11d</td>
+<td>Is there another Health Benefit Plan</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Signed, Date.</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>Authorized Signature.</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Date of Current Illness, Injury, or Pregnancy</td>
+<td><a href="claimmedical.html">Edit Claim - Medical Tab</a>. Field must be added to form manually.</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Other Date</td>
+<td>Edit Claim window, Medical tab. Field must be added to form manually.</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Dates Patient Unable to Work</td>
+<td></td>
+</tr>
+<tr>
+<td>17, a, b</td>
+<td>Name of Referring Provider, NPI</td>
+<td>Edit Claim window, General tab, <i>Claim Referral</i>.</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Hospitalization Dates</td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td>Additional Claim Information</td>
+<td></td>
+</tr>
+<tr>
+<td>20</td>
+<td>Outside Lab</td>
+<td>Edit Claim window, Medical tab. Field must be added to form manually.</td>
+</tr>
+<tr>
+<td>21 A-L</td>
+<td>Diagnosis of Nature of Illness</td>
+<td><a href="proceduremedical.html">Procedure - Medical Tab</a>, ICD codes. The first 12 unique diagnoses codes in the claim are listed. <i>ICD Ind</i> shows 9 if using ICD-9 codes or 0 if using ICD-10 codes.</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Resubmission Code, Original Reference Num</td>
+<td><a href="claimtabmisc.html">Edit Claim - Misc Tab</a>, Correction Type, <i>Original Reference Num</i>.</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Prior Authorization Number</td>
+<td>Edit Claim window, Misc tab, <i>Prior Authorization (rare)</i>.</td>
+</tr>
+<tr>
+<td>24 (supplemental)</td>
+<td></td>
+<td>Supplemental information is filled from various fields. <i>Drug NDC</i> from Procedure Info, Medical tab. Narrative from <i>E-Claim Note</i> box in Procedure Info. System and Teeth, treatment area of procedure. Limited to 61 characters.</td>
+</tr>
+<tr>
+<td>24A</td>
+<td>Dates of Service</td>
+<td>Edit Claim window, Procedure Info window. </td>
+</tr>
+<tr>
+<td>24B</td>
+<td>Place of Service</td>
+<td><a href="proceduremisc.html">Procedure - Misc Tab</a>, Place of Service.</td>
+</tr>
+<tr>
+<td>24C</td>
+<td>EMG</td>
+<td>Procedure Info window, Medical tab,<i> Is Emergency</i>. <i>P#IsEmergency</i> must be added to each procedure line on the claim form to show.</td>
+</tr>
+<tr>
+<td>24D</td>
+<td>Procedures, Services or Supplies</td>
+<td>Procedure Info window, <i>Procedure</i> field.<br/> For modifiers, enter these in the Procedure Info window, Medical tab, <i>Mods</i>.</td>
+</tr>
+<tr>
+<td>24E</td>
+<td>Diagnosis Pointer</td>
+<td>Letters that correspond to the procedure's diagnoses. Each letter is assigned to the ICD code in box 21. </td>
+</tr>
+<tr>
+<td>24F</td>
+<td>Charges</td>
+<td></td>
+</tr>
+<tr>
+<td>24G</td>
+<td>Days or Units</td>
+<td>Procedure Info window, Medical tab, <i>UnitQuantity</i>.</td>
+</tr>
+<tr>
+<td>24H</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>24I</td>
+<td>ID Qual</td>
+<td>Fixed text <i>ZZ</i>.</td>
+</tr>
+<tr>
+<td>24J</td>
+<td>Rendering Provider ID</td>
+<td>NPI Number of treating <a href="providerseditwindow.html">Provider</a> and Provider Speciality determines taxonomy code unless a <i>Taxonomy Code Override</i> is entered. </td>
+</tr>
+<tr>
+<td>25</td>
+<td>Federal Tax ID Number, SSN, EIN</td>
+<td>Edit Provider window of billing dentist.</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Patient Account No.</td>
+<td></td>
+</tr>
+<tr>
+<td>27</td>
+<td>Accept Assignment</td>
+<td>Edit Insurance Plan window, <i>Assignment of Benefits</i>.</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Total Charge</td>
+<td></td>
+</tr>
+<tr>
+<td>29</td>
+<td>Amount Paid</td>
+<td></td>
+</tr>
+<tr>
+<td>30</td>
+<td>Rsvd for NUCC use</td>
+<td></td>
+</tr>
+<tr>
+<td>31</td>
+<td>Signature of Physician, Date</td>
+<td></td>
+</tr>
+<tr>
+<td>32</td>
+<td>Service Facility Location Information</td>
+<td>Physical treating address of Practice or Clinic associated with claim.</td>
+</tr>
+<tr>
+<td>32, a</td>
+<td></td>
+<td>NPI Number of Billing Provider.</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Billing Provider Info &amp; Ph</td>
+<td>Billing or Pay To address of Practice or Clinic associated with claim. If no Billing or Pay To address, Physical Treating address is used.</td>
+</tr>
+<tr>
+<td>33, a</td>
+<td></td>
+<td>NPI Number of Billing Provider.</td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+/*Jordan 2025-08-12
+This css is used mostly by the pages in the Site folder that are auto-generated and have a nav bar with no TOC tree.
+It's also used in 3 html site pages that are maintained manually, but have the same look and feel as the generated pages:
+contact, order, and trial.
+Those site pages also point to /css/common.css which has all the body styling.
+This css just has the styling for the title and nav bar.
+Do not make changes to this file without consulting me.
+We design for large screens and then use @media max-width to change to a hamburger menu and search form box when smaller than 768px
+There is no min page width
+*/
+:root{
+	--colorNav: rgb(70, 98, 120); 
+}
+body {
+	background-color:rgb(238,240,250);/*The light gray on either side of the page pane.*/
+	min-height: 100vh; /* Ensure the body covers the viewport */
+}
+#TitleAndNav{
+	background: white;
+}
+#TitleAndSocial{
+	/*This is the big white area above nav. On the home page, it shows social at the right. Hence, the name.*/
+	/*We don't show any social on other pages. Too complicated for minimal benefit.*/
+	/*We need this to be centered and match the PagePane width, and then we align Title to the left of this area.*/
+	max-width:1000px;
+	margin:0px auto;/*TB=0 LR=auto, centers.*/
+	display: flex;/*So that we can anchor phone to right*/
+}
+#Title{/*This is the div that contains the OpenDental Software logo and text over at the left*/
+	height:78px;
+	width: 230px;
+	margin-left:4px;
+	margin-top: 2px;
+	margin-bottom: -5px;/*These numbers were tweaked to make it so that the title and nav bar don't jump when switching from home page.*/
+}
+
+#Title img {
+	margin: 0;/*Without this, Logo <a> overflows into navbar. Can cause user to go to index.html when they meant to open nav*/
+}
+
+#Phone {
+	margin-left: auto;
+	margin-right:5px;
+	margin-top: 25px;
+}
+.phoneLink:link,
+.phoneLink:visited,
+.phoneLink:hover,
+.phoneLink:active{
+	font-size: 132%;
+	font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;/*To match home page*/
+	color: #141141;
+	text-decoration:none;
+}
+#NavWrapper{/*This is the div that contains the nav. The purpose of the wrapper is to let us align the width of the nav with the PagePane*/
+	background-color: var(--colorNav);
+	text-align: center;/*Centers inline elements.*/
+}
+nav{
+	/*display defaults to block which is correct.*/
+	max-width:1000px;
+	font-size: 87.5%;
+	margin: 0px auto;/*TB=0 LR=auto*/
+}
+nav ul {
+	display: block;/*Lays out child list items horizontally. inline-block would shrink to fit content, which we don't want.*/
+	list-style: none;/*Remove bullets. This actually resets list-style-type, -position, and -image to none.*/
+	margin: 0px;/*To override the margin-left of normal <ul>s.*/
+}
+nav li {
+	display: inline;/*Ensures <li> items line up horizontally. Does not allow padding, margins, etc.*/
+}
+nav a:link, nav a:visited {
+	display: inline-block;/*Treats each link as a rectangular box to allow styling. Without this, they hang down.*/
+	background-color: var(--colorNav);
+	color: white;
+	text-decoration: none; /*Remove underline from links*/
+	line-height: 30px;
+	width: 11.5%;/*Button widths scale with width of PagePane. In testing, any bigger sometimes wrapped the last button.*/
+	white-space: nowrap;
+}
+nav a:hover, nav a:active{
+	/*hover or mouse down on a button.*/
+	background-color: #c7d7e0;
+	color: var(--colorNav);
+}
+nav a.active{
+	/*For when we are on a page that matches a nav button.*/
+	background-color: #c7d7e0;
+	color: var(--colorNav);
+	font-weight: bold;
+}
+#MenuIconSearch {
+	vertical-align: middle;/*Align the icon to the middle of the button.*/
+    height: 24px; 
+    width: auto;/*Maintain the aspect ratio. */
+    margin-bottom: 2px;/*Move the icon up slightly.*/
+}
+#HamburgerMenu {
+    display: none;/*Hidden by default for larger screens.*/
+    cursor: pointer;
+    font-size: 171.4%;
+    color: white;
+	width: 20px;/*Fits button to size of menu icon*/
+}
+@media screen and (max-width: 680px) {/*When smaller than 680. If this changes, also change js.*/
+	/*Any smaller than this, and the Trial Version button gets noticeably cut off when hovering.*/
+	/*Unlike our home page, there is no search bar that pops into existance on small screens.*/
+	/*This keeps the code much simpler.*/
+	/*Like our home page, we do convert the nav from a horizontal layout into a hamburger dropdown.*/
+    nav ul {
+        display: none; /* Hide the menu initially */
+        position: absolute; /* Position it relative to the hamburger menu */ 
+        padding: 4px;
+		top: 107px;
+        background-color: var(--colorNav); /* Match the nav bar color */
+        width: 50%;
+		max-width: 300px;
+		min-width: 200px;
+        flex-direction: column; /* Stack items vertically */
+        list-style: none;
+        text-align: left; /* Align items to the left */
+		border: 2px solid #444;
+		border-radius: 4px;
+    }
+    nav li {
+        display: block; /* Stack items vertically */
+    }
+    nav a a:hover, 
+	nav a:active,
+	nav a:link, 
+	nav a:visited {
+		display: block;/*So that links fill container.*/
+        width: 100%; 
+        text-align: center;
+        box-sizing: border-box; /* Include padding in width calculations */
+		line-height: 40px;
+    }
+    #HamburgerMenu {
+        display: block; /* Show the hamburger icon */
+		line-height: 28px; /*This nicely sets the nav bar height as well as mostly center-aligning vertically */
+    	text-align: left; 
+		padding-left: 8px; /*Extends clickable range of button while keeping it centered in the element*/
+		padding-right: 8px;
+		padding-top: 2px;/*This combines with the line-height to make the nav bar 29.*/
+    }
+}
+#PagePane{/*The lighter foreground window that floats over the darker background*/
+	/*box-shadow:2px 2px 7px 1px rgb(40,40,40);(looks dated) right, down, dither, enlarge, color*/
+	max-width:1000px;
+	min-height:400px;
+	margin:0px auto 20px auto;/*T R B L, LR=auto, Outside of white box. Centers our PagePane in the browser.*/
+	border-left:1px solid black;
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+}
+#PageTitle{/*This is the teal rectangle that contains the page title*/
+	/*It is inside the PagePane, at the top*/
+	background-color: rgb(85,135,145);/*85,130,134 had been used for years, but was too green*/
+	padding-left: 11px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+#PageTitle h1 {/*This is the actual white text of the title.*/
+	font-size: 125%;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+#Content{
+	max-width:100%;
+	background-color:white;/*The center pane where all the text is*/
+	padding:5px 13px 5px 18px;/*T R B L, This keeps ordinary black text from touching the edges of the PagePane.*/
+}
+

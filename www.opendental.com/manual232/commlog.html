@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Commlog</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('commlog','toolbar','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/commlog.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/commlog.html" >v24.2</option><option value="https://www.opendental.com/manual241/commlog.html" >v24.1</option><option value="https://www.opendental.com/manual233/commlog.html" >v23.3</option><option value="https://www.opendental.com/manual232/commlog.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/commlog.html" >v23.1</option><option value="https://www.opendental.com/manual224/commlog.html" >v22.4</option><option value="https://www.opendental.com/manual223/commlog.html" >v22.3</option><option value="https://www.opendental.com/manual222/commlog.html" >v22.2</option><option value="https://www.opendental.com/manual221/commlog.html" >v22.1</option><option value="https://www.opendental.com/manual214/commlog.html" >v21.4</option><option value="https://www.opendental.com/manual213/commlog.html" >v21.3</option><option value="https://www.opendental.com/manual212/commlog.html" >v21.2</option><option value="https://www.opendental.com/manual211/commlog.html" >v21.1</option><option value="https://www.opendental.com/manual205/commlog.html" >v20.5</option><option value="https://www.opendental.com/manual204/commlog.html" >v20.4</option><option value="https://www.opendental.com/manual203/commlog.html" >v20.3</option><option value="https://www.opendental.com/manual202/commlog.html" >v20.2</option><option value="https://www.opendental.com/manual201/commlog.html" >v20.1</option><option value="https://www.opendental.com/manual194/commlog.html" >v19.4</option><option value="https://www.opendental.com/manual193/commlog.html" >v19.3</option><option value="https://www.opendental.com/manual192/commlog.html" >v19.2</option><option value="https://www.opendental.com/manual191/commlog.html" >v19.1</option><option value="https://www.opendental.com/manual184/commlog.html" >v18.4</option><option value="https://www.opendental.com/manual183/commlog.html" >v18.3</option><option value="https://www.opendental.com/manual182/commlog.html" >v18.2</option><option value="https://www.opendental.com/manual181/commlog.html" >v18.1</option><option value="https://www.opendental.com/manual174/commlog.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Commlog</p></div>
+<div class="GeneralPageContent">
+<p>The Commlog is a general purpose log of all communications with a patient.</p>
+<p>In the <a href="toolbar.html">Main Toolbar</a>, click <b>Commlog</b>.</p>
+<img src="images/commlog.png" width="765" height="569"/><p class="MarginBottomZero">Alternatively: </p>
+<ul class="MarginBottomGap">
+<li>In the <a href="aptedit.html">Edit Appointment</a> window, click <b>Comm</b>.</li>
+<li>In the <a href="recalllist.html">Recall List</a>, click <b>Comm</b>.</li>
+<li>In the <a href="familyadd.html">Add Family</a> window, click <b>Comm</b>. </li>
+</ul>
+<p>A log of all Commlog entries show in the <a href="account.html">Account Module</a>, <a href="chart.html">Chart Module</a>, <a href="aptedit.html">Edit Appointment</a>, and <a href="recalllist.html">Recall List</a>.</p>
+<p class="MarginBottomZero">In some cases, the Commlog window may open automatically to prompt an entry after an action: </p>
+<ul class="MarginBottomGap">
+<li>Breaking an appointment. See: <a href="apptbreak.html">Break Appointment</a>.</li>
+<li>Changing status on the <a href="recalllist.html">Recall List</a>.</li>
+</ul>
+<p><b>Patient</b>: Patient associated with the commlog.</p>
+<p><b>Date/Time Created</b>: System-generated date and time the commlog was created. This field is read-only. This field is blank for Commlogs created prior to version 22.2.1.</p>
+<p><b>Date / Time</b>: Date and time of the commlog. Defaults to the Date/Time Created, but can be edited. This is the date/time that affects the commlog's placement in the Chart Progress Notes area and Account Communications Log area. </p>
+<p class="MarginBottomZero"><b>Types</b>: The options that show are those listed in <a href="definitionscommlogtypes.html">Definitions: Commlog Types</a>. In some areas of Open Dental, a Commlog's default type is set based on where the Commlog is created. Below are the default Commlog types and associated usage types available in Open Dental. Type does not affect sorting of Commlogs. These can be edited in Definitions. </p>
+<ul class="MarginBottomGap">
+<li>ApptRelated: Attached to APPT usage type by default.</li>
+<li>Insurance: No default usage type.</li>
+<li>Financial: No default usage type.</li>
+<li>Recall: Attached to RECALL usage type by default. </li>
+<li>Misc: Attached to MISC usage type by default.</li>
+<li>FHIR: Attached to FHIR usage type by default.</li>
+</ul>
+<p class="MarginBottomZero"><b>Mode</b>: The method of communication. Modes are not customizable. </p>
+<ul class="MarginBottomGap">
+<li>None</li>
+<li>Email</li>
+<li>Mail</li>
+<li>Phone</li>
+<li>In Person</li>
+<li>Text</li>
+<li>Email and Text</li>
+<li>Phone and Text</li>
+</ul>
+<p class="MarginBottomZero"><b>Sent or Received</b>: Direction of communication. These options are not customizable.  </p>
+<ul class="MarginBottomGap">
+<li>Neither</li>
+<li>Sent</li>
+<li>Received</li>
+</ul>
+<p><div class="Note">Note: Enterprise users can default Commlogs to not set a default type, mode, and sent/received status. See: <i>Commlog fields blank by default</i> in <a href="enterprisesetup.html">Enterprise Setup</a>.</div>
+</p>
+<p><b>Edit Auto Note</b>: This button only appears if an Auto Note has been used. Click to complete Auto Note that may have been left unfinished.</p>
+<p><b>Auto Note</b>: Add <a href="autonotes.html">Auto Notes</a> to the Commlog note text.</p>
+<p><b>Clear</b>: Remove contents of Commlog note.</p>
+<p><b>Note</b>: The Commlog text.</p>
+<p><b>Signature Box</b>: Enter an <a href="electronicsignatures.html">Electronic Signature</a>. Saved signatures are cleared if changes are made to a Commlog.</p>
+<p class="MarginBottomZero">In some cases, a Commlog entry is automatically created after an action: </p>
+<ul class="MarginBottomGap">
+<li>Sending individual text messages.</li>
+<li>Sending text messages or printing postcards from the <a href="confirmationlist.html">Confirmation List</a>.</li>
+</ul>
+<p><b>Delete</b>: Delete the entire Commlog. </p>
+<p>Click <b>OK</b> to create a new Commlog or save changes.</p>
+<h2>Automatically Save Commlogs</h2>
+<p class="MarginBottomZero">New Commlogs in progress can be set to auto save on a 10 second timer, if a change was made in that time. Auto Save is only available for newly created Commlogs. </p>
+<ul class="MarginBottomGap">
+<li>The date and time in the window header shows when the Commlog was last saved.</li>
+<li>Enable the <i>Commlogs Auto Save</i> preference. With or without the preference, Commlogs in progress are automatically saved when Open Dental shuts down unexpectedly (e.g., during an update).</li>
+</ul>
+<h2>Automatic Commlogs</h2>
+<p>Some Commlog entries are automatically created by the OpenDentalService, eConnector, FHIR, etc. and, have no user associated. These Commlogs will show as one line of text. Double-click the Commlog to view the entire message.</p>
+<p class="MarginBottomZero">Automated Commlogs can be hidden from these areas using the <i>Show Automated Commlogs</i> preference: </p>
+<ul class="MarginBottomGap">
+<li><a href="account.html">Account Module</a>, Show tab</li>
+<li>Chart Module, <a href="showtabchart.html">Show Chart Views</a></li>
+<li><a href="aptedit.html">Edit Appointment</a>, Commlogs and Buttons</li>
+</ul>
+<p>The preference to hide Automated Commlogs is saved per user.</p>
+<h2>Navigation</h2>
+<p class="MarginBottomZero">Commlogs can include links to outside sources or other places within the program. Right-click a Commlog from the Progress Notes or Account Module to open a link.  </p>
+<ul class="MarginBottomGap">
+<li><b>File Explorer</b>: Opens a folder in the File Explorer. <ul>
+<li>UNC paths must end in a file or a backslash. For example <b>\\Server\OpenDentalExports</b> won't work, but <b>\\Server\OpenDentalExports\</b> or<b> \\Server\OpenDentalExports\File.txt</b> will. </li>
+<li>If a folder name contains punctuation or special characters, the folder may not open. </li>
+</ul>
+</li>
+<li><b>PatNum</b>: Select the patient in Open Dental. Enter the patnum immediately after the colon. (e.g. <i>patnum:234</i>) </li>
+<li><b>TaskNum</b>: Open the task in a new window. Enter the task number immediately after the colon. (e.g. <i>tasknum:789</i>) </li>
+<li><b>Web</b>: Open a URL in the computer's default web browser. </li>
+<li><b>Wiki</b>: Open the corresponding wiki page. Enter the page name in two brackets (e.g. <i>[[page name]]</i>) </li>
+</ul>
+<img src="images/commlogNavigate.png" width="662" height="217"/></div>
+</div>
+</body>
+</html>

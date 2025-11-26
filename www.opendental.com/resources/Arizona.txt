@@ -1,0 +1,76 @@
+There are two reports specifically for Arizona.  They will become visible in the Reports window once the four fields below have been added by the user.
+
+Arizona Primary Care Setup Requirements
+
+* Add all of the required patient fields to Open Dental (names must match exactly). If you do not add these fields,
+then the Arizona Primary Care reports will not be available to you. The patient field names are:
+SPID#, Eligibility Status, Household Gross Income, Household % of Poverty.
+
+	As defined by the Arizona Primary Care program documentation:
+
+	* SPID# - The patient's Arizona Primary Care ID Number.
+
+		"This number starts with six leading zeros and is combined with the first initial of the
+		patient’s first name, first initial of the patient’s last name, a six digit date format for the
+		patient’s date of birth, and a single letter indicating the sex of the patient.
+		Example: = 000000 (leading 0s)
+		Louise Apostle = LA
+		May 23rd, 1947 = 052347 (no slashes)
+		Female = F
+		77
+		SPID = 000000LA052347F
+		If you have two patients who are same sex twins with the same initials, differentiate them
+		by assigning a one (1) to one of them. Place the one in front of the first initial. Example:
+		First Twin = 000000LA052347F
+		Second Twin = 000001LA052347F"
+
+	* Eligibility Status - 
+
+		"This field indicates the patient’s eligibility status. The characters are assigned as follows:
+		A = Eligible (good for 396 days, A is used for the first determination) (new patients)
+		B = Eligible and applying for AHCCCS (45 day limit)
+		C = No longer eligible
+		D = Re-establishing eligibility"
+
+	* Household Gross Income -
+		
+		"Please do not use dollar signs, decimals, or cents, because they will cause the encounter to
+		fail. This number should be rounded to the nearest dollar. Example: The client has an
+		annual income of $8,364.65 – This should keyed as: 0008365 The leading zeros complete
+		the seven (7) digit number field."
+
+		Open Dental will only consider numbers and decimals in this field. So keying $8,364.65
+		will automatically become 0008365
+
+	* Household % of Poverty - 
+
+		"This number indicates where the client falls on the Federal Poverty Level. The maximum
+		allowable number for this program is two hundred percent (200 %). This number needs to be
+		exact and leading zeros are needed for those below 100 % to complete the field. Do not key
+		the percentage sign in this field. Example: Range = 000 through 200"
+	
+
+* Define a payment type of 'NOAH' and accept the copayments for Arizona Primary Care patients using this payment type.
+* Must have an insurance carrier named 'NOAH', and all the Arizona Primary Care patients must have insurance plans which are
+attached to the 'NOAH' carrier.
+* In the insurance plan for a NOAH patient, you must set the insurance plan termination date, also known as the Date of 
+Eligibility Status in the Arizona Primary Care Program.
+* For each clinic, a clinic object must exist in the database which contains a description that ends with an underscore
+followed by the 5-digit Arizona Primary Care Site ID Number for that clinic. i.e. "ClinicName_12345".
+* When an appointment is completed for an Arizona Primary Care patient, you must ensure that the clinic is set to the correct
+clinic site for the work completed in that appointment, otherwise the arizona primary care reports may report the incorrect
+Site ID Number.
+* If the patient is employed, then they must be attached to an employer, so they will show up as employed on the reports.
+* Each NOAH patient must have an insurance relationship of 'self'.
+* Each provider must have their Physician's ID placed into the provider State Licence Number field. This number is provided by
+the Arizona state BOMEX system.
+
+*Please note: Only certain procedures are billable to the Arizona Primary Care Program. As a result, when running the 
+encounter report, only encounters/appointments attached to billable procedures will show up. The following procedures are currently
+billable to the Arizona Primary Care Program:
+
+D0120,D0140,D0150,D0160,D1110,D1120,D1201,D1203,D1204,D1205,D1351,D1510,D1515,
+D1520,D1525,D1550,D4341,D4355,D4910,D2140,D2150,D2160,D2161,D2330,D2331,D2332,
+D2335,D2390,D2391,D2392,D2393,D2394,D2910,D2920,D2930,D2931,D2932,D2940,D2950,
+D2970,D3110,D3120,D3220,D3221,D3230,D3240,D7140,D7210,D7220,D7270,D7285,D7286,
+D7510,D9110,D9310,D9610

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - XCharge Setup</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('xchargesetup','xcharge','paymentpatientcreditcard','payment','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/xchargesetup.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/xchargesetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/xchargesetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/xchargesetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/xchargesetup.html" >v23.2</option><option value="https://www.opendental.com/manual231/xchargesetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/xchargesetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/xchargesetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/xchargesetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/xchargesetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/xchargesetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/xchargesetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/xchargesetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/xchargesetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/xchargesetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/xchargesetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/xchargesetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/xchargesetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/xchargesetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/xchargesetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/xchargesetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/xchargesetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/xchargesetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/xchargesetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/xchargesetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/xchargesetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/xchargesetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/xchargesetup.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>XCharge Setup</p></div>
+<div class="GeneralPageContent">
+<p>Set up XCharge for payment integration.</p>
+<p>In the <a href="payment.html">Payment</a> window, right-click <b>XCharge</b>. From the menu displayed, click <b>Settings</b>.</p>
+<img src="images/xchargeSetup.png" width="494" height="564"/><p class="MarginBottomZero">Alternatively: </p>
+<ul class="MarginBottomGap">
+<li>(During the first credit card transaction) On the payment window, click <b>XCharge</b>.</li>
+<li>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>. Double-click <b>X-Charge from x-charge.com</b>.</li>
+</ul>
+<p><div class="Note">Note: <a href="xcharge.html">XCharge (OpenEdge)</a> was a previous option available through Global Payments Integrated. Existing XCharge installations can still be used, though Global Payments Integrated no longer supports it. Users should contact Global Payments Integrated to switch to EdgeExpress, an updated payment processing option. </div>
+</p>
+<p>To set up different credentials for <a href="clinics.html">Clinics</a> using different merchant accounts, see <a href="xchargeclinic.html">XCharge Setup for Clinics</a>.</p>
+<h2>Setup</h2>
+<p>First, contact XCharge to install the XCharge client program. Once installed:</p>
+<p>Check the <b>Enabled</b> box.</p>
+<p>Enter the <b>Program Path</b> to the XCharge.exe.</p>
+<p class="MarginBottomZero">Select the <i>Payment Settings</i>. </p>
+<ul class="MarginBottomGap">
+<li>Enter the username and password created during installation.<br/><div class="Note">Note: User must have the <i>Manage High Security Properties</i> permission to edit or add a password.</div>
+</li>
+<li>Select the default <b>Payment Type</b> for XCharge transactions. <ul>
+<li>Customize options in <a href="definitionspaymenttypes.html">Definitions: Payment Types</a>.</li>
+<li>To select a different type for <a href="recurringcharges.html">CC Recurring Charges</a> transactions, set the preference, <i>Payment type for recurring charges</i>.</li>
+<li>If the <a href="preferences.html">Preference</a>,<i> Payments prompt for Payment Type</i>, is enabled, users must manually select a payment type. </li>
+</ul>
+</li>
+<li><b>Prompt for signature on CC trans by default</b>: Check to prompt patients for a signature on the credit card terminal before completing transactions. The terminal must support electronic signatures.</li>
+<li><b>Print receipts by default</b>: Check to automatically print an XCharge receipt to the default receipt <a href="printersetup.html">Printer</a> when a transaction is completed.</li>
+<li><b>Recurring charges force duplicates by default</b>: By default, transactions for the same amount charged to the same card on the same day are declined. This is to prevent accidentally charging a card twice. Check to allow duplicate charges. Useful if family members have recurring charges set up on the same card for the same day.</li>
+<li><b>Prevent saving new cards</b>: Uncheck to allow users to process new transactions or save new payment information to a patient's account. Check to prevent users from processing new transactions or saving new payment information. <ul>
+<li>To set whether or not new cards are saved to a patient's account after each transaction, see the preference, <i>Automatically store credit card tokens</i>.</li>
+</ul>
+</li>
+</ul>
+<p class="MarginBottomZero">(optional) Enter <i>XWeb</i> settings to enable <a href="portalonlinepayments.html">Online Payments</a> and/or <a href="recurringcharges.html">Automatic Recurring Charges</a>. </p>
+<ul class="MarginBottomGap">
+<li>Enter the XWebID (12 digits).</li>
+<li>Enter the Auth Key (32 digits).</li>
+<li>Enter the Terminal ID (8 digits).</li>
+<li><b>Enable X-Web for Payment Portal payments</b>: Check to allow patients to make payments online using the <a href="portalpaymentsbypatient.html">Payment Portal</a> (not required if only using Automatic Recurring Charges).</li>
+</ul>
+<p>Click <b>OK</b> to save settings.</p>
+<h2>Installing X-Charge with a Terminal</h2>
+<p class="MarginBottomZero">Below are some points to consider based on a user's experience installing the XCharge server using a terminal. </p>
+<ul class="MarginBottomGap">
+<li>Setup may take 1 - 2 hours plus follow-up.</li>
+<li>When calling the XCharge help desk the first time, choose <i>Install</i> in the Touch Tone menu (not Tech Support).</li>
+<li>Install XCharge as a Windows Service to prevent accidental shutdown of the XCharge program and/or server.</li>
+<li>If capturing signatures, they will be stored on the workstation in the office that acts as the XCharge server. Make sure there is a backup plan.</li>
+<li>Install the XCharge server on the central server; it does not need to be connected to a terminal. XCharge may want to set it up on a workstation connected to a terminal, but do not do this. This way backups can be organized to save signatures along with other data on the central server.</li>
+<li>On the terminal: <ul>
+<li>Debit cards have to be swiped and patient will key in the 4 digit pin, even if the cards have chips.</li>
+<li>When a transaction is complete, a receipt will print (customer's copy). This receipt does not have the signature on it.</li>
+<li>Completed signatures can only be accessed by running the XCharge utility.</li>
+</ul>
+</li>
+<li>ISC-250 terminal: <ul>
+<li>It can be customized to display the practice logo and a short message.</li>
+<li>If a patient calls in a payment, the card number must be keyed into the terminal. If a workstation only has the XCharge software (and no terminal), the keyboard can be used.</li>
+</ul>
+</li>
+<li>Staff training is important. The EMV transaction process can be confusing due to the requirements of EMV technology.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

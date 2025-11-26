@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - E-Claims Errors</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('eclaimserrors','claimsend','manage','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/eclaimserrors.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/eclaimserrors.html" >v24.2</option><option value="https://www.opendental.com/manual241/eclaimserrors.html" >v24.1</option><option value="https://www.opendental.com/manual233/eclaimserrors.html" >v23.3</option><option value="https://www.opendental.com/manual232/eclaimserrors.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/eclaimserrors.html" >v23.1</option><option value="https://www.opendental.com/manual224/eclaimserrors.html" >v22.4</option><option value="https://www.opendental.com/manual223/eclaimserrors.html" >v22.3</option><option value="https://www.opendental.com/manual222/eclaimserrors.html" >v22.2</option><option value="https://www.opendental.com/manual221/eclaimserrors.html" >v22.1</option><option value="https://www.opendental.com/manual214/eclaimserrors.html" >v21.4</option><option value="https://www.opendental.com/manual213/eclaimserrors.html" >v21.3</option><option value="https://www.opendental.com/manual212/eclaimserrors.html" >v21.2</option><option value="https://www.opendental.com/manual211/eclaimserrors.html" >v21.1</option><option value="https://www.opendental.com/manual205/eclaimserrors.html" >v20.5</option><option value="https://www.opendental.com/manual204/eclaimserrors.html" >v20.4</option><option value="https://www.opendental.com/manual203/eclaimserrors.html" >v20.3</option><option value="https://www.opendental.com/manual202/eclaimserrors.html" >v20.2</option><option value="https://www.opendental.com/manual201/eclaimserrors.html" >v20.1</option><option value="https://www.opendental.com/manual194/eclaimserrors.html" >v19.4</option><option value="https://www.opendental.com/manual193/eclaimserrors.html" >v19.3</option><option value="https://www.opendental.com/manual192/eclaimserrors.html" >v19.2</option><option value="https://www.opendental.com/manual191/eclaimserrors.html" >v19.1</option><option value="https://www.opendental.com/manual184/eclaimserrors.html" >v18.4</option><option value="https://www.opendental.com/manual183/eclaimserrors.html" >v18.3</option><option value="https://www.opendental.com/manual182/eclaimserrors.html" >v18.2</option><option value="https://www.opendental.com/manual181/eclaimserrors.html" >v18.1</option><option value="https://www.opendental.com/manual174/eclaimserrors.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>E-Claims Errors</p></div>
+<div class="GeneralPageContent">
+<p>When <a href="claimsend.html">Sending E-Claims</a>, some fields are optional within the e-claim format. </p>
+<p>Some carriers require the field and others do not. This page details common error messages from a carrier due to data that is "required and missing" and how to enter the missing information. For more details, see <a href="eclaimscomplexities.html">E-Claims Complexities</a>.</p>
+<p><b>The clearinghouse states that the claim was rejected because Loop 2000B segment SBR element 03 is missing.</b></p>
+<p>On the <a href="insplan.html">Insurance Plan</a> for the carrier, enter the Group Number for the carrier the claim was sent to and send the claim again.</p>
+<p><b>The clearinghouse states that the claim was rejected because Loop 2320 segment SBR element 03 is missing.</b></p>
+<p>On the Edit Insurance Plan window for the other carrier, enter the other plan's Group Number and send the claim again. For example, if submitting to the primary plan, the other carrier is the secondary carrier. If submitting to the secondary plan, the other carrier is the primary carrier. For a tertiary plan, the other plan is the secondary plan. For a fourth plan, the other insurance would be the tertiary, etc.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Version 24.1</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('version24_1','versions','advancedtopics','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Version 24.1</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="versions.html">Versions</a>.</p>
+<p><a href="https://opendental.blog/software-update-stable-version-24-1-highlights/" target="_blank"><img src="images/versionHighlightsBlog.png" width="900" height="125"/></a></p>
+<p>Version 24.1 was released as stable on 06/25/2024.</p>
+<h2>Major Changes</h2>
+<p class="MarginBottomZero">New Message-to-Pay feature. </p>
+<ul class="MarginBottomGap">
+<li>Integrated with the Payment Portal. </li>
+<li>Send text or email messages directly to patient from the Account Module. </li>
+<li>Customizable message template. </li>
+<li>Patients can quickly make payments from their mobile device. </li>
+</ul>
+<h2>Changes by Category</h2>
+<p class="MarginBottomZero"><b>Account Module</b></p>
+<ul class="MarginBottomGap">
+<li>Integration with EDS Attachment Service. </li>
+<li>Edit Payment Plan charges from the Account Module, Patient Account grid.</li>
+<li>Preference to automatically recalculate secondary claims when the primary claim is received. </li>
+<li>Option to only show excluded Adjustments Types for TSI users.</li>
+<li>Canada lab procedures can have insurance underpayments and overpayments associated. </li>
+<li>Added preference, <i>Require full lock to save a Payment Plan if there is an APR entered</i>. (Also backported to V23.3.42) </li>
+<li>Enhancements to more easily add attachments when using the DentalXChange Attachment Service. (Also backported to 23.3.41) </li>
+</ul>
+<p class="MarginBottomZero"><b>eServices</b></p>
+<ul class="MarginBottomGap">
+<li>Additional actions added to eServices Activity Log for Web Forms. </li>
+<li>ODTouch supports Auto Codes. </li>
+<li>Appointment Types add procedures when appropriate in ODTouch. </li>
+<li>ODTouch Progress Notes broken into individual pages. </li>
+<li>Payment Portal requires account number for patients with duplicate accounts. </li>
+<li>Added button to ODTouch Appointments to quickly return to today's date.</li>
+<li>Patients can delete saved cards when using Payment Portal. </li>
+<li>Ability to delete eRouting checklist for a patient. </li>
+<li>Chart and Appointments added to Patient Menu dropdown in ODTouch. </li>
+<li>Made clinic selection more clear in ODTouch. </li>
+<li>Added Integrated Texting to ODTouch.</li>
+<li>Ability to search prescription list when creating or managing prescriptions for a patient. </li>
+<li>Added Missing / Primary tab to ODTouch charting. </li>
+<li>Secure Email and Payment Portal include option to easily access licenses. </li>
+<li>Renamed <i>Mobile Web/ODMobile</i> permission to <i>ODTouch/ODMobile</i>. </li>
+</ul>
+<p class="MarginBottomZero"><b>Family Module</b></p>
+<ul class="MarginBottomGap">
+<li>Super Family grid allows Patient Fields as Display Fields. </li>
+<li>Customizable Age Limits using Code Groups. </li>
+<li>Deprecated Dentaide Card Sequence from Canada insurance plans. </li>
+</ul>
+<p class="MarginBottomZero"><b>Imaging Module</b></p>
+<ul class="MarginBottomGap">
+<li>Option to include header with patient information on images print from Imaging Module. </li>
+<li>Ability to add Subscriber ID to Mounts. </li>
+</ul>
+<p class="MarginBottomZero"><b>Manage Module</b></p>
+<ul class="MarginBottomGap">
+<li>Billing List option to automatically add autograph to outgoing emails. </li>
+<li>Preference to exclude certain CARCs when auto-processing ERAs. </li>
+</ul>
+<p class="MarginBottomZero"><b>Miscellaneous</b></p>
+<ul class="MarginBottomGap">
+<li>New database maintenance method for <i>ToothChartInvalidInitialTypes</i>. </li>
+<li>Audit trail tracks when a card is added or removed. </li>
+<li>Patient Status Setter tool does not consider patient with Unscheduled, Broken, or Patient Note appointments. </li>
+<li>Merge and reorder PickList field items in Display Fields. </li>
+<li>Moved Miscellaneous settings to Preferences. </li>
+<li>MySQL Connector updated from 8.0.11 to 8.0.32. </li>
+<li>Option to show CareCredit and PayConnect fees on Daily Payments Report. </li>
+<li>Add<i> ClinicNum</i> as an optional command line parameter. </li>
+<li>CareCredit Pre-Approval Amount and CareCredit Available Credit fields added to Patient Field Defs and Appointment Views. </li>
+<li>Additional customization options for CareCredit Quickscreen. </li>
+<li>Option to optimize data before running the Remove Old Data tool. </li>
+<li>Added additional Submit button at the bottom of mobile Web Forms. </li>
+<li>New appointment right-click option to view attached tasks. </li>
+<li>New options to support badges when logging on to Open Dental.</li>
+<li>Option to send multiple copies when creating a task from an appointment. </li>
+</ul>
+<p class="MarginBottomZero"><b>API</b>: <a href="apispecification.html">API Specification</a></p>
+<ul class="MarginBottomGap">
+<li>Added TreatPlans PUT.</li>
+<li>Added OperatoryType to Operatories GET.</li>
+<li>Added Ward and AdmitDate to patients.</li>
+<li>Set DischargeDate in EhrPatients PUT endpoint.</li>
+<li>InsVerifies add Note to resource.</li>
+<li>Added CovSpans GET.</li>
+<li>Added CovSpans POST PUT and DELETE.</li>
+<li>Added CovCats POST and PUT.</li>
+<li>Added CodeGroups POST and PUT.</li>
+<li>Added IsPreferred to Referrals GET.</li>
+</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Report Setup: Display Settings</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reportdisplaysettings','reportssetup','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/reportdisplaysettings.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/reportdisplaysettings.html" >v24.2</option><option value="https://www.opendental.com/manual241/reportdisplaysettings.html" >v24.1</option><option value="https://www.opendental.com/manual233/reportdisplaysettings.html" >v23.3</option><option value="https://www.opendental.com/manual232/reportdisplaysettings.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/reportdisplaysettings.html" >v23.1</option><option value="https://www.opendental.com/manual224/reportdisplaysettings.html" >v22.4</option><option value="https://www.opendental.com/manual223/reportdisplaysettings.html" >v22.3</option><option value="https://www.opendental.com/manual222/reportdisplaysettings.html" >v22.2</option><option value="https://www.opendental.com/manual221/reportdisplaysettings.html" >v22.1</option><option value="https://www.opendental.com/manual214/reportdisplaysettings.html" >v21.4</option><option value="https://www.opendental.com/manual213/reportdisplaysettings.html" >v21.3</option><option value="https://www.opendental.com/manual212/reportdisplaysettings.html" >v21.2</option><option value="https://www.opendental.com/manual211/reportdisplaysettings.html" >v21.1</option><option value="https://www.opendental.com/manual205/reportdisplaysettings.html" >v20.5</option><option value="https://www.opendental.com/manual204/reportdisplaysettings.html" >v20.4</option><option value="https://www.opendental.com/manual203/reportdisplaysettings.html" >v20.3</option><option value="https://www.opendental.com/manual202/reportdisplaysettings.html" >v20.2</option><option value="https://www.opendental.com/manual201/reportdisplaysettings.html" >v20.1</option><option value="https://www.opendental.com/manual194/reportdisplaysettings.html" >v19.4</option><option value="https://www.opendental.com/manual193/reportdisplaysettings.html" >v19.3</option><option value="https://www.opendental.com/manual192/reportdisplaysettings.html" >v19.2</option><option value="https://www.opendental.com/manual191/reportdisplaysettings.html" >v19.1</option><option value="https://www.opendental.com/manual184/reportdisplaysettings.html" >v18.4</option><option value="https://www.opendental.com/manual183/reportdisplaysettings.html" >v18.3</option><option value="https://www.opendental.com/manual182/reportdisplaysettings.html" >v18.2</option><option value="https://www.opendental.com/manual181/reportdisplaysettings.html" >v18.1</option><option value="https://www.opendental.com/manual174/reportdisplaysettings.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Report Setup: Display Settings</p></div>
+<div class="GeneralPageContent">
+<p>Favorite, hide, sort, and rename Standard Reports from the Display Settings in Report Setup.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Reports. </p>
+<img src="images/reportDisplaySettings.png" width="566" height="712"/><p>Alternatively, from the <a href="reportsstandard.html">Standard Reports</a> window, click <a href="reportssetup.html">Setup</a> in the upper left. Open the Display Settings tab.</p>
+<p>Report display settings control the appearance of the Standard Reports window, including which reports are listed, the sort order of reports, and report name.</p>
+<p>All available reports will list, grouped by category, and sorted in the order they will appear on the Reports window.</p>
+<p><b>Up</b>/<b>Down</b> Arrows: Use to sort reports in a category. Select a report and click <b>Up</b> or <b>Down</b> to move the position in the list. Reports can only be reordered within a category, not moved to a different category.</p>
+<p><b>Display Name</b>: Report name. This can be changed. Click the <i>Display Name</i> cell and type a new name. The internal name of the report will always list in the lower-right of the setup window when a report is highlighted.</p>
+<img src="images/reportDisplaySettingsRename.gif" width="265" height="192"/><p class="MarginBottomZero"><b>Favorite</b>: Click in the Favorite column to show the report in the filtered reports menu.  </p>
+<ul class="MarginBottomGap">
+<li>Blank: Report will not show in the filtered reports menu.</li>
+<li>X: Report will show in the filtered reports menu.</li>
+</ul>
+<p class="MarginBottomZero"><b>Hidden:</b> Click in the <i>Hidden</i> column to toggle between hiding/showing a report.  </p>
+<ul>
+<li>Blank: Report will show in the Reports window.</li>
+<li>X: Report will not show in the Reports window.</li>
+</ul>
+<p class="MarginBottomGap"> Three reports are hidden by default: Provider Payroll Summary, Provider Payroll Detailed, and Net Production Detail Daily.</p>
+<p><div class="Note">Note: To remove the <i>Business Analytics</i> and <i>Patient Reviews</i> buttons from the Reports window, in the Main Menu, click Setup, <a href="programlinks.html">Program Links</a>, then disable the bridge and select <i>Hide unused button</i>.</div>
+</p>
+</div>
+</div>
+</body>
+</html>

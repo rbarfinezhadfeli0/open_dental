@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - PayConnect Setup</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('payconnectsetup','payconnectpaymentwindow','paymentpatientcreditcard','payment','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/payconnectsetup.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/payconnectsetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/payconnectsetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/payconnectsetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/payconnectsetup.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/payconnectsetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/payconnectsetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/payconnectsetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/payconnectsetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/payconnectsetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/payconnectsetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/payconnectsetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/payconnectsetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/payconnectsetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/payconnectsetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/payconnectsetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/payconnectsetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/payconnectsetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/payconnectsetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/payconnectsetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/payconnectsetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/payconnectsetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/payconnectsetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/payconnectsetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/payconnectsetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/payconnectsetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/payconnectsetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/payconnectsetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>PayConnect Setup</p></div>
+<div class="GeneralPageContent">
+<p>PayConnect is an integrated Credit Card Payment program that can be used to process credit and debit card transactions. </p>
+<p>In the <a href="payment.html">Payment</a> window, right-click on PayConnect, click <b>Settings</b>.</p>
+<img src="images/payconnectSetup.png" width="786" height="365"/><p>The screenshot above displays PayConnect 1.0.</p>
+<p class="MarginBottomZero">Alternatively:  </p>
+<ul class="MarginBottomGap">
+<li>During the first credit card transaction, on the payment window, click <b>PayConnect</b>.</li>
+<li>In <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>, and double-click <b>Payconnect from dentalxchange.com</b>.</li>
+</ul>
+<p>Setup differs depending on if the practice or Clinic is signed up for PayConnect 1.0 or PayConnect 2.0 </p>
+<h2>PayConnect 1.0</h2>
+<p>The interface shown in the screenshot at the top of this page appears when Program Version <i>1.0 </i>is selected.</p>
+<p><b>Enabled</b>: Check to use PayConnect as a processor when taking <a href="paymentpatientcreditcard.html">Credit Card Payments</a>.</p>
+<p><b>Clinic</b>: Only displays when the Clinics feature is enabled. See Clinics section below for additional setup details.</p>
+<p class="MarginBottomZero"><b>Payment Settings</b>: Enter credentials and choose options to use PayConnect. </p>
+<ul class="MarginBottomGap">
+<li><b>Program Version</b>: Choose <i>1.0</i> if signed up for PayConnect 1.0.</li>
+<li><b>Userame</b>: Enter the username supplied by PayConnect</li>
+<li><b>Password:</b> Enter the password supplied by PayConnect.</li>
+<ul>
+<li>This password is typically the same as the password for ClaimConnect if you also use that service.</li>
+<li>User must have the <i>Manage High Security Properties</i> permission to edit or add a password.</li>
+</ul>
+<li><b>Enable terminal processing</b>: Check to use a credit card terminal for EMV transactions. Contact PayConnect for information on compatible terminals. <ul>
+<li>The Download Driver button will display. Click to download and install the terminal driver (<a href="../download/drivers/VeriFoneUSBUARTDriver_Vx_1.0.0.52_B5.zip">VeriFoneUSBUARTDriver_Vx_1.0.0.52_B5.zip</a>). An internet connection is required. Once the driver is installed, contact PayConnect for additional setup instructions.</li>
+<li>If using Open Dental Cloud, download the driver on the workstation used to run payments.</li>
+</ul>
+</li>
+<li><b>Recurring charges force duplicates by default</b>: By default, transactions for the same amount charged to the same card on the same day are declined. This is to prevent accidentally charging a card twice. Check to allow duplicate charges. Useful if family members have recurring charges set up on the same card for the same day.</li>
+<li><b>Prevent saving new cards</b>: Uncheck to allow users to process new transactions or save new payment information to a patient's account. Check to prevent users from processing new transactions or saving new payment information. <ul>
+<li>To set whether or not new credit and debit cards are saved to a patient's account after each transaction, see <a href="preferences.html">Preferences</a>, <i>Automatically store credit card tokens</i>.</li>
+</ul>
+</li>
+<li><b>Payment Type</b>: Select the default Payment Type for PayConnect transactions. <ul>
+<li>Customize available options in <a href="definitionspaymenttypes.html">Definitions: Payment Types</a>.</li>
+<li>Set the preference <i>Pay type for CC</i> to set a specfic Payment Type for <a href="recurringcharges.html">CC Recurring Charges</a>.</li>
+<li>If the preference,<i> Payments prompt for Payment Type</i>, is enabled, users must manually select a Payment Type when creating a payment. </li>
+</ul>
+</li>
+<li><b>Default Processing Method</b>: Select the default processing method: Web Service or Terminal.</li>
+<li><b>Payment Portal Payments</b>: Determine if patients can make online payments via the <a href="portalpaymentsbypatient.html">Payment Portal</a>. <ul>
+<li><b>Enabled</b>: Check to allow patients to make online payments using the PayConnect Web Service via the Payment Portal.</li>
+<li><b>Token</b>: Click <b>Generate </b> to create a token. This is used by the Web Service when processing payments.</li>
+</ul>
+</li>
+</ul>
+<p>Click <b>OK</b> to save settings.</p>
+<h2>PayConnect 2.0</h2>
+<p>The interface shown in the screenshot below appears when Program Version <i>2.0 </i>is selected.</p>
+<img src="images/payconnect2Setup.png" width="778" height="738"/><p><b>Enabled</b>: Check to use PayConnect as a processor when taking <a href="paymentpatientcreditcard.html">Credit Card Payments</a>.</p>
+<p><b>Clinic</b>: Only displays when the Clinics feature is enabled. See Clinics section below for additional setup details.</p>
+<p class="MarginBottomZero"><b>Payment Settings</b>: Enter credentials and choose options to use PayConnect. </p>
+<ul class="MarginBottomGap">
+<li><b>Program Version</b>: Choose 2.0 if signed up for PayConnect 2.0.</li>
+<li><b>Merchant Info</b>: Only appears when a Secret is entered. Click to validate and display Merchant Information from PayConnect.</li>
+<li><b>Secret</b>: Enter the alphanumeric Secret key provided by PayConnect.</li>
+<li><b>Enable terminal processing</b>: Check to use a credit card terminal for EMV transactions. To add a credit card payment terminal, see Edit Payment Terminal section below. When checked click <b>Download Driver</b> below Terminals list to install terminal drivers.</li>
+<li><b>Prevent saving new cards</b>: Uncheck to allow users to process new transactions or save new payment information to a patient's account. Check to prevent users from processing new transactions or saving new payment information. <ul>
+<li>To set whether or not new credit and debit cards are saved to a patient's account after each transaction, see Preferences, <i>Automatically store credit card tokens</i>.</li>
+</ul>
+</li>
+<li><b>Surcharge Account</b>: Check is using a Surcharge Account.</li>
+<li><b>Payment Type</b>: Select the default Payment Type for PayConnect transactions. <ul>
+<li>Customize available options in Definitions, Payment Types.</li>
+<li>Set the preference <i>Pay type for CC</i> to set a specfic Payment Type for CC Recurring Charges.</li>
+<li>If the preference,<i> Payments prompt for Payment Type</i>, is enabled, users must manually select a Payment Type when creating a payment. </li>
+</ul>
+</li>
+<li><b>Default Processing Method</b>: Select the default processing method: Web Service or Terminal.</li>
+<li><b>Payment Portal Payments</b>: Determine if patients can make online payments via the Payment Portal. <ul>
+<li><b>Enabled</b>: Check to allow patients to make online payments using the PayConnect Web Service via the Payment Portal.</li>
+</ul>
+</li>
+</ul>
+<p><b>Terminals</b>: Lists names and Terminal IDs of all credit card terminal devices added for use with PayConnect. </p>
+<p><b>Add Terminal</b>: Click to add a new terminal. See Edit Payment Terminal below. Contact PayConnect for information on compatible terminals.</p>
+<p>Click <b>OK</b> to save settings.</p>
+<h2>Edit Payment Terminal</h2>
+<p>For PayConnect 2.0 users, double-click an existing terminal from the Terminals grid to edit or click <b>Add Terminal</b> to create add a new terminal.</p>
+<img src="images/payconnect2EditTerminal.png" width="346" height="197"/><p><b>Terminal Name</b>: Enter a description for the credit card terminal.</p>
+<p><b>Terminal ID</b>: Enter the serial number associated with the credit card terminal device.</p>
+<p>Click <b>Delete</b> to remove an existing terminal.</p>
+<p>Click <b>OK</b> to save changes.</p>
+<p></p>
+<h2>Clinics</h2>
+<p><a href="clinics.html">Clinics</a> can use different PayConnect login credentials for each Clinic in a single database.</p>
+<img src="images/payconnectClinic.png" width="786" height="365"/><p class="MarginBottomZero">To use PayConnect with Clinics:  </p>
+<ol class="MarginBottomGap">
+<li>Check <b>Enabled (affects all clinics)</b> to enable PayConnect for all clinics.  <ul>
+<li>Unchecking disables PayConnect for all clinics. </li>
+<li>Clinic-restricted users only have access to their allowed clinics in the Clinic dropdown and are not allowed to uncheck the Enabled box.</li>
+</ul>
+</li>
+<li>Set <i>Clinic Payment Settings</i> for Headquarters before setting individual Clinic settings.</li>
+<ol>
+<li>Select Headquarters from the Clinic dropdown.</li>
+<li>Set up options for PayConnect 1.0 or PayConnect 2.0 as applicable (see above). <ul>
+<li>Editing the Headquarters credentials when it is the same as one or more clinics, changes the other clinics as well. To unlink them, change the username and password for each clinic. Subsequent changes made to Headquarters credentials will no longer affect the clinic.</li>
+</ul>
+</li>
+</ol>
+<li>Set <i>Clinic Payment Settings</i> for individual Clinics. <ol>
+<li>Select a clinic from the Clinic dropdown.</li>
+<li>Set up options for PayConnect 1.0 or PayConnect 2.0 as applicable (see above).</li>
+<li>Repeat steps for each additional clinic in the dropdown.  <ul>
+<li>Headquarter settings will be used if clinic-specific changes are not made. </li>
+<li>For clinics not using PayConnect, select the clinic, then clear the username and password. When the clinic is attached to a payment, the PayConnect button will not be visible.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - PDMP Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridgepdmpillinois','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/bridgepdmpillinois.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/bridgepdmpillinois.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridgepdmpillinois.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridgepdmpillinois.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridgepdmpillinois.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/bridgepdmpillinois.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridgepdmpillinois.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridgepdmpillinois.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridgepdmpillinois.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridgepdmpillinois.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridgepdmpillinois.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridgepdmpillinois.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridgepdmpillinois.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridgepdmpillinois.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridgepdmpillinois.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridgepdmpillinois.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridgepdmpillinois.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridgepdmpillinois.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridgepdmpillinois.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridgepdmpillinois.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridgepdmpillinois.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridgepdmpillinois.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridgepdmpillinois.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridgepdmpillinois.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridgepdmpillinois.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridgepdmpillinois.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridgepdmpillinois.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridgepdmpillinois.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>PDMP Bridge</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>, <b>PDMP</b>.</p>
+<img src="images/pdmp.png" width="778" height="598"/><p>The PDMP (Prescription Drug Monitoring Program) bridge is for users in California, Illinois, Kentucky, Maryland, Utah, and Washington. Users must be on support with Open Dental to use this feature. </p>
+<p class="MarginBottomZero">If you have not registered for PDMP: </p>
+<ul class="MarginBottomGap">
+<li>Illinois users can register here: <a href="https://www.ilpmp.org/PMPnowRegistration.php" target="_blank">https://www.ilpmp.org/PMPnowRegistration.php</a></li>
+<li>California, Kentucky, Maryland, Utah, and Washington can register here: <a href="https://signup.logicoy.com/PDMPSystemEhrSignup/register" target="_blank">https://signup.logicoy.com/PDMPSystemEhrSignup/register</a></li>
+</ul>
+<p><div class="Note">Note: Users in other states can use the <a href="bridgeappriss.html">Appriss Bridge</a> bridge instead.</div>
+</p>
+<p class="MarginBottomZero">The following must be set before using the PDMP bridge:  </p>
+<ul class="MarginBottomGap">
+<li><a href="providerseditwindow.html">Providers</a> must have a First Name, Last Name, DEA Number, and National Provider ID entered. </li>
+<li><a href="patientedit.html">Patients</a> must have a First Name, Last Name, Birthdate, Zip Code, and Gender entered.</li>
+<li>The logged-on <a href="securityusers.html">User</a> must be associated with a provider.</li>
+<li>The <a href="opendentalservice.html">Open Dental Service</a> must be installed and running.</li>
+</ul>
+<p class="MarginBottomZero">To enable the bridge, set the following information: </p>
+<ol class="MarginBottomGap">
+<li>Check the <b>Enabled</b> box.</li>
+<li>Double-Click into each of the <b>Additional Properties</b> to enter login credentials. These are issued by Logicoy and are required. Enter the credentials for your state only. <ul>
+<li><b>PDMP Provider License Field</b>: Enter the state license or the state Rx ID. If this field is left blank, the state license is used.</li>
+<li><b>PDMP FacilityID</b>: Practice name.</li>
+<li><b>PDMP Username</b>: Username used when accessing PDMP </li>
+<li><b>PDMP Password</b>: Password used when accessing PDMP</li>
+</ul>
+</li>
+<li>Set up a clickable bridge button. <ol>
+<li>Under <b>Add a button to these toolbars</b>, highlight where to display the button.</li>
+<li>Change the <b>Text on button</b> if desired.</li>
+<li>(Optional) Import an image to show on the button (22 x 22 pixels). </li>
+</ol>
+</li>
+<li>If using clinics, click <b>Hide Button for Clinics</b>. Select which clinics the button should display on.</li>
+<li>Click OK.</li>
+</ol>
+<p>Users must log into the PDMP Portal at least once every 90 days to keep the account active. </p>
+</div>
+</div>
+</body>
+</html>

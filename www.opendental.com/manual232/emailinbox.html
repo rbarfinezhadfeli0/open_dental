@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Email Client</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('emailinbox','manage','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/emailinbox.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/emailinbox.html" >v24.2</option><option value="https://www.opendental.com/manual241/emailinbox.html" >v24.1</option><option value="https://www.opendental.com/manual233/emailinbox.html" >v23.3</option><option value="https://www.opendental.com/manual232/emailinbox.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/emailinbox.html" >v23.1</option><option value="https://www.opendental.com/manual224/emailinbox.html" >v22.4</option><option value="https://www.opendental.com/manual223/emailinbox.html" >v22.3</option><option value="https://www.opendental.com/manual222/emailinbox.html" >v22.2</option><option value="https://www.opendental.com/manual221/emailinbox.html" >v22.1</option><option value="https://www.opendental.com/manual214/emailinbox.html" >v21.4</option><option value="https://www.opendental.com/manual213/emailinbox.html" >v21.3</option><option value="https://www.opendental.com/manual212/emailinbox.html" >v21.2</option><option value="https://www.opendental.com/manual211/emailinbox.html" >v21.1</option><option value="https://www.opendental.com/manual205/emailinbox.html" >v20.5</option><option value="https://www.opendental.com/manual204/emailinbox.html" >v20.4</option><option value="https://www.opendental.com/manual203/emailinbox.html" >v20.3</option><option value="https://www.opendental.com/manual202/emailinbox.html" >v20.2</option><option value="https://www.opendental.com/manual201/emailinbox.html" >v20.1</option><option value="https://www.opendental.com/manual194/emailinbox.html" >v19.4</option><option value="https://www.opendental.com/manual193/emailinbox.html" >v19.3</option><option value="https://www.opendental.com/manual192/emailinbox.html" >v19.2</option><option value="https://www.opendental.com/manual191/emailinbox.html" >v19.1</option><option value="https://www.opendental.com/manual184/emailinbox.html" >v18.4</option><option value="https://www.opendental.com/manual183/emailinbox.html" >v18.3</option><option value="https://www.opendental.com/manual182/emailinbox.html" >v18.2</option><option value="https://www.opendental.com/manual181/emailinbox.html" >v18.1</option><option value="https://www.opendental.com/manual174/emailinbox.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Email Client</p></div>
+<div class="GeneralPageContent">
+<p>Use the Email Inbox to view and send regular emails, secure emails, and WebMail messages.</p>
+<p>In the <a href="manage.html">Manage Module</a>, click <b>Emails</b>.</p>
+<img src="images/emailinboxUser.png" width="915" height="441"/><p class="MarginBottomZero">Emails that display in this window vary depending on user and message type. </p>
+<ul class="MarginBottomGap">
+<li><a href="securewebmailsend.html">WebMail</a> messages only display when the provider is logged in.</li>
+<li>Regular and Secure Email replies display for all users.</li>
+<li>Emails received by the practice/clinic/group email address are viewable by all users.</li>
+<li>User-specific emails are only viewable when the user is logged on.</li>
+</ul>
+<p>This window can be left open in the background so that other areas of Open Dental can be accessed.</p>
+<p> The <a href="opendentalservice.html">Open Dental Service</a> is required to download new emails. New emails on the mail server are automatically synced in the background. Automatic download occurs every time Open Dental starts, when the inbox is opened, and at set intervals (see <a href="emailsetup.html">Email Setup</a>).</p>
+<h2>Setup and Addresses</h2>
+<img src="images/emailInboxSetup.png" width="253" height="96"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Setup</b>: Access <a href="emailsetup.html">Email Setup</a> for practice/clinic/group setup.</li>
+<li><b>View Messages for address</b>: Lists all mail addresses the user can view messages for. Click the dropdown to select a different address. <ul>
+<li>Defaults to the logged-on user's email address or the practice/clinic/group email address.</li>
+<li>WebMail is for <a href="securewebmail.html">Secure WebMail Feature</a> and only is an option when the logged-on user is a provider.</li>
+</ul>
+</li>
+</ul>
+<h2>Search</h2>
+<p>Use the Search area to find specific emails by patient, email address, date range, or subject/body.</p>
+<img src="images/emailInboxSearch.gif" width="424" height="166"/><p class="MarginBottomZero">First select the Inbox or Sent Message tab, then use the following fields: </p>
+<ul class="MarginBottomGap">
+<li><b>Patient</b>: Click [...] to select a patient.</li>
+<li><b>Email Address</b>: Enter the email address.</li>
+<li><b>Date From/To</b>: Search for messages sent or received during a date range. Use the DD/MM/YYYY format.</li>
+<li><b>Subject/Body</b>: Search for specific in the subject and body text.</li>
+<li><b>Only include messages with attachments</b>: Check to only list messages that have an attachment. Uncheck to ignore this criteria.</li>
+</ul>
+<p>Click <b>Search</b> to enter search mode (turns yellow). Matching results will list.</p>
+<p>Click <b>Clear</b> to exit search mode.</p>
+<h2>Show Email In</h2>
+<p>In the Show Email In area, select where an individual email will show or not show. To show the email in an area, highlight it. To hide the email in the area, deselect it. By default, all areas are selected. </p>
+<img src="images/emailShowIn.png" width="212" height="166"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Email Inbox</li>
+<li>Appointment Edit: <a href="aptedit.html">Edit Appointment</a>, Communications Log area</li>
+<li>Chart Progress Notes: <a href="chart.html">Chart Module</a>, Progress Notes</li>
+<li>Account Progress Notes: <a href="account.html">Account Module</a>, Progress Notes</li>
+<li>Account Comm Log: Account Module, Communications Log area</li>
+</ul>
+<p><b>Show Hidden Emails</b>: Check to show emails that have been hidden in all areas.</p>
+<h2>Sent Message Sources</h2>
+<p>In the Sent Message Sources area, select which emails are shown in the Sent Messages grid or click <b>All</b> to show all sent emails. Clicking <b>None</b> clears the current selection.</p>
+<img src="images/emailInboxSentMsgSources.png" width="354" height="165"/><p>The source filter options are only available while on the Sent tab and an email address is selected. If WebMail is selected, the filter options are disabled and all sent WebMail messages will show.</p>
+<p class="MarginBottomZero"><b>Manual</b>: Emails created and sent by a user. </p>
+<ul class="MarginBottomGap">
+<li>Undefined: Email messages that do not have a type assigned.</li>
+<li>Legacy: All email messages sent prior to version 21.1.6. Messages sent after updating to version 21.1.6 will use the types listed below.</li>
+<li>Confirmation: Emails sent from the Confirmation List. </li>
+<li>EHR: Emails sent from <a href="ehrsummaryofcaresend.html">EHR Summaries of Care</a>.</li>
+<li>Forward: Emails forwarded from the Email Client by clicking the Forward button.</li>
+<li>Hosting: Generated by our email hosting.</li>
+<li>Manual: These are manual emails created by <ul>
+<li>Clicking the Compose button in the Email Client.</li>
+<li>Clicking the Email button or any of the dropdown options from the Main toolbar.</li>
+</ul>
+</li>
+<li>PaymentReceipt: Emails sent when clicking the Email Receipt button in the Payment window.</li>
+<li>Recall: Emails sent from the Recall list.</li>
+<li>Reply: Emails replied to from the Email Client or Edit Email Message window.</li>
+<li>Sheet: Emails sent from the Fill Sheet window or Edit Deposit Slip window.</li>
+<li>Statement: Emails with a statement sent from the Bills List, Statement window, or Statement button or dropdown in the Account Module.</li>
+<li>TreatmentPlan: Emails sent by clicking the Email TP button.</li>
+<li>Verification: Emails sent automatically from the Verification list.</li>
+</ul>
+<p class="MarginBottomZero"><b>Automated</b>: Emails automatically created and sent by an Open Dental feature. </p>
+<ul class="MarginBottomGap">
+<li>EConfirmation: Emails automatically sent by the eConfirmation feature.</li>
+<li>eReminder: Emails automatically sent by the eReminder feature.</li>
+<li>PatPortalInvite: Emails automatically created when inviting a patient to the patient portal.</li>
+<li>PatPortalReset: Emails automatically sent when the patient forgets their password.</li>
+<li>ThankYou: Emails automatically sent for Thank You Messages.</li>
+<li>WebSchedASAP: Email automatically sent from the Web Sched ASAP feature.</li>
+<li>WebSchedRecall: Emails automatically sent from the Web Sched Recall feature.</li>
+</ul>
+<p><b>Show Failed Emails</b>: Check to show emails that were sent but failed to deliver to the recipient.</p>
+<h2>Email Options</h2>
+<img src="images/emailInboxOptions.png" width="915" height="27"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Compose</b>: Create a new email message.</li>
+<li><b>Reply</b>: Create a reply message for the selected email.</li>
+<li><b>Reply All</b>: Reply to all email addresses included in the email. Reply All cannot be used on secure email replies.</li>
+<li><b>Forward</b>: Forward a message.</li>
+<li><b>Change Pat</b>: Attach the message to a patient. Patients are automatically attached to incoming messages when Open Dental can find an exact match.</li>
+<li><b>Mark Read/Mark Unread</b>: Change the message status. Bold messages indicate unread messages.</li>
+<li><b>Refresh</b>: Refresh the inbox for the selected email address.</li>
+</ul>
+<h2>Inbox Tab</h2>
+<p>Click the Inbox tab to view received messages for the selected email address. Click a column header to sort the messages alphabetically in ascending or descending order. </p>
+<img src="images/emailInboxInboxTab.png" width="915" height="196"/><p>Unread messages will be bold. Highlight a message to preview the message text in the lower portion of the window, or double-click a message to open it in a new window.</p>
+<p class="MarginBottomZero">Columns: </p>
+<ul class="MarginBottomGap">
+<li><b>From</b>: The email address of the sender.</li>
+<li><b>Subject</b>: The subject sent with the email.</li>
+<li><b>Date Received</b>: The date and time the email was received by the mail server.</li>
+<li><b>MessageType</b>: The type of message.  <ul>
+<li>Regular email: A clear text email.</li>
+<li>Encrypted email: An encrypted email.</li>
+<li>SecureWebMail (sent via the patient portal)</li>
+<li>Unsent</li>
+</ul>
+</li>
+<li><b>Sig</b>: Y Indicates the message is digitally signed (an encrypted email) and the sender is a trusted source. N indicates there is digital signature, but the sender is not a trusted source yet. Click the N to add a source to your trusted list.</li>
+<li><b>Patient</b>: The patient attached to the email. If blank, there is no patient attached. Open Dental automatically attempts to attach a matching patient to incoming messages using this logic:  <ul>
+<li>Searches for the patient if the email includes an attached Summary of Care (ccd.xml).</li>
+<li>Searches for a match using LastName, FirstName, and Birthdate.</li>
+<li>Searches for an exact email address match.</li>
+<li>If multiple family members have matching email address, it will attach to the guarantor.</li>
+<li>If multiple patients across two or more families have the same email address, or there is no patient with a matching email address, the patient will be unassigned (left blank).</li>
+</ul>
+<div class="Note">Note: To assign an email to a patient, highlight the email then click <b>Change Pat</b>.</div>
+</li>
+</ul>
+<h2>Sent Tab</h2>
+<p>Click the Sent tab to view all messages sent by the selected address from Open Dental. Sent messages can only be viewed, not edited. They can be deleted if there is no patient attached.</p>
+<img src="images/emailInboxSentMessages.png" width="915" height="276"/><p class="MarginBottomZero">Sent Messages columns: The columns are the same as the Inbox, except for the following: </p>
+<ul class="MarginBottomGap">
+<li><b>Sent To</b>: The email address of the recipient.</li>
+<li><b>Date Sent</b>: The date and time the email was sent by the mail server.</li>
+<li><b>Msg Type</b>: The status of the message. <ul>
+<li>Sent: A clear text email message was sent.</li>
+<li>SentDirect: An encrypted email was sent.</li>
+</ul>
+</li>
+<li><b>Msg Source</b>: The message origin. For example, an email sent from the recall list will have a message source of 'Recall'.</li>
+<li><b>Is Auto</b>: Displays an X if the message was an automated email (e.g., eConfirmation, eReminder, etc.)</li>
+</ul>
+<p>Highlight a message to preview the message text in the lower portion of the window, or double-click a message to open it in a new window.</p>
+<h2>Delete</h2>
+<p>To delete a message, highlight it then click <b>Delete</b>. </p>
+<img src="images/emailInboxDelete.png" width="286" height="39"/><p>Deleting a received message removes it from the inbox only, not the email server. It will not download from the email server again. Sent messages can only be deleted when there is no attached patient.</p>
+<p>Emails attached to a patient are removed from the inbox, yet still visible in the Commlog and Progress Notes.</p>
+<p>Emails not attached to a patient are permanently removed.</p>
+</div>
+</div>
+</body>
+</html>

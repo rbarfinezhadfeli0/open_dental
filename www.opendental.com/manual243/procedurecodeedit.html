@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Procedure Code</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('procedurecodeedit','procedurecodes','+lists','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/procedurecodeedit.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/procedurecodeedit.html" >v24.2</option><option value="https://www.opendental.com/manual241/procedurecodeedit.html" >v24.1</option><option value="https://www.opendental.com/manual233/procedurecodeedit.html" >v23.3</option><option value="https://www.opendental.com/manual232/procedurecodeedit.html" >v23.2</option><option value="https://www.opendental.com/manual231/procedurecodeedit.html" >v23.1</option><option value="https://www.opendental.com/manual224/procedurecodeedit.html" >v22.4</option><option value="https://www.opendental.com/manual223/procedurecodeedit.html" >v22.3</option><option value="https://www.opendental.com/manual222/procedurecodeedit.html" >v22.2</option><option value="https://www.opendental.com/manual221/procedurecodeedit.html" >v22.1</option><option value="https://www.opendental.com/manual214/procedurecodeedit.html" >v21.4</option><option value="https://www.opendental.com/manual213/procedurecodeedit.html" >v21.3</option><option value="https://www.opendental.com/manual212/procedurecodeedit.html" >v21.2</option><option value="https://www.opendental.com/manual211/procedurecodeedit.html" >v21.1</option><option value="https://www.opendental.com/manual205/procedurecodeedit.html" >v20.5</option><option value="https://www.opendental.com/manual204/procedurecodeedit.html" >v20.4</option><option value="https://www.opendental.com/manual203/procedurecodeedit.html" >v20.3</option><option value="https://www.opendental.com/manual202/procedurecodeedit.html" >v20.2</option><option value="https://www.opendental.com/manual201/procedurecodeedit.html" >v20.1</option><option value="https://www.opendental.com/manual194/procedurecodeedit.html" >v19.4</option><option value="https://www.opendental.com/manual193/procedurecodeedit.html" >v19.3</option><option value="https://www.opendental.com/manual192/procedurecodeedit.html" >v19.2</option><option value="https://www.opendental.com/manual191/procedurecodeedit.html" >v19.1</option><option value="https://www.opendental.com/manual184/procedurecodeedit.html" >v18.4</option><option value="https://www.opendental.com/manual183/procedurecodeedit.html" >v18.3</option><option value="https://www.opendental.com/manual182/procedurecodeedit.html" >v18.2</option><option value="https://www.opendental.com/manual181/procedurecodeedit.html" >v18.1</option><option value="https://www.opendental.com/manual174/procedurecodeedit.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Procedure Code</p></div>
+<div class="GeneralPageContent">
+<p>Procedure code settings, behaviors, defaults, and more can be edited to meet the needs of the practice.</p>
+<p>In <a href="procedurecodes.html">Procedure Codes</a>, double-click an existing code.</p>
+<img src="images/procCodeEdit.png" width="915" height="615"/><h2>Procedure Code Settings</h2>
+<img src="images/procCodeSettings.png" width="497" height="230"/><p><b>Time Pattern</b>: Use the vertical slider on the left to set the procedure time allotment. By default, each square represents 10 minutes. To change the default, see Time Increments in <a href="appointmentviewsetup.html">Appointment View Setup</a>. Slash (/) indicates assistant time, X indicates provider time. Click X or / to toggle to the other. Procedure time is used to determine default appointment length. See <a href="timebars.html">Time Bars</a> for more details.</p>
+<p><b>Proc Code</b>: The code itself. It can be up to 15 digits long. All codes starting with D are shortened to 5 characters before being included on an insurance claim. For example, the office can have two different codes for nitrous, with the difference being a letter that is added to the end of a standard D code. When sent to insurance, only the standard 5 digit code is used.</p>
+<div class="Note">Note: Once created, a code can't be changed or deleted. Instead move it to an obsolete category.</div>
+<br/><br/><p><b>Alt Code</b>: Associate an alternate code. Useful for some Medicaid plans like <a href="dentical.html">Denti-Cal</a>. See <a href="planmedicaid.html">Medicaid or Flat Co-Pay Insurance Plan</a>.</p>
+<p><b>Medical Code</b>: Associate a medical code. The medical code must already exist. See <a href="crosscode.html">Cross Code</a>. Cross coding only affects medical claims. It does not affect what shows on an EHR CCD (summary of care).</p>
+<p class="MarginBottomZero"><b>Ins. Subst Code</b>: Associate an insurance substitution code and optionally set an Only if condition. The substitute code is used to calculate downgraded estimates for procedures (when insurance reduces the allowed amount of a procedure). See <a href="downgrades.html">Estimate Downgrades</a>. </p>
+<ul class="MarginBottomGap">
+<li>Posterior composites: Typically enter the amalgam code and set the condition to Molar.</li>
+<li>Porcelain crowns: Typically enter the FGC code and set the condition to SecondMolar. If the office charges the same for both types of crowns this setting is not as important.</li>
+</ul>
+<p><b>Description</b>: Only non-ADA code descriptions can be edited. Automatically update ADA code descriptions using <a href="procedurecodetools.html">Procedure Code Tools</a>.</p>
+<p><b>Abbreviation</b>: Can be edited. This is what appears on an appointment in the <a href="appointments.html">Appointments Module</a> when <i>Procs</i> or <i>ProcsColored</i> are added to an <a href="appointmentviewsetup.html">Appointment View</a>. Limited to 50 characters</p>
+<p><b>Layman's Term</b>: Enter simpler language to describe the procedure. It shows as the procedure description in <a href="treatmentplan.html">Treatment Plans</a>, the <a href="chart.html">Chart Module</a>, the <a href="account.html">Account Module</a>, and <a href="statement.html">Statements</a>.</p>
+<p><b>Base Units</b>: Typically for <a href="medicalins.html">Medical Insurance</a> claims. When calculating a procedure fee, the standard fee is increased based on the base unit, thereby increasing the billed fee. The base unit calculates the fee and time pattern using an additive process. Base Unit = 0 (standard fee) Base Unit = 1 (standard fee + standard fee) Base Unit = 2 (standard fee + standard fee + standard fee).</p>
+<p class="MarginBottomZero">For example, the procedure code for Nitrous Oxide may have a time pattern of 15 minutes (base unit of 0) and a fee of $100. During the procedure, the office may typically use Nitrous Oxide for a longer period of time. Instead of adding the procedure to the chart multiple times, increase the base unit. </p>
+<ul class="MarginBottomGap">
+<li>By setting the Base Unit to 1, the Time Pattern = 30 minutes and the Procedure Fee = $200</li>
+<li>By setting the Base Unit to 2, the Time Pattern = 45 minutes and the Procedure Fee = $300</li>
+<li>By setting the Base Unit to 3, the Time Pattern = 60 minutes and the Procedure Fee = $400</li>
+</ul>
+<p>There is a checkbox on the <a href="insplan.html">Insurance Plan</a> for <i>Claims show base units</i> which shows the base unit on the medical claim form.</p>
+<p><b>Drug NDC</b>: National Drug Code number.</p>
+<p><b>Default Revenue Code</b>: A 3-digit code sometimes used for institutional claims. It tells insurance where the patient was when they received insurance or the type of item they received. It shows as the default Revenue Code on the <a href="proceduremedical.html">Procedure - Medical Tab</a>.</p>
+<p><b>Color Override</b>: Override the default color for this procedure on the <a href="graphicaltoothchart.html">Graphical Tooth Chart</a>. Usually colors are based on procedure status, such as Treatment Planned or Completed, not on individual procedure code. However in rare situations the office may want a procedure code to always show in one color. For example, implants look better as always gray, instead of red, blue, or green. Click <b>None</b> to remove the override.</p>
+<h2>Procedure Code Settings (Continued)</h2>
+<img src="images/procCodeSettingsCont.png" width="376" height="203"/><p class="MarginBottomZero"><b>Do not usually bill to Ins</b>: Determines the default setting of the <i>Do Not Bill to Ins</i> checkbox on the <a href="procedurefinancial.html">Procedure - Financial Tab</a> when charting a new procedure. Useful to identify procedures that are not usually sent to insurance (e.g., non-standard D codes, crown seats). </p>
+<ul class="MarginBottomGap">
+<li>Checked: Defaults the procedure to have the <i>Do Not Bill to Ins</i> box checked.</li>
+<li>Unchecked: Defaults the procedure to have the <i>Do Not Bill to Ins</i> box unchecked.</li>
+</ul>
+<p><b>InsPlans Overrides: </b>Override the default <i>Do not usually bill to Ins</i> setting for the procedure code on an insurance plan level. See <a href="insplanoverrides.html">Insurance Plans Overrides</a></p>
+<p class="MarginBottomZero"><b>Is Hygiene procedure</b>: See <a href="aptedit.html">Edit Appointment</a> for an explanation of Hygiene provider. </p>
+<ul>
+<li>Checked: This procedure is automatically assigned to the hygiene provider when scheduling an appointment with two providers.</li>
+<li>Unchecked: This procedure is assigned normally.</li>
+</ul>
+<p class="MarginBottomGap"><div class="Note">Note: To immediately reassign the procedure to the hygienist for appointments already scheduled, see <i>Update Provs on Future Appts</i> in <a href="operatories.html">Operatories</a>.</div>
+</p>
+<p class="MarginBottomZero"><b>Is Prosthesis</b>: Determines whether or not additional Prosthesis Replacement fields show on the <a href="procedureedit.html">Procedure Info</a> window. </p>
+<ul class="MarginBottomGap">
+<li>Checked: Prosthesis fields show. Users must complete this information before sending the insurance claim.</li>
+<li>Unchecked: Prosthesis fields do not show.</li>
+</ul>
+<p class="MarginBottomZero"><b>Is Radiology</b>: Typically used for EHR to designate a procedure as an x-ray. </p>
+<ul class="MarginBottomGap">
+<li>Checked: This procedure is considered a radiology order for EHR purposes.</li>
+<li>Unchecked: This procedure is not considered radiology for EHR purposes.</li>
+</ul>
+<p class="MarginBottomZero"><b>Auto Tax</b>: Determines whether or not <a href="salestax.html">Sales Tax</a> is applied to this procedure. </p>
+<ul class="MarginBottomGap">
+<li>Checked: A sales tax adjustment is automatically added to this procedure when the procedure is set complete. Requires the <i>Automate Sales Tax</i> preference to be enabled.</li>
+<li>Unchecked: This procedure is not automatically taxed when it is set complete.</li>
+</ul>
+<p><b>Assign to Prov</b>: Assign a specific provider to this procedure. For example, create a procedure for selling mouthwash from the dental office, then assign the procedure to a dummy provider. This avoids inflated production numbers on real providers. The provider selected here is assigned to this procedure when it is created, attached to an appointment, or an attached appointment is set complete. </p>
+<p class="MarginBottomZero"><b>Bypass Global Lock Date</b>: Determines whether or not this procedure is affected by the Global Lock Date (if turned on). </p>
+<ul class="MarginBottomGap">
+<li>Checked: If this procedure has a $0 fee, it is not limited by the global lock date, meaning it can be deleted or backdated. Users can also add a new procedure and backdate it prior to the lock date, or backdate an existing procedure's procedure date to before the lock date. This can be useful for providers who add non-clinical procedures as reminders then later remove them.</li>
+<li>Unchecked: Global lock dates apply to this procedure as normal.</li>
+</ul>
+<p><b>ICD-10s (up to 4)</b>: Add up to four ICD-10 codes to automatically add to the <a href="proceduremedical.html">Procedure - Medical Tab</a> when charted. </p>
+<h2>Paint Types</h2>
+<img src="images/procCodePaintType.png" width="126" height="258"/><p class="MarginBottomZero"><b>Paint Type</b>: Determines how the procedure is drawn on the Graphical Tooth Chart. </p>
+<ul class="MarginBottomGap">
+<li>Extraction: A large X when treatment-planned. Tooth is hidden once procedure is set complete. <ul>
+<li>If switching an existing procedure to this Paint Type, procedures with a status of <i>Completed</i>, <i>Existing-Current Prov</i>, or <i>Existing-Other Prov</i> are not automatically marked missing. Users must double-click the existing procedure to refresh the graphic.</li>
+<li>If switching an existing procedure from this Paint Type to any other, teeth are not automatically marked as Not Missing. Users must mark teeth as Not Missing from the <a href="missingteeth.html">Missing/Primary Teeth</a> tab in the Chart Module.</li>
+</ul>
+</li>
+<li>Implant: Displays as implant screw only. To indicate a previously placed implant, assign this paint type to a surgical procedure with a status of EO. Before the implant graphic shows, the tooth must also be marked missing. Once an implant is showing, a crown can be entered. Crowns do not normally show on missing teeth, so entering an implant procedure first is necessary in this case.</li>
+<li>RCT: Root canal, not including pulp chamber.</li>
+<li>PostBU: Post or Buildup. Fills the pulp chamber. Also used for pulpotomies (vital pulp therapies) on primary teeth. If the office does many buildups that do not involve the pulp chamber, then remove this paint type from the procedure code and use no paint type at all. The graphics make more sense on the chart for this situation.</li>
+<li>FillingDark/Light: Dark and light color options.</li>
+<li>CrownDark/Light - Caps tooth. Tooth must be visible (or there needs to be an implant). Dark and light color options.</li>
+<li>BridgeDark/Light - Looks similar to a crown, but also shows on missing teeth. Dark and light color options.</li>
+<li>DentureDark/Light: Teeth should be marked missing first. Dark and light color options. Similar to crown graphic.</li>
+<li>Sealant: An S.</li>
+<li>Veneer: Covers front of anterior teeth or premolars. Veneer paint type is not typically used on molars. When it is, graphics only show on buccal (B) and class five (V) surfaces.</li>
+<li>Text: Additional box for Paint Text appears when selected. Allows user to designate text shown above or below the tooth (e.g., watch). <ul>
+<li>If using OpenGL for Tooth Chart Graphics, only a capital W is allowed. If using DirectX 11, any text is allowed.</li>
+</ul>
+</li>
+<li>Retained Root: Displays as root only. Displays only when using DirectX 11.</li>
+<li>SpaceMaintainer: Solid line between missing teeth. Displays only when using DirectX 11. </li>
+</ul>
+<h2>Treatment Area</h2>
+<img src="images/procCodeTreatmentArea.png" width="126" height="145"/><p class="MarginBottomZero"><b>Treatment Area</b>: Determines the treatment area options available when charting the procedure (<a href="procedureedit.html">Procedure</a>) and sending on claims.  </p>
+<ul class="MarginBottomGap">
+<li>None: No treatment area. Procedures do not display on the Graphical Tooth Chart.</li>
+<li>Surf: Procedure requires a tooth number and surface.  <ul>
+<li>Procedures appear on the Graphical Tooth Chart when used with the <i>FillingDark</i> and <i>FillingLight</i> Paint Types. </li>
+<li>Procedures appear using the following Paint Types, but are not recommended with <i>Surf</i> treatment area: Extraction, PostBU, RCT, Retainted Root, Text, or Veneer </li>
+</ul>
+</li>
+<li>Tooth: Procedure requires a tooth number only (e.g., 29). <ul>
+<li>Procedures appear on the Graphical Tooth Chart when used with the following recommended Paint Types: Extraction, Implant, PostBU, RCT, Retainted Root, Text, Veneer, and Sealant. </li>
+</ul>
+</li>
+<li>Mouth: The treatment area covers the whole mouth. No additional options display when charting. Sends 00 on claims. Procedures do not display on the Graphical Tooth Chart.</li>
+<li>Quad: Procedure requires a quadrant (e.g., UR). <ul>
+<li>Procedures appear on the Graphical Tooth Chart when used with the <i>SpaceMaintainer</i> Paint Type for teeth #14-8, #9-13, #20-24, #25-29 only. </li>
+</ul>
+</li>
+<li>Sextant: Procedure requires a sextant (e.g., 5). Procedures do not display on the Graphical Tooth Chart.</li>
+<li>Arch: Procedure requires an arch (e.g., L). <ul>
+<li>Procedures appear on the Graphical Tooth Chart when used with the <i>DentureDark</i> or <i>DentureLight</i> Paint Types. </li>
+</ul>
+</li>
+<li>Tooth Range: Procedure requires a tooth range (e.g., 12-14). <ul>
+<li>Procedures appear on the Graphical Tooth Chart when used with the following recommended Paint Types: DentureDark, DentureLight, or SpaceMaintainer.</li>
+</ul>
+</li>
+<li>&amp; Tooth Range: Only available when Quad or Arch is selected. Useful for codes that have multiple treatment areas (e.g., space maintainers). <ul>
+<li>When used with Quad, appears on the Graphical Tooth Chart when used with <i>SpaceMaintainer</i> Paint Type for selected teeth.</li>
+<li>When used with Arch, appears on Graphical Tooth Chart when used with the following Paint Types: DentureDark, DentureLight, or SpaceMaintainer. <ul>
+<li>DentureDark and DentureLight shows graphic on entire arch.</li>
+<li>SpaceMaintainer shows graphic on selected teeth only.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Category</h2>
+<img src="images/procCodeCat.png" width="128" height="269"/><p><b>Category</b>: The category under which this procedure code is grouped. Customize category options in <a href="definitionsproccodecategories.html">Definitions: Proc Code Categories</a>.</p>
+<h2>Default Fees</h2>
+<p>At the upper right are fees for this procedure code for each <a href="feeschedules.html">Fee Schedule</a>.</p>
+<p>Double-click on a row to change a fee amount in the fee schedule.</p>
+<img src="images/procedureCodeEditFee.png" width="390" height="252"/><p><div class="Note">Note: Fee changes are not immediately reflected on charted (e.g., treatment planned) procedures. See <a href="feesupdate.html">Fees Update</a> for information on updating fees for treatment planned procedures. </div>
+</p>
+<h2>Additional Buttons</h2>
+<img src="images/procCodeSettingButtons.png" width="200" height="186"/><p><b>More</b>: Click to view all fees, including provider and/or clinic-specific fees.</p>
+<img src="images/procedureCodeEditMore.png" width="470" height="438"/><p><b>Audit Trail</b>: All changes made to procedure fees are tracked in the audit trail. Click to view all Fee Changes.</p>
+<img src="images/procedureCodeEditAudit.png" width="915" height="231"/><h2>Notes</h2>
+<img src="images/procCodeSettingNotes.png" width="804" height="289"/><p><b>Completed Note</b>: Default procedure note that automatically copies to the Procedure Info window, Notes field when the procedure is set complete.</p>
+<p><b>TP'd Note</b>: The default Procedure Note that automatically copies to the Procedure Info window, Notes field when a procedure is Treatment Planned. Does not work with procedures charted using the <b>Make Recall</b> button.</p>
+<p><div class="Note">Note: Use two quotes "" to remind staff to enter specific information in a note (e.g., Due Date ""). If the information is not completed, a red <i>Incomplete Note</i> warning appears above the note. To view a list of completed procedures with incomplete notes, see <a href="reportincompleteprocnote.html">Incomplete Procedure Notes Report</a>. Other examples: composite shade, crown shade, denture shade, due date, blood pressure, nitrous levels, etc. </div>
+</p>
+<p><b>Auto Note</b>: Insert an <a href="autonotes.html">Auto Note</a> template in a Completed or TP'd Note. If the <i>Procedures Prompt for Auto Note</i> preference is enabled, opening the Procedure Info window triggers any auto note prompts.</p>
+<p><b>Default Claim Note</b>: A default note that automatically copies to the Claim Note field when a claim or preauthorization is created that includes this procedure. See <a href="claimtabgeneral.html">Edit Claim - General Tab</a>.</p>
+<p class="MarginBottomZero"><b>Notes and Times for Specific Providers</b>: When specific providers have different completed or TP'd notes and/or time allotments, create a provider specific note. </p>
+<ol class="MarginBottomGap">
+<li>Click <b>Add Note</b>. <br/><img src="images/procCodeNoteEdit.png" width="699" height="510" class="ImageInParagraph"/></li>
+<li>Highlight the provider.</li>
+<li>On the left, select the procedure's time pattern for this provider, if different.</li>
+<li>Change the provider's default procedure note, if different.</li>
+<li>Click <b>OK</b> to save.</li>
+</ol>
+<p>Provider-specific notes can be deleted without affecting existing patient chart notes.</p>
+<div class="Note">Note: <a href="rightclicktextboxes.html">Right-Click</a> any note text box for additional options.</div>
+</div>
+</div>
+</body>
+</html>

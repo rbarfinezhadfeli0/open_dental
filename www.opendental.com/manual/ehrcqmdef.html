@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - EHR Clinical Quality Measure Descriptions</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('ehrcqmdef','ehrdashboard1','+chartToolbar','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/ehrcqmdef.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/ehrcqmdef.html" >v24.2</option><option value="https://www.opendental.com/manual241/ehrcqmdef.html" >v24.1</option><option value="https://www.opendental.com/manual233/ehrcqmdef.html" >v23.3</option><option value="https://www.opendental.com/manual232/ehrcqmdef.html" >v23.2</option><option value="https://www.opendental.com/manual231/ehrcqmdef.html" >v23.1</option><option value="https://www.opendental.com/manual224/ehrcqmdef.html" >v22.4</option><option value="https://www.opendental.com/manual223/ehrcqmdef.html" >v22.3</option><option value="https://www.opendental.com/manual222/ehrcqmdef.html" >v22.2</option><option value="https://www.opendental.com/manual221/ehrcqmdef.html" >v22.1</option><option value="https://www.opendental.com/manual214/ehrcqmdef.html" >v21.4</option><option value="https://www.opendental.com/manual213/ehrcqmdef.html" >v21.3</option><option value="https://www.opendental.com/manual212/ehrcqmdef.html" >v21.2</option><option value="https://www.opendental.com/manual211/ehrcqmdef.html" >v21.1</option><option value="https://www.opendental.com/manual205/ehrcqmdef.html" >v20.5</option><option value="https://www.opendental.com/manual204/ehrcqmdef.html" >v20.4</option><option value="https://www.opendental.com/manual203/ehrcqmdef.html" >v20.3</option><option value="https://www.opendental.com/manual202/ehrcqmdef.html" >v20.2</option><option value="https://www.opendental.com/manual201/ehrcqmdef.html" >v20.1</option><option value="https://www.opendental.com/manual194/ehrcqmdef.html" >v19.4</option><option value="https://www.opendental.com/manual193/ehrcqmdef.html" >v19.3</option><option value="https://www.opendental.com/manual192/ehrcqmdef.html" >v19.2</option><option value="https://www.opendental.com/manual191/ehrcqmdef.html" >v19.1</option><option value="https://www.opendental.com/manual184/ehrcqmdef.html" >v18.4</option><option value="https://www.opendental.com/manual183/ehrcqmdef.html" >v18.3</option><option value="https://www.opendental.com/manual182/ehrcqmdef.html" >v18.2</option><option value="https://www.opendental.com/manual181/ehrcqmdef.html" >v18.1</option><option value="https://www.opendental.com/manual174/ehrcqmdef.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>EHR Clinical Quality Measure Descriptions</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="ehrdashboard1.html">EHR Dashboard</a>.</p>
+<p>The nine <a href="ehrcqm.html">EHR Clinical Quality Measures</a> (CQMs) tracked and reported by Open Dental are described below. CQM denominators are based on eligible Encounters. Also see <a href="ehrcqmreport.html">EHR Report Clinical Quality Measures (CQMs)</a>.</p>
+<h2>#68 Document Current Meds</h2>
+<p>Percentage of encounters for patients aged 18 years and older for which the EP attests to documenting a list of current medications to the best of his/her knowledge and ability.</p>
+<p><b>Calculation Info:</b> Document Current Medications</p>
+<ul>
+<li>Denominator: Patients 18 or older at the start of the reporting period with an eligible encounter during the reporting period.</li>
+<li>Numerator: For each encounter, provider must attest that the patient's Medication List is current (<a href="medical.html">Medical Window</a>, Current Meds Documented). See <a href="ehrcqmcurrentmeds.html">EHR Attest Medications Documented</a>.</li>
+<li>If a valid reason <a href="ehrnotperformed.html">EHR CQMs Not Performed</a> is documented, the encounter will be excluded from the numerator and denominator.</li>
+</ul>
+<br/><h2>#69 Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up</h2>
+<p>Percentage of patients aged 18 years and older with a documented BMI during an encounter or during the previous six months, AND when the BMI is outside of normal parameters, a follow-up plan is documented during the encounter or during the previous six months of the encounter.</p>
+<p class="MarginBottomZero"><b>Calculation Info:</b> There are two BMI Screening and Follow-Up calculations based on age. </p>
+<ul class="MarginBottomGap">
+<li>Denominator <ul>
+<li>BMI Screening and Follow-Up, 65+: Patients 65 or older at the start of the reporting period with an eligible encounter during the reporting period.</li>
+<li>BMI Screening and Follow-Up, 18-64: Patients aged 18 to 64 at the start of the reporting period with an eligible encounter during the reporting period.</li>
+</ul>
+</li>
+<li>Numerator: Patients in the denominator who meet the following criteria. <ul>
+<li>Have height and weight entered (during encounter or in previous six months).</li>
+<li>If BMI is outside of normal parameters, an intervention must also be documented. See <a href="ehrinterventions.html">EHR Interventions</a>.</li>
+</ul>
+</li>
+<li>If there is a documented Exclusion from BMI exam due to pregnancy, the encounter is excluded from the calculation.</li>
+<li>If a valid Reason Not Performed is documented, the encounter is excluded from the calculation.</li>
+</ul>
+<h2>#74 Primary Caries Prevention Intervention as Offered by Primary Care Providers, including Dentists</h2>
+<p>Percentage of children, age 0-20 years, who received a fluoride varnish application during an eligible encounter in the reporting period. Calculations are divided into 4 age categories:</p>
+<p class="MarginBottomZero"><b>Calculation Info:</b> There are four Caries Prevention calculations based on age. </p>
+<ul class="MarginBottomGap">
+<li>Denominator <ul>
+<li>Caries Prevention, 0-20: Patients 0 - 19 at the start of the reporting period with an eligible encounter during the reporting period.</li>
+<li>Caries Prevention, 0-5: Patients 0 - 5 at the start of the reporting period with an eligible encounter during the reporting period.</li>
+<li>Caries Prevention, 6-12: Patients 6 - 12 at the start of the reporting period with an eligible encounter during the reporting period.</li>
+<li>Caries Prevention, 13-20: Patients 13 - 20 at the start of the reporting period with an eligible encounter during the reporting period.</li>
+</ul>
+</li>
+<li>Numerator: Patients in the denominator who have a completed fluoride procedure during the reporting period (D1208, D1206, D5986).</li>
+</ul>
+<h2>#75 Children Who Have Dental Decay or Cavities</h2>
+<p>Percentage of children, ages 0-20, who have had a diagnosis of caries with an eligible code within the reporting period.</p>
+<p><b>Calculation Info:</b> Child Dental Decay, 0-20</p>
+<ul>
+<li>Denominator: Patients 0 - 19 at the start of the reporting period with an eligible encounter during the reporting period.</li>
+<li>Numerator: Patients in the denominator who have a <a href="problemmaster.html">Problem</a> with eligible <a href="snomedct.html">SNOMED CT Codes</a> (used by CQM 75), added to their <a href="problempatient.html">Problem List</a>.</li>
+</ul>
+<br/><h2>#127 Pneumonia Vaccination Status for Older Adults</h2>
+<p>Percentage of patients 65 years of age and older, with an eligible encounter during the reporting period, who have ever received a pneumococcal vaccine. See <a href="ehrvaccine.html">EHR Vaccine Data</a></p>
+. <p><b>Calculation Info:</b> Pneumococcal Vaccination, 65+</p>
+<ul>
+<li>Denominator: Patients age 65 and older at the start of the reporting period with an eligible encounter during the reporting period.</li>
+<li>Numerator: Patients in the denominator who had a pneumococcal vaccination with qualified code administered, or a history of the vaccination documented, before or during the reporting period.</li>
+</ul>
+<br/><h2>#138 Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention</h2>
+<p>Percentage of patients aged 18 years and older who were screened for tobacco use one or more times within 24 months AND who received cessation counseling intervention if identified as a tobacco user.</p>
+<p>Calculation Info: Tobacco Cessation Intervention</p>
+<ul>
+<li>Denominator: Patients 18 or older at the start of the reporting period with an eligible encounter during the reporting period.</li>
+<li>Numerator: Patients in the denominator who meet the following criteria. <ul>
+<li>Have a smoking assessment recorded within 24 months of the reporting period end date.</li>
+<li>If assessed as a tobacco user, an Intervention for tobacco cessation is documented. See <a href="ehrinterventions.html">EHR Interventions</a>.</li>
+</ul>
+</li>
+<li>If a valid Reason Not Performed is documented, the patient will be excluded from the calculation.</li>
+</ul>
+<br/><h2>#147 Preventive Care and Screening: Influenza Immunization</h2>
+<p>Percentage of patients aged 6 months and older seen for a visit between October 1 and March 31 who received an influenza immunization OR who reported previous receipt of an influenza immunization.</p>
+<p><b>Calculation Info</b>: Influenza Immunization, 6 months+</p>
+<ul>
+<li>Denominator: Patients 6 months+ at the start of the reporting period with eligible influenza encounter between October 1 of the year before the measurement period and March 31 of the measurement period and an eligible encounter during the reporting period. </li>
+<li>Numerator: Patients in the denominator who received an influenza vaccination during the reporting period, or reported previous receipt of the vaccination during the encounter. See <a href="ehrvaccine.html">Enter Vaccine Data</a>. </li>
+<li>If a valid <a href="ehrnotperformed.html">Reason Not Performed</a> is documented, the patient will be excluded from the calculation. </li>
+</ul>
+<br/><h2>#155 Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents</h2>
+<p class="MarginBottomZero">Percentage of patients 3-17 years of age, who had eligible encounters during the reporting period, and who had evidence of the following: </p>
+<ul class="MarginBottomGap">
+<li>BMI Assessment: Height, weight, and body mass index (BMI) percentile documented. </li>
+<li>Nutritional Counseling</li>
+<li>Physical Activity Counseling</li>
+</ul>
+<p class="MarginBottomZero"><b>Calculation Info</b>: Calculations are further categorized by age (3-17, 3-11, 12-17). Patients with a documented Exclusion from BMI exam due to pregnancy are excluded. </p>
+<ul class="MarginBottomGap">
+<li>Denominators:  <ul>
+<li>For 3-17 measures: Patients 3 - 16 at the start of the reporting period with an eligible encounter during the reporting period. </li>
+<li>For 3-11 measures: Patients 3 - 11 at the start of the reporting period with an eligible encounter during the reporting period. </li>
+<li>For 12-17 measures: Patients 3 - 16 at the start of the reporting period with an eligible encounter during the reporting period. </li>
+</ul>
+</li>
+<li>Numerators: <ul>
+<li>BMI Assessment: Patients in the denominator with entries of height, weight, and BMI percentile during reporting period. See <a href="vitalsignsenter.html">Enter Vital Sign</a>s. </li>
+<li>Nutritional Counseling: Patients in the denominator who had a nutritional counseling intervention documented. </li>
+<li>Physical Activity Counseling: Patients in the denominator who had a physical activity intervention documented. </li>
+</ul>
+</li>
+</ul>
+<h2>#165 Controlling High Blood Pressure</h2>
+<p>Percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose blood pressure was adequately controlled (&lt;140/90mmHg) during the reporting period.</p>
+<p>CQM numerator affected when a hypertension Problem with an eligible SNOMED CT code (used by CQM 165) is added to the patient's Problem List.</p>
+<p><b>Calculation Info:</b> Controlling High BP</p>
+<ul>
+<li>Denominator: Patients 18-84 at the start of the reporting period with an eligible encounter during the reporting period who also have a diagnosis of hypertension in their Problem List that starts before or within the first 6 months of the start of the reporting period.</li>
+<li>Numerator: Patients in the denominator whose blood pressure was recorded during the most recent eligible encounter, and the results were diastolic &lt; 90 mmHg and systolic &lt; 140 mmHg. See Enter Vital Signs.</li>
+<li>If patient is pregnant the encounter is excluded from the calculation.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

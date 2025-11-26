@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - PT Dental Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('ptdental','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/ptdental.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/ptdental.html" >v24.2</option><option value="https://www.opendental.com/manual241/ptdental.html" >v24.1</option><option value="https://www.opendental.com/manual233/ptdental.html" >v23.3</option><option value="https://www.opendental.com/manual232/ptdental.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/ptdental.html" >v23.1</option><option value="https://www.opendental.com/manual224/ptdental.html" >v22.4</option><option value="https://www.opendental.com/manual223/ptdental.html" >v22.3</option><option value="https://www.opendental.com/manual222/ptdental.html" >v22.2</option><option value="https://www.opendental.com/manual221/ptdental.html" >v22.1</option><option value="https://www.opendental.com/manual214/ptdental.html" >v21.4</option><option value="https://www.opendental.com/manual213/ptdental.html" >v21.3</option><option value="https://www.opendental.com/manual212/ptdental.html" >v21.2</option><option value="https://www.opendental.com/manual211/ptdental.html" >v21.1</option><option value="https://www.opendental.com/manual205/ptdental.html" >v20.5</option><option value="https://www.opendental.com/manual204/ptdental.html" >v20.4</option><option value="https://www.opendental.com/manual203/ptdental.html" >v20.3</option><option value="https://www.opendental.com/manual202/ptdental.html" >v20.2</option><option value="https://www.opendental.com/manual201/ptdental.html" >v20.1</option><option value="https://www.opendental.com/manual194/ptdental.html" >v19.4</option><option value="https://www.opendental.com/manual193/ptdental.html" >v19.3</option><option value="https://www.opendental.com/manual192/ptdental.html" >v19.2</option><option value="https://www.opendental.com/manual191/ptdental.html" >v19.1</option><option value="https://www.opendental.com/manual184/ptdental.html" >v18.4</option><option value="https://www.opendental.com/manual183/ptdental.html" >v18.3</option><option value="https://www.opendental.com/manual182/ptdental.html" >v18.2</option><option value="https://www.opendental.com/manual181/ptdental.html" >v18.1</option><option value="https://www.opendental.com/manual174/ptdental.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>PT Dental Bridge</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>. Double-click on <b>PT Dental</b>.</p>
+<img src="images/bridgePTdental.png" width="778" height="598"/><p>PT Dental offers paperless technologies. Website: <a href="http://gopaperlessnow.com/">www.gopaperlessnow.com</a>. There is a functional 2-way bridge to handle Registration Forms.</p>
+<p class="MarginBottomZero">To enable the bridge for both PT Dental buttons. </p>
+<ol class="MarginBottomGap">
+<li>In the list of Program Links, double-click on both <b>PT Dental </b>and <b>PT Dental Update</b>.</li>
+<li>Check the <b>Enabled</b> box for both bridges.</li>
+<li>If using clinics, click <b>Hide Button for Clinics</b>. Select which clinics the button should display on.</li>
+<li>Click OK.</li>
+</ol>
+<p>You will now have buttons in your Family Module labeled <i>PT Dental</i> and <i>PT Dental Update</i>.</p>
+<img src="images/bridgePTdentalupdate.png" width="778" height="598"/><h2>Using PT Dental</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Create the patient in Open Dental. </li>
+<li>Click<i> PT Dental</i> to send the patient data to PT Dental. Both programs will now have the same patient data. <ul>
+<li>Also use the PT Dental button any time the patient needs opened in PT Dental.</li>
+</ul>
+</li>
+<li>If the patient fills out a form in PT Dental, whether online or in the office, certain patient data may need to be updated. This includes demographics, insurance, referral, and med alerts. Use the button in PT Dental to send this information to Open Dental.  <ul>
+<li>A message will display confirming that the transfer was successful.</li>
+</ul>
+</li>
+<li>See the newly created Commlog entry for details that couldn't be automatically transferred, such as insurance and referral.</li>
+<li>If changes are made in Open Dental which need sent to PT Dental, use the PT Update button in the Open Dental toolbar.</li>
+</ol>
+<h2>Technical Details</h2>
+<p>The data transfer involves about 6 different files, all in <b>C:\PT\USI</b>. This path is hard coded. Both PT Dental and Open Dental know which filenames to use when passing data back and forth. They also know how to watch for new files so that there is no delay. The files involved get deleted immediately after they are consumed. The Open Dental PatNum is used as the primary key in all data transfers. So any field can be changed, including last name, first name, and birthdate without confusing the synchronization functionality. Patients may use PT Dental to fill out forms in the office or online. When they do it online, PT Dental is responsible for synchronizing the data between its website and each locally installed PT Dental program. From there, the data is transferred to Open Dental. PT Dental will also provide a scripting program that simulates mouse clicks and keystrokes to interact with Open Dental.</p>
+<p>The PT Dental script attempts to open the Open Dental Referrals window for the patient. But there is no button in the user interface. So Open Dental allows a key shortcut of Ctrl-X . The script then uses this keystroke to open the Referrals window.</p>
+</div>
+</div>
+</body>
+</html>

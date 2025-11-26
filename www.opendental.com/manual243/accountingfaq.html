@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Accounting FAQ</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('accountingfaq','accounting','manage','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/accountingfaq.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/accountingfaq.html" >v24.2</option><option value="https://www.opendental.com/manual241/accountingfaq.html" >v24.1</option><option value="https://www.opendental.com/manual233/accountingfaq.html" >v23.3</option><option value="https://www.opendental.com/manual232/accountingfaq.html" >v23.2</option><option value="https://www.opendental.com/manual231/accountingfaq.html" >v23.1</option><option value="https://www.opendental.com/manual224/accountingfaq.html" >v22.4</option><option value="https://www.opendental.com/manual223/accountingfaq.html" >v22.3</option><option value="https://www.opendental.com/manual222/accountingfaq.html" >v22.2</option><option value="https://www.opendental.com/manual221/accountingfaq.html" >v22.1</option><option value="https://www.opendental.com/manual214/accountingfaq.html" >v21.4</option><option value="https://www.opendental.com/manual213/accountingfaq.html" >v21.3</option><option value="https://www.opendental.com/manual212/accountingfaq.html" >v21.2</option><option value="https://www.opendental.com/manual211/accountingfaq.html" >v21.1</option><option value="https://www.opendental.com/manual205/accountingfaq.html" >v20.5</option><option value="https://www.opendental.com/manual204/accountingfaq.html" >v20.4</option><option value="https://www.opendental.com/manual203/accountingfaq.html" >v20.3</option><option value="https://www.opendental.com/manual202/accountingfaq.html" >v20.2</option><option value="https://www.opendental.com/manual201/accountingfaq.html" >v20.1</option><option value="https://www.opendental.com/manual194/accountingfaq.html" >v19.4</option><option value="https://www.opendental.com/manual193/accountingfaq.html" >v19.3</option><option value="https://www.opendental.com/manual192/accountingfaq.html" >v19.2</option><option value="https://www.opendental.com/manual191/accountingfaq.html" >v19.1</option><option value="https://www.opendental.com/manual184/accountingfaq.html" >v18.4</option><option value="https://www.opendental.com/manual183/accountingfaq.html" >v18.3</option><option value="https://www.opendental.com/manual182/accountingfaq.html" >v18.2</option><option value="https://www.opendental.com/manual181/accountingfaq.html" >v18.1</option><option value="https://www.opendental.com/manual174/accountingfaq.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Accounting FAQ</p></div>
+<div class="GeneralPageContent">
+<p>Below are answers to frequently asked questions about the <a href="accounting.html">Accounting</a> feature in the <a href="manage.html">Manage Module</a>.</p>
+<p class="MarginBottomZero"><p><b>What do I need to do to get started?</b></p>
+</p>
+<ol class="MarginBottomGap">
+<li>Set up <i>Chart of Accounts</i>: Create at least one asset, expense, and income account. These account types are already available but you can edit, hide, delete, or add new ones.</li>
+<li>Set up automated deposit entries: Assign deposits to an asset and income account so that when a <a href="depositslip.html">Deposit Slip</a> is created, an entry is made into both the asset account (e.g., checking account) to balance your bank account and income account to keep track of the income total.</li>
+<li>Set up automated payment entries: Assign specific payment types that do not use deposit slips (e.g., cash payments, patient refunds) to an asset and income account so when these payment types are created an entry is made into both the asset account and income account.</li>
+</ol>
+<p>For detailed instructions, see <a href="accountingsetup.html">Accounting Setup</a>.</p>
+<p><b>What are<i> Automatic Payment Entries</i> for on the Setup Accounting window?</b></p>
+<p>It is commonly used for cash payments from patients or patient refunds. When you click Add, you will be prompted to select a payment type and add accounts where the cash will be deposited. We recommend using a second asset account such as Cash Box. Also, select an income account so the transactions are included when tracking total income.</p>
+<p><div class="Note">Note: <ul>
+<li>Cash Box accounts should be treated like checking accounts. All money going in and out must be recorded as a deposit to another account or as an expense. If not automatically added, manually enter the accounting transaction in the Cash Box account.</li>
+<li>A checking account does not make sense as a deposit account since each entry in a checking account is reconciled with a transaction recorded by the bank.</li>
+</ul>
+</div>
+</p>
+<p><b>How are deposits assigned to an account?</b></p>
+<p>When you create a new deposit, the account that will receive the deposit is listed under Deposit into Account on the Edit Deposit Slip window. The default account is the first one listed for <i>Automatic Deposit Entries</i>. You can also manually create a deposit if the income received is not from a patient.</p>
+<p><b>How do I enter a transaction for a payment (e.g., utility payments, rent)? </b></p>
+<p class="MarginBottomZero">We recommend entering a negative payment from an asset account like a checking account. It is easier to remember that a negative number here deducts from your asset account balance. If you instead enter the payment from an expense account, the payment amount should always be positive since it adds to the expense total. </p>
+<ol class="MarginBottomGap">
+<li>Double-click the account to open it.</li>
+<li>Click Add.</li>
+<li>Enter the payment (as a negative number from an asset account, or as a positive number from an expense account).</li>
+</ol>
+<p>See <a href="transactionhistory.html">Accounting Transactions</a>.</p>
+<p><b>How do I account for a patient refund?</b></p>
+<p>Patient refunds are entered as a negative patient payment. Create a patient refund payment type (see <a href="definitionspaymenttypes.html">Definitions: Payment Types</a>) and set up Automatic Payment Entries for the refund type. Every time a refund payment is created, an accounting entry will automatically be made into the assigned asset and income account. If no Automatic Payment Entries are created for the payment type, manually create an entry in credit entry in the asset account (e.g., checking account) and split the entry to an income account (e.g., patient income).</p>
+<p><b>When do I need to create a manual deposit entry (DEP)?</b></p>
+<p>When you receive income from a non-patient source (e.g., a vendor refund). Manually create a deposit entry in the asset account and split to an account that makes sense for the payment source.</p>
+</div>
+</div>
+</body>
+</html>

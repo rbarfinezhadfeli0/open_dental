@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Middle Tier Installation</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('middletierinstallation','middletier','advancedtopics','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/middletierinstallation.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/middletierinstallation.html" >v24.2</option><option value="https://www.opendental.com/manual241/middletierinstallation.html" >v24.1</option><option value="https://www.opendental.com/manual233/middletierinstallation.html" >v23.3</option><option value="https://www.opendental.com/manual232/middletierinstallation.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/middletierinstallation.html" >v23.1</option><option value="https://www.opendental.com/manual224/middletierinstallation.html" >v22.4</option><option value="https://www.opendental.com/manual223/middletierinstallation.html" >v22.3</option><option value="https://www.opendental.com/manual222/middletierinstallation.html" >v22.2</option><option value="https://www.opendental.com/manual221/middletierinstallation.html" >v22.1</option><option value="https://www.opendental.com/manual214/middletierinstallation.html" >v21.4</option><option value="https://www.opendental.com/manual213/middletierinstallation.html" >v21.3</option><option value="https://www.opendental.com/manual212/middletierinstallation.html" >v21.2</option><option value="https://www.opendental.com/manual211/middletierinstallation.html" >v21.1</option><option value="https://www.opendental.com/manual205/middletierinstallation.html" >v20.5</option><option value="https://www.opendental.com/manual204/middletierinstallation.html" >v20.4</option><option value="https://www.opendental.com/manual203/middletierinstallation.html" >v20.3</option><option value="https://www.opendental.com/manual202/middletierinstallation.html" >v20.2</option><option value="https://www.opendental.com/manual201/middletierinstallation.html" >v20.1</option><option value="https://www.opendental.com/manual194/middletierinstallation.html" >v19.4</option><option value="https://www.opendental.com/manual193/middletierinstallation.html" >v19.3</option><option value="https://www.opendental.com/manual192/middletierinstallation.html" >v19.2</option><option value="https://www.opendental.com/manual191/middletierinstallation.html" >v19.1</option><option value="https://www.opendental.com/manual184/middletierinstallation.html" >v18.4</option><option value="https://www.opendental.com/manual183/middletierinstallation.html" >v18.3</option><option value="https://www.opendental.com/manual182/middletierinstallation.html" >v18.2</option><option value="https://www.opendental.com/manual181/middletierinstallation.html" >v18.1</option><option value="https://www.opendental.com/manual174/middletierinstallation.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Middle Tier Installation</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="middletier.html">Middle Tier</a>.</p>
+<p>Follow the steps below to install Middle Tier for your office.</p>
+<h2>Check Before Setup</h2>
+<p>You will need to install and perform updates directly from the Middle Tier server. Any attempt to perform an update from another computer will give the user an error message. If you are also using the <a href="hl7.html">HL7</a> Service, refer to <a href="update.html">Update</a>.</p>
+<p class="MarginBottomZero">These items must be checked before you begin setting up Middle Tier. </p>
+<ul class="MarginBottomGap">
+<li>Locate the OpenDentImages folder (e.g.<b>\\MyServer\OpenDentImages\</b>), then run Setup.exe. This ensures all the correct libraries and folders are installed.</li>
+<li>Ensure that Open Dental can connect to the production database on the selected Middle Tier server.</li>
+<li>Make sure all Open Dental Users that will be connecting through Middle Tier have a <a href="changepassword.html">Password</a> created.</li>
+<li>In the production database, click Setup, Miscellaneous. Change the Update Server Name to match the Middle Tier server.</li>
+<li>See <a href="securitymysql.html">MySQL Security</a> if you require strong MySQL security.</li>
+</ul>
+<h2>Installation</h2>
+<p>Performed directly on the Middle Tier server. Log in as an administrative user.</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Download this file (right-click, Save As): <a href="../resources/OpenDentalServerConfig.xml" download>OpenDentalServerConfig.xml</a>, and place it in the application directory of Open Dental on the Middle Tier server. Edit the file to set the users and passwords. <br/><img src="images/webserviceconfig.gif" width="523" height="235" class="ImageInParagraph"/><p>If you do not have MySQL users/passwords set up, use root for the User and leave the password blank.</p>
+<p>To enable running reports through Middle Tier, you must also enter MySQL user credentials in the <i>UserLow</i> and <i>PasswordLow</i> sections. See <a href="securitymysql.html">MySQL Security</a> for instructions on creating a MySQL <i>read-only</i> user account for this purpose. If a read only user account is not needed, the root user can be used.</p>
+</li>
+<li>(Skip this step if you are using Windows Server Web Edition.) Open the Server Manager to enable the Internet Information Services (IIS) features exactly as shown in the next images. If you are a power user, select the IIS features you need. If using Windows Server 2008 or below turn on IIS properties through the Windows Features menu.<br/><ul>
+<li>a. Navigate to the Manage menu and select <i>Add Roles and Features</i>. <img src="images/mtServerManager.PNG" width="915" height="723"/><br/><div class="Note">Note: A server restart may be required after adding the IIS features to install more necessary features.</div>
+</li>
+<li>b. Select Role-based or feature-based installation. <img src="images/mtRoleBased.gif" width="786" height="370"/></li>
+<li>c. Ensure the information selected is accurate and valid. If yes, then click <b>Next</b>. <img src="images/mtSelectDestination.png" width="786" height="434"/></li>
+<li>d. Ensure that all aspects of IIS, ASP.net, and DotNet are selected within the Web Server (IIS) selection (Please see below image for exact roles to add).  <img src="images/mtServerRoles.png" width="915" height="702"/></li>
+<li>e. Verify that .Net 3.5 and 4.6 features are selected.  <img src="images/mtNet.png" width="915" height="317"/></li>
+<li>f. Confirm the selections and press <b>Install</b>. <img src="images/mtConfirm.png" width="786" height="499"/></li>
+<li>g. Wait for the installation for finish (server may require a restart for changes to take place) and continue the Middle Tier Setup</li>
+</ul>
+</li>
+<li>Open the IIS Management Console: <ul>
+<li>a. Right-click on My Computer, Manage.</li>
+<li>b. On Windows Server Web, click Roles, Web Service Name, Internet Information Services. Do not use the second IIS option further down for the older IIS 6.0.</li>
+<li>c. Expand Connections and click Application Pools. <br/><img src="images/iisManagement.gif" width="910" height="436" class="ImageInParagraph"/></li>
+<li>d. Right-click DefaultAppPool, Advanced Settings. <br/><img src="images/appPoolAdvSettings.gif" width="377" height="293" class="ImageInParagraph"/></li>
+<li>e. Ensure the .NET CLR Version is 4.0 and Enable 32-Bit Applications is True.</li>
+<li>f. Click OK.</li>
+</ul>
+</li>
+<li>In Connections, right-click Default Website, Add Application. <br/><img src="images/websiteAdd.gif" width="519" height="386" class="ImageInParagraph"/><br/> The Alias determines how you refer to the connection in your URI. This can be anything, but the physical path needs to point to the Open Dental application folder.</li>
+<li>(Skip this step if English U.S. is your culture setting on all servers and workstations). If using foreign languages on your clients, you must set the language on the server to be the same. <ul>
+<li>a. Click on OpenDentalServer, then double click .NET Globalization. <br/><img src="images/middletierOpenDentalServer.gif" width="908" height="395" class="ImageInParagraph"/></li>
+<li>b. Set the Culture and UI Culture languages to match your region. <br/><img src="images/middletierNetGlobalization.gif" width="908" height="493" class="ImageInParagraph"/></li>
+</ul>
+</li>
+<li>Open the IIS Manager and select the OpenDentalServer site in the object browser.</li>
+<li>Double-click on the Configuration Editor.<br/><img src="images/IISConfig1.PNG" width="915" height="819" class="ImageInParagraph"/></li>
+<li>Use the Section drop down at the top of the Configuration Editor to select the <i>system.web/httpRuntime</i> section<br/><img src="images/IISConfig2.PNG" width="915" height="669" class="ImageInParagraph"/></li>
+<li>Modify the maxRequestLength attribute and click <b>Apply</b> on the right.<br/><div class="Note">Note: The maxRequestLength value is in kilobytes while the maxAllowedContentLength is in bytes.</div>
+<br/><img src="images/IISConfig3.PNG" width="915" height="606" class="ImageInParagraph"/></li>
+<li>Use the Section drop down at the top of the Configuration Editor to select the <i>system.webServer/security/requestFiltering</i> section. <br/><img src="images/IISConfig4.PNG" width="915" height="668" class="ImageInParagraph"/></li>
+<li>Expand the requestLimits attribute, modify the maxAllowedContentLength value, and click <b>Apply</b> on the right.<br/><img src="images/IISConfig5.PNG" width="915" height="608" class="ImageInParagraph"/></li>
+<div class="Note">Note: After making these edits it may be necessary to restart the site by selecting the server name in the object browser on the left and selecting Restart under the Manage Website section on the right.</div>
+<li>When connecting from a client workstation, the Choose Database window will look similar to this. Test this on the server first, then on workstations. <br/><img src="images/chooseDatabaseServer.gif" width="718" height="606" class="ImageInParagraph"/><ul>
+<li>Enter the <b>URI</b>. If you are unsure what to use for your URI, see What is my URI? in Troubleshooting below.</li>
+<li>Enter the log on credentials, <b>Open Dental User (not MySQL user)</b> and <b>Password</b>, of the user logging in.</li>
+<li>Check <b>Log me in automatically</b> to allow users to automatically log on using their associated Windows user. See, Single Sign-on below.</li>
+</ul>
+<br/><p>The above connections settings will be used from other workstations, but not from the Middle Tier server. After the initial testing, the upper direct connection settings will be used anytime you are on the server. This is required in order to perform version updates.</p>
+</li>
+<li>When you run Open Dental as Administrator and connect via Middle Tier, you should have a FreeDentalConfig file in your application folder similar to the image below. This file should replace the existing .xml file on all your workstations. <br/><img src="images/midtierFreeDentConfig.gif" width="626" height="253" class="ImageInParagraph"/></li>
+</ol>
+<h2>Additional Setup Options</h2>
+<p><a href="proxyserver.html">Proxy Server</a></p>
+<p><a href="middletiersecuritycert.html">Middle Tier Security Certificate</a> (Middle Tier across internet)</p>
+<p><a href="hostmultipledatabases.html">Host Multiple Databases from One Web Server</a></p>
+<h2>Single Sign-on</h2>
+<p>Set up single sign-on to allow users to automatically log into Open Dental. </p>
+<p class="MarginBottomZero"><b>To enable</b>: </p>
+<ol class="MarginBottomGap">
+<li>Launch Open Dental.</li>
+<li>In the Choose Database window, enter the Open Dental user name and password.</li>
+<li>Check<i> Log me in automatically</i>.</li>
+<li>Click OK to save.</li>
+</ol>
+<p>The FreeDentalConfig file will store the state of the Log me in automatically check box and the credentials will be stored within the Credential Manager. See Technical Details below for more information. </p>
+<p class="MarginBottomZero"><b>To disable</b> (requires the <i>Choose Database</i>, <a href="permissions.html">Permissions</a>): </p>
+<ol class="MarginBottomGap">
+<li>Launch Open Dental.</li>
+<li>In the <a href="mainmenu.html">Main Menu</a> select File, Choose Database to open the Choose Database window.</li>
+<li>Uncheck Log me in automatically.</li>
+<li>Click OK to save.</li>
+</ol>
+<p>The FreeDentalConfig file will store the state of the Log me in automatically check box and the user will be prompted to enter their user name and password the next time Open Dental is launched. </p>
+<p class="MarginBottomZero">If the user does not have security permissions, disable single sign-on in the FreeDentalConfig file: </p>
+<ol class="MarginBottomGap">
+<li>Navigate to the Open Dental directory, typically <b>C:\Program Files (x86)\Open Dental</b>.</li>
+<li>Right-click the FreeDentalConfig file and select Edit or Open With and select Notepad.</li>
+<li>Look for <span class="codeblock">&lt;UsingAutoLogin&gt;True&lt;/UsingAutoLogin&gt;</span> and replace True with False.</li>
+<li>Save the file.</li>
+</ol>
+<p>The next time the user launches Open Dental, they will be prompted to enter their user name and password.</p>
+<h2>Technical Details</h2>
+<p>When using the single sign on feature via Middle Tier Open Dental makes use of the Credential Manager that comes natively to all Windows 8 and higher versions. The Credential Manager was designed by Microsoft for 3rd party app developers on the Windows Store. This created a uniform and secure place for Microsoft app developers to store user credentials and passwords. The information entered in to the Credential Manager requires a user sign in to access and takes care of all encryption. As such the user should not remove the Credential Manager entry that Open Dental has made or else the feature will no longer work.</p>
+<p>The Windows user currently logged in must have read and write permissions to the FreeDentalConfig file in order to enable single sign-on. Do not right-click on the Open Dental shortcut on the Desktop and run as administrator if the Windows user currently logged in does not have elevated privileges. Windows will prompt for administrator credentials when the user does not have sufficient privileges. Entering another user's credentials will cause the Open Dental credentials entered into the Choose Database window to be stored under the other user's Credential Manager and single sign-on may not work as expected. </p>
+<p>Also see <a href="middletiertroubleshooting.html">Middle Tier Troubleshooting</a></p>
+</div>
+</div>
+</body>
+</html>

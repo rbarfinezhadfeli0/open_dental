@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Procedure Button Edit</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('procedurebuttonedit','procedurebuttons','+chart','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/procedurebuttonedit.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/procedurebuttonedit.html" >v24.2</option><option value="https://www.opendental.com/manual241/procedurebuttonedit.html" >v24.1</option><option value="https://www.opendental.com/manual233/procedurebuttonedit.html" >v23.3</option><option value="https://www.opendental.com/manual232/procedurebuttonedit.html" >v23.2</option><option value="https://www.opendental.com/manual231/procedurebuttonedit.html" >v23.1</option><option value="https://www.opendental.com/manual224/procedurebuttonedit.html" >v22.4</option><option value="https://www.opendental.com/manual223/procedurebuttonedit.html" >v22.3</option><option value="https://www.opendental.com/manual222/procedurebuttonedit.html" >v22.2</option><option value="https://www.opendental.com/manual221/procedurebuttonedit.html" >v22.1</option><option value="https://www.opendental.com/manual214/procedurebuttonedit.html" >v21.4</option><option value="https://www.opendental.com/manual213/procedurebuttonedit.html" >v21.3</option><option value="https://www.opendental.com/manual212/procedurebuttonedit.html" >v21.2</option><option value="https://www.opendental.com/manual211/procedurebuttonedit.html" >v21.1</option><option value="https://www.opendental.com/manual205/procedurebuttonedit.html" >v20.5</option><option value="https://www.opendental.com/manual204/procedurebuttonedit.html" >v20.4</option><option value="https://www.opendental.com/manual203/procedurebuttonedit.html" >v20.3</option><option value="https://www.opendental.com/manual202/procedurebuttonedit.html" >v20.2</option><option value="https://www.opendental.com/manual201/procedurebuttonedit.html" >v20.1</option><option value="https://www.opendental.com/manual194/procedurebuttonedit.html" >v19.4</option><option value="https://www.opendental.com/manual193/procedurebuttonedit.html" >v19.3</option><option value="https://www.opendental.com/manual192/procedurebuttonedit.html" >v19.2</option><option value="https://www.opendental.com/manual191/procedurebuttonedit.html" >v19.1</option><option value="https://www.opendental.com/manual184/procedurebuttonedit.html" >v18.4</option><option value="https://www.opendental.com/manual183/procedurebuttonedit.html" >v18.3</option><option value="https://www.opendental.com/manual182/procedurebuttonedit.html" >v18.2</option><option value="https://www.opendental.com/manual181/procedurebuttonedit.html" >v18.1</option><option value="https://www.opendental.com/manual174/procedurebuttonedit.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Procedure Button Edit</p></div>
+<div class="GeneralPageContent">
+<p>Set up procedure buttons to quickly chart a group of procedures.</p>
+<p>In <a href="procedurebuttons.html">Procedure Buttons</a>, select a category. Double-click an existing procedure button.</p>
+<img src="images/procButtonEdit.png" width="806" height="582"/><p>Alternatively, in the Procedure Buttons window, select a category, then click<b> Add </b> to create a new procedure button.</p>
+<p>Default procedure buttons are created using <a href="procedurecodetools.html">Procedure Code Tools</a>. To restore to the defaults, run this tool again.</p>
+<p class="MarginBottomZero">Enter general button information: </p>
+<ul class="MarginBottomGap">
+<li><b>Description</b>: The button name.</li>
+<li><b>Category</b>: Click the dropdown to select the button category.</li>
+<li><b>Image (20x20)</b>: Select an image to associate with the button. The current image appears to the right of the field. There are three options: <ul>
+<li>Pick an <b>image from the list</b> on the right.</li>
+<li>Click <b>Import</b> to select an image file on your computer. Images must be 20x20 pixels. </li>
+<li>Click <b>Clear </b>to remove the current image.</li>
+</ul>
+</li>
+<li><b>Group for multiple visits</b>: Check this box if the procedures on this button should be grouped for multiple visits (e.g., crowns). When procedures are grouped, completed procedures will show as a status of Complete (In Process) until all other procedures in the group are completed as well.</li>
+<li><b>Add Procedure Codes</b>: Associate procedures with this button.  <ul>
+<li>Click <b>Add</b> to add a new code from the Procedure Code List. </li>
+<li>Click <b>Delete</b> to remove a code.</li>
+<li>Use the <b>Up</b> and <b>Down </b>arrows to organize procedure codes for easier viewing.</li>
+</ul>
+</li>
+<li><b>Highlight Auto Codes</b>: Select auto codes to associate with this button. To select multiple auto codes, press Ctrl and click on the codes to highlight. </li>
+</ul>
+<p><div class="Note">Note: A combination of Procedure Codes and Auto Codes can be added to a button, however if a code is already associated to an auto code, do not also add the procedure (or vice versa) as the procedure will be charted twice.</div>
+</p>
+<p>Click OK to save the procedure button. </p>
+<h2>Procedure button logic</h2>
+<p>When entering treatment, you can select multiple teeth before clicking a procedure button. The program will loop through each tooth and repeat the logic.</p>
+<p class="MarginBottomZero">For example, set up a bridge procedure button: </p>
+<ul class="MarginBottomGap">
+<li>Select one non-ADA code for a bridge seat.</li>
+<li>Set an area type of tooth range.</li>
+<li>Select one auto code for bridge with two alternatives: assign a pontic code for missing teeth, assign a retainer code for other teeth.</li>
+</ul>
+<p class="MarginBottomZero">In the patient's chart: </p>
+<ul>
+<li>Mark the pontic tooth as an existing extraction as described in Missing Teeth.</li>
+<li>Select all three teeth involved in the bridge and click the bridge procedure button.</li>
+</ul>
+<p class="MarginBottomGap"> Since the bridge seat is a tooth range, the program will know to not add it three times to the chart, but only once with all three tooth numbers selected.</p>
+<h2>Quadrants</h2>
+<p>Procedure buttons can be used to create four procedures, each with a different quadrant. To trigger this behavior, enter four of the exact same code to the Add Procedure Codes list (e.g., D4341, D4341, D4341, D4341). To use, click the procedure button with no tooth selected. The codes are charted starting with UR quadrant and ending with LR quadrant (i.e., UR, UL, LL, LR). If there are more than four procedures assigned to the Procedure Button with a Treatment Area of quad, this will cycle through to the start again (i.e., UR) until the last procedure is charted. If different procedure codes are assigned to the Procedure Button, procedures are charted and assigned treatment area in the order they are listed. </p>
+<p>There is no support for a procedure button to create a procedure with a specified quadrant. Instead, the quadrant is assigned based on the tooth selected when the button is clicked. If no tooth is selected, single procedure defaults to UR. To trigger this behavior, enter one code to the Add Procedure Codes list (e.g., D4341). To use, select a tooth in one or more quadrants and click the procedure button. The procedure is charted for all selected quadrants (e.g., if teeth 6 and 14 are selected the procedure is charted in quadrants UL and UR).</p>
+<p>Quick Buttons can be created for a SRP as well (see Quick Buttons above). Create a quick button with SRP in the title, enter D4341 as the code, leave the Surface field blank and click OK. Then select a tooth in the specific quadrant and click the Quick Button. If a tooth is selected in all four quadrants, a separate SRP procedure is charted for all four quadrants.</p>
+</div>
+</div>
+</body>
+</html>

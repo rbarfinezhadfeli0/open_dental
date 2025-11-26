@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Insurance Remaining Calculations</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('insremainingcalc','treatmentplan','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/insremainingcalc.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/insremainingcalc.html" >v24.2</option><option value="https://www.opendental.com/manual241/insremainingcalc.html" >v24.1</option><option value="https://www.opendental.com/manual233/insremainingcalc.html" >v23.3</option><option value="https://www.opendental.com/manual232/insremainingcalc.html" >v23.2</option><option value="https://www.opendental.com/manual231/insremainingcalc.html" >v23.1</option><option value="https://www.opendental.com/manual224/insremainingcalc.html" >v22.4</option><option value="https://www.opendental.com/manual223/insremainingcalc.html" >v22.3</option><option value="https://www.opendental.com/manual222/insremainingcalc.html" >v22.2</option><option value="https://www.opendental.com/manual221/insremainingcalc.html" >v22.1</option><option value="https://www.opendental.com/manual214/insremainingcalc.html" >v21.4</option><option value="https://www.opendental.com/manual213/insremainingcalc.html" >v21.3</option><option value="https://www.opendental.com/manual212/insremainingcalc.html" >v21.2</option><option value="https://www.opendental.com/manual211/insremainingcalc.html" >v21.1</option><option value="https://www.opendental.com/manual205/insremainingcalc.html" >v20.5</option><option value="https://www.opendental.com/manual204/insremainingcalc.html" >v20.4</option><option value="https://www.opendental.com/manual203/insremainingcalc.html" >v20.3</option><option value="https://www.opendental.com/manual202/insremainingcalc.html" >v20.2</option><option value="https://www.opendental.com/manual201/insremainingcalc.html" >v20.1</option><option value="https://www.opendental.com/manual194/insremainingcalc.html" >v19.4</option><option value="https://www.opendental.com/manual193/insremainingcalc.html" >v19.3</option><option value="https://www.opendental.com/manual192/insremainingcalc.html" >v19.2</option><option value="https://www.opendental.com/manual191/insremainingcalc.html" >v19.1</option><option value="https://www.opendental.com/manual184/insremainingcalc.html" >v18.4</option><option value="https://www.opendental.com/manual183/insremainingcalc.html" >v18.3</option><option value="https://www.opendental.com/manual182/insremainingcalc.html" >v18.2</option><option value="https://www.opendental.com/manual181/insremainingcalc.html" >v18.1</option><option value="https://www.opendental.com/manual174/insremainingcalc.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Insurance Remaining Calculations</p></div>
+<div class="GeneralPageContent">
+<p>Open Dental uses the following logic to calculate insurance remaining estimates.</p>
+<p>In the <a href="treatmentplan.html">Treatment Plan Module</a>, at the lower right, is the Insurance Remaining grid.</p>
+<img src="images/accountInsUsed.png" width="201" height="247"/><p>Alternatively, in the <a href="account.html">Account Module</a> hover over Ins Rem.</p>
+<p>Calculations consider the<i> Estimates as of date</i>. By default, this is the current day, so benefits used and pending for the current benefit year are considered.</p>
+<h2>Primary/Secondary</h2>
+<p><b>Primary</b>: Calculations for the first (primary) insurance plan listed in the Family Module (order of 1).</p>
+<p><b>Secondary</b>: Calculations for the secondary insurance plan listed in the Family Module (order of 2).</p>
+<p>If a patient has additional (e.g. tertiary) or medical insurance, these are not displayed in the insurance remaining. Open Dental will still consider insurance benefits used for these plans when calculating procedure estimates. </p>
+<p>Procedure estimates are found on the <a href="procedurefinancial.html">Procedure - Financial Tab</a>.</p>
+<h2>Family Insurance</h2>
+<p><b>Annual Max</b>: The family's annual maximum. Usually this value is entered in the Family column, Annual Max field on the <a href="benefitinfo.html">Benefits</a> Window. </p>
+<p><img src="images/insRemFamMax.png" width="233" height="61"/></p>
+<p class="MarginBottomZero"><a href="otherbenefits.html">Other Benefits</a> matching the following criteria are considered: </p>
+<ul class="MarginBottomGap">
+<li>Category: None or General</li>
+<li>Proc Code: None (blank)</li>
+<li>Type: Limitation</li>
+<li>Time Period: CalendarYear or ServiceYear</li>
+<li>Quantity: 0</li>
+<li>Qualifier: None</li>
+<li>Coverage Level: Family</li>
+<li>Treatment Area: Default</li>
+</ul>
+<p><b>Fam Ded</b>: The family's general deductible. Usually this value is entered in the Family column, General Deductible field on the Edit Benefits window - Simplified View. </p>
+<p><img src="images/insRemFamDeductible.png" width="233" height="61"/></p>
+<p class="MarginBottomZero">When entered as an Other Benefit, it corresponds to the benefit that matches the following criteria: </p>
+<ul class="MarginBottomGap">
+<li>Category: None or General</li>
+<li>Proc Code: None (blank)</li>
+<li>Type: Deductible</li>
+<li>Time Period: CalendarYear or ServiceYear</li>
+<li>Quantity: 0</li>
+<li>Qualifier: None</li>
+<li>Coverage Level: Family</li>
+<li>Treatment Area: Default</li>
+</ul>
+<h2>Individual Insurance</h2>
+<p><b>Annual Max</b>: The patient's annual maximum. Usually this value is entered in the Individual column, Annual Max field on the Edit Benefits window - Simplified View. </p>
+<p><img src="images/insRemIndivMax.png" width="233" height="61"/></p>
+<p class="MarginBottomZero">Other benefits matching the following criteria will also be considered: </p>
+<ul class="MarginBottomGap">
+<li>Category: None or General</li>
+<li>Proc Code: None (blank)</li>
+<li>Type: Limitation</li>
+<li>Time Period: CalendarYear or ServiceYear</li>
+<li>Quantity: 0</li>
+<li>Qualifier: None</li>
+<li>Coverage Level: Individual</li>
+<li>Treatment Area: Default</li>
+</ul>
+<p><b>Deductible</b>: The patient's general deductible. Usually this value is entered in the Individual column, General Deductible field on the Edit Benefits window - Simplified View. </p>
+<p><img src="images/insRemIndivDeductible.png" width="233" height="61"/></p>
+<p class="MarginBottomZero">Other benefits matching the following criteria will also be considered: </p>
+<ul class="MarginBottomGap">
+<li>Category: None or General</li>
+<li>Proc Code: None (blank)</li>
+<li>Type: Deductible</li>
+<li>Time Period: CalendarYear or ServiceYear</li>
+<li>Quantity: 0</li>
+<li>Qualifier: None</li>
+<li>Coverage Level: Individual</li>
+<li>Treatment Area: Default</li>
+</ul>
+<p><b>Ded Remai</b>: The remaining deductible (family or individual) for the current benefit year. </p>
+<img src="images/insRemDeductibleRem.png" width="185" height="27"/><p>The lowest of the two amounts shows. Only claim procedures with status of <i>Adjustment</i>, <i>NotReceived</i>, <i>Received</i>, and <i>Supplemental</i> are considered. Each calculation is shown below.<p class="codeblock">Fam Ded - (all deductibles applied to any family member) = family Ded Remain</p><p class="codeblock">Deductible - (all deductibles applied to the current patient) = individual Ded Remain</p></p>
+<p><b>Ins Used</b>: The patient's total insurance used for the current benefit year. </p>
+<img src="images/insRemInsUsed.png" width="171" height="25"/><p>Only Claim Procedures with status of <i>Adjustment</i>, <i>NotReceived</i>, <i>Received</i>, and <i>Supplemental</i> are considered. <a href="adjinsbenefits.html">Adjustments to Insurance Benefits</a> are also considered. </p>
+<p><b>Pending</b>: The patient's total amount of pending insurance. </p>
+<img src="images/insRemPending.png" width="167" height="25"/><p>Only claim procedures with status <i>NotReceived</i> are considered. </p>
+<p><b>Remain</b>: The patient's remaining insurance amount.</p>
+<img src="images/insRemRemain.png" width="166" height="25"/><p> The calculation is:<p class="codeblock">Individual Annual Max - (Ins Used + Pending) = Remaining</p></p>
+<h2>Troubleshooting</h2>
+<p><b>The annual max I have entered for an insurance plan is not displaying.</b></p>
+<p class="MarginBottomZero">There are a few reasons the annual max may not be displaying.  </p>
+<ul>
+<li>If the Annual Max was entered as an Other Benefit it may not have been entered correctly. Ensure the benefit entered matches the correct criteria for Family or Individual (see above). Alternatively, enter the Annual Max into the fixed row in the Benefits, Simplified View instead.</li>
+<li>If no benefit matches the criteria for Annual Max, the box is blank. If multiple benefits meet the criteria (e.g., annual maximums for specific categories), the lowest amount shows. To prevent the annual max from being lower than it should be, annual maximum for specific procedures or categories should be attached to the appropriate procedure code or category.</li>
+</ul>
+<p class="MarginBottomGap"><p><b>A procedure is not counting toward the Ins Used or Pending. </b></p>
+ A separate annual max or lifetime max may exist for the procedure's Insurance Category or the individual procedure.</p>
+<p class="MarginBottomZero">If a benefit meets the following criteria, it does not count towards Ins Used or Pending: </p>
+<ul class="MarginBottomGap">
+<li>Category: Any category other than General OR None with a Proc Code</li>
+<li>Proc Code: If category is None, any procedure code</li>
+<li>Type: Limitation</li>
+<li>Time Period: CalendarYear, ServiceYear, or Lifetime</li>
+<li>Quantity: 0</li>
+<li>Qualifier: None</li>
+<li>Coverage Level: Family or Individual</li>
+<li>Treatment Area: Default</li>
+</ul>
+<p>Example: If a patient's insurance has an ortho lifetime max, benefits paid toward ortho treatment do not count towards Ins Used or Pending calculations.</p>
+<p>Alternatively, verify a claim has been created for the procedure. Only procedures with a status of Received are considered for Ins Used and only procedures with a status of <i>NotRecieved</i> are considered for Pending.</p>
+<p><b>The deductible I have entered is not displaying in the Insurance Remaining grid.</b></p>
+<p class="MarginBottomZero">There are a few reasons the annual max may not be displaying.  </p>
+<ul class="MarginBottomGap">
+<li>If the deductible was entered as an Other Benefit it may not have been entered correctly. Ensure the benefit entered matches the correct criteria for Family or Individual (see above). Alternatively, enter the deductible into the fixed row in the Benefits, Simplified View instead.</li>
+<li>If no benefit matches the criteria for Deductible, the box is blank. If multiple benefits meet the criteria (e.g., general deductibles for specific categories), the deductible entered first shows. To prevent the incorrect general deductible from being calculated, deductibles for specific categories or procedures should be attached to the specific category or procedure code.</li>
+</ul>
+<p><b>The patient has paid all or part of their deductible, but it is not being counted toward<i> Ded Remai</i> in the Insurance Remaining grid.</b></p>
+<p>The deductible amount paid must be entered into a claim or, if paid outside of your office, as an Adjustment to Insurance Benefits, otherwise it will not be calculated.</p>
+<p><b>Insurance remaining calculations are not calculating as expected after editing Insurance Categories.</b></p>
+<p><a href="inscatssetup.html">Insurance Categories</a> are set up based on typical groupings and generally do not need to be edited. If the E-Benefit Category assigned to an Insurance Category is changed, this can affect insurance estimates and Insurance Remaining calculations. The General E-Benefits Category is used to calculate Annual Max. This is normally the General insurance category (D0000-D7999 and D9000-D9999), but if the E-Benefits Category has been reassigned to a different insurance category, insurance remaining calculations may not function as expected.</p>
+<p><b>Insurance Remaining Calculations are incorrect after adding back an insurance plan that was dropped.</b></p>
+<p class="MarginBottomZero">If an insurance plan is dropped and a duplicate insurance plan is added back, <i>Ins Used</i> and <i>Pending</i> appear to show incorrect amounts if the dropped plan was associated with any paid or pending claims in the current benefit period. This is because claims associated with the dropped plan are not used in the calculations. To adjust the amounts, follow these steps. </p>
+<ol class="MarginBottomGap">
+<li>For the new plan, add Adjustments to Insurance Benefits on the Edit Insurance Plan window. Enter the total insurance that has been paid to date, and the total deductible that has been used.</li>
+<li>In the Account Module, review all sent claims and collect data for any claims attached to the dropped plan that are still outstanding.</li>
+<li>Delete outstanding claims attached to the dropped plan.</li>
+<li>Recreate the claims for the new plan. </li>
+</ol>
+</div>
+</div>
+</body>
+</html>

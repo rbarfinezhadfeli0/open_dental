@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Display Fields</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('displayfields','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/displayfields.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/displayfields.html" >v24.2</option><option value="https://www.opendental.com/manual241/displayfields.html" >v24.1</option><option value="https://www.opendental.com/manual233/displayfields.html" >v23.3</option><option value="https://www.opendental.com/manual232/displayfields.html" >v23.2</option><option value="https://www.opendental.com/manual231/displayfields.html" >v23.1</option><option value="https://www.opendental.com/manual224/displayfields.html" >v22.4</option><option value="https://www.opendental.com/manual223/displayfields.html" >v22.3</option><option value="https://www.opendental.com/manual222/displayfields.html" >v22.2</option><option value="https://www.opendental.com/manual221/displayfields.html" >v22.1</option><option value="https://www.opendental.com/manual214/displayfields.html" >v21.4</option><option value="https://www.opendental.com/manual213/displayfields.html" >v21.3</option><option value="https://www.opendental.com/manual212/displayfields.html" >v21.2</option><option value="https://www.opendental.com/manual211/displayfields.html" >v21.1</option><option value="https://www.opendental.com/manual205/displayfields.html" >v20.5</option><option value="https://www.opendental.com/manual204/displayfields.html" >v20.4</option><option value="https://www.opendental.com/manual203/displayfields.html" >v20.3</option><option value="https://www.opendental.com/manual202/displayfields.html" >v20.2</option><option value="https://www.opendental.com/manual201/displayfields.html" >v20.1</option><option value="https://www.opendental.com/manual194/displayfields.html" >v19.4</option><option value="https://www.opendental.com/manual193/displayfields.html" >v19.3</option><option value="https://www.opendental.com/manual192/displayfields.html" >v19.2</option><option value="https://www.opendental.com/manual191/displayfields.html" >v19.1</option><option value="https://www.opendental.com/manual184/displayfields.html" >v18.4</option><option value="https://www.opendental.com/manual183/displayfields.html" >v18.3</option><option value="https://www.opendental.com/manual182/displayfields.html" >v18.2</option><option value="https://www.opendental.com/manual181/displayfields.html" >v18.1</option><option value="https://www.opendental.com/manual174/displayfields.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Display Fields</p></div>
+<div class="GeneralPageContent">
+<p>Customize which fields of information show in various areas, field size, and the order in which they show.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Display Fields.</p>
+<img src="images/displayFieldsCategories.png" width="273" height="413"/><p class="MarginBottomZero">Categories: </p>
+<ul class="MarginBottomGap">
+<li><b>A/R Manager Excluded Grid</b>: For Transworld Systems (TSI) users only. Determines the columns in the TSI A/R Manager for excluded accounts. </li>
+<li><b>A/R Manager Sent Grid</b>: For TSI users only. Determines the columns in the TSI A/R Manager for sent accounts grid.</li>
+<li><b>A/R Manager Unsent Grid</b>: For TSI users only. Determines the columns in the TSI A/R Manager for unsent accounts grid.</li>
+<li><b>Account Module</b>: Determines the columns in the <a href="account.html">Account Module</a>, Patient Account grid.</li>
+<li><b>Account Patient Information</b>: Determines if a patient information area displays in the Account Module, and the fields that show. This area does not show at all if no fields are listed under Fields Showing.</li>
+<li><b>Appointment Bubble</b>: Information that shows in the popup bubble when hovering over an appointment in the schedule.</li>
+<li><b>Appointment Edit</b>: Columns in the Procedures on this Appointment grid in the <a href="aptedit.html">Edit Appointment</a> window.</li>
+<li><b>Chart Patient Information</b>: Fields in the Chart Module, Patient Info area.</li>
+<li><b>Family Recall Grid</b>: Columns in the Family Module, Recall grid.</li>
+<li><b>Limited Custom Statement:</b> Columns in the <a href="limited.html">Limited (Custom) Statement</a>, Limited Statement Select window.</li>
+<li><b>Ortho Chart</b>: Columns in the lower grid of the <a href="orthochart.html">Ortho Chart</a>. This setup is different than other display fields.</li>
+<li><b>Outstanding Ins Report</b>: Columns in the <a href="reportoutins.html">Outstanding Insurance Claims Report</a>.</li>
+<li><b>Patient Information</b>: Rows in the Family Module, Patient Information area.</li>
+<li><b>Patient Search</b>: Determines fields available in the <a href="central.html">Central Enterprise Management Tool ( CEMT )</a>.</li>
+<li><b>Patient Select</b>: Columns in the <a href="patientselect.html">Select Patient grid</a>.</li>
+<li><b>Planned Appointment Edit</b>: Columns available in the Edit Planned Appointment window.</li>
+<li><b>Procedure Group Note</b>: Columns in the Procedures List when adding a <a href="procgroupnote.html">Procedure Group Note</a>.</li>
+<li><b>Recall List</b>: Columns in the <a href="recalllist.html">Recall List</a>.</li>
+<li><b>Statement Main Grid</b>: Columns in the StatementMain grid when <a href="statementsheets.html">Statement Layout</a>.</li>
+<li><b>SuperFamily Grid Columns</b>: Columns that display in the Family Module for a Super Family. </li>
+<li><b>Treatment Plan Module</b>: Columns in the Treatment Plan Module, Procedures list, on saved and printed Treatment Plans, and in the TreatPlanMain grid: <a href="sheetstreatplan.html">Treatment Plan Layout</a>.</li>
+</ul>
+<p>Double-click a category to customize the information that shows.</p>
+<img src="images/displayFields.png" width="551" height="466"/><p>Select which fields to show by moving fields between Available Fields and Fields Showing. Highlight the fields then click the left or right arrows in the middle of the window.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Fields Showing</b>: All fields currently showing in the category.</li>
+<li><b>Available Fields</b>: A list of fields that can be added to the category. Fields vary depending on the category. For a description of some fields, see Available Fields below.</li>
+<li><b>Set to Default</b>: Return all Fields Showing to the default. This removes any fields that have been added.</li>
+<li><b> Up / Down</b>: Highlight a field, then click to move it in the order.</li>
+</ul>
+<p>Double-click on a Fields Showing field to change its properties.</p>
+<img src="images/displayFieldEdit.png" width="552" height="163"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Internal Name</b>: The name of the field in Open Dental code. This value cannot be changed.</li>
+<li><b>New Description</b>: The label that identifies this field in the interface.</li>
+<li><b>Minimum Width</b>: A fixed minimum column width based on the New Description length.</li>
+<li><b>Column Width</b>: The maximum allowed width of the column. This is designed to allow the Language Translation feature to work better when foreign words are longer.</li>
+</ul>
+<h2>Available Fields</h2>
+<p>Most fields that list under Available fields are self explanatory. Below are a few that need additional explanation.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Admit Date</b>: Used in Chart Patient Information and Patient Information. Displays the Admit Date as entered in <a href="patientedithospitals.html">Edit Patient Information: Hospitals Tab</a>.</li>
+<li><b>Allowed</b>: Used in the Treatment Plan Module. The PPO fee for PPO plans or the allowed fee for out-of-network plans. If a patient has multiple insurance plans, this is the fee for the primary plan.</li>
+<li><b>Appt</b>: Used in the Treatment Plan Module. Displays an <i>X</i> if the procedure is attached a scheduled appointment. Displays a <i>U</i> if the procedure is attached to an appointment on the Unscheduled List. Displays a <i>P</i> if the procedure is attached to a Planned Appointment.</li>
+<li><b>Appointment Module Note</b>: Note text from <a href="apptspatient.html">Patient Appointments</a>.</li>
+<li><b>ABC0</b>: Used in Chart Patient Information and Patient Information. Indicates the patient's credit rating or other personal attributes discreetly in the Patient Information grid.</li>
+<li><b>Birthdate</b>: When used in the Family Module or Chart Module, this displays as a masked date (e.g., xx/xx/xxxx) if the <i>Mask patient date of birth</i> preference is enabled. When masked, a user with the <i>Patient Birthdate View</i> can right-click a birthdate to view it.</li>
+<li><b>Broken Appts</b>: Used in Chart Patient Information. Displays the number of broken appointments a patient has.  <ul>
+<li>The count is based on the missed appointment procedure (D9986) if it exists in the Procedure Code List, or if it doesn't exist, adjustments with a broken appt type. </li>
+<li>At least one procedure status must be checked in the Procedures area in the <a href="showtabchart.html">Chart - Show tab</a>.</li>
+<li>When in Chart - Audit mode, also includes deleted procedures.</li>
+</ul>
+</li>
+<li><b>CareCredit Pre-Approval Status</b>: For CareCredit users. Shows the patient's pre-approval status. </li>
+<li><b>CareCredit Pre-Approval Amount</b>: For CareCredit users. Shows the patient's pre-approval amount. </li>
+<li><b>CareCredit Available Credit</b>: For CareCredit users. Shows the available credit. </li>
+<li><b>Carrier Name</b>: Used in the <a href="recalllist.html">Recall List</a>. Displays the carrier name for any insurance plans currently added to the patient. </li>
+<li><b>Cat% UCR</b>: Used in the Treatment Plan. Displays the UCR fee for the procedure, regardless of which insurance type is selected in the insurance plan.</li>
+<li><b>Clinic</b>: Used in multiple categories. The clinic abbreviation.</li>
+<li><b>ClinicDesc</b>: Used in Account Patient Information and Chart Patient Information. The clinic description set.</li>
+<li><b>Date Bal Began</b>: Used in the AR Manager Sent, Unsent, and Excluded Grids. Date a patient's balance began.</li>
+<li><b>Days Bal Began</b>: Used in the AR Manager Sent, Unsent, and Excluded Grids. How many days ago a patient's balance began.</li>
+<li><b>Discount Plan</b>: Used in the Appointment Bubble. Adds the name of the patient's <a href="discountplans.html">Discount Plan</a>.</li>
+<li><b>Discharge Date</b>: Used in Chart Patient Information and Patient Information. Displays the Discharge Date as entered in <a href="patientedithospitals.html">Edit Patient Information: Hospitals Tab</a>.</li>
+<li><b>DPlan</b>: Used in the Treatment Plan Module. Indicates the discount amount when the patient has a discount plan.</li>
+<li><b>Estimated Patient Portion</b>: Used in the Appointment Bubble. Estimated patient portion for attached procedures. (patient portion = gross production - estimated insurance write-offs + adjustments - insurance estimates).</li>
+<li><b>Insurance Color:</b>Used in the Appointment Bubble. Displays primary and secondary insurance carriers with a colored background as set in the <a href="carriers.html">Carriers</a> window.</li>
+<li><b>Invoice Number:</b> Used in the Patient Select. Invoices automatically generate a unique invoice number. Use the invoice number to search for a patient.</li>
+<li><b>InvoiceNum</b>: Used in the Statement Main Grid. Invoices automatically generate a unique invoice number to show on invoices.</li>
+<li><b>Last Proc</b>: Used in AR Manager Sent, Unsent, and Excluded Grids. Date of last completed procedure for the family.</li>
+<li><b>NetProduction</b>: Used in Appointment Bubble. Net production of procedures attached to the appointment (net production = gross production - estimated insurance write-offs - adjustments attached to procedures). See <a href="productiontotals.html">Production Totals</a>.</li>
+<li><b>Pat Fields</b>: Used in Account Patient Information, Chart Patient Information, and Patient Information. Adds all <a href="custompatientfields.html">Patient Fields</a>.</li>
+<li><b>Patient Portal</b>: Used in Chart Patient Information. Indicates if patient has been granted access to the Patient Portal. Double-click this field to <a href="portalaccess.html">Grant Access</a> or generate new passwords.</li>
+<li><b>Pat Restrictions</b>: Used in Patient Information. Lists restrictions associated to the selected patient (e.g., appointment scheduling).</li>
+<li><b>Preferred Pronoun</b>: Used in Patient Information and Chart Patient information. Displays the Preferred Pronouns set for the patient in <a href="patientedit.html">Edit Patient Information</a>. If no pronouns are set, displays <i>None</i>, regardless of the patient's selected gender.</li>
+<li><b>Referral</b>: Used in the Patient Information area. Indicates when a patient has a referral source (to, from, or custom). The label for <i>custom referrals</i> is determined by the New Description text. The Referred From and Referred To labels cannot be changed.</li>
+<li><b>Referral From With Phone</b>: Used in the Appointment Bubble. Indicates when patient has a referral from source and the referral source's phone number (if listed in the referral).</li>
+<li><b>Referral To With Phone</b>: Used in the Appointment Bubble. Indicates when patient has a referral to source and the referral source's phone number (if listed in the referral). </li>
+<li><b>Signed</b>: Used in the Account Module and Limited Custom Statements. Indicates when an item (i.e., procedure) has been electronically signed .</li>
+<li><b>SS#</b>: When used in the Family Module, this displays as a masked number (e.g., xxx-xx-1234) if the <i>Mask patient Social Security Numbers</i> preference is enabled. When masked, a user with the <i>Patient Social Security Number View</i> permission can right-click to view the full number.</li>
+<li><b>Tax Est</b>: Used in the Treatment Plan Module. Displays the tax estimate for <a href="procedurecodes.html">Procedure Codes</a> marked <i>Auto Tax</i>.</li>
+<li><b>Tobacco Use</b>: Used in Chart Patient Information. Indicates a patient's tobacco use history (up to three of the most recent assessments). Double-click to open the Tobacco Use window and assess status. See <a href="smokingenter.html">EHR Tobacco</a>.</li>
+<li><b>Specialty</b>: Used in Chart Patient Information. Used for differentiating patient clones. </li>
+<li><b>Verify Insurance</b>: Used in the Appointment Bubble. Displays <i>Verify Insurance</i> if the insurance plan for the patient needs verified.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

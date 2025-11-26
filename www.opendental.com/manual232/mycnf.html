@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - my.cnf</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('mycnf','databasemanagementsystems','advancedtopics','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/mycnf.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/mycnf.html" >v24.2</option><option value="https://www.opendental.com/manual241/mycnf.html" >v24.1</option><option value="https://www.opendental.com/manual233/mycnf.html" >v23.3</option><option value="https://www.opendental.com/manual232/mycnf.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/mycnf.html" >v23.1</option><option value="https://www.opendental.com/manual224/mycnf.html" >v22.4</option><option value="https://www.opendental.com/manual223/mycnf.html" >v22.3</option><option value="https://www.opendental.com/manual222/mycnf.html" >v22.2</option><option value="https://www.opendental.com/manual221/mycnf.html" >v22.1</option><option value="https://www.opendental.com/manual214/mycnf.html" >v21.4</option><option value="https://www.opendental.com/manual213/mycnf.html" >v21.3</option><option value="https://www.opendental.com/manual212/mycnf.html" >v21.2</option><option value="https://www.opendental.com/manual211/mycnf.html" >v21.1</option><option value="https://www.opendental.com/manual205/mycnf.html" >v20.5</option><option value="https://www.opendental.com/manual204/mycnf.html" >v20.4</option><option value="https://www.opendental.com/manual203/mycnf.html" >v20.3</option><option value="https://www.opendental.com/manual202/mycnf.html" >v20.2</option><option value="https://www.opendental.com/manual201/mycnf.html" >v20.1</option><option value="https://www.opendental.com/manual194/mycnf.html" >v19.4</option><option value="https://www.opendental.com/manual193/mycnf.html" >v19.3</option><option value="https://www.opendental.com/manual192/mycnf.html" >v19.2</option><option value="https://www.opendental.com/manual191/mycnf.html" >v19.1</option><option value="https://www.opendental.com/manual184/mycnf.html" >v18.4</option><option value="https://www.opendental.com/manual183/mycnf.html" >v18.3</option><option value="https://www.opendental.com/manual182/mycnf.html" >v18.2</option><option value="https://www.opendental.com/manual181/mycnf.html" >v18.1</option><option value="https://www.opendental.com/manual174/mycnf.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>my.cnf</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="databasemanagementsystems.html">Database Management Systems</a>.</p>
+<p>There is a small text file called <i>my.cnf</i> that is part of the <a href="mysql.html">MySQL</a>/<a href="mariadb.html">MariaDB</a> installation for Linux servers. Below is an example of the my.cnf settings. Restart the MySQL service after making changes to my.cnf.</p>
+<h2>MariaDB 10.5 MyISAM Example</h2>
+<p class="codeblock">[mysqld]</p><p class="codeblock">datadir=/var/lib/mysql</p><p class="codeblock">default-storage-engine=MyISAM</p><p class="codeblock">max_allowed_packet=40M</p><p class="codeblock">lower_case_table_names=1</p><p class="codeblock">port=3306</p><p class="codeblock">sql_mode=''</p><p class="codeblock">explicit_defaults_for_timestamp=1</p><p class="codeblock">key_buffer_size=3G</p><p class="codeblock">myisam_recover_options=OFF</p><p class="codeblock">optimizer_switch=split_materialized=OFF</p><br/><h2>MySQL 5.5 MyISAM Example</h2>
+<p><div class="Note">Note: This example is untested.</div>
+</p>
+<p class="codeblock">[mysqld]</p><p class="codeblock">datadir=/var/lib/mysql</p><p class="codeblock">default-storage-engine=MyISAM</p><p class="codeblock">skip-innodb</p><p class="codeblock">max_allowed_packet=40M</p><p class="codeblock">lower_case_table_names=1</p><br/><h2>MySQL 5.5 InnoDB Example</h2>
+<p><div class="Note">Note: This example is untested.</div>
+</p>
+<p class="codeblock">[mysqld]port = 3306</p><p class="codeblock">socket = /var/run/mysqld/mysql.sock</p><p class="codeblock">default_character_set = utf8 </p><p class="codeblock">default_storage_engine = InnoDB</p><p class="codeblock">max_connections = 500</p><p class="codeblock">max_user_connections = 500</p><p class="codeblock">lower_case_table_names = 1</p><p class="codeblock">max_allowed_packet = 40M</p><p class="codeblock">max_connect_errors = 1000</p><p class="codeblock">skip_name_resolve</p><p class="codeblock">binlog_format = ROW</p><p class="codeblock">expire_logs_days = 4</p><p class="codeblock">sync_binlog = 1</p><p class="codeblock">tmp_table_size = 64M</p><p class="codeblock">max_heap_table_size = 64M</p><p class="codeblock">query_cache_type = 0</p><p class="codeblock">query_cache_size = 0</p><p class="codeblock">thread_cache_size = 500</p><p class="codeblock">open_files_limit = 65535</p><p class="codeblock">table_definition_cache = 1024</p><p class="codeblock">table_open_cache = 1024</p><p class="codeblock">net_buffer_length = 16K</p><p class="codeblock">thread_stack = 512K</p><p class="codeblock">sort_buffer_size = 2M</p><p class="codeblock">read_buffer_size = 2M</p><p class="codeblock">read_rnd_buffer_size = 8M</p><p class="codeblock">join_buffer_size = 128M</p><p class="codeblock">binlog_cache_size = 1M</p><p class="codeblock">innodb_flush_method = O_DIRECT</p><p class="codeblock">innodb_log_files_in_group = 3</p><p class="codeblock">innodb_log_file_size = 1G</p><p class="codeblock">innodb_flush_log_at_trx_commit = 1</p><p class="codeblock">innodb_file_per_table = 1</p><p class="codeblock">innodb_buffer_pool_size = 1G</p><p class="codeblock">innodb_locks_unsafe_for_binlog = 1</p><p class="codeblock">innodb_autoinc_lock_mode = 2</p><p class="codeblock">interactive_timeout = 500</p><p class="codeblock">wait_timeout = 500</p><p class="codeblock">connect_timeout = 10</p><p class="codeblock">slow_query_log = 1</p><p class="codeblock">slow_query_log_file = mysql-slow.log</p></div>
+</div>
+</body>
+</html>

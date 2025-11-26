@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Billing Defaults</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('billingdefaults','billing','manage','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/billingdefaults.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/billingdefaults.html" >v24.2</option><option value="https://www.opendental.com/manual241/billingdefaults.html" >v24.1</option><option value="https://www.opendental.com/manual233/billingdefaults.html" >v23.3</option><option value="https://www.opendental.com/manual232/billingdefaults.html" >v23.2</option><option value="https://www.opendental.com/manual231/billingdefaults.html" >v23.1</option><option value="https://www.opendental.com/manual224/billingdefaults.html" >v22.4</option><option value="https://www.opendental.com/manual223/billingdefaults.html" >v22.3</option><option value="https://www.opendental.com/manual222/billingdefaults.html" >v22.2</option><option value="https://www.opendental.com/manual221/billingdefaults.html" >v22.1</option><option value="https://www.opendental.com/manual214/billingdefaults.html" >v21.4</option><option value="https://www.opendental.com/manual213/billingdefaults.html" >v21.3</option><option value="https://www.opendental.com/manual212/billingdefaults.html" >v21.2</option><option value="https://www.opendental.com/manual211/billingdefaults.html" >v21.1</option><option value="https://www.opendental.com/manual205/billingdefaults.html" >v20.5</option><option value="https://www.opendental.com/manual204/billingdefaults.html" >v20.4</option><option value="https://www.opendental.com/manual203/billingdefaults.html" >v20.3</option><option value="https://www.opendental.com/manual202/billingdefaults.html" >v20.2</option><option value="https://www.opendental.com/manual201/billingdefaults.html" >v20.1</option><option value="https://www.opendental.com/manual194/billingdefaults.html" >v19.4</option><option value="https://www.opendental.com/manual193/billingdefaults.html" >v19.3</option><option value="https://www.opendental.com/manual192/billingdefaults.html" >v19.2</option><option value="https://www.opendental.com/manual191/billingdefaults.html" >v19.1</option><option value="https://www.opendental.com/manual184/billingdefaults.html" >v18.4</option><option value="https://www.opendental.com/manual183/billingdefaults.html" >v18.3</option><option value="https://www.opendental.com/manual182/billingdefaults.html" >v18.2</option><option value="https://www.opendental.com/manual181/billingdefaults.html" >v18.1</option><option value="https://www.opendental.com/manual174/billingdefaults.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Billing Defaults</p></div>
+<div class="GeneralPageContent">
+<p>Billing Defaults affect options when generating monthly billing.</p>
+<p>In <a href="billing.html">Billing</a>, click<b> Defaults</b>.</p>
+<img src="images/billingDefaults.png" width="879" height="739"/><p>Alternatively, in the <a href="billinglist.html">Billing List</a>, at the lower right, click Defaults for a limited view that only allows changing the Electronic Billing section.</p>
+<p>Additional billing preferences can be found in <a href="preferences.html">Preferences</a>.</p>
+<h2>Options</h2>
+<p>Set default options for statements.</p>
+<img src="images/billingDefaultsOptions.png" width="856" height="132"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Intermingle family members</b>: When checked, family members are mixed together on the statement and ordered by date. When unchecked, each family member is split into their own section on the statement with a total. Electronic billing is always intermingled. This setting also determines the default setting for the Intermingle box on the main Billing Options window.</li>
+<li><b>Start Date Last [...] Days</b>: The number of days of account history that will show on each statement. This value is used to calculate the default Start Date on the main <a href="billing.html">Billing</a> Options window and on full statements printed from the Account Module. If transactions occurred prior to the start date, a balance forward is displayed.</li>
+<li><b>Show all transactions since zero or negative balance</b>: If checked, all transactions since the last date the account balance was zero or had a credit balance are printed on the statement. The default Account History Date Range is ignored.</li>
+<li><b>General Message</b>: Shows at the bottom of the statement in addition to dunning messages and appointment information. The only variable available for this field is <span class="codeblock">[InstallmentPlanTerms]</span>. There is a 500 character limit (including the installment plan terms if used). This text box supports <a href="rightclicktextboxes.html">Right-Click Options</a>.</li>
+</ul>
+<h2>Electronic Billing</h2>
+<p>The following settings affect statements sent electronically. Electronic billing allows statements to be sent electronically to a third party billing service. Open Dental recommends and supports both DentalXChange and EDS for electronic billing. Other third party options are available.</p>
+<img src="images/billingDefaultsElectronicBilling.png" width="858" height="148"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Electronic Billing Method</b>: Select one of the following:  <ul>
+<li><b>No electronic billing</b>: Does not send statements to a third party. This option allows an office to create and print statements on their own.</li>
+<li><b>DentalXChange</b>: See <a href="https://www.dentalxchange.com/product/billconnect">DentalXChange Patient Statements</a>. DentalXChange picks up the statements from Open Dental, converts them into their own format, then sends these to the patients on behalf of the practice.</li>
+<li><b>Output to File</b>: Save statements as an XML file to a selected Output Path. The <i>Maximum number of statements per batch</i> preference is ignored. Third parties can pick up the XMLs from the file path to process.</li>
+<li><b>ClaimX / ExtraDent</b>: Contact <a href="eclaimsclaimx.html">ClaimX E-Claims</a> for assistance.</li>
+<li><b>EDS</b>: Save statements to the Output Path for <a href="eclaimseds.html">Electronic Dental Services</a> to pick up and process.</li>
+</ul>
+<div class="Note">Note: If an option other than <i>No electronic billing</i> is selected, when the Billing List is generated, the default delivery mode for statements is electronic. However, if a patient has a Billing Type that is designated as E (email), the default delivery mode is still Email (not electronic).</div>
+</li>
+<li><b>Credit Card Choices</b>: Select which credit cards the office accepts. Choices include Master Card, Visa, Discover, and American Express.</li>
+<li><b>Include 'Adjust' in the description for adjustments</b>: Add <i>adjust</i> to the description column for adjustments. This setting only affects statements when DentalXChange is selected. The description only shows on statements generated by DentalXChange and does not display on Open Dental statements. </li>
+<li><b>Include Clinic Number</b>: Only an option when <i>Output to File</i> is selected. Includes Clinic Number for each line (e.g., payment, procedure, etc) of the statement. </li>
+<li><b>Vendor ID</b>: Vendor ID, if needed. For DentalXChange, this is <span class="codeblock">68</span>.</li>
+<li><b>Vendor PMS Code</b>: Vendor PMS code, if needed. For DentalXChange, this is <span class="codeblock">144</span>.</li>
+<li><b>Account Number</b>: Account number, required by DentalXChange.</li>
+<li><b>User Name</b>: User name, required for DentalXChange.</li>
+<li><b>Password</b>: Password, required for DentalXChange.</li>
+<li><b>Generate PDF</b>: For DentalXChange or ClaimX/ExtraDent only. Determines whether or not a PDF version of each statement is generated and saved in the Imaging Module, statements folder. We recommend always generating a PDF so that there is a record of the statement sent to the patient.</li>
+<li><b>Output Path / URL Override</b>: The label changes depending on the electronic billing option selected. Statements are saved or uploaded to this location by default.  <ul>
+<li>If DentalXChange, the label is URL Override and the default path is <b>https://claimconnect.dentalxchange.com/dci/upload.svl</b></li>
+<li>Otherwise, the label is Output Path and a valid path is required. Only EDS has a default path (<b>C:\EDS\Statements</b>).</li>
+</ul>
+</li>
+<li><b>Practice Address</b>: Select the address to send as the practice address. Entered in <a href="practice.html">Practice Setup</a> or <a href="cliniceditwindow.html">Clinic Setup</a>.</li>
+<li><b>Remit Address</b>: Select the remit (billing) address. Entered in <a href="practice.html">Practice Setup</a> or <a href="cliniceditwindow.html">Clinic Setup</a>.</li>
+<li><b>Clinic</b>: If using Clinics, the clinic name. <div class="Note">Note: <ul>
+<li>If the currently logged-on user is restricted by clinic, only clinic they have access to are shown in the Clinic dropdown.</li>
+<li>If Unassigned/Default credentials match other clinic settings, and Unassigned/Default credentials are modified, the edits affect the other clinics as well. To unlink a clinic from Unassigned/Default, change the clinic's credentials. Then, any changes made to Unassigned/Defaults no longer affect the clinic.</li>
+</ul>
+</div>
+</li>
+</ul>
+<h2>Email Statements</h2>
+<img src="images/billingDefaultsEmail.png" width="858" height="208"/><p class="MarginBottomZero"><b>Subject</b> / <b>Body</b>: Edit the default subject and message for statements that are emailed via the Billing List or Account Module. The Body text box supports right-click options. The following variables are available: </p>
+<ul class="MarginBottomGap">
+<li><b>[monthlyCardsOnFile]</b> - the customers credit cards on file. The first 12 digits are masked, and the last four digits are visible followed by expiration date, e.g. XXXX-XXXX-XXXX-1234_exp:01/01. Multiple cards are separated by commas.</li>
+<li><b>[nameF]</b> - guarantor's first name and preferred name.</li>
+<li><b>[nameFL]</b> - guarantor's first, preferred and last name.</li>
+<li><b>[nameFLnoPref]</b> - guarantor's first and last name only (no preferred name).</li>
+<li><b>[namePref]</b> - guarantor's preferred name.</li>
+<li><b>[PatNum]</b> - patient number.</li>
+<li><b>[currentMonth]</b> - the current month.</li>
+<li><b>[StatementURL]</b> - Include a clickable URL patients can use to launch the Patient Portal Sign in window. See <a href="portalonlinepayments.html">Online Payments</a>.</li>
+</ul>
+<p><b>Include Email Autograph of sender address</b>: When checked, the <a href="emailautographs.html">Email Autograph</a> assigned to the <i>Email From</i> address is automatically added to the end of the email body when generating email bills. </p>
+<p>Email is the default mode for a patient when their billing type (in <a href="definitionsbillingtypes.html">Definitions: Billing Types</a>) has E entered for Email bill. If <a href="../site/secureemail.html">Secure Email</a> is enabled, the email is sent via a secure email message. If Secure Email is not enabled, the email is sent via unsecured (regular) email. Regular email is not a secure method of sending statements (PHI). </p>
+<h2>Invoice Note</h2>
+<img src="images/billingDefaultsInvoice.png" width="839" height="87"/><p>The default note that appears on <a href="invoice.html">Invoice</a> sent from the <a href="account.html">Account Module</a>. This text box supports right-click options.</p>
+<h2>SMS Statements </h2>
+<img src="images/billingDefaultsSMS.png" width="856" height="143"/><p> The default message for SMS (text) messages sent via the Billing List. Most variables are self-explanatory. Below are a few that need additional explanation.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>[MsgToPayURL]</b> - Include a clickable URL to launch the <a href="portalpaymentsbypatient.html">Payment Portal</a>.</li>
+<li><b>[StatementURL]</b> - Include a clickable URL to launch the <a href="portalhostedbyod.html">Patient Portal</a>. </li>
+<li><b>[StatementShortURL]</b> - Include a short version of the StatementURL.</li>
+</ul>
+<p>This text box supports right-click options.</p>
+<p><b>Send text message for these modes</b>: Set the default <i>modes</i> to send additional text messages to when generating statements from the Billing List. The text message can include a clickable link the patient can use to make an online payment. <a href="../site/textintegrated.html">Integrated Texting Feature</a> must also be enabled and patient must be set to accept text messages.</p>
+</div>
+</div>
+</body>
+</html>

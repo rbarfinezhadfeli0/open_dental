@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Audit Trail Permissions</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('audittrailpermissions','audittrail','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/audittrailpermissions.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/audittrailpermissions.html" >v24.2</option><option value="https://www.opendental.com/manual241/audittrailpermissions.html" >v24.1</option><option value="https://www.opendental.com/manual233/audittrailpermissions.html" >v23.3</option><option value="https://www.opendental.com/manual232/audittrailpermissions.html" >v23.2</option><option value="https://www.opendental.com/manual231/audittrailpermissions.html" >v23.1</option><option value="https://www.opendental.com/manual224/audittrailpermissions.html" >v22.4</option><option value="https://www.opendental.com/manual223/audittrailpermissions.html" >v22.3</option><option value="https://www.opendental.com/manual222/audittrailpermissions.html" >v22.2</option><option value="https://www.opendental.com/manual221/audittrailpermissions.html" >v22.1</option><option value="https://www.opendental.com/manual214/audittrailpermissions.html" >v21.4</option><option value="https://www.opendental.com/manual213/audittrailpermissions.html" >v21.3</option><option value="https://www.opendental.com/manual212/audittrailpermissions.html" >v21.2</option><option value="https://www.opendental.com/manual211/audittrailpermissions.html" >v21.1</option><option value="https://www.opendental.com/manual205/audittrailpermissions.html" >v20.5</option><option value="https://www.opendental.com/manual204/audittrailpermissions.html" >v20.4</option><option value="https://www.opendental.com/manual203/audittrailpermissions.html" >v20.3</option><option value="https://www.opendental.com/manual202/audittrailpermissions.html" >v20.2</option><option value="https://www.opendental.com/manual201/audittrailpermissions.html" >v20.1</option><option value="https://www.opendental.com/manual194/audittrailpermissions.html" >v19.4</option><option value="https://www.opendental.com/manual193/audittrailpermissions.html" >v19.3</option><option value="https://www.opendental.com/manual192/audittrailpermissions.html" >v19.2</option><option value="https://www.opendental.com/manual191/audittrailpermissions.html" >v19.1</option><option value="https://www.opendental.com/manual184/audittrailpermissions.html" >v18.4</option><option value="https://www.opendental.com/manual183/audittrailpermissions.html" >v18.3</option><option value="https://www.opendental.com/manual182/audittrailpermissions.html" >v18.2</option><option value="https://www.opendental.com/manual181/audittrailpermissions.html" >v18.1</option><option value="https://www.opendental.com/manual174/audittrailpermissions.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Audit Trail Permissions</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="audittrail.html">Audit Trail</a>, there is a list of Permissions.</p>
+<p>Refer to the table below for details about each permission and its behavior.</p>
+<ul>
+<li><b>Permission</b>: The name of the permission as it appears in the permissions drop down.</li>
+<li><b>Event</b>: The behavior or event that is recorded in the Audit Trail.</li>
+</ul>
+<br/><table class="simpletable">
+<tr>
+<th style="width:50%">Permission</th>
+<th style="width:50%">Event</th>
+</tr>
+<tr>
+<td>Accounting</td>
+<td>Accessed <a href="accounting.html">Accounting</a>.</td>
+</tr>
+<tr>
+<td>AccountingCreate</td>
+<td>Accounting entry was created.</td>
+</tr>
+<tr>
+<td>AccountingEdit</td>
+<td>Accounting entry was edited.</td>
+</tr>
+<tr>
+<td>AccountModule</td>
+<td>Accessed the <a href="account.html">Account Module</a>. Logged as AccountModuleViewed in the Audit Trail.</td>
+</tr>
+<tr>
+<td>AccountProcsQuickAdd</td>
+<td>Procedures were added via Account Procs Quick Add. </td>
+</tr>
+<tr>
+<td>AddNewUser</td>
+<td>New user added in <a href="securityusers.html">User Edit</a>.</td>
+</tr>
+<tr>
+<td>AdjustmentCreate</td>
+<td>Created an <a href="adjustments.html">Adjustment</a>.</td>
+</tr>
+<tr>
+<td>AdjustmentEdit</td>
+<td>Adjustment was edited.</td>
+</tr>
+<tr>
+<td>Advertising</td>
+<td>A patient list was generated and uploaded to Advertising Postcards.</td>
+</tr>
+<tr>
+<td>AgingRan</td>
+<td>Aging was run.</td>
+</tr>
+<tr>
+<td>AllowFeeEditWhileReceivingClaim</td>
+<td></td>
+</tr>
+<tr>
+<td>AllowLoginFromAnyLocation</td>
+<td></td>
+</tr>
+<tr>
+<td>ApiSubscription</td>
+<td><a href="../site/apisubscriptions.html">Subscriptions</a> were created, updated, or deleted via the API.</td>
+</tr>
+<tr>
+<td>AppointmentCompleteDelete</td>
+<td>Completed appointment was deleted.</td>
+</tr>
+<tr>
+<td>AppointmentCompleteEdit</td>
+<td>Completed appointment was edited.</td>
+</tr>
+<tr>
+<td>AppointmentCreate</td>
+<td>New appointment was created.</td>
+</tr>
+<tr>
+<td>AppointmentDelete</td>
+<td>Scheduled appointment was deleted.</td>
+</tr>
+<tr>
+<td>AppointmentEdit</td>
+<td>Scheduled appointment was edited or <a href="apptbreak.html">Broken</a>.</td>
+</tr>
+<tr>
+<td>AppointmentMove</td>
+<td>Scheduled or completed appointment was moved to new operatories or to the <a href="unscheduled.html">Unscheduled List</a>.</td>
+</tr>
+<tr>
+<td>AppointmentTypeEdit</td>
+<td>Existing or <a href="appointmenttypes.html">Appointment Type</a> was edited.</td>
+</tr>
+<tr>
+<td>ApptConfirmStatusEdit</td>
+<td>Appointment Confirmation Status was edited.</td>
+</tr>
+<tr>
+<td>AuditTrail</td>
+<td>Accessed the <a href="audittrail.html">Audit Trail</a>.</td>
+</tr>
+<tr>
+<td>AutoNoteQuickNoteEdit</td>
+<td>Created, edited, or deleted <a href="autonotes.html">Auto Notes</a> or <a href="quickpastenotessetup.html">QuickPaste Notes</a>.</td>
+</tr>
+<tr>
+<td>Backup</td>
+<td>Accessed <a href="backups.html">Backups</a>.</td>
+</tr>
+<tr>
+<td>BadgeIdEdit</td>
+<td>Edited a user's Badge ID from <a href="securitybadges.html">Security Badges</a>.</td>
+</tr>
+<tr>
+<td>Billing</td>
+<td>Accessed <a href="billing.html">Billing</a>.</td>
+</tr>
+<tr>
+<td>Blockouts</td>
+<td>Blockout was added, edited, deleted, cut, copied, pasted, or cleared.</td>
+</tr>
+<tr>
+<td>CarrierCreate</td>
+<td>Created <a href="carriers.html">Carriers</a>. </td>
+</tr>
+<tr>
+<td>CarrierEdit</td>
+<td> Carrier was edited. </td>
+</tr>
+<tr>
+<td>ChartModule</td>
+<td>Accessed the <a href="chart.html">Chart Module</a>. Logged as ChartModuleViewed in the Audit Trail.</td>
+</tr>
+<tr>
+<td>ChooseDatabase</td>
+<td>Accessed the <a href="choosedatabase.html">Choose Database</a> window.</td>
+</tr>
+<tr>
+<td>ClaimDelete</td>
+<td>Deleted a <a href="claimedit.html">Claim</a> or <a href="preauth.html">Preauthorization</a>.</td>
+</tr>
+<tr>
+<td>ClaimEdit</td>
+<td>Claim or preauthorization was created, cancelled, or saved.</td>
+</tr>
+<tr>
+<td>ClaimProcClaimAttachedProvEdit</td>
+<td>Edited providers on Claim Procedures that are attached to a claim.</td>
+</tr>
+<tr>
+<td>ClaimSend</td>
+<td>Printed or sent a claim or preauthorization.</td>
+</tr>
+<tr>
+<td>ClaimSentEdit</td>
+<td>Edited claim or preauthorization that has already been sent.</td>
+</tr>
+<tr>
+<td>ClinicEdit</td>
+<td>Clinic details were edited or a clinic was added to the <a href="clinicsetup.html">Clinic List</a>.</td>
+</tr>
+<tr>
+<td>CloseOtherSessions</td>
+<td></td>
+</tr>
+<tr>
+<td>CommandQuery</td>
+<td>Ran SQL commands (non-SELECT statements) on normal tables in the User Query window.</td>
+</tr>
+<tr>
+<td>CommlogCreate</td>
+<td>Commlog was created.</td>
+</tr>
+<tr>
+<td>CommlogEdit</td>
+<td>Commlog was edited. </td>
+</tr>
+<tr>
+<td>CreditCardEdit</td>
+<td>Any field was changed for an existing card in the Credit Card Edit window. In <a href="creditcardsmanage.html">Credit Card Manage</a>, a new credit card was added, or an existing credit card was deleted. A new card was added from the Payment window.</td>
+</tr>
+<tr>
+<td>CreditCardMove</td>
+<td>Credit card was moved from one patient to another. Makes a log for both patients.</td>
+</tr>
+<tr>
+<td>CreditCardTerminal</td>
+<td>A credit card transaction was started on a credit card terminal but failed to process due to an error.</td>
+</tr>
+<tr>
+<td>DashboardWidget</td>
+<td></td>
+</tr>
+<tr>
+<td>DefEdit</td>
+<td>Edited <a href="definitions.html">Definitions</a>.</td>
+</tr>
+<tr>
+<td>DepositSlips</td>
+<td>Edited <a href="depositslip.html">Deposit Slips</a>.</td>
+</tr>
+<tr>
+<td>DiscountPlanAdd</td>
+<td>Discount plan was created.</td>
+</tr>
+<tr>
+<td>DiscountPlanAddDrop</td>
+<td>Discount plan was added to or dropped from a patient's account.</td>
+</tr>
+<tr>
+<td>DiscountPlanEdit</td>
+<td>Discount plan information was edited (adjustment type, fee schedule, description, plan note, annual max, frequency limitations).</td>
+</tr>
+<tr>
+<td>DiscountPlanMerge</td>
+<td>Discount plans were merged together.</td>
+</tr>
+<tr>
+<td>EHRMeasureEventEdit</td>
+<td>Edited the date of an EHR measure event (action that affects an EHR numerator).</td>
+</tr>
+<tr>
+<td>EmailSend</td>
+<td><a href="emailmessage.html">Email Message Edit</a> was sent.</td>
+</tr>
+<tr>
+<td>EmployerCreate</td>
+<td>Employer was created.</td>
+</tr>
+<tr>
+<td>EServicesSetup</td>
+<td>Logs an entry when the eConnector is installed for the first time. Logs changes to eServices made by HQ.</td>
+</tr>
+<tr>
+<td>FamAgingTruncate</td>
+<td>Occurs when the family aging table was truncated.</td>
+</tr>
+<tr>
+<td>FamilyModule</td>
+<td>Accessed the <a href="family.html">Family Module</a>. Logged as FamilyModuleViewed in the Audit Trail.</td>
+</tr>
+<tr>
+<td>FeeSchedEdit</td>
+<td>Edited details of existing <a href="feeschedules.html">Fee Schedules</a> or created a new fee schedule.</td>
+</tr>
+<tr>
+<td>FormAdded</td>
+<td></td>
+</tr>
+<tr>
+<td>GraphicalReportSetup</td>
+<td>Setup or edited <a href="reportsgraphic.html">Graphic Reports</a>.</td>
+</tr>
+<tr>
+<td>GraphicsEdit</td>
+<td>Accessed and changed <a href="graphics.html">Graphics Preferences</a>.</td>
+</tr>
+<tr>
+<td>GraphicsRemoteEdit</td>
+<td>User changed graphical settings for another workstation.</td>
+</tr>
+<tr>
+<td>ImageCreate</td>
+<td>Image or Mount was created.</td>
+</tr>
+<tr>
+<td>ImageDelete</td>
+<td>Image or Mount was deleted.</td>
+</tr>
+<tr>
+<td>ImageEdit</td>
+<td>Document was created, moved, or edited.</td>
+</tr>
+<tr>
+<td>ImageExport</td>
+<td>Exported an image.</td>
+</tr>
+<tr>
+<td>ImagingModule</td>
+<td>Accessed the <a href="images.html">Imaging Module</a>. Logged as ImagingModuleViewed in the Audit Trail.</td>
+</tr>
+<tr>
+<td>InsCarrierCombine</td>
+<td>The <a href="carrierscombine.html">Combine Carriers</a> tool was used.</td>
+</tr>
+<tr>
+<td>InsPayCreate</td>
+<td>Received a Claim, <a href="claimpayfinalize.html">Finalize Insurance Payment</a>, created a <a href="claimpaymentbatch.html">Batch Insurance Payment</a>, accessed <a href="claimsERA835.html">ERAs</a> window, received <a href="era.html">ERA</a>, or ERA window closed.</td>
+</tr>
+<tr>
+<td>InsPayEdit</td>
+<td>Edited received procedures, finalized payments, and payment details on a batch insurance payment.</td>
+</tr>
+<tr>
+<td>InsPlanAddPat</td>
+<td>Patient was added to an insurance plan.</td>
+</tr>
+<tr>
+<td>InsPlanChangeAssign</td>
+<td>Changed the Assignment of Benefits setting on the Edit Insurance Plan window. Changed <i>Insurance plans default to assignment of benefits</i> preference.</td>
+</tr>
+<tr>
+<td>InsPlanChangeCarrierName</td>
+<td>Changed insurance carrier name via the Edit Insurance Plan window.</td>
+</tr>
+<tr>
+<td>InsPlanChangeSubsc</td>
+<td>Changed the subscriber on the Edit Insurance Plan window or used the <a href="subscribersmove.html">Move Subscribers</a> tool.</td>
+</tr>
+<tr>
+<td>InsPlanCreate</td>
+<td>Insurance plan was created during import of an 834.</td>
+</tr>
+<tr>
+<td>InsPlanCreateSub</td>
+<td>Insurance plan subscriber was created during import of an 834.</td>
+</tr>
+<tr>
+<td>InsPlanDropPat</td>
+<td>Patient was dropped from an insurance plan during import of an 834.</td>
+</tr>
+<tr>
+<td>InsPlanEdit</td>
+<td>Edited <a href="insplan.html">Insurance Plan</a> information, <a href="benefitinfo.html">Benefit Information</a>, and <a href="discountplans.html">Discount Plans</a>. Logs an entry when insurance plan information is edited during import of an 834. Logs an entry when insurance is dropped.</td>
+</tr>
+<tr>
+<td>InsPlanEditSub</td>
+<td>Insurance plan subscriber was edited during import of an 834.</td>
+</tr>
+<tr>
+<td>InsPlanMerge</td>
+<td><a href="insplancombine.html">Combine Insurance Plans</a></td>
+</tr>
+<tr>
+<td>InsWriteOffEdit</td>
+<td></td>
+</tr>
+<tr>
+<td>LicenseAccept</td>
+<td>User accepted a license agreement.</td>
+</tr>
+<tr>
+<td>LogDoseSpotMedicationNoteEdit</td>
+<td>Medication notes for a patient were automatically reduced in order to send the note to DoseSpot eRx.</td>
+</tr>
+<tr>
+<td>LogFeeEdit</td>
+<td>Fees edited.</td>
+</tr>
+<tr>
+<td>LogSubscriberEdit</td>
+<td></td>
+</tr>
+<tr>
+<td>ManageHighSecurityProgProp</td>
+<td></td>
+</tr>
+<tr>
+<td>MedicalInfoViewed</td>
+<td><a href="medical.html">Medical Window</a> was viewed.</td>
+</tr>
+<tr>
+<td>MedicationMerge</td>
+<td>Accessed the <a href="mergemedications.html">Merge Medications</a> tool.</td>
+</tr>
+<tr>
+<td>MobileNotification</td>
+<td>Action was taken in the Kiosk for a patient using an eClipboard device.</td>
+</tr>
+<tr>
+<td>MobileWeb</td>
+<td></td>
+</tr>
+<tr>
+<td>OrthoChartEditFull</td>
+<td>Edited any <a href="orthochart.html">Ortho Chart</a> dated entry.</td>
+</tr>
+<tr>
+<td>PatAllergyListEdit</td>
+<td><a href="allergiespatient.html">Allergies</a> were added, changed or removed.</td>
+</tr>
+<tr>
+<td>PatientApptRestrict</td>
+<td><ul>
+<li>Changed the setting of the <i>Appointment scheduling is restricted</i> checkbox.</li>
+<li><i>Appointment scheduling is restricted</i> was altered by Automation. </li>
+<li><i>Appointment scheduling is restricted</i> was altered when sending a patient to collections via TSI.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>PatientBillingEdit</td>
+<td>Changed a patient's Billing Type on the <a href="patientedit.html">Edit Patient Information</a>.</td>
+</tr>
+<tr>
+<td>PatientCreate</td>
+<td>New patient was added.</td>
+</tr>
+<tr>
+<td>PatientDOBView</td>
+<td>Viewed full patient birthdate in the <a href="family.html">Family Module</a>, <a href="patientselect.html">Select Patient</a> window, and <a href="patientedit.html">Edit Patient Information</a> window. Only logged when the <i>Mask patient date of birth</i> preference is enabled.</td>
+</tr>
+<tr>
+<td>PatientEdit</td>
+<td>Patient information was edited during import of an <a href="importinsplans834.html">834</a>, when patient was moved to a different family, when a patient is moved to or from a Super Family, when a patient opts in or out of text messaging, or when patient information (patient name, status, address, or state) was changed and saved. See also <a href="claimsERA835.html">ERAs</a>.</td>
+</tr>
+<tr>
+<td>PatientFieldEdit</td>
+<td><a href="custompatientfields.html">Patient Fields</a> were edited.</td>
+</tr>
+<tr>
+<td>PatientMerge</td>
+<td>Accessed the <a href="mergepatients.html">Merge Patients</a> tool.</td>
+</tr>
+<tr>
+<td>PatientPortalLogin</td>
+<td></td>
+</tr>
+<tr>
+<td>PatientSSNView</td>
+<td>Viewed full patient SSN number in the <a href="family.html">Family Module</a>, <a href="patientselect.html">Select Patient</a> window, and <a href="patientedit.html">Edit Patient Information</a> window. Only logged when the <i>Mask Patient Social Security Numbers</i> preference is enabled.</td>
+</tr>
+<tr>
+<td>PatMedicationListEdit</td>
+<td><a href="medicationspatient.html">Medications</a> are added, changed, or removed.</td>
+</tr>
+<tr>
+<td>PatPlanCreate</td>
+<td>Patient insurance plan was created.</td>
+</tr>
+<tr>
+<td>PatPriProvEdit</td>
+<td>Changed a patient's primary provider on the Edit Patient Information window or via the Provider List.</td>
+</tr>
+<tr>
+<td>PatProblemListEdit</td>
+<td><a href="problempatient.html">Problems</a> are added, changed, or removed.</td>
+</tr>
+<tr>
+<td>PaymentCreate</td>
+<td>Entered patient payment, created an <a href="incometransfer.html">Income Transfer</a>, a Payment Portal payment was processed, or Payment Plan Balancer was automatically run when creating a payment plan overpayment.</td>
+</tr>
+<tr>
+<td>PaymentEdit</td>
+<td>Edited patient payment.</td>
+</tr>
+<tr>
+<td>PayPlanChargeDateEdit</td>
+<td>Viewed a <a href="paymentplandynamic.html">Payment Plan</a>, <a href="paymentplanins.html">Insurance Payment Plan</a>, or an <a href="paymentplanpatient.html">Old Payment Plan</a> charge on plans with APR. Logs an entry if the user has the <i>Pay Plan Charge Date Edit</i> security permission.</td>
+</tr>
+<tr>
+<td>PayPlanChargeEdit</td>
+<td>Edited or deleted a Payment Plan or Old Payment Plan charge</td>
+</tr>
+<tr>
+<td>PayPlanEdit</td>
+<td>Created, edited, closed, or deleted a Payment Plan, Insurance Payment Plan, or Old Payment Plan.</td>
+</tr>
+<tr>
+<td>PerioEdit</td>
+<td>Perio Exam was added, deleted, or copied.</td>
+</tr>
+<tr>
+<td>Printer Setup</td>
+<td></td>
+</tr>
+<tr>
+<td>Printing</td>
+<td>Report, Progress Notes, Sheet, List, etc. was printed.</td>
+</tr>
+<tr>
+<td>ProblemDefEdit</td>
+<td>Added, edited, or deleted a problem in the <a href="problemmaster.html">Problem List</a>.</td>
+</tr>
+<tr>
+<td>ProcCodeEdit</td>
+<td>Added or edited procedure codes from Lists, Procedure Codes.</td>
+</tr>
+<tr>
+<td>ProcComplCreate</td>
+<td>Appointments or individual procedures complete set complete. <a href="apptcomplete.html">Set Appointment Complete</a>.</td>
+</tr>
+<tr>
+<td>ProcComplEdit</td>
+<td>Prior to Version 20.1 - Edited procedures with a status of complete (C), existing - other provider (EO), or existing - current provider (EC). </td>
+</tr>
+<tr>
+<td>ProcComplEditLimited</td>
+<td>Prior to Version 20.1 - Edited notes, signature, or information in the Procedure - Misc tab, or changed Hide Graphics or Do Not Bill Ins checkbox on a procedure with a status of complete (C), existing - other provider (EO), or existing - current provider (EC).</td>
+</tr>
+<tr>
+<td>ProcCompleteAddAdj</td>
+<td>Not used.</td>
+</tr>
+<tr>
+<td>ProcCompleteEdit</td>
+<td>Edited procedures with a status of complete (C), existing - other provider (EO), or existing - current provider (EC). </td>
+</tr>
+<tr>
+<td>ProcCompleteEditMisc</td>
+<td>Not used.</td>
+</tr>
+<tr>
+<td>ProcCompleteNote</td>
+<td>Not used.</td>
+</tr>
+<tr>
+<td>ProcCompleteStatusEdit</td>
+<td>Deleted or changed the status of a procedure with the status of complete (C), existing - other provider (EO), or existing - current provider (EC).</td>
+</tr>
+<tr>
+<td>ProcDelete</td>
+<td>Deleted non-completed procedures and edit attached <a href="procedurenotes.html">Procedure Notes</a> and <a href="procgroupnote.html">Procedure Group Note</a>.</td>
+</tr>
+<tr>
+<td>ProcEdit</td>
+<td>Procedure was flagged as CPOE.</td>
+</tr>
+<tr>
+<td>ProcExistingEdit</td>
+<td>Edited a procedure with a status of Existing Other (EO) or Existing Current (EC).</td>
+</tr>
+<tr>
+<td>ProcFeeEdit</td>
+<td>Changes made to <a href="procedurecodeedit.html">Procedure Code</a> fees.</td>
+</tr>
+<tr>
+<td>ProtectedLeaveAdjustmentEdit</td>
+<td>A timecard adjustment marked as Protected Leave was created, edited, or deleted.</td>
+</tr>
+<tr>
+<td>ProviderAdd</td>
+<td>A provider was added. </td>
+</tr>
+<tr>
+<td>ProviderEdit</td>
+<td>The Provider Setup window was opened or provider information was edited.</td>
+</tr>
+<tr>
+<td>ProviderMerge</td>
+<td>Accessed the <a href="mergeproviders.html">Merge Providers</a> tool.</td>
+</tr>
+<tr>
+<td>QueryMonitor</td>
+<td>The Query Monitor was opened.</td>
+</tr>
+<tr>
+<td>RecallEdit</td>
+<td>Recall type was created, edited, or deleted. Tracks when Undo tool is used in the Recall List.</td>
+</tr>
+<tr>
+<td>RefAttachAdd</td>
+<td>Attached Referrals to patients.</td>
+</tr>
+<tr>
+<td>RefAttachDelete</td>
+<td>Detached Referrals from patients.</td>
+</tr>
+<tr>
+<td>ReferralAdd</td>
+<td>Added a referral to the main <a href="referrals.html">Referrals</a> List.</td>
+</tr>
+<tr>
+<td>ReferralEdit</td>
+<td>Edited or deleted a referral in the main Referral List.</td>
+</tr>
+<tr>
+<td>ReferralMerge</td>
+<td>Accessed the <a href="mergereferrals.html">Merge Referrals</a> tool.</td>
+</tr>
+<tr>
+<td>RegistrationKeyCreate</td>
+<td>Used by Open Dental HQ Only.</td>
+</tr>
+<tr>
+<td>RegistrationKeyEdit </td>
+<td>Used by Open Dental HQ Only.</td>
+</tr>
+<tr>
+<td>RepeatChargeCreate</td>
+<td>A Repeating Charge was created.</td>
+</tr>
+<tr>
+<td>RepeatChargeDelete</td>
+<td>A Repeating Charge was deleted.</td>
+</tr>
+<tr>
+<td>RepeatChargeTool</td>
+<td><a href="repeatingcharges.html">Repeating Charges</a> was run.</td>
+</tr>
+<tr>
+<td>RepeatChargeUpdate</td>
+<td>A Repeating Charge was updated.</td>
+</tr>
+<tr>
+<td>ReplicationSetup</td>
+<td>Accessed <a href="replication.html">Replication</a> setup.</td>
+</tr>
+<tr>
+<td>ReportDaily</td>
+<td></td>
+</tr>
+<tr>
+<td>ReportProdInc</td>
+<td></td>
+</tr>
+<tr>
+<td>Reports</td>
+<td>Accessed <a href="reportsstandard.html">Standard Reports</a>.</td>
+</tr>
+<tr>
+<td>RequiredFields</td>
+<td>Information was not completed in a Required Field and the user clicks OK.</td>
+</tr>
+<tr>
+<td>RxCreate</td>
+<td>Created prescriptions.</td>
+</tr>
+<tr>
+<td>RxEdit</td>
+<td>Edited or deleted prescriptions, synced changes with eRx, or printed prescriptions from Chart Module.</td>
+</tr>
+<tr>
+<td>RxMerge</td>
+<td>Merge duplicate prescriptions.</td>
+</tr>
+<tr>
+<td>SalesTaxAdjEdit</td>
+<td>Sales Tax Adjustment edited.</td>
+</tr>
+<tr>
+<td>Schedules</td>
+<td>Provider and employee <a href="schedule.html">Schedules</a> edited.</td>
+</tr>
+<tr>
+<td>SecurityAdmin</td>
+<td>Changes made to security permissions.</td>
+</tr>
+<tr>
+<td>SecurityGlobal </td>
+<td>Changes made to the Global Lock Dates in Global Security Settings.</td>
+</tr>
+<tr>
+<td>Setup</td>
+<td><a href="permissionssetup.html">"Setup" Permission</a>.</td>
+</tr>
+<tr>
+<td>SheetEdit</td>
+<td><ul>
+<li>Edited sheets attached to patients and changed the patient a sheet is attached to.</li>
+<li>Tracks when web forms are retrieved and attached to patients (<a href="webformsretrieve.html">Web Forms Retrieve</a>).</li>
+<li>Lists information imported from a sheet (<a href="patientformsimport.html">Import Patient Forms and Medical Histories</a>).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>ShowFeatures</td>
+<td><a href="showfeatures.html">Show Features</a>.</td>
+</tr>
+<tr>
+<td>SplitCreatePastLockDate</td>
+<td>Added new <a href="paysplit.html">Pay Splits</a> for payments created before the Global Lock Date. Does not allow editing or deleting of existing payments. The sum of all splits must equal the payment amount.</td>
+</tr>
+<tr>
+<td>StatementCSV</td>
+<td></td>
+</tr>
+<tr>
+<td>StatementPatNumMismatch</td>
+<td></td>
+</tr>
+<tr>
+<td>SuperFamilyDisband</td>
+<td>Disbanded a Super Family from the Family Module.</td>
+</tr>
+<tr>
+<td>SupplementalBackup</td>
+<td>A supplemental backup was created.</td>
+</tr>
+<tr>
+<td>SupplyPurchases</td>
+<td>A <a href="supplyorders.html">Supply Order</a> was added, placed, or deleted.</td>
+</tr>
+<tr>
+<td>TaskDelete</td>
+<td>Deleted a task or task note.</td>
+</tr>
+<tr>
+<td>TaskEdit</td>
+<td>Edited <a href="tasks.html">Task</a> description. </td>
+</tr>
+<tr>
+<td>TaskListCreate</td>
+<td>Created a <a href="tasklists.html">Task List</a>.</td>
+</tr>
+<tr>
+<td>TaskNoteEdit</td>
+<td>Edited or deleted task notes.</td>
+</tr>
+<tr>
+<td>TaskReminderPopup</td>
+<td>A reminder task popped up for a user.</td>
+</tr>
+<tr>
+<td>TimeAdjustEdit</td>
+<td>A time card adjustment was added, edited, or deleted.</td>
+</tr>
+<tr>
+<td>TimeCardDeleteEntry</td>
+<td>Deleted a time card entry.</td>
+</tr>
+<tr>
+<td>TPModule</td>
+<td>Accessed the <a href="treatmentplan.html">Treatment Plan Module</a>. Logged as TreatmentPlanModuleViewed in the Audit Trail.</td>
+</tr>
+<tr>
+<td>TreatPlanDiscountEdit</td>
+<td>Created or changed a procedure Discount in the Treatment Plan module or <a href="procedureedit.html">Procedure</a>.</td>
+</tr>
+<tr>
+<td>TreatPlanEdit</td>
+<td>Edited a saved Treatment Plan.</td>
+</tr>
+<tr>
+<td>TreatPlanPresenterEdit</td>
+<td>Changed the presenter when Editing a Saved Treatment Plan.</td>
+</tr>
+<tr>
+<td>UpdateInstall</td>
+<td>User checked for software updates from the <a href="update.html">Update</a> window. </td>
+</tr>
+<tr>
+<td>UserLogOnOff</td>
+<td>Users log on, log off, clock in, clock out, or close Open Dental or log on or log off the ODTouch or ODMobile apps.</td>
+</tr>
+<tr>
+<td>UserQuery</td>
+<td>Run and change variables in <i>released </i><a href="queryoverview.html">User Query</a>.</td>
+</tr>
+<tr>
+<td>WebChatEdit</td>
+<td>Used by Open Dental HQ Only.</td>
+</tr>
+<tr>
+<td>WebMailDelete</td>
+<td>WebMail message deleted.</td>
+</tr>
+<tr>
+<td>WebMailSend</td>
+<td><a href="securewebmailsend.html">WebMail</a>.</td>
+</tr>
+<tr>
+<td>WebSchedRecallManualSend</td>
+<td>WebSchedRecall sent manually.</td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>

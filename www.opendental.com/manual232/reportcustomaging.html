@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Custom Aging Report</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reportcustomaging','+monthly','reportsstandard','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/reportcustomaging.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/reportcustomaging.html" >v24.2</option><option value="https://www.opendental.com/manual241/reportcustomaging.html" >v24.1</option><option value="https://www.opendental.com/manual233/reportcustomaging.html" >v23.3</option><option value="https://www.opendental.com/manual232/reportcustomaging.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/reportcustomaging.html" >v23.1</option><option value="https://www.opendental.com/manual224/reportcustomaging.html" >v22.4</option><option value="https://www.opendental.com/manual223/reportcustomaging.html" >v22.3</option><option value="https://www.opendental.com/manual222/reportcustomaging.html" >v22.2</option><option value="https://www.opendental.com/manual221/reportcustomaging.html" >v22.1</option><option value="https://www.opendental.com/manual214/reportcustomaging.html" >v21.4</option><option value="https://www.opendental.com/manual213/reportcustomaging.html" >v21.3</option><option value="https://www.opendental.com/manual212/reportcustomaging.html" >v21.2</option><option value="https://www.opendental.com/manual211/reportcustomaging.html" >v21.1</option><option value="https://www.opendental.com/manual205/reportcustomaging.html" >v20.5</option><option value="https://www.opendental.com/manual204/reportcustomaging.html" >v20.4</option><option value="https://www.opendental.com/manual203/reportcustomaging.html" >v20.3</option><option value="https://www.opendental.com/manual202/reportcustomaging.html" >v20.2</option><option value="https://www.opendental.com/manual201/reportcustomaging.html" >v20.1</option><option value="https://www.opendental.com/manual194/reportcustomaging.html" >v19.4</option><option value="https://www.opendental.com/manual193/reportcustomaging.html" >v19.3</option><option value="https://www.opendental.com/manual192/reportcustomaging.html" >v19.2</option><option value="https://www.opendental.com/manual191/reportcustomaging.html" >v19.1</option><option value="https://www.opendental.com/manual184/reportcustomaging.html" >v18.4</option><option value="https://www.opendental.com/manual183/reportcustomaging.html" >v18.3</option><option value="https://www.opendental.com/manual182/reportcustomaging.html" >v18.2</option><option value="https://www.opendental.com/manual181/reportcustomaging.html" >v18.1</option><option value="https://www.opendental.com/manual174/reportcustomaging.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Custom Aging Report</p></div>
+<div class="GeneralPageContent">
+<p>The Custom Aging report allows users to customize which transactions to age. </p>
+<p>In <a href="reportsstandard.html">Standard Reports</a>, in the <i>Monthly</i> area, click <b>Custom Aging</b>.</p>
+<img src="images/reportCustomAging.png" width="915" height="661"/><p>The default criteria settings match the <a href="reportaging.html">Aging of Accounts Receivable (A/R) Report</a>. Aging can be run as of a historical date (see As Of Date).</p>
+<p><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> Watch the Webinar: <a href="https://www.youtube.com/watch?v=q49swysP9YA">Aging of Accounts Receivable (A/R)</a></p>
+<p><div class="Note">Note: <ul>
+<li>To control user access to this report, see <a href="reportsecurity.html">Report Setup: Security Permissions</a>.</li>
+<li>This report is available by default to users with the <i>Aging of AR</i> permission.</li>
+<li>The Pay Plan defaults depend on settings found in <a href="preferences.html">Preferences</a>, <i>Pay Plan Logic section</i>.</li>
+</ul>
+</div>
+</p>
+<h2>Customize the Report</h2>
+<p>Select criteria and filters to customize the report. Selected criteria may affect the calculated balances.</p>
+<p><b>As Of Date:</b> Enter a date from which to begin calculating aging. Default is today.</p>
+<p class="MarginBottomZero"><b>Include the following</b>: Check criteria boxes to include in the aging report calculations. Checking or unchecking options will affect balance calculations.  </p>
+<ul class="MarginBottomGap">
+<li><b>Procedure Fees</b>: Include procedure fees.</li>
+<li><b>Adjustments</b>: Include adjustments.</li>
+<li><b>Pay Plan Charges</b>: Include pay plan charges in the aged amounts.</li>
+<li><b>Pay Plan Credits</b>: Include pay plan credits in the aged amounts. See <a href="paymentplantxcredits.html">Payment Plan Procedures and Credits</a>.</li>
+<li><b>Patient Payments</b>: Include patient payments.</li>
+<li><b>Insurance Payments</b>: Include insurance payments.</li>
+<li><b>Insurance Estimates</b>: Include insurance estimates.</li>
+<li><b>Write-offs</b>: Include write-offs. Must be checked to show Capitation write-offs.</li>
+<li><b>Write-off Estimates</b>: Include write-off estimates.</li>
+</ul>
+<p class="MarginBottomZero"><b>Negative Balances</b>: Choose whether accounts with negative balances are included in the report.  </p>
+<ul class="MarginBottomGap">
+<li><b>Exclude</b>: Check this box to exclude accounts with negative balances.</li>
+<li><b>Include</b>: Check this box to include accounts negative balances.</li>
+<li><b>Show Only</b>: Check this box to only show accounts with negative balances.</li>
+</ul>
+<p class="MarginBottomZero"><b>Age of Account:</b> Only show accounts aged over the selected value. </p>
+<ul class="MarginBottomGap">
+<li><b>Any Balance</b>: Include patients with any balance due regardless of age.</li>
+<li><b>Over 30 Days</b>: Include patients with balances that are over 30 days due.</li>
+<li><b>Over 60 Days</b>: Include patients with balances that are over 60 days due.</li>
+<li><b>Over 90 Days</b>: Include all patients with balances that are over 90 days due.</li>
+</ul>
+<p><b>Age Write-offs by:</b> Calculate write-offs by insurance payment date, procedure date or using the initial claim date for estimates and insurance pay date for adjustment. The default is determined by the <i>Default to using Proc Date for PPO write-offs</i> preference in <a href="reportssetup.html">Reports Setup</a>.</p>
+<p class="MarginBottomZero"><b>Group By:</b> Select how to group calculation amounts. </p>
+<ul class="MarginBottomGap">
+<li><b>Family</b>: Group by family, listed by name of guarantor.</li>
+<li><b>Individual</b>: Group by individual patient.</li>
+</ul>
+<p><b>Billing Types</b>: Check <b>Al</b>l to include all billing types, or select individual billing types to include.</p>
+<p class="MarginBottomZero"><b>Providers</b>: Select the providers to include. Ctrl + click to select multiple providers or check <b>All</b> to include all listed providers.. </p>
+<ul class="MarginBottomGap">
+<li>When <i>Group By</i> is set to <i>Family</i>, filters by Primary Provider of any family member with a balance.</li>
+<li>When <i>Group By</i> is set to <i>Individual</i>, filters by patient's Primary Provider.</li>
+</ul>
+<p class="MarginBottomZero"><b>Clinics</b>: Select clinics to include in the report. Ctrl + click to select multiple clinics or check <b>All (includes hidden)</b> to include all clinics, including those marked hidden.  </p>
+<ul class="MarginBottomGap">
+<li>When <i>Group By</i> is set to <i>Family</i>, filters by clinic assigned to any family member with a balance.</li>
+<li>When <i>Group By</i> is set to <i>Individual</i>, filters by patient's assigned clinic.</li>
+<li>If user is restricted to specific clinics, only accessible clinics will list. When checking <b>All (includes hidden)</b>, results will include all clinics user has access to, including those marked hidden, and anything unassigned to a clinic; results do not include clinics user is restricted from.</li>
+</ul>
+<p><b>Age Credits:</b> Age credits in increments of 0-30, 31-60, 61-90, and 90+ instead of aging credits using standard calculation (applying credits to oldest charges first).</p>
+<p><b>Exclude Inactive Patients:</b> Check to exclude all patients with an inactive status.</p>
+<p><b>Exclude Archived Patients</b>: Check to exclude all patients with an archived status.</p>
+<p><b>Exclude Bad Addresses:</b> Check to exclude patients with no zip code.</p>
+<p><div class="Note">Note: When the report is grouped by <i>Family</i> Exclude checkboxes refer to the status of the guarantor and not all family members. The entire family will be excluded from the report if the guarantor is excluded.</div>
+</p>
+<h2>Aging</h2>
+<p>Click <b>Refresh</b> to generate the report based on the selected customization options. The Aging grid displays results matching the selected criteria. Click <b>Print</b> to generate a print preview of the report.</p>
+<p>Descriptions of each column in the grid are below.</p>
+<img src="images/reportCustomAgingGrid.png" width="711" height="499"/><ul>
+<li><b>Patient</b>: Last name and first name of patient (when grouped by individual) or guarantor (when grouped by family).</li>
+<li><b>0-30 Days</b>: Balance amount that is up to 30 days past due.</li>
+<li><b>31-60 Days</b>: The balance that is 31-60 days past due.</li>
+<li><b>61-90 Days</b>: The balance that is 61-90 days past due.</li>
+<li><b>&gt; 90 Days</b>: The balance that is greater than 90 days past due.</li>
+<li><b>Total</b>: Total balance due in all aging categories.</li>
+</ul>
+<p>Totals for all account balances included in the grid are shown at the bottom of the window.</p>
+<p><div class="Note">Note: Balances shown in the grid may differ from what appears in the patient account or the Aging of A/R report based on the selected report customization.</div>
+</p>
+</div>
+</div>
+</body>
+</html>

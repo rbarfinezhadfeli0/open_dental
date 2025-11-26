@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Appointment View Edit</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('appointmentvieweditwindow','appointmentviewsetup','+appointments','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/appointmentvieweditwindow.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/appointmentvieweditwindow.html" >v24.2</option><option value="https://www.opendental.com/manual241/appointmentvieweditwindow.html" >v24.1</option><option value="https://www.opendental.com/manual233/appointmentvieweditwindow.html" >v23.3</option><option value="https://www.opendental.com/manual232/appointmentvieweditwindow.html" >v23.2</option><option value="https://www.opendental.com/manual231/appointmentvieweditwindow.html" >v23.1</option><option value="https://www.opendental.com/manual224/appointmentvieweditwindow.html" >v22.4</option><option value="https://www.opendental.com/manual223/appointmentvieweditwindow.html" >v22.3</option><option value="https://www.opendental.com/manual222/appointmentvieweditwindow.html" >v22.2</option><option value="https://www.opendental.com/manual221/appointmentvieweditwindow.html" >v22.1</option><option value="https://www.opendental.com/manual214/appointmentvieweditwindow.html" >v21.4</option><option value="https://www.opendental.com/manual213/appointmentvieweditwindow.html" >v21.3</option><option value="https://www.opendental.com/manual212/appointmentvieweditwindow.html" >v21.2</option><option value="https://www.opendental.com/manual211/appointmentvieweditwindow.html" >v21.1</option><option value="https://www.opendental.com/manual205/appointmentvieweditwindow.html" >v20.5</option><option value="https://www.opendental.com/manual204/appointmentvieweditwindow.html" >v20.4</option><option value="https://www.opendental.com/manual203/appointmentvieweditwindow.html" >v20.3</option><option value="https://www.opendental.com/manual202/appointmentvieweditwindow.html" >v20.2</option><option value="https://www.opendental.com/manual201/appointmentvieweditwindow.html" >v20.1</option><option value="https://www.opendental.com/manual194/appointmentvieweditwindow.html" >v19.4</option><option value="https://www.opendental.com/manual193/appointmentvieweditwindow.html" >v19.3</option><option value="https://www.opendental.com/manual192/appointmentvieweditwindow.html" >v19.2</option><option value="https://www.opendental.com/manual191/appointmentvieweditwindow.html" >v19.1</option><option value="https://www.opendental.com/manual184/appointmentvieweditwindow.html" >v18.4</option><option value="https://www.opendental.com/manual183/appointmentvieweditwindow.html" >v18.3</option><option value="https://www.opendental.com/manual182/appointmentvieweditwindow.html" >v18.2</option><option value="https://www.opendental.com/manual181/appointmentvieweditwindow.html" >v18.1</option><option value="https://www.opendental.com/manual174/appointmentvieweditwindow.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Appointment View Edit</p></div>
+<div class="GeneralPageContent">
+<p>Customize Appointment Views to display preferred information in the Appointments Module.</p>
+<p>In the <a href="appointmentviewsetup.html">Appointment View Setup</a> window, double-click a view.</p>
+<img src="images/apptViewEdit.png" width="915" height="712"/><h2>Options</h2>
+<img src="images/apptViewOptions.png" width="551" height="154"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Description</b>: The identifying name of this Appointment View.</li>
+<li><b>Rows per time increment (usually 1)</b>: Affects the row height for time increments. Enter a number between 1 and 3.</li>
+<li><b>Minimum Op width (default 0) (turns on hscroll)</b>: Enter the minimum width of an operatory (in pixels). Appointments do not scale down below that width, and a horizontal scroll bar appears at the bottom if needed.</li>
+<li><b>View Start Time on Load</b>: Set a fixed default start time. This option is only used when start times are not determined dynamically.</li>
+<li><b>Dynamic start time based on schedule</b>: When checked, the schedule automatically scrolls to whichever comes first: the start time of the earliest appointment or blockout, or the scheduled start time of the earliest scheduled provider.  <ul>
+<li>Only providers in operatories included in the view are considered.</li>
+<li>Operatories not assigned a provider consider the default provider's <a href="schedule.html">Schedule</a>. </li>
+<li>If no operatory has a scheduled provider or appointment, the <i>View Start Time on Load</i> value is used.</li>
+<li>When Open Dental is first launched, the appointment schedule automatically scrolls to the default start time based on the settings above. After Open Dental is launched, the scroll bar remembers the last position it was in and stays there when moving around the program. </li>
+</ul>
+</li>
+<li><b>Disable appointment bubbles</b>: Set whether or not the Appointment Bubble appears in this Appointment View when hovering over an appointment in the schedule. <ul>
+<li>When checked, Appointment Bubbles do not appear when hovering over appointments.</li>
+<li>When unchecked, Appointment Bubbles appear when hovering over appointments. </li>
+<li>Disabling Appointment Bubbles is useful for privacy (so PHI is not visible) and can improve system performance. </li>
+<li>The default state of this setting is determined by <i>Default appointment bubble to 'disabled' for new Appointment Views</i> in <a href="preferences.html">Preferences</a></li>
+</ul>
+</li>
+<li><b>Clinic</b>: If using <a href="clinics.html">Clinics</a>, select the Clinic associated with this view. The view is only available when this Clinic is selected in the <a href="mainmenu.html">Main Menu</a>. Selecting <i>Unassigned</i> allows the view to be selected from <i>Headquarters</i>. Defaults to the Clinic selected on the Appointment Views window.</li>
+<li><b>Waiting Room Name Format</b>: Set how name displays in the <a href="waitingroom.html">Waiting Room</a>.  <ul>
+<li>Last, First: Displays patient's last and first name (e.g., Smith, John).</li>
+<li>First, Last Initial: Displays patient's first name and last initial (e.g., John, S).</li>
+<li>First: Displays patient's first name only (e.g., John).</li>
+</ul>
+</li>
+</ul>
+<h2>Day View / Week View Options</h2>
+<img src="images/apptViewDisplayFilter.png" width="401" height="126"/><p class="MarginBottomZero">Show Operatories in Day View: Determine settings that affect the Appointment View when Day is selected. </p>
+<ul class="MarginBottomGap">
+<li><b>Only show ops for scheduled provs</b>: Check this box to dynamically show Operatories based on provider schedules. Applies to Day View only.  <ul>
+<li>Only operatories selected in <i>View Operatories</i> are considered.</li>
+<li>For this feature to function correctly, it is recommended that all providers be scheduled in an operatory (<a href="schedule.html">Schedule Setup</a>).</li>
+<li>If there is an operatory that does not have a provider scheduled, but there is a provider on the schedule assigned as the operatory's provider, the operatory is still displayed.</li>
+</ul>
+</li>
+ When <i>Only show ops for scheduled provs</i> is checked, the following additional options are available:  <li><b>Only if before time</b>: Show operatories for providers whose schedule starts and ends before this time.</li>
+<li><b>Only if after time</b>: Show operatories for providers whose schedule starts and ends after this time.</li>
+</ul>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+</ul>
+<p class="MarginBottomZero"><b>In Week View, only show days that have scheduled provs or appts</b>: When checked, days with no scheduled appointment or scheduled providers are hidden from the Appointment View when Week is selected. When unchecked, all days of the week (Monday - Sunday) are shown in Week view. </p>
+<ul class="MarginBottomGap">
+<li>Providers are considered scheduled if they have a schedule for the day and are the default provider for an operatory. Providers are also considered scheduled if they are assigned to an operatory in the schedule. See <a href="schedulesetupexamples.html">Schedule Setup Examples</a> for additional information.</li>
+<li>Only provider schedules and appointments for the operatories in the view are considered.</li>
+</ul>
+<h2>View Operatories</h2>
+<img src="images/apptViewOps.png" width="130" height="113"/><p>Select the operatories that show in the Appointment View. If using Clinics, only operatories associated with the assigned Clinic are listed. Click and drag or press Shift or Ctrl while clicking to select multiple operatories. At least one operatory must be selected. Sort order is based on <a href="operatories.html">Operatories</a> order.</p>
+<h2>View Provider Bars</h2>
+<img src="images/apptViewProvBars.png" width="134" height="94"/><p>Select the provider <a href="timebars.html">Time Bars</a> to show in the view. Time bars show on the left of the schedule in the appointment color of the provider.</p>
+<h2>Add Rows to the Appointment View</h2>
+<img src="images/apptViewRows.png" width="636" height="543"/><p>The information that displays on an appointment is determined by rows added to the view. Rows to left of the arrows (Available Rows, Appt Field Defs, and Patient Field Defs) are available to add to an Appointment View. Rows to the right of the arrows (Main List, Upper Right Corner, and Lower Right Corner) are items currently visible in the Appointment View. </p>
+<p>Select a row, then use the left and right arrows to add it to or remove it from the view.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Available Rows</b>: See below for an explanation of each row item.</li>
+<li><b>Appt Field Defs</b>: Displays <a href="appointmentfields.html">Appointment Field Defs</a>.</li>
+<li><b>Patient Field Defs</b>: Displays <a href="custompatientfields.html">Patient Fields</a>. See below for additional details.</li>
+<li><b>Main List</b>: Displays rows added to the Appointment View. These rows display in the center list of the appointment. </li>
+<li><b>Upper Right Corner</b>: The fields listed appear in the upper-right corner of the appointment box. Whether the information is stacked vertically or horizontally is based on the UR stack behavior selection. It can be useful to organize data that displays as symbols in the upper right (e.g., I, A, [L]). Double-click an item to change its text/background color or to move it to a different location.</li>
+<li><b>Lower Right Corner</b>: The fields listed here appear in the lower right corner of the appointment box. Whether the information is stacked vertically or horizontally is based on the LR stack behavior selection. Double-click an item to change its text/background color or to move it to a different location.</li>
+<div class="Note">Note: When adding a field to the Upper Right Corner or Lower Right Corner, only the first row of information is displayed. To see all rows of information, add the field to Main List instead.</div>
+<li>To reorder rows, Select the row then use the <b>Up</b> and <b>Down</b> arrows to move it.</li>
+<li><b>Mobile</b>: Only displays when <a href="opendentalmobile.html">ODMobile</a> is enabled for the Practice or Clinic. Click to determine which fields show on appointments when viewed from an ODMobile device. See below for details.</li>
+</ul>
+<h2>Appointment View Item Edit</h2>
+<p>When a field has been moved from the Available Rows column, the text color or alignment can be edited. </p>
+<p>To edit a field, double-click it. The Appointment View Item Edit window opens. </p>
+<img src="images/apptViewItemEdit.png" width="456" height="242"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Description</b>: Name of the field. This value cannot be changed. </li>
+<li><b>Text Color</b>: Click Change to change the <a href="colorselection.html">Color</a> of the text or row background, depending on the item and location. </li>
+<li><b>Alignment</b>: Select where the field displays on the appointment.  <ul>
+<li>Main: Displays on the appointment in the center list. </li>
+<li>UR: Displays in the upper right of the appointment. </li>
+<li>LR: Displays in the lower right of the appointment.</li>
+</ul>
+</li>
+</ul>
+<h2>Mobile Appointment View Edit</h2>
+<p>For <a href="../site/mobileapp.html">ODMobile Feature</a> users, click <b>Mobile</b> to set up the Appointment View for the mobile app.</p>
+<img src="images/ApptViewMobile.png" width="495" height="700"/><p>Use the<b> Left </b>and <b>Right</b> arrows to determine which Available Rows, Appointment Field Defs, and Patient Field Defs display in the Main List on appointments in ODMobile and ODTouch. Fields can only be displayed in the Main List. </p>
+<p class="MarginBottomZero"><b>Additional Information:</b></p>
+<ul class="MarginBottomGap">
+<li><i>Confirmed Color</i> is not a listed option as it always displays in the upper-right corner of ODMobile and ODTouch appointments. </li>
+<li>The <i>Lab</i> row in mobile view only displays the first Lab Case attached to an appointment.</li>
+</ul>
+<h2>Available Rows</h2>
+<p>A list of available data that can be shown. </p>
+<p><table class="simpletable">
+<tr>
+<th style="width:30%">Row Name</th>
+<th style="width:70%">Description</th>
+</tr>
+<tr>
+<td>Address</td>
+<td>Patient address.</td>
+</tr>
+<tr>
+<td>AddrNote</td>
+<td>Address and phone note.</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>As calculated on Edit Patient Information window.</td>
+</tr>
+<tr>
+<td>ASAP</td>
+<td>Display ASAP when the appointment status is ASAP.</td>
+</tr>
+<tr>
+<td>ASAP[A]</td>
+<td>Display A when the appointment status is ASAP.</td>
+</tr>
+<tr>
+<td>AssistantAbbr</td>
+<td>The assistant's abbreviation. Displays the first two characters of the assistant's first name entered in the <a href="employees.html">Employees</a> list.</td>
+</tr>
+<tr>
+<td>Birthdate</td>
+<td>As entered in the Edit Patient Information window.</td>
+</tr>
+<tr>
+<td>ChartNumAndName</td>
+<td>Chart number and patient last name, first name.</td>
+</tr>
+<tr>
+<td>ChartNumber</td>
+<td>Chart number only.</td>
+</tr>
+<tr>
+<td>ConfirmedColor</td>
+<td>Display a colored circle in the appointment box to indicate <a href="confirmationstatus.html">Confirmation Status</a>. Define colors for each confirmation status in Definitions, Appt Confirmed.</td>
+</tr>
+<tr>
+<td>CreditType</td>
+<td>As entered in the Edit Patient Information window.</td>
+</tr>
+<tr>
+<td>DiscountPlan</td>
+<td>The patient's <a href="discountplans.html">Discount Plan</a> name.</td>
+</tr>
+<tr>
+<td>EstPatientPortion</td>
+<td>Estimated patient portion for attached procedures. (patient portion = gross production - estimated insurance write-offs - insurance estimates - discount plan discount). For estimates to calculate correctly you must chart the procedure from the Chart Module then attach them to the appointment. If procedures are added directly to the appointment, you must click into the Treatment Plan Module to update the estimates.</td>
+</tr>
+<tr>
+<td>Guardians</td>
+<td>Name of person marked as Guardian in <a href="familyrelationship.html">Family Relationships</a>.</td>
+</tr>
+<tr>
+<td>HasDiscount[D]</td>
+<td>Display <b>D</b> when patient has a discount plan.</td>
+</tr>
+<tr>
+<td>HasFamilyBalance[$]</td>
+<td>Display <b>$</b> when there is a family balance on the account, regardless of pending insurance.</td>
+</tr>
+<tr>
+<td>HasIns[I]</td>
+<td>Display <b>I </b>when patient has insurance.</td>
+</tr>
+<tr>
+<td>HmPhone</td>
+<td>Home phone number.</td>
+</tr>
+<tr>
+<td>InsToSend[!]</td>
+<td>Display an exclamation point (<b>!</b>) on patient appointments when there are completed procedures within the last year that have not been sent to insurance. This shows for a patient if any family members have an unsent procedure. We recommend placing it in the Upper Right Corner. For this to show, also enable the <i>Show ! on appts for ins not sent, if added to Appt View</i> preference. The exclamation point won't show if a claim has been created for the completed procedure or the insurance estimate is $0.</td>
+</tr>
+<tr>
+<td>Insurance</td>
+<td>When in the Main List, displays primary and secondary insurance carriers attached to the appointment. <i>Insured</i> displays if the patient currently has medical insurance or other insurance that is not attached to the appointment (i.e., in the Edit Appointment window).</td>
+</tr>
+<tr>
+<td>Insurance Color</td>
+<td>When in the Main List, displays primary and secondary insurance carriers attached to the appointment with a colored background as set in <a href="carriers.html">Carriers</a>. <i>Insured</i> displays if the patient currently has medical insurance or other insurance that is not attached to the appointment (i.e., in the Edit Appointment window) and no colored background is set.</td>
+</tr>
+<tr>
+<td>IsLate[L]</td>
+<td>Display <b>[L]</b> when a patient is late for an appointment. A patient is considered late if they have no time arrived entered on the Edit Appointment window or if the time arrived value is later than the appointment start time.</td>
+</tr>
+<tr>
+<td>Lab</td>
+<td>Show the status of <a href="labcaseedit.html">Lab Cases</a>. We recommend changing the text color to red as well.</td>
+</tr>
+<tr>
+<td>LateColor</td>
+<td> Indicate a patient is late for their appointment by changing the appointment's color. A patient is considered late if they have no time arrived entered on the Edit Appointment window or if the time arrived value is later than the appointment start time. <ul>
+<li>LateColor overrides provider and appointment type color.</li>
+<li>The appointment color does not change from <i>Late Color</i> unless the patient's <i>Time Arrived</i> is updated to show the patient was not late.</li>
+<li>Completed <i>Late Color</i> appointments change to <i>Completed</i> appointment color.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>MedOrPremed[+]</td>
+<td>Display <b>+</b> to indicate patient has Premedicate checked, medical urgent notes, allergies, and/or problems</td>
+</tr>
+<tr>
+<td>MedUrgNote</td>
+<td>Medical Urgent Note entered in the <a href="medical.html">Medical Chart</a>.</td>
+</tr>
+<tr>
+<td>NetProduction</td>
+<td>Net production of procedures attached to the appointment. Net production is the amount remaining after estimated write-offs and adjustments are calculated. Add this field or Production to see the Daily Prod sum at the right of the Appointments Module. See <a href="productiontotals.html"> for additional calculation details</a>.</td>
+</tr>
+<tr>
+<td>Note</td>
+<td>The Appointment Note entered on the Edit Appointment window.</td>
+</tr>
+<tr>
+<td>PatientName</td>
+<td>The patient's last name, preferred name, first name, and middle initial.</td>
+</tr>
+<tr>
+<td>PatientNameF</td>
+<td>The patient's first name.</td>
+</tr>
+<tr>
+<td>PatientNamePref</td>
+<td>The patient's preferred name.</td>
+</tr>
+<tr>
+<td>PatientWard</td>
+<td>The patient's ward as entered in <a href="patientedithospitals.html">Edit Patient Information: Hospitals Tab</a>.</td>
+</tr>
+<tr>
+<td>PatNum</td>
+<td>Patient number assigned by Open Dental.</td>
+</tr>
+<tr>
+<td>PatNumAndName</td>
+<td>Patient number and patient last name, first name.</td>
+</tr>
+<tr>
+<td>PremedFlag</td>
+<td>Display <b>Premedicate</b> when Premedicate is checked in the Chart Medical area.</td>
+</tr>
+<tr>
+<td>Procs</td>
+<td>List abbreviations for procedures attached to the appointment on a single line, separated by commas. Text wraps to next line if too long for a single line.</td>
+</tr>
+<tr>
+<td>ProcsColored</td>
+<td> See <a href="apptviewproccolors.html">Proc Appt Colors</a>. Can only display in the Main List.</td>
+</tr>
+<tr>
+<td>Production</td>
+<td>Show the sum of the fees for all procedures attached to the appointment for providers who have a provider time bar showing. Add this field or NetProduction to view to see the Daily Prod sum at the right of the Appointments module. See <a href="productiontotals.html">Production Totals</a>.</td>
+</tr>
+<tr>
+<td>Prophy/PerioPastDue[P]</td>
+<td>Display <b>P</b> when a Prophy or Perio <a href="recalltypes.html">Special Recall</a> type is overdue.</td>
+</tr>
+<tr>
+<td>Provider</td>
+<td>Displays providers on the appointment.</td>
+</tr>
+<tr>
+<td>RecallPastDue[R]</td>
+<td>Display <b>R</b> when any recall type (other than Prophy or Perio) is overdue.</td>
+</tr>
+<tr>
+<td>TimeAskedToArrive</td>
+<td>Display the time before the appointment that the patient has been asked to arrive to the office. See <a href="timeasktoarrive.html">Time Ask to Arrive</a>.</td>
+</tr>
+<tr>
+<td>VerifyIns[V]</td>
+<td>Display <b>V</b> when insurance has not been verified. Icon shows for patients using <a href="insverifylistsetup.html">Insurance Verification Setup</a> settings.</td>
+</tr>
+<tr>
+<td>WirelessPhone</td>
+<td>Patient wireless phone number.</td>
+</tr>
+<tr>
+<td>WkPhone</td>
+<td>Patient work phone number.</td>
+</tr>
+</table>
+</p>
+<h2>Patient Field Defs</h2>
+<p class="MarginBottomZero">The available <a href="custompatientfields.html">Patient Fields</a>. </p>
+<ul class="MarginBottomGap">
+<li>CareCredit Pre-Approval Status: Displays the CareCredit Quickscreen status for the patient. <ul>
+<li>Green circle: Patient is pre-approved.</li>
+<li>Orange triangle: Patient is unable to pre-approve.</li>
+<li>Blue square: Patient is a current CareCredit cardholder.</li>
+</ul>
+</li>
+<li>CareCredit Pre-Approval Amount: Displays the CareCredit Quickscreen pre-approval amount for the patient. If this field is filled, CareCredit Available Credit displays as <i>N/A</i>.</li>
+<li>CareCredit Available Credit: Displays the CareCredit Quickscreen response for the patient's available credit. If this field is filled, CareCredit Pre-Approval Amount displays as <i>N/A</i>. Patient must already be a CareCredit cardholder for this field to fill. </li>
+</ul>
+</div>
+</div>
+</body>
+</html>

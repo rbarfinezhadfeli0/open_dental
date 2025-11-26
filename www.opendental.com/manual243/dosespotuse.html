@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - DoseSpot eRx / Prescription</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('dosespotuse','+eRx','+chartToolbar','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/dosespotuse.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/dosespotuse.html" >v24.2</option><option value="https://www.opendental.com/manual241/dosespotuse.html" >v24.1</option><option value="https://www.opendental.com/manual233/dosespotuse.html" >v23.3</option><option value="https://www.opendental.com/manual232/dosespotuse.html" >v23.2</option><option value="https://www.opendental.com/manual231/dosespotuse.html" >v23.1</option><option value="https://www.opendental.com/manual224/dosespotuse.html" >v22.4</option><option value="https://www.opendental.com/manual223/dosespotuse.html" >v22.3</option><option value="https://www.opendental.com/manual222/dosespotuse.html" >v22.2</option><option value="https://www.opendental.com/manual221/dosespotuse.html" >v22.1</option><option value="https://www.opendental.com/manual214/dosespotuse.html" >v21.4</option><option value="https://www.opendental.com/manual213/dosespotuse.html" >v21.3</option><option value="https://www.opendental.com/manual212/dosespotuse.html" >v21.2</option><option value="https://www.opendental.com/manual211/dosespotuse.html" >v21.1</option><option value="https://www.opendental.com/manual205/dosespotuse.html" >v20.5</option><option value="https://www.opendental.com/manual204/dosespotuse.html" >v20.4</option><option value="https://www.opendental.com/manual203/dosespotuse.html" >v20.3</option><option value="https://www.opendental.com/manual202/dosespotuse.html" >v20.2</option><option value="https://www.opendental.com/manual201/dosespotuse.html" >v20.1</option><option value="https://www.opendental.com/manual194/dosespotuse.html" >v19.4</option><option value="https://www.opendental.com/manual193/dosespotuse.html" >v19.3</option><option value="https://www.opendental.com/manual192/dosespotuse.html" >v19.2</option><option value="https://www.opendental.com/manual191/dosespotuse.html" >v19.1</option><option value="https://www.opendental.com/manual184/dosespotuse.html" >v18.4</option><option value="https://www.opendental.com/manual183/dosespotuse.html" >v18.3</option><option value="https://www.opendental.com/manual182/dosespotuse.html" >v18.2</option><option value="https://www.opendental.com/manual181/dosespotuse.html" >v18.1</option><option value="https://www.opendental.com/manual174/dosespotuse.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>DoseSpot eRx / Prescription</p></div>
+<div class="GeneralPageContent">
+<p>Use DoseSpot to send electronic prescriptions for patients.</p>
+<p>In the <a href="chart.html">Chart Module</a>, click <b>eRx</b>.</p>
+<img src="images/doseSpotPatientDetails.png" width="915" height="471"/><p>Providers and proxy (non provider) clinicians can begin using DoseSpot to send e-Prescriptions after <a href="dosespotsetup.html">DoseSpot Setup</a> is complete. </p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><img src="images/youtubeLogo.png" width="16" height="16" style="margin-bottom: 0px"/> See our Webinar: <a href="https://youtu.be/x7TPzYe0TGA">Using DoseSpot</a></li>
+<li>DoseSpot can also be used with <a href="opendentalmobile.html">ODMobile</a> and <a href="odtouchsetup.html">ODTouch</a>.</li>
+<li>Also see the <a href="https://opendental.com/resources/DoseSpot%20Prescribing%20App%20User%20Guide%20-%20Standalone%20Guide%20March%202019.pdf" target="_blank">DoseSpot User Guide</a>. Not all functionality noted in the DoseSpot User Guide is supported by Open Dental. </li>
+</ul>
+<p class="MarginBottomZero">Overview: There are six main steps to using DoseSpot. See each section below for details. </p>
+<ol class="MarginBottomGap">
+<li>Select a patient.</li>
+<li>Add allergies.</li>
+<li>Add current medications.</li>
+<li>Add a pharmacy.</li>
+<li>Prescribe new medications.</li>
+<li>Subscribe to eRx alerts. See <a href="alertsubscribe.html">Alert Subscription</a>.</li>
+</ol>
+<h2>Select a Patient</h2>
+<p>Select a patient in Open Dental, then click <b>eRx</b> to launch the DoseSpot interface. To change patients in DoseSpot, close the interface, then select the needed patient in Open Dental and relaunch DoseSpot.</p>
+<p><div class="Note">Note: <ul>
+<li>If prescribing for a patient under the age of 18, first enter their height and weight in <a href="vitalsignsenter.html">Vital Signs</a>.</li>
+<li>Patient information updated within Open Dental also updates the patient in DoseSpot.</li>
+<li>When proxy (non-provider) users select the eRx button, they need to select the provider they are creating the prescription for from the list. Providers who are scheduled for today, or are the patient's default provider, display. If the provider is not scheduled, they can use the "show all" box to see a full list of providers.</li>
+<li>Proxy users can only create pending prescriptions. A registered provider must complete the sending process.</li>
+</ul>
+</div>
+</p>
+<h2>Add Allergies</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>In the Patient Details dashboard, Drug Allergies area, click <b>Add/Edit Drug Allergies</b>. Allergy information already entered for the selected patient shows here.</li>
+<li>Check No Known Allergies if the patient has no allergies. <br/><img src="images/doseSpotAddAllergy.png" width="915" height="199" class="ImageInParagraph"/></li>
+<li>Fill in the information. <ul>
+<li><b>Allergy</b>: Begin typing the drug name and a list appears. Select the correct drug from the list.</li>
+<li><b>Status</b>: Select Active or Inactive. The default is Active.</li>
+<li><b>Reaction Type</b>: Select Allergy or Adverse Reaction.</li>
+<li><b>Reaction</b>: Enter the reaction the patient gets from the drug.</li>
+<li><b>Onset</b>: The date of the first occurrence of the allergy.</li>
+</ul>
+</li>
+<li>Click <b>Save</b>.</li>
+</ol>
+<p>Prescribing a drug the patient is allergic to results in a warning in the Patient Details dashboard.</p>
+<img src="images/doseSpotDrugAllergy.png" width="614" height="190"/><h2>Add Existing Medications</h2>
+<p>We recommend adding medications through DoseSpot to be considered for interactions (i.e., drug-drug or drug-allergy). Medications added to DoseSpot are automatically listed in Open Dental. </p>
+<p class="MarginBottomZero">To add a medication as Patient Reported in DoseSpot:</p>
+<ol class="MarginBottomGap">
+<li>In the Patient Details dashboard, click <b>Add Patient Reported</b>. <img src="images/doseSpotAddMed.png" width="915" height="115"/></li>
+<li>In the Search field, begin typing the medication name and it appears. Select the correct medication from the list. If the medication does not appear, manually enter it and click Add.</li>
+<li>The medication appears in Medications to Add.</li>
+<li>Click <b>Save</b>.</li>
+</ol>
+<p>Patient reported (or self reported) medications appear in <a href="medicationspatient.html">Medications</a> in Open Dental and in the Patient's Active Medications area as a comment icon in DoseSpot. </p>
+<img src="images/doseSpotPatActiveMed.png" width="915" height="227"/><h2>Deleting Medications</h2>
+<p>Medications deleted in DoseSpot are deleted from Open Dental. </p>
+<p>Medications deleted in Open Dental are not deleted in DoseSpot. The medication must be manually deleted from DoseSpot.</p>
+<p>Self-reported medications must be deleted from both Open Dental and DoseSpot manually.</p>
+<h2>Add a Preferred Pharmacy</h2>
+<p>Add a pharmacy to the patient before sending medications electronically. Preferred pharmacies list under Add/Edit Pharmacies in the Patient Details dashboard.</p>
+<img src="images/doseSpotPatPrefPharm.png" width="305" height="401"/><p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>In Patient's Preferred Pharmacies, click <b>Add/Edit Pharmacies</b>.</li>
+<img src="images/doseSpotManagePharm.png" width="915" height="308"/><li>Use the Search By or Specialty dropdowns to filter the pharmacy list, or enter the pharmacy info in the provided fields. Select EPCS in Specialty for EPCS pharmacies.<br/><div class="Note">Note: Searching for a pharmacy must be exact. For example "rite aid" would not result in "Rite-Aid". We recommend using city, state, or zip when searching. </div>
+</li>
+<li>Click Search.</li>
+<li>Click the preferred pharmacy from the pharmacy list to add it to the patient.</li>
+<li>To remove a pharmacy, click Add/Edit Pharmacies and select the 'x' next to Pharmacy Name.</li>
+</ol>
+<h2>Prescribe and Send New Medications</h2>
+<p class="MarginBottomZero">Prescribing New Medications: These steps can be completed by a proxy user or registered provider. </p>
+<ol class="MarginBottomGap">
+<li>In the Patient Details dashboard, click <b>Add Prescription</b>. </li>
+<li>In the Search field, begin typing the medication name and it appears. Select the correct medication from the list.</li>
+<li>Click the dosage amount listed under the medication.</li>
+<li>Fill out the following fields: <ul>
+<li><b>Effective Date</b>: This is a required field for controlled substances, and must be within six months of the day the prescription is written.</li>
+<li><b>Patient Directions</b></li>
+<li><b>Dispense Amount</b></li>
+<li><b>Number of Refills</b>: Schedule II medications cannot have a refill. Enter zero (0) in that case. Schedule III, IV and V may have five (5) or fewer refills. Non-controlled substances may have 99 or fewer refills.</li>
+<li><b>Days Supply</b>: Cannot exceed 365 days. Schedule II medications require this field and cannot exceed 90 days.</li>
+<li><b>Pharmacist's Message</b>: If the prescription requires a CDT code, enter it in this field.</li>
+<li>Check<b> No substitutions</b> if needed.</li>
+</ul>
+</li>
+<li>If the provider's state requires it, add ICD/ADA code in the Pharmacy Notes. Click Show Pharmacy Notes below Save Prescription.</li>
+<li>Click the star icon to save this medication to favorites. Click Save Prescription to mark the prescription as Pending.</li>
+</ol>
+<p>A registered provider must complete the remaining steps to send a prescription. </p>
+<p class="MarginBottomZero">Sending New Medications </p>
+<ol class="MarginBottomGap">
+<li>Scroll down to Pending Medications.</li>
+<li>Check the box next to the medication to select it.</li>
+<li>Enter the provider's PIN.</li>
+<li>Click Approve &amp; Send.</li>
+</ol>
+<p>Non-controlled substances: Prescriptions are sent immediately and the status is indicated with a gray arrow in the Patient's Active Medications. Once the pharmacy electronically confirms receipt of the prescription, the grey arrow turns into a green checkmark.</p>
+<p class="MarginBottomZero">Controlled substances: The prescribing provider must Register for EPCS before sending. See <a href="dosespotsetup.html">DoseSpot Setup</a>. </p>
+<ol class="MarginBottomGap">
+<li>Confirm the pharmacy and prescription.</li>
+<li>Click Ready to Sign.</li>
+<li>Enter the provider's PIN. If needed, select the link to the state's PDMP website. A username and password is required.</li>
+<li>Open the Duo Mobile app on the provider's mobile device and enter the two-factor authentication (TFA) code.</li>
+<li>Click Approve &amp; Send.</li>
+</ol>
+<p>The prescription is sent and the status is indicated with a gray arrow in the Patient's Active Medications. Once the pharmacy electronically confirms receipt of the prescription, the grey arrow turns into a green checkmark.</p>
+<h2>Favorites</h2>
+<p>Favorites are prescriptions that you have already set up and use commonly that can quickly be prescribed for a patient. Favorites can be edited on a individual basis, but will default to the information included when the prescription was favorited. Favorites can be created on both a Clinic and User level. </p>
+<p class="MarginBottomZero"><b>Creating a Clinic Favorites List</b></p>
+<ol class="MarginBottomGap">
+<li>From the Admin Console website, click <b>Clinics</b> in the upper right corner of the admin console.</li>
+<li>Click <b>Edit</b> under the Details area for the desired clinic.</li>
+<li>Select the Clinic Favorites tab.</li>
+<li>Click <b>Add New Favorite</b> and add prescription information. Medication name, name of favorite, strength, patient directions, dispense amount, dispense unit, and days supply are required. Pharmacy notes and Substitution Allowed are optional. </li>
+<li>Click <b>Submit.</b></li>
+</ol>
+<p class="MarginBottomZero"><b>Copying Clinic Favorites</b></p>
+<ol class="MarginBottomGap">
+<li>Select the prescriptions by checking the box to the right of each prescription. The <b>Check All</b> box only applies to medications on that page. You may need to go to additional pages to select additional medications.</li>
+<li>Select <b>Copy to Clinic(s)</b>.</li>
+<li>Check the box to the right of each clinic that needs the list. You can use the search box to look them up by name or clinic ID.</li>
+<li>Select either <b>Overwrite Clinic Favorites</b> or <b>Append Clinic Favorites</b>. This will add the clinic favorites for the selected clinic.</li>
+</ol>
+<p class="MarginBottomZero"><b>Creating a User Favorites List</b></p>
+<ol class="MarginBottomGap">
+<li>Launch DoseSpot with the user logged into Open Dental.</li>
+<li>Select <b>Add Prescription</b>.</li>
+<li>Select the drug, drug type and dosage.</li>
+<li>Fill out all sig information.</li>
+<li>Click the star button. </li>
+<li>Click <b>Save</b>.</li>
+<li>Name the favorite.</li>
+</ol>
+<p><div class="Note">Note: User Favorites are specific to the user that created them, and cannot be copied to other users. Use Clinic Favorites for multiple users.</div>
+</p>
+<p class="MarginBottomZero"><b>Prescribing a Favorite</b></p>
+<ol class="MarginBottomGap">
+<li>In the Patient Details dashboard, click <b>Add Prescription</b>.</li>
+<li>Select a drug and dosage amount from the favorites list, or begin typing a drug to narrow down the favorites list.</li>
+<li>Verify the sig is correct and click <b>Save Prescription</b>.</li>
+<li>Send prescription as normal.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>

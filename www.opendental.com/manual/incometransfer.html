@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Income Transfer</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('incometransfer','payment','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/incometransfer.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/incometransfer.html" >v24.2</option><option value="https://www.opendental.com/manual241/incometransfer.html" >v24.1</option><option value="https://www.opendental.com/manual233/incometransfer.html" >v23.3</option><option value="https://www.opendental.com/manual232/incometransfer.html" >v23.2</option><option value="https://www.opendental.com/manual231/incometransfer.html" >v23.1</option><option value="https://www.opendental.com/manual224/incometransfer.html" >v22.4</option><option value="https://www.opendental.com/manual223/incometransfer.html" >v22.3</option><option value="https://www.opendental.com/manual222/incometransfer.html" >v22.2</option><option value="https://www.opendental.com/manual221/incometransfer.html" >v22.1</option><option value="https://www.opendental.com/manual214/incometransfer.html" >v21.4</option><option value="https://www.opendental.com/manual213/incometransfer.html" >v21.3</option><option value="https://www.opendental.com/manual212/incometransfer.html" >v21.2</option><option value="https://www.opendental.com/manual211/incometransfer.html" >v21.1</option><option value="https://www.opendental.com/manual205/incometransfer.html" >v20.5</option><option value="https://www.opendental.com/manual204/incometransfer.html" >v20.4</option><option value="https://www.opendental.com/manual203/incometransfer.html" >v20.3</option><option value="https://www.opendental.com/manual202/incometransfer.html" >v20.2</option><option value="https://www.opendental.com/manual201/incometransfer.html" >v20.1</option><option value="https://www.opendental.com/manual194/incometransfer.html" >v19.4</option><option value="https://www.opendental.com/manual193/incometransfer.html" >v19.3</option><option value="https://www.opendental.com/manual192/incometransfer.html" >v19.2</option><option value="https://www.opendental.com/manual191/incometransfer.html" >v19.1</option><option value="https://www.opendental.com/manual184/incometransfer.html" >v18.4</option><option value="https://www.opendental.com/manual183/incometransfer.html" >v18.3</option><option value="https://www.opendental.com/manual182/incometransfer.html" >v18.2</option><option value="https://www.opendental.com/manual181/incometransfer.html" >v18.1</option><option value="https://www.opendental.com/manual174/incometransfer.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Income Transfer</p></div>
+<div class="GeneralPageContent">
+<p>Create a $0 payment to transfer all or specific unallocated income and negative adjustments to outstanding charges.</p>
+<p>In the <a href="payment.html">Payment Window</a>, at the top, check <b>None (Income Transfer)</b>.</p>
+<img src="images/paymentTypeNone.png" width="649" height="186"/><p>After creating the $0 payment, check the <i>Payment Type, None (Income Transfer)</i>. When checked, the Pay/Add Partials buttons are replaced with Transfer.</p>
+<p>Alternatively, use the <a href="incometransfermanager.html">Income Transfer Manager</a> to transfer all unallocated credits, including unallocated claim payments. To transfer <a href="unearnedprepayment.html">Unearned Income / Prepayments</a>, see <a href="unearnedallocate.html">Allocate Unearned Income</a>.</p>
+<p><div class="Note">Note: <ul>
+<li>To view this window automatically after receiving a claim payment, enable <i>Show provider income transfer window after entering insurance payment</i> in <a href="preferences.html">Preferences</a>.</li>
+<li>Income transfers require the <i>PaymentCreate </i><a href="permissions.html">Permission</a>.</li>
+<li>An <a href="audittrail.html">Audit Trail</a> entry is logged for income transfers.</li>
+</ul>
+</div>
+</p>
+<p>An income transfer must include offsetting negative and positive payment splits (paysplits) equal to $0. Follow the steps below to create a manual income transfer.</p>
+<p class="MarginBottomZero">First, add the negative paysplit to subtract the income source from a patient's clinic and treating provider, or charge: </p>
+<ol class="MarginBottomGap">
+<li>Click <b>Add Split</b> to create a new payment split.</li>
+<li>On the <a href="paysplit.html">Edit Payment Split</a> window, enter a negative amount less than or equal to the income source. <ul>
+<li>Less than, to transfer a partial amount (e.g. for an overpayment).</li>
+<li>Equal to, to transfer the entire amount.</li>
+</ul>
+</li>
+<li>Select the Patient with the income source to transfer (defaults to guarantor). Check <b>Is from another family</b> to select a patient not in the family list.</li>
+<li>Select where to subtract the income from. The income (i.e., a payment) must exist where it is being subtracted from to create a valid transfer.  <ul>
+<li>Select a <b>Clinic</b> and <b>Provider</b> (and Unearned Type, if applicable).</li>
+<li>Select an Unearned Type</li>
+<li>Procedure tab: Click <b>Attach</b> to select a completed or treatment planned procedure (TP). The Clinic/Provider is inherited from the procedure.</li>
+<li>Adjustment tab: Click <b>Attach</b> to select an adjustment. The Clinic/Provider is inherited from the adjustment.</li>
+<li>Payment Plan: Select the Clinic and Provider assigned to the payment plan, and check <b>Attached to Payment Plan</b>. If the family has multiple payment plans, choose the correct plan from the Select Payment Plan window.</li>
+<li>See <a href="unearnedallocate.html">Allocate Unearned Income</a> to allocate unearned income instead.</li>
+</ul>
+</li>
+<li>Click <b>OK</b> to save the negative paysplit.</li>
+</ol>
+<img src="images/incomeTxfrNegSplit.png" width="803" height="536"/><p class="MarginBottomZero">Next, add the positive paysplit to add the income to a different clinic/provider or charge: </p>
+<ol class="MarginBottomGap">
+<li>Click <b>Add Split</b> to create a new payment split.</li>
+<li>Enter a positive amount, less than or equal to the negative split. <ul>
+<li>Less than, if adding the income to multiple charges.</li>
+<li>Equal to, if adding all of the income to one charge.</li>
+</ul>
+</li>
+<li>Select the Patient to transfer the income to.</li>
+<li>Attach the income to a procedure, adjustment, payment plan, or unearned type (one per paysplit). <ul>
+<li>Alternatively, if not transferring to a charge, select a clinic/provider combination to add the income to. A charge must exist for the selected combination to complete a valid transfer.</li>
+</ul>
+</li>
+<li>Click <b>OK</b> to save the positive paysplit.</li>
+</ol>
+<img src="images/incomeTxfrPosSplit.png" width="803" height="536"/><p>Create additional positive paysplits until the subtracted income is completely allocated. The total added splits must be zero to complete the transfer. </p>
+<p>Once all splits have been created and the Current Payment Splits Total equals 0.00, click <b>OK</b> on the Payment window to post the income transfer as a line item to each affected patient's account. </p>
+<img src="images/incomeTxfrSplits.png" width="491" height="126"/><p><div class="Note">Note: If income is transferred but not allocated to production, the next time a transfer is completed through the Income Transfer Manager, the income will be allocated to a production source, if available.</div>
+</p>
+<h2>Transfer Family Balances</h2>
+<p>To transfer all unallocated credits to any outstanding charges within the family, follow the instructions below. This method does not transfer unallocated insurance payments. Use the Income Transfer Manager instead.</p>
+<p>With <b>None (Income Transfer)</b> as the Payment Type checked, the Outstanding Charges grid groups all charges for the family by clinic and provider. Use the Group By dropdown to group charges by Provider or select None to show all charges with a balance.</p>
+<img src="images/incomeTransferFamilyCharges.png" width="612" height="173"/><ul>
+<li>The Amt End is the sum of all insurance estimates, write-offs, payments, and charges for the clinic/provider combination.</li>
+<li>A negative Amt End indicates an over allocation of payments and/or positive adjustments for the clinic and provider.</li>
+<li>A positive Amt End is the total amount owed to the clinic and provider. </li>
+</ul>
+<br/><p>Click <b>Transfer</b>. Positive and negative paysplits are created for each credit that is allocated to an outstanding charge. <div class="Note">Note: <ul>
+<li>When the <a href="allocationssetup.html">Allocations Setup</a><i> Paysplit</i> setting is set to <i>Rigorous</i>, transfers that include paysplits without an adjustment, procedure, or unearned type are not allowed. Use the Income Transfer Manager instead.</li>
+<li>If you receive a warning message and/or the income transfer cannot be completed, see <a href="incometransfermanager.html">Income Transfer Manager</a> for troubleshooting steps.</li>
+</ul>
+</div>
+</p>
+<img src="images/incomeTransferCurrentPaySplits.png" width="493" height="176"/><p>Click <b>OK</b> on the Payment window to complete the transfer. The account balance of each family member included in the transfer increases or decreases by the transfer amount.</p>
+<img src="images/incomeTransferFamBal.png" width="367" height="105"/><h2>Completed Transfers</h2>
+<p>Income transfers show as blank payment items with a Txfr code on the Patient Account. Only one, zero credit line item shows if income is transferred from procedure to procedure under the same patient and clinic/provider combination. If income is transferred between multiple patients, and clinics/providers, a Txfr shows for the total negative amount transferred from each patient/clinic/provider combination, and for the total positive amount transferred to each combination. </p>
+<img src="images/incomeTransferTxfrLine.png" width="736" height="37"/><p>Transfers also show on reports affecting income allocation only; they do not increase or decrease the total practice income. </p>
+<h2>Detaching Payment from a Treatment Planned Prepayment</h2>
+<p class="MarginBottomZero">If payment was allocated to a treatment planned procedure that is no longer to be completed, the payment must be detached from the procedure before the procedure can be deleted. </p>
+<ol>
+<li>In the Hidden Splits tab, double-click the Treatment Plan Prepayment.</li>
+<li>Double-click the payment split for the procedure that is no longer to be completed.</li>
+<li>Click <b>Detach</b>. The payment split is still attached as a Treatment Plan Prepayment and to the same provider, but is no longer connected to the procedure.</li>
+<li>If another procedure is being done in the original procedure's place, click <b>Attach</b>: <ol>
+<li>Select the new procedure. </li>
+<li> Click <b>OK</b>.</li>
+</ol>
+</li>
+<li>Click <b>OK</b>.</li>
+<li>Repeat the steps for any additional procedures on the payment.</li>
+<li>Click <b>OK</b> to close the Payment window. </li>
+</ol>
+<p class="MarginBottomGap"> The treatment planned procedures that are no longer to be completed can now be deleted.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1993 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Manual</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">.LeftTree{
+        display:block;/*For manual.html, always show the tree*/
+        max-width:98%;/*Let it shrink when very narrow*/
+    }
+		.RightMain{
+				margin-left:384px;/*and never change the margin for the right pane*/
+				display:none;/*for phones*/
+		}
+		.LinkOdSpecialSearch, .LinkOdSpecialHome{
+				display:block;/*show this link on phones*/
+				margin-left:24px;
+		}
+		@media screen and (min-width: 700px) {/*if screen is at all big enough on manual.html*/
+				.RightMain {
+						display: block;/*then show the right pane*/
+				}
+				.LinkOdSpecialSearch, .LinkOdSpecialHome{
+						display:none;/*hide this redundant link*/
+				}
+		}
+</style>
+</head>
+<body onload="BodyLoaded('manual','modules','mainmenu','toolbar','+technical')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<p class="LinkOdSpecialHome"><a href="../index.html">Open Dental Home</a></p>
+<p class="LinkOdSpecialSearch"><a href="searchmanual.html">Search</a></p>
+<ul class="LeftTreeFirstNode" onclick="ButtonClicked(event)">
+<li class="collapse" id="manual"><div class="exptxt"><a href="../manual243/manual.html">Manual</a></div>
+<ul id="ul_manual">
+<li class="collapse" id="modules"><div class="exptxt"><a href="../manual243/modules.html">Module</a></div>
+<ul id="ul_modules">
+<li class="collapse" id="appointments"><div class="exptxt"><a href="../manual243/appointments.html">Appointments Module</a></div>
+<ul id="ul_appointments">
+<li id="appointmentviews"><a href="../manual243/appointmentviews.html">Appointment Views</a></li>
+<li id="timebars"><a href="../manual243/timebars.html">Time Bars</a></li>
+<li id="blockouts"><a href="../manual243/blockouts.html">Blockouts</a></li>
+<li id="apptpinboard"><a href="../manual243/apptpinboard.html">Pinboard</a></li>
+<li id="productiontotals"><a href="../manual243/productiontotals.html">Production Totals</a></li>
+<li id="waitingroom"><a href="../manual243/waitingroom.html">Waiting Room</a></li>
+<li id="confirmationstatus"><a href="../manual243/confirmationstatus.html">Confirmation Status</a></li>
+<li id="aptedit"><a href="../manual243/aptedit.html">Edit Appointment</a></li>
+<li id="apptspatient"><a href="../manual243/apptspatient.html">Patient Appointments</a></li>
+<li class="collapse" id="appointmentlists"><div class="exptxt"><a href="../manual243/appointmentlists.html">Appointment Lists</a></div>
+<ul id="ul_appointmentlists">
+<li class="collapse" id="recalllist"><div class="exptxt"><a href="../manual243/recalllist.html">Recall List</a></div>
+<ul id="ul_recalllist">
+<li id="recalllistrecentlycontacted"><a href="../manual243/recalllistrecentlycontacted.html">Recall List - Reminders</a></li>
+<li id="recalllistreactivation"><a href="../manual243/recalllistreactivation.html">Recall List - Reactivations</a></li>
+</ul>
+<li id="confirmationlist"><a href="../manual243/confirmationlist.html">Confirmation List</a></li>
+<li id="appttracker"><a href="../manual243/appttracker.html">Planned Appointment Tracker</a></li>
+<li id="unscheduled"><a href="../manual243/unscheduled.html">Unscheduled List</a></li>
+<li class="collapse" id="asaplist"><div class="exptxt"><a href="../manual243/asaplist.html">ASAP List</a></div>
+<ul id="ul_asaplist">
+<li id="asapmsgs"><a href="../manual243/asapmsgs.html">ASAP Message Setup</a></li>
+</ul>
+<li id="insverifylist"><a href="../manual243/insverifylist.html">Insurance Verification List</a></li>
+</ul>
+<li id="updateprovsfutureappts"><a href="../manual243/updateprovsfutureappts.html">Update Provs on Future Appts</a></li>
+<li id="apptcomplete"><a href="../manual243/apptcomplete.html">Set Appointment Complete</a></li>
+<li id="apptbreak"><a href="../manual243/apptbreak.html">Break Appointment</a></li>
+<li id="apptdelete"><a href="../manual243/apptdelete.html">Delete Appointment</a></li>
+<li id="timeasktoarrive"><a href="../manual243/timeasktoarrive.html">Time Ask to Arrive</a></li>
+<li id="apptprint"><a href="../manual243/apptprint.html">Print Appointments</a></li>
+</ul>
+<li class="collapse" id="family"><div class="exptxt"><a href="../manual243/family.html">Family Module</a></div>
+<ul id="ul_family">
+<li class="collapse" id="patientedit"><div class="exptxt"><a href="../manual243/patientedit.html">Edit Patient Information</a></div>
+<ul id="ul_patientedit">
+<li id="patienteditemergencycontact"><a href="../manual243/patienteditemergencycontact.html">Edit Patient Information: Emergency Contact Tab</a></li>
+<li id="patientedithospitals"><a href="../manual243/patientedithospitals.html">Edit Patient Information: Hospitals Tab</a></li>
+<li id="patienteditother"><a href="../manual243/patienteditother.html">Edit Patient Information: Other Tab</a></li>
+<li class="collapse" id="patienteditpublichealth"><div class="exptxt"><a href="../manual243/patienteditpublichealth.html">Edit Patient Information: Public Health Tab</a></div>
+<ul id="ul_patienteditpublichealth">
+<li id="publichealth"><a href="../manual243/publichealth.html">Public Health</a></li>
+</ul>
+<li id="requiredfields"><a href="../manual243/requiredfields.html">Required Fields</a></li>
+<li id="familyrelationship"><a href="../manual243/familyrelationship.html">Family Relationships</a></li>
+<li id="patienteditehr"><a href="../manual243/patienteditehr.html">Edit Patient Information: EHR Misc Tab</a></li>
+</ul>
+<li class="collapse" id="referrals"><div class="exptxt"><a href="../manual243/referrals.html">Referrals</a></div>
+<ul id="ul_referrals">
+<li id="referralslips"><a href="../manual243/referralslips.html">Referral Slip</a></li>
+<li id="referraleditattachment"><a href="../manual243/referraleditattachment.html">Edit Referral Attachment</a></li>
+</ul>
+<li class="collapse" id="insplan"><div class="exptxt"><a href="../manual243/insplan.html">Insurance Plan</a></div>
+<ul id="ul_insplan">
+<li class="collapse" id="benefitinfo"><div class="exptxt"><a href="../manual243/benefitinfo.html">Benefits</a></div>
+<ul id="ul_benefitinfo">
+<li id="editbenefit"><a href="../manual243/editbenefit.html">Edit Benefit</a></li>
+<li id="benefitinforowview"><a href="../manual243/benefitinforowview.html">Edit Benefits - Row View</a></li>
+<li id="otherbenefits"><a href="../manual243/otherbenefits.html">Other Benefits</a></li>
+<li id="deductibles"><a href="../manual243/deductibles.html">Deductibles</a></li>
+<li id="insfrequencylimitations"><a href="../manual243/insfrequencylimitations.html">Frequency Limitations</a></li>
+</ul>
+<li id="adjinsbenefits"><a href="../manual243/adjinsbenefits.html">Adjustments to Insurance Benefits</a></li>
+<li id="triggersnewplan"><a href="../manual243/triggersnewplan.html">Fields that Trigger New Plan</a></li>
+<li id="ebenefits"><a href="../manual243/ebenefits.html">Electronic Eligibility and Benefits</a></li>
+<li id="insadd"><a href="../manual243/insadd.html">Add Insurance</a></li>
+<li class="collapse" id="insplantypes"><div class="exptxt"><a href="../manual243/insplantypes.html">Insurance Plan Types</a></div>
+<ul id="ul_insplantypes">
+<li class="collapse" id="planppo"><div class="exptxt"><a href="../manual243/planppo.html">PPO Insurance Plan</a></div>
+<ul id="ul_planppo">
+<li id="writeoffcalculations"><a href="../manual243/writeoffcalculations.html">PPO Insurance Calculations</a></li>
+</ul>
+<li id="planppofixed"><a href="../manual243/planppofixed.html">PPO Fixed Benefit Insurance Plan</a></li>
+<li id="plancatperc"><a href="../manual243/plancatperc.html">Category Percentage Insurance Plan</a></li>
+<li id="planmedicaid"><a href="../manual243/planmedicaid.html">Medicaid or Flat Co-Pay Insurance Plan</a></li>
+<li id="plancapitation"><a href="../manual243/plancapitation.html">Capitation ( HMO / DMO ) Insurance Plan</a></li>
+<li id="planhmosupplemental"><a href="../manual243/planhmosupplemental.html">HMO / DMO Insurance Plan with Co-pays</a></li>
+</ul>
+<li id="insplanedit"><a href="../manual243/insplanedit.html">Change Insurance Plan Information</a></li>
+<li id="insplandrop"><a href="../manual243/insplandrop.html">Drop Insurance Plan</a></li>
+<li id="insplancombine"><a href="../manual243/insplancombine.html">Combine Insurance Plans</a></li>
+<li class="collapse" id="medicalins"><div class="exptxt"><a href="../manual243/medicalins.html">Medical Insurance</a></div>
+<ul id="ul_medicalins">
+<li id="icdcodes"><a href="../manual243/icdcodes.html">ICD-10 Codes</a></li>
+</ul>
+<li class="collapse" id="inssecondary"><div class="exptxt"><a href="../manual243/inssecondary.html">Secondary Insurance</a></div>
+<ul id="ul_inssecondary">
+<li id="cob"><a href="../manual243/cob.html">Coordination of Benefits ( COB )</a></li>
+</ul>
+<li id="inshistory"><a href="../manual243/inshistory.html">Insurance History</a></li>
+<li id="downgrades"><a href="../manual243/downgrades.html">Estimate Downgrades</a></li>
+</ul>
+<li id="recall"><a href="../manual243/recall.html">Recall</a></li>
+<li id="patientpictures"><a href="../manual243/patientpictures.html">Patient Picture</a></li>
+<li id="superfamily"><a href="../manual243/superfamily.html">Super Family</a></li>
+<li id="patientclone"><a href="../manual243/patientclone.html">Clone</a></li>
+<li id="discountplan"><a href="../manual243/discountplan.html">Discount Plan Subscriber Edit</a></li>
+</ul>
+<li class="collapse" id="account"><div class="exptxt"><a href="../manual243/account.html">Account Module</a></div>
+<ul id="ul_account">
+<li class="collapse" id="payment"><div class="exptxt"><a href="../manual243/payment.html">Payment</a></div>
+<ul id="ul_payment">
+<li class="collapse" id="paysplit"><div class="exptxt"><a href="../manual243/paysplit.html">Paysplit</a></div>
+<ul id="ul_paysplit">
+<li id="paysplitsedit"><a href="../manual243/paysplitsedit.html">Paysplit Revise</a></li>
+</ul>
+<li class="collapse" id="paymentpatientcreditcard"><div class="exptxt"><a href="../manual243/paymentpatientcreditcard.html">Credit Card Payment</a></div>
+<ul id="ul_paymentpatientcreditcard">
+<li class="collapse" id="payconnectpaymentwindow"><div class="exptxt"><a href="../manual243/payconnectpaymentwindow.html">PayConnect Window</a></div>
+<ul id="ul_payconnectpaymentwindow">
+<li id="payconnectvoid"><a href="../manual243/payconnectvoid.html">PayConnect Void</a></li>
+<li id="payconnectsetup"><a href="../manual243/payconnectsetup.html">PayConnect Setup</a></li>
+<li id="payconnectclinics"><a href="../manual243/payconnectclinics.html">PayConnect Setup for Clinics</a></li>
+</ul>
+<li class="collapse" id="xcharge"><div class="exptxt"><a href="../manual243/xcharge.html">XCharge (OpenEdge)</a></div>
+<ul id="ul_xcharge">
+<li id="xchargevoid"><a href="../manual243/xchargevoid.html">XCharge Void Payment</a></li>
+<li id="xchargetroubleshooting"><a href="../manual243/xchargetroubleshooting.html">XCharge Troubleshooting</a></li>
+<li id="xchargesetup"><a href="../manual243/xchargesetup.html">XCharge Setup</a></li>
+<li id="xchargeclinic"><a href="../manual243/xchargeclinic.html">XCharge Setup for Clinics</a></li>
+</ul>
+<li id="paysimple"><a href="../manual243/paysimple.html">PaySimple</a></li>
+<li class="collapse" id="edgeexpress"><div class="exptxt"><a href="../manual243/edgeexpress.html">Edge Express</a></div>
+<ul id="ul_edgeexpress">
+<li id="edgeexpressvoid"><a href="../manual243/edgeexpressvoid.html">EdgeExpress Void</a></li>
+</ul>
+<li id="paymenttransdetails"><a href="../manual243/paymenttransdetails.html">Credit Card Transaction Details</a></li>
+</ul>
+<li id="paymentreturn"><a href="../manual243/paymentreturn.html">Credit Card Return</a></li>
+<li id="unearnedprepayment"><a href="../manual243/unearnedprepayment.html">Unearned / Prepayment</a></li>
+<li id="unearnedallocate"><a href="../manual243/unearnedallocate.html">Allocate Unearned Income</a></li>
+<li id="refunds"><a href="../manual243/refunds.html">Refund</a></li>
+<li id="incometransfermanager"><a href="../manual243/incometransfermanager.html">Income Transfer Manager</a></li>
+<li id="incometransfer"><a href="../manual243/incometransfer.html">Income Transfer</a></li>
+<li id="eclipboardpayment"><a href="../manual243/eclipboardpayment.html">eClipboard: Payment</a></li>
+<li id="messagetopayedit"><a href="../manual243/messagetopayedit.html">Message-to-Pay Edit</a></li>
+</ul>
+<li class="collapse" id="adjustments"><div class="exptxt"><a href="../manual243/adjustments.html">Adjustment</a></div>
+<ul id="ul_adjustments">
+<li id="adjustmentsmultiwindow"><a href="../manual243/adjustmentsmultiwindow.html">Add Multiple Adjustments</a></li>
+<li id="salestax"><a href="../manual243/salestax.html">Sales Tax</a></li>
+<li id="selectprocedure"><a href="../manual243/selectprocedure.html">Select Procedure</a></li>
+</ul>
+<li class="collapse" id="claimedit"><div class="exptxt"><a href="../manual243/claimedit.html">Claim</a></div>
+<ul id="ul_claimedit">
+<li id="claimtabgeneral"><a href="../manual243/claimtabgeneral.html">Edit Claim - General Tab</a></li>
+<li class="collapse" id="claimtabattach"><div class="exptxt"><a href="../manual243/claimtabattach.html">Edit Claim - Attachments Tab</a></div>
+<ul id="ul_claimtabattach">
+<li id="edsattachmentservice"><a href="../manual243/edsattachmentservice.html">EDS Attachment Service</a></li>
+</ul>
+<li id="claimtabmisc"><a href="../manual243/claimtabmisc.html">Edit Claim - Misc Tab</a></li>
+<li id="claimmedical"><a href="../manual243/claimmedical.html">Edit Claim - Medical Tab</a></li>
+<li id="claimtabstatus"><a href="../manual243/claimtabstatus.html">Edit Claim - Status History Tab</a></li>
+<li id="claimprocedure"><a href="../manual243/claimprocedure.html">Claim Procedures ( claimprocs )</a></li>
+<li id="claimsaddresses"><a href="../manual243/claimsaddresses.html">Claim Addresses</a></li>
+<li id="claimprocedureprovider"><a href="../manual243/claimprocedureprovider.html">Claimproc Provider</a></li>
+<li id="claimpaymentincorrectproc"><a href="../manual243/claimpaymentincorrectproc.html">Incorrect Procedures on Claim</a></li>
+<li id="claimtypes"><a href="../manual243/claimtypes.html">Claim Types</a></li>
+<li class="collapse" id="claimreceive"><div class="exptxt"><a href="../manual243/claimreceive.html">Receive Claim</a></div>
+<ul id="ul_claimreceive">
+<li class="collapse" id="claimpayfinalize"><div class="exptxt"><a href="../manual243/claimpayfinalize.html">Finalize Insurance Payment</a></div>
+<ul id="ul_claimpayfinalize">
+<li id="claimpaymenteobscan"><a href="../manual243/claimpaymenteobscan.html">Scan EOB</a></li>
+</ul>
+<li id="insinterest"><a href="../manual243/insinterest.html">Interest on Insurance Payments</a></li>
+</ul>
+<li class="collapse" id="inspayeob"><div class="exptxt"><a href="../manual243/inspayeob.html">Insurance Payment (EOB)</a></div>
+<ul id="ul_inspayeob">
+<li id="editinspayment"><a href="../manual243/editinspayment.html">Edit Insurance Payment</a></li>
+</ul>
+<li id="claimpaymentsplit"><a href="../manual243/claimpaymentsplit.html">Split Claim</a></li>
+<li id="claimpaymentsupplemental"><a href="../manual243/claimpaymentsupplemental.html">Supplemental Insurance Payments</a></li>
+<li id="insurancerefunds"><a href="../manual243/insurancerefunds.html">Insurance Refunds</a></li>
+<li id="claimpendingsupplemental"><a href="../manual243/claimpendingsupplemental.html">Enter Pending Supplemental Insurance Overpayments/Underpayments</a></li>
+<li id="dentalxchangeattachmentservice"><a href="../manual243/dentalxchangeattachmentservice.html">DentalXChange Attachment</a></li>
+</ul>
+<li class="collapse" id="paymentplanpatient"><div class="exptxt"><a href="../manual243/paymentplanpatient.html">Old Payment Plan</a></div>
+<ul id="ul_paymentplanpatient">
+<li id="paymentplanrecalculate"><a href="../manual243/paymentplanrecalculate.html">Payment Plan Recalculate</a></li>
+<li id="paymentplantxcredits"><a href="../manual243/paymentplantxcredits.html">Payment Plan Procedures and Credits</a></li>
+</ul>
+<li id="paymentplanins"><a href="../manual243/paymentplanins.html">Insurance Payment Plans</a></li>
+<li class="collapse" id="paymentplandynamic"><div class="exptxt"><a href="../manual243/paymentplandynamic.html">Payment Plan</a></div>
+<ul id="ul_paymentplandynamic">
+<li id="paymentplanpatientfaq"><a href="../manual243/paymentplanpatientfaq.html">Payment Plan Q and A</a></li>
+<li id="paymentplanpayment"><a href="../manual243/paymentplanpayment.html">Payment to a Payment Plan</a></li>
+<li id="paymentplanprint"><a href="../manual243/paymentplanprint.html">Sign and Print Payment Plan</a></li>
+<li id="eclipboardpaymentplans"><a href="../manual243/eclipboardpaymentplans.html">eClipboard: Payment Plans</a></li>
+</ul>
+<li id="installmentplan"><a href="../manual243/installmentplan.html">Installment Plan</a></li>
+<li id="quickprocs"><a href="../manual243/quickprocs.html">Quick Procs</a></li>
+<li id="repeatingcharge"><a href="../manual243/repeatingcharge.html">Repeating Charge</a></li>
+<li class="collapse" id="statementwindow"><div class="exptxt"><a href="../manual243/statementwindow.html">Statement Window</a></div>
+<ul id="ul_statementwindow">
+<li id="statement"><a href="../manual243/statement.html">Statement</a></li>
+<li id="receipt"><a href="../manual243/receipt.html">Receipt</a></li>
+<li id="invoice"><a href="../manual243/invoice.html">Invoice</a></li>
+<li id="limited"><a href="../manual243/limited.html">Limited Statement</a></li>
+</ul>
+<li id="orthocase"><a href="../manual243/orthocase.html">Ortho Case</a></li>
+<li id="hiddensplits"><a href="../manual243/hiddensplits.html">Hidden Splits</a></li>
+<li class="collapse" id="creditcardsmanage"><div class="exptxt"><a href="../manual243/creditcardsmanage.html">Credit Card Manage</a></div>
+<ul id="ul_creditcardsmanage">
+<li id="xchargeaddcard"><a href="../manual243/xchargeaddcard.html">XCharge Add Card</a></li>
+<li id="payconnectaddcard"><a href="../manual243/payconnectaddcard.html">PayConnect Add Card</a></li>
+<li id="paysimpleaddcard"><a href="../manual243/paysimpleaddcard.html">PaySimple Add Card</a></li>
+<li id="edgeexpressaddcard"><a href="../manual243/edgeexpressaddcard.html">Edge Express Add Card</a></li>
+<li id="recurringchargesauthorize"><a href="../manual243/recurringchargesauthorize.html">Authorize Recurring Charges</a></li>
+</ul>
+<li id="servicedateview"><a href="../manual243/servicedateview.html">Service Date View</a></li>
+<li id="orthoauto"><a href="../manual243/orthoauto.html">Auto Ortho</a></li>
+<li id="aging"><a href="../manual243/aging.html">Aging</a></li>
+</ul>
+<li class="collapse" id="treatmentplan"><div class="exptxt"><a href="../manual243/treatmentplan.html">Treatment Plan Module</a></div>
+<ul id="ul_treatmentplan">
+<li id="treatmentplanedit"><a href="../manual243/treatmentplanedit.html">Edit Treatment Plan</a></li>
+<li id="treatmentplansign"><a href="../manual243/treatmentplansign.html">Sign Treatment Plan</a></li>
+<li id="treatmentplanprint"><a href="../manual243/treatmentplanprint.html">Print Treatment Plan</a></li>
+<li id="treatmentplandiscounts"><a href="../manual243/treatmentplandiscounts.html">TP Procedure Discount</a></li>
+<li id="preauth"><a href="../manual243/preauth.html">Preauthorization</a></li>
+<li id="insremainingcalc"><a href="../manual243/insremainingcalc.html">Insurance Remaining Calculations</a></li>
+<li id="eclipboardtreatmentplan"><a href="../manual243/eclipboardtreatmentplan.html">eClipboard: Treatment Plan</a></li>
+</ul>
+<li class="collapse" id="chart"><div class="exptxt"><a href="../manual243/chart.html">Chart Module</a></div>
+<ul id="ul_chart">
+<li class="collapse" id="+chartTabs"><div class="exptxt">Chart Tabs</div>
+<ul id="ul_+chartTabs">
+<li class="collapse" id="entertreatment"><div class="exptxt"><a href="../manual243/entertreatment.html">Enter Treatment</a></div>
+<ul id="ul_entertreatment">
+<li class="collapse" id="procedureedit"><div class="exptxt"><a href="../manual243/procedureedit.html">Procedure</a></div>
+<ul id="ul_procedureedit">
+<li class="collapse" id="electronicsignatures"><div class="exptxt"><a href="../manual243/electronicsignatures.html">Electronic Signatures</a></div>
+<ul id="ul_electronicsignatures">
+<li id="topazsetupbsb"><a href="../manual243/topazsetupbsb.html">Topaz BSB Model Setup</a></li>
+<li id="topazsetuphsb"><a href="../manual243/topazsetuphsb.html">Topaz HSB Model Setup</a></li>
+</ul>
+<li id="supernumeraryteeth"><a href="../manual243/supernumeraryteeth.html">Supernumerary Teeth</a></li>
+<li id="procedurefinancial"><a href="../manual243/procedurefinancial.html">Procedure - Financial Tab</a></li>
+<li id="proceduremedical"><a href="../manual243/proceduremedical.html">Procedure - Medical Tab</a></li>
+<li id="proceduremisc"><a href="../manual243/proceduremisc.html">Procedure - Misc Tab</a></li>
+<li id="procedurenotes"><a href="../manual243/procedurenotes.html">Procedure Notes</a></li>
+<li id="autonotes"><a href="../manual243/autonotes.html">Auto Notes</a></li>
+<li id="rightclicktextboxes"><a href="../manual243/rightclicktextboxes.html">Right Click Text Box</a></li>
+<li id="notes"><a href="../manual243/notes.html">Notes</a></li>
+</ul>
+<li id="procsmultipleappts"><a href="../manual243/procsmultipleappts.html">Procedure over Multiple Appointments</a></li>
+</ul>
+<li id="missingteeth"><a href="../manual243/missingteeth.html">Missing/Primary Teeth</a></li>
+<li id="movements"><a href="../manual243/movements.html">Tooth Movements</a></li>
+<li id="apptplanned"><a href="../manual243/apptplanned.html">Planned Appointments</a></li>
+<li id="showtabchart"><a href="../manual243/showtabchart.html">Show Chart Views</a></li>
+<li id="chartdrawing"><a href="../manual243/chartdrawing.html">Draw on Tooth Chart</a></li>
+<li id="ortho"><a href="../manual243/ortho.html">Ortho</a></li>
+</ul>
+<li class="collapse" id="+chartToolbar"><div class="exptxt">Chart Toolbar</div>
+<ul id="ul_+chartToolbar">
+<li class="collapse" id="rx"><div class="exptxt"><a href="../manual243/rx.html">Rx / Prescription</a></div>
+<ul id="ul_rx">
+<li id="rxmanage"><a href="../manual243/rxmanage.html">Rx Manage</a></li>
+</ul>
+<li class="collapse" id="+eRx"><div class="exptxt">eRx</div>
+<ul id="ul_+eRx">
+<li class="collapse" id="dosespotuse"><div class="exptxt"><a href="../manual243/dosespotuse.html">DoseSpot eRx / Prescription</a></div>
+<ul id="ul_dosespotuse">
+<li id="dosespotsetup"><a href="../manual243/dosespotsetup.html">DoseSpot Setup</a></li>
+<li id="dosespotalerts"><a href="../manual243/dosespotalerts.html">DoseSpot Alerts</a></li>
+<li id="dosespotrequiredinfo"><a href="../manual243/dosespotrequiredinfo.html">Required DoseSpot eRx Information</a></li>
+</ul>
+<li class="collapse" id="newcrop"><div class="exptxt"><a href="../manual243/newcrop.html">NewCrop eRX / Prescription</a></div>
+<ul id="ul_newcrop">
+<li id="newcropallergies"><a href="../manual243/newcropallergies.html">NewCrop eRx Allergies</a></li>
+<li id="newcropcredentials"><a href="https://www.opendental.com/manual243/newcropcredentials.html">NewCrop eRx Credentialing</a></li>
+<li id="newcropdoctorslist"><a href="../manual243/newcropdoctorslist.html">NewCrop eRx Doctor's List</a></li>
+<li id="newcropdruginteraction"><a href="../manual243/newcropdruginteraction.html">NewCrop eRx Drug-Drug, Drug-Allergy Interaction Checks</a></li>
+<li id="newcropepcs"><a href="../manual243/newcropepcs.html">NewCrop eRx EPCS Setup</a></li>
+<li id="newcropfaq"><a href="../manual243/newcropfaq.html">NewCrop eRx Frequently Asked Questions</a></li>
+<li id="newcropmedications"><a href="../manual243/newcropmedications.html">NewCrop eRx Medications</a></li>
+<li id="newcropmissingrx"><a href="../manual243/newcropmissingrx.html">Report a Failed or Missing Prescription in NewCrop eRx</a></li>
+<li id="newcroppharmacy"><a href="../manual243/newcroppharmacy.html">NewCrop eRx Pharmacies</a></li>
+<li id="newcroprequiredinfo"><a href="../manual243/newcroprequiredinfo.html">Required NewCrop eRx Information</a></li>
+<li id="newcroptroubleshooting"><a href="../manual243/newcroptroubleshooting.html">NewCrop eRx Troubleshooting</a></li>
+<li id="newcropformularychecks"><a href="../manual243/newcropformularychecks.html">NewCrop eRx Drug Formulary Checks</a></li>
+</ul>
+<li id="pdmp"><a href="../manual243/pdmp.html">Prescription Drug Monitoring Program (PDMP)</a></li>
+</ul>
+<li class="collapse" id="labcaseedit"><div class="exptxt"><a href="../manual243/labcaseedit.html">Lab Case</a></div>
+<ul id="ul_labcaseedit">
+<li id="labslips"><a href="../manual243/labslips.html">Lab Slip</a></li>
+</ul>
+<li class="collapse" id="perio"><div class="exptxt"><a href="../manual243/perio.html">Perio Chart</a></div>
+<ul id="ul_perio">
+<li id="graphicalperiochart"><a href="../manual243/graphicalperiochart.html">Graphical Perio Chart</a></li>
+<li id="periochartingvoice"><a href="../manual243/periochartingvoice.html">Voice Perio Charting</a></li>
+</ul>
+<li class="collapse" id="orthochart"><div class="exptxt"><a href="../manual243/orthochart.html">Ortho Chart</a></div>
+<ul id="ul_orthochart">
+<li id="orthochartsetup"><a href="../manual243/orthochartsetup.html">Ortho Chart Setup</a></li>
+</ul>
+<li id="consentforms"><a href="../manual243/consentforms.html">Consent Form</a></li>
+<li id="examsheets"><a href="../manual243/examsheets.html">Exam Sheet</a></li>
+<li id="ehrccd"><a href="../manual243/ehrccd.html">Continuity of Care Document (CCD)</a></li>
+<li class="collapse" id="ehrdashboard1"><div class="exptxt"><a href="../manual243/ehrdashboard1.html">EHR Dashboard</a></div>
+<ul id="ul_ehrdashboard1">
+<li class="collapse" id="ehrcpoelab"><div class="exptxt"><a href="../manual243/ehrcpoelab.html">EHR Medical Lab Order ( CPOE )</a></div>
+<ul id="ul_ehrcpoelab">
+<li id="ehrcpoelabresultsenter"><a href="../manual243/ehrcpoelabresultsenter.html">EHR Lab Results</a></li>
+<li id="ehrcpoerad"><a href="../manual243/ehrcpoerad.html">EHR Lab Order RAD codes</a></li>
+<li id="ehrcpoeradresultsattach"><a href="../manual243/ehrcpoeradresultsattach.html">EHR Attach Image to Radiology Order</a></li>
+</ul>
+<li id="ehrcdsintervention"><a href="../manual243/ehrcdsintervention.html">EHR CDS Interventions</a></li>
+<li id="ehredresourcesprovide"><a href="../manual243/ehredresourcesprovide.html">EHR Educational Resources</a></li>
+<li id="ehramendments"><a href="../manual243/ehramendments.html">EHR Amendments</a></li>
+<li id="ehrclinicalsummaryprovide"><a href="../manual243/ehrclinicalsummaryprovide.html">EHR Clinical Summary</a></li>
+<li id="ehrcqmreport"><a href="../manual243/ehrcqmreport.html">EHR Report Clinical Quality Measures (CQMs)</a></li>
+<li class="collapse" id="ehrcqm"><div class="exptxt"><a href="../manual243/ehrcqm.html">EHR Clinical Quality Measures</a></div>
+<ul id="ul_ehrcqm">
+<li id="payortypes"><a href="../manual243/payortypes.html">EHR Payor Type / SOP Codes</a></li>
+</ul>
+<li id="ehrcqmcurrentmeds"><a href="../manual243/ehrcqmcurrentmeds.html">EHR Attest Medications Documented</a></li>
+<li id="ehrcqmdef"><a href="../manual243/ehrcqmdef.html">EHR Clinical Quality Measure Descriptions</a></li>
+<li id="ehrcqmdetails"><a href="../manual243/ehrcqmdetails.html">EHR CQM Calculation Details</a></li>
+<li id="ehrencounters"><a href="../manual243/ehrencounters.html">EHR Encounters</a></li>
+<li id="ehrencryption"><a href="../manual243/ehrencryption.html">EHR Encryption </a></li>
+<li id="ehrhash"><a href="../manual243/ehrhash.html">EHR Hash </a></li>
+<li id="ehrinfobutton"><a href="../manual243/ehrinfobutton.html">EHR InfoButton</a></li>
+<li id="ehrinterventions"><a href="../manual243/ehrinterventions.html">EHR Interventions</a></li>
+<li id="ehrmeasureeventedit"><a href="../manual243/ehrmeasureeventedit.html">EHR Edit Measure Events</a></li>
+<li id="ehrmeasures"><a href="../manual243/ehrmeasures.html">EHR Measure Reports</a></li>
+<li id="ehrmedreconcileelectronic"><a href="../manual243/ehrmedreconcileelectronic.html">EHR: Reconciling from an Imported Summary of Care</a></li>
+<li id="ehrmedreconcilemanual"><a href="../manual243/ehrmedreconcilemanual.html">EHR Reconcile from Paper Document</a></li>
+<li id="ehrmustagesetting"><a href="../manual243/ehrmustagesetting.html">EHR Set Meaningful Use Stage</a></li>
+<li id="ehrnotperformed"><a href="../manual243/ehrnotperformed.html">EHR CQMs Not Performed</a></li>
+<li id="ehrpatientlistgenerate"><a href="../manual243/ehrpatientlistgenerate.html">EHR Generate Patient List</a></li>
+<li id="ehrreminderssend"><a href="../manual243/ehrreminderssend.html">EHR Document Reminders Sent to Patients</a></li>
+<li id="ehrsummaryofcaresend"><a href="../manual243/ehrsummaryofcaresend.html">EHR Summaries of Care</a></li>
+<li id="ehrsyndromicdataexport"><a href="../manual243/ehrsyndromicdataexport.html">EHR Export Syndromic Surveillance Data</a></li>
+<li id="ehrsyndromicdataobs"><a href="../manual243/ehrsyndromicdataobs.html">EHR Syndromic Surveillance Observations</a></li>
+<li id="ehrvaccine"><a href="../manual243/ehrvaccine.html">EHR Vaccine Data</a></li>
+<li id="ehrvaccineexport"><a href="../manual243/ehrvaccineexport.html">EHR Export Vaccine Data</a></li>
+<li id="smokingenter"><a href="../manual243/smokingenter.html">EHR Tobacco</a></li>
+<li id="familyhealthenter"><a href="../manual243/familyhealthenter.html">Family Health History</a></li>
+<li id="ehrcpoeradapprove"><a href="../manual243/ehrcpoeradapprove.html">EHR Radiology Order List</a></li>
+</ul>
+<li id="layout"><a href="../manual243/layout.html">Chart Layout</a></li>
+</ul>
+<li id="charttp"><a href="../manual243/charttp.html">Treatment Plan in Chart</a></li>
+<li class="collapse" id="graphicaltoothchart"><div class="exptxt"><a href="../manual243/graphicaltoothchart.html">Graphical Tooth Chart</a></div>
+<ul id="ul_graphicaltoothchart">
+<li id="chartbig"><a href="../manual243/chartbig.html">Big Graphical Tooth Chart</a></li>
+</ul>
+<li class="collapse" id="medical"><div class="exptxt"><a href="../manual243/medical.html">Medical</a></div>
+<ul id="ul_medical">
+<li id="problempatient"><a href="../manual243/problempatient.html">Problems</a></li>
+<li id="medicationspatient"><a href="../manual243/medicationspatient.html">Medications</a></li>
+<li id="allergiespatient"><a href="../manual243/allergiespatient.html">Allergies</a></li>
+<li class="collapse" id="vitalsignsenter"><div class="exptxt"><a href="../manual243/vitalsignsenter.html">EHR Vital Signs</a></div>
+<ul id="ul_vitalsignsenter">
+<li id="vitalsignsgrowthchart"><a href="../manual243/vitalsignsgrowthchart.html">EHR Growth Chart</a></li>
+</ul>
+</ul>
+<li id="procgroupnote"><a href="../manual243/procgroupnote.html">Procedure Group Note</a></li>
+</ul>
+<li class="collapse" id="images"><div class="exptxt"><a href="../manual243/images.html">Imaging Module</a></div>
+<ul id="ul_images">
+<li id="videocapture"><a href="../manual243/videocapture.html">Video Capture</a></li>
+<li id="imageenhancing"><a href="../manual243/imageenhancing.html">Enhancing Radiograph Images</a></li>
+<li id="mountsize"><a href="../manual243/mountsize.html">Image Size</a></li>
+<li id="imageinfo"><a href="../manual243/imageinfo.html">Image Info</a></li>
+<li id="mountinfo"><a href="../manual243/mountinfo.html">Mount Info</a></li>
+<li id="imagingcameracompatibility"><a href="../manual243/imagingcameracompatibility.html">Imaging Camera Compatibility</a></li>
+<li class="collapse" id="sensorcompatibility"><div class="exptxt"><a href="../site/sensorcompatibility.html">Sensor Compatibility</a></div>
+<ul id="ul_sensorcompatibility">
+<li id="sensorschick"><a href="../site/sensorschick.html">Schick Sensors</a></li>
+<li id="sensorsxdr"><a href="../site/sensorsxdr.html">XDR Sensors</a></li>
+<li id="sensorssotaclio"><a href="../site/sensorssotaclio.html">Sota Clio Sensors</a></li>
+<li id="scanx"><a href="../site/scanx.html">Scan X</a></li>
+</ul>
+<li id="imagingimprovements"><a href="../site/imagingimprovements.html">Imaging Improvements</a></li>
+<li id="draw"><a href="../manual243/draw.html">Draw</a></li>
+<li id="mountacquire"><a href="../manual243/mountacquire.html">Select Mount and Acquire</a></li>
+</ul>
+<li class="collapse" id="manage"><div class="exptxt"><a href="../manual243/manage.html">Manage Module</a></div>
+<ul id="ul_manage">
+<li class="collapse" id="claimsend"><div class="exptxt"><a href="../manual243/claimsend.html">Send Claims</a></div>
+<ul id="ul_claimsend">
+<li id="claims277"><a href="../manual243/claims277.html">Claim Ack 277</a></li>
+<li id="eclaimscomplexities"><a href="../manual243/eclaimscomplexities.html">E-Claims Complexities</a></li>
+<li id="eclaimsmedical"><a href="../manual243/eclaimsmedical.html">Medical E-Claims</a></li>
+<li id="eclaimserrors"><a href="../manual243/eclaimserrors.html">E-Claims Errors</a></li>
+</ul>
+<li id="claimpaymentbatch"><a href="../manual243/claimpaymentbatch.html">Batch Insurance Payment</a></li>
+<li class="collapse" id="billing"><div class="exptxt"><a href="../manual243/billing.html">Billing</a></div>
+<ul id="ul_billing">
+<li id="billinglist"><a href="../manual243/billinglist.html">Billing List</a></li>
+<li id="billingdefaults"><a href="../manual243/billingdefaults.html">Billing Defaults</a></li>
+<li id="billingdunningmsg"><a href="../manual243/billingdunningmsg.html">Dunning Messages</a></li>
+</ul>
+<li id="depositslip"><a href="../manual243/depositslip.html">Deposit Slip</a></li>
+<li class="collapse" id="supplyinventory"><div class="exptxt"><a href="../manual243/supplyinventory.html">Supply Inventory</a></div>
+<ul id="ul_supplyinventory">
+<li id="equipment"><a href="../manual243/equipment.html">Equipment</a></li>
+<li id="supplyorders"><a href="../manual243/supplyorders.html">Supply Orders</a></li>
+<li id="supplies"><a href="../manual243/supplies.html">Supplies</a></li>
+<li id="suppliersetup"><a href="../manual243/suppliersetup.html">Suppliers</a></li>
+</ul>
+<li class="collapse" id="tsicollections"><div class="exptxt"><a href="../manual243/tsicollections.html">TSI Collections</a></div>
+<ul id="ul_tsicollections">
+<li id="tsisent"><a href="../manual243/tsisent.html">TSI Sent Accounts</a></li>
+<li id="tsiexcluded"><a href="../manual243/tsiexcluded.html">TSI Excluded Accounts</a></li>
+<li id="tsihistory"><a href="../manual243/tsihistory.html">TSI History</a></li>
+<li id="tsipayment"><a href="../manual243/tsipayment.html">TSI Payments</a></li>
+</ul>
+<li id="tasksarea"><a href="../manual243/tasksarea.html">Tasks Area</a></li>
+<li class="collapse" id="backuptool"><div class="exptxt"><a href="../manual243/backuptool.html">Backup Tool</a></div>
+<ul id="ul_backuptool">
+<li id="removeolddata"><a href="../manual243/removeolddata.html">Remove Old Data</a></li>
+<li id="supplementalbackups"><a href="../manual243/supplementalbackups.html">Supplemental Backups</a></li>
+<li id="backups"><a href="../manual243/backups.html">Backups</a></li>
+<li id="backupreminder"><a href="../manual243/backupreminder.html">Backup Reminder</a></li>
+<li id="backupsonline"><a href="../manual243/backupsonline.html">Online Backups</a></li>
+<li id="backupsmanual"><a href="../manual243/backupsmanual.html">Manual Backups</a></li>
+</ul>
+<li class="collapse" id="accounting"><div class="exptxt"><a href="../manual243/accounting.html">Accounting</a></div>
+<ul id="ul_accounting">
+<li id="quickbooks"><a href="../manual243/quickbooks.html">QuickBooks</a></li>
+<li id="accountingsetup"><a href="../manual243/accountingsetup.html">Accounting Setup</a></li>
+<li id="accountingcloseyear"><a href="../manual243/accountingcloseyear.html">Accounting Close Year</a></li>
+<li id="accountingfaq"><a href="../manual243/accountingfaq.html">Accounting FAQ</a></li>
+<li id="transactionhistory"><a href="../manual243/transactionhistory.html">Accounting Transactions</a></li>
+<li id="reconcile"><a href="../manual243/reconcile.html">Reconcile</a></li>
+<li id="accrual"><a href="../manual243/accrual.html">Accrual Accounting </a></li>
+<li id="accountingreports"><a href="../manual243/accountingreports.html">Accounting Reports</a></li>
+</ul>
+<li class="collapse" id="emailinbox"><div class="exptxt"><a href="../manual243/emailinbox.html">Email Client</a></div>
+<ul id="ul_emailinbox">
+<li id="emaildirectreceive"><a href="../manual243/emaildirectreceive.html">Email Inbox Encryption</a></li>
+</ul>
+<li class="collapse" id="claimsera835"><div class="exptxt"><a href="../manual243/claimsera835.html">ERAs</a></div>
+<ul id="ul_claimsera835">
+<li class="collapse" id="era"><div class="exptxt"><a href="../manual243/era.html">ERA</a></div>
+<ul id="ul_era">
+<li id="claimsera835trackstatus"><a href="../manual243/claimsera835trackstatus.html">Track ERA</a></li>
+<li id="claimseraeobdetails"><a href="../manual243/claimseraeobdetails.html">EOB Claim Details</a></li>
+<li id="claimseramatching"><a href="../manual243/claimseramatching.html">ERA Match with Claim</a></li>
+<li id="eraprocess"><a href="../manual243/eraprocess.html">Process ERA</a></li>
+</ul>
+<li id="claimsera835troubleshooting"><a href="../manual243/claimsera835troubleshooting.html">ERA Troubleshooting</a></li>
+<li id="era835workflow"><a href="../manual243/era835workflow.html">ERA Workflow</a></li>
+</ul>
+<li id="importinsplans834"><a href="../manual243/importinsplans834.html">Import Ins Plan 834</a></li>
+<li id="messaging"><a href="../manual243/messaging.html">Messaging</a></li>
+<li class="collapse" id="timeclock"><div class="exptxt"><a href="../manual243/timeclock.html">Time Clock</a></div>
+<ul id="ul_timeclock">
+<li id="timecardmanage"><a href="../manual243/timecardmanage.html">Manage Time Cards</a></li>
+<li id="timeclockedit"><a href="../manual243/timeclockedit.html">TimeCard</a></li>
+<li id="scheduleview"><a href="../manual243/scheduleview.html">Schedule View Employee</a></li>
+</ul>
+</ul>
+</ul>
+<li class="collapse" id="mainmenu"><div class="exptxt"><a href="../manual243/mainmenu.html">Main Menu</a></div>
+<ul id="ul_mainmenu">
+<li class="collapse" id="+file"><div class="exptxt">File</div>
+<ul id="ul_+file">
+<li id="changepassword"><a href="../manual243/changepassword.html">Change Password</a></li>
+<li id="emailaddressedit"><a href="../manual243/emailaddressedit.html">Email Address Edit</a></li>
+<li id="usersettings"><a href="../manual243/usersettings.html">User Settings</a></li>
+<li id="printersetup"><a href="../manual243/printersetup.html">Printer Setup</a></li>
+<li id="graphics"><a href="../manual243/graphics.html">Graphics Preferences</a></li>
+<li class="collapse" id="choosedatabase"><div class="exptxt"><a href="../manual243/choosedatabase.html">Choose Database</a></div>
+<ul id="ul_choosedatabase">
+<li id="freedentalconfig"><a href="../manual243/freedentalconfig.html">FreeDentalConfig.xml</a></li>
+</ul>
+</ul>
+<li class="collapse" id="+setup"><div class="exptxt">Setup</div>
+<ul id="ul_+setup">
+<li id="preferences"><a href="../manual243/preferences.html">Preferences</a></li>
+<li class="collapse" id="+appointments"><div class="exptxt">[Appointments]</div>
+<ul id="ul_+appointments">
+<li id="confirmationsetup"><a href="../manual243/confirmationsetup.html">Confirmation Setup</a></li>
+<li class="collapse" id="appointmentfields"><div class="exptxt"><a href="../manual243/appointmentfields.html">Appointment Field Defs</a></div>
+<ul id="ul_appointmentfields">
+<li id="apptfieldsexample"><a href="../manual243/apptfieldsexample.html">Screening Patient Temperature</a></li>
+</ul>
+<li id="appointmentrules"><a href="../manual243/appointmentrules.html">Appointment Rules</a></li>
+<li id="appointmenttypes"><a href="../manual243/appointmenttypes.html">Appointment Types</a></li>
+<li class="collapse" id="appointmentviewsetup"><div class="exptxt"><a href="../manual243/appointmentviewsetup.html">Appointment View Setup</a></div>
+<ul id="ul_appointmentviewsetup">
+<li id="appointmentvieweditwindow"><a href="../manual243/appointmentvieweditwindow.html">Appointment View Edit</a></li>
+<li id="apptviewproccolors"><a href="../manual243/apptviewproccolors.html">Proc Appt Colors</a></li>
+</ul>
+<li id="insverifylistsetup"><a href="../manual243/insverifylistsetup.html">Insurance Verification Setup</a></li>
+<li class="collapse" id="operatories"><div class="exptxt"><a href="../manual243/operatories.html">Operatories</a></div>
+<ul id="ul_operatories">
+<li id="operatoryedit"><a href="../manual243/operatoryedit.html">Operatory Edit</a></li>
+</ul>
+<li id="reactivationsetup"><a href="../manual243/reactivationsetup.html">Setup Reactivation</a></li>
+<li id="recallsetup"><a href="../manual243/recallsetup.html">Setup Recall</a></li>
+<li id="recalltypes"><a href="../manual243/recalltypes.html">Recall Types</a></li>
+</ul>
+<li class="collapse" id="+familyinsurance"><div class="exptxt">[Family / Insurance]</div>
+<ul id="ul_+familyinsurance">
+<li class="collapse" id="claimforms"><div class="exptxt"><a href="../manual243/claimforms.html">Claim Forms</a></div>
+<ul id="ul_claimforms">
+<li id="claimformada2012"><a href="../manual243/claimformada2012.html">ADA Claim Forms</a></li>
+<li id="claimform1500"><a href="../manual243/claimform1500.html">HCFA 1500 Claim Form</a></li>
+<li id="claimformcanada"><a href="../manual243/claimformcanada.html">Canada Claim Form</a></li>
+<li id="claimformedit"><a href="../manual243/claimformedit.html">Claim Form Edit</a></li>
+<li id="claimformub04"><a href="../manual243/claimformub04.html">UB04 Claim Form</a></li>
+</ul>
+<li class="collapse" id="clearinghouses"><div class="exptxt"><a href="../manual243/clearinghouses.html">Clearinghouses</a></div>
+<ul id="ul_clearinghouses">
+<li id="clearinghouseedit"><a href="../manual243/clearinghouseedit.html">Edit Clearinghouse or Direct Carrier</a></li>
+<li id="clearinghousesclinics"><a href="../manual243/clearinghousesclinics.html">Clearinghouse Clinic Setup</a></li>
+<li id="eclaimscoloradomedicaid"><a href="../manual243/eclaimscoloradomedicaid.html">Colorado Medicaid E-Claims</a></li>
+<li id="eclaimsinmediata"><a href="../manual243/eclaimsinmediata.html">Inmediata E-Claims</a></li>
+<li id="eclaimsapex"><a href="../manual243/eclaimsapex.html">Apex</a></li>
+<li id="eclaimsans"><a href="../manual243/eclaimsans.html">ANS E-Claims</a></li>
+<li id="eclaimsbcbsga"><a href="../manual243/eclaimsbcbsga.html">BCBS Georgia E-Claims</a></li>
+<li id="eclaimsbcbsnebraska"><a href="../manual243/eclaimsbcbsnebraska.html">BCBS Nebraska E-Claims</a></li>
+<li id="eclaimsclaimconnect"><a href="../manual243/eclaimsclaimconnect.html">DentalXChange ClaimConnect E-Claims</a></li>
+<li id="eclaimsclaimx"><a href="../manual243/eclaimsclaimx.html">ClaimX E-Claims</a></li>
+<li id="dentical"><a href="../manual243/dentical.html">Denti-Cal</a></li>
+<li id="lantek"><a href="../manual243/lantek.html">Lantek</a></li>
+<li id="eclaimsedsmedical"><a href="../manual243/eclaimsedsmedical.html">Electronic Dental Services - Medical</a></li>
+<li id="eclaimseds"><a href="../manual243/eclaimseds.html">Electronic Dental Services</a></li>
+<li id="eclaimsemdeonmedical"><a href="../manual243/eclaimsemdeonmedical.html">Change Healthcare Medical E-Claims</a></li>
+<li id="eclaimsetactics"><a href="../manual243/eclaimsetactics.html">Etactics</a></li>
+<li id="eclaimslindsaytechnicalconsultants"><a href="../manual243/eclaimslindsaytechnicalconsultants.html">Lindsay Technical Consultants E-Claims</a></li>
+<li id="eclaimsofficeally"><a href="../manual243/eclaimsofficeally.html">Office Ally E-Claims</a></li>
+<li id="eclaimspostntrack"><a href="../manual243/eclaimspostntrack.html">Post-n-Track E-Claims</a></li>
+<li id="eclaimsramq"><a href="../manual243/eclaimsramq.html">RAMQ E-Claims </a></li>
+<li id="eclaimsrecs"><a href="../manual243/eclaimsrecs.html">RECS E-Claims</a></li>
+<li id="eclaimsrenaissance"><a href="../manual243/eclaimsrenaissance.html">Renaissance E-Claims</a></li>
+<li id="eclaimstesia"><a href="../manual243/eclaimstesia.html">Tesia E-Claims</a></li>
+<li id="eclaimstesiabridge"><a href="../manual243/eclaimstesiabridge.html">TesiaBridge E-Claims</a></li>
+<li id="eclaimsvyne"><a href="../manual243/eclaimsvyne.html">Vyne Dental E-Claims</a></li>
+<li id="eclaimswashmedicaid"><a href="../manual243/eclaimswashmedicaid.html">Washington Medicaid E-Claims</a></li>
+<li id="eclaimswebmd"><a href="../manual243/eclaimswebmd.html">Change Healthcare E-Claims</a></li>
+</ul>
+<li id="bluebooksetup"><a href="../manual243/bluebooksetup.html">Insurance Blue Book Setup</a></li>
+<li id="inscatssetup"><a href="../manual243/inscatssetup.html">Insurance Categories</a></li>
+<li id="insfilingcodes"><a href="../manual243/insfilingcodes.html">Insurance Filing Codes</a></li>
+<li id="custompatientfields"><a href="../manual243/custompatientfields.html">Patient Fields</a></li>
+<li id="payerids"><a href="../manual243/payerids.html">Electronic Payer IDs</a></li>
+</ul>
+<li class="collapse" id="+account"><div class="exptxt">[Account]</div>
+<ul id="ul_+account">
+<li id="allocationssetup"><a href="../manual243/allocationssetup.html">Allocations Setup</a></li>
+<li id="payplantemplates"><a href="../manual243/payplantemplates.html">Payment Plan Templates</a></li>
+</ul>
+<li id="+treatPlan">[Treat'Plan]</li>
+<li class="collapse" id="+chart"><div class="exptxt">[Chart]</div>
+<ul id="ul_+chart">
+<li class="collapse" id="ehrsetupwindow"><div class="exptxt"><a href="../manual243/ehrsetupwindow.html">EHR Setup Window</a></div>
+<ul id="ul_ehrsetupwindow">
+<li class="collapse" id="ehrsettings"><div class="exptxt"><a href="../manual243/ehrsettings.html">EHR Settings</a></div>
+<ul id="ul_ehrsettings">
+<li id="ehrencountercode"><a href="../manual243/ehrencountercode.html">EHR Default Encounter Code</a></li>
+<li id="ehrencountercodetool"><a href="../manual243/ehrencountercodetool.html">EHR Generate Encounter Codes</a></li>
+<li id="ehrpregnancycode"><a href="../manual243/ehrpregnancycode.html">EHR Default Pregnancy Code</a></li>
+</ul>
+<li id="ehrvaccinesetup"><a href="../manual243/ehrvaccinesetup.html">EHR Vaccine Setup</a></li>
+<li id="ehrvaccinedrugman"><a href="../manual243/ehrvaccinedrugman.html">EHR Vaccine Drug Manufacturers</a></li>
+<li id="ehrvaccinedrugunits"><a href="../manual243/ehrvaccinedrugunits.html">EHR Vaccine Drug Units</a></li>
+<li id="ehrsetupreminderrules"><a href="../manual243/ehrsetupreminderrules.html">EHR Reminder Rules</a></li>
+<li id="ehrsetupedresources"><a href="../manual243/ehrsetupedresources.html">EHR Setup Education Resources and Triggers</a></li>
+<li class="collapse" id="ehrproviderkeys"><div class="exptxt"><a href="../manual243/ehrproviderkeys.html">EHR Annual Provider Keys</a></div>
+<ul id="ul_ehrproviderkeys">
+<li id="ehrquarterlykeys"><a href="../manual243/ehrquarterlykeys.html">EHR Quarterly Keys</a></li>
+</ul>
+<li id="codesystemimport"><a href="../manual243/codesystemimport.html">Importing Code Systems</a></li>
+<li id="snomedct"><a href="../manual243/snomedct.html">SNOMED CT Codes</a></li>
+<li id="loinc"><a href="../manual243/loinc.html">LOINC Codes</a></li>
+<li class="collapse" id="ehrcdsconfigure"><div class="exptxt"><a href="../manual243/ehrcdsconfigure.html">EHR Configure CDS Rules</a></div>
+<ul id="ul_ehrcdsconfigure">
+<li id="ehrcdspermissions"><a href="../manual243/ehrcdspermissions.html">EHR CDS Permissions</a></li>
+</ul>
+<li id="ehrnistsync"><a href="../manual243/ehrnistsync.html">EHR NIST Time Synchronization</a></li>
+<li id="ehroid"><a href="../manual243/ehroid.html">EHR Object Identifiers (OIDs)</a></li>
+<li id="ehremergency"><a href="../manual243/ehremergency.html">EHR Emergency</a></li>
+<li class="collapse" id="cptcodes"><div class="exptxt"><a href="../manual243/cptcodes.html">CPT Codes</a></div>
+<ul id="ul_cptcodes">
+<li id="crosscode"><a href="../manual243/crosscode.html">Cross Code</a></li>
+</ul>
+<li id="rxnorms"><a href="../manual243/rxnorms.html">RxNorms</a></li>
+</ul>
+<li class="collapse" id="procedurebuttons"><div class="exptxt"><a href="../manual243/procedurebuttons.html">Procedure Buttons</a></div>
+<ul id="ul_procedurebuttons">
+<li id="quickprocedurebutton"><a href="../manual243/quickprocedurebutton.html">Quick Procedure Button</a></li>
+<li id="procedurebuttonedit"><a href="../manual243/procedurebuttonedit.html">Procedure Button Edit</a></li>
+</ul>
+</ul>
+<li class="collapse" id="+images"><div class="exptxt">[Images]</div>
+<ul id="ul_+images">
+<li id="imagingdevices"><a href="../manual243/imagingdevices.html">Imaging Devices</a></li>
+<li id="mountdefinitions"><a href="../manual243/mountdefinitions.html">Mount Definitions</a></li>
+<li id="imagingsetup"><a href="../manual243/imagingsetup.html">Imaging Quality</a></li>
+</ul>
+<li class="collapse" id="+manage"><div class="exptxt">[Manage]</div>
+<ul id="ul_+manage">
+<li class="collapse" id="emailsetup"><div class="exptxt"><a href="../manual243/emailsetup.html">Email Setup</a></div>
+<ul id="ul_emailsetup">
+<li class="collapse" id="emailsecuritycertificates"><div class="exptxt"><a href="../manual243/emailsecuritycertificates.html">Email Certificate</a></div>
+<ul id="ul_emailsecuritycertificates">
+<li id="emailcerthost"><a href="../manual243/emailcerthost.html">Email Certificate Hosting</a></li>
+<li id="emailcertinstall"><a href="../manual243/emailcertinstall.html">Email Certificate Install</a></li>
+</ul>
+</ul>
+<li id="messagingelements"><a href="../manual243/messagingelements.html">Message Element</a></li>
+<li id="messagingbuttons"><a href="../manual243/messagingbuttons.html">Messaging Buttons</a></li>
+<li id="timecardsetup"><a href="../manual243/timecardsetup.html">Time Card Setup</a></li>
+</ul>
+<li class="collapse" id="+menusetupAdvanced"><div class="exptxt">[Advanced Setup]</div>
+<ul id="ul_+menusetupAdvanced">
+<li id="computer"><a href="../manual243/computer.html">Computers</a></li>
+<li class="collapse" id="hl7genericmsg"><div class="exptxt"><a href="../manual243/hl7genericmsg.html">Generic HL7 Message Structure</a></div>
+<ul id="ul_hl7genericmsg">
+<li class="collapse" id="hl7"><div class="exptxt"><a href="../manual243/hl7.html">Generic HL7</a></div>
+<ul id="ul_hl7">
+<li class="collapse" id="hl7labcorp"><div class="exptxt"><a href="../manual243/hl7labcorp.html">LabCorp HL7</a></div>
+<ul id="ul_hl7labcorp">
+<li id="hl7labcorpmsg"><a href="../manual243/hl7labcorpmsg.html">LabCorp HL7 Definition</a></li>
+</ul>
+<li id="hl7msgs"><a href="../manual243/hl7msgs.html">HL7 Message Types</a></li>
+<li id="hl7servicemanager"><a href="../manual243/hl7servicemanager.html">HL7 Service</a></li>
+</ul>
+<li class="collapse" id="hl7ecw"><div class="exptxt"><a href="../manual243/hl7ecw.html">eClinicalWorks HL7</a></div>
+<ul id="ul_hl7ecw">
+<li id="hl7ecwmsg"><a href="../manual243/hl7ecwmsg.html">eCW HL7 Message Structure</a></li>
+</ul>
+</ul>
+<li id="fhir"><a href="../manual243/fhir.html">API Setup</a></li>
+<li id="hiesetup"><a href="../manual243/hiesetup.html">HIE Setup</a></li>
+<li id="replicationservers"><a href="../manual243/replicationservers.html">Replication Setup</a></li>
+<li class="collapse" id="showfeatures"><div class="exptxt"><a href="../manual243/showfeatures.html">Show Features</a></div>
+<ul id="ul_showfeatures">
+<li class="collapse" id="dentalschools"><div class="exptxt"><a href="../manual243/dentalschools.html">Dental Schools</a></div>
+<ul id="ul_dentalschools">
+<li id="dentalserverreq"><a href="../manual243/dentalserverreq.html">Dental School Servers</a></li>
+</ul>
+</ul>
+<li id="scheduledprocesses"><a href="../manual243/scheduledprocesses.html">Scheduled Processes</a></li>
+</ul>
+<li id="alertcategories"><a href="../manual243/alertcategories.html">Alert Categories</a></li>
+<li class="collapse" id="autocode"><div class="exptxt"><a href="../manual243/autocode.html">Auto Codes</a></div>
+<ul id="ul_autocode">
+<li id="canadaautocodes"><a href="../manual243/canadaautocodes.html">Canada Auto Codes</a></li>
+</ul>
+<li id="automation"><a href="../manual243/automation.html">Automation</a></li>
+<li id="autonotesetup"><a href="../manual243/autonotesetup.html">Auto Note Setup</a></li>
+<li id="cloudmanagement"><a href="../manual243/cloudmanagement.html">Cloud Management</a></li>
+<li id="codegroups"><a href="../manual243/codegroups.html">Code Groups</a></li>
+<li class="collapse" id="paths"><div class="exptxt"><a href="../manual243/paths.html">Paths</a></div>
+<ul id="ul_paths">
+<li id="atozfolder"><a href="../manual243/atozfolder.html">A to Z Folder</a></li>
+<li id="atozshare"><a href="../manual243/atozshare.html">Share A to Z Folder</a></li>
+<li id="imagesstoreindb"><a href="../manual243/imagesstoreindb.html">Store Images in Database</a></li>
+<li id="dropbox"><a href="../manual243/dropbox.html">Dropbox</a></li>
+</ul>
+<li class="collapse" id="definitions"><div class="exptxt"><a href="../manual243/definitions.html">Definitions</a></div>
+<ul id="ul_definitions">
+<li id="colorselection"><a href="../manual243/colorselection.html">Color</a></li>
+<li id="definitionsaccountcolors"><a href="../manual243/definitionsaccountcolors.html">Definitions: Account Colors</a></li>
+<li id="definitionsaccountquickadd"><a href="../manual243/definitionsaccountquickadd.html">Definitions: Account Procs Quick Add</a></li>
+<li id="definitionsadjtypes"><a href="../manual243/definitionsadjtypes.html">Definitions: Adj Types</a></li>
+<li id="definitionsappointmentcolors"><a href="../manual243/definitionsappointmentcolors.html">Definitions: Appointment Colors</a></li>
+<li id="definitionsapptconfirmed"><a href="../manual243/definitionsapptconfirmed.html">Definitions: Appt Confirmed</a></li>
+<li id="definitionsapptquickadd"><a href="../manual243/definitionsapptquickadd.html">Definitions: Appt Procs Quick Add</a></li>
+<li id="definitionsautodepositaccount"><a href="../manual243/definitionsautodepositaccount.html">Definitions: Auto Deposit Account</a></li>
+<li id="definitionsautonotes"><a href="../manual243/definitionsautonotes.html">Definitions: Auto Note Categories</a></li>
+<li id="definitionsbillingtypes"><a href="../manual243/definitionsbillingtypes.html">Definitions: Billing Types</a></li>
+<li id="definitionsblockouts"><a href="../manual243/definitionsblockouts.html">Definitions: Blockout Types</a></li>
+<li id="definitionscarriergroupnames"><a href="../manual243/definitionscarriergroupnames.html">Definitions: Carrier Group Names</a></li>
+<li id="definitionscertificationcats"><a href="../manual243/definitionscertificationcats.html">Definitions: Certification Categories</a></li>
+<li id="definitionschartgraphiccolors"><a href="../manual243/definitionschartgraphiccolors.html">Definitions: Chart Graphic Colors</a></li>
+<li id="definitionsclaimcustomtracking"><a href="../manual243/definitionsclaimcustomtracking.html">Definitions: Claim Custom Tracking</a></li>
+<li id="definitionsclaimerrorcode"><a href="../manual243/definitionsclaimerrorcode.html">Definitions: Claim Error Code</a></li>
+<li id="definitionsclaimpaymentgroups"><a href="../manual243/definitionsclaimpaymentgroups.html">Definitions: Claim Payment Groups</a></li>
+<li id="definitionsclaimpaytracking"><a href="../manual243/definitionsclaimpaytracking.html">Definitions: Claim Payment Tracking</a></li>
+<li id="definitionsclinicspecialties"><a href="../manual243/definitionsclinicspecialties.html">Definitions: Clinic Specialties</a></li>
+<li id="definitionscommlogtypes"><a href="../manual243/definitionscommlogtypes.html">Definitions: Commlog Types</a></li>
+<li id="definitionscontactcategories"><a href="../manual243/definitionscontactcategories.html">Definitions: Contact Categories</a></li>
+<li id="definitionsdiagnoses"><a href="../manual243/definitionsdiagnoses.html">Definitions: Diagnosis Types</a></li>
+<li id="definitionseclipboardimages"><a href="https://www.opendental.com/manual243/definitionseclipboardimages.html">Definitions: eClipboard Images</a></li>
+<li id="definitionsfeecolors"><a href="../manual243/definitionsfeecolors.html">Definitions: Fee Colors</a></li>
+<li id="definitionsimagecat"><a href="../manual243/definitionsimagecat.html">Definitions: Image Categories</a></li>
+<li id="definitionsinsfilingcodes"><a href="../manual243/definitionsinsfilingcodes.html">Definitions: Insurance Filing Code Group</a></li>
+<li id="inspaytypes"><a href="../manual243/inspaytypes.html">Definitions: Insurance Payment Types</a></li>
+<li id="definitionsinsverify"><a href="../manual243/definitionsinsverify.html">Definitions: Insurance Verification Status</a></li>
+<li id="definitionslettermerge"><a href="../manual243/definitionslettermerge.html">Definitions: Letter Merge Cats</a></li>
+<li id="definitionsmisccolors"><a href="../manual243/definitionsmisccolors.html">Definitions: Misc Colors</a></li>
+<li id="definitionsoperatorytypes"><a href="../manual243/definitionsoperatorytypes.html">Definitions: Operatory Types</a></li>
+<li id="definitionspaymentplancategories"><a href="../manual243/definitionspaymentplancategories.html">Definitions: Payment Plan Categories</a></li>
+<li id="definitionspaymenttypes"><a href="../manual243/definitionspaymenttypes.html">Definitions: Payment Types</a></li>
+<li id="definitionspaysplitunearned"><a href="../manual243/definitionspaysplitunearned.html">Definitions: PaySplit Unearned Types</a></li>
+<li id="definitionsprocbuttoncategories"><a href="../manual243/definitionsprocbuttoncategories.html">Definitions: Proc Button Categories</a></li>
+<li id="definitionsproccodecategories"><a href="../manual243/definitionsproccodecategories.html">Definitions: Proc Code Categories</a></li>
+<li id="definitionsprognotecolors"><a href="../manual243/definitionsprognotecolors.html">Definitions: Prog Note Colors</a></li>
+<li id="definitionsprognosis"><a href="../manual243/definitionsprognosis.html">Definitions: Prognosis</a></li>
+<li id="definitionsproviderspecialty"><a href="../manual243/definitionsproviderspecialty.html">Definitions: Provider Specialties</a></li>
+<li id="definitionsrecallunschedstatus"><a href="../manual243/definitionsrecallunschedstatus.html">Definitions: Recall / Unsched Status</a></li>
+<li id="definitionsregions"><a href="../manual243/definitionsregions.html">Definitions: Regions</a></li>
+<li id="definitionssupplycats"><a href="../manual243/definitionssupplycats.html">Definitions: Supply Categories</a></li>
+<li id="definitionstaskpriorities"><a href="../manual243/definitionstaskpriorities.html">Definitions: Task Priorities</a></li>
+<li id="definitionstimecardadjtypes"><a href="../manual243/definitionstimecardadjtypes.html">Definitions: Time Card Adj Types</a></li>
+<li id="definitionstreatplanpriorities"><a href="../manual243/definitionstreatplanpriorities.html">Definitions: Treat' Plan Priorities</a></li>
+<li id="definitionswebschedexistingpatappttypes"><a href="../manual243/definitionswebschedexistingpatappttypes.html">Definitions: Web Sched Existing Appt Types</a></li>
+<li id="definitionswebschednewpatappttypes"><a href="../manual243/definitionswebschednewpatappttypes.html">Definitions: Web Sched New Patient Appt Types</a></li>
+</ul>
+<li class="collapse" id="dsusergroupdefaults"><div class="exptxt"><a href="../manual243/dsusergroupdefaults.html">Dental School Setup</a></div>
+<ul id="ul_dsusergroupdefaults">
+<li id="dsevaluationsetup"><a href="../manual243/dsevaluationsetup.html">Dental School Evaluation Setup</a></li>
+<li id="dsgradingscale"><a href="../manual243/dsgradingscale.html">Dental School Grading Scales</a></li>
+</ul>
+<li id="displayfields"><a href="../manual243/displayfields.html">Display Fields</a></li>
+<li id="enterprisesetup"><a href="../manual243/enterprisesetup.html">Enterprise Setup</a></li>
+<li class="collapse" id="feeschedules"><div class="exptxt"><a href="../manual243/feeschedules.html">Fee Schedules</a></div>
+<ul id="ul_feeschedules">
+<li id="feeschedulecheckfees"><a href="../manual243/feeschedulecheckfees.html">Check Insurance Plan Fees</a></li>
+</ul>
+<li id="feeschedulegroups"><a href="../manual243/feeschedulegroups.html">Fee Schedule Groups</a></li>
+<li id="laboratories"><a href="../manual243/laboratories.html">Laboratories</a></li>
+<li class="collapse" id="miscsetup"><div class="exptxt"><a href="../manual243/miscsetup.html">Miscellaneous Setup</a></div>
+<ul id="ul_miscsetup">
+<li id="patientlanguages"><a href="../manual243/patientlanguages.html">Language</a></li>
+</ul>
+<li class="collapse" id="orthosetup"><div class="exptxt"><a href="../manual243/orthosetup.html">Ortho Setup</a></div>
+<ul id="ul_orthosetup">
+<li id="orthodontic"><a href="../manual243/orthodontic.html">Orthodontics</a></li>
+<li id="orthohardwaresetup"><a href="../manual243/orthohardwaresetup.html">Setup Ortho Hardware Specs</a></li>
+<li id="orthoprescriptionssetup"><a href="../manual243/orthoprescriptionssetup.html">Ortho Prescriptions Setup</a></li>
+</ul>
+<li class="collapse" id="practice"><div class="exptxt"><a href="../manual243/practice.html">Practice Setup</a></div>
+<ul id="ul_practice">
+<li id="nondentalinterface"><a href="../manual243/nondentalinterface.html">Non-Dental</a></li>
+</ul>
+<li class="collapse" id="programlinks"><div class="exptxt"><a href="../manual243/programlinks.html">Program Links</a></div>
+<ul id="ul_programlinks">
+<li class="collapse" id="bridgecustom"><div class="exptxt"><a href="../manual243/bridgecustom.html">Custom Bridges</a></div>
+<ul id="ul_bridgecustom">
+<li id="programlinkoutputfile"><a href="../manual243/programlinkoutputfile.html">Program Link Output File</a></li>
+</ul>
+<li id="bridgeacteon"><a href="../manual243/bridgeacteon.html">Acteon Bridge</a></li>
+<li id="bridgeadstra"><a href="../manual243/bridgeadstra.html">ADSTRA Bridge</a></li>
+<li id="bridgeaidental"><a href="../manual243/bridgeaidental.html">Ai-Dental Bridge</a></li>
+<li id="bridgeapixia"><a href="../manual243/bridgeapixia.html">Apixia Bridge</a></li>
+<li id="bridgeappriss"><a href="../manual243/bridgeappriss.html">Bamboo Bridge</a></li>
+<li id="bridgeapteryx"><a href="../manual243/bridgeapteryx.html">Apteryx Bridge</a></li>
+<li id="bridgeapteryxxvweb"><a href="../manual243/bridgeapteryxxvweb.html">Apteryx XVWeb Bridge</a></li>
+<li id="bridgeaudaxceph"><a href="../manual243/bridgeaudaxceph.html">AudaxCeph Bridge</a></li>
+<li id="anesthesia"><a href="../manual243/anesthesia.html">Anesthesia</a></li>
+<li id="bridgebenco"><a href="../manual243/bridgebenco.html">Benco Bridge</a></li>
+<li id="bridgebiopak"><a href="../manual243/bridgebiopak.html">BioPAK Bridge</a></li>
+<li id="bridgebolaai"><a href="../manual243/bridgebolaai.html">Bola AI</a></li>
+<li id="bridgecadi"><a href="../manual243/bridgecadi.html">CADI Bridge</a></li>
+<li id="bridgecallfire"><a href="../manual243/bridgecallfire.html">CallFire Bridge</a></li>
+<li id="bridgecamsight"><a href="../manual243/bridgecamsight.html">CamSight Bridge</a></li>
+<li id="bridgecapturelink"><a href="../manual243/bridgecapturelink.html">CaptureLink Bridge</a></li>
+<li class="collapse" id="carecreditsetup"><div class="exptxt"><a href="../manual243/carecreditsetup.html">CareCredit Setup</a></div>
+<ul id="ul_carecreditsetup">
+<li id="carecreditaction"><a href="../manual243/carecreditaction.html">CareCredit Action</a></li>
+<li id="carecredittransactions"><a href="../manual243/carecredittransactions.html">CareCredit Transactions</a></li>
+<li id="carecreditpayment"><a href="../manual243/carecreditpayment.html">CareCredit Payment</a></li>
+<li id="carecreditrefund"><a href="../manual243/carecreditrefund.html">CareCredit Refund</a></li>
+<li id="carecredit"><a href="../site/carecredit.html">CareCredit</a></li>
+</ul>
+<li id="bridgecarestream"><a href="../manual243/bridgecarestream.html">Carestream Bridge</a></li>
+<li id="bridgecds"><a href="../manual243/bridgecds.html">Central Data Storage CDS Bridge</a></li>
+<li id="bridgecerec"><a href="../manual243/bridgecerec.html">Cerec Bridge</a></li>
+<li id="bridgeclearay"><a href="../manual243/bridgeclearay.html">CleaRay Bridge</a></li>
+<li id="bridgecliniview"><a href="../manual243/bridgecliniview.html">CliniView Bridge</a></li>
+<li id="bridgecliosoft"><a href="../manual243/bridgecliosoft.html">ClioSoft/SOTA Imaging Bridge</a></li>
+<li id="bridgedbswin"><a href="../manual243/bridgedbswin.html">DBSWIN Bridge</a></li>
+<li id="bridgedemandforce"><a href="../manual243/bridgedemandforce.html">Demandforce Bridge</a></li>
+<li id="bridgedentaleye"><a href="../manual243/bridgedentaleye.html">DentalEye Bridge</a></li>
+<li id="bridgedentalintel"><a href="../manual243/bridgedentalintel.html">Dental Intel Bridge</a></li>
+<li id="bridgedentalstudio"><a href="../manual243/bridgedentalstudio.html">DentalStudio Bridge</a></li>
+<li id="bridgedentaltek"><a href="../manual243/bridgedentaltek.html">DentalTek Bridge</a></li>
+<li id="dentalxchangecreditservice"><a href="../manual243/dentalxchangecreditservice.html">DentalXChange Patient Credit Score Service</a></li>
+<li id="bridgedentforms"><a href="../manual243/bridgedentforms.html">DentForms Bridge</a></li>
+<li id="bridgedentxproimage"><a href="../manual243/bridgedentxproimage.html">AFP ProImage Eva Bridge</a></li>
+<li id="bridgedexis"><a href="../manual243/bridgedexis.html">Dexis Bridge</a></li>
+<li id="bridgedexisintegrator"><a href="../manual243/bridgedexisintegrator.html">Dexis Integrator Bridge</a></li>
+<li id="bridgedigora"><a href="../manual243/bridgedigora.html">Digora Soredex Optime Bridge</a></li>
+<li id="bridgedivvy"><a href="../manual243/bridgedivvy.html">Divvy Bridge</a></li>
+<li id="bridgedocpoint"><a href="../manual243/bridgedocpoint.html">Docpoint Bridge</a></li>
+<li id="bridgedolphin"><a href="../manual243/bridgedolphin.html">Dolphin Bridge</a></li>
+<li id="bridgedrceph"><a href="../manual243/bridgedrceph.html">Dr. Ceph Bridge</a></li>
+<li id="bridgedxis"><a href="../manual243/bridgedxis.html">DXIS Bridge</a></li>
+<li id="bridgeeasynotespro"><a href="../manual243/bridgeeasynotespro.html">EasyNotesPro Bridge</a></li>
+<li class="collapse" id="bridgeeclinicalworks"><div class="exptxt"><a href="../manual243/bridgeeclinicalworks.html">eClinicalWorks</a></div>
+<ul id="ul_bridgeeclinicalworks">
+<li id="ecwbridgesetup"><a href="../manual243/ecwbridgesetup.html">eCW Installation</a></li>
+<li id="ecwbridgingmodes"><a href="../manual243/ecwbridgingmodes.html">eCW Bridge Modes</a></li>
+<li id="ecwdemographics"><a href="../manual243/ecwdemographics.html">eCw Patient Demographics</a></li>
+<li id="ecwfeeschedules"><a href="../manual243/ecwfeeschedules.html">eCW Fee Schedules</a></li>
+<li id="ecwgeneral"><a href="../manual243/ecwgeneral.html">eCW General Information</a></li>
+<li id="ecwinstall"><a href="../manual243/ecwinstall.html">eCW Install Workstation</a></li>
+<li id="ecwprocedures"><a href="../manual243/ecwprocedures.html">eCW Procedures</a></li>
+<li id="ecwtechnical"><a href="../manual243/ecwtechnical.html">eCW Technical</a></li>
+<li id="ecwtroubleshooting"><a href="../manual243/ecwtroubleshooting.html">eCW Troubleshooting</a></li>
+<li id="ecwusingwithod"><a href="../manual243/ecwusingwithod.html">Using eCW</a></li>
+</ul>
+<li id="edgeexpresssetup"><a href="../manual243/edgeexpresssetup.html">EdgeExpress Setup</a></li>
+<li class="collapse" id="bridgeerx"><div class="exptxt"><a href="../manual243/bridgeerx.html">eRx Setup</a></div>
+<ul id="ul_bridgeerx">
+<li id="erxdisable"><a href="../manual243/erxdisable.html">Disabling eRx</a></li>
+</ul>
+<li id="bridgeevasoft"><a href="../manual243/bridgeevasoft.html">EvaSoft Bridge</a></li>
+<li id="bridgeewoo"><a href="../manual243/bridgeewoo.html">EzDenti Bridge</a></li>
+<li id="bridgeez3di"><a href="../manual243/bridgeez3di.html">Ez3Di Bridge</a></li>
+<li id="bridgefloridaprobe"><a href="../manual243/bridgefloridaprobe.html">Florida Probe Bridge</a></li>
+<li id="bridgegenoraytriana"><a href="../manual243/bridgegenoraytriana.html">Genoray Triana Bridge</a></li>
+<li id="bridgeguru"><a href="../manual243/bridgeguru.html">Guru Bridge</a></li>
+<li id="bridgehandydentist"><a href="../manual243/bridgehandydentist.html">HandyDentist Bridge</a></li>
+<li id="bridgehdxwill"><a href="../manual243/bridgehdxwill.html">HDX Will Bridge</a></li>
+<li id="housecalls"><a href="../manual243/housecalls.html">HouseCalls Bridge</a></li>
+<li id="iaplus"><a href="../manual243/iaplus.html">Insurance Answers Plus</a></li>
+<li id="bridgeicat"><a href="../manual243/bridgeicat.html">iCat Bridge</a></li>
+<li id="bridgeidixel"><a href="../manual243/bridgeidixel.html">i-Dixel Bridge</a></li>
+<li id="bridgeirys"><a href="../manual243/bridgeirys.html">iRYS Bridge</a></li>
+<li id="bridgejazzclassic"><a href="../manual243/bridgejazzclassic.html">Jazz Classic Bridge</a></li>
+<li id="bridgemediadent"><a href="../manual243/bridgemediadent.html">MediaDent Bridge</a></li>
+<li id="bridgemeditlink"><a href="../manual243/bridgemeditlink.html">Medit Link Bridge</a></li>
+<li id="bridgemipacs"><a href="../manual243/bridgemipacs.html">MiPACS Bridge</a></li>
+<li id="bridgemountainside"><a href="../manual243/bridgemountainside.html">Mountainside Bridge</a></li>
+<li id="bridgenewtom"><a href="../manual243/bridgenewtom.html">NewTom NNT Bridge</a></li>
+<li id="bridgeoffice"><a href="../manual243/bridgeoffice.html">Office Bridge</a></li>
+<li id="bridgeone2"><a href="../manual243/bridgeone2.html">One2 Bridge</a></li>
+<li id="bridgeorthocad"><a href="../manual243/bridgeorthocad.html">OrthoCAD Bridge</a></li>
+<li id="bridgeorthoinsight"><a href="../manual243/bridgeorthoinsight.html">Ortho Insight 3D Bridge</a></li>
+<li id="bridgeorthoplex"><a href="../manual243/bridgeorthoplex.html">OrthoPlex Bridge</a></li>
+<li id="bridgeoryx"><a href="../manual243/bridgeoryx.html">Oryx Bridge</a></li>
+<li id="bridgepandaperio"><a href="../manual243/bridgepandaperio.html">PANDA Perio Bridge</a></li>
+<li id="bridgeowandy"><a href="../manual243/bridgeowandy.html">Owandy Bridge</a></li>
+<li id="bridgepandaperioadvanced"><a href="../manual243/bridgepandaperioadvanced.html">PANDA Perio (advanced) Bridge </a></li>
+<li id="bridgepatientgallery"><a href="../manual243/bridgepatientgallery.html">Patient Gallery Bridge</a></li>
+<li id="bridgepatterson"><a href="../manual243/bridgepatterson.html">Patterson Imaging Bridge</a></li>
+<li id="paysimplesetup"><a href="../manual243/paysimplesetup.html">PaySimple Setup</a></li>
+<li id="bridgepdmpillinois"><a href="../manual243/bridgepdmpillinois.html">PDMP Bridge</a></li>
+<li id="bridgeperiopal"><a href="../manual243/bridgeperiopal.html">PerioPal Bridge</a></li>
+<li id="bridgepixel"><a href="../manual243/bridgepixel.html">Pixel Bridge</a></li>
+<li id="bridgeplanmeca"><a href="../manual243/bridgeplanmeca.html">Planmeca Bridge</a></li>
+<li id="bridgepodium"><a href="../manual243/bridgepodium.html">Podium Bridge</a></li>
+<li id="bridgeportray"><a href="../manual243/bridgeportray.html">PORTRAY Bridge</a></li>
+<li id="bridgepracticebooster"><a href="../manual243/bridgepracticebooster.html">Practice Booster Bridge</a></li>
+<li id="bridgepracticebynumbers"><a href="../manual243/bridgepracticebynumbers.html">Practice by Numbers Bridge</a></li>
+<li id="bridgepracticeweb"><a href="../manual243/bridgepracticeweb.html">PracticeWeb Reports Bridge</a></li>
+<li id="bridgeprexion"><a href="../manual243/bridgeprexion.html">PreXion Bridge</a></li>
+<li id="bridgeprexionaquire"><a href="../manual243/bridgeprexionaquire.html">Prexion Acquire Bridge</a></li>
+<li id="bridgeprogeny"><a href="../manual243/bridgeprogeny.html">Progeny Bridge</a></li>
+<li id="quickbooksonline"><a href="../manual243/quickbooksonline.html">QuickBooks Online</a></li>
+<li id="ptdental"><a href="../manual243/ptdental.html">PT Dental Bridge</a></li>
+<li id="bridgerapidcall"><a href="../manual243/bridgerapidcall.html">DentalTek Rapid Call Bridge</a></li>
+<li id="bridgeraymage"><a href="../manual243/bridgeraymage.html">RayMage Bridge</a></li>
+<li id="bridgescanora"><a href="../manual243/bridgescanora.html">Scanora Bridge</a></li>
+<li id="bridgeschick"><a href="../manual243/bridgeschick.html">Schick CDR Dicom Bridge</a></li>
+<li id="bridgeshining3d"><a href="../manual243/bridgeshining3d.html">Shining 3D Bridge</a></li>
+<li id="bridgesirona"><a href="../manual243/bridgesirona.html">Sirona Sidexis Bridge</a></li>
+<li id="bridgesmartdent"><a href="../manual243/bridgesmartdent.html">SMARTDent Bridge</a></li>
+<li id="bridgesmartdentnew"><a href="../manual243/bridgesmartdentnew.html">SMARTDent New Bridge</a></li>
+<li id="bridgesopro"><a href="../manual243/bridgesopro.html">Sopro Bridge</a></li>
+<li id="bridgesotacloud"><a href="../manual243/bridgesotacloud.html">SOTA Cloud Bridge</a></li>
+<li id="spear"><a href="../manual243/spear.html">Spear Education</a></li>
+<li id="bridgespeedvision"><a href="../manual243/bridgespeedvision.html">SpeedVision Bridge</a></li>
+<li id="bridgesterisimple"><a href="../manual243/bridgesterisimple.html">SteriSimple Bridge</a></li>
+<li id="suni"><a href="../manual243/suni.html">Suni</a></li>
+<li id="bridgetigerview"><a href="../manual243/bridgetigerview.html">TigerView Bridge</a></li>
+<li id="bridgetrophy"><a href="../manual243/bridgetrophy.html">Trophy Bridge</a></li>
+<li id="bridgetrophyenhanced"><a href="../manual243/bridgetrophyenhanced.html">Trophy (Enhanced) Bridge</a></li>
+<li id="trojan"><a href="../manual243/trojan.html">Trojan Bridge</a></li>
+<li class="collapse" id="trojancollectbridge"><div class="exptxt"><a href="../manual243/trojancollectbridge.html">Trojan Express Collect Bridge</a></div>
+<ul id="ul_trojancollectbridge">
+<li id="trojancollect"><a href="../manual243/trojancollect.html">Trojan Express Collect</a></li>
+</ul>
+<li id="bridgetscan"><a href="../manual243/bridgetscan.html">Tscan Bridge</a></li>
+<li id="tsisetup"><a href="../manual243/tsisetup.html">TSI Setup</a></li>
+<li id="bridgeuappoint"><a href="../manual243/bridgeuappoint.html">UAppoint Bridge</a></li>
+<li id="bridgevipersoft"><a href="../manual243/bridgevipersoft.html">Vipersoft Bridge</a></li>
+<li id="bridgevisionx"><a href="../manual243/bridgevisionx.html">VisionX Bridge</a></li>
+<li id="bridgevisora"><a href="../manual243/bridgevisora.html">visOra Bridge</a></li>
+<li id="bridgevistadent"><a href="../manual243/bridgevistadent.html">VistaDent Bridge</a></li>
+<li id="bridgevixwinimaging"><a href="../manual243/bridgevixwinimaging.html">VixWin (Numbered) Bridge</a></li>
+<li id="bridgexdr"><a href="../manual243/bridgexdr.html">XDR Bridge</a></li>
+<li id="bridgezimage"><a href="../manual243/bridgezimage.html">Z-Image Bridge</a></li>
+<li id="bridge3shape"><a href="../manual243/bridge3shape.html">3Shape Bridge</a></li>
+</ul>
+<li class="collapse" id="quickpastenotessetup"><div class="exptxt"><a href="../manual243/quickpastenotessetup.html">Quick Paste Notes Setup</a></div>
+<ul id="ul_quickpastenotessetup">
+<li id="quickpastecategory"><a href="../manual243/quickpastecategory.html">Quick Paste Category</a></li>
+<li id="quickpastenoteedit"><a href="../manual243/quickpastenoteedit.html">Quick Paste Note Edit</a></li>
+</ul>
+<li class="collapse" id="reportssetup"><div class="exptxt"><a href="../manual243/reportssetup.html">Reports Setup</a></div>
+<ul id="ul_reportssetup">
+<li id="reportdisplaysettings"><a href="../manual243/reportdisplaysettings.html">Report Setup: Display Settings</a></li>
+<li id="reportsecurity"><a href="../manual243/reportsecurity.html">Report Setup: Security Permissions</a></li>
+<li id="reportserver"><a href="../manual243/reportserver.html">Report Setup: Report Server</a></li>
+<li class="collapse" id="reportmiscsettings"><div class="exptxt"><a href="../manual243/reportmiscsettings.html">Report Setup: Misc Settings</a></div>
+<ul id="ul_reportmiscsettings">
+<li id="writeoffstoproduction"><a href="../manual243/writeoffstoproduction.html">Show Insurance Write-offs</a></li>
+</ul>
+</ul>
+<li class="collapse" id="schedule"><div class="exptxt"><a href="../manual243/schedule.html">Schedule Setup</a></div>
+<ul id="ul_schedule">
+<li id="scheduleeditdaywindow"><a href="../manual243/scheduleeditdaywindow.html">Schedule Edit</a></li>
+<li id="schedulechart"><a href="../manual243/schedulechart.html">Schedule Graph</a></li>
+<li id="schedulesetupexamples"><a href="../manual243/schedulesetupexamples.html">Schedule Setup Examples</a></li>
+</ul>
+<li class="collapse" id="security"><div class="exptxt"><a href="../manual243/security.html">Security</a></div>
+<ul id="ul_security">
+<li class="collapse" id="securitysettings"><div class="exptxt"><a href="../manual243/securitysettings.html">Global Security Settings</a></div>
+<ul id="ul_securitysettings">
+<li id="singlesignon"><a href="../manual243/singlesignon.html">Single Sign-On / Domain Login</a></li>
+</ul>
+<li class="collapse" id="securityusers"><div class="exptxt"><a href="../manual243/securityusers.html">User Edit</a></div>
+<ul id="ul_securityusers">
+<li id="alertsubscribe"><a href="../manual243/alertsubscribe.html">Alert Subscription</a></li>
+<li id="securityunlockaccount"><a href="../manual243/securityunlockaccount.html">Unlock Account</a></li>
+</ul>
+<li class="collapse" id="securityusergroups"><div class="exptxt"><a href="../manual243/securityusergroups.html">User Group</a></div>
+<ul id="ul_securityusergroups">
+<li class="collapse" id="permissions"><div class="exptxt"><a href="../manual243/permissions.html">Permissions</a></div>
+<ul id="ul_permissions">
+<li id="permissionssetup"><a href="../manual243/permissionssetup.html">"Setup" Permission</a></li>
+<li id="permissionssecurityadmin"><a href="../manual243/permissionssecurityadmin.html">"Security Admin" Permission</a></li>
+</ul>
+</ul>
+<li id="dssecurity"><a href="../manual243/dssecurity.html">Dental School Security</a></li>
+<li id="securitylogin"><a href="../manual243/securitylogin.html">Log On</a></li>
+<li id="securitylockdates"><a href="../manual243/securitylockdates.html">Security Lock Dates</a></li>
+<li id="securitybadges"><a href="../manual243/securitybadges.html">Security Badges</a></li>
+</ul>
+<li class="collapse" id="sheets"><div class="exptxt"><a href="../manual243/sheets.html">Sheets</a></div>
+<ul id="ul_sheets">
+<li class="collapse" id="sheetsetup"><div class="exptxt"><a href="../manual243/sheetsetup.html">Edit Sheet Def</a></div>
+<ul id="ul_sheetsetup">
+<li id="sheetsetupmobile"><a href="../manual243/sheetsetupmobile.html">Edit Mobile Sheet Def</a></li>
+<li id="sheetproperties"><a href="../manual243/sheetproperties.html">Sheet Def Properties</a></li>
+<li id="sheetsaddelements"><a href="../manual243/sheetsaddelements.html">Sheet Field Types</a></li>
+<li class="collapse" id="sheetsoutputtext"><div class="exptxt"><a href="../manual243/sheetsoutputtext.html">Sheet Output Text Field</a></div>
+<ul id="ul_sheetsoutputtext">
+<li id="outputtextfields"><a href="../manual243/outputtextfields.html">Output Text Field Names</a></li>
+</ul>
+<li class="collapse" id="sheetsstatictext"><div class="exptxt"><a href="../manual243/sheetsstatictext.html">Sheet Static Text Field</a></div>
+<ul id="ul_sheetsstatictext">
+<li id="statictextfields"><a href="../manual243/statictextfields.html">Static Text Field Names</a></li>
+</ul>
+<li class="collapse" id="sheetsinputfield"><div class="exptxt"><a href="../manual243/sheetsinputfield.html">Sheet Input Field</a></div>
+<ul id="ul_sheetsinputfield">
+<li id="inputfieldnames"><a href="../manual243/inputfieldnames.html">Input Field Names</a></li>
+</ul>
+<li id="sheetsline"><a href="../manual243/sheetsline.html">Sheet Line and Rectangle</a></li>
+<li class="collapse" id="sheetscheckbox"><div class="exptxt"><a href="../manual243/sheetscheckbox.html">Sheet Checkbox and Radio Button</a></div>
+<ul id="ul_sheetscheckbox">
+<li id="checkboxfields"><a href="../manual243/checkboxfields.html">Sheet CheckBox Field Names</a></li>
+</ul>
+<li id="sheetsstaticimage"><a href="../manual243/sheetsstaticimage.html">Sheet Static Image</a></li>
+<li id="sheetssignature"><a href="../manual243/sheetssignature.html">Sheet Signature Box</a></li>
+<li id="sheetscombobox"><a href="../manual243/sheetscombobox.html">Sheet ComboBox</a></li>
+<li id="sheetspatimage"><a href="../manual243/sheetspatimage.html">Sheet Patient Image</a></li>
+<li id="sheetsscreenchart"><a href="../manual243/sheetsscreenchart.html">Sheet Screen Chart</a></li>
+<li id="sheetsgrid"><a href="../manual243/sheetsgrid.html">Sheet Grid</a></li>
+<li id="sheetsspecial"><a href="../manual243/sheetsspecial.html">Sheet Special Field</a></li>
+<li id="sheetsetuplanguage"><a href="../manual243/sheetsetuplanguage.html">Language Translations for Sheets</a></li>
+</ul>
+<li id="sheetdefaults"><a href="../manual243/sheetdefaults.html">Sheet Def Defaults</a></li>
+<li id="sheettools"><a href="../manual243/sheettools.html">Sheet Tools Import / Export</a></li>
+<li id="sheetsconsent"><a href="../manual243/sheetsconsent.html">Consent Form Layout</a></li>
+<li id="sheetsdepositslip"><a href="../manual243/sheetsdepositslip.html">Deposit Slip Layout</a></li>
+<li id="sheetsera"><a href="../manual243/sheetsera.html">ERA Layout</a></li>
+<li id="sheetseragridheader"><a href="../manual243/sheetseragridheader.html">ERA Grid Header Layout</a></li>
+<li id="sheetsexamsheets"><a href="../manual243/sheetsexamsheets.html">Exam Sheet Layout</a></li>
+<li id="sheetslabslips"><a href="../manual243/sheetslabslips.html">Lab Slip Layout</a></li>
+<li id="sheetslabels"><a href="../manual243/sheetslabels.html">Label Layout</a></li>
+<li id="sheetsmedicalhistory"><a href="../manual243/sheetsmedicalhistory.html">Medical History Layout</a></li>
+<li id="sheetspatientform"><a href="../manual243/sheetspatientform.html">Patient Form Layout</a></li>
+<li id="sheetsletterspatient"><a href="../manual243/sheetsletterspatient.html">Patient Letter Layout</a></li>
+<li id="paymentplansheets"><a href="../manual243/paymentplansheets.html">Payment Plan Layout</a></li>
+<li id="sheetsscreenings"><a href="../manual243/sheetsscreenings.html">Screening Layout</a></li>
+<li id="sheetsreferrals"><a href="../manual243/sheetsreferrals.html">Referral Letter Layout</a></li>
+<li id="sheetsreferralslips"><a href="../manual243/sheetsreferralslips.html">Referral Slip Layout</a></li>
+<li id="sheetsroutingslips"><a href="../manual243/sheetsroutingslips.html">Routing Slip Layout</a></li>
+<li id="sheetsrx"><a href="../manual243/sheetsrx.html">Rx Layout</a></li>
+<li id="sheetsrxpatinstruct"><a href="../manual243/sheetsrxpatinstruct.html">Rx Instructions Layout</a></li>
+<li id="sheetsrxmulti"><a href="../manual243/sheetsrxmulti.html">Rx Multiple Layout</a></li>
+<li id="statementsheets"><a href="../manual243/statementsheets.html">Statement Layout</a></li>
+<li id="sheetstreatplan"><a href="../manual243/sheetstreatplan.html">Treatment Plan Layout</a></li>
+<li id="sheetstroubleshooting"><a href="../manual243/sheetstroubleshooting.html">Sheet Troubleshooting</a></li>
+</ul>
+<li id="spellcheck"><a href="../manual243/spellcheck.html">Spell Check</a></li>
+<li class="collapse" id="tasksetup"><div class="exptxt"><a href="../manual243/tasksetup.html">Tasks Preferences</a></div>
+<ul id="ul_tasksetup">
+<li id="setuptaskinbox"><a href="../manual243/setuptaskinbox.html">Task Inbox Setup</a></li>
+</ul>
+<li class="collapse" id="+obsolete"><div class="exptxt">Obsolete</div>
+<ul id="ul_+obsolete">
+<li id="lettersquick"><a href="../manual243/lettersquick.html">Quick Letters</a></li>
+<li id="questionnaire"><a href="../manual243/questionnaire.html">Questionnaire</a></li>
+</ul>
+</ul>
+<li class="collapse" id="+lists"><div class="exptxt">Lists</div>
+<ul id="ul_+lists">
+<li class="collapse" id="procedurecodes"><div class="exptxt"><a href="../manual243/procedurecodes.html">Procedure Codes</a></div>
+<ul id="ul_procedurecodes">
+<li id="procedurecodetools"><a href="../manual243/procedurecodetools.html">Procedure Code Tools</a></li>
+<li id="procedurecodeedit"><a href="../manual243/procedurecodeedit.html">Procedure Code</a></li>
+<li id="procedurecodenew"><a href="../manual243/procedurecodenew.html">Add Procedure Code</a></li>
+<li id="procedurefeeoverrides"><a href="../manual243/procedurefeeoverrides.html">Fee Override for Provider or Clinic</a></li>
+<li id="cdt"><a href="../manual243/cdt.html">ADA CDT Codes</a></li>
+<li id="feeschedulelogic"><a href="../manual243/feeschedulelogic.html">Fee Schedule Logic</a></li>
+<li class="collapse" id="feescheduletools"><div class="exptxt"><a href="../manual243/feescheduletools.html">Fee Tools</a></div>
+<ul id="ul_feescheduletools">
+<li id="feeschedulecopy"><a href="../manual243/feeschedulecopy.html">Fees Copy</a></li>
+<li id="feescheduleincrease"><a href="../manual243/feescheduleincrease.html">Fees Increase</a></li>
+<li id="feesimport"><a href="../manual243/feesimport.html">Fees Import</a></li>
+<li id="feesexport"><a href="../manual243/feesexport.html">Fees Export</a></li>
+<li id="feesupdate"><a href="../manual243/feesupdate.html">Fees Update</a></li>
+<li id="newyeartasks"><a href="../manual243/newyeartasks.html">New Year</a></li>
+</ul>
+<li id="insplanoverrides"><a href="../manual243/insplanoverrides.html">Insurance Plans Overrides</a></li>
+</ul>
+<li id="allergiesmaster"><a href="../manual243/allergiesmaster.html">Allergy List</a></li>
+<li class="collapse" id="clinicsetup"><div class="exptxt"><a href="../manual243/clinicsetup.html">Clinic List</a></div>
+<ul id="ul_clinicsetup">
+<li id="cliniceditwindow"><a href="../manual243/cliniceditwindow.html">Clinic</a></li>
+</ul>
+<li id="contacts"><a href="../manual243/contacts.html">Contacts</a></li>
+<li id="counties"><a href="../manual243/counties.html">Counties</a></li>
+<li id="discountplans"><a href="../manual243/discountplans.html">Discount Plans</a></li>
+<li id="dsclasses"><a href="../manual243/dsclasses.html">Dental School Classes</a></li>
+<li id="dscourses"><a href="../manual243/dscourses.html">Dental School Courses</a></li>
+<li class="collapse" id="employees"><div class="exptxt"><a href="../manual243/employees.html">Employees</a></div>
+<ul id="ul_employees">
+<li id="employeeleaving"><a href="../manual243/employeeleaving.html">Employee Leaving</a></li>
+</ul>
+<li id="employers"><a href="../manual243/employers.html">Employers</a></li>
+<li class="collapse" id="carriers"><div class="exptxt"><a href="../manual243/carriers.html">Carriers</a></div>
+<ul id="ul_carriers">
+<li id="carrierscombine"><a href="../manual243/carrierscombine.html">Combine Carriers</a></li>
+</ul>
+<li id="insplanlist"><a href="../manual243/insplanlist.html">Insurance Plans</a></li>
+<li id="labcasemanage"><a href="../manual243/labcasemanage.html">Lab Cases</a></li>
+<li id="medicationmaster"><a href="../manual243/medicationmaster.html">Medications List</a></li>
+<li id="pharmacies"><a href="../manual243/pharmacies.html">Pharmacies</a></li>
+<li id="problemmaster"><a href="../manual243/problemmaster.html">Problem List</a></li>
+<li class="collapse" id="providers"><div class="exptxt"><a href="../manual243/providers.html">Providers</a></div>
+<ul id="ul_providers">
+<li id="providerseditwindow"><a href="../manual243/providerseditwindow.html">Provider</a></li>
+<li class="collapse" id="dsproviders"><div class="exptxt"><a href="../manual243/dsproviders.html">Dental School Providers</a></div>
+<ul id="ul_dsproviders">
+<li id="dsinstructors"><a href="../manual243/dsinstructors.html">Dental School Instructors</a></li>
+<li id="dsstudents"><a href="../manual243/dsstudents.html">Dental School Students</a></li>
+<li id="dsstudentbulk"><a href="../manual243/dsstudentbulk.html">Dental Student Bulk Edit</a></li>
+</ul>
+</ul>
+<li class="collapse" id="rxsetup"><div class="exptxt"><a href="../manual243/rxsetup.html">Rx / Prescriptions List</a></div>
+<ul id="ul_rxsetup">
+<li id="rxinteractionchecks"><a href="../manual243/rxinteractionchecks.html">Rx / Prescription Alert</a></li>
+<li id="prescriptionscombine"><a href="../manual243/prescriptionscombine.html">Combine Prescriptions</a></li>
+</ul>
+<li id="referralsetup"><a href="../manual243/referralsetup.html">Referral List</a></li>
+<li id="stateabbreviations"><a href="../manual243/stateabbreviations.html">State Abbreviations</a></li>
+<li id="sites"><a href="../manual243/sites.html">Site List</a></li>
+<li id="zipcodes"><a href="../manual243/zipcodes.html">Zip Code List</a></li>
+</ul>
+<li class="collapse" id="reports"><div class="exptxt"><a href="../manual243/reports.html">Reports</a></div>
+<ul id="ul_reports">
+<li class="collapse" id="reportsstandard"><div class="exptxt"><a href="../manual243/reportsstandard.html">Standard Reports</a></div>
+<ul id="ul_reportsstandard">
+<li id="reportcomplex"><a href="../manual243/reportcomplex.html">Complex Report System</a></li>
+<li class="collapse" id="reportprodinc"><div class="exptxt"><a href="../manual243/reportprodinc.html">Production and Income Reports</a></div>
+<ul id="ul_reportprodinc">
+<li id="closeoutmonth"><a href="../manual243/closeoutmonth.html">Close Out Month</a></li>
+<li id="productionincome"><a href="../manual243/productionincome.html">Production and Income</a></li>
+<li id="reportprovpayroll"><a href="../manual243/reportprovpayroll.html">Provider Payroll Production and Income Report</a></li>
+<li id="trackingincome"><a href="../manual243/trackingincome.html">Track Income by Provider</a></li>
+</ul>
+<li class="collapse" id="+daily"><div class="exptxt">Daily</div>
+<ul id="ul_+daily">
+<li id="reportdailyadj"><a href="../manual243/reportdailyadj.html">Daily Adjustments Report</a></li>
+<li id="reportdailypayments"><a href="../manual243/reportdailypayments.html">Daily Payments Report</a></li>
+<li id="reportdailyprocs"><a href="../manual243/reportdailyprocs.html">Daily Procedures Report</a></li>
+<li id="reportdailywriteoffs"><a href="../manual243/reportdailywriteoffs.html">Daily Write-off Report</a></li>
+<li id="reportincompleteprocnote"><a href="../manual243/reportincompleteprocnote.html">Incomplete Procedure Notes Report</a></li>
+<li id="routingslips"><a href="../manual243/routingslips.html">Routing Slips</a></li>
+<li id="reportunfinalizedinsurancepayments"><a href="../manual243/reportunfinalizedinsurancepayments.html">Unfinalized Insurance Payment Report</a></li>
+<li id="reportnetproddaily"><a href="../manual243/reportnetproddaily.html">Net Production Detail Daily Report</a></li>
+<li id="reportdailypatportuncollected"><a href="../manual243/reportdailypatportuncollected.html">Patient Portion Uncollected Report</a></li>
+</ul>
+<li class="collapse" id="+monthly"><div class="exptxt">Monthly</div>
+<ul id="ul_+monthly">
+<li id="reportaging"><a href="../manual243/reportaging.html">Aging of Accounts Receivable (A/R) Report</a></li>
+<li id="reportclaimsnotsent"><a href="../manual243/reportclaimsnotsent.html">Claims Not Sent Report</a></li>
+<li id="reportcapitation"><a href="../manual243/reportcapitation.html">Capitation Utilization Report</a></li>
+<li id="reportfinancecharge"><a href="../manual243/reportfinancecharge.html">Finance Charge Report</a></li>
+<li id="reportoutins"><a href="../manual243/reportoutins.html">Outstanding Insurance Claims Report</a></li>
+<li id="reportprocsnotbilledins"><a href="../manual243/reportprocsnotbilledins.html">Procedures Not Billed to Insurance Report</a></li>
+<li id="reportppowriteoffs"><a href="../manual243/reportppowriteoffs.html">PPO Writeoffs Report</a></li>
+<li id="reportpaymentplan"><a href="../manual243/reportpaymentplan.html">Payment Plans Report</a></li>
+<li id="reportreceivablesbreakdown"><a href="../manual243/reportreceivablesbreakdown.html">Receivables Breakdown Report</a></li>
+<li class="collapse" id="reportunearnedincome"><div class="exptxt"><a href="../manual243/reportunearnedincome.html">Unearned Income Reports</a></div>
+<ul id="ul_reportunearnedincome">
+<li id="reportunearnedallocation"><a href="../manual243/reportunearnedallocation.html">Unearned Allocation Report</a></li>
+<li id="reportnetunearnedincome"><a href="../manual243/reportnetunearnedincome.html">Net Unearned Income Report</a></li>
+<li id="reportlineitemunearned"><a href="../manual243/reportlineitemunearned.html">Line Item Unearned Income Report</a></li>
+<li id="reportunearnedaccounts"><a href="../manual243/reportunearnedaccounts.html">Unearned Accounts Report</a></li>
+</ul>
+<li id="reportinsoverpaid"><a href="../manual243/reportinsoverpaid.html">Insurance Overpaid Report</a></li>
+<li id="reportpresentedtp"><a href="../manual243/reportpresentedtp.html">Presented Treatment Production Report</a></li>
+<li id="reporttpstatistics"><a href="../manual243/reporttpstatistics.html">Treatment Plan Presentation Statistics Report</a></li>
+<li id="reportinspayplanpastdue"><a href="../manual243/reportinspayplanpastdue.html">Insurance Payment Plans Past Due Report</a></li>
+<li id="reportinsaging"><a href="../manual243/reportinsaging.html">Insurance Aging Report</a></li>
+<li id="reportcustomaging"><a href="../manual243/reportcustomaging.html">Custom Aging Report</a></li>
+<li id="reportproceduresoverpaid"><a href="../manual243/reportproceduresoverpaid.html">Procedures Overpaid Report</a></li>
+<li id="reportproductiongoal"><a href="../manual243/reportproductiongoal.html">Monthly Production Goal Report</a></li>
+<li id="reportdynamicpayplanovercharged"><a href="../manual243/reportdynamicpayplanovercharged.html">Payment Plans Overcharged Report</a></li>
+</ul>
+<li class="collapse" id="+reportlists"><div class="exptxt">Lists</div>
+<ul id="ul_+reportlists">
+<li id="reportactivepatient"><a href="../manual243/reportactivepatient.html">Active Patients Report</a></li>
+<li id="reportappts"><a href="../manual243/reportappts.html">Appointments Report</a></li>
+<li id="reportbirthdays"><a href="../manual243/reportbirthdays.html">Birthday Report and Postcards</a></li>
+<li id="reportbrokenappt"><a href="../manual243/reportbrokenappt.html">Broken Appointments Report</a></li>
+<li id="reportdiscountplan"><a href="../manual243/reportdiscountplan.html">Discount Plans Report</a></li>
+<li id="reporthiddensplits"><a href="../manual243/reporthiddensplits.html">Hidden Payment Splits Report</a></li>
+<li id="reportinsuranceplan"><a href="../manual243/reportinsuranceplan.html">Insurance Plans Report</a></li>
+<li id="reportsnewpatient"><a href="../manual243/reportsnewpatient.html">New Patients Report</a></li>
+<li id="reportpatientraw"><a href="../manual243/reportpatientraw.html">Patients Report</a></li>
+<li id="reportpatientnotes"><a href="../manual243/reportpatientnotes.html">Patient Notes Report</a></li>
+<li id="reportprescriptions"><a href="../manual243/reportprescriptions.html">Prescriptions Report</a></li>
+<li id="reportprocedurecodes"><a href="../manual243/reportprocedurecodes.html">Procedure Codes - Fee Schedules Report</a></li>
+<li id="reportreferralraw"><a href="../manual243/reportreferralraw.html">Referral - Raw Report</a></li>
+<li id="reportreferralanalysis"><a href="../manual243/reportreferralanalysis.html">Referral Analysis Report</a></li>
+<li id="reportreferralproctrack"><a href="../manual243/reportreferralproctrack.html">Referred Procedure Tracking Report</a></li>
+<li id="reporttreatfinder"><a href="../manual243/reporttreatfinder.html">Treatment Finder Report</a></li>
+<li id="webschedapptreport"><a href="../manual243/webschedapptreport.html">Web Sched Appointments Report</a></li>
+<li id="reporterasautomaticallyprocess"><a href="../manual243/reporterasautomaticallyprocess.html">ERAs Automatically Processed Report</a></li>
+</ul>
+<li class="collapse" id="+reportsPublicHealth"><div class="exptxt">Public Health</div>
+<ul id="ul_+reportsPublicHealth">
+<li id="reportsrawscreeningdata"><a href="../manual243/reportsrawscreeningdata.html">Raw Screening Data Report</a></li>
+<li id="reportsrawpopulationdata"><a href="../manual243/reportsrawpopulationdata.html">Raw Population Data Report</a></li>
+<li id="reportsuds"><a href="../manual243/reportsuds.html">UDS Report</a></li>
+</ul>
+<li id="reportehrexport"><a href="../manual243/reportehrexport.html">EHR Patient Export</a></li>
+<li id="laserlabels"><a href="../manual243/laserlabels.html">Laser Labels</a></li>
+<li id="claimsnapshot"><a href="../manual243/claimsnapshot.html">Claim Snapshot</a></li>
+</ul>
+<li class="collapse" id="reportsgraphic"><div class="exptxt"><a href="../manual243/reportsgraphic.html">Graphic Reports</a></div>
+<ul id="ul_reportsgraphic">
+<li id="reportsgraphicsetup"><a href="../manual243/reportsgraphicsetup.html">Graphic Reports Setup</a></li>
+</ul>
+<li class="collapse" id="queryoverview"><div class="exptxt"><a href="../manual243/queryoverview.html">User Query</a></div>
+<ul id="ul_queryoverview">
+<li id="queryfavorites"><a href="../manual243/queryfavorites.html">Query Favorites</a></li>
+<li id="queryexamples.html"><a href="../manual243/queryexamples.html">queryexamples</a></li>
+<li id="excel"><a href="../manual243/excel.html">Excel</a></li>
+<li id="ooformletter"><a href="../manual243/ooformletter.html">OpenOffice.org Form Letter</a></li>
+<li id="oospread"><a href="../manual243/oospread.html">OpenOffice.org Spreadsheet</a></li>
+<li id="queryrequesterror.html"><a href="../manual243/queryrequesterror.html">Query Request Error</a></li>
+<li id="querysql.html"><a href="../site/querysql.html">Using SQL to Write Reports</a></li>
+<li id="unitedwayreports"><a href="../manual243/unitedwayreports.html">United Way Reports</a></li>
+</ul>
+<li id="eserviceactivitylog"><a href="../manual243/eserviceactivitylog.html">eService Activity Log</a></li>
+</ul>
+<li class="collapse" id="+tools"><div class="exptxt">Tools</div>
+<ul id="ul_+tools">
+<li id="printscreentool"><a href="../manual243/printscreentool.html">Print Screen Tool</a></li>
+<li class="collapse" id="+misc"><div class="exptxt">Misc Tools</div>
+<ul id="ul_+misc">
+<li id="paymentplanclose"><a href="../manual243/paymentplanclose.html">Close Payment Plans</a></li>
+<li id="blockoutsduplicate"><a href="../manual243/blockoutsduplicate.html">Clear Duplicate Blockouts</a></li>
+<li id="atozcreate"><a href="../manual243/atozcreate.html">Create AtoZ Folder</a></li>
+<li id="databasemaintenancepat"><a href="../manual243/databasemaintenancepat.html">Database Maintenance for Patient</a></li>
+<li id="mergebillingtypes"><a href="../manual243/mergebillingtypes.html">Merge Billing Types</a></li>
+<li id="mergediscountplans"><a href="../manual243/mergediscountplans.html">Merge Discount Plans</a></li>
+<li id="mergeimagecategories"><a href="../manual243/mergeimagecategories.html">Merge Image Categories</a></li>
+<li id="mergemedications"><a href="../manual243/mergemedications.html">Merge Medications</a></li>
+<li id="mergepatients"><a href="../manual243/mergepatients.html">Merge Patients</a></li>
+<li id="mergeproviders"><a href="../manual243/mergeproviders.html">Merge Providers</a></li>
+<li id="mergereferrals"><a href="../manual243/mergereferrals.html">Merge Referrals</a></li>
+<li id="subscribersmove"><a href="../manual243/subscribersmove.html">Move Subscribers</a></li>
+<li class="collapse" id="servicemanager"><div class="exptxt"><a href="../manual243/servicemanager.html">Service Manager</a></div>
+<ul id="ul_servicemanager">
+<li id="opendentalservice"><a href="../manual243/opendentalservice.html">Open Dental Service</a></li>
+<li id="opendentalreplicationservice"><a href="../manual243/opendentalreplicationservice.html">Open Dental Replication Service</a></li>
+</ul>
+<li id="procedurelocking"><a href="../manual243/procedurelocking.html">Procedure Lock</a></li>
+<li id="shutdown"><a href="../manual243/shutdown.html">Shutdown Workstations</a></li>
+<li id="telephonenumbers"><a href="../manual243/telephonenumbers.html">Telephone Numbers</a></li>
+<li id="testlatency"><a href="../manual243/testlatency.html">Test Latency</a></li>
+<li id="patientstatussetter"><a href="../manual243/patientstatussetter.html">Patient Status Setter</a></li>
+</ul>
+<li class="collapse" id="+advertising"><div class="exptxt">Advertising</div>
+<ul id="ul_+advertising">
+<li id="postcardssetup"><a href="../manual243/postcardssetup.html">Postcards Setup (Advertising)</a></li>
+<li class="collapse" id="postcardsupload"><div class="exptxt"><a href="../manual243/postcardsupload.html">Upload Postcard Recipients</a></div>
+<ul id="ul_postcardsupload">
+<li id="sendpostcards"><a href="../manual243/sendpostcards.html">Send Postcards (Advertising)</a></li>
+<li id="postcardsadvertisingworkflow"><a href="../manual243/postcardsadvertisingworkflow.html">Postcards (Advertising): Workflow</a></li>
+<li id="advertisingselectpatients"><a href="../manual243/advertisingselectpatients.html">Advertising - Select Patients</a></li>
+</ul>
+</ul>
+<li class="collapse" id="audittrail"><div class="exptxt"><a href="../manual243/audittrail.html">Audit Trail</a></div>
+<ul id="ul_audittrail">
+<li id="audittrailpermissions"><a href="../manual243/audittrailpermissions.html">Audit Trail Permissions</a></li>
+</ul>
+<li id="orthoautoclaim"><a href="../manual243/orthoautoclaim.html">Ortho Auto Claims</a></li>
+<li id="financecharges"><a href="../manual243/financecharges.html">Billing/Finance Charges</a></li>
+<li class="collapse" id="recurringcharges"><div class="exptxt"><a href="../manual243/recurringcharges.html">CC Recurring Charges</a></div>
+<ul id="ul_recurringcharges">
+<li id="recurringchargeshistory"><a href="../manual243/recurringchargeshistory.html">Recurring Charge History</a></li>
+</ul>
+<li class="collapse" id="certifications"><div class="exptxt"><a href="../manual243/certifications.html">Certifications</a></div>
+<ul id="ul_certifications">
+<li id="certificationsetup"><a href="../manual243/certificationsetup.html">Certification Setup</a></li>
+</ul>
+<li class="collapse" id="databasemaintenance"><div class="exptxt"><a href="../manual243/databasemaintenance.html">Database Maintenance</a></div>
+<ul id="ul_databasemaintenance">
+<li class="collapse" id="databasemaintenancetools"><div class="exptxt"><a href="../manual243/databasemaintenancetools.html">Database Maintenance Tools Tab</a></div>
+<ul id="ul_databasemaintenancetools">
+<li id="familybalancertool"><a href="../manual243/familybalancertool.html">Family Balancer Tool</a></li>
+</ul>
+</ul>
+<li class="collapse" id="dsevaluations"><div class="exptxt"><a href="../manual243/dsevaluations.html">Dental Student Evaluations</a></div>
+<ul id="ul_dsevaluations">
+<li id="dsfillevaluation"><a href="../manual243/dsfillevaluation.html">Fill out Student Evaluations</a></li>
+<li id="dsreports"><a href="../manual243/dsreports.html">Dental Student Reports</a></li>
+</ul>
+<li class="collapse" id="erouting"><div class="exptxt"><a href="../manual243/erouting.html">eRouting</a></div>
+<ul id="ul_erouting">
+<li id="eroutingsetup"><a href="../manual243/eroutingsetup.html">eRouting Setup</a></li>
+</ul>
+<li id="kioskpatient"><a href="../manual243/kioskpatient.html">Kiosk</a></li>
+<li id="kiosk"><a href="../manual243/kiosk.html">Kiosk Manager</a></li>
+<li id="languages"><a href="../manual243/languages.html">Language Translation</a></li>
+<li id="latecharges"><a href="../manual243/latecharges.html">Late Charges</a></li>
+<li class="collapse" id="portalonlinepayments"><div class="exptxt"><a href="../manual243/portalonlinepayments.html">Online Payments</a></div>
+<ul id="ul_portalonlinepayments">
+<li id="portalpaymentsbypatient"><a href="../manual243/portalpaymentsbypatient.html">Payment Portal</a></li>
+</ul>
+<li id="dashboardsetup"><a href="../manual243/dashboardsetup.html">Dashboard Setup</a></li>
+<li id="patientportaltransactions"><a href="../manual243/patientportaltransactions.html">Patient Portal Transactions</a></li>
+<li class="collapse" id="publichealthscreenings"><div class="exptxt"><a href="../manual243/publichealthscreenings.html">Public Health Screening</a></div>
+<ul id="ul_publichealthscreenings">
+<li id="publichealthscreeningclassic"><a href="../manual243/publichealthscreeningclassic.html">Public Health Classic Screening</a></li>
+<li id="publichealthscreeningcustom"><a href="../manual243/publichealthscreeningcustom.html">Public Health Custom Screening</a></li>
+</ul>
+<li id="repeatingcharges"><a href="../manual243/repeatingcharges.html">Repeating Charges</a></li>
+<li id="setupwizard"><a href="../manual243/setupwizard.html">Setup Wizard</a></li>
+<li id="requirements"><a href="../manual243/requirements.html">Dental School Requirements Needed</a></li>
+<li class="collapse" id="wiki"><div class="exptxt"><a href="../manual243/wiki.html">Wiki</a></div>
+<ul id="ul_wiki">
+<li id="wikiaddedit"><a href="../manual243/wikiaddedit.html">Wiki Edit</a></li>
+<li id="wikilists"><a href="../manual243/wikilists.html">Wiki List</a></li>
+<li id="wikimarkup"><a href="../manual243/wikimarkup.html">Wiki Markup</a></li>
+<li id="wikisearch"><a href="../manual243/wikisearch.html">Wiki Search</a></li>
+<li id="wikihistory"><a href="../manual243/wikihistory.html">Wiki History</a></li>
+</ul>
+<li class="collapse" id="webformsupload"><div class="exptxt"><a href="../manual243/webformsupload.html">Web Form Setup</a></div>
+<ul id="ul_webformsupload">
+<li id="webformsretrieve"><a href="../manual243/webformsretrieve.html">Web Forms Retrieve</a></li>
+<li id="webformspatient"><a href="../manual243/webformspatient.html">Web Forms: What Patient Sees</a></li>
+<li id="screeningform"><a href="../manual243/screeningform.html">Dental Patient Screening Form</a></li>
+<li id="webformsdiagram"><a href="../manual243/webformsdiagram.html">Web Forms Technical Diagram</a></li>
+</ul>
+<li class="collapse" id="zoom"><div class="exptxt"><a href="../manual243/zoom.html">Zoom</a></div>
+<ul id="ul_zoom">
+<li id="zoomartifacts"><a href="../manual243/zoomartifacts.html">Zoom Artifacts</a></li>
+</ul>
+</ul>
+<li id="clinics"><a href="../manual243/clinics.html">Clinics</a></li>
+<li id="patientdashboard"><a href="../manual243/patientdashboard.html">Patient Dashboard</a></li>
+<li class="collapse" id="eservicessetup"><div class="exptxt"><a href="../manual243/eservicessetup.html">eServices Setup</a></div>
+<ul id="ul_eservicessetup">
+<li class="collapse" id="eservicessignup"><div class="exptxt"><a href="../manual243/eservicessignup.html">eServices Signup</a></div>
+<ul id="ul_eservicessignup">
+<li class="collapse" id="signupportalbasic"><div class="exptxt"><a href="../manual243/signupportalbasic.html">eServices Signup Basic</a></div>
+<ul id="ul_signupportalbasic">
+<li id="textregister"><a href="../manual243/textregister.html">Register with Carriers</a></li>
+</ul>
+<li id="signupportaladvanced"><a href="../manual243/signupportaladvanced.html">eServices Signup Advanced</a></li>
+<li id="portalsettings"><a href="../manual243/portalsettings.html">Patient Portal Settings</a></li>
+<li class="collapse" id="opendentalmobile"><div class="exptxt"><a href="../manual243/opendentalmobile.html">ODMobile</a></div>
+<ul id="ul_opendentalmobile">
+<li id="opendentalmobileappts"><a href="../manual243/opendentalmobileappts.html">ODMobile Appointments</a></li>
+<li id="opendentalmobilepatients"><a href="../manual243/opendentalmobilepatients.html">ODMobile Patients</a></li>
+<li id="opendentalmobilemessages"><a href="../manual243/opendentalmobilemessages.html">ODMobile Messages</a></li>
+<li class="collapse" id="opendentalmobilemenu"><div class="exptxt"><a href="../manual243/opendentalmobilemenu.html">ODMobile Menu</a></div>
+<ul id="ul_opendentalmobilemenu">
+<li id="opendentalmobilereports"><a href="../manual243/opendentalmobilereports.html">ODMobile Reports</a></li>
+<li id="opendentalmobilesettings"><a href="../manual243/opendentalmobilesettings.html">ODMobile Settings</a></li>
+</ul>
+</ul>
+<li id="signupportalabout"><a href="../manual243/signupportalabout.html">eServices Sign Up About</a></li>
+<li id="signupportalhelp"><a href="../manual243/signupportalhelp.html">eServices Signup Help</a></li>
+<li id="textintegratedmonthlylimit"><a href="../manual243/textintegratedmonthlylimit.html">SMS Warning Amount</a></li>
+</ul>
+<li class="collapse" id="econnector"><div class="exptxt"><a href="../manual243/econnector.html">eConnector</a></div>
+<ul id="ul_econnector">
+<li id="allowapplication"><a href="../manual243/allowapplication.html">eConnector Firewall</a></li>
+<li id="eserviceports"><a href="../site/eserviceports.html">Ports and IP Addresses for eServices</a></li>
+<li id="eservicestroubleshooting"><a href="../manual243/eservicestroubleshooting.html">eServices Troubleshooting</a></li>
+</ul>
+<li class="collapse" id="mobilewebhostedbyod"><div class="exptxt"><a href="../manual243/mobilewebhostedbyod.html">Mobile Web</a></div>
+<ul id="ul_mobilewebhostedbyod">
+<li class="collapse" id="mobilewebuse"><div class="exptxt"><a href="../manual243/mobilewebuse.html">Mobile Web Home</a></div>
+<ul id="ul_mobilewebuse">
+<li id="mobilewebuseappts"><a href="../manual243/mobilewebuseappts.html">Mobile Web Appointments</a></li>
+<li id="mobilewebusepatients"><a href="../manual243/mobilewebusepatients.html">Mobile Web Patients</a></li>
+<li id="mobilewebuseops"><a href="../manual243/mobilewebuseops.html">Mobile Web Operatories</a></li>
+<li id="mobilewebusepharmacies"><a href="../manual243/mobilewebusepharmacies.html">Mobile Web Pharmacies</a></li>
+<li id="mobilewebuseerx"><a href="../manual243/mobilewebuseerx.html">Mobile Web eRx</a></li>
+</ul>
+<li id="mobilewebtroubleshooting"><a href="../manual243/mobilewebtroubleshooting.html">Mobile Web Troubleshooting</a></li>
+</ul>
+<li class="collapse" id="portalhostedbyod"><div class="exptxt"><a href="../manual243/portalhostedbyod.html">Patient Portal</a></div>
+<ul id="ul_portalhostedbyod">
+<li id="portalodhostdiagram"><a href="../manual243/portalodhostdiagram.html">Patient Portal Host Diagram</a></li>
+<li id="portallhostown"><a href="../manual243/portallhostown.html">Host your own Patient Portal</a></li>
+<li id="portalaccess"><a href="../manual243/portalaccess.html">Patient Portal Access</a></li>
+<li id="portaltroubleshooting"><a href="../manual243/portaltroubleshooting.html">Patient Portal Troubleshooting</a></li>
+<li id="portalpatientsees"><a href="../manual243/portalpatientsees.html">Patient Portal: What Patient Sees</a></li>
+<li id="authrep"><a href="../manual243/authrep.html">Authorized Representatives</a></li>
+</ul>
+<li class="collapse" id="paymentportalsetup"><div class="exptxt"><a href="../manual243/paymentportalsetup.html">Payment Portal Setup</a></div>
+<ul id="ul_paymentportalsetup">
+<li id="paymentportalsees"><a href="../manual243/paymentportalsees.html">Payment Portal: What Patient Sees</a></li>
+<li id="messagetopaysees"><a href="../manual243/messagetopaysees.html">Message-to-Pay: What Patient Sees</a></li>
+</ul>
+<li class="collapse" id="textintegratedusage"><div class="exptxt"><a href="../manual243/textintegratedusage.html">eServices Texting</a></div>
+<ul id="ul_textintegratedusage">
+<li id="textintegratedtroubleshooting"><a href="../manual243/textintegratedtroubleshooting.html">Integrated Texting Troubleshooting</a></li>
+<li id="textmsgfaq"><a href="../manual243/textmsgfaq.html">Integrated Texting Q and A</a></li>
+<li id="appointmenttexts"><a href="../manual243/appointmenttexts.html">Appointment Texts</a></li>
+<li id="eservicestermsofservice"><a href="../manual243/eservicestermsofservice.html">Texting Terms of Service</a></li>
+</ul>
+<li class="collapse" id="automatedmessaging"><div class="exptxt"><a href="../manual243/automatedmessaging.html">Automated Messaging</a></div>
+<ul id="ul_automatedmessaging">
+<li id="automatedmessagingadvanced"><a href="../manual243/automatedmessagingadvanced.html">Automated Messaging Advanced Settings</a></li>
+<li class="collapse" id="ereminderssetup"><div class="exptxt"><a href="../manual243/ereminderssetup.html">eReminders</a></div>
+<ul id="ul_ereminderssetup">
+<li id="eremindertroubleshooting"><a href="../manual243/eremindertroubleshooting.html">eReminder and eConfirmation Troubleshooting</a></li>
+</ul>
+<li id="econfirmationsetup"><a href="../manual243/econfirmationsetup.html">eConfirmations</a></li>
+<li id="autothankyousetup"><a href="../manual243/autothankyousetup.html">Automated Thank-Yous</a></li>
+<li class="collapse" id="arrivalssetup"><div class="exptxt"><a href="../manual243/arrivalssetup.html">Arrivals</a></div>
+<ul id="ul_arrivalssetup">
+<li id="arrivalssees"><a href="../manual243/arrivalssees.html">Arrivals: What Patient Sees</a></li>
+</ul>
+<li id="editrule"><a href="../manual243/editrule.html">Edit Rule</a></li>
+<li id="generalmessagesetup"><a href="../manual243/generalmessagesetup.html">General Messages</a></li>
+<li id="econfirmationexclusiondays"><a href="../manual243/econfirmationexclusiondays.html">eConfirmation and Web Sched Recall Exclusion Days</a></li>
+<li id="automatedmessagingpreferences"><a href="../manual243/automatedmessagingpreferences.html">Automated Messaging Preferences</a></li>
+</ul>
+<li class="collapse" id="eclipboardsetup"><div class="exptxt"><a href="../manual243/eclipboardsetup.html">eClipboard Setup</a></div>
+<ul id="ul_eclipboardsetup">
+<li id="eclipboardsees"><a href="../manual243/eclipboardsees.html">eClipboard: What Patient Sees</a></li>
+<li id="byodsees"><a href="../manual243/byodsees.html">BYOD: What Patient Sees</a></li>
+<li id="byodworkflow"><a href="../manual243/byodworkflow.html">BYOD: Workflow</a></li>
+<li id="eclipboardtroubleshooting"><a href="../manual243/eclipboardtroubleshooting.html">eClipboard Troubleshooting</a></li>
+<li id="eclipboardworkflow"><a href="../manual243/eclipboardworkflow.html">eClipboard: Workflow</a></li>
+<li id="eclipboardimages"><a href="../manual243/eclipboardimages.html">eClipboard Images</a></li>
+<li id="eclipboardbranding"><a href="../manual243/eclipboardbranding.html">eClipboard Branding Profile</a></li>
+<li id="odtouchsecurity"><a href="../manual243/odtouchsecurity.html">ODTouch Security</a></li>
+</ul>
+<li id="eservicesmisctab"><a href="../manual243/eservicesmisctab.html">eServices Misc</a></li>
+<li class="collapse" id="secureemailsetup"><div class="exptxt"><a href="../manual243/secureemailsetup.html">Secure Email Setup</a></div>
+<ul id="ul_secureemailsetup">
+<li id="secureemailworkflow"><a href="../manual243/secureemailworkflow.html">Secure Email: Workflow</a></li>
+<li id="hostedemailsignatures"><a href="../manual243/hostedemailsignatures.html">Hosted Email Signatures</a></li>
+<li id="hostedemailaddressverification"><a href="../manual243/hostedemailaddressverification.html">Hosted Email Address Verification</a></li>
+</ul>
+<li class="collapse" id="odtouchsetup"><div class="exptxt"><a href="../manual243/odtouchsetup.html">ODTouch Setup</a></div>
+<ul id="ul_odtouchsetup">
+<li class="collapse" id="odtouchhome"><div class="exptxt"><a href="../manual243/odtouchhome.html">ODTouch: Home Screen</a></div>
+<ul id="ul_odtouchhome">
+<li id="odtouchappts"><a href="../manual243/odtouchappts.html">ODTouch: Appointments</a></li>
+<li id="odtouchimages"><a href="../manual243/odtouchimages.html">ODTouch: Images</a></li>
+<li id="odtouchprodgoal"><a href="../manual243/odtouchprodgoal.html">ODTouch: Production Goals</a></li>
+<li id="odtouchmedical"><a href="../manual243/odtouchmedical.html">ODTouch: Medical Info</a></li>
+<li id="odtouchperio"><a href="../manual243/odtouchperio.html">ODTouch: Perio</a></li>
+<li class="collapse" id="odtouchchart"><div class="exptxt"><a href="../manual243/odtouchchart.html">ODTouch: Chart</a></div>
+<ul id="ul_odtouchchart">
+<li id="odtouchnewrx"><a href="../manual243/odtouchnewrx.html">ODTouch: New Rx</a></li>
+<li id="odtouchrxmanage"><a href="../manual243/odtouchrxmanage.html">ODTouch: Rx Manage</a></li>
+<li id="odtouchprocedure"><a href="../manual243/odtouchprocedure.html">ODTouch: Procedure Edit</a></li>
+<li id="odtouchchartedit"><a href="../manual243/odtouchchartedit.html">ODTouch: Chart Edit</a></li>
+</ul>
+<li id="odtouchreports"><a href="../manual243/odtouchreports.html">ODTouch: Reports</a></li>
+<li class="collapse" id="odtouchsettings"><div class="exptxt"><a href="../manual243/odtouchsettings.html">ODTouch: Settings</a></div>
+<ul id="ul_odtouchsettings">
+<li id="odtouchabout"><a href="../manual243/odtouchabout.html">ODTouch: About</a></li>
+<li id="odtouchconnectivity"><a href="../manual243/odtouchconnectivity.html">ODTouch: Connectivity Statuses</a></li>
+</ul>
+<li id="odtouchtreatmentplans"><a href="../manual243/odtouchtreatmentplans.html">ODTouch: Treatment Plans</a></li>
+<li class="collapse" id="odtoucherouting"><div class="exptxt"><a href="../manual243/odtoucherouting.html">ODTouch: eRouting</a></div>
+<ul id="ul_odtoucherouting">
+<li id="odtouchpayment"><a href="../manual243/odtouchpayment.html">ODTouch: Payment</a></li>
+</ul>
+<li id="odtouchpayplan"><a href="../manual243/odtouchpayplan.html">ODTouch: Payment Plans</a></li>
+<li id="odtoucherx"><a href="../manual243/odtoucherx.html">ODTouch: eRx</a></li>
+<li id="odtouchexam"><a href="../manual243/odtouchexam.html">ODTouch: Exam Sheets</a></li>
+<li id="odtouchmessages"><a href="../manual243/odtouchmessages.html">ODTouch: Messages</a></li>
+</ul>
+<li id="privacypolicyodtouch"><a href="../site/privacypolicyodtouch.html">ODTouch Privacy Policy</a></li>
+</ul>
+<li id="mobilesettings"><a href="../manual243/mobilesettings.html">Mobile Settings</a></li>
+<li class="collapse" id="webschedrecallsetup"><div class="exptxt"><a href="../manual243/webschedrecallsetup.html">Web Sched Recall</a></div>
+<ul id="ul_webschedrecallsetup">
+<li id="webschedrecallsees"><a href="../manual243/webschedrecallsees.html">Web Sched Recall: What Patient Sees</a></li>
+</ul>
+<li class="collapse" id="webschednewpatsetup"><div class="exptxt"><a href="../manual243/webschednewpatsetup.html">Web Sched New Patient</a></div>
+<ul id="ul_webschednewpatsetup">
+<li id="webschednewpatsees"><a href="../manual243/webschednewpatsees.html">Web Sched New Patient: What Patient Sees</a></li>
+<li id="webschedverify"><a href="../manual243/webschedverify.html">Web Sched Notify Setup</a></li>
+<li id="webschedcarrierrule"><a href="../manual243/webschedcarrierrule.html">Web Sched Carrier Rule</a></li>
+</ul>
+<li class="collapse" id="webschedexistingpatsetup"><div class="exptxt"><a href="../manual243/webschedexistingpatsetup.html">Web Sched Existing Patient</a></div>
+<ul id="ul_webschedexistingpatsetup">
+<li id="webschedexistingpatientsees"><a href="../manual243/webschedexistingpatientsees.html">Web Sched Existing Patient: What Patient Sees</a></li>
+</ul>
+<li class="collapse" id="webschedasap"><div class="exptxt"><a href="../manual243/webschedasap.html">Web Sched ASAP</a></div>
+<ul id="ul_webschedasap">
+<li id="webschedasaphistory"><a href="../manual243/webschedasaphistory.html">Web Sched ASAP History</a></li>
+<li id="webschedasappatientsees"><a href="../manual243/webschedasappatientsees.html">Web Sched ASAP: What Patient Sees</a></li>
+</ul>
+<li id="webschedadvanced"><a href="../manual243/webschedadvanced.html">Web Sched Advanced</a></li>
+<li id="webschedtroubleshooting"><a href="../manual243/webschedtroubleshooting.html">Web Sched Troubleshooting</a></li>
+<li id="eservicebundleworkflow"><a href="../manual243/eservicebundleworkflow.html">eServices Bundle Workflow</a></li>
+<li id="devicemanager"><a href="../manual243/devicemanager.html">Device Manager</a></li>
+</ul>
+<li id="alerts"><a href="../manual243/alerts.html">Alerts</a></li>
+<li class="collapse" id="+help"><div class="exptxt">Help</div>
+<ul id="ul_+help">
+<li id="helpfeature"><a href="../manual243/helpfeature.html">Help Feature</a></li>
+<li id="querymonitor"><a href="../manual243/querymonitor.html">Query Monitor</a></li>
+<li id="featurerequests"><a href="../manual243/featurerequests.html">Feature Requests</a></li>
+<li id="payloadmonitor"><a href="../manual243/payloadmonitor.html">Payload Monitor</a></li>
+<li id="supportstatus"><a href="../manual243/supportstatus.html">Support Status</a></li>
+<li class="collapse" id="update"><div class="exptxt"><a href="../manual243/update.html">Update</a></div>
+<ul id="ul_update">
+<li id="updatesetup"><a href="../manual243/updatesetup.html">Update Setup</a></li>
+<li class="collapse" id="+buglist"><div class="exptxt">Bug List</div>
+<ul id="ul_+buglist">
+<li id="bugtrackerolderversions.html"><a href="../site/bugtrackerolderversions.html">bugtrackerolderversions</a></li>
+<li id="previous.html"><a href="../site/previous.html">Previous Versions</a></li>
+<li id="annoyances"><a href="../site/annoyances.html">Annoyances</a></li>
+</ul>
+<li id="updateinstall"><a href="../manual243/updateinstall.html">Install Update</a></li>
+</ul>
+<li class="collapse" id="aboutwindow"><div class="exptxt"><a href="../manual243/aboutwindow.html">About</a></div>
+<ul id="ul_aboutwindow">
+<li id="licenses"><a href="../manual243/licenses.html">Licenses</a></li>
+<li id="diagnostics"><a href="../manual243/diagnostics.html">Diagnostics</a></li>
+</ul>
+</ul>
+</ul>
+<li class="collapse" id="toolbar"><div class="exptxt"><a href="../manual243/toolbar.html">Main Toolbar</a></div>
+<ul id="ul_toolbar">
+<li class="collapse" id="patientselect"><div class="exptxt"><a href="../manual243/patientselect.html">Select Patient</a></div>
+<ul id="ul_patientselect">
+<li id="patientnew"><a href="../manual243/patientnew.html">Add Patient</a></li>
+<li id="familyadd"><a href="../manual243/familyadd.html">Add Family</a></li>
+</ul>
+<li id="commlog"><a href="../manual243/commlog.html">Commlog</a></li>
+<li class="collapse" id="emailmessage"><div class="exptxt"><a href="../manual243/emailmessage.html">Email Message Edit</a></div>
+<ul id="ul_emailmessage">
+<li id="email"><a href="../manual243/email.html">Email</a></li>
+<li id="emailhtml"><a href="../manual243/emailhtml.html">HTML Email</a></li>
+<li id="emailautographs"><a href="../manual243/emailautographs.html">Email Autographs</a></li>
+<li class="collapse" id="emailencrypted"><div class="exptxt"><a href="../manual243/emailencrypted.html">Email Encryption Options</a></div>
+<ul id="ul_emailencrypted">
+<li id="emailoutlooksign"><a href="../manual243/emailoutlooksign.html">Email Certificate Outlook</a></li>
+<li id="direct"><a href="../manual243/direct.html">Email Direct Encryption</a></li>
+<li id="encryptedstandard"><a href="../manual243/encryptedstandard.html">Email Encryption Setup</a></li>
+</ul>
+<li id="emailerrors"><a href="../manual243/emailerrors.html">Email Errors</a></li>
+<li id="emailtemplates"><a href="../manual243/emailtemplates.html">Email Templates</a></li>
+</ul>
+<li id="securewebmailsend"><a href="../manual243/securewebmailsend.html">WebMail</a></li>
+<li class="collapse" id="textmessages"><div class="exptxt"><a href="../manual243/textmessages.html">Text Message</a></div>
+<ul id="ul_textmessages">
+<li id="textmsginbox"><a href="../manual243/textmsginbox.html">Text Messaging Mailbox</a></li>
+</ul>
+<li class="collapse" id="letterspatient"><div class="exptxt"><a href="../manual243/letterspatient.html">Letter</a></div>
+<ul id="ul_letterspatient">
+<li id="letterreferral"><a href="../manual243/letterreferral.html">Referral Letter</a></li>
+<li id="lettermerge"><a href="../manual243/lettermerge.html">Letter Merge</a></li>
+<li id="mailmergeword"><a href="../manual243/mailmergeword.html">Mail Merge in Word</a></li>
+</ul>
+<li class="collapse" id="patientform"><div class="exptxt"><a href="../manual243/patientform.html">Patient Forms</a></div>
+<ul id="ul_patientform">
+<li id="sheetsfillout"><a href="../manual243/sheetsfillout.html">Fill Sheet</a></li>
+<li id="patientformsimport"><a href="../manual243/patientformsimport.html">Import Patient Forms and Medical Histories</a></li>
+<li id="registrationforms"><a href="../manual243/registrationforms.html">Registration Forms</a></li>
+</ul>
+<li class="collapse" id="tasks"><div class="exptxt"><a href="../manual243/tasks.html">Task</a></div>
+<ul id="ul_tasks">
+<li class="collapse" id="taskswindow"><div class="exptxt"><a href="../manual243/taskswindow.html">Task Window</a></div>
+<ul id="ul_taskswindow">
+<li id="taskattachments"><a href="../manual243/taskattachments.html">Task Attachments</a></li>
+</ul>
+<li class="collapse" id="taskreminders"><div class="exptxt"><a href="../manual243/taskreminders.html">Task Reminder</a></div>
+<ul id="ul_taskreminders">
+<li id="tasklistrepeating"><a href="../manual243/tasklistrepeating.html">Repeating Task Lists (Legacy)</a></li>
+</ul>
+<li id="tasklists"><a href="../manual243/tasklists.html">Task List</a></li>
+<li id="tasksearch"><a href="../manual243/tasksearch.html">Task Search</a></li>
+</ul>
+<li id="labels"><a href="../manual243/labels.html">Labels</a></li>
+<li id="popups"><a href="../manual243/popups.html">Popups</a></li>
+</ul>
+<li class="collapse" id="+overviews"><div class="exptxt">Overviews</div>
+<ul id="ul_+overviews">
+<li id="tasksoverview"><a href="../manual243/tasksoverview.html">Tasks Overview</a></li>
+</ul>
+<li id="+workflows">Workflows</li>
+<li class="collapse" id="technical"><div class="exptxt"><a href="../manual243/technical.html">Technical</a></div>
+<ul id="ul_technical">
+<li class="collapse" id="computernetworksetup"><div class="exptxt"><a href="../manual243/computernetworksetup.html">Network and Computer Setup</a></div>
+<ul id="ul_computernetworksetup">
+<li id="computerrequirements.html"><a href="../site/computerrequirements.html">Computer Requirements</a></li>
+<li id="screensize"><a href="../site/screensize.html">Screen Size</a></li>
+<li id="connectingworkstations"><a href="../manual243/connectingworkstations.html">Connecting Workstations to a Database</a></li>
+<li class="collapse" id="securitycomputers"><div class="exptxt"><a href="../manual243/securitycomputers.html">Computer Security</a></div>
+<ul id="ul_securitycomputers">
+<li id="firewalls"><a href="../manual243/firewalls.html">Firewall</a></li>
+<li id="securitymysql"><a href="../manual243/securitymysql.html">MySQL Security</a></li>
+<li id="windowsupdates"><a href="../manual243/windowsupdates.html">Windows Update</a></li>
+<li id="networkusers"><a href="../manual243/networkusers.html">Network Users</a></li>
+<li class="collapse" id="virus"><div class="exptxt"><a href="../manual243/virus.html">Antivirus</a></div>
+<ul id="ul_virus">
+<li id="virusbestpractices"><a href="../manual243/virusbestpractices.html">Antivirus Best Practices</a></li>
+</ul>
+<li class="collapse" id="encryption"><div class="exptxt"><a href="../manual243/encryption.html">Encryption of Data at Rest and in Transit</a></div>
+<ul id="ul_encryption">
+<li id="encryptionbitlocker"><a href="../manual243/encryptionbitlocker.html">BitLocker Encryption</a></li>
+<li id="encryptionefs"><a href="../manual243/encryptionefs.html">EFS Encryption</a></li>
+<li id="encryptionmariadb"><a href="../manual243/encryptionmariadb.html">MariaDB Data-at-Rest Encryption</a></li>
+</ul>
+<li id="embezzlement"><a href="../manual243/embezzlement.html">Embezzlement</a></li>
+<li id="privacypolicy"><a href="../manual243/privacypolicy.html">Privacy Policy - Google</a></li>
+<li id="privacypolicyodmobile"><a href="../site/privacypolicyodmobile.html">Open Dental / ODMobile Privacy Policy</a></li>
+</ul>
+<li id="tablet"><a href="../site/tablet.html">Tablet</a></li>
+<li id="scanners"><a href="../manual243/scanners.html">Scanners</a></li>
+<li id="wireless"><a href="../manual243/wireless.html">Wireless</a></li>
+<li class="collapse" id="hipaaopendental"><div class="exptxt"><a href="../site/hipaaopendental.html">HIPAA at Open Dental Software, Inc.</a></div>
+<ul id="ul_hipaaopendental">
+<li id="hipaa"><a href="../site/hipaa.html">HIPAA</a></li>
+</ul>
+</ul>
+<li class="collapse" id="installation"><div class="exptxt"><a href="../manual243/installation.html">Installation</a></div>
+<ul id="ul_installation">
+<li class="collapse" id="+trial"><div class="exptxt">Trial Version</div>
+<ul id="ul_+trial">
+<li id="trialversionimprovements"><a href="../site/trialversionimprovements.html">Trial Database Improvements</a></li>
+</ul>
+<li id="updatefullversion"><a href="../manual243/updatefullversion.html">Update to Full Version</a></li>
+<li id="installworkstation"><a href="../manual243/installworkstation.html">Install on Workstation</a></li>
+<li id="dotnet"><a href="../manual243/dotnet.html">dot Net ( .NET )</a></li>
+<li class="collapse" id="troubleshooting"><div class="exptxt"><a href="../manual243/troubleshooting.html">Troubleshooting</a></div>
+<ul id="ul_troubleshooting">
+<li id="unhandledexception"><a href="../manual243/unhandledexception.html">Unhandled Exception</a></li>
+<li id="troubleshootingslowness"><a href="../manual243/troubleshootingslowness.html">Troubleshooting Slowness</a></li>
+<li id="loggers"><a href="../manual243/loggers.html">Loggers</a></li>
+</ul>
+<li id="usingodblank"><a href="../manual243/usingodblank.html">Use Blank Database</a></li>
+<li id="port3306"><a href="../manual243/port3306.html">Open Port 3306</a></li>
+<li id="uninstall"><a href="../manual243/uninstall.html">Uninstalling Open Dental</a></li>
+</ul>
+<li class="collapse" id="advancedtopics"><div class="exptxt"><a href="../manual243/advancedtopics.html">Advanced Topics</a></div>
+<ul id="ul_advancedtopics">
+<li id="remote"><a href="../manual243/remote.html">Remote Access</a></li>
+<li id="multiplelocations"><a href="../manual243/multiplelocations.html">Multiple Locations</a></li>
+<li class="collapse" id="replication"><div class="exptxt"><a href="../manual243/replication.html">Replication</a></div>
+<ul id="ul_replication">
+<li id="replicationautoincrement"><a href="../manual243/replicationautoincrement.html">Replication Auto Increment</a></li>
+<li id="replicationbestpractices"><a href="../manual243/replicationbestpractices.html">Replication Best Practices</a></li>
+<li id="replicationdaisychain"><a href="../manual243/replicationdaisychain.html">Daisy Chain Replication</a></li>
+<li id="replicationdaisychainnewserver"><a href="../manual243/replicationdaisychainnewserver.html">Daisy Chain Replication: Add Server</a></li>
+<li id="replicationdaisychainnewserverrandomprimary"><a href="../manual243/replicationdaisychainnewserverrandomprimary.html">Daisy Chain Replication: Add Server (random primary keys)</a></li>
+<li id="replicationoneway"><a href="../manual243/replicationoneway.html">One-Way Replication</a></li>
+<li id="replicationonewayrandomprimary"><a href="../manual243/replicationonewayrandomprimary.html">One-Way Replication (random primary keys)</a></li>
+<li id="replicationprimarykeys"><a href="../manual243/replicationprimarykeys.html">Random Primary Keys</a></li>
+<li id="replicationreinitialize"><a href="../manual243/replicationreinitialize.html">Reinitialize Replication</a></li>
+<li id="replicationtroubleshooting"><a href="../manual243/replicationtroubleshooting.html">Replication Troubleshooting</a></li>
+<li id="replicationupdateod"><a href="../manual243/replicationupdateod.html">Replication: Update Open Dental Version</a></li>
+<li id="sharednetworkfolder"><a href="../manual243/sharednetworkfolder.html">Folder Replication</a></li>
+</ul>
+<li class="collapse" id="middletier"><div class="exptxt"><a href="../manual243/middletier.html">Middle Tier</a></div>
+<ul id="ul_middletier">
+<li id="middletierinstallation"><a href="../manual243/middletierinstallation.html">Middle Tier Installation</a></li>
+<li id="timezones"><a href="../manual243/timezones.html">Time Zones</a></li>
+<li id="cloudhostedserver"><a href="../manual243/cloudhostedserver.html">Self-Directed Cloud Hosting</a></li>
+<li id="proxyserver"><a href="../manual243/proxyserver.html">Proxy Server</a></li>
+<li id="middletiersecuritycert"><a href="../manual243/middletiersecuritycert.html">Middle Tier Security Certificate</a></li>
+<li id="middletiertroubleshooting"><a href="../manual243/middletiertroubleshooting.html">Middle Tier Troubleshooting</a></li>
+<li id="hostmultipledatabases"><a href="../manual243/hostmultipledatabases.html">Host Multiple Databases from One Web Server</a></li>
+</ul>
+<li class="collapse" id="central"><div class="exptxt"><a href="../manual243/central.html">Central Enterprise Management Tool ( CEMT )</a></div>
+<ul id="ul_central">
+<li id="cemtbestpractices"><a href="../manual243/cemtbestpractices.html">CEMT Best Practices</a></li>
+<li id="cemtconnections"><a href="../manual243/cemtconnections.html">CEMT Connections</a></li>
+<li id="cemtpasswords"><a href="../manual243/cemtpasswords.html">CEMT Passwords</a></li>
+<li id="cemtprodincreport"><a href="../manual243/cemtprodincreport.html">CEMT Reports</a></li>
+<li id="cemtsecurity"><a href="../manual243/cemtsecurity.html">CEMT Security</a></li>
+<li id="cemtsetup"><a href="../manual243/cemtsetup.html">CEMT Setup</a></li>
+<li id="cemtupdate"><a href="../manual243/cemtupdate.html">CEMT Update Databases</a></li>
+<li id="cemtpatienttransfer"><a href="../manual243/cemtpatienttransfer.html">CEMT Patient Transfer</a></li>
+<li id="cemtusersettings"><a href="../manual243/cemtusersettings.html">CEMT User Settings</a></li>
+<li id="cemtconnectiongroups"><a href="../manual243/cemtconnectiongroups.html">CEMT Connection Groups</a></li>
+</ul>
+<li class="collapse" id="databasemanagementsystems"><div class="exptxt"><a href="../manual243/databasemanagementsystems.html">Database Management Systems</a></div>
+<ul id="ul_databasemanagementsystems">
+<li class="collapse" id="mysql"><div class="exptxt"><a href="../manual243/mysql.html">MySQL</a></div>
+<ul id="ul_mysql">
+<li id="mysql50"><a href="../manual243/mysql50.html">MySQL 5.0</a></li>
+<li id="mysql55"><a href="../manual243/mysql55.html">MySQL 5.5</a></li>
+<li id="mysql56update"><a href="../manual243/mysql56update.html">MySQL 5.6</a></li>
+</ul>
+<li id="mariadb"><a href="../manual243/mariadb.html">MariaDB</a></li>
+<li id="mysqlinnodb"><a href="../manual243/mysqlinnodb.html">InnoDB</a></li>
+<li id="corruption"><a href="../manual243/corruption.html">Corruption</a></li>
+<li id="mycnf"><a href="../manual243/mycnf.html">my.cnf</a></li>
+<li id="myini"><a href="../manual243/myini.html">my.ini</a></li>
+<li id="odbc"><a href="../manual243/odbc.html">ODBC</a></li>
+<li id="refreshing"><a href="../manual243/refreshing.html">Refreshing Data</a></li>
+<li id="oracle.html"><a href="../site/oracle.html">Oracle</a></li>
+<li id="servermigration"><a href="../manual243/servermigration.html">Server Migration</a></li>
+<li id="mysqlusermanager"><a href="../manual243/mysqlusermanager.html">MySQL User Manager</a></li>
+<li id="mysqltroubleshooting"><a href="../manual243/mysqltroubleshooting.html">MySQL Troubleshooting</a></li>
+<li id="slowquerylog"><a href="../manual243/slowquerylog.html">Slow Query Log Tool</a></li>
+<li id="amazonrds"><a href="../manual243/amazonrds.html">Amazon RDS</a></li>
+<li id="queryrequest"><a href="../manual243/queryrequest.html">Query Requests</a></li>
+<li id="mysqlmanage"><a href="../manual243/mysqlmanage.html">MySQL Data Directory Management</a></li>
+</ul>
+<li class="collapse" id="unittesting.html"><div class="exptxt"><a href="../site/unittesting.html">Unit Testing</a></div>
+<ul id="ul_unittesting.html">
+<li id="hl7tests"><a href="../manual243/hl7tests.html">HL7 Unit Tests</a></li>
+<li id="unittestdowngrades"><a href="../manual243/unittestdowngrades.html">Estimate Downgrade Unit Tests</a></li>
+<li class="collapse" id="unittestpaymentplan"><div class="exptxt"><a href="../manual243/unittestpaymentplan.html">Payment Plan Unit Tests</a></div>
+<ul id="ul_unittestpaymentplan">
+<li id="unittestpaymentplanscreens"><a href="../manual243/unittestpaymentplanscreens.html">Payment Plan Unit Test Screens</a></li>
+</ul>
+<li id="unittestrepeatingcharges"><a href="../manual243/unittestrepeatingcharges.html">Repeating Charges Unit Tests</a></li>
+</ul>
+<li id="commandline"><a href="../manual243/commandline.html">Command Line Arguments</a></li>
+<li id="keyboardshortcuts"><a href="../manual243/keyboardshortcuts.html">Keyboard Shortcuts</a></li>
+<li class="collapse" id="versions"><div class="exptxt"><a href="../site/versions.html">Versions</a></div>
+<ul id="ul_versions">
+<li id="version2_1"><a href="../site/version2_1.html">Version 2.1</a></li>
+<li id="version2_5"><a href="../site/version2_5.html">Version 2.5</a></li>
+<li id="version2_8"><a href="../site/version2_8.html">Version 2.8</a></li>
+<li id="version2_9"><a href="../site/version2_9.html">Version 2.9</a></li>
+<li id="version3_0"><a href="../site/version3_0.html">Version 3.0</a></li>
+<li id="version3_1"><a href="../site/version3_1.html">Version 3.1</a></li>
+<li id="version3_4"><a href="../site/version3_4.html">Version 3.4</a></li>
+<li id="version3_5"><a href="../site/version3_5.html">Version 3.5</a></li>
+<li id="version3_6"><a href="../site/version3_6.html">Version 3.6</a></li>
+<li id="version3_7"><a href="../site/version3_7.html">Version 3.7</a></li>
+<li id="version3_8"><a href="../site/version3_8.html">Version 3.8</a></li>
+<li id="version3_9"><a href="../site/version3_9.html">Version 3.9</a></li>
+<li id="version4_0"><a href="../site/version4_0.html">Version 4.0</a></li>
+<li id="version4_1"><a href="../site/version4_1.html">Version 4.1</a></li>
+<li id="version4_2"><a href="../site/version4_2.html">Version 4.2</a></li>
+<li id="version4_3"><a href="../site/version4_3.html">Version 4.3</a></li>
+<li id="version4_4"><a href="../site/version4_4.html">Version 4.4</a></li>
+<li id="version4_5"><a href="../site/version4_5.html">Version 4.5</a></li>
+<li id="version4_6"><a href="../site/version4_6.html">Version 4.6</a></li>
+<li id="version4_7"><a href="../site/version4_7.html">Version 4.7</a></li>
+<li id="version4_8"><a href="../site/version4_8.html">Version 4.8</a></li>
+<li id="version4_9"><a href="../site/version4_9.html">Version 4.9</a></li>
+<li id="version5_0"><a href="../site/version5_0.html">Version 5.0</a></li>
+<li id="version5_1"><a href="../site/version5_1.html">Version 5.1</a></li>
+<li id="version5_2"><a href="../site/version5_2.html">Version 5.2</a></li>
+<li id="version5_3"><a href="../site/version5_3.html">Version 5.3</a></li>
+<li id="version5_4"><a href="../site/version5_4.html">Version 5.4</a></li>
+<li id="version5_5"><a href="../site/version5_5.html">Version 5.5</a></li>
+<li id="version5_6"><a href="../site/version5_6.html">Version 5.6</a></li>
+<li id="version5_7"><a href="../site/version5_7.html">Version 5.7</a></li>
+<li id="version5_8"><a href="../site/version5_8.html">Version 5.8</a></li>
+<li id="version5_9"><a href="../site/version5_9.html">Version 5.9</a></li>
+<li id="version6_0"><a href="../site/version6_0.html">Version 6.0</a></li>
+<li id="version6_1"><a href="../site/version6_1.html">Version 6.1</a></li>
+<li id="version6_2"><a href="../site/version6_2.html">Version 6.2</a></li>
+<li id="version6_3"><a href="../site/version6_3.html">Version 6.3</a></li>
+<li id="version6_4"><a href="../site/version6_4.html">Version 6.4</a></li>
+<li id="version6_5"><a href="../site/version6_5.html">Version 6.5</a></li>
+<li id="version6_6"><a href="../site/version6_6.html">Version 6.6</a></li>
+<li id="version6_7"><a href="../site/version6_7.html">Version 6.7</a></li>
+<li id="version6_8"><a href="../site/version6_8.html">Version 6.8</a></li>
+<li id="version6_9"><a href="../site/version6_9.html">Version 6.9</a></li>
+<li id="version7_0"><a href="../site/version7_0.html">Version 7.0</a></li>
+<li id="version7_1"><a href="../site/version7_1.html">Version 7.1</a></li>
+<li id="version7_2"><a href="../site/version7_2.html">Version 7.2</a></li>
+<li id="version7_3"><a href="../site/version7_3.html">Version 7.3</a></li>
+<li id="version7_4"><a href="../site/version7_4.html">Version 7.4</a></li>
+<li id="version7_5"><a href="../site/version7_5.html">Version 7.5</a></li>
+<li id="version7_6"><a href="../site/version7_6.html">Version 7.6</a></li>
+<li id="version7_7"><a href="../site/version7_7.html">Version 7.7</a></li>
+<li id="version7_8"><a href="../site/version7_8.html">Version 7.8</a></li>
+<li id="version7_9"><a href="../site/version7_9.html">Version 7.9</a></li>
+<li id="version11_0"><a href="../site/version11_0.html">Version 11.0</a></li>
+<li id="version11_1"><a href="../site/version11_1.html">Version 11.1</a></li>
+<li id="version12_0"><a href="../site/version12_0.html">Version 12.0</a></li>
+<li id="version12_1"><a href="../site/version12_1.html">Version 12.1</a></li>
+<li id="version12_2"><a href="../site/version12_2.html">Version 12.2</a></li>
+<li id="version12_3"><a href="../site/version12_3.html">Version 12.3</a></li>
+<li id="version12_4"><a href="../site/version12_4.html">Version 12.4</a></li>
+<li id="version13_1"><a href="../site/version13_1.html">Version 13.1</a></li>
+<li id="version13_2"><a href="../site/version13_2.html">Version 13.2</a></li>
+<li id="version13_3"><a href="../site/version13_3.html">Version 13.3</a></li>
+<li id="version14_1"><a href="../site/version14_1.html">Version 14.1</a></li>
+<li id="version14_2"><a href="../site/version14_2.html">Version 14.2</a></li>
+<li id="version14_3"><a href="../site/version14_3.html">Version 14.3</a></li>
+<li id="version15_1"><a href="../site/version15_1.html">Version 15.1</a></li>
+<li id="version15_2"><a href="../site/version15_2.html">Version 15.2</a></li>
+<li id="version15_3"><a href="../site/version15_3.html">Version 15.3</a></li>
+<li id="version15_4"><a href="../site/version15_4.html">Version 15.4</a></li>
+<li id="version16_1"><a href="../site/version16_1.html">Version 16.1</a></li>
+<li id="version16_2"><a href="../site/version16_2.html">Version 16.2</a></li>
+<li id="version16_3"><a href="../site/version16_3.html">Version 16.3</a></li>
+<li id="version16_4"><a href="../site/version16_4.html">Version 16.4</a></li>
+<li id="version17_1.html"><a href="../site/version17_1.html">Version 17.1</a></li>
+<li id="version17_2.html"><a href="../site/version17_2.html">Version 17.2</a></li>
+<li id="version17_3.html"><a href="../site/version17_3.html">Version 17.3</a></li>
+<li id="version17_4.html"><a href="../site/version17_4.html">Version 17.4</a></li>
+<li id="version18_1"><a href="../site/version18_1.html">Version 18.1</a></li>
+<li id="version18_2"><a href="../site/version18_2.html">Version 18.2</a></li>
+<li id="version18_3"><a href="../site/version18_3.html">Version 18.3</a></li>
+<li id="version18_4"><a href="../site/version18_4.html">Version 18.4</a></li>
+<li id="version19_1"><a href="../site/version19_1.html">Version 19.1</a></li>
+<li id="version19_2"><a href="../site/version19_2.html">Version 19.2</a></li>
+<li id="version19_3"><a href="../site/version19_3.html">Version 19.3</a></li>
+<li id="version19_4"><a href="../site/version19_4.html">Version 19.4</a></li>
+<li id="version20_1"><a href="../site/version20_1.html">Version 20.1</a></li>
+<li id="version20_2"><a href="../site/version20_2.html">Version 20.2</a></li>
+<li id="version20_3"><a href="../site/version20_3.html">Version 20.3</a></li>
+<li id="version20_4"><a href="../site/version20_4.html">Version 20.4</a></li>
+<li id="version20_5"><a href="../site/version20_5.html">Version 20.5</a></li>
+<li id="version21_1"><a href="../site/version21_1.html">Version 21.1</a></li>
+<li id="version21_2"><a href="../site/version21_2.html">Version 21.2</a></li>
+<li id="version21_3"><a href="../site/version21_3.html">Version 21.3</a></li>
+<li id="version21_4"><a href="../site/version21_4.html">Version 21.4</a></li>
+<li id="version22_1"><a href="../site/version22_1.html">Version 22.1</a></li>
+<li id="version22_2"><a href="../site/version22_2.html">Version 22.2</a></li>
+<li id="version22_3"><a href="../site/version22_3.html">Version 22.3</a></li>
+<li id="version22_4"><a href="../site/version22_4.html">Version 22.4</a></li>
+<li id="version23_1"><a href="../site/version23_1.html">Version 23.1</a></li>
+<li id="version23_2"><a href="../site/version23_2.html">Version 23.2</a></li>
+<li id="version23_3"><a href="../site/version23_3.html">Version 23.3</a></li>
+<li id="version24_1"><a href="../site/version24_1.html">Version 24.1</a></li>
+<li id="version24_2"><a href="../site/version24_2.html">Version 24.2</a></li>
+<li id="version24_3"><a href="../manual243/version24_3.html">Version 24.3</a></li>
+</ul>
+<li class="collapse" id="apispecification"><div class="exptxt"><a href="../site/apispecification.html">API Specification</a></div>
+<ul id="ul_apispecification">
+<li id="apisetup"><a href="../site/apisetup.html">API Developer Setup</a></li>
+<li id="apiimplementation"><a href="../site/apiimplementation.html">API Implementation</a></li>
+<li id="apipermissions"><a href="../site/apipermissions.html">API Permissions</a></li>
+<li id="apilocal"><a href="../site/apilocal.html">API Modes - Local, Service, and Cloud</a></li>
+<li id="apievents"><a href="../site/apievents.html">API Events</a></li>
+<li id="apiaccountmodules"><a href="../site/apiaccountmodules.html">API AccountModules</a></li>
+<li id="apiadjustments"><a href="../site/apiadjustments.html">API Adjustments</a></li>
+<li id="apiallergies"><a href="../site/apiallergies.html">API Allergies</a></li>
+<li id="apiallergydefs"><a href="../site/apiallergydefs.html">API AllergyDefs</a></li>
+<li id="apiappointments"><a href="../site/apiappointments.html">API Appointments</a></li>
+<li id="apiappointmenttypes"><a href="../site/apiappointmenttypes.html">API AppointmentTypes</a></li>
+<li id="apiapptfields"><a href="../site/apiapptfields.html">API ApptFields</a></li>
+<li id="apiapptfielddefs"><a href="../site/apiapptfielddefs.html">API ApptFieldDefs</a></li>
+<li id="apiasapcomms"><a href="../site/apiasapcomms.html">API AsapComms</a></li>
+<li id="apiautonotecontrols"><a href="../site/apiautonotecontrols.html">API AutoNoteControls</a></li>
+<li id="apiautonotes"><a href="../site/apiautonotes.html">API AutoNotes</a></li>
+<li id="apibenefits"><a href="../site/apibenefits.html">API Benefits</a></li>
+<li id="apicarriers"><a href="../site/apicarriers.html">API Carriers</a></li>
+<li id="apichartmodules"><a href="../site/apichartmodules.html">API ChartModules</a></li>
+<li id="apiclaimpayments"><a href="../site/apiclaimpayments.html">API ClaimPayments</a></li>
+<li id="apiclaimprocs"><a href="../site/apiclaimprocs.html">API ClaimProcs</a></li>
+<li id="apiclaims"><a href="../site/apiclaims.html">API Claims</a></li>
+<li id="apiclaimtrackings"><a href="../site/apiclaimtrackings.html">API ClaimTrackings</a></li>
+<li id="apiclinics"><a href="../site/apiclinics.html">API Clinics</a></li>
+<li id="apiclockevents"><a href="../site/apiclockevents.html">API ClockEvents</a></li>
+<li id="apicodegroups"><a href="../site/apicodegroups.html">API CodeGroups</a></li>
+<li id="apicommlogs"><a href="../site/apicommlogs.html">API Commlogs</a></li>
+<li id="apicomputers"><a href="../site/apicomputers.html">API Computers</a></li>
+<li id="apicovcats"><a href="../site/apicovcats.html">API CovCats</a></li>
+<li id="apicovspans"><a href="../site/apicovspans.html">API CovSpans</a></li>
+<li id="apidefinitions"><a href="../site/apidefinitions.html">API Definitions</a></li>
+<li id="apidiscountplans"><a href="../site/apidiscountplans.html">API DiscountPlans</a></li>
+<li id="apidiscountplansubs"><a href="../site/apidiscountplansubs.html">API DiscountPlanSubs</a></li>
+<li id="apidiseasedefs"><a href="../site/apidiseasedefs.html">API DiseaseDefs</a></li>
+<li id="apidiseases"><a href="../site/apidiseases.html">API Diseases</a></li>
+<li id="apidocuments"><a href="../site/apidocuments.html">API Documents</a></li>
+<li id="apiehrpatients"><a href="../site/apiehrpatients.html">API EhrPatients</a></li>
+<li id="apiemployees"><a href="../site/apiemployees.html">API Employees</a></li>
+<li id="apiemployers"><a href="../site/apiemployers.html">API Employers</a></li>
+<li id="apieobattaches"><a href="../site/apieobattaches.html">API EobAttaches</a></li>
+<li id="apietrans"><a href="../site/apietrans.html">API Etrans</a></li>
+<li id="apietransmessagetexts"><a href="../site/apietransmessagetexts.html">API EtransMessageTexts</a></li>
+<li id="apietranss"><a href="../site/apietranss.html">API Etranss</a></li>
+<li id="apifamilymodules"><a href="../site/apifamilymodules.html">API FamilyModules</a></li>
+<li id="apifees"><a href="../site/apifees.html">API Fees</a></li>
+<li id="apifeescheds"><a href="../site/apifeescheds.html">API FeeScheds</a></li>
+<li id="apihistappointments"><a href="../site/apihistappointments.html">API HistAppointments</a></li>
+<li id="apiinsplans"><a href="../site/apiinsplans.html">API InsPlans</a></li>
+<li id="apiinssubs"><a href="../site/apiinssubs.html">API InsSubs</a></li>
+<li id="apiinsverifies"><a href="../site/apiinsverifies.html">API InsVerifies</a></li>
+<li id="apilabcases"><a href="../manual243/apilabcases.html">API LabCases</a></li>
+<li id="apilaboratories"><a href="../manual243/apilaboratories.html">API Laboratories</a></li>
+<li id="apilabturnarounds"><a href="../manual243/apilabturnarounds.html">API LabTurnarounds</a></li>
+<li id="apimedicationpats"><a href="../site/apimedicationpats.html">API MedicationPats</a></li>
+<li id="apimedications"><a href="../site/apimedications.html">API Medications</a></li>
+<li id="apioperatories"><a href="../site/apioperatories.html">API Operatories</a></li>
+<li id="apipatfielddefs"><a href="../site/apipatfielddefs.html">API PatFieldDefs</a></li>
+<li id="apipatfields"><a href="../site/apipatfields.html">API PatFields</a></li>
+<li id="apipatientnotes"><a href="../site/apipatientnotes.html">API PatientNotes</a></li>
+<li id="apipatientraces"><a href="../site/apipatientraces.html">API PatientRaces</a></li>
+<li id="apipatients"><a href="../site/apipatients.html">API Patients</a></li>
+<li id="apipatplans"><a href="../site/apipatplans.html">API PatPlans</a></li>
+<li id="apipayments"><a href="../site/apipayments.html">API Payments</a></li>
+<li id="apipayplancharges"><a href="../site/apipayplancharges.html">API PayPlanCharges</a></li>
+<li id="apipayplans"><a href="../site/apipayplans.html">API PayPlans</a></li>
+<li id="apipaysplits"><a href="../site/apipaysplits.html">API PaySplits</a></li>
+<li id="apiperioexams"><a href="../site/apiperioexams.html">API PerioExams</a></li>
+<li id="apipharmacies"><a href="../manual243/apipharmacies.html">API Pharmacies</a></li>
+<li id="apiperiomeasures"><a href="../site/apiperiomeasures.html">API PerioMeasures</a></li>
+<li id="apipopups"><a href="../site/apipopups.html">API Popups</a></li>
+<li id="apipreferences"><a href="../site/apipreferences.html">API Preferences</a></li>
+<li id="apiprocedurecodes"><a href="../site/apiprocedurecodes.html">API ProcedureCodes</a></li>
+<li id="apiprocedurelogs"><a href="../site/apiprocedurelogs.html">API ProcedureLogs</a></li>
+<li id="apiprocnotes"><a href="../site/apiprocnotes.html">API ProcNotes</a></li>
+<li id="apiproctps"><a href="../site/apiproctps.html">API ProcTPs</a></li>
+<li id="apiproviders"><a href="../site/apiproviders.html">API Providers</a></li>
+<li id="apiqueries"><a href="../site/apiqueries.html">API Queries</a></li>
+<li id="apiquickpastecats"><a href="../site/apiquickpastecats.html">API QuickPasteCats</a></li>
+<li id="apiquickpastenotes"><a href="../site/apiquickpastenotes.html">API QuickPasteNotes</a></li>
+<li id="apirecalls"><a href="../site/apirecalls.html">API Recalls</a></li>
+<li id="apirecalltypes"><a href="../site/apirecalltypes.html">API RecallTypes</a></li>
+<li id="apirefattaches"><a href="../site/apirefattaches.html">API RefAttaches</a></li>
+<li id="apireferrals"><a href="../site/apireferrals.html">API Referrals</a></li>
+<li id="apireports"><a href="../site/apireports.html">API Reports</a></li>
+<li id="apirxpats"><a href="../manual243/apirxpats.html">API RxPats</a></li>
+<li id="apischeduleops"><a href="../site/apischeduleops.html">API ScheduleOps</a></li>
+<li id="apischedules"><a href="../site/apischedules.html">API Schedules</a></li>
+<li id="apisecurity"><a href="../site/apisecurity.html">API SecurityPerms</a></li>
+<li id="apisecuritylogs"><a href="../site/apisecuritylogs.html">API SecurityLogs</a></li>
+<li id="apisheetdefs"><a href="../site/apisheetdefs.html">API SheetDefs</a></li>
+<li id="apisheets"><a href="../site/apisheets.html">API Sheets</a></li>
+<li id="apisheetfields"><a href="../site/apisheetfields.html">API SheetFields</a></li>
+<li id="apisignalods"><a href="../site/apisignalods.html">API Signalods</a></li>
+<li id="apistatements"><a href="../manual243/apistatements.html">API Statements</a></li>
+<li id="apisubscriptions"><a href="../site/apisubscriptions.html">API Subscriptions</a></li>
+<li id="apisubstitutionlinks"><a href="../site/apisubstitutionlinks.html">API SubstitutionLinks</a></li>
+<li id="apitasklists"><a href="../site/apitasklists.html">API TaskLists</a></li>
+<li id="apitasks"><a href="../site/apitasks.html">API Tasks</a></li>
+<li id="apitoothinitials"><a href="../site/apitoothinitials.html">API ToothInitials</a></li>
+<li id="apitreatplanattaches"><a href="../site/apitreatplanattaches.html">API TreatPlanAttaches</a></li>
+<li id="apitreatplans"><a href="../site/apitreatplans.html">API TreatPlans</a></li>
+<li id="apiusergroupattaches"><a href="../site/apiusergroupattaches.html">API UserGroupAttaches</a></li>
+<li id="apiusergroups"><a href="../site/apiusergroups.html">API UserGroups</a></li>
+<li id="apiuserods"><a href="../site/apiuserods.html">API Userods</a></li>
+</ul>
+</ul>
+<li class="collapse" id="usingodconversion"><div class="exptxt"><a href="../manual243/usingodconversion.html">Use Converted Database</a></div>
+<ul id="ul_usingodconversion">
+<li id="convclaims"><a href="../manual243/convclaims.html">Conversions: Outstanding Claims</a></li>
+<li id="convclinicsunassigned"><a href="../manual243/convclinicsunassigned.html">Conversions: Unassigned Clinics</a></li>
+<li id="convduplicates"><a href="../manual243/convduplicates.html">Conversions: Duplicate Patients</a></li>
+<li id="convfutureappts"><a href="../manual243/convfutureappts.html">Conversions: Overlapping Appointments</a></li>
+<li id="convincometransfer"><a href="../manual243/convincometransfer.html">Conversions: Family Balancer</a></li>
+<li id="convinspending"><a href="../manual243/convinspending.html">Conversions: Verify Insurance</a></li>
+<li id="convperio"><a href="../manual243/convperio.html">Conversions: Perio</a></li>
+</ul>
+<li class="collapse" id="countries"><div class="exptxt"><a href="../site/countries.html">International Customers</a></div>
+<ul id="ul_countries">
+<li class="collapse" id="canada"><div class="exptxt"><a href="../manual243/canada.html">Canada</a></div>
+<ul id="ul_canada">
+<li class="collapse" id="canadaclaims"><div class="exptxt"><a href="../manual243/canadaclaims.html">Canada Claims</a></div>
+<ul id="ul_canadaclaims">
+<li id="canadaetransedit"><a href="../manual243/canadaetransedit.html">Canada Etrans Edit</a></li>
+</ul>
+<li id="canadaclaimsend"><a href="../manual243/canadaclaimsend.html">Canada Claim History and ROT</a></li>
+<li id="canadaapptprocsquickadd"><a href="../manual243/canadaapptprocsquickadd.html">Canada Definitions: Appt Procs Quick Add</a></li>
+<li id="canadafeeschedules"><a href="../manual243/canadafeeschedules.html">Canada Fee Guides</a></li>
+<li id="canadageneral"><a href="../manual243/canadageneral.html">Canada Install and Setup</a></li>
+<li id="canadainscatsetup"><a href="../manual243/canadainscatsetup.html">Canada Insurance Categories</a></li>
+<li id="canadacarriers"><a href="../manual243/canadacarriers.html">Canada Carriers</a></li>
+<li id="canadainsplan"><a href="../manual243/canadainsplan.html">Canada Insurance Plans</a></li>
+<li id="canadalabfees"><a href="../manual243/canadalabfees.html">Canada Lab Fees</a></li>
+<li id="canadaproccodetools"><a href="../manual243/canadaproccodetools.html">Canada Procedure Code Tools</a></li>
+<li id="canadaprocedures"><a href="../manual243/canadaprocedures.html">Edit Procedure Canada Tab</a></li>
+<li id="canadaprovider"><a href="../manual243/canadaprovider.html">Canada Provider Setup</a></li>
+<li id="canadaproctimeunits"><a href="../manual243/canadaproctimeunits.html">Canada Procedure Code Time Units</a></li>
+<li id="canadarecalltypes"><a href="../manual243/canadarecalltypes.html">Canada Recall Types</a></li>
+<li id="canadareceipts"><a href="../manual243/canadareceipts.html">Canada Receipts</a></li>
+<li id="canadasetup"><a href="../manual243/canadasetup.html">Register Canadian Providers for E-Claims</a></li>
+<li id="cdadigitalcert"><a href="../manual243/cdadigitalcert.html">CDA Digital IDs</a></li>
+<li id="itrans"><a href="../manual243/itrans.html">ITRANS</a></li>
+<li id="itrans20"><a href="../manual243/itrans20.html">ITRANS 2.0</a></li>
+<li id="ccdws"><a href="../manual243/ccdws.html">CCDWS Service</a></li>
+<li id="claimstream"><a href="../manual243/claimstream.html">Claimstream</a></li>
+<li id="dac"><a href="../manual243/dac.html">Denturist Association of Canada ( DAC )</a></li>
+<li id="canadaattachments"><a href="../manual243/canadaattachments.html">Canada Attachments</a></li>
+<li id="canadaeligibility"><a href="../manual243/canadaeligibility.html">Canada Eligibility</a></li>
+</ul>
+<li id="australia"><a href="../site/australia.html">Australia</a></li>
+<li id="caribbean"><a href="../site/caribbean.html">Caribbean Licensing Issues</a></li>
+<li id="regionlanguagesettings"><a href="../manual243/regionlanguagesettings.html">Region and Language</a></li>
+<li id="gdpr.html"><a href="../site/gdpr.html">General Data Protection Regulation ( GDPR )</a></li>
+<li id="newzealand"><a href="../site/newzealand.html">New Zealand</a></li>
+<li id="unitedkingdom"><a href="../site/unitedkingdom.html">United Kingdom</a></li>
+</ul>
+</ul>
+</ul>
+</ul>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="../manual243/manual.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/manual.html" >v24.2</option><option value="https://www.opendental.com/manual241/manual.html" >v24.1</option><option value="https://www.opendental.com/manual233/manual.html" >v23.3</option><option value="https://www.opendental.com/manual232/manual.html" >v23.2</option><option value="https://www.opendental.com/manual231/manual.html" >v23.1</option><option value="https://www.opendental.com/manual224/manual.html" >v22.4</option><option value="https://www.opendental.com/manual223/manual.html" >v22.3</option><option value="https://www.opendental.com/manual222/manual.html" >v22.2</option></select>
+				</div>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="GeneralPageContent">
+<p><a href="modules.html">Modules</a></p>
+<p><a href="mainmenu.html">Main Menu</a></p>
+<p><a href="toolbar.html">Main Toolbar</a></p>
+<h2>How to Use the Manual</h2>
+<p>Access the manual via the Open Dental website (<a href="../index.html">www.opendental.com</a>) or from within Open Dental, <a href="mainmenu.html">Main Menu</a>, Help: </p>
+<p>Online Help - Contents: Opens this page.</p>
+<p>Online Help - Index: Opens the <a href="searchManual.html">Search</a> page.</p>
+<p><img src="images/helpIcon.gif" width="43" height="31" style="margin-bottom: 0px"/> Customers on support may click the Help Icon at the top of each window within the Open Dental program to open the <a href="helpfeature.html">Help Feature</a> for the corresponding manual page. </p>
+</div>
+</div>
+</body>
+</html>

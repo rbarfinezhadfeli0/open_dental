@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Scan X</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('scanx','sensorcompatibility','vendorssupplementalservices','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Scan X</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="sensorcompatibility.html">Sensor Compatibility</a></p>
+<p>Air Techniques ScanX works with Open Dental version 21.3.29 or later. </p>
+<p><div class="Note">Note: In our testing, the ScanX has issues when switching Windows users. We have had the scanner show as not present. A customer has separately reported that Open Dental can lock up and sometimes lose an image. We recommend not switching Windows users on the ScanX machine. Consider setting up a Windows user for that machine that is set with a longer timeout before it logs out of Windows. Also consider setting that user to have less network permissions and a password that everyone knows, so even if it times out, users would still go back into the same Windows user. Logging into Open Dental would still involve separate Open Dental users.</div>
+</p>
+<p>Utilize a <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7mountdefinitions.html">Mount</a> with <i>Flip on Acquire</i> enabled, otherwise images must be flipped manually after scanning. </p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>In <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7imagingdevices.html">Imaging Devices</a>, add a Device.</li>
+<img src="images/imagingScanX.png" width="528" height="268"/><li>If ScanX is already properly installed, select <i>ScanX</i> as the <b>Twain Name</b>.</li>
+<li>Check <b>Show Twain UI</b>.</li>
+<li>In the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7images.html">Imaging Module</a>, in the top Toolbar, create a new Mount. Click <b>Acquire</b>.</li>
+<img src="images/imagingScanXTwain.png" width="318" height="371"/><li><p>Once the TWAIN window comes up, the ScanX is able to accept films. If the ScanX won't engage and drag the film in, then it means the TWAIN window is probably not showing. The scans show in the TWAIN window slightly delayed from real time.</p>
+</li>
+<img src="images/imagingScanXTwain2.png" width="318" height="371"/><li>Once no more films are detected, the VistaEasyView software shows.</li>
+<img src="images/imagingScanXVista.png" width="821" height="681"/><li>Click the round button at the upper left to save all marked images. Then, click <b>Close</b> at the bottom of the ScanX-TWAIN Interface window.</li>
+</ol>
+		</div>
+	</div>
+</body>
+</html>

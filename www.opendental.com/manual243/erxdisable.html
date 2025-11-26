@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Disabling eRx</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('erxdisable','bridgeerx','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/erxdisable.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/erxdisable.html" >v24.2</option><option value="https://www.opendental.com/manual241/erxdisable.html" >v24.1</option><option value="https://www.opendental.com/manual233/erxdisable.html" >v23.3</option><option value="https://www.opendental.com/manual232/erxdisable.html" >v23.2</option><option value="https://www.opendental.com/manual231/erxdisable.html" >v23.1</option><option value="https://www.opendental.com/manual224/erxdisable.html" >v22.4</option><option value="https://www.opendental.com/manual223/erxdisable.html" >v22.3</option><option value="https://www.opendental.com/manual222/erxdisable.html" >v22.2</option><option value="https://www.opendental.com/manual221/erxdisable.html" >v22.1</option><option value="https://www.opendental.com/manual214/erxdisable.html" >v21.4</option><option value="https://www.opendental.com/manual213/erxdisable.html" >v21.3</option><option value="https://www.opendental.com/manual212/erxdisable.html" >v21.2</option><option value="https://www.opendental.com/manual211/erxdisable.html" >v21.1</option><option value="https://www.opendental.com/manual205/erxdisable.html" >v20.5</option><option value="https://www.opendental.com/manual204/erxdisable.html" >v20.4</option><option value="https://www.opendental.com/manual203/erxdisable.html" >v20.3</option><option value="https://www.opendental.com/manual202/erxdisable.html" >v20.2</option><option value="https://www.opendental.com/manual201/erxdisable.html" >v20.1</option><option value="https://www.opendental.com/manual194/erxdisable.html" >v19.4</option><option value="https://www.opendental.com/manual193/erxdisable.html" >v19.3</option><option value="https://www.opendental.com/manual192/erxdisable.html" >v19.2</option><option value="https://www.opendental.com/manual191/erxdisable.html" >v19.1</option><option value="https://www.opendental.com/manual184/erxdisable.html" >v18.4</option><option value="https://www.opendental.com/manual183/erxdisable.html" >v18.3</option><option value="https://www.opendental.com/manual182/erxdisable.html" >v18.2</option><option value="https://www.opendental.com/manual181/erxdisable.html" >v18.1</option><option value="https://www.opendental.com/manual174/erxdisable.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Disabling eRx</p></div>
+<div class="GeneralPageContent">
+<p>If your office no longer needs to send electronic prescriptions follow the steps below to disable the program link in Open Dental.</p>
+<p>In <a href="programlinks.html">Program Links</a>, double-click <b>electronic Rx</b>. Uncheck <b>Enabled</b></p>
+<p>Disabling eRx is done in this window for both <a href="dosespotuse.html">DoseSpot eRx / Prescription</a> and <a href="newcrop.html">Ensora eRx (formerly NewCrop eRx) / Prescription</a>.</p>
+<img src="images/eRxDisable.png" width="561" height="409"/><p>This disables the electronic Rx program link to block all providers from accessing eRx.</p>
+<p>Click <b>OK</b> to save.</p>
+<h2>Disabling Charges</h2>
+<p>To stop the monthly DoseSpot eRx or Ensora eRx service fee, contact Open Dental Support. Open Dental Support will assist with disabling the Program Link and Providers during the call as well. </p>
+<h2>Disabling eRx for Individual Providers:</h2>
+<p>Double-click a provider from <a href="providers.html">Provider Setup</a>. </p>
+<p>Uncheck <b>Use Electronic Prescriptions (eRx)</b>. </p>
+<p><img src="images/erxDisableeRxbox.png" width="382" height="105"/></p>
+<p>This blocks a single provider from accessing eRx. This also blocks access to eRx when the provider is the patient's primary provider and no other authorized provider is logged on.</p>
+<p>Click <b>OK</b> to save.</p>
+<h2>Questions &amp; Answers</h2>
+<p><b>Q: I disabled eRx for a provider, why am I still seeing additional charges?</b></p>
+<p>A: Once eRx is disabled, any usage charges accumulated before cancellation are reflected within two billing cycles.</p>
+<p class="MarginBottomZero"> To ensure eRx is fully disabled and charges do not continue, complete the following steps:  </p>
+<ul class="MarginBottomGap">
+<li>Contact Open Dental support and request to cancel the service.</li>
+<li>Disable access to eRx in Open Dental. This can be done for all providers (via the program link) or for a single provider (via Edit Provider window).</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

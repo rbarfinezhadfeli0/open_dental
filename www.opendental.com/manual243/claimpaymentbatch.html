@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Batch Insurance Payment</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('claimpaymentbatch','manage','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/claimpaymentbatch.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/claimpaymentbatch.html" >v24.2</option><option value="https://www.opendental.com/manual241/claimpaymentbatch.html" >v24.1</option><option value="https://www.opendental.com/manual233/claimpaymentbatch.html" >v23.3</option><option value="https://www.opendental.com/manual232/claimpaymentbatch.html" >v23.2</option><option value="https://www.opendental.com/manual231/claimpaymentbatch.html" >v23.1</option><option value="https://www.opendental.com/manual224/claimpaymentbatch.html" >v22.4</option><option value="https://www.opendental.com/manual223/claimpaymentbatch.html" >v22.3</option><option value="https://www.opendental.com/manual222/claimpaymentbatch.html" >v22.2</option><option value="https://www.opendental.com/manual221/claimpaymentbatch.html" >v22.1</option><option value="https://www.opendental.com/manual214/claimpaymentbatch.html" >v21.4</option><option value="https://www.opendental.com/manual213/claimpaymentbatch.html" >v21.3</option><option value="https://www.opendental.com/manual212/claimpaymentbatch.html" >v21.2</option><option value="https://www.opendental.com/manual211/claimpaymentbatch.html" >v21.1</option><option value="https://www.opendental.com/manual205/claimpaymentbatch.html" >v20.5</option><option value="https://www.opendental.com/manual204/claimpaymentbatch.html" >v20.4</option><option value="https://www.opendental.com/manual203/claimpaymentbatch.html" >v20.3</option><option value="https://www.opendental.com/manual202/claimpaymentbatch.html" >v20.2</option><option value="https://www.opendental.com/manual201/claimpaymentbatch.html" >v20.1</option><option value="https://www.opendental.com/manual194/claimpaymentbatch.html" >v19.4</option><option value="https://www.opendental.com/manual193/claimpaymentbatch.html" >v19.3</option><option value="https://www.opendental.com/manual192/claimpaymentbatch.html" >v19.2</option><option value="https://www.opendental.com/manual191/claimpaymentbatch.html" >v19.1</option><option value="https://www.opendental.com/manual184/claimpaymentbatch.html" >v18.4</option><option value="https://www.opendental.com/manual183/claimpaymentbatch.html" >v18.3</option><option value="https://www.opendental.com/manual182/claimpaymentbatch.html" >v18.2</option><option value="https://www.opendental.com/manual181/claimpaymentbatch.html" >v18.1</option><option value="https://www.opendental.com/manual174/claimpaymentbatch.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Batch Insurance Payment</p></div>
+<div class="GeneralPageContent">
+<p>Easily manage and enter batch insurance payments from the Batch Insurance Payments window.</p>
+<p>In the <a href="manage.html">Manage Module</a>, click <b>Batch Ins</b>.</p>
+<img src="images/claimpaymentBatch.png" width="890" height="363"/><p>This window is for entering a large batch of claims on a single EOB. For a smaller batch or single claim, see <a href="claimpayfinalize.html">Finalize Insurance Payment</a></p>
+<p class="MarginBottomZero">Large batch insurance payment entry is useful when there are many claims on a single EOB or when multiple users enter payments at the same time. There are two different ways to enter large batch payments. </p>
+<ul class="MarginBottomGap">
+<li>In the <a href="manage.html">Manage Module</a>, Batch Ins, create the payment, then receive and attach claims.</li>
+<li>In the <a href="account.html">Account Module</a>, receive the claims (see <a href="claimreceive.html">Receive Claim</a>). Then in the Manage Module click Batch Ins to create the payment and attach the claims.</li>
+</ul>
+<p>Supplemental payment amounts can only be received in the Account Module. See <a href="claimpaymentsupplemental.html">Supplemental Insurance Payments</a>. Once received, it can be attached to a batch payment.</p>
+<h2>Batch Insurance Payments</h2>
+<p><b>Filters</b>: Click <b>Refresh</b> to update the Insurance Payments (EOBs) grid after setting filter criteria</p>
+<img src="images/batchInsFilter.png" width="654" height="51"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>From/To Date</b>: Filters by Payment Date.</li>
+<li><b>Clinic</b>: Filters by Clinic assigned to payment. If a user is restricted to specific clinics, only accessible clinics are listed.</li>
+<li><b>Payment Group</b>: Filters by Claim Payment Group. This option is only visible when <a href="definitionsclaimpaymentgroups.html">Definitions: Claim Payment Groups</a> are in use.</li>
+</ul>
+<p><b>Insurance Payments (EOBs)</b> Grid: Insurance payments that match the filter criteria are listed here.</p>
+<img src="images/batchInsEOBGrid.png" width="859" height="244"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>Date: Payment Date.</li>
+<li>Type: Payment Type. (<a href="inspaytypes.html">Definitions: Insurance Payment Types</a>)</li>
+<li>Amount: Payment Amount.</li>
+<li>Partial: X indicates <i>Total Payments</i> of attached claims do not match the payment <i>Amount</i></li>
+<li>Carrier: Insurance Carrier Name.</li>
+<li>PayGroup: Claim Payment Group. Column is hidden if <a href="definitionsclaimpaymentgroups.html">Definitions: Claim Payment Groups</a> are not in use.</li>
+<li>Clinic: Clinic assigned to the payment.</li>
+<li>Note: Payment note.</li>
+<li>Scanned: X indicates an EOB has been scanned or attached. See <a href="claimpaymenteobscan.html">Scan EOB</a>.</li>
+</ul>
+<p><b>Add</b>: Click to open <a href="editinspayment.html">Edit Insurance Payment</a> and enter payment details for a new Batch Insurance Payment. See Creating a Payment and Attaching Claims below.</p>
+<h2>Creating a Payment and Attaching Claims</h2>
+<p class="MarginBottomZero">To create a new Batch Insurance Payment and attach claims, follow the steps below: </p>
+<ol class="MarginBottomGap">
+<li>In the Batch Insurance Payments window, click <b>Add</b>.</li>
+<li>Enter payment details into <a href="editinspayment.html">Edit Insurance Payment</a>.</li>
+<li>If processing a virtual credit card payment, click the button for the credit card processor and follow the prompts to process payment.</li>
+<li>Click <b>Save</b>.</li>
+<li>From the <a href="inspayeob.html">Insurance Payment (EOB)</a> window, search for and select a claim to attach to the payment. <ul>
+<li>If the claim is already received (e.g., supplemental payment), click <b>Attach</b> and proceed to Step 6.</li>
+<li>If the claim has not yet been received: <ol>
+<li>Double-click the <a href="claimedit.html">Claim</a> to open.</li>
+<li><a href="claimreceive.html">Receive Claim</a><b> By Procedure</b> or <b>As Total</b>.</li>
+<li>Enter payment amounts and click <b>Save</b> on the Enter Payment window.</li>
+<li>Click <b>Save</b> on the Edit Claim window. The claim is automatically attached to the batch insurance payment.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Repeat step 5 as needed to attach additional claims to payment.</li>
+<li>Click <b>Scan EOB</b> to upload or <a href="claimpaymenteobscan.html">Scan an EOB</a>.</li>
+</ol>
+<p>If Amount and Total Payments match when exiting the Insurance Payment window, the payment is locked. The payment must be deleted and re-entered to make changes or see Correct a Batch Payment below.</p>
+<p>If <i>Amount</i> and <i>Total Payments</i> don't match, then exiting marks the batch payment as <i>Partial</i>. Double-click a partial batch payment from the Batch Insurance Payments window to continue attaching claims.</p>
+<img src="images/claimBatchDone.png" width="740" height="367"/><p>Batch insurance payments can be accessed from the Batch Insurance Payments window or viewed by claim via the Account Module (Edit Claim window).</p>
+<h2>Correct a Batch Payment</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>In the Manage Module, click <b>Batch Ins</b>.</li>
+<li>Find the check to edit, and double-click to open it.</li>
+<li>Click <b>Edit</b> in the Payment Details area.</li>
+<li>Change the amount of the check by a penny and click <b>Save</b>. This causes a mismatch between the paid amounts and check amount. When prompted, click <b>OK</b> to continue. </li>
+<li>Re-open the payment. Detach/attach claims as needed. <ul>
+<li>Double-click claims to open <a href="claimedit.html">Edit Claim</a> and edit payment information as needed. </li>
+</ul>
+</li>
+<li>Once claims have been edited, reattach them to the payment.</li>
+<li>Edit the payment amount so the check total matches the paid amounts.</li>
+<li>Close the check to finalize again.</li>
+</ol>
+<h2>Questions &amp; Answers</h2>
+<p><b>What if I cannot enter (receive) all of the claims that make up my bulk check/payments and I need to leave for the day?</b></p>
+<p>Do not finalize the payment until you finish receiving all the claims. This way all claim payments have the same payment date.</p>
+<p><b>We have multiple people entering payments. How can we make sure the payments balance?</b></p>
+<p>Assign payment groups to each payment. This groups payments together. Then run the <a href="reportdailypayments.html">Daily Payments Report</a> by payment group.</p>
+</div>
+</div>
+</body>
+</html>

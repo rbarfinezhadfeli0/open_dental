@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Popups</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('popups','toolbar','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/popups.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/popups.html" >v24.2</option><option value="https://www.opendental.com/manual241/popups.html" >v24.1</option><option value="https://www.opendental.com/manual233/popups.html" >v23.3</option><option value="https://www.opendental.com/manual232/popups.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/popups.html" >v23.1</option><option value="https://www.opendental.com/manual224/popups.html" >v22.4</option><option value="https://www.opendental.com/manual223/popups.html" >v22.3</option><option value="https://www.opendental.com/manual222/popups.html" >v22.2</option><option value="https://www.opendental.com/manual221/popups.html" >v22.1</option><option value="https://www.opendental.com/manual214/popups.html" >v21.4</option><option value="https://www.opendental.com/manual213/popups.html" >v21.3</option><option value="https://www.opendental.com/manual212/popups.html" >v21.2</option><option value="https://www.opendental.com/manual211/popups.html" >v21.1</option><option value="https://www.opendental.com/manual205/popups.html" >v20.5</option><option value="https://www.opendental.com/manual204/popups.html" >v20.4</option><option value="https://www.opendental.com/manual203/popups.html" >v20.3</option><option value="https://www.opendental.com/manual202/popups.html" >v20.2</option><option value="https://www.opendental.com/manual201/popups.html" >v20.1</option><option value="https://www.opendental.com/manual194/popups.html" >v19.4</option><option value="https://www.opendental.com/manual193/popups.html" >v19.3</option><option value="https://www.opendental.com/manual192/popups.html" >v19.2</option><option value="https://www.opendental.com/manual191/popups.html" >v19.1</option><option value="https://www.opendental.com/manual184/popups.html" >v18.4</option><option value="https://www.opendental.com/manual183/popups.html" >v18.3</option><option value="https://www.opendental.com/manual182/popups.html" >v18.2</option><option value="https://www.opendental.com/manual181/popups.html" >v18.1</option><option value="https://www.opendental.com/manual174/popups.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Popups</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="toolbar.html">Main Toolbar</a>, click <b>Popups</b>.</p>
+<img src="images/popupsForFamily.gif" width="605" height="194"/><p>Popups are automatic messages that are triggered when you open a patient's record and look like this:</p>
+<img src="images/popup.gif" width="435" height="271"/><p>Click <b>OK</b> to acknowledge a popup.</p>
+<div class="Note">Note: <ul>
+<li>Once acknowledged, a popup will not show again on the workstation until at least 10 minutes have passed. See Add or Edit Popups below to determine the last time a popup was viewed on the workstation.</li>
+<li>Changes to popups are tracked in the popup audit trail, and any deletions are permanently archived.</li>
+<li>Popups also display for patients selected in ODTouch.</li>
+</ul>
+</div>
+<br/><br/><h2>Add or Edit Popups</h2>
+<p>With a <a href="patientselect.html">Patient Selected</a>, in the <a href="mainmenu.html">Main Menu</a>, click <b>Popups</b>. Active and disabled popups are listed. To view popups that have been deleted, check the <i>Show Deleted</i> box. <i>Last Viewed</i> indicates the last time the popup was viewed on this workstation.</p>
+<p>Double-click an existing popup to edit, or click <b>Add</b>. <br/><img src="images/popupEdit.gif" width="502" height="385" class="ImageInParagraph"/><p>Level dropdown, Popup Message text box, and Delete button will be disabled if the popup belongs to another user and the current user does not have the <i>Edit Popup</i> security permission. Users can still edit and delete their own popups without the permission.</p>
+</p>
+<p><p class="MarginBottomZero"><b>Level</b>: Select when this popup will be triggered. Popups are only triggered when a user switches to a patient record; moving between modules will not trigger popups. </p>
+<ul class="MarginBottomGap">
+<li>Patient: Triggered when a user switches to this patient.</li>
+<li>Family: Triggered when a user switches to any member of the patient's family.</li>
+<li>Superfamily: Triggered when a user switches to any member of the patient's super family. The patient must be part of a super family for this option to be available. See <a href="superfamily.html">Super Family</a>.</li>
+</ul>
+</p>
+<p><b>Date Time Disabled</b>: Displays the date and time the popup is considered disabled. This time can be set to disable the popup at a future date and time. Click <b>Now</b> to enter the current date and time. Date and time is entered in <span class="codeblock">mm/dd/yyyy hh:mm:ss</span> format. When the date and time has passed, the popup no longer prompts for users when the patient is selected. Disabled popups are still viewable in the Popups for Family window. Set default disabled times in <a href="miscsetup.html">Miscellaneous Setup</a>.</p>
+<p><b>Popup Message</b>: Enter the popup message.</p>
+<p><b>Delete</b>: Remove the popup from the Popup list. It will no longer be triggered, but can still be viewed when a user checks <i>Show Deleted</i> on the Popups for Family window.</p>
+<p><b>Audit Trail</b>: Click to view a log of any changes made to the message in this popup. User, date and time are tracked. Double-click on a popup to open the Edit Popup window. Changing a level or disabling a popup is not tracked in this audit trail.</p>
+<img src="images/popupAudit.gif" width="701" height="169"/></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Host your own Patient Portal</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('portallhostown','portalhostedbyod','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/portallhostown.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/portallhostown.html" >v24.2</option><option value="https://www.opendental.com/manual241/portallhostown.html" >v24.1</option><option value="https://www.opendental.com/manual233/portallhostown.html" >v23.3</option><option value="https://www.opendental.com/manual232/portallhostown.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/portallhostown.html" >v23.1</option><option value="https://www.opendental.com/manual224/portallhostown.html" >v22.4</option><option value="https://www.opendental.com/manual223/portallhostown.html" >v22.3</option><option value="https://www.opendental.com/manual222/portallhostown.html" >v22.2</option><option value="https://www.opendental.com/manual221/portallhostown.html" >v22.1</option><option value="https://www.opendental.com/manual214/portallhostown.html" >v21.4</option><option value="https://www.opendental.com/manual213/portallhostown.html" >v21.3</option><option value="https://www.opendental.com/manual212/portallhostown.html" >v21.2</option><option value="https://www.opendental.com/manual211/portallhostown.html" >v21.1</option><option value="https://www.opendental.com/manual205/portallhostown.html" >v20.5</option><option value="https://www.opendental.com/manual204/portallhostown.html" >v20.4</option><option value="https://www.opendental.com/manual203/portallhostown.html" >v20.3</option><option value="https://www.opendental.com/manual202/portallhostown.html" >v20.2</option><option value="https://www.opendental.com/manual201/portallhostown.html" >v20.1</option><option value="https://www.opendental.com/manual194/portallhostown.html" >v19.4</option><option value="https://www.opendental.com/manual193/portallhostown.html" >v19.3</option><option value="https://www.opendental.com/manual192/portallhostown.html" >v19.2</option><option value="https://www.opendental.com/manual191/portallhostown.html" >v19.1</option><option value="https://www.opendental.com/manual184/portallhostown.html" >v18.4</option><option value="https://www.opendental.com/manual183/portallhostown.html" >v18.3</option><option value="https://www.opendental.com/manual182/portallhostown.html" >v18.2</option><option value="https://www.opendental.com/manual181/portallhostown.html" >v18.1</option><option value="https://www.opendental.com/manual174/portallhostown.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Host your own Patient Portal</p></div>
+<div class="GeneralPageContent">
+<p><a href="portalhostedbyod.html">Patient Portal</a> can be hosted by the practice if preferred.</p>
+<p><div class="Note">Note: Open Dental does not provide support on self-hosted setup. We recommend you work with an IT professional.</div>
+</p>
+<p>The self-hosted web service validates that the customer is on active support at start up and does not validate the registration key again until the web service is restarted. </p>
+<h2>Self-Hosted Setup</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Update to the most current stable version of Open Dental. </li>
+<li>Purchase and install a certificate from any certificate authority. Existing certificates can be reused if needed. </li>
+<li>Configure the <i>OpenDentalWebConfig.xml</i> file.</li>
+<li>Change the router settings and forward port 443 (https) to the computer where IIS is installed.</li>
+<li>Allow all incoming traffic on port 443 through any applicable Firewalls.</li>
+<li>Set up an IIS web service pointing to the Open Dental folder:  <ol>
+<li>Open the IIS Manager and right click on Default Web Site, then click Add Application.</li>
+<li>Set Alias to <i>OpenDental</i>.</li>
+<li>Set Physical Path to the folder where Open Dental is installed.</li>
+<li>Click OK.</li>
+</ol>
+</li>
+<li>Set up the Patient Portal URL in the eServices Patient Portal window. Only needs done once.</li>
+<li>Allow <a href="portalaccess.html">Patient Portal Access</a> for each patient as needed.</li>
+</ol>
+<h2>Self-Hosted Patient Portal Diagram</h2>
+<img src="images/patientportalCHPP.jpg" width="600" height="600"/></div>
+</div>
+</body>
+</html>

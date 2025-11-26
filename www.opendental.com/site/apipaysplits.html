@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API PaySplits</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apipaysplits','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API PaySplits</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96paysplit.html" target="_blank">PaySplit Database Schema.</a></p>
+<h2>PaySplits GET</h2>
+<p>Version Added: 22.4.16</p>
+<p>Get a list of paysplits.</p>
+<p><b>Parameters:</b></p>
+<p><b>PatNum: </b>(Optional after version 24.4.24) Get all PaySplits for a single patient.<br><b>PayNum: </b>(Optional after version 24.4.24) Get all PaySplits for a single payment.<br><b>ProcNum:</b> (Added in version 24.4.24) Optional. Get all PaySplits attached to a specific procedure. </p>
+<p><b>Example Requests:</b><br> GET /paysplits<br> GET /paysplits?PayNum=8567<br> GET /paysplits?PatNum=407&amp;ProcNum=8<br></p>
+<b>Example Response:</b><br><p><span class="codeblock"> [<br>  {<br>  "SplitNum": 116,<br>  "SplitAmt": 140,<br>  "PatNum": 407,<br>  "PayNum": 8567,<br>  "ProvNum": 1,<br>  "PayPlanNum": 0,<br>  "DatePay": "2023-01-27",<br>  "ProcNum": 9,<br>  "DateEntry": "2023-01-27",<br>  "UnearnedType": 0,<br>  "unearnedType": "",<br>  "ClinicNum": 1,<br>  "SecDateTEdit": "2023-01-27",<br>  "AdjNum": 0,<br>  "PayPlanChargeNum": 0,<br>  "PayPlanDebitType": "Unknown"<br>  },<br>  {<br>  "SplitNum": 115,<br>  "SplitAmt": 140,<br>  "PatNum": 407,<br>  "PayNum": 8567,<br>  "ProvNum": 1,<br>  "PayPlanNum": 0,<br>  "DatePay": "2023-01-27",<br>  "ProcNum": 8,<br>  "DateEntry": "2023-01-27",<br>  "UnearnedType": 0,<br>  "unearnedType": "",<br>  "ClinicNum": 1,<br>  "SecDateTEdit": "2023-01-27",<br>  "AdjNum": 0,<br>  "PayPlanChargeNum": 0,<br>  "PayPlanDebitType": "Unknown"<br>  },<br> etc...<br> ]<br></span></p>
+<p></p>
+<p> 200 OK <br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>PaySplits PUT (update)</h2>
+<p>Version Added: 25.2.9</p>
+<p><span style="color:red">Rarely used.</span> Updates a paysplit. </p>
+<p><b>SplitNum: </b>Required in the URL.</p>
+<p><b>ProvNum:</b> FK to provider.ProvNum. This field can always be updated when the AllowPrepayProvider preference is enabled. Without this preference, <b>ProvNum</b> can only be updated for paysplits that do not have an UnearnedType. <br><b>ClinicNum:</b> FK to clinic.ClinicNum.<br></p>
+<p><b>Example Request:</b><br> PUT /paysplits/1425<br></p>
+<p><span class="codeblock"> {<br> "ProvNum": 5,<br> "ClinicNum": 2<br> }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "SplitNum": 1425,<br> "SplitAmt": 25.0,<br> "PatNum": 22,<br> "PayNum": 263,<br> "ProvNum": 5,<br> "PayPlanNum": 3,<br> "DatePay": "2024-03-13",<br> "ProcNum": 115,<br> "DateEntry": "2024-03-13",<br> "UnearnedType": 0,<br> "unearnedType": "",<br> "ClinicNum": 2,<br> "SecDateTEdit": "2025-04-08 14:07:59",<br> "AdjNum": 0,<br> "PayPlanChargeNum": 43,<br> "PayPlanDebitType": "Principal"<br> }<br></span></p>
+<p>200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>

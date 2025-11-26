@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - API ClaimPayments</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('apiclaimpayments','apispecification','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>API ClaimPayments</p></div>
+		<div class="GeneralPageContent">
+<p>See <a href="apispecification.html">API Specification</a></p>
+<p>ClaimPayments are complex. They are used to finalize the payments received by insurance for a claim. See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimedit.html">Claim</a>, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimreceive.html">Receive Claim</a>, and <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimpayfinalize.html">Finalize Insurance Payment</a> for more details.</p>
+<p>Anyone using the API should also become very familiar with our schema documentation which contains important details about individual database table columns.<br> See <a href="SchemaRedirect%EF%B9%96claimpayment.html" target="_blank">ClaimPayment Database Schema.</a></p>
+<h2>ClaimPayments GET (single)</h2>
+<p>Version Added: 23.2.15</p>
+<p>Gets a single claimpayment.</p>
+<p><b>Parameters:</b></p>
+<p><b>ClaimPaymentNum:</b> Required in URL.</p>
+<p><b>Example Request:</b><br> GET /claimpayments/1822</p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "ClaimPaymentNum": 1822,<br> "CheckDate": "2023-08-16",<br> "CheckAmt": "300",<br> "CheckNum": "2468657",<br> "BankBranch": "Southwest Federal Bank",<br> "Note": "",<br> "ClinicNum": 3,<br> "DepositNum": 9867,<br> "CarrierName": "ODS Oregon Dental Service",<br> "DateIssued": "2023-08-16",<br> "IsPartial": "false",<br> "PayType": 356,<br> "payType": "Check",<br> "SecUserNumEntry": 12,<br> "SecDateEntry": "2023-08-16",<br> "SecDateTEdit": "2023-08-21 13:00:37",<br> "PayGroup": 451,<br> "payGroup": "Lockbox 1"<br> }<br><p> 200 OK<br> 404 NotFound (with explanation)</p>
+</span></p>
+<h2>ClaimPayments GET (multiple)</h2>
+<p>Version Added: 23.2.15</p>
+<p>Gets a list of claimpayments.</p>
+<p><b>Parameters: </b>All Optional.</p>
+<p><b>SecDateTEdit:</b> The last date the ClaimPayment was edited. Returns all ClaimPayments on or after this date. String in "yyyy-MM-dd HH:mm:ss" format.<br></p>
+<p><b>Example Requests:</b><br> GET /claimpayments?SecDateTEdit=2023-08-15%2010%3A30%3A00<br></p>
+<p><b>Example Response:</b><br><span class="codeblock"> [<br> {<br> "ClaimPaymentNum": 5822,<br> "CheckDate": "2023-08-16",<br> "CheckAmt": "300",<br> "CheckNum": "2468657",<br> "BankBranch": "Southwest Federal Bank",<br> "Note": "",<br> "ClinicNum": 3,<br> "DepositNum": 9867,<br> "CarrierName": "ODS Oregon Dental Service",<br> "DateIssued": "2023-08-16",<br> "IsPartial": "false",<br> "PayType": 356,<br> "payType": "Check",<br> "SecUserNumEntry": 12,<br> "SecDateEntry": "2023-08-16",<br> "SecDateTEdit": "2023-08-21 13:00:37",<br> "PayGroup": 451,<br> "payGroup": "Lockbox 1"<br> },<br> {<br> "ClaimPaymentNum": 5823,<br> "CheckDate": "2023-08-18",<br> "CheckAmt": "1500.99",<br> "CheckNum": "9876",<br> "BankBranch": "4567-89654",<br> "Note": "Received in Mail",<br> "ClinicNum": 3,<br> "DepositNum": 0,<br> "CarrierName": "BCBS",<br> "DateIssued": "2023-08-14",<br> "IsPartial": "false",<br> "PayType": 356,<br> "payType": "Check",<br> "SecUserNumEntry": 11,<br> "SecDateEntry": "2023-08-18",<br> "SecDateTEdit": "2023-08-19 12:53:39",<br> "PayGroup": 452,<br> "payGroup": "Lockbox 2"<br> }<br> ]<br></span><p> 200 OK<br> 400 BadRequest (with explanation)<br></p>
+</p>
+<h2>ClaimPayments POST</h2>
+<p>Version Added: 22.4.8</p>
+<p>Finalize a claimpayment for a single Claim. Cannot use this method if the dental office has the preference ClaimPaymentBatchOnly set to true. Does not link Deposits or Attach EOBs.</p>
+<p>Prior to running this method, use ClaimProcs PUT (update) to update the <b>Status</b> to either "Received" or "Supplemental", and finalize the <b>InsPayAmt</b>. ClaimProc.InsPayAmt cannot be updated when there is already a ClaimPayment attached. Then use Claims PUT (update) to update the Claim <b>ClaimStatus</b> to "R" (Received).</p>
+<p><b>claimNum:</b> Required. FK to Claim.ClaimNum that is receiving the payment.<br><b>CheckAmt: </b>Required. The amount of the check. Must match the total of the ClaimProcs' <b>InsPayAmt</b> for all of the ClaimProcs attached to the Claim that have a ClaimPaymentNum of 0. <br><br><b>CheckDate: </b>Optional. Date the check was entered into this system, not the date on the check. String in "yyyy-MM-dd" format. Default today's date.<br><b>CheckNum: </b>Optional. The check number.<br><b>BankBranch: </b>Optional. Bank and branch.<br><b>Note: </b>Optional. Note for this check if needed.<br><b>ClinicNum: </b>Optional. Default is the ClinicNum of the Claim.<br><b>CarrierName: </b>Optional. Default is the CarrierName attached to the InsPlan that is attached to the Claim.<br><b>DateIssued: </b>Optional. Date that the carrier issued the check. Date on the check. String in "yyyy-MM-dd" format.<br><b>PayType: </b>Optional. Definition.DefNum where category=32. See also <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7inspaytypes.html">Definitions: Insurance Payment Types</a>. Default is the first definition in that Category.<br><b>PayGroup: </b>Optional. Definition.DefNum where category=40. See also <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7definitionsclaimpaymentgroups.html">Definitions: Claim Payment Groups</a>. Default is the first definition in that Category.<br></p>
+<p><b>Example Requests:</b><br> POST /claimpayments<br></p>
+<p><span class="codeblock"> {<br> "claimNum": 3567,<br> "CheckAmt": "567.42"<br> }<br></span><br> or<br><br><span class="codeblock"> {<br> "claimNum": 3567,<br> "CheckAmt": "567.42",<br> "CheckDate": "2022-10-25",<br> "CheckNum": "1234",<br> "BankBranch": "124-85425",<br> "Note": "Check was lost in mail, but envelope is dated appropriately.",<br> "ClinicNum": 3,<br> "CarrierName": "Great Insurance",<br> "DateIssued": "2022-10-20",<br> "PayType": 386,<br> "PayGroup": 394<br> }<br></span></p>
+<b>Example Response:</b><br><p><span class="codeblock"> {<br> "ClaimPaymentNum": 897,<br> "CheckDate": "2022-10-25",<br> "CheckAmt": "567.42",<br> "CheckNum": "1234",<br> "BankBranch": "124-85425",<br> "Note": "Check was lost in mail, but envelope is dated appropriately.",<br> "ClinicNum": 3,<br> "DepositNum": 0,<br> "CarrierName": "Great Insurance",<br> "DateIssued": "2022-10-20",<br> "IsPartial": "false",<br> "PayType": 386,<br> "payType": "Check",<br> "SecUserNumEntry": 0,<br> "SecDateEntry": "2022-10-25",<br> "SecDateTEdit": "2022-10-11 12:54:48",<br> "PayGroup": 394,<br> "payGroup": "Default"<br> }<br></span></p>
+<p> 201 Created <br> 400 BadRequest (with explaination)<br> 404 NotFound (with explaination)<br></p>
+<h2>ClaimPayments POST Batch</h2>
+<p>Version Added: 24.2.18</p>
+<p>Create a batch claimpayment. Creates an Auto Deposit if the dental office has the preference ShowAutoDeposit set to true. Does not attach EOBs. See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimpaymentbatch.html">Batch Insurance Payment</a>.</p>
+<p>Prior to running this method, use ClaimProcs PUT (update) to update the <b>Status</b> to either "Received" or "Supplemental", and finalize the <b>InsPayAmt</b>. ClaimProc.InsPayAmt cannot be updated when there is already a ClaimPayment attached. Then use Claims PUT (update) to update the Claim <b>ClaimStatus</b> to "R" (Received).</p>
+<p><b>claimNums:</b> Required. An array of ClaimNums that are receiving the payment, in [1,2,3] format.<br><b>CheckAmt: </b>Required. The amount of the check. If the amount differs from the total of the ClaimProcs' <b>InsPayAmt</b> for all of the ClaimProcs attached to the Claim that have a ClaimPaymentNum of 0, then this ClaimPayment will be marked as partial.<br><br><b>CheckDate: </b>Optional. Date the check was entered into this system, not the date on the check. String in "yyyy-MM-dd" format. Default today's date.<br><b>CheckNum: </b>Optional. The check number.<br><b>BankBranch: </b>Optional. Bank and branch.<br><b>Note: </b>Optional. Note for this payment.<br><b>ClinicNum: </b>Optional. Default 0.<br><b>CarrierName: </b>Optional. Default is the CarrierName attached to the InsPlan that is attached to the first Claim in the <b>claimNums</b> list.<br><b>DateIssued: </b>Optional. Date that the carrier issued the payment. String in "yyyy-MM-dd" format. Default "0001-01-01".<br><b>PayType: </b>Optional. definition.DefNum where category=32. See also <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7inspaytypes.html">Definitions: Insurance Payment Types</a>. Default is the first definition in that Category.<br><b>PayGroup: </b>Optional. definition.DefNum where category=40. See also <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7definitionsclaimpaymentgroups.html">Definitions: Claim Payment Groups</a>. Default is the first definition in that Category.<br></p>
+<p><b>Example Requests:</b><br> POST /claimpayments/Batch<br></p>
+<p><span class="codeblock"> {<br> "claimNums": [2547, 2568, 2591],<br> "CheckAmt": "350.35"<br> }<br><br></span> or<br><span class="codeblock"><br> {<br> "claimNums": [2547, 2568, 2591],<br> "CheckAmt": "350.35",<br> "CheckDate": "2024-05-25",<br> "CheckNum": "5678",<br> "BankBranch": "124-85425",<br> "Note": "Check was lost in mail, but envelope is dated appropriately.",<br> "ClinicNum": 2,<br> "CarrierName": "Greater Insurance",<br> "DateIssued": "2024-05-10",<br> "PayType": 386,<br> "PayGroup": 394<br> }<br></span></p>
+<b>Example Response:</b><br><p><span class="codeblock"> {<br> "ClaimPaymentNum": 905,<br> "CheckDate": "2024-05-25",<br> "CheckAmt": "350.35",<br> "CheckNum": "5678",<br> "BankBranch": "124-85425",<br> "Note": "Check was lost in mail, but envelope is dated appropriately.",<br> "ClinicNum": 2,<br> "DepositNum": 0,<br> "CarrierName": "Greater Insurance",<br> "DateIssued": "2024-05-10",<br> "IsPartial": "true",<br> "PayType": 386,<br> "payType": "Check",<br> "SecUserNumEntry": 0,<br> "SecDateEntry": "2024-05-25",<br> "SecDateTEdit": "2024-05-25 10:03:37",<br> "PayGroup": 394,<br> "payGroup": "Default"<br> }<br></span></p>
+<p> 201 Created <br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>ClaimPayments PUT </h2>
+<p>Version Added: 23.2.15</p>
+<p>Updates an existing claimpayment by ClaimPaymentNum. See <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7claimpayfinalize.html">Finalize Insurance Payment</a>.</p>
+<p><b>ClaimPaymentNum:</b> Required in the URL.<br><br><b>CheckAmt: </b>(Added in version 25.2.26) Optional. The amount of the payment. If the amount differs from the total of the ClaimProcs' InsPayAmt for all of the ClaimProcs attached to the Claim that have a ClaimPaymentNum of 0, then this ClaimPayment will be marked as partial.<br><b>CheckNum: </b>Optional. The check number.<br><b>BankBranch: </b>Optional. Bank and branch.<br><b>Note: </b>Optional. Note for this check if needed. Replaces existing Note.<br><b>CarrierName: </b>Optional. Descriptive name of the carrier just for reporting purposes.<br><b>PayType: </b>Optional. Definition.DefNum where definition.Category=32. See also <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7inspaytypes.html">Definitions: Insurance Payment Types</a>. <br><b>PayGroup: </b>Optional. Definition.DefNum where definition.Category=40. See also <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7definitionsclaimpaymentgroups.html">Definitions: Claim Payment Groups</a>.<br></p>
+<p><b>Example Request:</b><br> PUT /claimpayments/1434<br></p>
+<p><span class="codeblock"> {<br> "CheckAmt": "450.99",<br> "CheckNum": "758946",<br> "BankBranch": "124-85425",<br> "Note": "Check was lost in mail, but envelope is dated appropriately.",<br> "CarrierName": "ODS Oregon Dental Service",<br> "PayType": 356,<br> "PayGroup": 412<br> }<br></span></p>
+<p><b>Example Response:</b><br><span class="codeblock"> {<br> "ClaimPaymentNum": 1434,<br> "CheckDate": "2023-08-16",<br> "CheckAmt": "450.99",<br> "CheckNum": "758946",<br> "BankBranch": "124-85425",<br> "Note": "Check was lost in mail, but envelope is dated appropriately.",<br> "ClinicNum": 3,<br> "DepositNum": 0,<br> "CarrierName": "ODS Oregon Dental Service",<br> "DateIssued": "2023-08-14",<br> "IsPartial": "false",<br> "PayType": 356<br> "payType": "Check",<br> "SecUserNumEntry": 0,<br> "SecDateEntry": "2023-08-16",<br> "SecDateTEdit": "2023-08-17 12:53:39",<br> "PayGroup": 412,<br> "payGroup": "Default"<br> }<br></span></p>
+<p> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+<h2>ClaimPayments DELETE</h2>
+<p>Version Added: 24.3.13</p>
+<p>Deletes a claimpayment. Cannot delete a claimpayment if it is associated with an EOB or a deposit.</p>
+<p><b>ClaimPaymentNum:</b> Required in the URL.<br></p>
+<p><b>Example Request:</b><br> DELETE /claimpayments/124<br></p>
+<p><b>Example Responses:</b><br> 200 OK<br> 400 BadRequest (with explanation)<br> 404 NotFound (with explanation)<br></p>
+		</div>
+	</div>
+</body>
+</html>

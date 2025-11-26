@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - eRx Ohio</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('erxohio','electronicrx','+eRx','+chartToolbar','chart','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/erxohio.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/erxohio.html" >v24.2</option><option value="https://www.opendental.com/manual241/erxohio.html" >v24.1</option><option value="https://www.opendental.com/manual233/erxohio.html" >v23.3</option><option value="https://www.opendental.com/manual232/erxohio.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/erxohio.html" >v23.1</option><option value="https://www.opendental.com/manual224/erxohio.html" >v22.4</option><option value="https://www.opendental.com/manual223/erxohio.html" >v22.3</option><option value="https://www.opendental.com/manual222/erxohio.html" >v22.2</option><option value="https://www.opendental.com/manual221/erxohio.html" >v22.1</option><option value="https://www.opendental.com/manual214/erxohio.html" >v21.4</option><option value="https://www.opendental.com/manual213/erxohio.html" >v21.3</option><option value="https://www.opendental.com/manual212/erxohio.html" >v21.2</option><option value="https://www.opendental.com/manual211/erxohio.html" >v21.1</option><option value="https://www.opendental.com/manual205/erxohio.html" >v20.5</option><option value="https://www.opendental.com/manual204/erxohio.html" >v20.4</option><option value="https://www.opendental.com/manual203/erxohio.html" >v20.3</option><option value="https://www.opendental.com/manual202/erxohio.html" >v20.2</option><option value="https://www.opendental.com/manual201/erxohio.html" >v20.1</option><option value="https://www.opendental.com/manual194/erxohio.html" >v19.4</option><option value="https://www.opendental.com/manual193/erxohio.html" >v19.3</option><option value="https://www.opendental.com/manual192/erxohio.html" >v19.2</option><option value="https://www.opendental.com/manual191/erxohio.html" >v19.1</option><option value="https://www.opendental.com/manual184/erxohio.html" >v18.4</option><option value="https://www.opendental.com/manual183/erxohio.html" >v18.3</option><option value="https://www.opendental.com/manual182/erxohio.html" >v18.2</option><option value="https://www.opendental.com/manual181/erxohio.html" >v18.1</option><option value="https://www.opendental.com/manual174/erxohio.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>eRx Ohio</p></div>
+<div class="GeneralPageContent">
+<p>There are some additional steps required by Ohio prescriptions (paper or eRx). Below is set up information to help you comply.</p>
+<h2>Paper Prescriptions</h2>
+Paper prescriptions generated in Open Dental can be customized using sheets. See <a href="sheetsrx.html">Rx Layout</a> or <a href="sheetsrxmulti.html">Rx Multiple Layout</a>.  <p>Written prescriptions: Cannot use check boxes to determine if generic substitution is permitted. The rule states that the prescriber must hand write in wet ink "DAW" or Dispense as Written. For an XML prescription template that matches the format requirements, see Open Dental forum post <a href="http://opendentalsoft.com/forum/viewtopic.php?f=5&amp;t=5941">Ohio Rx Template</a>.</p>
+<p class="MarginBottomZero"><b>Controlled substances</b>: Ohio requires that prescriptions for controlled substances include a CDT procedure code. We are currently working to link the prescription to the procedure code in Open Dental. In the meantime, here are two possible solutions. </p>
+<ul class="MarginBottomGap">
+<li>Add a static text field, surrounded by a rectangle box, then handwrite the CDT code once it is printed.</li>
+<li>Add ServiceNote as a static text field (see <a href="sheetsstatictext.html">Sheet Static Text Field</a>) then enter the procedure code in the service note field of the <a href="medical.html">Medical</a>. The downside is that you may have to clear out any other service notes you have already entered and clear the code after printing the prescription.</li>
+</ul>
+<h2>Legacy eRx Users</h2>
+<p>If using eRx, Ohio requires the following from providers who e-prescribe. Below are instructions if using Legacy eRx.</p>
+<ul>
+<li><b>Controlled substances</b>: Prescriptions for controlled substances must include a CDT procedure code. In Legacy eRx, add the CDT code to the pharmacist's message on the Pending Rx window (see <a href="newcrop.html">NewCrop eRx / Prescription</a>). To set up automation options in Open Dental, see <a href="automation.html">Automation</a>, RxCreate trigger.</li>
+<li><b>Prescriber Report</b>: Pursuant to OAC 4729-5-01(N), you must review and sign a Prescriber Report every day. This report provides legal signatures on electronic prescriptions and fax.</li>
+</ul>
+<br/><p class="MarginBottomZero">To generate in Legacy eRx: </p>
+<ol class="MarginBottomGap">
+<li>In the interface, click the Admin tab.</li>
+<li>Click Prescriber Report. <br/><img src="images/erxOhioAdminTab.gif" width="775" height="328" class="ImageInParagraph"/></li>
+<li>Select the date, then click Printer Friendly. <br/><img src="images/erxOhioPrescriberReportScreen.gif" width="772" height="533" class="ImageInParagraph"/></li>
+<li>Click Print to print the report. <br/><img src="images/erxOhioPrescriberReport.gif" width="622" height="143" class="ImageInParagraph"/></li>
+<li>Sign the report. You must keep all reports on site in a folder/notebook for at least 3 years.</li>
+</ol>
+<p><b>Reminder to Review/Sign Prescriber Report</b>: Use <a href="automation.html">Automation</a> to set a daily electronic reminder to sign and review the Prescriber Report.</p>
+<img src="images/erxOhioAutomation.gif" width="298" height="154"/><p class="MarginBottomZero"><b>Mid-Level Provider Requirements:</b>To set up a mid-level provider: </p>
+<ol class="MarginBottomGap">
+<li>In the <a href="providers.html">Providers</a>, create a new provider. In the <b>Suffix</b> field, enter the Ohio credentials required. In the <b>State License Number</b> field, enter the mid-level provider's CTP#.</li>
+<li>Create a <a href="securityusers.html">User Security Profile</a> and attach the user to the provider.</li>
+</ol>
+<p>Now when logged in as the mid-level provider, the information required by Ohio will be sent to Legacy eRx.</p>
+<p><img src="images/erxOhioMidLevel.gif" width="860" height="666"/></p>
+</div>
+</div>
+</body>
+</html>

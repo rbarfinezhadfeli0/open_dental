@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Multiple Locations</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('multiplelocations','advancedtopics','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/multiplelocations.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/multiplelocations.html" >v24.2</option><option value="https://www.opendental.com/manual241/multiplelocations.html" >v24.1</option><option value="https://www.opendental.com/manual233/multiplelocations.html" >v23.3</option><option value="https://www.opendental.com/manual232/multiplelocations.html" >v23.2</option><option value="https://www.opendental.com/manual231/multiplelocations.html" >v23.1</option><option value="https://www.opendental.com/manual224/multiplelocations.html" >v22.4</option><option value="https://www.opendental.com/manual223/multiplelocations.html" >v22.3</option><option value="https://www.opendental.com/manual222/multiplelocations.html" >v22.2</option><option value="https://www.opendental.com/manual221/multiplelocations.html" >v22.1</option><option value="https://www.opendental.com/manual214/multiplelocations.html" >v21.4</option><option value="https://www.opendental.com/manual213/multiplelocations.html" >v21.3</option><option value="https://www.opendental.com/manual212/multiplelocations.html" >v21.2</option><option value="https://www.opendental.com/manual211/multiplelocations.html" >v21.1</option><option value="https://www.opendental.com/manual205/multiplelocations.html" >v20.5</option><option value="https://www.opendental.com/manual204/multiplelocations.html" >v20.4</option><option value="https://www.opendental.com/manual203/multiplelocations.html" >v20.3</option><option value="https://www.opendental.com/manual202/multiplelocations.html" >v20.2</option><option value="https://www.opendental.com/manual201/multiplelocations.html" >v20.1</option><option value="https://www.opendental.com/manual194/multiplelocations.html" >v19.4</option><option value="https://www.opendental.com/manual193/multiplelocations.html" >v19.3</option><option value="https://www.opendental.com/manual192/multiplelocations.html" >v19.2</option><option value="https://www.opendental.com/manual191/multiplelocations.html" >v19.1</option><option value="https://www.opendental.com/manual184/multiplelocations.html" >v18.4</option><option value="https://www.opendental.com/manual183/multiplelocations.html" >v18.3</option><option value="https://www.opendental.com/manual182/multiplelocations.html" >v18.2</option><option value="https://www.opendental.com/manual181/multiplelocations.html" >v18.1</option><option value="https://www.opendental.com/manual174/multiplelocations.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Multiple Locations</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="advancedtopics.html">Advanced Topics</a>.</p>
+<p class="MarginBottomZero">Open Dental can be successfully used when multiple locations are involved. Before deciding a strategy, the practice must determine its needs. </p>
+<ul class="MarginBottomGap">
+<li>Will there be separate databases for each location or a single central database shared by all locations?</li>
+<li>If using a single database, how will locations share data?</li>
+<li>How will workstations in each location connect to the server and each other?</li>
+<li>Will the <a href="clinics.html">Clinics</a> feature be used to organize data by location?</li>
+</ul>
+<p><b>Reminder</b>: Open Dental Support cannot assist with network setup. It is recommended to have a capable IT set up and maintain any network settings.</p>
+<p class="MarginBottomZero"><b>Resources</b>: </p>
+<ul class="MarginBottomGap">
+<li><a href="sharednetworkfolder.html">Folder Replication</a></li>
+<li><a href="connectingworkstations.html">Connecting Workstations to a Database</a></li>
+</ul>
+<p><b>Virtual Private Network (VPN)</b>: In many of the discussions and diagrams below, it is assumed that locations are connected by a VPN. In our diagrams, various network routers and switches are generally omitted for simplicity. Also not included in the diagrams are the shared <a href="atozfolder.html">A to Z Folder</a> (i.e., OpenDentImages). A network administrator is usually involved in setting it up.</p>
+<h2>Option 1: Separate Databases</h2>
+<img src="images/multiLocation1.png" width="764" height="250"/><p>Each location has their own server hosting their own Open Dental database. </p>
+<p class="MarginBottomZero">This option is best when:  </p>
+<ul class="MarginBottomGap">
+<li>Each location is entirely separate</li>
+<li>Patients do not see providers at other locations</li>
+</ul>
+<h2>Option 2: Separate Databases using Remote Access</h2>
+<img src="images/multiLocation2.png" width="627" height="250"/><p>Each location has their own server, hosting their own Open Dental database. A Remote Access program would allow users to view data at other locations. </p>
+<p class="MarginBottomZero">This option is best when:  </p>
+<ul class="MarginBottomGap">
+<li>Locations are mostly separate </li>
+<li>Patients do not routinely see providers at other locations</li>
+<li>Users occasionally need to access data at the other location</li>
+</ul>
+<h2>Option 3: Separate Databases using CEMT</h2>
+<img src="images/multiLocation3.png" width="842" height="250"/><p>Each location has their own server, hosting their own Open Dental database. </p>
+<p>Using the <a href="central.html">Central Enterprise Management Tool ( CEMT )</a>, users can quickly access the databases at other locations. All locations must be on the same VPN.</p>
+<p class="MarginBottomZero">This option is best when:  </p>
+<ul class="MarginBottomGap">
+<li>There are more than two locations</li>
+<li>Patients mostly see the same provider, but may vary as needed</li>
+<li>Users routinely need access to the data at another location </li>
+<li>A headquarters location needs access for Production &amp; Income reporting, billing, claims, scheduling, or other routine processes.</li>
+</ul>
+<h2>Option 4: Single Database using a VPN</h2>
+<img src="images/multiLocation4.png" width="561" height="250"/><p>One location hosts a shared database for all offices. </p>
+<p class="MarginBottomZero">This option is best when:  </p>
+<ul class="MarginBottomGap">
+<li>The organization is using Clinics</li>
+<li>Patients routinely see providers at other locations</li>
+<li>Users routinely need access to data for each location</li>
+<li>Each location has high speed internet and there are fewer than *5 locations <ul>
+<li>*this number may vary, however fewer than 5 typically recommended.</li>
+</ul>
+</li>
+</ul>
+<h2>Option 5: Single Database using Middle Tier</h2>
+<img src="images/multiLocation5.png" width="702" height="250"/><p><a href="middletier.html">Middle Tier</a> isolates the database, improving speed and security by preventing client workstations from directly accessing the database. The server program sits between the database and the client machines. Workstations are ordinary thick clients running the full Windows version of Open Dental. </p>
+<p class="MarginBottomZero">This option is best when:  </p>
+<ul class="MarginBottomGap">
+<li>The organization is using clinics</li>
+<li>There is a large local network that might be shared with non-users of Open Dental (like a college campus or hospital).</li>
+<li>Each location has consistent and high-speed internet </li>
+</ul>
+<h2>Option 6: Single Database with Terminal Server</h2>
+<img src="images/multiLocation6.png" width="742" height="250"/><p>One location hosts a single database for all locations. Terminal Servers allow multiple login sessions at the same time for RDS sessions or RemoteApp, but with limitations and restrictions on what the user can do or see within the connection.</p>
+<p class="MarginBottomZero">This option is best when:  </p>
+<ul class="MarginBottomGap">
+<li>The organization is utilizing clinics</li>
+<li>Less overhead and less configuration than a VPN</li>
+<li>Only need to set up one server with secure access to a single IP.</li>
+<li>If the organization expands, only need to set up a load sharing server </li>
+</ul>
+<h2>Option 7: Single Database with Load Balancing Server in Terminal Server</h2>
+<img src="images/multiLocation7.png" width="768" height="250"/><p>One location hosts a single database for all locations. Rather than directly connecting to the server at the main location, locations access a load balancing server. </p>
+<p class="MarginBottomZero">This option is best when:  </p>
+<ul class="MarginBottomGap">
+<li>The organization is utilizing clinics</li>
+<li>The organization has a lot of users. Helps relieve slowness due to bandwidth restrictions </li>
+</ul>
+<h2>Option 8: Single Database with Direct Connection, using Thick &amp; Thin Clients</h2>
+<img src="images/multiLocation8.png" width="791" height="250"/><p>One location hosts the database for all location. </p>
+<p class="MarginBottomZero">This option is best when:  </p>
+<ul class="MarginBottomGap">
+<li>The organization is utilizing clinics</li>
+<li>The organization has a lot of users. Helps relieve slowness due to bandwidth restrictions </li>
+</ul>
+<h2>Option 9: Single Database with Open Dental Cloud</h2>
+<img src="images/multiLocation9.png" width="752" height="250"/><p>Utilizing the <a href="../site/opendentalcloud.html">Open Dental Cloud</a> service.</p>
+<p class="MarginBottomZero">This option is best when: </p>
+<ul class="MarginBottomGap">
+<li>The organization is using clinics</li>
+<li>Patients routinely see providers at other locations</li>
+<li>Users routinely need access to data at other locations</li>
+<li>The locations have a consistent and high-speed internet connection</li>
+<li>The office wants to eliminate server upkeep</li>
+</ul>
+<h2>Option 10: Single Database using 1-Way Replication</h2>
+<img src="images/multiLocation10.png" width="705" height="250"/><p>Utilizing 1-Way <a href="replication.html">Replication</a>.</p>
+<p class="MarginBottomZero">This option is best when:  </p>
+<ul class="MarginBottomGap">
+<li>Organization has many workstations </li>
+<li>Helps resolve slowness when running reports or backups </li>
+</ul>
+<h2>Option 11: Single Database using Daisy Chain Replication</h2>
+<img src="images/multiLocation11.png" width="915" height="412"/><p>The <a href="replication.html">Replication</a> forms a ring. All the databases together are referred to as a single virtual database. </p>
+<p class="MarginBottomZero">This option is best when:  </p>
+<ul class="MarginBottomGap">
+<li>The organization has 5 or fewer physical servers.</li>
+<li>The organization has multiple locations and is utilizing clinics</li>
+<li>The organization has mobile units that service different areas (nursing homes, students, etc)</li>
+<li>A skilled database administrator is available to monitor replication</li>
+<li>A stable internet connection is not always available. Each location can continue to function normally even if the internet connection is lost.</li>
+</ul>
+<h2>Option 12: Galera Cluster</h2>
+<img src="images/multiLocation12.png" width="606" height="241"/><p>A Galera Cluster is not a stand-alone solution, but instead is used in conjunction with other options (e.g. Option 8).</p>
+<p><div class="Note">Note: <ul>
+<li>Galera Clustering is only available on Linux, and only supports InnoDB.</li>
+<li>If considering a Galera Cluster for locations, please contact Open Dental support and speak with the Implementations Team to discuss what version of MariaDB or MySQL will work best.</li>
+</ul>
+</div>
+</p>
+<p class="MarginBottomZero">This option is best when:  </p>
+<ul class="MarginBottomGap">
+<li>The organization has large databases.</li>
+<li>The organization has a large number of workstations/clients.</li>
+<li>The organization has a skilled IT team to manage the cluster.</li>
+</ul>
+<p class="MarginBottomZero">Advantages of a Galera Cluster include:  </p>
+<ul class="MarginBottomGap">
+<li>Redundancy</li>
+<li>Load Balancing</li>
+<li>Scalability</li>
+</ul>
+<h2>Removable Storage Devices</h2>
+<p class="MarginBottomZero">If there are two locations, but data is only accessed from one location at a time, practices could use a removable storage device to take data between locations. See <a href="encryption.html">Encryption of Data at Rest and in Transit</a> for recommendations for protecting data in transit. Examples: </p>
+<ul class="MarginBottomGap">
+<li>Notebook computer: Use it as the server and take it between locations. Other workstations can use the same data when the notebook is connected to the local network.</li>
+<li>External Hard Drive: Set up servers at each location. On each server, MySQL would only function if the external hard drive is plugged in. <ul>
+<li>The database would be on the E: drive or something similar.</li>
+<li>A user would need to know how to install MySQL to run the database from the alternate drive.</li>
+<li>A user would need to know how to move the database to the new location.</li>
+<li>A user would have to shut the server down each day before removing the hard drive.</li>
+<li>When restarting the server, a user would need to know how to start the MySQL service if it isn't already running.</li>
+</ul>
+</li>
+</ul>
+<p>This is not a good strategy as it interferes with a proper Backup/Restore strategy (make a copy of the data and run it at home) and staff can't work until a user brings the hard drive back to the office. </p>
+<h2>MySQL Clustering</h2>
+<p>Open Dental will not work in a MySQL Cluster because many of the tables have rows that are too long. In a MySQL clustering setup, one database can be spread across multiple physical servers. This is a way to increase the speed and reliability of a database at one location. It is not a way to have one database at multiple locations.</p>
+<p>As noted above, a Galera Cluster environment can be used in conjunction with other multiple location options.</p>
+<p>A Windows cluster is different. We have seen Open Dental work in a Windows cluster setup, although we cannot currently provide technical support to assist with such a configuration.</p>
+<h2>Multi-tenant Hosting</h2>
+<p>If you wish to host multiple customers on the same database server, see <a href="hostmultipledatabases.html">Host Multiple Databases from One Web Server</a> for isolation information.</p>
+</div>
+</div>
+</body>
+</html>

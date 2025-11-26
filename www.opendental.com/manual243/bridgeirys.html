@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - iRYS Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridgeirys','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/bridgeirys.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/bridgeirys.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridgeirys.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridgeirys.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridgeirys.html" >v23.2</option><option value="https://www.opendental.com/manual231/bridgeirys.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridgeirys.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridgeirys.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridgeirys.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridgeirys.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridgeirys.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridgeirys.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridgeirys.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridgeirys.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridgeirys.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridgeirys.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridgeirys.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridgeirys.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridgeirys.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridgeirys.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridgeirys.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridgeirys.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridgeirys.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridgeirys.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridgeirys.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridgeirys.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridgeirys.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridgeirys.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>iRYS Bridge</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a> click Setup, <a href="programlinks.html">Program Links</a>. Double-click on <b>iRYS from www.cefladental.com</b>.</p>
+<img src="images/bridgeiRYS.png" width="770" height="594"/><p>iRYS is an imaging software. Website: <a href="https://www.cefla.com/en/" target="_blank">https://www.cefla.com/en/</a>.</p>
+<p class="MarginBottomZero">To enable the bridge: </p>
+<ol class="MarginBottomGap">
+<li>Check the <b>Enabled</b> box.</li>
+<li>Verify the <b>Path of file to open</b>.</li>
+<li>Double-click on <b>Additional Properties</b> to change settings. Use the PatNum (enter 0) or ChartNum (enter 1) as the patient ID.</li>
+<li>Set up a clickable bridge button.  <ol>
+<li>Under <b>Add a button to these toolbars</b>, highlight where to display the button.</li>
+<li>Enter the <b>Text on button</b>.</li>
+<li>(Optional) Import an image to show on the button (22 x 22 pixels).</li>
+</ol>
+</li>
+<li>If using clinics, click <b>Hide Button for Clinics</b>. Select which clinics the button should display on.</li>
+<li>Click Save.</li>
+</ol>
+<h2>Technical Details</h2>
+<p>This bridge is the same as the RayMage bridge, but with birthdate and sex added to the command line arguments.</p>
+<p class="codeblock">/PATID "123456" /NAME "John" /SURNAME "Smith" / BDATE "dd,MM,yyyy" / SEX "M"</p><p>The name and surname arguments will be the patient's first and last name with all spaces and quotes removed from them. If the patient ID already exists, then the corresponding patient folder is opened.</p>
+<p>If the patient ID does not exist, then a new patient folder is created and opened. When a patient ID already exists and the patient name passed in does not match (e.g., when a patient name is updated), then a message box displays asking the user if they want to change the patient name and the patient folder corresponding to the existing ID.</p>
+<div class="Note">Note: We have received reports of IRYS version 8.0 not working well with Open Dental.</div>
+</div>
+</div>
+</body>
+</html>

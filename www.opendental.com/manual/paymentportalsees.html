@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Payment Portal: What Patient Sees</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('paymentportalsees','paymentportalsetup','eservicessetup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/paymentportalsees.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/paymentportalsees.html" >v24.2</option><option value="https://www.opendental.com/manual241/paymentportalsees.html" >v24.1</option><option value="https://www.opendental.com/manual233/paymentportalsees.html" >v23.3</option><option value="https://www.opendental.com/manual232/paymentportalsees.html" >v23.2</option><option value="https://www.opendental.com/manual231/paymentportalsees.html" >v23.1</option><option value="https://www.opendental.com/manual224/paymentportalsees.html" >v22.4</option><option value="https://www.opendental.com/manual223/paymentportalsees.html" >v22.3</option><option value="https://www.opendental.com/manual222/paymentportalsees.html" >v22.2</option><option value="https://www.opendental.com/manual221/paymentportalsees.html" >v22.1</option><option value="https://www.opendental.com/manual214/paymentportalsees.html" >v21.4</option><option value="https://www.opendental.com/manual213/paymentportalsees.html" >v21.3</option><option value="https://www.opendental.com/manual212/paymentportalsees.html" >v21.2</option><option value="https://www.opendental.com/manual211/paymentportalsees.html" >v21.1</option><option value="https://www.opendental.com/manual205/paymentportalsees.html" >v20.5</option><option value="https://www.opendental.com/manual204/paymentportalsees.html" >v20.4</option><option value="https://www.opendental.com/manual203/paymentportalsees.html" >v20.3</option><option value="https://www.opendental.com/manual202/paymentportalsees.html" >v20.2</option><option value="https://www.opendental.com/manual201/paymentportalsees.html" >v20.1</option><option value="https://www.opendental.com/manual194/paymentportalsees.html" >v19.4</option><option value="https://www.opendental.com/manual193/paymentportalsees.html" >v19.3</option><option value="https://www.opendental.com/manual192/paymentportalsees.html" >v19.2</option><option value="https://www.opendental.com/manual191/paymentportalsees.html" >v19.1</option><option value="https://www.opendental.com/manual184/paymentportalsees.html" >v18.4</option><option value="https://www.opendental.com/manual183/paymentportalsees.html" >v18.3</option><option value="https://www.opendental.com/manual182/paymentportalsees.html" >v18.2</option><option value="https://www.opendental.com/manual181/paymentportalsees.html" >v18.1</option><option value="https://www.opendental.com/manual174/paymentportalsees.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Payment Portal: What Patient Sees</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="paymentportalsetup.html">Payment Portal Setup</a>.</p>
+<p>In a web browser, launch the Payment Portal.</p>
+<img src="images/paymentPortalPatientSelect.png" width="915" height="677"/><p>The Payment Portal uses a unique link specific to the practice. The URL can be embedded on the practice's website, sent via email, or accessed via Patient Portal. </p>
+<p>The screens that display when utilizing Payment Portal vary depending on the patient's choices and the practice's payment processor. Below are various screens a patient may encounter. </p>
+<h2>Pay Now or Verify and Pay</h2>
+<p>After entering patient details, patients can make a one-time payment without viewing their balance or can verify their information to view their balance and save their payment method for future use.</p>
+<p><div class="Note">Note: If two or more patients have the same name and birthdate (e.g., the office is using the Patient Clone feature), the patient's account number (PatNum) is required. </div>
+</p>
+<img src="images/paymentPortalPayOption.png" width="915" height="677"/><h2>Pay Now</h2>
+<p>If Pay Now is selected, the patient is taken to the payment amount screen.</p>
+<img src="images/paymentPortalHowMuch.png" width="915" height="677"/><p>From here, patients can enter their card number and continue with payment. Screens and fields may vary depending on the payment processor. </p>
+<img src="images/paymentPortalCardInfo.png" width="915" height="677"/><h2>Verify and Pay</h2>
+<p>If Pay and Verify is selected, the patient is sent a verification code to the patient information on file. </p>
+<img src="images/paymentPortalVerificationCode.png" width="915" height="677"/><p>They can then choose to pay their balance, or a specific amount.</p>
+<img src="images/paymentPortalAmount.png" width="915" height="677"/><p>Next, the patient can select from an existing card, or add a new card. For PaySimple users, a bank account can be used as well.</p>
+<img src="images/paymentPortalChoose.png" width="915" height="677"/><p>Optionally, patients can delete cards no longer in use.</p>
+<h2>Receipt</h2>
+<p>If a payment is unsuccessful, an error displays. If a payment is successful, a success screen displays and an emailed receipt is sent to the patient. Optionally, patients can print their receipt.</p>
+<img src="images/paymentPortalReceipt.png" width="915" height="677"/></div>
+</div>
+</body>
+</html>

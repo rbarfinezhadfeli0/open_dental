@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - New Year</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('newyeartasks','feescheduletools','procedurecodes','+lists','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/newyeartasks.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/newyeartasks.html" >v24.2</option><option value="https://www.opendental.com/manual241/newyeartasks.html" >v24.1</option><option value="https://www.opendental.com/manual233/newyeartasks.html" >v23.3</option><option value="https://www.opendental.com/manual232/newyeartasks.html" >v23.2</option><option value="https://www.opendental.com/manual231/newyeartasks.html" >v23.1</option><option value="https://www.opendental.com/manual224/newyeartasks.html" >v22.4</option><option value="https://www.opendental.com/manual223/newyeartasks.html" >v22.3</option><option value="https://www.opendental.com/manual222/newyeartasks.html" >v22.2</option><option value="https://www.opendental.com/manual221/newyeartasks.html" >v22.1</option><option value="https://www.opendental.com/manual214/newyeartasks.html" >v21.4</option><option value="https://www.opendental.com/manual213/newyeartasks.html" >v21.3</option><option value="https://www.opendental.com/manual212/newyeartasks.html" >v21.2</option><option value="https://www.opendental.com/manual211/newyeartasks.html" >v21.1</option><option value="https://www.opendental.com/manual205/newyeartasks.html" >v20.5</option><option value="https://www.opendental.com/manual204/newyeartasks.html" >v20.4</option><option value="https://www.opendental.com/manual203/newyeartasks.html" >v20.3</option><option value="https://www.opendental.com/manual202/newyeartasks.html" >v20.2</option><option value="https://www.opendental.com/manual201/newyeartasks.html" >v20.1</option><option value="https://www.opendental.com/manual194/newyeartasks.html" >v19.4</option><option value="https://www.opendental.com/manual193/newyeartasks.html" >v19.3</option><option value="https://www.opendental.com/manual192/newyeartasks.html" >v19.2</option><option value="https://www.opendental.com/manual191/newyeartasks.html" >v19.1</option><option value="https://www.opendental.com/manual184/newyeartasks.html" >v18.4</option><option value="https://www.opendental.com/manual183/newyeartasks.html" >v18.3</option><option value="https://www.opendental.com/manual182/newyeartasks.html" >v18.2</option><option value="https://www.opendental.com/manual181/newyeartasks.html" >v18.1</option><option value="https://www.opendental.com/manual174/newyeartasks.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>New Year</p></div>
+<div class="GeneralPageContent">
+<p>In Open Dental, there are no close out tasks required at the end of the year. However, there are some setup tasks you may want to consider as you begin the new year.</p>
+<p class="MarginBottomZero"><b>Procedures</b>: </p>
+<ul class="MarginBottomGap">
+<li>Use <a href="feescheduletools.html">Fee Tools</a> to adjust procedure fees (increase by a percentage, import new fees).</li>
+<li>Update procedure codes (e.g., CDT codes). <a href="procedurecodetools.html">Procedure Code Tools</a></li>
+</ul>
+<p class="MarginBottomZero"><b>Scheduling and Time Clock</b>: </p>
+<ul class="MarginBottomGap">
+<li>Set up provider and employee schedules. <a href="schedule.html">Schedule Setup</a></li>
+<li>Set up pay periods (if using the Time Card). <a href="timecardsetup.html">Time Card Setup</a></li>
+</ul>
+<h2>FAQ</h2>
+<p>Below are common questions asked by Open Dental users at the beginning of each new year with answers that can be found in the user manual.</p>
+<p><p><b>How do I update CDT codes (ADA procedure codes) for the new year?</b></p>
+</p>
+<p>New codes are usually included In the last stable release of the year. Update to the version as needed, then run Procedure Code Tools to update. See <a href="procedurecodetools.html">Procedure Code Tools</a>.</p>
+<p><p><b>How do I update CDA procedure codes for the new year?</b></p>
+</p>
+<p>New codes are usually included In the last stable release of the year. Update to the version as needed, then run Procedure Code Tools to update. See <a href="canadaproccodetools.html">Canada Procedure Code Tools</a>.</p>
+<p><b>How do I update fees? There are a few methods:</b></p>
+<ul>
+<li>Increase fees in an existing fee schedule by a percentage. See <a href="feescheduleincrease.html">Fees Increase</a>.</li>
+<li>Import a new fee schedule into an existing fee schedule. Only tab delimited files can be imported (.txt file is preferred). See <a href="feesimport.html">Fees Import</a>.</li>
+<li>Create the new fee schedule, then reassign it to multiple insurance plans. See <a href="feeschedulecheckfees.html">Check Insurance Plan Fees</a>.</li>
+<li>Manually enter new fees in an existing fee schedule. See <a href="procedurecodes.html">Procedure Codes</a>.</li>
+<li>Canada: New fee guides are released as we receive them. See <a href="canadafeeschedules.html">Canada Fee Guides</a> to download them into Open Dental.</li>
+</ul>
+<br/><p><b>Do I need to manually reset patient insurance benefits for the new year? </b></p>
+<p>No, patient insurance benefits will automatically reset on January 1st or the first day of the month indicated in the service year.</p>
+<p><b>How do I clear out adjustments to insurance benefits?</b></p>
+<p>Adjustments are cleared out automatically when the new benefit year begins, so you don't need to do anything.</p>
+<p><b>I have a plan that is no longer in-network. How do I change the insurance plan for all patients on the plan?</b></p>
+<p>First create the new plan, setting the correct plan type. Then use the Move Subscribers tool to move subscribers of the existing plan to the new plan. See <a href="subscribersmove.html">Move Subscribers</a>.</p>
+<p><b>I have a plan that has a new fee schedule. How do I change it for all patients on the plan?</b></p>
+<p>Go to the <a href="insplanlist.html">Insurance Plans</a> and change the fee schedule for the plan.</p>
+<p><b>My employees are not able to clock in using the time clock. What do I need to do?</b></p>
+<p>You probably don't have pay periods set up for the new year. See <a href="timecardsetup.html">Time Card Setup</a>.</p>
+<p><b>My appointment book doesn't show any open times. What do I need to do?</b></p>
+<p>You probably need to add days to the schedule for the new year. See <a href="schedule.html">Schedule Setup</a>.</p>
+<p><b>What year end reports do I need to run?</b></p>
+<p class="MarginBottomZero">Many users find these reports useful: </p>
+<ul class="MarginBottomGap">
+<li><a href="reportprodinc.html">Production and Income Reports</a></li>
+<li><a href="reportdailyprocs.html">Daily Procedures Report</a> (This report can be run for a date range and can be grouped by procedure code)</li>
+<li><a href="accountingreports.html">Accounting Reports</a> (General Ledger Details or Balance Sheet)</li>
+<li><a href="reportaging.html">Aging of Accounts Receivable (A/R) Report</a></li>
+</ul>
+<p>If you had a conversion during the year, reports should be run out of your old software through the date of conversion (e.g. January through date of conversion), and out of Open Dental from the day after conversion and forward (day after conversion through Dec. 31).</p>
+<p><b>What do I need to do to close out the month?</b></p>
+<p>There is nothing that you officially have to do to close out a month in Open Dental. All your financials roll over, and when the calendar changes, so does Open Dental. For tasks that aren't required, but that you may find useful at month's end, see <a href="closeoutmonth.html">Close Out Month</a>.</p>
+<p><b>What do I need to do to close out the year?</b></p>
+<p>There is nothing that you officially have to do to close out the year in Open Dental. However, there are some security features to prevent changing data after a certain date, such as locking accounting entries and setting global lock dates. See <a href="securitylockdates.html">Security Lock Dates</a>.</p>
+</div>
+</div>
+</body>
+</html>

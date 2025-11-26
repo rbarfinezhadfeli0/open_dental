@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Email Message Edit</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('emailmessage','toolbar','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/emailmessage.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/emailmessage.html" >v24.2</option><option value="https://www.opendental.com/manual241/emailmessage.html" >v24.1</option><option value="https://www.opendental.com/manual233/emailmessage.html" >v23.3</option><option value="https://www.opendental.com/manual232/emailmessage.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/emailmessage.html" >v23.1</option><option value="https://www.opendental.com/manual224/emailmessage.html" >v22.4</option><option value="https://www.opendental.com/manual223/emailmessage.html" >v22.3</option><option value="https://www.opendental.com/manual222/emailmessage.html" >v22.2</option><option value="https://www.opendental.com/manual221/emailmessage.html" >v22.1</option><option value="https://www.opendental.com/manual214/emailmessage.html" >v21.4</option><option value="https://www.opendental.com/manual213/emailmessage.html" >v21.3</option><option value="https://www.opendental.com/manual212/emailmessage.html" >v21.2</option><option value="https://www.opendental.com/manual211/emailmessage.html" >v21.1</option><option value="https://www.opendental.com/manual205/emailmessage.html" >v20.5</option><option value="https://www.opendental.com/manual204/emailmessage.html" >v20.4</option><option value="https://www.opendental.com/manual203/emailmessage.html" >v20.3</option><option value="https://www.opendental.com/manual202/emailmessage.html" >v20.2</option><option value="https://www.opendental.com/manual201/emailmessage.html" >v20.1</option><option value="https://www.opendental.com/manual194/emailmessage.html" >v19.4</option><option value="https://www.opendental.com/manual193/emailmessage.html" >v19.3</option><option value="https://www.opendental.com/manual192/emailmessage.html" >v19.2</option><option value="https://www.opendental.com/manual191/emailmessage.html" >v19.1</option><option value="https://www.opendental.com/manual184/emailmessage.html" >v18.4</option><option value="https://www.opendental.com/manual183/emailmessage.html" >v18.3</option><option value="https://www.opendental.com/manual182/emailmessage.html" >v18.2</option><option value="https://www.opendental.com/manual181/emailmessage.html" >v18.1</option><option value="https://www.opendental.com/manual174/emailmessage.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Email Message Edit</p></div>
+<div class="GeneralPageContent">
+<p>Emails can be sent to patients directly from the Open Dental program.</p>
+<p>In the <a href="toolbar.html">Main Toolbar</a>, click <b>Email</b>.</p>
+<img src="images/emailEdit.png" width="915" height="662"/><p>Alternatively, click the Email dropdown and select a referral source to send an email to a referral attached to the selected patient. Emails can also be generated and sent in various other parts of Open Dental.</p>
+<h2>Edit Template</h2>
+<img src="images/emailEditTemplate.png" width="179" height="264"/><p>To insert <a href="emailtemplates.html">Email Templates</a>, select it and click <b>Insert</b>. The template's subject and message will replace any existing text (including autographs) and associated attachments will be added.</p>
+<h2>Email Autograph</h2>
+<img src="images/emailEditAutograph.png" width="179" height="269"/><p>Select an <a href="emailautographs.html">E-mail Autograph</a> from the list and click <b>Insert</b> to add it to the end of the email. Plain Text Autographs are inserted automatically. Autographs with HTML formatting can only be added via the <a href="emailhtml.html">Email HTML Edit</a> window.</p>
+<p>If the <i>From</i> email address is associated to a Plain Text Autograph, it is added to the email automatically. If the <i>From</i> email address is associated with an HTML Autograph, the Autograph will be appended to the email when sending. </p>
+<h2>Email Addresses</h2>
+<img src="images/emailEditFromInfo.png" width="550" height="150"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Username</b>: The currently logged-in Open Dental user.</li>
+<li><b>Sent/Received</b>: Displays if the email was sent or received. When sending, the window is in compose mode and this status will be <i>Neither</i></li>
+<li><b>Date/Time</b>: The date and time of the sent or received email. When sending, this will display as <i>Unsent</i>.</li>
+<li><b>From</b>: The email address used to send the email. The default address used differs depending on how the email is generated. <ul>
+<li>Click <b>[...]</b> to open all email address options for this user and change the From address. <ul>
+<img src="images/emailAddresses.png" width="912" height="259"/><li>Double-click an address or highlight and click <b>OK</b> to replace the current From address. </li>
+<li>Alternatively, type an email address and alias manually (e.g., If bob@gmail.com is selected in the dropdown, and <i>Sparkly Dental &lt;bob@gmail.com</i>&gt; is entered, the recipient will see <i>Sparkly Dental</i> instead of <i>bob@gmail.com</i>).</li>
+</ul>
+</li>
+<li>When clicking the <b>Email</b> button:  <ul>
+<li>If the logged-on user has a user email set up, this is the default.</li>
+<li>If the logged-on user does not have a user email set up and Clinics are enabled, the default email address for the patient's assigned Clinic, in <a href="cliniceditwindow.html">Clinic Edit</a>, is used.</li>
+<li>If the logged-on user does not have a user email set up and Clinics are not enabled (or the patient's assigned Clinic has no default email address), the Default email address in <a href="emailsetup.html">Email Setup</a> is used. </li>
+</ul>
+</li>
+<li> When generating a referral email from the Email dropdown, the default email address for the patient's assigned Clinic is used by default. If Clinics are not enabled (or the patient's assigned Clinic has no default email address), the Default email address in Email Setup is used.</li>
+</ul>
+<ul>
+</ul>
+</li>
+<li><b>To</b>: Defaults to the patient's email address on file. When starting to type a new email address, a contact list populates with email addresses of previous recipients. Select from the list or continue typing the address. If multiple addresses are entered, all recipients can view and reply to other recipients on the email. </li>
+<li><b>CC</b>: Enter email addresses that will receive a copy of the message. Blank by default. Cannot be used with Secure Email. </li>
+<li><b>BCC</b>: Enter email addresses that will be sent a copy of the message, but who will not show as a recipient on any other recipient's email copy. Blank by default. Cannot be used with Secure Email. </li>
+<li><b>Signed By</b>: Obsolete. Previously used for Encrypted Email. See Digital Signatures below.</li>
+</ul>
+<h2>Attachments</h2>
+<img src="images/emailEditAttachments.png" width="230" height="182"/><p>Attach files to the email. Click <b>Add</b> an attachment. Users are prompted to locate and select the file.</p>
+<p>If images and documents are stored in a local or network folder (see <a href="paths.html">Data Paths Setup</a>), a list of all images in the selected patient's <a href="atozfolder.html">A to Z Folder</a> (i.e., OpenDentImages) on the local or network folder will display first. Locate the file and click Open to select it.</p>
+<p>If images and documents are stored in <a href="dropbox.html">Dropbox</a>, a Select Files window opens listing all images in the selected patient's Dropbox A to Z folder.</p>
+<p class="MarginBottomZero"><b>Right-Click Options:</b></p>
+<ul class="MarginBottomGap">
+<li>Open: Open the selected attachment.</li>
+<li>Rename: Rename the selected attachment.</li>
+<li>Remove: Remove the selected attachment from the email.</li>
+<li>Double-click a file to view it.</li>
+</ul>
+<p><div class="Note">Note: Microsoft account users cannot send attachments that include file names with invalid characters. Invalid characters include spaces and the following: ; , ( ) [ ] { } % $ + ! * = &amp; ? @ # ~ ' " " &lt; &gt; ` ^ </div>
+</p>
+<h2>Show Email</h2>
+<img src="images/emailEditShowEmail.png" width="227" height="186"/><p class="MarginBottomZero">Select where in Open Dental an individual email will show or not show. To show the email in an area, highlight it. To hide the email in the area, deselect it. By default, all areas are selected.  </p>
+<ul class="MarginBottomGap">
+<li>Email Inbox</li>
+<li>Appointment Edit: <a href="aptedit.html">Edit Appointment</a>, Communications Log area. Only displays emails sent from <a href="econfirmationsetup.html">eConfirmations</a> and <a href="ereminderssetup.html">eReminders</a>.</li>
+<li>Chart Progress Notes: <a href="chart.html">Chart Module</a>, Progress Notes</li>
+<li>Account Progress Notes: <a href="account.html">Account Module</a>, Progress Notes</li>
+<li>Account Comm Log: Account module, Communications Log area</li>
+</ul>
+<p>To view emails that have been hidden in all areas, go to the <a href="emailinbox.html">Email Client</a> and check <i>Show Hidden Emails</i>.</p>
+<h2>Subject and Body</h2>
+<img src="images/emailEditSubject.png" width="659" height="310"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Subject</b>: The subject of the email message.</li>
+<li><b>Body</b>: The message text. If an <a href="emailautographs.html">Email Autograph</a> is associated with the From address, it is inserted by default. If the autograph is associated to multiple email addresses, the autograph listed first is inserted.</li>
+</ul>
+<h2>Buttons</h2>
+<img src="images/emailEditButtons.png" width="915" height="39"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Delete</b>: Delete a sent email from Open Dental. It will remain on the mail server, but will not download again. Emails attached to a patient, once deleted, are removed from the Sent Messages tab, yet still visible in the Commlog and Progress Notes. Emails not attached to a patient are permanently removed.</li>
+<li><b>Raw Message</b>: Only displays for downloaded emails. Informational only. </li>
+<li><b>Save</b>: Save an email without sending. Saved emails are attached to a patient list in the Chart module and Commlog. If Open Dental shuts down unexpectedly, emails that are in progress are automatically saved.</li>
+<li><b>Refresh</b>: Only displays for downloaded emails. Refresh the window.</li>
+<li><b> Edit Text</b>: Edit the message using basic plain text.</li>
+<li><b>Edit HTML</b>: Edit the message using HTML coding (for images, fonts, etc.) See <a href="emailhtml.html">HTML Email</a> for more information.<br/><div class="Note">Note: If the message has been edited using Edit HTML, clicking Edit Text switches the email to plain-text formatting. The HTML tags are not stripped from the message automatically and must be deleted before sending.</div>
+</li>
+<li>There are three options for sending an email. The default button may change, depending on setup. Click the dropdown to see additional options.  <ul>
+<li><b>Send</b>: Send a regular, unencrypted, email. This option is the default if Secure Email is not enabled.</li>
+<li><b>Send Secure</b>: Send using Secure Email. This option is the default if Secure Email is enabled. See <a href="secureemailsetup.html">Secure Email Setup</a>.</li>
+<li><b>Direct Messaging</b>: Obsolete. Was used for <a href="emailencrypted.html">Email Encryption Options</a>.</li>
+<li>Click <b>Cancel</b> to close the Edit Email Message window without saving changes.</li>
+</ul>
+</li>
+</ul>
+<h2>Sent Emails</h2>
+<p class="MarginBottomZero">Double-click a sent email preview to launch the email in a new window. The message contents are read-only.  </p>
+<ul class="MarginBottomGap">
+<li><b>Delete</b>: Click to delete the email from Open Dental.</li>
+<li><b>Save</b>: Click to save changes to the Show Email tab.</li>
+</ul>
+<h2>Digital Signatures</h2>
+<p>If the <b>Sig</b> button or <i>Signed By</i> field displays, this email was sent using <a href="emailencrypted.html">Encrypted Email</a>. Click <b>Sig</b> to view signature details. This feature is now obsolete. </p>
+</div>
+</div>
+</body>
+</html>

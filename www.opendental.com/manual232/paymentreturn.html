@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Credit Card Return</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('paymentreturn','payment','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/paymentreturn.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/paymentreturn.html" >v24.2</option><option value="https://www.opendental.com/manual241/paymentreturn.html" >v24.1</option><option value="https://www.opendental.com/manual233/paymentreturn.html" >v23.3</option><option value="https://www.opendental.com/manual232/paymentreturn.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/paymentreturn.html" >v23.1</option><option value="https://www.opendental.com/manual224/paymentreturn.html" >v22.4</option><option value="https://www.opendental.com/manual223/paymentreturn.html" >v22.3</option><option value="https://www.opendental.com/manual222/paymentreturn.html" >v22.2</option><option value="https://www.opendental.com/manual221/paymentreturn.html" >v22.1</option><option value="https://www.opendental.com/manual214/paymentreturn.html" >v21.4</option><option value="https://www.opendental.com/manual213/paymentreturn.html" >v21.3</option><option value="https://www.opendental.com/manual212/paymentreturn.html" >v21.2</option><option value="https://www.opendental.com/manual211/paymentreturn.html" >v21.1</option><option value="https://www.opendental.com/manual205/paymentreturn.html" >v20.5</option><option value="https://www.opendental.com/manual204/paymentreturn.html" >v20.4</option><option value="https://www.opendental.com/manual203/paymentreturn.html" >v20.3</option><option value="https://www.opendental.com/manual202/paymentreturn.html" >v20.2</option><option value="https://www.opendental.com/manual201/paymentreturn.html" >v20.1</option><option value="https://www.opendental.com/manual194/paymentreturn.html" >v19.4</option><option value="https://www.opendental.com/manual193/paymentreturn.html" >v19.3</option><option value="https://www.opendental.com/manual192/paymentreturn.html" >v19.2</option><option value="https://www.opendental.com/manual191/paymentreturn.html" >v19.1</option><option value="https://www.opendental.com/manual184/paymentreturn.html" >v18.4</option><option value="https://www.opendental.com/manual183/paymentreturn.html" >v18.3</option><option value="https://www.opendental.com/manual182/paymentreturn.html" >v18.2</option><option value="https://www.opendental.com/manual181/paymentreturn.html" >v18.1</option><option value="https://www.opendental.com/manual174/paymentreturn.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Credit Card Return</p></div>
+<div class="GeneralPageContent">
+<p>Refunds can be issued on <a href="paymentpatientcreditcard.html">Credit Card Payment</a>.</p>
+<p>Refunds cannot be performed directly to a patient's checking or savings account via an ACH transaction. Instead process a check or debit refund. When issuing a Refund, the credit is posted as a negative payment to the patient account. </p>
+<p>Refund steps in Open Dental vary depending on the reason a refund is given. First follow steps for an Open Dental <a href="refunds.html">Refund</a> before entering the refund for the credit card processor.</p>
+<p>When processing a credit card refund, the <a href="paymenttransdetails.html">Credit Card Transaction Details</a> will be automatically added to the payment note. Payments allocated to procedures for multiple family members will post to each patient account.</p>
+<p>If multiple card processing programs are enabled, and a card or account is selected, use the program listed next to the number to process the payment. Otherwise, the user will be prompted to enter new card or account information.</p>
+<h2>XCharge</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Click the <a href="xcharge.html">XCharge (OpenEdge)</a> button to initiate the credit card processor. </li>
+<li>Select <i>Return</i> as the transaction type. <ul>
+<li>If this card is already stored in the <a href="creditcardsmanage.html">Credit Card Manage</a> window, it immediately processes the return. No additional steps are needed.</li>
+<li>If the card is not saved to the patient's Credit Card Manage, it must be added to process the return. Proceed to Step 3 to add the card. Alternatively, if the payment was made from another patient's account and the card is saved there, the return can be initiated from that account instead.</li>
+</ul>
+</li>
+<li>Check <i>Save Token</i> to safely store the card on file then click OK to enter the new card information.</li>
+<li>Click Process or F12.</li>
+</ol>
+<h2>EdgeExpress</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Click the <b>Global Payments Integrated </b>button to initiate the <a href="edgeexpress.html">Edge Express</a> credit card processor.</li>
+<li>Select <i>Return</i> as the transaction type.</li>
+<li>Select the Card Entry Method.</li>
+<li>Enter the <i>Transaction ID</i> from the original payment.</li>
+<li>Click OK.</li>
+</ol>
+<h2>PayConnect</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Click the <a href="payconnectpaymentwindow.html">PayConnect</a> button to initiate the credit card processor.</li>
+<li>Select <i>Return</i> as the transaction type.</li>
+<li>PayConnect 2.0 users, select the Processing Method.</li>
+<li>PayConnect 1.0 users, for cards not saved to Credit Card Manage, enter the card information and check <i>Save Token</i> to safely store the card on file.  <ul>
+<li>Alternatively, if the payment was made from another patient's account and the card is saved there, the return can be initiated from that account instead.</li>
+</ul>
+</li>
+<li>Enter the <i>Reference Number</i> or <i>Transaction ID</i> from the original payment.</li>
+<li>Ensure the amount in the PayConnect window is entered as a positive.</li>
+<li>Click OK.</li>
+</ol>
+<h2>PaySimple</h2>
+<p class="MarginBottomZero"><div class="Note">Note: PaySimple does not allow partial refunds. The amount must match the entirety of the original payment.</div>
+</p>
+<ol class="MarginBottomGap">
+<li>Click the <a href="paysimple.html">PaySimple</a> button to initiate the credit card processor.</li>
+<li>Select <i>Return</i> as the transaction type.</li>
+<li>For cards or accounts not saved to Credit Card Manage enter the card information and uncheck <i>One-Time Payment</i> to safely store the card on file.  <ul>
+<li>Alternatively, if the payment was made from another patient's account and the card is saved there, the return can be initiated from that account instead.</li>
+</ul>
+</li>
+<li>Enter the<i> Transaction ID</i> in the Ref Number field.</li>
+<li>Click OK.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>

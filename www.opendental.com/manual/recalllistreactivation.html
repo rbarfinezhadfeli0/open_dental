@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Recall List - Reactivations</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('recalllistreactivation','recalllist','appointmentlists','appointments','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/recalllistreactivation.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/recalllistreactivation.html" >v24.2</option><option value="https://www.opendental.com/manual241/recalllistreactivation.html" >v24.1</option><option value="https://www.opendental.com/manual233/recalllistreactivation.html" >v23.3</option><option value="https://www.opendental.com/manual232/recalllistreactivation.html" >v23.2</option><option value="https://www.opendental.com/manual231/recalllistreactivation.html" >v23.1</option><option value="https://www.opendental.com/manual224/recalllistreactivation.html" >v22.4</option><option value="https://www.opendental.com/manual223/recalllistreactivation.html" >v22.3</option><option value="https://www.opendental.com/manual222/recalllistreactivation.html" >v22.2</option><option value="https://www.opendental.com/manual221/recalllistreactivation.html" >v22.1</option><option value="https://www.opendental.com/manual214/recalllistreactivation.html" >v21.4</option><option value="https://www.opendental.com/manual213/recalllistreactivation.html" >v21.3</option><option value="https://www.opendental.com/manual212/recalllistreactivation.html" >v21.2</option><option value="https://www.opendental.com/manual211/recalllistreactivation.html" >v21.1</option><option value="https://www.opendental.com/manual205/recalllistreactivation.html" >v20.5</option><option value="https://www.opendental.com/manual204/recalllistreactivation.html" >v20.4</option><option value="https://www.opendental.com/manual203/recalllistreactivation.html" >v20.3</option><option value="https://www.opendental.com/manual202/recalllistreactivation.html" >v20.2</option><option value="https://www.opendental.com/manual201/recalllistreactivation.html" >v20.1</option><option value="https://www.opendental.com/manual194/recalllistreactivation.html" >v19.4</option><option value="https://www.opendental.com/manual193/recalllistreactivation.html" >v19.3</option><option value="https://www.opendental.com/manual192/recalllistreactivation.html" >v19.2</option><option value="https://www.opendental.com/manual191/recalllistreactivation.html" >v19.1</option><option value="https://www.opendental.com/manual184/recalllistreactivation.html" >v18.4</option><option value="https://www.opendental.com/manual183/recalllistreactivation.html" >v18.3</option><option value="https://www.opendental.com/manual182/recalllistreactivation.html" >v18.2</option><option value="https://www.opendental.com/manual181/recalllistreactivation.html" >v18.1</option><option value="https://www.opendental.com/manual174/recalllistreactivation.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Recall List - Reactivations</p></div>
+<div class="GeneralPageContent">
+<p>The reactivation list is used to track contact attempts for inactive patients.</p>
+<p>In the <a href="recalllist.html">Recall List</a>, select the <b>Reactivations</b> tab.</p>
+<img src="images/reactivationList.png" width="915" height="495"/><p class="MarginBottomZero">To show the Reactivation List, an office must first do the following: </p>
+<ul class="MarginBottomGap">
+<li>Enable Reactivation in <a href="showfeatures.html">Show Features</a>.</li>
+<li>Create a REACT commlog type in <a href="definitionscommlogtypes.html">Definitions: Commlog Types</a>.</li>
+<li>Set preferred statuses in <a href="reactivationsetup.html">Setup Reactivation</a>.</li>
+</ul>
+<h2>View</h2>
+<p>These settings determine how to filter the patients that appear on list.</p>
+<p><b>From</b>: Enter date before which unseen patients will not be included in reactivation list. Must be a date prior to the To date. Together these settings creates a range of potential patients to consider. Useful for offices with long histories and don't want to sift through patients that have not been in for many years.</p>
+<p><b>To</b>: Enter the date since last seen. Returns a list of patients who were last seen before the date entered and have not had a completed procedure since.</p>
+<p><b>Show Reactivate</b>: Select number of contact attempts.</p>
+<p class="MarginBottomZero"><b>Sort</b>: Sort by: </p>
+<ul class="MarginBottomGap">
+<li>Last Contacted</li>
+<li>Billing Type</li>
+<li>Alphabetical</li>
+</ul>
+<p><b>Billing Type</b>: Filter by patients billing type.</p>
+<p><b>Provider</b>: Patients primary provider.</p>
+<p><b>Clinic</b>: Filter for the selected clinic. </p>
+<p><b>Site</b>: Filter for the selected site. </p>
+<p class="MarginBottomZero"><b>Group Families</b>: Group family members together on the list.<br/> When checked: </p>
+<ul class="MarginBottomGap">
+<li>If a patient's <i>Preferred Recall Method</i> is set to Email, the guarantor's email address is displayed. The guarantor's email address is used when sending emails.</li>
+<li> The guarantor's address is used when generating postcards or labels for multiple family members,</li>
+</ul>
+<p><b>Show "Do Not Contact"</b>: Show patients who are marked as <i>Do Not Contact</i>.</p>
+<p><b>Exclude "Inactive"</b>: Filter out any patients who are marked with the <i>Inactive</i> status.</p>
+<p>Click<b> Refresh List</b> for filters to take affect.</p>
+<p><b>Set Status</b>: Set the status for all selected patients.</p>
+<p><b>Email From</b>: Select the email address to send from. </p>
+<h2>Reactivation List</h2>
+<p class="MarginBottomZero">Patients must meet the following to show: </p>
+<ul>
+<li>Patient must have had at least one completed procedure in the past. </li>
+<li>Patient cannot have any future scheduled appointments.</li>
+<li>Patient has not been contacted (REACT commlog type) within the time period set on the Reactivation Settings.</li>
+<li>Patient has not been contacted (REACT commlog type) more than the maximum number of allowed attempts as set in the Reactivation Settings.</li>
+<li>Patient has not been marked as "Do Not Contact"</li>
+</ul>
+<p class="MarginBottomGap"><div class="Note">Note: Missed (D9986) or cancelled (D9987) procedures are not considered completed procedures for patients on this list.</div>
+</p>
+<p>Right-click on a patient to see the Family Module or Account Module.</p>
+<p>Double-click on a patient to view reactivation information. <br/><img src="images/reactivationEdit.png" width="554" height="294" class="ImageInParagraph"/><br/><b>Status</b>: Manually change reactivation status. <br/><b>Do Not Contact</b>: Check this box to mark patient as <i>Do Not Contact</i>.<br/><b>Administrative Note</b>: Any notes pertaining to the patient that may be useful for office staff.</p>
+<h2>Options</h2>
+<p>From the main Reactivation List, highlight the the patients to contact, then select from the options below.</p>
+<p><b>Postcard Preview</b>: Preview postcards to send to the selected patients.<br/><b>Single Labels</b>: Print a single label for each selected patient to the default printer for Labels - Single.<br/><b>Label Preview</b>: Generate and preview a standard sheet of 30 labels for selected patients. Click Print to print to the default printer for Labels - Sheet.<br/><b>E-Mail</b>: Email the selected patients.<br/><b>Print List</b>: Print the entire Reactivation List.<br/><b>Go to Family</b>: Select a patient and go to the Family Module.<br/><b>Go to Account</b>: Select a patient and go to the Account Module.<br/><b>Comm</b>: Create a commlog for each selected patient.<br/><b>Sched Patient</b>: Schedule the selected patient.<br/><b>Sched Family</b>: Schedule all related family members.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Network and Computer Setup</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('computernetworksetup','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/computernetworksetup.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/computernetworksetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/computernetworksetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/computernetworksetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/computernetworksetup.html" >v23.2</option><option value="https://www.opendental.com/manual231/computernetworksetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/computernetworksetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/computernetworksetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/computernetworksetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/computernetworksetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/computernetworksetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/computernetworksetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/computernetworksetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/computernetworksetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/computernetworksetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/computernetworksetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/computernetworksetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/computernetworksetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/computernetworksetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/computernetworksetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/computernetworksetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/computernetworksetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/computernetworksetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/computernetworksetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/computernetworksetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/computernetworksetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/computernetworksetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/computernetworksetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Network and Computer Setup</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="technical.html">Technical</a>.</p>
+<p>We recommend working with a networking professional to set up your network and computers. The following links may be helpful.</p>
+<h2>Basic Setup</h2>
+<p>This guidance is targeted towards smaller practices (e.g., less than 20 workstations in a single location on a single network). For more advanced topics see below.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><a href="../site/computerrequirements.html">Computer Hardware Requirements</a></li>
+<li><a href="connectingworkstations.html">Connecting Workstations to a Database</a></li>
+<li>Security Issues (HIPAA and data protection) <ul>
+<li><a href="securitycomputers.html">Computer Security</a></li>
+<li><a href="security.html">Open Dental Security</a>: Define who has permission and access to specific features. </li>
+</ul>
+</li>
+<li>Open Dental Setup  <ul>
+<li><a href="../resources/Setup%20Checklist.pdf">Setup Checklist.pdf</a></li>
+<li><a href="../resources/conversions/Post%20Conversion%20Checklist.pdf">Post Conversion Checklist.pdf</a></li>
+<li><a href="clearinghouses.html">Clearinghouses/E-Claims</a></li>
+<li><a href="../site/programbridges.html">Bridges to Imaging Software</a></li>
+</ul>
+</li>
+</ul>
+<h2>Advanced Topics</h2>
+<p>Large offices and more complex networking situations may need to address additional issues. This applies to offices that use many computers (20+) in a single location, domains, multiple locations, multiple networks, VPNs, thin clients, virtualization, etc. These setups vary in complexity. Guidance for IT is provided below.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><a href="../resources/HardwareRequirements.pdf">Hardware Requirements for Enterprise Locations</a> (PDF)</li>
+<li><a href="multiplelocations.html">Multiple Locations </a></li>
+<li><a href="replication.html">Replication</a></li>
+<li><a href="middletier.html">Middle Tier </a></li>
+<li><a href="remote.html">Remote Access</a></li>
+<li><a href="hostmultipledatabases.html">Host Multiple Databases from One Web Server</a></li>
+</ul>
+</div>
+</div>
+</body>
+</html>

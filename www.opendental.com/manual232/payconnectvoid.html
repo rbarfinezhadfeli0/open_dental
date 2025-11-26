@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - PayConnect Void</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('payconnectvoid','payconnectpaymentwindow','paymentpatientcreditcard','payment','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/payconnectvoid.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/payconnectvoid.html" >v24.2</option><option value="https://www.opendental.com/manual241/payconnectvoid.html" >v24.1</option><option value="https://www.opendental.com/manual233/payconnectvoid.html" >v23.3</option><option value="https://www.opendental.com/manual232/payconnectvoid.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/payconnectvoid.html" >v23.1</option><option value="https://www.opendental.com/manual224/payconnectvoid.html" >v22.4</option><option value="https://www.opendental.com/manual223/payconnectvoid.html" >v22.3</option><option value="https://www.opendental.com/manual222/payconnectvoid.html" >v22.2</option><option value="https://www.opendental.com/manual221/payconnectvoid.html" >v22.1</option><option value="https://www.opendental.com/manual214/payconnectvoid.html" >v21.4</option><option value="https://www.opendental.com/manual213/payconnectvoid.html" >v21.3</option><option value="https://www.opendental.com/manual212/payconnectvoid.html" >v21.2</option><option value="https://www.opendental.com/manual211/payconnectvoid.html" >v21.1</option><option value="https://www.opendental.com/manual205/payconnectvoid.html" >v20.5</option><option value="https://www.opendental.com/manual204/payconnectvoid.html" >v20.4</option><option value="https://www.opendental.com/manual203/payconnectvoid.html" >v20.3</option><option value="https://www.opendental.com/manual202/payconnectvoid.html" >v20.2</option><option value="https://www.opendental.com/manual201/payconnectvoid.html" >v20.1</option><option value="https://www.opendental.com/manual194/payconnectvoid.html" >v19.4</option><option value="https://www.opendental.com/manual193/payconnectvoid.html" >v19.3</option><option value="https://www.opendental.com/manual192/payconnectvoid.html" >v19.2</option><option value="https://www.opendental.com/manual191/payconnectvoid.html" >v19.1</option><option value="https://www.opendental.com/manual184/payconnectvoid.html" >v18.4</option><option value="https://www.opendental.com/manual183/payconnectvoid.html" >v18.3</option><option value="https://www.opendental.com/manual182/payconnectvoid.html" >v18.2</option><option value="https://www.opendental.com/manual181/payconnectvoid.html" >v18.1</option><option value="https://www.opendental.com/manual174/payconnectvoid.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>PayConnect Void</p></div>
+<div class="GeneralPageContent">
+<p>PayConnect payments can be voided, rather than returned, if the payment was made in a certain time window.</p>
+<p>In the <a href="paymentpatientcreditcard.html">Payment Window</a>, click <a href="payconnectpaymentwindow.html">PayConnect</a>.</p>
+<img src="images/payconnectVoid.png" width="402" height="425"/><p>Voiding <a href="payconnectpaymentwindow.html">PayConnect</a> credit card sales or returns removes the original transaction from the patient's bank account the same day. </p>
+<p> After processing a void, it is recommed to run the <a href="incometransfermanager.html">Income Transfer Manager</a> to ensure the void is properly allocated. </p>
+<h2>Void a PayConnect 1.0 Transaction</h2>
+<p>If using PayConnect 1.0, the interface shown at the top of this page appears when processing a void.</p>
+<p>When using PayConnect 1.0, transactions can only be voided within 30 minutes of the original transaction. </p>
+<p>If the transaction is older than 25 minutes or has been deposited, process a <a href="paymentreturn.html">Credit Card Return</a> instead. Returns require a few days to process.</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Locate the original transaction to be voided. Copy the <i>Ref Number</i> from the Payment Note, then identify the payment amount and the clinic, provider, and allocation.</li>
+<li>In the patient's account, click <b>Payment</b>. </li>
+<li>Enter the amount of the original transaction as a negative (e.g., -66).  <ul>
+<li>Alternatively, right-click the original payment, click <b>Refund</b>, and go to Step 5</li>
+</ul>
+</li>
+<li>Click OK to open the <a href="payment.html">Payment</a> window. <ol>
+<li>If using <a href="clinics.html">Clinics</a>, select the clinic of the original payment.</li>
+<li>Allocate <a href="paysplit.html">Payment Splits</a> to the production (i.e., procedures, adjustments, or unearned income types) of the original payment. See <a href="paysplitsedit.html">Paysplit Revise</a>.</li>
+</ol>
+</li>
+<li>After verifying the paysplits, click <b>PayConnect</b>. <ul>
+<li>If using right-click, Refund, paysplits are added automatically to match the original payment.</li>
+</ul>
+</li>
+<li>In the PayConnect Payment window, select <i>Void</i> and enter the Ref Number, Card Number, Expiration Date, and Security code of the original transaction.</li>
+<li>Click <b>OK</b> to process. The payment window closes immediately and the transaction details are automatically added to the Payment Note.</li>
+</ol>
+<h2>Void a PayConnect 2.0 Transaction</h2>
+<p>If using PayConnect 2.0, the interface shown below appears when processing a void. </p>
+<img src="images/payConnect2Void.png" width="446" height="438"/><p>When using PayConnect 2.0, transactions can be voided until the batch closes at the end of the day. This may differ depending on what the office has set up with PayConnect. If the batch has closed or there is an error when attempting the void, process a return instead.</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Locate the original transaction to be voided. Copy the <i>Reference Number</i> from the Payment Note, then identify the payment amount and the Clinic, provider, and allocation.</li>
+<li>In the patient's account, click <b>Payment</b>. </li>
+<li>Enter the amount of the original transaction as negative (e.g., -25). <ul>
+<li>Alternatively, right-click the original payment, click <b>Refund</b>, and go to Step 5.</li>
+</ul>
+</li>
+<li>Click <b>OK</b> to open the payment window. <ol>
+<li>If using Clinics, select the clinic of the original payment.</li>
+<li>Allocate Payment Splits to the production (i.e., procedures, adjustments, or unearned income types) of the original payment.</li>
+</ol>
+</li>
+<li>After verifying the paysplits, click <b>PayConnect</b>. <ul>
+<li>If using right-click, Refund, paysplits are added automatically to match the original payment.</li>
+</ul>
+</li>
+<li>In the PayConnect Payment window, select <i>Void</i> and enter the Reference Number.</li>
+<li>Click <b>OK</b> to process. The payment window closes immediately and the transaction details are automatically added to the Payment Note.</li>
+</ol>
+</div>
+</div>
+</body>
+</html>

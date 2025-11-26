@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Sheet Input Field</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('sheetsinputfield','sheetsetup','sheets','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/sheetsinputfield.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/sheetsinputfield.html" >v24.2</option><option value="https://www.opendental.com/manual241/sheetsinputfield.html" >v24.1</option><option value="https://www.opendental.com/manual233/sheetsinputfield.html" >v23.3</option><option value="https://www.opendental.com/manual232/sheetsinputfield.html" >v23.2</option><option value="https://www.opendental.com/manual231/sheetsinputfield.html" >v23.1</option><option value="https://www.opendental.com/manual224/sheetsinputfield.html" >v22.4</option><option value="https://www.opendental.com/manual223/sheetsinputfield.html" >v22.3</option><option value="https://www.opendental.com/manual222/sheetsinputfield.html" >v22.2</option><option value="https://www.opendental.com/manual221/sheetsinputfield.html" >v22.1</option><option value="https://www.opendental.com/manual214/sheetsinputfield.html" >v21.4</option><option value="https://www.opendental.com/manual213/sheetsinputfield.html" >v21.3</option><option value="https://www.opendental.com/manual212/sheetsinputfield.html" >v21.2</option><option value="https://www.opendental.com/manual211/sheetsinputfield.html" >v21.1</option><option value="https://www.opendental.com/manual205/sheetsinputfield.html" >v20.5</option><option value="https://www.opendental.com/manual204/sheetsinputfield.html" >v20.4</option><option value="https://www.opendental.com/manual203/sheetsinputfield.html" >v20.3</option><option value="https://www.opendental.com/manual202/sheetsinputfield.html" >v20.2</option><option value="https://www.opendental.com/manual201/sheetsinputfield.html" >v20.1</option><option value="https://www.opendental.com/manual194/sheetsinputfield.html" >v19.4</option><option value="https://www.opendental.com/manual193/sheetsinputfield.html" >v19.3</option><option value="https://www.opendental.com/manual192/sheetsinputfield.html" >v19.2</option><option value="https://www.opendental.com/manual191/sheetsinputfield.html" >v19.1</option><option value="https://www.opendental.com/manual184/sheetsinputfield.html" >v18.4</option><option value="https://www.opendental.com/manual183/sheetsinputfield.html" >v18.3</option><option value="https://www.opendental.com/manual182/sheetsinputfield.html" >v18.2</option><option value="https://www.opendental.com/manual181/sheetsinputfield.html" >v18.1</option><option value="https://www.opendental.com/manual174/sheetsinputfield.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Sheet Input Field</p></div>
+<div class="GeneralPageContent">
+<p>Use Input Fields to indicate to users or patients where data is entered on a sheet. </p>
+<p>In <a href="sheetsetup.html">Edit Sheet Def</a>, click <b>Input Field</b>.</p>
+<img src="images/sheetsInputField.png" width="573" height="501"/><p>Alternatively, double-click an existing Input Field from the Fields list to edit.</p>
+<p>Input fields are <a href="sheetsaddelements.html">Sheet Field Types</a> used to indicate areas where a user will enter data. </p>
+<p>They are commonly added to <a href="sheetspatientform.html">Patient Form</a> and <a href="sheetsmedicalhistory.html">Medical History</a> sheets where entered data can be imported directly to the database. See: <a href="patientformsimport.html">Import Patient Forms and Medical Histories</a>.</p>
+<p>When a new sheet is created and viewed on a device connected to the office database, including office computers, kiosks, and eClipboard tablets, the Input Fields will automatically show any data from the chart that is in an importable field.</p>
+<div class="Note">Note: Medication, allergy, and problem input fields for Medical History sheets require special setup.</div>
+<br/><br/><p class="MarginBottomZero"><b>Field Name</b>: The available input fields for the selected sheet type. Available fields will change depending on the sheet type. </p>
+<ul class="MarginBottomGap">
+<li>Database fields can be imported.</li>
+<li><i>misc</i> can be used to collect information that doesn't correspond to a database field. The entered data cannot be imported, but can be reported in a custom query. Entered data is stored in the sheetfield.fieldvalue column in the sheetfield table. Make sure to enter a corresponding <i>Reportable Name</i>. An example of a custom query is at the bottom of this page.</li>
+</ul>
+<p><b>Reportable Name</b>: Only shows when <i>misc</i> is the selected Field Name. Enter an identifying name for the <i>misc</i> field.</p>
+<p><b>Mobile Caption</b>: Caption to identify field when viewing sheet on a mobile device.</p>
+<p class="MarginBottomZero"><b>Font</b>: These properties affect the appearance of the text. </p>
+<ul class="MarginBottomGap">
+<li><b>Name</b>: We recommend using common fonts (e.g., Times New Roman, Arial, Courier) and testing sheets on a browser and device the office plans to support. Font support is dependent on the browser used to view the <a href="../site/webforms.html">Web Form</a>. If a browser doesn't support a font, a different font will be substituted and this can affect layout of the sheet.</li>
+<li><b>Size</b>: Font point size.</li>
+<li><b>Bold</b> (checked) or not bold (unchecked).</li>
+</ul>
+<p class="MarginBottomZero"><b>Growth Behavior</b>: This attribute can be set when it is not known ahead of time how large the text input will be. Setting the growth behavior causes a field to grow bigger; it will never cause a field to shrink. Click the dropdown to select an option: </p>
+<ul class="MarginBottomGap">
+<li>None: No growth behavior.</li>
+<li>Down Local: Typically used for the address because it is not known ahead of time if it will span one or two lines. If the field grows to two lines, the fields immediately below are bumped down (like CityStateZip).</li>
+<li>Down Global: Useful for table style data and letter bodies. Bumps down all fields on the entire sheet that are below the field that's growing.</li>
+</ul>
+<p><b>X/Y Pos</b>: Determines the placement of the upper left corner of the field in relation to the x and y axis. X = horizontal. Y = vertical.</p>
+<p><b>Width</b>: The width of the input field.</p>
+<p><b>Height</b>: The height of the input field. If font size is increased, field height may need to be increased so all text is visible.</p>
+<p><b>Required</b>: If checked, the user will be required to input data in the field before saving the form.</p>
+<p><b>Tab Order</b>: The order of the field when users press Tab on the generated form. (Hint: Click Tab Order in the right panel to view and edit the tab order of all elements on a sheet.</p>
+<p><b>Auto Note</b>: Click <b>[...]</b> to choose an <a href="autonotes.html">Auto Notes</a> template to assign to this Input Field. The Auto Note is automatically inserted when the sheet is generated in the <a href="sheetsfillout.html">Fill Sheet</a> window. Not functional with mobile apps (e.g., eClipboard) or Web Forms.</p>
+<h2>Query Example for a Misc Field</h2>
+<p>Each time data is input into a reportable name input field, the value is stored in the <span class="codeblock">sheetfield.fieldvalue</span> column in the <span class="codeblock">sheetfield</span> table. </p>
+<p><a href="https://opendentalsoft.com:1943/ODQueryList/QueryList.aspx">Query Example</a> 1832 can be used to report on misc field data in a data range. See <a href="queryoverview.html">User Query</a> for more information on running queries.</p>
+</div>
+</div>
+</body>
+</html>

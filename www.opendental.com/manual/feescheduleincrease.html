@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Fees Increase</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('feescheduleincrease','feescheduletools','procedurecodes','+lists','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/feescheduleincrease.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/feescheduleincrease.html" >v24.2</option><option value="https://www.opendental.com/manual241/feescheduleincrease.html" >v24.1</option><option value="https://www.opendental.com/manual233/feescheduleincrease.html" >v23.3</option><option value="https://www.opendental.com/manual232/feescheduleincrease.html" >v23.2</option><option value="https://www.opendental.com/manual231/feescheduleincrease.html" >v23.1</option><option value="https://www.opendental.com/manual224/feescheduleincrease.html" >v22.4</option><option value="https://www.opendental.com/manual223/feescheduleincrease.html" >v22.3</option><option value="https://www.opendental.com/manual222/feescheduleincrease.html" >v22.2</option><option value="https://www.opendental.com/manual221/feescheduleincrease.html" >v22.1</option><option value="https://www.opendental.com/manual214/feescheduleincrease.html" >v21.4</option><option value="https://www.opendental.com/manual213/feescheduleincrease.html" >v21.3</option><option value="https://www.opendental.com/manual212/feescheduleincrease.html" >v21.2</option><option value="https://www.opendental.com/manual211/feescheduleincrease.html" >v21.1</option><option value="https://www.opendental.com/manual205/feescheduleincrease.html" >v20.5</option><option value="https://www.opendental.com/manual204/feescheduleincrease.html" >v20.4</option><option value="https://www.opendental.com/manual203/feescheduleincrease.html" >v20.3</option><option value="https://www.opendental.com/manual202/feescheduleincrease.html" >v20.2</option><option value="https://www.opendental.com/manual201/feescheduleincrease.html" >v20.1</option><option value="https://www.opendental.com/manual194/feescheduleincrease.html" >v19.4</option><option value="https://www.opendental.com/manual193/feescheduleincrease.html" >v19.3</option><option value="https://www.opendental.com/manual192/feescheduleincrease.html" >v19.2</option><option value="https://www.opendental.com/manual191/feescheduleincrease.html" >v19.1</option><option value="https://www.opendental.com/manual184/feescheduleincrease.html" >v18.4</option><option value="https://www.opendental.com/manual183/feescheduleincrease.html" >v18.3</option><option value="https://www.opendental.com/manual182/feescheduleincrease.html" >v18.2</option><option value="https://www.opendental.com/manual181/feescheduleincrease.html" >v18.1</option><option value="https://www.opendental.com/manual174/feescheduleincrease.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Fees Increase</p></div>
+<div class="GeneralPageContent">
+<p>Use the Fees Increase tool to incrementally increase or decrease fees in a fee schedule by a percentage.</p>
+<p>In <a href="feescheduletools.html">Fee Tools</a>, at the right, is the Increase by % area.</p>
+<img src="images/feesIncrease.png" width="256" height="175"/><p><img src="images/YouTube_PlayButton_15px.png" width="15" height="12" style="margin-bottom: 0px"/> See our video: <a href="https://youtu.be/eE8YXP4G3bo">Updating Your UCR (Office) Fees</a>.</p>
+<h2>Increasing (or Decreasing) Fees</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Create a backup copy of the existing fee schedule as a preventative measure. See <a href="feeschedulecopy.html">Fees Copy</a> for these steps. </li>
+<li>In the <b>Select Fees</b> area of the Fee Tools window, select the fee schedule to increase or decrease by clicking the dropdown arrows or <b>[...]</b>. <ul>
+<li>If the fee change is only being applied to a specific Clinic or Provider, choose these from the dropdowns as well. Clinic and Provider options are only enabled if the selected fee schedule allows clinic and provider-specific fees (<i>Use Global Fees</i> is unchecked).</li>
+<li>Only fees that exactly match the criteria will be changed:  <ul>
+<li>If only a fee schedule is selected, only the global fees will change.</li>
+<li>If a fee schedule and a clinic are selected, only the clinic-specific fees will change.</li>
+<li>If a fee schedule and a provider are selected, only the provider-specific fees will change.</li>
+<li>If a a fee schedule, a clinic, and a provider are selected, only fees that are clinic and provider specific will change.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>In the <b>Increase by %</b> field, enter the percentage of the increase (e.g., 5). To decrease fees instead, enter a negative value (e.g., -5).</li>
+<li>Select the rounding method. We recommend rounding to the nearest $1.</li>
+<li>Click <b>Increase</b>. </li>
+<li>A warning that all fees meeting the <i>Select Fees</i> criteria will be overwritten is shown. Click <b>OK</b> to apply the fee changes. Click <b>Cancel</b> to return to the Fee Tools window without applying changes.</li>
+</ol>
+<img src="images/feeScheduleIncreasePerc.png" width="412" height="185"/><h2>Additional Steps</h2>
+<p>If the fees updated as intended take the following additional steps as needed</p>
+<p class="MarginBottomZero"><b>Hide any backup fee schedule (with old fees):</b></p>
+<ol class="MarginBottomGap">
+<li>From <a href="feeschedules.html">Fee Schedules</a>, double-click the old fee schedule.</li>
+<li>Check <b>Hidden</b>.</li>
+<li>Click <b>Save</b>.</li>
+</ol>
+<p><b>Apply updated fees to treatment planned procedures</b>: see <a href="feesupdate.html">Fees Update</a>.</p>
+<p><b>Update Discount Plan Fee Schedules</b>: For offices using <a href="discountplans.html">Discount Plans</a>, if a fee increase (or decrease) was made to a UCR or Office fee schedule, this does not affect any other fee schedules. Fee schedules attached to discount plans must be updated separately to ensure discounts are still accurate.</p>
+<div class="Note">Note: If new fee schedules are added, instead of making a backup and increasing fees in the original, fee schedule selections throughout the program (e.g., insurance plans, providers, etc.) may need to be updated.</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Dexis Integrator Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridgedexisintegrator','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/bridgedexisintegrator.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/bridgedexisintegrator.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridgedexisintegrator.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridgedexisintegrator.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridgedexisintegrator.html" >v23.2</option><option value="https://www.opendental.com/manual231/bridgedexisintegrator.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridgedexisintegrator.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridgedexisintegrator.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridgedexisintegrator.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridgedexisintegrator.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridgedexisintegrator.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridgedexisintegrator.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridgedexisintegrator.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridgedexisintegrator.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridgedexisintegrator.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridgedexisintegrator.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridgedexisintegrator.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridgedexisintegrator.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridgedexisintegrator.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridgedexisintegrator.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridgedexisintegrator.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridgedexisintegrator.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridgedexisintegrator.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridgedexisintegrator.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridgedexisintegrator.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridgedexisintegrator.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridgedexisintegrator.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridgedexisintegrator.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Dexis Integrator Bridge</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>. Double-click on <b>Dexis Integrator from www.kavo.com</b>.</p>
+<img src="images/bridgeDexisIntegrator.png" width="770" height="594"/><p>Dexis Integrator allows offices to bridge to the Dexis Integrator App. This allows offices to use RDP to connect with Dexis. </p>
+<p>Website: <a href="https://www.kavo.com/en-us/" target="_blank">https://www.kavo.com/en-us/</a>.</p>
+<p class="MarginBottomZero">To enable the bridge: </p>
+<ol class="MarginBottomGap">
+<li>Check the <b>Enabled</b> box.</li>
+<li>Double-click on <b>Additional Properties</b> to change settings.  <ol>
+<li>Use the PatNum (enter 0) or ChartNum (enter 1) as the patient ID.</li>
+<li>Determine how to transfer patient information to Dexis. Enter 0 to use DDE (default) or 1 to use a Communication File (text file).</li>
+<li>If using a Communication File, enter the folder path where the files are stored. See below for details.</li>
+</ol>
+</li>
+<li>Set up a clickable bridge button:  <ol>
+<li>Under <b>Add a button to these toolbars</b>, highlight where to display the button.</li>
+<li>Enter the <b>Text on button</b>.</li>
+<li>(Optional) Import an image to show on the button (22 x 22 pixels).</li>
+</ol>
+</li>
+<li>If using clinics, click <b>Hide Button for Clinics</b>. Select which clinics the button should display on.</li>
+<li>Click Save.</li>
+</ol>
+<h2>Technical Data</h2>
+<p> The selected patient information is sent to the Integrator software and the Integrator forwards that info to the local PC to launch Dexis locally with the selected patient. It causes the RDP session to be minimized and when the local Dexis is closed the RDP session is maximized again.</p>
+<p class="MarginBottomZero"><b>Communication File</b><br/> If using a Communication File:  </p>
+<ul class="MarginBottomGap">
+<li>Create a single folder where Open Dental stores the communication files and where Dexis then reads them from. This folder should be on a local hard disk. (e.g., <b>C:\Dexis\commFiles</b>) </li>
+<li>When installing the integrator, edit the Integra.ini file:<br/><span class="codeblock">pms=Open Dental</span><br/><span class="codeblock">path=&lt; Enter File Path Here &gt; </span><br/><span class="codeblock">link=dexfil</span><br/><ul>
+<li>File Path must be the full path name including the name of the file. (e.g., <b>C:\Dexis\commFiles\Patient_&lt; Station&gt; .txt</b>) <ul>
+<li><span class="codeblock">Patient_&lt; Station&gt; .txt</span> must be appended to the file path for the Communication File to work.</li>
+<li><span class="codeblock">&lt; Station&gt;</span> is a special variable that the integrator interprets to get the end client workstation name. The program link writes in this full file name, and it should match with the workstation name that the Integrator determines as well. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

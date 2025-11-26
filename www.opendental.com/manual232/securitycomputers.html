@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Computer Security</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('securitycomputers','computernetworksetup','technical','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/securitycomputers.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/securitycomputers.html" >v24.2</option><option value="https://www.opendental.com/manual241/securitycomputers.html" >v24.1</option><option value="https://www.opendental.com/manual233/securitycomputers.html" >v23.3</option><option value="https://www.opendental.com/manual232/securitycomputers.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/securitycomputers.html" >v23.1</option><option value="https://www.opendental.com/manual224/securitycomputers.html" >v22.4</option><option value="https://www.opendental.com/manual223/securitycomputers.html" >v22.3</option><option value="https://www.opendental.com/manual222/securitycomputers.html" >v22.2</option><option value="https://www.opendental.com/manual221/securitycomputers.html" >v22.1</option><option value="https://www.opendental.com/manual214/securitycomputers.html" >v21.4</option><option value="https://www.opendental.com/manual213/securitycomputers.html" >v21.3</option><option value="https://www.opendental.com/manual212/securitycomputers.html" >v21.2</option><option value="https://www.opendental.com/manual211/securitycomputers.html" >v21.1</option><option value="https://www.opendental.com/manual205/securitycomputers.html" >v20.5</option><option value="https://www.opendental.com/manual204/securitycomputers.html" >v20.4</option><option value="https://www.opendental.com/manual203/securitycomputers.html" >v20.3</option><option value="https://www.opendental.com/manual202/securitycomputers.html" >v20.2</option><option value="https://www.opendental.com/manual201/securitycomputers.html" >v20.1</option><option value="https://www.opendental.com/manual194/securitycomputers.html" >v19.4</option><option value="https://www.opendental.com/manual193/securitycomputers.html" >v19.3</option><option value="https://www.opendental.com/manual192/securitycomputers.html" >v19.2</option><option value="https://www.opendental.com/manual191/securitycomputers.html" >v19.1</option><option value="https://www.opendental.com/manual184/securitycomputers.html" >v18.4</option><option value="https://www.opendental.com/manual183/securitycomputers.html" >v18.3</option><option value="https://www.opendental.com/manual182/securitycomputers.html" >v18.2</option><option value="https://www.opendental.com/manual181/securitycomputers.html" >v18.1</option><option value="https://www.opendental.com/manual174/securitycomputers.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Computer Security</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="computernetworksetup.html">Computer and Network Setup</a>.</p>
+<p>Security for computer systems is a multi-faceted issue that is essential for <a href="../site/hipaa.html">HIPAA</a> compliance and data protection. Addressing these issues correctly from the start will prevent issues later on. </p>
+<p>When considering how computer systems are configured, practices will need to address security in three areas:</p>
+<p class="MarginBottomZero"><b>Network Security</b>: For the security of the network, practices will need to address: </p>
+<ul class="MarginBottomGap">
+<li><a href="firewalls.html">Firewall</a></li>
+<li><a href="securitymysql.html">MySQL Security</a></li>
+<li><a href="atozshare.html">Share A to Z Folder</a></li>
+</ul>
+<p><p class="MarginBottomZero"><b>Computer Security</b>: For the security of computers, practices will need to address:  </p>
+<ul class="MarginBottomGap">
+<li><a href="windowsupdates.html">Windows Update</a></li>
+<li><a href="networkusers.html">Network Users</a> (user names/passwords for Windows)</li>
+<li><a href="virus.html">Antivirus</a></li>
+<li><a href="encryption.html">Encryption of Data at Rest and in Transit</a></li>
+<li><a href="backups.html">Backups</a></li>
+</ul>
+</p>
+<p class="MarginBottomZero"><b><a href="security.html">Security</a></b> in Open Dental: Define who has permission and access to specific features.  </p>
+<ul class="MarginBottomGap">
+<li>Open Dental Users, <a href="securityusergroups.html">User Groups</a>, and <a href="permissions.html">Permissions</a>.</li>
+<li>User credentials for third-party programs (e.g., imaging software).</li>
+</ul>
+<br/><p>Also see: <a href="privacypolicy.html">Privacy Policy - Google</a></p>
+</div>
+</div>
+</body>
+</html>

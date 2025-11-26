@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Treatment Plan Layout</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('sheetstreatplan','sheets','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/sheetstreatplan.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/sheetstreatplan.html" >v24.2</option><option value="https://www.opendental.com/manual241/sheetstreatplan.html" >v24.1</option><option value="https://www.opendental.com/manual233/sheetstreatplan.html" >v23.3</option><option value="https://www.opendental.com/manual232/sheetstreatplan.html" >v23.2</option><option value="https://www.opendental.com/manual231/sheetstreatplan.html" >v23.1</option><option value="https://www.opendental.com/manual224/sheetstreatplan.html" >v22.4</option><option value="https://www.opendental.com/manual223/sheetstreatplan.html" >v22.3</option><option value="https://www.opendental.com/manual222/sheetstreatplan.html" >v22.2</option><option value="https://www.opendental.com/manual221/sheetstreatplan.html" >v22.1</option><option value="https://www.opendental.com/manual214/sheetstreatplan.html" >v21.4</option><option value="https://www.opendental.com/manual213/sheetstreatplan.html" >v21.3</option><option value="https://www.opendental.com/manual212/sheetstreatplan.html" >v21.2</option><option value="https://www.opendental.com/manual211/sheetstreatplan.html" >v21.1</option><option value="https://www.opendental.com/manual205/sheetstreatplan.html" >v20.5</option><option value="https://www.opendental.com/manual204/sheetstreatplan.html" >v20.4</option><option value="https://www.opendental.com/manual203/sheetstreatplan.html" >v20.3</option><option value="https://www.opendental.com/manual202/sheetstreatplan.html" >v20.2</option><option value="https://www.opendental.com/manual201/sheetstreatplan.html" >v20.1</option><option value="https://www.opendental.com/manual194/sheetstreatplan.html" >v19.4</option><option value="https://www.opendental.com/manual193/sheetstreatplan.html" >v19.3</option><option value="https://www.opendental.com/manual192/sheetstreatplan.html" >v19.2</option><option value="https://www.opendental.com/manual191/sheetstreatplan.html" >v19.1</option><option value="https://www.opendental.com/manual184/sheetstreatplan.html" >v18.4</option><option value="https://www.opendental.com/manual183/sheetstreatplan.html" >v18.3</option><option value="https://www.opendental.com/manual182/sheetstreatplan.html" >v18.2</option><option value="https://www.opendental.com/manual181/sheetstreatplan.html" >v18.1</option><option value="https://www.opendental.com/manual174/sheetstreatplan.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Treatment Plan Layout</p></div>
+<div class="GeneralPageContent">
+<p>The Treatment Plan sheet can be customized to meet the needs of the practice.</p>
+<p>In <a href="sheets.html">Sheets</a>, double-click a on a custom sheet with the type of TreatmentPlan.</p>
+<img src="images/sheetsTreatmentPlan.png" width="915" height="703"/><p class="MarginBottomZero">Alternatively in Sheets:  </p>
+<ul class="MarginBottomGap">
+<li>Click <b>New</b> and choose <i>TreatmentPlan</i> as the Sheet Type to create a new treatment plan layout from blank.</li>
+<li>Select an existing Custom TreatmentPlan sheet and click <b>Duplicate</b> to create a copy of an existing treatment plan sheet.</li>
+<li>Select the existing Internal TreatmentPlan sheet and click <b>Copy</b> to create a copy of the default treatment plan that can be edited.</li>
+</ul>
+<p>Also see: <a href="sheetproperties.html">Sheet Def Properties</a> and <a href="sheetsaddelements.html">Sheet Field Types</a>.</p>
+<p>Set the default <a href="treatmentplan.html">Treatment Plan</a> sheet in <a href="sheetdefaults.html">Sheet Def Defaults</a>.</p>
+<p>To customize a TreatmentPlan sheet type, see: <a href="sheetsetup.html">Edit Sheet Def</a>.</p>
+<p class="MarginBottomZero"><b>Requirements</b>: A TreatmentPlan sheet must have the following. </p>
+<ul class="MarginBottomGap">
+<li>Exactly one Signature box.</li>
+<li>At least one TreatPlanMain <a href="sheetsgrid.html">Grid</a></li>
+</ul>
+<p class="MarginBottomZero">The following options are only available to sheets with a TreatmentPlan type: </p>
+<ul class="MarginBottomGap">
+<li>Tooth chart and tooth chart legend: These are <a href="sheetsspecial.html">Special Fields</a>.</li>
+<li>TreatPlanMain grid: The <a href="sheetsgrid.html">Grid</a> between the tooth chart legend and Family Insurance Benefits. At least one of this grid type must exist on a treatment plan sheet. The columns, header, width and order are determined in <a href="displayfields.html">Display Fields</a>, TreatmentPlanModule.</li>
+<li>TreatPlanBenefitsFamily grid: Family Insurance Benefits grid.</li>
+<li>TreatPlanBenefitsIndividual grid: Individual Insurance Benefits grid.</li>
+<li>SignatureText: OutputText where patient may type their name.</li>
+<li>SignaturePracticeText: OutputText where presenter may type their name.</li>
+<li>Heading: Output text field that displays the Treatment Plan Heading.</li>
+<li>defaultHeading: Output text field that displays patient and practice information. </li>
+<li>DateTSigned: Records date of electronic signature.</li>
+<li>DateTPracticeSigned: Records date of second electronic signature.</li>
+<li>SigPractice: Secondary Signature box, where presenter may sign if desired.<br/><div class="Note">Note: In order for the second signature box to prompt when clicking <b>Sign TP</b>, the custom Treatment Plan sheet needs to include both the <i>SigPractice</i> box, and the <i>SignaturePracticeText</i> box as an <a href="sheetsoutputtext.html">Output Text Field</a>.</div>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

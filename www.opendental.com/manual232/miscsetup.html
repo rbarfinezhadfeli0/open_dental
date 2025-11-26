@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Miscellaneous Setup</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('miscsetup','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/miscsetup.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/miscsetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/miscsetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/miscsetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/miscsetup.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/miscsetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/miscsetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/miscsetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/miscsetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/miscsetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/miscsetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/miscsetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/miscsetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/miscsetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/miscsetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/miscsetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/miscsetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/miscsetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/miscsetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/miscsetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/miscsetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/miscsetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/miscsetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/miscsetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/miscsetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/miscsetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/miscsetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/miscsetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Miscellaneous Setup</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Miscellaneous.</p>
+<img src="images/miscSetup.png" width="915" height="476"/><p>In Miscellaneous Setup, customize Open Dental's general settings.</p>
+<h2>Main Window Title</h2>
+<p>These settings pertain to the main title window within Open Dental.</p>
+<img src="images/titleBar.gif" width="374" height="26"/><br/><img src="images/miscSetupMain.png" width="461" height="127" class="ImageInParagraph"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Title Text</b>: The text that shows at the very top left of the main window. Changing this text is useful when using multiple databases so users can easily identify which database they are currently using.</li>
+<li><b>Show ID in title bar</b>: Select which information shows in the title bar of Open Dental. <ul>
+<li>None: Do not show additional information in title bar.</li>
+<li>PatNum: Show patient name and number.</li>
+<li>ChartNumber: Show patient name and chart number.</li>
+<li>Birthdate: Show patient name and birthdate. We do not recommend using this setting if the <i>Mask Patient Date of Birth</i> preference is enabled.</li>
+</ul>
+</li>
+<li><b>Show patient specialty in main title bar and account patient select: </b><ul>
+<li>Checked: Shows patient specialty in title bar and patient select area of Account Module.</li>
+<li>Unchecked: Does not show patient specialty.</li>
+</ul>
+</li>
+<li><b>Show Site</b>: Show the patient's site if <a href="publichealth.html">Public Health</a> is turned on (<a href="sites.html">Site List</a>).</li>
+<li><b>Use clinic abbreviation in main title bar</b> (clinics must be turned on): This setting determines what shows in the title bar for the selected clinic.  <ul>
+<li>Checked: The title bar shows the clinic's abbreviation.</li>
+<li>Unchecked: The title bar shows the clinic's full description.</li>
+</ul>
+</li>
+</ul>
+<h2>Miscellaneous Settings</h2>
+<img src="images/miscSetupMisc.png" width="427" height="242"/><p class="MarginBottomZero"><b>Time Cards use local time</b>: This setting affects all workstations. It is useful when the server is in a different time zone than the workstation. </p>
+<ul class="MarginBottomGap">
+<li>Checked: The <a href="timeclock.html">Time Clock</a> will use the workstation's local time.</li>
+<li>Unchecked: The time clock will use the server time. This keeps all times consistent throughout the office and prevents tampering with the computer clock if the server is physically inaccessible.</li>
+</ul>
+<p><b>Process Signal Interval in seconds</b>: The interval, in seconds, that Open Dental will automatically refresh the Appointments module, task lists, and text notifications. Usually the value will be 6 to 20 seconds. Leave the field blank to disable auto-refresh. See <a href="refreshing.html">Refreshing Data</a>. <div class="Note">Note: <ul>
+<li>If a workstation has a network access issue when it sends a signal, users will receive an Unhandled Exception error. We recommend clicking <b>Quit</b> and restarting Open Dental.</li>
+<li>A value must be entered when using the <a href="kiosk.html">Kiosk Manager</a> feature.</li>
+</ul>
+</div>
+</p>
+<p><b>Disable signal interval after this many minutes of user inactivity</b>: This setting is designed to limit the load on database from idle users. Enter the minutes of workstation activity that will cause Open Dental to stop sending automatic signals to refresh information. Keyboard and mouse activity will cause the view to start refreshing again. If an office sets this and want users viewing the appointment book to stay updated even though signals are not being processed because a workstation is idle, set the the preference, <i>Refresh every 60 Seconds</i> to true.</p>
+<p>If used conjuction with Auto log off options for Open Dental or Windows (see <a href="securitysettings.html">Global Security Settings</a>), it would be set to a lower value. If Auto Log off is set very low, like two minutes, this <i>Disable signal</i> setting would not be normally be used.</p>
+<p>Disabling signals during workstation inactivity can prevent errors due to lack of network access (e.g. if the server is down and comes up again). Once the workstation becomes active (e.g. with a mouse click or mouse movement), the signal will resume at the set intervals (see above). Leave the field blank if you do not want to disable the signal during periods of inactivity.</p>
+<p>If a shutdown signal is received, Open Dental will shut down without warning. This shutdown will log in the Logger folder. (Typically, <b>C:\Program Files (x86)\Open Dental\Logger</b>.)</p>
+<p><b>Check alert interval in seconds</b>: The interval, in seconds, that Open Dental will check for <a href="alerts.html">Alerts</a>. Leave blank to disable automatic checking.</p>
+<p><b>Disable alert interval after this many minutes of user inactivity</b>: This setting is only valid if a value for alert interval is entered above. Enter the minutes of workstation activity that will cause Open Dental to stop automatically checking for alerts. Once the workstation becomes active (e.g. with a mouse click or mouse movement), the alerts will resume at the set intervals (see above). Leave the field blank if you do not want to disable alerts during periods of inactivity.</p>
+<p><b>Languages used by patients</b>: Set up specific <a href="patientlanguages.html">Language</a> which can then be assigned in the <a href="patientedit.html">Edit Patient Information</a>.</p>
+<p><b>Language and region used by program</b>: Shows the database's current language and region setting. To change the database setting, click <b>[...]</b>.</p>
+<img src="images/miscSetupLanguage.gif" width="482" height="244"/><p>Click the New Database Setting dropdown arrow and select the new language and region. Click <b>OK</b> to save.</p>
+<p>Usually database and computer settings will match. If they don't, a warning will show every time Open Dental starts. To stop this warning from showing, check the 'Do not show this window on startup (this computer only)'. Change computer settings in the Control Panel, Region and Language.</p>
+<p><b>Currency number of digits after decimal</b>: Indicates the current computer setting for digits after the decimal for currency amounts. The recommended value is 2. If the value is anything different, the message below will show every time Open Dental starts.</p>
+<img src="images/miscSetupCurrency.gif" width="462" height="205"/><p>To change the currency setting, go to the Control Panel, Region, Additional Settings, Currency tab. To stop this message from showing on startup, check 'Do not show this window on startup (this computer only)'.</p>
+<p><b>Alert when within this value of the maximum allowed Cloud Sessions</b>: For Open Dental Cloud users only. Enter the number of sessions left before generating an <a href="alerts.html">Alert </a>as a warning. (i.e. To generate an alert when 5 sessions are remaining, enter 5.)</p>
+<p class="MarginBottomZero"><b>Text boxes use foreign language Input Method Editor (IME) composition</b>: Determines composition if users are typing in a foreign language that uses an IME keyboard (e.g. Korean, Arabic). </p>
+<ul class="MarginBottomGap">
+<li>Checked: Allows composition for IME keyboards. Disables <a href="spellcheck.html">Spell Check</a>.</li>
+<li>Unchecked: Leave unchecked for standard english keyboards.</li>
+</ul>
+<h2>Select Patient Window</h2>
+<p>These settings pertain to the Select Patient window.</p>
+<img src="images/miscSetupPatSelect.png" width="461" height="114"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>New Computers default to refresh while typing in Select Patient window</b>: Sets the default setting of the <i>Refresh while typing</i> checkbox on the Select Patient window for new workstation installations (<a href="patientselect.html">Select Patient</a>). <ul>
+<li>Checked: The default setting for the <i>Refresh while typing</i> checkbox will be checked when installing on a new workstation.</li>
+<li>Unchecked: The default setting for the <i>Refresh while typing</i> checkbox will be unchecked when installing on a new workstation.</li>
+</ul>
+</li>
+<li><b>Search for preferred name in the first name field in Select Patient window</b>: Sets the search behavior of the First Name field on the Select Patient window. <ul>
+<li>Checked: Open Dental will search for patients with matching first name or preferred name.</li>
+<li>Unchecked: Open Dental will search for patients with matching first name only.</li>
+</ul>
+</li>
+<li><b>Hide patients from restricted clinics when viewing "All" clinics</b>: Determines if patients from restricted clinics are hidden in the "All" clinics view. <ul>
+<li>Checked: Patients from restricted clinics are hidden in the All view.</li>
+<li>Unchecked: Patients from restricted clinics will be visible in the All view. Attempting to select a patient from a resticted clinic will display a warning that access is restricted for the current user.</li>
+</ul>
+</li>
+<li><b>Show Inactive Patients by Default</b>: Determines if patients marked as inactive show in the Select Patient window. <ul>
+<li>Checked: Defaults <i>Show Inactive Patients</i> to on in the Select Patient window.</li>
+<li>Unchecked: Defaults <i>Show Inactive Patients</i> to off in the Select Patient window.</li>
+</ul>
+</li>
+<li><p class="MarginBottomZero"><b>Allow Refresh While Typing in Select Patient Window</b>: Determines whether the <i>Refresh While Typing</i> checkbox in the <a href="patientselect.html">Select Patient</a> window can be used. </p>
+<ul class="MarginBottomGap">
+<li>Checked: Allows <i>Refresh While Typing</i> to be checked or unchecked as needed. </li>
+<li>Unchecked: Disables <i>Refresh While Typing</i> entirely. Users must click <i>Search</i> to find patients.</li>
+</ul>
+</li>
+</ul>
+<h2>Popups Disable Timespan</h2>
+<img src="images/miscSetupPopups.png" width="476" height="82"/><p><b>Default number of days until disabled</b>: Enter the number of days to automatically disable a popup after it has been created. Individual popups can have the disabled time edited as needed.</p>
+<p><b>Default timespan (hh:mm:ss) until disabled</b>: Enter the time in hours, minutes, and seconds to automatically disable a popup after it has been created. Individual popups can have the disabled time edited as needed. </p>
+<h2>Miscellaneous Settings Continued</h2>
+<img src="images/miscSetupMiscCont.png" width="507" height="194"/><p><b>Alert when within this value of the maximum allowed Cloud Sessions</b>: For Open Dental Cloud users only. Determines when the <i>Cloud Sessions Limit </i><a href="alerts.html">Alert</a> is sent. Enter the number of sessions left before the alert is generated. (i.e. if the office has a 20 session maximum limit, and 5 is entered here, an alert is generated when 15 sessions are active.)</p>
+<p class="MarginBottomZero"><b>Update Server Name</b>: Indicates the computer name that has permission to execute updates. For <a href="middletier.html">Middle Tier</a>, it identifies which computer is running the middle tier. </p>
+<ul class="MarginBottomGap">
+<li>If the server name exceeds 15 characters, users may receive an error when attempting check for updates or install services. If the server name exceeds 15 characters, only type the first 15 characters.</li>
+</ul>
+<p class="MarginBottomZero"><b>Track Last Clinic By</b>: For <a href="clinics.html">Clinics</a> only. Affects which clinic is selected in the Main Menu, Clinics when a user logs on to a workstation. </p>
+<ul class="MarginBottomGap">
+<li>None: Select the user's default clinic.</li>
+<li>Workstation: Select the clinic last selected on the workstation, if the user has access to it. If not, select the user's default clinic.</li>
+<li>User: Select the clinic that was active the last time the user logged off.</li>
+</ul>
+<p><b>Sync code for CEMT</b>: Indicates the Sync Code of the <a href="central.html">Central Enterprise Management Tool ( CEMT )</a> database this database is associated to. All database connections which are affected by a CEMT sync have a code listed here. If the code is cleared, CEMT users can sync from any database, but this is not recommended.</p>
+<p><b>Number of Audit Trail entries displayed</b>: Set the default number of log entries that will display in the <a href="audittrail.html">Audit Trail</a> at one time.</p>
+<p class="MarginBottomZero"><b>Audit Trail uses Reporting Server</b>: Only displays when a <a href="reportserver.html">Report Server</a> is enabled. Determines if the Audit Trail should run on the local machine or the report server. </p>
+<ul class="MarginBottomGap">
+<li>Checked: Audit trail uses the reporting server. </li>
+<li>Unchecked: Run audit trail on the local machine.</li>
+</ul>
+<p class="MarginBottomZero"><b>Automatically submit unhandled exceptions</b>: Determines if Unhandled Exception errors are sent to Open Dental headquarters. </p>
+<ul class="MarginBottomGap">
+<li>Checked: Automatically submit Unhandled Exception errors to Open Dental Headquarters. This is done in the background securely and no PHI is sent. Errors are only sent for offices on the latest stable version or using any beta version.</li>
+<li>Unchecked: Disables automatic submission of Unhandled Exceptions.</li>
+</ul>
+<p class="MarginBottomZero"><b>Middle tier server caches all fees</b>: Determines if a Middle Tier server will cache non-hidden fees. Useful for offices experiencing slowness. Only applicable if using Middle Tier. </p>
+<ul class="MarginBottomGap">
+<li>Checked: The Middle Tier server will store non-hidden fees for all clinics in its cache. When checked, restart the Middle Tier server's IIS for changes to take affect.</li>
+<li>Unchecked: The Middle Tier server will use the database to find a fee.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

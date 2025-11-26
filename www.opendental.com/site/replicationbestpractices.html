@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Replication Best Practices</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('replicationbestpractices','replication','advancedtopics','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Replication Best Practices</p></div>
+		<div class="GeneralPageContent">
+<p>When using <a href="replication.html">Replication</a>, allowing internet access to your database must not be done without following these best practices to help protect your network against intrusion, viruses, and malicious code attacks.</p>
+<ul>
+<li>Install an anti-virus software on all replication servers and all other devices on your network. The <b>C:/Mysql/Data</b> directory on replication servers should not be included in real time scans. It should be included separately in a periodic (daily) scheduled scan during non-operating hours because it will interfere with operations by locking the mysql tables.</li>
+<li>Do not open the MySQL port (default is port 3306) on your routers and do not allow incoming traffic for that port. You can open this port as a Firewall exception rule on your servers but NOT on your routers. In simple terms, this means do not open the database to the entire internet, even if you think you are verifying the source IP address: that is not sufficient as IP addresses can be spoofed.</li>
+<li>Use a VPN (Virtual Private Network). Data is encrypted across the internet over a VPN and thus verifies the identity client (machine or router) before decrypting. There is a very little risk in sharing data between computers on the same virtual network.</li>
+<li>Use strong passwords for VPN and all other network devices.</li>
+<li>Create a strong password for your MySQL user's root password.</li>
+<li>Replication servers should be dedicated to replication only. Uninstall or disable Internet browsers.</li>
+<li>When using replication with intermittent internet connections (e.g., mobile units) avoid making changes that result in deleted records. This includes merging patients, consolidating insurance plans, deleting insurance plans, deleting patients, deleting fee schedules, etc. These actions should be performed when all mobile units are connected to the replication server and from a single, non-mobile database. This reduces the chances of replication failure. Open Dental is a robust software that tries to elegantly handle as many of these situations as possible. If replication failure occurs, follow your replication failure procedures to restore your replication environment. Please inform Open Dental of your issues so that a permanent fix can be made to the program.</li>
+<li>You will need to keep your <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7atozfolder.html">A to Z Folder</a> synchronized. See <a href="sharednetworkfolder.html">Folder Replication</a></li>
+<li>Install the <i>OpenDentalReplicationService</i> on each Replica.</li>
+<li>It is recommended not to exceed more than five replication servers.</li>
+</ul>
+		</div>
+	</div>
+</body>
+</html>

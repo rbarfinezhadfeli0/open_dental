@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Fee Schedule Logic</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('feeschedulelogic','procedurecodes','+lists','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/feeschedulelogic.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/feeschedulelogic.html" >v24.2</option><option value="https://www.opendental.com/manual241/feeschedulelogic.html" >v24.1</option><option value="https://www.opendental.com/manual233/feeschedulelogic.html" >v23.3</option><option value="https://www.opendental.com/manual232/feeschedulelogic.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/feeschedulelogic.html" >v23.1</option><option value="https://www.opendental.com/manual224/feeschedulelogic.html" >v22.4</option><option value="https://www.opendental.com/manual223/feeschedulelogic.html" >v22.3</option><option value="https://www.opendental.com/manual222/feeschedulelogic.html" >v22.2</option><option value="https://www.opendental.com/manual221/feeschedulelogic.html" >v22.1</option><option value="https://www.opendental.com/manual214/feeschedulelogic.html" >v21.4</option><option value="https://www.opendental.com/manual213/feeschedulelogic.html" >v21.3</option><option value="https://www.opendental.com/manual212/feeschedulelogic.html" >v21.2</option><option value="https://www.opendental.com/manual211/feeschedulelogic.html" >v21.1</option><option value="https://www.opendental.com/manual205/feeschedulelogic.html" >v20.5</option><option value="https://www.opendental.com/manual204/feeschedulelogic.html" >v20.4</option><option value="https://www.opendental.com/manual203/feeschedulelogic.html" >v20.3</option><option value="https://www.opendental.com/manual202/feeschedulelogic.html" >v20.2</option><option value="https://www.opendental.com/manual201/feeschedulelogic.html" >v20.1</option><option value="https://www.opendental.com/manual194/feeschedulelogic.html" >v19.4</option><option value="https://www.opendental.com/manual193/feeschedulelogic.html" >v19.3</option><option value="https://www.opendental.com/manual192/feeschedulelogic.html" >v19.2</option><option value="https://www.opendental.com/manual191/feeschedulelogic.html" >v19.1</option><option value="https://www.opendental.com/manual184/feeschedulelogic.html" >v18.4</option><option value="https://www.opendental.com/manual183/feeschedulelogic.html" >v18.3</option><option value="https://www.opendental.com/manual182/feeschedulelogic.html" >v18.2</option><option value="https://www.opendental.com/manual181/feeschedulelogic.html" >v18.1</option><option value="https://www.opendental.com/manual174/feeschedulelogic.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Fee Schedule Logic</p></div>
+<div class="GeneralPageContent">
+<p>See <a href="procedurecodes.html">Procedure Codes</a>.</p>
+<p>The <a href="feeschedules.html">Fee Schedule</a> used for procedure fee estimates is determined using the logic below.</p>
+<h2>Insurance</h2>
+<p><b>PPO Plan Types</b></p>
+<p>Fee billed is based on the Fee Schedule (assigned in <a href="providerseditwindow.html">Edit Provider</a>) of the patient's primary provider. The Fee Schedule of the treating provider is not considered. </p>
+<img src="images/feeLogicProvSched.png" width="776" height="287"/><p>The Fee Schedule assigned in Edit Insurance Plan is used for write-off calculations. It does not affect the billed fee.</p>
+<p>When using PPO insurance, if <i> Use UCR fee for billed fee even if PPO fee is higher</i>, is enabled in <a href="preferences.html">Preferences</a>, the provider fee is used even if the PPO fee is higher. Disable this preference to always bill the higher fee.</p>
+<p><b>Category Percentage and Medicaid/Flat Co-pay Plan Types</b></p>
+<p>The fee billed is based on the<i> Fee Schedule</i> assigned to the <a href="insplan.html">Insurance Plan</a>. If the patient has multiple insurance plans, the Fee Schedule of the first insurance plan listed in the Family Module is used (i.e., order = 1 in Edit Insurance Plan).</p>
+<img src="images/feeLogicMedicaid.png" width="471" height="540"/><p>If no Fee Schedule is assigned to the insurance plan, the fee is billed in the following order:</p>
+<p>Priority 1: Fee Schedule assigned in <a href="patientedit.html">Edit Patient Information</a> (rarely used). </p>
+<img src="images/feeLogicRarelyUsed.png" width="482" height="147"/><p>Priority 2: Fee Schedule of the provider assigned to the procedure, if any (<i>Assign to Prov</i> on the <a href="procedurecodeedit.html">Procedure Code</a>). </p>
+<p>Priority 3: Fee Schedule of the provider assigned to the procedure's appointment or to any appointment scheduled today. </p>
+<p>Priority 4: Fee Schedule of the patient's primary provider.</p>
+<b>Capitation Plan Types</b><p>Capitation insurance does not normally bill any fee to the patient account. If the patient has a capitation insurance plan, using the Capitation Plan Type with a copay, the fee billed is based on the <i>CoPay</i> Fee Schedule assigned in the Edit Insurance Plan window. If there is no copay for a procedure, the fee billed is $0.</p>
+<img src="images/feeLogicCopay.png" width="412" height="72"/><p>If the insurance plan is mixed capitation (<a href="planhmosupplemental.html">HMO / DMO Insurance Plan with Copays and Supplemental Payments</a>), the same logic applies as for PPO Plan Types as described above since these plans use the <i>PPO Percentage</i> Plan Type.</p>
+<p><div class="Note">Note: For any insurance Plan Type, overrides may affect the fee billed. See Overrides section below for more information.</div>
+</p>
+<h2>No Insurance / Discount Plans</h2>
+<p> If a patient does not have insurance or is assigned to a <a href="discountplans.html">Discount Plan</a>, fees are billed in the following priority:</p>
+<p class="MarginBottomZero">Otherwise, for patients without insurance, the Fee Schedule of the provider who has priority is used. </p>
+<ul class="MarginBottomGap">
+<li>Priority 1: Fee Schedule assigned in Edit Patient Information (rarely used).</li>
+<li>Priority 2: Fee Schedule of the provider assigned to the procedure, if any (Assign to Prov on the <a href="procedurecodeedit.html">Procedure Code</a>).</li>
+<li>Priority 3: Fee Schedule of the provider assigned to the procedure's appointment or to any appointment scheduled today.</li>
+<li>Priority 4: Fee Schedule of the patient's primary provider.</li>
+</ul>
+<p><div class="Note">Note: Overrides may affect the fee billed. See Overrides section below for more information.</div>
+</p>
+<h2>Medical</h2>
+<p>If the patient has medical insurance, the Fee Schedule of the first medical insurance plan listed in the Family module is used.</p>
+<p>If a <a href="procedurecodeedit.html">Procedure Code</a> is a dental code cross-coded to a medical code, then the preference, <i>Use medical fee for new procedures</i>, determines the fee. If enabled, the fee of the medical code is used; if disabled the fee of the dental code is used.</p>
+<p><div class="Note">Note: Overrides may affect the fee billed. See Overrides section below for more information.</div>
+</p>
+<h2>Overrides</h2>
+<p>After the Fee Schedule is determined, then any <a href="procedurefeeoverrides.html">Provider and/or Clinic-Specific Overrides</a> are applied to that Fee Schedule.</p>
+<p>For example, if the default fee for a procedure in the prioritized Fee Schedule is $110, but there is an override in that Fee Schedule for the treating provider of $125, the fee billed is $125. </p>
+<p>Setting up overrides is helpful in the case of specialist or clinic specific fees and should be done in lieu of setting up individual Fee Schedules for clinics or providers. </p>
+<p>For Discount Plan patients, if overrides exist for a treating provider on a Discount Plan Fee Schedule, these fees are used to determine the patient discount.</p>
+<h2>Copay Fee Schedule Tips</h2>
+<p>How a copay Fee Schedule should be created depends on the information sent by insurance.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li>If the insurance Fee Schedule is the total amount you are allowed to collect (including patient copay amounts): <ol>
+<li>Create the <i>Patient Co-pay Amounts</i> Fee Schedule.</li>
+<li>Create the insurance Fee Schedule using the amounts provided by the carrier.</li>
+</ol>
+</li>
+<li>If the insurance Fee Schedule is the amount insurance is paying you (and patient copay is not included in the amount): <ol>
+<li>Create the <i>Patient Co-pay Amounts</i> Fee Schedule.</li>
+<li>Create the insurance Fee Schedule by taking the insurance amount and adding the copay amount. <br/> (e.g., if the insurance will pay $100, and the patient copay is $50, the Fee Schedule amount should show $150)</li>
+</ol>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

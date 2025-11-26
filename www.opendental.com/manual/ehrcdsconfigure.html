@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - EHR Configure CDS Rules</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('ehrcdsconfigure','ehrsetupwindow','+chart','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/ehrcdsconfigure.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/ehrcdsconfigure.html" >v24.2</option><option value="https://www.opendental.com/manual241/ehrcdsconfigure.html" >v24.1</option><option value="https://www.opendental.com/manual233/ehrcdsconfigure.html" >v23.3</option><option value="https://www.opendental.com/manual232/ehrcdsconfigure.html" >v23.2</option><option value="https://www.opendental.com/manual231/ehrcdsconfigure.html" >v23.1</option><option value="https://www.opendental.com/manual224/ehrcdsconfigure.html" >v22.4</option><option value="https://www.opendental.com/manual223/ehrcdsconfigure.html" >v22.3</option><option value="https://www.opendental.com/manual222/ehrcdsconfigure.html" >v22.2</option><option value="https://www.opendental.com/manual221/ehrcdsconfigure.html" >v22.1</option><option value="https://www.opendental.com/manual214/ehrcdsconfigure.html" >v21.4</option><option value="https://www.opendental.com/manual213/ehrcdsconfigure.html" >v21.3</option><option value="https://www.opendental.com/manual212/ehrcdsconfigure.html" >v21.2</option><option value="https://www.opendental.com/manual211/ehrcdsconfigure.html" >v21.1</option><option value="https://www.opendental.com/manual205/ehrcdsconfigure.html" >v20.5</option><option value="https://www.opendental.com/manual204/ehrcdsconfigure.html" >v20.4</option><option value="https://www.opendental.com/manual203/ehrcdsconfigure.html" >v20.3</option><option value="https://www.opendental.com/manual202/ehrcdsconfigure.html" >v20.2</option><option value="https://www.opendental.com/manual201/ehrcdsconfigure.html" >v20.1</option><option value="https://www.opendental.com/manual194/ehrcdsconfigure.html" >v19.4</option><option value="https://www.opendental.com/manual193/ehrcdsconfigure.html" >v19.3</option><option value="https://www.opendental.com/manual192/ehrcdsconfigure.html" >v19.2</option><option value="https://www.opendental.com/manual191/ehrcdsconfigure.html" >v19.1</option><option value="https://www.opendental.com/manual184/ehrcdsconfigure.html" >v18.4</option><option value="https://www.opendental.com/manual183/ehrcdsconfigure.html" >v18.3</option><option value="https://www.opendental.com/manual182/ehrcdsconfigure.html" >v18.2</option><option value="https://www.opendental.com/manual181/ehrcdsconfigure.html" >v18.1</option><option value="https://www.opendental.com/manual174/ehrcdsconfigure.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>EHR Configure CDS Rules</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Chart, <a href="ehrsetupwindow.html">EHR</a>, then click <b>CDS Triggers</b>. </p>
+<img src="images/ehrEHRTriggers.gif" width="681" height="256"/><p><a href="../site/ehrcds.html">Clinical Decision Support</a> rules (CDS) rules determine what conditions trigger <a href="ehrcdsintervention.html">EHR CDS Interventions</a>. Conditions can be problems, medications, allergies, age, gender, vital signs, lab results, and/or specific codes.</p>
+<p>Users must have the <a href="ehrcdspermissions.html">Edit CDS Permission</a> to configure interventions.</p>
+<p>Click <b>Add</b> to create a new intervention or double click an existing intervention to edit.</p>
+<img src="images/ehrTriggerEdit.gif" width="755" height="690"/><p>Enter the <b>Description</b> of the intervention.</p>
+<p>Click the <b>Cardinality</b> down arrow and set when the CDS support intervention will be triggered:</p>
+<ul>
+<li>One: only one condition must be met.</li>
+<li>One of each category: One condition from each category must be met.</li>
+<li>Two or More: At least two of the conditions must be met. Does not work with Vital Signs, Age or Gender.</li>
+<li>All: Every condition selected must be met.</li>
+</ul>
+<br/><p>Click a button on the left of the window to define the condition(s) that will trigger the CDS intervention. There are 6 categories:</p>
+<ul>
+<li><b>Problem</b>: Triggered by Problem, ICD-9 or ICD-10 code, or SNOMED CT code.</li>
+<li><b>Medications</b>: Triggered by Medication, RxNorm, or CVX code.</li>
+<li><b>Allergies</b>: Triggered by Allergy name.</li>
+<li><b>Demographics</b>: Triggered by Age or Gender. For age, enter the operand and value (e.g. &gt;18). For gender, enter female, male, or unknown.</li>
+<li><b>Lab Results</b>: Triggered by specific lab results.</li>
+<li><b>Vital Signs</b>: Triggered by height, weight, or BMI. Enter the operand and value. - For height, enter inches (=&gt;60). - For weight, enter lbs (&lt;100). - For BMI, enter percentage (&gt;27.5%).</li>
+</ul>
+<br/><p><b>Instructions</b>: Enter clinical, diagnostic or therapeutic guidance.</p>
+<p><b>Bibliography</b>: Enter reference information.</p>
+<p>Click OK to save.</p>
+</div>
+</div>
+</body>
+</html>

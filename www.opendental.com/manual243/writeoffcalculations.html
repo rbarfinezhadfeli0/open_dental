@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - PPO Insurance Calculations</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('writeoffcalculations','planppo','insplantypes','insplan','family','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/writeoffcalculations.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/writeoffcalculations.html" >v24.2</option><option value="https://www.opendental.com/manual241/writeoffcalculations.html" >v24.1</option><option value="https://www.opendental.com/manual233/writeoffcalculations.html" >v23.3</option><option value="https://www.opendental.com/manual232/writeoffcalculations.html" >v23.2</option><option value="https://www.opendental.com/manual231/writeoffcalculations.html" >v23.1</option><option value="https://www.opendental.com/manual224/writeoffcalculations.html" >v22.4</option><option value="https://www.opendental.com/manual223/writeoffcalculations.html" >v22.3</option><option value="https://www.opendental.com/manual222/writeoffcalculations.html" >v22.2</option><option value="https://www.opendental.com/manual221/writeoffcalculations.html" >v22.1</option><option value="https://www.opendental.com/manual214/writeoffcalculations.html" >v21.4</option><option value="https://www.opendental.com/manual213/writeoffcalculations.html" >v21.3</option><option value="https://www.opendental.com/manual212/writeoffcalculations.html" >v21.2</option><option value="https://www.opendental.com/manual211/writeoffcalculations.html" >v21.1</option><option value="https://www.opendental.com/manual205/writeoffcalculations.html" >v20.5</option><option value="https://www.opendental.com/manual204/writeoffcalculations.html" >v20.4</option><option value="https://www.opendental.com/manual203/writeoffcalculations.html" >v20.3</option><option value="https://www.opendental.com/manual202/writeoffcalculations.html" >v20.2</option><option value="https://www.opendental.com/manual201/writeoffcalculations.html" >v20.1</option><option value="https://www.opendental.com/manual194/writeoffcalculations.html" >v19.4</option><option value="https://www.opendental.com/manual193/writeoffcalculations.html" >v19.3</option><option value="https://www.opendental.com/manual192/writeoffcalculations.html" >v19.2</option><option value="https://www.opendental.com/manual191/writeoffcalculations.html" >v19.1</option><option value="https://www.opendental.com/manual184/writeoffcalculations.html" >v18.4</option><option value="https://www.opendental.com/manual183/writeoffcalculations.html" >v18.3</option><option value="https://www.opendental.com/manual182/writeoffcalculations.html" >v18.2</option><option value="https://www.opendental.com/manual181/writeoffcalculations.html" >v18.1</option><option value="https://www.opendental.com/manual174/writeoffcalculations.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>PPO Insurance Calculations</p></div>
+<div class="GeneralPageContent">
+<p>Below is an explanation of the math behind write-offs, covered amounts, insurance estimates, and patient portion for <a href="planppo.html">PPO Insurance Plan</a>.</p>
+<p class="MarginBottomZero">Sample fees: </p>
+<ul class="MarginBottomGap">
+<li>Office Fee = $150</li>
+<li>PPO Fee = $127</li>
+<li>Deductible = $50</li>
+<li>Covered Percentage = 80%</li>
+</ul>
+<p><b>Write-off</b>: The difference between the office fee and contracted PPO fee.<p class="codeblock">Office Fee - PPO Fee = Write-off</p><p class="codeblock">$150 - $127 = $23</p></p>
+<p><b>Covered Amount</b>: Subtract the deductible from the PPO fee (before applying the covered percentage).<p class="codeblock">PPO Fee - Deductible = Covered Amount</p><p class="codeblock">$127 - $50 = $77</p></p>
+<p><div class="Note">Note: If there is a procedure copay, <span class="codeblock">Covered Amount = PPO Fee - (Deductible + Copay)</span></div>
+</p>
+<p><b>Insurance Estimate</b>: Apply the covered percentage to the covered amount.<p class="codeblock">Covered Amount x Covered Percentage = Insurance Estimate</p><p class="codeblock">$77 x 80% = $61.60</p></p>
+<p><b>Patient Portion</b>: Subtract the insurance estimate amount and write-off from the office fee.<p class="codeblock">Office Fee - Write-off - Insurance Estimate = Patient Portion</p><p class="codeblock">$150 - $23 - $61.60 = $65.40</p></p>
+<p><b>Verify</b>: To verify the estimates are correct, add the write-off, insurance estimate, and patient portion. This will equal the office fee. <p class="codeblock"> Write-off + Insurance Estimate + Patient Portion = Office Fee</p><p class="codeblock">23 + 61.60 + 65.40 = 150</p></p>
+<h2>Downgrades</h2>
+<p>In this example we will explain the math behind a two surface downgrade. For posterior composites, most companies still base their payment calculations on the corresponding amalgam code for the same number of surfaces.</p>
+<p class="MarginBottomZero">Sample Fees </p>
+<ul class="MarginBottomGap">
+<li>Office Fee for D2392 = $150</li>
+<li>PPO Fee for D2392 (composite) = $127</li>
+<li>PPO Fee for D2150 (amalgam) = $100</li>
+<li>Deductible = $50</li>
+<li>Covered Percentage = 80%</li>
+</ul>
+<p><b>Write-off</b>: The billed code is always used for the PPO fee, so for a downgrade it uses the PPO fee for D2392 (composite). This is the last time the D2392 PPO fee is used.<p class="codeblock">Office Fee - PPO Fee = Write-off</p><p class="codeblock">$150 - $127 = $23</p></p>
+<p><b>Covered Amount</b>: Subtract the deductible from the PPO Fee for D2150 (amalgam),<p class="codeblock">PPO Fee - Deductible = Covered Amount</p><p class="codeblock">$100 - $50 = $50</p></p>
+<p><div class="Note">Note: If there is a procedure copay, <span class="codeblock">Covered Amount = Substitution Code PPO Fee - (Deductible + Copay)</span></div>
+</p>
+<p><b>Insurance Estimate</b>: Apply the covered percentage to the covered amount.<p class="codeblock">Covered Amount x Covered Percentage = Insurance Estimate</p><p class="codeblock">$50 x 80% = $40</p></p>
+<p><b>Patient Portion</b>: Subtract the insurance estimate amount and write-off from the office fee.<p class="codeblock">Office Fee - Writeoff - Insurance Pay = Patient Portion</p><p class="codeblock">$150 - $23 - $40 = $87</p></p>
+<p><b>Verify</b>: To verify the estimates are correct, add the write-off, insurance estimate, and patient portion. This will equal the office fee. <p class="codeblock"> Write-off + Insurance Estimate + Patient Portion = Office Fee</p><p class="codeblock">23 + 40 + 87 = 150</p></p>
+<p>For more information about downgrades, see <a href="downgrades.html">Estimate Downgrades</a>.</p>
+</div>
+</div>
+</body>
+</html>

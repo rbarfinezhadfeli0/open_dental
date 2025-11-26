@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Insurance Categories</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('inscatssetup','+familyinsurance','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/inscatssetup.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/inscatssetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/inscatssetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/inscatssetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/inscatssetup.html" >v23.2</option><option value="https://www.opendental.com/manual231/inscatssetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/inscatssetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/inscatssetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/inscatssetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/inscatssetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/inscatssetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/inscatssetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/inscatssetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/inscatssetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/inscatssetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/inscatssetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/inscatssetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/inscatssetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/inscatssetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/inscatssetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/inscatssetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/inscatssetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/inscatssetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/inscatssetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/inscatssetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/inscatssetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/inscatssetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/inscatssetup.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Insurance Categories</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Family/Insurance, Insurance Categories.</p>
+<img src="images/insCatsSetup.png" width="715" height="687"/><p>Insurance categories allow automatic calculations of insurance coverage based on the procedure code.</p>
+<p><div class="Note">Note: Do not alter insurance categories without full understanding of what this does. Insurance Categories are global. Changes may affect all plans.</div>
+</p>
+<p class="MarginBottomZero"><b>Coverage Spans</b>: Insurance categories with specific procedure code ranges according to typical insurance groupings. Categories are used to calculate the actual insurance coverage for specific procedures. The categories that exist correspond to the Category options available when creating <a href="otherbenefits.html">Other Benefits</a> for an <a href="insplan.html">Insurance Plan</a>. Coverage categories are completely unrelated to procedure code categories. </p>
+<ul class="MarginBottomGap">
+<li>Double-click a gray Category row to edit category information. Opens Edit Insurance Categories (see below).</li>
+<li>Double-click a coverage span row to edit. Opens Edit Ins Coverage Spans (see below).</li>
+<li>If a category is a subset of another span, then that category should be lower in the list.</li>
+<li>If an E-Benefit Category is assigned to the Category, this corresponds to a fixed row in <a href="benefitinfo.html">Benefits</a>. These are also used for <a href="ebenefits.html">Electronic Eligibility and Benefits</a>. See Electronic Benefit Categories below. </li>
+</ul>
+<p class="MarginBottomZero">Categories: Use the buttons to reorganize or create new Coverage Spans. </p>
+<ul class="MarginBottomGap">
+<li><b>Up</b>/<b>Down</b>: Highlight a gray Category row and click to move the category up or down in the Coverage Spans list. </li>
+<li><b>Add</b>: Click to create a new Category. Opens Edit Insurance Categories (see below).</li>
+</ul>
+<p><b>Add Span</b>: Highlight a gray Category row and click to add a procedure code span. Opens Edit Ins Coverage Spans (see below).</p>
+<p><b>Set to Defaults</b>: Reverts Coverage Spans list to Open Dental defaults. All customization to categories and procedure code spans will be lost.</p>
+<h2>Edit Insurance Categories</h2>
+<p>Click <b>Add</b> to create a new Coverage Span <i>Category</i> or double-click and existing gray Category row in the list to edit.</p>
+<img src="images/insCatEdit.png" width="583" height="207"/><p><b>Description</b>: Category name.</p>
+<p class="MarginBottomZero"><b>Default Percent</b>: Coverage percentage assigned to category when creating a new <a href="insplan.html">Insurance Plan</a>.  </p>
+<ul class="MarginBottomGap">
+<li>Changing this number only changes the default value for future insurance plans and does not affect existing plans. </li>
+<li>When left blank, the category is not added as a default benefit to new insurance plans.</li>
+</ul>
+<p><b>Is Hidden</b>: Remove this category as a selection option on <a href="editbenefit.html">Edit Benefit</a>.</p>
+<p><b>Electronic Benefit Category</b>: Corresponds to a fixed row in the Benefits window. Also used for Electronic Eligibility and Benefits. See Electronic Benefit Categories below for additional information.</p>
+<p>Click <b>OK</b> to save.</p>
+<h2>Edit Ins Coverage Spans</h2>
+<p>Highlight a gray Category row and click <b>Add Span</b> to create a new procedure code coverage span, or double-click an existing procedure code coverage span row to edit.</p>
+<img src="images/insCovSpan.png" width="350" height="195"/><p><b>From Code</b>: Enter the starting procedure code of the coverage span.</p>
+<p><b>To Code</b>: Enter the last procedure code of the coverage span. </p>
+<p><b>Delete</b>: Remove this coverage span from the category.</p>
+<p>Click <b>OK</b> to save.</p>
+<h2>Electronic Benefit Categories</h2>
+<p>One of each <i>Electronic Benefit Category</i> (E-Benefit Categories) must be assigned to a corresponding <i>Category</i>. There can be no duplicates and no missing categories in order to use the <a href="benefitinfo.html">Benefits</a>, Simplified View. If E-Benefit categories are not assigned to categories as described, the <a href="benefitinforowview.html">Edit Benefits - Row View</a> must be used instead.</p>
+<p class="MarginBottomZero">E-Benefit Categories correspond to the following fixed rows in Benefits, Simplified view: </p>
+<ul class="MarginBottomGap">
+<li><b>General</b>: <i>No rows</i></li>
+<li><b>Diagnostic</b>: Diagnostic (includes x-ray)</li>
+<li><b>DiagnosticXRay</b>: X-Ray (if different)</li>
+<li><b>RoutinePreventive</b>: Routine Preventive</li>
+<li><b>Restorative</b>: Restorative</li>
+<li><b>Endodontics</b>: Endo</li>
+<li><b>Periodontics</b>: Perio</li>
+<li><b>OralSurgery</b>: Oral Surgery</li>
+<li><b>Crowns</b>: Crowns</li>
+<li><b>Prosthodontics</b>: Prosthodontics</li>
+<li><b>MaxillofacialProsth</b>: Maxillofacial Prosth </li>
+<li><b>Accident</b>: Accident</li>
+<li><b>Orthodontics</b>: (Ortho area) Lifetime Max, Percentage, Ortho Through Age</li>
+<li><b>Adjunctive</b>: <i>No rows</i></li>
+</ul>
+<h2>Additional Information</h2>
+<p>Each Category can have unlimited coverage spans of procedure codes attached. The default spans should work for most offices. Adding extra spans does not increase complexity for the staff, as only categories are shown in the Insurance Plan. </p>
+<p>Spans simply allow the office to put whatever procedures are needed into each category. A span can be as short as a single code. Spans can be deleted although this will affect patient data if the span includes a patient's procedure (it does not corrupt the data). Changes to spans affect the treatment plans of patients.</p>
+</div>
+</div>
+</body>
+</html>

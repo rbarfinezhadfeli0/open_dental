@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Apteryx XVWeb Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridgeapteryxxvweb','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/bridgeapteryxxvweb.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/bridgeapteryxxvweb.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridgeapteryxxvweb.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridgeapteryxxvweb.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridgeapteryxxvweb.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/bridgeapteryxxvweb.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridgeapteryxxvweb.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridgeapteryxxvweb.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridgeapteryxxvweb.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridgeapteryxxvweb.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridgeapteryxxvweb.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridgeapteryxxvweb.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridgeapteryxxvweb.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridgeapteryxxvweb.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridgeapteryxxvweb.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridgeapteryxxvweb.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridgeapteryxxvweb.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridgeapteryxxvweb.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridgeapteryxxvweb.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridgeapteryxxvweb.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridgeapteryxxvweb.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridgeapteryxxvweb.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridgeapteryxxvweb.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridgeapteryxxvweb.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridgeapteryxxvweb.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridgeapteryxxvweb.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridgeapteryxxvweb.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridgeapteryxxvweb.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Apteryx XVWeb Bridge</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>. Double-click on <b>XVWeb from www.apteryx.com/xvweb</b>.</p>
+<img src="images/bridgeXVweb.png" width="778" height="598"/><p>Apteryx XVWeb is a web-based imaging application. Website: <a href="http://www.apteryx.com/xvweb" target="_blank">http://www.apteryx.com/xvweb</a>. Before activating the bridge, log into the XV Web account to ensure the XV Web service is active. </p>
+<p class="MarginBottomZero">To activate the bridge: </p>
+<ol class="MarginBottomGap">
+<li>Check the <b>Enabled</b> box.</li>
+<li>Double-click on a row in <b>Additional Properties</b> to change settings.  <ol>
+<li>Use the PatNum (enter 0) or ChartNum (enter 1) as the patient ID.</li>
+<li>Enter the custom XV Web URL.</li>
+<li>Enter the XV Web <b>Username</b>.</li>
+<li>Enter the XV Web <b>Password</b>.</li>
+<li>Select the <b>Image Category</b> to save images to.</li>
+<li>Select whether to <b>Save Images</b> to the OpenDentImages folder. Enter <i>yes</i> or <i>no</i>.</li>
+<li>Enter the preferred <b>Birthdate Format</b>. </li>
+<li>Select the <b>Image Quality</b>.</li>
+</ol>
+</li>
+<li>Set up a clickable bridge button. <ol>
+<li>Under <b>Add a button to these toolbars</b>, highlight where to display the button.</li>
+<li>Enter the <b>Text on button</b>.</li>
+<li>(Optional) Import an image to show on the button (22 x 22 pixels).</li>
+</ol>
+</li>
+<li>If using clinics, click <b>Hide Button for Clinics</b>. Select which clinics the button should display on.</li>
+<li>Click OK.</li>
+</ol>
+<h2>Saving Images</h2>
+<p>The "yes" option does not work. Leave this in the "no" position. Behavior will be as follows. The image will exist as a download, but will not allow editing or manipulation from the Imaging Module until manually imported into the database. Open Dental will automatically retrieve images in XV Web into the Chart Module, but will not automatically download them. You must still download images you would like to store in Open Dental. In the Chart Module, images will show as downloaded thumbnails. If double clicked, a full size image will be downloaded.</p>
+<p>(Optional) Create a new Image Category to save XV Web images to. See <a href="definitionsimagecat.html">Definitions: Image Categories</a>. Set the folder as the default by setting the Image Category above. </p>
+<h2>Technical Details</h2>
+<p>A user name and password is required the first time the bridge is launched. Open Dental will send the selected patients birthdate (optional), chart number (if selected), gender (optional), name, and patient number to Apteryx XVWeb. If the patient does not exist in XVWeb a new patient record will be created.</p>
+<p>If an image is saved to Open Dental by copy/pasting or importing, it will appear twice.</p>
+<p>This feature will work more efficiently in offices that have a high speed internet connection. If any errors occur, try refreshing the Imaging Module or Chart Module and try again.</p>
+<p>To view the old Imaging Module interface, enable <i>Use old Imaging module interface, pre 2020</i> in <a href="preferences.html">Preferences</a>. All instances of Open Dental must be closed after enabling this preference so the interface can be synched.</p>
+</div>
+</div>
+</body>
+</html>

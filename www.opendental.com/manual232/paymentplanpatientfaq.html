@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Payment Plan Q and A</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('paymentplanpatientfaq','paymentplanpatient','account','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/paymentplanpatientfaq.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/paymentplanpatientfaq.html" >v24.2</option><option value="https://www.opendental.com/manual241/paymentplanpatientfaq.html" >v24.1</option><option value="https://www.opendental.com/manual233/paymentplanpatientfaq.html" >v23.3</option><option value="https://www.opendental.com/manual232/paymentplanpatientfaq.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/paymentplanpatientfaq.html" >v23.1</option><option value="https://www.opendental.com/manual224/paymentplanpatientfaq.html" >v22.4</option><option value="https://www.opendental.com/manual223/paymentplanpatientfaq.html" >v22.3</option><option value="https://www.opendental.com/manual222/paymentplanpatientfaq.html" >v22.2</option><option value="https://www.opendental.com/manual221/paymentplanpatientfaq.html" >v22.1</option><option value="https://www.opendental.com/manual214/paymentplanpatientfaq.html" >v21.4</option><option value="https://www.opendental.com/manual213/paymentplanpatientfaq.html" >v21.3</option><option value="https://www.opendental.com/manual212/paymentplanpatientfaq.html" >v21.2</option><option value="https://www.opendental.com/manual211/paymentplanpatientfaq.html" >v21.1</option><option value="https://www.opendental.com/manual205/paymentplanpatientfaq.html" >v20.5</option><option value="https://www.opendental.com/manual204/paymentplanpatientfaq.html" >v20.4</option><option value="https://www.opendental.com/manual203/paymentplanpatientfaq.html" >v20.3</option><option value="https://www.opendental.com/manual202/paymentplanpatientfaq.html" >v20.2</option><option value="https://www.opendental.com/manual201/paymentplanpatientfaq.html" >v20.1</option><option value="https://www.opendental.com/manual194/paymentplanpatientfaq.html" >v19.4</option><option value="https://www.opendental.com/manual193/paymentplanpatientfaq.html" >v19.3</option><option value="https://www.opendental.com/manual192/paymentplanpatientfaq.html" >v19.2</option><option value="https://www.opendental.com/manual191/paymentplanpatientfaq.html" >v19.1</option><option value="https://www.opendental.com/manual184/paymentplanpatientfaq.html" >v18.4</option><option value="https://www.opendental.com/manual183/paymentplanpatientfaq.html" >v18.3</option><option value="https://www.opendental.com/manual182/paymentplanpatientfaq.html" >v18.2</option><option value="https://www.opendental.com/manual181/paymentplanpatientfaq.html" >v18.1</option><option value="https://www.opendental.com/manual174/paymentplanpatientfaq.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Payment Plan Q and A</p></div>
+<div class="GeneralPageContent">
+<p>Below are some questions and answers about <a href="paymentplanpatient.html">Patient Payment Plans</a>.</p>
+<p>Information may also apply to <a href="paymentplandynamic.html">Dynamic Payment Plans</a> and <a href="paymentplanins.html">Insurance Payment Plans</a> .</p>
+<h2>Pay Plan Charge Logic</h2>
+<p><b>How does each Pay Plan Logic Preference function?</b></p>
+<p>Pay Plan Logic <a href="preferences.html">Preference</a>, determines how charges and credits for Patient Payment Plans and Dynamic Payment Plans show in the patient account ledger and whether they affect balances, aging, and reports. This logic does not apply to Insurance Payment Plans. </p>
+<p>Below is information on how each preference functions and screenshots of how Payment Plans will appear in the Patient Account ledger.</p>
+<p class="MarginBottomZero"><b>Do Not Age (Legacy)</b>: Payment plan debits (amounts due) and payments only show within the payment plan and will not affect balance or aging.  </p>
+<ul class="MarginBottomGap">
+<li>Payment plan debits are totaled in the Payment Plans grid under Due Now.</li>
+<li>Payment plan payments do not show in the ledger but in the payment plan. Double-clicking the plan row is the only way to view payment plan payments.</li>
+<li>One payment plan credit (PayPln) will show as a single line item in the patient account ledger, thus reducing the total account balance by the amount. The credit amount is based on the Tx Completed Amt set in the payment plan.</li>
+<li>Other payment plan credits, debits, and payments do not show in the ledger nor do they affect balances or aging.</li>
+<li>The total A/R in the Aging of A/R report will not include payment plan due amounts.</li>
+<li>Only changes to the Tx Completed Amount affect aging and production and income reports.</li>
+<li>Payment plan amounts are not included on the <a href="reportreceivablesbreakdown.html">Receivables Breakdown Report</a>.</li>
+</ul>
+<img src="images/payPlanAccountDoNotAge.png" width="757" height="176"/><p class="MarginBottomZero"><b>Age Credits and Debits (Default)</b>: Payment plan debits, credits, and payments will show as line items in patient account ledger and affect balances and aging.<br/> When the patient is in the same family as the payment plan guarantor, the behavior is as follows. </p>
+<ul class="MarginBottomGap">
+<li>Payment plan amounts due (PayPln: Debit) and credits (PayPln: Credit) show as line items in the patient account ledger.</li>
+<li>Payment plan payments show in the account ledger.</li>
+<li>Payment plan due amounts are included the patient's balance.</li>
+<li>Payment plan amounts due and payments are considered when calculating aging.</li>
+<li>Payment plan credits and debits are included on the Receivables Breakdown report.</li>
+<li>Changes made to historical payment plan charges will affect historical information (e.g. Aging of A/R, Production and Income reports).</li>
+</ul>
+<img src="images/payPlanAccountAgeCreditsDebits.png" width="757" height="257"/><p class="MarginBottomZero">When the patient is in a different family than the payment plan guarantor, the behavior is as follows. </p>
+<ul class="MarginBottomGap">
+<li>Payment plan amounts due (PayPln: Debit) show as line items in the guarantor's account ledger.</li>
+<li>Payment plan credits (PayPln: Credit) show as line items in the patient's account ledger.</li>
+<li>Payment plan payments show in the guarantor's account ledger.</li>
+<li>Payment plan due amounts are included in the guarantor's balance.</li>
+</ul>
+<img src="images/payPlanDefaultDiffFamilyGuarantor.png" width="915" height="144"/><p class="MarginBottomZero"><b>Age Credits Only</b>: Patients are credited for payment plans when the credit comes due, but debits all exist separately from the account ledger. </p>
+<ul class="MarginBottomGap">
+<li>Each payment plan credit line item will show in the account ledger, sorted by Tx Credit date.</li>
+<li>Payment plan amounts due only show in the Payment Plan grid. They do not show in the account ledger.</li>
+<li>Payment plan amounts due will not be considered when calculating balances and aging.</li>
+<li>Payment plan credits and debits will not be included on the Receivables Breakdown report.</li>
+<li>Changes made to historical payment plan credits will affect historical information (e.g. Aging of A/R, Production and Income reports).</li>
+<li>Payments attached to the payment plan will only show in the Payment Plan window; they will not display in the account ledger.</li>
+</ul>
+<img src="images/payPlanAccountCreditsOnly.png" width="757" height="189"/><p class="MarginBottomZero"><b>No Charges to Account (Rarely Used)</b>: No Pay Plan Credits or Pay Plan Debit are posted to the account. Patients are not credited for payment plans, so the account balance is aged normally. </p>
+<ul class="MarginBottomGap">
+<li>Payment plan amounts due only show in the Payment Plan grid. They do not show in the account ledger.</li>
+<li>Payments to payment plans show in ledger and payment plan.</li>
+<li>Payment plan amounts will not be included on the Receivables Breakdown report.</li>
+</ul>
+<img src="images/payPlanAccountNoCharges.png" width="757" height="176"/><h2>Changing Pay Plan Charge Logic</h2>
+<p><p><b>I am considering transitioning to Age Credits and Debits logic. What do I need to know?</b></p>
+</p>
+<p class="MarginBottomZero">When you first transition, patient account balances will change: </p>
+<ul class="MarginBottomGap">
+<li>The account balance for any patient with a patient payment plan will change by the payment plan amount currently due.</li>
+<li>The Family Aging amounts will include patient payment plan charges currently due.</li>
+<li>The total A/R in the <a href="reportaging.html">Aging of Accounts Receivable (A/R) Report</a> will change.</li>
+</ul>
+<p><b>How can I see the difference between Do Not Age logic and Age Credits and Debits logic in the Aging of A/R Report amounts?</b></p>
+<ol>
+<li>With Do Not Age selected: <ul>
+<li>Run the Aging of A/R report (Check <b>Include Negative Balances</b>).</li>
+<li>Run the <a href="reportpaymentplan.html">Payment Plan Report</a>. Select Patient as the Payment Plan Type. Uncheck <b>Hide Completed Payment Plans</b> and <b>Limit to Plans Created in Date Range</b>. The Due Now column will indicate the total payment plan amount due.</li>
+</ul>
+</li>
+<li>With Age Credits and Debits selected, run the Aging of A/R report again (Check <b>Include Negative Balances</b>).</li>
+</ol>
+<br/><p>The Total column from the report in step 1 (traditional) + the Due Now amount from the Payment Plan report will equal the Total column from report in step 2 (Age Credits and Debits).</p>
+<h2>Overcharged Payment Plans</h2>
+<p><p><b>A patient has a payment plan with overcharged production. How do I reduce the production on the plan and re-allocate the patients' overpayment?</b></p>
+</p>
+<p><div class="Note">Note: Following the steps outlined below will prevent users from creating future income transfers on the affected accounts using the Income Transfer Manager.</div>
+</p>
+<p>A payment plan may become overcharged if procedures attached to the plan are discounted or if insurance pays more than expected after the payment plan is created. To reduce the payment plan charges, the easiest method is to delete the payment plan and recreate it for the correct procedure balance. However, if payments are attached to the plan, complete the steps below.</p>
+<p>In order to correct the payment plan, it must be open and have a remaining balance equal to the total overcharged amount.</p>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>If the payment plan is closed, double-click into the plan, click <b>Reopen</b>, then click <b>OK</b> to exit and save.</li>
+<li>Transfer patient income from each overcharged procedure on the payment plan and allocate it to an outstanding charge or to <a href="unearnedprepayment.html">Unearned Income</a> (to be allocated later). See <a href="incometransfer.html">Income Transfer</a>.</li>
+<li>Double-click back into the payment plan and create a pay plan adjustment to remove the overcharged production; click <b>Add Adjustment</b>.</li>
+<li>In the Negative Pay Plan Adjustment window, enter the total overcharged amount and click <b>OK</b>. The total adjustment amount will be credited to the payment plan. If the total adjustment exceeds a single pay plan charge, the amount is split between the pay plan charges with a remaining balance.</li>
+<li>Associate the pay plan adjustment to the procedure credits attached to the payment plan; click <b>View Tx Credits</b>.</li>
+<li>In the Payment Plan Procedures and Credits window, highlight the Adjustment credit (blue line item) and click <b>Delete</b>. This will remove the unattached credit created by the pay plan adjustment.</li>
+<li>Create a new credit attached to each overcharged procedure. Overcharged procedures will have a negative amount in the Rem After column. Highlight the overcharged procedure (yellow line item), verify the amount matches the amount to be credited, and click <b>Add</b>. Repeat for each overcharged procedure on the payment plan, then click <b>OK</b> to save and exit the Tx Credits window.</li>
+<li>If the amounts on the payment plan summary all match and there are no future charges remaining, the payment plan may be closed; click <b>Close</b>. </li>
+</ol>
+</div>
+</div>
+</body>
+</html>

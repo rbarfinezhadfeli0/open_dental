@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - EdgeExpress Setup</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('edgeexpresssetup','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/edgeexpresssetup.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/edgeexpresssetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/edgeexpresssetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/edgeexpresssetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/edgeexpresssetup.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/edgeexpresssetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/edgeexpresssetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/edgeexpresssetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/edgeexpresssetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/edgeexpresssetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/edgeexpresssetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/edgeexpresssetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/edgeexpresssetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/edgeexpresssetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/edgeexpresssetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/edgeexpresssetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/edgeexpresssetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/edgeexpresssetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/edgeexpresssetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/edgeexpresssetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/edgeexpresssetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/edgeexpresssetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/edgeexpresssetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/edgeexpresssetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/edgeexpresssetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/edgeexpresssetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/edgeexpresssetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/edgeexpresssetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>EdgeExpress Setup</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>. Double-click on <b>EdgeExpress from www.globalpaymentsintegrated.com</b>.</p>
+<img src="images/bridgeEdgeExpress.png" width="445" height="460"/><p class="MarginBottomZero">EdgeExpress is part of <a href="xcharge.html">XCharge (OpenEdge)</a>. Both are provided by Global Payments Integrated. </p>
+<ul class="MarginBottomGap">
+<li>Typically, EdgeExpress cannot be installed simultaneously with XCharge, as only one can be used for regular patient payments. </li>
+<li>If using EdgeExpress for online payments, XCharge can still be installed for regular patient payments. </li>
+<li><a href="../site/opendentalcloud.html">Open Dental Cloud</a> users must use EdgeExpress over XCharge.</li>
+</ul>
+<p class="MarginBottomZero">To enable EdgeExpress: </p>
+<ol class="MarginBottomGap">
+<li>Check the <b>Enabled</b> box.</li>
+<li>If using clinics, select the <b>Clinic</b> the Payment Settings apply to.</li>
+<li>Select the default <b>Payment Type</b> for EdgeExpress transactions. <ul>
+<li>If the <a href="preferences.html">Preference</a>,<i> Payments prompt for Payment Type</i>, is enabled, users must manually select a payment type. </li>
+</ul>
+</li>
+<li>Determine the following: <ul>
+<li><b>Prompt for signature on CC trans by default</b>: Check to prompt patients for a signature on the credit card terminal before completing transactions. The terminal must support electronic signatures.</li>
+<li><b>Print receipts by default</b>: Check to automatically print an EdgeExpress receipt to the default receipt Printer when a transaction is completed.</li>
+<li><b>Recurring charges force duplicates by default</b>: By default, transactions for the same amount charged to the same card on the same day are declined. This is to prevent accidentally charging a card twice. Check to allow duplicate charges. Useful if family members have recurring charges set up on the same card for the same day.</li>
+<li><b>Prevent saving new cards</b>: Uncheck to allow users to process new transactions or save new payment information to a patient's account. Check to prevent users from processing new transactions or saving new payment information. <ul>
+<li>To set whether or not new cards are saved to a patient's account after each transaction, see <a href="preferences.html">Preferences</a>, <i>Automatically store credit card tokens</i>.</li>
+</ul>
+</li>
+<li><b>Enable payments for Payment Portal and eClipboard</b>: Check to allow patient payments via <a href="portalpaymentsbypatient.html">Payment Portal</a>.</li>
+</ul>
+</li>
+<li>Enter the X-Web settings: <ul>
+<li>Enter the <b>XWebID</b> (12 digits).</li>
+<li> Enter the <b>Auth Key</b> (32 digits).</li>
+<li> Enter the <b>Terminal ID</b> (8 digits).</li>
+</ul>
+</li>
+<li>Click OK to save.</li>
+</ol>
+<p> When enabled, a <i>Global Payments Integrated</i> button displays in the <a href="payment.html">Payment</a> window. </p>
+<img src="images/globalPaymentsIntegrated.png" width="77" height="39" style="margin-bottom: 0px"/></div>
+</div>
+</body>
+</html>

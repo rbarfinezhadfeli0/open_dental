@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Upload Postcard Recipients</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('postcardsupload','+advertising','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/postcardsupload.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/postcardsupload.html" >v24.2</option><option value="https://www.opendental.com/manual241/postcardsupload.html" >v24.1</option><option value="https://www.opendental.com/manual233/postcardsupload.html" >v23.3</option><option value="https://www.opendental.com/manual232/postcardsupload.html" >v23.2</option><option value="https://www.opendental.com/manual231/postcardsupload.html" >v23.1</option><option value="https://www.opendental.com/manual224/postcardsupload.html" >v22.4</option><option value="https://www.opendental.com/manual223/postcardsupload.html" >v22.3</option><option value="https://www.opendental.com/manual222/postcardsupload.html" >v22.2</option><option value="https://www.opendental.com/manual221/postcardsupload.html" >v22.1</option><option value="https://www.opendental.com/manual214/postcardsupload.html" >v21.4</option><option value="https://www.opendental.com/manual213/postcardsupload.html" >v21.3</option><option value="https://www.opendental.com/manual212/postcardsupload.html" >v21.2</option><option value="https://www.opendental.com/manual211/postcardsupload.html" >v21.1</option><option value="https://www.opendental.com/manual205/postcardsupload.html" >v20.5</option><option value="https://www.opendental.com/manual204/postcardsupload.html" >v20.4</option><option value="https://www.opendental.com/manual203/postcardsupload.html" >v20.3</option><option value="https://www.opendental.com/manual202/postcardsupload.html" >v20.2</option><option value="https://www.opendental.com/manual201/postcardsupload.html" >v20.1</option><option value="https://www.opendental.com/manual194/postcardsupload.html" >v19.4</option><option value="https://www.opendental.com/manual193/postcardsupload.html" >v19.3</option><option value="https://www.opendental.com/manual192/postcardsupload.html" >v19.2</option><option value="https://www.opendental.com/manual191/postcardsupload.html" >v19.1</option><option value="https://www.opendental.com/manual184/postcardsupload.html" >v18.4</option><option value="https://www.opendental.com/manual183/postcardsupload.html" >v18.3</option><option value="https://www.opendental.com/manual182/postcardsupload.html" >v18.2</option><option value="https://www.opendental.com/manual181/postcardsupload.html" >v18.1</option><option value="https://www.opendental.com/manual174/postcardsupload.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Upload Postcard Recipients</p></div>
+<div class="GeneralPageContent">
+<p>Advertising Postcards allow an office to send marketing material to a specified list of existing or prospective patients. </p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Tools, <b>Advertising - Postcards</b>.</p>
+<img src="images/postcardsUpload.png" width="409" height="246"/><p>If Advertising - Postcards is already enabled, the window above will display. If Advertising - Postcards is not yet enabled, the <a href="postcardssetup.html">Postcards Setup (Advertising)</a> window will open instead.</p>
+<p class="MarginBottomZero">Also see  </p>
+<ul class="MarginBottomGap">
+<li><a href="sendpostcards.html">Send Postcards (Advertising)</a></li>
+<li><a href="postcardsadvertisingworkflow.html">Postcards (Advertising): Workflow</a></li>
+</ul>
+<p><b>Setup</b>: Click to open the Advertising - Postcards Setup window.</p>
+<p class="MarginBottomZero">Options: </p>
+<ul class="MarginBottomGap">
+<li><b>Advertising - Postcards Account</b>: Click to select the Advertising - Postcards account to open.</li>
+<li><b>Number of recipients</b>: The current number of patients selected to send postcards to.  <ul>
+<li><b>Select Patients</b>: Click to select which patients to send postcards to. See <a href="advertisingselectpatients.html">Advertising - Select Patients</a>.</li>
+</ul>
+</li>
+<li><b>List Name</b>: Give the patient list a name. </li>
+</ul>
+<p><b>View Account Details</b>: Click to send postcards without a pre-loaded patient list or view postcard account information. </p>
+<p><b>Upload List</b>: Click to send postcards using the list of selected patients.</p>
+<p>Click <b>Cancel</b> to close without making changes.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Service Manager</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('servicemanager','+misc','+tools','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/servicemanager.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/servicemanager.html" >v24.2</option><option value="https://www.opendental.com/manual241/servicemanager.html" >v24.1</option><option value="https://www.opendental.com/manual233/servicemanager.html" >v23.3</option><option value="https://www.opendental.com/manual232/servicemanager.html" >v23.2</option><option value="https://www.opendental.com/manual231/servicemanager.html" >v23.1</option><option value="https://www.opendental.com/manual224/servicemanager.html" >v22.4</option><option value="https://www.opendental.com/manual223/servicemanager.html" >v22.3</option><option value="https://www.opendental.com/manual222/servicemanager.html" >v22.2</option><option value="https://www.opendental.com/manual221/servicemanager.html" >v22.1</option><option value="https://www.opendental.com/manual214/servicemanager.html" >v21.4</option><option value="https://www.opendental.com/manual213/servicemanager.html" >v21.3</option><option value="https://www.opendental.com/manual212/servicemanager.html" >v21.2</option><option value="https://www.opendental.com/manual211/servicemanager.html" >v21.1</option><option value="https://www.opendental.com/manual205/servicemanager.html" >v20.5</option><option value="https://www.opendental.com/manual204/servicemanager.html" >v20.4</option><option value="https://www.opendental.com/manual203/servicemanager.html" >v20.3</option><option value="https://www.opendental.com/manual202/servicemanager.html" >v20.2</option><option value="https://www.opendental.com/manual201/servicemanager.html" >v20.1</option><option value="https://www.opendental.com/manual194/servicemanager.html" >v19.4</option><option value="https://www.opendental.com/manual193/servicemanager.html" >v19.3</option><option value="https://www.opendental.com/manual192/servicemanager.html" >v19.2</option><option value="https://www.opendental.com/manual191/servicemanager.html" >v19.1</option><option value="https://www.opendental.com/manual184/servicemanager.html" >v18.4</option><option value="https://www.opendental.com/manual183/servicemanager.html" >v18.3</option><option value="https://www.opendental.com/manual182/servicemanager.html" >v18.2</option><option value="https://www.opendental.com/manual181/servicemanager.html" >v18.1</option><option value="https://www.opendental.com/manual174/servicemanager.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Service Manager</p></div>
+<div class="GeneralPageContent">
+<p>The Service Manager is a tool used to manage the installations of the different services used by Open Dental.</p>
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Tools, Misc Tools,<b> Service Manager</b>.</p>
+<img src="images/serviceManager.gif" width="355" height="414"/><p>Alternatively, in the Open Dental installation folder, double-click <i>ServiceManager.exe</i>.</p>
+<p><div class="Note">Note: The Service Manager can not be accessed by Open Dental Cloud users.</div>
+</p>
+<p>By default, all services currently installed will list. Each service must have a unique service name. </p>
+<p class="MarginBottomZero"> The following services can be viewed in the Service Manager: </p>
+<ul class="MarginBottomGap">
+<li><b>OpenDentalService</b>: Required for background processes and is installed with Open Dental. See <a href="opendentalservice.html">Open Dental Service</a>.</li>
+<li><b>eConnector</b>: Required to use <a href="eservices.html">eServices</a>. See <a href="econnector.html">eConnector</a>.</li>
+<li><b>OpenDentalHL7</b>: Used by <a href="hl7.html">Generic HL7</a> or <a href="hl7ecw.html">eClinicalWorks HL7</a>.</li>
+<li><b>OpenDentalReplicationService</b>: Required for <a href="replication.html">Replication</a>. See <a href="opendentalreplicationservice.html">Open Dental Replication Service</a>.</li>
+<li><b>MySQL</b>: Required to access the database and is installed upon Open Dental installation. Can be either <a href="mysql.html">MySQL</a> or <a href="mariadb.html">MariaDB</a>.</li>
+<li><b>OpenDentalAPIService</b>: Only used by third-party vendors utilizing the Open Dental API. </li>
+</ul>
+<h2>Add or Edit a Service</h2>
+<p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Run the Service Manager as an administrator. <ul>
+<li>If opening the Service Manager from within Open Dental, first run Open Dental as an administrator.</li>
+<li>If opening the Service Manager from the installation folder, right-click to run as an administrator.</li>
+</ul>
+</li>
+<li>Click <b>Add</b> to install a new service, or double-click to modify an existing service.<br/><img src="images/econnectorManageStopped.gif" width="721" height="177" class="ImageInParagraph"/><br/></li>
+<li>Enter or choose the Service Name.  <ul>
+<li>The service name must begin with "OpenDent" (e.g. OpenDentalService), with the exception of the MySQL service.</li>
+<li>The service name cannot have spaces.</li>
+</ul>
+</li>
+<li>Click <b>Browse</b> and select a supported service executable. Typically the files are located in the folders below: <ul>
+<li><b>\Program Files (x86)\Open Dental\OpenDentalService\OpenDentalService.exe</b></li>
+<li><b>\Program Files (x86)\Open Dental\OpenDentalEConnector\OpenDentalEConnector.exe</b></li>
+<li><b>\Program Files (x86)\Open Dental\OpenDentHL7.exe</b></li>
+<li><b>\Program Files (x86)\Open Dental\OpenDentalCustListener\OpenDentalCustListener.exe</b></li>
+<li><b>\Program Files (x86)\Open Dental\OpenDentalReplicationService\OpenDentalReplicationService.exe</b></li>
+</ul>
+</li>
+<li>Click <b>Install</b>. If the installation is successful the status will change from <i>Not installed</i> to <i>Installed, Stopped</i>.</li>
+<li>Click <b>Start</b> to start the service. The status will change to <i>Installed, Running</i>.</li>
+</ol>
+<h2>Remove a Service</h2>
+<p>To remove a service, double-click the service, then click <b>Uninstall</b>. Once completed, the service will no longer display in the list.</p>
+<h2>Stop a Service</h2>
+<p>All OpenDent services are automatically stopped prior to an Open Dental update, then restarted when complete. If necessary, a service can be stopped from the Service Manager above, or directly from Windows Services on the server. </p>
+<h2>Multiple Databases Hosted on a Single Server</h2>
+<p>Multiple OpenDental, HL7, and/or eConnector services can run on the same server to allow one server to host multiple databases. In order for each service to process messages for the correct database, a copy of the Open Dental application folder has to be made and uniquely named. For example:</p>
+<p><b>C:\OpenDentaleConnector_DatabaseA</b><br/><b>C:\OpenDentaleConnector_DatabaseB</b><br/><b>C:\OpenDentaleConnector_DatabaseC</b></p>
+<p class="MarginBottomZero">Each folder has the exact contents of the Open Dental application folder with the exception of a config file. </p>
+<ul class="MarginBottomGap">
+<li>HL7: <a href="freedentalconfig.html">FreeDentalConfig.xml</a></li>
+<li>OpenDentalEConnector: OpenDentalWebConfig.xml </li>
+<li>OpenDentalService: OpenDentalServiceConfig.xml</li>
+</ul>
+<p>After an update the application folder will need to be be recopied to the duplicate service folders to ensure the versions match.</p>
+<h2>Troubleshooting</h2>
+<p>If the service does not start as expected, see the Troubleshooting section on <a href="hl7.html">Generic HL7</a>, <a href="hl7ecw.html">eClinicalWorks HL7</a>, or <a href="eservicestroubleshooting.html">eServices Troubleshooting</a>.</p>
+<p><b>Problem: Receive Windows security errors when trying to install Open Dental services. </b></p>
+<p>Solution: Contact Open Dental support and we can install them for you.</p>
+<p><b>OpenDentalWebConfig.xml Errors:</b></p>
+ Event Log:If the service does not start as expected: <ol>
+<li>Check to make sure the database folder is correct in the OpenDentalWebConfig.xml file.</li>
+<li>The service will not start if the version is not exactly the same as the version of the main Open Dental program.</li>
+<li>If it still won't start, check the Event Viewer in Windows. <ul>
+<li>In the Event Viewer, select Windows Logs, then click on Application.</li>
+<li>You can filter this event log for Event Source <i>OpenDentWeb</i>. The error and information entries will help determine the reason why the service will not start.</li>
+</ul>
+</li>
+</ol>
+<br/><p class="MarginBottomZero">Changing Log Level: It may be necessary to increase the Log Level which is committed to the Event Log referenced above.  </p>
+<ol class="MarginBottomGap">
+<li>Right-click on the OpenDentalWebConfig.xml file, then select Open With, Notepad.</li>
+<li>Add a node (or modify if it is already there) under the &lt;ConnectionSettings&gt; node which is called &lt;LogLevelOfApplication&gt;. Set the node value to one of the supported value listed below.  <ul>
+<li>Error - The default, lowest logging level. This will only show errors in the event log.</li>
+<li>Information - This shows Error entries plus inbound and outbound traffic information. This level will clutter your log file but lets you know how frequent your traffic is.</li>
+<li>Verbose - This shows Error entries plus Information entries plus program troubleshooting information. This mode should be used very sparingly as it will clutter your event log very rapidly. ** NOTE: This mode will generally only be used by engineering in the event that there is an issue that cannot be solved by support. It is not recommended to set the log level for long periods of time.</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+</body>
+</html>

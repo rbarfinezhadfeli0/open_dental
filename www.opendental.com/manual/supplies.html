@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Supplies</title>
+<link href="../manual243/resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "../manual243/resources/manualToc.js"></script>
+<script src = "../manual243/resources/manual.js"></script>
+<link rel="icon" type="image/png" href="../manual243/resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('supplies','supplyinventory','manage','modules','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/site/helpfeature.html">v24.4 +</option><option value="https://www.opendental.com/manual243/supplies.html"  selected>v24.3</option><option value="https://www.opendental.com/manual242/supplies.html" >v24.2</option><option value="https://www.opendental.com/manual241/supplies.html" >v24.1</option><option value="https://www.opendental.com/manual233/supplies.html" >v23.3</option><option value="https://www.opendental.com/manual232/supplies.html" >v23.2</option><option value="https://www.opendental.com/manual231/supplies.html" >v23.1</option><option value="https://www.opendental.com/manual224/supplies.html" >v22.4</option><option value="https://www.opendental.com/manual223/supplies.html" >v22.3</option><option value="https://www.opendental.com/manual222/supplies.html" >v22.2</option><option value="https://www.opendental.com/manual221/supplies.html" >v22.1</option><option value="https://www.opendental.com/manual214/supplies.html" >v21.4</option><option value="https://www.opendental.com/manual213/supplies.html" >v21.3</option><option value="https://www.opendental.com/manual212/supplies.html" >v21.2</option><option value="https://www.opendental.com/manual211/supplies.html" >v21.1</option><option value="https://www.opendental.com/manual205/supplies.html" >v20.5</option><option value="https://www.opendental.com/manual204/supplies.html" >v20.4</option><option value="https://www.opendental.com/manual203/supplies.html" >v20.3</option><option value="https://www.opendental.com/manual202/supplies.html" >v20.2</option><option value="https://www.opendental.com/manual201/supplies.html" >v20.1</option><option value="https://www.opendental.com/manual194/supplies.html" >v19.4</option><option value="https://www.opendental.com/manual193/supplies.html" >v19.3</option><option value="https://www.opendental.com/manual192/supplies.html" >v19.2</option><option value="https://www.opendental.com/manual191/supplies.html" >v19.1</option><option value="https://www.opendental.com/manual184/supplies.html" >v18.4</option><option value="https://www.opendental.com/manual183/supplies.html" >v18.3</option><option value="https://www.opendental.com/manual182/supplies.html" >v18.2</option><option value="https://www.opendental.com/manual181/supplies.html" >v18.1</option><option value="https://www.opendental.com/manual174/supplies.html" >v17.4</option></select>
+				</div>        <a href="../manual243/manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="../manual243/searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Supplies</p></div>
+<div class="GeneralPageContent">
+<p>Enter supplies into the Supplies list before generating supply orders. </p>
+<p>In the <a href="supplyinventory.html">Supply Inventory</a> window, click <b>Supplies</b>.</p>
+<img src="images/supplies.gif" width="772" height="454"/><p>This is the main list of supplies used by the practice. Supplies must be entered into the Supplies list before they can be added to <a href="supplyorders.html">Supply Orders</a>. By default, supplies are listed alphabetically; first by category, then by description. Any supply field can also be searched.</p>
+<p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Suppliers:</b> Click the dropdown to filter by <a href="suppliersetup.html">Supplier</a>.</li>
+<li><b>Categories:</b> Click the dropdown to filter by <a href="definitionssupplycats.html">Category</a>.</li>
+<li><b>Search:</b> Enter the criteria. The list will update as you type.</li>
+<li><b>Show Hidden:</b> Check to view supplies marked hidden.</li>
+<li><b>Enter Quantities</b>: Check this box to quickly enter On Hand and Order numbers for each item in the Supplies grid below. Click into the Order field and enter a value.</li>
+<li><b>Add Supply:</b> Select a supplier and category from the dropdown menus, then click Add to create a new supply item.</li>
+<li><b>Up/Down Arrows</b> Highlight a supply, then click the up or down arrow to rearrange the list within a category.</li>
+<li>Create new Orders for each supplier:  <ul>
+<li><b>Selected:</b> Highlight supplies, then click Selected to create an order for each selected supplier. The saved <i>Order Qty</i> will not be zeroed out.</li>
+<li><b>With Qty:</b> Only create orders for supplies with a quantity entered. The saved <i>Order Qty</i> will be zeroed out. </li>
+</ul>
+</li>
+<li><b>Print</b>: Click to print the list.</li>
+</ul>
+<h2>Adding or Editing a Supply</h2>
+<p>Double-click an existing supply to edit it. Alternatively, select a supplier from the list and click<b> Add Supply</b> to create a new supply entry.</p>
+<img src="images/supplyEdit.gif" width="609" height="346"/><p class="MarginBottomZero"></p>
+<ul class="MarginBottomGap">
+<li><b>Supplier</b>: Read only. The supplier must be selected from the Supplies window before clicking Add Supply. It cannot be changed.</li>
+<li><b>Category</b>: Select the <a href="definitionssupplycats.html">Supply Category</a>. Defaults to the category selected in the Supplies window. If no category is selected in the Supplies window, the first category in the list will be selected. </li>
+<li><b>Catalog Item Number</b>: Enter the catalog number.</li>
+<li><b>Description</b>: (Required) Enter a description. Include units. For example "case of 10 boxes" or "box of 100".</li>
+<li><b>Stock Level</b>: Enter the minimum number of items to keep on hand. Units should match how they are ordered. For example, if a unit of gloves is a case of 10 boxes, then this might be 1.5 to indicate a reorder is needed whenever there are less than 15 boxes of gloves.</li>
+<li><b>On Hand Qty</b>: Enter the quantity currently stocked.</li>
+<li><b>Order Qty</b>: Enter the quantity needed on the next order. When creating an order using <b>With Qty</b>, this will be zeroed out.</li>
+<li><b>Price</b>: Enter the cost of the item.</li>
+<li><b>Hidden</b>: Mark a supply as hidden so it no longer appears in the supplies list. Supplies that have been placed in an order can only be hidden, not deleted.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

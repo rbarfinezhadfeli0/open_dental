@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - iCat Bridge</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('bridgeicat','programlinks','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/bridgeicat.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/bridgeicat.html" >v24.2</option><option value="https://www.opendental.com/manual241/bridgeicat.html" >v24.1</option><option value="https://www.opendental.com/manual233/bridgeicat.html" >v23.3</option><option value="https://www.opendental.com/manual232/bridgeicat.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/bridgeicat.html" >v23.1</option><option value="https://www.opendental.com/manual224/bridgeicat.html" >v22.4</option><option value="https://www.opendental.com/manual223/bridgeicat.html" >v22.3</option><option value="https://www.opendental.com/manual222/bridgeicat.html" >v22.2</option><option value="https://www.opendental.com/manual221/bridgeicat.html" >v22.1</option><option value="https://www.opendental.com/manual214/bridgeicat.html" >v21.4</option><option value="https://www.opendental.com/manual213/bridgeicat.html" >v21.3</option><option value="https://www.opendental.com/manual212/bridgeicat.html" >v21.2</option><option value="https://www.opendental.com/manual211/bridgeicat.html" >v21.1</option><option value="https://www.opendental.com/manual205/bridgeicat.html" >v20.5</option><option value="https://www.opendental.com/manual204/bridgeicat.html" >v20.4</option><option value="https://www.opendental.com/manual203/bridgeicat.html" >v20.3</option><option value="https://www.opendental.com/manual202/bridgeicat.html" >v20.2</option><option value="https://www.opendental.com/manual201/bridgeicat.html" >v20.1</option><option value="https://www.opendental.com/manual194/bridgeicat.html" >v19.4</option><option value="https://www.opendental.com/manual193/bridgeicat.html" >v19.3</option><option value="https://www.opendental.com/manual192/bridgeicat.html" >v19.2</option><option value="https://www.opendental.com/manual191/bridgeicat.html" >v19.1</option><option value="https://www.opendental.com/manual184/bridgeicat.html" >v18.4</option><option value="https://www.opendental.com/manual183/bridgeicat.html" >v18.3</option><option value="https://www.opendental.com/manual182/bridgeicat.html" >v18.2</option><option value="https://www.opendental.com/manual181/bridgeicat.html" >v18.1</option><option value="https://www.opendental.com/manual174/bridgeicat.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>iCat Bridge</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, <a href="programlinks.html">Program Links</a>. Double-click on <b>iCat</b>.</p>
+<img src="images/bridgeICat.png" width="778" height="598"/><p>iCat is an imaging software. Website: <a href="https://www.kavo.com/en-us/i-cat" target="_blank">https://www.kavo.com/en-us/i-cat</a></p>
+<p class="MarginBottomZero">To enable the bridge: </p>
+<ol class="MarginBottomGap">
+<li>Check the <b>Enabled</b> box.</li>
+<li>Verify the <b>Path of file to open</b>.</li>
+<li>Double-click on a row in <b>Additional Properties</b> to change settings.  <ol>
+<li>Use the PatNum (enter 0) or ChartNum (enter 1) as the patient ID.</li>
+<li>Enter the <b>Acquisition computer name</b>.</li>
+<li>Verify <b>XML output file path</b>.</li>
+<li>Verify <b>Return folder path</b>.</li>
+</ol>
+</li>
+<li>Set up a clickable bridge button.  <ol>
+<li>Under <b>Add a button to these toolbars</b>, highlight where to display the button.</li>
+<li>Enter the <b>Text on button</b>.</li>
+<li>(Optional) Import an image to show on the button (22 x 22 pixels).</li>
+</ol>
+</li>
+<li>If using clinics, click <b>Hide Button for Clinics</b>. Select which clinics the button should display on.</li>
+<li>Click OK.</li>
+</ol>
+<h2>Technical Details</h2>
+<p>In the Additional Properties grid, set the following properties:</p>
+<p><b>XML output file path:</b> This is a file that is created and managed by Open Dental. Every time this bridge is used from the acquisition computer, the current patient is added to the file. From within the iCat software, set this same path for the PM.XML file. The patients in this file will show on a list to select from in iCat when acquiring an image.</p>
+<p><b>Return folder path:</b> After a patient is selected in the iCat software, it will generate a response file in the specified folder. Open Dental will process this file to remove that patient from the PM.XML file.</p>
+<p><b>Acquisition computer name:</b> The name of the computer where the iCat acquisitions take place. The descriptions above all pertain to the acquisition computer. If you are on a different computer and you use the iCat bridge, it will behave totally differently. It will instead try to launch iCat software using a command line argument.</p>
+<p>In the iCat software, turn off the option to have iCat return thumbnail images. Open Dental will disregard such images if they are created.</p>
+<p>iCat returns an XML file with a small amount of information. The name of the return file will be in the following format:<p class="codeblock">PatID_yyyymmddhhmmss.xml</p>Open Dental is not interested in any of the information within the file, but only in the filename itself. Open Dental extracts the PatID from the filename, removes the corresponding entry in PM.XML, and then deletes the file. If there is an error processing the return file from iCat, Open Dental will fail silently. The return file will not get deleted, and the patient entry will not be removed from the PM.XML file. If this happens, we will need to take a look at the PM.XML file as well as the return file. It is also safe to delete the entire PM.XML file at any time. This will completely clear the list of patients that show on the list to select from in iCat when acquiring an image.</p>
+</div>
+</div>
+</body>
+</html>

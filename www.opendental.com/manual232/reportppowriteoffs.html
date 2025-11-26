@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - PPO Writeoffs Report</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('reportppowriteoffs','+monthly','reportsstandard','reports','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/reportppowriteoffs.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/reportppowriteoffs.html" >v24.2</option><option value="https://www.opendental.com/manual241/reportppowriteoffs.html" >v24.1</option><option value="https://www.opendental.com/manual233/reportppowriteoffs.html" >v23.3</option><option value="https://www.opendental.com/manual232/reportppowriteoffs.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/reportppowriteoffs.html" >v23.1</option><option value="https://www.opendental.com/manual224/reportppowriteoffs.html" >v22.4</option><option value="https://www.opendental.com/manual223/reportppowriteoffs.html" >v22.3</option><option value="https://www.opendental.com/manual222/reportppowriteoffs.html" >v22.2</option><option value="https://www.opendental.com/manual221/reportppowriteoffs.html" >v22.1</option><option value="https://www.opendental.com/manual214/reportppowriteoffs.html" >v21.4</option><option value="https://www.opendental.com/manual213/reportppowriteoffs.html" >v21.3</option><option value="https://www.opendental.com/manual212/reportppowriteoffs.html" >v21.2</option><option value="https://www.opendental.com/manual211/reportppowriteoffs.html" >v21.1</option><option value="https://www.opendental.com/manual205/reportppowriteoffs.html" >v20.5</option><option value="https://www.opendental.com/manual204/reportppowriteoffs.html" >v20.4</option><option value="https://www.opendental.com/manual203/reportppowriteoffs.html" >v20.3</option><option value="https://www.opendental.com/manual202/reportppowriteoffs.html" >v20.2</option><option value="https://www.opendental.com/manual201/reportppowriteoffs.html" >v20.1</option><option value="https://www.opendental.com/manual194/reportppowriteoffs.html" >v19.4</option><option value="https://www.opendental.com/manual193/reportppowriteoffs.html" >v19.3</option><option value="https://www.opendental.com/manual192/reportppowriteoffs.html" >v19.2</option><option value="https://www.opendental.com/manual191/reportppowriteoffs.html" >v19.1</option><option value="https://www.opendental.com/manual184/reportppowriteoffs.html" >v18.4</option><option value="https://www.opendental.com/manual183/reportppowriteoffs.html" >v18.3</option><option value="https://www.opendental.com/manual182/reportppowriteoffs.html" >v18.2</option><option value="https://www.opendental.com/manual181/reportppowriteoffs.html" >v18.1</option><option value="https://www.opendental.com/manual174/reportppowriteoffs.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>PPO Writeoffs Report</p></div>
+<div class="GeneralPageContent">
+<p>Use the PPO Write-offs report to compare write-offs by claim or carrier. </p>
+<p>In <a href="reportsstandard.html">Standard Reports</a>, in the Monthly section, click <b>PPO Write-offs</b>. <br/><img src="images/reportPPOWriteoffs.png" width="707" height="410" class="ImageInParagraph"/></p>
+<p>This report will list standard fees, PPO fees, and write-off amounts.</p>
+<p><div class="Note">Note: <ul>
+<li>To control user access to this report, see <a href="reportsecurity.html">Report Setup: Security Permissions</a>.</li>
+<li>Write-offs are only tracked for insurance plans that use the <i>PPO Percentage</i> or <i>PPO Fixed Benefit</i> plan type. <a href="planppo.html">PPO Insurance Plan</a></li>
+</ul>
+</div>
+</p>
+<h2>Filters and Options</h2>
+<p>Set the report options and filters before running the report.</p>
+<p><b>Calendar:</b> In the left calendar select the start date. In the right calendar select the end date. The date range defaults to last calendar month.</p>
+<p class="MarginBottomZero">Group Results: Select an option to determine how results are grouped. </p>
+<ul class="MarginBottomGap">
+<li><b>Individual Claims</b>: List fees and write-offs by claim. Shows patient name.</li>
+<li><b>Group by Carrier</b>: List total fees and write-offs by carrier.</li>
+</ul>
+<p><b>Enter a few letters of the carrier to limit results</b>: To filter or limit the results by a specific carrier, type a carrier name here.</p>
+<p class="MarginBottomZero"><b>Show Insurance Write-offs:</b> Determines the date write-offs are applied. See <a href="writeoffstoproduction.html">Show Insurance Writeoffs</a> for more details. </p>
+<ul class="MarginBottomGap">
+<li>Using insurance payment date: Apply write-offs on the date the insurance claim is received.</li>
+<li>Using procedure date: Apply write-offs on the day the procedure is completed.</li>
+<li>Using initial claim date for write-off estimates, insurance pay date for write-off adjustments: Apply write-off estimates on the day of the insurance claim and changes to write-offs estimates once an insurance payment is entered. Shows write-off information on the claim date only. Includes additional columns on the report. See below for details.</li>
+</ul>
+<h2>Report</h2>
+<p>After setting report options and filters, click <b>OK</b> to generate a print preview of the report. The report will differ depending on the grouping behavior. Below are examples of the report and explanation of the report columns.</p>
+<p>For a description of toolbar buttons, see <a href="reportcomplex.html">Complex Report System</a>.</p>
+<p>Example of report when <i>Individual Claims</i> is selected:</p>
+<img src="images/reportPPOWriteoffClaim.gif" width="841" height="553"/><p>Procedures billed to multiple PPO insurance plans, will be shown on separate rows. The <i>StandFee</i> for the procedures will be included in all the rows for additional claim(s).</p>
+<p class="MarginBottomZero">The following columns only appear when <i>Individual Claims</i> is selected: </p>
+<ul class="MarginBottomGap">
+<li><b>Date</b>: Write-off date. This will differ depending on the selected <i>Show Insurance Write-offs</i> behavior.</li>
+<li><b>Patient</b>: Last name and first name of patient associated to claim.</li>
+<li><b>Provider</b>: Lists a provider associated with at least one <a href="claimprocedure.html">Claim Procedures ( claimprocs )</a> on the claim.</li>
+</ul>
+<p>Example of report when <i>Group by Carrier</i> is selected:</p>
+<img src="images/reportPPOWriteoffCarrier.gif" width="763" height="383"/><p class="MarginBottomZero">The following columns appear regardless of the selected grouping behavior: </p>
+<ul class="MarginBottomGap">
+<li><b>Carrier</b>: Insurance carrier associated to the write-off.</li>
+<li><b>Stand Fee</b>: Standard fee. (e.g., office fee, UCR fee, etc.). This total may not match <a href="productionincome.html">Production and Income</a> reports as procedures billed to multiple PPO insurance plan types will be accounted for in this total for each PPO claim sent.</li>
+<li><b>Write-off</b>: Write-off or estimated write-off. Column does not show when <i>Using initial claim date for write-off estimates, insurance pay date for write-off adjustments is selected</i>; Alternate columns are displayed instead. </li>
+<li>The following columns appear when <i>Using initial claim date for write-off estimates, insurance pay date for write-off adjustments</i> is selected:</li>
+<ul>
+<li><b>Write-off Estimate</b>: Write-off estimate in the <a href="claimsnapshot.html">Claim Snapshot</a>. Appears on the report on the initial claim date.</li>
+<li><b>Write-off Adjustment</b>: Write-off adjustments from the insurance payment date (i.e., any change to the original write-off estimate).</li>
+</ul>
+<li><b>PPO Fee</b>: Fee from <i>Fee Schedule</i> assigned to <a href="insplan.html">Insurance Plan</a> (e.g., insurance fees, contracted fees).</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>Open Dental Software - Imaging Quality</title>
+<link href="resources/manual2.css" rel="stylesheet" type="text/css">
+<script src = "resources/manualToc.js"></script>
+<script src = "resources/manual.js"></script>
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="BodyLoaded('imagingsetup','+images','+setup','mainmenu','manual')">
+<nav class="LeftTree">
+<div class="TopBarLeft"><p>Table of Contents</p></div>
+<div id="Manual"><a href="manual.html">Manual</a></div>
+</nav>
+<div class="RightMain">
+<div class="TopBar">
+    <a href="../index.html">
+        <div class="Logo">
+            <img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+        </div>
+    </a>
+    <div class="TopBarLinks">
+        <div class="TopBarTitle">Manual 
+					<select id="SelectVersion" class="TopBarVersionDrop" onchange="location = this.options[this.selectedIndex].value;
+						for (var i = 0; i < document.getElementById('SelectVersion').options.length; i++) {
+							if (document.getElementById('SelectVersion').options[i].attributes.selected)
+								document.getElementById('SelectVersion').selectedIndex=i;
+						}"><option value="https://www.opendental.com/manual243/imagingsetup.html" >v24.3 beta</option><option value="https://www.opendental.com/manual/imagingsetup.html" >v24.2</option><option value="https://www.opendental.com/manual241/imagingsetup.html" >v24.1</option><option value="https://www.opendental.com/manual233/imagingsetup.html" >v23.3</option><option value="https://www.opendental.com/manual232/imagingsetup.html"  selected>v23.2</option><option value="https://www.opendental.com/manual231/imagingsetup.html" >v23.1</option><option value="https://www.opendental.com/manual224/imagingsetup.html" >v22.4</option><option value="https://www.opendental.com/manual223/imagingsetup.html" >v22.3</option><option value="https://www.opendental.com/manual222/imagingsetup.html" >v22.2</option><option value="https://www.opendental.com/manual221/imagingsetup.html" >v22.1</option><option value="https://www.opendental.com/manual214/imagingsetup.html" >v21.4</option><option value="https://www.opendental.com/manual213/imagingsetup.html" >v21.3</option><option value="https://www.opendental.com/manual212/imagingsetup.html" >v21.2</option><option value="https://www.opendental.com/manual211/imagingsetup.html" >v21.1</option><option value="https://www.opendental.com/manual205/imagingsetup.html" >v20.5</option><option value="https://www.opendental.com/manual204/imagingsetup.html" >v20.4</option><option value="https://www.opendental.com/manual203/imagingsetup.html" >v20.3</option><option value="https://www.opendental.com/manual202/imagingsetup.html" >v20.2</option><option value="https://www.opendental.com/manual201/imagingsetup.html" >v20.1</option><option value="https://www.opendental.com/manual194/imagingsetup.html" >v19.4</option><option value="https://www.opendental.com/manual193/imagingsetup.html" >v19.3</option><option value="https://www.opendental.com/manual192/imagingsetup.html" >v19.2</option><option value="https://www.opendental.com/manual191/imagingsetup.html" >v19.1</option><option value="https://www.opendental.com/manual184/imagingsetup.html" >v18.4</option><option value="https://www.opendental.com/manual183/imagingsetup.html" >v18.3</option><option value="https://www.opendental.com/manual182/imagingsetup.html" >v18.2</option><option value="https://www.opendental.com/manual181/imagingsetup.html" >v18.1</option><option value="https://www.opendental.com/manual174/imagingsetup.html" >v17.4</option></select>
+				</div>        <a href="manual.html"><div class="TopBarHome"><img src="resources/home.gif"/><p>Manual<p></div></a>        <a href="searchmanual.html"><div class="TopBarSearch"><img src="resources/search.gif"/><p>Search<p></div></a>
+    </div>       
+</div>
+<div class="TopBar2"><p>Imaging Quality</p></div>
+<div class="GeneralPageContent">
+<p>In the <a href="mainmenu.html">Main Menu</a>, click Setup, Imaging, Scanning.</p>
+<img src="images/imagingSetup.gif" width="661" height="449"/><p>These are the default settings used when scanning forms, letters, photos or radiographs in the <a href="images.html">Imaging Module</a>, or capturing images using <a href="suni.html">Suni</a>. Settings only apply to the current workstation (computer). Also see <a href="scanners.html">Scanners</a>.</p>
+<p><b>Set Default Scanner</b>: Click to select the scanner that will be used as the default each scan. Open Dental Cloud users will be prompted to install or launch <a href="opendentalcloudclient.html">Open Dental Cloud Client</a> if it is undetected.</p>
+<h2>Documents</h2>
+<p>These settings are for scanning single documents and multi-page documents in the Images module.</p>
+<p><b>Show Select Scanner Window</b>: Check this box to be prompted to select the scanner before each scan. The option selected will also apply when a user clicks Scan Radiograph or Scan Photo in the Imaging module toolbar.</p>
+<p><b>JPEG Compression - Quality After Scanning</b>: Set the image quality (0 - 100) for the file that is saved in the <a href="atozfolder.html">A to Z Folder</a>. A lower number means more compression and smaller file size. 100 = no compression 0 = maximum compression. A typical setting is 40.</p>
+<p><b>Show Scanner Options Window</b>: Select this option to open the scanning device window to select scanning options each scan. We recommend this option in order to customize scan settings (e.g., dpi).</p>
+<p><b>Use the Options Below</b>: Select this option to use the default scanning options each scan, instead of opening the scanning device window. The option selected will also apply when a users clicks Scan Radiograph or Scan Photo.</p>
+<p class="MarginBottomZero">If <i>Use the Options Below</i> is checked, the options set below will be used. The options selected will also apply when a user clicks Scan Radiograph or Scan Photo. </p>
+<ul class="MarginBottomGap">
+<li><b>Multipage Scans Duplex</b>: Scans both sides of documents when checked. Scans one side of documents when unchecked.</li>
+<li><b>Grayscale</b>: Scans in grayscale when checked. Scans in 24-bit color when unchecked.</li>
+<li><b>Resolution</b>: The dots per inch (dpi) of the document that is collected from the scanner. Must be at least 51 dpi.</li>
+</ul>
+<p class="MarginBottomZero">Recommended Scanning Settings: </p>
+<ul class="MarginBottomGap">
+<li>Documents: 150 dpi.</li>
+<li>Photos: color, 300 dpi.</li>
+</ul>
+<h2>Radiographs</h2>
+<p>Set the default pixel windowing values to use when scanning radiographs. A slider is also available in the Images module to adjust pixel windowing for individual radiographs. Windowing is useful for images like radiographs because it isolates changes in gray levels. For more details, see <a href="imageenhancing.html">Enhancing Radiograph Images</a>.</p>
+<p class="MarginBottomZero">Recommended Scanning Settings: </p>
+<ul class="MarginBottomGap">
+<li>Panos: grayscale, 300 dpi.</li>
+<li>BWs: grayscale, 400 dpi.</li>
+</ul>
+<h2>Photos</h2>
+<p>Recommended Scanning Settings: color, 300 dpi.</p>
+</div>
+</div>
+</body>
+</html>

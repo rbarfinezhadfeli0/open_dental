@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<title>Open Dental Software - Claimstream</title>
+	<link href="resources/siteWithTree.css" rel="stylesheet" type="text/css">
+	<link href="../css/common.css" rel="stylesheet" type="text/css">
+	<script src = "resources/siteWithTreeToc.js"></script>
+	<script src = "resources/siteWithTree.js"></script>
+	<link rel="icon" type="image/png" href="resources/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="BodyLoaded('claimstream','canada','countries','documentation')">
+	<nav class="LeftTree">
+		<div class="TopBarLeft"><p>Table of Contents</p></div>
+		<div id="TocTree"><a href="https://www.opendental.com/site/help.html">Help</a></div>
+	</nav>
+	<div class="RightMain">
+		<div class="TopBar">
+			<a href="../index.html">
+				<div class="Logo">
+					<img src="resources/logoWhite160.png" alt="Home" width="158" height="40">
+				</div>
+			</a>
+			<div class="TopBarLinks">
+				<div class="TopBarTitle"></div>
+				<a href="searchSite.html">
+					<div class="TopBarSearch">
+						<img src="resources/search.gif"/>
+						<p>Search<p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="TopBar2"><p>Claimstream</p></div>
+		<div class="GeneralPageContent">
+<p>For <a href="canada.html">Canada</a> Independent Hygienist and Denturist users, the CCDWS service (Claimstream) is used to submit claims to Insurance Carriers.</p>
+<p><div class="Note">Note: <ul>
+<li>Open Dental support is required to install the CCDWS service that Claimstream runs on.</li>
+<li>Open Dental is CCDWS certified software.</li>
+<li>Quebec users should not install Claimstream.</li>
+</ul>
+</div>
+</p>
+<h2>Install Claimstream / CCDWS</h2>
+<p>Claimstream uses the CCDWS service to send claims. See <a href="ccdws.html">CCDWS Service</a> for installation instructions. </p>
+<p></p>
+<h2>Setup the Claimstream Clearinghouse</h2>
+<p>In the <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7mainmenu.html">Main Menu</a>, click Family/Insurance, <a href="../autoLogin.aspx%EF%B9%96ReturnUrl=%EA%A4%B7help253%EA%A4%B7clearinghouses.html">Clearinghouses</a>. Double-click Claimstream to edit.</p>
+<img src="images/clearinghouseClaimstream.png" width="915" height="689"/><p class="MarginBottomZero"></p>
+<ol class="MarginBottomGap">
+<li>Set the Claim Export Path to <b>\\ServerName\ccd\</b>.</li>
+<li>Set the Report Path to <b>\\ServerName\ccd\</b>.</li>
+<li>Ensure <b>Use Claim Export Path</b> is checked.</li>
+<li>Set the preferred Explanation of Benefits (EOB) option: <ul>
+<li><b>Do Not Download EOBs:</b> EOBs display, but amounts from EOBs are not downloaded into claims/predeterminations.</li>
+<li><b>Download EOBs, Do Not Auto Receive:</b> EOBs display and amounts from EOBs are automatically downloaded as insurance estimate overrides (claims and predeterminations) and preauth estimates (predeterminations only), but the claim/predetermination is not marked as received.</li>
+<li><b>Download EOBs and Auto Receive:</b> EOBs display and amounts from EOBs are automatically downloaded as insurance estimate overrides (claims and predeterminations) and as preauth estimates (predeterminations only), and claim procedures are received using the same amounts. Claim payment need to be finalized after receiving payment from the carrier. </li>
+</ul>
+</li>
+</ol>
+<p><div class="Note">Note: Some fields may automatically fill that are not needed. They can be removed. <ul>
+<li>Launch Client Program</li>
+<li>Payors (rarely used) </li>
+</ul>
+</div>
+</p>
+<h2>Technical Details of Upload</h2>
+<p>Open Dental checks the claim export path (usually <b>C:\ccd</b> on the claim server) for the existence of <span class="codeblock">OPENDENTAL.pem</span> and automatically creates the <span class="codeblock">OPENDENTAL.pem</span> file if it does not already exist.</p>
+<p>Files being sent from Open Dental to Claimstream are named <span class="codeblock">input.###</span> (i.e., input.000, input.001, etc...) and are placed in the <b>C:\ccd</b> folder on the server by default.</p>
+<p>To prevent the CCDWS service from processing input before the input file is finished writing, a temp file is first written in format <span class="codeblock">tempinput.###</span>, then the file is renamed to <span class="codeblock">input.###</span>. File names are cycled through until they reach 999 and then start over at 000.</p>
+<p>The purpose of the file name incrementing is to prevent transactions of different client machines from colliding while they are being adjudicated. The CCDWS service first renames the <span class="codeblock">input.###</span> file to <span class="codeblock">_nput.###</span> to prevent the file from being processed more than once. The CCDWS service then sends the _nput.### file data via a secure SSL connection to Claimstream. The reply comes back in under two minutes as <span class="codeblock">output.###</span> or <span class="codeblock">utput.###</span> in the same folder. The <span class="codeblock">output.###</span> file is immediately imported into Open Dental, then the <span class="codeblock">output.###</span> and <span class="codeblock">_nput.###</span> files are deleted by Open Dental.</p>
+		</div>
+	</div>
+</body>
+</html>

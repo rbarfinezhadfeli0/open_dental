@@ -1,0 +1,58 @@
+.TempCursor{/*Used when editing pages to show position*/
+	background-color: rgb(255,255,150);
+}
+.redtext {
+	color: #900;
+}
+.parHead {
+	color: #00648A;
+	font-weight: bold;
+}
+.parEservice {
+	color: #00648A;
+	font-weight: bold;
+}
+.pageHead {
+	font-size: large;
+	font-weight: bold;
+	color: #005677;
+}
+a {
+	color: #343C83;
+	text-decoration: underline;
+}
+a:visited {
+	color: rgb(85, 26, 139);
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+a:hover {
+	color: #CC0000;
+}
+.CourierFont {
+	font-family: "Courier New", Courier, monospace;
+}
+.redbold {
+	color: #900;
+	font-weight: bold;
+}
+.smalltext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8.5pt;
+}
+
+.GeneralPageContent {
+	padding: 0 15px;
+}
+
+/* In order to get rid of white space between paragraphs and bulleted lists we want to remove the bottom margin on paragraphs and the top margins on lists. */
+
+p {
+	margin-bottom: 0px;
+}
+
+ul, ol {
+	margin-top: 0px;
+}
